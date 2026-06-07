@@ -217,3 +217,10 @@ document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("
 
 renderCategoryButtons();
 renderCards(allItems.slice(0, 10));
+
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  });
+}
