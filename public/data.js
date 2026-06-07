@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "0.8.0-final-reviewed",
+    "version": "1.0.0-v10-master-30categories",
     "language": "ko",
-    "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT",
+    "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
   },
   "schema": {
@@ -3329,6 +3329,2435 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
       ]
+    },
+    {
+      "id": "ROUTINE018",
+      "category": "Routine/제세동기",
+      "title": "제세동기 점검",
+      "aliases": [
+        "제세동기",
+        "defibrillator",
+        "defib",
+        "E-cart",
+        "응급카트",
+        "shock"
+      ],
+      "urgency": "routine",
+      "summary": "근무 중 제세동기 및 응급카트 점검 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "근무 시작 시 제세동기 전원/충전 상태를 확인한다.",
+        "패드, electrode, gel/pad, paper, cable 연결 상태를 확인한다.",
+        "E-cart 봉인/응급약품/소모품 상태를 확인한다.",
+        "이상 발견 시 즉시 charge nurse 또는 담당자에게 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "점검 시간, 이상 유무, 조치사항을 점검표 또는 병동 기준에 맞춰 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "제세동기 점검은 병동별 점검표와 최신 장비 매뉴얼을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Routine/제세동기",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ROUTINE019",
+      "category": "Routine/Lab bottle",
+      "title": "Lab bottle 검사·채취 방법",
+      "aliases": [
+        "Lab bottle",
+        "채혈병",
+        "검체",
+        "SST",
+        "EDTA",
+        "Sodium Citrate",
+        "Plain",
+        "채취방법"
+      ],
+      "urgency": "routine",
+      "summary": "검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방된 검사 항목을 확인하고 필요한 bottle을 준비한다.",
+        "환자 확인 후 검체 라벨과 대상자를 대조한다.",
+        "Sodium citrate tube는 정량선까지 정확히 채운다.",
+        "채취 후 bottle을 적절히 혼합하고, 라벨은 눈금을 가리지 않게 부착한다.",
+        "검체 접수/전송 시간을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 bottle과 채혈 순서는 병원 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Routine/Lab bottle",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ROUTINE020",
+      "category": "Routine/식이",
+      "title": "식이 처방·Feeding 확인",
+      "aliases": [
+        "식이",
+        "diet",
+        "feeding",
+        "NPO",
+        "금식",
+        "경관식",
+        "L-tube feeding"
+      ],
+      "urgency": "routine",
+      "summary": "식이 처방, 금식, 경관식, I/O 입력을 함께 확인하는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "근무 시작 시 식이 처방과 NPO 여부를 확인한다.",
+        "검사/시술/수술 전 금식 여부를 확인한다.",
+        "L-tube feeding 환자는 주입 전 잔류량/위치 확인 기준을 따른다.",
+        "식이 변경 또는 중단 시 간호기록과 인계사항에 반영한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [
+        "식사량 또는 feeding 양은 병동 I/O 기준에 따라 입력한다."
+      ],
+      "warnings": [
+        "흡인 위험 환자는 자세, 잔류량, 의식상태를 확인합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Routine/식이",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ROUTINE021",
+      "category": "Routine/환자파악·인계",
+      "title": "환자 파악 및 인계 체크리스트",
+      "aliases": [
+        "환자파악",
+        "인계",
+        "handover",
+        "rounding",
+        "라인",
+        "진단명",
+        "문제목록"
+      ],
+      "urgency": "routine",
+      "summary": "근무 시작 전 환자 상태와 주요 처방을 빠르게 파악하는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "진단명, 수술/시술명, 입원 경로, 주치의/협진과를 확인한다.",
+        "의식상태, 호흡기 상태, hemodynamic, line/tube/drain을 확인한다.",
+        "주요 약물, 수액, 항생제, 승압제, 진정제, 항응고제를 확인한다.",
+        "검사 예정, 수술/시술 예정, 금식, 동의서 여부를 확인한다.",
+        "주의사항과 보호자/연명의료/DNR 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "인계받은 특이사항은 필요한 경우 간호기록 또는 인계장에 정리한다."
+      ],
+      "io": [],
+      "warnings": [
+        "병원 최신 지침과 담당의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Routine/환자파악·인계",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ROUTINE022",
+      "category": "Routine/Acting",
+      "title": "ACTING 업무: 술기·Injection·기타",
+      "aliases": [
+        "acting",
+        "액팅",
+        "injection",
+        "술기",
+        "처치",
+        "투약",
+        "간호액팅"
+      ],
+      "urgency": "routine",
+      "summary": "근무 중 액팅 업무를 누락 없이 확인하는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "간호액팅 스케줄을 시간대별로 확인한다.",
+        "Injection/PO/nebulizer/dressing/feeding/검체 등 항목을 분류한다.",
+        "시행 전 환자, 약물, 용량, 경로, 시간을 확인한다.",
+        "시행 후 효과, 부작용, 미시행 사유를 기록한다.",
+        "추가 처방 발생 시 응급발행/픽업/스케줄 반영 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "투약은 5 right/7 right 원칙과 병원 투약지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Routine/Acting",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ADM001",
+      "category": "입퇴원/입실",
+      "title": "입실 업무: 응급실·외래·병동 전입",
+      "aliases": [
+        "입실",
+        "전입",
+        "응급실",
+        "외래",
+        "병동",
+        "ICU admission",
+        "신환"
+      ],
+      "urgency": "urgent",
+      "summary": "ICU 입실 시 초기 세팅과 전산 입력 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "입실 경로와 환자 기본정보를 확인한다.",
+        "모니터 연결, V/S 측정, 산소/라인/배액관 상태를 확인한다.",
+        "의식상태, 통증, 낙상, 욕창, 보호대 필요성을 평가한다.",
+        "입실 관련 동의서, 보호자 연락처, 지참약 여부를 확인한다.",
+        "입실 처방, 검사, 수액, 약물, 식이, 격리 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "입실 시간, 입실 경로, 환자 상태, line/tube/drain, 보호자 안내 내용을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "병원 최신 지침과 담당의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "입퇴원/입실",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ADM002",
+      "category": "입퇴원/전동·전원",
+      "title": "전동·전원 업무",
+      "aliases": [
+        "전동",
+        "전원",
+        "transfer",
+        "병동 이동",
+        "타병원 전원"
+      ],
+      "urgency": "urgent",
+      "summary": "ICU에서 병동 또는 타기관으로 이동 시 확인할 사항.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "전동/전원 처방과 이동 시간을 확인한다.",
+        "이송 가능 상태인지 V/S, 산소, line, drain, 약물 주입 상태를 확인한다.",
+        "전동 인계지 또는 전원 서류를 준비한다.",
+        "검사결과, 약물, 지참약, 동의서, 영상자료 필요 여부를 확인한다.",
+        "이동 전 보호자 및 수납/행정 절차를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "전동/전원 시간, 인계 대상, 환자 상태, 동반 물품을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "병원 최신 지침과 담당의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "입퇴원/전동·전원",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ADM003",
+      "category": "입퇴원/사망",
+      "title": "사망 시 업무",
+      "aliases": [
+        "사망",
+        "death",
+        "사후처치",
+        "영안실",
+        "사망진단서"
+      ],
+      "urgency": "urgent",
+      "summary": "사망 확인 후 간호·전산·보호자 안내 업무.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "의사의 사망 확인 및 사망선고 시간을 확인한다.",
+        "모니터, line, tube 제거 여부는 병원 절차와 의사 지시를 따른다.",
+        "보호자 안내, 사망진단서, 영안실 연락 등 행정 절차를 확인한다.",
+        "사후처치를 시행하고 개인물품을 정리한다.",
+        "필요 시 감염/격리 사망 절차를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "사망선고 시간, 사후처치, 보호자 안내, 인계 내용을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "사망 관련 서류와 절차는 병원 원무/장례 절차를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "입퇴원/사망",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "RECORD001",
+      "category": "간호기록",
+      "title": "간호기록 작성 원칙",
+      "aliases": [
+        "간호기록",
+        "기록",
+        "nursing note",
+        "charting",
+        "EMR"
+      ],
+      "urgency": "routine",
+      "summary": "ICU 간호기록 작성 시 기본 원칙.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "사실 중심으로 시간 순서에 맞춰 기록한다.",
+        "환자 상태 변화, 처치, 투약, 보고, 의사 지시, 환자 반응을 기록한다.",
+        "약물 시작/중단/용량변경, 검사/시술 전후 상태를 기록한다.",
+        "미시행 사유, 거부, 이상반응, 보호자 설명 내용을 기록한다.",
+        "전산의 다른 항목(V/S, I/O, flow sheet)과 내용이 맞는지 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "법적 기록이므로 추측·주관적 표현보다 관찰 사실과 조치 중심으로 작성합니다."
+      ],
+      "related": [],
+      "tags": [
+        "간호기록",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ORDER001",
+      "category": "처방/액팅",
+      "title": "처방 확인·Lab 처방·픽업·응급발행",
+      "aliases": [
+        "처방",
+        "액팅",
+        "lab 처방",
+        "픽업",
+        "응급발행",
+        "채혈접수",
+        "발행"
+      ],
+      "urgency": "routine",
+      "summary": "처방 확인부터 채혈접수/픽업/응급발행까지 흐름.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "신규/변경/중지 처방을 확인한다.",
+        "Lab 처방은 채혈접수업무에서 접수 및 바코드 발행 여부를 확인한다.",
+        "추가 처방은 병동 기준에 따라 응급발행 또는 픽업을 진행한다.",
+        "약물 처방은 용량/경로/시간/희석방법을 확인한다.",
+        "시행 후 간호액팅 완료 여부와 기록을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "처방 의문사항은 시행 전 담당의 또는 처방권자에게 확인합니다."
+      ],
+      "related": [],
+      "tags": [
+        "처방/액팅",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SAFE001",
+      "category": "안전/유효기간",
+      "title": "유효기간·사용기한 확인",
+      "aliases": [
+        "유효기간",
+        "사용기한",
+        "개봉일",
+        "폐기일",
+        "약품",
+        "소모품",
+        "수액세트"
+      ],
+      "urgency": "routine",
+      "summary": "약품, 소모품, 개봉 물품의 유효기간 확인.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "약품/수액/소모품 사용 전 유효기간을 확인한다.",
+        "개봉 후 사용기한이 있는 물품은 개봉일과 폐기일을 표시한다.",
+        "냉장/차광/상온 등 보관조건을 확인한다.",
+        "유효기간 경과 또는 오염 의심 물품은 사용하지 않는다.",
+        "정기 점검 시 병동 기준표에 따라 폐기/교체한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "고위험 약물과 멸균물품은 유효기간 확인을 특히 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "안전/유효기간",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS001",
+      "category": "DRESSING/일반상처",
+      "title": "일반 상처 Dressing",
+      "aliases": [
+        "dressing",
+        "상처",
+        "일반상처"
+      ],
+      "urgency": "routine",
+      "summary": "일반 상처 Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/일반상처",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS002",
+      "category": "DRESSING/감염상처",
+      "title": "감염된 상처 Dressing",
+      "aliases": [
+        "감염상처",
+        "infected wound",
+        "pus",
+        "dressing"
+      ],
+      "urgency": "routine",
+      "summary": "감염된 상처 Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/감염상처",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS003",
+      "category": "DRESSING/수술상처",
+      "title": "수술 후 상처 Dressing",
+      "aliases": [
+        "수술상처",
+        "op wound",
+        "post op dressing"
+      ],
+      "urgency": "routine",
+      "summary": "수술 후 상처 Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/수술상처",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS004",
+      "category": "DRESSING/욕창",
+      "title": "욕창 부위 Dressing",
+      "aliases": [
+        "욕창",
+        "pressure injury",
+        "sore",
+        "dressing"
+      ],
+      "urgency": "routine",
+      "summary": "욕창 부위 Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/욕창",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS005",
+      "category": "DRESSING/PCD",
+      "title": "PCD 부위 Dressing",
+      "aliases": [
+        "PCD",
+        "drain",
+        "catheter dressing"
+      ],
+      "urgency": "routine",
+      "summary": "PCD 부위 Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/PCD",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS006",
+      "category": "DRESSING/장루",
+      "title": "장루 관리·Dressing",
+      "aliases": [
+        "장루",
+        "stoma",
+        "ostomy"
+      ],
+      "urgency": "routine",
+      "summary": "장루 관리·Dressing 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/장루",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS007",
+      "category": "DRESSING/SDD",
+      "title": "SDD 소독",
+      "aliases": [
+        "SDD",
+        "subdural drain",
+        "소독"
+      ],
+      "urgency": "routine",
+      "summary": "SDD 소독 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/SDD",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRESS008",
+      "category": "DRESSING/EVD",
+      "title": "EVD 소독",
+      "aliases": [
+        "EVD",
+        "external ventricular drainage",
+        "뇌실외배액",
+        "소독"
+      ],
+      "urgency": "routine",
+      "summary": "EVD 소독 체크리스트.",
+      "indications": [],
+      "preparation": [
+        "Dressing set",
+        "소독제",
+        "멸균 거즈",
+        "고정테이프",
+        "필요 시 멸균장갑"
+      ],
+      "steps": [
+        "처방과 dressing 주기를 확인한다.",
+        "기존 dressing 상태, oozing, 발적, 부종, 통증, 냄새를 확인한다.",
+        "무균술을 지켜 소독하고 새 dressing을 적용한다.",
+        "배액관/카테터가 있는 경우 고정상태와 배액 양상을 확인한다.",
+        "시행 후 날짜, 시간, 시행자, 특이사항을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "감염 의심, 출혈, 배액 급증, 위치 이탈 의심 시 즉시 보고합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DRESSING/EVD",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC002",
+      "category": "검사·시술/영상",
+      "title": "Coronary angio CT 전후 간호",
+      "aliases": [
+        "coronary angio CT",
+        "관상동맥 CT",
+        "조영제",
+        "CT"
+      ],
+      "urgency": "routine",
+      "summary": "Coronary angio CT 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/영상",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC003",
+      "category": "검사·시술/영상",
+      "title": "Brain MRI non-enhance 전후 간호",
+      "aliases": [
+        "Brain MRI",
+        "MRI non enhance",
+        "brain non enhance"
+      ],
+      "urgency": "routine",
+      "summary": "Brain MRI non-enhance 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/영상",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC004",
+      "category": "검사·시술/영상",
+      "title": "Brain MRI enhance 전후 간호",
+      "aliases": [
+        "Brain MRI enhance",
+        "조영 MRI",
+        "MRI 조영"
+      ],
+      "urgency": "routine",
+      "summary": "Brain MRI enhance 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/영상",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC005",
+      "category": "검사·시술/영상",
+      "title": "Brain CT 전후 간호",
+      "aliases": [
+        "Brain CT",
+        "뇌 CT",
+        "CT"
+      ],
+      "urgency": "routine",
+      "summary": "Brain CT 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/영상",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC006",
+      "category": "검사·시술/영상",
+      "title": "Head Neck angio CT 전후 간호",
+      "aliases": [
+        "Head Neck angio CT",
+        "HN angio",
+        "CTA",
+        "조영 CT"
+      ],
+      "urgency": "routine",
+      "summary": "Head Neck angio CT 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/영상",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC007",
+      "category": "검사·시술/신경혈관",
+      "title": "DSA 전후 간호",
+      "aliases": [
+        "DSA",
+        "혈관조영술"
+      ],
+      "urgency": "routine",
+      "summary": "DSA 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/신경혈관",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC008",
+      "category": "검사·시술/혈관",
+      "title": "PTA 전후 간호",
+      "aliases": [
+        "PTA",
+        "angioplasty"
+      ],
+      "urgency": "routine",
+      "summary": "PTA 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/혈관",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC009",
+      "category": "검사·시술/신경",
+      "title": "TCD 검사 전후 간호",
+      "aliases": [
+        "TCD",
+        "transcranial doppler"
+      ],
+      "urgency": "routine",
+      "summary": "TCD 검사 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/신경",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC010",
+      "category": "검사·시술/신경혈관",
+      "title": "Coil embolization 전후 간호",
+      "aliases": [
+        "Coil embolization",
+        "코일색전술",
+        "aneurysm"
+      ],
+      "urgency": "routine",
+      "summary": "Coil embolization 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/신경혈관",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC011",
+      "category": "검사·시술/호흡기",
+      "title": "Tracheostomy 전후 간호",
+      "aliases": [
+        "Tracheostomy",
+        "기관절개",
+        "T-can"
+      ],
+      "urgency": "routine",
+      "summary": "Tracheostomy 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/호흡기",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC012",
+      "category": "검사·시술/소화기",
+      "title": "EGD 전후 간호",
+      "aliases": [
+        "EGD",
+        "위내시경",
+        "내시경"
+      ],
+      "urgency": "routine",
+      "summary": "EGD 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/소화기",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC013",
+      "category": "검사·시술/소화기",
+      "title": "ERCP 전후 간호",
+      "aliases": [
+        "ERCP",
+        "담췌관",
+        "내시경"
+      ],
+      "urgency": "routine",
+      "summary": "ERCP 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/소화기",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROC014",
+      "category": "검사·시술/소화기",
+      "title": "CFS 전후 간호",
+      "aliases": [
+        "CFS",
+        "대장내시경",
+        "colonoscopy"
+      ],
+      "urgency": "routine",
+      "summary": "CFS 전후 간호 기본 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검사/시술 처방과 예약 시간을 확인한다.",
+        "금식, 동의서, 조영제/알레르기, 신장기능, 항응고제 여부를 확인한다.",
+        "필요한 IV line, 검사 전 처치, 이송 준비를 확인한다.",
+        "검사/시술 후 V/S, 통증, 출혈, 신경학적 변화, 시술부위 이상을 확인한다.",
+        "검사 후 처방, 식이 재개, 약물 재개 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·시술/소화기",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC001",
+      "category": "검체/Blood culture",
+      "title": "Blood culture 채취",
+      "aliases": [
+        "Blood culture",
+        "blood cx",
+        "혈액배양",
+        "aerobic",
+        "anaerobic"
+      ],
+      "urgency": "routine",
+      "summary": "Blood culture 채취 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/Blood culture",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC002",
+      "category": "검체/Sputum culture",
+      "title": "Sputum culture 채취",
+      "aliases": [
+        "sputum cx",
+        "sputum culture",
+        "객담배양"
+      ],
+      "urgency": "routine",
+      "summary": "Sputum culture 채취 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/Sputum culture",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC003",
+      "category": "검체/Urine culture",
+      "title": "Urine culture 채취",
+      "aliases": [
+        "urine cx",
+        "urine culture",
+        "소변배양"
+      ],
+      "urgency": "routine",
+      "summary": "Urine culture 채취 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/Urine culture",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC004",
+      "category": "검체/RAT",
+      "title": "RAT 검사",
+      "aliases": [
+        "RAT",
+        "rapid antigen test",
+        "신속항원"
+      ],
+      "urgency": "routine",
+      "summary": "RAT 검사 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/RAT",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC005",
+      "category": "검체/CRE·CPO",
+      "title": "CRE/CPO 검체",
+      "aliases": [
+        "CRE",
+        "CPO",
+        "격리검사",
+        "직장도말"
+      ],
+      "urgency": "routine",
+      "summary": "CRE/CPO 검체 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/CRE·CPO",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "SPEC006",
+      "category": "검체/Tip culture",
+      "title": "Tip culture 채취",
+      "aliases": [
+        "Tip cx",
+        "tip culture",
+        "카테터 tip"
+      ],
+      "urgency": "routine",
+      "summary": "Tip culture 채취 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방과 검체 종류를 확인한다.",
+        "환자 확인 후 라벨과 검체 용기를 대조한다.",
+        "무균 또는 청결 원칙에 맞게 검체를 채취한다.",
+        "채취 시간과 부위를 확인하여 접수한다.",
+        "검체 지연/오염 가능성이 있으면 재채취 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검체/Tip culture",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRUG023",
+      "category": "약물/Mix/Continuous infusion",
+      "title": "주요 약물 약속처방 Mix 확인 원칙",
+      "aliases": [
+        "continuous infusion",
+        "약속처방",
+        "mix",
+        "희석",
+        "infusion",
+        "syringe pump"
+      ],
+      "urgency": "urgent",
+      "summary": "Continuous infusion 약물 mix 확인 공통 원칙.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "약물명, 총량, 희석액, 최종용량, 농도, 속도를 확인한다.",
+        "처방과 병동 약속처방 mix법이 일치하는지 확인한다.",
+        "고위험 약물은 가능하면 2인 확인한다.",
+        "Pump setting 후 line 연결, start 여부, 잔량을 확인한다.",
+        "용량 변경 시 변경 시간과 반응을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "정확한 mix 용량은 병원 약속처방과 최신 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "약물/Mix/Continuous infusion",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "INFO001",
+      "category": "원내정보/전화번호",
+      "title": "원내 전화번호·내선번호",
+      "aliases": [
+        "전화번호",
+        "내선",
+        "원내전화",
+        "부서연락처",
+        "연락망"
+      ],
+      "urgency": "routine",
+      "summary": "자주 사용하는 원내 내선번호를 모아두는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "ICU, 응급실, 영상의학과, 진단검사실, 약국, 원무, 영안실 등 자주 쓰는 번호를 병동 기준으로 등록한다.",
+        "야간/휴일 연락망이 별도로 있으면 구분해둔다.",
+        "변경된 번호는 즉시 업데이트한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 번호는 병원 내부 최신 연락망을 확인해 입력해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "원내정보/전화번호",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "EQUIP001",
+      "category": "장비/Infusion pump",
+      "title": "Infusion pump 사용법",
+      "aliases": [
+        "Infusion pump",
+        "인퓨전펌프",
+        "pump",
+        "수액펌프"
+      ],
+      "urgency": "routine",
+      "summary": "Infusion pump 기본 사용 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방된 약물/수액, 총량, 속도, 주입경로를 확인한다.",
+        "수액세트를 pump에 맞게 장착한다.",
+        "공기 제거 후 line을 연결한다.",
+        "Rate, VTBI 또는 volume 값을 확인하고 start한다.",
+        "알람 발생 시 occlusion, air, door, battery, end 등을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "고위험 약물은 pump setting 후 2인 확인을 권장합니다."
+      ],
+      "related": [],
+      "tags": [
+        "장비/Infusion pump",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "EQUIP002",
+      "category": "장비/Syringe pump",
+      "title": "Syringe pump 사용법",
+      "aliases": [
+        "Syringe pump",
+        "시린지펌프",
+        "syringe",
+        "pump"
+      ],
+      "urgency": "routine",
+      "summary": "Syringe pump 기본 사용 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "주사기 용량과 약물 농도를 확인한다.",
+        "주사기를 정확히 장착하고 clamp/line air를 확인한다.",
+        "Rate 또는 dose setting을 처방과 대조한다.",
+        "Start 후 실제 주입 여부와 잔량을 확인한다.",
+        "용량 변경 시 변경 시간과 사유를 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "승압제/진정제 등은 line 단절과 bolus 위험에 주의합니다."
+      ],
+      "related": [],
+      "tags": [
+        "장비/Syringe pump",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DRUG024",
+      "category": "약물/경구혈당강하제",
+      "title": "경구 혈당 강하제 확인",
+      "aliases": [
+        "경구혈당강하제",
+        "OHA",
+        "당뇨약",
+        "BST",
+        "메트포르민",
+        "sulfonylurea"
+      ],
+      "urgency": "routine",
+      "summary": "입원 환자의 경구혈당강하제 복용 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "지참약 또는 처방에서 경구혈당강하제 종류를 확인한다.",
+        "금식, 검사/조영제, 신장기능, 저혈당 위험을 확인한다.",
+        "수술/시술 전후 복용 지속 여부는 담당의 처방을 확인한다.",
+        "BST와 저혈당 증상을 관찰한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "조영제 검사 전후 metformin 중지 여부 등은 병원 지침과 처방을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "약물/경구혈당강하제",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ECART001",
+      "category": "E-cart/응급약물",
+      "title": "E-cart 응급약물 목록",
+      "aliases": [
+        "E-cart",
+        "응급약물",
+        "에피네프린",
+        "노르에피네프린",
+        "아트로핀",
+        "코다론",
+        "아데노신",
+        "비본",
+        "에토미데이트",
+        "마그네슘",
+        "칼슘",
+        "베카론"
+      ],
+      "urgency": "emergency",
+      "summary": "E-cart에서 자주 확인하는 응급약물 목록.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Epinephrine, Norepinephrine, Atropine, Cordarone, Adenosine, Bivon을 확인한다.",
+        "Etomidate, Magnesium sulfate, Calcium gluconate, Vecaron 등을 확인한다.",
+        "Dopamine premix, Dobutamine premix 등 주입약물을 확인한다.",
+        "사용 후 즉시 보충/기록/봉인 상태를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "응급약물 용량과 사용법은 CPR/ACLS 및 병원 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "E-cart/응급약물",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ECART002",
+      "category": "약물/고주의약물",
+      "title": "고주의 약물 관리",
+      "aliases": [
+        "고주의약물",
+        "high alert",
+        "승압제",
+        "인슐린",
+        "항응고제",
+        "KCL",
+        "진정제"
+      ],
+      "urgency": "urgent",
+      "summary": "ICU에서 주의가 필요한 고위험 약물 관리.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "고주의 약물 여부를 확인하고 병동 표시/라벨 기준을 따른다.",
+        "용량, 농도, 주입속도, route를 2인 확인한다.",
+        "Pump 사용과 line 라벨링을 확인한다.",
+        "부작용과 모니터링 항목을 인계한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "병원 고주의 약물 목록과 안전관리 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "약물/고주의약물",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "ECART003",
+      "category": "약물/항부정맥제",
+      "title": "항부정맥제 사용 전 확인",
+      "aliases": [
+        "항부정맥제",
+        "Cordarone",
+        "Adenosine",
+        "Amiodarone",
+        "arrhythmia",
+        "VT",
+        "SVT"
+      ],
+      "urgency": "urgent",
+      "summary": "항부정맥제 투여 전후 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Rhythm strip 또는 EKG를 확인한다.",
+        "처방 약물, 용량, 투여경로, 투여속도를 확인한다.",
+        "투여 중 BP/HR/rhythm 변화를 관찰한다.",
+        "투여 후 rhythm 변화와 환자 반응을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "응급상황에서는 병원 CPR/ACLS 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "약물/항부정맥제",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "CONSENT001",
+      "category": "동의서",
+      "title": "동의서 작성·확인",
+      "aliases": [
+        "동의서",
+        "consent",
+        "수술동의서",
+        "시술동의서",
+        "수혈동의서",
+        "DNR 동의서"
+      ],
+      "urgency": "routine",
+      "summary": "수술/시술/수혈/DNR 등 동의서 확인.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "필요한 동의서 종류를 확인한다.",
+        "환자/보호자 설명 여부와 서명 누락 여부를 확인한다.",
+        "날짜, 시간, 대상자, 설명의, 보호자 관계를 확인한다.",
+        "검사/시술 전 동의서가 전산 또는 서류에 준비됐는지 확인한다.",
+        "미비 시 시행 전 담당자에게 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "동의서 세부 작성 기준은 병원 서식과 관련 법규를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "동의서",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DEPT001",
+      "category": "각과 Routine/소화기내과",
+      "title": "소화기내과 Routine",
+      "aliases": [
+        "소화기내과",
+        "GI",
+        "EGD",
+        "ERCP",
+        "CFS"
+      ],
+      "urgency": "routine",
+      "summary": "소화기내과 Routine 기본 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "해당 과 주치의/원장님별 선호 routine을 확인한다.",
+        "검사, lab, 영상, 식이, 항생제, 항응고제, 수액 처방 패턴을 확인한다.",
+        "특이 지시사항은 인계장 또는 병동 매뉴얼에 업데이트한다.",
+        "Routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과 원장님별 세부 routine은 병원 내부 최신 매뉴얼로 계속 보완해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "각과 Routine/소화기내과",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DEPT002",
+      "category": "각과 Routine/심장내과",
+      "title": "심장내과 Routine",
+      "aliases": [
+        "심장내과",
+        "CV",
+        "angio CT",
+        "EKG",
+        "echo"
+      ],
+      "urgency": "routine",
+      "summary": "심장내과 Routine 기본 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "해당 과 주치의/원장님별 선호 routine을 확인한다.",
+        "검사, lab, 영상, 식이, 항생제, 항응고제, 수액 처방 패턴을 확인한다.",
+        "특이 지시사항은 인계장 또는 병동 매뉴얼에 업데이트한다.",
+        "Routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과 원장님별 세부 routine은 병원 내부 최신 매뉴얼로 계속 보완해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "각과 Routine/심장내과",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DEPT003",
+      "category": "각과 Routine/신장내과",
+      "title": "신장내과 Routine",
+      "aliases": [
+        "신장내과",
+        "NEPH",
+        "CRRT",
+        "HD",
+        "BST sling"
+      ],
+      "urgency": "routine",
+      "summary": "신장내과 Routine 기본 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "해당 과 주치의/원장님별 선호 routine을 확인한다.",
+        "검사, lab, 영상, 식이, 항생제, 항응고제, 수액 처방 패턴을 확인한다.",
+        "특이 지시사항은 인계장 또는 병동 매뉴얼에 업데이트한다.",
+        "Routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과 원장님별 세부 routine은 병원 내부 최신 매뉴얼로 계속 보완해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "각과 Routine/신장내과",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DEPT004",
+      "category": "각과 Routine/신경외과",
+      "title": "신경외과 Routine",
+      "aliases": [
+        "신경외과",
+        "NS",
+        "Brain",
+        "GCS",
+        "TFCA"
+      ],
+      "urgency": "routine",
+      "summary": "신경외과 Routine 기본 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "해당 과 주치의/원장님별 선호 routine을 확인한다.",
+        "검사, lab, 영상, 식이, 항생제, 항응고제, 수액 처방 패턴을 확인한다.",
+        "특이 지시사항은 인계장 또는 병동 매뉴얼에 업데이트한다.",
+        "Routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과 원장님별 세부 routine은 병원 내부 최신 매뉴얼로 계속 보완해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "각과 Routine/신경외과",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "DEPT005",
+      "category": "각과 Routine/정형외과",
+      "title": "정형외과 Routine",
+      "aliases": [
+        "정형외과",
+        "OS",
+        "TKRA",
+        "THRA",
+        "post op"
+      ],
+      "urgency": "routine",
+      "summary": "정형외과 Routine 기본 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "해당 과 주치의/원장님별 선호 routine을 확인한다.",
+        "검사, lab, 영상, 식이, 항생제, 항응고제, 수액 처방 패턴을 확인한다.",
+        "특이 지시사항은 인계장 또는 병동 매뉴얼에 업데이트한다.",
+        "Routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과 원장님별 세부 routine은 병원 내부 최신 매뉴얼로 계속 보완해야 합니다."
+      ],
+      "related": [],
+      "tags": [
+        "각과 Routine/정형외과",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROTO001",
+      "category": "프로토콜/DKA",
+      "title": "DKA 프로토콜",
+      "aliases": [
+        "DKA",
+        "diabetic ketoacidosis",
+        "케톤산증",
+        "RI",
+        "BST",
+        "전해질"
+      ],
+      "urgency": "urgent",
+      "summary": "DKA 환자 관리 시 확인할 핵심 흐름.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "BST, ABGA, electrolyte, ketone, hydration 상태를 확인한다.",
+        "RI continuous 처방과 수액 처방을 확인한다.",
+        "BST를 정해진 간격으로 측정하고 RI 속도를 조정한다.",
+        "K 등 전해질 보정 처방을 확인한다.",
+        "의식상태, 소변량, V/S 변화를 관찰한다."
+      ],
+      "dosage_or_mix": [
+        "기존 카드 기준: N/S 100cc + RI 100IU mix, 2cc/hr 시작. 실제 적용은 병원 프로토콜 우선"
+      ],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "DKA 세부 알고리즘은 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "프로토콜/DKA",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "BST001",
+      "category": "BST Sling",
+      "title": "소화기·심장·신장내과 BST sliding",
+      "aliases": [
+        "BST sling",
+        "BST sliding",
+        "소화기내과",
+        "심장내과",
+        "신장내과",
+        "RI",
+        "혈당"
+      ],
+      "urgency": "routine",
+      "summary": "각과별 BST sliding 적용 확인 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "과별 BST sliding scale 처방 여부를 확인한다.",
+        "식이/NPO/검사/시술 여부를 함께 확인한다.",
+        "BST 측정 시간과 insulin 투여 시간을 확인한다.",
+        "저혈당/고혈당 발생 시 병동 기준에 따라 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "각과별 sliding scale 수치는 처방과 병원 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "BST Sling",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "PROTO002",
+      "category": "프로토콜/DIC",
+      "title": "DIC 프로토콜",
+      "aliases": [
+        "DIC",
+        "disseminated intravascular coagulation",
+        "PT",
+        "aPTT",
+        "D-dimer",
+        "fibrinogen",
+        "platelet"
+      ],
+      "urgency": "urgent",
+      "summary": "DIC 의심 또는 진단 환자의 검사/수혈/출혈 관찰.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "CBC, PT/aPTT, INR, D-dimer, fibrinogen 등 처방 검사를 확인한다.",
+        "출혈, 멍, oozing, drain 양상, 의식변화, V/S를 관찰한다.",
+        "혈액제제 처방(PRBC, FFP, platelet, cryo)을 확인한다.",
+        "침습적 처치 부위 출혈 여부를 확인한다.",
+        "검사 결과 악화 또는 출혈 시 즉시 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "DIC 치료와 수혈 기준은 담당의 처방과 병원 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "프로토콜/DIC",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "EMR001",
+      "category": "EMR/카멜레온",
+      "title": "카멜레온 EMR 기본 사용",
+      "aliases": [
+        "카멜레온",
+        "EMR",
+        "전산",
+        "간호기록",
+        "처방",
+        "액팅"
+      ],
+      "urgency": "routine",
+      "summary": "카멜레온 전산 사용 시 자주 확인하는 항목.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "환자 선택과 병실/등록번호를 확인한다.",
+        "처방, 간호액팅, V/S, I/O, flow sheet, 간호기록을 확인한다.",
+        "검사 처방은 채혈접수/바코드 발행 여부를 확인한다.",
+        "기구 삽입/제거, 산소 변경, 약물 변경은 관련 전산 항목을 함께 수정한다.",
+        "기록 완료 후 저장 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "전산 메뉴명은 병원 EMR 버전 변경에 따라 달라질 수 있습니다."
+      ],
+      "related": [],
+      "tags": [
+        "EMR/카멜레온",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
+    },
+    {
+      "id": "EQUIP003",
+      "category": "장비/사용법",
+      "title": "장비 사용 방법 공통",
+      "aliases": [
+        "장비",
+        "사용법",
+        "monitor",
+        "pump",
+        "vent",
+        "CRRT",
+        "제세동기"
+      ],
+      "urgency": "routine",
+      "summary": "ICU 장비 사용 전후 공통 체크리스트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "장비명, 환자 적용 목적, 처방 여부를 확인한다.",
+        "전원, 배터리, 소모품, 알람 설정을 확인한다.",
+        "환자 연결 후 실제 작동 여부를 확인한다.",
+        "알람 발생 시 원인을 확인하고 해결되지 않으면 담당자에게 보고한다.",
+        "사용 후 세척/반납/충전/소모품 보충 기준을 따른다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "세부 조작법은 장비별 제조사 매뉴얼과 병원 교육자료를 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "장비/사용법",
+        "v10_master_30_categories"
+      ],
+      "review": {
+        "status": "v10_user_requested_master_category",
+        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+      },
+      "source_refs": [
+        "사용자 제시 30개 카테고리"
+      ]
     }
   ],
   "final_review_note": {
@@ -3346,5 +5775,42 @@ window.ICU_MANUAL_DB = {
       "개인정보/계정/비밀번호 등 민감정보 가능 항목",
       "평가용 문항 중 실무 검색 가치가 낮은 항목"
     ]
+  },
+  "v10_master_update": {
+    "added_from_user_master_categories": true,
+    "final_card_count": 128,
+    "added_categories": [
+      "Routine job 세부",
+      "입퇴원/전동/전원/사망",
+      "지참약",
+      "마약/향정",
+      "간호기록",
+      "처방/액팅",
+      "DNR",
+      "수혈",
+      "유효기간",
+      "수술 전후",
+      "Dressing",
+      "CRRT",
+      "CPR",
+      "검사/수술/시술",
+      "EKG",
+      "검체",
+      "약물 mix",
+      "Intubation",
+      "Ventilator",
+      "원내 전화번호",
+      "Infusion/Syringe pump",
+      "경구혈당강하제",
+      "E-cart 응급약물",
+      "동의서",
+      "각과 Routine",
+      "DKA",
+      "BST sliding",
+      "DIC",
+      "EMR 카멜레온",
+      "장비 사용법"
+    ],
+    "important_note": "내선번호, 각과 원장님별 세부 routine, 병원별 BST/DKA/DIC 세부 수치 등은 병원 최신 자료로 추가 보완 필요."
   }
 };
