@@ -1,6 +1,6 @@
 const $ = (id) => document.getElementById(id);
 const allItems = window.ICU_MANUAL_DB?.items || [];
-$("cardCount").textContent = `${allItems.length} cards`;
+if ($("cardCount")) $("cardCount").textContent = `${allItems.length} cards`;
 
 const fieldLabels = {
   indications: "적응증/상황", preparation: "준비물", steps: "절차",
@@ -79,6 +79,13 @@ function openCard(id) {
   $("cardDialog").showModal();
 }
 
+
+
+function setMenuActive(activeBtn) {
+  document.querySelectorAll("[data-menu-q]").forEach(btn => {
+    btn.classList.toggle("active", btn === activeBtn);
+  });
+}
 
 function setActionActive(activeId) {
   ["askBtn", "searchBtn", "clearBtn"].forEach(id => {
@@ -197,6 +204,7 @@ document.querySelectorAll("[data-open-title]").forEach(btn => {
   });
 });
 document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("click", () => {
+  setMenuActive(btn);
   const q = btn.dataset.menuQ;
   $("question").value = q;
   const cards = localSearch(q, 40);
