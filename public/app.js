@@ -14,8 +14,10 @@ function findById(id) { return allItems.find(x => x.id === id); }
 function findByTitle(title) { return allItems.find(x => x.title === title); }
 
 function renderCategoryButtons() {
+  const box = $("categoryButtons");
+  if (!box) return;
   const groups = [...new Set(allItems.map(x => (x.category || "기타").split("/")[0]))].sort();
-  $("categoryButtons").innerHTML = groups.map(g => `<button data-category="${esc(g)}">${esc(g)}</button>`).join("");
+  box.innerHTML = groups.map(g => `<button data-category="${esc(g)}">${esc(g)}</button>`).join("");
   document.querySelectorAll("[data-category]").forEach(btn => {
     btn.addEventListener("click", () => {
       const cat = btn.dataset.category;
@@ -77,6 +79,15 @@ function openCard(id) {
   $("cardDialog").showModal();
 }
 
+
+function setActionActive(activeId) {
+  ["askBtn", "searchBtn", "clearBtn"].forEach(id => {
+    const el = $(id);
+    if (!el) return;
+    el.classList.toggle("active", id === activeId);
+  });
+}
+
 function localSearch(query, limit = 40) {
   const q = String(query || "").toLowerCase().trim();
   if (!q) return allItems.slice(0, 12);
@@ -108,6 +119,7 @@ function localSearch(query, limit = 40) {
 }
 
 async function searchCards() {
+  setActionActive("searchBtn");
   const query = $("question").value.trim();
   if (!query) return;
   $("status").textContent = "카드 검색 중...";
@@ -130,6 +142,7 @@ async function searchCards() {
 }
 
 async function askAI() {
+  setActionActive("askBtn");
   const query = $("question").value.trim();
   if (!query) return;
   $("status").textContent = "매뉴얼 DB 검색 후 AI 답변 생성 중...";
@@ -165,6 +178,7 @@ async function askAI() {
 $("askBtn").addEventListener("click", askAI);
 $("searchBtn").addEventListener("click", searchCards);
 $("clearBtn").addEventListener("click", () => {
+  setActionActive("clearBtn");
   $("question").value = "";
   $("status").textContent = "";
   $("answerBox").classList.add("hidden");
