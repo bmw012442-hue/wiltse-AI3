@@ -6,14 +6,13 @@
   <meta name="theme-color" content="#0f172a" />
   <title>ICU AI 업무 매뉴얼</title>
   <link rel="manifest" href="/manifest.json" />
-  <link rel="apple-touch-icon" href="/icon.svg" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <div>
       <h1>ICU AI 업무 매뉴얼</h1>
-      <p>매뉴얼 DB + GPT 기반 실무 검색</p>
+      <p>매뉴얼 DB + ChatGPT 기반 실무 검색</p>
     </div>
     <span class="pill" id="cardCount">loading</span>
   </header>
@@ -24,12 +23,39 @@
     </section>
 
     <section class="ask">
-      <textarea id="question" placeholder="예: 노르핀 mix 알려줘&#10;예: Day 업무 보여줘&#10;예: Night 업무 목록&#10;예: CRRT return 방법"></textarea>
+      <textarea id="question" placeholder="예: 노르핀 mix 알려줘&#10;예: E-cart 응급약물&#10;예: Night 업무 상세&#10;예: Lab bottle 채혈순서&#10;예: DKA protocol"></textarea>
       <div class="row">
         <button id="askBtn">AI 답변</button>
         <button id="searchBtn" class="secondary">카드 검색</button>
         <button id="clearBtn" class="secondary">초기화</button>
       </div>
+    </section>
+
+    <section class="section-title">
+      <h2>첫 화면 실무 메뉴</h2>
+      <p>원하는 항목을 누르면 바로 검색되고, 나온 카드는 클릭해서 상세내용을 열 수 있습니다.</p>
+    </section>
+
+    <section class="main-menu-grid" id="mainMenuGrid">
+      <button data-menu-q="응급상황 E-CART 응급약물 응급기구 응급간호 CPR 순서 방법 기록">응급상황<br><small>E-CART · 응급기구 · CPR</small></button>
+      <button data-menu-q="임상 약물 항생제 계열 수액 종류 적응증 자주 사용하는 약물">임상 약물<br><small>항생제 · 수액 · 자주 쓰는 약</small></button>
+      <button data-menu-q="마약 향정 마약 반환 잔량 보관 마약성 진통제">마약 & 향정<br><small>반환 · 잔량 · 진통제</small></button>
+      <button data-menu-q="의료장비 ventilator high flow CRRT infusion syringe pump 제세동기 EKG">의료장비<br><small>Vent · HFNC · CRRT · Pump</small></button>
+      <button data-menu-q="수혈 LAB 동의서 전처치 약물 수혈 TIP 기록 확인사항">수혈<br><small>Lab · 동의서 · 기록</small></button>
+      <button data-menu-q="검사 검체 혈액검사 참고치 의심질환 영상검사">검사/검체<br><small>Lab · Culture · 영상검사</small></button>
+      <button data-menu-q="dressing 각종 LINE drainage 종류 특징 drain 정리">Dressing / LINE<br><small>Drain · Line · 상처</small></button>
+      <button data-menu-q="DAY EVENING NIGHT 업무 상세 routine job 실무">DAY / EVENING / NIGHT<br><small>근무별 세부업무</small></button>
+      <button data-menu-q="CSR 물품 카운트 이름 생김새 멸균물품">CSR 물품 카운트<br><small>이름 · 생김새</small></button>
+      <button data-menu-q="다제내성감염균 VRE CRE CPO MRSA MSSA MRPA 적응 별 항생제 격리">다제내성감염균<br><small>VRE · CRE · MRSA</small></button>
+      <button data-menu-q="I O 섭취량 배설량 전해질 교정 K P Mg replacement">I & O<br><small>섭취량 · 배설량 · 전해질</small></button>
+      <button data-menu-q="Vital sign BP HR RR BT 활력징후">Vital sign<br><small>BP · HR · RR · BT</small></button>
+      <button data-menu-q="ABGA 혈액가스 분석 질환 pH PaCO2 HCO3">ABGA<br><small>혈액가스 · 질환</small></button>
+      <button data-menu-q="GCS Mental 사정 gcs tip seizure 종류 항경련제 신경계 증상 질환">GCS / Mental<br><small>Seizure · 항경련제</small></button>
+      <button data-menu-q="BST DM 정상 범위 상황대처 bst tip DM 약물 인슐린 종류 혈당 관리">BST / DM<br><small>혈당 · 인슐린 · DM약</small></button>
+      <button data-menu-q="질환별 정리 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 내분비계 다발성 질환">질환별 정리<br><small>계통별 ICU 질환</small></button>
+      <button data-menu-q="입퇴원 전원 전동 사망 입실 퇴실">입퇴원/전원/사망<br><small>입실 · 전동 · 사후처치</small></button>
+      <button data-menu-q="주치의 과별 특이사항 원장님 routine set order">주치의/과별 특이사항<br><small>과별 Routine</small></button>
+      <button data-menu-q="자주 찾는 검색 노르핀 CRRT CPR 수혈 Lab bottle DKA BST Night">자주 찾는 검색<br><small>빠른 검색 모음</small></button>
     </section>
 
     <section class="section-title">
@@ -39,7 +65,7 @@
     <section class="quick duty-grid">
       <button data-open-title="Day routine / 데이 업무">☀️ Day</button>
       <button data-open-title="Evening routine / 이브닝 업무">🌆 Evening</button>
-      <button data-open-title="Night routine / 나이트 업무">🌙 Night</button>
+      <button data-open-title="Night routine / 나이트 업무 상세">🌙 Night</button>
       <button data-open-title="간호액팅 스케줄링 기준">⏱ 스케줄링</button>
       <button data-open-title="Initial assessment / ICU 라운딩">👀 Initial</button>
       <button data-open-title="I/O 입력과 마감">💧 I/O</button>
@@ -57,10 +83,12 @@
     <section class="quick">
       <button data-q="노르핀 mix 알려줘">노르핀</button>
       <button data-q="CRRT return 방법">CRRT</button>
-      <button data-q="CPR 시 에피 몇 분마다?">CPR</button>
-      <button data-q="수혈 준비와 기록">수혈</button>
-      <button data-q="Suction 방법과 흡인압">Suction</button>
-      <button data-q="Foley 삽입 방법">Foley</button>
+      <button data-q="CPR 순서와 기록">CPR</button>
+      <button data-q="수혈 절차">수혈</button>
+      <button data-q="Lab bottle 종류와 채혈 순서">Lab bottle</button>
+      <button data-q="Night 업무 상세">Night</button>
+      <button data-q="DKA protocol">DKA</button>
+      <button data-q="BST sliding">BST</button>
     </section>
 
     <section id="status" class="status"></section>

@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.1.0-v11-source-enhanced",
+    "version": "1.4.0-v14-v11-main-menu-search-optimized-no-symbol",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -190,7 +190,11 @@
         "norepi",
         "승압제",
         "저혈압",
-        "shock"
+        "shock",
+        "노르에피",
+        "levophed",
+        "norepi mix",
+        "승압제 mix"
       ],
       "urgency": "urgent",
       "summary": "저혈압/쇼크 상황에서 사용하는 대표 승압제.",
@@ -1102,7 +1106,14 @@
         "액팅",
         "lab",
         "제세동기",
-        "BST 정도관리"
+        "BST 정도관리",
+        "야간업무",
+        "나이트업무",
+        "밤번",
+        "N duty",
+        "자정이후",
+        "채혈접수업무",
+        "식이입력"
       ],
       "urgency": "routine",
       "summary": "나이트 근무 전체 흐름과 자정 이후 점검/채혈/식이/I/O 업무.",
@@ -1775,7 +1786,12 @@
         "Plain",
         "SST",
         "EDTA",
-        "채혈순서"
+        "채혈순서",
+        "파노보",
+        "파랑노랑보라",
+        "PT tube",
+        "검체 bottle",
+        "ABGA syringe"
       ],
       "urgency": "routine",
       "summary": "Bottle별 검사 항목과 채혈 순서.",
@@ -2030,7 +2046,16 @@
         "인공호흡기",
         "circuit",
         "WFI",
-        "test lung"
+        "test lung",
+        "벤틸레이터",
+        "vent setting",
+        "alarm",
+        "high pressure",
+        "low pressure",
+        "PEEP",
+        "TV",
+        "RR",
+        "FiO2"
       ],
       "urgency": "urgent",
       "summary": "Vent circuit 연결과 기본 확인.",
@@ -2218,7 +2243,11 @@
         "흡인",
         "분비물",
         "ET suction",
-        "T-tube suction"
+        "T-tube suction",
+        "oral suction",
+        "sputum",
+        "가래",
+        "흡인압"
       ],
       "urgency": "urgent",
       "summary": "분비물 배출과 기도 유지를 위한 suction.",
@@ -2426,7 +2455,16 @@
         "A-PLT",
         "수혈기록지",
         "수혈 V/S",
-        "혈액요청서"
+        "혈액요청서",
+        "수혈 tip",
+        "수혈 전처치",
+        "수혈기록",
+        "수혈 확인",
+        "blood start",
+        "15분 V/S",
+        "수혈 부작용",
+        "혈액 불출",
+        "진검실"
       ],
       "urgency": "urgent",
       "summary": "수혈 준비, 불출, 시작, 기록, I/O 입력 절차.",
@@ -2898,7 +2936,16 @@
         "kit change",
         "filter",
         "TMP",
-        "access pressure"
+        "access pressure",
+        "씨알알티",
+        "circuit change",
+        "filter change",
+        "return blood",
+        "혈액재주입",
+        "kit 교체",
+        "CRRT 알람",
+        "TMP 상승",
+        "return pressure"
       ],
       "urgency": "urgent",
       "summary": "CRRT filter 압력 상승 또는 kit 교체 시 return/재시작.",
@@ -2952,7 +2999,13 @@
         "ROSC",
         "Lucas",
         "Ambu",
-        "에피"
+        "에피",
+        "심폐소생술",
+        "코드블루",
+        "compression",
+        "제세동",
+        "ambu bagging",
+        "CPR charting"
       ],
       "urgency": "emergency",
       "summary": "CPR 시 핵심 주기, 장비, 기록 체크리스트.",
@@ -5023,7 +5076,12 @@
         "6211",
         "6212",
         "마약장 6029",
-        "사회복지사 139방"
+        "사회복지사 139방",
+        "전화",
+        "원내 연락",
+        "부서 번호",
+        "6029",
+        "139"
       ],
       "urgency": "routine",
       "summary": "문서에 확인되는 내선번호와 원내 연락처 관리 카드.",
@@ -5195,7 +5253,13 @@
         "에토미데이트",
         "마그네슘",
         "칼슘",
-        "베카론"
+        "베카론",
+        "응급카트",
+        "emergency cart",
+        "code cart",
+        "E-cart 약물",
+        "ACLS 약물",
+        "응급약"
       ],
       "urgency": "emergency",
       "summary": "E-cart에서 자주 확인하는 응급약물 목록.",
@@ -5792,6 +5856,1157 @@
       "source_refs": [
         "사용자 제시 30개 카테고리"
       ]
+    },
+    {
+      "id": "MENU001",
+      "category": "응급상황",
+      "title": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR",
+      "aliases": [
+        "검색",
+        "응급",
+        "응급상황",
+        "E-CART",
+        "E cart",
+        "이카트",
+        "응급카트",
+        "응급약물",
+        "응급기구",
+        "응급간호",
+        "CPR",
+        "CPR 순서",
+        "CPR 방법",
+        "CPR 기록",
+        "code blue",
+        "코드블루",
+        "심정지",
+        "ROSC",
+        "에피",
+        "에피네프린",
+        "아트로핀",
+        "코다론",
+        "아데노신",
+        "비본",
+        "제세동",
+        "defib",
+        "ambu",
+        "I-gel",
+        "Lucas",
+        "기관삽관",
+        "intubation",
+        "airway",
+        "crash cart"
+      ],
+      "urgency": "routine",
+      "summary": "응급상황에서 빠르게 보는 E-CART 약물, 응급기구, 응급간호, CPR 순서/방법/기록.",
+      "indications": [],
+      "preparation": "emergency",
+      "steps": [
+        "E-CART 응급약물과 응급기구 위치를 확인한다.",
+        "CPR 발생 시 compression, airway, rhythm check, drug, record 역할을 나눈다.",
+        "Epinephrine, defib, airway, ROSC 시간을 기록한다.",
+        "응급상황 종료 후 사용 약품과 물품을 즉시 보충한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "응급상황",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU002",
+      "category": "임상 약물",
+      "title": "임상 약물: 항생제·수액·자주 사용하는 약물",
+      "aliases": [
+        "임상약물",
+        "약물",
+        "항생제",
+        "항생제 계열",
+        "antibiotics",
+        "AST",
+        "세파",
+        "타박탐",
+        "유박탐",
+        "맥스핌",
+        "반코",
+        "반코마이신",
+        "카바페넴",
+        "퀴놀론",
+        "수액",
+        "수액 종류",
+        "수액 적응증",
+        "fluid",
+        "N/S",
+        "NS",
+        "D/W",
+        "DW",
+        "5DW",
+        "5DS",
+        "Hartmann",
+        "하트만",
+        "알부민",
+        "라식스",
+        "만니톨",
+        "해열제",
+        "진통제",
+        "기관지확장제",
+        "네뷸약",
+        "PPI",
+        "위장약",
+        "기타 약물"
+      ],
+      "urgency": "routine",
+      "summary": "항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "항생제는 계열, AST 시행 여부, 신장기능, 배양검사 결과를 함께 확인한다.",
+        "수액은 N/S, D/W, 5DS 등 처방 목적과 적응증을 확인한다.",
+        "자주 쓰는 약물은 적응증, 금기, 부작용, 모니터링 항목을 함께 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "임상 약물",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU003",
+      "category": "마약·향정",
+      "title": "마약 & 향정: 반환·잔량보관·마약성 진통제",
+      "aliases": [
+        "마약",
+        "향정",
+        "마약장",
+        "마약 반환",
+        "마약 반납",
+        "잔량",
+        "잔량 보관",
+        "잔량반납",
+        "마약성 진통제",
+        "마약처방전",
+        "반납처방전",
+        "pink",
+        "white",
+        "몰핀",
+        "morphine",
+        "페치딘",
+        "pethidine",
+        "fentanyl",
+        "remifentanil",
+        "울티안",
+        "midazolam",
+        "미다컴",
+        "propofol",
+        "프레조폴",
+        "dexmedetomidine",
+        "덱스메딘",
+        "향정신성"
+      ],
+      "urgency": "routine",
+      "summary": "마약/향정의 수령, 보관, 잔량, 반환/반납, 마약성 진통제 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "수령 즉시 환자명, 약명, 용량, 파손 여부를 확인한다.",
+        "마약은 이중잠금 마약장에 보관하고 인계 시 함께 확인한다.",
+        "잔량은 주사기로 재고 빈 앰플과 함께 봉투에 보관/반납한다.",
+        "사용하지 않은 마약은 반납신청 후 약국에 직접 인계한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "마약·향정",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU004",
+      "category": "의료장비",
+      "title": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+      "aliases": [
+        "의료장비",
+        "장비",
+        "ventilator",
+        "vent",
+        "벤트",
+        "인공호흡기",
+        "high flow",
+        "HFNC",
+        "Airvo",
+        "하이플로우",
+        "CRRT",
+        "씨알알티",
+        "infusion pump",
+        "인퓨전펌프",
+        "syringe pump",
+        "시린지펌프",
+        "syriange pump",
+        "제세동기",
+        "defibrillator",
+        "EKG",
+        "ECG",
+        "monitor",
+        "모니터",
+        "alarm",
+        "알람",
+        "pump 사용법"
+      ],
+      "urgency": "routine",
+      "summary": "Ventilator, high flow, CRRT, infusion/syringe pump, 제세동기, EKG 장비 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "장비 적용 전 처방, 목적, setting을 확인한다.",
+        "전원, 배터리, 소모품, line 연결과 alarm을 확인한다.",
+        "장비 변경 시 간호기록, flow sheet, V/S 메모를 함께 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "의료장비",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU005",
+      "category": "수혈",
+      "title": "수혈: Lab·동의서·전처치·TIP·기록",
+      "aliases": [
+        "수혈",
+        "transfusion",
+        "수혈 LAB",
+        "수혈 lab",
+        "수혈 동의서",
+        "수혈 전처치",
+        "전처치 약물",
+        "수혈 TIP",
+        "수혈 팁",
+        "기록",
+        "확인사항",
+        "P-RBC",
+        "PRBC",
+        "FFP",
+        "PC",
+        "A-PLT",
+        "Cryo",
+        "혈액요청서",
+        "교차시험",
+        "cross matching",
+        "ABO",
+        "Rh",
+        "irregular",
+        "페니라민",
+        "해열제",
+        "수혈기록지",
+        "수혈부작용",
+        "수혈 V/S",
+        "혈액 불출"
+      ],
+      "urgency": "routine",
+      "summary": "수혈 준비, Lab, 동의서, 전처치 약물, 수혈 TIP, 기록과 확인사항 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "수혈 처방, 동의서, 혈액요청서, 검체 라벨을 확인한다.",
+        "수혈 전/15분 후/종료 시 V/S와 부작용을 확인한다.",
+        "수혈기록지 번호와 일자를 확인하고 스캔한다.",
+        "I/O에 혈액제제 종류와 용량을 입력한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "수혈",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU006",
+      "category": "검사·검체",
+      "title": "검사/검체: 혈액검사 참고치·의심질환·영상검사",
+      "aliases": [
+        "검사",
+        "검체",
+        "혈액검사",
+        "혈액 검사 참고치",
+        "참고치",
+        "정상범위",
+        "의심질환",
+        "영상검사",
+        "자주 시행하는 영상검사",
+        "CT",
+        "MRI",
+        "angio CT",
+        "Brain CT",
+        "Brain MRI",
+        "CAG",
+        "TFCA",
+        "DSA",
+        "PTA",
+        "TCD",
+        "EGD",
+        "ERCP",
+        "CFS",
+        "culture",
+        "blood culture",
+        "sputum",
+        "urine",
+        "RAT",
+        "CRE",
+        "CPO",
+        "Tip culture",
+        "검체통",
+        "채혈병"
+      ],
+      "urgency": "routine",
+      "summary": "검체 채취, 혈액검사 참고치, 의심질환, 자주 시행하는 영상검사 검색 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "검사 처방과 검체 용기, 채혈 순서를 확인한다.",
+        "검체는 환자 라벨과 용기를 대조하고 오염되지 않게 채취한다.",
+        "영상검사는 금식, 조영제, 신장기능, 동의서, IV line을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "검사·검체",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU007",
+      "category": "Dressing·Line",
+      "title": "Dressing / 각종 LINE / Drainage 정리",
+      "aliases": [
+        "dressing",
+        "드레싱",
+        "상처",
+        "일반상처",
+        "감염상처",
+        "수술상처",
+        "욕창",
+        "PCD",
+        "EVD",
+        "SDD",
+        "장루",
+        "line",
+        "라인",
+        "각종 LINE",
+        "C-line",
+        "A-line",
+        "PICC",
+        "HD cath",
+        "Mahurkar",
+        "Perm cath",
+        "drain",
+        "drainage",
+        "drainage 종류",
+        "drainage 특징",
+        "JP",
+        "Hemovac",
+        "L-tube",
+        "Foley",
+        "T-tube",
+        "tracheostomy"
+      ],
+      "urgency": "routine",
+      "summary": "Dressing, 각종 line, drain/drainage 종류와 특징을 정리하는 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "Dressing 전 처방과 주기를 확인한다.",
+        "Line은 삽입부위, lumen 수, 목적, dressing 날짜, 감염징후를 확인한다.",
+        "Drain은 위치, 양상, 양, 압력/자연배액 여부를 확인하고 I/O에 반영한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Dressing·Line",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU008",
+      "category": "근무업무",
+      "title": "DAY / EVENING / NIGHT 세부 업무",
+      "aliases": [
+        "DAY",
+        "day",
+        "데이",
+        "EVENING",
+        "evening",
+        "이브닝",
+        "NIGHT",
+        "night",
+        "나이트",
+        "근무",
+        "routine job",
+        "실무 업무",
+        "인계",
+        "라운딩",
+        "initial",
+        "final",
+        "식이",
+        "액팅",
+        "처방정리",
+        "Cadex",
+        "flow sheet",
+        "I/O",
+        "BST",
+        "제세동기 점검",
+        "채혈접수",
+        "환자분류",
+        "화재분류",
+        "약싸기"
+      ],
+      "urgency": "routine",
+      "summary": "Day/Evening/Night를 포괄적 설명이 아니라 실제 순서별 세부 업무로 찾는 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "Day: 물품카운트, E-cart, 인계, 라운딩, 8-9시 라벨/액팅, 회진, 익일 처방 확인",
+        "Evening: 익일 처방 확인, 당일/익일 처방 비교, Lab/Chest/검사 Cadex 정리",
+        "Night: initial 후 전산, 환자분류/화재분류, 식이, 액팅 스케줄링, 약 정리, dressing/kit, lab, 제세동기/BST QC"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "근무업무",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU009",
+      "category": "CSR 물품",
+      "title": "CSR 물품 카운트: 이름과 생김새",
+      "aliases": [
+        "CSR",
+        "CSR 물품",
+        "물품카운트",
+        "물품 카운트",
+        "물품",
+        "카운트",
+        "멸균물품",
+        "forcep",
+        "dressing set",
+        "foley set",
+        "suture set",
+        "소독물품",
+        "이름",
+        "생김새",
+        "모양",
+        "사진",
+        "물품 이름"
+      ],
+      "urgency": "routine",
+      "summary": "CSR 물품 이름과 생김새를 찾기 위한 시작 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "근무 시작 시 CSR 물품 카운트를 확인한다.",
+        "물품 이름, 용도, 위치, 유효기간을 함께 확인한다.",
+        "사진 자료가 있으면 카드별 이미지로 계속 보완한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "CSR 물품",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU010",
+      "category": "감염관리",
+      "title": "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA",
+      "aliases": [
+        "다제내성",
+        "감염균",
+        "다제내성감염균",
+        "VRE",
+        "CRE",
+        "CPO",
+        "MRSA",
+        "MSSA",
+        "MRPA",
+        "MDRO",
+        "격리",
+        "접촉주의",
+        "보호구",
+        "항생제",
+        "적응 별 항생제",
+        "균별 항생제",
+        "감염관리",
+        "배양검사",
+        "contact precaution"
+      ],
+      "urgency": "routine",
+      "summary": "VRE/CRE/CPO/MRSA/MSSA/MRPA와 격리, 항생제 관련 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "균명과 격리주의 종류를 확인한다.",
+        "보호구, 손위생, 환경소독, 전용물품 사용 여부를 확인한다.",
+        "배양검사와 항생제 처방을 함께 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "감염관리",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU011",
+      "category": "I&O·전해질",
+      "title": "I & O / 섭취량·배설량 / 전해질 교정",
+      "aliases": [
+        "I&O",
+        "I/O",
+        "IO",
+        "intake",
+        "output",
+        "섭취량",
+        "배설량",
+        "소변량",
+        "urine",
+        "drain",
+        "feeding",
+        "수액",
+        "infusion volume",
+        "fluid balance",
+        "전해질",
+        "전해질 교정",
+        "K",
+        "P",
+        "Mg",
+        "KCL",
+        "Phosten",
+        "MgCl",
+        "replacement",
+        "positive balance",
+        "negative balance"
+      ],
+      "urgency": "routine",
+      "summary": "섭취량/배설량, fluid balance, K/P/Mg 전해질 교정 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "Duty별 I/O 기준 시간을 확인한다.",
+        "Infusion pump volume, 식사/feeding, Foley, drain을 합산한다.",
+        "K/P/Mg replacement 처방과 주입시간을 확인한다.",
+        "과한 positive balance 또는 urine 감소 시 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "I&O·전해질",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU012",
+      "category": "Vital Sign",
+      "title": "Vital sign: BP·HR·RR·BT",
+      "aliases": [
+        "Vital sign",
+        "vital",
+        "V/S",
+        "활력징후",
+        "BP",
+        "혈압",
+        "HR",
+        "맥박",
+        "RR",
+        "호흡수",
+        "BT",
+        "체온",
+        "fever",
+        "hypotension",
+        "hypertension",
+        "tachycardia",
+        "bradycardia",
+        "SpO2",
+        "saturation"
+      ],
+      "urgency": "routine",
+      "summary": "BP, HR, RR, BT 변화와 상황대처 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "환자 baseline과 target을 확인한다.",
+        "BP/HR/RR/BT 이상 시 통증, 발열, 출혈, 약물, 산소, rhythm을 함께 확인한다.",
+        "약물 투여 전후 V/S와 effect를 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "Vital Sign",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU013",
+      "category": "ABGA",
+      "title": "ABGA: 혈액가스 분석과 질환",
+      "aliases": [
+        "ABGA",
+        "혈액가스",
+        "혈액가스 분석",
+        "arterial blood gas",
+        "pH",
+        "PaCO2",
+        "PaO2",
+        "HCO3",
+        "SaO2",
+        "lactate",
+        "acidosis",
+        "alkalosis",
+        "respiratory acidosis",
+        "metabolic acidosis",
+        "CO2 retention",
+        "hypoxia",
+        "산염기"
+      ],
+      "urgency": "routine",
+      "summary": "ABGA 채혈, 혈액가스 분석, 산염기 이상과 관련 질환을 찾는 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "A-line 또는 동맥혈로 채혈한다.",
+        "pH, PaCO2, HCO3, PaO2, lactate를 함께 본다.",
+        "CO2 retention, hypoxia, metabolic acidosis 등 상황을 담당의에게 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "ABGA",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU014",
+      "category": "신경계 사정",
+      "title": "GCS / Mental / Seizure / 항경련제",
+      "aliases": [
+        "GCS",
+        "GCS 사정",
+        "GCS tip",
+        "mental",
+        "멘탈",
+        "의식",
+        "LOC",
+        "motor",
+        "pupil",
+        "seizure",
+        "seizure 종류",
+        "경련",
+        "발작",
+        "항경련제",
+        "antiepileptic",
+        "Keppra",
+        "Valproate",
+        "Orfil",
+        "phenytoin",
+        "뇌압",
+        "IICP",
+        "neuro sign",
+        "신경계 증상",
+        "신경계 질환"
+      ],
+      "urgency": "routine",
+      "summary": "GCS 사정 tip, seizure 종류, 항경련제, 신경계 증상/질환 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "GCS eye/verbal/motor를 구분해 사정한다.",
+        "LOC, pupil, motor, seizure 여부를 함께 확인한다.",
+        "Seizure 발생 시 시간, 양상, 지속시간, 처치, 약물, 의식회복을 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "신경계 사정",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU015",
+      "category": "BST·DM",
+      "title": "BST / DM / 인슐린 / 혈당관리",
+      "aliases": [
+        "BST",
+        "DM",
+        "diabetes",
+        "혈당",
+        "BST 정상범위",
+        "정상 범위",
+        "저혈당",
+        "고혈당",
+        "상황대처",
+        "bst tip",
+        "insulin",
+        "인슐린",
+        "인슐린 종류",
+        "RI",
+        "Humulin",
+        "휴물린",
+        "sliding",
+        "DKA",
+        "OHA",
+        "경구혈당강하제",
+        "DM 약물",
+        "metformin",
+        "혈당관리"
+      ],
+      "urgency": "routine",
+      "summary": "DM, BST 정상범위, 상황대처, BST tip, DM 약물, 인슐린 종류와 혈당관리 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "BST 측정 시간과 식이/NPO 여부를 확인한다.",
+        "Sliding scale과 RI continuous 기준을 처방과 대조한다.",
+        "저혈당 시 병원 기준에 따라 즉시 처치하고 F/U BST를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "BST·DM",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU016",
+      "category": "질환별 정리",
+      "title": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성",
+      "aliases": [
+        "질환",
+        "질환별",
+        "질환별 정리",
+        "심혈관계",
+        "호흡기계",
+        "비뇨기계",
+        "신경계",
+        "소화기계",
+        "혈액",
+        "종양",
+        "혈액종양",
+        "내분비계",
+        "다발성 질환",
+        "CHF",
+        "MI",
+        "pneumonia",
+        "COPD",
+        "AKI",
+        "CKD",
+        "stroke",
+        "ICH",
+        "GI bleeding",
+        "sepsis",
+        "shock"
+      ],
+      "urgency": "routine",
+      "summary": "ICU에서 자주 만나는 질환을 계통별로 검색하기 위한 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "계통별 진단명과 주요 문제를 먼저 확인한다.",
+        "관련 V/S, lab, 영상, 약물, 처치, I/O를 연결해서 본다.",
+        "질환별 위험징후와 notify 기준을 정리한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "질환별 정리",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU017",
+      "category": "입퇴원·전원·사망",
+      "title": "입퇴원 / 전원 / 전동 / 사망 업무",
+      "aliases": [
+        "입퇴원",
+        "입원",
+        "퇴원",
+        "전원",
+        "전동",
+        "사망",
+        "입실",
+        "전실",
+        "응급실",
+        "외래",
+        "병동 전입",
+        "병동전입",
+        "퇴실",
+        "discharge",
+        "transfer",
+        "death",
+        "사후처치",
+        "영안실"
+      ],
+      "urgency": "routine",
+      "summary": "입실, 퇴원, 전동, 전원, 사망 시 필요한 실무 절차 검색 카드.",
+      "indications": [],
+      "preparation": "urgent",
+      "steps": [
+        "입실 시 모니터, V/S, line/tube/drain, 동의서, 지참약, 보호자 연락처를 확인한다.",
+        "전동/전원 시 인계서류, 약물, 검사결과, 산소/라인 상태를 확인한다.",
+        "사망 시 사망선고, 사후처치, 보호자 안내, 서류 절차를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "입퇴원·전원·사망",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU018",
+      "category": "주치의·과별",
+      "title": "주치의 / 과별 특이사항",
+      "aliases": [
+        "주치의",
+        "과별",
+        "과별 특이사항",
+        "원장님",
+        "원장님 routine",
+        "특이사항",
+        "NS",
+        "OS",
+        "내과",
+        "심장내과",
+        "신장내과",
+        "소화기내과",
+        "신경외과",
+        "정형외과",
+        "routine",
+        "set order",
+        "처방패턴",
+        "주치의별"
+      ],
+      "urgency": "routine",
+      "summary": "각과 및 주치의별 routine, set order, 특이 지시를 모아두는 카드.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "과별 선호 lab, 영상, dressing, 항생제, 항응고제, 식이 패턴을 확인한다.",
+        "원장님별 특이 지시는 인계와 카드에 계속 업데이트한다.",
+        "routine과 다른 처방은 담당의 지시를 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "주치의·과별",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
+    },
+    {
+      "id": "MENU019",
+      "category": "자주 찾는 검색",
+      "title": "자주 찾는 검색",
+      "aliases": [
+        "자주찾는",
+        "자주 찾는 검색",
+        "frequent",
+        "빠른검색",
+        "노르핀",
+        "CRRT",
+        "CPR",
+        "수혈",
+        "Night",
+        "Lab bottle",
+        "DKA",
+        "BST",
+        "마약",
+        "DNR",
+        "Vent",
+        "Suction",
+        "Foley",
+        "ABGA",
+        "응급상황",
+        "E-cart"
+      ],
+      "urgency": "routine",
+      "summary": "앱 첫 화면에서 가장 자주 찾는 검색어 모음.",
+      "indications": [],
+      "preparation": "routine",
+      "steps": [
+        "노르핀 mix, CRRT return, CPR, 수혈 절차, Night 업무, Lab bottle, DKA, BST sliding, 마약 반납, DNR을 빠르게 검색한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tags": [
+        "자주 찾는 검색",
+        "v14_v11_based_menu",
+        "search_optimized"
+      ],
+      "review": {
+        "status": "v14_v11_based_main_menu",
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+      },
+      "source_refs": [
+        "사용자 제시 V14 첫화면 카테고리"
+      ]
     }
   ],
   "final_review_note": {
@@ -5862,5 +7077,9 @@
       "동의서 종류",
       "원내 내선번호"
     ]
+  },
+  "v14_update": {
+    "summary": "V11 기반. 윌스 심볼 첫화면 제거. 요청한 첫화면 실무 메뉴, 메뉴 클릭 활성화, 검색어 alias 확장 적용.",
+    "card_count": 147
   }
 }
