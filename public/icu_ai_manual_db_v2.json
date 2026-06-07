@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.0.0-v10-master-30categories",
+    "version": "1.1.0-v11-source-enhanced",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -1091,7 +1091,7 @@
     {
       "id": "ROUTINE003",
       "category": "Routine/Night",
-      "title": "Night routine / 나이트 업무",
+      "title": "Night routine / 나이트 업무 상세",
       "aliases": [
         "Night",
         "나이트",
@@ -1100,42 +1100,48 @@
         "화재분류",
         "식이",
         "액팅",
-        "lab"
+        "lab",
+        "제세동기",
+        "BST 정도관리"
       ],
       "urgency": "routine",
-      "summary": "Night 근무 전체 흐름.",
+      "summary": "나이트 근무 전체 흐름과 자정 이후 점검/채혈/식이/I/O 업무.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "Initial 후 전산",
-        "환자분류/화재분류",
-        "식이 입력",
-        "간호액팅 스케줄링",
-        "PO/지참약/네뷸 챙기기",
-        "Dressing/Kit 교체 확인",
-        "당일/익일 처방 입력 및 비교",
-        "검사결과 확인",
-        "Final 전 라운딩 및 기록 정리"
+        "Initial 후 전산: 낙상·욕창·통증, Bundle, Flow sheet, 신체보호대 평가, I/O 확인",
+        "환자분류·화재분류 23:00 입력",
+        "개인별 식이입력에서 당일 식이 해제 후 익일 식이 체크",
+        "간호액팅 스케줄링: QD 9 / BID 9-21 / QID 6-12-18-23:59 / 항생제·오르필 TID 6-14-22 / 일반 TID 9-15-21 / Nebulizer 7-12-17-21",
+        "PO·지참약·nebulizer 라벨 확인 후 아침/점심/저녁 분류",
+        "Dressing, Kit 교체, BST 명단, 식이판, 방사선 worklist 확인",
+        "Cadex 기본간호 확인 후 dressing·kit 교체 대상 표시 및 기본간호 일자 수정",
+        "당일/익일 처방 입력 및 처방 비교, Chest AP portable 확인",
+        "검사결과 확인 후 필요 시 Noti",
+        "Final 전 line 상태, 수액, pump, drain, Foley, ventilator 상태 확인"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
-      "charting": [],
+      "charting": [
+        "Night 기준 Flow sheet는 00:00-05:59 시간대 확인",
+        "낙상·욕창·통증은 N 23:00 기준",
+        "I/O는 N 21:00-06:00 기준"
+      ],
       "io": [],
       "warnings": [
-        "처방/액팅 날짜 확인",
-        "BST/식이/방사선 worklist 확인"
+        "병원 최신 지침과 담당의 지시를 우선합니다."
       ],
       "related": [],
       "tags": [
         "Routine/Night",
-        "v8_final_reviewed"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 Routine Job / Night"
       ]
     },
     {
@@ -1756,49 +1762,52 @@
     },
     {
       "id": "LAB001",
-      "category": "검사/검체",
-      "title": "Lab bottle quick reference",
+      "category": "검사/Lab bottle",
+      "title": "Lab bottle 종류와 채혈 순서 상세",
       "aliases": [
-        "Lab",
-        "검체",
-        "Bottle",
+        "Lab bottle",
+        "채혈병",
+        "파랑",
+        "빨강",
+        "노랑",
+        "보라",
         "Sodium Citrate",
         "Plain",
         "SST",
         "EDTA",
-        "CBC",
-        "PT",
-        "D-dimer"
+        "채혈순서"
       ],
       "urgency": "routine",
-      "summary": "검체 bottle 색상별 항목과 채혈 순서.",
+      "summary": "Bottle별 검사 항목과 채혈 순서.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "파랑 Sodium Citrate: PT, aPTT, INR, D-dimer. 가장 먼저 채혈, 검정 화살표까지 채움",
-        "빨강 Plain: 수혈 전 피프렙, Vanco TDM, aspiration, cortisol",
-        "노랑 SST: Electrolyte, BUN/Cr, LFT, CRP, CK-MB, thyroid, Troponin, PCT",
-        "보라 EDTA: CBC, ESR, HbA1c, ACTH. 마지막 채혈"
+        "파랑 Sodium Citrate bottle/PT tube: PT, aPTT, INR, D-dimer. 항응고제 함유. 검정 화살표까지 정확히 채우고 가장 먼저 채혈한다.",
+        "빨강 Plain bottle: 수혈 전 피프렙, Vanco TDM, aspiration 검체, cortisol. 첨가제 없음.",
+        "노랑 SST bottle: Electrolyte, BUN/Cr, LFT, CRP, CK-MB, T3/T4, TSH, Troponin, Serology serum, PCT. 응고촉진제 함유.",
+        "보라 EDTA bottle: CBC, ESR, HbA1c, ACTH. EDTA 항응고제 함유, 가장 마지막 채혈.",
+        "파·노·보 3개 채혈 시 혈액 약 10ml 정도 준비.",
+        "라벨은 눈금 보이게 붙인다.",
+        "A-line/C-line에서 regurge 10ml 후 채혈하고 필요 시 flushing한다."
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "파랑 tube는 정확히 채워야 함",
-        "라벨은 눈금 보이게 붙임"
+        "파랑 tube는 정확히 채워야 하며 가장 먼저 채혈합니다."
       ],
       "related": [],
       "tags": [
-        "검사/검체",
-        "v8_final_reviewed"
+        "검사/Lab bottle",
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 Lab bottle"
       ]
     },
     {
@@ -2409,46 +2418,56 @@
     {
       "id": "TF002",
       "category": "수혈",
-      "title": "수혈 시행/기록",
+      "title": "수혈 절차 상세",
       "aliases": [
-        "수혈시작",
-        "15분",
-        "수혈종료",
-        "V/S",
-        "Blood I/O",
-        "수혈기록지"
+        "수혈",
+        "P-RBC",
+        "FFP",
+        "A-PLT",
+        "수혈기록지",
+        "수혈 V/S",
+        "혈액요청서"
       ],
       "urgency": "urgent",
-      "summary": "수혈 시작부터 종료까지 기록/모니터링.",
+      "summary": "수혈 준비, 불출, 시작, 기록, I/O 입력 절차.",
       "indications": [],
-      "preparation": [],
+      "preparation": [
+        "혈액요청서(EMR)",
+        "빨강 bottle 2개",
+        "보라 bottle 1개",
+        "수혈기록지",
+        "혈액박스"
+      ],
       "steps": [
-        "혈액정보 라벨을 수혈기록지에 부착",
-        "수혈 시작 전 V/S 확인",
-        "2인 확인 후 수혈 시작",
-        "수혈 시작, 15분 후, 종료 시 V/S 기록",
-        "수혈기록지 수혈번호/일자 확인 후 스캔",
-        "I/O에 blood 종류별 ml 입력"
+        "처방 확인 후 혈액요청서와 검체를 준비한다.",
+        "P-RBC + 교차시험 처방세트, ABO+Rh, irregular, 수혈용 추가 생성 확인",
+        "채혈자, 혈액요청서 이름, 검체 라벨을 대조한다.",
+        "혈액요청서와 검체를 고무줄로 묶어 진검실로 보낸다.",
+        "보낸 후 진검실에 연락해 확인을 요청한다.",
+        "P-RBC 불출 시 ice pack 포함 여부를 확인한다.",
+        "혈액정보 라벨을 수혈기록지에 붙인다.",
+        "수혈 시작, 15분 후, 종료 시 V/S와 간호기록/V/S 메모를 입력한다.",
+        "수혈기록지 수혈번호와 수혈일자를 확인 후 스캔한다.",
+        "I/O에 Blood 종류와 용량을 입력한다."
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "부작용 발생 시 즉시 중단, 정맥로 유지, 주치의/진검실 연락",
-        "수혈기록지와 간호기록 시간 일치"
+        "수혈 부작용 의심 시 즉시 중단, 정맥로 유지, 담당의와 진검실에 보고합니다."
       ],
       "related": [],
       "tags": [
         "수혈",
-        "v8_final_reviewed"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 수혈"
       ]
     },
     {
@@ -2871,15 +2890,15 @@
     {
       "id": "CRRT001",
       "category": "CRRT",
-      "title": "CRRT return / Kit change",
+      "title": "CRRT Return / Kit change 상세",
       "aliases": [
         "CRRT",
         "return",
         "리턴",
         "kit change",
         "filter",
-        "prefilter pressure",
-        "TMP"
+        "TMP",
+        "access pressure"
       ],
       "urgency": "urgent",
       "summary": "CRRT filter 압력 상승 또는 kit 교체 시 return/재시작.",
@@ -2887,40 +2906,38 @@
       "preparation": [
         "NS 500ml",
         "CRRT kit",
-        "Multibic",
-        "처방 mix 용액",
-        "Urine bag/kit bag 확인"
+        "처방 fluid",
+        "Urine bag/kit bag",
+        "Line clamp 확인"
       ],
       "steps": [
-        "Kit 교체 전 CRRT I/O 끊기",
-        "치료중단 선택",
-        "NS 500ml를 access line 3-way에 연결",
-        "3-way 방향 확인 후 혈액 재주입",
-        "Return 완료 후 환자 분리",
-        "새 kit setting 및 기능테스트/rinse",
-        "Pre line 빨간색, post line 파란색 연결",
-        "환자 연결 후 CRRT 재시작"
+        "Kit 교체 전 CRRT I/O를 끊는다.",
+        "치료중단 선택 후 return 준비",
+        "NS 500ml를 access line 3-way에 연결한다.",
+        "3-way 방향을 확인하고 혈액 재주입을 진행한다.",
+        "Return 완료 후 환자와 장비를 분리한다.",
+        "새 kit setting, 기능테스트, rinse를 진행한다.",
+        "Pre line 빨간색, post line 파란색 연결을 확인한다.",
+        "환자 연결 후 CRRT를 재시작하고 pressure와 alarm을 확인한다."
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "NS 500은 빠르게 들어갈 수 있어 앞에서 대기",
-        "BP 낮으면 UF 조정",
-        "카테터 문제 시 regurge/pushing 확인"
+        "NS 500은 빠르게 들어갈 수 있어 앞에서 대기합니다. BP 낮으면 UF 조정 여부를 확인합니다."
       ],
       "related": [],
       "tags": [
         "CRRT",
-        "v8_final_reviewed"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 CRRT"
       ]
     },
     {
@@ -3333,45 +3350,46 @@
     {
       "id": "ROUTINE018",
       "category": "Routine/제세동기",
-      "title": "제세동기 점검",
+      "title": "제세동기 점검 상세",
       "aliases": [
         "제세동기",
         "defibrillator",
-        "defib",
-        "E-cart",
-        "응급카트",
-        "shock"
+        "자가점검",
+        "manual defib",
+        "E-cart"
       ],
       "urgency": "routine",
-      "summary": "근무 중 제세동기 및 응급카트 점검 카드.",
+      "summary": "Night 자정 이후 제세동기 자가점검 절차.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "근무 시작 시 제세동기 전원/충전 상태를 확인한다.",
-        "패드, electrode, gel/pad, paper, cable 연결 상태를 확인한다.",
-        "E-cart 봉인/응급약품/소모품 상태를 확인한다.",
-        "이상 발견 시 즉시 charge nurse 또는 담당자에게 보고한다."
+        "제세동기 전원을 켠다.",
+        "설정 버튼을 누른다.",
+        "다이얼을 돌려 기타 사용자 테스트를 선택한다.",
+        "예 → 자가점검 → 시작 순서로 진행한다.",
+        "자가점검 출력물이 나오면 다이얼로 나간다.",
+        "다시 시작 → 예 → 매뉴얼 제세동 에너지 선택을 확인한다.",
+        "충전 후 제세동 손잡이 버튼을 눌러 J 확인한다.",
+        "출력물 2장에 이름과 날짜를 적어 붙인다."
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
-      "charting": [
-        "점검 시간, 이상 유무, 조치사항을 점검표 또는 병동 기준에 맞춰 기록한다."
-      ],
+      "charting": [],
       "io": [],
       "warnings": [
-        "제세동기 점검은 병동별 점검표와 최신 장비 매뉴얼을 우선합니다."
+        "제세동기 실제 shock 테스트는 병동 장비 점검 지침을 따릅니다."
       ],
       "related": [],
       "tags": [
         "Routine/제세동기",
-        "v10_master_30_categories"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "윌스 ICU AI 업무 매뉴얼 Routine Job / 자정 이후 제세동기"
       ]
     },
     {
@@ -4997,41 +5015,44 @@
     {
       "id": "INFO001",
       "category": "원내정보/전화번호",
-      "title": "원내 전화번호·내선번호",
+      "title": "원내 내선번호 관리",
       "aliases": [
-        "전화번호",
-        "내선",
+        "내선번호",
         "원내전화",
-        "부서연락처",
-        "연락망"
+        "전화번호",
+        "6211",
+        "6212",
+        "마약장 6029",
+        "사회복지사 139방"
       ],
       "urgency": "routine",
-      "summary": "자주 사용하는 원내 내선번호를 모아두는 카드.",
+      "summary": "문서에 확인되는 내선번호와 원내 연락처 관리 카드.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "ICU, 응급실, 영상의학과, 진단검사실, 약국, 원무, 영안실 등 자주 쓰는 번호를 병동 기준으로 등록한다.",
-        "야간/휴일 연락망이 별도로 있으면 구분해둔다.",
-        "변경된 번호는 즉시 업데이트한다."
+        "지참약 식별의뢰서 관련 번호: 6211, 6212",
+        "마약장 번호: 6029",
+        "DNR 서류 관련 사회복지사: 139방",
+        "그 외 ICU, ER, 진검실, 약국, 영상의학과, 원무, 영안실 번호는 병원 최신 연락망으로 보완"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "실제 번호는 병원 내부 최신 연락망을 확인해 입력해야 합니다."
+        "원내 내선번호는 변경 가능하므로 병원 최신 연락망 확인이 필요합니다."
       ],
       "related": [],
       "tags": [
         "원내정보/전화번호",
-        "v10_master_30_categories"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "윌스 ICU AI 업무 매뉴얼 지참약/마약/DNR"
       ]
     },
     {
@@ -5295,44 +5316,47 @@
     {
       "id": "CONSENT001",
       "category": "동의서",
-      "title": "동의서 작성·확인",
+      "title": "동의서 종류와 확인 상세",
       "aliases": [
         "동의서",
-        "consent",
         "수술동의서",
-        "시술동의서",
+        "PCA 동의서",
         "수혈동의서",
-        "DNR 동의서"
+        "신체보호대 동의서",
+        "DNR",
+        "Mahurkar",
+        "Perm cath"
       ],
       "urgency": "routine",
-      "summary": "수술/시술/수혈/DNR 등 동의서 확인.",
+      "summary": "ICU에서 자주 확인하는 동의서 종류와 확인 포인트.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "필요한 동의서 종류를 확인한다.",
-        "환자/보호자 설명 여부와 서명 누락 여부를 확인한다.",
-        "날짜, 시간, 대상자, 설명의, 보호자 관계를 확인한다.",
-        "검사/시술 전 동의서가 전산 또는 서류에 준비됐는지 확인한다.",
-        "미비 시 시행 전 담당자에게 확인한다."
+        "입원 시: 신체보호대 동의서, ICU 입원생활 안내문 확인",
+        "수술 전: 수술동의서, 수술표식/표식지, PCA 동의서 확인",
+        "수혈 전: 수혈동의서 및 혈액요청서 확인",
+        "DNR/연명의료: 별도서식 9, 10, 11, 13호 중 해당 서식 확인",
+        "투석용 catheter: Mahurkar와 Perm cath 동의서가 다름을 확인",
+        "검사/시술 전: 검사·시술 동의서, 조영제 관련 확인"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "동의서 세부 작성 기준은 병원 서식과 관련 법규를 우선합니다."
+        "서명, 날짜, 설명의, 보호자 관계 누락 여부를 시행 전 확인합니다."
       ],
       "related": [],
       "tags": [
         "동의서",
-        "v10_master_30_categories"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "윌스 ICU AI 업무 매뉴얼 Orientation/DNR/부착기구"
       ]
     },
     {
@@ -5543,114 +5567,124 @@
     {
       "id": "PROTO001",
       "category": "프로토콜/DKA",
-      "title": "DKA 프로토콜",
+      "title": "DKA protocol 상세",
       "aliases": [
         "DKA",
         "diabetic ketoacidosis",
-        "케톤산증",
-        "RI",
+        "RI continuous",
         "BST",
-        "전해질"
+        "케톤산증"
       ],
       "urgency": "urgent",
-      "summary": "DKA 환자 관리 시 확인할 핵심 흐름.",
+      "summary": "내과 DKA protocol 및 RI continuous 기준.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "BST, ABGA, electrolyte, ketone, hydration 상태를 확인한다.",
-        "RI continuous 처방과 수액 처방을 확인한다.",
-        "BST를 정해진 간격으로 측정하고 RI 속도를 조정한다.",
-        "K 등 전해질 보정 처방을 확인한다.",
-        "의식상태, 소변량, V/S 변화를 관찰한다."
+        "BST 200 이하로 감소할 때까지 BST q1h 확인, 이후 q2h 확인",
+        "BST >250: RI +1cc/hr",
+        "BST 150-250: 마지막 속도 그대로 유지하고 1시간 후 BST check",
+        "BST <150: 1시간 stop 후 다시 시작, 재시작 시 2cc/hr",
+        "BST <100: stop 유지",
+        "전해질과 수액 처방을 함께 확인한다."
       ],
       "dosage_or_mix": [
-        "기존 카드 기준: N/S 100cc + RI 100IU mix, 2cc/hr 시작. 실제 적용은 병원 프로토콜 우선"
+        "RI continuous: N/S 100cc + RI 100IU mix",
+        "2cc/hr로 시작"
       ],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "DKA 세부 알고리즘은 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+        "DKA 적용은 담당의 처방과 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [],
       "tags": [
         "프로토콜/DKA",
-        "v10_master_30_categories"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "업무 지침 매뉴얼 내과 DKA protocol"
       ]
     },
     {
       "id": "BST001",
-      "category": "BST Sling",
-      "title": "소화기·심장·신장내과 BST sliding",
+      "category": "BST Sliding",
+      "title": "내과·심장내과 RI sliding 상세",
       "aliases": [
-        "BST sling",
         "BST sliding",
-        "소화기내과",
+        "RI sliding",
+        "내과",
         "심장내과",
-        "신장내과",
-        "RI",
-        "혈당"
+        "저혈당",
+        "50DW"
       ],
-      "urgency": "routine",
-      "summary": "각과별 BST sliding 적용 확인 카드.",
+      "urgency": "urgent",
+      "summary": "내과/심장내과 BST sliding과 저혈당 처치 기준.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "과별 BST sliding scale 처방 여부를 확인한다.",
-        "식이/NPO/검사/시술 여부를 함께 확인한다.",
-        "BST 측정 시간과 insulin 투여 시간을 확인한다.",
-        "저혈당/고혈당 발생 시 병동 기준에 따라 보고한다."
+        "내과: 250<BST<299 RI 4unit",
+        "내과: 300<BST<349 RI 6unit",
+        "내과: 350<BST<399 RI 8unit",
+        "내과: BST 400 이상 RI 10unit",
+        "심장내과: BST 140-179 RI 2unit",
+        "심장내과: BST 180-220 RI 4unit",
+        "심장내과: BST 221-260 RI 6unit",
+        "심장내과: BST 261-300 RI 8unit",
+        "심장내과: BST 301-350 RI 10unit",
+        "심장내과: BST 351-400 RI 12unit",
+        "심장내과: BST >400 RI 14unit"
       ],
-      "dosage_or_mix": [],
+      "dosage_or_mix": [
+        "BST<70: 50% DW 100 중 30ml IV 후 30분 뒤 BST f/u",
+        "BST<50: 50% DW 100 중 60ml IV 후 30분 뒤 BST f/u"
+      ],
       "orders_or_emr": [],
       "charting": [],
       "io": [],
       "warnings": [
-        "각과별 sliding scale 수치는 처방과 병원 지침을 우선합니다."
+        "과별 sliding scale은 처방과 최신 병원 기준을 우선합니다."
       ],
       "related": [],
       "tags": [
-        "BST Sling",
-        "v10_master_30_categories"
+        "BST Sliding",
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "업무 지침 매뉴얼 RI sliding"
       ]
     },
     {
       "id": "PROTO002",
       "category": "프로토콜/DIC",
-      "title": "DIC 프로토콜",
+      "title": "DIC 검사·바코드·관리 상세",
       "aliases": [
         "DIC",
-        "disseminated intravascular coagulation",
+        "D-dimer",
         "PT",
         "aPTT",
-        "D-dimer",
+        "INR",
         "fibrinogen",
-        "platelet"
+        "DIC 바코드"
       ],
       "urgency": "urgent",
-      "summary": "DIC 의심 또는 진단 환자의 검사/수혈/출혈 관찰.",
+      "summary": "DIC 관련 lab 접수와 출혈 관찰.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "CBC, PT/aPTT, INR, D-dimer, fibrinogen 등 처방 검사를 확인한다.",
-        "출혈, 멍, oozing, drain 양상, 의식변화, V/S를 관찰한다.",
-        "혈액제제 처방(PRBC, FFP, platelet, cryo)을 확인한다.",
-        "침습적 처치 부위 출혈 여부를 확인한다.",
-        "검사 결과 악화 또는 출혈 시 즉시 보고한다."
+        "채혈접수업무에서 처방 목록 확인 후 채혈접수/바코드 발행",
+        "DIC는 바코드 재발행이 필요할 수 있으며 2개 출력 기준을 확인",
+        "PT/aPTT/INR, D-dimer 등 coagulation 검사를 확인",
+        "출혈, oozing, drain 양상, 멍, V/S 변화 확인",
+        "검사결과 이상 또는 출혈 시 담당의 Noti"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
@@ -5662,14 +5696,14 @@
       "related": [],
       "tags": [
         "프로토콜/DIC",
-        "v10_master_30_categories"
+        "v11_source_enhanced"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v11_source_enhanced",
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "윌스 ICU AI 업무 매뉴얼 Lab / DIC 바코드"
       ]
     },
     {
@@ -5812,5 +5846,21 @@
       "장비 사용법"
     ],
     "important_note": "내선번호, 각과 원장님별 세부 routine, 병원별 BST/DKA/DIC 세부 수치 등은 병원 최신 자료로 추가 보완 필요."
+  },
+  "v11_source_enhanced": {
+    "note": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기반으로 보강/교체",
+    "card_count": 128,
+    "enhanced_cards": [
+      "Night routine 상세",
+      "제세동기 점검",
+      "Lab bottle 종류와 채혈 순서",
+      "DKA protocol",
+      "RI sliding",
+      "DIC",
+      "CRRT Return",
+      "수혈 절차",
+      "동의서 종류",
+      "원내 내선번호"
+    ]
   }
 }
