@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>ICU AI 업무 매뉴얼</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div><h1>ICU AI 업무 매뉴얼</h1><p>매뉴얼 DB + ChatGPT 기반 실무 검색</p></div>
+    <span class="pill" id="cardCount">loading</span>
+  </header>
+  <main>
+    <section class="warning"><b>주의</b> 병원 매뉴얼 확인 보조용입니다. 실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선하세요.</section>
+    <section class="ask">
+      <textarea id="question" placeholder="예: 노르핀 mix 알려줘&#10;예: CRRT return 방법&#10;예: 수혈 부작용 발생하면 어떻게 해?"></textarea>
+      <div class="row"><button id="askBtn">AI 답변</button><button id="searchBtn" class="secondary">카드 검색</button><button id="clearBtn" class="secondary">초기화</button></div>
+    </section>
+    <section class="quick">
+      <button data-q="CPR 시 에피 몇 분마다?">CPR</button>
+      <button data-q="노르핀 mix 알려줘">노르핀</button>
+      <button data-q="CRRT return 방법">CRRT</button>
+      <button data-q="수혈 준비와 기록">수혈</button>
+      <button data-q="Suction 방법과 흡인압">Suction</button>
+      <button data-q="Foley 삽입 방법">Foley</button>
+    </section>
+    <section id="status" class="status"></section>
+    <section id="answerBox" class="answer hidden"><h2>AI 답변</h2><div id="answer"></div><h3>참고한 매뉴얼 카드</h3><div id="sources"></div></section>
+    <section><h2>검색 결과 카드</h2><div id="cards" class="cards"></div></section>
+  </main>
+  <script src="/data.js"></script><script src="/app.js"></script>
+</body>
+</html>
