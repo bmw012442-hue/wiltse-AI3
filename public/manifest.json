@@ -1,7 +1,7 @@
 {
-  "name": "윌스 ICU AI 업무 매뉴얼",
-  "short_name": "윌스ICU",
-  "description": "윌스 ICU 실무 매뉴얼 검색 웹앱",
+  "name": "ICU 업무메뉴얼",
+  "short_name": "ICU 업무메뉴얼",
+  "description": "ICU 업무메뉴얼 실무 검색 웹앱",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
