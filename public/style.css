@@ -142,3 +142,29 @@ header .brand p {
 .main-menu-grid button.active small {
   color:#dbeafe;
 }
+
+
+/* V21: 선택 색상을 검정 대신 부드러운 파란색으로 변경 */
+.ask .row button.active,
+.main-menu-grid button.active {
+  background:#2563eb;
+  color:#ffffff;
+  border-color:#2563eb;
+}
+.main-menu-grid button.active small {
+  color:#dbeafe;
+}
+
+/* V21: 좌측 상단 헤더 로고는 가로형 윌스기념병원 로고로 표시 */
+.brand-logo {
+  width:220px;
+  max-height:64px;
+  object-fit:contain;
+  background:rgba(255,255,255,.96);
+}
+@media (max-width:520px) {
+  .brand-logo {
+    width:132px;
+    max-height:48px;
+  }
+}

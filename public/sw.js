@@ -1,4 +1,4 @@
-const CACHE_NAME = "wiltse-icu-ai-v20";
+const CACHE_NAME = "wiltse-icu-ai-v21";
 const ASSETS = [
   "/",
   "/index.html",
@@ -9,7 +9,8 @@ const ASSETS = [
   "/icon-192.png",
   "/icon-512.png",
   "/apple-touch-icon.png",
-  "/wiltse_app_icon.png"
+  "/wiltse_app_icon.png",
+  "/wiltse_logo.png"
 ];
 
 self.addEventListener("install", event => {
