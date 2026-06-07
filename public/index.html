@@ -11,27 +11,85 @@
 </head>
 <body>
   <header>
-    <div><h1>ICU AI 업무 매뉴얼</h1><p>매뉴얼 DB + ChatGPT 기반 실무 검색</p></div>
+    <div>
+      <h1>ICU AI 업무 매뉴얼</h1>
+      <p>매뉴얼 DB + GPT 기반 실무 검색</p>
+    </div>
     <span class="pill" id="cardCount">loading</span>
   </header>
+
   <main>
-    <section class="warning"><b>주의</b> 병원 매뉴얼 확인 보조용입니다. 실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선하세요.</section>
+    <section class="warning">
+      <b>주의</b> 병원 매뉴얼 확인 보조용입니다. 실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선하세요.
+    </section>
+
     <section class="ask">
-      <textarea id="question" placeholder="예: 노르핀 mix 알려줘&#10;예: CRRT return 방법&#10;예: 수혈 부작용 발생하면 어떻게 해?"></textarea>
-      <div class="row"><button id="askBtn">AI 답변</button><button id="searchBtn" class="secondary">카드 검색</button><button id="clearBtn" class="secondary">초기화</button></div>
+      <textarea id="question" placeholder="예: 노르핀 mix 알려줘&#10;예: Day 업무 보여줘&#10;예: Night 업무 목록&#10;예: CRRT return 방법"></textarea>
+      <div class="row">
+        <button id="askBtn">AI 답변</button>
+        <button id="searchBtn" class="secondary">카드 검색</button>
+        <button id="clearBtn" class="secondary">초기화</button>
+      </div>
+    </section>
+
+    <section class="section-title">
+      <h2>근무별 바로가기</h2>
+      <p>Day / Evening / Night 업무 카드를 바로 열 수 있습니다.</p>
+    </section>
+    <section class="quick duty-grid">
+      <button data-open-title="Day routine / 데이 업무">☀️ Day</button>
+      <button data-open-title="Evening routine / 이브닝 업무">🌆 Evening</button>
+      <button data-open-title="Night routine / 나이트 업무">🌙 Night</button>
+      <button data-open-title="간호액팅 스케줄링 기준">⏱ 스케줄링</button>
+      <button data-open-title="Initial assessment / ICU 라운딩">👀 Initial</button>
+      <button data-open-title="I/O 입력과 마감">💧 I/O</button>
+    </section>
+
+    <section class="section-title">
+      <h2>실무 카테고리</h2>
+      <p>카테고리를 누르면 관련 카드가 나오고, 카드를 누르면 상세내용이 열립니다.</p>
+    </section>
+    <section class="quick category-grid" id="categoryButtons"></section>
+
+    <section class="section-title">
+      <h2>자주 찾는 검색</h2>
     </section>
     <section class="quick">
-      <button data-q="CPR 시 에피 몇 분마다?">CPR</button>
       <button data-q="노르핀 mix 알려줘">노르핀</button>
       <button data-q="CRRT return 방법">CRRT</button>
+      <button data-q="CPR 시 에피 몇 분마다?">CPR</button>
       <button data-q="수혈 준비와 기록">수혈</button>
       <button data-q="Suction 방법과 흡인압">Suction</button>
       <button data-q="Foley 삽입 방법">Foley</button>
     </section>
+
     <section id="status" class="status"></section>
-    <section id="answerBox" class="answer hidden"><h2>AI 답변</h2><div id="answer"></div><h3>참고한 매뉴얼 카드</h3><div id="sources"></div></section>
-    <section><h2>검색 결과 카드</h2><div id="cards" class="cards"></div></section>
+
+    <section id="answerBox" class="answer hidden">
+      <h2>AI 답변</h2>
+      <div id="answer"></div>
+      <h3>참고한 매뉴얼 카드</h3>
+      <div id="sources"></div>
+    </section>
+
+    <section>
+      <h2 id="cardsHeading">검색 결과 카드</h2>
+      <div id="cards" class="cards"></div>
+    </section>
   </main>
-  <script src="/data.js"></script><script src="/app.js"></script>
+
+  <dialog id="cardDialog">
+    <div class="dialog-head">
+      <div>
+        <h2 id="detailTitle"></h2>
+        <p id="detailMeta"></p>
+      </div>
+      <button id="closeDialog" class="secondary small">닫기</button>
+    </div>
+    <div id="detailBody" class="detail-body"></div>
+  </dialog>
+
+  <script src="/data.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>
