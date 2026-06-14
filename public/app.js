@@ -58,6 +58,41 @@ function renderDetailList(key, vals) {
   return `<section class="detail-section"><h4>${fieldLabels[key] || key}</h4><ul>${vals.map(v => `<li>${esc(v)}</li>`).join("")}</ul></section>`;
 }
 
+
+function renderTables(tables) {
+  if (!Array.isArray(tables) || tables.length === 0) return "";
+  return tables.map(t => `
+    <section class="detail-section table-section">
+      <h4>${esc(t.title || "표")}</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>${(t.headers || []).map(h => `<th>${esc(h)}</th>`).join("")}</tr>
+          </thead>
+          <tbody>
+            ${(t.rows || []).map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  `).join("");
+}
+
+function renderImages(images) {
+  if (!Array.isArray(images) || images.length === 0) return "";
+  return `<section class="detail-section image-section">
+    <h4>그림 / 참고 이미지</h4>
+    <div class="image-grid">
+      ${images.map(img => `
+        <figure>
+          <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" />
+          ${img.caption ? `<figcaption>${esc(img.caption)}</figcaption>` : ""}
+        </figure>
+      `).join("")}
+    </div>
+  </section>`;
+}
+
 function openCard(id) {
   const card = findById(id);
   if (!card) return;
@@ -67,6 +102,8 @@ function openCard(id) {
     <p class="summary">${esc(card.summary)}</p>
     ${renderDetailList("indications", card.indications)}
     ${renderDetailList("preparation", card.preparation)}
+    ${renderTables(card.tables)}
+    ${renderImages(card.images)}
     ${renderDetailList("steps", card.steps)}
     ${renderDetailList("dosage_or_mix", card.dosage_or_mix)}
     ${renderDetailList("orders_or_emr", card.orders_or_emr)}

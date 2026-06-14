@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.4.0-v14-v11-main-menu-search-optimized-no-symbol",
+    "version": "1.24.0-v24-menu-clean-media-support",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -91,7 +91,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG002",
@@ -134,7 +136,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG003",
@@ -177,7 +181,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG004",
@@ -236,7 +242,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG005",
@@ -284,7 +292,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG006",
@@ -325,7 +335,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG007",
@@ -368,7 +380,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG008",
@@ -408,7 +422,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG009",
@@ -448,7 +464,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG010",
@@ -489,7 +507,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG011",
@@ -532,7 +552,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG012",
@@ -574,7 +596,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG013",
@@ -614,7 +638,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG014",
@@ -664,7 +690,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG015",
@@ -706,7 +734,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG016",
@@ -745,7 +775,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG017",
@@ -784,7 +816,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG018",
@@ -821,7 +855,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG019",
@@ -866,7 +902,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG020",
@@ -911,7 +949,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG021",
@@ -955,7 +995,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG022",
@@ -1003,7 +1045,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼(교육전담)"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE001",
@@ -1050,7 +1094,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE002",
@@ -1090,7 +1136,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE003",
@@ -1153,7 +1201,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Routine Job / Night"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE004",
@@ -1198,7 +1248,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE005",
@@ -1251,7 +1303,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE006",
@@ -1297,7 +1351,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE007",
@@ -1339,7 +1395,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE008",
@@ -1380,7 +1438,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE009",
@@ -1424,7 +1484,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE010",
@@ -1466,7 +1528,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE011",
@@ -1507,7 +1571,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE012",
@@ -1553,7 +1619,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE013",
@@ -1594,7 +1662,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE014",
@@ -1639,7 +1709,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE015",
@@ -1682,7 +1754,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE016",
@@ -1724,7 +1798,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE017",
@@ -1769,7 +1845,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "LAB001",
@@ -1824,7 +1902,50 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Lab bottle"
-      ]
+      ],
+      "tables": [
+        {
+          "title": "Lab bottle 종류와 주요 검사",
+          "headers": [
+            "순서",
+            "Bottle",
+            "첨가제/특징",
+            "주요 검사",
+            "주의"
+          ],
+          "rows": [
+            [
+              "1",
+              "파랑 / PT tube",
+              "Sodium Citrate",
+              "PT, aPTT, INR, D-dimer",
+              "정확한 눈금까지 채우고 먼저 채혈"
+            ],
+            [
+              "2",
+              "빨강 / Plain",
+              "첨가제 없음",
+              "수혈 전 검사, Vanco TDM, aspiration 검체, cortisol",
+              "응고 후 검사"
+            ],
+            [
+              "3",
+              "노랑 / SST",
+              "응고촉진제",
+              "Electrolyte, BUN/Cr, LFT, CRP, CK-MB, T3/T4, TSH, Troponin, PCT",
+              "혈청검사 중심"
+            ],
+            [
+              "4",
+              "보라 / EDTA",
+              "EDTA 항응고제",
+              "CBC, ESR, HbA1c, ACTH",
+              "가장 마지막 채혈"
+            ]
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "id": "LAB002",
@@ -1868,7 +1989,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "LAB003",
@@ -1910,7 +2033,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "LAB004",
@@ -1949,7 +2074,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "LAB005",
@@ -1989,7 +2116,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT001",
@@ -2033,7 +2162,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT002",
@@ -2091,7 +2222,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT003",
@@ -2149,7 +2282,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT004",
@@ -2190,7 +2325,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT005",
@@ -2231,7 +2368,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT006",
@@ -2289,7 +2428,9 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06",
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT007",
@@ -2342,7 +2483,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "VENT008",
@@ -2389,7 +2532,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "TF001",
@@ -2442,7 +2587,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "TF002",
@@ -2506,7 +2653,39 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 수혈"
-      ]
+      ],
+      "tables": [
+        {
+          "title": "수혈 V/S 및 기록 포인트",
+          "headers": [
+            "시점",
+            "확인/기록"
+          ],
+          "rows": [
+            [
+              "수혈 전",
+              "동의서, 혈액요청서, 혈액정보, 환자확인, V/S"
+            ],
+            [
+              "시작 직후",
+              "부작용 증상 관찰"
+            ],
+            [
+              "15분 후",
+              "V/S, 발열/오한/발진/호흡곤란 확인"
+            ],
+            [
+              "종료 시",
+              "V/S, 수혈기록지, I/O blood 용량 입력"
+            ],
+            [
+              "부작용 의심",
+              "즉시 중단, 정맥로 유지, 담당의/진검실 보고"
+            ]
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "id": "TF003",
@@ -2550,7 +2729,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC001",
@@ -2607,7 +2788,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC002",
@@ -2661,7 +2844,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC003",
@@ -2718,7 +2903,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC004",
@@ -2770,7 +2957,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC005",
@@ -2828,7 +3017,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC006",
@@ -2875,7 +3066,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "BASIC007",
@@ -2923,7 +3116,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "CRRT001",
@@ -2985,7 +3180,39 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 CRRT"
-      ]
+      ],
+      "tables": [
+        {
+          "title": "CRRT Return / Kit change 핵심 확인",
+          "headers": [
+            "단계",
+            "확인사항"
+          ],
+          "rows": [
+            [
+              "중단 전",
+              "CRRT I/O 끊기, pressure/alarm 확인"
+            ],
+            [
+              "Return",
+              "NS 500ml 연결, 3-way 방향 확인, 혈액 재주입"
+            ],
+            [
+              "분리",
+              "Return 완료 후 환자와 장비 분리"
+            ],
+            [
+              "재시작",
+              "새 kit setting, 기능테스트, rinse, line 색상 확인"
+            ],
+            [
+              "관찰",
+              "BP, pressure, alarm, UF 상태 확인"
+            ]
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "id": "CPR001",
@@ -3047,7 +3274,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "NEURO001",
@@ -3092,7 +3321,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC001",
@@ -3146,7 +3377,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "LINE001",
@@ -3199,7 +3432,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SKIN001",
@@ -3247,7 +3482,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "OP001",
@@ -3301,7 +3538,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "OP002",
@@ -3353,7 +3592,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "OP003",
@@ -3398,7 +3639,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "신규(경력직) OJT 집중치료실"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE018",
@@ -3443,7 +3686,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Routine Job / 자정 이후 제세동기"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE019",
@@ -3488,7 +3733,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE020",
@@ -3533,7 +3780,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE021",
@@ -3579,7 +3828,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ROUTINE022",
@@ -3623,7 +3874,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ADM001",
@@ -3669,7 +3922,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ADM002",
@@ -3713,7 +3968,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ADM003",
@@ -3757,7 +4014,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "RECORD001",
@@ -3799,7 +4058,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ORDER001",
@@ -3843,7 +4104,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SAFE001",
@@ -3887,7 +4150,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS001",
@@ -3933,7 +4198,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS002",
@@ -3980,7 +4247,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS003",
@@ -4026,7 +4295,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS004",
@@ -4073,7 +4344,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS005",
@@ -4119,7 +4392,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS006",
@@ -4165,7 +4440,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS007",
@@ -4211,7 +4488,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRESS008",
@@ -4258,7 +4537,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC002",
@@ -4299,7 +4580,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC003",
@@ -4339,7 +4622,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC004",
@@ -4379,7 +4664,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC005",
@@ -4419,7 +4706,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC006",
@@ -4460,7 +4749,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC007",
@@ -4499,7 +4790,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC008",
@@ -4538,7 +4831,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC009",
@@ -4577,7 +4872,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC010",
@@ -4617,7 +4914,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC011",
@@ -4657,7 +4956,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC012",
@@ -4697,7 +4998,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC013",
@@ -4737,7 +5040,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROC014",
@@ -4777,7 +5082,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC001",
@@ -4819,7 +5126,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC002",
@@ -4859,7 +5168,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC003",
@@ -4899,7 +5210,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC004",
@@ -4939,7 +5252,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC005",
@@ -4980,7 +5295,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "SPEC006",
@@ -5020,7 +5337,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG023",
@@ -5063,7 +5382,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "INFO001",
@@ -5111,7 +5432,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 지참약/마약/DNR"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "EQUIP001",
@@ -5152,7 +5475,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "EQUIP002",
@@ -5193,7 +5518,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DRUG024",
@@ -5235,7 +5562,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ECART001",
@@ -5289,7 +5618,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ECART002",
@@ -5332,7 +5663,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "ECART003",
@@ -5375,7 +5708,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "CONSENT001",
@@ -5421,7 +5756,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Orientation/DNR/부착기구"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DEPT001",
@@ -5462,7 +5799,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DEPT002",
@@ -5503,7 +5842,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DEPT003",
@@ -5544,7 +5885,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DEPT004",
@@ -5585,7 +5928,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "DEPT005",
@@ -5626,7 +5971,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "PROTO001",
@@ -5672,7 +6019,35 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼 내과 DKA protocol"
-      ]
+      ],
+      "tables": [
+        {
+          "title": "DKA RI continuous 조절 기준",
+          "headers": [
+            "BST",
+            "조절"
+          ],
+          "rows": [
+            [
+              "> 250",
+              "RI +1cc/hr"
+            ],
+            [
+              "150-250",
+              "마지막 속도 유지, 1시간 후 BST check"
+            ],
+            [
+              "< 150",
+              "1시간 stop 후 2cc/hr로 재시작"
+            ],
+            [
+              "< 100",
+              "stop 유지"
+            ]
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "id": "BST001",
@@ -5724,7 +6099,89 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업무 지침 매뉴얼 RI sliding"
-      ]
+      ],
+      "tables": [
+        {
+          "title": "내과 RI Sliding",
+          "headers": [
+            "BST",
+            "RI"
+          ],
+          "rows": [
+            [
+              "250 < BST < 299",
+              "4 unit"
+            ],
+            [
+              "300 < BST < 349",
+              "6 unit"
+            ],
+            [
+              "350 < BST < 399",
+              "8 unit"
+            ],
+            [
+              "BST ≥ 400",
+              "10 unit"
+            ]
+          ]
+        },
+        {
+          "title": "심장내과 RI Sliding",
+          "headers": [
+            "BST",
+            "RI"
+          ],
+          "rows": [
+            [
+              "140-179",
+              "2 unit"
+            ],
+            [
+              "180-220",
+              "4 unit"
+            ],
+            [
+              "221-260",
+              "6 unit"
+            ],
+            [
+              "261-300",
+              "8 unit"
+            ],
+            [
+              "301-350",
+              "10 unit"
+            ],
+            [
+              "351-400",
+              "12 unit"
+            ],
+            [
+              "> 400",
+              "14 unit"
+            ]
+          ]
+        },
+        {
+          "title": "저혈당 처치",
+          "headers": [
+            "BST",
+            "처치"
+          ],
+          "rows": [
+            [
+              "< 70",
+              "50% DW 100 중 30ml IV 후 30분 뒤 BST f/u"
+            ],
+            [
+              "< 50",
+              "50% DW 100 중 60ml IV 후 30분 뒤 BST f/u"
+            ]
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "id": "PROTO002",
@@ -5768,7 +6225,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Lab / DIC 바코드"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "EMR001",
@@ -5811,7 +6270,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "EQUIP003",
@@ -5855,7 +6316,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU001",
@@ -5925,7 +6388,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU002",
@@ -5997,7 +6462,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU003",
@@ -6061,7 +6528,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU004",
@@ -6123,7 +6592,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU005",
@@ -6189,7 +6660,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU006",
@@ -6257,7 +6730,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU007",
@@ -6323,7 +6798,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU008",
@@ -6387,7 +6864,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU009",
@@ -6440,7 +6919,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU010",
@@ -6495,7 +6976,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU011",
@@ -6557,7 +7040,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU012",
@@ -6612,7 +7097,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU013",
@@ -6665,7 +7152,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU014",
@@ -6725,7 +7214,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU015",
@@ -6784,7 +7275,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU016",
@@ -6844,7 +7337,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU017",
@@ -6898,7 +7393,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
+      ],
+      "tables": [],
+      "images": []
     },
     {
       "id": "MENU018",
@@ -6952,61 +7449,9 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
-      ]
-    },
-    {
-      "id": "MENU019",
-      "category": "자주 찾는 검색",
-      "title": "자주 찾는 검색",
-      "aliases": [
-        "자주찾는",
-        "자주 찾는 검색",
-        "frequent",
-        "빠른검색",
-        "노르핀",
-        "CRRT",
-        "CPR",
-        "수혈",
-        "Night",
-        "Lab bottle",
-        "DKA",
-        "BST",
-        "마약",
-        "DNR",
-        "Vent",
-        "Suction",
-        "Foley",
-        "ABGA",
-        "응급상황",
-        "E-cart"
       ],
-      "urgency": "routine",
-      "summary": "앱 첫 화면에서 가장 자주 찾는 검색어 모음.",
-      "indications": [],
-      "preparation": "routine",
-      "steps": [
-        "노르핀 mix, CRRT return, CPR, 수혈 절차, Night 업무, Lab bottle, DKA, BST sliding, 마약 반납, DNR을 빠르게 검색한다."
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [],
-      "io": [],
-      "warnings": [
-        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
-      ],
-      "related": [],
-      "tags": [
-        "자주 찾는 검색",
-        "v14_v11_based_menu",
-        "search_optimized"
-      ],
-      "review": {
-        "status": "v14_v11_based_main_menu",
-        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
-      },
-      "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
-      ]
+      "tables": [],
+      "images": []
     }
   ],
   "final_review_note": {
@@ -7081,5 +7526,13 @@ window.ICU_MANUAL_DB = {
   "v14_update": {
     "summary": "V11 기반. 윌스 심볼 첫화면 제거. 요청한 첫화면 실무 메뉴, 메뉴 클릭 활성화, 검색어 alias 확장 적용.",
     "card_count": 147
+  },
+  "v24_update": {
+    "summary": "실무 메뉴에서 자주 찾는 검색 삭제, 카드 상세창 표/그림 표시 기능 추가, 주요 카드 표 데이터 추가",
+    "card_count": 146,
+    "media_support": {
+      "tables": "card.tables 배열이 있으면 상세창에 표로 표시",
+      "images": "card.images 배열에 src/alt/caption을 넣으면 상세창에 그림 표시"
+    }
   }
 };

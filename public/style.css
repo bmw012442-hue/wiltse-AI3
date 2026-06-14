@@ -168,3 +168,53 @@ header .brand p {
     max-height:48px;
   }
 }
+
+
+/* V24: 카드 상세창 표/그림 표시 */
+.table-wrap {
+  width:100%;
+  overflow-x:auto;
+}
+.table-section table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+}
+.table-section th,
+.table-section td {
+  border:1px solid #cbd5e1;
+  padding:8px 9px;
+  text-align:left;
+  vertical-align:top;
+  line-height:1.35;
+}
+.table-section th {
+  background:#eff6ff;
+  color:#1e3a8a;
+  font-weight:800;
+  white-space:nowrap;
+}
+.image-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+  gap:10px;
+  padding:12px;
+}
+.image-grid figure {
+  margin:0;
+  border:1px solid #e2e8f0;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+}
+.image-grid img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+.image-grid figcaption {
+  padding:8px 10px;
+  color:#475569;
+  font-size:12px;
+  line-height:1.35;
+}
