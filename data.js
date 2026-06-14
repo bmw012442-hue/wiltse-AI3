@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.25.0-v25-remove-frequent-search-main-menu",
+    "version": "1.27.0-v27-table-image-kept",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -3880,8 +3880,8 @@ window.ICU_MANUAL_DB = {
     },
     {
       "id": "ADM001",
-      "category": "입퇴원/입실",
-      "title": "입실 업무: 응급실·외래·병동 전입",
+      "category": "입원·전입",
+      "title": "ICU 입원 시 절차 / 신환 전입 역할분담",
       "aliases": [
         "입실",
         "전입",
@@ -3889,41 +3889,103 @@ window.ICU_MANUAL_DB = {
         "외래",
         "병동",
         "ICU admission",
-        "신환"
+        "신환",
+        "입원 시 절차",
+        "ER ICU",
+        "GW ICU",
+        "간호정보조사",
+        "손목팔찌",
+        "화재 3군",
+        "화재스티커",
+        "중앙모니터",
+        "병록번호",
+        "stand by",
+        "Screen setup",
+        "multi bed",
+        "tile layout",
+        "RAT",
+        "VRE",
+        "CRE",
+        "CPO",
+        "MRSA",
+        "MSSA",
+        "보호자 전화번호",
+        "AI trics",
+        "입원 안내문",
+        "자가약",
+        "지참약 식별",
+        "입실시간"
       ],
-      "urgency": "urgent",
-      "summary": "ICU 입실 시 초기 세팅과 전산 입력 체크리스트.",
+      "urgency": "routine",
+      "summary": "신환 또는 전입 환자 ICU 입실 시 모니터 세팅, 감염검사 확인, 보호자 안내, 초기평가, 역할분담 절차.",
       "indications": [],
       "preparation": [],
       "steps": [
-        "입실 경로와 환자 기본정보를 확인한다.",
-        "모니터 연결, V/S 측정, 산소/라인/배액관 상태를 확인한다.",
-        "의식상태, 통증, 낙상, 욕창, 보호대 필요성을 평가한다.",
-        "입실 관련 동의서, 보호자 연락처, 지참약 여부를 확인한다.",
-        "입실 처방, 검사, 수액, 약물, 식이, 격리 여부를 확인한다."
+        "손목 팔찌 확인 후 화재 3군 스티커를 적용한다.",
+        "중앙모니터에 병록번호와 환자명을 입력하고 standby 상태로 세팅한다.",
+        "중앙모니터 설정에서 Screen setup → multi bed → tile layout을 확인한다.",
+        "ECG, RR, NIBP, SpO2 모니터링 위치와 연결 상태를 확인한다.",
+        "환자가 도착하면 담당 간호사는 보호자에게 간호정보조사를 시행한다.",
+        "ER/GW에서 ICU로 올 때 RAT, VRE, CRE, CPO, MRSA/MSSA 검사 시행 여부를 확인하고 특이사항에 메모한다.",
+        "PCI, Coil embolization 제외하고 보호자 2인 전화번호를 메모한다.",
+        "간호정보조사, 낙상 예방확인서, 신체보호대 동의서, AI trics 동의 여부를 확인한다.",
+        "입원 안내문과 물품 안내문을 출력하고 보호자에게 설명한다.",
+        "자가약이 있으면 식별 의뢰 후 지참약 관리 의뢰서를 인쇄한다.",
+        "낙상, 욕창, 통증 초기평가, Bundle, 간호정보조사는 입실 시간 기준으로 정리한다."
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
       "charting": [
-        "입실 시간, 입실 경로, 환자 상태, line/tube/drain, 보호자 안내 내용을 기록한다."
+        "AI trics 동의 시 간호기록: AI trics monitoring 중임.",
+        "응급실 간호기록지의 ICU 보낸 차팅 시간 기준으로 입실시간을 확인한다.",
+        "입실 후 간호기록, 기본간호, Flow sheet를 정리한다."
       ],
       "io": [],
       "warnings": [
-        "병원 최신 지침과 담당의 지시를 우선합니다."
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [],
       "tags": [
         "입퇴원/입실",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "입원·전입",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
       ],
       "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
       ],
-      "tables": [],
+      "tables": [
+        {
+          "title": "신환 입원 / 전입 시 역할분담",
+          "headers": [
+            "역할",
+            "업무"
+          ],
+          "rows": [
+            [
+              "담당 간호사",
+              "환자 전체 사정, EMR, 간호정보조사, 자가약 확인, 동의서, 물품 안내, 라벨/검체 바코드 출력, 담당 환자 액팅"
+            ],
+            [
+              "나머지 근무자",
+              "환자 정리, line, 배액관, Foley, 욕창 포함 피부상태 확인 후 담당에게 전달"
+            ],
+            [
+              "인계 정리",
+              "ICU flowsheet(new) 기반 인계, NS/NR 환자는 GCS·pupil qhr 사정 기입"
+            ],
+            [
+              "요약/Cadex",
+              "당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성"
+            ]
+          ]
+        }
+      ],
       "images": []
     },
     {
@@ -6357,7 +6419,9 @@ window.ICU_MANUAL_DB = {
         "기관삽관",
         "intubation",
         "airway",
-        "crash cart"
+        "crash cart",
+        "Ambu",
+        "CPR 모니터링 기록지"
       ],
       "urgency": "routine",
       "summary": "응급상황에서 빠르게 보는 E-CART 약물, 응급기구, 응급간호, CPR 순서/방법/기록.",
@@ -6432,7 +6496,11 @@ window.ICU_MANUAL_DB = {
         "네뷸약",
         "PPI",
         "위장약",
-        "기타 약물"
+        "기타 약물",
+        "AST 유무",
+        "항생제 AST",
+        "투약시간",
+        "QD BID TID QID"
       ],
       "urgency": "routine",
       "summary": "항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드.",
@@ -6562,7 +6630,12 @@ window.ICU_MANUAL_DB = {
         "모니터",
         "alarm",
         "알람",
-        "pump 사용법"
+        "pump 사용법",
+        "Infusion pump B.Braun",
+        "pump alarm",
+        "Low battery",
+        "Occlusion",
+        "Air alarm"
       ],
       "urgency": "routine",
       "summary": "Ventilator, high flow, CRRT, infusion/syringe pump, 제세동기, EKG 장비 검색 카드.",
@@ -6629,7 +6702,10 @@ window.ICU_MANUAL_DB = {
         "수혈기록지",
         "수혈부작용",
         "수혈 V/S",
-        "혈액 불출"
+        "혈액 불출",
+        "수혈 filter",
+        "혈액제제",
+        "RBC PC APLT FFP Cryo"
       ],
       "urgency": "routine",
       "summary": "수혈 준비, Lab, 동의서, 전처치 약물, 수혈 TIP, 기록과 확인사항 검색 카드.",
@@ -6700,7 +6776,11 @@ window.ICU_MANUAL_DB = {
         "CPO",
         "Tip culture",
         "검체통",
-        "채혈병"
+        "채혈병",
+        "ABGA",
+        "CT 조영제",
+        "MRI 조영제",
+        "영상검사 준비"
       ],
       "urgency": "routine",
       "summary": "검체 채취, 혈액검사 참고치, 의심질환, 자주 시행하는 영상검사 검색 카드.",
@@ -6768,7 +6848,12 @@ window.ICU_MANUAL_DB = {
         "L-tube",
         "Foley",
         "T-tube",
-        "tracheostomy"
+        "tracheostomy",
+        "소독제",
+        "상처 소독",
+        "장루 dressing",
+        "EVD bag 소독",
+        "PCD dressing"
       ],
       "urgency": "routine",
       "summary": "Dressing, 각종 line, drain/drainage 종류와 특징을 정리하는 카드.",
@@ -6834,7 +6919,11 @@ window.ICU_MANUAL_DB = {
         "채혈접수",
         "환자분류",
         "화재분류",
-        "약싸기"
+        "약싸기",
+        "입원 시 절차",
+        "initial 후 전산",
+        "투약시간",
+        "교체주기"
       ],
       "urgency": "routine",
       "summary": "Day/Evening/Night를 포괄적 설명이 아니라 실제 순서별 세부 업무로 찾는 카드.",
@@ -7009,7 +7098,9 @@ window.ICU_MANUAL_DB = {
         "MgCl",
         "replacement",
         "positive balance",
-        "negative balance"
+        "negative balance",
+        "I/O 마감",
+        "HD I/O"
       ],
       "urgency": "routine",
       "summary": "섭취량/배설량, fluid balance, K/P/Mg 전해질 교정 검색 카드.",
@@ -7363,7 +7454,11 @@ window.ICU_MANUAL_DB = {
         "transfer",
         "death",
         "사후처치",
-        "영안실"
+        "영안실",
+        "전동간호기록",
+        "가퇴원",
+        "이동서식",
+        "퇴원처방"
       ],
       "urgency": "routine",
       "summary": "입실, 퇴원, 전동, 전원, 사망 시 필요한 실무 절차 검색 카드.",
@@ -7452,6 +7547,2292 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": []
+    },
+    {
+      "id": "EQUIP031",
+      "category": "의료장비/Infusion Pump",
+      "title": "Infusion pump B.Braun 사용법과 알람 대처",
+      "aliases": [
+        "infusion pump",
+        "인퓨전펌프",
+        "B.Braun",
+        "B braun",
+        "pump alarm",
+        "Low battery",
+        "Occlusion",
+        "Air",
+        "Door",
+        "Complete",
+        "수액펌프",
+        "주입속도",
+        "주입용량"
+      ],
+      "urgency": "routine",
+      "summary": "B.Braun infusion pump 기본 사용 순서와 주요 알람별 대처.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "지정된 수액세트를 fluid에 연결하고 air가 없도록 통과시킨다.",
+        "전원을 켜고 infusion pump의 튜빙 클램프를 연다.",
+        "주입세트를 pump 전면 door에 끼지 않게 위아래 방향을 확인해 고정한다.",
+        "전면 door를 닫고 주입 속도와 용량을 선택한다.",
+        "클램프를 열고 start를 누른다.",
+        "주입 종료 시 수액세트를 클램핑한 상태에서 door를 연다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "Alarm 발생 시 stop을 누른 뒤 수액세트를 클램핑하고 원인 해결 후 사용한다.",
+        "Occlusion은 line clamp, 3-way, 조절기 잠김, IV line function을 확인한다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "Infusion pump 알람 및 대처",
+          "headers": [
+            "알람",
+            "의미",
+            "대처"
+          ],
+          "rows": [
+            [
+              "Low battery",
+              "배터리 잔량 30분 이내",
+              "전원/배터리 연결"
+            ],
+            [
+              "Occlusion",
+              "라인 꼬임, 장착 오류, 바늘/3-way/조절기 막힘",
+              "Line clamp, 3-way 방향, IV function 확인"
+            ],
+            [
+              "Air",
+              "Air sensor가 공기 감지 또는 수액 종료",
+              "Air 제거, 수액 잔량 확인"
+            ],
+            [
+              "Door",
+              "주입 중 door open",
+              "Door 재장착 후 재시작"
+            ],
+            [
+              "Complete",
+              "총 주입 예정량 완료",
+              "처방 확인 후 종료 또는 추가 설정"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "의료장비/Infusion Pump",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ROUTINE030",
+      "category": "Routine/교체주기",
+      "title": "ICU 교체 주기 정리",
+      "aliases": [
+        "교체주기",
+        "교체 주기",
+        "Q-syte",
+        "q site",
+        "nebulizer",
+        "vent circuit",
+        "박테리아 필터",
+        "엔코",
+        "HFNC",
+        "CRRT kit",
+        "IV",
+        "A-line kit",
+        "C-line dx",
+        "PICC dx",
+        "closed suction catheter",
+        "feeding bag",
+        "T-tube portex",
+        "수요일",
+        "일요일",
+        "extension",
+        "3-way"
+      ],
+      "urgency": "routine",
+      "summary": "ICU에서 자주 확인하는 소모품, line, circuit, dressing 교체 주기.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "수요일/일요일 Night 근무자가 extension, 3-way, Q-syte 교체를 확인한다.",
+        "교체일자는 Cadex/기본간호/부착기구/차팅에 맞춰 정리한다.",
+        "감염징후, oozing, contamination이 있으면 정해진 주기보다 먼저 교체 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "ICU 교체 주기",
+          "headers": [
+            "항목",
+            "교체 주기"
+          ],
+          "rows": [
+            [
+              "Q-syte",
+              "3일"
+            ],
+            [
+              "Nebulizer",
+              "7일"
+            ],
+            [
+              "Vent circuit",
+              "14일"
+            ],
+            [
+              "박테리아 필터",
+              "3일"
+            ],
+            [
+              "엔코",
+              "7일"
+            ],
+            [
+              "HFNC",
+              "14일"
+            ],
+            [
+              "CRRT kit",
+              "3일"
+            ],
+            [
+              "IV",
+              "4일"
+            ],
+            [
+              "A-line kit",
+              "7일"
+            ],
+            [
+              "C-line / PICC / A-line dressing",
+              "7일"
+            ],
+            [
+              "L-tube",
+              "1개월"
+            ],
+            [
+              "Closed suction catheter",
+              "3일"
+            ],
+            [
+              "Feeding bag 보관",
+              "7일"
+            ],
+            [
+              "T-tube portex",
+              "14일"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "Routine/교체주기",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ROUTINE031",
+      "category": "Routine/투약시간",
+      "title": "약물 투약 시간과 Feeding 시간",
+      "aliases": [
+        "투약시간",
+        "약물 시간",
+        "QD",
+        "BID",
+        "TID",
+        "QID",
+        "nebulizer 시간",
+        "콜리스틴",
+        "Feeding 시간",
+        "경관식",
+        "약 시간",
+        "간호액팅 스케줄링"
+      ],
+      "urgency": "routine",
+      "summary": "QD/BID/TID/QID 투약 시간과 nebulizer, feeding 기본 시간.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "처방 용법에 맞춰 간호액팅 스케줄을 익일까지 확인한다.",
+        "항생제/Orfil 등 예외 스케줄은 과별/처방별 지시를 우선한다.",
+        "경관식 환자는 저녁 식이 신청 시 익일 아침 분량을 remark로 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "약물 투약 시간",
+          "headers": [
+            "용법",
+            "시간"
+          ],
+          "rows": [
+            [
+              "QD",
+              "09:00"
+            ],
+            [
+              "BID",
+              "09:00 / 21:00"
+            ],
+            [
+              "TID",
+              "06:00 / 14:00 / 22:00"
+            ],
+            [
+              "QID",
+              "06:00 / 12:00 / 18:00 / 23:59"
+            ],
+            [
+              "Nebulizer 4회",
+              "07:00 / 12:00 / 17:00 / 21:00"
+            ],
+            [
+              "콜리스틴",
+              "07:00 / 17:00"
+            ]
+          ]
+        },
+        {
+          "title": "Feeding 시간",
+          "headers": [
+            "구분",
+            "시간/메모"
+          ],
+          "rows": [
+            [
+              "Feeding",
+              "07:30 / 12:00 / 17:00"
+            ],
+            [
+              "경관식",
+              "저녁 식이 2개 신청, remark에 익일 아침 분량 메모"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "Routine/투약시간",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "PREP001",
+      "category": "준비물/시술·배액관",
+      "title": "상황별 준비물: irrigation, C-line, suture, sputum cx, CTD, EVD",
+      "aliases": [
+        "상황별 준비",
+        "준비물",
+        "Bladder irrigation",
+        "Subclavian insertion",
+        "C-line insertion",
+        "suture 준비",
+        "sputum cx",
+        "CTD insertion",
+        "NS OP drain",
+        "EVD 배액관",
+        "tip cx",
+        "배액관 제거",
+        "배액관 삽입",
+        "thoracostomy",
+        "chest tube"
+      ],
+      "urgency": "routine",
+      "summary": "배액관 삽입/제거, 중심정맥관 삽입, suture, sputum culture, CTD, EVD 관련 준비물.",
+      "indications": [],
+      "preparation": [
+        "Bladder irrigation: 일회용 D-set, 곡반, 생리식염수, enema syringe 50cc",
+        "Subclavian insertion: 큐라셋, suture set, N/S, 거즈, 헥시알, sponge ball, mass 11, 10cc syringe, 23G needle, nylon 2-0/3-0, C-line catheter, sono probe 멸균 비닐, glove, 소독포, 소공포, 수술가운, 리도카인, Tegaderm CHG",
+        "Suture: suture set, 베타딘, sponge ball, nylon 2-0, 거즈 많이, mass 11, glove, 레노픽스",
+        "Sputum cx: specimen cup, glove, suction 배액줄, ET-tube PVC catheter, T-tube, oro/nasal suction 시 latex catheter, airway, N/S",
+        "CTD insertion: thoracostomy set, 베타딘, sponge ball, 거즈, mass, syringe/needle, nylon 2-0, chest bottle, chest tube 24Fr, chest stand, glove, 소공포, 레노픽스, 불소독 Kelly",
+        "NS OP drain 제거: suture set, 베타딘, sponge ball, nylon 2-0, 거즈, 메디폼, glove, 소공포, 레노픽스",
+        "EVD 배액관 비우기: 일회용 dressing set, 베타딘, sponge ball 또는 포스틱스왑, 거즈, glove, 고무줄"
+      ],
+      "steps": [],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "상황별 핵심 준비물 요약",
+          "headers": [
+            "상황",
+            "핵심 준비물"
+          ],
+          "rows": [
+            [
+              "Bladder irrigation",
+              "D-set, 곡반, N/S, enema syringe 50cc"
+            ],
+            [
+              "Subclavian insertion",
+              "C-line catheter, suture set, sono probe cover, 리도카인, Tegaderm CHG"
+            ],
+            [
+              "Sputum cx",
+              "specimen cup, suction line, ET PVC catheter, airway, N/S"
+            ],
+            [
+              "CTD insertion",
+              "Thoracostomy set, chest tube 24Fr, chest bottle, chest stand"
+            ],
+            [
+              "EVD 배액관 비움",
+              "D-set, 베타딘, 멸균장갑, 거즈, 고무줄"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "준비물/시술·배액관",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "DRUG030",
+      "category": "임상 약물/항생제",
+      "title": "항생제 AST 시행 여부",
+      "aliases": [
+        "항생제 AST",
+        "AST 유무",
+        "AST 시행",
+        "AST 안함",
+        "유박탐",
+        "타박탐",
+        "벤제타실",
+        "세파제돈",
+        "세파졸린",
+        "제티암",
+        "후루마린",
+        "타짐",
+        "타포신",
+        "트리악손",
+        "뉴디짐",
+        "맥스핌",
+        "오로페넴",
+        "아미카신",
+        "겐타마이신",
+        "반코마이신",
+        "하노마이신",
+        "사이톱신",
+        "레포신"
+      ],
+      "urgency": "urgent",
+      "summary": "ICU에서 자주 사용하는 항생제의 AST 시행 여부를 빠르게 확인하는 카드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "항생제 투여 전 처방명과 AST 필요 여부를 확인한다.",
+        "과거 알레르기, AST 결과, 투여 전 V/S를 확인한다.",
+        "AST 여부는 병원 최신 지침과 약제부 기준을 우선한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "AST 시행 항생제 / 미시행 항생제",
+          "headers": [
+            "구분",
+            "계열",
+            "약물"
+          ],
+          "rows": [
+            [
+              "AST O",
+              "Penicillin계",
+              "유박탐, 벤제타실, 타박탐"
+            ],
+            [
+              "AST O",
+              "Cepha 1세대",
+              "세파제돈, 세파졸린"
+            ],
+            [
+              "AST O",
+              "Cepha 2세대",
+              "제티암, 후루마린"
+            ],
+            [
+              "AST O",
+              "Cepha 3세대",
+              "타짐, 타포신, 트리악손, 뉴디짐"
+            ],
+            [
+              "AST O",
+              "Cepha 4세대",
+              "맥스핌"
+            ],
+            [
+              "AST O",
+              "Carbapenem계",
+              "오로페넴"
+            ],
+            [
+              "AST X",
+              "Aminoglycoside",
+              "신풍아미카신, 겐타마이신"
+            ],
+            [
+              "AST X",
+              "Vancomycin",
+              "반코마이신, 하노마이신"
+            ],
+            [
+              "AST X",
+              "Quinolone",
+              "사이톱신, 레포신"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "임상 약물/항생제",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "LAB030",
+      "category": "검사·검체/검체통",
+      "title": "검체 통과 채혈·ABGA 실무",
+      "aliases": [
+        "검체통",
+        "검체 병",
+        "c-difficile",
+        "CDT",
+        "stool ob통",
+        "UA bottle",
+        "Urine Analysis",
+        "Urine Culture",
+        "코니컬튜브",
+        "슈터기",
+        "일반캐리어",
+        "오토캐리어",
+        "ABGA",
+        "A-line 채혈",
+        "리거즈",
+        "regurge",
+        "바코드 발행",
+        "DIC 바코드"
+      ],
+      "urgency": "routine",
+      "summary": "Lab bottle 외 stool/urine 검체통, ABGA 채혈, 슈터기 carrier 구분.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Lab 처방은 처방보조 → 채혈접수업무 → 대상자 채혈접수/바코드 발행 후 검체통에 부착한다.",
+        "DIC는 바코드 재발행이 필요할 수 있고 2개 출력 여부를 확인한다.",
+        "A/C-line 채혈 시 리거즈 10ml 후 채혈하고 잘 안되면 flushing을 고려한다.",
+        "ABGA는 1ml만 있어도 가능하며 A-line에서 혈액 뽑아 syringe 채로 기기에 연결한다.",
+        "ABGA 기기에서 니들이 나오면 니들 제거 후 syringe로 누르고 바코드를 스캔한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "검체통 종류",
+          "headers": [
+            "검사",
+            "검체통/용기"
+          ],
+          "rows": [
+            [
+              "C-difficile / CDT",
+              "Stool OB통, 블랙"
+            ],
+            [
+              "Urine Analysis / UA",
+              "투명한 뚜껑 긴 bottle"
+            ],
+            [
+              "Urine Culture",
+              "코니컬 튜브"
+            ],
+            [
+              "슈터기",
+              "투명: 일반캐리어 / 유색: 오토캐리어"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "검사·검체/검체통",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ROUTINE032",
+      "category": "Routine/식이",
+      "title": "ICU 식이 확인과 경관식 입력",
+      "aliases": [
+        "식이",
+        "NPO",
+        "금식",
+        "Feeding",
+        "경관유동식",
+        "당뇨식",
+        "칼로리",
+        "Remark",
+        "뉴케어 KD",
+        "신장식",
+        "Wet 거즈",
+        "추가식사",
+        "경관식",
+        "식이입력"
+      ],
+      "urgency": "routine",
+      "summary": "NPO, feeding, 당뇨식, 신장 환자 식이, 경관식 추가 신청 실무.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "NPO 환자는 식이를 금식으로 확인한다.",
+        "Feeding 환자는 경관유동식으로 확인한다.",
+        "당뇨식은 칼로리를 입력하고 특이처방은 remark에 기록한다.",
+        "뉴케어 KD는 신장 기능이 안 좋은 환자 식이로 확인한다.",
+        "NPO 환자가 목마름을 호소하면 wet gauze 적용 여부를 확인한다.",
+        "신환은 식이 확인 후 제공하고, 추가식사는 식이 추가 신청을 확인한다.",
+        "경관식은 저녁 식이 신청 시 remark에 익일 아침 분량도 메모한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "Routine/식이",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ROUTINE033",
+      "category": "Routine/Initial·전산",
+      "title": "Initial 후 전산: 낙상·욕창·통증·Bundle·Flow sheet·보호대",
+      "aliases": [
+        "Initial 후 전산",
+        "initial",
+        "낙상",
+        "욕창",
+        "통증",
+        "낙욕통",
+        "Bundle",
+        "Flow sheet",
+        "신체보호대 평가",
+        "보호대",
+        "ICU flowsheet",
+        "체위변경표",
+        "통증 재평가",
+        "effect",
+        "D 0800",
+        "E 1600",
+        "N 2300",
+        "massage X"
+      ],
+      "urgency": "routine",
+      "summary": "매 근무 initial 후 입력해야 하는 낙상, 욕창, 통증, bundle, flow sheet, 신체보호대 평가 정리.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "매 근무 initial은 위에서 아래로 환자가 그려지듯이 신경계, 호흡기계, 순환기계, Foley, Vent, line, L-tube, 신체보호대를 확인한다.",
+        "Pulse oximeter 위치, 수액세트 line, 신체보호대 상태를 확인한다.",
+        "낙상/욕창/통증 평가는 D 08:00, E 16:00, N 23:00 기준으로 확인한다.",
+        "욕창은 Night 때 재평가하고 시간 2개를 수정하며 마사지 금지를 확인한다.",
+        "욕창 체위변경표는 2시간마다 겹치지 않게 입력한다.",
+        "통증은 initial 1회와 진통제 투약 후 effect를 확인한다.",
+        "Inject는 30분 후, PO는 1시간 후 F/U를 확인한다.",
+        "Bundle은 중심정맥관, Foley, C-line, Vent 등 해당 항목을 입력한다.",
+        "Flow sheet는 D 08:00-13:59, E 16:00-21:59, N 00:00-05:59 기준으로 작성한다.",
+        "신체보호대 평가는 2시간 단위로 확인하고 정방향 매듭 및 부위를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "Initial 후 전산 시간 기준",
+          "headers": [
+            "항목",
+            "시간/기준"
+          ],
+          "rows": [
+            [
+              "낙상·욕창·통증",
+              "D 08:00 / E 16:00 / N 23:00"
+            ],
+            [
+              "Flow sheet",
+              "D 08:00-13:59 / E 16:00-21:59 / N 00:00-05:59"
+            ],
+            [
+              "신체보호대 평가",
+              "2시간 단위"
+            ],
+            [
+              "통증 effect",
+              "Inject 30분 후 / PO 1시간 후"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "Routine/Initial·전산",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "IO030",
+      "category": "I&O·전해질/I&O",
+      "title": "I/O 입력과 마감 상세",
+      "aliases": [
+        "I/O 마감",
+        "I/O 입력",
+        "섭취량",
+        "배설량",
+        "Parenteral",
+        "Urine",
+        "infusion pump volume",
+        "식사 100 400",
+        "Foley",
+        "PO water",
+        "inj 50cc",
+        "FD feeding",
+        "HD I/O",
+        "Anti 입력",
+        "배액관 I/O",
+        "클램프",
+        "음압 재설정",
+        "positive balance"
+      ],
+      "urgency": "routine",
+      "summary": "Duty별 I/O 기준, infusion volume, 식사/물/feeding, 배액관 측정과 마감 요령.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "I/O 기준은 D 06-13, E 13-21, N 21-06으로 확인한다.",
+        "라운딩 시 main fluid, 간호액팅의 side를 확인 후 입력한다.",
+        "6/13/21시 injection은 다음 duty 시간 기준으로 입력한다.",
+        "배액관 I/O는 syringe로 정확히 측정한다.",
+        "I/O 마감 시 약별 infusion pump volume을 확인하고 zeroing한다.",
+        "I/O는 infusion volume + 식사(100%=400) + Foley + 물 섭취량을 합산한다.",
+        "Infusion 사용하지 않은 side 약물은 바로바로 입력한다.",
+        "PO water는 물병에 선을 긋고 날짜와 duty를 표시한다.",
+        "Injection 50cc 미만은 I/O에 넣지 않고, PO 1회 물 50, FD feeding을 확인한다.",
+        "Parenteral과 urine을 비교해 과한 positive balance가 있으면 Noti한다.",
+        "배액관 측정 시 clamp 후 종이컵에 따르고 알코올 swab으로 닦은 후 음압을 재설정한다.",
+        "HD I/O는 투석기록지를 확인한다.",
+        "Anti 입력 시 이름에는 Anti만 입력하고 N/S는 적지 않는다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "Duty별 I/O 기준",
+          "headers": [
+            "Duty",
+            "시간"
+          ],
+          "rows": [
+            [
+              "Day",
+              "06:00-13:00"
+            ],
+            [
+              "Evening",
+              "13:00-21:00"
+            ],
+            [
+              "Night",
+              "21:00-06:00"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "I&O·전해질/I&O",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "LINE030",
+      "category": "Line/부착기구",
+      "title": "부착기구 입력: HD cath, Mahurkar, Perm cath",
+      "aliases": [
+        "부착기구",
+        "Cadex 기본간호",
+        "기구입력",
+        "HD Cath",
+        "trialysis",
+        "3 lumen",
+        "마후카",
+        "Mahurkar",
+        "Perm Cath",
+        "투석용 카테터",
+        "비터널형",
+        "터널형",
+        "동의서 다름"
+      ],
+      "urgency": "routine",
+      "summary": "Cadex 기본간호와 부착기구 입력 시 HD cath, Mahurkar, Perm cath 구분.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Foley, L-tube, dressing, IV, O2 등 변경 시 간호기록, 간호처방, Cadex 기본간호, flow sheet를 같이 수정한다.",
+        "HD Cath는 trialysis 3 lumen 여부를 확인 후 입력한다.",
+        "Mahurkar는 2-lumen 마후카 카테터 부위를 따로 입력한다.",
+        "Mahurkar는 비터널형, Perm Cath는 터널형 투석용 카테터로 동의서가 다르다.",
+        "Foley는 부착기구와 Bundle까지 작성한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "Line/부착기구",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "MED030",
+      "category": "지참약",
+      "title": "지참약 식별 의뢰와 셀프처방",
+      "aliases": [
+        "지참약",
+        "자가약",
+        "식별의뢰",
+        "지참약 관리",
+        "지참약 식별의뢰서",
+        "약국",
+        "6211",
+        "6212",
+        "셀프처방",
+        "Self",
+        "지참약 검색",
+        "지참약품정보",
+        "응급발행",
+        "식별 완료",
+        "스케줄"
+      ],
+      "urgency": "routine",
+      "summary": "자가약 반입 시 식별의뢰, 약국 전달, 셀프처방, 주치의 Noti 절차.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "투여 전 지참약 관리에서 실물, 약품, 처방용량을 재확인한다.",
+        "자가약이 오면 지참약 식별의뢰서를 작성하고 EMR로 신청 후 약국으로 보낸다.",
+        "지참약 관리에서 의뢰를 누른 후 아침/점심/저녁약을 구분해 실물 약을 약국으로 보낸다.",
+        "의뢰서에는 번호 6211, 6212를 확인한다.",
+        "지참약 검색에서 약을 입력하고 지참약품정보에 뜨면 가져오기 후 수량/용법을 입력한다.",
+        "간호처방 Self 카테고리를 켜고 지참약 설정을 누른 뒤 처방 화면으로 이동해 응급발행한다.",
+        "지참약 식별 완료 후 주치의에게 Noti한다.",
+        "지참약 식별 결과는 D duty에 나오는 경우가 많으므로 E 전 확인 후 Noti 및 스케줄을 조정한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "지참약",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "NARC030",
+      "category": "마약·향정",
+      "title": "마약 Pink / 향정 White 관리 상세",
+      "aliases": [
+        "마약 Pink",
+        "향정 White",
+        "마약장 6029",
+        "비치마약",
+        "마약 prep",
+        "마약 처방전",
+        "재출력",
+        "출력",
+        "error",
+        "반납처방전",
+        "핑크",
+        "마약 반납",
+        "마약 봉투",
+        "DC",
+        "공병",
+        "잔량",
+        "앰플"
+      ],
+      "urgency": "urgent",
+      "summary": "마약 사용 후 공병/잔량 보관, prep 마약 처방전, 반납처방전 출력과 반납 절차.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "마약장 번호 6029를 확인한다.",
+        "마약 사용 후 앰플과 잔량은 버리지 않고 처방 봉투에 재보관한다.",
+        "마약 prep을 사용했으면 다음날 아침 당직의로 처방을 넣어 처방전을 내린다.",
+        "사용한 prep 마약 라벨은 마약 처방전에 붙이고, 공병은 봉투에 담아 금고 안에 넣는다.",
+        "처방된 마약이 왔는지는 마약 처방전 출력 내역에서 확인한다.",
+        "재출력이면 마약장에 실제 약이 있는지 확인하고, 없으면 출력/작성 또는 재출력에 error 표시를 확인한다.",
+        "다음날 처방 마약이 있으면 응급발행 후 마약 처방전을 분홍색 종이에 출력하고 서명한다.",
+        "마약 반납 시 마약처방전에서 반납처방전(핑크)을 출력하고 서명한다.",
+        "마약 금고에서 약과 봉투를 확인한 후 라벨에 /DC를 적고 반납처방전을 접어 봉투에 넣어둔다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "마약·향정",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "CHART030",
+      "category": "간호기록",
+      "title": "ICU 간호기록 체크리스트",
+      "aliases": [
+        "간호기록",
+        "차팅",
+        "네뷸 차팅",
+        "prn 차팅",
+        "산소 변경",
+        "약 용량 변경",
+        "회진",
+        "면회",
+        "지참약 식별 차팅",
+        "검사결과 Notify",
+        "검사결과 복사",
+        "OP 후 Dressing 사진",
+        "IPC 기록",
+        "Lasix BP",
+        "페치딘 기록",
+        "RI 2시간 F/U",
+        "hourly check",
+        "line 제거 차팅",
+        "Nebulizer 기록",
+        "Feeding 기록"
+      ],
+      "urgency": "routine",
+      "summary": "ICU에서 자주 누락되는 간호기록 항목과 투약/검사/회진/line 관련 차팅 포인트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Nebulizer, PRN 투약 후 액팅, Cadex, 간호기록을 확인한다.",
+        "산소 변경, 약 용량 변경, PRN 투여는 기록한다.",
+        "회진, 면회 시행, 지참약 식별 관련 내용을 차팅한다.",
+        "회진 전 약, 검사결과, V/S, BST를 확인한다.",
+        "검사결과 확인 후 Notify 내용을 차팅한다.",
+        "검사결과는 더블클릭해 간호기록에 복사할 수 있다.",
+        "시술 후/OP 후 첫 dressing 사진은 EMR 수술 후 사진과 기록을 넣는다.",
+        "Lasix 등 BP medication 전 BP를 확인하고 V/S 메모와 투여 기록을 남긴다.",
+        "페치딘 투여 시 V/S, 호흡억제/저혈압 side를 확인하고 기록한다.",
+        "RI 투여 후 2시간 뒤 BST F/U를 확인한다.",
+        "Hemovac, urine hourly는 hourly check 서식지를 이용한다.",
+        "Line 제거 시 간호기록, 기본간호, 부착기구, flow sheet를 수정한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "간호기록",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ORDER030",
+      "category": "처방·액팅",
+      "title": "간호처방과 액팅: Lab, pickup, 응급발행",
+      "aliases": [
+        "간호처방",
+        "액팅",
+        "Cadex 기본간호",
+        "Foley 처방",
+        "L-tube 처방",
+        "Dressing 처방",
+        "IV 처방",
+        "O2 처방",
+        "O2 inhalation",
+        "HFNC 수가",
+        "Vent 수가",
+        "simple dressing",
+        "피하주사 pee",
+        "nebulizer 처방",
+        "Lab 처방",
+        "채혈접수업무",
+        "픽업",
+        "응급발행",
+        "10:30",
+        "마약 픽업",
+        "퇴원약 픽업",
+        "ICU Chest",
+        "Portable Y",
+        "bed side PT"
+      ],
+      "urgency": "routine",
+      "summary": "간호처방, 액팅 스케줄링, Lab 처방 발행, pickup과 응급발행 기준.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Foley, L-tube, dressing, IV, O2 변경 시 간호기록, 간호처방, Cadex 기본간호, flow sheet를 함께 확인한다.",
+        "Nasal/Mask 산소 사용 시 O2 inhalation 처방을 산소 L/min와 함께 확인한다.",
+        "HFNC와 Vent는 별도 수가처방이 있다.",
+        "Simple dressing은 1일 부위당 1회만 처방 가능 여부를 확인한다.",
+        "사용한 처치/재료는 누락 없이 처방을 넣는다.",
+        "새로운 처방은 용법에 맞춰 다음날까지 간호액팅 스케줄링한다.",
+        "Lab 처방은 처방보조 → 채혈접수업무에서 바코드를 발행한다.",
+        "검사 처방은 검사실에 전화해 시간 확인 후 차팅, 인계, Cadex 작성한다.",
+        "추가 처방은 새로고침해 확인한다.",
+        "ICU Chest는 간호처방에서 Portable Y를 확인한다.",
+        "오전 10:30 이전은 픽업, 이후는 응급발행을 기준으로 한다.",
+        "마약, 향정, 퇴원약도 응급발행이 필요할 수 있다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "처방·액팅",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "DNR030",
+      "category": "DNR",
+      "title": "DNR / 연명의료 서류와 처방",
+      "aliases": [
+        "DNR",
+        "연명의료",
+        "연명의료중단결정서",
+        "별도서식 9",
+        "별도서식 10",
+        "별도서식 11",
+        "별도서식 13",
+        "사전연명의료의향서",
+        "가족관계증명서",
+        "신분증",
+        "사회복지사 139",
+        "AWU501",
+        "AWU210",
+        "AWU230",
+        "AWU240",
+        "DNR 체크표"
+      ],
+      "urgency": "routine",
+      "summary": "DNR 및 연명의료 관련 별도서식, 신분증/가족관계증명서, 사회복지사 연락, 처방료 코드.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "DNR은 별도서식 9, 11, 13호를 기본 확인한다.",
+        "11호는 가족에게, 13호에는 하지 않는 항목들을 체크한다.",
+        "신분증 앞뒤 복사, 환자 기준 가족관계증명서(주민번호 포함)를 준비한다.",
+        "서식과 증빙을 파일에 넣고 이름 라벨을 붙이며 DNR 체크표를 침상에 둔다.",
+        "DNR 서류를 받은 뒤 관련 처방을 넣고 사회복지사 139방에 연락한다.",
+        "사전연명의료의향서 O: 9, 10, 13호와 신분증 사본.",
+        "사전연명의료의향서 X: 9, 11, 13호, 가족관계증명서, 신분증 사본."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "연명의료 관련 처방료 코드",
+          "headers": [
+            "항목",
+            "코드"
+          ],
+          "rows": [
+            [
+              "협진료",
+              "AWU501 / 9호"
+            ],
+            [
+              "계획료",
+              "AWU210 / 10호"
+            ],
+            [
+              "계획료",
+              "AWU230 / 11호"
+            ],
+            [
+              "이행 관리료",
+              "AWU240 / 13호"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "DNR",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "EKG030",
+      "category": "검사/EKG",
+      "title": "EKG 촬영과 리드 부착",
+      "aliases": [
+        "EKG",
+        "ECG",
+        "심전도",
+        "EKG 접수",
+        "부서접수",
+        "환자 선택",
+        "전극 연결",
+        "record",
+        "network",
+        "RU",
+        "LU",
+        "RL",
+        "LL",
+        "빨노검초",
+        "액와중앙선",
+        "EKG Scan",
+        "침습적"
+      ],
+      "urgency": "routine",
+      "summary": "EKG 접수, 전극 연결, 리드 위치, scan 업로드 포인트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "EKG 접수 및 부서접수 업무로 대상자를 등록한다.",
+        "EKG 장비에서 환자를 선택하고 전극을 연결한다.",
+        "Record → Network로 전송한다. 연결이 잘 안 되면 알코올로 피부를 닦는다.",
+        "EKG 리드에 닿는 물건이 없고 line이 겹치지 않게 정리한다.",
+        "사지 리드는 RU 빨강, LU 노랑, RL 검정, LL 초록을 확인한다.",
+        "흉부 리드는 빨/노/초/회/검/보 순서와 위치를 확인한다.",
+        "사지 전극은 안쪽 아래로 가게 부착한다.",
+        "촬영 후 침습적으로 표시가 있으면 EKG Scan에 캡처하여 올린다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "사지 리드 색상",
+          "headers": [
+            "위치",
+            "색상"
+          ],
+          "rows": [
+            [
+              "RU",
+              "빨강"
+            ],
+            [
+              "LU",
+              "노랑"
+            ],
+            [
+              "RL",
+              "검정"
+            ],
+            [
+              "LL",
+              "초록"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "검사/EKG",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "SKILL030",
+      "category": "술기/Injection",
+      "title": "Injection / 3-way / IVS 실무 Tip",
+      "aliases": [
+        "inject",
+        "injection",
+        "MIV",
+        "IVS",
+        "3-way",
+        "3way",
+        "bolus",
+        "flushing",
+        "micro syringe",
+        "TPN",
+        "Cefa",
+        "수혈 3way",
+        "RI F/U",
+        "우리 스틴",
+        "페르디핀",
+        "mannitol",
+        "IM",
+        "리거즈",
+        "PICC flushing",
+        "A-line zeroing",
+        "EVD zeroing",
+        "액팅체크"
+      ],
+      "urgency": "routine",
+      "summary": "MIV, IVS, 3-way, flushing, TPN/항생제 line, RI F/U, IM, zeroing 등 injection 실무 팁.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "MIV는 1시간 내 투여를 기준으로 생각한다.",
+        "3-way bolus 시 방향을 확인하고, 안 쓰는 3-way는 line과 반대방향으로 돌려놓는다.",
+        "IVS 시 air를 최대한 제거하고 필요 시 micro syringe 처방을 확인한다.",
+        "Main fluid 없는 환자는 IVS 후 N/S flushing을 필수로 한다.",
+        "TPN과 Cefa 계열은 같은 line 사용을 피한다.",
+        "수혈이 잘 안 들어가면 3-way로 N/S를 조금씩 넣어주는 방법을 확인한다.",
+        "인슐린 투여 후 BST 2시간 F/U를 확인한다.",
+        "PO는 1시간 후, injection은 30분 후 effect를 확인한다.",
+        "Anti 간격을 맞춰준다.",
+        "페르디핀 투여 중이면 1시간마다 BP check를 확인한다.",
+        "만니톨은 full drop 투여 여부를 확인한다.",
+        "IM은 리거즈 후 투여하고 투여 후 문지른다.",
+        "PICC 후 flushing 후 infusion line을 연결한다.",
+        "A-line, EVD zeroing은 3-way 방향을 확인한다.",
+        "Injection 연결 후 액팅 체크를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "투약과 line compatibility는 병원 지침, 처방, 약제부 기준을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "술기/Injection",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "SKILL031",
+      "category": "술기/기본간호",
+      "title": "기본 술기: Fever, L-tube, Feeding, TR band, Foley",
+      "aliases": [
+        "기본술기",
+        "37.5",
+        "ice pack",
+        "L-tube",
+        "feeding",
+        "regurge",
+        "residual",
+        "duoderm",
+        "Ace vac",
+        "clamping",
+        "Face care",
+        "구강케어",
+        "탄륨",
+        "TR band",
+        "CAG",
+        "PCI",
+        "puncture",
+        "Foley ballooning",
+        "증류수"
+      ],
+      "urgency": "routine",
+      "summary": "Fever care, L-tube feeding, residual, face/oral care, TR band, Foley ballooning 등 실무 팁.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "BT 37.5 이상이면 ice pack 적용 여부를 확인한다.",
+        "L-tube feeding 전 regurge로 공기를 제거하고 잔여량을 확인한다.",
+        "L-tube 코 삽입부위는 duoderm으로 보호한다.",
+        "Ace vac PO 투여 후 clamp 또는 1-2시간 후 연결을 확인한다.",
+        "Feeding residual이 많아 skip 시 기록하고 Noti한다.",
+        "물티슈로 face care를 시행한다.",
+        "탄륨과 거즈를 이용해 구강 care를 시행한다.",
+        "CAG/PCI 후 TR band는 공기 제거 후 지혈 여부를 확인하고 제거한다.",
+        "Puncture 부위 바로 위 Air 부분이 들어가지 않게 확인한다.",
+        "지혈 확인 후 betadine과 superpore dressing을 적용한다.",
+        "Foley ballooning은 증류수로 한다. N/S는 결정이 생길 수 있다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "술기/기본간호",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "TF030",
+      "category": "수혈",
+      "title": "수혈 실무 Tip과 혈액제제 종류",
+      "aliases": [
+        "수혈 tip",
+        "P-RBC",
+        "교차시험",
+        "ABO Rho",
+        "irregular",
+        "혈액요청서",
+        "슈터기",
+        "진검실",
+        "혈액불출",
+        "수혈기록지",
+        "PC",
+        "Cryo",
+        "FFP",
+        "APLT",
+        "페르시스",
+        "수혈 filter",
+        "페니라민",
+        "blood pumping",
+        "A-PLT 250",
+        "CRYO 40",
+        "뮤코필터레이트",
+        "fibrinogen",
+        "PT INR"
+      ],
+      "urgency": "urgent",
+      "summary": "수혈 준비부터 혈액 불출, 수혈기록, I/O, 혈액제제 종류와 기대효과까지 정리.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "수혈 처방이 나면 혈액요청서와 빨강 2개, 보라 1개에 혈액을 담아 내린다.",
+        "P-RBC는 교차시험 처방세트와 ABO+Rho, irregular, 수혈용 추가 생성을 확인한다.",
+        "채혈자와 혈액요청서 이름을 맞추고 요청서와 검체를 고무줄로 묶어 슈터기에 넣는다.",
+        "보낸 후 진검실에 연락해 확인을 요청한다.",
+        "혈액은 진검 로비층에서 불출하며 P-RBC는 ice pack 포함 여부를 확인한다.",
+        "여러 팩을 동시에 수혈할 경우 수혈기록지는 1장 사용 기준을 확인한다.",
+        "수혈 팩 라벨을 수혈기록지에 붙이고 수혈번호와 일자를 확인해 스캔한다.",
+        "수혈 시작, 15분 후, 종료 차팅과 V/S 메모를 입력한다.",
+        "I/O에 blood 종류와 실제 용량을 입력한다.",
+        "수혈 filter는 2팩까지 사용 기준을 확인한다.",
+        "수혈이 잘 안 들어가면 blood pumping 장착 여부를 확인한다.",
+        "PC에서 A-PLT로 변경 시 진검실 확인 후 처방 변경을 Noti한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "혈액제제 종류와 투여",
+          "headers": [
+            "종류",
+            "적응증",
+            "보관/온도",
+            "투여",
+            "기대효과"
+          ],
+          "rows": [
+            [
+              "RBC",
+              "Hb 감소",
+              "냉장",
+              "1.5-3hr",
+              "Hb 약 1g/dL 상승"
+            ],
+            [
+              "PC",
+              "PLT 감소",
+              "실온",
+              "Full drop",
+              "PLT 약 5K/mm³ 상승"
+            ],
+            [
+              "A-PLT",
+              "PLT 감소",
+              "실온",
+              "Full drop",
+              "PLT 약 30K/mm³ 상승"
+            ],
+            [
+              "FFP",
+              "PT/INR 이상",
+              "냉장",
+              "1-2hr",
+              "INR 개선"
+            ],
+            [
+              "Cryo",
+              "Fibrinogen 감소",
+              "냉장",
+              "Full drop",
+              "1팩당 fibrinogen 약 10mg/dL 상승"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "수혈",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "TRANSFER030",
+      "category": "입퇴원·전원·사망",
+      "title": "입퇴원/전동/전원/사망 간호 상세",
+      "aliases": [
+        "가퇴원",
+        "전동간호기록",
+        "전동",
+        "전원",
+        "전실",
+        "G/W",
+        "병동",
+        "퇴원",
+        "사망",
+        "이동서식",
+        "보호자 면담",
+        "병실료",
+        "병실정보",
+        "6043",
+        "6050",
+        "이송콜",
+        "산소탱크",
+        "자가약",
+        "전동기록지",
+        "I/O 마감",
+        "A-line 제거",
+        "EVD clamp",
+        "SDD clamp"
+      ],
+      "urgency": "urgent",
+      "summary": "가퇴원, 전동/전실, 병동 이동, 퇴원, 보호자 면담, 이동서식 관련 실무 절차.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "가퇴원은 정규시간 외 응급 원무과 결제 후 정규시간 재심사/환불 절차를 안내한다.",
+        "전동간호기록은 가는 부서가 작성하고 받을 때도 작성한다.",
+        "전동 병동 확인 후 몇인실 희망, 비용, 상주 인원을 보호자에게 설명한다.",
+        "병동에 인계 연락 후 전동간호기록지, 환자이동안내서, 전실 간호기록을 작성한다.",
+        "짐, 약, 산소탱크, nebulizer kit 등을 챙기고 I/O를 마감한다.",
+        "전실 10분 전 이송을 부르고 모니터 등 제거 준비를 한다.",
+        "병동 전동 시 A-line 제거, Foley/수액 clamp, 모니터링 제거를 확인한다.",
+        "EVD, SDD 등 관은 clamp 후 올려놓고 종이 플라스타로 고정한다.",
+        "전실 결정 시 보호자에게 시간과 병실을 안내한다.",
+        "이동 서식에는 라벨을 붙이고 이동지를 크게 쓴다.",
+        "퇴원처방은 익일까지 액팅/DC 처리, 검사 삭제, 퇴원결정, 심사 완료, 수납 후 퇴원 순서로 확인한다.",
+        "퇴원 시 A-line, IV, Foley 및 부착기구 제거와 퇴원 차팅을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "입퇴원·전원·사망",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "ICUINFO030",
+      "category": "원내정보/ICU 숙지",
+      "title": "ICU 숙지사항: 면회, 외부전화, 약국, 이송, Noti, E-cart",
+      "aliases": [
+        "ICU 숙지사항",
+        "면회",
+        "임종면회",
+        "외부전화",
+        "9 누르고",
+        "약국",
+        "비번 6220",
+        "냉장고 1234",
+        "이송팀",
+        "Noti",
+        "당직의",
+        "병원장",
+        "ER CT 4시간",
+        "E-cart 봉인라벨",
+        "봉인라벨 No",
+        "점검대장"
+      ],
+      "urgency": "routine",
+      "summary": "ICU에서 자주 필요한 면회, 전화, 약국, 이송, Noti, E-cart 봉인라벨 관련 정보.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "면회 시간은 11:00-11:30이며 평일/주말/공휴일 기준을 확인한다.",
+        "임종면회는 짧게 진행한다.",
+        "동의서와 물품 준비, 대상자 상태 설명, 주치의 면담 안내를 확인한다.",
+        "외부 전화는 9를 누른 뒤 번호를 누른다.",
+        "약국은 1층이며 2인이 가고 열쇠와 비밀번호 6220, 냉장고 1234를 확인한다.",
+        "검사 이송 시 이송팀을 부르고 line, monitor 제거 및 검사 전후 간호기록을 남긴다.",
+        "Noti는 내과 → 당직의 → 병원장, 내과 제외는 당직 → 병원장 기준을 확인한다.",
+        "ER 환자는 CT 4시간 후 F/U 여부를 확인한다.",
+        "E-cart 봉인라벨 제거 시 봉인라벨 No.를 점검대장에 작성한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "원내정보/ICU 숙지",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "CPR030",
+      "category": "응급상황/CPR",
+      "title": "CPR 실무: Lucas, I-gel, Ambu, 기록",
+      "aliases": [
+        "CPR 실무",
+        "루카스",
+        "Lucas",
+        "i-gel",
+        "igel",
+        "Ambu",
+        "6초마다",
+        "ROSC",
+        "2분마다 맥박",
+        "3-5분 에피",
+        "비본",
+        "N/S",
+        "CPR 모니터링 기록지",
+        "J 사용약물",
+        "flow 기록",
+        "code blue"
+      ],
+      "urgency": "emergency",
+      "summary": "CPR 시 Lucas 시작시간, i-gel, Ambu, rhythm/pulse check, 약물, 기록 포인트.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "CPR 시작 시 Lucas 시작시간을 기록한다.",
+        "체중/상황에 맞는 i-gel size를 확인하고 삽입을 준비한다.",
+        "Ambu는 6초마다 ventilation을 기준으로 시행한다.",
+        "2분마다 맥박과 rhythm을 확인한다.",
+        "3-5분마다 epinephrine 투여 기준을 확인하고 비본, N/S 사용을 기록한다.",
+        "ROSC 후 ventilator 연결 여부를 확인한다.",
+        "Flow대로 기록하고 사용한 약물/물품을 메모한다.",
+        "CPR 모니터링 기록지에 사용한 약물과 J를 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "응급상황/CPR",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "IMG030",
+      "category": "검사·시술/영상검사",
+      "title": "CT/MRI 조영제 검사와 주요 영상검사 준비",
+      "aliases": [
+        "CT 조영제",
+        "MRI 조영제",
+        "3way",
+        "N/S hydration",
+        "조영제 검사",
+        "Coronary Angio CT",
+        "NTG",
+        "베타록",
+        "Brain MRI non enhance",
+        "Brain MRI enhance",
+        "Brain CT",
+        "Head Neck Angio CT",
+        "DSA",
+        "PTA",
+        "TCD",
+        "TFCA",
+        "TRCA",
+        "metformin",
+        "메트포르민",
+        "Rt 18G",
+        "Lt 18G",
+        "Lt 20G",
+        "NPO",
+        "MRI permission"
+      ],
+      "urgency": "routine",
+      "summary": "CT/MRI 조영제 주입, line 준비, hydration, metformin 중지, 주요 영상검사별 준비사항.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "CT 조영제는 소독 후 3-way에 연결된 line을 기계에 연결하고 N/S 먼저 주입해 부종/불편감을 확인한다.",
+        "MRI 조영제는 자석 제거 후 입실하고 프리필드 syringe를 3-way에 연결해 주입 후 N/S 관류한다.",
+        "CT/MRI enhance 전 N/S 500ml와 Rt 18G를 준비하고 검사 전 250ml, 검사 후 250ml hydration을 고려한다.",
+        "조영제 검사는 동의서, 신장기능, metformin 복용 여부를 확인한다.",
+        "Metformin은 조영제 전일 및 투약 후 48시간 복용 금지 기준을 확인한다.",
+        "Coronary Angio CT는 CT 5분 전 NTG 설하 투여, 베타록 지참 여부를 확인한다.",
+        "MRI 촬영 시 sandbag 등 자석성 물품을 제거한다.",
+        "검사별 line 위치, 금식 여부, 동의서 여부를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "주요 영상검사 준비사항",
+          "headers": [
+            "검사",
+            "준비"
+          ],
+          "rows": [
+            [
+              "Coronary Angio CT",
+              "CT 5분 전 NTG, 베타록 지참, 조영제 line"
+            ],
+            [
+              "Brain MRI non-enhance",
+              "검사설명서"
+            ],
+            [
+              "Brain MRI enhance",
+              "MRI 설명서, 조영제 동의서, permission, line, NS 500, 금식 X"
+            ],
+            [
+              "Brain CT non-enhance",
+              "준비사항 없음"
+            ],
+            [
+              "Head Neck Angio CT",
+              "Lt 18G, metformin 중지 확인, hydration"
+            ],
+            [
+              "DSA",
+              "Lt 18G, NS 500, 동의서, 금식 X"
+            ],
+            [
+              "PTA",
+              "NPO, PICC 조영제 사용 가능"
+            ],
+            [
+              "TCD",
+              "준비사항 없음, 보통 4-5일 f/u"
+            ],
+            [
+              "TFCA/TRCA",
+              "Lt 20G, NPO X"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "검사·시술/영상검사",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "DRESS030",
+      "category": "Dressing",
+      "title": "Dressing 소독제와 상처별 소독",
+      "aliases": [
+        "Dressing 소독",
+        "소독제",
+        "생리식염수",
+        "베타딘",
+        "클로르헥시딘",
+        "알코올",
+        "과산화수소",
+        "일반 상처",
+        "감염된 상처",
+        "수술 후 상처",
+        "욕창",
+        "PCD",
+        "장루",
+        "SDD dx",
+        "EVD bag 소독",
+        "테가덤 CHG",
+        "oozing",
+        "거즈",
+        "필름 7일",
+        "픽스 2일"
+      ],
+      "urgency": "routine",
+      "summary": "소독제 특징, 일반/감염/수술 후/욕창 상처 dressing, PCD, 장루, SDD, EVD bag 소독.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "일반 상처는 N/S로 부드럽게 세척하고 과다한 삼출물을 제거한 뒤 dressing한다.",
+        "감염된 상처는 포비돈 요오드 또는 클로르헥시딘 사용 여부를 확인하고 필요 시 항생제 연고를 적용한다.",
+        "수술 후 상처는 실밥 제거 전후 포비돈 요오드 사용, 감염징후를 확인한다.",
+        "욕창은 N/S 또는 hydrogel을 사용하고 괴사조직 필요 시 의료진 보고 후 습윤 dressing을 고려한다.",
+        "일반 dressing은 D-set에 hex swab, gauze/fix 또는 Tegaderm을 준비한다.",
+        "Oozing 있으면 gauze, 없으면 Tegaderm을 기준으로 확인한다.",
+        "Initial 시 oozing 있으면 교체한다.",
+        "소독 후 gauze/fix는 2일, film은 7일 기준을 확인한다.",
+        "A-line, C-line, CTD, PCD, PEG는 film dressing 적용 여부를 주의한다.",
+        "Dressing 교체 시 d/t를 기록한다.",
+        "PCD는 배액량을 짜고 alcohol swab으로 닦는다.",
+        "장루는 N/S 세척 후 보호판을 장루보다 2-3mm 여유 있게 잘라 부착한다.",
+        "EVD bag은 멸균장갑 착용 후 betadine으로 소독하고 거즈로 싸서 고무줄로 고정한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "소독제 특징과 사용 예시",
+          "headers": [
+            "소독제",
+            "특징",
+            "사용 예시"
+          ],
+          "rows": [
+            [
+              "생리식염수",
+              "세포 자극 적음",
+              "일반 상처 세척"
+            ],
+            [
+              "베타딘",
+              "광범위 항균",
+              "감염 위험 상처, 수술 전 소독"
+            ],
+            [
+              "클로르헥시딘",
+              "강력한 소독, 피부 친화적",
+              "카테터 삽입 부위, 중심정맥관 소독"
+            ],
+            [
+              "알코올",
+              "빠른 살균, 휘발성",
+              "주사부위 피부 소독, 개방성 상처 금지"
+            ],
+            [
+              "과산화수소",
+              "기포 발생으로 이물질 제거",
+              "괴사조직 제거, 지속 사용 금지"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "Dressing",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "SURG030",
+      "category": "수술간호",
+      "title": "수술/시술 전후 간호와 Pre-op 확인",
+      "aliases": [
+        "수술 전후 간호",
+        "Pre Op",
+        "preop",
+        "시술 전 확인",
+        "angio",
+        "permission",
+        "표식확인서",
+        "PA 124",
+        "수술 전 확인표",
+        "OR 연락",
+        "OP risk",
+        "PCA 동의서",
+        "전신마취 동의서",
+        "수술동의서",
+        "수술파일",
+        "Pre OP Fluid",
+        "foley 남성",
+        "Post OP 처방"
+      ],
+      "urgency": "routine",
+      "summary": "수술/시술 전 permission, 표식확인서, 동의서, pre-op 확인표, fluid, post-op 처방 확인.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Permission과 표식확인서를 확인하고 없으면 PA 124번 방에 확인한다.",
+        "처방을 보며 수술/시술 전 확인표를 작성한다.",
+        "OR 연락이 오면 수술실 체크 후 확인표를 출력해 내린다.",
+        "OP 전 협진과 OP risk, pre/post lab, F/U 처방을 확인한다.",
+        "수술 계획에서 일정을 확인한다.",
+        "수술/시술 전 확인은 전날 Night가 작성하는 기준을 확인한다.",
+        "PCA, 전신마취, 수술동의서, 고위험 스페셜 동의서를 확인한다.",
+        "동의서 스캔 후 수술/시술 전 확인표와 함께 파일에 넣고 라벨을 붙여 인계한다.",
+        "Pre OP fluid, 혈액 TF prep, post OP 처방과 검사/fluid를 미리 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [],
+      "images": [],
+      "tags": [
+        "수술간호",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "CRRT030",
+      "category": "CRRT",
+      "title": "CRRT I/O, Return, Kit change, 처방, 차팅 상세",
+      "aliases": [
+        "CRRT 상세",
+        "CRRT I/O",
+        "CRRT return",
+        "CRRT retrun",
+        "Blood return",
+        "혈액재주입",
+        "Balance",
+        "치료종료",
+        "kit change",
+        "Multifiltrate pro kit",
+        "HOF 600",
+        "멀티빅",
+        "후탄",
+        "prefilter 압력",
+        "TMP",
+        "BFR",
+        "clot",
+        "UF",
+        "N/S 500",
+        "NS 1L",
+        "KCL",
+        "포스텐",
+        "CRRT cath",
+        "conti cath",
+        "CRRT 차팅"
+      ],
+      "urgency": "urgent",
+      "summary": "CRRT I/O 마감, return, kit change, 처방/재료, catheter 행위료, 차팅까지 상세 정리.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Kit 교체 전 CRRT I/O를 끊고 balance 진행 시간을 duty I/O 시간으로 확인한다.",
+        "치료 중단 후 N/S 500ml를 access line 3-way에 연결하고 3-way 방향을 돌린다.",
+        "혈액 재주입을 시행하고 혈액 감지 여부를 확인한 뒤 환자를 분리한다.",
+        "Return 전 I/O를 확인하고 BP가 낮으면 UF 낮추기 여부를 확인한다.",
+        "CRRT filter가 300후반-400초반이면 교체 가능성을 확인한다.",
+        "Kit 연결 시 line을 정리하면서 진행한다.",
+        "Mix 용액 액팅 시간은 기록 시간과 맞춘다.",
+        "CRRT I/O는 정각에 끊는다.",
+        "I/O 계산은 들어가는 main infusion, side, 이전 I/O, target을 반영해 계산한다.",
+        "Catheter 문제가 의심되면 regurge, pushing, 더 밀어 넣기 여부를 확인한다.",
+        "BFR 120 이하부터 clot 가능성이 높아짐을 확인한다.",
+        "후탄 priming: N/S 1L + 후탄 40mg, syringe 5DW 50ml + 후탄 10A mix 기준을 확인한다.",
+        "Kit setting 시 heating sensor, heparin syringe sensor를 확인한다.",
+        "하단 TMP는 return 압력 포트와 effluent bag 부분을 확인한다.",
+        "Return 후 kit 제거 전 전원을 끄지 않고, kit 모두 제거 후 전원을 끈다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "CRRT Return 순서",
+          "headers": [
+            "순서",
+            "내용"
+          ],
+          "rows": [
+            [
+              "1",
+              "Blood return: NS 500 access line 3-way에 연결 후 full drop"
+            ],
+            [
+              "2",
+              "치료종료 → 혈액재주입 → 확인"
+            ],
+            [
+              "3",
+              "Balance 확인 및 적용시간 입력"
+            ],
+            [
+              "4",
+              "NS 500은 5분 이내 들어갈 수 있어 앞에서 대기"
+            ],
+            [
+              "5",
+              "Nacl 감지 또는 적당히 return 되면 clamp 후 종료"
+            ],
+            [
+              "6",
+              "환자 disconnect"
+            ],
+            [
+              "7",
+              "Kit 제거"
+            ],
+            [
+              "8",
+              "전원 끄기"
+            ]
+          ]
+        },
+        {
+          "title": "CRRT Kit change",
+          "headers": [
+            "순서",
+            "내용"
+          ],
+          "rows": [
+            [
+              "1",
+              "오류 예방 위해 5분 뒤 전원 켜기"
+            ],
+            [
+              "2",
+              "치료 유지 → 기능테스트 100% 후 OK"
+            ],
+            [
+              "3",
+              "Pre 빨간색 / Post 파란색 연결"
+            ],
+            [
+              "4",
+              "Rinse / UF rinse 100% 이후"
+            ],
+            [
+              "5",
+              "환자 연결"
+            ],
+            [
+              "6",
+              "처방: CRRT kit + NS500 + NS1L 확인"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "CRRT",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
+    },
+    {
+      "id": "NSPROC030",
+      "category": "검사·시술/신경외과",
+      "title": "Burr hole, EVD/SDD, Coil embolization, Tracheostomy",
+      "aliases": [
+        "burr hole",
+        "버홀",
+        "EVD",
+        "SDD",
+        "ICP",
+        "IICP",
+        "CSF",
+        "뇌척수액",
+        "Coil embolization",
+        "coil 전",
+        "coil 후",
+        "TR band",
+        "Radial",
+        "Tracheostomy",
+        "기관절개관",
+        "기관절개술",
+        "PA 124",
+        "전신마취동의서",
+        "수술 전 처치표",
+        "Anti prep"
+      ],
+      "urgency": "routine",
+      "summary": "Burr hole 수술 후 EVD/SDD 관리, coil embolization 전후, tracheostomy 준비.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "Burr hole OP 후 return 시간, 1/2/6시간 F/U를 확인한다.",
+        "SDD는 natural drainage 기준으로 낮게 위치를 확인한다.",
+        "EVD 정상 CSF는 무색이며 시간당 15-20ml 생성 기준을 확인한다.",
+        "EVD가 시간당 100ml 이상이면 출혈 가능성을 보고한다.",
+        "EVD는 보통 tragus 기준 상방 0-15cm setting을 확인한다.",
+        "배액백은 용량의 2/3 도달 시 비운다.",
+        "정상 ICP는 5-15mmHg, IICP는 20mmHg 이상 기준을 확인한다.",
+        "Coil embolization 전 수술 전 처치표, Anti prep(AST 확인), angio실 인계를 확인한다.",
+        "Coil embolization 후 radial은 6시간 뒤 제거, 제거 후 superpore dressing, 다음날 아침 open을 확인한다.",
+        "Tracheostomy는 consult와 PA 동의서, 기관절개관 동의서, 전신마취동의서, 기관절개관 크기별 준비, NPO를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [],
+      "tables": [
+        {
+          "title": "신경외과 주요 수치",
+          "headers": [
+            "항목",
+            "기준"
+          ],
+          "rows": [
+            [
+              "EVD 정상 CSF 생성",
+              "15-20ml/hr"
+            ],
+            [
+              "EVD 배액 과다",
+              "100ml/hr 이상 시 출혈 가능성"
+            ],
+            [
+              "EVD setting",
+              "Tragus 기준 상방 0-15cm"
+            ],
+            [
+              "정상 ICP",
+              "5-15mmHg"
+            ],
+            [
+              "IICP",
+              "20mmHg 이상"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "tags": [
+        "검사·시술/신경외과",
+        "v26_uploaded_manual_added",
+        "manual_20260614"
+      ],
+      "review": {
+        "status": "v26_uploaded_manual_added",
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+      },
+      "source_refs": [
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+      ]
     }
   ],
   "final_review_note": {
@@ -7538,5 +9919,49 @@ window.ICU_MANUAL_DB = {
   "v25_update": {
     "summary": "실무 메뉴 항목에서 자주 찾는 검색 삭제 재확인",
     "card_count": 146
+  },
+  "v26_update": {
+    "summary": "업로드한 업무 매뉴얼 내용을 사이트 검색 DB에 추가하고 주요 표를 카드 상세에 표시",
+    "added_manual_cards": [
+      "ICU 입원 시 절차",
+      "Infusion pump",
+      "ICU 교체주기",
+      "투약/Feeding 시간",
+      "상황별 준비물",
+      "항생제 AST",
+      "검체통/ABGA",
+      "식이",
+      "Initial 후 전산",
+      "I/O 상세",
+      "부착기구",
+      "지참약",
+      "마약/향정 상세",
+      "간호기록",
+      "간호처방/액팅",
+      "DNR",
+      "EKG",
+      "Injection tip",
+      "수혈 tip",
+      "입퇴원/전동/전원",
+      "ICU 숙지사항",
+      "CPR 실무",
+      "영상검사",
+      "Dressing",
+      "수술 전후",
+      "CRRT 상세",
+      "신경외과 시술"
+    ],
+    "card_count": 173
+  },
+  "v27_update": {
+    "summary": "V24의 표/그림 표시 기능을 유지한 상태로 V26 업로드 매뉴얼 DB 추가본에 적용",
+    "features": [
+      "검색 결과 카드 상세에서 tables 배열 렌더링 유지",
+      "검색 결과 카드 상세에서 images 배열 렌더링 유지",
+      "V26 신규/보강 카드에 표 데이터 유지",
+      "향후 이미지 자료를 DB images 필드에 추가하면 그대로 카드에 표시 가능"
+    ],
+    "cards_with_tables": 21,
+    "cards_with_images": 0
   }
 };

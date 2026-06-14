@@ -1,4 +1,4 @@
-const CACHE_NAME = "wiltse-icu-ai-v25";
+const CACHE_NAME = "wiltse-icu-ai-v27";
 const ASSETS = [
   "/",
   "/index.html",
