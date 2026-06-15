@@ -553,3 +553,42 @@ main {
 #cardsHeading {
   margin-top: 16px;
 }
+
+
+/* V35: 검색 버튼 기본 흰색, 선택한 버튼만 파란색 */
+.hero-search .action-row button,
+.hero-search .action-row #askBtn,
+.hero-search .action-row #searchBtn,
+.hero-search .action-row #clearBtn {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: none !important;
+}
+
+.hero-search .action-row button.active,
+.hero-search .action-row button.active:disabled,
+.hero-search .action-row #askBtn.active,
+.hero-search .action-row #searchBtn.active,
+.hero-search .action-row #clearBtn.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 8px 18px rgba(37,99,235,.22) !important;
+}
+
+.hero-search .action-row button:disabled:not(.active) {
+  background: #ffffff !important;
+  color: #64748b !important;
+  border-color: #cbd5e1 !important;
+}
+
+.start-guide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 720px) {
+  .start-guide {
+    grid-template-columns: 1fr;
+  }
+}
