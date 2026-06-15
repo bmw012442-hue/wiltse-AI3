@@ -140,7 +140,16 @@ function localSearch(query, limit = 40) {
     const text = [
       card.id, card.category, card.title, card.summary,
       ...(card.aliases || []), ...(card.steps || []), ...(card.dosage_or_mix || []),
-      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || [])
+      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || []),
+      ...((card.tables || []).flatMap(t => [
+        t.title || "",
+        ...(t.headers || []),
+        ...((t.rows || []).flatMap(row => row || []))
+      ])),
+      ...((card.images || []).flatMap(img => [
+        img.src || "", img.alt || "", img.caption || "", "그림", "사진", "이미지", "참고 이미지"
+      ])),
+      ...((card.tables || []).length ? ["표", "테이블", "정리표"] : [])
     ].join(" ").toLowerCase();
     let s = 0;
     if ((card.title || "").toLowerCase().includes(q)) s += 35;
@@ -162,10 +171,35 @@ function localSearch(query, limit = 40) {
     .filter(x => x.s > 0).sort((a,b) => b.s - a.s).slice(0, limit).map(x => x.card);
 }
 
+
+function showResultsArea() {
+  const el = $("resultsArea");
+  if (el) el.classList.remove("hidden");
+  const guide = $("startGuide");
+  if (guide) guide.classList.add("hidden");
+}
+
+function hideResultsArea() {
+  const el = $("resultsArea");
+  if (el) el.classList.add("hidden");
+  const guide = $("startGuide");
+  if (guide) guide.classList.remove("hidden");
+  if ($("cards")) $("cards").innerHTML = "";
+  if ($("status")) $("status").textContent = "";
+  if ($("answerBox")) $("answerBox").classList.add("hidden");
+  if ($("cardsHeading")) $("cardsHeading").textContent = "검색 결과 카드";
+}
+
 async function searchCards() {
   setActionActive("searchBtn");
   const query = $("question").value.trim();
-  if (!query) return;
+  if (!query) {
+    $("status").textContent = "";
+    hideResultsArea();
+    $("question").focus();
+    return;
+  }
+  showResultsArea();
   $("status").textContent = "카드 검색 중...";
   $("answerBox").classList.add("hidden");
   $("cardsHeading").textContent = "검색 결과 카드";
@@ -188,7 +222,13 @@ async function searchCards() {
 async function askAI() {
   setActionActive("askBtn");
   const query = $("question").value.trim();
-  if (!query) return;
+  if (!query) {
+    $("status").textContent = "";
+    hideResultsArea();
+    $("question").focus();
+    return;
+  }
+  showResultsArea();
   $("status").textContent = "매뉴얼 DB 검색 후 AI 답변 생성 중...";
   $("answerBox").classList.add("hidden");
   $("cards").innerHTML = "";
@@ -219,15 +259,24 @@ async function askAI() {
   }
 }
 
+
+const questionBox = $("question");
+if (questionBox) {
+  questionBox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      askAI();
+    }
+  });
+}
+
 $("askBtn").addEventListener("click", askAI);
 $("searchBtn").addEventListener("click", searchCards);
 $("clearBtn").addEventListener("click", () => {
   setActionActive("clearBtn");
   $("question").value = "";
-  $("status").textContent = "";
-  $("answerBox").classList.add("hidden");
-  $("cardsHeading").textContent = "검색 결과 카드";
-  renderCards(allItems.slice(0, 10));
+  hideResultsArea();
+  document.querySelectorAll("[data-menu-q]").forEach(btn => btn.classList.remove("active"));
 });
 $("closeDialog").addEventListener("click", () => $("cardDialog").close());
 document.querySelectorAll("[data-q]").forEach(btn => {
@@ -237,7 +286,11 @@ document.querySelectorAll("[data-open-title]").forEach(btn => {
   btn.addEventListener("click", () => {
     const card = findByTitle(btn.dataset.openTitle);
     if (card) openCard(card.id);
-    else { $("question").value = btn.textContent; renderCards(localSearch(btn.textContent)); }
+    else {
+      $("question").value = btn.textContent;
+      showResultsArea();
+      renderCards(localSearch(btn.textContent));
+    }
   });
 });
 document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("click", () => {
@@ -253,7 +306,7 @@ document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("
 }));
 
 renderCategoryButtons();
-renderCards(allItems.slice(0, 10));
+hideResultsArea();
 
 
 if ("serviceWorker" in navigator) {
