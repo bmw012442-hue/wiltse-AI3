@@ -1,18 +1,13 @@
-{
-  "name": "icu-ai-manual-render-v4",
-  "version": "0.4.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.18.3",
-    "openai": "^4.76.0"
-  }
-}
+# Render 환경변수 예시
+# 실제 값은 GitHub 파일에 넣지 말고 Render Dashboard > Environment 에 등록하세요.
+
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4.1-mini
+
+# 부서 공용 로그인 정보
+ICU_LOGIN_ID=icu
+ICU_LOGIN_PASSWORD=여기에_부서_공용_비밀번호
+
+# 임의의 긴 문자열. 예: 32자 이상 권장
+SESSION_SECRET=여기에_긴_랜덤_문자열
+SESSION_HOURS=12

@@ -1,220 +1,291 @@
-:root {
-  --bg:#f8fafc; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0;
-  --card:#ffffff; --primary:#0f172a; --blue:#1d4ed8; --orange:#fff7ed;
+const $ = (id) => document.getElementById(id);
+const allItems = window.ICU_MANUAL_DB?.items || [];
+if ($("cardCount")) $("cardCount").textContent = `${allItems.length} cards`;
+
+const fieldLabels = {
+  indications: "적응증/상황", preparation: "준비물", steps: "절차",
+  dosage_or_mix: "용량/Mix/기준", orders_or_emr: "처방/EMR",
+  charting: "기록", io: "I/O", warnings: "주의사항",
+  related: "관련 카드", source_refs: "출처"
+};
+
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+function findById(id) { return allItems.find(x => x.id === id); }
+function findByTitle(title) { return allItems.find(x => x.title === title); }
+
+function renderCategoryButtons() {
+  const box = $("categoryButtons");
+  if (!box) return;
+  const groups = [...new Set(allItems.map(x => (x.category || "기타").split("/")[0]))].sort();
+  box.innerHTML = groups.map(g => `<button data-category="${esc(g)}">${esc(g)}</button>`).join("");
+  document.querySelectorAll("[data-category]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cat = btn.dataset.category;
+      const cards = allItems.filter(x => (x.category || "").startsWith(cat));
+      $("cardsHeading").textContent = `${cat} 카드`;
+      renderCards(cards);
+      $("status").textContent = `${cat}: ${cards.length}개 카드`;
+      $("answerBox").classList.add("hidden");
+    });
+  });
 }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif; }
-header { padding:20px 16px; background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; position:sticky; top:0; z-index:10; box-shadow:0 8px 24px rgba(15,23,42,.2); display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
-h1 { margin:0; font-size:22px; }
-header p { margin:6px 0 0; color:#dbeafe; font-size:13px; }
-main { max-width:1080px; margin:0 auto; padding:14px 14px 60px; }
-.pill { display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25); padding:7px 9px; border-radius:999px; font-size:12px; white-space:nowrap; }
-.warning { background:var(--orange); border:1px solid #fed7aa; color:#7c2d12; padding:12px; border-radius:16px; line-height:1.45; font-size:14px; }
-.ask { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:12px; margin:12px 0; box-shadow:0 3px 12px rgba(15,23,42,.05); }
-textarea { width:100%; min-height:115px; resize:vertical; border:1px solid var(--line); border-radius:14px; padding:12px; font-size:16px; outline:none; }
-.row, .quick { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
-button { border:0; border-radius:14px; padding:12px 14px; font-weight:800; cursor:pointer; background:var(--primary); color:white; flex:1; min-width:96px; }
-button.secondary { background:#e2e8f0; color:#0f172a; }
-button.small { min-width:auto; flex:0; padding:9px 12px; }
-.quick button { background:#fff; color:#0f172a; border:1px solid var(--line); font-size:13px; }
-.duty-grid button { background:#eff6ff; border-color:#bfdbfe; color:#1e3a8a; }
-.category-grid button { background:#f1f5f9; }
-.main-menu-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:10px; }
-.main-menu-grid button { min-height:74px; text-align:left; line-height:1.25; background:#ffffff; color:#0f172a; border:1px solid #cbd5e1; box-shadow:0 3px 10px rgba(15,23,42,.05); padding:13px; }
-.main-menu-grid button small { display:block; margin-top:6px; color:#64748b; font-weight:700; font-size:12px; }
-.main-menu-grid button:active, .card:active { transform:scale(.99); }
-.section-title { margin-top:18px; }
-.section-title h2 { font-size:17px; margin:8px 0 2px; }
-.section-title p { margin:0; color:var(--muted); font-size:13px; line-height:1.4; }
-.status { color:var(--muted); font-size:14px; margin:10px 2px; min-height:22px; }
-.answer, .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:14px; box-shadow:0 3px 12px rgba(15,23,42,.05); }
-.hidden { display:none; }
-.answer h2, h2 { font-size:18px; margin:12px 0 10px; }
-.answer h3 { font-size:15px; margin:16px 0 8px; color:#334155; }
-#answer { white-space:pre-wrap; line-height:1.55; background:#f8fafc; padding:12px; border-radius:14px; border:1px solid var(--line); }
-.cards { display:grid; gap:10px; }
-.card { cursor:pointer; transition:transform .08s ease, box-shadow .08s ease; }
-.card h3 { margin:0; font-size:17px; }
-.meta { color:var(--muted); font-size:12px; margin:4px 0 8px; }
-.summary { color:#334155; line-height:1.45; margin:0 0 8px; }
-.badge { display:inline-block; font-size:12px; background:#dbeafe; color:#1e40af; border-radius:999px; padding:5px 8px; margin:4px 4px 0 0; }
-.badge.emergency { background:#fee2e2; color:#991b1b; }
-.badge.urgent { background:#fef3c7; color:#92400e; }
-.source { display:inline-block; background:#f1f5f9; color:#0f172a; padding:7px 9px; border-radius:999px; margin:4px; font-size:13px; }
-.source.clickable { cursor:pointer; border:1px solid #cbd5e1; }
-dialog { width:min(940px, calc(100vw - 18px)); max-height:88vh; border:0; border-radius:22px; padding:0; box-shadow:0 24px 80px rgba(15,23,42,.35); }
-dialog::backdrop { background:rgba(15,23,42,.55); }
-.dialog-head { position:sticky; top:0; background:white; border-bottom:1px solid var(--line); padding:16px; display:flex; justify-content:space-between; gap:10px; align-items:flex-start; z-index:1; }
-.dialog-head h2 { margin:0; font-size:20px; }
-.dialog-head p { margin:5px 0 0; color:var(--muted); font-size:13px; }
-.detail-body { padding:16px; }
-.detail-section { margin:0 0 14px; border:1px solid var(--line); border-radius:16px; overflow:hidden; background:#fff; }
-.detail-section h4 { margin:0; padding:10px 12px; background:#f1f5f9; font-size:14px; }
-.detail-section ul { margin:0; padding:10px 16px 12px 30px; }
-.detail-section li { margin:7px 0; line-height:1.45; }
-@media (min-width:720px) {
-  .cards { grid-template-columns:repeat(2,1fr); }
-  .category-grid button { flex:0 0 calc(25% - 8px); }
-  .duty-grid button { flex:0 0 calc(33.3% - 8px); }
-  .main-menu-grid { grid-template-columns:repeat(3, minmax(0,1fr)); }
+
+function urgencyBadge(card) {
+  const u = card.urgency || "routine";
+  return `<span class="badge ${u === "emergency" ? "emergency" : u === "urgent" ? "urgent" : ""}">${esc(u)}</span>`;
 }
-@media (min-width:1024px) {
-  .main-menu-grid { grid-template-columns:repeat(4, minmax(0,1fr)); }
+
+function renderCards(cards) {
+  $("cards").innerHTML = (cards || []).map(card => `
+    <article class="card" data-card-id="${esc(card.id)}">
+      <h3>${esc(card.title)}</h3>
+      <div class="meta">${esc(card.id)} · ${esc(card.category)}</div>
+      <p class="summary">${esc(card.summary)}</p>
+      ${urgencyBadge(card)}
+      ${(card.aliases || []).slice(0,6).map(a => `<span class="badge">${esc(a)}</span>`).join("")}
+      ${(card.dosage_or_mix || []).slice(0,2).map(a => `<span class="badge">${esc(a)}</span>`).join("")}
+      <div class="meta">탭하면 상세내용 열림</div>
+    </article>
+  `).join("") || `<article class="card"><h3>검색 결과 없음</h3><p class="summary">다른 키워드로 검색해보세요.</p></article>`;
+
+  document.querySelectorAll("[data-card-id]").forEach(el => {
+    el.addEventListener("click", () => openCard(el.dataset.cardId));
+  });
+}
+
+function renderDetailList(key, vals) {
+  if (!Array.isArray(vals) || vals.length === 0) return "";
+  return `<section class="detail-section"><h4>${fieldLabels[key] || key}</h4><ul>${vals.map(v => `<li>${esc(v)}</li>`).join("")}</ul></section>`;
 }
 
 
-/* V16: 검색 영역 3버튼 기본 흰계열 + 선택 시 어두운계열 */
-.ask .row button {
-  background:#ffffff;
-  color:#0f172a;
-  border:1px solid #cbd5e1;
-  box-shadow:0 2px 8px rgba(15,23,42,.04);
+function renderTables(tables) {
+  if (!Array.isArray(tables) || tables.length === 0) return "";
+  return tables.map(t => `
+    <section class="detail-section table-section">
+      <h4>${esc(t.title || "표")}</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>${(t.headers || []).map(h => `<th>${esc(h)}</th>`).join("")}</tr>
+          </thead>
+          <tbody>
+            ${(t.rows || []).map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  `).join("");
 }
-.ask .row button.secondary {
-  background:#ffffff;
-  color:#0f172a;
-  border:1px solid #cbd5e1;
+
+function renderImages(images) {
+  if (!Array.isArray(images) || images.length === 0) return "";
+  return `<section class="detail-section image-section">
+    <h4>그림 / 참고 이미지</h4>
+    <div class="image-grid">
+      ${images.map(img => `
+        <figure>
+          <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" />
+          ${img.caption ? `<figcaption>${esc(img.caption)}</figcaption>` : ""}
+        </figure>
+      `).join("")}
+    </div>
+  </section>`;
 }
-.ask .row button.active {
-  background:#0f172a;
-  color:#ffffff;
-  border-color:#0f172a;
-}
-.ask .row button:active {
-  transform:scale(.99);
+
+function openCard(id) {
+  const card = findById(id);
+  if (!card) return;
+  $("detailTitle").textContent = card.title;
+  $("detailMeta").textContent = `${card.id} · ${card.category} · ${card.urgency || "routine"}`;
+  $("detailBody").innerHTML = `
+    <p class="summary">${esc(card.summary)}</p>
+    ${renderDetailList("indications", card.indications)}
+    ${renderDetailList("preparation", card.preparation)}
+    ${renderTables(card.tables)}
+    ${renderImages(card.images)}
+    ${renderDetailList("steps", card.steps)}
+    ${renderDetailList("dosage_or_mix", card.dosage_or_mix)}
+    ${renderDetailList("orders_or_emr", card.orders_or_emr)}
+    ${renderDetailList("charting", card.charting)}
+    ${renderDetailList("io", card.io)}
+    ${renderDetailList("warnings", card.warnings)}
+    ${renderDetailList("related", card.related)}
+    ${renderDetailList("source_refs", card.source_refs)}
+  `;
+  $("cardDialog").showModal();
 }
 
 
-/* V17: 좌측 상단 윌스 로고 */
-header .brand {
-  display:flex;
-  align-items:center;
-  gap:12px;
-  min-width:0;
+
+function setMenuActive(activeBtn) {
+  document.querySelectorAll("[data-menu-q]").forEach(btn => {
+    btn.classList.toggle("active", btn === activeBtn);
+  });
 }
-.brand-logo {
-  width:150px;
-  height:auto;
-  max-height:54px;
-  object-fit:contain;
-  background:rgba(255,255,255,.96);
-  border-radius:10px;
-  padding:5px 7px;
-  box-shadow:0 4px 14px rgba(15,23,42,.18);
-  flex:0 0 auto;
+
+function setActionActive(activeId) {
+  ["askBtn", "searchBtn", "clearBtn"].forEach(id => {
+    const el = $(id);
+    if (!el) return;
+    el.classList.toggle("active", id === activeId);
+  });
 }
-header .brand h1,
-header .brand p {
-  white-space:normal;
-}
-@media (max-width:520px) {
-  header {
-    align-items:center;
+
+function localSearch(query, limit = 40) {
+  const q = String(query || "").toLowerCase().trim();
+  if (!q) return allItems.slice(0, 12);
+  const terms = q.split(/[,\s/&·()]+/).filter(Boolean);
+  function score(card) {
+    const text = [
+      card.id, card.category, card.title, card.summary,
+      ...(card.aliases || []), ...(card.steps || []), ...(card.dosage_or_mix || []),
+      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || []),
+      ...((card.tables || []).flatMap(t => [
+        t.title || "",
+        ...(t.headers || []),
+        ...((t.rows || []).flatMap(row => row || []))
+      ])),
+      ...((card.images || []).flatMap(img => [
+        img.src || "", img.alt || "", img.caption || "", "그림", "사진", "이미지", "참고 이미지"
+      ])),
+      ...((card.tables || []).length ? ["표", "테이블", "정리표"] : [])
+    ].join(" ").toLowerCase();
+    let s = 0;
+    if ((card.title || "").toLowerCase().includes(q)) s += 35;
+    if ((card.category || "").toLowerCase().includes(q)) s += 12;
+    for (const a of card.aliases || []) {
+      const aa = String(a).toLowerCase();
+      if (aa === q) s += 40;
+      if (aa.includes(q) || q.includes(aa)) s += 18;
+    }
+    for (const t of terms) {
+      if (t.length < 2) continue;
+      if (text.includes(t)) s += 4;
+      if ((card.title || "").toLowerCase().includes(t)) s += 10;
+      if ((card.category || "").toLowerCase().includes(t)) s += 6;
+    }
+    return s;
   }
-  header .brand {
-    gap:8px;
-  }
-  .brand-logo {
-    width:92px;
-    max-height:42px;
-    padding:4px;
-    border-radius:8px;
-  }
-  header h1 {
-    font-size:17px;
-  }
-  header p {
-    font-size:11px;
-  }
-  .pill {
-    font-size:11px;
-    padding:6px 7px;
-  }
+  return allItems.map(card => ({card, s: score(card)}))
+    .filter(x => x.s > 0).sort((a,b) => b.s - a.s).slice(0, limit).map(x => x.card);
 }
 
-
-/* V19: 실무 메뉴 선택 색상 */
-.main-menu-grid button.active {
-  background:#0f172a;
-  color:#ffffff;
-  border-color:#0f172a;
-}
-.main-menu-grid button.active small {
-  color:#dbeafe;
-}
-
-
-/* V21: 선택 색상을 검정 대신 부드러운 파란색으로 변경 */
-.ask .row button.active,
-.main-menu-grid button.active {
-  background:#2563eb;
-  color:#ffffff;
-  border-color:#2563eb;
-}
-.main-menu-grid button.active small {
-  color:#dbeafe;
-}
-
-/* V21: 좌측 상단 헤더 로고는 가로형 윌스기념병원 로고로 표시 */
-.brand-logo {
-  width:220px;
-  max-height:64px;
-  object-fit:contain;
-  background:rgba(255,255,255,.96);
-}
-@media (max-width:520px) {
-  .brand-logo {
-    width:132px;
-    max-height:48px;
+async function searchCards() {
+  setActionActive("searchBtn");
+  const query = $("question").value.trim();
+  if (!query) return;
+  $("status").textContent = "카드 검색 중...";
+  $("answerBox").classList.add("hidden");
+  $("cardsHeading").textContent = "검색 결과 카드";
+  try {
+    const res = await fetch("/api/search", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ query })
+    });
+    const data = await res.json();
+    const cards = (data.cards && data.cards.length) ? data.cards : localSearch(query);
+    renderCards(cards);
+    $("status").textContent = `${cards.length}개 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
+  } catch {
+    const cards = localSearch(query);
+    renderCards(cards);
+    $("status").textContent = `${cards.length}개 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
   }
 }
 
+async function askAI() {
+  setActionActive("askBtn");
+  const query = $("question").value.trim();
+  if (!query) return;
+  $("status").textContent = "매뉴얼 DB 검색 후 AI 답변 생성 중...";
+  $("answerBox").classList.add("hidden");
+  $("cards").innerHTML = "";
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ query })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || data.detail || "오류 발생");
+    $("answer").textContent = data.answer || "";
+    $("sources").innerHTML = (data.sources || []).map(s =>
+      `<span class="source clickable" data-source-id="${esc(s.id)}">${esc(s.id)} · ${esc(s.title)}</span>`
+    ).join("");
+    $("answerBox").classList.remove("hidden");
+    const cards = data.cards && data.cards.length ? data.cards : localSearch(query, 12);
+    renderCards(cards);
+    $("cardsHeading").textContent = "AI가 참고한 카드";
+    $("status").textContent = "완료. 아래 카드 또는 참고카드를 누르면 상세내용이 열립니다.";
+    document.querySelectorAll("[data-source-id]").forEach(el => {
+      el.addEventListener("click", () => openCard(el.dataset.sourceId));
+    });
+  } catch (err) {
+    $("answer").textContent = "오류: " + err.message + "\n\nRender 환경변수 OPENAI_API_KEY 설정과 배포 로그를 확인하세요.";
+    $("sources").innerHTML = "";
+    $("answerBox").classList.remove("hidden");
+    $("status").textContent = "오류 발생";
+  }
+}
 
-/* V24: 카드 상세창 표/그림 표시 */
-.table-wrap {
-  width:100%;
-  overflow-x:auto;
+$("askBtn").addEventListener("click", askAI);
+$("searchBtn").addEventListener("click", searchCards);
+$("clearBtn").addEventListener("click", () => {
+  setActionActive("clearBtn");
+  $("question").value = "";
+  $("status").textContent = "";
+  $("answerBox").classList.add("hidden");
+  $("cardsHeading").textContent = "검색 결과 카드";
+  renderCards(allItems.slice(0, 10));
+});
+$("closeDialog").addEventListener("click", () => $("cardDialog").close());
+document.querySelectorAll("[data-q]").forEach(btn => {
+  btn.addEventListener("click", () => { $("question").value = btn.dataset.q; searchCards(); });
+});
+document.querySelectorAll("[data-open-title]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = findByTitle(btn.dataset.openTitle);
+    if (card) openCard(card.id);
+    else { $("question").value = btn.textContent; renderCards(localSearch(btn.textContent)); }
+  });
+});
+document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("click", () => {
+  setMenuActive(btn);
+  const q = btn.dataset.menuQ;
+  $("question").value = q;
+  const cards = localSearch(q, 40);
+  $("cardsHeading").textContent = btn.textContent.replace(/\\s+/g, " ").trim();
+  renderCards(cards);
+  $("answerBox").classList.add("hidden");
+  $("status").textContent = `${cards.length}개 관련 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
+  document.querySelector(".ask").scrollIntoView({behavior:"smooth", block:"start"});
+}));
+
+renderCategoryButtons();
+renderCards(allItems.slice(0, 10));
+
+
+// V30: 로그인 보호 적용으로 기존 PWA 오프라인 캐시를 제거합니다.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.getRegistrations()
+      .then(registrations => registrations.forEach(reg => reg.unregister()))
+      .catch(() => {});
+  });
 }
-.table-section table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:13px;
+if ("caches" in window) {
+  caches.keys()
+    .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+    .catch(() => {});
 }
-.table-section th,
-.table-section td {
-  border:1px solid #cbd5e1;
-  padding:8px 9px;
-  text-align:left;
-  vertical-align:top;
-  line-height:1.35;
-}
-.table-section th {
-  background:#eff6ff;
-  color:#1e3a8a;
-  font-weight:800;
-  white-space:nowrap;
-}
-.image-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-  gap:10px;
-  padding:12px;
-}
-.image-grid figure {
-  margin:0;
-  border:1px solid #e2e8f0;
-  border-radius:14px;
-  overflow:hidden;
-  background:#fff;
-}
-.image-grid img {
-  width:100%;
-  height:auto;
-  display:block;
-}
-.image-grid figcaption {
-  padding:8px 10px;
-  color:#475569;
-  font-size:12px;
-  line-height:1.35;
+
+const logoutBtn = $("logoutBtn");
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", async () => {
+    try {
+      await fetch("/api/logout", { method: "POST" });
+    } finally {
+      location.href = "/login";
+    }
+  });
 }

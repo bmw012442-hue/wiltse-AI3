@@ -1,9 +1,9 @@
-{
+window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.27.0-v27-table-image-kept",
+    "version": "1.29.0-v29-github-web-upload-safe-images",
     "language": "ko",
-    "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리",
+    "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
   },
   "schema": {
@@ -1305,7 +1305,13 @@
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0014.png",
+          "alt": "신경계 사정 가이드",
+          "caption": "신경계 사정 가이드"
+        }
+      ]
     },
     {
       "id": "ROUTINE006",
@@ -1397,7 +1403,23 @@
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0006.png",
+          "alt": "NRS 통증 평가 척도",
+          "caption": "NRS 통증 평가 척도"
+        },
+        {
+          "src": "bin0007.png",
+          "alt": "FLACC 통증 평가 척도",
+          "caption": "FLACC 통증 평가 척도"
+        },
+        {
+          "src": "bin0008.png",
+          "alt": "FPS 통증 평가 척도",
+          "caption": "FPS 통증 평가 척도"
+        }
+      ]
     },
     {
       "id": "ROUTINE008",
@@ -1945,7 +1967,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [
+        {
+          "src": "bin0009.png",
+          "alt": "채혈 bottle 실물 사진",
+          "caption": "채혈 bottle 실물 사진"
+        }
+      ]
     },
     {
       "id": "LAB002",
@@ -2035,7 +2063,23 @@
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0017.png",
+          "alt": "ABGA 해석 4단계 공식",
+          "caption": "ABGA 해석 4단계 공식"
+        },
+        {
+          "src": "bin0019.png",
+          "alt": "동맥혈 ABGA 수행절차",
+          "caption": "동맥혈 ABGA 수행절차"
+        },
+        {
+          "src": "bin001a.png",
+          "alt": "ABGA 이상 시 단계별 수행",
+          "caption": "ABGA 이상 시 단계별 수행"
+        }
+      ]
     },
     {
       "id": "LAB004",
@@ -2327,7 +2371,13 @@
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000d.png",
+          "alt": "Nebulizer 사용 참고 자료",
+          "caption": "Nebulizer 사용 참고 자료"
+        }
+      ]
     },
     {
       "id": "VENT005",
@@ -2370,7 +2420,13 @@
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000e.png",
+          "alt": "산소요법(O2) 참고 표",
+          "caption": "산소요법(O2) 참고 표"
+        }
+      ]
     },
     {
       "id": "VENT006",
@@ -2534,7 +2590,13 @@
         "신규(경력직) OJT 집중치료실"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0012.png",
+          "alt": "Bedside monitor 예시 사진",
+          "caption": "Bedside monitor 예시 사진"
+        }
+      ]
     },
     {
       "id": "TF001",
@@ -2685,7 +2747,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [
+        {
+          "src": "bin000f.png",
+          "alt": "수혈 관련 참고 표",
+          "caption": "수혈 관련 참고 표"
+        }
+      ]
     },
     {
       "id": "TF003",
@@ -5359,7 +5427,13 @@
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0010.png",
+          "alt": "격리실 간호 참고 자료",
+          "caption": "격리실 간호 참고 자료"
+        }
+      ]
     },
     {
       "id": "SPEC006",
@@ -5626,7 +5700,18 @@
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000b.png",
+          "alt": "인슐린 제품/용법 참고 표",
+          "caption": "인슐린 제품/용법 참고 표"
+        },
+        {
+          "src": "bin000c.png",
+          "alt": "경구 혈당강하제 참고 표",
+          "caption": "경구 혈당강하제 참고 표"
+        }
+      ]
     },
     {
       "id": "ECART001",
@@ -5906,7 +5991,13 @@
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0012.png",
+          "alt": "Bedside monitor 예시 사진",
+          "caption": "Bedside monitor 예시 사진"
+        }
+      ]
     },
     {
       "id": "DEPT003",
@@ -6243,7 +6334,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [
+        {
+          "src": "bin000a.png",
+          "alt": "인슐린 종류와 작용시간 그래프",
+          "caption": "인슐린 종류와 작용시간 그래프"
+        }
+      ]
     },
     {
       "id": "PROTO002",
@@ -6667,7 +6764,23 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000d.png",
+          "alt": "Nebulizer 사용 참고 자료",
+          "caption": "Nebulizer 사용 참고 자료"
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "산소요법(O2) 참고 표",
+          "caption": "산소요법(O2) 참고 표"
+        },
+        {
+          "src": "bin0012.png",
+          "alt": "Bedside monitor 예시 사진",
+          "caption": "Bedside monitor 예시 사진"
+        }
+      ]
     },
     {
       "id": "MENU005",
@@ -6738,7 +6851,13 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000f.png",
+          "alt": "수혈 관련 참고 표",
+          "caption": "수혈 관련 참고 표"
+        }
+      ]
     },
     {
       "id": "MENU006",
@@ -7010,7 +7129,28 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0001.png",
+          "alt": "Kelly / Long kelly 기구 사진",
+          "caption": "Kelly / Long kelly 기구 사진"
+        },
+        {
+          "src": "bin0002.png",
+          "alt": "Forcep / Dressing set 구성 사진",
+          "caption": "Forcep / Dressing set 구성 사진"
+        },
+        {
+          "src": "bin0003.png",
+          "alt": "Scissors / Mosquito / Magill forcep 사진",
+          "caption": "Scissors / Mosquito / Magill forcep 사진"
+        },
+        {
+          "src": "bin0004.png",
+          "alt": "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진",
+          "caption": "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진"
+        }
+      ]
     },
     {
       "id": "MENU010",
@@ -7067,7 +7207,18 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0010.png",
+          "alt": "격리실 간호 참고 자료",
+          "caption": "격리실 간호 참고 자료"
+        },
+        {
+          "src": "bin0011.png",
+          "alt": "다제내성감염균(VRE/CRE 등) 참고표",
+          "caption": "다제내성감염균(VRE/CRE 등) 참고표"
+        }
+      ]
     },
     {
       "id": "MENU011",
@@ -7133,7 +7284,18 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0015.png",
+          "alt": "섭취량 및 배설량(I&O) 기록 그림",
+          "caption": "섭취량 및 배설량(I&O) 기록 그림"
+        },
+        {
+          "src": "bin0016.png",
+          "alt": "환자 유형별 I/O 불균형 예시 표",
+          "caption": "환자 유형별 I/O 불균형 예시 표"
+        }
+      ]
     },
     {
       "id": "MENU012",
@@ -7245,7 +7407,28 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0017.png",
+          "alt": "ABGA 해석 4단계 공식",
+          "caption": "ABGA 해석 4단계 공식"
+        },
+        {
+          "src": "bin0018.png",
+          "alt": "ABGA 대표 질환 예시",
+          "caption": "ABGA 대표 질환 예시"
+        },
+        {
+          "src": "bin0019.png",
+          "alt": "동맥혈 ABGA 수행절차",
+          "caption": "동맥혈 ABGA 수행절차"
+        },
+        {
+          "src": "bin001a.png",
+          "alt": "ABGA 이상 시 단계별 수행",
+          "caption": "ABGA 이상 시 단계별 수행"
+        }
+      ]
     },
     {
       "id": "MENU014",
@@ -7307,7 +7490,23 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin0013.png",
+          "alt": "LOC 단계 정리 그림",
+          "caption": "LOC 단계 정리 그림"
+        },
+        {
+          "src": "bin0014.png",
+          "alt": "신경계 사정 가이드",
+          "caption": "신경계 사정 가이드"
+        },
+        {
+          "src": "bin001b.png",
+          "alt": "동공 크기(Pupil size) 그림",
+          "caption": "동공 크기(Pupil size) 그림"
+        }
+      ]
     },
     {
       "id": "MENU015",
@@ -7368,7 +7567,23 @@
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "bin000a.png",
+          "alt": "인슐린 종류와 작용시간 그래프",
+          "caption": "인슐린 종류와 작용시간 그래프"
+        },
+        {
+          "src": "bin000b.png",
+          "alt": "인슐린 제품/용법 참고 표",
+          "caption": "인슐린 제품/용법 참고 표"
+        },
+        {
+          "src": "bin000c.png",
+          "alt": "경구 혈당강하제 참고 표",
+          "caption": "경구 혈당강하제 참고 표"
+        }
+      ]
     },
     {
       "id": "MENU016",
@@ -8284,7 +8499,23 @@
           ]
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "bin0006.png",
+          "alt": "NRS 통증 평가 척도",
+          "caption": "NRS 통증 평가 척도"
+        },
+        {
+          "src": "bin0007.png",
+          "alt": "FLACC 통증 평가 척도",
+          "caption": "FLACC 통증 평가 척도"
+        },
+        {
+          "src": "bin0008.png",
+          "alt": "FPS 통증 평가 척도",
+          "caption": "FPS 통증 평가 척도"
+        }
+      ],
       "tags": [
         "Routine/Initial·전산",
         "v26_uploaded_manual_added",
@@ -8372,7 +8603,18 @@
           ]
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "bin0015.png",
+          "alt": "섭취량 및 배설량(I&O) 기록 그림",
+          "caption": "섭취량 및 배설량(I&O) 기록 그림"
+        },
+        {
+          "src": "bin0016.png",
+          "alt": "환자 유형별 I/O 불균형 예시 표",
+          "caption": "환자 유형별 I/O 불균형 예시 표"
+        }
+      ],
       "tags": [
         "I&O·전해질/I&O",
         "v26_uploaded_manual_added",
@@ -8852,7 +9094,13 @@
           ]
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "bin0012.png",
+          "alt": "Bedside monitor 예시 사진",
+          "caption": "Bedside monitor 예시 사진"
+        }
+      ],
       "tags": [
         "검사/EKG",
         "v26_uploaded_manual_added",
@@ -9575,7 +9823,13 @@
       ],
       "related": [],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "bin0005.png",
+          "alt": "수술 전후 간호 참고 표",
+          "caption": "수술 전후 간호 참고 표"
+        }
+      ],
       "tags": [
         "수술간호",
         "v26_uploaded_manual_added",
@@ -9963,5 +10217,10 @@
     ],
     "cards_with_tables": 21,
     "cards_with_images": 0
+  },
+  "v29_update": {
+    "summary": "GitHub 웹 업로드 시 이미지 폴더가 풀려도 작동하도록 이미지를 public 루트에 배치하고 DB 이미지 경로를 수정",
+    "json_validated": true,
+    "image_path_mode": "public root, e.g. bin0001.png"
   }
-}
+};

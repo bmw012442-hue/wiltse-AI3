@@ -1,0 +1,18 @@
+{
+  "name": "icu-ai-manual-v30-common-login",
+  "version": "0.30.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.3",
+    "openai": "^4.76.0"
+  }
+}
