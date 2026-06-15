@@ -592,3 +592,54 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* V36: 최종 이미지 배너 헤더 적용 */
+.banner-header {
+  position: relative;
+  display: block;
+  background: transparent !important;
+  padding: 10px 12px 0;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.header-banner-img {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .10);
+}
+
+.banner-logout {
+  position: absolute;
+  top: 18px;
+  right: max(18px, calc((100vw - 920px) / 2 + 18px));
+  width: auto !important;
+  min-width: auto !important;
+  padding: 7px 10px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.18) !important;
+  border: 1px solid rgba(255,255,255,.45) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 620px) {
+  .banner-header {
+    padding: 8px 8px 0;
+  }
+  .header-banner-img {
+    border-radius: 12px;
+  }
+  .banner-logout {
+    top: 13px;
+    right: 13px;
+    padding: 5px 8px !important;
+    font-size: 11px !important;
+  }
+}
