@@ -172,6 +172,40 @@ function localSearch(query, limit = 40) {
 }
 
 
+
+function setLoading(message) {
+  const hint = $("loadingHint");
+  const text = $("loadingText");
+  if (text) text.textContent = message || "처리 중입니다...";
+  if (hint) hint.classList.remove("hidden");
+  if ($("status")) {
+    $("status").classList.remove("hidden");
+    $("status").innerHTML = `<span class="spinner"></span><span>${esc(message || "처리 중입니다...")}</span>`;
+  }
+}
+
+function clearLoading() {
+  const hint = $("loadingHint");
+  if (hint) hint.classList.add("hidden");
+  if ($("status")) {
+    $("status").classList.add("hidden");
+    $("status").innerHTML = "";
+  }
+}
+
+function setBusyButton(buttonId, isBusy, busyText) {
+  const btn = $(buttonId);
+  if (!btn) return;
+  if (isBusy) {
+    btn.dataset.originalText = btn.dataset.originalText || btn.textContent;
+    btn.textContent = busyText || "진행 중...";
+    btn.disabled = true;
+  } else {
+    btn.textContent = btn.dataset.originalText || btn.textContent;
+    btn.disabled = false;
+  }
+}
+
 function showResultsArea() {
   const el = $("resultsArea");
   if (el) el.classList.remove("hidden");
@@ -194,28 +228,42 @@ async function searchCards() {
   setActionActive("searchBtn");
   const query = $("question").value.trim();
   if (!query) {
-    $("status").textContent = "";
+    clearLoading();
     hideResultsArea();
     $("question").focus();
     return;
   }
+
   showResultsArea();
-  $("status").textContent = "카드 검색 중...";
   $("answerBox").classList.add("hidden");
-  $("cardsHeading").textContent = "검색 결과 카드";
+  setLoading("카드 검색 중입니다...");
+  setBusyButton("searchBtn", true, "검색 중...");
+
   try {
     const res = await fetch("/api/search", {
-      method: "POST", headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ query })
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({query})
     });
+
+    if (!res.ok) throw new Error("서버 검색 실패");
+
     const data = await res.json();
-    const cards = (data.cards && data.cards.length) ? data.cards : localSearch(query);
+    const cards = data.cards || localSearch(query, 12);
     renderCards(cards);
-    $("status").textContent = `${cards.length}개 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
-  } catch {
-    const cards = localSearch(query);
+    $("cardsHeading").textContent = "검색 결과 카드";
+    $("status").classList.remove("hidden");
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개의 관련 카드를 찾았습니다.</span>`;
+  } catch (err) {
+    const cards = localSearch(query, 12);
     renderCards(cards);
-    $("status").textContent = `${cards.length}개 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
+    $("cardsHeading").textContent = "검색 결과 카드";
+    $("status").classList.remove("hidden");
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>서버 검색 대신 기기 내 검색 결과 ${cards.length}개를 표시합니다.</span>`;
+  } finally {
+    const hint = $("loadingHint");
+    if (hint) hint.classList.add("hidden");
+    setBusyButton("searchBtn", false);
   }
 }
 
@@ -275,7 +323,9 @@ $("searchBtn").addEventListener("click", searchCards);
 $("clearBtn").addEventListener("click", () => {
   setActionActive("clearBtn");
   $("question").value = "";
+  clearLoading();
   hideResultsArea();
+  document.querySelectorAll(".action-row button").forEach(btn => btn.classList.remove("active"));
   document.querySelectorAll("[data-menu-q]").forEach(btn => btn.classList.remove("active"));
 });
 $("closeDialog").addEventListener("click", () => $("cardDialog").close());

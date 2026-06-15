@@ -470,3 +470,86 @@ main {
     gap: 7px;
   }
 }
+
+
+/* V34: 버튼 선택색 + 진행상태 박스 */
+.action-row button {
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .08s ease, box-shadow .15s ease;
+}
+
+.action-row button.active,
+.action-row button:focus-visible {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 8px 18px rgba(37,99,235,.22);
+}
+
+.action-row button:active {
+  transform: scale(.99);
+}
+
+.action-row button:disabled {
+  opacity: 1;
+  cursor: progress;
+}
+
+.action-row #askBtn:disabled,
+.action-row #searchBtn:disabled {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+}
+
+.loading-hint {
+  margin-top: 14px;
+  padding: 13px 14px;
+  border-radius: 16px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.status {
+  margin: 12px 0 14px;
+  padding: 14px 15px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 6px 20px rgba(15,23,42,.06);
+  color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  line-height: 1.4;
+}
+
+.status b {
+  margin-right: 3px;
+}
+
+.spinner {
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(37,99,235,.22);
+  border-top-color: #2563eb;
+  border-radius: 999px;
+  display: inline-block;
+  flex: 0 0 auto;
+  animation: icu-spin .8s linear infinite;
+}
+
+@keyframes icu-spin {
+  to { transform: rotate(360deg); }
+}
+
+.answer h2,
+#cardsHeading {
+  margin-top: 16px;
+}
