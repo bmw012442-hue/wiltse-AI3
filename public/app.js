@@ -258,6 +258,26 @@ renderCards(allItems.slice(0, 10));
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").catch(() => {});
+    navigator.serviceWorker.getRegistrations()
+      .then(registrations => registrations.forEach(reg => reg.unregister()))
+      .catch(() => {});
+  });
+}
+
+
+// V32: 로그인 보호 버전 - 로그아웃 및 이전 캐시 삭제
+if ("caches" in window) {
+  caches.keys()
+    .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+    .catch(() => {});
+}
+const logoutBtn = $("logoutBtn");
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", async () => {
+    try {
+      await fetch("/api/logout", { method: "POST" });
+    } finally {
+      location.href = "/login";
+    }
   });
 }
