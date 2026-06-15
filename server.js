@@ -6,10 +6,10 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
-      - key: OPENAI_MODEL
-        value: gpt-4.1-mini
       - key: NODE_ENV
         value: production
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
       - key: OPENAI_API_KEY
         sync: false
       - key: ICU_LOGIN_ID

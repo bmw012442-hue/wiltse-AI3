@@ -1,40 +1,18 @@
-# V30 공용 로그인 적용본
-
-이 버전은 V29 기능을 유지하면서, 중환자실 부서 공용 아이디/비밀번호 로그인을 추가한 버전입니다.
-
-## 포함 기능
-- 로그인 화면 `/login`
-- 공용 ID/PW 확인 후 접속
-- 로그인하지 않으면 index.html, data.js, JSON, 이미지 파일 접근 차단
-- 로그아웃 버튼
-- 실패 5회 시 10분 제한
-- 기존 PWA 오프라인 캐시 삭제 처리
-- V29의 표/사진/그림/이미지 표시 기능 유지
-
-## GitHub 적용 방법
-1. ZIP 압축을 풉니다.
-2. 압축 푼 폴더 안의 모든 파일/폴더를 GitHub 저장소 루트에 업로드합니다.
-   - server.js
-   - package.json
-   - render.yaml
-   - public 폴더
-3. GitHub에서 Commit changes를 누릅니다.
-4. Render에서 자동 배포를 기다립니다.
-
-## Render 환경변수 설정
-Render > 해당 서비스 > Environment 에 아래 3개를 추가하세요.
-
-필수:
-- ICU_LOGIN_ID : 부서 공용 아이디 예) icu
-- ICU_LOGIN_PASSWORD : 부서 공용 비밀번호
-- SESSION_SECRET : 긴 랜덤 문자열
-
-선택:
-- SESSION_HOURS : 로그인 유지 시간. 기본 12
-
-이미 있는 OPENAI_API_KEY는 그대로 두면 됩니다.
-
-## 주의
-- ID/PW를 GitHub 파일에 직접 적지 마세요.
-- 퇴사자/전동자가 생기면 ICU_LOGIN_PASSWORD를 변경하세요.
-- 이전에 홈 화면에 설치해 둔 앱은 캐시가 남을 수 있으니, 삭제 후 다시 추가하는 것을 권장합니다.
+{
+  "name": "icu-ai-manual-v31-common-login",
+  "version": "0.31.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.3",
+    "openai": "^4.76.0"
+  }
+}

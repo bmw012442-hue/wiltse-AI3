@@ -220,7 +220,7 @@ header .brand p {
 }
 
 
-/* V30: 공용 로그인 / 로그아웃 버튼 */
+/* V32: 공용 로그인 / 로그아웃 버튼 */
 .auth-actions {
   display:flex;
   align-items:center;

@@ -140,16 +140,7 @@ function localSearch(query, limit = 40) {
     const text = [
       card.id, card.category, card.title, card.summary,
       ...(card.aliases || []), ...(card.steps || []), ...(card.dosage_or_mix || []),
-      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || []),
-      ...((card.tables || []).flatMap(t => [
-        t.title || "",
-        ...(t.headers || []),
-        ...((t.rows || []).flatMap(row => row || []))
-      ])),
-      ...((card.images || []).flatMap(img => [
-        img.src || "", img.alt || "", img.caption || "", "그림", "사진", "이미지", "참고 이미지"
-      ])),
-      ...((card.tables || []).length ? ["표", "테이블", "정리표"] : [])
+      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || [])
     ].join(" ").toLowerCase();
     let s = 0;
     if ((card.title || "").toLowerCase().includes(q)) s += 35;
@@ -265,7 +256,6 @@ renderCategoryButtons();
 renderCards(allItems.slice(0, 10));
 
 
-// V30: 로그인 보호 적용으로 기존 PWA 오프라인 캐시를 제거합니다.
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.getRegistrations()
@@ -273,12 +263,14 @@ if ("serviceWorker" in navigator) {
       .catch(() => {});
   });
 }
+
+
+// V32: 로그인 보호 버전 - 로그아웃 및 이전 캐시 삭제
 if ("caches" in window) {
   caches.keys()
     .then(keys => Promise.all(keys.map(key => caches.delete(key))))
     .catch(() => {});
 }
-
 const logoutBtn = $("logoutBtn");
 if (logoutBtn) {
   logoutBtn.addEventListener("click", async () => {
