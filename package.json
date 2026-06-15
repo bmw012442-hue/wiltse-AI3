@@ -1,6 +1,6 @@
 {
-  "name": "icu-ai-manual-v31-common-login",
-  "version": "0.31.0",
+  "name": "icu-ai-manual-v38-login-background",
+  "version": "0.38.0",
   "private": true,
   "type": "module",
   "scripts": {
