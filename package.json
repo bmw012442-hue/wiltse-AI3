@@ -1,6 +1,6 @@
 {
-  "name": "icu-ai-manual-v40-final-login-screen",
-  "version": "0.40.0",
+  "name": "icu-ai-manual-v41-login-image-access-fix",
+  "version": "0.41.0",
   "private": true,
   "type": "module",
   "scripts": {

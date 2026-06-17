@@ -267,6 +267,28 @@ app.get("/sw.js", (req, res) => {
   res.sendFile(path.join(publicDir, "sw.js"));
 });
 
+// 로그인 화면에 필요한 정적 파일은 로그인 전에도 접근 가능해야 합니다.
+// 이 라우트가 없으면 /login_final_screen.png 요청도 /login으로 리다이렉트되어
+// 배경 이미지가 연한 파란 화면처럼 보일 수 있습니다.
+const publicLoginAssets = new Set([
+  "/login_final_screen.png",
+  "/login_hospital_bg.png",
+  "/favicon-16.png",
+  "/favicon-32.png",
+  "/apple-touch-icon.png",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/wiltse_app_icon.png",
+  "/wiltse_logo.png",
+  "/manifest.json"
+]);
+
+app.get(Array.from(publicLoginAssets), (req, res) => {
+  const safeName = path.basename(req.path);
+  res.sendFile(path.join(publicDir, safeName));
+});
+
+
 app.post("/api/login", (req, res) => {
   if (!LOGIN_ID || !LOGIN_PASSWORD) {
     return res.status(500).json({
