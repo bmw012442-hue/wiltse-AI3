@@ -1,3 +1,12 @@
+// V47_BOOT_ERROR_HANDLER
+window.addEventListener("error", (event) => {
+  const status = document.getElementById("status");
+  if (status) {
+    status.classList.remove("hidden");
+    status.textContent = "앱 스크립트 오류: 새로고침 후 다시 시도하세요.";
+  }
+  console.error(event.error || event.message);
+});
 const $ = (id) => document.getElementById(id);
 const allItems = window.ICU_MANUAL_DB?.items || [];
 if ($("cardCount")) $("cardCount").textContent = `${allItems.length} cards`;
@@ -309,9 +318,18 @@ if (questionBox) {
   });
 }
 
-$("askBtn").addEventListener("click", askAI);
-$("searchBtn").addEventListener("click", searchCards);
-$("clearBtn").addEventListener("click", () => {
+function bindClick(id, handler) {
+  const el = $(id);
+  if (!el) return;
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
+    handler(event);
+  });
+}
+
+bindClick("askBtn", askAI);
+bindClick("searchBtn", searchCards);
+bindClick("clearBtn", () => {
   setActionActive("clearBtn");
   $("question").value = "";
   clearLoading();
@@ -319,7 +337,7 @@ $("clearBtn").addEventListener("click", () => {
   document.querySelectorAll(".action-row button").forEach(btn => btn.classList.remove("active"));
   document.querySelectorAll("[data-menu-q]").forEach(btn => btn.classList.remove("active"));
 });
-$("closeDialog").addEventListener("click", () => $("cardDialog").close());
+bindClick("closeDialog", () => $("cardDialog").close());
 document.querySelectorAll("[data-q]").forEach(btn => {
   btn.addEventListener("click", () => { $("question").value = btn.dataset.q; searchCards(); });
 });

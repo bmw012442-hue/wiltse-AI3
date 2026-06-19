@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.46.0-v46-structured-card-detail",
+    "version": "1.47.0-v47-button-cache-fix",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -15432,5 +15432,11 @@
     "description": "사용자 검색 후 카드 상세 화면을 카드 제목/검색어/언제 보는 카드/준비물/핵심 절차/주의사항/기록 포인트/관련 카드/출처 기준 구조로 통일. 기존 표·이미지·사진 기능 유지.",
     "structured_detail_view": true,
     "tables_images_kept": true
+  },
+  "v47_update": {
+    "description": "AI답변/카드검색 버튼 먹통 방지: app/data 캐시 버전 갱신, service worker 캐시 해제, 버튼 type=button 및 안전한 이벤트 바인딩 적용. V46 카드 표준 구조와 표/이미지 기능 유지.",
+    "cache_busting": true,
+    "safe_button_binding": true,
+    "structured_card_view_kept": true
   }
 }

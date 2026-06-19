@@ -33,9 +33,9 @@
       <textarea id="question" placeholder="검색어를 입력하세요"></textarea>
 
       <div class="row action-row">
-        <button id="askBtn">AI 답변</button>
-        <button id="searchBtn" class="secondary">카드 검색</button>
-        <button id="clearBtn" class="secondary">초기화</button>
+        <button type="button" id="askBtn">AI 답변</button>
+        <button type="button" id="searchBtn" class="secondary">카드 검색</button>
+        <button type="button" id="clearBtn" class="secondary">초기화</button>
       </div>
 
       <div class="example-label">예시 검색어</div>
@@ -116,7 +116,21 @@
     <div id="detailBody" class="detail-body"></div>
   </dialog>
 
-  <script src="/data.js"></script>
-  <script src="/app.js"></script>
+
+  <script>
+    // V47: 이전 PWA/service worker 캐시로 인해 버튼이 먹통처럼 보이는 문제 방지
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations()
+        .then(regs => Promise.all(regs.map(reg => reg.unregister())))
+        .catch(() => {});
+    }
+    if ("caches" in window) {
+      caches.keys()
+        .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+        .catch(() => {});
+    }
+  </script>
+  <script src="/data.js?v=47"></script>
+  <script src="/app.js?v=47"></script>
 </body>
 </html>
