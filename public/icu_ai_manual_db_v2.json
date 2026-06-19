@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.53.0-v53-restore-all-hwp-extracted-images",
+    "version": "1.54.0-v54-results-table-image-visible",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -21790,6 +21790,103 @@
       ],
       "image_archive": true,
       "standard_sections_ready": true
+    },
+    {
+      "id": "DBMEDIA001",
+      "category": "원내정보/앱 사용",
+      "title": "표/이미지 현황",
+      "aliases": [
+        "표/이미지 현황",
+        "이미지 현황",
+        "표 현황",
+        "DB 현황",
+        "자료 현황",
+        "등록된 이미지",
+        "등록된 표"
+      ],
+      "urgency": "routine",
+      "summary": "현재 앱 DB에 연결된 카드, 표, 이미지/사진 개수를 확인하는 카드입니다.",
+      "indications": [
+        "현재 앱에 표, 이미지, 사진이 몇 개 연결되어 있는지 확인할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "전체 카드: 219개",
+        "표 포함 카드: 27개",
+        "이미지 포함 카드: 35개",
+        "등록된 표 개수: 31개",
+        "등록된 이미지/사진 개수: 174개",
+        "HWP 자동 추출 이미지 100개는 복원되어 이미지 검색 카드에서 확인 가능합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "표/이미지는 해당 카드 상세 또는 검색 결과 미리보기에서 확인합니다."
+      ],
+      "related": [],
+      "tags": [
+        "DB 현황",
+        "표",
+        "이미지",
+        "사진",
+        "v54_status_card"
+      ],
+      "review": {
+        "status": "v54_media_status"
+      },
+      "source_refs": [
+        "앱 내부 DB 자동 집계"
+      ],
+      "tables": [
+        {
+          "title": "현재 DB 표/이미지 현황",
+          "headers": [
+            "항목",
+            "개수"
+          ],
+          "rows": [
+            [
+              "전체 카드",
+              "219개"
+            ],
+            [
+              "표 포함 카드",
+              "27개"
+            ],
+            [
+              "이미지 포함 카드",
+              "35개"
+            ],
+            [
+              "등록된 표 개수",
+              "31개"
+            ],
+            [
+              "등록된 이미지/사진 개수",
+              "174개"
+            ],
+            [
+              "복원된 HWP 자동 추출 이미지",
+              "100개"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_terms": [
+        "표/이미지 현황",
+        "이미지 현황",
+        "표 현황",
+        "DB 현황",
+        "자료 현황",
+        "등록된 이미지",
+        "등록된 표",
+        "전체 카드",
+        "HWP 추출 이미지"
+      ]
     }
   ],
   "final_review_note": {
@@ -22039,5 +22136,22 @@
     "total_cards_after_restore": 218,
     "kept_existing_selected_images": true,
     "kept_table_image_photo_functions": true
+  },
+  "v54_update": {
+    "description": "검색 결과 화면에서 표/이미지 포함 여부와 참고 표 미리보기를 바로 확인할 수 있게 개선. 상세 화면은 핵심 중심으로 단순화하고 참고 표/이미지를 반드시 실제 표/이미지로 표시. V53 HWP 추출 이미지 100개 복원 유지.",
+    "search_results_show_table_preview": true,
+    "search_results_show_image_preview": true,
+    "detail_hidden_duplicate_sections": [
+      "검색어 / 별칭",
+      "관련 카드"
+    ],
+    "current_stats": {
+      "total_cards": 219,
+      "table_cards": 27,
+      "image_cards": 35,
+      "total_tables": 31,
+      "total_images": 174,
+      "hwp_restored_images": 100
+    }
   }
 }

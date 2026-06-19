@@ -44,18 +44,74 @@ function urgencyBadge(card) {
   return `<span class="badge ${u === "emergency" ? "emergency" : u === "urgent" ? "urgent" : ""}">${esc(u)}</span>`;
 }
 
+
+function resultMediaSummary(card) {
+  const tableCount = (card.tables || []).length;
+  const imageCount = (card.images || []).length;
+  if (!tableCount && !imageCount) return "";
+  return `<div class="result-media-summary">
+    ${tableCount ? `<span class="media-pill table-pill">참고 표 ${tableCount}개</span>` : ""}
+    ${imageCount ? `<span class="media-pill image-pill">이미지/사진 ${imageCount}개</span>` : ""}
+  </div>`;
+}
+
+function renderMiniTable(card) {
+  const t = (card.tables || [])[0];
+  if (!t) return "";
+  const headers = (t.headers || []).slice(0, 4);
+  const rows = (t.rows || []).slice(0, 3).map(row => (row || []).slice(0, 4));
+  if (!headers.length || !rows.length) return "";
+  return `<div class="result-table-preview" aria-label="참고 표 미리보기">
+    <div class="preview-title">참고 표 미리보기: ${esc(t.title || "표")}</div>
+    <div class="table-wrap mini">
+      <table>
+        <thead><tr>${headers.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+        <tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+      </table>
+    </div>
+    <div class="preview-more">전체 표는 카드를 누르면 확인됩니다.</div>
+  </div>`;
+}
+
+function renderMiniImages(card) {
+  const imgs = (card.images || []).slice(0, 3);
+  if (!imgs.length) return "";
+  return `<div class="result-image-preview" aria-label="이미지 미리보기">
+    ${imgs.map(img => `<img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" />`).join("")}
+    ${(card.images || []).length > 3 ? `<span class="more-images">+${(card.images || []).length - 3}</span>` : ""}
+  </div>`;
+}
+
+function renderResultStats(cards) {
+  const arr = Array.isArray(cards) ? cards : [];
+  const tableCards = arr.filter(c => (c.tables || []).length).length;
+  const imageCards = arr.filter(c => (c.images || []).length).length;
+  const tables = arr.reduce((sum, c) => sum + ((c.tables || []).length), 0);
+  const images = arr.reduce((sum, c) => sum + ((c.images || []).length), 0);
+  if (!arr.length) return "";
+  return `<div class="result-stats">
+    <span>검색 결과 ${arr.length}개</span>
+    <span>표 포함 카드 ${tableCards}개</span>
+    <span>이미지/사진 포함 카드 ${imageCards}개</span>
+    <span>표 ${tables}개</span>
+    <span>이미지/사진 ${images}개</span>
+  </div>`;
+}
+
 function renderCards(cards) {
-  $("cards").innerHTML = (cards || []).map(card => `
+  const arr = cards || [];
+  $("cards").innerHTML = renderResultStats(arr) + (arr.map(card => `
     <article class="card" data-card-id="${esc(card.id)}">
       <h3>${esc(card.title)}</h3>
       <div class="meta">${esc(card.id)} · ${esc(card.category)}</div>
       <p class="summary">${esc(card.summary)}</p>
       ${urgencyBadge(card)}
-      ${(card.aliases || []).slice(0,6).map(a => `<span class="badge">${esc(a)}</span>`).join("")}
-      ${(card.dosage_or_mix || []).slice(0,2).map(a => `<span class="badge">${esc(a)}</span>`).join("")}
-      <div class="meta">탭하면 상세내용 열림</div>
+      ${resultMediaSummary(card)}
+      ${renderMiniTable(card)}
+      ${renderMiniImages(card)}
+      <div class="meta">탭하면 상세내용에서 핵심 절차, 참고 표, 이미지/사진을 확인할 수 있습니다.</div>
     </article>
-  `).join("") || `<article class="card"><h3>검색 결과 없음</h3><p class="summary">다른 키워드로 검색해보세요.</p></article>`;
+  `).join("") || `<article class="card"><h3>검색 결과 없음</h3><p class="summary">다른 키워드로 검색해보세요.</p></article>`);
 
   document.querySelectorAll("[data-card-id]").forEach(el => {
     el.addEventListener("click", () => openCard(el.dataset.cardId));
@@ -136,6 +192,19 @@ function mergeRecordPoints(card) {
   return out.filter(Boolean);
 }
 
+
+function hasMeaningfulList(arr) {
+  return Array.isArray(arr) && arr.filter(Boolean).length > 0;
+}
+
+function renderOptionalSection(title, htmlContent, show = true, extraClass = "") {
+  if (!show) return "";
+  return `<section class="detail-section ${extraClass}">
+    <h4>${esc(title)}</h4>
+    ${htmlContent}
+  </section>`;
+}
+
 function renderStructuredCard(card) {
   const whenToUse = [
     card.summary ? card.summary : "",
@@ -148,16 +217,16 @@ function renderStructuredCard(card) {
     ...((card.orders_or_emr || []).map(x => `처방/EMR: ${x}`))
   ];
 
+  const recordPoints = mergeRecordPoints(card);
+  const hasPrep = hasMeaningfulList(card.preparation);
+  const hasWarnings = hasMeaningfulList(card.warnings);
+  const hasRecords = hasMeaningfulList(recordPoints);
+
   return `
-    <div class="structured-card">
+    <div class="structured-card simple-core-card">
       <section class="detail-section title-section">
         <h4>카드 제목</h4>
         <div class="card-main-title">${esc(card.title || "")}</div>
-      </section>
-
-      <section class="detail-section">
-        <h4>검색어 / 별칭</h4>
-        ${renderAliasChips(card.aliases)}
       </section>
 
       <section class="detail-section">
@@ -165,33 +234,19 @@ function renderStructuredCard(card) {
         ${renderSimpleLines(whenToUse)}
       </section>
 
-      <section class="detail-section">
-        <h4>준비물</h4>
-        ${renderSimpleLines(card.preparation)}
-      </section>
-
-      <section class="detail-section">
+      <section class="detail-section core-section">
         <h4>핵심 절차</h4>
         ${renderSimpleLines(coreSteps)}
       </section>
 
+      ${renderOptionalSection("준비물", renderSimpleLines(card.preparation), hasPrep)}
+
       ${renderTables(card.tables)}
       ${renderImages(card.images)}
 
-      <section class="detail-section warning-section">
-        <h4>주의사항</h4>
-        ${renderSimpleLines(card.warnings)}
-      </section>
+      ${renderOptionalSection("주의사항", renderSimpleLines(card.warnings), hasWarnings, "warning-section")}
 
-      <section class="detail-section">
-        <h4>기록 포인트</h4>
-        ${renderSimpleLines(mergeRecordPoints(card))}
-      </section>
-
-      <section class="detail-section">
-        <h4>관련 카드</h4>
-        ${renderRelatedCards(card.related)}
-      </section>
+      ${renderOptionalSection("기록 포인트", renderSimpleLines(recordPoints), hasRecords)}
 
       <section class="detail-section source-section">
         <h4>출처 / 기준</h4>
@@ -200,6 +255,8 @@ function renderStructuredCard(card) {
     </div>
   `;
 }
+
+
 
 function openCard(id) {
   const card = findById(id);
@@ -426,13 +483,17 @@ async function searchCards() {
     renderCards(cards);
     $("cardsHeading").textContent = "검색 결과 카드";
     $("status").classList.remove("hidden");
-    $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개의 관련 카드를 찾았습니다.</span>`;
+    const tableCards = cards.filter(c => (c.tables || []).length).length;
+    const imageCards = cards.filter(c => (c.images || []).length).length;
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } catch (err) {
     const cards = localSearch(query, 12);
     renderCards(cards);
     $("cardsHeading").textContent = "검색 결과 카드";
     $("status").classList.remove("hidden");
-    $("status").innerHTML = `<b>카드 검색 완료</b><span>서버 검색 대신 기기 내 검색 결과 ${cards.length}개를 표시합니다.</span>`;
+    const tableCards = cards.filter(c => (c.tables || []).length).length;
+    const imageCards = cards.filter(c => (c.images || []).length).length;
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } finally {
     const hint = $("loadingHint");
     if (hint) hint.classList.add("hidden");

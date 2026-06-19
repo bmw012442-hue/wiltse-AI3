@@ -903,3 +903,140 @@ main {
   color: #ffffff !important;
   border-color: #1d4ed8 !important;
 }
+
+
+/* V54: 검색 결과에서 참고 표/이미지 바로 확인 */
+.result-stats {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px 0;
+  padding: 12px 14px;
+  border: 1px solid #cfe0f5;
+  border-radius: 14px;
+  background: #f7fbff;
+  color: #17457d;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.result-stats span {
+  background: #ffffff;
+  border: 1px solid #dbe7f5;
+  border-radius: 999px;
+  padding: 6px 9px;
+}
+
+.result-media-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 10px 0;
+}
+
+.media-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 9px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.table-pill {
+  color: #075985;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+}
+
+.image-pill {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.result-table-preview {
+  margin: 10px 0;
+  border: 1px solid #dbe7f5;
+  border-radius: 14px;
+  background: #fbfdff;
+  overflow: hidden;
+}
+
+.preview-title {
+  padding: 9px 11px;
+  color: #0b3b7a;
+  font-size: 13px;
+  font-weight: 900;
+  background: #eef6ff;
+  border-bottom: 1px solid #dbe7f5;
+}
+
+.table-wrap.mini table {
+  min-width: 360px;
+}
+
+.table-wrap.mini th,
+.table-wrap.mini td {
+  padding: 7px 9px;
+  font-size: 12px;
+}
+
+.preview-more {
+  padding: 8px 11px;
+  color: #64748b;
+  font-size: 12px;
+  border-top: 1px solid #edf2f7;
+}
+
+.result-image-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.result-image-preview img {
+  width: 78px;
+  height: 78px;
+  border-radius: 12px;
+  border: 1px solid #dbe7f5;
+  object-fit: cover;
+  background: #f8fafc;
+}
+
+.more-images {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #0b3b7a;
+  font-weight: 900;
+  border: 1px solid #cfe0f5;
+}
+
+.simple-core-card .detail-section h4 {
+  background: #eef4fb;
+  padding: 10px 12px;
+  margin: -2px 0 12px 0;
+}
+
+.simple-core-card .core-section {
+  border-color: #bfd7ff;
+  background: #fbfdff;
+}
+
+.simple-core-card .core-section h4 {
+  background: #e8f1ff;
+  color: #063b83;
+}
+
+.simple-core-card .title-section h4 {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
