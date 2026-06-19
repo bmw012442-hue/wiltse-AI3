@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.52.0-v52-active-button-visual-fix",
+    "version": "1.53.0-v53-restore-all-hwp-extracted-images",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -2936,7 +2936,10 @@ window.ICU_MANUAL_DB = {
         "Lab",
         "bottle",
         "종류와",
-        "채혈"
+        "채혈",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "채혈 후 검체 용기 분주 순서와 bottle별 주요 검사 항목 확인.",
@@ -3115,7 +3118,10 @@ window.ICU_MANUAL_DB = {
         "Lab bottle / 채혈 순서 참고 이미지 0003",
         "Lab bottle / 채혈 순서 참고 이미지 0004",
         "Lab bottle 종류",
-        "검체 용기"
+        "검체 용기",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -3945,7 +3951,10 @@ window.ICU_MANUAL_DB = {
         "fenestrated",
         "Portex",
         "Tracoe",
-        "Koken"
+        "Koken",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "urgency": "urgent",
       "summary": "기관절개관 피부보호, 감염예방, 폐쇄예방.",
@@ -4013,7 +4022,10 @@ window.ICU_MANUAL_DB = {
         "fenestrated",
         "Portex",
         "Tracoe",
-        "Koken"
+        "Koken",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -5877,7 +5889,10 @@ window.ICU_MANUAL_DB = {
         "채혈 순서",
         "검체 bottle",
         "검체 용기",
-        "랩보틀"
+        "랩보틀",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드.",
@@ -5938,7 +5953,10 @@ window.ICU_MANUAL_DB = {
         "채혈 순서",
         "검체 bottle",
         "검체 용기",
-        "랩보틀"
+        "랩보틀",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -8729,7 +8747,10 @@ window.ICU_MANUAL_DB = {
         "주요",
         "번호",
         "물품",
-        "장비"
+        "장비",
+        "원내 번호 표",
+        "전화번호 표",
+        "주요 번호 표"
       ],
       "urgency": "routine",
       "summary": "원내 내선번호와 주요 연락처를 빠르게 확인하는 카드.",
@@ -8855,7 +8876,10 @@ window.ICU_MANUAL_DB = {
         "병원 최신 연락망 확인",
         "부서별 번호는 변경 가능하므로 최신 연락망 기준",
         "연락망",
-        "부서 전화번호"
+        "부서 전화번호",
+        "원내 번호 표",
+        "전화번호 표",
+        "주요 번호 표"
       ],
       "standard_sections_ready": true
     },
@@ -17097,7 +17121,10 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)",
         "검체 용기",
-        "랩보틀"
+        "랩보틀",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "25. Lab bottle",
@@ -17220,7 +17247,10 @@ window.ICU_MANUAL_DB = {
         "포트 소독 후 자연건조, 10cc 정도 채취",
         "호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력",
         "검체 용기",
-        "랩보틀"
+        "랩보틀",
+        "Lab bottle 이미지",
+        "채혈 순서 이미지",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -17577,7 +17607,10 @@ window.ICU_MANUAL_DB = {
         "Ventilator",
         "호흡 / Ventilator",
         "v43_uploaded_manual",
-        "v49_exact_card"
+        "v49_exact_card",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "urgency": "urgent",
       "summary": "기관절개관(Tracheosomy)",
@@ -17778,7 +17811,10 @@ window.ICU_MANUAL_DB = {
         "기관절개관 참고 이미지 9",
         "기관절개관 참고 이미지 10",
         "기관절개관 참고 이미지 11",
-        "기관절개관 참고 이미지 12"
+        "기관절개관 참고 이미지 12",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -17807,7 +17843,10 @@ window.ICU_MANUAL_DB = {
         "T-tube",
         "Portex",
         "Tracoe",
-        "Koken"
+        "Koken",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "특징",
@@ -17891,7 +17930,10 @@ window.ICU_MANUAL_DB = {
         "T-tube",
         "Portex",
         "Tracoe",
-        "Koken"
+        "Koken",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -18750,7 +18792,10 @@ window.ICU_MANUAL_DB = {
         "보조기업체",
         "보조기 업체",
         "TLSO",
-        "LSO"
+        "LSO",
+        "보조기 이미지",
+        "보조기 그림",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "< OS >",
@@ -18820,7 +18865,10 @@ window.ICU_MANUAL_DB = {
         "보조기업체",
         "보조기 업체",
         "TLSO",
-        "LSO"
+        "LSO",
+        "보조기 이미지",
+        "보조기 그림",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true
     },
@@ -20262,7 +20310,10 @@ window.ICU_MANUAL_DB = {
         "연락",
         "수술",
         "시술",
-        "v49_exact_card"
+        "v49_exact_card",
+        "보조기 이미지",
+        "보조기 그림",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
       "summary": "NS/OS 수술·시술 환자의 보조기 종류, 적용 상황, 업체 연락 및 기록 포인트.",
@@ -20464,8 +20515,1280 @@ window.ICU_MANUAL_DB = {
         "NS/OS 보조기 참고 이미지 001d",
         "NS/OS 보조기 참고 이미지 001e",
         "NS/OS 보조기 참고 이미지 001f",
-        "NS/OS 보조기 참고 이미지 0020"
+        "NS/OS 보조기 참고 이미지 0020",
+        "보조기 이미지",
+        "보조기 그림",
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_01",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 1",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 1",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 1",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0001_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0001_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0001_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0002_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0002_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0002_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0003_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0003_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0003_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0004_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0004_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0005_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0005_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0006_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0006_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0006_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0007_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0007_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0007_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0008_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0008_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0008_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0009_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0009_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0009_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000a_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000a_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000a_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000b_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000b_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000b_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000c_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000c_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000c_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_02",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 2",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 2",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 2",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~24번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin000d_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000d_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000d_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000e_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000e_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000e_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000f_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000f_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000f_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0010_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0010_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0010_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0011_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0011_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0011_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0012_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0012_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0012_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0013_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0013_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0013_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0014_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0014_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0014_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0015_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0015_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0015_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0016_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0016_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0016_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0017_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0017_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0017_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0018_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0018_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0018_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_03",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 3",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 3",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 3",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 25~36번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0019_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0019_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0019_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001a_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001a_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001a_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001b_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001b_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001b_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001c_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001c_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001c_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001d_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001d_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001d_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001e_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001e_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001e_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001f_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001f_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin001f_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0020_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0020_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0020_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0021_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0021_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0022_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0022_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0023_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0023_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0023_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0024_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0024_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0024_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_04",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 4",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 4",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 4",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 37~48번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0025_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0025_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0025_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0026_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0026_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0026_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0027_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0027_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0027_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0028_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0028_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0028_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0029_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0029_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0029_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002a_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002a_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002a_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002b_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002b_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002b_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002c_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002c_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002c_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002d_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002d_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002d_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002e_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002e_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002e_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002f_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002f_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin002f_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0030_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0030_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0030_png"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_05",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 5",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 5",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 5",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 49~60번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0031_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0031_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0031_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0032_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0032_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0032_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0033_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0033_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0033_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0034_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0034_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0034_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0035_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0035_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0035_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0036_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0036_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0036_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0037_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0037_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0037_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0038_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0038_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0038_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0039_png.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0039_png",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0039_png"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003a_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003a_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003a_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003b_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003b_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003b_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003c_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003c_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003c_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_06",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 6",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 6",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 6",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 61~72번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin003d_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003d_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003d_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003e_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003e_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003e_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003f_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003f_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003f_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0040_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0040_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0040_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0041_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0041_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0041_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0042_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0042_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0042_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0043_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0043_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0043_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0044_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0044_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0044_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0045_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0045_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0045_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0046_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0046_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0046_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0047_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0047_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0047_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0048_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0048_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0048_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_07",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 7",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 7",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 7",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 73~77번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0049_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0049_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0049_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004a_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004a_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004a_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004b_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004b_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004b_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004c_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004c_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004c_bmp"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004d_bmp.png",
+          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004d_bmp",
+          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin004d_bmp"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_TRACH_01",
+      "category": "그림 / 사진 / 표",
+      "title": "기관절개관 전체 추출 이미지 1",
+      "aliases": [
+        "기관절개관 전체 추출 이미지 1",
+        "기관절개관",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "search_terms": [
+        "기관절개관 전체 추출 이미지 1",
+        "기관절개관",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
+      "indications": [
+        "기관절개관 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "기관절개관"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin0001_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0001_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0001_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0002_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0002_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0002_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0003_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0003_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0003_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0004_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0004_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0004_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0005_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0005_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0005_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0006_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0006_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0006_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0007_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0007_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0007_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0008_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0008_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0008_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0009_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0009_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0009_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000a_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000a_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000a_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000b_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000b_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000b_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000c_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000c_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000c_jpeg"
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_TRACH_02",
+      "category": "그림 / 사진 / 표",
+      "title": "기관절개관 전체 추출 이미지 2",
+      "aliases": [
+        "기관절개관 전체 추출 이미지 2",
+        "기관절개관",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "search_terms": [
+        "기관절개관 전체 추출 이미지 2",
+        "기관절개관",
+        "HWP",
+        "전체 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~23번입니다.",
+      "indications": [
+        "기관절개관 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "기관절개관"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin000d_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000d_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000d_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000e_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000e_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000e_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000f_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000f_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000f_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0010_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0010_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0010_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0011_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0011_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0011_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0012_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0012_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0012_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0013_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0013_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0013_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0014_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0014_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0014_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0015_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0015_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0015_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0016_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0016_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0016_jpeg"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0017_jpeg.jpg",
+          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0017_jpeg",
+          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0017_jpeg"
+        }
+      ],
+      "image_archive": true,
       "standard_sections_ready": true
     }
   ],
@@ -20704,5 +22027,17 @@ window.ICU_MANUAL_DB = {
       "이미지",
       "사진"
     ]
+  },
+  "v53_update": {
+    "description": "이전에 삭제했던 HWP 자동 추출 이미지 전체 100개를 다시 복원하여 검색 가능하게 추가. V52 버튼 색상/검색 기능, V51 핵심 중심 카드 화면, 기존 표/이미지 기능 유지.",
+    "restored_hwp_extracted_images": 100,
+    "restored_sources": {
+      "추가 업무 매뉴얼": 77,
+      "기관절개관": 23
+    },
+    "new_gallery_cards": 9,
+    "total_cards_after_restore": 218,
+    "kept_existing_selected_images": true,
+    "kept_table_image_photo_functions": true
   }
 };
