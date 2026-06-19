@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.47.0-v47-button-cache-fix",
+    "version": "1.48.0-v48-missing-helper-functions-fix",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -15438,5 +15438,17 @@
     "cache_busting": true,
     "safe_button_binding": true,
     "structured_card_view_kept": true
+  },
+  "v48_update": {
+    "description": "V47에서 누락된 버튼/로딩/결과화면 제어 함수 복구. AI 답변, 카드 검색, 초기화 버튼 기능 복구. 표준 카드 구조와 표/이미지/사진 기능 유지.",
+    "fixed_missing_functions": [
+      "setActionActive",
+      "setLoading",
+      "clearLoading",
+      "setBusyButton",
+      "showResultsArea",
+      "hideResultsArea"
+    ],
+    "cache_busting": "v48"
   }
 }

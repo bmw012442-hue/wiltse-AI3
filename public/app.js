@@ -216,6 +216,63 @@ function openCard(id) {
 
 
 
+
+function setActionActive(buttonId) {
+  document.querySelectorAll(".action-row button").forEach(btn => btn.classList.remove("active"));
+  const btn = $(buttonId);
+  if (btn) btn.classList.add("active");
+}
+
+function setLoading(message) {
+  const hint = $("loadingHint");
+  const text = $("loadingText");
+  if (text) text.textContent = message || "처리 중입니다...";
+  if (hint) hint.classList.remove("hidden");
+  if ($("status")) {
+    $("status").classList.remove("hidden");
+    $("status").innerHTML = `<span class="spinner"></span><span>${esc(message || "처리 중입니다...")}</span>`;
+  }
+}
+
+function clearLoading() {
+  const hint = $("loadingHint");
+  if (hint) hint.classList.add("hidden");
+  if ($("status")) {
+    $("status").classList.add("hidden");
+    $("status").innerHTML = "";
+  }
+}
+
+function setBusyButton(buttonId, isBusy, busyText) {
+  const btn = $(buttonId);
+  if (!btn) return;
+  if (isBusy) {
+    btn.dataset.originalText = btn.dataset.originalText || btn.textContent;
+    btn.textContent = busyText || "진행 중...";
+    btn.disabled = true;
+  } else {
+    btn.textContent = btn.dataset.originalText || btn.textContent;
+    btn.disabled = false;
+  }
+}
+
+function showResultsArea() {
+  const el = $("resultsArea");
+  if (el) el.classList.remove("hidden");
+  const guide = $("startGuide");
+  if (guide) guide.classList.add("hidden");
+}
+
+function hideResultsArea() {
+  const el = $("resultsArea");
+  if (el) el.classList.add("hidden");
+  const guide = $("startGuide");
+  if (guide) guide.classList.remove("hidden");
+  if ($("cards")) $("cards").innerHTML = "";
+  if ($("status")) $("status").textContent = "";
+  if ($("answerBox")) $("answerBox").classList.add("hidden");
+}
+
 async function searchCards() {
   setActionActive("searchBtn");
   const query = $("question").value.trim();
