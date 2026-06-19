@@ -869,3 +869,37 @@ main {
 .simple-core-card .detail-list li {
   margin: 6px 0;
 }
+
+
+/* V52: AI 답변 / 카드 검색 선택 색상 확실히 표시 */
+.action-row button {
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .05s ease;
+}
+
+.action-row button.active,
+.action-row button.is-active,
+#askBtn.active,
+#searchBtn.active,
+#clearBtn.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .22) !important;
+}
+
+.action-row button.active:hover,
+.action-row button.is-active:hover {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+}
+
+.action-row button:disabled {
+  opacity: .92;
+}
+
+.action-row button.active:disabled,
+.action-row button.is-active:disabled {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+}

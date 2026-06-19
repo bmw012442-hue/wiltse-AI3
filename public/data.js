@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.51.0-v51-simple-core-card-view",
+    "version": "1.52.0-v52-active-button-visual-fix",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -20691,5 +20691,18 @@ window.ICU_MANUAL_DB = {
     "image_cards": 26,
     "total_tables": 30,
     "total_images": 74
+  },
+  "v52_update": {
+    "description": "AI 답변/카드 검색 버튼 클릭 시 선택 색상이 확실히 파란색으로 바뀌도록 active CSS와 setActionActive 연동 수정. V51 핵심 카드 화면, 검색 정확도, 표/이미지/사진 기능 유지.",
+    "active_button_visual_fix": true,
+    "cache_busting": "v52",
+    "kept_features": [
+      "핵심 중심 카드 화면",
+      "AI 답변",
+      "카드 검색",
+      "표",
+      "이미지",
+      "사진"
+    ]
   }
 };
