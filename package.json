@@ -1,6 +1,6 @@
 {
-  "name": "icu-ai-manual-v46-structured-card-detail",
-  "version": "0.46.0",
+  "name": "icu-ai-manual-v47-button-cache-fix",
+  "version": "0.47.0",
   "private": true,
   "type": "module",
   "scripts": {
