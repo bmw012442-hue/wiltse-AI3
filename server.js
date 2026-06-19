@@ -80,44 +80,72 @@ function itemText(item) {
   ].join(" ");
 }
 
+
+
 function scoreItem(query, item) {
   const q = normalize(query);
-  if (!q) return 0;
-  const terms = q.split(/[,\s/]+/).filter(Boolean);
+  if (!q || item.search_hidden) return 0;
+  const terms = q.split(/[,\s/·]+/).filter(Boolean);
+  const title = normalize(item.title);
+  const category = normalize(item.category);
+  const originalCategory = normalize(item.original_category);
+  const aliases = (item.aliases || []).map(normalize);
+  const searchTerms = (item.search_terms || []).map(normalize);
   const text = normalize(itemText(item));
   let score = 0;
 
-  if (normalize(item.title).includes(q)) score += 45;
-  if (normalize(item.category).includes(q)) score += 12;
+  if (title === q) score += 180;
+  else if (title.includes(q)) score += 135;
 
-  for (const alias of item.aliases || []) {
-    const a = normalize(alias);
-    if (q === a) score += 45;
-    if (q.includes(a) || a.includes(q)) score += 22;
+  for (const a of aliases) {
+    if (!a) continue;
+    if (q === a) score += 150;
+    else if (q.includes(a) || a.includes(q)) score += 95;
   }
 
-  if ((item.tables || []).length) score += 8;
-  if ((item.images || []).length) score += 10;
-  if ((item.tables || []).length && /표|테이블|table|정리표|종류|순서|기준|채혈|수혈|lab bottle/.test(q)) score += 16;
-  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|기관절개관|lab bottle|채혈|blood|culture|a-line|abga|dressing|수혈/.test(q)) score += 18;
+  for (const st of searchTerms) {
+    if (!st) continue;
+    if (q === st) score += 160;
+    else if (q.includes(st) || st.includes(q)) score += 85;
+  }
+
+  if (category.includes(q) || originalCategory.includes(q)) score += 45;
+  if (normalize(item.summary).includes(q)) score += 18;
+
+  const directText = [title, category, originalCategory, ...aliases, ...searchTerms].join(" ");
+  let directHits = 0;
 
   for (const term of terms) {
     if (term.length < 2) continue;
+    if (directText.includes(term)) directHits += 1;
+    if (title.includes(term)) score += 42;
+    if (aliases.some(a => a.includes(term))) score += 36;
+    if (searchTerms.some(a => a.includes(term))) score += 38;
+    if (category.includes(term) || originalCategory.includes(term)) score += 16;
+    if (normalize(item.summary).includes(term)) score += 8;
     if (text.includes(term)) score += 3;
-    if (normalize(item.title).includes(term)) score += 10;
-    if (normalize(item.category).includes(term)) score += 5;
-    if ((item.aliases || []).some(a => normalize(a).includes(term))) score += 10;
   }
 
-  if (String(item.category || "").includes("업로드 원문") && !/원문|전체|보강/.test(q)) score -= 45;
+  if ((item.tables || []).length && /표|테이블|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/.test(q)) score += 18;
+  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄/.test(q)) score += 18;
 
-  return score;
+  if (!directText.includes(q) && directHits === 0) score -= 45;
+
+  return Math.max(0, score);
 }
 
+
 function retrieveCards(query, limit = 8) {
-  return items.map(item => ({ item, score: scoreItem(query, item) }))
+  const ranked = items.map(item => ({ item, score: scoreItem(query, item) }))
     .filter(x => x.score > 0)
-    .sort((a, b) => b.score - a.score)
+    .sort((a, b) => b.score - a.score);
+
+  if (ranked.length === 0) return [];
+  const top = ranked[0].score;
+  const minScore = Math.max(12, top * 0.32);
+
+  return ranked
+    .filter(x => x.score >= minScore)
     .slice(0, limit)
     .map(x => x.item);
 }

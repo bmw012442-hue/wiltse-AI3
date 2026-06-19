@@ -1,6 +1,6 @@
 {
-  "name": "icu-ai-manual-v48-missing-helper-functions-fix",
-  "version": "0.48.0",
+  "name": "icu-ai-manual-v51-simple-core-card-view",
+  "version": "0.51.0",
   "private": true,
   "type": "module",
   "scripts": {
