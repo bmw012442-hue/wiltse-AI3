@@ -53,17 +53,44 @@ function renderCards(cards) {
   });
 }
 
-function renderDetailList(key, vals) {
-  if (!Array.isArray(vals) || vals.length === 0) return "";
-  return `<section class="detail-section"><h4>${fieldLabels[key] || key}</h4><ul>${vals.map(v => `<li>${esc(v)}</li>`).join("")}</ul></section>`;
+
+function renderSimpleLines(lines) {
+  const arr = Array.isArray(lines) ? lines.filter(Boolean) : [];
+  if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
+  return `<ul class="detail-list">${arr.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
 }
 
+function renderAliasChips(aliases) {
+  const arr = Array.isArray(aliases) ? aliases.filter(Boolean).slice(0, 24) : [];
+  if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
+  return `<div class="alias-chips">${arr.map(a => `<span>${esc(a)}</span>`).join("")}</div>`;
+}
+
+function renderRelatedCards(related) {
+  const arr = Array.isArray(related) ? related.filter(Boolean) : [];
+  if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
+  return `<div class="related-cards">
+    ${arr.map(r => {
+      const found = findByTitle(r) || findById(r);
+      if (found) return `<button type="button" data-related-id="${esc(found.id)}">${esc(found.title)}</button>`;
+      return `<span>${esc(r)}</span>`;
+    }).join("")}
+  </div>`;
+}
+
+function renderSourceRefs(card) {
+  const refs = Array.isArray(card.source_refs) ? card.source_refs.filter(Boolean) : [];
+  const review = card.review && card.review.status ? [`검토상태: ${card.review.status}`] : [];
+  const arr = [...refs, ...review];
+  if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
+  return `<ul class="detail-list source-list">${arr.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+}
 
 function renderTables(tables) {
   if (!Array.isArray(tables) || tables.length === 0) return "";
   return tables.map(t => `
     <section class="detail-section table-section">
-      <h4>${esc(t.title || "표")}</h4>
+      <h4>참고 표: ${esc(t.title || "표")}</h4>
       <div class="table-wrap">
         <table>
           <thead>
@@ -81,7 +108,7 @@ function renderTables(tables) {
 function renderImages(images) {
   if (!Array.isArray(images) || images.length === 0) return "";
   return `<section class="detail-section image-section">
-    <h4>그림 / 참고 이미지</h4>
+    <h4>참고 이미지 / 사진</h4>
     <div class="image-grid">
       ${images.map(img => `
         <figure>
@@ -93,179 +120,92 @@ function renderImages(images) {
   </section>`;
 }
 
+function mergeRecordPoints(card) {
+  const out = [];
+  if (Array.isArray(card.charting)) out.push(...card.charting);
+  if (Array.isArray(card.io)) out.push(...card.io.map(x => `I/O: ${x}`));
+  return out.filter(Boolean);
+}
+
+function renderStructuredCard(card) {
+  const whenToUse = [
+    card.summary ? card.summary : "",
+    ...((card.indications || []).filter(Boolean))
+  ].filter(Boolean);
+
+  const coreSteps = [
+    ...((card.steps || []).filter(Boolean)),
+    ...((card.dosage_or_mix || []).map(x => `Mix/용량: ${x}`)),
+    ...((card.orders_or_emr || []).map(x => `처방/EMR: ${x}`))
+  ];
+
+  return `
+    <div class="structured-card">
+      <section class="detail-section title-section">
+        <h4>카드 제목</h4>
+        <div class="card-main-title">${esc(card.title || "")}</div>
+      </section>
+
+      <section class="detail-section">
+        <h4>검색어 / 별칭</h4>
+        ${renderAliasChips(card.aliases)}
+      </section>
+
+      <section class="detail-section">
+        <h4>언제 보는 카드인가</h4>
+        ${renderSimpleLines(whenToUse)}
+      </section>
+
+      <section class="detail-section">
+        <h4>준비물</h4>
+        ${renderSimpleLines(card.preparation)}
+      </section>
+
+      <section class="detail-section">
+        <h4>핵심 절차</h4>
+        ${renderSimpleLines(coreSteps)}
+      </section>
+
+      ${renderTables(card.tables)}
+      ${renderImages(card.images)}
+
+      <section class="detail-section warning-section">
+        <h4>주의사항</h4>
+        ${renderSimpleLines(card.warnings)}
+      </section>
+
+      <section class="detail-section">
+        <h4>기록 포인트</h4>
+        ${renderSimpleLines(mergeRecordPoints(card))}
+      </section>
+
+      <section class="detail-section">
+        <h4>관련 카드</h4>
+        ${renderRelatedCards(card.related)}
+      </section>
+
+      <section class="detail-section source-section">
+        <h4>출처 / 기준</h4>
+        ${renderSourceRefs(card)}
+      </section>
+    </div>
+  `;
+}
+
 function openCard(id) {
   const card = findById(id);
   if (!card) return;
   $("detailTitle").textContent = card.title;
   $("detailMeta").textContent = `${card.id} · ${card.category} · ${card.urgency || "routine"}`;
-  $("detailBody").innerHTML = `
-    <p class="summary">${esc(card.summary)}</p>
-    ${renderDetailList("indications", card.indications)}
-    ${renderDetailList("preparation", card.preparation)}
-    ${renderTables(card.tables)}
-    ${renderImages(card.images)}
-    ${renderDetailList("steps", card.steps)}
-    ${renderDetailList("dosage_or_mix", card.dosage_or_mix)}
-    ${renderDetailList("orders_or_emr", card.orders_or_emr)}
-    ${renderDetailList("charting", card.charting)}
-    ${renderDetailList("io", card.io)}
-    ${renderDetailList("warnings", card.warnings)}
-    ${renderDetailList("related", card.related)}
-    ${renderDetailList("source_refs", card.source_refs)}
-  `;
+  $("detailBody").innerHTML = renderStructuredCard(card);
   $("cardDialog").showModal();
-}
 
-
-
-function setMenuActive(activeBtn) {
-  document.querySelectorAll("[data-menu-q]").forEach(btn => {
-    btn.classList.toggle("active", btn === activeBtn);
+  document.querySelectorAll("[data-related-id]").forEach(el => {
+    el.addEventListener("click", () => openCard(el.dataset.relatedId));
   });
 }
 
-function setActionActive(activeId) {
-  ["askBtn", "searchBtn", "clearBtn"].forEach(id => {
-    const el = $(id);
-    if (!el) return;
-    el.classList.toggle("active", id === activeId);
-  });
-}
 
-function localSearch(query, limit = 40) {
-  const q = String(query || "").toLowerCase().trim();
-  if (!q) return allItems.slice(0, 12);
-  const terms = q.split(/[,\s/&·()]+/).filter(Boolean);
-
-  function hasMedia(card) {
-    return (card.images || []).length > 0 || (card.tables || []).length > 0;
-  }
-
-  function score(card) {
-    const text = [
-      card.id, card.category, card.title, card.summary,
-      ...(card.aliases || []), ...(card.steps || []), ...(card.dosage_or_mix || []),
-      ...(card.preparation || []), ...(card.warnings || []), ...(card.tags || []),
-      ...((card.tables || []).flatMap(t => [
-        t.title || "",
-        ...(t.headers || []),
-        ...((t.rows || []).flatMap(row => row || []))
-      ])),
-      ...((card.images || []).flatMap(img => [
-        img.src || "", img.alt || "", img.caption || "", "그림", "사진", "이미지", "참고 이미지"
-      ])),
-      ...((card.tables || []).length ? ["표", "테이블", "정리표"] : [])
-    ].join(" ").toLowerCase();
-
-    let s = 0;
-    if ((card.title || "").toLowerCase().includes(q)) s += 45;
-    if ((card.category || "").toLowerCase().includes(q)) s += 12;
-
-    for (const a of card.aliases || []) {
-      const aa = String(a).toLowerCase();
-      if (aa === q) s += 45;
-      if (aa.includes(q) || q.includes(aa)) s += 22;
-    }
-
-    for (const t of terms) {
-      if (t.length < 2) continue;
-      if (text.includes(t)) s += 4;
-      if ((card.title || "").toLowerCase().includes(t)) s += 13;
-      if ((card.category || "").toLowerCase().includes(t)) s += 6;
-      if ((card.aliases || []).some(a => String(a).toLowerCase().includes(t))) s += 10;
-    }
-
-    if (hasMedia(card)) s += 12;
-    if ((card.images || []).length && /(그림|사진|이미지|표|image|photo|picture|기관절개관|lab bottle|채혈|blood|culture|a-line|abga|dressing|수혈)/i.test(q)) s += 18;
-    if ((card.tables || []).length && /(표|정리|종류|순서|기준|채혈|수혈|lab bottle)/i.test(q)) s += 16;
-
-    // 원문 검색 보강 카드는 '원문'이라고 검색할 때만 위로 올라오게 함
-    if ((card.category || "").includes("업로드 원문") && !/(원문|전체|보강)/.test(q)) s -= 45;
-
-    return s;
-  }
-
-  const ranked = allItems.map(card => ({card, s: score(card)}))
-    .filter(x => x.s > 0).sort((a,b) => b.s - a.s);
-
-  return ranked.slice(0, limit).map(x => x.card);
-}
-
-function makeLocalManualAnswer(query, cards) {
-  const q = String(query || "").trim();
-  const used = (cards && cards.length ? cards : localSearch(q, 6)).slice(0, 5);
-  if (!used.length) return "관련 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
-
-  const lines = [];
-  lines.push("AI 연결이 불안정하여, 매뉴얼 DB 기반 요약 답변을 표시합니다.");
-  lines.push("");
-  lines.push("질문: " + q);
-  lines.push("");
-  used.forEach((card, idx) => {
-    lines.push(`${idx + 1}. ${card.title}`);
-    if (card.summary) lines.push(`- 핵심: ${card.summary}`);
-    const steps = (card.steps || []).slice(0, 5);
-    steps.forEach(s => lines.push(`- ${s}`));
-    if ((card.tables || []).length) lines.push(`- 표 ${card.tables.length}개 포함`);
-    if ((card.images || []).length) lines.push(`- 그림/사진 ${card.images.length}개 포함: 아래 참고 카드 또는 상세보기에서 확인`);
-    lines.push("");
-  });
-  lines.push("※ 담당의 지시와 병원 최신 프로토콜 우선");
-  return lines.join("\n");
-}
-
-
-
-function setLoading(message) {
-  const hint = $("loadingHint");
-  const text = $("loadingText");
-  if (text) text.textContent = message || "처리 중입니다...";
-  if (hint) hint.classList.remove("hidden");
-  if ($("status")) {
-    $("status").classList.remove("hidden");
-    $("status").innerHTML = `<span class="spinner"></span><span>${esc(message || "처리 중입니다...")}</span>`;
-  }
-}
-
-function clearLoading() {
-  const hint = $("loadingHint");
-  if (hint) hint.classList.add("hidden");
-  if ($("status")) {
-    $("status").classList.add("hidden");
-    $("status").innerHTML = "";
-  }
-}
-
-function setBusyButton(buttonId, isBusy, busyText) {
-  const btn = $(buttonId);
-  if (!btn) return;
-  if (isBusy) {
-    btn.dataset.originalText = btn.dataset.originalText || btn.textContent;
-    btn.textContent = busyText || "진행 중...";
-    btn.disabled = true;
-  } else {
-    btn.textContent = btn.dataset.originalText || btn.textContent;
-    btn.disabled = false;
-  }
-}
-
-function showResultsArea() {
-  const el = $("resultsArea");
-  if (el) el.classList.remove("hidden");
-  const guide = $("startGuide");
-  if (guide) guide.classList.add("hidden");
-}
-
-function hideResultsArea() {
-  const el = $("resultsArea");
-  if (el) el.classList.add("hidden");
-  const guide = $("startGuide");
-  if (guide) guide.classList.remove("hidden");
-  if ($("cards")) $("cards").innerHTML = "";
-  if ($("status")) $("status").textContent = "";
-  if ($("answerBox")) $("answerBox").classList.add("hidden");
-  if ($("cardsHeading")) $("cardsHeading").textContent = "검색 결과 카드";
-}
 
 async function searchCards() {
   setActionActive("searchBtn");

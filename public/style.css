@@ -643,3 +643,200 @@ main {
     font-size: 11px !important;
   }
 }
+
+
+/* V46: 검색 결과 상세 카드 표준 구조 */
+.structured-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-section {
+  background: #ffffff;
+  border: 1px solid #dbe7f5;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(15, 44, 86, 0.05);
+}
+
+.detail-section h4 {
+  margin: 0 0 10px 0;
+  color: #0b3b7a;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.title-section {
+  background: linear-gradient(135deg, #edf6ff 0%, #ffffff 100%);
+  border-color: #b9d7ff;
+}
+
+.card-main-title {
+  font-size: 21px;
+  font-weight: 950;
+  color: #081f43;
+  line-height: 1.35;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.detail-list li {
+  margin: 7px 0;
+  line-height: 1.58;
+  color: #111827;
+  word-break: keep-all;
+}
+
+.empty-line {
+  color: #8a98aa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.alias-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.alias-chips span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #cfe0f5;
+  background: #f5f9ff;
+  color: #17457d;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.warning-section {
+  border-color: #ffd7a8;
+  background: #fffaf3;
+}
+
+.source-section {
+  background: #f8fafc;
+}
+
+.source-list li {
+  color: #475569;
+}
+
+.related-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-cards button,
+.related-cards span {
+  border: 1px solid #cfe0f5;
+  background: #f8fbff;
+  color: #0b3b7a;
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.related-cards button {
+  cursor: pointer;
+}
+
+.related-cards button:hover {
+  background: #eaf3ff;
+}
+
+.table-section {
+  background: #fbfdff;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #dbe7f5;
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 520px;
+}
+
+.table-wrap th,
+.table-wrap td {
+  border-bottom: 1px solid #e5eef8;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.table-wrap th {
+  background: #eef6ff;
+  color: #0b3b7a;
+  font-weight: 900;
+}
+
+.image-section {
+  background: #fbfdff;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.image-grid figure {
+  margin: 0;
+  border: 1px solid #dbe7f5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.image-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  background: #f8fafc;
+}
+
+.image-grid figcaption {
+  padding: 9px 10px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.4;
+  border-top: 1px solid #edf2f7;
+}
+
+@media (max-width: 640px) {
+  .detail-section {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .card-main-title {
+    font-size: 19px;
+  }
+
+  .table-wrap table {
+    min-width: 460px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
