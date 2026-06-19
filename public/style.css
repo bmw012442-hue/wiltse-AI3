@@ -1040,3 +1040,215 @@ main {
   padding: 0;
   margin: 0 0 10px 0;
 }
+
+
+/* V55: 약물 계산기 */
+.drug-calc-drawer {
+  margin: 16px auto;
+  max-width: 980px;
+  border: 1px solid #d7e5f6;
+  border-radius: 20px;
+  background: #eef6ff;
+  overflow: hidden;
+}
+
+.drug-calc-drawer > summary {
+  cursor: pointer;
+  padding: 18px 22px;
+  font-size: 18px;
+  font-weight: 950;
+  color: #073b7c;
+  list-style: none;
+}
+
+.drug-calc-drawer > summary::after {
+  content: "∨";
+  float: right;
+  font-size: 22px;
+  color: #2563eb;
+}
+
+.drug-calc-drawer[open] > summary::after {
+  content: "∧";
+}
+
+.drug-calc-card {
+  background: #ffffff;
+  border-top: 1px solid #d7e5f6;
+  padding: 20px;
+}
+
+.calc-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.calc-head h2 {
+  margin: 0 0 6px 0;
+  color: #081f43;
+}
+
+.calc-head p {
+  margin: 0;
+  color: #52647a;
+  line-height: 1.5;
+}
+
+.calc-warning {
+  padding: 12px 14px;
+  border: 1px solid #fed7aa;
+  background: #fff7ed;
+  color: #9a3412;
+  border-radius: 14px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.calc-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #0f2f5f;
+}
+
+.calc-grid input,
+.calc-grid select {
+  width: 100%;
+  border: 1px solid #cfe0f5;
+  border-radius: 12px;
+  padding: 13px 12px;
+  font-size: 16px;
+  background: #fbfdff;
+  color: #081f43;
+}
+
+.calc-input-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 1px solid #cfe0f5;
+  border-radius: 12px;
+  background: #fbfdff;
+  overflow: hidden;
+}
+
+.calc-input-row input {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.calc-input-row span {
+  padding: 0 12px;
+  color: #52709a;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.calc-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.calc-actions button {
+  min-height: 48px;
+}
+
+.calc-result {
+  margin-top: 16px;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #082f66;
+  border-radius: 16px;
+  padding: 16px;
+  line-height: 1.55;
+}
+
+.calc-result.error {
+  border-color: #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+}
+
+.calc-main-value {
+  margin: 12px 0 4px 0;
+  font-size: 34px;
+  font-weight: 1000;
+  color: #1d4ed8;
+  letter-spacing: -0.03em;
+}
+
+.calc-main-value span {
+  font-size: 18px;
+  color: #0f3b78;
+}
+
+.calc-sub {
+  font-weight: 850;
+  color: #334155;
+}
+
+.calc-meta {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #cfe0f5;
+  color: #475569;
+  font-size: 14px;
+}
+
+.calc-caution {
+  margin-top: 10px;
+  color: #9a3412;
+  font-weight: 900;
+}
+
+.calc-formula {
+  margin-top: 16px;
+  border: 1px solid #dbe7f5;
+  border-radius: 14px;
+  background: #f8fafc;
+  padding: 12px 14px;
+}
+
+.calc-formula summary {
+  cursor: pointer;
+  color: #0b3b7a;
+  font-weight: 900;
+}
+
+.calc-formula p {
+  margin: 8px 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-head {
+    flex-direction: column;
+  }
+
+  .calc-main-value {
+    font-size: 30px;
+  }
+}

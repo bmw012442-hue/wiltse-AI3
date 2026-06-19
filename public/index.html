@@ -53,6 +53,116 @@
       </div>
     </section>
 
+
+    <details class="drug-calc-drawer" id="drugCalcDrawer">
+      <summary>약물 계산기</summary>
+      <section class="drug-calc-card" aria-label="약물 계산기">
+        <div class="calc-head">
+          <div>
+            <h2>약물 계산기</h2>
+            <p>약물 총량, 희석 총량, 체중, 목표 용량을 입력하면 주입속도(mL/hr)를 계산합니다.</p>
+          </div>
+          <button type="button" id="drugCalcReset" class="secondary small">초기화</button>
+        </div>
+
+        <div class="calc-warning">
+          계산 결과는 확인 보조용입니다. 실제 투약은 처방, 약물 라벨, 병원 희석 기준, 담당의 지시를 우선하세요.
+        </div>
+
+        <div class="calc-grid">
+          <label>
+            계산 방식
+            <select id="calcMode">
+              <option value="rate">목표 용량 → 주입속도(mL/hr)</option>
+              <option value="dose">주입속도(mL/hr) → 실제 용량</option>
+            </select>
+          </label>
+
+          <label>
+            약물 선택
+            <select id="drugPreset">
+              <option value="">직접 입력</option>
+              <option value="norepinephrine">노르에피네프린 예시</option>
+              <option value="dopamine">도파민 예시</option>
+              <option value="dobutamine">도부타민 예시</option>
+              <option value="nicardipine">니카르디핀 예시</option>
+              <option value="midazolam">미다졸람 예시</option>
+              <option value="propofol">프로포폴 예시</option>
+            </select>
+          </label>
+
+          <label>
+            약물 총량
+            <div class="calc-input-row">
+              <input id="drugAmount" type="number" inputmode="decimal" min="0" step="any" placeholder="예: 20" />
+              <span>mg</span>
+            </div>
+          </label>
+
+          <label>
+            희석 후 총량
+            <div class="calc-input-row">
+              <input id="totalVolume" type="number" inputmode="decimal" min="0" step="any" placeholder="예: 500" />
+              <span>mL</span>
+            </div>
+          </label>
+
+          <label>
+            체중
+            <div class="calc-input-row">
+              <input id="patientWeight" type="number" inputmode="decimal" min="0" step="any" placeholder="예: 60" />
+              <span>kg</span>
+            </div>
+          </label>
+
+          <label>
+            용량 단위
+            <select id="doseUnit">
+              <option value="mcg/kg/min">mcg/kg/min</option>
+              <option value="mcg/min">mcg/min</option>
+              <option value="mg/hr">mg/hr</option>
+              <option value="mg/kg/hr">mg/kg/hr</option>
+            </select>
+          </label>
+
+          <label id="targetDoseWrap">
+            목표 용량
+            <div class="calc-input-row">
+              <input id="targetDose" type="number" inputmode="decimal" min="0" step="any" placeholder="숫자 입력" />
+              <span id="targetDoseUnitLabel">mcg/kg/min</span>
+            </div>
+          </label>
+
+          <label id="infusionRateWrap" class="hidden">
+            현재 주입속도
+            <div class="calc-input-row">
+              <input id="infusionRate" type="number" inputmode="decimal" min="0" step="any" placeholder="mL/hr 입력" />
+              <span>mL/hr</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="calc-actions">
+          <button type="button" id="drugCalcBtn">계산하기</button>
+          <button type="button" id="drugCalcCopy" class="secondary">결과 복사</button>
+        </div>
+
+        <section id="drugCalcResult" class="calc-result hidden"></section>
+
+        <details class="calc-formula">
+          <summary>계산식 보기</summary>
+          <div>
+            <p><b>농도</b> = 약물 총량(mg) ÷ 희석 후 총량(mL)</p>
+            <p><b>mcg/kg/min → mL/hr</b> = 목표용량 × 체중 × 60 ÷ 농도(mcg/mL)</p>
+            <p><b>mcg/min → mL/hr</b> = 목표용량 × 60 ÷ 농도(mcg/mL)</p>
+            <p><b>mg/hr → mL/hr</b> = 목표용량 ÷ 농도(mg/mL)</p>
+            <p><b>mg/kg/hr → mL/hr</b> = 목표용량 × 체중 ÷ 농도(mg/mL)</p>
+          </div>
+        </details>
+      </section>
+    </details>
+
+
     <section id="startGuide" class="start-guide">
       <div class="guide-card">
         <b>1. AI 답변 또는 카드 검색</b>
@@ -130,7 +240,7 @@
         .catch(() => {});
     }
   </script>
-  <script src="/data.js?v=54"></script>
-  <script src="/app.js?v=54"></script>
+  <script src="/data.js?v=55"></script>
+  <script src="/app.js?v=55"></script>
 </body>
 </html>

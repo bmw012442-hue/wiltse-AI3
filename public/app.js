@@ -637,3 +637,182 @@ if (logoutBtn) {
     }
   });
 }
+
+
+/* V55: 약물 계산기 */
+const drugPresets = {
+  norepinephrine: { amount: 20, volume: 500, unit: "mcg/kg/min", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." },
+  dopamine: { amount: 400, volume: 250, unit: "mcg/kg/min", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." },
+  dobutamine: { amount: 250, volume: 250, unit: "mcg/kg/min", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." },
+  nicardipine: { amount: 20, volume: 200, unit: "mg/hr", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." },
+  midazolam: { amount: 50, volume: 50, unit: "mg/hr", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." },
+  propofol: { amount: 1000, volume: 100, unit: "mg/kg/hr", note: "예시 농도입니다. 실제 처방/희석 기준을 확인하세요." }
+};
+
+function nval(id) {
+  const el = $(id);
+  const value = Number(el?.value);
+  return Number.isFinite(value) ? value : NaN;
+}
+
+function fmt(num, digits = 2) {
+  if (!Number.isFinite(num)) return "-";
+  if (Math.abs(num) >= 100) return num.toFixed(1).replace(/\.0$/, "");
+  if (Math.abs(num) >= 10) return num.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
+  return num.toFixed(digits).replace(/0+$/, "").replace(/\.$/, "");
+}
+
+function showDrugCalcResult(html, isError = false) {
+  const box = $("drugCalcResult");
+  if (!box) return;
+  box.classList.remove("hidden");
+  box.classList.toggle("error", !!isError);
+  box.innerHTML = html;
+}
+
+function updateCalcModeUI() {
+  const mode = $("calcMode")?.value || "rate";
+  const doseWrap = $("targetDoseWrap");
+  const rateWrap = $("infusionRateWrap");
+  if (doseWrap) doseWrap.classList.toggle("hidden", mode !== "rate");
+  if (rateWrap) rateWrap.classList.toggle("hidden", mode !== "dose");
+}
+
+function updateDoseUnitLabel() {
+  const unit = $("doseUnit")?.value || "mcg/kg/min";
+  const label = $("targetDoseUnitLabel");
+  if (label) label.textContent = unit;
+}
+
+function applyDrugPreset() {
+  const key = $("drugPreset")?.value;
+  const preset = drugPresets[key];
+  if (!preset) return;
+  $("drugAmount").value = preset.amount;
+  $("totalVolume").value = preset.volume;
+  $("doseUnit").value = preset.unit;
+  updateDoseUnitLabel();
+  showDrugCalcResult(`<b>예시 농도 불러옴</b><br>${preset.note}`, false);
+}
+
+function calculateDrug() {
+  const mode = $("calcMode")?.value || "rate";
+  const amountMg = nval("drugAmount");
+  const volumeMl = nval("totalVolume");
+  const weightKg = nval("patientWeight");
+  const unit = $("doseUnit")?.value || "mcg/kg/min";
+
+  if (!(amountMg > 0) || !(volumeMl > 0)) {
+    showDrugCalcResult("약물 총량과 희석 후 총량을 0보다 큰 숫자로 입력하세요.", true);
+    return;
+  }
+
+  const concMgMl = amountMg / volumeMl;
+  const concMcgMl = concMgMl * 1000;
+  const needWeight = unit.includes("/kg/");
+  if (needWeight && !(weightKg > 0)) {
+    showDrugCalcResult("kg 단위 용량 계산에는 체중을 0보다 큰 숫자로 입력해야 합니다.", true);
+    return;
+  }
+
+  let result = NaN;
+  let mainLine = "";
+  let subLine = "";
+
+  if (mode === "rate") {
+    const dose = nval("targetDose");
+    if (!(dose > 0)) {
+      showDrugCalcResult("목표 용량을 0보다 큰 숫자로 입력하세요.", true);
+      return;
+    }
+
+    if (unit === "mcg/kg/min") result = dose * weightKg * 60 / concMcgMl;
+    if (unit === "mcg/min") result = dose * 60 / concMcgMl;
+    if (unit === "mg/hr") result = dose / concMgMl;
+    if (unit === "mg/kg/hr") result = dose * weightKg / concMgMl;
+
+    mainLine = `<div class="calc-main-value">${fmt(result)} <span>mL/hr</span></div>`;
+    subLine = `목표 용량 ${fmt(dose)} ${unit} 기준 주입속도`;
+  } else {
+    const rate = nval("infusionRate");
+    if (!(rate > 0)) {
+      showDrugCalcResult("현재 주입속도를 0보다 큰 숫자로 입력하세요.", true);
+      return;
+    }
+
+    if (unit === "mcg/kg/min") result = rate * concMcgMl / (weightKg * 60);
+    if (unit === "mcg/min") result = rate * concMcgMl / 60;
+    if (unit === "mg/hr") result = rate * concMgMl;
+    if (unit === "mg/kg/hr") result = rate * concMgMl / weightKg;
+
+    mainLine = `<div class="calc-main-value">${fmt(result, 3)} <span>${unit}</span></div>`;
+    subLine = `주입속도 ${fmt(rate)} mL/hr 기준 실제 용량`;
+  }
+
+  const html = `
+    <b>계산 결과</b>
+    ${mainLine}
+    <div class="calc-sub">${subLine}</div>
+    <div class="calc-meta">
+      농도: ${fmt(concMgMl, 4)} mg/mL = ${fmt(concMcgMl, 1)} mcg/mL<br>
+      입력값: 약물 ${fmt(amountMg)} mg / 총량 ${fmt(volumeMl)} mL${Number.isFinite(weightKg) && weightKg > 0 ? ` / 체중 ${fmt(weightKg)} kg` : ""}
+    </div>
+    <div class="calc-caution">반드시 처방, 약물 라벨, 병원 희석 기준과 대조하세요.</div>
+  `;
+  showDrugCalcResult(html, false);
+}
+
+function copyDrugCalcResult() {
+  const box = $("drugCalcResult");
+  const text = box?.innerText?.trim();
+  if (!text) return;
+  navigator.clipboard?.writeText(text).then(() => {
+    const btn = $("drugCalcCopy");
+    if (btn) {
+      const old = btn.textContent;
+      btn.textContent = "복사됨";
+      setTimeout(() => btn.textContent = old, 1200);
+    }
+  }).catch(() => {});
+}
+
+function resetDrugCalc() {
+  ["drugAmount", "totalVolume", "patientWeight", "targetDose", "infusionRate"].forEach(id => {
+    const el = $(id);
+    if (el) el.value = "";
+  });
+  if ($("drugPreset")) $("drugPreset").value = "";
+  if ($("doseUnit")) $("doseUnit").value = "mcg/kg/min";
+  if ($("calcMode")) $("calcMode").value = "rate";
+  updateCalcModeUI();
+  updateDoseUnitLabel();
+  const box = $("drugCalcResult");
+  if (box) {
+    box.classList.add("hidden");
+    box.innerHTML = "";
+  }
+}
+
+function bindDrugCalculator() {
+  const ids = ["calcMode", "doseUnit", "drugPreset", "drugAmount", "totalVolume", "patientWeight", "targetDose", "infusionRate"];
+  ids.forEach(id => {
+    const el = $(id);
+    if (!el) return;
+    el.addEventListener("input", () => {
+      updateDoseUnitLabel();
+      updateCalcModeUI();
+    });
+    el.addEventListener("change", () => {
+      updateDoseUnitLabel();
+      updateCalcModeUI();
+    });
+  });
+  $("drugPreset")?.addEventListener("change", applyDrugPreset);
+  $("drugCalcBtn")?.addEventListener("click", calculateDrug);
+  $("drugCalcCopy")?.addEventListener("click", copyDrugCalcResult);
+  $("drugCalcReset")?.addEventListener("click", resetDrugCalc);
+  updateCalcModeUI();
+  updateDoseUnitLabel();
+}
+
+bindDrugCalculator();

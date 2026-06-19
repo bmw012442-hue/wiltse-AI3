@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.54.0-v54-results-table-image-visible",
+    "version": "1.55.0-v55-drug-calculator",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -21887,6 +21887,112 @@
         "전체 카드",
         "HWP 추출 이미지"
       ]
+    },
+    {
+      "id": "DRUGCALC001",
+      "category": "약물 / 수액 / 마약",
+      "title": "약물 계산기 사용",
+      "aliases": [
+        "약물 계산기",
+        "약물계산",
+        "계산기",
+        "주입속도",
+        "mL/hr",
+        "mcg/kg/min",
+        "mg/hr",
+        "희석 농도"
+      ],
+      "search_terms": [
+        "약물 계산기",
+        "약물계산",
+        "계산기",
+        "주입속도",
+        "mL/hr",
+        "mcg/kg/min",
+        "mcg/min",
+        "mg/hr",
+        "mg/kg/hr",
+        "희석 농도",
+        "infusion rate"
+      ],
+      "urgency": "routine",
+      "summary": "약물 총량, 희석 후 총량, 체중, 목표 용량을 입력해 주입속도 또는 실제 용량을 계산하는 기능입니다.",
+      "indications": [
+        "희석된 약물의 주입속도(mL/hr)를 계산해야 할 때",
+        "현재 주입속도에서 실제 용량을 역산해야 할 때"
+      ],
+      "preparation": [
+        "처방 확인",
+        "약물 라벨 확인",
+        "약물 총량(mg) 확인",
+        "희석 후 총량(mL) 확인",
+        "환자 체중 확인"
+      ],
+      "steps": [
+        "화면의 약물 계산기 메뉴를 엽니다.",
+        "약물 총량과 희석 후 총량을 입력합니다.",
+        "체중이 필요한 단위인 경우 체중을 입력합니다.",
+        "용량 단위와 목표 용량 또는 현재 주입속도를 입력합니다.",
+        "계산 결과를 처방, 약물 라벨, 병원 희석 기준과 대조합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 계산 확인 내용과 실제 적용한 주입속도를 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "계산 결과는 확인 보조용입니다.",
+        "실제 투약은 처방, 약물 라벨, 병원 희석 기준, 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "임상 약물",
+        "고위험 약물 / 항부정맥제 Amiodarone Adenosine"
+      ],
+      "tags": [
+        "약물 계산기",
+        "v55_drug_calculator"
+      ],
+      "review": {
+        "status": "v55_added"
+      },
+      "source_refs": [
+        "앱 내 계산식"
+      ],
+      "tables": [
+        {
+          "title": "약물 계산기 지원 단위",
+          "headers": [
+            "단위",
+            "필요 입력",
+            "결과"
+          ],
+          "rows": [
+            [
+              "mcg/kg/min",
+              "약물량, 총량, 체중, 목표 용량",
+              "mL/hr"
+            ],
+            [
+              "mcg/min",
+              "약물량, 총량, 목표 용량",
+              "mL/hr"
+            ],
+            [
+              "mg/hr",
+              "약물량, 총량, 목표 용량",
+              "mL/hr"
+            ],
+            [
+              "mg/kg/hr",
+              "약물량, 총량, 체중, 목표 용량",
+              "mL/hr"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -22153,5 +22259,22 @@
       "total_images": 174,
       "hwp_restored_images": 100
     }
+  },
+  "v55_update": {
+    "description": "숫자 입력형 약물 계산기 추가. 목표 용량→mL/hr, mL/hr→실제 용량 계산 지원. 기존 검색/표/이미지/사진 기능 유지.",
+    "drug_calculator_added": true,
+    "supported_units": [
+      "mcg/kg/min",
+      "mcg/min",
+      "mg/hr",
+      "mg/kg/hr"
+    ],
+    "kept_existing_features": [
+      "AI 답변",
+      "카드 검색",
+      "표 미리보기",
+      "이미지/사진 미리보기",
+      "HWP 추출 이미지 검색"
+    ]
   }
 }
