@@ -1,6 +1,6 @@
 {
-  "name": "icu-ai-manual-v53-restore-all-hwp-images",
-  "version": "0.53.0",
+  "name": "icu-ai-manual-v54-results-table-image-visible",
+  "version": "0.54.0",
   "private": true,
   "type": "module",
   "scripts": {
