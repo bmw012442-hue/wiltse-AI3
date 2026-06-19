@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.43.0-v43-uploaded-hwp-expanded",
+    "version": "1.44.0-v44-ai-fallback-image-priority",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -2501,7 +2501,7 @@ window.ICU_MANUAL_DB = {
         "내관"
       ],
       "urgency": "urgent",
-      "summary": "기관절개관 피부보호, 감염예방, 폐쇄예방.",
+      "summary": "기관절개관 피부보호, 감염예방, 폐쇄예방. 카드 하단에서 관련 그림/사진도 함께 확인 가능합니다.",
       "indications": [],
       "preparation": [
         "소공포",
@@ -2531,7 +2531,10 @@ window.ICU_MANUAL_DB = {
       "related": [],
       "tags": [
         "호흡기/Tracheostomy",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "final_reviewed",
@@ -2541,7 +2544,38 @@ window.ICU_MANUAL_DB = {
         "신규(경력직) OJT 집중치료실"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin0001_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 1"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0002_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 2"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0003_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 3"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0004_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 4"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0005_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 5"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0006_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 6"
+        }
+      ]
     },
     {
       "id": "VENT008",
@@ -10105,7 +10139,7 @@ window.ICU_MANUAL_DB = {
         "제세동기"
       ],
       "urgency": "emergency",
-      "summary": "1. CPR",
+      "summary": "1. CPR 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10129,7 +10163,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "응급상황",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10139,7 +10176,38 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0001_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 1"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0002_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 2"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0003_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 3"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 4"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 5"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0006_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 6"
+        }
+      ]
     },
     {
       "id": "UPD43_INTUBATION",
@@ -10159,7 +10227,7 @@ window.ICU_MANUAL_DB = {
         "vecuronium"
       ],
       "urgency": "emergency",
-      "summary": "2. Intubation",
+      "summary": "2. Intubation 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10185,7 +10253,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "응급상황",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10195,7 +10266,38 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0007_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 7"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0008_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 8"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0009_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 9"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000a_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 10"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000b_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 11"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000c_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 12"
+        }
+      ]
     },
     {
       "id": "UPD43_ABGA___A_LINE",
@@ -10212,7 +10314,7 @@ window.ICU_MANUAL_DB = {
         "Radial artery"
       ],
       "urgency": "urgent",
-      "summary": "7. ABGA 채혈",
+      "summary": "7. ABGA 채혈 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10239,7 +10341,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "검사 / 검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10249,7 +10354,48 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin000d_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 13"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000e_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 14"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000f_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 15"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0010_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 16"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0011_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 17"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0012_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 18"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0013_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 19"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0014_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 20"
+        }
+      ]
     },
     {
       "id": "UPD43_A_LINE_ZEROING",
@@ -10267,7 +10413,7 @@ window.ICU_MANUAL_DB = {
         "MAP"
       ],
       "urgency": "urgent",
-      "summary": "8. A-line zeroing",
+      "summary": "8. A-line zeroing 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10303,7 +10449,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "순환 / 모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10313,7 +10462,48 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0015_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 21"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0016_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 22"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0017_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 23"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0018_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 24"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0019_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 25"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001a_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 26"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001b_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 27"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001c_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 28"
+        }
+      ]
     },
     {
       "id": "UPD43_CVP",
@@ -10330,7 +10520,7 @@ window.ICU_MANUAL_DB = {
         "우심방"
       ],
       "urgency": "routine",
-      "summary": "9. CVP(중심정맥압, Central venous pressure)",
+      "summary": "9. CVP(중심정맥압, Central venous pressure) 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10367,7 +10557,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "순환 / 모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10377,7 +10570,28 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin001d_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 29"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001e_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 30"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001f_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 31"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0020_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 32"
+        }
+      ]
     },
     {
       "id": "UPD43___AST_1_5000",
@@ -10771,7 +10985,7 @@ window.ICU_MANUAL_DB = {
     {
       "id": "UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX",
       "category": "검사 / 검체",
-      "title": "Lab bottle / Sputum Cx / Urine Cx / RAT",
+      "title": "Lab bottle 종류와 채혈 순서 / 검체 채취",
       "aliases": [
         "Lab bottle / Sputum Cx / Urine Cx / RAT",
         "Lab",
@@ -10784,10 +10998,16 @@ window.ICU_MANUAL_DB = {
         "채혈순서",
         "Sputum Cx",
         "Urine Cx",
-        "검체"
+        "검체",
+        "Lab bottle 종류",
+        "채혈 순서",
+        "검체 bottle",
+        "검체 채취",
+        "외주검사",
+        "차광검체"
       ],
       "urgency": "routine",
-      "summary": "25. Lab bottle",
+      "summary": "25. Lab bottle 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10823,7 +11043,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "검사 / 검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10832,8 +11055,104 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "추가 업무 매뉴얼(260618)"
       ],
-      "tables": [],
-      "images": []
+      "tables": [
+        {
+          "title": "검체 채취 핵심",
+          "headers": [
+            "항목",
+            "핵심 포인트"
+          ],
+          "rows": [
+            [
+              "채혈 순서",
+              "병원 검체 bottle 기준과 검사실 지침 우선"
+            ],
+            [
+              "차광검체",
+              "검체 bottle과 은박지 포장 위 라벨 2개 부착"
+            ],
+            [
+              "Sputum Cx",
+              "멸균 손/오염 손 구분, suction 연결 방향 확인"
+            ],
+            [
+              "Urine Cx",
+              "포트 소독 후 자연건조, 10cc 정도 채취"
+            ],
+            [
+              "RAT",
+              "호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 33"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 34"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0023_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 35"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0024_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 36"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0025_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 37"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0026_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 38"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0027_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 39"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0028_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 40"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0029_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 41"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002a_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 42"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002b_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 43"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002c_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 44"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002d_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 45"
+        }
+      ]
     },
     {
       "id": "UPD43_BLOOD_CULTURE",
@@ -10853,7 +11172,7 @@ window.ICU_MANUAL_DB = {
         "녹십자"
       ],
       "urgency": "urgent",
-      "summary": "26. Blood culture",
+      "summary": "26. Blood culture 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10892,7 +11211,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "검사 / 검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10902,7 +11224,58 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin002e_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 46"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002f_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 47"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0030_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 48"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0031_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 49"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0032_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 50"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0033_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 51"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0034_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 52"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0035_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 53"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0036_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 54"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0037_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 55"
+        }
+      ]
     },
     {
       "id": "UPD43_CRE_CPE_MRAB_VRE_MRSA",
@@ -10922,7 +11295,7 @@ window.ICU_MANUAL_DB = {
         "격리해지"
       ],
       "urgency": "routine",
-      "summary": "27. CRE / CPE",
+      "summary": "27. CRE / CPE 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -10956,7 +11329,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "감염관리 / 검사",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -10966,7 +11342,33 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0038_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 56"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0039_png.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 57"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003a_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 58"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003b_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 59"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003c_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 60"
+        }
+      ]
     },
     {
       "id": "UPD43_DRESSING___SDD_EVD",
@@ -10985,7 +11387,7 @@ window.ICU_MANUAL_DB = {
         "dressing set"
       ],
       "urgency": "routine",
-      "summary": "31. Dressing",
+      "summary": "31. Dressing 관련 그림/사진/표 이미지를 함께 확인할 수 있습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -11065,7 +11467,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "Line / Drain / Dressing",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -11075,7 +11480,93 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin003d_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 61"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003e_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 62"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003f_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 63"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0040_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 64"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0041_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 65"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0042_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 66"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0043_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 67"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0044_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 68"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0045_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 69"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0046_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 70"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0047_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 71"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0048_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 72"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0049_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 73"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004a_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 74"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004b_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 75"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004c_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 76"
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004d_bmp.png",
+          "alt": "추가 업무 매뉴얼 참고 이미지",
+          "caption": "추가 업무 매뉴얼 참고 이미지 77"
+        }
+      ]
     },
     {
       "id": "UPD43_2",
@@ -11094,7 +11585,7 @@ window.ICU_MANUAL_DB = {
         "호흡부전"
       ],
       "urgency": "urgent",
-      "summary": "기관절개관(Tracheosomy)",
+      "summary": "기관절개관(Tracheosomy) 카드 하단에서 관련 그림/사진도 함께 확인 가능합니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -11181,7 +11672,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "호흡 / Ventilator",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -11191,7 +11685,48 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin0001_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 1"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0002_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 2"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0003_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 3"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0004_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 4"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0005_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 5"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0006_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 6"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0007_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 7"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0008_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 8"
+        }
+      ]
     },
     {
       "id": "UPD43_____SINGLE_DOUBLE_CUFF_FE",
@@ -11212,7 +11747,7 @@ window.ICU_MANUAL_DB = {
         "외관"
       ],
       "urgency": "routine",
-      "summary": "특징",
+      "summary": "특징 카드 하단에서 관련 그림/사진도 함께 확인 가능합니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -11257,7 +11792,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "호흡 / Ventilator",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -11267,7 +11805,48 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin0009_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 9"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000a_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 10"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000b_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 11"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000c_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 12"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000d_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 13"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000e_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 14"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin000f_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 15"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0010_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 16"
+        }
+      ]
     },
     {
       "id": "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON",
@@ -11286,7 +11865,7 @@ window.ICU_MANUAL_DB = {
         "Speech valve"
       ],
       "urgency": "routine",
-      "summary": "1. portex tube(폴텍스 튜브)",
+      "summary": "1. portex tube(폴텍스 튜브) 카드 하단에서 관련 그림/사진도 함께 확인 가능합니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -11370,7 +11949,10 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "호흡 / Ventilator",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "그림포함",
+        "이미지포함",
+        "v44_image_attached"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -11380,7 +11962,43 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": []
+      "images": [
+        {
+          "src": "uploaded_manual_images/trach_bin0011_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 17"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0012_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 18"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0013_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 19"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0014_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 20"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0015_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 21"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0016_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 22"
+        },
+        {
+          "src": "uploaded_manual_images/trach_bin0017_jpeg.jpg",
+          "alt": "기관절개관 참고 이미지",
+          "caption": "기관절개관 참고 이미지 23"
+        }
+      ]
     },
     {
       "id": "UPD43_NS",
@@ -13986,12 +14604,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "추가 업무 매뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "추가 업무 매뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14080,7 +14697,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14104,12 +14722,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "추가 업무 매뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "추가 업무 매뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14192,7 +14809,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14216,12 +14834,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "추가 업무 매뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "추가 업무 매뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14310,7 +14927,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14334,12 +14952,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "추가 업무 매뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "추가 업무 매뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14429,7 +15046,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14453,12 +15071,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "추가 업무 매뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "추가 업무 매뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14520,7 +15137,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14538,15 +15156,14 @@ window.ICU_MANUAL_DB = {
       "title": "기관절개관 원문 검색 보강 1",
       "aliases": [
         "기관절개관 원문 검색 보강 1",
-        "기관절개관",
         "원문",
         "검색",
         "보강",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "기관절개관 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14635,7 +15252,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14653,15 +15271,14 @@ window.ICU_MANUAL_DB = {
       "title": "기관절개관 원문 검색 보강 2",
       "aliases": [
         "기관절개관 원문 검색 보강 2",
-        "기관절개관",
         "원문",
         "검색",
         "보강",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "기관절개관 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14738,7 +15355,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14762,12 +15380,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 약어",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 약어 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14864,7 +15481,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 약어"
+        "NS OS 약어",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14888,12 +15506,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 약어",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 약어 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -14953,7 +15570,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 약어"
+        "NS OS 약어",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -14978,12 +15596,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 알아야할 사항들",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 알아야할 사항들 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15080,7 +15697,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
+        "NS OS 알아야할 사항들",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15104,12 +15722,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15204,7 +15821,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15228,12 +15846,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15329,7 +15946,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15353,12 +15971,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15454,7 +16071,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15478,12 +16096,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15579,7 +16196,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15603,12 +16221,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15702,7 +16319,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15726,12 +16344,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15825,7 +16442,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15849,12 +16467,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -15949,7 +16566,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -15973,12 +16591,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -16073,7 +16690,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -16097,12 +16715,11 @@ window.ICU_MANUAL_DB = {
         "원문",
         "검색",
         "보강",
-        "NS OS 메뉴얼",
         "업로드 매뉴얼",
         "검색보강"
       ],
-      "urgency": "routine",
-      "summary": "NS OS 메뉴얼 원문 내용을 검색 가능하도록 보강한 카드입니다.",
+      "urgency": "archive",
+      "summary": "원문 보관용 카드입니다. 일반 검색에서는 핵심 카드와 이미지 카드를 먼저 확인하세요.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -16143,7 +16760,8 @@ window.ICU_MANUAL_DB = {
       "tags": [
         "업로드 원문 / 검색 보강",
         "v43_uploaded_manual",
-        "NS OS 메뉴얼"
+        "NS OS 메뉴얼",
+        "원문보관"
       ],
       "review": {
         "status": "uploaded_manual_added",
@@ -16302,5 +16920,12 @@ window.ICU_MANUAL_DB = {
     "added_cards": 63,
     "total_cards": 236,
     "extracted_images": 100
+  },
+  "v44_update": {
+    "description": "AI API 오류 시에도 매뉴얼 기반 요약 답변을 표시하고, 업로드 HWP 이미지가 관련 핵심 카드에 직접 보이도록 개선",
+    "attached_images_to_core_cards": true,
+    "raw_text_cards_demoted": true,
+    "ai_fallback_enabled": true,
+    "total_cards": 236
   }
 };

@@ -136,6 +136,11 @@ function localSearch(query, limit = 40) {
   const q = String(query || "").toLowerCase().trim();
   if (!q) return allItems.slice(0, 12);
   const terms = q.split(/[,\s/&·()]+/).filter(Boolean);
+
+  function hasMedia(card) {
+    return (card.images || []).length > 0 || (card.tables || []).length > 0;
+  }
+
   function score(card) {
     const text = [
       card.id, card.category, card.title, card.summary,
@@ -151,24 +156,62 @@ function localSearch(query, limit = 40) {
       ])),
       ...((card.tables || []).length ? ["표", "테이블", "정리표"] : [])
     ].join(" ").toLowerCase();
+
     let s = 0;
-    if ((card.title || "").toLowerCase().includes(q)) s += 35;
+    if ((card.title || "").toLowerCase().includes(q)) s += 45;
     if ((card.category || "").toLowerCase().includes(q)) s += 12;
+
     for (const a of card.aliases || []) {
       const aa = String(a).toLowerCase();
-      if (aa === q) s += 40;
-      if (aa.includes(q) || q.includes(aa)) s += 18;
+      if (aa === q) s += 45;
+      if (aa.includes(q) || q.includes(aa)) s += 22;
     }
+
     for (const t of terms) {
       if (t.length < 2) continue;
       if (text.includes(t)) s += 4;
-      if ((card.title || "").toLowerCase().includes(t)) s += 10;
+      if ((card.title || "").toLowerCase().includes(t)) s += 13;
       if ((card.category || "").toLowerCase().includes(t)) s += 6;
+      if ((card.aliases || []).some(a => String(a).toLowerCase().includes(t))) s += 10;
     }
+
+    if (hasMedia(card)) s += 12;
+    if ((card.images || []).length && /(그림|사진|이미지|표|image|photo|picture|기관절개관|lab bottle|채혈|blood|culture|a-line|abga|dressing|수혈)/i.test(q)) s += 18;
+    if ((card.tables || []).length && /(표|정리|종류|순서|기준|채혈|수혈|lab bottle)/i.test(q)) s += 16;
+
+    // 원문 검색 보강 카드는 '원문'이라고 검색할 때만 위로 올라오게 함
+    if ((card.category || "").includes("업로드 원문") && !/(원문|전체|보강)/.test(q)) s -= 45;
+
     return s;
   }
-  return allItems.map(card => ({card, s: score(card)}))
-    .filter(x => x.s > 0).sort((a,b) => b.s - a.s).slice(0, limit).map(x => x.card);
+
+  const ranked = allItems.map(card => ({card, s: score(card)}))
+    .filter(x => x.s > 0).sort((a,b) => b.s - a.s);
+
+  return ranked.slice(0, limit).map(x => x.card);
+}
+
+function makeLocalManualAnswer(query, cards) {
+  const q = String(query || "").trim();
+  const used = (cards && cards.length ? cards : localSearch(q, 6)).slice(0, 5);
+  if (!used.length) return "관련 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
+
+  const lines = [];
+  lines.push("AI 연결이 불안정하여, 매뉴얼 DB 기반 요약 답변을 표시합니다.");
+  lines.push("");
+  lines.push("질문: " + q);
+  lines.push("");
+  used.forEach((card, idx) => {
+    lines.push(`${idx + 1}. ${card.title}`);
+    if (card.summary) lines.push(`- 핵심: ${card.summary}`);
+    const steps = (card.steps || []).slice(0, 5);
+    steps.forEach(s => lines.push(`- ${s}`));
+    if ((card.tables || []).length) lines.push(`- 표 ${card.tables.length}개 포함`);
+    if ((card.images || []).length) lines.push(`- 그림/사진 ${card.images.length}개 포함: 아래 참고 카드 또는 상세보기에서 확인`);
+    lines.push("");
+  });
+  lines.push("※ 담당의 지시와 병원 최신 프로토콜 우선");
+  return lines.join("\n");
 }
 
 
@@ -300,10 +343,18 @@ async function askAI() {
       el.addEventListener("click", () => openCard(el.dataset.sourceId));
     });
   } catch (err) {
-    $("answer").textContent = "오류: " + err.message + "\n\nRender 환경변수 OPENAI_API_KEY 설정과 배포 로그를 확인하세요.";
-    $("sources").innerHTML = "";
+    const cards = localSearch(query, 12);
+    $("answer").textContent = makeLocalManualAnswer(query, cards);
+    $("sources").innerHTML = cards.slice(0, 6).map(s =>
+      `<span class="source clickable" data-source-id="${esc(s.id)}">${esc(s.id)} · ${esc(s.title)}</span>`
+    ).join("");
     $("answerBox").classList.remove("hidden");
-    $("status").textContent = "오류 발생";
+    renderCards(cards);
+    $("cardsHeading").textContent = "매뉴얼 DB 기반 참고 카드";
+    $("status").textContent = "AI 서버 연결 오류가 있어 기기 내 매뉴얼 검색으로 답변을 표시했습니다.";
+    document.querySelectorAll("[data-source-id]").forEach(el => {
+      el.addEventListener("click", () => openCard(el.dataset.sourceId));
+    });
   }
 }
 
