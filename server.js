@@ -87,25 +87,29 @@ function scoreItem(query, item) {
   const text = normalize(itemText(item));
   let score = 0;
 
-  if (normalize(item.title).includes(q)) score += 30;
+  if (normalize(item.title).includes(q)) score += 45;
   if (normalize(item.category).includes(q)) score += 12;
 
   for (const alias of item.aliases || []) {
     const a = normalize(alias);
-    if (q === a) score += 35;
-    if (q.includes(a) || a.includes(q)) score += 20;
+    if (q === a) score += 45;
+    if (q.includes(a) || a.includes(q)) score += 22;
   }
 
-  if ((item.tables || []).length && /표|테이블|table|정리표/.test(q)) score += 10;
-  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo/.test(q)) score += 10;
+  if ((item.tables || []).length) score += 8;
+  if ((item.images || []).length) score += 10;
+  if ((item.tables || []).length && /표|테이블|table|정리표|종류|순서|기준|채혈|수혈|lab bottle/.test(q)) score += 16;
+  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|기관절개관|lab bottle|채혈|blood|culture|a-line|abga|dressing|수혈/.test(q)) score += 18;
 
   for (const term of terms) {
     if (term.length < 2) continue;
     if (text.includes(term)) score += 3;
-    if (normalize(item.title).includes(term)) score += 8;
+    if (normalize(item.title).includes(term)) score += 10;
     if (normalize(item.category).includes(term)) score += 5;
     if ((item.aliases || []).some(a => normalize(a).includes(term))) score += 10;
   }
+
+  if (String(item.category || "").includes("업로드 원문") && !/원문|전체|보강/.test(q)) score -= 45;
 
   return score;
 }
@@ -328,21 +332,44 @@ app.post("/api/search", (req, res) => {
   res.json({ cards: retrieveCards(req.body?.query || "", 12) });
 });
 
+
+function buildLocalManualAnswer(query, cards) {
+  if (!cards || cards.length === 0) {
+    return "해당 질문과 직접 연결되는 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
+  }
+  const lines = [];
+  lines.push("AI 연결이 불안정하여, 매뉴얼 DB 기반 요약 답변을 표시합니다.");
+  lines.push("");
+  lines.push(`질문: ${query}`);
+  lines.push("");
+  cards.slice(0, 5).forEach((card, idx) => {
+    lines.push(`${idx + 1}. ${card.title}`);
+    if (card.summary) lines.push(`- 핵심: ${card.summary}`);
+    (card.steps || []).slice(0, 5).forEach(step => lines.push(`- ${step}`));
+    if ((card.tables || []).length) lines.push(`- 표 ${card.tables.length}개 포함`);
+    if ((card.images || []).length) lines.push(`- 그림/사진 ${card.images.length}개 포함: 참고 카드 또는 상세보기에서 확인`);
+    lines.push("");
+  });
+  lines.push("※ 담당의 지시와 병원 최신 프로토콜 우선");
+  return lines.join("\n");
+}
+
 app.post("/api/ask", async (req, res) => {
   try {
     const query = String(req.body?.query || "").trim();
     if (!query) return res.status(400).json({ error: "질문을 입력하세요." });
 
-    const cards = retrieveCards(query, 8);
+    const cards = retrieveCards(query, 10);
     if (cards.length === 0) {
       return res.json({ answer: "해당 질문과 직접 연결되는 매뉴얼 카드를 찾지 못했습니다.", sources: [], cards: [] });
     }
 
     if (!process.env.OPENAI_API_KEY) {
       return res.json({
-        answer: "현재 서버에 OPENAI_API_KEY가 설정되어 있지 않아 ChatGPT 답변은 생성하지 못했습니다. 대신 아래 검색된 매뉴얼 카드를 확인하세요.",
+        answer: buildLocalManualAnswer(query, cards),
         sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
-        cards
+        cards,
+        fallback: true
       });
     }
 
@@ -356,23 +383,42 @@ app.post("/api/ask", async (req, res) => {
 
     const user = `질문: ${query}\n\nICU 매뉴얼 카드:\n${JSON.stringify(cards.map(cardForPrompt), null, 2)}`;
 
-    const response = await client.chat.completions.create({
-      model,
-      messages: [
-        { role: "system", content: system },
-        { role: "user", content: user }
-      ],
-      temperature: 0.1
-    });
+    try {
+      const response = await client.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: system },
+          { role: "user", content: user }
+        ],
+        temperature: 0.1
+      });
 
-    res.json({
-      answer: response.choices?.[0]?.message?.content || "답변 생성 실패",
-      sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
-      cards
-    });
+      return res.json({
+        answer: response.choices?.[0]?.message?.content || buildLocalManualAnswer(query, cards),
+        sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
+        cards
+      });
+    } catch (aiErr) {
+      console.error("OpenAI API fallback:", aiErr);
+      return res.json({
+        answer: buildLocalManualAnswer(query, cards),
+        sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
+        cards,
+        fallback: true,
+        ai_error: String(aiErr.message || aiErr)
+      });
+    }
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "AI 답변 생성 중 오류가 발생했습니다.", detail: String(err.message || err) });
+    const query = String(req.body?.query || "").trim();
+    const cards = retrieveCards(query, 10);
+    return res.json({
+      answer: buildLocalManualAnswer(query, cards),
+      sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
+      cards,
+      fallback: true,
+      server_error: String(err.message || err)
+    });
   }
 });
 
