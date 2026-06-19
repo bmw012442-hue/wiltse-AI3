@@ -840,3 +840,32 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* V51: 사용자 상세 화면 핵심 중심 단순화 */
+.simple-core-card .detail-section h4 {
+  background: #eef4fb;
+  border-radius: 0;
+  padding: 10px 12px;
+  margin: -2px 0 12px 0;
+}
+
+.simple-core-card .core-section {
+  border-color: #bfd7ff;
+  background: #fbfdff;
+}
+
+.simple-core-card .core-section h4 {
+  background: #e8f1ff;
+  color: #063b83;
+}
+
+.simple-core-card .title-section h4 {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.simple-core-card .detail-list li {
+  margin: 6px 0;
+}
