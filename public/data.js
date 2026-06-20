@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.70.0-v70-ecg-summary",
+    "version": "1.71.0-v71-evd-icp-cvp-summary",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 총정리 + V70 심전도 총정리",
+    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP 총정리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -22683,6 +22683,636 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true
+    },
+    {
+      "id": "V71_EVD_ICP_CVP_OVERVIEW",
+      "category": "신경계 / 순환 모니터링",
+      "title": "EVD · ICP · CVP 총정리: 중환자실 필수 모니터링",
+      "aliases": [
+        "EVD ICP CVP",
+        "뇌실외배액",
+        "두개내압",
+        "중심정맥압",
+        "신경계 모니터링",
+        "중환자실 필수"
+      ],
+      "search_terms": [
+        "EVD",
+        "ICP",
+        "CVP",
+        "뇌실외배액",
+        "External Ventricular Drain",
+        "Intracranial Pressure",
+        "Central Venous Pressure",
+        "두개내압",
+        "중심정맥압",
+        "Foramen of Monro",
+        "외이도",
+        "tragus",
+        "phlebostatic axis",
+        "4th intercostal space",
+        "중환자실 간호",
+        "모니터링"
+      ],
+      "urgency": "high",
+      "summary": "EVD, ICP, CVP의 목적·기준점·정상/주의 범위·위험·간호 핵심을 한 번에 비교하는 총정리 카드입니다.",
+      "indications": [
+        "EVD/ICP/CVP 환자 인계 전 핵심 기준을 빠르게 확인할 때",
+        "신경계 중환자와 심혈관/순환 모니터링 환자를 동시에 관리할 때",
+        "레벨링과 zeroing 기준점을 헷갈리지 않게 확인할 때"
+      ],
+      "preparation": [
+        "담당의 처방과 원내 프로토콜",
+        "EVD drain chamber와 transducer",
+        "ICP monitor 또는 EVD system",
+        "CVC/CVP transducer system",
+        "활력징후, 신경학적 사정 도구, I/O 기록"
+      ],
+      "steps": [
+        "EVD는 배액 높이, open/close 상태, clamp 여부, 배액량과 색을 확인한다.",
+        "ICP는 수치만 보지 말고 GCS, 동공, 운동반응, 두통, 구토, 활력징후와 함께 본다.",
+        "CVP는 transducer 위치와 zeroing 상태를 확인하고, BP/HR/UO/I&O/lactate 등과 함께 해석한다.",
+        "침상 높이·체위 변경·이송 전후에는 EVD/ICP/CVP 기준점이 맞는지 재확인한다."
+      ],
+      "dosage_or_mix": [
+        "ICP 일반 참고 정상범위: 약 5–15 mmHg. 지속 20–22 mmHg 이상은 위험 신호로 보고 기준을 확인한다.",
+        "CPP = MAP - ICP. ICP 상승 또는 MAP 저하는 뇌관류 저하로 이어질 수 있다.",
+        "CVP 참고범위는 기관마다 다르며 대략 2–6 mmHg 또는 3–8 cmH₂O로 사용한다. 단독으로 수액반응성을 판단하지 않는다."
+      ],
+      "orders_or_emr": [
+        "각 장치의 처방 높이/측정 조건/open-close 상태/배액 제한량/zeroing 여부를 확인한다.",
+        "EVD는 신경외과/담당의 지시 없이 임의로 높이 변경, clamp 지속, sampling을 하지 않는다."
+      ],
+      "charting": [
+        "EVD 배액량·색·혼탁도, ICP 수치·파형, CVP 수치·파형, 환자 상태 변화, 담당의 보고 및 처치 반응을 시간순으로 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "실제 drain 높이, clamp, 배액 제한, 약물치료는 담당의 처방과 원내 프로토콜을 우선합니다.",
+        "수치만으로 판단하지 말고 환자 상태와 함께 해석해야 합니다."
+      ],
+      "related": [
+        "EVD 간호 핵심",
+        "ICP 상승 간호",
+        "CVP 측정과 zeroing",
+        "뇌졸중 총정리",
+        "심혈관 환자 간호"
+      ],
+      "tags": [
+        "EVD",
+        "ICP",
+        "CVP",
+        "중환자실",
+        "모니터링"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "EVD/ICP/CVP 관련 중환자실 핵심 간호와 모니터링 포인트를 앱용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Brain Trauma Foundation severe TBI guideline: ICP threshold and CPP concepts",
+        "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
+        "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
+        "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
+        "원내 최신 처방과 프로토콜 우선 적용"
+      ],
+      "tables": [
+        {
+          "title": "EVD · ICP · CVP 한눈에 비교",
+          "headers": [
+            "항목",
+            "EVD",
+            "ICP",
+            "CVP"
+          ],
+          "rows": [
+            [
+              "목적",
+              "CSF 배액 + ICP 측정",
+              "두개내압 감시",
+              "중심정맥압/우심방압 평가"
+            ],
+            [
+              "기준점",
+              "Foramen of Monro 수준: 외이도/tragus 기준으로 맞춤",
+              "EVD/ICP transducer 기준점 확인",
+              "Phlebostatic axis: 4th ICS mid-axillary line"
+            ],
+            [
+              "핵심 숫자",
+              "배액 높이 cmH₂O는 처방 확인. 갑작스러운 배액량 변화 보고",
+              "일반 정상 약 5–15 mmHg. 지속 20–22 mmHg 이상 주의",
+              "대략 2–6 mmHg 또는 3–8 cmH₂O 참고. 기관 기준 확인"
+            ],
+            [
+              "가장 큰 위험",
+              "감염, 과배액, 폐색, 이탈",
+              "뇌관류 저하, herniation",
+              "오판독, volume 과다/부족 판단 오류"
+            ],
+            [
+              "간호 핵심",
+              "레벨링·zeroing·clamp 여부 확인, CSF 양/색/파형 관찰",
+              "GCS/동공/운동·두통·구토 관찰, CPP=MAP-ICP 이해",
+              "Zeroing·파형·호흡 영향 확인, 수액반응성은 단독 CVP로 판단하지 않음"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v71_evd_icp_cvp_overview.png",
+          "alt": "EVD ICP CVP 총정리 비교 이미지",
+          "caption": "EVD · ICP · CVP 총정리: 기준점·위험·간호 핵심 비교"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V71_EVD_NURSING",
+      "category": "신경계 / 순환 모니터링",
+      "title": "EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준",
+      "aliases": [
+        "EVD 간호",
+        "뇌실외배액 간호",
+        "EVD 배액",
+        "EVD level",
+        "EVD clamp"
+      ],
+      "search_terms": [
+        "EVD",
+        "뇌실외배액",
+        "External Ventricular Drain",
+        "CSF drainage",
+        "CSF 배액",
+        "Foramen of Monro",
+        "외이도",
+        "tragus",
+        "레벨링",
+        "zeroing",
+        "clamp",
+        "drainage chamber",
+        "ICP monitoring",
+        "수두증",
+        "SAH",
+        "뇌출혈"
+      ],
+      "urgency": "high",
+      "summary": "EVD 환자에서 반드시 확인해야 하는 레벨링, 배액, clamp, 감염예방, 즉시 보고 상황을 정리한 카드입니다.",
+      "indications": [
+        "EVD가 삽입된 환자 근무 시작 시",
+        "체위 변경·침상 높이 변경·이송 전후",
+        "배액량이나 ICP가 갑자기 변할 때",
+        "CSF 색이 바뀌거나 감염이 의심될 때"
+      ],
+      "preparation": [
+        "EVD 처방 높이(cmH₂O), open/close 지시",
+        "EVD chamber, drainage bag, stopcock 상태",
+        "무균 장갑/소독 물품(기관 기준)",
+        "신경학적 사정 도구"
+      ],
+      "steps": [
+        "처방된 EVD 높이와 실제 chamber 높이가 맞는지 확인한다.",
+        "외이도/tragus 높이를 Foramen of Monro 기준점으로 맞추고, 체위 변경 후 다시 확인한다.",
+        "Open/close, clamp 여부와 배액 상태를 확인한다.",
+        "CSF의 양, 색, 혼탁도, 혈성 변화, 갑작스러운 배액량 증가/감소를 관찰한다.",
+        "연결부 오염, dressing 습윤, 삽입부 발적/누출, 발열을 확인한다."
+      ],
+      "dosage_or_mix": [
+        "EVD chamber가 기준점보다 낮으면 배액이 증가하고, 높으면 배액이 감소한다.",
+        "Drain 높이와 clamp는 반드시 처방에 따라 관리한다.",
+        "시간당 배액량, CSF color, ICP waveform을 환자상태와 함께 판단한다."
+      ],
+      "orders_or_emr": [
+        "EVD 높이, 배액 제한량, sampling 여부, clamp 지시, 이송 시 관리 기준을 확인한다.",
+        "sampling은 원내 무균술과 처방에 따라 시행하며 불필요한 연결부 조작을 피한다."
+      ],
+      "charting": [
+        "시간당/근무별 배액량, CSF 색·혼탁도, ICP 수치/파형, 신경학적 변화, 처치 전후 clamp/open 여부를 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "갑작스러운 과다배액, 배액 정지, 새 혈성 배액, 카테터 이탈/누출, 의식저하, 동공 변화는 즉시 보고합니다.",
+        "EVD 감염은 예후를 악화시킬 수 있으므로 무균술과 연결부 관리가 중요합니다."
+      ],
+      "related": [
+        "ICP 상승 간호",
+        "EVD · ICP · CVP 총정리",
+        "뇌출혈 총정리"
+      ],
+      "tags": [
+        "EVD",
+        "CSF",
+        "뇌실외배액",
+        "감염예방"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "EVD/ICP/CVP 관련 중환자실 핵심 간호와 모니터링 포인트를 앱용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Brain Trauma Foundation severe TBI guideline: ICP threshold and CPP concepts",
+        "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
+        "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
+        "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
+        "원내 최신 처방과 프로토콜 우선 적용"
+      ],
+      "tables": [
+        {
+          "title": "EVD 관리 표준 포인트",
+          "headers": [
+            "항목",
+            "내용"
+          ],
+          "rows": [
+            [
+              "처방 확인",
+              "Drain open/close, 높이(cmH₂O), 배액 제한량, CSF sampling 여부"
+            ],
+            [
+              "Leveling",
+              "침상 높이·체위 변경·이송 전후 기준점 재확인. 외이도/tragus 높이 기준으로 맞춤"
+            ],
+            [
+              "Zeroing",
+              "ICP 측정 시 transducer zeroing 상태 확인. 기관 프로토콜에 따라 시행"
+            ],
+            [
+              "Drainage",
+              "시간당 배액량, 총량, 색(맑음/혈성/혼탁), 갑작스런 변화 관찰"
+            ],
+            [
+              "Clamping",
+              "이동·체위변경·처치 전후 clamp 여부 확인. 불필요한 clamp 지속 금지"
+            ],
+            [
+              "감염 예방",
+              "손위생, 무균술, 연결부 조작 최소화, dressing 상태·발열·CSF 혼탁 관찰"
+            ]
+          ]
+        },
+        {
+          "title": "즉시 보고해야 하는 상황",
+          "headers": [
+            "상황",
+            "예시"
+          ],
+          "rows": [
+            [
+              "신경학적 변화",
+              "GCS 저하, 동공 변화, 새 편마비, seizure, 심한 두통/구토"
+            ],
+            [
+              "ICP 상승",
+              "처방 기준 이상 상승 지속, 파형 이상, CPP 저하 의심"
+            ],
+            [
+              "배액 이상",
+              "갑작스런 과다배액, 배액 정지/폐색 의심, 카테터 이탈/누출"
+            ],
+            [
+              "CSF 변화",
+              "새 혈성 배액, 혼탁, 악취, 감염 의심"
+            ],
+            [
+              "시스템 문제",
+              "레벨 기준점 불명확, chamber 위치 오류, 연결부 오염/분리"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v71_evd_nursing_summary.png",
+          "alt": "EVD 간호 핵심 이미지",
+          "caption": "EVD 간호 핵심: 레벨링, 배액, 감염예방, 보고 기준"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V71_ICP_MANAGEMENT",
+      "category": "신경계 / 순환 모니터링",
+      "title": "ICP 총정리: 정상범위·상승징후·CPP·간호",
+      "aliases": [
+        "ICP 간호",
+        "두개내압 간호",
+        "IICP",
+        "CPP",
+        "뇌압 상승"
+      ],
+      "search_terms": [
+        "ICP",
+        "IICP",
+        "두개내압",
+        "뇌압",
+        "Intracranial Pressure",
+        "CPP",
+        "MAP-ICP",
+        "GCS",
+        "pupil",
+        "동공",
+        "Cushing triad",
+        "두통",
+        "구토",
+        "seizure",
+        "herniation",
+        "mannitol",
+        "hypertonic saline",
+        "EVD"
+      ],
+      "urgency": "high",
+      "summary": "ICP 정상/주의 범위, 상승 징후, CPP 계산, 중환자실 간호·치료 보조 포인트를 정리한 카드입니다.",
+      "indications": [
+        "두개내압 모니터링 환자 관리 시",
+        "ICP가 상승하거나 신경학적 변화가 있을 때",
+        "EVD/뇌출혈/SAH/TBI 환자 간호 시"
+      ],
+      "preparation": [
+        "ICP monitor 또는 EVD system",
+        "신경학적 사정 도구(GCS, pupil, motor)",
+        "활력징후 monitor, ABGA, 전해질/삼투압 검사 결과",
+        "처방 약물과 응급 처치 물품"
+      ],
+      "steps": [
+        "ICP 수치와 waveform을 확인한다.",
+        "GCS/LOC, 동공 크기와 반응, 운동반응, 두통, 구토, seizure를 사정한다.",
+        "CPP=MAP-ICP를 이해하고 저혈압·저산소·고탄산·발열을 피한다.",
+        "HOB 30°, 목 정렬, 과도한 자극 최소화를 유지한다.",
+        "ICP 상승 지속 또는 herniation 의심 시 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "일반 성인 ICP 정상 참고범위: 약 5–15 mmHg.",
+        "지속 20–22 mmHg 이상 또는 신경학적 악화는 즉시 보고 기준으로 확인한다.",
+        "CPP=MAP-ICP. 기관/질환별 목표 CPP는 담당의 지시를 따른다.",
+        "ICP 상승 치료 보조: EVD 배액, mannitol, hypertonic saline, sedation/analgesia, 환기 조절 등은 처방에 따름."
+      ],
+      "orders_or_emr": [
+        "ICP alarm limit, EVD drainage order, sedation/analgesia, hyperosmolar therapy, BP 목표, ABGA 목표를 확인한다."
+      ],
+      "charting": [
+        "ICP 수치/파형, CPP, GCS, pupil, motor, 활력징후, 처치 전후 반응, 담당의 보고 시간을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "수치만 정상이어도 신경학적 변화가 있으면 즉시 보고합니다.",
+        "저혈압, 저산소혈증, 고탄산혈증, 발열, 통증/불안은 ICP를 악화시킬 수 있습니다."
+      ],
+      "related": [
+        "EVD 간호 핵심",
+        "뇌졸중 총정리",
+        "뇌출혈 총정리"
+      ],
+      "tags": [
+        "ICP",
+        "IICP",
+        "CPP",
+        "신경계",
+        "두개내압"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "EVD/ICP/CVP 관련 중환자실 핵심 간호와 모니터링 포인트를 앱용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Brain Trauma Foundation severe TBI guideline: ICP threshold and CPP concepts",
+        "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
+        "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
+        "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
+        "원내 최신 처방과 프로토콜 우선 적용"
+      ],
+      "tables": [
+        {
+          "title": "ICP 수치와 의미",
+          "headers": [
+            "구분",
+            "참고범위/상황",
+            "간호 의미"
+          ],
+          "rows": [
+            [
+              "정상 참고",
+              "약 5–15 mmHg",
+              "환자 상태와 파형을 함께 관찰"
+            ],
+            [
+              "주의",
+              "15–20 mmHg 또는 상승 추세",
+              "체위, 통증, 기침, fever, CO₂, drain 상태 확인"
+            ],
+            [
+              "상승 의심",
+              "20–22 mmHg 이상 지속 또는 신경학적 변화",
+              "담당의 보고, 처방 확인, 악화 요인 교정"
+            ],
+            [
+              "응급 의심",
+              "동공 변화, GCS 급감, Cushing triad, seizure, posturing",
+              "즉시 호출, 응급 처치 준비"
+            ]
+          ]
+        },
+        {
+          "title": "ICP 상승 시 간호/치료 보조",
+          "headers": [
+            "영역",
+            "실무 포인트"
+          ],
+          "rows": [
+            [
+              "체위",
+              "HOB 30° 유지, 목 정렬, 과도한 hip flexion/목 압박 피함"
+            ],
+            [
+              "자극 최소화",
+              "불필요한 suction·기침·통증·불안 최소화, 처치 전후 ICP 변화 관찰"
+            ],
+            [
+              "산소/환기",
+              "저산소·고탄산 방지, SpO₂/ABGA 확인"
+            ],
+            [
+              "체온/혈당",
+              "발열·고혈당은 뇌손상 악화 가능 → 처방에 따라 조절"
+            ],
+            [
+              "배액/약물",
+              "EVD 배액, mannitol/hypertonic saline 등은 처방에 따라 준비·관찰"
+            ],
+            [
+              "기록",
+              "ICP 수치만 기록하지 말고 GCS/동공/운동/활력징후/처치 반응 함께 기록"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v71_icp_management_summary.png",
+          "alt": "ICP 총정리 이미지",
+          "caption": "ICP 총정리: 수치 해석, 상승 징후, CPP, 간호/치료 보조"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V71_CVP_MONITORING",
+      "category": "신경계 / 순환 모니터링",
+      "title": "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
+      "aliases": [
+        "CVP 간호",
+        "중심정맥압",
+        "CVP zeroing",
+        "phlebostatic axis"
+      ],
+      "search_terms": [
+        "CVP",
+        "중심정맥압",
+        "Central Venous Pressure",
+        "CVC",
+        "phlebostatic axis",
+        "4th intercostal space",
+        "mid axillary line",
+        "zeroing",
+        "transducer",
+        "a wave",
+        "c wave",
+        "v wave",
+        "우심방압",
+        "수액반응성",
+        "volume status"
+      ],
+      "urgency": "high",
+      "summary": "CVP 측정 기준점, zeroing, 파형 확인, 높고 낮을 때 의미, 간호 판단 포인트를 정리한 카드입니다.",
+      "indications": [
+        "CVC를 이용해 CVP를 측정할 때",
+        "수액 상태나 우심기능 평가 참고가 필요할 때",
+        "CVP 수치가 갑자기 변하거나 파형이 이상할 때"
+      ],
+      "preparation": [
+        "CVC와 pressure transducer system",
+        "flush bag/pressure bag, stopcock",
+        "phlebostatic axis 기준점 표시",
+        "환자 체위와 호흡상태 정보"
+      ],
+      "steps": [
+        "Transducer를 phlebostatic axis에 맞춘다.",
+        "대기압에 open하여 zeroing 후 환자 방향으로 다시 개방한다.",
+        "CVP 파형과 호흡성 변동, damped/flat waveform 여부를 확인한다.",
+        "수치가 높거나 낮으면 체위, PEEP, 복압, line patency, 수액/약물 주입 여부를 확인한다.",
+        "CVP는 단독으로 수액반응성을 판단하지 않고 전체 임상상과 함께 해석한다."
+      ],
+      "dosage_or_mix": [
+        "CVP 참고범위는 기관마다 다르나 대략 2–6 mmHg 또는 3–8 cmH₂O를 참고한다.",
+        "높은 CVP: 우심부전, 폐고혈압, 과수액, tamponade, tension pneumothorax 가능.",
+        "낮은 CVP: 저혈량, 탈수, 출혈, 혈관확장 가능."
+      ],
+      "orders_or_emr": [
+        "측정 시 lumen 사용 여부, zeroing 기준, 수액/약물 주입 중지 여부, 체위 조건을 확인한다."
+      ],
+      "charting": [
+        "측정값, 측정 조건(체위/PEEP/zeroing), 파형, 동반 활력징후, I/O, 소변량, 처치 반응을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "CVP는 preload/volume status의 단순한 숫자 지표가 아니며 수액 반응성을 단독으로 판단하지 않습니다.",
+        "Transducer 위치 오류는 수치 오판독의 흔한 원인입니다."
+      ],
+      "related": [
+        "EVD · ICP · CVP 총정리",
+        "심혈관 환자 간호",
+        "A-line 사용법"
+      ],
+      "tags": [
+        "CVP",
+        "CVC",
+        "중심정맥압",
+        "순환",
+        "모니터링"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "EVD/ICP/CVP 관련 중환자실 핵심 간호와 모니터링 포인트를 앱용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Brain Trauma Foundation severe TBI guideline: ICP threshold and CPP concepts",
+        "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
+        "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
+        "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
+        "원내 최신 처방과 프로토콜 우선 적용"
+      ],
+      "tables": [
+        {
+          "title": "CVP 핵심 해석",
+          "headers": [
+            "항목",
+            "내용"
+          ],
+          "rows": [
+            [
+              "정의",
+              "우심방 또는 상대정맥 압력을 반영하는 중심정맥압"
+            ],
+            [
+              "참고범위",
+              "기관마다 다르나 대략 2–6 mmHg 또는 3–8 cmH₂O로 참고"
+            ],
+            [
+              "높을 때",
+              "우심부전, 폐고혈압, 과수액, tamponade, tension pneumothorax 가능"
+            ],
+            [
+              "낮을 때",
+              "저혈량, 혈관확장, 출혈/탈수 가능"
+            ],
+            [
+              "주의",
+              "CVP 단독으로 수액반응성을 판단하지 말고 전체 임상상과 함께 봄"
+            ]
+          ]
+        },
+        {
+          "title": "CVP 측정·관리 체크리스트",
+          "headers": [
+            "순서",
+            "실무 포인트"
+          ],
+          "rows": [
+            [
+              "라인 위치",
+              "CVC tip 위치 확인, lumen 확인, 수액/약물 주입 중 측정 오류 가능성 확인"
+            ],
+            [
+              "Leveling",
+              "transducer를 phlebostatic axis 높이에 맞춤"
+            ],
+            [
+              "Zeroing",
+              "대기압에 open하여 zeroing 후 환자 방향으로 다시 개방"
+            ],
+            [
+              "파형 확인",
+              "a/c/v wave, respiratory variation, damped waveform 여부 확인"
+            ],
+            [
+              "측정 조건",
+              "체위·PEEP·호흡양상·복압·기침이 수치에 영향 가능"
+            ],
+            [
+              "해석",
+              "BP, HR, U/O, lactate, 피부관류, I/O balance와 함께 판단"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v71_cvp_monitoring_summary.png",
+          "alt": "CVP 총정리 이미지",
+          "caption": "CVP 총정리: zeroing 기준점, 해석, 파형, 간호 체크리스트"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -23549,6 +24179,32 @@ window.ICU_MANUAL_DB = {
       "item_count": 213,
       "table_count": 65,
       "image_count": 194,
+      "video_count": 5
+    }
+  },
+  "v71_update": {
+    "title": "EVD ICP CVP 총정리 카드 추가",
+    "added_cards": [
+      "V71_EVD_ICP_CVP_OVERVIEW",
+      "V71_EVD_NURSING",
+      "V71_ICP_MANAGEMENT",
+      "V71_CVP_MONITORING"
+    ],
+    "kept": [
+      "V62 Google Drive 동영상 링크 방식 유지",
+      "V63 14개 파일 삭제 상태 유지",
+      "V64 통증 이미지 수혈카드 분리 유지",
+      "V65 신규 자료 표/이미지 기능 유지",
+      "V66 로그인 입력칸 수정 유지",
+      "V67 아그라스타트주 표 유지",
+      "V68 헤파린 요법 노모그램 유지",
+      "V69 뇌졸중 총정리 유지",
+      "V70 심전도 총정리 유지"
+    ],
+    "stats": {
+      "item_count": 217,
+      "table_count": 72,
+      "image_count": 198,
       "video_count": 5
     }
   }
