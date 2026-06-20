@@ -74,8 +74,10 @@ function findLoginAccount(username) {
     if (account.active && account.username.toLowerCase() === target) return account;
   }
 
-  if (INDIVIDUAL_ACCOUNTS.length === 0 && LEGACY_COMMON_LOGIN_ALLOWED && LOGIN_ID && LOGIN_PASSWORD && target === LOGIN_ID.toLowerCase()) {
-    return { username: LOGIN_ID, password: LOGIN_PASSWORD, name: LOGIN_ID, role: "legacy", active: true };
+  // ALLOW_COMMON_LOGIN=true이면 개별 계정 목록이 있어도 기존 공용 계정도 함께 허용합니다.
+  // 공용 계정은 관리용 보조 계정으로 사용하므로 role은 admin으로 둡니다.
+  if (LEGACY_COMMON_LOGIN_ALLOWED && LOGIN_ID && LOGIN_PASSWORD && target === LOGIN_ID.toLowerCase()) {
+    return { username: LOGIN_ID, password: LOGIN_PASSWORD, name: "ICU 공용 관리자", role: "admin", active: true };
   }
 
   return null;
@@ -354,7 +356,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "0.57.0-v57-individual-accounts",
+    version: "0.58.0-v58-common-login-with-individual",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
