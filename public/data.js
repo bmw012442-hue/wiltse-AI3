@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.75.0-v75-diabetes-insulin-summary",
+    "version": "1.76.0-v76-icu-medication-fluid-summary",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 중환자실질병 + V75 혈당·당뇨·인슐린",
+    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 ICU 질병 + V75 혈당/당뇨 + V76 ICU 약품/수액요법",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -26675,6 +26675,962 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true
+    },
+    {
+      "id": "V76_ICU_MEDICATION_OVERVIEW",
+      "category": "약물 / 중환자실",
+      "title": "중환자실 약품 총정리: 고위험·고주의 약물 안전",
+      "aliases": [
+        "중환자실 약품",
+        "ICU 약물",
+        "고위험 약물",
+        "고주의 약물",
+        "high-alert medication",
+        "약품 총정리"
+      ],
+      "search_terms": [
+        "중환자실 약품",
+        "ICU 약물",
+        "고위험 약물",
+        "고주의 약물",
+        "high alert",
+        "약품 안전",
+        "double check",
+        "투약오류",
+        "승압제",
+        "강심제",
+        "인슐린",
+        "heparin",
+        "KCl",
+        "고농도 전해질",
+        "항부정맥제",
+        "마약",
+        "향정"
+      ],
+      "urgency": "high",
+      "summary": "중환자실에서 자주 사용하는 고위험·고주의 약물의 범주, 핵심 위험, 투약 전 확인사항과 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "중환자실 약품 투여 전 안전 확인이 필요할 때",
+        "고위험 약물 double check 항목을 확인할 때",
+        "승압제, 항응고제, 인슐린, 전해질, 진정제 투여 중 보고 기준을 확인할 때"
+      ],
+      "preparation": [
+        "환자 확인 팔찌 및 처방 확인",
+        "정맥라인 상태, 주입펌프, 희석액, 약물라벨",
+        "최근 활력징후, 검사결과, 알레르기, 신기능·간기능 결과"
+      ],
+      "steps": [
+        "정확한 환자, 약물, 용량, 경로, 시간을 확인한다.",
+        "고위험 약물은 단위(mg/mcg/U), 농도, mL/hr, mcg/kg/min을 구분해 확인한다.",
+        "주입펌프 설정 후 실제 line과 약물 라벨이 일치하는지 확인한다.",
+        "투여 시작 후 활력징후, ECG, 산소포화도, 의식상태, 출혈/호흡억제/말초순환을 관찰한다.",
+        "새로운 이상반응 또는 목표 미달 시 즉시 담당의에게 보고한다."
+      ],
+      "dosage_or_mix": [
+        "승압제/강심제: MAP 목표, central line 여부, extravasation 위험 확인",
+        "항응고제/항혈소판제: aPTT/INR/platelet, 출혈징후, 시술/수술 계획 확인",
+        "인슐린: 혈당·식사·수액·K 상태와 단위 확인",
+        "전해질 고농도: KCl, Mg, Ca, 3% NaCl은 희석/속도/라인/ECG monitoring 확인",
+        "진정·진통제: RASS, 통증점수, 호흡수, BP, reversal 가능성 확인"
+      ],
+      "orders_or_emr": [
+        "고위험 약물 투여 전후 처방명, 농도, 주입속도, 목표값을 확인한다.",
+        "약물 변경, 증량, 감량, 중단 시간과 이유를 인계한다."
+      ],
+      "charting": [
+        "투여 시작/변경/중단 시간, 실제 주입속도, 활력징후 변화, 이상반응, 보고 및 처치 내용을 시간순으로 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "본 카드는 교육용 요약입니다. 실제 투약·희석·속도·수액 종류는 원내 처방, 약제부 기준, 담당의 지시를 우선합니다.",
+        "고위험 약물은 투약 전 환자·약물·용량·경로·시간·농도·펌프 설정을 반드시 재확인합니다.",
+        "마약·향정·항생제·수액 관련 병원별 관리 기준이 다를 수 있으므로 원내 프로토콜을 우선 적용합니다."
+      ],
+      "related": [
+        "마약·향정·항생제 총정리",
+        "중환자실 수액 요법 총정리",
+        "ABGA 총정리",
+        "심전도 총정리",
+        "혈당·당뇨·인슐린 총정리"
+      ],
+      "tags": [
+        "약물",
+        "고위험",
+        "고주의",
+        "ICU",
+        "투약안전"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "고위험 약물·항생제·수액요법은 원내 최신 처방/약제부/감염관리 지침을 우선함."
+      },
+      "source_refs": [
+        "ISMP High-Alert Medications in Acute Care Settings 2024",
+        "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
+        "Surviving Sepsis Campaign Guidelines 2021",
+        "NICE Intravenous fluid therapy in adults in hospital"
+      ],
+      "tables": [
+        {
+          "title": "ICU 약품 안전 5원칙",
+          "headers": [
+            "확인 항목",
+            "내용",
+            "놓치기 쉬운 오류"
+          ],
+          "rows": [
+            [
+              "정확한 환자",
+              "이름/등록번호 2가지 확인",
+              "동명이인, 침상번호 착오"
+            ],
+            [
+              "정확한 약물",
+              "약명, 농도, 희석액, 라벨 확인",
+              "look-alike/sound-alike, 유사 포장"
+            ],
+            [
+              "정확한 용량",
+              "mg, mcg, unit, mL/hr, mcg/kg/min 구분",
+              "단위 오류, 체중 미반영"
+            ],
+            [
+              "정확한 경로",
+              "IV/SC/PO/central line 여부 확인",
+              "말초라인 금기, 단독라인 필요"
+            ],
+            [
+              "정확한 시간",
+              "투여 시작/변경/중단 및 검사시간 확인",
+              "항생제 지연, 약물 중복"
+            ]
+          ]
+        },
+        {
+          "title": "고위험 약물 범주",
+          "headers": [
+            "범주",
+            "대표 약물/제제",
+            "ICU 핵심 위험",
+            "간호 확인"
+          ],
+          "rows": [
+            [
+              "승압제/강심제",
+              "norepinephrine, epinephrine, dopamine, dobutamine, vasopressin",
+              "혈압 급변, 말초허혈, extravasation",
+              "central line 우선, pump 단독 line, MAP·말초순환 관찰"
+            ],
+            [
+              "항응고제/항혈소판제",
+              "heparin, warfarin, DOAC, tirofiban, aspirin/clopidogrel",
+              "출혈, 혈소판감소, 시술 전후 위험",
+              "aPTT/INR/platelet, 출혈징후, hold 여부 확인"
+            ],
+            [
+              "인슐린",
+              "regular insulin IV/SC, basal insulin",
+              "저혈당, 단위 오류, 식사/금식 불일치",
+              "혈당·식사·수액·K 상태 확인, double check"
+            ],
+            [
+              "전해질 고농도",
+              "KCl, MgSO4, Ca gluconate, NaCl 3%",
+              "부정맥, 심정지, 삼투압 변화",
+              "희석/속도/라인/ECG monitoring 확인"
+            ],
+            [
+              "진정·진통·마취제",
+              "propofol, midazolam, dexmedetomidine, fentanyl, morphine",
+              "호흡억제, 저혈압, 과진정, 섬망",
+              "RASS/통증/호흡수/BP, reversal 가능성 확인"
+            ],
+            [
+              "항부정맥제",
+              "amiodarone, lidocaine, adenosine",
+              "서맥, 저혈압, QT 연장, rhythm change",
+              "ECG monitoring, 혈압, 투여 전 rhythm 기록"
+            ]
+          ]
+        },
+        {
+          "title": "즉시 보고 기준",
+          "headers": [
+            "상황",
+            "보고해야 하는 변화"
+          ],
+          "rows": [
+            [
+              "혈역학",
+              "새 저혈압/쇼크, MAP 목표 미달, 급격한 혈압상승"
+            ],
+            [
+              "심전도",
+              "VT/VF, 심한 서맥, QT 연장 의심, 새로운 ST 변화"
+            ],
+            [
+              "호흡/의식",
+              "호흡억제, SpO₂ 저하, 의식저하, 과진정"
+            ],
+            [
+              "출혈",
+              "혈뇨, 흑변, 혈소판 급감, 수혈부작용 의심"
+            ],
+            [
+              "전해질",
+              "K/Mg/Ca/Na 급격 이상, 고삼투/저삼투 증상"
+            ],
+            [
+              "알레르기",
+              "항생제 투여 후 발진, 호흡곤란, 혈압저하"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v76_icu_meds_high_alert_overview.png",
+          "alt": "중환자실 약품 고위험 고주의 총정리 이미지",
+          "caption": "ICU 약품 안전 5원칙, 고위험 약물 범주, 즉시 보고 기준"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V76_CONTROLLED_SEDATION_ANALGESIA",
+      "category": "약물 / 중환자실",
+      "title": "마약·향정·진정/진통제 총정리: 보관·투약·폐기·감시",
+      "aliases": [
+        "마약 총정리",
+        "향정 총정리",
+        "진정제",
+        "진통제",
+        "controlled drug",
+        "opioid",
+        "benzodiazepine"
+      ],
+      "search_terms": [
+        "마약",
+        "향정",
+        "진정제",
+        "진통제",
+        "fentanyl",
+        "morphine",
+        "midazolam",
+        "lorazepam",
+        "propofol",
+        "dexmedetomidine",
+        "rocuronium",
+        "naloxone",
+        "flumazenil",
+        "마약 폐기",
+        "마약장",
+        "RASS",
+        "CAM-ICU",
+        "통증 점수"
+      ],
+      "urgency": "high",
+      "summary": "마약성 진통제, 향정/benzodiazepine, 진정제, 신경근차단제의 주요 위험과 간호 감시, 보관·폐기 기록 포인트를 정리한 카드입니다.",
+      "indications": [
+        "중환자실 진정·진통 약물 투여 전후 확인이 필요할 때",
+        "마약·향정 count, 폐기, 잔량 기록을 확인할 때",
+        "호흡억제·과진정·저혈압 위험 환자를 관찰할 때"
+      ],
+      "preparation": [
+        "마약장/향정 보관상태, 2인 확인 체계",
+        "RASS 목표, 통증점수, ventilator 상태",
+        "응급장비, 산소, 흡인, reversal 약물 가능성 확인"
+      ],
+      "steps": [
+        "처방명, 용량, 농도, 주입속도, 투여 경로를 확인한다.",
+        "투여 전 RASS/통증점수/호흡수/SpO₂/BP를 확인한다.",
+        "연속주입 시 목표 sedation level과 daily awakening 또는 감량 계획을 인계한다.",
+        "잔량, 폐기량, count 불일치 여부를 원내 기준대로 기록한다.",
+        "호흡억제, 저혈압, 과진정, 섬망, withdrawal 징후를 관찰한다."
+      ],
+      "dosage_or_mix": [
+        "Opioid: 호흡억제와 저혈압, 변비, 의식저하 주의",
+        "Benzodiazepine: 과진정, 섬망, 낙상, 호흡억제 주의",
+        "Propofol: 저혈압, 고중성지방, propofol infusion syndrome 가능성 관찰",
+        "Dexmedetomidine: 서맥·저혈압 관찰",
+        "신경근차단제: 진정/진통 선행, ventilator, 안구보호, TOF 가능 시 확인"
+      ],
+      "orders_or_emr": [
+        "마약·향정 투여/잔량/폐기/반납은 원내 양식대로 2인 확인한다.",
+        "신경근차단제 사용 시 진정·진통 처방이 함께 있는지 확인한다."
+      ],
+      "charting": [
+        "투여 시작/변경/중단 시간, RASS, 통증점수, 호흡상태, BP, 부작용, 보고 및 처치 내용을 기록한다.",
+        "마약·향정 count 및 폐기 기록을 정확히 남긴다."
+      ],
+      "io": [],
+      "warnings": [
+        "본 카드는 교육용 요약입니다. 실제 투약·희석·속도·수액 종류는 원내 처방, 약제부 기준, 담당의 지시를 우선합니다.",
+        "고위험 약물은 투약 전 환자·약물·용량·경로·시간·농도·펌프 설정을 반드시 재확인합니다.",
+        "마약·향정·항생제·수액 관련 병원별 관리 기준이 다를 수 있으므로 원내 프로토콜을 우선 적용합니다.",
+        "신경근차단제 투여 환자는 움직이지 못해도 통증·불안이 있을 수 있으므로 진정/진통 확인이 중요합니다."
+      ],
+      "related": [
+        "고위험 약물 안전",
+        "심전도 총정리",
+        "Ventilator 사용법",
+        "CPCR 절차"
+      ],
+      "tags": [
+        "마약",
+        "향정",
+        "진정",
+        "진통",
+        "RASS"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "고위험 약물·항생제·수액요법은 원내 최신 처방/약제부/감염관리 지침을 우선함."
+      },
+      "source_refs": [
+        "ISMP High-Alert Medications in Acute Care Settings 2024",
+        "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
+        "Surviving Sepsis Campaign Guidelines 2021",
+        "NICE Intravenous fluid therapy in adults in hospital"
+      ],
+      "tables": [
+        {
+          "title": "마약·향정·진정제 간호",
+          "headers": [
+            "구분",
+            "대표 예",
+            "주요 위험",
+            "간호 핵심"
+          ],
+          "rows": [
+            [
+              "마약성 진통제",
+              "fentanyl, morphine, hydromorphone, pethidine",
+              "호흡억제, 저혈압, 오심, 변비, 의존성",
+              "통증점수, RR/SpO₂, 의식, naloxone 준비 여부 확인"
+            ],
+            [
+              "향정/benzodiazepine",
+              "midazolam, lorazepam, diazepam",
+              "호흡억제, 섬망, 낙상, 과진정",
+              "RASS, CAM-ICU, 호흡, flumazenil은 처방 확인"
+            ],
+            [
+              "진정제",
+              "propofol, dexmedetomidine",
+              "저혈압, 서맥, 과진정, propofol infusion syndrome",
+              "RASS 목표, TG/CK/젖산, hemodynamic 관찰"
+            ],
+            [
+              "신경근차단제",
+              "rocuronium, vecuronium 등",
+              "무의식적 통증/불안, 호흡정지",
+              "진정/진통 선행, ventilator, TOF/안구보호, reversal 확인"
+            ],
+            [
+              "보관·폐기",
+              "마약장/이중잠금, 잔량 폐기",
+              "분실, 오남용, 기록오류",
+              "2인 확인, 잔량·폐기량·인계 기록, count 불일치 즉시 보고"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v76_controlled_sedation_antibiotics.png",
+          "alt": "마약 향정 항생제 총정리 이미지",
+          "caption": "마약·향정·진정/진통제 간호와 항생제 투여 전후 체크"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V76_ANTIBIOTICS_ICU_STEWARDSHIP",
+      "category": "약물 / 중환자실",
+      "title": "중환자실 항생제 총정리: 투여 전후 확인·고위험 항생제·감염관리",
+      "aliases": [
+        "항생제 총정리",
+        "ICU 항생제",
+        "antibiotic stewardship",
+        "TDM",
+        "AST 항생제"
+      ],
+      "search_terms": [
+        "항생제",
+        "antibiotic",
+        "stewardship",
+        "감염관리",
+        "배양검사",
+        "culture",
+        "TDM",
+        "trough",
+        "vancomycin",
+        "aminoglycoside",
+        "carbapenem",
+        "colistin",
+        "cephalosporin",
+        "penicillin",
+        "AST",
+        "알레르기",
+        "C. difficile",
+        "de-escalation",
+        "stop date"
+      ],
+      "urgency": "high",
+      "summary": "중환자실 항생제 투여 전후 확인사항, 고위험 항생제 감시, 배양검사와 de-escalation, TDM 및 이상반응을 정리한 카드입니다.",
+      "indications": [
+        "패혈증/감염 의심으로 항생제를 시작할 때",
+        "배양검사 채취 여부와 첫 투여 지연 방지를 확인할 때",
+        "vancomycin/aminoglycoside 등 TDM 대상 약물을 관리할 때"
+      ],
+      "preparation": [
+        "알레르기 및 과거 항생제 반응 확인",
+        "혈액/객담/소변/배액 culture 채취 여부 확인",
+        "신기능, 간기능, 체중, 감염 부위, 최근 항생제 사용 이력"
+      ],
+      "steps": [
+        "가능하면 항생제 투여 전 배양검사를 채취한다.",
+        "패혈증/쇼크 환자는 첫 항생제 지연을 최소화한다.",
+        "처방명, 용량, 희석액, 주입시간, compatibility를 확인한다.",
+        "신기능에 따른 용량 조정과 TDM 필요 여부를 확인한다.",
+        "투여 중 발진, 호흡곤란, 혈압저하, 설사, 신독성/이독성을 관찰한다.",
+        "48–72시간 후 배양결과, 감수성, de-escalation 또는 stop date를 확인한다."
+      ],
+      "dosage_or_mix": [
+        "Vancomycin: TDM/trough 또는 AUC 기반 모니터링, 신기능 확인",
+        "Aminoglycoside: 신독성·이독성, peak/trough 기준 확인",
+        "Carbapenem/광범위 항생제: 내성균 위험과 de-escalation 확인",
+        "Colistin: 신독성/신경독성 주의",
+        "항생제 투여 후 설사·복통은 C. difficile 가능성 관찰"
+      ],
+      "orders_or_emr": [
+        "배양검사 채취 전후, 항생제 시작 시각, 용량, 주입시간, allergy 여부를 확인한다.",
+        "감염관리/약제부/주치의 지침에 따라 AST 또는 skin test 필요 여부를 확인한다."
+      ],
+      "charting": [
+        "첫 투여 시각, 지연 사유, 배양검사 채취 여부, 이상반응, 투여 중단/변경 내용을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "본 카드는 교육용 요약입니다. 실제 투약·희석·속도·수액 종류는 원내 처방, 약제부 기준, 담당의 지시를 우선합니다.",
+        "고위험 약물은 투약 전 환자·약물·용량·경로·시간·농도·펌프 설정을 반드시 재확인합니다.",
+        "마약·향정·항생제·수액 관련 병원별 관리 기준이 다를 수 있으므로 원내 프로토콜을 우선 적용합니다.",
+        "항생제는 감염 부위, 원인균, 감수성, 신기능에 따라 조정되므로 임의 변경하지 않습니다."
+      ],
+      "related": [
+        "패혈증·쇼크 총정리",
+        "수액요법 총정리",
+        "ABGA 총정리",
+        "원내 항생제 목록"
+      ],
+      "tags": [
+        "항생제",
+        "감염",
+        "TDM",
+        "배양검사",
+        "감염관리"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "고위험 약물·항생제·수액요법은 원내 최신 처방/약제부/감염관리 지침을 우선함."
+      },
+      "source_refs": [
+        "ISMP High-Alert Medications in Acute Care Settings 2024",
+        "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
+        "Surviving Sepsis Campaign Guidelines 2021",
+        "NICE Intravenous fluid therapy in adults in hospital"
+      ],
+      "tables": [
+        {
+          "title": "항생제 사용 핵심",
+          "headers": [
+            "단계",
+            "간호사가 확인할 것",
+            "중요 이유"
+          ],
+          "rows": [
+            [
+              "투여 전",
+              "알레르기, 과거 AST/반응, 감염 의심 부위, 배양검사 채취 여부",
+              "초기 항생제 지연 방지 + 원인균 확인"
+            ],
+            [
+              "첫 투여",
+              "처방명, 용량, 희석액, 주입시간, compatibility 확인",
+              "용량/희석 오류와 정맥염 예방"
+            ],
+            [
+              "고위험 항생제",
+              "vancomycin, aminoglycoside, carbapenem, colistin 등",
+              "신독성/이독성/TDM/내성 관리 필요"
+            ],
+            [
+              "투여 중",
+              "발진, 호흡곤란, 혈압저하, 설사, renal function, LFT 확인",
+              "아나필락시스, C. difficile, 장기독성 감시"
+            ],
+            [
+              "48–72시간",
+              "배양결과, 감수성, de-escalation, stop date 확인",
+              "항생제 stewardship와 내성 예방"
+            ],
+            [
+              "기록/인계",
+              "투여시각, 누락/지연, 이상반응, 배양 채취 여부 기록",
+              "치료효과 평가와 안전 인계"
+            ]
+          ]
+        },
+        {
+          "title": "ICU 항생제 체크리스트",
+          "headers": [
+            "체크",
+            "내용"
+          ],
+          "rows": [
+            [
+              "Culture",
+              "가능하면 항생제 전 배양검사 채취"
+            ],
+            [
+              "Time",
+              "sepsis/shock이면 첫 dose 지연 최소화"
+            ],
+            [
+              "Renal",
+              "renal dose adjustment 확인"
+            ],
+            [
+              "TDM",
+              "TDM 대상 약물 trough/level 확인"
+            ],
+            [
+              "Line",
+              "동일 line 혼합 금지, compatibility 확인"
+            ],
+            [
+              "Reaction",
+              "발진/호흡곤란/저혈압 시 즉시 중단·보고"
+            ],
+            [
+              "C. difficile",
+              "설사/복통 발생 시 가능성 관찰"
+            ],
+            [
+              "Review",
+              "48–72시간 재평가: 감량·중단·협범위 전환"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v76_controlled_sedation_antibiotics.png",
+          "alt": "마약 향정 항생제 총정리 이미지",
+          "caption": "항생제 투여 전후 확인, TDM, stewardship 체크리스트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V76_ICU_FLUID_THERAPY",
+      "category": "약물 / 중환자실",
+      "title": "중환자실 수액 요법 총정리: 종류·적응증·모니터링·간호",
+      "aliases": [
+        "수액 요법",
+        "수액 총정리",
+        "IV fluid therapy",
+        "fluid resuscitation",
+        "maintenance fluid"
+      ],
+      "search_terms": [
+        "수액",
+        "수액요법",
+        "IV fluid",
+        "fluid therapy",
+        "crystalloid",
+        "colloid",
+        "normal saline",
+        "N/S",
+        "Hartmann",
+        "LR",
+        "5DW",
+        "0.45% N/S",
+        "3% NaCl",
+        "albumin",
+        "resuscitation",
+        "maintenance",
+        "replacement",
+        "I/O",
+        "fluid overload",
+        "폐부종",
+        "저나트륨",
+        "고나트륨",
+        "쇼크 수액"
+      ],
+      "urgency": "high",
+      "summary": "중환자실 수액요법의 5R, 수액 종류별 특징, 사용 상황, 주의사항, 모니터링과 재평가 기준을 정리한 카드입니다.",
+      "indications": [
+        "쇼크, 저혈압, 탈수, 출혈, 금식, 전해질 이상 환자에서 수액 선택을 확인할 때",
+        "수액 과다/부족, 소변량 감소, 폐부종을 모니터링할 때",
+        "수액 주입 속도 변경 전후 인계가 필요할 때"
+      ],
+      "preparation": [
+        "현재 처방 수액명/농도/속도",
+        "I/O, 체중, 소변량, 배액량",
+        "BP/MAP, HR, SpO₂, lactate, 전해질, BUN/Cr",
+        "라인 상태, pump setting, compatibility"
+      ],
+      "steps": [
+        "수액 목적을 5R(Resuscitation, Routine maintenance, Replacement, Redistribution, Reassessment) 중 어디에 해당하는지 확인한다.",
+        "처방 수액 종류와 속도, 주입 경로, pump setting을 확인한다.",
+        "수액 전후 혈압, HR, 소변량, lactate, 산소요구량, crackle, 부종을 관찰한다.",
+        "전해질 및 신기능 결과를 확인하고 필요 시 담당의에게 보고한다.",
+        "소변량 감소, 폐부종, 전해질 급변, 쇼크 지속 시 즉시 재평가한다."
+      ],
+      "dosage_or_mix": [
+        "0.9% N/S: 저혈량/초기 보충, 과량 시 고염소성 산증·부종 주의",
+        "Hartmann/LR: balanced crystalloid, 수술/외상/패혈증 보충, 원내 기준 확인",
+        "5%DW: 자유수 효과, 저혈당 보조/약물 희석, resuscitation용 아님",
+        "0.45% N/S: 저장성 수액, 뇌부종/ICP 상승 위험 환자 주의",
+        "3% NaCl: 중증 저Na 또는 ICP 관련 일부 상황, Na 교정속도/신경증상 관찰",
+        "Albumin: colloid, 적응증과 체액과다/폐부종 주의"
+      ],
+      "orders_or_emr": [
+        "수액 종류, 속도, 목표, 제한 여부, total fluid intake 제한을 확인한다.",
+        "수액 변경 시 이전 수액과 새 수액의 시간, 속도, line을 인계한다."
+      ],
+      "charting": [
+        "I/O, 소변량, 체중, 부종, 폐음, 산소요구량, 혈압/MAP, lactate, 전해질 변화를 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "본 카드는 교육용 요약입니다. 실제 투약·희석·속도·수액 종류는 원내 처방, 약제부 기준, 담당의 지시를 우선합니다.",
+        "고위험 약물은 투약 전 환자·약물·용량·경로·시간·농도·펌프 설정을 반드시 재확인합니다.",
+        "마약·향정·항생제·수액 관련 병원별 관리 기준이 다를 수 있으므로 원내 프로토콜을 우선 적용합니다.",
+        "수액은 많이 주는 것보다 반복 평가가 핵심입니다. 환자 질환과 처방에 따라 목표가 달라집니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "EVD·ICP·CVP 총정리",
+        "패혈증·쇼크 총정리",
+        "수혈 총정리"
+      ],
+      "tags": [
+        "수액",
+        "fluid",
+        "쇼크",
+        "I/O",
+        "전해질"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "고위험 약물·항생제·수액요법은 원내 최신 처방/약제부/감염관리 지침을 우선함."
+      },
+      "source_refs": [
+        "ISMP High-Alert Medications in Acute Care Settings 2024",
+        "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
+        "Surviving Sepsis Campaign Guidelines 2021",
+        "NICE Intravenous fluid therapy in adults in hospital"
+      ],
+      "tables": [
+        {
+          "title": "수액 처방 5R",
+          "headers": [
+            "5R",
+            "의미",
+            "예시 상황"
+          ],
+          "rows": [
+            [
+              "Resuscitation",
+              "쇼크/저혈압/저관류 초기 보충",
+              "패혈성 쇼크, 출혈, 탈수"
+            ],
+            [
+              "Routine maintenance",
+              "기본 유지수액",
+              "금식, 섭취불량"
+            ],
+            [
+              "Replacement",
+              "손실 보충",
+              "구토, 설사, 배액, 출혈"
+            ],
+            [
+              "Redistribution",
+              "분포 이상 고려",
+              "패혈증, 저알부민, 부종"
+            ],
+            [
+              "Reassessment",
+              "반복 평가 후 조정",
+              "소변량, lactate, 폐부종, 전해질 변화"
+            ]
+          ]
+        },
+        {
+          "title": "수액 종류와 ICU 핵심",
+          "headers": [
+            "수액/제제",
+            "특징",
+            "주요 사용 상황",
+            "주의/간호"
+          ],
+          "rows": [
+            [
+              "0.9% N/S",
+              "등장성 crystalloid, Na/Cl 높음",
+              "저혈량, 약물 희석, 초기 보충",
+              "과량 시 고염소성 산증·부종 주의"
+            ],
+            [
+              "Hartmann/LR",
+              "balanced crystalloid, lactate 포함",
+              "수술/외상/패혈증 등 보충",
+              "고K/간부전/수혈라인 병용 여부 원내 기준 확인"
+            ],
+            [
+              "5%DW",
+              "포도당 수액, 체내 자유수 효과",
+              "저혈당 보조, 약물 희석",
+              "resuscitation용 아님, 저Na/고혈당 주의"
+            ],
+            [
+              "0.45% N/S",
+              "저장성 수액",
+              "고Na 교정, 유지수액 일부",
+              "뇌부종/ICP 상승 위험 환자 주의"
+            ],
+            [
+              "3% NaCl",
+              "고장성 NaCl",
+              "중증 저Na, ICP 상승 일부 상황",
+              "central line/Na 교정속도/신경증상 관찰"
+            ],
+            [
+              "Albumin",
+              "colloid, oncotic pressure 증가",
+              "저알부민, 대량 복수, 일부 쇼크 상황",
+              "체액과다, 폐부종, 비용/적응증 확인"
+            ],
+            [
+              "혈액제제",
+              "RBC/FFP/PC/Cryo",
+              "출혈, 빈혈, 응고장애",
+              "수혈 프로토콜, 부작용, Ca/K/체온 감시"
+            ]
+          ]
+        },
+        {
+          "title": "수액 모니터링",
+          "headers": [
+            "영역",
+            "확인할 것"
+          ],
+          "rows": [
+            [
+              "I/O",
+              "hourly urine, 배액량, 체중"
+            ],
+            [
+              "순환",
+              "BP/MAP, HR, capillary refill, lactate"
+            ],
+            [
+              "호흡",
+              "SpO₂, crackle, CXR, 산소요구량"
+            ],
+            [
+              "검사",
+              "Na/K/Cl/Mg/Ca, BUN/Cr, lactate"
+            ],
+            [
+              "부종",
+              "말초부종, 폐부종, CVP/echo 필요 시"
+            ],
+            [
+              "라인",
+              "침윤/정맥염/compatibility/pump setting"
+            ]
+          ]
+        },
+        {
+          "title": "즉시 재평가해야 하는 상황",
+          "headers": [
+            "상황",
+            "의미"
+          ],
+          "rows": [
+            [
+              "소변량 감소, Cr 상승, lactate 상승",
+              "저관류 또는 AKI 가능성"
+            ],
+            [
+              "새 crackle, 산소요구량 증가, 폐부종 의심",
+              "수액 과다 또는 심부전 가능성"
+            ],
+            [
+              "Na 교정 속도 과도 또는 신경증상",
+              "삼투성 합병증 위험"
+            ],
+            [
+              "부종/체중 급증, CVP 상승, 저산소증",
+              "체액 과다 의심"
+            ],
+            [
+              "쇼크 지속",
+              "수액 반응성·승압제 필요성 평가"
+            ],
+            [
+              "line 침윤/extravasation",
+              "조직 손상 위험"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v76_icu_fluid_therapy_summary.png",
+          "alt": "중환자실 수액 요법 총정리 이미지",
+          "caption": "수액 5R, 수액 종류, 모니터링, 즉시 재평가 기준"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
+      "category": "약물 / 중환자실",
+      "title": "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
+      "aliases": [
+        "ICU 약물 비교",
+        "수액 약물 항생제 비교",
+        "중환자실 간호 체크포인트"
+      ],
+      "search_terms": [
+        "ICU 약물 비교",
+        "약물 수액 비교",
+        "고위험 약물",
+        "마약",
+        "향정",
+        "항생제",
+        "수액",
+        "중환자실 간호",
+        "투약 체크리스트",
+        "간호 체크포인트",
+        "약물 인계"
+      ],
+      "urgency": "high",
+      "summary": "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
+      "indications": [
+        "인계 전 약물/수액 핵심 확인이 필요할 때",
+        "여러 고위험 약물과 수액이 동시에 들어가는 환자를 볼 때",
+        "신규 간호사 교육용 요약이 필요할 때"
+      ],
+      "preparation": [
+        "처방, 라벨, line, pump setting, 검사결과",
+        "환자 상태: BP/MAP, ECG, SpO₂, 의식, I/O"
+      ],
+      "steps": [
+        "투약 전 처방과 실제 약물/수액을 대조한다.",
+        "투여 목적, 목표값, 주입속도 단위, 이상반응 보고 기준을 확인한다.",
+        "투여 후 반응과 부작용을 관찰하고 기록한다."
+      ],
+      "dosage_or_mix": [
+        "고위험 약물: double check와 지속 모니터링",
+        "항생제: 배양검사, 알레르기, 첫 투여 지연 방지, TDM 확인",
+        "수액: 5R 목적과 I/O, 폐부종, 전해질 재평가"
+      ],
+      "orders_or_emr": [
+        "약물/수액 변경 시 변경 전후 속도, 이유, 목표값을 인계한다."
+      ],
+      "charting": [
+        "시작·변경·중단 시간, 환자 반응, 이상반응, 보고내용 기록"
+      ],
+      "io": [],
+      "warnings": [
+        "본 카드는 교육용 요약입니다. 실제 투약·희석·속도·수액 종류는 원내 처방, 약제부 기준, 담당의 지시를 우선합니다.",
+        "고위험 약물은 투약 전 환자·약물·용량·경로·시간·농도·펌프 설정을 반드시 재확인합니다.",
+        "마약·향정·항생제·수액 관련 병원별 관리 기준이 다를 수 있으므로 원내 프로토콜을 우선 적용합니다."
+      ],
+      "related": [
+        "고위험 약물 안전",
+        "마약·향정 총정리",
+        "항생제 총정리",
+        "수액요법 총정리"
+      ],
+      "tags": [
+        "약물",
+        "수액",
+        "항생제",
+        "체크리스트"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "고위험 약물·항생제·수액요법은 원내 최신 처방/약제부/감염관리 지침을 우선함."
+      },
+      "source_refs": [
+        "ISMP High-Alert Medications in Acute Care Settings 2024",
+        "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
+        "Surviving Sepsis Campaign Guidelines 2021",
+        "NICE Intravenous fluid therapy in adults in hospital"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 비교",
+          "headers": [
+            "분류",
+            "핵심 위험",
+            "투여 전 확인",
+            "투여 중 관찰",
+            "기록/인계"
+          ],
+          "rows": [
+            [
+              "고위험 약물",
+              "중대한 환자 위해 가능",
+              "환자·약물·용량·경로·시간·농도",
+              "목표값, 활력징후, ECG, 말초순환",
+              "주입속도, 변경시간, 반응"
+            ],
+            [
+              "마약/향정/진정제",
+              "호흡억제, 과진정, 오남용",
+              "RASS/통증, 처방, count, 폐기기준",
+              "RR/SpO₂, BP, 의식, 섬망",
+              "투여량, 잔량, 폐기, RASS"
+            ],
+            [
+              "항생제",
+              "알레르기, 내성, 신독성",
+              "알레르기, 배양검사, 신기능, TDM",
+              "발진, 설사, renal/LFT, 효과",
+              "첫 투여시간, 지연, 이상반응"
+            ],
+            [
+              "수액요법",
+              "과소/과다, 전해질 이상",
+              "5R 목적, 수액종류, 속도, line",
+              "I/O, 폐음, 부종, Na/K/Cr/lactate",
+              "I/O, 속도변경, 재평가"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v76_icu_meds_high_alert_overview.png",
+          "alt": "ICU 약품 안전 총정리",
+          "caption": "고위험 약물 안전 전체 요약"
+        },
+        {
+          "src": "selected_manual_images/v76_icu_fluid_therapy_summary.png",
+          "alt": "ICU 수액 요법 총정리",
+          "caption": "수액 요법 전체 요약"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -27685,6 +28641,38 @@ window.ICU_MANUAL_DB = {
       "item_count": 237,
       "table_count": 100,
       "image_count": 218,
+      "video_count": 5
+    }
+  },
+  "v76_update": {
+    "title": "중환자실 약품·고위험 약물·마약·향정·항생제·수액요법 총정리 카드 추가",
+    "added_cards": [
+      "V76_ICU_MEDICATION_OVERVIEW",
+      "V76_CONTROLLED_SEDATION_ANALGESIA",
+      "V76_ANTIBIOTICS_ICU_STEWARDSHIP",
+      "V76_ICU_FLUID_THERAPY",
+      "V76_ICU_DRUG_FLUID_QUICK_COMPARE"
+    ],
+    "kept": [
+      "V62 Google Drive 동영상 링크 방식 유지",
+      "V63 14개 파일 삭제 상태 유지",
+      "V64 통증 이미지 수혈카드 분리 유지",
+      "V65 신규 자료 표/이미지 기능 유지",
+      "V66 로그인 입력칸 수정 유지",
+      "V67 아그라스타트주 표 유지",
+      "V68 헤파린 요법 노모그램 유지",
+      "V69 뇌졸중 총정리 유지",
+      "V70 심전도 총정리 유지",
+      "V71 EVD·ICP·CVP 유지",
+      "V72 ABGA 총정리 유지",
+      "V73 수혈 총정리 유지",
+      "V74 ICU 질병 계통별 총정리 유지",
+      "V75 혈당·당뇨·인슐린 총정리 유지"
+    ],
+    "stats": {
+      "item_count": 242,
+      "table_count": 111,
+      "image_count": 224,
       "video_count": 5
     }
   }
