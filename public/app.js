@@ -208,14 +208,25 @@ function renderVideos(videos) {
   return `<section class="detail-section video-section">
     <h4>참고 동영상</h4>
     <div class="video-list">
-      ${videos.map((v, idx) => `
-        <figure class="video-item">
-          <video controls preload="metadata" playsinline src="${esc(v.src)}"></video>
-          <figcaption>${esc(v.title || v.caption || `동영상 ${idx + 1}`)}</figcaption>
-        </figure>
-      `).join("")}
+      ${videos.map((v, idx) => {
+        const title = v.title || v.caption || `동영상 ${idx + 1}`;
+        const href = v.href || v.url || v.link || "";
+        const src = v.src || "";
+        const isExternal = href || /^https?:\/\//.test(src);
+        if (isExternal) {
+          const target = href || src;
+          return `<div class="video-link-item">
+            <a class="video-link-button" href="${esc(target)}" target="_blank" rel="noopener noreferrer">▶ ${esc(title)}</a>
+            ${v.caption ? `<div class="video-link-caption">${esc(v.caption)}</div>` : ""}
+          </div>`;
+        }
+        return `<figure class="video-item">
+          <video controls preload="metadata" playsinline src="${esc(src)}"></video>
+          <figcaption>${esc(title)}</figcaption>
+        </figure>`;
+      }).join("")}
     </div>
-    <div class="video-note">용량 문제로 긴 영상은 여러 구간으로 나뉘어 있습니다. 순서대로 재생하세요.</div>
+    <div class="video-note">동영상은 Google Drive 링크로 새 창에서 열립니다. 재생이 안 되면 Drive 공유 설정을 확인하세요.</div>
   </section>`;
 }
 
@@ -329,7 +340,7 @@ function cardSearchText(card) {
       t.title || "", ...(t.headers || []), ...((t.rows || []).flatMap(row => row || []))
     ])),
     ...((card.images || []).flatMap(img => [img.alt || "", img.caption || ""])),
-    ...((card.videos || []).flatMap(v => [v.title || "", v.caption || "", v.src || ""]))
+    ...((card.videos || []).flatMap(v => [v.title || "", v.caption || "", v.src || "", v.href || "", v.url || "", v.link || ""]))
   ].join(" ");
 }
 

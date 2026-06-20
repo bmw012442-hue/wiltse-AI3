@@ -1392,3 +1392,38 @@ main {
     max-height: 420px;
   }
 }
+
+
+/* V62: Google Drive video links */
+.video-link-item {
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.video-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f97316;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.16);
+}
+
+.video-link-button:hover {
+  filter: brightness(0.96);
+}
+
+.video-link-caption {
+  margin-top: 8px;
+  color: #7c2d12;
+  font-size: 12px;
+  font-weight: 800;
+}

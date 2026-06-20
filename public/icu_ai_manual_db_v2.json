@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.61.0-v61-video-support",
+    "version": "1.62.0-v62-drive-video-links",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -22418,14 +22418,14 @@
         "Ventilator 사용법 동영상"
       ],
       "urgency": "routine",
-      "summary": "Ventilator 사용법 교육 동영상입니다. 용량 문제로 여러 구간으로 나누어 재생됩니다.",
+      "summary": "Ventilator 사용법 1, 2 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
       "indications": [
         "Ventilator 사용법을 영상으로 확인해야 할 때",
         "신규/경력직 교육 중 장비 조작법 확인이 필요할 때"
       ],
       "preparation": [],
       "steps": [
-        "아래 참고 동영상을 순서대로 재생합니다.",
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
         "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "dosage_or_mix": [],
@@ -22441,92 +22441,29 @@
       "tags": [
         "동영상",
         "교육영상",
-        "v61_video"
+        "v61_video",
+        "google_drive_link",
+        "v62_video_link"
       ],
       "review": {
-        "status": "v61_added"
+        "status": "v62_drive_link_updated"
       },
       "source_refs": [
-        "사용자 업로드 ventilator-1.mp4",
-        "사용자 업로드 ventilator-2.mp4"
+        "Google Drive 링크 ventilator-1.mp4",
+        "Google Drive 링크 ventilator-2.mp4"
       ],
       "tables": [],
       "images": [],
       "videos": [
         {
-          "src": "videos/ventilator_1/ventilator_1_part00.mp4",
-          "title": "Ventilator 사용법 1 1/7",
-          "caption": "Ventilator 사용법 1 - 1/7 구간"
+          "href": "https://drive.google.com/file/d/1QgSpX3I2sgaV_aKDhC_TjyIefqZQWXEA/view?usp=drive_link",
+          "title": "Ventilator 사용법 1 보기",
+          "caption": "Google Drive 외부 링크"
         },
         {
-          "src": "videos/ventilator_1/ventilator_1_part01.mp4",
-          "title": "Ventilator 사용법 1 2/7",
-          "caption": "Ventilator 사용법 1 - 2/7 구간"
-        },
-        {
-          "src": "videos/ventilator_1/ventilator_1_part02.mp4",
-          "title": "Ventilator 사용법 1 3/7",
-          "caption": "Ventilator 사용법 1 - 3/7 구간"
-        },
-        {
-          "src": "videos/ventilator_1/ventilator_1_part03.mp4",
-          "title": "Ventilator 사용법 1 4/7",
-          "caption": "Ventilator 사용법 1 - 4/7 구간"
-        },
-        {
-          "src": "videos/ventilator_1/ventilator_1_part04.mp4",
-          "title": "Ventilator 사용법 1 5/7",
-          "caption": "Ventilator 사용법 1 - 5/7 구간"
-        },
-        {
-          "src": "videos/ventilator_1/ventilator_1_part05.mp4",
-          "title": "Ventilator 사용법 1 6/7",
-          "caption": "Ventilator 사용법 1 - 6/7 구간"
-        },
-        {
-          "src": "videos/ventilator_1/ventilator_1_part06.mp4",
-          "title": "Ventilator 사용법 1 7/7",
-          "caption": "Ventilator 사용법 1 - 7/7 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part00.mp4",
-          "title": "Ventilator 사용법 2 1/8",
-          "caption": "Ventilator 사용법 2 - 1/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part01.mp4",
-          "title": "Ventilator 사용법 2 2/8",
-          "caption": "Ventilator 사용법 2 - 2/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part02.mp4",
-          "title": "Ventilator 사용법 2 3/8",
-          "caption": "Ventilator 사용법 2 - 3/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part03.mp4",
-          "title": "Ventilator 사용법 2 4/8",
-          "caption": "Ventilator 사용법 2 - 4/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part04.mp4",
-          "title": "Ventilator 사용법 2 5/8",
-          "caption": "Ventilator 사용법 2 - 5/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part05.mp4",
-          "title": "Ventilator 사용법 2 6/8",
-          "caption": "Ventilator 사용법 2 - 6/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part06.mp4",
-          "title": "Ventilator 사용법 2 7/8",
-          "caption": "Ventilator 사용법 2 - 7/8 구간"
-        },
-        {
-          "src": "videos/ventilator_2/ventilator_2_part07.mp4",
-          "title": "Ventilator 사용법 2 8/8",
-          "caption": "Ventilator 사용법 2 - 8/8 구간"
+          "href": "https://drive.google.com/file/d/1QaU2HgH1cu_PMNEPXUYYgQrD-Q8OytZO/view?usp=drive_link",
+          "title": "Ventilator 사용법 2 보기",
+          "caption": "Google Drive 외부 링크"
         }
       ],
       "standard_sections_ready": true
@@ -22552,14 +22489,14 @@
         "Ventilator 사용법 동영상"
       ],
       "urgency": "routine",
-      "summary": "Portable ventilator 사용법 교육 동영상입니다.",
+      "summary": "Portable ventilator 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
       "indications": [
         "portable ventilator 사용법을 영상으로 확인해야 할 때",
         "환자 이동 또는 검사 이동 전 장비 사용법 확인이 필요할 때"
       ],
       "preparation": [],
       "steps": [
-        "아래 참고 동영상을 순서대로 재생합니다.",
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
         "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "dosage_or_mix": [],
@@ -22575,46 +22512,23 @@
       "tags": [
         "동영상",
         "교육영상",
-        "v61_video"
+        "v61_video",
+        "google_drive_link",
+        "v62_video_link"
       ],
       "review": {
-        "status": "v61_added"
+        "status": "v62_drive_link_updated"
       },
       "source_refs": [
-        "사용자 업로드 portable ventilator.mp4"
+        "Google Drive 링크 portable ventilator.mp4"
       ],
       "tables": [],
       "images": [],
       "videos": [
         {
-          "src": "videos/portable_ventilator/portable_ventilator_part00.mp4",
-          "title": "Portable ventilator 사용법 1/6",
-          "caption": "Portable ventilator 사용법 - 1/6 구간"
-        },
-        {
-          "src": "videos/portable_ventilator/portable_ventilator_part01.mp4",
-          "title": "Portable ventilator 사용법 2/6",
-          "caption": "Portable ventilator 사용법 - 2/6 구간"
-        },
-        {
-          "src": "videos/portable_ventilator/portable_ventilator_part02.mp4",
-          "title": "Portable ventilator 사용법 3/6",
-          "caption": "Portable ventilator 사용법 - 3/6 구간"
-        },
-        {
-          "src": "videos/portable_ventilator/portable_ventilator_part03.mp4",
-          "title": "Portable ventilator 사용법 4/6",
-          "caption": "Portable ventilator 사용법 - 4/6 구간"
-        },
-        {
-          "src": "videos/portable_ventilator/portable_ventilator_part04.mp4",
-          "title": "Portable ventilator 사용법 5/6",
-          "caption": "Portable ventilator 사용법 - 5/6 구간"
-        },
-        {
-          "src": "videos/portable_ventilator/portable_ventilator_part05.mp4",
-          "title": "Portable ventilator 사용법 6/6",
-          "caption": "Portable ventilator 사용법 - 6/6 구간"
+          "href": "https://drive.google.com/file/d/10P-PgVm-74VhOCWBkdFEGiyhT2uIOTTf/view?usp=drive_link",
+          "title": "Portable ventilator 사용법 보기",
+          "caption": "Google Drive 외부 링크"
         }
       ],
       "standard_sections_ready": true
@@ -22643,14 +22557,14 @@
         "응급상황"
       ],
       "urgency": "routine",
-      "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다.",
+      "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
       "indications": [
         "CPR 상황에서 LUCAS 장비 사용법을 확인해야 할 때",
         "응급장비 교육이 필요할 때"
       ],
       "preparation": [],
       "steps": [
-        "아래 참고 동영상을 순서대로 재생합니다.",
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
         "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "dosage_or_mix": [],
@@ -22666,26 +22580,23 @@
       "tags": [
         "동영상",
         "교육영상",
-        "v61_video"
+        "v61_video",
+        "google_drive_link",
+        "v62_video_link"
       ],
       "review": {
-        "status": "v61_added"
+        "status": "v62_drive_link_updated"
       },
       "source_refs": [
-        "사용자 업로드 루카스 사용법.mp4"
+        "Google Drive 링크 루카스 사용법.mp4"
       ],
       "tables": [],
       "images": [],
       "videos": [
         {
-          "src": "videos/lucas_cpr/lucas_cpr_part00.mp4",
-          "title": "LUCAS 사용법 1/2",
-          "caption": "LUCAS 사용법 - 1/2 구간"
-        },
-        {
-          "src": "videos/lucas_cpr/lucas_cpr_part01.mp4",
-          "title": "LUCAS 사용법 2/2",
-          "caption": "LUCAS 사용법 - 2/2 구간"
+          "href": "https://drive.google.com/file/d/1oxN0wNc6QlvaM5iZU7rWdTil0YIRVicA/view?usp=drive_link",
+          "title": "LUCAS 사용법 보기",
+          "caption": "Google Drive 외부 링크"
         }
       ],
       "standard_sections_ready": true
@@ -22716,14 +22627,14 @@
         "A-line 사용법 동영상"
       ],
       "urgency": "routine",
-      "summary": "A-line 사용법과 관련 교육 동영상입니다.",
+      "summary": "A-line 사용법과 관련 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
       "indications": [
         "A-line 사용법 또는 zeroing 과정을 영상으로 확인해야 할 때",
         "A-line 관리 교육이 필요할 때"
       ],
       "preparation": [],
       "steps": [
-        "아래 참고 동영상을 순서대로 재생합니다.",
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
         "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "dosage_or_mix": [],
@@ -22739,41 +22650,23 @@
       "tags": [
         "동영상",
         "교육영상",
-        "v61_video"
+        "v61_video",
+        "google_drive_link",
+        "v62_video_link"
       ],
       "review": {
-        "status": "v61_added"
+        "status": "v62_drive_link_updated"
       },
       "source_refs": [
-        "사용자 업로드 A-line 사용법.mp4"
+        "Google Drive 링크 A-line 사용법.mp4"
       ],
       "tables": [],
       "images": [],
       "videos": [
         {
-          "src": "videos/a_line/a_line_part00.mp4",
-          "title": "A-line 사용법 1/5",
-          "caption": "A-line 사용법 - 1/5 구간"
-        },
-        {
-          "src": "videos/a_line/a_line_part01.mp4",
-          "title": "A-line 사용법 2/5",
-          "caption": "A-line 사용법 - 2/5 구간"
-        },
-        {
-          "src": "videos/a_line/a_line_part02.mp4",
-          "title": "A-line 사용법 3/5",
-          "caption": "A-line 사용법 - 3/5 구간"
-        },
-        {
-          "src": "videos/a_line/a_line_part03.mp4",
-          "title": "A-line 사용법 4/5",
-          "caption": "A-line 사용법 - 4/5 구간"
-        },
-        {
-          "src": "videos/a_line/a_line_part04.mp4",
-          "title": "A-line 사용법 5/5",
-          "caption": "A-line 사용법 - 5/5 구간"
+          "href": "https://drive.google.com/file/d/1-wV8i1Va1h-LvNjTFU56PSBSXAdu2pOY/view?usp=drive_link",
+          "title": "A-line 사용법 보기",
+          "caption": "Google Drive 외부 링크"
         }
       ],
       "standard_sections_ready": true
@@ -23097,6 +22990,19 @@
       "목차형 실무 메뉴",
       "표/이미지/사진",
       "약물 계산기",
+      "개별/공용 로그인",
+      "로그인 실패 차단 삭제"
+    ]
+  },
+  "v62_update": {
+    "description": "동영상 파일 직접 업로드 방식 제거, Google Drive 영상별 링크 버튼 방식 적용",
+    "removed_local_video_segments": "앱 DB에서 videos/a_line 등 분할 MP4 참조 제거",
+    "video_link_count": 5,
+    "kept_features": [
+      "실무메뉴 대분류16개",
+      "검색 결과 표/이미지 미리보기",
+      "약물계산기",
+      "원내 주요 전화번호",
       "개별/공용 로그인",
       "로그인 실패 차단 삭제"
     ]
