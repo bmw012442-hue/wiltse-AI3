@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.64.0-v64-pain-image-fix",
+    "version": "1.65.0-v65-new-16-files",
     "language": "ko",
     "source": "V62 Google Drive 동영상 링크 유지 + 요청한 14개 업로드 파일 관련 DB 카드 삭제",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
@@ -18225,7 +18225,7 @@
         "등록된 표"
       ],
       "urgency": "routine",
-      "summary": "현재 앱 DB의 카드/표/이미지 현황입니다. V63에서 요청한 14개 업로드 파일 관련 DB 카드를 삭제한 뒤의 기준입니다.",
+      "summary": "현재 앱 DB의 카드/표/이미지 현황입니다. V65에서 신규 16개 업로드 자료를 반영한 기준입니다.",
       "indications": [
         "현재 앱에 표, 이미지, 사진이 몇 개 연결되어 있는지 확인할 때"
       ],
@@ -18270,27 +18270,31 @@
           "rows": [
             [
               "전체 카드",
-              "187개"
+              "203개"
             ],
             [
               "표 포함 카드",
-              "28개"
+              "39개"
             ],
             [
               "이미지 포함 카드",
-              "34개"
+              "45개"
             ],
             [
               "등록된 표 개수",
-              "32개"
+              "45개"
             ],
             [
               "등록된 이미지/사진 개수",
-              "161개"
+              "182개"
             ],
             [
               "V63 삭제된 DB 카드",
               "38개"
+            ],
+            [
+              "V65 신규 추가 카드",
+              "16개"
             ]
           ]
         }
@@ -18785,6 +18789,1781 @@
           "caption": "Google Drive 외부 링크"
         }
       ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_CPCR_001",
+      "category": "응급상황",
+      "title": "CPCR 시뮬레이션 절차",
+      "aliases": [
+        "CPCR",
+        "CPR",
+        "심폐소생술",
+        "코드 CPR",
+        "6114",
+        "Emergency kit",
+        "Defibrillator",
+        "ambu-bagging",
+        "기도유지",
+        "심장마사지",
+        "응급상황",
+        "CPCR 시뮬레이션 절차"
+      ],
+      "search_terms": [
+        "CPCR",
+        "CPR",
+        "심폐소생술",
+        "코드 CPR",
+        "6114",
+        "Emergency kit",
+        "Defibrillator",
+        "ambu-bagging",
+        "기도유지",
+        "심장마사지",
+        "응급상황",
+        "CPCR 시뮬레이션 절차"
+      ],
+      "urgency": "emergency",
+      "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
+      "indications": [
+        "환자 무반응, 무호흡, 심정지 의심, 맥박/혈압 측정 불가 등 CPCR 상황"
+      ],
+      "preparation": [
+        "Emergency kit 준비",
+        "Defibrillator 준비",
+        "Intubation set 및 suction 준비",
+        "정맥로 확보 및 약물 투여 준비"
+      ],
+      "steps": [
+        "목격 간호사는 함께 근무 중인 간호사에게 CPCR 상황을 알리고 활력징후, 동공반사, 의식상태를 확인하며 기도유지를 시행한다.",
+        "맥박과 혈압이 측정되지 않으면 즉시 심장마사지를 시행한다.",
+        "간호사 1은 6114에 전화하여 코드 CPR 51병동 방송을 하고 당직의/주치의에게 보고하며 역할을 분담한다.",
+        "간호사 2는 제세동기를 연결하여 심정지 원인을 분석하고 정맥확보를 시행한다.",
+        "간호사 3은 Emergency cart와 intubation set를 준비하고 ambu-bagging을 하며 환자 상태를 사정한다.",
+        "CPCR팀 도착 후 심장마사지와 ambu-bag을 넘기고 발생 경위와 현재 상황을 보고한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "약물투여 및 처치시간은 원인-과정-결과 순으로 기록한다.",
+        "CPCR 시작, 환자 상태, 간호사의 대처, 의사연락, CPCR 방송 여부, CPCR팀 도착 및 처치내용을 기록한다.",
+        "보호자 연락 여부와 의사·보호자 면담 여부를 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "실제 CPCR 상황에서는 병원 최신 프로토콜과 현장 리더 지시를 우선한다.",
+        "VT/VF 리듬 확인 시 의사지시에 따라 제세동기 200~300J 준비."
+      ],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "CPCR 시뮬레이션.jpg"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_cpcr.jpg",
+          "alt": "CPCR 시뮬레이션 절차 원본 이미지",
+          "caption": "CPCR 시뮬레이션 절차 원본 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_CPCR_002",
+      "category": "응급상황",
+      "title": "CPCR 기록 담당 간호사 체크리스트",
+      "aliases": [
+        "CPCR 기록",
+        "기록 담당 간호사",
+        "심폐소생술 기록",
+        "사망기록",
+        "V/S 기록",
+        "의사 도착시간",
+        "간호기록",
+        "CPCR 기록 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "search_terms": [
+        "CPCR 기록",
+        "기록 담당 간호사",
+        "심폐소생술 기록",
+        "사망기록",
+        "V/S 기록",
+        "의사 도착시간",
+        "간호기록",
+        "CPCR 기록 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "urgency": "emergency",
+      "summary": "CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "발견된 시간과 환자의 의식상태 기록",
+        "호흡부전, 무호흡, 심정지 유무, V/S 정확히 기록",
+        "의사의 호출 및 도착 시간 기록",
+        "간호행위와 의사 처치 내용 및 상태 변화 기록",
+        "의사가 보호자를 면담한 내용 기록",
+        "사망 시 사망 시간과 사망 선언 의사 기록",
+        "사망진단서가 있는 경우 1부는 장례식장으로 전달"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "기록담당간호사 체크리스트.jpg"
+      ],
+      "tables": [
+        {
+          "title": "기록 담당 간호사 체크리스트",
+          "headers": [
+            "순서",
+            "수행항목"
+          ],
+          "rows": [
+            [
+              "1",
+              "발견된 시간과 환자의 의식상태 기록"
+            ],
+            [
+              "2",
+              "호흡부전·무호흡·심정지 유무, V/S 기록"
+            ],
+            [
+              "3",
+              "의사 호출 및 도착 시간 기록"
+            ],
+            [
+              "4",
+              "간호행위·의사 처치 내용·상태 변화 기록"
+            ],
+            [
+              "5",
+              "보호자 면담 내용 기록"
+            ],
+            [
+              "6",
+              "사망 시간과 사망 선언 의사 기록"
+            ],
+            [
+              "7",
+              "사망진단서 정리"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_record_check.jpg",
+          "alt": "기록 담당 간호사 체크리스트 이미지",
+          "caption": "기록 담당 간호사 체크리스트 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_CPCR_003",
+      "category": "응급상황",
+      "title": "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
+      "aliases": [
+        "CPCR 인공호흡",
+        "기도확보",
+        "intubation",
+        "E-tube",
+        "Ambu bag",
+        "ambu mask",
+        "suction",
+        "O2",
+        "삽관 보조",
+        "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "search_terms": [
+        "CPCR 인공호흡",
+        "기도확보",
+        "intubation",
+        "E-tube",
+        "Ambu bag",
+        "ambu mask",
+        "suction",
+        "O2",
+        "삽관 보조",
+        "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "urgency": "emergency",
+      "summary": "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다.",
+      "indications": [],
+      "preparation": [
+        "응급키트에서 기관삽관 물품 준비",
+        "O2와 suction 준비",
+        "Ambu mask 준비",
+        "E-tube cuff leak 확인"
+      ],
+      "steps": [
+        "필요 시 구강/기관흡인을 시행한다.",
+        "Ambu mask로 100% 산소를 공급한다.",
+        "E-tube cuff를 saline에 담가 공기 누출이 없는지 확인한다.",
+        "E-tube에 윤활제를 바르고 stylet을 삽입해 적절히 굽힌다.",
+        "삽관 후 stylet 제거 및 ambu bag 연결, 위치 확인 후 ballooning 시행.",
+        "E-tube 길이를 확인하고 반창고로 고정한 뒤 ambu bag에 산소를 연결한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "인공호흡담당간호사 체크리스트.jpg"
+      ],
+      "tables": [
+        {
+          "title": "인공호흡/기도확보 체크리스트",
+          "headers": [
+            "순서",
+            "수행항목"
+          ],
+          "rows": [
+            [
+              "1",
+              "기관삽관 물품 준비"
+            ],
+            [
+              "2",
+              "O2, Suction 준비"
+            ],
+            [
+              "3",
+              "필요 시 흡인"
+            ],
+            [
+              "4",
+              "Ambu mask로 100% 산소 공급"
+            ],
+            [
+              "5",
+              "E-tube cuff leak 확인"
+            ],
+            [
+              "6",
+              "E-tube 윤활제 적용"
+            ],
+            [
+              "7",
+              "Stylet 삽입 및 굴곡"
+            ],
+            [
+              "8",
+              "양와위 및 목 과신전 예방 자세"
+            ],
+            [
+              "9",
+              "삽관 후 ambu bag 연결"
+            ],
+            [
+              "10",
+              "E-tube 위치 확인 후 ballooning"
+            ],
+            [
+              "11",
+              "E-tube 길이 확인 및 고정"
+            ],
+            [
+              "12",
+              "Ambu bag에 산소 연결"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_airway_check.jpg",
+          "alt": "인공호흡/기도확보 담당 간호사 체크리스트 이미지",
+          "caption": "인공호흡/기도확보 담당 간호사 체크리스트 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_CPCR_004",
+      "category": "응급상황",
+      "title": "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
+      "aliases": [
+        "CPCR 정맥로",
+        "정맥로 확보",
+        "투약 담당",
+        "C-line",
+        "18G",
+        "응급약물",
+        "리듬 확인",
+        "V/S 측정",
+        "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "search_terms": [
+        "CPCR 정맥로",
+        "정맥로 확보",
+        "투약 담당",
+        "C-line",
+        "18G",
+        "응급약물",
+        "리듬 확인",
+        "V/S 측정",
+        "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "urgency": "emergency",
+      "summary": "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다.",
+      "indications": [],
+      "preparation": [
+        "18G 주사기로 정맥 주입로 확보",
+        "C-line 준비"
+      ],
+      "steps": [
+        "정맥 주입로를 주기적으로 확인한다.",
+        "응급약물 투여 시 약명과 용량을 큰소리로 복창한다.",
+        "2분 가슴압박 후 리듬을 확인한다.",
+        "변동이 바뀌면 맥박을 확인하고 라인이 있으면 전체 V/S를 측정한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "정맥로확보 담당간호사 체크리스트.jpg"
+      ],
+      "tables": [
+        {
+          "title": "정맥로 확보/투약 체크리스트",
+          "headers": [
+            "순서",
+            "수행항목"
+          ],
+          "rows": [
+            [
+              "1",
+              "정맥 주입로를 주기적으로 확인하고 처방한다"
+            ],
+            [
+              "2",
+              "C-line 준비"
+            ],
+            [
+              "3",
+              "응급약물 투여 시 약명·용량 복창"
+            ],
+            [
+              "4",
+              "2분 가슴압박 후 리듬 확인"
+            ],
+            [
+              "5",
+              "리듬 변화 시 맥박 및 전체 V/S 확인"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_iv_check.jpg",
+          "alt": "정맥로 확보/투약 담당 간호사 체크리스트 이미지",
+          "caption": "정맥로 확보/투약 담당 간호사 체크리스트 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_CPCR_005",
+      "category": "응급상황",
+      "title": "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
+      "aliases": [
+        "CPCR 모니터링",
+        "제세동기",
+        "defibrillator",
+        "Defibrillation",
+        "paddle",
+        "jelly",
+        "synchronized button",
+        "심전도 리듬",
+        "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "search_terms": [
+        "CPCR 모니터링",
+        "제세동기",
+        "defibrillator",
+        "Defibrillation",
+        "paddle",
+        "jelly",
+        "synchronized button",
+        "심전도 리듬",
+        "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
+        "응급상황"
+      ],
+      "urgency": "emergency",
+      "summary": "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다.",
+      "indications": [],
+      "preparation": [
+        "Electrode 부착",
+        "심박동이 없으면 hard board 준비",
+        "Paddle과 jelly 준비"
+      ],
+      "steps": [
+        "Electrode를 적절한 부위에 부착하고 리듬을 기록한다.",
+        "심박동이 없으면 등 밑에 hard board를 깔아준다.",
+        "Paddle에 jelly를 적당량 펴 바른다.",
+        "Defibrillation 시 synchronized button을 off 한다.",
+        "정확한 energy를 선택하여 충전 버튼을 누르고 충전됨을 알린다.",
+        "Defibrillation 후 심전도 리듬을 관찰한다.",
+        "Paddle의 jelly를 닦아 보관한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "제세동기담당간호사 체크리스트.jpg"
+      ],
+      "tables": [
+        {
+          "title": "모니터링/제세동기 체크리스트",
+          "headers": [
+            "순서",
+            "수행항목"
+          ],
+          "rows": [
+            [
+              "1",
+              "Electrode 부착 및 리듬 기록"
+            ],
+            [
+              "2",
+              "Hard board 적용"
+            ],
+            [
+              "3",
+              "Paddle jelly 도포"
+            ],
+            [
+              "4",
+              "Synchronized button off"
+            ],
+            [
+              "5",
+              "Energy 선택 및 충전 알림"
+            ],
+            [
+              "6",
+              "Defibrillation 후 리듬 관찰"
+            ],
+            [
+              "7",
+              "Paddle jelly 제거 및 보관"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_defib_check.jpg",
+          "alt": "모니터링/제세동기 담당 간호사 체크리스트 이미지",
+          "caption": "모니터링/제세동기 담당 간호사 체크리스트 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_TRANSFUSION_FILTER",
+      "category": "수혈 / 혈액",
+      "title": "백혈구 제거용 수혈필터 RC2VAE 사용법",
+      "aliases": [
+        "백혈구제거 필터",
+        "수혈필터",
+        "RC2VAE",
+        "leukocyte removal filter",
+        "수혈 준비",
+        "혈액교체",
+        "수혈마무리",
+        "Haemonetics",
+        "백혈구 제거용 수혈필터 RC2VAE 사용법",
+        "수혈 / 혈액"
+      ],
+      "search_terms": [
+        "백혈구제거 필터",
+        "수혈필터",
+        "RC2VAE",
+        "leukocyte removal filter",
+        "수혈 준비",
+        "혈액교체",
+        "수혈마무리",
+        "Haemonetics",
+        "백혈구 제거용 수혈필터 RC2VAE 사용법",
+        "수혈 / 혈액"
+      ],
+      "urgency": "routine",
+      "summary": "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다.",
+      "indications": [],
+      "preparation": [
+        "연결 전 부드럽게 혈액백을 흔들어 섞기",
+        "마개(A)·클립(B)·클램프(D)는 잠그고 챔버(C)는 열기",
+        "Spike를 twist motion으로 삽입"
+      ],
+      "steps": [
+        "클립(B)을 열고 중력을 이용해 챔버에 혈액을 채운다.",
+        "속도 혈액백을 일정 압력으로 짜서 진행할 수 있으나 혈액백을 필터 안에 채울 때까지만 가능하다.",
+        "이후 클램프(D)를 열고 line을 혈액으로 채운 뒤 수혈을 진행한다.",
+        "첫번째 혈액백 수혈이 완료되기 전 다음 혈액백을 준비한다.",
+        "마개(A)를 닫고 혈액백 교체, 클립(B)과 클램프(D)를 잠근 뒤 혈액백을 교체한다.",
+        "두번째 혈액백에 spike 삽입 시 twist motion 사용, 삽입 후 손가락으로 쳐서 공기를 제거한다.",
+        "수혈 완료 후 마개(A)를 열어 수혈을 중단한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "N/S priming이 필요 없습니다.",
+        "필터 사용 후 N/S flushing을 하지 마십시오.",
+        "Pressure cuff를 이용한 수혈속도 유지법 사용 가능.",
+        "챔버(C) 마개는 수혈 중 반드시 잠가주어야 합니다."
+      ],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "백혈구제거 필터 사용법.pdf"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_백혈구제거_필터_사용법_p1.jpg",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 1페이지",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 1페이지"
+        },
+        {
+          "src": "selected_manual_images/v65_백혈구제거_필터_사용법_p2.jpg",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 2페이지",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 2페이지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_DRUG_MIX_PROMISE",
+      "category": "약물 / 수액 / 마약",
+      "title": "주요 약물 약속처방 Mix 법",
+      "aliases": [
+        "약물약속처방",
+        "주요 약물 MIX",
+        "Continuous Infusion",
+        "울티펜",
+        "모르핀",
+        "미다컴",
+        "프리폴",
+        "프리세덱스",
+        "로큐니움",
+        "노르에피린",
+        "도부타민",
+        "에피네프린",
+        "바소프레신",
+        "페르디핀",
+        "헤르벤",
+        "이소켓",
+        "코다론",
+        "주요 약물 약속처방 Mix 법",
+        "약물 / 수액 / 마약"
+      ],
+      "search_terms": [
+        "약물약속처방",
+        "주요 약물 MIX",
+        "Continuous Infusion",
+        "울티펜",
+        "모르핀",
+        "미다컴",
+        "프리폴",
+        "프리세덱스",
+        "로큐니움",
+        "노르에피린",
+        "도부타민",
+        "에피네프린",
+        "바소프레신",
+        "페르디핀",
+        "헤르벤",
+        "이소켓",
+        "코다론",
+        "주요 약물 약속처방 Mix 법",
+        "약물 / 수액 / 마약"
+      ],
+      "urgency": "routine",
+      "summary": "주요 약물의 continuous infusion 약속처방 mix 기준표입니다. 기본 수액은 5DW 기준입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [],
+      "dosage_or_mix": [
+        "기본 수액은 5DW입니다.",
+        "약물별 amp 수, 수액 부피, 총 부피, 시작 속도를 표로 확인합니다."
+      ],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "약물약속처방.docx"
+      ],
+      "tables": [
+        {
+          "title": "주요 약물 약속처방 Mix 법",
+          "headers": [
+            "약",
+            "제품명",
+            "약 용량",
+            "수액",
+            "수액 부피",
+            "총 부피",
+            "시작 속도"
+          ],
+          "rows": [
+            [
+              "Remifentanil",
+              "울티펜",
+              "2amp (5mg*2)",
+              "5DW",
+              "100cc",
+              "100cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Remifentanil -2배수",
+              "울티펜",
+              "4amp (5mg*4)",
+              "5DW",
+              "200cc",
+              "200cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Morphine",
+              "모르핀",
+              "5amp (10mg*5)",
+              "5DW",
+              "50cc",
+              "55cc",
+              "1~3cc/hr"
+            ],
+            [
+              "Midazolam",
+              "미다컴",
+              "6amp (15mg*6)",
+              "5DW",
+              "100cc",
+              "118cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Midazolam -2배수",
+              "미다컴",
+              "12amp (15mg*12)",
+              "5DW",
+              "200cc",
+              "236cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Propofol",
+              "프리폴",
+              "1bottle (1g)",
+              "-",
+              "-",
+              "50cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Dexmedetomidine",
+              "프리세덱스",
+              "1amp (200mcg)",
+              "5DW",
+              "50cc",
+              "52cc",
+              "3~6cc/hr"
+            ],
+            [
+              "Rocuronium",
+              "로큐니움",
+              "10amp (50mg*10)",
+              "5DW",
+              "50cc",
+              "100cc",
+              "6cc/hr"
+            ],
+            [
+              "Norepinephrine",
+              "노르에피린",
+              "5amp (4mg*5)",
+              "5DW",
+              "200cc",
+              "220cc",
+              "3cc/hr"
+            ],
+            [
+              "Dobutamine",
+              "도부타민",
+              "2amp (250mg*2)",
+              "5DW",
+              "150cc",
+              "150cc",
+              "5cc/hr"
+            ],
+            [
+              "Epinephrine",
+              "에피네프린",
+              "10amp (1mg*10)",
+              "5DW",
+              "200cc",
+              "210cc",
+              "3cc/hr"
+            ],
+            [
+              "Vasopressin",
+              "바소프레신",
+              "1amp (20U)",
+              "5DW",
+              "100cc",
+              "101cc",
+              "12cc/hr"
+            ],
+            [
+              "Nicardipine",
+              "페르디핀",
+              "5amp (10mg*5)",
+              "5DW",
+              "200cc",
+              "250cc",
+              "5.4cc/hr"
+            ],
+            [
+              "Diltiazem",
+              "헤르벤",
+              "2amp (50mg*2)",
+              "5DW",
+              "100cc",
+              "100cc",
+              "3.6cc/hr"
+            ],
+            [
+              "Nitrate",
+              "이소켓",
+              "5amp (10mg*5)",
+              "5DW",
+              "100cc",
+              "150cc",
+              "7.2cc/hr"
+            ],
+            [
+              "Amiodarone",
+              "코다론",
+              "5amp (150mg*5)",
+              "5DW",
+              "100cc",
+              "115cc",
+              "9.2cc/hr"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_약물약속처방_p1.jpg",
+          "alt": "주요 약물 약속처방 Mix 법 원본 표 이미지",
+          "caption": "주요 약물 약속처방 Mix 법 원본 표 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_LAB_LIGHT_BARCODE",
+      "category": "검사 / 검체",
+      "title": "차광검사 바코드 붙이는 방법",
+      "aliases": [
+        "차광검사",
+        "차광 검체",
+        "바코드",
+        "바코드 재발행",
+        "검체통",
+        "검체 바코드",
+        "겉면 바코드",
+        "차광검사 바코드 붙이는 방법",
+        "검사 / 검체"
+      ],
+      "search_terms": [
+        "차광검사",
+        "차광 검체",
+        "바코드",
+        "바코드 재발행",
+        "검체통",
+        "검체 바코드",
+        "겉면 바코드",
+        "차광검사 바코드 붙이는 방법",
+        "검사 / 검체"
+      ],
+      "urgency": "routine",
+      "summary": "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검체 처방 시 차광해야 하는 검체인 경우 팝업창을 확인한다.",
+        "검체통에 붙이는 용도로 바코드를 출력한다.",
+        "동일 항목을 다시 선택하여 바코드를 재발행한다.",
+        "재발행한 바코드는 겉면에 붙이는 바코드로 사용한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "차광검사 나갈 시 바코드 붙이는 방법.pptx"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_차광검사_나갈_시_바코드_붙이는_방법_p1.jpg",
+          "alt": "차광검사 바코드 방법 표지",
+          "caption": "차광검사 바코드 방법 표지"
+        },
+        {
+          "src": "selected_manual_images/v65_차광검사_나갈_시_바코드_붙이는_방법_p2.jpg",
+          "alt": "차광검사 바코드 출력/재발행 방법",
+          "caption": "차광검사 바코드 출력/재발행 방법"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_BLOOD_WARMER",
+      "category": "수혈 / 혈액",
+      "title": "혈액 가온기 사용방법",
+      "aliases": [
+        "가온기",
+        "혈액 가온기",
+        "Blood warmer",
+        "infusion warmer",
+        "수혈 가온",
+        "대량수혈",
+        "한랭응집소",
+        "혈액 가온기 사용방법",
+        "수혈 / 혈액"
+      ],
+      "search_terms": [
+        "가온기",
+        "혈액 가온기",
+        "Blood warmer",
+        "infusion warmer",
+        "수혈 가온",
+        "대량수혈",
+        "한랭응집소",
+        "혈액 가온기 사용방법",
+        "수혈 / 혈액"
+      ],
+      "urgency": "routine",
+      "summary": "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다.",
+      "indications": [
+        "성인 시간당 50ml/kg 이상 대량수혈",
+        "소아 시간당 15ml/kg 이상 수혈",
+        "교환수혈",
+        "한랭 응집소 환자 수혈",
+        "중심정맥 도관을 통한 빠른 수혈"
+      ],
+      "preparation": [],
+      "steps": [
+        "덮개를 열어 S 모양 수액라인 거치 채널에 화살표 방향대로 거치한다.",
+        "덮개를 닫고 수액 속도를 조절한다.",
+        "5~10분 후 수액 속도와 주입온도 상승 여부를 확인한다.",
+        "전원을 꽂고 전원 버튼을 눌러 초록색 불이 켜지는지 확인한다.",
+        "사용 후 전원 버튼을 눌러 초록색 불이 꺼지는지 확인한다.",
+        "1~2분 기다려 열판 온도를 떨어뜨린 뒤 전원코드를 뽑고 수액라인을 제거한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "60ml/hr 이하의 dropping 속도에서는 사용하면 안 됩니다."
+      ],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "가온기 사용방법.pptx"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_가온기_사용방법_p1.jpg",
+          "alt": "혈액 가온기 표지",
+          "caption": "혈액 가온기 표지"
+        },
+        {
+          "src": "selected_manual_images/v65_가온기_사용방법_p2.jpg",
+          "alt": "혈액 가온기 사용 절차",
+          "caption": "혈액 가온기 사용 절차"
+        },
+        {
+          "src": "selected_manual_images/v65_가온기_사용방법_p3.jpg",
+          "alt": "혈액 가온기 적응증",
+          "caption": "혈액 가온기 적응증"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_DRUG_CLOT",
+      "category": "약물 / 수액 / 마약",
+      "title": "섞이면 clot 되는 주사제",
+      "aliases": [
+        "섞이면 clot",
+        "침전",
+        "clot",
+        "파세타 레포신",
+        "크렉산 사이톱신",
+        "트리악손 로이솔",
+        "타포신 TPN",
+        "lasix 단독투여",
+        "motin 단독투여",
+        "섞이면 clot 되는 주사제",
+        "약물 / 수액 / 마약"
+      ],
+      "search_terms": [
+        "섞이면 clot",
+        "침전",
+        "clot",
+        "파세타 레포신",
+        "크렉산 사이톱신",
+        "트리악손 로이솔",
+        "타포신 TPN",
+        "lasix 단독투여",
+        "motin 단독투여",
+        "섞이면 clot 되는 주사제",
+        "약물 / 수액 / 마약"
+      ],
+      "urgency": "routine",
+      "summary": "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "파세타주 + 레포신",
+        "크렉산/크녹산 + 사이톱신",
+        "트리악손 + 로이솔",
+        "타포신 + TPN",
+        "Lasix 단독투여",
+        "Motin 단독투여",
+        "추후 약제부 내용이 업데이트되면 최신 지침을 우선합니다."
+      ],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "섞이면 clot되는 주사제.pptx"
+      ],
+      "tables": [
+        {
+          "title": "섞이면 clot 되는 주사제",
+          "headers": [
+            "구분",
+            "주의 조합"
+          ],
+          "rows": [
+            [
+              "1",
+              "파세타주 + 레포신"
+            ],
+            [
+              "2",
+              "크렉산/크녹산 + 사이톱신"
+            ],
+            [
+              "3",
+              "트리악손 + 로이솔"
+            ],
+            [
+              "4",
+              "타포신 + TPN"
+            ],
+            [
+              "5",
+              "Lasix 단독투여"
+            ],
+            [
+              "6",
+              "Motin 단독투여"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_섞이면_clot되는_주사제_p1.jpg",
+          "alt": "섞이면 clot 되는 주사제 표지",
+          "caption": "섞이면 clot 되는 주사제 표지"
+        },
+        {
+          "src": "selected_manual_images/v65_섞이면_clot되는_주사제_p2.jpg",
+          "alt": "섞이면 clot 되는 주사제 목록 이미지",
+          "caption": "섞이면 clot 되는 주사제 목록 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_MDR_ORGANISM",
+      "category": "감염 / 격리",
+      "title": "접촉주의 다제내성균 해석",
+      "aliases": [
+        "접촉주의",
+        "다제내성균",
+        "MRSA",
+        "VRE",
+        "CRE",
+        "MRAB",
+        "CRAB",
+        "MRPA",
+        "격리해지",
+        "코호트",
+        "Oxacillin",
+        "Vancomycin",
+        "Meropenem",
+        "Ertapenem",
+        "접촉주의 다제내성균 해석",
+        "감염 / 격리"
+      ],
+      "search_terms": [
+        "접촉주의",
+        "다제내성균",
+        "MRSA",
+        "VRE",
+        "CRE",
+        "MRAB",
+        "CRAB",
+        "MRPA",
+        "격리해지",
+        "코호트",
+        "Oxacillin",
+        "Vancomycin",
+        "Meropenem",
+        "Ertapenem",
+        "접촉주의 다제내성균 해석",
+        "감염 / 격리"
+      ],
+      "urgency": "routine",
+      "summary": "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "균명과 항생제 내성 기준을 확인한다.",
+        "MRSA/MRAB/MRPA는 코호트 권장, VRE/CRE는 격리실 또는 코호트 적용.",
+        "격리해지는 3~7일 간격으로 3회 음성 기준을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "접촉주의 다제내성균.pptx"
+      ],
+      "tables": [
+        {
+          "title": "접촉주의 다제내성균",
+          "headers": [
+            "구분",
+            "균이름",
+            "항생제 기준",
+            "격리방법",
+            "격리해지기준"
+          ],
+          "rows": [
+            [
+              "MRSA",
+              "Staphylococcus aureus",
+              "Oxacillin",
+              "코호트 권장",
+              "3~7일 간격 3회 음성"
+            ],
+            [
+              "VRE",
+              "Enterococcus faecium/faecalis/avium",
+              "Vancomycin",
+              "격리실 또는 코호트",
+              "3~7일 간격 3회 음성"
+            ],
+            [
+              "CRE",
+              "E. coli, Klebsiella, Enterobacter 등",
+              "Meropenem 또는 Ertapenem 중 하나라도 해당",
+              "격리실 또는 코호트",
+              "3~7일 간격 3회 음성"
+            ],
+            [
+              "MRAB(CRAB)",
+              "Acinetobacter baumannii",
+              "Meropenem, gentamycin, ciprofloxacin 모두 R",
+              "코호트 권장",
+              "3~7일 간격 3회 음성"
+            ],
+            [
+              "MRPA",
+              "Pseudomonas aeruginosa",
+              "Meropenem, tobramycin, ciprofloxacin 모두 R",
+              "코호트 권장",
+              "3~7일 간격 3회 음성"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_접촉주의_다제내성균_p1.jpg",
+          "alt": "접촉주의 다제내성균 표지",
+          "caption": "접촉주의 다제내성균 표지"
+        },
+        {
+          "src": "selected_manual_images/v65_접촉주의_다제내성균_p2.jpg",
+          "alt": "다제내성균 해석 표 이미지",
+          "caption": "다제내성균 해석 표 이미지"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_TRANSFUSION_ORDER_BARCODE",
+      "category": "수혈 / 혈액",
+      "title": "수혈 처방확인 및 바코드 출력 방법",
+      "aliases": [
+        "수혈 처방확인",
+        "수혈 바코드",
+        "혈액 요청서",
+        "ABO",
+        "Rho",
+        "교차시험",
+        "비예기항체",
+        "irregular antibody",
+        "EB1",
+        "PC FFP RBC",
+        "수혈 처방확인 및 바코드 출력 방법",
+        "수혈 / 혈액"
+      ],
+      "search_terms": [
+        "수혈 처방확인",
+        "수혈 바코드",
+        "혈액 요청서",
+        "ABO",
+        "Rho",
+        "교차시험",
+        "비예기항체",
+        "irregular antibody",
+        "EB1",
+        "PC FFP RBC",
+        "수혈 처방확인 및 바코드 출력 방법",
+        "수혈 / 혈액"
+      ],
+      "urgency": "routine",
+      "summary": "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "수혈 처방 확인 후 수혈 동의서 미비 시 동의서를 받는다.",
+        "혈액 요청서를 작성하고 검체를 채취한다.",
+        "첫 수혈 시 혈액종류와 상관없이 교차시험, 비예기항체, ABO를 확인한다.",
+        "RBC는 교차시험, 비예기항체, ABO 확인.",
+        "PC/FFP는 ABO와 비예기항체 확인.",
+        "PC/FFP 처방 시 수혈용 검체가 있으면 ABO(EB1)만 출력하여 검체를 내린다.",
+        "처방정보 → 바코드 출력에서 처방코드 EB1을 확인한다.",
+        "검체 바코드 출력 후 바코드에 서명하며, 바코드 출력자 이름·채혈자·혈액요청서가 일치해야 한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "환자 등록번호, 환자명, 성별/나이, 진료과/병실, 수혈경력, 수혈 예정일, 검체 채혈일, 혈액 개수를 확인하여 저장·출력 후 서명."
+      ],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "수혈 처방확인 및 바코드 출력 방법.pptx"
+      ],
+      "tables": [
+        {
+          "title": "수혈 전 검사 기준",
+          "headers": [
+            "상황",
+            "검사/확인"
+          ],
+          "rows": [
+            [
+              "첫 수혈",
+              "교차시험, 비예기항체, ABO"
+            ],
+            [
+              "RBC",
+              "교차시험, 비예기항체, ABO"
+            ],
+            [
+              "PC/FFP",
+              "ABO, 비예기항체"
+            ],
+            [
+              "PC/FFP 처방 + 수혈용 검체 있음",
+              "ABO(EB1)만 출력해 검체 내림"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_수혈_처방확인_및_바코드_출력_방법_p1.jpg",
+          "alt": "수혈 처방확인 및 바코드 출력 방법 1",
+          "caption": "수혈 처방확인 및 바코드 출력 방법 1"
+        },
+        {
+          "src": "selected_manual_images/v65_수혈_처방확인_및_바코드_출력_방법_p2.jpg",
+          "alt": "수혈 처방확인 및 바코드 출력 방법 2",
+          "caption": "수혈 처방확인 및 바코드 출력 방법 2"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_PCD_LABEL",
+      "category": "검사 / 검체",
+      "title": "PCD 검체 처방 시 검체라벨 붙이는 방법",
+      "aliases": [
+        "PCD 검체",
+        "검체라벨",
+        "PCD 라벨",
+        "체액검사9종",
+        "Total amylase",
+        "LDH",
+        "Fluid culture",
+        "바코드 재발행",
+        "채혈접수 안내",
+        "PCD 검체 처방 시 검체라벨 붙이는 방법",
+        "검사 / 검체"
+      ],
+      "search_terms": [
+        "PCD 검체",
+        "검체라벨",
+        "PCD 라벨",
+        "체액검사9종",
+        "Total amylase",
+        "LDH",
+        "Fluid culture",
+        "바코드 재발행",
+        "채혈접수 안내",
+        "PCD 검체 처방 시 검체라벨 붙이는 방법",
+        "검사 / 검체"
+      ],
+      "urgency": "routine",
+      "summary": "PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검체 처방 시 처방보조 → 채혈접수 안내로 들어간다.",
+        "네 가지 항목을 선택 후 출력하면 바코드 2개가 출력된다.",
+        "Total amylase, LDH, 체액9종을 확인한다.",
+        "체액검사9종 선택 후 바코드를 재발행한다.",
+        "Fluid culture 바코드 부착 위치와 검체 종류를 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "PCD 검체 처방 시 검체라벨 붙이는 방법.pptx"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v65_PCD_검체_처방_시_검체라벨_붙이는_방법_p1.jpg",
+          "alt": "PCD 검체라벨 표지",
+          "caption": "PCD 검체라벨 표지"
+        },
+        {
+          "src": "selected_manual_images/v65_PCD_검체_처방_시_검체라벨_붙이는_방법_p2.jpg",
+          "alt": "PCD 검체라벨 출력 및 재발행 방법",
+          "caption": "PCD 검체라벨 출력 및 재발행 방법"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_WARD_NURSING_MANUAL",
+      "category": "병동간호팀 간호사 매뉴얼",
+      "title": "병동간호팀 간호사메뉴얼 2026.04.13",
+      "aliases": [
+        "병동간호팀",
+        "간호사메뉴얼",
+        "신규 간호사 메뉴얼",
+        "Duty별 업무",
+        "Day 업무",
+        "Evening 업무",
+        "Night 업무",
+        "GCS",
+        "motor",
+        "수혈간호",
+        "흡인간호",
+        "경관영양",
+        "검체수집",
+        "수술 전 간호",
+        "수술 후 간호",
+        "감염 예방관리",
+        "병동간호팀 간호사메뉴얼 2026.04.13",
+        "병동간호팀 간호사 매뉴얼"
+      ],
+      "search_terms": [
+        "병동간호팀",
+        "간호사메뉴얼",
+        "신규 간호사 메뉴얼",
+        "Duty별 업무",
+        "Day 업무",
+        "Evening 업무",
+        "Night 업무",
+        "GCS",
+        "motor",
+        "수혈간호",
+        "흡인간호",
+        "경관영양",
+        "검체수집",
+        "수술 전 간호",
+        "수술 후 간호",
+        "감염 예방관리",
+        "병동간호팀 간호사메뉴얼 2026.04.13",
+        "병동간호팀 간호사 매뉴얼"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "검색어로 세부 항목을 찾을 수 있도록 목차 키워드를 aliases/search_terms에 포함했습니다.",
+        "Duty별 업무, BST, GCS/motor, 수혈간호, 흡인간호, 검체수집 등 관련 카드 검색에 연결됩니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13).hwp"
+      ],
+      "tables": [
+        {
+          "title": "병동간호팀 간호사메뉴얼 주요 목차",
+          "headers": [
+            "번호",
+            "항목"
+          ],
+          "rows": [
+            [
+              "1",
+              "Duty별 업무"
+            ],
+            [
+              "2",
+              "의학용어 및 약어"
+            ],
+            [
+              "4",
+              "입원간호"
+            ],
+            [
+              "10",
+              "기본간호: V/S, 체중, BST, 고혈당 RI schedule"
+            ],
+            [
+              "16",
+              "수혈간호"
+            ],
+            [
+              "17",
+              "호흡순환관련간호"
+            ],
+            [
+              "20",
+              "경관영양"
+            ],
+            [
+              "22",
+              "검체수집"
+            ],
+            [
+              "23",
+              "수술 전 간호"
+            ],
+            [
+              "24",
+              "수술 후 간호"
+            ],
+            [
+              "29",
+              "응급간호"
+            ],
+            [
+              "32",
+              "감염 예방관리"
+            ],
+            [
+              "35",
+              "신체보호대 적용"
+            ]
+          ]
+        },
+        {
+          "title": "BST/I/O/V/S 기본 시간",
+          "headers": [
+            "항목",
+            "시간/기준"
+          ],
+          "rows": [
+            [
+              "BST",
+              "6AM, 11AM, 4PM, 9PM"
+            ],
+            [
+              "I/O Day",
+              "06:00~13:00"
+            ],
+            [
+              "I/O Evening",
+              "13:00~21:00"
+            ],
+            [
+              "I/O Night",
+              "21:00~06:00"
+            ],
+            [
+              "정규 V/S",
+              "6AM, 4PM"
+            ],
+            [
+              "Special V/S",
+              "11AM, 8PM, MN"
+            ],
+            [
+              "수술 당일 V/S",
+              "수술 후, 1시간 후, 2시간 후, 6시간 후"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_OS_DEPT_MANUAL",
+      "category": "수술 / 시술",
+      "title": "OS 각과별 매뉴얼 Drain Pressure 정리",
+      "aliases": [
+        "OS 각과별 매뉴얼",
+        "OS Drain",
+        "Drain Pressure",
+        "H-vac",
+        "JP",
+        "natural",
+        "full",
+        "clamp",
+        "OS1",
+        "OS3",
+        "OS8",
+        "OS10",
+        "OS14",
+        "OS22",
+        "OS24",
+        "OS25",
+        "TKRA",
+        "TSRA",
+        "Hip OP",
+        "OS 각과별 매뉴얼 Drain Pressure 정리",
+        "수술 / 시술"
+      ],
+      "search_terms": [
+        "OS 각과별 매뉴얼",
+        "OS Drain",
+        "Drain Pressure",
+        "H-vac",
+        "JP",
+        "natural",
+        "full",
+        "clamp",
+        "OS1",
+        "OS3",
+        "OS8",
+        "OS10",
+        "OS14",
+        "OS22",
+        "OS24",
+        "OS25",
+        "TKRA",
+        "TSRA",
+        "Hip OP",
+        "OS 각과별 매뉴얼 Drain Pressure 정리",
+        "수술 / 시술"
+      ],
+      "urgency": "routine",
+      "summary": "OS 각 과별 H-vac/JP pressure, clamp, 제거 기준을 검색할 수 있도록 정리한 카드입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "수술과(OS 번호), major/minor 구분, pressure/clamp 지시를 먼저 확인한다.",
+        "배액량 및 주치의 지시, infection/synovectomy 등 예외를 함께 확인한다.",
+        "H/V 제거 전 full negative 유지 여부와 tip culture 필요 여부를 처방/지시와 함께 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "OS 각과별 매뉴얼(26.05.08).hwp"
+      ],
+      "tables": [
+        {
+          "title": "OS 과별 Drain Pressure 정리",
+          "headers": [
+            "OS",
+            "Pressure / Clamp",
+            "제거 기준",
+            "특이사항"
+          ],
+          "rows": [
+            [
+              "OS1 Major",
+              "natural drain 유지",
+              "보통 POD#5 제거",
+              "TSRA JP여도 natural, infection 환자는 H/V full 후 주치의 지시"
+            ],
+            [
+              "OS3 Major",
+              "OP day natural → POD#1 6AM full",
+              "-",
+              "TSRA H/V·JP 모두 full"
+            ],
+            [
+              "OS8 Major",
+              "회복실 입실 기준 1시간 H/V clamp 후 natural 유지",
+              "-",
+              "Hip/TKRA clamp 처방 시 open 시간 확인"
+            ],
+            [
+              "OS10 Major+Minor",
+              "수술 후 병동 리턴 기준 8시간 full → 배액 300cc 이상 시 natural",
+              "POD#2 300cc 이내 제거",
+              "트라넥 사용 시 3시간 clamp 후 8시간 full"
+            ],
+            [
+              "OS14 Major",
+              "TKRA, femur H/V full",
+              "POD#2 100cc 미만 무조건 제거",
+              "infection/synovectomy 제외"
+            ],
+            [
+              "OS22 Major",
+              "TKRA H/V half, 트라넥/마취 인계 시 3시간 clamp",
+              "H/V 40cc 미만 제거",
+              "POD#14 ZIP 제거 후 open"
+            ],
+            [
+              "OS24 Major",
+              "H/V 리턴 기준 3시간 clamp → full",
+              "POD#1 H/V remove",
+              "Infection만 tip cx"
+            ],
+            [
+              "OS25 Major",
+              "TKRA return 후 3시간 clamp → H/V half",
+              "-",
+              "CPM/도수 H/V 제거 후 시행"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V65_NEW_NURSE_NOTES",
+      "category": "병동간호팀 간호사 매뉴얼",
+      "title": "신입간호사 숙지사항 2026.04.29",
+      "aliases": [
+        "신입간호사 숙지사항",
+        "신규 간호사",
+        "AST",
+        "수술 후 항생제",
+        "식사 신청",
+        "I/O check list",
+        "간호필요도",
+        "항응고제 중단",
+        "항혈전제 중단",
+        "보조기 착용기간",
+        "신입간호사 숙지사항 2026.04.29",
+        "병동간호팀 간호사 매뉴얼"
+      ],
+      "search_terms": [
+        "신입간호사 숙지사항",
+        "신규 간호사",
+        "AST",
+        "수술 후 항생제",
+        "식사 신청",
+        "I/O check list",
+        "간호필요도",
+        "항응고제 중단",
+        "항혈전제 중단",
+        "보조기 착용기간",
+        "신입간호사 숙지사항 2026.04.29",
+        "병동간호팀 간호사 매뉴얼"
+      ],
+      "urgency": "routine",
+      "summary": "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다.",
+      "indications": [],
+      "preparation": [],
+      "steps": [
+        "AST skin test 용액 제조 방법과 수술 후 항생제 적용 시간을 확인한다.",
+        "식사 신청은 마감시간과 최종 마감시간을 구분해 확인한다.",
+        "I/O 기준량은 음식·음료별 기준량을 확인한다.",
+        "비수술치료팀 신경주사 전 항응고/항혈전제 중단 기준을 확인한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [],
+      "related": [],
+      "tags": [],
+      "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
+      "source_refs": [
+        "신입간호사 숙지사항(26.04.29).hwp"
+      ],
+      "tables": [
+        {
+          "title": "식사 신청 마감 시간",
+          "headers": [
+            "항목",
+            "아침",
+            "점심",
+            "저녁"
+          ],
+          "rows": [
+            [
+              "환자 식사시간",
+              "07:30",
+              "12:00",
+              "17:30"
+            ],
+            [
+              "전산 입력 마감",
+              "06:20",
+              "11:00",
+              "16:20"
+            ],
+            [
+              "최종 마감",
+              "06:40",
+              "11:20",
+              "16:40"
+            ],
+            [
+              "신규 입원환자 마감",
+              "08:00",
+              "12:30",
+              "18:00"
+            ]
+          ]
+        },
+        {
+          "title": "I/O 기준량 예시",
+          "headers": [
+            "종류",
+            "기준량(cc)"
+          ],
+          "rows": [
+            [
+              "일반밥 300g",
+              "200"
+            ],
+            [
+              "죽 300g",
+              "250"
+            ],
+            [
+              "미음 210g",
+              "200"
+            ],
+            [
+              "우유",
+              "180"
+            ],
+            [
+              "쥬스 한 병",
+              "180"
+            ],
+            [
+              "요구르트 소/대",
+              "50/65"
+            ],
+            [
+              "사과 1/4",
+              "65"
+            ],
+            [
+              "배 1/4",
+              "85"
+            ]
+          ]
+        }
+      ],
+      "images": [],
       "standard_sections_ready": true
     }
   ],
@@ -19525,5 +21304,44 @@
         "Initial 후 전산: 낙상·욕창·통증·Bundle·Flow sheet·보호대"
       ]
     ]
+  },
+  "v65_update": {
+    "version": "1.65.0",
+    "date": "2026-06-21",
+    "title": "16개 신규 업로드 자료 반영",
+    "added_cards": 16,
+    "added_sources": [
+      "CPCR 시뮬레이션.jpg",
+      "기록담당간호사 체크리스트.jpg",
+      "인공호흡담당간호사 체크리스트.jpg",
+      "정맥로확보 담당간호사 체크리스트.jpg",
+      "제세동기담당간호사 체크리스트.jpg",
+      "백혈구제거 필터 사용법.pdf",
+      "약물약속처방.docx",
+      "차광검사 나갈 시 바코드 붙이는 방법.pptx",
+      "가온기 사용방법.pptx",
+      "섞이면 clot되는 주사제.pptx",
+      "접촉주의 다제내성균.pptx",
+      "수혈 처방확인 및 바코드 출력 방법.pptx",
+      "PCD 검체 처방 시 검체라벨 붙이는 방법.pptx",
+      "병동간호팀 간호사메뉴얼(2026.04.13).hwp",
+      "OS 각과별 매뉴얼(26.05.08).hwp",
+      "신입간호사 숙지사항(26.04.29).hwp"
+    ],
+    "kept_features": [
+      "V62 Google Drive video links",
+      "V63 deleted-14 state",
+      "V64 pain image separated from transfusion card",
+      "login",
+      "drug calculator",
+      "table/image/photo search preview"
+    ],
+    "current_stats": {
+      "total_cards": 203,
+      "cards_with_tables": 39,
+      "cards_with_images": 45,
+      "table_count": 45,
+      "image_count": 182
+    }
   }
 }
