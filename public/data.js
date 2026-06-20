@@ -1,7 +1,7 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.60.0-v60-toc-practice-menu",
+    "version": "1.61.0-v61-video-support",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -2824,7 +2824,9 @@ window.ICU_MANUAL_DB = {
         "마약",
         "퇴원약",
         "간호 픽업",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -3592,7 +3594,9 @@ window.ICU_MANUAL_DB = {
         "FiO2",
         "setup",
         "호흡",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "ventilator 동영상",
+        "Ventilator 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -5200,7 +5204,9 @@ window.ICU_MANUAL_DB = {
         "CPR charting",
         "quick",
         "card",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -6629,7 +6635,9 @@ window.ICU_MANUAL_DB = {
         "발행",
         "확인",
         "Lab",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -9483,7 +9491,9 @@ window.ICU_MANUAL_DB = {
         "ACLS 약물",
         "응급약",
         "목록",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -10712,7 +10722,9 @@ window.ICU_MANUAL_DB = {
         "crash cart",
         "CPR 모니터링 기록지",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -11085,7 +11097,9 @@ window.ICU_MANUAL_DB = {
         "search_optimized",
         "Nebulizer 사용 참고 자료",
         "산소요법(O2) 참고 표",
-        "Bedside monitor 예시 사진"
+        "Bedside monitor 예시 사진",
+        "ventilator 동영상",
+        "Ventilator 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -12463,7 +12477,9 @@ window.ICU_MANUAL_DB = {
         "내분비",
         "다발성",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "ventilator 동영상",
+        "Ventilator 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -14549,7 +14565,9 @@ window.ICU_MANUAL_DB = {
         "pickup",
         "처방",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -15560,7 +15578,9 @@ window.ICU_MANUAL_DB = {
         "실무",
         "기록",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -16479,7 +16499,9 @@ window.ICU_MANUAL_DB = {
         "루카스",
         "제세동기",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "LUCAS 동영상",
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -16640,7 +16662,9 @@ window.ICU_MANUAL_DB = {
         "검사",
         "검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "A-line 동영상",
+        "A-line 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -16730,7 +16754,9 @@ window.ICU_MANUAL_DB = {
         "순환",
         "모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "A-line 동영상",
+        "A-line 사용법 동영상"
       ],
       "standard_sections_ready": true
     },
@@ -22366,6 +22392,391 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true
+    },
+    {
+      "id": "VIDEO001",
+      "category": "호흡 / Ventilator",
+      "title": "Ventilator 사용법 동영상",
+      "aliases": [
+        "Ventilator",
+        "ventilator 동영상",
+        "벤틸레이터",
+        "인공호흡기",
+        "인공호흡기 사용법",
+        "ventilator 사용법",
+        "벤틸레이터 사용법"
+      ],
+      "search_terms": [
+        "Ventilator",
+        "벤틸레이터",
+        "인공호흡기",
+        "ventilator 동영상",
+        "인공호흡기 동영상",
+        "ventilator 사용법",
+        "호흡",
+        "기계환기",
+        "Ventilator 사용법 동영상"
+      ],
+      "urgency": "routine",
+      "summary": "Ventilator 사용법 교육 동영상입니다. 용량 문제로 여러 구간으로 나누어 재생됩니다.",
+      "indications": [
+        "Ventilator 사용법을 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 장비 조작법 확인이 필요할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 동영상을 순서대로 재생합니다.",
+        "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요."
+      ],
+      "related": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "v61_video"
+      ],
+      "review": {
+        "status": "v61_added"
+      },
+      "source_refs": [
+        "사용자 업로드 ventilator-1.mp4",
+        "사용자 업로드 ventilator-2.mp4"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "src": "videos/ventilator_1/ventilator_1_part00.mp4",
+          "title": "Ventilator 사용법 1 1/7",
+          "caption": "Ventilator 사용법 1 - 1/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part01.mp4",
+          "title": "Ventilator 사용법 1 2/7",
+          "caption": "Ventilator 사용법 1 - 2/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part02.mp4",
+          "title": "Ventilator 사용법 1 3/7",
+          "caption": "Ventilator 사용법 1 - 3/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part03.mp4",
+          "title": "Ventilator 사용법 1 4/7",
+          "caption": "Ventilator 사용법 1 - 4/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part04.mp4",
+          "title": "Ventilator 사용법 1 5/7",
+          "caption": "Ventilator 사용법 1 - 5/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part05.mp4",
+          "title": "Ventilator 사용법 1 6/7",
+          "caption": "Ventilator 사용법 1 - 6/7 구간"
+        },
+        {
+          "src": "videos/ventilator_1/ventilator_1_part06.mp4",
+          "title": "Ventilator 사용법 1 7/7",
+          "caption": "Ventilator 사용법 1 - 7/7 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part00.mp4",
+          "title": "Ventilator 사용법 2 1/8",
+          "caption": "Ventilator 사용법 2 - 1/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part01.mp4",
+          "title": "Ventilator 사용법 2 2/8",
+          "caption": "Ventilator 사용법 2 - 2/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part02.mp4",
+          "title": "Ventilator 사용법 2 3/8",
+          "caption": "Ventilator 사용법 2 - 3/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part03.mp4",
+          "title": "Ventilator 사용법 2 4/8",
+          "caption": "Ventilator 사용법 2 - 4/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part04.mp4",
+          "title": "Ventilator 사용법 2 5/8",
+          "caption": "Ventilator 사용법 2 - 5/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part05.mp4",
+          "title": "Ventilator 사용법 2 6/8",
+          "caption": "Ventilator 사용법 2 - 6/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part06.mp4",
+          "title": "Ventilator 사용법 2 7/8",
+          "caption": "Ventilator 사용법 2 - 7/8 구간"
+        },
+        {
+          "src": "videos/ventilator_2/ventilator_2_part07.mp4",
+          "title": "Ventilator 사용법 2 8/8",
+          "caption": "Ventilator 사용법 2 - 8/8 구간"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "VIDEO002",
+      "category": "호흡 / Ventilator",
+      "title": "Portable ventilator 사용법 동영상",
+      "aliases": [
+        "portable ventilator",
+        "portable ventilator 동영상",
+        "이동식 ventilator",
+        "이동용 ventilator",
+        "포터블 벤틸레이터"
+      ],
+      "search_terms": [
+        "portable ventilator",
+        "이동식 ventilator",
+        "portable ventilator 동영상",
+        "호흡",
+        "Ventilator",
+        "ventilator 동영상",
+        "Ventilator 사용법 동영상"
+      ],
+      "urgency": "routine",
+      "summary": "Portable ventilator 사용법 교육 동영상입니다.",
+      "indications": [
+        "portable ventilator 사용법을 영상으로 확인해야 할 때",
+        "환자 이동 또는 검사 이동 전 장비 사용법 확인이 필요할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 동영상을 순서대로 재생합니다.",
+        "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요."
+      ],
+      "related": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "v61_video"
+      ],
+      "review": {
+        "status": "v61_added"
+      },
+      "source_refs": [
+        "사용자 업로드 portable ventilator.mp4"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part00.mp4",
+          "title": "Portable ventilator 사용법 1/6",
+          "caption": "Portable ventilator 사용법 - 1/6 구간"
+        },
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part01.mp4",
+          "title": "Portable ventilator 사용법 2/6",
+          "caption": "Portable ventilator 사용법 - 2/6 구간"
+        },
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part02.mp4",
+          "title": "Portable ventilator 사용법 3/6",
+          "caption": "Portable ventilator 사용법 - 3/6 구간"
+        },
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part03.mp4",
+          "title": "Portable ventilator 사용법 4/6",
+          "caption": "Portable ventilator 사용법 - 4/6 구간"
+        },
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part04.mp4",
+          "title": "Portable ventilator 사용법 5/6",
+          "caption": "Portable ventilator 사용법 - 5/6 구간"
+        },
+        {
+          "src": "videos/portable_ventilator/portable_ventilator_part05.mp4",
+          "title": "Portable ventilator 사용법 6/6",
+          "caption": "Portable ventilator 사용법 - 6/6 구간"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "VIDEO003",
+      "category": "응급상황",
+      "title": "LUCAS 사용법 동영상",
+      "aliases": [
+        "LUCAS",
+        "Lucas",
+        "루카스",
+        "루카스 사용법",
+        "CPR 기계",
+        "흉부압박기",
+        "자동 흉부압박"
+      ],
+      "search_terms": [
+        "LUCAS",
+        "루카스",
+        "루카스 사용법",
+        "CPR",
+        "CPR 동영상",
+        "흉부압박기",
+        "자동 흉부압박",
+        "응급상황"
+      ],
+      "urgency": "routine",
+      "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다.",
+      "indications": [
+        "CPR 상황에서 LUCAS 장비 사용법을 확인해야 할 때",
+        "응급장비 교육이 필요할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 동영상을 순서대로 재생합니다.",
+        "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요."
+      ],
+      "related": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "v61_video"
+      ],
+      "review": {
+        "status": "v61_added"
+      },
+      "source_refs": [
+        "사용자 업로드 루카스 사용법.mp4"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "src": "videos/lucas_cpr/lucas_cpr_part00.mp4",
+          "title": "LUCAS 사용법 1/2",
+          "caption": "LUCAS 사용법 - 1/2 구간"
+        },
+        {
+          "src": "videos/lucas_cpr/lucas_cpr_part01.mp4",
+          "title": "LUCAS 사용법 2/2",
+          "caption": "LUCAS 사용법 - 2/2 구간"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "VIDEO004",
+      "category": "순환 / 모니터링",
+      "title": "A-line 사용법 동영상",
+      "aliases": [
+        "A-line",
+        "A line",
+        "A-line 사용법",
+        "A-line 동영상",
+        "arterial line",
+        "A-line zeroing",
+        "제로잉"
+      ],
+      "search_terms": [
+        "A-line",
+        "A line",
+        "A-line 사용법",
+        "A-line 동영상",
+        "arterial line",
+        "A-line zeroing",
+        "제로잉",
+        "순환",
+        "모니터링",
+        "A-line 사용법 동영상"
+      ],
+      "urgency": "routine",
+      "summary": "A-line 사용법과 관련 교육 동영상입니다.",
+      "indications": [
+        "A-line 사용법 또는 zeroing 과정을 영상으로 확인해야 할 때",
+        "A-line 관리 교육이 필요할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 동영상을 순서대로 재생합니다.",
+        "실제 적용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요."
+      ],
+      "related": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "v61_video"
+      ],
+      "review": {
+        "status": "v61_added"
+      },
+      "source_refs": [
+        "사용자 업로드 A-line 사용법.mp4"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "src": "videos/a_line/a_line_part00.mp4",
+          "title": "A-line 사용법 1/5",
+          "caption": "A-line 사용법 - 1/5 구간"
+        },
+        {
+          "src": "videos/a_line/a_line_part01.mp4",
+          "title": "A-line 사용법 2/5",
+          "caption": "A-line 사용법 - 2/5 구간"
+        },
+        {
+          "src": "videos/a_line/a_line_part02.mp4",
+          "title": "A-line 사용법 3/5",
+          "caption": "A-line 사용법 - 3/5 구간"
+        },
+        {
+          "src": "videos/a_line/a_line_part03.mp4",
+          "title": "A-line 사용법 4/5",
+          "caption": "A-line 사용법 - 4/5 구간"
+        },
+        {
+          "src": "videos/a_line/a_line_part04.mp4",
+          "title": "A-line 사용법 5/5",
+          "caption": "A-line 사용법 - 5/5 구간"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -22671,37 +23082,23 @@ window.ICU_MANUAL_DB = {
     "common_login_allowed_with_individual_accounts": true,
     "common_account_role": "admin"
   },
-  "v60_update": {
-    "description": "실무 메뉴 전체 보기를 세부 카드 그리드가 아닌 1~16번 대분류 목차형으로 변경. 세부 항목은 검색어 입력 또는 대분류 클릭 후 검색 결과에서만 표시. 표/이미지/사진/약물계산기/개별계정/공용계정 동시 로그인 유지. 로그인 실패 차단 기능 삭제 유지.",
-    "practice_menu": [
-      "1. 응급상황",
-      "2. 호흡 / Ventilator",
-      "3. 순환 / 모니터링",
-      "4. 신경계",
-      "5. 신장 / CRRT",
-      "6. 혈당 / 내분비",
-      "7. 약물",
-      "8. 수혈 / 혈액",
-      "9. 검사 / 검체",
-      "10. Line / Drain / Dressing",
-      "11. 수술 / 시술",
-      "12. 입퇴원 / 전동 / 전원 / 사망",
-      "13. 근무별 업무",
-      "14. EMR / 기록 / 처방",
-      "15. 물품 / 장비 / 전화번호",
-      "16. 병동간호팀 간호사 매뉴얼"
+  "v61_update": {
+    "description": "사용자가 업로드한 동영상 5개를 앱에서 재생 가능하도록 구간별 MP4로 추가. Ventilator, portable ventilator, LUCAS, A-line 동영상 검색/카드 상세 재생 지원.",
+    "video_cards_added": 4,
+    "video_files_added": 28,
+    "video_total_size_mb": 431.51,
+    "video_topics": [
+      "Ventilator 사용법 동영상",
+      "Portable ventilator 사용법 동영상",
+      "LUCAS 사용법 동영상",
+      "A-line 사용법 동영상"
     ],
-    "detail_items_hidden_until_search": true,
     "kept_features": [
-      "AI 답변",
-      "카드 검색",
-      "표 미리보기",
-      "이미지/사진 미리보기",
-      "HWP 추출 이미지 검색",
+      "목차형 실무 메뉴",
+      "표/이미지/사진",
       "약물 계산기",
-      "개별 계정 로그인",
-      "공용 icu 로그인 동시 허용",
-      "로그인 실패 차단 기능 삭제"
+      "개별/공용 로그인",
+      "로그인 실패 차단 삭제"
     ]
   }
 };

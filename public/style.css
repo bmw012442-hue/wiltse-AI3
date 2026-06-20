@@ -1315,3 +1315,80 @@ main {
     padding: 0 14px;
   }
 }
+
+
+/* V61: 참고 동영상 */
+.video-pill {
+  color: #7c2d12;
+  background: #ffedd5;
+  border: 1px solid #fed7aa;
+}
+
+.video-section {
+  background: #fffaf5;
+  border-color: #fed7aa;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.video-item {
+  margin: 0;
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.video-item video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  background: #0f172a;
+}
+
+.video-item figcaption {
+  padding: 10px 12px;
+  color: #7c2d12;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 850;
+  border-top: 1px solid #ffedd5;
+}
+
+.video-note {
+  margin-top: 10px;
+  color: #9a3412;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.result-video-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin: 10px 0;
+}
+
+.video-preview-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #fed7aa;
+  background: #fff7ed;
+  color: #7c2d12;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+@media (max-width: 720px) {
+  .video-item video {
+    max-height: 420px;
+  }
+}

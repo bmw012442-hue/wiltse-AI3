@@ -48,8 +48,10 @@ function urgencyBadge(card) {
 function resultMediaSummary(card) {
   const tableCount = (card.tables || []).length;
   const imageCount = (card.images || []).length;
-  if (!tableCount && !imageCount) return "";
+  const videoCount = (card.videos || []).length;
+  if (!tableCount && !imageCount && !videoCount) return "";
   return `<div class="result-media-summary">
+    ${videoCount ? `<span class="media-pill video-pill">동영상 ${videoCount}개</span>` : ""}
     ${tableCount ? `<span class="media-pill table-pill">참고 표 ${tableCount}개</span>` : ""}
     ${imageCount ? `<span class="media-pill image-pill">이미지/사진 ${imageCount}개</span>` : ""}
   </div>`;
@@ -73,6 +75,16 @@ function renderMiniTable(card) {
   </div>`;
 }
 
+
+function renderMiniVideos(card) {
+  const videos = (card.videos || []).slice(0, 2);
+  if (!videos.length) return "";
+  return `<div class="result-video-preview" aria-label="동영상 미리보기">
+    ${videos.map(v => `<div class="video-preview-chip">▶ ${esc(v.title || v.caption || "동영상")}</div>`).join("")}
+    ${(card.videos || []).length > 2 ? `<span class="more-images">+${(card.videos || []).length - 2}</span>` : ""}
+  </div>`;
+}
+
 function renderMiniImages(card) {
   const imgs = (card.images || []).slice(0, 3);
   if (!imgs.length) return "";
@@ -86,13 +98,17 @@ function renderResultStats(cards) {
   const arr = Array.isArray(cards) ? cards : [];
   const tableCards = arr.filter(c => (c.tables || []).length).length;
   const imageCards = arr.filter(c => (c.images || []).length).length;
+  const videoCards = arr.filter(c => (c.videos || []).length).length;
   const tables = arr.reduce((sum, c) => sum + ((c.tables || []).length), 0);
   const images = arr.reduce((sum, c) => sum + ((c.images || []).length), 0);
+  const videos = arr.reduce((sum, c) => sum + ((c.videos || []).length), 0);
   if (!arr.length) return "";
   return `<div class="result-stats">
     <span>검색 결과 ${arr.length}개</span>
+    <span>동영상 포함 카드 ${videoCards}개</span>
     <span>표 포함 카드 ${tableCards}개</span>
     <span>이미지/사진 포함 카드 ${imageCards}개</span>
+    <span>동영상 ${videos}개</span>
     <span>표 ${tables}개</span>
     <span>이미지/사진 ${images}개</span>
   </div>`;
@@ -107,6 +123,7 @@ function renderCards(cards) {
       <p class="summary">${esc(card.summary)}</p>
       ${urgencyBadge(card)}
       ${resultMediaSummary(card)}
+      ${renderMiniVideos(card)}
       ${renderMiniTable(card)}
       ${renderMiniImages(card)}
       <div class="meta">탭하면 상세내용에서 핵심 절차, 참고 표, 이미지/사진을 확인할 수 있습니다.</div>
@@ -185,6 +202,23 @@ function renderImages(images) {
   </section>`;
 }
 
+
+function renderVideos(videos) {
+  if (!Array.isArray(videos) || videos.length === 0) return "";
+  return `<section class="detail-section video-section">
+    <h4>참고 동영상</h4>
+    <div class="video-list">
+      ${videos.map((v, idx) => `
+        <figure class="video-item">
+          <video controls preload="metadata" playsinline src="${esc(v.src)}"></video>
+          <figcaption>${esc(v.title || v.caption || `동영상 ${idx + 1}`)}</figcaption>
+        </figure>
+      `).join("")}
+    </div>
+    <div class="video-note">용량 문제로 긴 영상은 여러 구간으로 나뉘어 있습니다. 순서대로 재생하세요.</div>
+  </section>`;
+}
+
 function mergeRecordPoints(card) {
   const out = [];
   if (Array.isArray(card.charting)) out.push(...card.charting);
@@ -241,6 +275,7 @@ function renderStructuredCard(card) {
 
       ${renderOptionalSection("준비물", renderSimpleLines(card.preparation), hasPrep)}
 
+      ${renderVideos(card.videos)}
       ${renderTables(card.tables)}
       ${renderImages(card.images)}
 
@@ -293,7 +328,8 @@ function cardSearchText(card) {
     ...((card.tables || []).flatMap(t => [
       t.title || "", ...(t.headers || []), ...((t.rows || []).flatMap(row => row || []))
     ])),
-    ...((card.images || []).flatMap(img => [img.alt || "", img.caption || ""]))
+    ...((card.images || []).flatMap(img => [img.alt || "", img.caption || ""])),
+    ...((card.videos || []).flatMap(v => [v.title || "", v.caption || "", v.src || ""]))
   ].join(" ");
 }
 
