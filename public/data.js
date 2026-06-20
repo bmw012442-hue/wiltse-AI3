@@ -1,10 +1,11 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.63.0-v63-delete-14-files",
+    "version": "1.64.0-v64-pain-image-fix",
     "language": "ko",
     "source": "V62 Google Drive 동영상 링크 유지 + 요청한 14개 업로드 파일 관련 DB 카드 삭제",
-    "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
+    "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
+    "updated_at": "2026-06-21"
   },
   "schema": {
     "id": "string",
@@ -2138,7 +2139,16 @@ window.ICU_MANUAL_DB = {
         "평가",
         "Routine",
         "Routine/평가",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "통증 사정",
+        "통증 사정표",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS",
+        "숫자통증척도",
+        "얼굴통증척도",
+        "소아통증척도"
       ],
       "urgency": "routine",
       "summary": "근무조별 낙상/욕창/통증 평가.",
@@ -2165,11 +2175,18 @@ window.ICU_MANUAL_DB = {
       "related": [],
       "tags": [
         "Routine/평가",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "통증",
+        "통증 사정",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS"
       ],
       "review": {
         "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
+        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거",
+        "v64_image_fix": "통증 사정 이미지(bin000f.png)를 통증 평가 카드에 연결"
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
@@ -2190,6 +2207,11 @@ window.ICU_MANUAL_DB = {
           "src": "bin0008.png",
           "alt": "FPS 통증 평가 척도",
           "caption": "FPS 통증 평가 척도"
+        },
+        {
+          "src": "bin000f.png",
+          "alt": "NRS·FPS·FLACC·PIPS 통증 사정표",
+          "caption": "NRS·FPS·FLACC·PIPS 통증 사정표"
         }
       ],
       "original_category": "Routine/평가",
@@ -2206,7 +2228,17 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed",
         "NRS 통증 평가 척도",
         "FLACC 통증 평가 척도",
-        "FPS 통증 평가 척도"
+        "FPS 통증 평가 척도",
+        "통증 사정",
+        "통증 사정표",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS",
+        "숫자통증척도",
+        "얼굴통증척도",
+        "소아통증척도",
+        "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
       "standard_sections_ready": true
     },
@@ -3990,7 +4022,8 @@ window.ICU_MANUAL_DB = {
       ],
       "review": {
         "status": "v11_source_enhanced",
-        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
+        "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강",
+        "v64_image_fix": "통증 사정 이미지(bin000f.png)를 수혈 카드에서 제거"
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 수혈"
@@ -4026,13 +4059,7 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "images": [
-        {
-          "src": "bin000f.png",
-          "alt": "수혈 관련 참고 표",
-          "caption": "수혈 관련 참고 표"
-        }
-      ],
+      "images": [],
       "original_category": "수혈",
       "search_terms": [
         "수혈 절차 상세",
@@ -4069,8 +4096,7 @@ window.ICU_MANUAL_DB = {
         "종료 시",
         "V/S, 수혈기록지, I/O blood 용량 입력",
         "부작용 의심",
-        "즉시 중단, 정맥로 유지, 담당의/진검실 보고",
-        "수혈 관련 참고 표"
+        "즉시 중단, 정맥로 유지, 담당의/진검실 보고"
       ],
       "standard_sections_ready": true
     },
@@ -9683,19 +9709,14 @@ window.ICU_MANUAL_DB = {
       ],
       "review": {
         "status": "v14_v11_based_main_menu",
-        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
+        "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장",
+        "v64_image_fix": "통증 사정 이미지(bin000f.png)를 수혈 카드에서 제거"
       },
       "source_refs": [
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "bin000f.png",
-          "alt": "수혈 관련 참고 표",
-          "caption": "수혈 관련 참고 표"
-        }
-      ],
+      "images": [],
       "original_category": "수혈",
       "search_terms": [
         "수혈: Lab·동의서·전처치·TIP·기록",
@@ -9737,8 +9758,7 @@ window.ICU_MANUAL_DB = {
         "TIP",
         "혈액",
         "v14_v11_based_menu",
-        "search_optimized",
-        "수혈 관련 참고 표"
+        "search_optimized"
       ],
       "standard_sections_ready": true
     },
@@ -12272,7 +12292,16 @@ window.ICU_MANUAL_DB = {
         "Routine",
         "Routine/Initial·전산",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "통증 사정",
+        "통증 사정표",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS",
+        "숫자통증척도",
+        "얼굴통증척도",
+        "소아통증척도"
       ],
       "urgency": "routine",
       "summary": "매 근무 initial 후 입력해야 하는 낙상, 욕창, 통증, bundle, flow sheet, 신체보호대 평가 정리.",
@@ -12344,16 +12373,28 @@ window.ICU_MANUAL_DB = {
           "src": "bin0008.png",
           "alt": "FPS 통증 평가 척도",
           "caption": "FPS 통증 평가 척도"
+        },
+        {
+          "src": "bin000f.png",
+          "alt": "NRS·FPS·FLACC·PIPS 통증 사정표",
+          "caption": "NRS·FPS·FLACC·PIPS 통증 사정표"
         }
       ],
       "tags": [
         "Routine/Initial·전산",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "통증",
+        "통증 사정",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
-        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
+        "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가",
+        "v64_image_fix": "통증 사정 이미지(bin000f.png)를 통증 평가 카드에 연결"
       },
       "source_refs": [
         "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
@@ -12397,7 +12438,17 @@ window.ICU_MANUAL_DB = {
         "Inject 30분 후 / PO 1시간 후",
         "NRS 통증 평가 척도",
         "FLACC 통증 평가 척도",
-        "FPS 통증 평가 척도"
+        "FPS 통증 평가 척도",
+        "통증 사정",
+        "통증 사정표",
+        "NRS",
+        "FPS",
+        "FLACC",
+        "PIPS",
+        "숫자통증척도",
+        "얼굴통증척도",
+        "소아통증척도",
+        "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
       "standard_sections_ready": true
     },
@@ -19443,6 +19494,36 @@ window.ICU_MANUAL_DB = {
         ],
         "reason": "source:NS OS 알아야할 사항들"
       }
+    ]
+  },
+  "v64_update": {
+    "version": "1.64.0-v64-pain-image-fix",
+    "date": "2026-06-21",
+    "changes": [
+      "수혈 카드(TF002, MENU005)에 잘못 연결된 통증 사정 이미지(bin000f.png) 제거",
+      "통증 평가 카드(ROUTINE007, ROUTINE033)에 NRS/FPS/FLACC/PIPS 통증 사정 이미지 연결",
+      "통증, NRS, FPS, FLACC, PIPS 검색어 보강",
+      "V62 구글드라이브 동영상 링크 방식 및 V63 14개 파일 삭제 상태 유지"
+    ],
+    "removed_from": [
+      [
+        "TF002",
+        "수혈 절차 상세"
+      ],
+      [
+        "MENU005",
+        "수혈: Lab·동의서·전처치·TIP·기록"
+      ]
+    ],
+    "added_to": [
+      [
+        "ROUTINE007",
+        "낙상·욕창·통증 평가"
+      ],
+      [
+        "ROUTINE033",
+        "Initial 후 전산: 낙상·욕창·통증·Bundle·Flow sheet·보호대"
+      ]
     ]
   }
 };
