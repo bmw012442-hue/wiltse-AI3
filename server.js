@@ -356,7 +356,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "0.58.0-v58-common-login-with-individual",
+    version: "0.59.0-v59-no-login-block",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -405,16 +405,11 @@ app.post("/api/login", (req, res) => {
     });
   }
 
-  if (isBlocked(req)) {
-    return res.status(429).json({ error: "로그인 실패가 많아 10분 동안 제한되었습니다." });
-  }
-
   const username = String(req.body?.username || "").trim();
   const password = String(req.body?.password || "");
 
   const account = findLoginAccount(username);
   if (account && safeEqual(password, account.password)) {
-    clearFailed(req);
     setSessionCookie(res, account);
     return res.json({
       ok: true,
@@ -426,7 +421,6 @@ app.post("/api/login", (req, res) => {
     });
   }
 
-  recordFailed(req);
   return res.status(401).json({ error: "아이디 또는 비밀번호가 맞지 않습니다." });
 });
 
