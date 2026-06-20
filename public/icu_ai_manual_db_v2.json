@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.62.0-v62-drive-video-links",
+    "version": "1.63.0-v63-delete-14-files",
     "language": "ko",
-    "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
+    "source": "V62 Google Drive 동영상 링크 유지 + 요청한 14개 업로드 파일 관련 DB 카드 삭제",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
   },
   "schema": {
@@ -3843,278 +3843,6 @@
       "standard_sections_ready": true
     },
     {
-      "id": "VENT006",
-      "category": "호흡 / Ventilator",
-      "title": "Suction / 간호 흡인",
-      "aliases": [
-        "Suction / 간호 흡인",
-        "Suction",
-        "석션",
-        "흡인",
-        "분비물",
-        "ET suction",
-        "T-tube suction",
-        "oral suction",
-        "sputum",
-        "가래",
-        "흡인압",
-        "간호",
-        "호흡",
-        "Ventilator",
-        "호흡기/Suction",
-        "v8_final_reviewed"
-      ],
-      "urgency": "urgent",
-      "summary": "분비물 배출과 기도 유지를 위한 suction.",
-      "indications": [
-        "분비물 배출과 기도 유지를 위한 suction."
-      ],
-      "preparation": [
-        "장갑",
-        "Airway",
-        "설압자",
-        "30cc N/S",
-        "멸균 흡입카테터",
-        "필요 시 PPE"
-      ],
-      "steps": [
-        "의식 있으면 반좌위, 없으면 머리 옆으로",
-        "Vent 환자는 흡인 전후 100% 산소 보충",
-        "산소요법 환자는 30초 과산소화",
-        "카테터 잠근 상태로 삽입 후 돌리며 흡인",
-        "1회 15초 이내, 간격 20~30초, 총 5분 이내",
-        "카테터는 매번 교환"
-      ],
-      "dosage_or_mix": [
-        "흡인압: 영아 60~80mmHg, 어린이/노인 80~120mmHg, 성인 120~200mmHg"
-      ],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "점막손상/저산소 주의"
-      ],
-      "related": [],
-      "tags": [
-        "호흡기/Suction",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "호흡기/Suction",
-      "search_terms": [
-        "Suction / 간호 흡인",
-        "호흡 / Ventilator",
-        "호흡기/Suction",
-        "Suction",
-        "석션",
-        "흡인",
-        "분비물",
-        "ET suction",
-        "T-tube suction",
-        "oral suction",
-        "sputum",
-        "가래",
-        "흡인압",
-        "간호",
-        "호흡",
-        "Ventilator",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "VENT007",
-      "category": "호흡 / Ventilator",
-      "title": "Tracheostomy care / 기관절개관 간호",
-      "aliases": [
-        "Tracheostomy care / 기관절개관 간호",
-        "Tracheostomy",
-        "T-tube",
-        "T-can",
-        "기관절개",
-        "기관절개관",
-        "내관",
-        "care",
-        "간호",
-        "호흡",
-        "Ventilator",
-        "호흡기/Tracheostomy",
-        "v8_final_reviewed",
-        "cuff",
-        "fenestrated",
-        "Portex",
-        "Tracoe",
-        "Koken",
-        "기관절개관 이미지",
-        "기관절개관 사진",
-        "기관절개관 전체 추출 이미지"
-      ],
-      "urgency": "urgent",
-      "summary": "기관절개관 피부보호, 감염예방, 폐쇄예방.",
-      "indications": [
-        "기관절개관 피부보호, 감염예방, 폐쇄예방."
-      ],
-      "preparation": [
-        "소공포",
-        "소독솜",
-        "멸균 Y-gauze",
-        "Glove",
-        "반창고",
-        "Tubifix",
-        "필요 시 PPE"
-      ],
-      "steps": [
-        "매 근무마다 gauze 교환 및 내관 소독",
-        "기관절개 부위 소독",
-        "피부상태 확인",
-        "내관 교환",
-        "Tubifix 끈은 손가락 2개 정도 들어가게 묶음",
-        "Gauze 젖으면 즉시 교환"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "기관절개관 폐쇄 예방",
-        "젖은 gauze 즉시 교환"
-      ],
-      "related": [],
-      "tags": [
-        "호흡기/Tracheostomy",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "호흡기/Tracheostomy",
-      "search_terms": [
-        "Tracheostomy care / 기관절개관 간호",
-        "호흡 / Ventilator",
-        "호흡기/Tracheostomy",
-        "Tracheostomy",
-        "T-tube",
-        "T-can",
-        "기관절개",
-        "기관절개관",
-        "내관",
-        "care",
-        "간호",
-        "호흡",
-        "Ventilator",
-        "v8_final_reviewed",
-        "cuff",
-        "fenestrated",
-        "Portex",
-        "Tracoe",
-        "Koken",
-        "기관절개관 이미지",
-        "기관절개관 사진",
-        "기관절개관 전체 추출 이미지"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "VENT008",
-      "category": "검사 / 검체",
-      "title": "EKG monitoring / ETCO2",
-      "aliases": [
-        "EKG monitoring / ETCO2",
-        "EKG",
-        "ECG",
-        "심전도",
-        "ETCO2",
-        "monitoring",
-        "ROSC",
-        "검사",
-        "검체",
-        "검사/EKG",
-        "v8_final_reviewed"
-      ],
-      "urgency": "urgent",
-      "summary": "EKG monitoring과 ETCO2 확인.",
-      "indications": [
-        "EKG monitoring과 ETCO2 확인."
-      ],
-      "preparation": [],
-      "steps": [
-        "EKG speed 25mm/sec 확인",
-        "전극 위치 확인",
-        "PACS 연동 확인",
-        "모니터 electrode 위치 확인",
-        "ETCO2 정상범위 35~45mmHg 확인"
-      ],
-      "dosage_or_mix": [
-        "ETCO2 정상: 35~45mmHg",
-        "CPR 중 흉부압박이 잘 되면 ETCO2 20mmHg 이상 측정 가능"
-      ],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "ETCO2 갑자기 증가 시 ROSC 가능성",
-        "삽관 후 ETCO2 감소/미측정 시 식도삽관 가능성 확인"
-      ],
-      "related": [],
-      "tags": [
-        "검사/EKG",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [
-        {
-          "src": "bin0012.png",
-          "alt": "Bedside monitor 예시 사진",
-          "caption": "Bedside monitor 예시 사진"
-        }
-      ],
-      "original_category": "검사/EKG",
-      "search_terms": [
-        "EKG monitoring / ETCO2",
-        "검사 / 검체",
-        "검사/EKG",
-        "EKG",
-        "ECG",
-        "심전도",
-        "ETCO2",
-        "monitoring",
-        "ROSC",
-        "검사",
-        "검체",
-        "v8_final_reviewed",
-        "Bedside monitor 예시 사진"
-      ],
-      "standard_sections_ready": true
-    },
-    {
       "id": "TF001",
       "category": "수혈 / 혈액",
       "title": "수혈 준비/혈액 요청",
@@ -4418,554 +4146,6 @@
       "standard_sections_ready": true
     },
     {
-      "id": "BASIC001",
-      "category": "기본간호",
-      "title": "L-tube feeding",
-      "aliases": [
-        "L-tube feeding",
-        "L-tube",
-        "엘튜브",
-        "feeding",
-        "경관식",
-        "RTH",
-        "비위관",
-        "기본간호",
-        "기본간호/L-tube",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "비위관 영양 공급.",
-      "indications": [
-        "비위관 영양 공급."
-      ],
-      "preparation": [
-        "미온수",
-        "처방된 유동식(RTH)",
-        "청진기",
-        "50cc 세정용 주사기",
-        "수건",
-        "휴지"
-      ],
-      "steps": [
-        "필요 시 feeding 전 suction",
-        "상체 30도 이상",
-        "주입 전 위 내용물 흡인으로 소화/위치 확인",
-        "흡인 안 되면 공기 주입 청진, 필요 시 X-ray",
-        "물 30cc → 유동식 → 물 30cc 순서로 중력 주입",
-        "주입 후 30분~1시간 앉은 자세 유지"
-      ],
-      "dosage_or_mix": [
-        "주입속도 분당 약 50ml 이하",
-        "삽입길이: 코끝~귓불 + 귓불~검상돌기"
-      ],
-      "orders_or_emr": [],
-      "charting": [
-        "주입시간, 종류, 양, 환자반응, 관찰사항 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "오심/구토/복부팽만 시 속도 줄이거나 중지",
-        "주입속도 빠르면 설사/탈수 유발"
-      ],
-      "related": [],
-      "tags": [
-        "기본간호/L-tube",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "기본간호/L-tube",
-      "search_terms": [
-        "L-tube feeding",
-        "기본간호",
-        "기본간호/L-tube",
-        "L-tube",
-        "엘튜브",
-        "feeding",
-        "경관식",
-        "RTH",
-        "비위관",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC002",
-      "category": "기본간호",
-      "title": "Enema / 관장",
-      "aliases": [
-        "Enema / 관장",
-        "관장",
-        "Enema",
-        "글리세린",
-        "finger enema",
-        "칼리메이트",
-        "듀파락",
-        "기본간호",
-        "기본간호/Enema",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "배변 유도/수술 전 장준비/치료 목적 관장.",
-      "indications": [
-        "배변 유도/수술 전 장준비/치료 목적 관장."
-      ],
-      "preparation": [
-        "관장액",
-        "비닐장갑",
-        "Puspen",
-        "윤활제",
-        "직장튜브",
-        "휴지",
-        "패드"
-      ],
-      "steps": [
-        "관장액은 약 40도 정도로 준비",
-        "왼쪽 측위/심즈체위",
-        "튜브 끝에 윤활제 5~7cm 적용",
-        "직장튜브 8~10cm 삽입",
-        "관장액 주입 후 가능하면 5~10분 보유",
-        "Finger enema 시 윤활제 적용 후 항문 마사지 및 대변 제거"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "관장시간, 관장액 종류와 양, 환자 반응, 검사물 보낸 시간 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "복통, 오심, 어지러움, 항문 불편감 확인"
-      ],
-      "related": [],
-      "tags": [
-        "기본간호/Enema",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "기본간호/Enema",
-      "search_terms": [
-        "Enema / 관장",
-        "기본간호",
-        "기본간호/Enema",
-        "관장",
-        "Enema",
-        "글리세린",
-        "finger enema",
-        "칼리메이트",
-        "듀파락",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC003",
-      "category": "기본간호",
-      "title": "Foley catheter insertion",
-      "aliases": [
-        "Foley catheter insertion",
-        "Foley",
-        "폴리",
-        "유치도뇨",
-        "Urine bag",
-        "도뇨",
-        "catheter",
-        "insertion",
-        "기본간호",
-        "기본간호/Foley",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "유치도뇨 삽입 준비와 유지관리.",
-      "indications": [
-        "유치도뇨 삽입 준비와 유지관리."
-      ],
-      "preparation": [
-        "Foley set",
-        "소독장갑",
-        "도뇨관",
-        "소독솜",
-        "멸균증류수",
-        "윤활제",
-        "Multi-fix",
-        "Urine bag",
-        "10cc syringe"
-      ],
-      "steps": [
-        "Balloon에 멸균증류수 8~10cc 주입해 누출 확인",
-        "무균적으로 요도구 소독",
-        "윤활제 적용",
-        "여성 3~5cm, 남성 15~17cm 또는 소변 배출까지 삽입",
-        "Ballooning 후 살짝 당겨 고정 확인, 다시 2~3cm 밀어 넣음",
-        "Urine bag은 침상보다 낮게 고정"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "삽입 날짜/시간, 소변량과 색깔, 환자 반응, 검체 채취 여부 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "Balloon은 N/S가 아닌 증류수",
-        "폐쇄계 유지",
-        "소변백은 방광보다 낮게"
-      ],
-      "related": [],
-      "tags": [
-        "기본간호/Foley",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "기본간호/Foley",
-      "search_terms": [
-        "Foley catheter insertion",
-        "기본간호",
-        "기본간호/Foley",
-        "Foley",
-        "폴리",
-        "유치도뇨",
-        "Urine bag",
-        "도뇨",
-        "catheter",
-        "insertion",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC004",
-      "category": "검사 / 검체",
-      "title": "Foley urine specimen collection",
-      "aliases": [
-        "Foley urine specimen collection",
-        "소변검체",
-        "Urine culture",
-        "Urine Cx",
-        "UA",
-        "Foley port",
-        "검체",
-        "Foley",
-        "urine",
-        "specimen",
-        "collection",
-        "검사",
-        "검사/소변검체",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "Foley catheter에서 무균적으로 소변검체 채취.",
-      "indications": [
-        "Foley catheter에서 무균적으로 소변검체 채취."
-      ],
-      "preparation": [
-        "멸균 glove",
-        "포비돈 스틱",
-        "10cc syringe",
-        "소변검체 채취통",
-        "바코드"
-      ],
-      "steps": [
-        "검체 채취 전 Foley line 잠금",
-        "검체 port를 포비돈 스틱으로 소독",
-        "10cc syringe로 port에서 무균적으로 채취",
-        "멸균용기에 담고 바코드 부착",
-        "즉시 검사실 접수"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "검체 색깔, 냄새, 관찰사항 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "Urine bag에서 직접 채취하지 않기",
-        "Port 소독 후 채취"
-      ],
-      "related": [],
-      "tags": [
-        "검사/소변검체",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "검사/소변검체",
-      "search_terms": [
-        "Foley urine specimen collection",
-        "검사 / 검체",
-        "검사/소변검체",
-        "소변검체",
-        "Urine culture",
-        "Urine Cx",
-        "UA",
-        "Foley port",
-        "검체",
-        "Foley",
-        "urine",
-        "specimen",
-        "collection",
-        "검사",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC005",
-      "category": "기본간호",
-      "title": "Oral care / 구강간호",
-      "aliases": [
-        "Oral care / 구강간호",
-        "Oral care",
-        "구강간호",
-        "바세린",
-        "참스틱",
-        "흡인",
-        "Oral",
-        "care",
-        "기본간호",
-        "기본간호/Oral care",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "구강청결/상기도 감염 예방을 위한 구강간호.",
-      "indications": [
-        "구강청결/상기도 감염 예방을 위한 구강간호."
-      ],
-      "preparation": [
-        "칫솔/구강스펀지",
-        "곡반",
-        "수건",
-        "가글액",
-        "면봉",
-        "윤활제",
-        "설압자",
-        "거즈",
-        "forcep",
-        "penlight",
-        "흡인기"
-      ],
-      "steps": [
-        "흡인기 준비",
-        "측위 가능 시 측위",
-        "구강상태 사정",
-        "치아/입천장/잇몸/볼 안쪽/혀 닦기",
-        "분비물 흡인",
-        "입술에 바셀린 적용"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "구강 색깔, 모양, 냄새, 관찰사항 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "흡인 위험 환자는 자세와 흡인기 준비 필수",
-        "구토반사 주의"
-      ],
-      "related": [],
-      "tags": [
-        "기본간호/Oral care",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "기본간호/Oral care",
-      "search_terms": [
-        "Oral care / 구강간호",
-        "기본간호",
-        "기본간호/Oral care",
-        "Oral care",
-        "구강간호",
-        "바세린",
-        "참스틱",
-        "흡인",
-        "Oral",
-        "care",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC006",
-      "category": "투약",
-      "title": "Intramuscular injection / 근육주사",
-      "aliases": [
-        "Intramuscular injection / 근육주사",
-        "IM",
-        "근육주사",
-        "intramuscular injection",
-        "페치딘",
-        "Intramuscular",
-        "injection",
-        "투약",
-        "투약/IM",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "근육주사 시행과 기록.",
-      "indications": [
-        "근육주사 시행과 기록."
-      ],
-      "preparation": [],
-      "steps": [
-        "처방 확인 후 약물 준비",
-        "환자/라벨/등록번호 확인",
-        "주사부위 선정 및 소독",
-        "90도 각도로 삽입",
-        "내관을 2~3mm 당겨 혈액 역류 확인",
-        "혈액 없으면 서서히 주입",
-        "바늘 제거 후 부드럽게 마사지",
-        "부작용 관찰"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "약제명, 용량, 투여경로, 수행결과, 통증점수 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "1회 주사량 5cc 이상인 경우 나누어 주사",
-        "좌골신경 가까이 주사 주의"
-      ],
-      "related": [],
-      "tags": [
-        "투약/IM",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "투약/IM",
-      "search_terms": [
-        "Intramuscular injection / 근육주사",
-        "투약",
-        "투약/IM",
-        "IM",
-        "근육주사",
-        "intramuscular injection",
-        "페치딘",
-        "Intramuscular",
-        "injection",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "BASIC007",
-      "category": "투약",
-      "title": "Insulin injection / 인슐린 주사",
-      "aliases": [
-        "Insulin injection / 인슐린 주사",
-        "인슐린",
-        "Insulin",
-        "휴물린",
-        "BST",
-        "피하주사",
-        "SC",
-        "injection",
-        "주사",
-        "투약",
-        "투약/Insulin",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "인슐린 주사와 혈당기록.",
-      "indications": [
-        "인슐린 주사와 혈당기록."
-      ],
-      "preparation": [],
-      "steps": [
-        "인슐린 유효기간 확인",
-        "개봉 후 28일 확인",
-        "펜을 양 손바닥 사이에서 10회 굴림",
-        "위아래로 10회 부드럽게 흔들어 혼합",
-        "고무마개 소독",
-        "주사바늘 장착",
-        "처방 용량 설정 후 주사",
-        "주사 후 바늘 제거"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "주사시간, 약명, 주사방법, 혈당기록, 주사 위치 rotation, 수행결과"
-      ],
-      "io": [],
-      "warnings": [
-        "저혈당 증상 발생 시 즉시 보고/처치"
-      ],
-      "related": [],
-      "tags": [
-        "투약/Insulin",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "투약/Insulin",
-      "search_terms": [
-        "Insulin injection / 인슐린 주사",
-        "투약",
-        "투약/Insulin",
-        "인슐린",
-        "Insulin",
-        "휴물린",
-        "BST",
-        "피하주사",
-        "SC",
-        "injection",
-        "주사",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
       "id": "CRRT001",
       "category": "CRRT / 신장",
       "title": "CRRT Return / Kit change 상세",
@@ -5207,593 +4387,6 @@
         "v8_final_reviewed",
         "LUCAS 동영상",
         "루카스 사용법 동영상"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "NEURO001",
-      "category": "신경계",
-      "title": "Brain patient care / 신경외과 환자",
-      "aliases": [
-        "Brain patient care / 신경외과 환자",
-        "Brain",
-        "NS",
-        "GCS",
-        "LOC",
-        "Motor",
-        "BP target",
-        "IICP",
-        "patient",
-        "care",
-        "신경외과",
-        "환자",
-        "신경계",
-        "신경계/Brain",
-        "v8_final_reviewed"
-      ],
-      "urgency": "urgent",
-      "summary": "신경외과 환자의 의식수준과 BP target 확인.",
-      "indications": [
-        "신경외과 환자의 의식수준과 BP target 확인."
-      ],
-      "preparation": [],
-      "steps": [
-        "GCS 및 LOC 사정",
-        "15점 Alert, 13~14점 Drowsy, 8~12점 Stupor, 4~7점 Semi-coma, 3점 이하 Coma로 판단",
-        "BP target은 지시처방 확인",
-        "혈압상승은 재출혈 또는 뇌압상승 가능성 고려"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "GCS, LOC, Motor, BP, neuro change 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "NS 환자 혈압상승은 재출혈/IICP 징후 가능"
-      ],
-      "related": [],
-      "tags": [
-        "신경계/Brain",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "신경계/Brain",
-      "search_terms": [
-        "Brain patient care / 신경외과 환자",
-        "신경계",
-        "신경계/Brain",
-        "Brain",
-        "NS",
-        "GCS",
-        "LOC",
-        "Motor",
-        "BP target",
-        "IICP",
-        "patient",
-        "care",
-        "신경외과",
-        "환자",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "PROC001",
-      "category": "검사 / 검체",
-      "title": "TFCA care / 뇌혈관조영술 전후 간호",
-      "aliases": [
-        "TFCA care / 뇌혈관조영술 전후 간호",
-        "TFCA",
-        "TRCA",
-        "뇌혈관조영술",
-        "angio",
-        "sand bag",
-        "ABR",
-        "care",
-        "전후",
-        "간호",
-        "검사",
-        "검체",
-        "검사/TFCA",
-        "v8_final_reviewed"
-      ],
-      "urgency": "urgent",
-      "summary": "TFCA 검사 전 준비와 검사 후 site/V/S/ABR 확인.",
-      "indications": [
-        "TFCA 검사 전 준비와 검사 후 site/V/S/ABR 확인."
-      ],
-      "preparation": [
-        "동의서",
-        "Both inguinal shaving",
-        "Dorsalis pedis artery 확인",
-        "N/S 1L 18G Lt arm",
-        "모래주머니",
-        "검사 전 체크리스트"
-      ],
-      "steps": [
-        "동의서 확인",
-        "Dorsalis pedis artery 확인",
-        "Lt arm 18G IV 확보",
-        "검사 전 V/S 확인",
-        "Post V/S check",
-        "시술부위 oozing/bleeding/hematoma 확인",
-        "6~8hr ABR 및 sand bag 적용",
-        "6시간 후 복압 test로 site oozing 확인"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "시술부위 다리 구부리지 않도록 교육",
-        "출혈 시 즉시 알리도록 설명"
-      ],
-      "related": [],
-      "tags": [
-        "검사/TFCA",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "검사/TFCA",
-      "search_terms": [
-        "TFCA care / 뇌혈관조영술 전후 간호",
-        "검사 / 검체",
-        "검사/TFCA",
-        "TFCA",
-        "TRCA",
-        "뇌혈관조영술",
-        "angio",
-        "sand bag",
-        "ABR",
-        "care",
-        "전후",
-        "간호",
-        "검사",
-        "검체",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "LINE001",
-      "category": "Line / Drain / Dressing",
-      "title": "Chemoport needle insertion/removal",
-      "aliases": [
-        "Chemoport needle insertion/removal",
-        "Chemoport",
-        "케모포트",
-        "port needle",
-        "heparin",
-        "regurge",
-        "needle",
-        "insertion",
-        "removal",
-        "Line",
-        "Drain",
-        "Dressing",
-        "Line/Chemoport",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "Chemoport needle 삽입과 제거.",
-      "indications": [
-        "Chemoport needle 삽입과 제거."
-      ],
-      "preparation": [
-        "Dressing set",
-        "소독제",
-        "멸균 glove",
-        "10cc syringe",
-        "N/S 20cc",
-        "Port needle",
-        "Op site",
-        "1:100 heparin"
-      ],
-      "steps": [
-        "Needle에 N/S priming",
-        "Insertion site 소독",
-        "Portal septum 고정",
-        "Needle을 직각 삽입",
-        "Regurge로 blood return 확인",
-        "수액 연결 확인",
-        "제거 시 1:100 heparin 5~8ml 주입"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "제거 시 air embolism 주의"
-      ],
-      "related": [],
-      "tags": [
-        "Line/Chemoport",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "Line/Chemoport",
-      "search_terms": [
-        "Chemoport needle insertion/removal",
-        "Line / Drain / Dressing",
-        "Line/Chemoport",
-        "Chemoport",
-        "케모포트",
-        "port needle",
-        "heparin",
-        "regurge",
-        "needle",
-        "insertion",
-        "removal",
-        "Line",
-        "Drain",
-        "Dressing",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "SKIN001",
-      "category": "상처",
-      "title": "Pressure injury care / 욕창간호",
-      "aliases": [
-        "Pressure injury care / 욕창간호",
-        "욕창",
-        "Pressure injury",
-        "sore",
-        "DTI",
-        "체위변경",
-        "Braden",
-        "Pressure",
-        "injury",
-        "care",
-        "욕창간호",
-        "상처",
-        "상처/욕창",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "욕창 예방과 단계별 관리.",
-      "indications": [
-        "욕창 예방과 단계별 관리."
-      ],
-      "preparation": [],
-      "steps": [
-        "욕창 위험요인 확인",
-        "호발 부위 확인: 천골, 미골, 발꿈치, 팔꿈치, 대전자 등",
-        "2시간마다 체위변경",
-        "침대 머리는 가능하면 30도 이하",
-        "실금/실변 관리",
-        "건조 피부 보습제 사용",
-        "압력 재분산 보조기 사용"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "욕창 단계, 부위, 크기/양상, 체위변경, 예방/관리활동 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "욕창 부위 마사지 금지",
-        "발적 부위 압박 지속 금지"
-      ],
-      "related": [],
-      "tags": [
-        "상처/욕창",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "상처/욕창",
-      "search_terms": [
-        "Pressure injury care / 욕창간호",
-        "상처",
-        "상처/욕창",
-        "욕창",
-        "Pressure injury",
-        "sore",
-        "DTI",
-        "체위변경",
-        "Braden",
-        "Pressure",
-        "injury",
-        "care",
-        "욕창간호",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "OP001",
-      "category": "수술 / 시술",
-      "title": "Pre-op care / 수술 전 간호",
-      "aliases": [
-        "Pre-op care / 수술 전 간호",
-        "Pre-op",
-        "수술 전",
-        "수술전간호",
-        "체크리스트",
-        "동의서",
-        "표식확인",
-        "care",
-        "수술",
-        "간호",
-        "시술",
-        "수술간호/Pre-op",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "수술 전 검사, 동의서, IV, 체크리스트 확인.",
-      "indications": [
-        "수술 전 검사, 동의서, IV, 체크리스트 확인."
-      ],
-      "preparation": [
-        "수술동의서",
-        "수술표식/표식지",
-        "PCA 동의서",
-        "수술 전 체크리스트",
-        "항생제",
-        "보조기",
-        "18G IV"
-      ],
-      "steps": [
-        "수술 lab, Chest PA, EKG 확인",
-        "항생제 반응검사 확인",
-        "금식/정체도뇨관 필요성 설명 및 시행",
-        "18G IV 확보",
-        "부착물 제거",
-        "수술 전 V/S 확인",
-        "수술 전 처치 체크리스트 입력·출력",
-        "항생제와 서류를 파일에 끼워 수술실로 보냄"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "동의서, 표식, 체크리스트 누락 주의"
-      ],
-      "related": [],
-      "tags": [
-        "수술간호/Pre-op",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "수술간호/Pre-op",
-      "search_terms": [
-        "Pre-op care / 수술 전 간호",
-        "수술 / 시술",
-        "수술간호/Pre-op",
-        "Pre-op",
-        "수술 전",
-        "수술전간호",
-        "체크리스트",
-        "동의서",
-        "표식확인",
-        "care",
-        "수술",
-        "간호",
-        "시술",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "OP002",
-      "category": "수술 / 시술",
-      "title": "Post-op NS Spine / 척추수술 후 간호",
-      "aliases": [
-        "Post-op NS Spine / 척추수술 후 간호",
-        "Post-op",
-        "NS spine",
-        "PLIF",
-        "DLIF",
-        "ACDF",
-        "Fusion",
-        "JP",
-        "Hemovac",
-        "NS",
-        "Spine",
-        "척추수술",
-        "간호",
-        "수술",
-        "시술",
-        "수술간호/Post-op NS Spine",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "NS spine 수술 후 OP day~POD별 기본 확인.",
-      "indications": [
-        "NS spine 수술 후 OP day~POD별 기본 확인."
-      ],
-      "preparation": [
-        "EKG monitoring",
-        "DVT pump",
-        "항혈전스타킹",
-        "JP/Hemovac 확인",
-        "수술 후 처방 확인"
-      ],
-      "steps": [
-        "OP day/POD별 fluid/injection/PO 처방 확인",
-        "Post CBC 및 POD lab 확인",
-        "POD#1 Chest PA 등 방사선 처방 확인",
-        "JP/Hemovac 양상 및 압력 확인",
-        "DVT 예방 처치 확인",
-        "Cervical anterior OP는 호흡곤란/답답함/허스키한 목소리 확인"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "Anterior cervical OP는 혈종/부종으로 인한 호흡장애 관찰"
-      ],
-      "related": [
-        "Post-op OS / 정형외과 수술 후 간호"
-      ],
-      "tags": [
-        "수술간호/Post-op NS Spine",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "수술간호/Post-op NS Spine",
-      "search_terms": [
-        "Post-op NS Spine / 척추수술 후 간호",
-        "수술 / 시술",
-        "수술간호/Post-op NS Spine",
-        "Post-op",
-        "NS spine",
-        "PLIF",
-        "DLIF",
-        "ACDF",
-        "Fusion",
-        "JP",
-        "Hemovac",
-        "NS",
-        "Spine",
-        "척추수술",
-        "간호",
-        "수술",
-        "시술",
-        "v8_final_reviewed"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "OP003",
-      "category": "수술 / 시술",
-      "title": "Post-op OS / 정형외과 수술 후 간호",
-      "aliases": [
-        "Post-op OS / 정형외과 수술 후 간호",
-        "OS post-op",
-        "TKRA",
-        "THRA",
-        "TSRA",
-        "TARA",
-        "Bipolar",
-        "Hemovac",
-        "Post-op",
-        "OS",
-        "정형외과",
-        "수술",
-        "간호",
-        "시술",
-        "수술간호/Post-op OS",
-        "v8_final_reviewed"
-      ],
-      "urgency": "routine",
-      "summary": "OS 수술 후 항응고, drain, lab/radiology 확인.",
-      "indications": [
-        "OS 수술 후 항응고, drain, lab/radiology 확인."
-      ],
-      "preparation": [],
-      "steps": [
-        "OP day/POD별 fluid, injection, PO 처방 확인",
-        "수술별 X-ray 확인",
-        "POD lab 확인",
-        "Hemovac pressure/natural/clamping 기준 확인",
-        "TKRA는 POD#2 CPM start, POD#7 도수치료 확인"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "항응고제 기준은 처방 확인",
-        "Drain 제거/압력 기준은 주치의 지시 우선"
-      ],
-      "related": [
-        "Post-op NS Spine / 척추수술 후 간호"
-      ],
-      "tags": [
-        "수술간호/Post-op OS",
-        "v8_final_reviewed"
-      ],
-      "review": {
-        "status": "final_reviewed",
-        "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
-      },
-      "source_refs": [
-        "신규(경력직) OJT 집중치료실"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "수술간호/Post-op OS",
-      "search_terms": [
-        "Post-op OS / 정형외과 수술 후 간호",
-        "수술 / 시술",
-        "수술간호/Post-op OS",
-        "OS post-op",
-        "TKRA",
-        "THRA",
-        "TSRA",
-        "TARA",
-        "Bipolar",
-        "Hemovac",
-        "Post-op",
-        "OS",
-        "정형외과",
-        "수술",
-        "간호",
-        "시술",
-        "v8_final_reviewed"
       ],
       "standard_sections_ready": true
     },
@@ -8639,84 +7232,6 @@
         "채취",
         "검사",
         "검체",
-        "v10_master_30_categories"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "DRUG023",
-      "category": "약물 / 수액 / 마약",
-      "title": "주요 약물 약속처방 Mix 확인 원칙",
-      "aliases": [
-        "주요 약물 약속처방 Mix 확인 원칙",
-        "continuous infusion",
-        "약속처방",
-        "mix",
-        "희석",
-        "infusion",
-        "syringe pump",
-        "주요",
-        "약물",
-        "확인",
-        "원칙",
-        "수액",
-        "마약",
-        "약물/Mix/Continuous infusion",
-        "v10_master_30_categories"
-      ],
-      "urgency": "urgent",
-      "summary": "Continuous infusion 약물 mix 확인 공통 원칙.",
-      "indications": [
-        "Continuous infusion 약물 mix 확인 공통 원칙."
-      ],
-      "preparation": [],
-      "steps": [
-        "약물명, 총량, 희석액, 최종용량, 농도, 속도를 확인한다.",
-        "처방과 병동 약속처방 mix법이 일치하는지 확인한다.",
-        "고위험 약물은 가능하면 2인 확인한다.",
-        "Pump setting 후 line 연결, start 여부, 잔량을 확인한다.",
-        "용량 변경 시 변경 시간과 반응을 기록한다."
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "정확한 mix 용량은 병원 약속처방과 최신 지침을 우선합니다."
-      ],
-      "related": [],
-      "tags": [
-        "약물/Mix/Continuous infusion",
-        "v10_master_30_categories"
-      ],
-      "review": {
-        "status": "v10_user_requested_master_category",
-        "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
-      },
-      "source_refs": [
-        "사용자 제시 30개 카테고리"
-      ],
-      "tables": [],
-      "images": [],
-      "original_category": "약물/Mix/Continuous infusion",
-      "search_terms": [
-        "주요 약물 약속처방 Mix 확인 원칙",
-        "약물 / 수액 / 마약",
-        "약물/Mix/Continuous infusion",
-        "continuous infusion",
-        "약속처방",
-        "mix",
-        "희석",
-        "infusion",
-        "syringe pump",
-        "주요",
-        "약물",
-        "확인",
-        "원칙",
-        "수액",
-        "마약",
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true
@@ -18377,2452 +16892,6 @@
       "standard_sections_ready": true
     },
     {
-      "id": "UPD43_NS",
-      "category": "수술 / 시술",
-      "title": "NS 수술명 약어 정리",
-      "aliases": [
-        "NS 수술명 약어 정리",
-        "NS",
-        "수술명",
-        "약어",
-        "정리",
-        "신경외과",
-        "PEID",
-        "PELD",
-        "ALIF",
-        "PLIF",
-        "ACDF",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "urgency": "routine",
-      "summary": "◈ NS 수술명 ◈",
-      "indications": [
-        "◈ NS 수술명 ◈"
-      ],
-      "preparation": [],
-      "steps": [
-        "◈ NS 수술명 ◈",
-        "PEID (Percutaneous interlaminar disectomy) : 경피적 내시경하 추궁간판 제거술",
-        "PELD (Percutaneous lumbar disectomy) : 경피적 내시경하 추간판 제거술",
-        "MD(Microdisectomy): 추간판 제거술",
-        "MF(Medial Fenestration): 내측부 신경관 감압술",
-        "LF(Lateral foraminotomy): 외측부 신경관 감압술",
-        "ALIF(Anterior lumbar interbody fusion): 전방경유 요추 추체간 융합술",
-        "PLIF(Posterior lateral fusion): 후방경유 요추 추체간 융합술",
-        "TLIF(Transverse lumbar interbody fusion): 횡단 요추 추체간 융합술",
-        "PLF(Posterior lateral fusion): 후-외측 융합술",
-        "PPF(Percutaneous posterior Fixation) : 경피적 후방 고정술",
-        "ACDF(Anterior cervical disectomy fusion): 전방경유 경추 추간판 제거술 및 융합술",
-        "TDR(Total disc replacement): 전 인공 디스크 치환술",
-        "PVA(Percutaneous vertebral augmentation): 경피적 척추체 강화술",
-        "PVP(Percutaneous vertebral plasty): 경피적 척추체 성형술",
-        "Kyphoplasty : 풍선을 이용한 척추체 성형술",
-        "Foraminotomy : 추간공 절개술",
-        "Laminectomy : 척추후궁 절제술",
-        "Laminoplasty : 척추후궁 성형술",
-        "Corpectomy : 척추체 치환술",
-        "NPT(Neuroplasty) =PEN (Percutaneous neuroplasty) :신경성형술",
-        "B-PEN(Balloning percutaneous neuroplasty) :풍선을 이용한 경피적 신경성형술",
-        "Neucleoplasty : 수핵성형술",
-        "Annulonerucleoplasty : 고중파 수핵성형술",
-        "TELA (Trans-Foraminal Epiduroscopic Laser Annuloplasty) :추간공내시경레이저시술"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 약어"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS 수술명 약어 정리",
-        "수술 / 시술",
-        "NS",
-        "수술명",
-        "약어",
-        "정리",
-        "신경외과",
-        "PEID",
-        "PELD",
-        "ALIF",
-        "PLIF",
-        "ACDF",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_2",
-      "category": "신경계",
-      "title": "NS 진단/질환 약어 정리",
-      "aliases": [
-        "NS 진단/질환 약어 정리",
-        "NS",
-        "진단",
-        "질환",
-        "약어",
-        "정리",
-        "NS 약어",
-        "HNP",
-        "ICH",
-        "IVH",
-        "CVA",
-        "EDH",
-        "SDH",
-        "SAH",
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "urgency": "routine",
-      "summary": "◈ NS 약어 ◈",
-      "indications": [
-        "◈ NS 약어 ◈"
-      ],
-      "preparation": [],
-      "steps": [
-        "◈ NS 약어 ◈",
-        "• HNP(Herniated nucleus pulposus): 수핵 탈출증",
-        "• HIVD(Herniated intervertebral disc): 추간판 탈출증",
-        "• HLD(Herniated lumbar disc): 요추간판 탈출증",
-        "• ICH(Intracranial hemorrhage): 두 개내 출혈",
-        "• IVH(Intraventricular hemorrhage): 뇌실내 출혈",
-        "• CVA(Cerebrovascular accident): 뇌졸중",
-        "• EDH(Epidural hemorrhage): 경막외 출혈",
-        "• FBSS(Failed back surgery syndrome) 척추 수술실패 증후군",
-        "• LDK(Lumbar degeneration kyphosis) 요추퇴행성 척추 후만증",
-        "• OPPL(Ossification of posterior longitudinal ligament) 후종인대골화증",
-        "• SDH(Subdural hematoma): 경막하 혈종",
-        "• SAH(Subarachnoid hemorrhage): 지주막하 출혈"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 약어"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS 진단/질환 약어 정리",
-        "신경계",
-        "NS",
-        "진단",
-        "질환",
-        "약어",
-        "정리",
-        "NS 약어",
-        "HNP",
-        "ICH",
-        "IVH",
-        "CVA",
-        "EDH",
-        "SDH",
-        "SAH",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_OS",
-      "category": "수술 / 시술",
-      "title": "OS 수술명 약어 정리",
-      "aliases": [
-        "OS 수술명 약어 정리",
-        "OS",
-        "수술명",
-        "약어",
-        "정리",
-        "정형외과",
-        "TKRA",
-        "THRA",
-        "ORIF",
-        "CRIF",
-        "ACL",
-        "PCL",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "urgency": "routine",
-      "summary": "◈ OS 수술명 ◈",
-      "indications": [
-        "◈ OS 수술명 ◈"
-      ],
-      "preparation": [],
-      "steps": [
-        "◈ OS 수술명 ◈",
-        "A/S(Arthroscopy): 관절경",
-        "A/S Knee(Arthroscopy knee): 무릎 관절경",
-        "A/S Shoulder(Arthroscopy shoulder): 어깨 관절경",
-        "Acrominoplasty : 견봉 성형술",
-        "AMD(Arthroscopic microdisectomy): 관절경을 이용한 수핵제거술",
-        "ACL(Anterior cruciate ligament) recon / repair: 전방십자인대 재건술 / 복원술",
-        "LCL(Lateral collateral ligament) recon / repair: 측부외측십자인대 재건술 / 복원술",
-        "MCL(Medial collateral ligament) recon / repair: 내측측부인대 재건술 / 복원술",
-        "PCL(Posterior cruciate ligament) recon / repair: 후방십자인대 재건술 / 복원술",
-        "CTR(Carpal tunnel release): 수근관 감압술",
-        "CR IF(Closed reduction Internal fixation): 폐쇄정복 & 내부고정",
-        "OR IF(Open reduction Internal fixation): 개방정복 & 내부고정",
-        "Debridement: 변연절제술, 괴사조직 제거술",
-        "E & B(Excision and Biopsy): 절개와 생검",
-        "I & D(Incision and Drainage): 절개와 배액",
-        "Synovectomy: 활액막 절제술",
-        "Bursectomy: 활액낭 절제술",
-        "Condroplasty: 연골 성형술",
-        "Menisectomy: 반월상 연골 절제술",
-        "TKRA(Total knee replacement arthroplasty): 전슬관절 대치술",
-        "THRA(Total hip replacement arthroplasty): 전고관절 대치술",
-        "TARA(Total ankle replacement arthroplasty): 발목관절 전치환술",
-        "TSRA(Total shoulder replacement arthroplasty): 어깨관절 전치환술",
-        "Bipolar: 고관절 반 인공관절 치환술",
-        "AIBG(Autogenous iliac bone graft): 자가장골이식",
-        "HTO(High tibial osteotomy ) :경골근위부절골술",
-        "Bankart repair : 관절와순파열 복원술 (어깨)",
-        "SLAP(Superior labrum from anterior to posteior)repair :상부관절와순파열 복원술(어깨)"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 약어"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "OS 수술명 약어 정리",
-        "수술 / 시술",
-        "OS",
-        "수술명",
-        "약어",
-        "정리",
-        "정형외과",
-        "TKRA",
-        "THRA",
-        "ORIF",
-        "CRIF",
-        "ACL",
-        "PCL",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_OS_2",
-      "category": "수술 / 시술",
-      "title": "OS 진단/질환 약어 정리",
-      "aliases": [
-        "OS 진단/질환 약어 정리",
-        "OS",
-        "진단",
-        "질환",
-        "약어",
-        "정리",
-        "OS 약어",
-        "Fx",
-        "OA",
-        "RA",
-        "ROM",
-        "CPM",
-        "AVN",
-        "CTS",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "urgency": "routine",
-      "summary": "◈ OS 약어 ◈",
-      "indications": [
-        "◈ OS 약어 ◈"
-      ],
-      "preparation": [],
-      "steps": [
-        "◈ OS 약어 ◈",
-        "• A.C(Acromion Claviclar): 견봉쇄골",
-        "• AFO(Ankle foot orthosis): 발목 고정술",
-        "• AVN(Avascular necrosis): 무혈성 괴사증",
-        "• CHD(Congenital hip dislocation): 선천성 고관절 탈구",
-        "• CHS(Compression hip screw): 압박고 나사",
-        "• CPM(Continuous passive movement): 지속적 수동운동",
-        "• CTS(Carpal tunnel syndrome): 수근관 증후군",
-        "• DJD(degenerative joint disease 퇴행성 관절질환",
-        "• DDH(Development dislocation of hip): 발달성 고관절 탈구",
-        "• DRX 견인치료",
-        "• E/F(External fixation): 외부 고정장치",
-        "• ECRB(extension carpi radialis brevis) 단요수근 신전",
-        "• ESWT(Extracorporeal shock wave therapy) 체외충격파 치료",
-        "• Fx.(Fracture): 골절",
-        "• hemarthritis 다발성 관절염",
-        "• LCPD(Leg calve perthes's disease): 대퇴골두 허혈성 괴사증",
-        "• LM(Lateral meniscus) 측부 반월상 연골",
-        "• MM(Medial meniscus) 내측 반월상 연골",
-        "• MDS(Myelo dysplastic syndrome): 골수 이형성 증후군",
-        "• OA(Osteoarthritis): 골관절염",
-        "• OM(Osteomylitis): 골수염",
-        "• QSE(Quadriceps setting muscle exercise): 대퇴사두근 연습",
-        "• ROM(Range of motion): 운동범위",
-        "• RA(Rheumatoid arthritis): 류마티스 관절염",
-        "• RC(Rotator cuff): 회전근개",
-        "• SBC(Simple bone cyst): 단순 골낭종",
-        "• SLAP(superior labrum anterior posterior lesion) 상순 전후 병변",
-        "• SLRT(Straight leg raising test): 하지거상검사",
-        "• spondylolisthesis 척추 전방 전위증",
-        "• Spondylosis deformans 변형성 척추증",
-        "• spondylarthritis 척추 관절염",
-        "• spondylolysis 척추 분리증",
-        "• TFCC(triangular fibroric cartilagenous complex) 삼각 섬유연골 복합체",
-        "• TPI(Tender Point Inject) 근막 동통 유발적 주사"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 약어"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "OS 진단/질환 약어 정리",
-        "수술 / 시술",
-        "OS",
-        "진단",
-        "질환",
-        "약어",
-        "정리",
-        "OS 약어",
-        "Fx",
-        "OA",
-        "RA",
-        "ROM",
-        "CPM",
-        "AVN",
-        "CTS",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_BLOCK",
-      "category": "수술 / 시술",
-      "title": "Block 종류 약어 정리",
-      "aliases": [
-        "Block 종류 약어 정리",
-        "Block",
-        "종류",
-        "약어",
-        "정리",
-        "신경차단술",
-        "CSEB",
-        "MBB",
-        "LSEB",
-        "STEB",
-        "Root block",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "urgency": "routine",
-      "summary": "◈ Blcok 종류 ◈",
-      "indications": [
-        "◈ Blcok 종류 ◈"
-      ],
-      "preparation": [],
-      "steps": [
-        "◈ Blcok 종류 ◈",
-        "CSEB(cervical spine epidural block) 경추경막 외강 신경차단술",
-        "MBB(medial branch block): 내측 신경 가지 차단술",
-        "LSEB(Lumbar spine epidural block) 요추경막 외강 신경차단술",
-        "STEB(selective transforaminal epidural block) 선택적 경추간 공경막외 신경차단술",
-        "Root block: 신경근 차단술",
-        "Trigeminal nerve block: 삼차신경 차단술",
-        "Peripheral nerve block: 말초신경 차단술",
-        "caudal block: 미추 신경공 차단술",
-        "LFNB(Lateral femoral cutaneous nerve block)",
-        "SGB(Sympathetic ganglion block)",
-        "ATNB(Auricular temporal nerve block)",
-        "SONB(Superior orbital nerve block)",
-        "IONB(Inferior orbital nerve block)",
-        "STNB(Superior trochlear nerve block)",
-        "SSNB(Supra scarpular nerve block)",
-        "PTNB(Posterior tibial nerve block)",
-        "KIB(Knee injection block)",
-        "SIB(Shoulder injection block)",
-        "Piriformis block 이상근 부위 신경차단술",
-        "Prolotherapy 증식요법"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 약어"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "Block 종류 약어 정리",
-        "수술 / 시술",
-        "Block",
-        "종류",
-        "약어",
-        "정리",
-        "신경차단술",
-        "CSEB",
-        "MBB",
-        "LSEB",
-        "STEB",
-        "Root block",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 약어"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_OS",
-      "category": "수술 / 시술",
-      "title": "NS / OS 공통 꼭 알아야 할 사항",
-      "aliases": [
-        "NS / OS 공통 꼭 알아야 할 사항",
-        "NS",
-        "OS",
-        "공통",
-        "알아야",
-        "사항",
-        "NS OS",
-        "공통사항",
-        "수술전 처치표",
-        "OR",
-        "anti",
-        "injection 시간",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "urgency": "routine",
-      "summary": "< NS / OS 꼭 알아야 할 사항 >",
-      "indications": [
-        "< NS / OS 꼭 알아야 할 사항 >"
-      ],
-      "preparation": [],
-      "steps": [
-        "< NS / OS 꼭 알아야 할 사항 >",
-        "NS 환자 주말 처방은 카톡에 주말 오더방(당직과장)에서 받으면 되고, OS는 전담(pop up에 뜨는)한테 받으면 됨",
-        "외래 base 시술환자는 픽업 안받습니다. 시술전 처치표 필요 / 외래 간호기록지 차팅 / 내리기전 anti 주고 내리기",
-        "NPT / PEN : ABR 2시간 NPO 4시간/ TBA : ABR 30분 NPO 4시간",
-        "수술 가는 환자 꼭 바지 입혀보내기(ex 터진바지), 수술 갔다와서도 위아래 환자복 제대로 입히기",
-        "수술전 처치표 작성시 완료 안된부분 형광펜으로 표시 후 완료 확인되면 수술방 내려주세요",
-        "injection 시간 9am/3pm/9pm, anti는 6am/2pm,10pm",
-        "포스테오, 인슐린 사용 시 하루 최대 WSCA 피하주사 fee 2개까지 가능",
-        "RUEB402ICU - 단순초음파2 ICU 처방 fee",
-        "(portable doppler, portable echo- 검사결과는 재진기록지로만 볼수있음. portable이라 검사결과에 안뜸)",
-        "OR방 갈 때 dorsi set로 fluid 달고 가기 / 기저귀, 속옷, 네일, 보청기, 틀니 확인",
-        "motor check 시 motor 0이라고 안함. foot drop으로 기록남기기",
-        "op환자 BT 37.5 2일 이상 지속 시 RAT, PCR 나가기/ 38.0 이상 시 fever study 나가기",
-        "post op v/s 1시간 뒤, 2시간 뒤. 6시간 뒤",
-        "진료기록사본신청에서 진료확인서 = 수술기록지입니다."
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 알아야할 사항들"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS / OS 공통 꼭 알아야 할 사항",
-        "수술 / 시술",
-        "NS",
-        "OS",
-        "공통",
-        "알아야",
-        "사항",
-        "NS OS",
-        "공통사항",
-        "수술전 처치표",
-        "OR",
-        "anti",
-        "injection 시간",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_H_VAC_JP_DRAIN",
-      "category": "Line / Drain / Dressing",
-      "title": "H-vac / JP drain 관리 기준",
-      "aliases": [
-        "H-vac / JP drain 관리 기준",
-        "H-vac",
-        "JP",
-        "drain",
-        "관리",
-        "기준",
-        "배액관",
-        "tip culture",
-        "MRI",
-        "Line",
-        "Dressing",
-        "Line / Drain / Dressing",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "urgency": "routine",
-      "summary": "< H-vac, JP >",
-      "indications": [
-        "< H-vac, JP >"
-      ],
-      "preparation": [],
-      "steps": [
-        "< H-vac, JP >",
-        "OS1 -> H-vac(natural), JP(full)",
-        "OS2 -> H-vac(full)",
-        "OS3 -> H-vac(수술 당일 natural) POD#1 오전 회진 후 full",
-        "OS7 -> H-vac(full)",
-        "OS8 -> 퇴실 기준으로 1시간 H-vac clamping 이후 1/3 유지",
-        "OS9 -> H-vac(full)",
-        "OS Drain 양 많아도 보고 X / OS3 H-vac 500cc 이상 시 주치의 보고",
-        "NS는 H/V full negative,",
-        "NS jp Drain 50cc 이상시 주치의 보고, output 100cc 이상 시 CSF mix되는 지 확인",
-        "(사진, headache, dizziness, fever, BP 확인하고 기록넣기)",
-        "NS2 JP 빼고 MRI",
-        "NS3 MRI 찍고 JP remove",
-        "MRI H-vac 있으면 불가능",
-        "H/V, JP remove 시 tip cx 처방 코드 : LZB4134 ordinary culture,",
-        "Antibiotic sensitivity(Cath Tip)",
-        "Gram stain(방법-tip 으로 변경) -->간호처방으로 가능, set처방 추가"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "Line / Drain / Dressing",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 알아야할 사항들"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "H-vac / JP drain 관리 기준",
-        "Line / Drain / Dressing",
-        "H-vac",
-        "JP",
-        "drain",
-        "관리",
-        "기준",
-        "배액관",
-        "tip culture",
-        "MRI",
-        "Line",
-        "Dressing",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_OS_____DRESSING_DVT",
-      "category": "수술 / 시술",
-      "title": "OS 과별 특이사항 / Dressing / DVT / 보조기",
-      "aliases": [
-        "OS 과별 특이사항 / Dressing / DVT / 보조기",
-        "OS",
-        "과별",
-        "특이사항",
-        "Dressing",
-        "DVT",
-        "보조기",
-        "정형외과",
-        "H-vac",
-        "DVT pump",
-        "stocking",
-        "hip brace",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들",
-        "NS 보조기",
-        "OS 보조기",
-        "brace",
-        "보조기업체",
-        "보조기 업체",
-        "TLSO",
-        "LSO",
-        "보조기 이미지",
-        "보조기 그림",
-        "추가 업무 매뉴얼 전체 추출 이미지"
-      ],
-      "urgency": "routine",
-      "summary": "< OS >",
-      "indications": [
-        "< OS >"
-      ],
-      "preparation": [],
-      "steps": [
-        "< OS >",
-        "OS 8과는 전화로, OS1과는 톡으로 주말 아침 noty할거 있을 때.",
-        "OS 1,8,9 POD#2일째 첫 Dx,H-vac 제거시까지 Dx 안함.H-vac 제거한날 Dx,EOD Dx",
-        "OS 2,3,7 POD#2일째 첫 Dx후 EOD 시행",
-        "OS 8) 에어매트리스 깔지말라해도 NS all 에어매트리스 깔기로!! 상관없음",
-        "OS 전담이 동의서+ 그 외 카톡 퍼미션방",
-        "OS 1과 OP day부터 크렉산 사용",
-        "OS 1과 stocking 안함. DVT pump만 적용",
-        "OS 1과 total hip, bipolar op환자 워커 + 모래주머니 수술계획표에 써놓기(보조기회사에 환자 직접 수납)",
-        "OS spinal 마취 8시간 head down",
-        "OS 7과는 splint가져오면 stocking X, DVT pump X"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 알아야할 사항들"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "OS 과별 특이사항 / Dressing / DVT / 보조기",
-        "수술 / 시술",
-        "OS",
-        "과별",
-        "특이사항",
-        "Dressing",
-        "DVT",
-        "보조기",
-        "정형외과",
-        "H-vac",
-        "DVT pump",
-        "stocking",
-        "hip brace",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들",
-        "NS 보조기",
-        "OS 보조기",
-        "brace",
-        "보조기업체",
-        "보조기 업체",
-        "TLSO",
-        "LSO",
-        "보조기 이미지",
-        "보조기 그림",
-        "추가 업무 매뉴얼 전체 추출 이미지"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_____JP_MRI_DRESSING_I_O",
-      "category": "신경계",
-      "title": "NS 과별 특이사항 / JP / MRI / Dressing / I/O",
-      "aliases": [
-        "NS 과별 특이사항 / JP / MRI / Dressing / I/O",
-        "NS",
-        "과별",
-        "특이사항",
-        "JP",
-        "MRI",
-        "Dressing",
-        "신경외과",
-        "EOD Dx",
-        "PCA",
-        "urine hourly",
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "urgency": "routine",
-      "summary": "< NS >",
-      "indications": [
-        "< NS >"
-      ],
-      "preparation": [],
-      "steps": [
-        "< NS >",
-        "NS19 6pm전에 수술 나오면 담날 아침부터 s.o.w-점심 미음- 저녁 죽/",
-        "6pm이후 나오면 담날 점심부터 s.o.w –저녁 미음 – 담날 아침 죽",
-        "NS37 POD#1 brain ct f/u 6-7am 에 로비층에서 검사",
-        "NS34 chest 8:30에 꼭 찍어주세요(portable) 영상의학과 협조요청(+)",
-        "NS34 진단서 펠로우 과장님이 작성함",
-        "NS는 배액관 지속시든 제거시든 EOD Dx입니다",
-        "NS2 당일 최소 8시간 NPO, 때때로 다를 수 있음.....",
-        "동의서 NS 22,25,26 원장님 직접, 전담 없음(서브만)",
-        "NS2 J-P 제거 시 tip있는 에디슨 포셉 준비하고,s-s 얇은거 준비해야 합니다",
-        "NS2 J-P 제거 후에 MRI 해야하고, 제거한 날에 꼭 f/u해야합니다",
-        "NS2 minor op, 60세이하 환자는 stocking 적용안함",
-        "spinal 마취시에는 욕창 고위험으로 안하고 정상군으로 해주세요",
-        "Duty 별 U/O 250cc 미만일경우 urine houry 하세요",
-        "(EMR 서식지에 hourly check하고 듀티마다 I/O에 total양만 적어주세요)",
-        "op 후 보조기 착용 하는사람 (hip brace는 OS1과만! OS8과는 처방에다 적어놓는다함)",
-        "보조기업체 010-9262-1310 미리 전날 연락해서 전날 보조기 제작 +",
-        "비급여 설명받고 차팅꼭 남겨주세요",
-        "Cervical op는 dvt, 스타킹 X",
-        "OS,NS 7번처방은 OR 처방이므로 픽업x",
-        "NS는 배액관 지속시든 제거시든 EOD Dx입니다",
-        "PCA remove시 v/s 메모칸에 써주면 보기 편할것 같아요. 언제 뺐는지 알수있으니.시간.",
-        "Dressing PA가 할때 nylon 또는 vicryl로 suture했는지,steri-strip 했는지,dressing 제품 뭘로 했는지 등",
-        "기록이랑 카덱스에 남겨주세요. 추후 stitch out(보통 14일) 여부등 확인해야하니까",
-        "입원당시 동의서는 전담쌤이 받고 입원 후는 우리가 동의서 받음.",
-        "(주치의 아이디로 로그인해서 동의서 출력)동의서 주치의 사인으로 되어있어야 합니다",
-        "post icu return 시 보호자분께 문자 보내기",
-        "(윌스기념병원입니다. ㅇㅇㅇ 님 수술이 종료되어 집중치료실로 이동 예정입니다.)",
-        "> 익스플로어 즐겨찾기에 smspia.com 이용하세요)",
-        "general 마취) 베개,head up, leg elevation 가능",
-        "혈액요청서-OP,진단명,수혈경험 여부, 채혈자(이름 일치하게)",
-        "일반병동환자 필터시린지 사용해주세요 bouls 2개까지 급여(ex 덱사,로이솔), IM 사용갯수대로 비급여 필터시린지 처방입력(IM 사용시 비급여 설명 후 필터시린지 사용함 차팅 넣어주세요)-나이트가 개수 일괄입력",
-        "마약) 분홍색 종이에 있던 것 사용했으면 분홍색 종이에 다시 넣은 후 간호라벨에 선 긋고, 이름 적어주세요",
-        "major OP 모니터링 POD#1 아침 회진때까지.''모니터링 이제 안할게요~''하고 끝내기",
-        "burrhole 1주미만은 tip Cx 안함. 1주 이상 유지하다 remove시에는 tip Cx 나갑니다",
-        "증식치료(프롤러(주사제이름), 스크램블러 비급여 설명해야합니다.(비급여 동의서 우리가 받음)",
-        "전신마취 수술하는 남자환자는 수술전에 면도하기 (벤트할때 불편하다함)",
-        "고위험 약물 사용시 낙상 재사정 해야함(불변요인 제외))",
-        "TFCA 남자는 쉐이빙 X, 여자는 쉐이빙 O, left arm 18G, 시술 전 처치 및 간호상태 확인 저장만 하고, 종이 X"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 알아야할 사항들"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS 과별 특이사항 / JP / MRI / Dressing / I/O",
-        "신경계",
-        "NS",
-        "과별",
-        "특이사항",
-        "JP",
-        "MRI",
-        "Dressing",
-        "신경외과",
-        "EOD Dx",
-        "PCA",
-        "urine hourly",
-        "v43_uploaded_manual",
-        "NS OS 알아야할 사항들"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_OS___________LANTUS",
-      "category": "수술 / 시술",
-      "title": "NS/OS 수술 전 검사 기준 / 조영제 / Lantus",
-      "aliases": [
-        "NS/OS 수술 전 검사 기준 / 조영제 / Lantus",
-        "NS",
-        "OS",
-        "수술",
-        "검사",
-        "기준",
-        "조영제",
-        "Lantus",
-        "수술전 검사",
-        "ABGA",
-        "PFT",
-        "BMD",
-        "TCD",
-        "Echo",
-        "MR enhance",
-        "CT enhance",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "PRBC 400(250), 320(200) FFP 400(150) 320(130) PC 400(50) 320(40)",
-      "indications": [
-        "PRBC 400(250), 320(200) FFP 400(150) 320(130) PC 400(50) 320(40)"
-      ],
-      "preparation": [],
-      "steps": [
-        "PRBC 400(250), 320(200) FFP 400(150) 320(130) PC 400(50) 320(40)",
-        "세파제돈 1.0g AST:POSITIVE-->세파졸린 1.0g * 3번 처방",
-        "Bun/ creatinine 높을 때-->세파졸린 2.0g * 2번 처방",
-        "<70세 이상>",
-        "ABGA/PFT/BMD(Fx 환자는 필수)",
-        "<50세 이상>",
-        "Carotid doppler(carotid MRI 로 대체가능), TCD",
-        "<40세 이상>",
-        "TCD(Brain MRI로 대체가능), Echo",
-        "<30세 이상>",
-        "SONO/상,하지 doppler",
-        "<20세 이상>",
-        "심전도/lab/ chest x-ray/CT/PWV/ 동적체(incision 수술은 제외)/DITI/",
-        "통증역치/ sEMG(Fx 환자는 제외)",
-        "근전도-50세 이상 및 spinal stenosis 환자, cervical op 환자",
-        "TFT(필요시)",
-        "갑상선 질환 기왕력 환자가 전신마취로 수술할 경우 반드시 TFT 검사 진행!!!",
-        "75세 이상 인지장애 검사 설명후 신청",
-        "MR(enhance)--> 0.1cc/kg 최대 7.5cc",
-        "CT(enhance)--> 2mg/kg, 100ml(한도내)",
-        "강직성 척추염--> 외주) HLA-B27 유전자 검사 동의서 내려야함",
-        "항CCP항체(IgG)- 정밀면역검사",
-        "<OS8 Foot drop시 살론투여방법>",
-        "살론125,g qid(3일) 살론 6시간 간격으로 주세요",
-        "살론125mg tid(1일)",
-        "살론125mg bid(1일)",
-        "살론 125mg qd(1일)",
-        "<Lantus 조절법 >",
-        "130 이상--> 2u증량",
-        "180 이하--> 4u or 6u증량",
-        "70 이하--> 4u or 6u감량",
-        "BMD 기준: 2 level에서 제일 낮은 수치 or femur에서 neck 수치!",
-        "프롤리아 프리드리시린지 6개월 마다: T score –2.5",
-        "이베니티 1개월마다 총 12회 : T score –2.5,",
-        "65세이상 여성, , 골다공성 골절 2개",
-        "칼슘제재 및 골다공증 약 3~4개월 복용"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS/OS 수술 전 검사 기준 / 조영제 / Lantus",
-        "수술 / 시술",
-        "NS",
-        "OS",
-        "수술",
-        "검사",
-        "기준",
-        "조영제",
-        "Lantus",
-        "수술전 검사",
-        "ABGA",
-        "PFT",
-        "BMD",
-        "TCD",
-        "Echo",
-        "MR enhance",
-        "CT enhance",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_MAJOR_OP_ALIF",
-      "category": "수술 / 시술",
-      "title": "NS Major OP ALIF 정규처방",
-      "aliases": [
-        "NS Major OP ALIF 정규처방",
-        "NS",
-        "Major",
-        "OP",
-        "ALIF",
-        "정규처방",
-        "NS major",
-        "POD",
-        "fusion",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "1. ALIF",
-      "indications": [
-        "1. ALIF"
-      ],
-      "preparation": [],
-      "steps": [
-        "1. ALIF",
-        "OP day",
-        "POD #1~2",
-        "POD #3",
-        "POD#4-6",
-        "수액",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "②멀티플렉스페리주1.1L",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "②멀티플렉스페리주1.1L",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "주사",
-        "세파제돈1.0g BID",
-        "로이솔 1@ BID",
-        "모틴1vial + NS100 BID",
-        "세파제돈1.0g BID",
-        "로이솔 1@ TID",
-        "모틴1vial + NS100 BID",
-        "크렉산40 sc*1(POD#2~)",
-        "세파제돈1.0g BID",
-        "크렉산40 sc*1",
-        "세파제돈1.0g BID",
-        "크렉산40 sc*1",
-        "경구약",
-        "pre) 카발린 75mg",
-        "아데만, 엑소페린, 파모티딘, 라시도필,",
-        "마그밀 1T씩 BID",
-        "POD#7~ T/S/O : 메섹신캅셀500mg 2cap씩 TID",
-        "방사선",
-        "POD#1 Chest PA",
-        "POD#3",
-        "> L-spine MRI",
-        "> L-spine AP/Lat",
-        "> vein doppler f/u",
-        "POD#6",
-        "L-spine AL/Lat",
-        "Dynamic sEMG",
-        "(수술전 진행한 사람에",
-        "한해서)",
-        "LAB",
-        "POST CBC,",
-        "항혈전스타킹",
-        "DVT PUMP, EKG,",
-        "POD#1",
-        "CBC, ESR, CRP",
-        "electrolyte(Na&K&cl)",
-        "UA",
-        "POD#3",
-        "CBC",
-        "E/C",
-        "POD#7",
-        "CBC, E/C,",
-        "electrolyte, LFT5",
-        "(OT/PT Bun/Cr",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "▶ 당뇨환자일 경우 5DS1L,5DW1L 대신 NS 1L,",
-        "멀티플렉스 1.1L + 휴물린알 20단위",
-        "▶ Fever, ESR/CRP 상승, oozing 기타등등 환자 컨디션 따라 3세대 항생제 세프키존으로 변경될 수 있음",
-        "▶ 40세 이상 POD #2~8 까지 크렉산주 40mg S.C 투여 (JP 제거후부터)",
-        "40세 이상 수술전 Vit D 투여함",
-        "▶ 크렉산 종료후 POD#9~15 아스피린 1T QD 7일간",
-        "▶ 통증의 양상에 따라 아이알코돈, 마이폴, 뉴가바캡슐 (100mg/300mg), 트리마셋, 뮤로다제, 알프람,",
-        "등등 변경 및 추가 가능",
-        "▶ 전날 반드시 미음!!! // Gas out후 SOW-미음-죽",
-        "▶ NS3) 2-1 콤비플렉스 페리주 1440 2-2 H/S 1O00",
-        "AAP, 엑소페린, 파모티딘, 라시도필, 마그밀 1T씩 BID",
-        "PCA 소진후 아이알 코돈 0.5->1T QID 추가",
-        "POD#7 H/S/O, POD#8~10 T/S/O",
-        "◈ NS(신경외과) 정규 처방 ◈"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS Major OP ALIF 정규처방",
-        "수술 / 시술",
-        "NS",
-        "Major",
-        "OP",
-        "ALIF",
-        "정규처방",
-        "NS major",
-        "POD",
-        "fusion",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_MAJOR_OP_PLIF_PTLIF_DLIF_PL",
-      "category": "수술 / 시술",
-      "title": "NS Major OP PLIF/PTLIF/DLIF/PLF 정규처방",
-      "aliases": [
-        "NS Major OP PLIF/PTLIF/DLIF/PLF 정규처방",
-        "NS",
-        "Major",
-        "OP",
-        "PLIF",
-        "PTLIF",
-        "DLIF",
-        "PLF",
-        "정규처방",
-        "ITF",
-        "corpectomy",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "2. PLIF,PTLIF,DLIF,PLF,ITF,corpectomy",
-      "indications": [
-        "2. PLIF,PTLIF,DLIF,PLF,ITF,corpectomy"
-      ],
-      "preparation": [],
-      "steps": [
-        "2. PLIF,PTLIF,DLIF,PLF,ITF,corpectomy",
-        "OP day",
-        "POD #1~2",
-        "POD #3",
-        "POD#4-6",
-        "수액",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "②멀티플렉스페리주1.1L",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "②멀티플렉스페리주1.1L",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "주사",
-        "세파제돈1.0g BID",
-        "로이솔 1@ BID",
-        "보트로파제 1@ BID",
-        "모틴1vial + NS100 BID",
-        "세파제돈1.0g BID",
-        "로이솔 1@ BID",
-        "보트로파제 1@ TID",
-        "모틴1vial + NS100 BID",
-        "세파제돈1.0g BID",
-        "크렉산40 sc*1",
-        "(JP 양상 확인후)",
-        "세파제돈1.0g BID",
-        "크렉산40 sc*1",
-        "경구약",
-        "pre) 카발린 75mg",
-        "아데만, 엑소페린, 파모티딘, 메디락에스, 마그밀 1T씩 BID",
-        "POD#7~ T/S/O : 메섹신캅셀500mg 2cap씩 TID",
-        "방사선",
-        "POD#1 Chest PA",
-        "POD#3",
-        "> L-spine MRI",
-        "> L-spine AP/Lat",
-        "POD#6",
-        "L-spine AL/Lat",
-        "Dynamic sEMG",
-        "(수술전 진행한 사람에",
-        "한해서)",
-        "LAB",
-        "POST CBC,",
-        "항혈전스타킹",
-        "DVT PUMP, EKG,",
-        "POD#1",
-        "CBC, ESR,CRP",
-        "electrolyte(Na&K&cl)",
-        "UA",
-        "POD#3",
-        "CBC",
-        "E/C",
-        "POD#7",
-        "CBC, E/C,",
-        "electrolyte, LFT5",
-        "(OT/PT Bun/Cr",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "▶ 당뇨환자일 경우 5DS1L,5DW1L 대신 NS 1L",
-        "멀티플렉스 1.1L + 휴물린알 20단위",
-        "▶ Fever, ESR/CRP 상승, oozing 기타등등 환자 컨디션 따라 3세대 항생제 세프키존으로 변경될 수 있음",
-        "▶ 40세 이상 POD #3~8 까지 크렉산주 40mg S.C 투여 (JP 제거후부터)",
-        "▶ 크렉산 종료후 POD#9~15 아스피린 1T QD 7일간",
-        "▶ 통증의 양상에 따라 아이알코돈, 마이폴, 뉴가바캡슐 (100mg/300mg), 트리마셋, 뮤로다제,",
-        "알프람, 등등 변경 및 추가 가능",
-        "▶ 18시 이전(아침부터) SOW-미음-죽 18시 이후(점심부터) 금식-SOW-미음",
-        "▶ NS3) 트라미펜, 엑소페린, 파모티딘, 라시도필, 마그밀 1T씩 BID",
-        "PCA 소진후 아이알 코돈 0.5->1T QID 추가 IRCD은 POD#7 이후 저니스타1T",
-        "POD#7 H/S/O, POD#8~10 T/S/O",
-        "▶ 60세 이상 허리 FUSION POD#2 V-D",
-        "◈ NS(신경외과) 정규 처방 ◈",
-        "Major OP"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS Major OP PLIF/PTLIF/DLIF/PLF 정규처방",
-        "수술 / 시술",
-        "NS",
-        "Major",
-        "OP",
-        "PLIF",
-        "PTLIF",
-        "DLIF",
-        "PLF",
-        "정규처방",
-        "ITF",
-        "corpectomy",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_CERVICAL",
-      "category": "신경계",
-      "title": "NS Cervical 수술 정규처방 / 관찰 포인트",
-      "aliases": [
-        "NS Cervical 수술 정규처방 / 관찰 포인트",
-        "NS",
-        "Cervical",
-        "수술",
-        "정규처방",
-        "관찰",
-        "포인트",
-        "ACDF",
-        "TDR",
-        "laminoplasty",
-        "foraminotomy",
-        "호흡장애",
-        "carotid MRI",
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "3. Cervical(laminoplasty, corpectomy, ACDF, Foraminotomy, TDR)",
-      "indications": [
-        "3. Cervical(laminoplasty, corpectomy, ACDF, Foraminotomy, TDR)"
-      ],
-      "preparation": [],
-      "steps": [
-        "3. Cervical(laminoplasty, corpectomy, ACDF, Foraminotomy, TDR)",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3-6",
-        "수액",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "주사",
-        "세파제돈1.0g BID",
-        "로이솔 1@ BID",
-        "보트로파제 1@ BID",
-        "모틴1vial + NS100 BID",
-        "세파제돈1.0g BID",
-        "로이솔 1@ BID",
-        "보트로파제 1@ TID",
-        "모틴1vial + NS100 BID",
-        "세파제돈1.0g BID",
-        "보트로파제 1@ TID",
-        "세파제돈1.0g BID",
-        "경구약",
-        "A-K brace",
-        "수술실내리기",
-        "트리돌, 엑소페린, 라니빅에스, 메디락에스 마그밀 1T씩 BID",
-        "POD#7~ T/S/O : 메섹신캅셀500mg 2cap씩 TID",
-        "방사선",
-        "Chest PA",
-        "C-spine AP/Lat",
-        "C-spine MRI",
-        "POD#6",
-        "C-spine AP/Lat",
-        "Dynamic sEMG",
-        "(수술전 진행한 사람에",
-        "한해서)",
-        "LAB",
-        "EKG, I/O 체크",
-        "POD#1",
-        "CBC,ESR,CRP",
-        "electrolyte(Na&K&cl)",
-        "POD#3",
-        "CBC, E/C",
-        "POD#7",
-        "CBC, E/C, electrolyte,",
-        "LFT5 (OT/PT Bun/Cr",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "▶ Laminplasty 환자의 경위 wd 벌어지지 않도록 예방위해 보행시 팔자붕대 적용(NS2 제외)",
-        "▶ 수술시 앞쪽으로 접근하는 TDR & ACDF: 조직의 부종 및 혈종으로 인한 호흡장애여부 확인",
-        "(PCA X) --> 숨찬감, 답답함 정도, 허스키한 목소리 확인",
-        "▶ 수술시 뒤쪽으로 접근하는 Foraminotomy & Laminoplasty : traction 고정으로 인해",
-        "scalp suture 있는지 확인(head pin)",
-        "> foraminotomy 는 반드시 head pin 이 있음// NS19 head pin x",
-        "▶ NS9 – Cervical 경우 pre) 살론 250mg(2앰플) injection 투여! + 모틴: 주치의확인필요",
-        "NS3 – TDR/ACDF 경우 덱사1앰플 prep 해서 OR",
-        "▶ Anterior Cervical OP 는 무조건 carotid MRI 촬영필요- 조영제 동의서 받기!(Rt arm 18G)",
-        "▶ TDR 환자는 POST C-MRI 진행 안함",
-        "▶wd 앞(TDR & ACDF)- SOW-미음-죽",
-        "▶wd 뒤(Lamino, forami)-죽-밥-밥",
-        "◈ NS(신경외과) 정규 처방 ◈"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "신경계",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS Cervical 수술 정규처방 / 관찰 포인트",
-        "신경계",
-        "NS",
-        "Cervical",
-        "수술",
-        "정규처방",
-        "관찰",
-        "포인트",
-        "ACDF",
-        "TDR",
-        "laminoplasty",
-        "foraminotomy",
-        "호흡장애",
-        "carotid MRI",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_MINOR_OP_MD_LF_MF_LP",
-      "category": "수술 / 시술",
-      "title": "NS Minor OP MD/LF/MF/LP 정규처방",
-      "aliases": [
-        "NS Minor OP MD/LF/MF/LP 정규처방",
-        "NS",
-        "Minor",
-        "OP",
-        "MD",
-        "LF",
-        "MF",
-        "LP",
-        "정규처방",
-        "minor op",
-        "디스크절제술",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "1. MD,LF,MF,LP(현미경하 디스크절제술)",
-      "indications": [
-        "1. MD,LF,MF,LP(현미경하 디스크절제술)"
-      ],
-      "preparation": [],
-      "steps": [
-        "1. MD,LF,MF,LP(현미경하 디스크절제술)",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3-6",
-        "수액",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "주사",
-        "세파제돈1.0g QD",
-        "로이솔 1@QD",
-        "보트로파제 1@ BID",
-        "모틴 + NS100",
-        "세파제돈1.0g QD",
-        "(지속여부 확인)",
-        "보트로파제 1@ TID",
-        "보트로파제 1@ TID",
-        "경구약",
-        "아덴만, 엑소페린, 라니빅에스, 메디락에스, 마그밀 1T씩 BID",
-        "NS3) 클린자 CR, 파모티딘, 라시도필, 마그밀->",
-        "AAP, 파모티딘, 라시도필, 마그밀 아이알코돈 5mg",
-        "방사선",
-        "L-spine MRI",
-        "L-spine AP/Lat",
-        "POD#5",
-        "L-spine AP/Lat",
-        "Dynamic sEMG",
-        "(수술전 진행한 사람에 한해서)",
-        "LAB",
-        "60세이상",
-        "혈전스타킹 착용",
-        "죽-밥-밥",
-        "JP제거여부 확인",
-        "POD#5",
-        "CBC, E/C",
-        "▶ NS7 (이동근원장님)- 환자가 퇴원할 때 직접소독하면서 sterile strip 제거함",
-        "▶ 흉추(thoracic) 수술 시 당연히 T-spine 촬영",
-        "▶ MD, LF(MIS2) -> OP day 만 로이솔1@ BID, 모틴 QD : general anethesia 일 경우",
-        "▶POD#1 일째 lab 확인후 anti d/c 확인"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS Minor OP MD/LF/MF/LP 정규처방",
-        "수술 / 시술",
-        "NS",
-        "Minor",
-        "OP",
-        "MD",
-        "LF",
-        "MF",
-        "LP",
-        "정규처방",
-        "minor op",
-        "디스크절제술",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_PEID_PELD_MED",
-      "category": "수술 / 시술",
-      "title": "NS PEID/PELD/MED 정규처방",
-      "aliases": [
-        "NS PEID/PELD/MED 정규처방",
-        "NS",
-        "PEID",
-        "PELD",
-        "MED",
-        "정규처방",
-        "내시경",
-        "POST MRI",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "2. PEID.PELD.MED(경피적 내시경하 디스크절제술)",
-      "indications": [
-        "2. PEID.PELD.MED(경피적 내시경하 디스크절제술)"
-      ],
-      "preparation": [],
-      "steps": [
-        "2. PEID.PELD.MED(경피적 내시경하 디스크절제술)",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3-6",
-        "수액",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+ 마로비벤 2@",
-        "② N/S 500cc",
-        "① 5DS 1L",
-        "+ 마토크 1@",
-        "+마로비벤 2@",
-        "② N/S 500cc",
-        "주사",
-        "세파제돈1.0g QD",
-        "세파제돈1.0g BID",
-        "경구약",
-        "아덴만, 엑소페린, 라니빅에스, 메디락에스 마그밀 1T씩 BID",
-        "POD#2~ POD#4 : 메섹신캅셀500mg 2cap씩 TID->POD#5 일째 d/c",
-        "방사선",
-        "POST",
-        "L-spine SED MRI",
-        "(POST MRI)",
-        "POD#5",
-        "Dynamic sEMG",
-        "(수술전 진행한 사람에",
-        "한해서)",
-        "LAB",
-        "POD#5",
-        "CBC, E/C",
-        "▶ PEID는 MRI를 POD#2 일째 촬영",
-        "▶ PELD & PEID(MIS) 는 MRI를 POD#1 일째 촬영",
-        "▶ 흉추(thoracic) 수술 시 당연히 T-spine 촬영"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS PEID/PELD/MED 정규처방",
-        "수술 / 시술",
-        "NS",
-        "PEID",
-        "PELD",
-        "MED",
-        "정규처방",
-        "내시경",
-        "POST MRI",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_PVA___VIT_D_TLSO",
-      "category": "수술 / 시술",
-      "title": "NS PVA 정규처방 / Vit D / TLSO",
-      "aliases": [
-        "NS PVA 정규처방 / Vit D / TLSO",
-        "NS",
-        "PVA",
-        "정규처방",
-        "Vit",
-        "TLSO",
-        "PVP",
-        "Kyphoplasty",
-        "Vit D",
-        "DBM",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "3. PVA- on ser 2주후",
-      "indications": [
-        "3. PVA- on ser 2주후"
-      ],
-      "preparation": [],
-      "steps": [
-        "3. PVA- on ser 2주후",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3",
-        "수액",
-        "DBM 사용하는 환자",
-        "① N/S 500",
-        "② 데카민 250",
-        "DBM 사용하지 X 환자",
-        "5DS 1L, + KCL 20meq",
-        "NS500",
-        "주사",
-        "세파제돈1.0g QD",
-        "경구약",
-        "아덴만(클린자CR) 엑소페린, 파모티딘, 메디락에스 마그밀 1T씩 BID- 저녁식후부터",
-        "POD#1 : 아스피린 100mg 1t 추가, 시너젯ER 세미, 메섹신캅셀500mg 2cap씩 TID",
-        "방사선",
-        "Chest AP",
-        "L-spine AP/Lat",
-        "L-spine MRI",
-        "BMD기준이 안되는 환자(DBM 1cc 사용하여 진행시 V-D 시행)",
-        "▶ 퇴원후 POD#7 일째 본드 또는 steril strip 외래에서나 집에서 자연제거",
-        "▶ POD #1일째부터 아스피린 1t QD 시작(단 자가 항혈전제 있는경우는 자가약으로 복용)",
-        "▶ 흉추(thoracic) 수술 시 당연히 T-spine 촬영",
-        "▶ 모든 PVA 환자는 VIt D 투여 & 항혈전제스타킹 착용! &TLSO brace",
-        "▶ 여자- Foley 가지고 있음. 남자- Foley 거의 안함",
-        "◈ NS(신경외과) 정규 처방 ◈"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS PVA 정규처방 / Vit D / TLSO",
-        "수술 / 시술",
-        "NS",
-        "PVA",
-        "정규처방",
-        "Vit",
-        "TLSO",
-        "PVP",
-        "Kyphoplasty",
-        "Vit D",
-        "DBM",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_NS_TBA_PEN_NEUCLEOPLASTY",
-      "category": "수술 / 시술",
-      "title": "NS TBA/PEN/Neucleoplasty 시술 전후",
-      "aliases": [
-        "NS TBA/PEN/Neucleoplasty 시술 전후",
-        "NS",
-        "TBA",
-        "PEN",
-        "Neucleoplasty",
-        "시술",
-        "전후",
-        "ABR",
-        "NPO",
-        "세파제돈",
-        "수술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "시술",
-      "indications": [
-        "시술"
-      ],
-      "preparation": [],
-      "steps": [
-        "시술",
-        "1. TBA/ PEN (22G angio 가능)",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3-6",
-        "수액",
-        "5DS 1L",
-        "주사",
-        "세파제돈1.0g QD",
-        "(시술전 병동투여)",
-        "경구약",
-        "아덴만, 엑소페린, 파모티딘 1T씩 BID",
-        "▶ 시술전 병동에서 세파제돈 1g IV 투여 후 시술진행",
-        "▶ TBA: 시술후 30분 ABR 하고 퇴원 & 시술 4시간전 NPO",
-        "▶ PEN 2시간 ABR",
-        "2. Neucleoplasty (18G angio 필요)",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3",
-        "수액",
-        "5DS 1L",
-        "주사",
-        "세파제돈1.0g BID",
-        "경구약",
-        "아덴만, 엑소페린, 파모티딘 1T씩 BID",
-        "POD#2 ~ POD#4 : 메섹신캅셀500mg 2cap씩 TID",
-        "방사선",
-        "POST MRI 촬영 안함",
-        "▶ 시술전 병동에서 세파제돈 1g IV 투여 후 시술진행",
-        "▶ 시술후 2시간 ABR 하고 퇴원 & 시술 4시간전 NPO"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "필요 시 수행 내용과 환자 상태를 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "NS TBA/PEN/Neucleoplasty 시술 전후",
-        "수술 / 시술",
-        "NS",
-        "TBA",
-        "PEN",
-        "Neucleoplasty",
-        "시술",
-        "전후",
-        "ABR",
-        "NPO",
-        "세파제돈",
-        "수술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_OS_TKRA_THRA___H_VAC",
-      "category": "수술 / 시술",
-      "title": "OS TKRA/THRA 정규처방 / H-vac / 자렐토",
-      "aliases": [
-        "OS TKRA/THRA 정규처방 / H-vac / 자렐토",
-        "OS",
-        "TKRA",
-        "THRA",
-        "정규처방",
-        "H-vac",
-        "자렐토",
-        "OS major",
-        "CPM",
-        "DVT",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "Major OP-1.TKRA/THRA",
-      "indications": [
-        "Major OP-1.TKRA/THRA"
-      ],
-      "preparation": [],
-      "steps": [
-        "Major OP-1.TKRA/THRA",
-        "OP day",
-        "POD #1~2",
-        "POD #3~5",
-        "POD#6~",
-        "수액",
-        "① 플라즈마 솔루션 1L",
-        "마로비벤2@+ KCL 20meq",
-        "② 멀티플렉스페리주1.1L",
-        "① 플라즈마 솔루션 1L",
-        "마로비벤2@+ KCL 20meq",
-        "② 멀티플렉스페리주1.1L",
-        "POD#3",
-        "①플라즈마 솔루션 1L",
-        "마로비벤",
-        "주사",
-        "세파제돈 1 vial BID",
-        "세파제돈 1 vial BID",
-        "POD#5일까지",
-        ">세파제돈 1 vial BID",
-        "페니마돌 1@ BID",
-        "POD#7일까지",
-        ">페니마돌 1@ BID",
-        "경구약",
-        "자렐토10mg",
-        "> 수술 후 6~8시간 후",
-        "단, OS8) AAP 2T",
-        "OS1 ->트레스탄, 시너젯ET, 메디락에스, 마그밀,가스티안, 엔테론",
-        "OS2 ->트레스탄, AAP2T, 메디락에스, 마그밀,가스티안, 엔테론",
-        "OS3 ->트레스탄, 아데만, 메디락에스 마그밀,가스티안, 엔테론(마이폴 추가)",
-        "OS7 ->트레스탄, 쎄레브이200, 메디락에스 마그밀,가스티안, 엔테론",
-        "OS8 ->트레스탄, AAP1T, 메디락에스, 가스티안(프로맥)",
-        "OS9 ->트레스탄, 쎄레브이200, 메디락에스, 마그밀, 가스티안, 트리돌, 엔테론",
-        "공통 만60세 이상만 투여 -> 자렐토10mg (TKRA : OP day 포함 POD#13일까지,",
-        "THRA : Op day 포함 POD#34일까지 투여)",
-        "방사선",
-        "특수검사",
-        "Knee AP/Lat",
-        "Pelvis AP",
-        "POD#2 Chest PA",
-        "POD#4 Vein doppler f/u",
-        "(OS8 POD#6 V-D)",
-        "POD#5 sEMG f/u",
-        "(Fx 환자 제외)",
-        "POD #10",
-        "> T/S/O 후",
-        "Knee AP/LAT,",
-        "lower extremity",
-        "scanogram,",
-        "Pelvis AP",
-        "LAB",
-        "OS8) post CBC",
-        "OS8만!) 수술후",
-        "1시간지나서 clamp 된 H/V open 후 1/3 pressure 유지!",
-        "도고스타킹, DVT PUMP적용!",
-        "POD#1",
-        "CBC, electrolyte(NA&K&CL)",
-        "UA",
-        "POD#2",
-        "CBC, E/C, electrolyte,",
-        "LFT5 (OT/PT BUN/Cr",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "POD#5 CBC, E/C",
-        "POD#7",
-        "CBC, E/C,",
-        "electrolyte, LFT5",
-        "(OT/PT BUN/CR",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "POD#10",
-        "CBC, E/C",
-        "▶ OS1(비모보, 카발린50 : 수술 1시간 전) OS2(세레브이200 : 수술 1시간 전)",
-        "OS3(세레브이200, 카발린50) OS7(세레브이200) OS8: 무, OS9(비모보, 카발린50mg 수술 1시간전)",
-        "▶ 자렐토 기준이 안되는 환자 -> POD1~7일까지 크렉산 40mg QD 투여, 그 후 아스피린 1T 으로 변경 투여",
-        "59세 이하 UKA &bipolar-> 혈전예방위해 자렐토 기준 안되어 POD#1 크렉산 투여함",
-        "▶ TKRA POD#2 일부터 CPM start, POD#7 도수치료",
-        "▶ OS1-->H/V natural & JP full pressure 유지! // POD#5 H/V 제거!",
-        "OS3-->수술당일 H/V natural 유지! & POD#1 Full Pressure 유지!",
-        "POD#2 H/V 무조건 제거!"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "OS TKRA/THRA 정규처방 / H-vac / 자렐토",
-        "수술 / 시술",
-        "OS",
-        "TKRA",
-        "THRA",
-        "정규처방",
-        "H-vac",
-        "자렐토",
-        "OS major",
-        "CPM",
-        "DVT",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "UPD43_OS_TSRA_TARA_BIPOLAR",
-      "category": "수술 / 시술",
-      "title": "OS TSRA/TARA/Bipolar 정규처방",
-      "aliases": [
-        "OS TSRA/TARA/Bipolar 정규처방",
-        "OS",
-        "TSRA",
-        "TARA",
-        "Bipolar",
-        "정규처방",
-        "크렉산",
-        "수술",
-        "시술",
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "urgency": "routine",
-      "summary": "Major OP- 2. TSRA / TARA / Bipolar",
-      "indications": [
-        "Major OP- 2. TSRA / TARA / Bipolar"
-      ],
-      "preparation": [],
-      "steps": [
-        "Major OP- 2. TSRA / TARA / Bipolar",
-        "OP day",
-        "POD #1~2",
-        "POD #3~5",
-        "POD#6~",
-        "수액",
-        "① 플라즈마 솔루션 1L",
-        "마로비벤2@+ KCL 20meq",
-        "② 멀티플렉스페리주1.1L",
-        "①플라즈마솔루션 1L",
-        "마로비벤2@+ KCL 20meq",
-        "② 멀티플렉스페리주1.1L",
-        "POD#3",
-        "① 플라즈마 솔루션 1L",
-        "마로비벤 2@+KCL 20mEq",
-        "주사",
-        "세파제돈 1 vial BID",
-        "세파제돈 1 vial BID",
-        "페니마돌 1@ BID",
-        "크렉산 40mg QD",
-        "(bipolar 만!)",
-        "POD#5일까지",
-        ">세파제돈 1 vial BID",
-        "페니마돌 1@ BID",
-        "크렉산 40mg QD",
-        "(bipolar 만!)",
-        "POD#7일까지",
-        ">페니마돌 1@ BID",
-        "크렉산 40mg QD",
-        "(bipolar 만!)",
-        "경구약",
-        "OS1 ->시너젯ER세미",
-        "OS2. OS3. OS5 ->세레브이 , 트리돌",
-        "공통 ->트레스탄, 마그밀, 메디락 에스 통증 호소하면 아이알코돈 추가 가능",
-        "POD#8 ~ 아스피린 1T QD",
-        "방사선",
-        "특수검사",
-        "Shoulder AP",
-        "Ankle AP/Lat",
-        "Pelvis AP",
-        "POD#2 Chest PA",
-        "POD #10",
-        "> T/S/O 후",
-        "X-ray f/u",
-        "LAB",
-        "POD#1",
-        "CBC,electrolyte(NA&K&CL) UA",
-        "POD#2",
-        "CBC,E/C, electrolyte,",
-        "LFT5 (OT/PT BUN/Cr",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "POD#5 CBC, E/C",
-        "POD#7",
-        "CBC, E/C,",
-        "electrolyte, LFT5",
-        "(OT/PT BUN/CR",
-        "당정량 랜덤)",
-        "총단백, 알부민",
-        "POD#10",
-        "CBC, E/C",
-        "▶ OS1(비모보, 카발린50 : 수술 1시간 전)",
-        "OS2(세레브이200 : 수술 1시간 전) OS3(세레브이200, 카발린50) OS7(세레브이200)",
-        "OS8: 무, OS9(세레브이200)",
-        "▶ TSRA(OS1,OS3,OS5) -> POD#2 일부터 CPM 시작",
-        "▶ TSRA 환자가 general anethesia 할 경우 post~pod#1 로이솔, 모틴 추가함",
-        "▶ 당뇨환자일 경우",
-        "1) 5DS1L,5DW1L 대신 NS 1L",
-        "2) 멀티플렉스 1.1L + 휴물린알 20단위",
-        "▶ OS1-->H/V natural 유지!",
-        "OS3-->H/V Full Pressure 유지!",
-        "◈ OS(정형외과) 정규 처방 ◈",
-        "Minor OP",
-        "1. 절개가 있는 경우 (A/S HTO, A/S ACL(PCL) recon, MBO, LM repair, H-V, OR IF 등 )",
-        "OP day",
-        "POD #1",
-        "POD #2",
-        "POD#3~",
-        "수액",
-        "플라즈마 1L + 마로비벤2@"
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "시행 시간, 환자 상태, 처방/보고 여부를 EMR에 기록"
-      ],
-      "io": [],
-      "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
-      ],
-      "related": [],
-      "tags": [
-        "수술 / 시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "review": {
-        "status": "uploaded_manual_added",
-        "rule": "업로드 HWP 자료 기반 신규/보강 카드"
-      },
-      "source_refs": [
-        "NS OS 메뉴얼"
-      ],
-      "tables": [],
-      "images": [],
-      "search_terms": [
-        "OS TSRA/TARA/Bipolar 정규처방",
-        "수술 / 시술",
-        "OS",
-        "TSRA",
-        "TARA",
-        "Bipolar",
-        "정규처방",
-        "크렉산",
-        "수술",
-        "시술",
-        "v43_uploaded_manual",
-        "NS OS 메뉴얼"
-      ],
-      "standard_sections_ready": true
-    },
-    {
-      "id": "ORTHOSIS001",
-      "category": "수술 / 시술",
-      "title": "NS / OS 보조기 종류 및 업체 연락",
-      "aliases": [
-        "NS / OS 보조기 종류 및 업체 연락",
-        "보조기",
-        "NS 보조기",
-        "OS 보조기",
-        "brace",
-        "TLSO",
-        "LSO",
-        "ATLAS K",
-        "collar",
-        "hip brace",
-        "arm sling",
-        "ultra sling",
-        "conjoy brace",
-        "MCL brace",
-        "H-V shoes",
-        "보조기업체",
-        "보조기 업체",
-        "010-9262-1310",
-        "NS",
-        "OS",
-        "종류",
-        "업체",
-        "연락",
-        "수술",
-        "시술",
-        "v49_exact_card",
-        "보조기 이미지",
-        "보조기 그림",
-        "추가 업무 매뉴얼 전체 추출 이미지"
-      ],
-      "urgency": "routine",
-      "summary": "NS/OS 수술·시술 환자의 보조기 종류, 적용 상황, 업체 연락 및 기록 포인트.",
-      "indications": [
-        "수술 후 보조기 착용 여부를 확인해야 할 때",
-        "보조기업체 연락 및 비급여 설명/차팅이 필요한 경우",
-        "NS/OS 보조기 종류와 사진을 확인해야 할 때"
-      ],
-      "preparation": [
-        "수술계획표 또는 처방에서 보조기 종류 확인",
-        "보조기업체 연락처 확인",
-        "환자/보호자 비급여 설명 필요 여부 확인"
-      ],
-      "steps": [
-        "수술/시술명과 주치의 처방에서 필요한 보조기를 확인한다.",
-        "op 후 보조기 착용 대상자는 처방 또는 계획표 기준으로 확인한다.",
-        "Hip brace는 OS1과만 적용, OS8은 처방에 적어놓는 것으로 확인한다.",
-        "보조기업체 010-9262-1310으로 전날 미리 연락하여 보조기 제작을 준비한다.",
-        "비급여 설명 후 관련 내용을 차팅한다.",
-        "보조기 착용 상태, 피부 압박, 통증, 순환 상태를 확인한다."
-      ],
-      "dosage_or_mix": [],
-      "orders_or_emr": [],
-      "charting": [
-        "보조기업체 연락 여부",
-        "비급여 설명 여부",
-        "보조기 착용 상태 및 피부/순환 확인",
-        "환자/보호자 교육 내용"
-      ],
-      "io": [],
-      "warnings": [
-        "보조기 종류와 적용 여부는 주치의 처방과 병원 최신 지침을 우선합니다.",
-        "피부 압박, 저림, 통증, 순환장애가 있으면 즉시 확인합니다."
-      ],
-      "related": [],
-      "tags": [
-        "보조기",
-        "NS",
-        "OS",
-        "brace",
-        "v49_exact_card"
-      ],
-      "review": {
-        "status": "v49_manual_cleaned"
-      },
-      "source_refs": [
-        "추가 업무 매뉴얼(260618)",
-        "NS OS 알아야할 사항들"
-      ],
-      "tables": [
-        {
-          "title": "NS / OS 보조기 확인표",
-          "headers": [
-            "구분",
-            "예시",
-            "확인 포인트"
-          ],
-          "rows": [
-            [
-              "NS 보조기",
-              "ATLAS K, TLSO, collar 계열",
-              "ACDF/TDR/foraminotomy/laminoplasty 등 수술·시술별 처방 확인"
-            ],
-            [
-              "OS 보조기",
-              "ultra sling, arm sling, hip brace, conjoy brace, MCL brace, H-V shoes",
-              "과별 처방과 수술계획표 확인"
-            ],
-            [
-              "업체 연락",
-              "010-9262-1310",
-              "전날 미리 연락, 제작 및 수납/비급여 설명 확인"
-            ],
-            [
-              "기록",
-              "차팅",
-              "비급여 설명, 착용 상태, 피부/순환 확인 기록"
-            ]
-          ]
-        }
-      ],
-      "images": [
-        {
-          "src": "selected_manual_images/brace_0014.png",
-          "alt": "NS/OS 보조기 참고 이미지 0014",
-          "caption": "NS/OS 보조기 참고 이미지 0014"
-        },
-        {
-          "src": "selected_manual_images/brace_0015.png",
-          "alt": "NS/OS 보조기 참고 이미지 0015",
-          "caption": "NS/OS 보조기 참고 이미지 0015"
-        },
-        {
-          "src": "selected_manual_images/brace_0016.png",
-          "alt": "NS/OS 보조기 참고 이미지 0016",
-          "caption": "NS/OS 보조기 참고 이미지 0016"
-        },
-        {
-          "src": "selected_manual_images/brace_0017.png",
-          "alt": "NS/OS 보조기 참고 이미지 0017",
-          "caption": "NS/OS 보조기 참고 이미지 0017"
-        },
-        {
-          "src": "selected_manual_images/brace_0018.png",
-          "alt": "NS/OS 보조기 참고 이미지 0018",
-          "caption": "NS/OS 보조기 참고 이미지 0018"
-        },
-        {
-          "src": "selected_manual_images/brace_0019.png",
-          "alt": "NS/OS 보조기 참고 이미지 0019",
-          "caption": "NS/OS 보조기 참고 이미지 0019"
-        },
-        {
-          "src": "selected_manual_images/brace_001a.png",
-          "alt": "NS/OS 보조기 참고 이미지 001a",
-          "caption": "NS/OS 보조기 참고 이미지 001a"
-        },
-        {
-          "src": "selected_manual_images/brace_001b.png",
-          "alt": "NS/OS 보조기 참고 이미지 001b",
-          "caption": "NS/OS 보조기 참고 이미지 001b"
-        },
-        {
-          "src": "selected_manual_images/brace_001c.png",
-          "alt": "NS/OS 보조기 참고 이미지 001c",
-          "caption": "NS/OS 보조기 참고 이미지 001c"
-        },
-        {
-          "src": "selected_manual_images/brace_001d.png",
-          "alt": "NS/OS 보조기 참고 이미지 001d",
-          "caption": "NS/OS 보조기 참고 이미지 001d"
-        },
-        {
-          "src": "selected_manual_images/brace_001e.png",
-          "alt": "NS/OS 보조기 참고 이미지 001e",
-          "caption": "NS/OS 보조기 참고 이미지 001e"
-        },
-        {
-          "src": "selected_manual_images/brace_001f.png",
-          "alt": "NS/OS 보조기 참고 이미지 001f",
-          "caption": "NS/OS 보조기 참고 이미지 001f"
-        },
-        {
-          "src": "selected_manual_images/brace_0020.png",
-          "alt": "NS/OS 보조기 참고 이미지 0020",
-          "caption": "NS/OS 보조기 참고 이미지 0020"
-        }
-      ],
-      "search_terms": [
-        "NS / OS 보조기 종류 및 업체 연락",
-        "수술 / 시술",
-        "보조기",
-        "NS 보조기",
-        "OS 보조기",
-        "brace",
-        "TLSO",
-        "LSO",
-        "ATLAS K",
-        "collar",
-        "hip brace",
-        "arm sling",
-        "ultra sling",
-        "conjoy brace",
-        "MCL brace",
-        "H-V shoes",
-        "보조기업체",
-        "보조기 업체",
-        "010-9262-1310",
-        "NS",
-        "OS",
-        "종류",
-        "업체",
-        "연락",
-        "수술",
-        "시술",
-        "v49_exact_card",
-        "NS / OS 보조기 확인표",
-        "구분",
-        "예시",
-        "확인 포인트",
-        "ATLAS K, TLSO, collar 계열",
-        "ACDF/TDR/foraminotomy/laminoplasty 등 수술·시술별 처방 확인",
-        "ultra sling, arm sling, hip brace, conjoy brace, MCL brace, H-V shoes",
-        "과별 처방과 수술계획표 확인",
-        "업체 연락",
-        "전날 미리 연락, 제작 및 수납/비급여 설명 확인",
-        "기록",
-        "차팅",
-        "비급여 설명, 착용 상태, 피부/순환 확인 기록",
-        "NS/OS 보조기 참고 이미지 0014",
-        "NS/OS 보조기 참고 이미지 0015",
-        "NS/OS 보조기 참고 이미지 0016",
-        "NS/OS 보조기 참고 이미지 0017",
-        "NS/OS 보조기 참고 이미지 0018",
-        "NS/OS 보조기 참고 이미지 0019",
-        "NS/OS 보조기 참고 이미지 001a",
-        "NS/OS 보조기 참고 이미지 001b",
-        "NS/OS 보조기 참고 이미지 001c",
-        "NS/OS 보조기 참고 이미지 001d",
-        "NS/OS 보조기 참고 이미지 001e",
-        "NS/OS 보조기 참고 이미지 001f",
-        "NS/OS 보조기 참고 이미지 0020",
-        "보조기 이미지",
-        "보조기 그림",
-        "추가 업무 매뉴얼 전체 추출 이미지"
-      ],
-      "standard_sections_ready": true
-    },
-    {
       "id": "HWPIMG_RESTORED_ADD_01",
       "category": "그림 / 사진 / 표",
       "title": "추가 업무 매뉴얼 전체 추출 이미지 1",
@@ -22105,7 +18174,7 @@
         "등록된 표"
       ],
       "urgency": "routine",
-      "summary": "현재 앱 DB에 연결된 카드, 표, 이미지/사진 개수를 확인하는 카드입니다.",
+      "summary": "현재 앱 DB의 카드/표/이미지 현황입니다. V63에서 요청한 14개 업로드 파일 관련 DB 카드를 삭제한 뒤의 기준입니다.",
       "indications": [
         "현재 앱에 표, 이미지, 사진이 몇 개 연결되어 있는지 확인할 때"
       ],
@@ -22150,7 +18219,7 @@
           "rows": [
             [
               "전체 카드",
-              "220개"
+              "187개"
             ],
             [
               "표 포함 카드",
@@ -22158,7 +18227,7 @@
             ],
             [
               "이미지 포함 카드",
-              "36개"
+              "34개"
             ],
             [
               "등록된 표 개수",
@@ -22166,15 +18235,11 @@
             ],
             [
               "등록된 이미지/사진 개수",
-              "175개"
+              "161개"
             ],
             [
-              "복원된 HWP 자동 추출 이미지",
-              "100개"
-            ],
-            [
-              "원내 주요 전화번호 표",
-              "1개 추가"
+              "V63 삭제된 DB 카드",
+              "38개"
             ]
           ]
         }
@@ -23005,6 +19070,379 @@
       "원내 주요 전화번호",
       "개별/공용 로그인",
       "로그인 실패 차단 삭제"
+    ]
+  },
+  "v63_update": {
+    "date": "2026-06-21",
+    "title": "요청한 14개 업로드 파일 관련 DB 삭제",
+    "notes": [
+      "V62 Google Drive 동영상 링크 방식은 유지했습니다.",
+      "현재 DB에 source_refs로 존재하는 신규(경력직) OJT, NS OS 약어, NS OS 알아야할 사항들, NS OS 메뉴얼 관련 카드를 삭제했습니다.",
+      "이미지/엑셀/문서 중 현재 V62 DB에 별도 source_refs 카드가 없는 항목은 삭제 대상 기록에는 남기되, 실제 DB 삭제 항목은 없었습니다.",
+      "GitHub에 이미 올라간 실제 파일은 이 업데이트로 자동 삭제되지 않습니다. 앱 DB에서 검색/표시되지 않게 하는 업데이트입니다."
+    ],
+    "requested_files": [
+      "수혈의 종류.jpg",
+      "윌스병원 항생제목록_AST 등 수정본.xls",
+      "아그라스타트주.jpg",
+      "초 응급 혈액 출고 요청서 (1).docx",
+      "5. NS, OS 메뉴얼.hwp",
+      "4. NS OS 약어.hwp",
+      "전체인계 복사.xlsx",
+      "신규(경력직) OJT.hwp",
+      "NS OS 알아야할 사항들(1).hwp",
+      "통증 사정.jpg",
+      "주요 약물 MIX.jpg",
+      "헤파린 모노그램.jpg",
+      "혈액수령방법 1.jpg",
+      "혈액수령방법2.jpg"
+    ],
+    "removed_count": 38,
+    "removed_items": [
+      {
+        "id": "VENT006",
+        "title": "Suction / 간호 흡인",
+        "category": "호흡 / Ventilator",
+        "source_refs": [
+          "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "VENT007",
+        "title": "Tracheostomy care / 기관절개관 간호",
+        "category": "호흡 / Ventilator",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "VENT008",
+        "title": "EKG monitoring / ETCO2",
+        "category": "검사 / 검체",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC001",
+        "title": "L-tube feeding",
+        "category": "기본간호",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC002",
+        "title": "Enema / 관장",
+        "category": "기본간호",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC003",
+        "title": "Foley catheter insertion",
+        "category": "기본간호",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC004",
+        "title": "Foley urine specimen collection",
+        "category": "검사 / 검체",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC005",
+        "title": "Oral care / 구강간호",
+        "category": "기본간호",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC006",
+        "title": "Intramuscular injection / 근육주사",
+        "category": "투약",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "BASIC007",
+        "title": "Insulin injection / 인슐린 주사",
+        "category": "투약",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "NEURO001",
+        "title": "Brain patient care / 신경외과 환자",
+        "category": "신경계",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "PROC001",
+        "title": "TFCA care / 뇌혈관조영술 전후 간호",
+        "category": "검사 / 검체",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "LINE001",
+        "title": "Chemoport needle insertion/removal",
+        "category": "Line / Drain / Dressing",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "SKIN001",
+        "title": "Pressure injury care / 욕창간호",
+        "category": "상처",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "OP001",
+        "title": "Pre-op care / 수술 전 간호",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "OP002",
+        "title": "Post-op NS Spine / 척추수술 후 간호",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "OP003",
+        "title": "Post-op OS / 정형외과 수술 후 간호",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "신규(경력직) OJT 집중치료실"
+        ],
+        "reason": "source:신규(경력직) OJT 집중치료실"
+      },
+      {
+        "id": "DRUG023",
+        "title": "주요 약물 약속처방 Mix 확인 원칙",
+        "category": "약물 / 수액 / 마약",
+        "source_refs": [
+          "사용자 제시 30개 카테고리"
+        ],
+        "reason": "keyword:주요 약물 약속처방 mix"
+      },
+      {
+        "id": "UPD43_NS",
+        "title": "NS 수술명 약어 정리",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 약어"
+        ],
+        "reason": "source:NS OS 약어"
+      },
+      {
+        "id": "UPD43_NS_2",
+        "title": "NS 진단/질환 약어 정리",
+        "category": "신경계",
+        "source_refs": [
+          "NS OS 약어"
+        ],
+        "reason": "source:NS OS 약어"
+      },
+      {
+        "id": "UPD43_OS",
+        "title": "OS 수술명 약어 정리",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 약어"
+        ],
+        "reason": "source:NS OS 약어"
+      },
+      {
+        "id": "UPD43_OS_2",
+        "title": "OS 진단/질환 약어 정리",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 약어"
+        ],
+        "reason": "source:NS OS 약어"
+      },
+      {
+        "id": "UPD43_BLOCK",
+        "title": "Block 종류 약어 정리",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 약어"
+        ],
+        "reason": "source:NS OS 약어"
+      },
+      {
+        "id": "UPD43_NS_OS",
+        "title": "NS / OS 공통 꼭 알아야 할 사항",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 알아야할 사항들"
+        ],
+        "reason": "source:NS OS 알아야할 사항들"
+      },
+      {
+        "id": "UPD43_H_VAC_JP_DRAIN",
+        "title": "H-vac / JP drain 관리 기준",
+        "category": "Line / Drain / Dressing",
+        "source_refs": [
+          "NS OS 알아야할 사항들"
+        ],
+        "reason": "source:NS OS 알아야할 사항들"
+      },
+      {
+        "id": "UPD43_OS_____DRESSING_DVT",
+        "title": "OS 과별 특이사항 / Dressing / DVT / 보조기",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 알아야할 사항들"
+        ],
+        "reason": "source:NS OS 알아야할 사항들"
+      },
+      {
+        "id": "UPD43_NS_____JP_MRI_DRESSING_I_O",
+        "title": "NS 과별 특이사항 / JP / MRI / Dressing / I/O",
+        "category": "신경계",
+        "source_refs": [
+          "NS OS 알아야할 사항들"
+        ],
+        "reason": "source:NS OS 알아야할 사항들"
+      },
+      {
+        "id": "UPD43_NS_OS___________LANTUS",
+        "title": "NS/OS 수술 전 검사 기준 / 조영제 / Lantus",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_MAJOR_OP_ALIF",
+        "title": "NS Major OP ALIF 정규처방",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_MAJOR_OP_PLIF_PTLIF_DLIF_PL",
+        "title": "NS Major OP PLIF/PTLIF/DLIF/PLF 정규처방",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_CERVICAL",
+        "title": "NS Cervical 수술 정규처방 / 관찰 포인트",
+        "category": "신경계",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_MINOR_OP_MD_LF_MF_LP",
+        "title": "NS Minor OP MD/LF/MF/LP 정규처방",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_PEID_PELD_MED",
+        "title": "NS PEID/PELD/MED 정규처방",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_PVA___VIT_D_TLSO",
+        "title": "NS PVA 정규처방 / Vit D / TLSO",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_NS_TBA_PEN_NEUCLEOPLASTY",
+        "title": "NS TBA/PEN/Neucleoplasty 시술 전후",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_OS_TKRA_THRA___H_VAC",
+        "title": "OS TKRA/THRA 정규처방 / H-vac / 자렐토",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "UPD43_OS_TSRA_TARA_BIPOLAR",
+        "title": "OS TSRA/TARA/Bipolar 정규처방",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "NS OS 메뉴얼"
+        ],
+        "reason": "source:NS OS 메뉴얼"
+      },
+      {
+        "id": "ORTHOSIS001",
+        "title": "NS / OS 보조기 종류 및 업체 연락",
+        "category": "수술 / 시술",
+        "source_refs": [
+          "추가 업무 매뉴얼(260618)",
+          "NS OS 알아야할 사항들"
+        ],
+        "reason": "source:NS OS 알아야할 사항들"
+      }
     ]
   }
 }
