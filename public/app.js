@@ -599,12 +599,15 @@ document.querySelectorAll("[data-open-title]").forEach(btn => {
 document.querySelectorAll("[data-menu-q]").forEach(btn => btn.addEventListener("click", () => {
   setMenuActive(btn);
   const q = btn.dataset.menuQ;
-  $("question").value = q;
+  const heading = btn.textContent.replace(/\s+/g, " ").trim();
+  $("question").value = heading.replace(/^\d+\.\s*/, "");
   const cards = localSearch(q, 40);
-  $("cardsHeading").textContent = btn.textContent.replace(/\\s+/g, " ").trim();
+  $("cardsHeading").textContent = heading;
   renderCards(cards);
   $("answerBox").classList.add("hidden");
-  $("status").textContent = `${cards.length}개 관련 카드를 찾았습니다. 카드를 누르면 상세내용이 열립니다.`;
+  $("status").classList.remove("hidden");
+  $("status").textContent = `${cards.length}개 관련 카드를 찾았습니다. 세부 항목은 검색 결과 카드에서 확인하세요.`;
+  showResultsArea();
   document.querySelector(".ask").scrollIntoView({behavior:"smooth", block:"start"});
 }));
 

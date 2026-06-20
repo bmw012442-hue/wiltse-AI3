@@ -176,25 +176,23 @@
 
     <details class="menu-drawer">
       <summary>실무 메뉴 전체 보기</summary>
-      <section class="main-menu-grid" id="mainMenuGrid">
-        <button data-menu-q="응급상황 E-CART 응급약물 응급기구 응급간호 CPR 순서 방법 기록">응급상황<br><small>E-CART · 응급기구 · CPR</small></button>
-        <button data-menu-q="임상 약물 항생제 계열 수액 종류 적응증 자주 사용하는 약물">임상 약물<br><small>항생제 · 수액 · 자주 쓰는 약</small></button>
-        <button data-menu-q="마약 향정 마약 반환 잔량 보관 마약성 진통제">마약 & 향정<br><small>반환 · 잔량 · 진통제</small></button>
-        <button data-menu-q="의료장비 ventilator high flow CRRT infusion syringe pump 제세동기 EKG">의료장비<br><small>Vent · HFNC · CRRT · Pump</small></button>
-        <button data-menu-q="수혈 LAB 동의서 전처치 약물 수혈 TIP 기록 확인사항">수혈<br><small>Lab · 동의서 · 기록</small></button>
-        <button data-menu-q="검사 검체 혈액검사 참고치 의심질환 영상검사">검사/검체<br><small>Lab · Culture · 영상검사</small></button>
-        <button data-menu-q="dressing 각종 LINE drainage 종류 특징 drain 정리">Dressing / LINE<br><small>Drain · Line · 상처</small></button>
-        <button data-menu-q="DAY EVENING NIGHT 업무 상세 routine job 실무">DAY / EVENING / NIGHT<br><small>근무별 세부업무</small></button>
-        <button data-menu-q="CSR 물품 카운트 이름 생김새 멸균물품">CSR 물품 카운트<br><small>이름 · 생김새</small></button>
-        <button data-menu-q="다제내성감염균 VRE CRE CPO MRSA MSSA MRPA 적응 별 항생제 격리">다제내성감염균<br><small>VRE · CRE · MRSA</small></button>
-        <button data-menu-q="I O 섭취량 배설량 전해질 교정 K P Mg replacement">I & O<br><small>섭취량 · 배설량 · 전해질</small></button>
-        <button data-menu-q="Vital sign BP HR RR BT 활력징후">Vital sign<br><small>BP · HR · RR · BT</small></button>
-        <button data-menu-q="ABGA 혈액가스 분석 질환 pH PaCO2 HCO3">ABGA<br><small>혈액가스 · 질환</small></button>
-        <button data-menu-q="GCS Mental 사정 gcs tip seizure 종류 항경련제 신경계 증상 질환">GCS / Mental<br><small>Seizure · 항경련제</small></button>
-        <button data-menu-q="BST DM 정상 범위 상황대처 bst tip DM 약물 인슐린 종류 혈당 관리">BST / DM<br><small>혈당 · 인슐린 · DM약</small></button>
-        <button data-menu-q="질환별 정리 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 내분비계 다발성 질환">질환별 정리<br><small>계통별 ICU 질환</small></button>
-        <button data-menu-q="입퇴원 전원 전동 사망 입실 퇴실">입퇴원/전원/사망<br><small>입실 · 전동 · 사후처치</small></button>
-        <button data-menu-q="주치의 과별 특이사항 원장님 routine set order">주치의/과별 특이사항<br><small>과별 Routine</small></button>
+      <section class="main-menu-toc" id="mainMenuGrid" aria-label="실무 메뉴 목차">
+        <button type="button" class="toc-menu-item" data-menu-q="응급상황 CPR Intubation E-cart Shock Seizure 응급약물"><span>1. 응급상황</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="호흡 Ventilator O2 HFNC portable ventilator Suction Tracheostomy ABGA"><span>2. 호흡 / Ventilator</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="순환 모니터링 Vital sign EKG A-line C-line 승압제 I/O"><span>3. 순환 / 모니터링</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="신경계 GCS Mental Pupil Seizure EVD SDD 신경계 수술 전후"><span>4. 신경계</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="신장 CRRT CRRT start CRRT alarm CRRT return 투석 line 전해질 교정"><span>5. 신장 / CRRT</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="혈당 내분비 BST Sliding scale Insulin DKA protocol 저혈당 대처"><span>6. 혈당 / 내분비</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="약물 항생제 진정제 진통제 승압제 항경련제 마약 향정"><span>7. 약물</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="수혈 혈액 RBC FFP PC 수혈 절차 수혈 부작용 DIC CBC Coagulation"><span>8. 수혈 / 혈액</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="검사 검체 Lab bottle 채혈 순서 ABGA Blood culture CRE CPE Tip culture"><span>9. 검사 / 검체</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="Line Drain Dressing C-line A-line Foley L-tube PCD EVD SDD 욕창 창상 Dressing"><span>10. Line / Drain / Dressing</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="수술 시술 수술 전 준비 수술 후 관찰 TFCA Coil Tracheostomy Burr hole Endoscopy"><span>11. 수술 / 시술</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="입퇴원 전동 전원 사망 ICU 입실 병동 전동 타원 전원 DNR 연명의료"><span>12. 입퇴원 / 전동 / 전원 / 사망</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="근무별 업무 Day Evening Night 인수인계 정규 업무 체크리스트"><span>13. 근무별 업무</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="EMR 기록 처방 간호기록 처방 확인 Lab 처방 응급발행 I/O 기록 수혈 기록"><span>14. EMR / 기록 / 처방</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="물품 장비 전화번호 Infusion pump Syringe pump 제세동기 CSR 물품 원내 전화번호"><span>15. 물품 / 장비 / 전화번호</span></button>
+        <button type="button" class="toc-menu-item" data-menu-q="병동간호팀 간호사 매뉴얼 교육전담 신규 경력직 OJT 병동 간호 업무 지침"><span>16. 병동간호팀 간호사 매뉴얼</span></button>
       </section>
     </details>
 
@@ -240,7 +238,7 @@
         .catch(() => {});
     }
   </script>
-  <script src="/data.js?v=57"></script>
-  <script src="/app.js?v=57"></script>
+  <script src="/data.js?v=60"></script>
+  <script src="/app.js?v=60"></script>
 </body>
 </html>

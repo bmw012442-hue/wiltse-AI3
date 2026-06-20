@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.57.0-v57-individual-accounts",
+    "version": "1.60.0-v60-toc-practice-menu",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -22665,5 +22665,43 @@
     "admin_account": "유지민",
     "credential_rule": "아이디=이름, 비밀번호=사번",
     "do_not_upload_credentials_to_github": true
+  },
+  "v58_update": {
+    "description": "ALLOW_COMMON_LOGIN=true이면 개별 계정이 있어도 icu 공용 관리자 로그인을 함께 허용하도록 서버 로그인 로직 수정.",
+    "common_login_allowed_with_individual_accounts": true,
+    "common_account_role": "admin"
+  },
+  "v60_update": {
+    "description": "실무 메뉴 전체 보기를 세부 카드 그리드가 아닌 1~16번 대분류 목차형으로 변경. 세부 항목은 검색어 입력 또는 대분류 클릭 후 검색 결과에서만 표시. 표/이미지/사진/약물계산기/개별계정/공용계정 동시 로그인 유지. 로그인 실패 차단 기능 삭제 유지.",
+    "practice_menu": [
+      "1. 응급상황",
+      "2. 호흡 / Ventilator",
+      "3. 순환 / 모니터링",
+      "4. 신경계",
+      "5. 신장 / CRRT",
+      "6. 혈당 / 내분비",
+      "7. 약물",
+      "8. 수혈 / 혈액",
+      "9. 검사 / 검체",
+      "10. Line / Drain / Dressing",
+      "11. 수술 / 시술",
+      "12. 입퇴원 / 전동 / 전원 / 사망",
+      "13. 근무별 업무",
+      "14. EMR / 기록 / 처방",
+      "15. 물품 / 장비 / 전화번호",
+      "16. 병동간호팀 간호사 매뉴얼"
+    ],
+    "detail_items_hidden_until_search": true,
+    "kept_features": [
+      "AI 답변",
+      "카드 검색",
+      "표 미리보기",
+      "이미지/사진 미리보기",
+      "HWP 추출 이미지 검색",
+      "약물 계산기",
+      "개별 계정 로그인",
+      "공용 icu 로그인 동시 허용",
+      "로그인 실패 차단 기능 삭제"
+    ]
   }
 }
