@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.76.0-v76-icu-medication-fluid-summary",
+    "version": "1.77.0-v77-neuro-assessment-summary",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 ICU 질병 + V75 혈당/당뇨 + V76 ICU 약품/수액요법",
+    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 중환자실 질병 + V75 혈당당뇨인슐린 + V76 중환자실 약품수액 + V77 신경학적 사정",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -27631,6 +27631,834 @@
         }
       ],
       "standard_sections_ready": true
+    },
+    {
+      "id": "V77_NEURO_ASSESSMENT_OVERVIEW",
+      "category": "신경계 / 중환자 사정",
+      "title": "의식사정·신경학적 사정 총정리: GCS·Pupil·Motor",
+      "aliases": [
+        "신경학적 사정",
+        "neuro check",
+        "neuro assessment",
+        "의식사정",
+        "GCS Pupil Motor",
+        "의식수준 사정"
+      ],
+      "search_terms": [
+        "의식사정",
+        "신경학적 사정",
+        "neuro check",
+        "GCS",
+        "PUPIL",
+        "pupil",
+        "동공",
+        "MOTOR",
+        "motor",
+        "motor power",
+        "LOC",
+        "의식수준",
+        "동공반사",
+        "편마비",
+        "뇌신경계",
+        "중환자실 신경사정"
+      ],
+      "urgency": "high",
+      "summary": "중환자실에서 의식수준, GCS, 동공, motor, 활력징후와 ICP 상승 징후를 한 흐름으로 사정하고 즉시 보고 기준을 확인하는 카드입니다.",
+      "indications": [
+        "중환자실 입실 환자의 기본 neuro check",
+        "뇌졸중/뇌출혈/두부외상/수술 후 환자 모니터링",
+        "진정제 조절 후 신경학적 변화 확인",
+        "EVD/ICP monitor 적용 환자 관찰"
+      ],
+      "preparation": [
+        "시계, 펜라이트, 통증자극 원내 지침",
+        "이전 GCS·pupil·motor 기록",
+        "활력징후, 혈당, 산소포화도, 진정제 투여 이력"
+      ],
+      "steps": [
+        "의식수준을 LOC로 먼저 확인한다.",
+        "GCS는 E/V/M 세부항목을 각각 평가한다.",
+        "Pupil은 크기, 좌우대칭, 모양, 빛반응을 확인한다.",
+        "Motor는 좌우 상하지 grade와 obey 가능 여부를 비교한다.",
+        "두통, 구토, 경련, Cushing triad 등 ICP 상승 징후를 함께 본다.",
+        "악화 소견은 이전 기록과 비교하여 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "GCS는 총점보다 E/V/M 세부 점수 변화가 중요합니다.",
+        "Pupil은 “3+/3+”, “5 fixed/3 prompt”처럼 크기와 반응을 같이 기록합니다.",
+        "Motor는 Rt/Lt, arm/leg를 나눠 기록합니다."
+      ],
+      "orders_or_emr": [
+        "정규 neuro check 빈도는 원내 지시/환자 상태에 따른다.",
+        "신경학적 변화 발생 시 담당의 또는 주치의에게 즉시 보고한다.",
+        "CT/MRI/NIHSS/ICP monitoring 등 추가 평가 필요 여부를 확인한다."
+      ],
+      "charting": [
+        "GCS 총점과 E/V/M 세부점수, LOC, 동공, motor, 활력징후, 보고시간과 지시사항을 시간순으로 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "신경학적 사정은 추세 변화가 중요합니다. 이전 기록과 반드시 비교합니다.",
+        "진정제, 마비제, 기관삽관, 저혈당, 저산소증, 발열, seizure 후 상태는 평가에 영향을 줄 수 있습니다.",
+        "최종 처치와 보고 체계는 원내 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "뇌졸중 총정리",
+        "EVD·ICP·CVP 총정리",
+        "ABGA 총정리",
+        "심전도 총정리"
+      ],
+      "tags": [
+        "신경계",
+        "의식사정",
+        "GCS",
+        "동공",
+        "motor",
+        "중환자실"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "중환자실 신경학적 사정, GCS, 동공, motor 평가를 앱 검색용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Glasgow Coma Scale 공식 자료",
+        "NICE Head injury neurological observations",
+        "NINDS NIH Stroke Scale 정의",
+        "기존 원내 신경계 사정/간호 매뉴얼"
+      ],
+      "tables": [
+        {
+          "title": "신경학적 사정 핵심 순서",
+          "headers": [
+            "순서",
+            "항목",
+            "핵심 확인"
+          ],
+          "rows": [
+            [
+              "1",
+              "LOC",
+              "Alert, drowsy, stupor, semicoma, coma 단계 확인"
+            ],
+            [
+              "2",
+              "GCS",
+              "Eye/Verbal/Motor 세부점수와 총점 확인"
+            ],
+            [
+              "3",
+              "Pupil",
+              "크기(mm), 좌우대칭, 모양, 빛반응 확인"
+            ],
+            [
+              "4",
+              "Motor",
+              "좌우 상하지 motor grade, obey 가능 여부 확인"
+            ],
+            [
+              "5",
+              "Vitals/ICP",
+              "BP/HR/RR/SpO₂, 두통·구토·경련·동공변화 확인"
+            ],
+            [
+              "6",
+              "보고",
+              "GCS 저하, 동공 변화, 새 weakness, seizure 즉시 보고"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v77_neuro_assessment_overview.png",
+          "alt": "의식사정 신경학적 사정 총정리 이미지",
+          "caption": "의식사정·신경학적 사정 총정리: GCS, Pupil, Motor, 보고 기준"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V77_GCS_LOC_ASSESSMENT",
+      "category": "신경계 / 중환자 사정",
+      "title": "GCS·의식수준 LOC 사정표",
+      "aliases": [
+        "Glasgow Coma Scale",
+        "GCS 점수",
+        "EVM",
+        "LOC 사정",
+        "의식수준 단계"
+      ],
+      "search_terms": [
+        "GCS",
+        "Glasgow Coma Scale",
+        "E4",
+        "V5",
+        "M6",
+        "EVM",
+        "의식수준",
+        "LOC",
+        "Alert",
+        "Drowsy",
+        "Confusion",
+        "Stupor",
+        "Semicoma",
+        "Coma",
+        "기관삽관 Vt"
+      ],
+      "urgency": "high",
+      "summary": "GCS Eye/Verbal/Motor 세부점수와 LOC 단계를 표로 확인하고, 기관삽관·진정 상태에서도 기록 원칙을 유지하도록 정리한 카드입니다.",
+      "indications": [
+        "의식저하 환자 평가",
+        "두부외상/뇌졸중/뇌출혈 환자 모니터링",
+        "수술 후 또는 진정제 조절 후 의식 회복 확인"
+      ],
+      "preparation": [
+        "펜라이트, 이전 GCS 기록, 진정제/마비제 투여 이력",
+        "기관삽관 여부와 의사소통 가능 여부 확인"
+      ],
+      "steps": [
+        "눈뜨기 반응을 평가한다.",
+        "언어반응을 평가하되 기관삽관 환자는 Vt 등으로 표기한다.",
+        "운동반응은 가장 좋은 반응을 기록하되 좌우 차이가 있으면 함께 기록한다.",
+        "총점과 E/V/M 세부점수를 같이 남긴다.",
+        "이전 점수와 비교해 저하 여부를 확인한다."
+      ],
+      "dosage_or_mix": [
+        "GCS 범위는 3–15점입니다.",
+        "예: GCS 12(E3V4M5)",
+        "기관삽관 환자는 verbal score 해석 제한을 명시합니다."
+      ],
+      "orders_or_emr": [
+        "GCS 저하 또는 새로운 혼돈/졸림/무반응 발생 시 즉시 보고한다.",
+        "진정제 감량 후에도 회복 지연 시 원인 확인이 필요합니다."
+      ],
+      "charting": [
+        "GCS 15(E4V5M6), alert, pupil 3+/3+처럼 기록한다.",
+        "기관삽관 환자는 GCS E3VtM6처럼 평가 제한을 표시한다."
+      ],
+      "io": [],
+      "warnings": [
+        "신경학적 사정은 추세 변화가 중요합니다. 이전 기록과 반드시 비교합니다.",
+        "진정제, 마비제, 기관삽관, 저혈당, 저산소증, 발열, seizure 후 상태는 평가에 영향을 줄 수 있습니다.",
+        "최종 처치와 보고 체계는 원내 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "의식사정·신경학적 사정 총정리",
+        "Pupil 사정",
+        "Motor 사정"
+      ],
+      "tags": [
+        "GCS",
+        "LOC",
+        "의식수준"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "중환자실 신경학적 사정, GCS, 동공, motor 평가를 앱 검색용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Glasgow Coma Scale 공식 자료",
+        "NICE Head injury neurological observations",
+        "NINDS NIH Stroke Scale 정의",
+        "기존 원내 신경계 사정/간호 매뉴얼"
+      ],
+      "tables": [
+        {
+          "title": "GCS 세부점수",
+          "headers": [
+            "영역",
+            "점수",
+            "반응"
+          ],
+          "rows": [
+            [
+              "Eye opening",
+              "4",
+              "자발적으로 눈뜸"
+            ],
+            [
+              "Eye opening",
+              "3",
+              "음성자극에 눈뜸"
+            ],
+            [
+              "Eye opening",
+              "2",
+              "통증자극에 눈뜸"
+            ],
+            [
+              "Eye opening",
+              "1",
+              "눈뜨지 못함"
+            ],
+            [
+              "Verbal",
+              "5",
+              "지남력 있음"
+            ],
+            [
+              "Verbal",
+              "4",
+              "혼돈된 대화"
+            ],
+            [
+              "Verbal",
+              "3",
+              "부적절한 단어"
+            ],
+            [
+              "Verbal",
+              "2",
+              "이해 불가 소리"
+            ],
+            [
+              "Verbal",
+              "1",
+              "무반응"
+            ],
+            [
+              "Motor",
+              "6",
+              "명령 수행"
+            ],
+            [
+              "Motor",
+              "5",
+              "통증부위 국소화"
+            ],
+            [
+              "Motor",
+              "4",
+              "통증 회피"
+            ],
+            [
+              "Motor",
+              "3",
+              "이상 굴곡"
+            ],
+            [
+              "Motor",
+              "2",
+              "이상 신전"
+            ],
+            [
+              "Motor",
+              "1",
+              "무반응"
+            ]
+          ]
+        },
+        {
+          "title": "LOC 단계",
+          "headers": [
+            "단계",
+            "의미",
+            "관찰 포인트"
+          ],
+          "rows": [
+            [
+              "Alert",
+              "명료",
+              "지남력·명령수행 가능"
+            ],
+            [
+              "Drowsy",
+              "졸림",
+              "부르면 깨고 반응 느림"
+            ],
+            [
+              "Confusion",
+              "혼돈",
+              "의식은 있으나 협조/대화 부정확"
+            ],
+            [
+              "Stupor",
+              "혼미",
+              "강한 자극에만 반응"
+            ],
+            [
+              "Semicoma",
+              "반혼수",
+              "강한 자극에 약한 반응"
+            ],
+            [
+              "Coma",
+              "혼수",
+              "완전 무반응"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v77_gcs_loc_table.png",
+          "alt": "GCS 의식수준 사정표 이미지",
+          "caption": "GCS Eye/Verbal/Motor 세부점수와 LOC 단계"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V77_PUPIL_ASSESSMENT",
+      "category": "신경계 / 중환자 사정",
+      "title": "Pupil 동공 사정 총정리: 크기·반응·대칭",
+      "aliases": [
+        "동공사정",
+        "pupil check",
+        "동공반사",
+        "pupil reflex",
+        "anisocoria",
+        "isocoria"
+      ],
+      "search_terms": [
+        "pupil",
+        "PUPIL",
+        "동공",
+        "동공사정",
+        "동공반사",
+        "pupil reflex",
+        "anisocoria",
+        "isocoria",
+        "prompt",
+        "sluggish",
+        "fixed",
+        "pinpoint",
+        "dilated",
+        "동공부등",
+        "빛반사"
+      ],
+      "urgency": "high",
+      "summary": "동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "뇌압 상승 의심 환자",
+        "뇌출혈/뇌졸중/두부외상 환자",
+        "진정 상태 환자의 신경학적 악화 여부 확인"
+      ],
+      "preparation": [
+        "펜라이트",
+        "이전 pupil 기록",
+        "안과 수술력, 산동제/마약/진정제 등 약물 영향 확인"
+      ],
+      "steps": [
+        "실내 조명을 최소화하고 빛 비추기 전 크기를 먼저 본다.",
+        "좌우 동공 크기와 모양을 비교한다.",
+        "각 눈에 빛을 비추고 prompt/sluggish/fixed를 확인한다.",
+        "한쪽 확인 후 반대쪽 확인 전 1–2초 간격을 둔다.",
+        "새로운 동공부등이나 fixed pupil은 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "정상 참고 크기: 대략 2–6 mm 범위",
+        "반응: prompt, sluggish, fixed",
+        "기록 예: pupil 3+/3+, round, prompt"
+      ],
+      "orders_or_emr": [
+        "새 동공부등, 한쪽 산동, fixed pupil, GCS 저하 동반 시 즉시 보고한다.",
+        "동공 변화와 활력징후, motor 변화를 함께 확인한다."
+      ],
+      "charting": [
+        "Rt pupil 5mm fixed, Lt pupil 3mm prompt처럼 좌우·크기·반응을 같이 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "신경학적 사정은 추세 변화가 중요합니다. 이전 기록과 반드시 비교합니다.",
+        "진정제, 마비제, 기관삽관, 저혈당, 저산소증, 발열, seizure 후 상태는 평가에 영향을 줄 수 있습니다.",
+        "최종 처치와 보고 체계는 원내 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "GCS·의식수준 LOC 사정표",
+        "Motor 사정",
+        "EVD·ICP 총정리"
+      ],
+      "tags": [
+        "동공",
+        "pupil",
+        "동공반사"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "중환자실 신경학적 사정, GCS, 동공, motor 평가를 앱 검색용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Glasgow Coma Scale 공식 자료",
+        "NICE Head injury neurological observations",
+        "NINDS NIH Stroke Scale 정의",
+        "기존 원내 신경계 사정/간호 매뉴얼"
+      ],
+      "tables": [
+        {
+          "title": "Pupil 사정 항목",
+          "headers": [
+            "항목",
+            "확인 내용",
+            "주의점"
+          ],
+          "rows": [
+            [
+              "크기",
+              "2–6 mm 참고, 좌우 비교",
+              "빛 비추기 전 기준으로 기록"
+            ],
+            [
+              "모양",
+              "round/oval/irregular/keyhole/pinpoint",
+              "외상·수술력·약물 영향 확인"
+            ],
+            [
+              "반응",
+              "prompt / sluggish / fixed",
+              "양안을 각각 확인"
+            ],
+            [
+              "대칭",
+              "isocoria / anisocoria",
+              "새 동공부등은 즉시 보고"
+            ],
+            [
+              "기록",
+              "3+/3+, 5 fixed/3 prompt",
+              "크기(mm)+반응을 함께 기록"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v77_pupil_motor_assessment.png",
+          "alt": "Pupil Motor 신경학적 사정 이미지",
+          "caption": "동공사정과 motor power grade 핵심 요약"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V77_MOTOR_ASSESSMENT",
+      "category": "신경계 / 중환자 사정",
+      "title": "Motor power 사정 총정리: Grade·좌우비교·보고기준",
+      "aliases": [
+        "motor power",
+        "motor grade",
+        "운동반응 사정",
+        "근력평가",
+        "편마비 사정"
+      ],
+      "search_terms": [
+        "motor",
+        "MOTOR",
+        "motor power",
+        "motor grade",
+        "근력",
+        "운동반응",
+        "편마비",
+        "hemiparesis",
+        "obey",
+        "pronator drift",
+        "motor 5",
+        "motor 4",
+        "motor 3",
+        "motor 2",
+        "motor 1",
+        "motor 0"
+      ],
+      "urgency": "high",
+      "summary": "상하지 좌우 motor grade를 평가하고, 편측 저하·비정상 자세반응·새로운 weakness를 즉시 보고할 수 있게 정리한 카드입니다.",
+      "indications": [
+        "뇌졸중/뇌출혈/두부외상 환자",
+        "수술 후 운동기능 관찰",
+        "갑작스런 편측 weakness 발생 시",
+        "진정제 감량 후 motor 회복 확인"
+      ],
+      "preparation": [
+        "환자 협조 가능 여부 확인",
+        "이전 motor 기록",
+        "통증·마비·부목·수술부위 등 제한 요인 확인"
+      ],
+      "steps": [
+        "상지와 하지, 좌우를 나눠 사정한다.",
+        "명령수행이 가능하면 팔 들어올리기, 손쥐기, 다리 들어올리기 등을 확인한다.",
+        "저항, 중력 극복 여부, 근수축 흔적을 기준으로 grade를 판단한다.",
+        "새로운 좌우 차이나 악화가 있으면 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "Grade 5 정상, 4 저항 극복, 3 중력 극복, 2 중력 제거 시 움직임, 1 근수축 흔적, 0 수축 없음"
+      ],
+      "orders_or_emr": [
+        "새로운 편측 weakness, motor grade 2단계 이상 저하, 비정상 굴곡/신전 자세반응은 즉시 보고한다."
+      ],
+      "charting": [
+        "예: motor Rt arm 5/Lt arm 3, Rt leg 5/Lt leg 4. 이전 대비 Lt arm 5→3 저하 보고함."
+      ],
+      "io": [],
+      "warnings": [
+        "신경학적 사정은 추세 변화가 중요합니다. 이전 기록과 반드시 비교합니다.",
+        "진정제, 마비제, 기관삽관, 저혈당, 저산소증, 발열, seizure 후 상태는 평가에 영향을 줄 수 있습니다.",
+        "최종 처치와 보고 체계는 원내 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "GCS·의식수준 LOC 사정표",
+        "Pupil 사정",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "motor",
+        "근력",
+        "편마비"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "중환자실 신경학적 사정, GCS, 동공, motor 평가를 앱 검색용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Glasgow Coma Scale 공식 자료",
+        "NICE Head injury neurological observations",
+        "NINDS NIH Stroke Scale 정의",
+        "기존 원내 신경계 사정/간호 매뉴얼"
+      ],
+      "tables": [
+        {
+          "title": "Motor power grade",
+          "headers": [
+            "Grade",
+            "의미",
+            "평가 포인트"
+          ],
+          "rows": [
+            [
+              "5",
+              "정상 근력",
+              "저항에 정상적으로 버팀"
+            ],
+            [
+              "4",
+              "저항 극복 가능",
+              "불완전하면 4-/4/4+로 구분 가능"
+            ],
+            [
+              "3",
+              "중력 극복 가능",
+              "저항은 이기지 못함"
+            ],
+            [
+              "2",
+              "중력 제거 시 움직임",
+              "침상에서 미끄러지듯 움직임"
+            ],
+            [
+              "1",
+              "근수축 흔적",
+              "flicker/trace contraction"
+            ],
+            [
+              "0",
+              "수축 없음",
+              "no contraction"
+            ]
+          ]
+        },
+        {
+          "title": "부위별 quick motor check",
+          "headers": [
+            "부위",
+            "확인 방법",
+            "기록 예시"
+          ],
+          "rows": [
+            [
+              "상지",
+              "팔 들어올리기, 손쥐기, pronator drift",
+              "Rt arm 5 / Lt arm 3"
+            ],
+            [
+              "하지",
+              "다리 들어올리기, 발등/발바닥 굽힘",
+              "Rt leg 5 / Lt leg 4"
+            ],
+            [
+              "안면",
+              "입꼬리 비대칭, 눈감기, 이마주름",
+              "Lt facial palsy 의심"
+            ],
+            [
+              "언어/감각",
+              "말 어눌함, 감각저하 동반 확인",
+              "aphasia/dysarthria 여부 기록"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v77_pupil_motor_assessment.png",
+          "alt": "Motor power grade 이미지",
+          "caption": "Motor power grade와 좌우 비교 평가"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V77_ICU_NEURO_NURSING_CHECKLIST",
+      "category": "신경계 / 중환자 사정",
+      "title": "중환자실 신경학적 사정 간호 체크리스트",
+      "aliases": [
+        "ICU neuro check",
+        "신경계 간호 체크리스트",
+        "신경학적 사정 기록",
+        "신경계 인계"
+      ],
+      "search_terms": [
+        "중환자실 신경학적 사정",
+        "ICU neuro check",
+        "neuro nursing",
+        "신경계 간호",
+        "기록",
+        "인계",
+        "GCS 기록",
+        "Pupil 기록",
+        "motor 기록",
+        "경련",
+        "ICP 상승",
+        "Cushing triad",
+        "EVD",
+        "ICP monitor"
+      ],
+      "urgency": "high",
+      "summary": "중환자실에서 신경학적 사정 항목, 관찰 빈도, 기록 문장, 즉시 보고 문장을 표준화해 확인하는 체크리스트 카드입니다.",
+      "indications": [
+        "정규 neuro check 인계",
+        "신경계 환자 상태 변화 보고",
+        "EVD/ICP monitor 적용 환자 관찰",
+        "경련 또는 의식저하 환자 기록 정리"
+      ],
+      "preparation": [
+        "이전 neuro 기록",
+        "GCS/pupil/motor 체크 도구",
+        "모니터 활력징후, 혈당, SpO₂",
+        "EVD/ICP monitor 적용 여부"
+      ],
+      "steps": [
+        "LOC, GCS, pupil, motor, vital sign을 같은 시간대에 확인한다.",
+        "이전 기록과 비교하여 악화 항목을 찾는다.",
+        "혼동요인을 확인한다: 진정제, 저혈당, 저산소증, 발열, seizure 후 상태.",
+        "악화 소견은 구체적 수치와 함께 보고한다.",
+        "보고 후 지시사항과 환자 반응을 기록한다."
+      ],
+      "dosage_or_mix": [
+        "GCS, pupil, motor는 숫자·좌우·반응을 함께 기록합니다.",
+        "EVD/ICP monitor 환자는 level, zero, waveform, drainage를 함께 확인합니다."
+      ],
+      "orders_or_emr": [
+        "GCS 저하, fixed pupil, 새 weakness, seizure, 반복구토, Cushing triad는 즉시 보고합니다.",
+        "CT/MRI, EEG, lab, 혈당/ABGA 등 추가 평가 필요 여부를 확인합니다."
+      ],
+      "charting": [
+        "예: 이전 GCS 15에서 현재 11(E2V3M6)로 저하, Rt pupil 5mm fixed 관찰되어 즉시 보고함."
+      ],
+      "io": [],
+      "warnings": [
+        "신경학적 사정은 추세 변화가 중요합니다. 이전 기록과 반드시 비교합니다.",
+        "진정제, 마비제, 기관삽관, 저혈당, 저산소증, 발열, seizure 후 상태는 평가에 영향을 줄 수 있습니다.",
+        "최종 처치와 보고 체계는 원내 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "EVD·ICP·CVP 총정리",
+        "ABGA 총정리",
+        "뇌졸중 총정리",
+        "중환자실 질병 총정리"
+      ],
+      "tags": [
+        "신경계",
+        "간호체크리스트",
+        "기록",
+        "보고"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "중환자실 신경학적 사정, GCS, 동공, motor 평가를 앱 검색용 카드로 구조화함."
+      },
+      "source_refs": [
+        "Glasgow Coma Scale 공식 자료",
+        "NICE Head injury neurological observations",
+        "NINDS NIH Stroke Scale 정의",
+        "기존 원내 신경계 사정/간호 매뉴얼"
+      ],
+      "tables": [
+        {
+          "title": "ICU Neuro Check 핵심 항목",
+          "headers": [
+            "항목",
+            "확인 내용",
+            "기록 포인트"
+          ],
+          "rows": [
+            [
+              "의식",
+              "LOC, GCS E/V/M, sedation/RASS 영향",
+              "총점+세부점수 기록"
+            ],
+            [
+              "동공",
+              "크기, 대칭, 모양, 빛반응",
+              "3+/3+, fixed/sluggish"
+            ],
+            [
+              "운동",
+              "상하지 좌우 motor grade",
+              "Rt/Lt, arm/leg 구분"
+            ],
+            [
+              "감각/언어",
+              "감각저하, 언어장애, facial palsy",
+              "변화 발생 시각 기록"
+            ],
+            [
+              "Vitals/ICP",
+              "BP/HR/RR/SpO₂/Temp, 혈당",
+              "Cushing triad, 두통·구토 확인"
+            ],
+            [
+              "장비",
+              "EVD/ICP monitor, drain level",
+              "level, zero, waveform, 배액량"
+            ]
+          ]
+        },
+        {
+          "title": "즉시 보고 기준",
+          "headers": [
+            "상황",
+            "보고 내용"
+          ],
+          "rows": [
+            [
+              "GCS 악화",
+              "총점 2점 이상 저하 또는 E/V/M 항목 급격한 변화"
+            ],
+            [
+              "동공 변화",
+              "새로운 동공부등, 한쪽 산동, sluggish/fixed pupil"
+            ],
+            [
+              "Motor 저하",
+              "새로운 편마비 또는 좌우 motor grade 악화"
+            ],
+            [
+              "경련/ICP 징후",
+              "seizure, 반복구토, 심한 두통, Cushing triad"
+            ],
+            [
+              "장비 이상",
+              "EVD 배액 급변, ICP 상승, waveform 이상"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v77_icu_neuro_checklist.png",
+          "alt": "중환자실 신경학적 사정 간호 체크리스트 이미지",
+          "caption": "ICU Neuro Check: 관찰, 보고, 기록, 인계 체크리스트"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -28673,6 +29501,39 @@
       "item_count": 242,
       "table_count": 111,
       "image_count": 224,
+      "video_count": 5
+    }
+  },
+  "v77_update": {
+    "title": "의식사정·GCS·Pupil·Motor 신경학적 사정 카드 추가",
+    "added_cards": [
+      "V77_NEURO_ASSESSMENT_OVERVIEW",
+      "V77_GCS_LOC_ASSESSMENT",
+      "V77_PUPIL_ASSESSMENT",
+      "V77_MOTOR_ASSESSMENT",
+      "V77_ICU_NEURO_NURSING_CHECKLIST"
+    ],
+    "kept": [
+      "V62 Google Drive 동영상 링크 방식 유지",
+      "V63 14개 파일 삭제 상태 유지",
+      "V64 통증 사정 이미지 수혈카드 분리 상태 유지",
+      "V65 신규 자료 표/이미지 기능 유지",
+      "V66 로그인 입력칸 흐린글씨 제거 유지",
+      "V67 아그라스타트주 권장용량표 유지",
+      "V68 헤파린 요법 노모그램 유지",
+      "V69 뇌졸중 총정리 유지",
+      "V70 심전도 총정리 유지",
+      "V71 EVD·ICP·CVP 총정리 유지",
+      "V72 ABGA 총정리 유지",
+      "V73 수혈 총정리 유지",
+      "V74 중환자실 질병 계통별 총정리 유지",
+      "V75 혈당·당뇨·인슐린 총정리 유지",
+      "V76 중환자실 약품·수액요법 총정리 유지"
+    ],
+    "stats": {
+      "item_count": 247,
+      "table_count": 119,
+      "image_count": 229,
       "video_count": 5
     }
   }
