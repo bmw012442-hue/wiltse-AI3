@@ -21,6 +21,72 @@ const SESSION_HOURS = Number(process.env.SESSION_HOURS || 12);
 const SESSION_MAX_AGE_SECONDS = Math.max(1, SESSION_HOURS) * 60 * 60;
 const SESSION_COOKIE = "icu_session";
 
+const LEGACY_COMMON_LOGIN_ALLOWED = String(process.env.ALLOW_COMMON_LOGIN || "").toLowerCase() === "true";
+
+function normalizeAccountRecord(record) {
+  if (!record) return null;
+  const username = String(record.username || record.id || record.name || "").trim();
+  const password = String(record.password || record.pass || record.pidn || "").trim();
+  if (!username || !password) return null;
+  return {
+    username,
+    password,
+    name: String(record.name || username).trim(),
+    role: String(record.role || "user").trim().toLowerCase() === "admin" ? "admin" : "user",
+    active: record.active !== false
+  };
+}
+
+function loadIndividualAccounts() {
+  const raw = String(process.env.ICU_USERS_JSON || "").trim();
+  if (!raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    const records = Array.isArray(parsed)
+      ? parsed
+      : Object.entries(parsed).map(([username, value]) => {
+          if (typeof value === "string" || typeof value === "number") {
+            return { username, password: String(value) };
+          }
+          return { username, ...value };
+        });
+
+    const seen = new Set();
+    return records.map(normalizeAccountRecord).filter(account => {
+      if (!account) return false;
+      const key = account.username.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  } catch (err) {
+    console.error("ICU_USERS_JSON parse error:", err);
+    return [];
+  }
+}
+
+const INDIVIDUAL_ACCOUNTS = loadIndividualAccounts();
+
+function findLoginAccount(username) {
+  const target = String(username || "").trim().toLowerCase();
+
+  for (const account of INDIVIDUAL_ACCOUNTS) {
+    if (account.active && account.username.toLowerCase() === target) return account;
+  }
+
+  if (INDIVIDUAL_ACCOUNTS.length === 0 && LEGACY_COMMON_LOGIN_ALLOWED && LOGIN_ID && LOGIN_PASSWORD && target === LOGIN_ID.toLowerCase()) {
+    return { username: LOGIN_ID, password: LOGIN_PASSWORD, name: LOGIN_ID, role: "legacy", active: true };
+  }
+
+  return null;
+}
+
+function loginConfigured() {
+  return INDIVIDUAL_ACCOUNTS.length > 0 || (LEGACY_COMMON_LOGIN_ALLOWED && LOGIN_ID && LOGIN_PASSWORD);
+}
+
+
+
 const model = process.env.OPENAI_MODEL || "gpt-4.1-mini";
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY || "missing-key" });
 
@@ -195,9 +261,11 @@ function signPayload(payload) {
   return crypto.createHmac("sha256", SESSION_SECRET).update(payload).digest("base64url");
 }
 
-function createSessionToken(username) {
+function createSessionToken(account) {
   const payload = Buffer.from(JSON.stringify({
-    u: username,
+    u: account.username || account,
+    name: account.name || account.username || account,
+    role: account.role || "user",
     exp: Date.now() + SESSION_MAX_AGE_SECONDS * 1000
   })).toString("base64url");
   return `${payload}.${signPayload(payload)}`;
@@ -220,8 +288,8 @@ function getSession(req) {
   return verifySessionToken(parseCookies(req)[SESSION_COOKIE]);
 }
 
-function setSessionCookie(res, username) {
-  const token = createSessionToken(username);
+function setSessionCookie(res, account) {
+  const token = createSessionToken(account);
   const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
   res.setHeader(
     "Set-Cookie",
@@ -268,7 +336,11 @@ function clearFailed(req) {
 function requireAuth(req, res, next) {
   const session = getSession(req);
   if (session) {
-    req.user = session.u;
+    req.user = {
+      username: session.u,
+      name: session.name || session.u,
+      role: session.role || "user"
+    };
     return next();
   }
 
@@ -282,12 +354,15 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "0.31.0-v31-login-fix",
+    version: "0.57.0-v57-individual-accounts",
     cards: items.length,
-    loginConfigured: Boolean(LOGIN_ID && LOGIN_PASSWORD),
+    loginConfigured: loginConfigured(),
+    loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
+    accountCount: INDIVIDUAL_ACCOUNTS.length,
     hasOpenAIKey: Boolean(process.env.OPENAI_API_KEY)
   });
 });
+
 
 app.get("/login", (req, res) => {
   if (getSession(req)) return res.redirect("/");
@@ -322,9 +397,9 @@ app.get(Array.from(publicLoginAssets), (req, res) => {
 
 
 app.post("/api/login", (req, res) => {
-  if (!LOGIN_ID || !LOGIN_PASSWORD) {
+  if (!loginConfigured()) {
     return res.status(500).json({
-      error: "Render 환경변수 ICU_LOGIN_ID, ICU_LOGIN_PASSWORD가 설정되지 않았습니다."
+      error: "Render 환경변수 ICU_USERS_JSON이 설정되지 않았습니다. 개별 계정 JSON을 Environment에 등록하세요."
     });
   }
 
@@ -335,10 +410,18 @@ app.post("/api/login", (req, res) => {
   const username = String(req.body?.username || "").trim();
   const password = String(req.body?.password || "");
 
-  if (safeEqual(username, LOGIN_ID) && safeEqual(password, LOGIN_PASSWORD)) {
+  const account = findLoginAccount(username);
+  if (account && safeEqual(password, account.password)) {
     clearFailed(req);
-    setSessionCookie(res, username);
-    return res.json({ ok: true });
+    setSessionCookie(res, account);
+    return res.json({
+      ok: true,
+      user: {
+        username: account.username,
+        name: account.name,
+        role: account.role
+      }
+    });
   }
 
   recordFailed(req);
@@ -353,7 +436,12 @@ app.post("/api/logout", (req, res) => {
 app.use(requireAuth);
 
 app.get("/api/me", (req, res) => {
-  res.json({ ok: true, user: req.user, sessionHours: SESSION_HOURS });
+  res.json({
+    ok: true,
+    user: req.user,
+    sessionHours: SESSION_HOURS,
+    loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy"
+  });
 });
 
 app.post("/api/search", (req, res) => {
