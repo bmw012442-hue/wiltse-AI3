@@ -356,7 +356,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "0.60.0-v60-toc-practice-menu",
+    version: "0.61.0-v61-video-support",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
