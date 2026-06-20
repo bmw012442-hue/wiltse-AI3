@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.71.0-v71-evd-icp-cvp-summary",
+    "version": "1.72.0-v72-abga-summary",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP 총정리",
+    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA 총정리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -23313,6 +23313,791 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true
+    },
+    {
+      "id": "V72_ABGA_OVERVIEW",
+      "category": "호흡 / ABGA / 중환자실",
+      "title": "ABGA 총정리: 정상값·채혈·빠른 해석순서",
+      "aliases": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "arterial blood gas",
+        "동맥혈 가스분석",
+        "혈액가스분석",
+        "ABGA 정상값",
+        "ABGA 채혈",
+        "ABGA 해석순서"
+      ],
+      "search_terms": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "동맥혈 가스 분석",
+        "pH",
+        "PaCO2",
+        "PaO2",
+        "HCO3",
+        "SaO2",
+        "BE",
+        "Base excess",
+        "Lactate",
+        "젖산",
+        "P/F ratio",
+        "PF ratio",
+        "FiO2",
+        "산염기",
+        "산증",
+        "알칼리증",
+        "대사성 산증",
+        "호흡성 산증",
+        "대사성 알칼리증",
+        "호흡성 알칼리증",
+        "인공호흡기",
+        "ventilator",
+        "산소화",
+        "환기",
+        "정상값",
+        "정상범위",
+        "채혈",
+        "Allen test",
+        "요골동맥",
+        "공기방울",
+        "heparin syringe",
+        "분석 지연"
+      ],
+      "urgency": "high",
+      "summary": "ABGA의 정상/참고값, 채혈 전후 체크, 빠른 해석 6단계, 즉시 보고 상황을 한 번에 정리한 카드입니다.",
+      "indications": [
+        "산소화/환기/산염기 상태 확인이 필요한 중환자",
+        "인공호흡기 적용 환자 ABGA 결과 확인",
+        "산소요법 변경 전후 평가",
+        "쇼크, sepsis, DKA, COPD 악화 등 산염기 장애 의심"
+      ],
+      "preparation": [
+        "처방 또는 검사 필요성 확인",
+        "현재 FiO₂, 산소장치, ventilator mode/setting, 체온 확인",
+        "요골동맥 채혈 시 말초순환 상태 확인",
+        "heparinized syringe 준비",
+        "채혈 후 압박 및 출혈 관찰"
+      ],
+      "steps": [
+        "pH로 산증/알칼리증을 먼저 확인한다.",
+        "PaCO₂로 환기/호흡성 문제를 본다.",
+        "HCO₃⁻와 BE로 대사성 문제를 본다.",
+        "PaO₂, SaO₂, FiO₂, P/F ratio로 산소화를 평가한다.",
+        "Lactate와 혈압, 소변량, 의식 상태를 함께 본다.",
+        "이전 ABGA와 변화폭을 비교하고 필요 시 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "pH 7.35–7.45",
+        "PaCO₂ 35–45 mmHg",
+        "HCO₃⁻ 22–26 mEq/L",
+        "PaO₂ 80–100 mmHg",
+        "SaO₂ 95–100%",
+        "BE -2 ~ +2 mEq/L 참고",
+        "Lactate <2 mmol/L 참고"
+      ],
+      "orders_or_emr": [
+        "채혈시간, 산소장치/FiO₂, ventilator setting을 반드시 같이 확인한다.",
+        "결과가 환자 상태와 맞지 않으면 검체 오류 가능성을 확인한다."
+      ],
+      "charting": [
+        "채혈시간, 채혈부위, 산소장치/FiO₂, ventilator setting, 결과값, 담당의 보고 및 처치 내용을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "정상범위는 장비/검사실 기준에 따라 달라질 수 있습니다.",
+        "결과 해석은 환자상태, 산소설정, 기저질환을 함께 봐야 합니다.",
+        "공기방울, 지연분석, 정맥혈 혼입은 결과 오류를 만들 수 있습니다."
+      ],
+      "related": [
+        "인공호흡기 사용법",
+        "EVD ICP CVP 총정리",
+        "심전도 총정리",
+        "CPCR 절차"
+      ],
+      "tags": [
+        "ABGA",
+        "호흡",
+        "산염기",
+        "중환자실"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "ABGA 정상값, 산염기 판독, 산소화/환기 간호를 중환자실 실무형으로 구조화."
+      },
+      "source_refs": [
+        "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
+        "American Thoracic Society: ABG interpretation guide",
+        "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
+        "병원 검사실 기준과 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "ABGA 정상/참고값",
+          "headers": [
+            "항목",
+            "정상/참고범위",
+            "의미"
+          ],
+          "rows": [
+            [
+              "pH",
+              "7.35–7.45",
+              "산염기 상태"
+            ],
+            [
+              "PaCO₂",
+              "35–45 mmHg",
+              "환기 상태 / 호흡성 문제"
+            ],
+            [
+              "HCO₃⁻",
+              "22–26 mEq/L",
+              "대사성 보상·장애"
+            ],
+            [
+              "PaO₂",
+              "80–100 mmHg",
+              "산소화 정도"
+            ],
+            [
+              "SaO₂",
+              "95–100%",
+              "산소포화도"
+            ],
+            [
+              "BE",
+              "-2 ~ +2 mEq/L",
+              "대사성 산/염기 경향"
+            ],
+            [
+              "Lactate",
+              "<2 mmol/L 참고",
+              "조직저산소/쇼크 평가"
+            ]
+          ]
+        },
+        {
+          "title": "ABGA 빠른 해석 6단계",
+          "headers": [
+            "단계",
+            "확인",
+            "해석 포인트"
+          ],
+          "rows": [
+            [
+              "1",
+              "pH",
+              "<7.35 산증 / >7.45 알칼리증 / 정상이어도 7.40 기준으로 기울기 확인"
+            ],
+            [
+              "2",
+              "PaCO₂",
+              "높으면 호흡성 산증 방향, 낮으면 호흡성 알칼리증 방향"
+            ],
+            [
+              "3",
+              "HCO₃⁻",
+              "낮으면 대사성 산증 방향, 높으면 대사성 알칼리증 방향"
+            ],
+            [
+              "4",
+              "보상",
+              "PaCO₂와 HCO₃⁻가 반대 방향으로 따라가는지 확인"
+            ],
+            [
+              "5",
+              "산소화",
+              "PaO₂, SaO₂, P/F ratio, 산소요구량 확인"
+            ],
+            [
+              "6",
+              "임상 연결",
+              "호흡수, 의식, 혈압, SpO₂, ventilator alarm, lactate와 함께 판단"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v72_abga_overview.png",
+          "alt": "ABGA 정상값 채혈 해석순서 요약",
+          "caption": "ABGA 총정리 ① 정상값·채혈·해석순서"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V72_ABGA_ACID_BASE",
+      "category": "호흡 / ABGA / 중환자실",
+      "title": "ABGA 산염기 장애 판독: 호흡성·대사성 산증/알칼리증",
+      "aliases": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "arterial blood gas",
+        "동맥혈 가스분석",
+        "혈액가스분석",
+        "산염기 장애",
+        "호흡성 산증",
+        "대사성 산증",
+        "대사성 알칼리증",
+        "호흡성 알칼리증"
+      ],
+      "search_terms": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "동맥혈 가스 분석",
+        "pH",
+        "PaCO2",
+        "PaO2",
+        "HCO3",
+        "SaO2",
+        "BE",
+        "Base excess",
+        "Lactate",
+        "젖산",
+        "P/F ratio",
+        "PF ratio",
+        "FiO2",
+        "산염기",
+        "산증",
+        "알칼리증",
+        "대사성 산증",
+        "호흡성 산증",
+        "대사성 알칼리증",
+        "호흡성 알칼리증",
+        "인공호흡기",
+        "ventilator",
+        "산소화",
+        "환기",
+        "보상",
+        "혼합성 산염기 장애",
+        "Winter 공식",
+        "anion gap",
+        "DKA",
+        "COPD",
+        "과호흡",
+        "구토",
+        "이뇨제"
+      ],
+      "urgency": "high",
+      "summary": "호흡성 산증, 호흡성 알칼리증, 대사성 산증, 대사성 알칼리증을 ABGA 방향·원인·치료/간호 포인트로 비교한 카드입니다.",
+      "indications": [
+        "pH 이상이 있는 ABGA를 해석할 때",
+        "COPD 악화, 과호흡, shock, DKA, 신부전, 구토/이뇨제 사용 환자 평가",
+        "혼합성 산염기 장애 의심 시"
+      ],
+      "preparation": [
+        "ABGA 결과지",
+        "전해질, lactate, 혈당/케톤, 신기능, anion gap",
+        "환자 호흡양상과 ventilator setting"
+      ],
+      "steps": [
+        "pH를 확인한다.",
+        "PaCO₂와 HCO₃⁻ 중 pH 변화와 맞는 항목을 찾는다.",
+        "보상 여부와 혼합성 장애 가능성을 확인한다.",
+        "원인질환을 같이 찾는다.",
+        "심한 산증/알칼리증 또는 급격 변화는 즉시 보고한다."
+      ],
+      "dosage_or_mix": [
+        "대사성 산증에서는 Winter 공식: 예상 PaCO₂ = 1.5 × HCO₃⁻ + 8 ± 2 참고",
+        "pH가 정상이어도 PaCO₂와 HCO₃⁻가 모두 비정상이면 보상 또는 혼합성 장애 가능"
+      ],
+      "orders_or_emr": [
+        "lactate, 전해질, 혈당, 신기능, 처방 약물, ventilator setting을 함께 확인한다."
+      ],
+      "charting": [
+        "주된 산염기 장애, 의심 원인, 담당의 보고, 처치와 재검 계획을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "공식은 참고 도구입니다. 환자 상태와 병원 기준을 우선합니다.",
+        "만성 CO₂ retention 환자는 baseline ABGA와 비교해야 합니다."
+      ],
+      "related": [
+        "ABGA 정상값·채혈·해석순서",
+        "산소화·환기 간호",
+        "인공호흡기 사용법"
+      ],
+      "tags": [
+        "ABGA",
+        "산염기",
+        "산증",
+        "알칼리증"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "ABGA 정상값, 산염기 판독, 산소화/환기 간호를 중환자실 실무형으로 구조화."
+      },
+      "source_refs": [
+        "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
+        "American Thoracic Society: ABG interpretation guide",
+        "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
+        "병원 검사실 기준과 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "4가지 산염기 장애",
+          "headers": [
+            "장애",
+            "ABGA 방향",
+            "흔한 원인",
+            "치료·간호 포인트"
+          ],
+          "rows": [
+            [
+              "호흡성 산증",
+              "pH↓ / PaCO₂↑",
+              "저환기, COPD 악화, 진정제, 호흡근 피로",
+              "기도·호흡 확인, 산소화/환기 보조, ventilator 설정 확인"
+            ],
+            [
+              "호흡성 알칼리증",
+              "pH↑ / PaCO₂↓",
+              "과호흡, 통증·불안, 저산소증, sepsis 초기",
+              "원인 교정, 통증/불안/저산소 평가, 과환기 여부 확인"
+            ],
+            [
+              "대사성 산증",
+              "pH↓ / HCO₃⁻↓",
+              "쇼크·lactate 상승, DKA, 신부전, 설사",
+              "원인 치료, lactate/전해질/anion gap, 수액·인슐린·투석 여부 확인"
+            ],
+            [
+              "대사성 알칼리증",
+              "pH↑ / HCO₃⁻↑",
+              "구토/위액배액, 이뇨제, 저칼륨, volume depletion",
+              "K/Cl 보충, 체액상태 평가, 원인 약물/배액 확인"
+            ]
+          ]
+        },
+        {
+          "title": "보상 및 혼합성 장애 확인",
+          "headers": [
+            "상황",
+            "계산/확인",
+            "해석 포인트"
+          ],
+          "rows": [
+            [
+              "대사성 산증 보상",
+              "Winter 공식: 예상 PaCO₂ = 1.5 × HCO₃⁻ + 8 ± 2",
+              "예상보다 PaCO₂ 높으면 동반 호흡성 산증, 낮으면 호흡성 알칼리증 고려"
+            ],
+            [
+              "호흡성 장애 보상",
+              "급성/만성에 따라 HCO₃⁻ 변화 폭이 다름",
+              "COPD 등 만성 CO₂ retention 환자는 baseline ABGA와 비교"
+            ],
+            [
+              "pH 정상이어도",
+              "PaCO₂와 HCO₃⁻가 모두 비정상일 수 있음",
+              "혼합성 장애 가능성: 임상상·anion gap·lactate 확인"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v72_abga_acidbase_table.png",
+          "alt": "ABGA 산염기 장애 판독표",
+          "caption": "ABGA 총정리 ② 산염기 장애 판독표"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V72_ABGA_OXYGENATION_NURSING",
+      "category": "호흡 / ABGA / 중환자실",
+      "title": "ABGA 산소화·환기·중환자실 간호",
+      "aliases": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "arterial blood gas",
+        "동맥혈 가스분석",
+        "혈액가스분석",
+        "ABGA 간호",
+        "산소화 평가",
+        "환기 평가",
+        "P/F ratio"
+      ],
+      "search_terms": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "동맥혈 가스 분석",
+        "pH",
+        "PaCO2",
+        "PaO2",
+        "HCO3",
+        "SaO2",
+        "BE",
+        "Base excess",
+        "Lactate",
+        "젖산",
+        "P/F ratio",
+        "PF ratio",
+        "FiO2",
+        "산염기",
+        "산증",
+        "알칼리증",
+        "대사성 산증",
+        "호흡성 산증",
+        "대사성 알칼리증",
+        "호흡성 알칼리증",
+        "인공호흡기",
+        "ventilator",
+        "산소화",
+        "환기",
+        "PaO2 저하",
+        "PaCO2 상승",
+        "CO2 retention",
+        "P/F ratio",
+        "ARDS",
+        "산소화",
+        "환기",
+        "FiO2",
+        "PEEP",
+        "minute ventilation",
+        "tidal volume",
+        "SpO2",
+        "I/O",
+        "쇼크"
+      ],
+      "urgency": "high",
+      "summary": "PaO₂, SaO₂, PaCO₂, HCO₃⁻, lactate를 환자상태·산소요법·인공호흡기와 연결해 보는 중환자실 간호 카드입니다.",
+      "indications": [
+        "산소요법 또는 ventilator 조정 전후 확인",
+        "PaO₂ 저하, PaCO₂ 상승/저하, lactate 상승 환자",
+        "호흡곤란, 의식저하, SpO₂ 저하, shock 환자"
+      ],
+      "preparation": [
+        "현재 산소장치/FiO₂, ventilator setting, SpO₂, 호흡수 확인",
+        "분비물, 흉부상태, 흉부영상, 체위 확인",
+        "혈압, urine output, lactate 확인"
+      ],
+      "steps": [
+        "PaO₂/SaO₂로 산소화 상태를 확인한다.",
+        "PaCO₂로 환기 상태를 확인한다.",
+        "HCO₃⁻/BE/lactate로 대사성 문제와 조직관류를 확인한다.",
+        "결과를 보고 산소장치, FiO₂, ventilator setting, 환자 상태와 연결한다.",
+        "변경 후 재검 계획과 보고 기준을 확인한다."
+      ],
+      "dosage_or_mix": [
+        "P/F ratio = PaO₂ ÷ FiO₂. FiO₂는 소수로 계산한다(예: 40% = 0.40).",
+        "PaCO₂ 상승은 저환기 또는 CO₂ retention을 시사할 수 있다.",
+        "PaCO₂ 저하는 과환기 또는 보상성 호흡을 시사할 수 있다."
+      ],
+      "orders_or_emr": [
+        "FiO₂와 ventilator setting 미기록 시 해석이 어려우므로 반드시 확인한다.",
+        "산소화 저하가 지속되면 airway, 분비물, 체위, 장비, PEEP, CXR 등을 함께 확인한다."
+      ],
+      "charting": [
+        "ABGA 결과와 산소/ventilator 조건, 환자 증상, 보고 및 처치 후 반응을 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "ABGA는 숫자만 보지 않고 환자상태와 산소요구량 변화를 함께 봐야 합니다.",
+        "Ventilator 설정 변경은 담당의/프로토콜에 따릅니다."
+      ],
+      "related": [
+        "ABGA 산염기 장애 판독",
+        "인공호흡기 사용법",
+        "중환자실 모니터링",
+        "EVD ICP CVP 총정리"
+      ],
+      "tags": [
+        "ABGA",
+        "산소화",
+        "환기",
+        "중환자실 간호"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "ABGA 정상값, 산염기 판독, 산소화/환기 간호를 중환자실 실무형으로 구조화."
+      },
+      "source_refs": [
+        "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
+        "American Thoracic Society: ABG interpretation guide",
+        "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
+        "병원 검사실 기준과 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "ABGA 결과를 환자상태와 연결",
+          "headers": [
+            "문제 유형",
+            "ABGA에서 보는 값",
+            "간호사가 즉시 확인할 것"
+          ],
+          "rows": [
+            [
+              "산소화 문제",
+              "PaO₂↓, SaO₂↓, P/F ratio↓",
+              "FiO₂, 산소장치, SpO₂ probe, 흉부상태, CXR, PEEP 확인"
+            ],
+            [
+              "환기 문제",
+              "PaCO₂↑ 또는 ↓",
+              "호흡수, tidal volume, minute ventilation, sedation, airway obstruction 확인"
+            ],
+            [
+              "대사 문제",
+              "HCO₃⁻/BE 이상, lactate↑",
+              "쇼크, 신부전, DKA, 전해질, 체액상태 확인"
+            ],
+            [
+              "검체 오류",
+              "결과가 환자상태와 맞지 않음",
+              "정맥혈 혼입, 공기방울, 분석 지연, 산소설정 미기록 확인"
+            ]
+          ]
+        },
+        {
+          "title": "값별 실무 대응",
+          "headers": [
+            "값",
+            "의미",
+            "중환자실 간호 포인트"
+          ],
+          "rows": [
+            [
+              "PaO₂ 낮음",
+              "산소화 부족",
+              "SpO₂, FiO₂, 산소라인/마스크, 분비물, 체위, CXR, PEEP 확인 후 보고"
+            ],
+            [
+              "PaCO₂ 높음",
+              "저환기/CO₂ retention",
+              "의식저하, 호흡억제, 진정제, airway, ventilator minute ventilation 확인"
+            ],
+            [
+              "PaCO₂ 낮음",
+              "과환기",
+              "통증·불안·저산소·sepsis 초기, ventilator rate 과다 여부 확인"
+            ],
+            [
+              "HCO₃⁻ 낮음",
+              "대사성 산증 방향",
+              "lactate, 혈압, 소변량, 혈당/케톤, 신기능 확인"
+            ],
+            [
+              "HCO₃⁻ 높음",
+              "대사성 알칼리증 방향",
+              "구토/NG drainage, 이뇨제, K/Cl 저하 확인"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v72_abga_oxygenation_nursing.png",
+          "alt": "ABGA 산소화 환기 간호 요약",
+          "caption": "ABGA 총정리 ③ 산소화·환기·간호"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V72_ABGA_EXAMPLES",
+      "category": "호흡 / ABGA / 중환자실",
+      "title": "ABGA 예시 판독과 채혈 후 간호 체크리스트",
+      "aliases": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "arterial blood gas",
+        "동맥혈 가스분석",
+        "혈액가스분석",
+        "ABGA 예시",
+        "ABGA 판독 연습",
+        "채혈 후 간호"
+      ],
+      "search_terms": [
+        "ABGA",
+        "ABG",
+        "동맥혈가스분석",
+        "동맥혈 가스 분석",
+        "pH",
+        "PaCO2",
+        "PaO2",
+        "HCO3",
+        "SaO2",
+        "BE",
+        "Base excess",
+        "Lactate",
+        "젖산",
+        "P/F ratio",
+        "PF ratio",
+        "FiO2",
+        "산염기",
+        "산증",
+        "알칼리증",
+        "대사성 산증",
+        "호흡성 산증",
+        "대사성 알칼리증",
+        "호흡성 알칼리증",
+        "인공호흡기",
+        "ventilator",
+        "산소화",
+        "환기",
+        "ABGA 예시",
+        "판독연습",
+        "채혈 후 압박",
+        "혈종",
+        "출혈",
+        "항응고제",
+        "검체 오류",
+        "재검"
+      ],
+      "urgency": "high",
+      "summary": "대표 ABGA 결과 예시를 보고 산증/알칼리증을 구분하는 연습 카드와 채혈 후 간호 체크리스트입니다.",
+      "indications": [
+        "ABGA 판독을 연습할 때",
+        "신규 간호사 교육",
+        "ABGA 채혈 후 출혈/혈종 관찰이 필요한 환자"
+      ],
+      "preparation": [
+        "ABGA 결과지",
+        "환자 산소장치/FiO₂ 정보",
+        "채혈부위 출혈 여부 확인 도구"
+      ],
+      "steps": [
+        "pH, PaCO₂, HCO₃⁻ 순으로 판독한다.",
+        "pH와 같은 방향으로 움직이는 항목을 찾아 주된 장애를 파악한다.",
+        "보상/혼합성 장애를 확인한다.",
+        "채혈 후 천자부위와 말초순환을 관찰한다."
+      ],
+      "dosage_or_mix": [
+        "예시 1: pH 7.28 / PaCO₂ 60 / HCO₃⁻ 27 → 호흡성 산증",
+        "예시 2: pH 7.51 / PaCO₂ 28 / HCO₃⁻ 23 → 호흡성 알칼리증",
+        "예시 3: pH 7.21 / PaCO₂ 30 / HCO₃⁻ 12 → 대사성 산증",
+        "예시 4: pH 7.50 / PaCO₂ 48 / HCO₃⁻ 36 → 대사성 알칼리증"
+      ],
+      "orders_or_emr": [
+        "결과가 환자상태와 맞지 않으면 재검 필요 여부를 확인한다.",
+        "검체 오류 의심 시 채혈 조건을 확인한다."
+      ],
+      "charting": [
+        "판독, 보고, 처치, 재검 계획 및 채혈부위 상태를 기록한다."
+      ],
+      "io": [],
+      "warnings": [
+        "예시는 교육용입니다. 실제 환자는 보상/혼합성 장애, 기저질환, 산소설정에 따라 해석이 달라집니다."
+      ],
+      "related": [
+        "ABGA 정상값·채혈·해석순서",
+        "ABGA 산염기 장애 판독",
+        "ABGA 산소화·환기 간호"
+      ],
+      "tags": [
+        "ABGA",
+        "예시",
+        "판독",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 정리",
+        "note": "ABGA 정상값, 산염기 판독, 산소화/환기 간호를 중환자실 실무형으로 구조화."
+      },
+      "source_refs": [
+        "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
+        "American Thoracic Society: ABG interpretation guide",
+        "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
+        "병원 검사실 기준과 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "대표 예시 판독",
+          "headers": [
+            "예시",
+            "ABGA 결과",
+            "판독",
+            "설명/확인"
+          ],
+          "rows": [
+            [
+              "1",
+              "pH 7.28 / PaCO₂ 60 / HCO₃⁻ 27",
+              "호흡성 산증",
+              "CO₂ retention. 호흡억제, COPD 악화, airway/ventilator 문제 확인"
+            ],
+            [
+              "2",
+              "pH 7.51 / PaCO₂ 28 / HCO₃⁻ 23",
+              "호흡성 알칼리증",
+              "과호흡. 통증, 불안, 저산소증, sepsis 초기 평가"
+            ],
+            [
+              "3",
+              "pH 7.21 / PaCO₂ 30 / HCO₃⁻ 12",
+              "대사성 산증",
+              "lactate, DKA, 신부전, 쇼크 확인. 보상 적절성 확인"
+            ],
+            [
+              "4",
+              "pH 7.50 / PaCO₂ 48 / HCO₃⁻ 36",
+              "대사성 알칼리증",
+              "구토/NG drainage, 이뇨제, 저칼륨 확인"
+            ],
+            [
+              "5",
+              "pH 7.36 / PaCO₂ 60 / HCO₃⁻ 34",
+              "보상된 호흡성 산증 가능",
+              "만성 CO₂ retention 가능. baseline과 증상 비교"
+            ],
+            [
+              "6",
+              "pH 7.20 / PaCO₂ 55 / HCO₃⁻ 20",
+              "혼합성 산증 의심",
+              "PaCO₂↑ + HCO₃⁻↓. 호흡성+대사성 동시 문제 가능, 즉시 보고"
+            ]
+          ]
+        },
+        {
+          "title": "ABGA 채혈 후 간호 체크리스트",
+          "headers": [
+            "체크",
+            "내용",
+            "주의"
+          ],
+          "rows": [
+            [
+              "압박",
+              "천자부위 직접 압박",
+              "항응고제/혈소판 감소 환자는 더 오래 관찰"
+            ],
+            [
+              "출혈/혈종",
+              "부종, 통증, 피하출혈 확인",
+              "악화 시 즉시 보고"
+            ],
+            [
+              "순환상태",
+              "손 저림, 창백, 냉감, 맥박 약화 확인",
+              "요골동맥 채혈 후 특히 확인"
+            ],
+            [
+              "기록",
+              "채혈시간, 부위, 산소장치/FiO₂, 결과, 보고 기록",
+              "산소설정 변경 후 재검 시 시간 명확히 기록"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v72_abga_examples.png",
+          "alt": "ABGA 예시 판독과 채혈 후 간호 체크리스트",
+          "caption": "ABGA 총정리 ④ 예시 판독 연습"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -24205,6 +24990,33 @@ window.ICU_MANUAL_DB = {
       "item_count": 217,
       "table_count": 72,
       "image_count": 198,
+      "video_count": 5
+    }
+  },
+  "v72_update": {
+    "title": "ABGA 총정리 카드 추가",
+    "added_cards": [
+      "V72_ABGA_OVERVIEW",
+      "V72_ABGA_ACID_BASE",
+      "V72_ABGA_OXYGENATION_NURSING",
+      "V72_ABGA_EXAMPLES"
+    ],
+    "kept": [
+      "V62 Google Drive 동영상 링크 방식 유지",
+      "V63 14개 파일 삭제 상태 유지",
+      "V64 통증 사정 이미지 수혈카드 분리 상태 유지",
+      "V65 신규 자료 표/이미지 기능 유지",
+      "V66 로그인 입력칸 흐린글씨 제거 유지",
+      "V67 아그라스타트주 권장용량표 유지",
+      "V68 헤파린 요법 노모그램 유지",
+      "V69 뇌졸중 총정리 카드 유지",
+      "V70 심전도 총정리 유지",
+      "V71 EVD/ICP/CVP 총정리 유지"
+    ],
+    "stats": {
+      "item_count": 221,
+      "table_count": 80,
+      "image_count": 202,
       "video_count": 5
     }
   }
