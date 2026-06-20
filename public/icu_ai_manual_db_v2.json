@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.56.0-v56-internal-phone-table",
+    "version": "1.57.0-v57-individual-accounts",
     "language": "ko",
     "source": "업무 지침 매뉴얼(교육전담) + 윌스 ICU AI 업무 매뉴얼 + 신규(경력직) OJT + 사용자 제시 30개 카테고리 + 업로드 매뉴얼 실제 그림/표 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요."
@@ -22272,6 +22272,100 @@
       ],
       "images": [],
       "standard_sections_ready": true
+    },
+    {
+      "id": "LOGINACCT001",
+      "category": "원내정보/앱 사용",
+      "title": "개별 로그인 계정 안내",
+      "aliases": [
+        "개별 로그인",
+        "계정",
+        "아이디",
+        "비밀번호",
+        "관리자",
+        "퇴사자 삭제",
+        "부서이동자 삭제"
+      ],
+      "search_terms": [
+        "개별 로그인",
+        "계정",
+        "아이디",
+        "비밀번호",
+        "관리자",
+        "유지민",
+        "퇴사자",
+        "부서이동자",
+        "ICU_USERS_JSON"
+      ],
+      "urgency": "routine",
+      "summary": "공용 로그인 대신 개인별 아이디/비밀번호로 접속하도록 설정한 계정 안내 카드입니다.",
+      "indications": [
+        "중환자실 간호사별 개별 계정으로 앱 접속이 필요할 때",
+        "퇴사자/부서이동자 계정을 삭제해야 할 때"
+      ],
+      "preparation": [
+        "Render Environment의 ICU_USERS_JSON 계정 목록 확인"
+      ],
+      "steps": [
+        "개별 계정은 이름을 아이디로, 사번을 비밀번호로 사용합니다.",
+        "유지민 / 50026 계정은 관리자 권한입니다.",
+        "퇴사자 또는 부서이동자는 Render Environment의 ICU_USERS_JSON에서 삭제하거나 active:false로 변경합니다.",
+        "변경 후 Save, rebuild, and deploy를 눌러 적용합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [],
+      "io": [],
+      "warnings": [
+        "계정 목록과 비밀번호는 GitHub에 업로드하지 마세요.",
+        "부서 외부 공유를 금지하세요."
+      ],
+      "related": [],
+      "tags": [
+        "로그인",
+        "계정",
+        "관리자",
+        "v57_individual_accounts"
+      ],
+      "review": {
+        "status": "v57_added"
+      },
+      "source_refs": [
+        "ICU- RN 계정.xlsx"
+      ],
+      "tables": [
+        {
+          "title": "개별 계정 운영 기준",
+          "headers": [
+            "항목",
+            "기준"
+          ],
+          "rows": [
+            [
+              "아이디",
+              "이름"
+            ],
+            [
+              "비밀번호",
+              "사번"
+            ],
+            [
+              "관리자",
+              "유지민 / 50026"
+            ],
+            [
+              "계정 삭제",
+              "ICU_USERS_JSON에서 계정 삭제 또는 active:false"
+            ],
+            [
+              "적용",
+              "Render Environment 저장 후 재배포"
+            ]
+          ]
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -22563,5 +22657,13 @@
     "phone_rows": 23,
     "kept_drug_calculator": true,
     "kept_search_table_image_preview": true
+  },
+  "v57_update": {
+    "description": "공용 로그인 대신 ICU 간호사 개별 계정 로그인 지원. 계정 정보는 GitHub가 아닌 Render 환경변수 ICU_USERS_JSON에서 관리.",
+    "individual_accounts_supported": true,
+    "account_count_from_uploaded_sheet": 38,
+    "admin_account": "유지민",
+    "credential_rule": "아이디=이름, 비밀번호=사번",
+    "do_not_upload_credentials_to_github": true
   }
 }
