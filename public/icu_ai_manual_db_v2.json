@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.73.0-v73-transfusion-summary",
+    "version": "1.74.0-v74-icu-disease-system-summary",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 총정리",
+    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 중환자실 질병 계통별 총정리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -24749,6 +24749,1245 @@
         }
       ],
       "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_DISEASE_OVERVIEW",
+      "category": "중환자실 질병 / 계통별",
+      "title": "중환자실 대상 환자 질병 총정리: 계통별 빠른 분류",
+      "aliases": [
+        "ICU 질병 총정리",
+        "중환자실 질환",
+        "중환자실 진단별 정리",
+        "계통별 질병",
+        "과별 질병 정리"
+      ],
+      "search_terms": [
+        "중환자실",
+        "ICU",
+        "질병",
+        "진단",
+        "질환",
+        "계통별",
+        "과별",
+        "순환계",
+        "호흡기계",
+        "소화기계",
+        "뇌신경계",
+        "신장계",
+        "감염",
+        "패혈증",
+        "쇼크",
+        "혈액응고"
+      ],
+      "urgency": "high",
+      "summary": "중환자실에서 자주 만나는 질환을 순환계, 호흡기계, 뇌신경계, 소화기계, 신장/비뇨계, 내분비/대사, 감염/패혈증, 혈액/응고, 외상/수술 후로 분류한 전체 지도입니다.",
+      "indications": [
+        "신규 간호사 교육 시 계통별 질환을 한 번에 볼 때",
+        "환자 진단명을 보고 어떤 사정과 검사를 우선해야 하는지 정리할 때",
+        "인계 전 주요 문제를 계통별로 빠르게 정리할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "진단명을 먼저 계통별로 분류한다.",
+        "생명 위협 문제: 기도, 호흡, 순환, 의식, 출혈을 우선 확인한다.",
+        "각 계통별 핵심 검사와 모니터링을 확인한다.",
+        "검사결과 변화와 간호중재를 시간순으로 기록한다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "중환자실 질환 계통별 전체 지도",
+          "headers": [
+            "계통",
+            "대표 질환/진단",
+            "위험 신호",
+            "주요 검사",
+            "간호 핵심"
+          ],
+          "rows": [
+            [
+              "순환계",
+              "AMI/STEMI, NSTEMI, 심부전, 심인성 쇼크, 부정맥, 폐색전증, 대동맥질환",
+              "흉통, 저혈압, 폐부종, VT/VF, 말초냉감, lactate 상승",
+              "12유도 ECG, troponin, echo, CXR, ABGA, lactate",
+              "심전도/혈압 연속감시, 산소화, 통증·흉통시간 기록, 승압제·항응고제 부작용 관찰"
+            ],
+            [
+              "호흡기계",
+              "ARDS, 폐렴, COPD/천식 악화, 호흡부전, 기흉, 흡인, 폐부종",
+              "SpO₂ 저하, 호흡곤란, 청색증, ABGA 이상, P/F ratio 저하",
+              "ABGA, CXR/CT, sputum culture, ventilator setting 확인",
+              "기도유지, 흡인, VAP 예방, PEEP/FiO₂ 변화 관찰, prone/진정·섬망 관리"
+            ],
+            [
+              "뇌신경계",
+              "뇌경색, 뇌출혈, SAH, TBI, seizure, ICP 상승, EVD 관리",
+              "의식저하, 동공변화, 편마비, 경련, 두통/구토, GCS 변화",
+              "CT/MRI, CTA/MRA, NIHSS/GCS, ICP/EVD, ABGA/전해질",
+              "신경사정, 동공/GCS/NIHSS 기록, ICP·CPP 관리, 흡인예방, 낙상/욕창 예방"
+            ],
+            [
+              "소화기계·간담도",
+              "GI bleeding, pancreatitis, liver failure, bowel ischemia, ileus, perforation, sepsis source",
+              "토혈/혈변, 복통/복부팽만, Hb 감소, lactate 상승, 황달, 응고장애",
+              "CBC/coagulation, LFT/amylase/lipase, CT, stool/NG output, I/O",
+              "NPO, 위장관 출혈량 관찰, 수혈·수액, 복부사정, aspiration 예방, nutrition 계획"
+            ],
+            [
+              "신장·비뇨계",
+              "AKI, CKD 악화, 급성 요폐, 전해질 이상, CRRT/HD 필요 상태",
+              "소변량 감소, Cr 상승, K 상승, 대사성 산증, fluid overload",
+              "BUN/Cr/eGFR, electrolyte, ABGA, urine output, renal US",
+              "I/O 엄격관리, 체중/부종, nephrotoxic drug 확인, CRRT line·filter·항응고 감시"
+            ],
+            [
+              "내분비·대사",
+              "DKA/HHS, 저혈당, 고혈당, 갑상샘 위기, adrenal crisis, 젖산산증",
+              "의식변화, 탈수, K 변화, 산증, 혈압저하, 체온 이상",
+              "BST, ketone, ABGA, electrolyte, osmolality, lactate",
+              "BST 빈번측정, insulin/fluid/K 보충 감시, 의식·경련·부정맥 관찰"
+            ],
+            [
+              "감염·패혈증",
+              "Sepsis, septic shock, pneumonia, UTI, catheter infection, wound infection",
+              "발열/저체온, 저혈압, 빈맥, lactate 상승, 의식변화, 소변량 감소",
+              "culture, CBC/CRP/PCT, lactate, source imaging, MAP 확인",
+              "배양 후 항생제, 수액·승압제, MAP 65 목표, source control, bundle 수행"
+            ],
+            [
+              "혈액·응고",
+              "DIC, massive bleeding, thrombocytopenia, anemia, anticoagulant bleeding",
+              "출혈, 멍, Hb/PLT 감소, PT/aPTT 연장, fibrinogen 저하",
+              "CBC, PT/INR/aPTT, fibrinogen, D-dimer, TEG/ROTEM 가능",
+              "출혈부위 확인, 수혈/혈액제제, 항응고제 중단·역전 확인, 낙상/시술 출혈예방"
+            ],
+            [
+              "외상·수술 후",
+              "post-op monitoring, trauma, shock, rhabdomyolysis, compartment syndrome",
+              "출혈, 통증, 저혈압, 배액량 증가, fever, CK 상승, 신경혈관 이상",
+              "CBC/coag, ABGA/lactate, CT/X-ray, drain output, CK/myoglobin",
+              "배액관/상처/통증, 신경혈관 사정, 수액·수혈, infection/bleeding/PE 예방"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_icu_disease_system_map.png",
+          "alt": "중환자실 질환 계통별 전체 지도",
+          "caption": "중환자실 대상 질병·진단 계통별 전체 지도"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_CIRCULATORY",
+      "category": "중환자실 질병 / 순환계",
+      "title": "순환계 질환 총정리: ACS·심부전·쇼크·부정맥",
+      "aliases": [
+        "순환계",
+        "심혈관 질환",
+        "ACS",
+        "STEMI",
+        "NSTEMI",
+        "심부전",
+        "심인성 쇼크",
+        "부정맥",
+        "폐색전증"
+      ],
+      "search_terms": [
+        "순환계",
+        "심혈관",
+        "AMI",
+        "ACS",
+        "STEMI",
+        "NSTEMI",
+        "심근경색",
+        "협심증",
+        "심부전",
+        "폐부종",
+        "심인성 쇼크",
+        "부정맥",
+        "AF",
+        "VT",
+        "VF",
+        "PE",
+        "폐색전증",
+        "대동맥박리"
+      ],
+      "urgency": "high",
+      "summary": "순환계 중환자는 심근허혈, 심부전, 쇼크, 부정맥, 폐색전증을 빠르게 구분하고 ECG·혈압·산소화·lactate 변화를 동시에 보는 것이 핵심입니다.",
+      "indications": [
+        "흉통, 저혈압, 부정맥, 폐부종, 쇼크 환자",
+        "승압제/강심제/항응고제 사용 환자",
+        "PCI/심장시술 전후 환자"
+      ],
+      "preparation": [
+        "12유도 ECG와 monitor",
+        "IV route, 응급약물, 제세동기",
+        "troponin, ABGA, lactate, 전해질, CXR/echo 확인"
+      ],
+      "steps": [
+        "흉통 시작 시각과 ECG 변화를 확인한다.",
+        "저혈압/쇼크 여부를 보고 MAP, lactate, urine output을 확인한다.",
+        "부정맥은 맥박 유무와 안정성부터 판단한다.",
+        "심부전/폐부종은 호흡상태, CXR, I/O, 이뇨제 반응을 확인한다."
+      ],
+      "dosage_or_mix": [
+        "STEMI 의심 시 재관류 치료 지연 방지가 핵심이다.",
+        "심부전은 산소화, 이뇨제, 혈관확장제/강심제 여부를 처방에 따라 확인한다.",
+        "쇼크에서는 수액 반응성, 승압제, 원인 교정을 함께 본다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "순환계 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "ACS/STEMI/NSTEMI",
+              "흉통, ST 변화, troponin 상승",
+              "12유도 ECG 반복, troponin, BP, SpO₂",
+              "재관류/항혈소판/항응고/통증조절",
+              "흉통 시간·ECG 변화·보고시간 기록, 출혈 감시"
+            ],
+            [
+              "급성 심부전/폐부종",
+              "호흡곤란, crackle, CXR congestion",
+              "CXR, BNP/echo, I/O, ABGA",
+              "산소/NIV, 이뇨제, 혈압조절",
+              "semi-Fowler, SpO₂, 소변량, 이뇨반응 확인"
+            ],
+            [
+              "심인성 쇼크",
+              "저혈압, 말초냉감, lactate 상승",
+              "MAP, lactate, urine output, echo",
+              "승압제/강심제, 원인치료, 기계보조 고려",
+              "관류·소변량·부정맥·line patency 관찰"
+            ],
+            [
+              "부정맥(AF, VT/VF, AV block)",
+              "불규칙맥, 빈맥/서맥, 의식저하",
+              "ECG strip, 전해질, 약물력",
+              "안정성에 따라 약물/전기치료",
+              "맥박유무, 제세동기 준비, 약물 부작용 기록"
+            ],
+            [
+              "폐색전증/대동맥질환",
+              "갑작스런 호흡곤란/흉통/저혈압",
+              "D-dimer/CTPA/echo, BP 양측 측정",
+              "항응고/시술/수술 등 원인치료",
+              "호흡/순환 급변, 항응고 출혈, 통증 변화 감시"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_circulation_respiration_summary.png",
+          "alt": "순환계와 호흡기계 중환자 질환 요약",
+          "caption": "순환계·호흡기계 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_RESPIRATORY",
+      "category": "중환자실 질병 / 호흡기계",
+      "title": "호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD",
+      "aliases": [
+        "호흡기계",
+        "호흡부전",
+        "ARDS",
+        "폐렴",
+        "COPD",
+        "인공호흡기",
+        "기흉"
+      ],
+      "search_terms": [
+        "호흡기계",
+        "호흡부전",
+        "ARDS",
+        "폐렴",
+        "중증폐렴",
+        "흡인성 폐렴",
+        "COPD",
+        "천식",
+        "기흉",
+        "폐부종",
+        "mechanical ventilation",
+        "ventilator",
+        "P/F ratio",
+        "ABGA",
+        "VAP"
+      ],
+      "urgency": "high",
+      "summary": "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다.",
+      "indications": [
+        "산소요구량 증가, SpO₂ 저하, ABGA 악화 환자",
+        "인공호흡기, HFNC, NIV 적용 환자",
+        "폐렴/ARDS/COPD 악화/기흉 환자"
+      ],
+      "preparation": [
+        "산소공급 장치, suction, ambu bag",
+        "ABGA, CXR, sputum culture",
+        "ventilator setting: FiO₂, PEEP, TV, RR, mode"
+      ],
+      "steps": [
+        "산소화 문제(PaO₂, SpO₂, P/F ratio)와 환기 문제(PaCO₂, pH)를 구분한다.",
+        "기도 유지와 분비물 양상을 확인한다.",
+        "ventilator alarm 원인을 확인하고, circuit·튜브 위치·환자 상태를 함께 본다.",
+        "VAP 예방 bundle과 흡인/구강간호를 수행한다."
+      ],
+      "dosage_or_mix": [
+        "ARDS는 P/F ratio ≤300, 양측 침윤, 심부전으로 설명되지 않는 급성 저산소성 호흡부전을 기준으로 분류한다.",
+        "COPD CO₂ retention 환자는 산소 투여 후 의식·PaCO₂ 변화를 함께 본다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "호흡기계 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "급성 호흡부전",
+              "SpO₂/PaO₂ 저하 또는 PaCO₂ 상승",
+              "ABGA, CXR, RR/work of breathing",
+              "산소, HFNC/NIV/ventilator",
+              "기도유지, 흡인, 산소장치 확인, ABGA 추적"
+            ],
+            [
+              "ARDS",
+              "P/F ratio 저하, 양측 침윤",
+              "P/F ratio, CXR/CT, ventilator setting",
+              "폐보호환기, PEEP, prone 고려",
+              "압력손상·VAP·진정·욕창 예방"
+            ],
+            [
+              "중증 폐렴/흡인",
+              "발열, sputum, hypoxemia",
+              "culture, CXR, CBC/CRP/PCT",
+              "항생제, 산소, 배액/흡인 관리",
+              "객담양상, 흡인위험, 구강간호, 체위"
+            ],
+            [
+              "COPD/천식 악화",
+              "wheezing, CO₂ retention",
+              "ABGA, CXR, bronchodilator 반응",
+              "기관지확장제, steroid, NIV 고려",
+              "호흡음, 의식변화, CO₂ narcosis 관찰"
+            ],
+            [
+              "기흉/흉관",
+              "갑작스런 호흡곤란, 편측 호흡음 감소",
+              "CXR, chest tube drainage",
+              "흉관삽입/배액관리",
+              "air leak, fluctuation, 배액량, dressing 확인"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_circulation_respiration_summary.png",
+          "alt": "순환계와 호흡기계 중환자 질환 요약",
+          "caption": "순환계·호흡기계 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_NEURO",
+      "category": "중환자실 질병 / 뇌신경계",
+      "title": "뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련",
+      "aliases": [
+        "뇌신경계",
+        "신경계",
+        "뇌졸중",
+        "뇌출혈",
+        "ICP",
+        "EVD",
+        "경련",
+        "TBI"
+      ],
+      "search_terms": [
+        "뇌신경계",
+        "신경계",
+        "뇌졸중",
+        "뇌경색",
+        "뇌출혈",
+        "SAH",
+        "ICH",
+        "IVH",
+        "TBI",
+        "경련",
+        "seizure",
+        "status epilepticus",
+        "ICP",
+        "EVD",
+        "GCS",
+        "NIHSS",
+        "동공반사"
+      ],
+      "urgency": "high",
+      "summary": "뇌신경계 중환자는 의식, 동공, 운동기능, 경련, ICP/EVD 변화를 시간순으로 추적하는 것이 핵심입니다.",
+      "indications": [
+        "뇌졸중/뇌출혈/SAH/TBI 환자",
+        "EVD 또는 ICP monitor 적용 환자",
+        "경련/의식저하 환자"
+      ],
+      "preparation": [
+        "GCS/NIHSS 사정도구",
+        "동공펜라이트",
+        "EVD/ICP system, suction, seizure precautions"
+      ],
+      "steps": [
+        "기본 신경사정: 의식, 동공, 사지 motor, 언어, 경련 여부를 확인한다.",
+        "EVD는 기준점과 배액 높이, 배액량·색, clamping 상태를 확인한다.",
+        "ICP 상승 의심 시 두통, 구토, 동공변화, Cushing response, 의식저하를 보고한다.",
+        "연하평가 전 NPO와 흡인예방을 유지한다."
+      ],
+      "dosage_or_mix": [
+        "ICP는 병원 기준에 따른 목표 범위를 사용하며, 지속 상승 시 즉시 보고한다.",
+        "경련 지속 시 airway 보호와 항경련제 투여 준비가 필요하다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "뇌신경계 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "뇌경색/뇌졸중",
+              "편마비, 언어장애, 시야장애",
+              "NIHSS, CT/MRI, CTA/MRA",
+              "혈전용해/혈전제거/항혈소판",
+              "발생시각, 신경변화, 연하평가, 낙상예방"
+            ],
+            [
+              "뇌출혈/SAH",
+              "두통, 구토, 의식저하, 동공변화",
+              "CT, CTA, ICP/EVD",
+              "혈압조절, 수술/EVD, 항응고 역전",
+              "재출혈·ICP 상승·경련 관찰"
+            ],
+            [
+              "TBI/ICP 상승",
+              "GCS 저하, 동공비대칭",
+              "ICP, CPP, CT, ABGA",
+              "ICP 관리, 진정, 수술/감압 고려",
+              "head 30도, neck neutral, 자극 최소화"
+            ],
+            [
+              "경련/status epilepticus",
+              "경련 지속, 의식저하",
+              "혈당, 전해질, EEG, 약물농도",
+              "benzodiazepine/항경련제",
+              "기도확보, 낙상/흡인 예방, 경련시간 기록"
+            ],
+            [
+              "섬망/의식변화",
+              "혼돈, 불안, 수면장애",
+              "CAM-ICU, 약물, 감염, 전해질",
+              "원인교정, 수면/환경 조절",
+              "line removal 예방, 재지남력 제공"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
+          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
+          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_DIGESTIVE",
+      "category": "중환자실 질병 / 소화기계",
+      "title": "소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염",
+      "aliases": [
+        "소화기계",
+        "간담도",
+        "GI bleeding",
+        "위장관출혈",
+        "간부전",
+        "췌장염",
+        "복막염"
+      ],
+      "search_terms": [
+        "소화기계",
+        "간담도",
+        "GI bleeding",
+        "위장관출혈",
+        "토혈",
+        "혈변",
+        "melena",
+        "pancreatitis",
+        "췌장염",
+        "liver failure",
+        "간부전",
+        "ileus",
+        "bowel ischemia",
+        "perforation",
+        "복막염",
+        "영양"
+      ],
+      "urgency": "high",
+      "summary": "소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다.",
+      "indications": [
+        "토혈/혈변/NG bloody drainage 환자",
+        "간부전·췌장염·복막염·장허혈 의심 환자",
+        "NPO/TPN/enteral feeding 환자"
+      ],
+      "preparation": [
+        "CBC/coagulation, LFT, amylase/lipase, lactate",
+        "NG tube, 수혈 준비, I/O 기록",
+        "복부 CT/내시경/시술 준비"
+      ],
+      "steps": [
+        "출혈량과 활력징후, Hb 변화를 함께 확인한다.",
+        "복통, 복부팽만, 장음, 배변/가스 여부를 확인한다.",
+        "간부전은 의식변화, 황달, 복수, 응고장애를 관찰한다.",
+        "영양공급은 aspiration risk와 residual, 설사/변비를 함께 본다."
+      ],
+      "dosage_or_mix": [
+        "GI bleeding은 NPO, IV route, 수혈·내시경 준비가 핵심이다.",
+        "간부전은 encephalopathy, coagulopathy, infection을 동시 관리한다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "소화기계·간담도 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "GI bleeding",
+              "토혈, 흑변/혈변, Hb 감소",
+              "CBC, coagulation, BUN, V/S",
+              "NPO, 수액/수혈, 내시경/시술",
+              "출혈량, stool/NG 양상, shock 징후 기록"
+            ],
+            [
+              "간부전/간성혼수",
+              "황달, 의식저하, INR 상승",
+              "LFT, ammonia, PT/INR, glucose",
+              "원인치료, lactulose, 감염/출혈 관리",
+              "의식, 저혈당, 낙상, 출혈, 피부관리"
+            ],
+            [
+              "췌장염",
+              "상복부통증, lipase 상승",
+              "amylase/lipase, CT, Ca, lactate",
+              "수액, 통증조절, 금식/영양",
+              "통증, I/O, 복부팽만, 저칼슘 관찰"
+            ],
+            [
+              "장폐색/장허혈",
+              "복부팽만, 장음감소, lactate 상승",
+              "CT, lactate, ABGA, 복부사정",
+              "감압, 수술/시술, 항생제",
+              "복통 변화, 배액량, 쇼크, sepsis 감시"
+            ],
+            [
+              "영양/흡인위험",
+              "NPO, dysphagia, tube feeding",
+              "albumin, glucose, feeding tolerance",
+              "EN/PN, 연하평가",
+              "HOB 30도, residual/설사/흡인 관찰"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
+          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
+          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_RENAL_METABOLIC",
+      "category": "중환자실 질병 / 신장·대사",
+      "title": "신장·비뇨계/내분비·대사 질환 총정리",
+      "aliases": [
+        "신장계",
+        "비뇨계",
+        "내분비",
+        "대사",
+        "AKI",
+        "CRRT",
+        "DKA",
+        "HHS",
+        "전해질 이상"
+      ],
+      "search_terms": [
+        "신장",
+        "비뇨계",
+        "AKI",
+        "acute kidney injury",
+        "CRRT",
+        "HD",
+        "소변량",
+        "oliguria",
+        "hyperkalemia",
+        "hyponatremia",
+        "DKA",
+        "HHS",
+        "저혈당",
+        "고혈당",
+        "대사성 산증",
+        "전해질 이상",
+        "lactate"
+      ],
+      "urgency": "high",
+      "summary": "신장·대사 질환은 I/O, urine output, 전해질, 산염기, 혈당, fluid balance를 반복적으로 추적하는 것이 핵심입니다.",
+      "indications": [
+        "AKI/CRRT/HD 적용 환자",
+        "고칼륨혈증, 저나트륨혈증, 대사성 산증 환자",
+        "DKA/HHS, 저혈당/고혈당 환자"
+      ],
+      "preparation": [
+        "I/O chart, daily weight, urine output",
+        "BUN/Cr/eGFR, electrolyte, ABGA, lactate",
+        "BST, ketone, osmolality, CRRT setting"
+      ],
+      "steps": [
+        "소변량 감소와 Cr 상승 추세를 확인한다.",
+        "K, Na, Ca, Mg, pH/HCO₃ 변화를 함께 본다.",
+        "CRRT 환자는 access pressure, filter, UF, 항응고 상태를 확인한다.",
+        "DKA/HHS는 fluid, insulin, K 보충 순서를 처방에 따라 확인한다."
+      ],
+      "dosage_or_mix": [
+        "AKI는 creatinine 변화와 urine output 기준을 함께 본다.",
+        "고칼륨혈증은 ECG 변화 여부를 먼저 확인하고 응급치료를 준비한다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "신장·비뇨계/내분비·대사 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "AKI",
+              "Cr 상승, 소변량 감소",
+              "BUN/Cr, U/O, electrolyte, ABGA",
+              "원인교정, fluid 조절, nephrotoxin 회피",
+              "I/O, daily weight, K/산증 감시"
+            ],
+            [
+              "CRRT/HD 필요 상태",
+              "fluid overload, K 상승, 산증",
+              "CRRT setting, filter, access, coag",
+              "CRRT/HD, UF 조절",
+              "line 고정, pressure alarm, 항응고/출혈 관찰"
+            ],
+            [
+              "고칼륨혈증",
+              "K 상승, ECG 변화",
+              "K, ECG, ABGA, renal function",
+              "calcium, insulin/glucose, K 제거",
+              "부정맥, 저혈당, 반복 K 확인"
+            ],
+            [
+              "저나트륨/고나트륨",
+              "의식변화, 경련 가능",
+              "Na, osmolality, I/O",
+              "속도 조절 보정",
+              "교정 속도, 신경증상 관찰"
+            ],
+            [
+              "DKA/HHS",
+              "고혈당, 탈수, 산증/ketone",
+              "BST, ketone, ABGA, K, osmolality",
+              "수액, insulin, K 보충",
+              "BST/K 빈번측정, 의식·I/O 관찰"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
+          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
+          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_INFECTION_SHOCK_HEME",
+      "category": "중환자실 질병 / 감염·혈액·쇼크",
+      "title": "감염·패혈증·쇼크·혈액응고 질환 총정리",
+      "aliases": [
+        "패혈증",
+        "sepsis",
+        "septic shock",
+        "쇼크",
+        "DIC",
+        "응고장애",
+        "대량출혈"
+      ],
+      "search_terms": [
+        "감염",
+        "패혈증",
+        "sepsis",
+        "septic shock",
+        "septic shock",
+        "쇼크",
+        "MAP",
+        "lactate",
+        "source control",
+        "DIC",
+        "응고장애",
+        "혈소판감소",
+        "대량출혈",
+        "massive bleeding",
+        "MTP",
+        "수혈",
+        "항생제"
+      ],
+      "urgency": "high",
+      "summary": "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다.",
+      "indications": [
+        "패혈증/패혈성 쇼크 의심 환자",
+        "발열/저체온, 저혈압, lactate 상승 환자",
+        "DIC, 대량출혈, 혈소판감소 환자"
+      ],
+      "preparation": [
+        "blood culture, urine/sputum/wound culture",
+        "CBC, lactate, CRP/PCT, coagulation, fibrinogen",
+        "수액, 항생제, 승압제, blood product 준비"
+      ],
+      "steps": [
+        "감염 의심 시 활력징후, 의식, 소변량, lactate를 확인한다.",
+        "배양검사와 항생제 투여 시각을 기록한다.",
+        "저혈압 지속 시 MAP 목표와 승압제 route를 확인한다.",
+        "출혈/응고장애는 CBC, PT/aPTT/INR, fibrinogen, D-dimer를 함께 본다."
+      ],
+      "dosage_or_mix": [
+        "패혈성 쇼크에서는 MAP 65 mmHg 목표가 널리 사용된다.",
+        "항생제는 배양 후 지연 없이 투여하되 원내 프로토콜을 우선한다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "감염·패혈증·쇼크·혈액응고 주요 질환 정리",
+          "headers": [
+            "진단/질환",
+            "핵심 소견",
+            "검사/모니터링",
+            "치료 방향",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Sepsis/Septic shock",
+              "감염 + 저혈압/장기부전, lactate 상승",
+              "culture, lactate, MAP, U/O",
+              "항생제, 수액, 승압제, source control",
+              "항생제 시간, MAP, 소변량, 말초관류 기록"
+            ],
+            [
+              "쇼크 감별",
+              "저혈압, lactate 상승, 의식저하",
+              "echo, ABGA, CBC, fluid response",
+              "원인별 치료: septic/cardiogenic/hypovolemic/obstructive",
+              "쇼크 유형별 반응과 투약 감시"
+            ],
+            [
+              "DIC/응고장애",
+              "출혈, PLT 감소, PT/aPTT 연장",
+              "CBC, PT/INR/aPTT, fibrinogen, D-dimer",
+              "원인치료, 혈액제제, 항응고/역전 평가",
+              "출혈부위, line oozing, 시술부위 관찰"
+            ],
+            [
+              "대량출혈/MTP",
+              "Hb 감소, shock, 저체온/산증",
+              "CBC, coag, Ca, ABGA, temp",
+              "RBC/FFP/PLT 등 프로토콜",
+              "수혈반응, Ca/K/temp, I/O, 기록"
+            ],
+            [
+              "다장기부전",
+              "호흡/순환/신장/간/응고 악화",
+              "SOFA 요소, organ support",
+              "장기별 지지치료",
+              "계통별 변화 추세와 가족교육/인계"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_infection_metabolic_heme_summary.png",
+          "alt": "감염 패혈증 내분비 대사 혈액응고 요약",
+          "caption": "감염·패혈증·대사·혈액응고 주요 진단과 간호 포인트"
+        }
+      ],
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V74_ICU_POSTOP_TRAUMA",
+      "category": "중환자실 질병 / 외상·수술 후",
+      "title": "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증",
+      "aliases": [
+        "외상",
+        "수술 후",
+        "post-op",
+        "trauma",
+        "배액관",
+        "쇼크",
+        "횡문근융해"
+      ],
+      "search_terms": [
+        "외상",
+        "수술 후",
+        "post op",
+        "post-op",
+        "trauma",
+        "배액관",
+        "JP",
+        "H-vac",
+        "bleeding",
+        "출혈",
+        "rhabdomyolysis",
+        "compartment syndrome",
+        "폐색전증",
+        "DVT",
+        "감염",
+        "통증"
+      ],
+      "urgency": "high",
+      "summary": "외상·수술 후 중환자는 출혈, 배액량, 신경혈관 사정, 통증, 감염, DVT/PE, 횡문근융해와 AKI 위험을 반복 확인해야 합니다.",
+      "indications": [
+        "대수술 후 ICU 입실 환자",
+        "외상/다발손상 환자",
+        "배액관, 수혈, 승압제, ventilator 적용 환자"
+      ],
+      "preparation": [
+        "CBC/coagulation, ABGA/lactate, CK, renal function",
+        "drain 기록지, wound dressing, pain scale",
+        "DVT 예방 장치, 체위/욕창 예방 도구"
+      ],
+      "steps": [
+        "수술/외상 발생 시각과 수술명, 출혈량, 수혈량을 확인한다.",
+        "배액관 종류, 압력, 색, 양, 급증 여부를 확인한다.",
+        "통증, 신경혈관 상태, 의식, 체온, 감염 징후를 본다.",
+        "DVT/PE, 무기폐, 폐렴, AKI, delirium 예방 간호를 시행한다."
+      ],
+      "dosage_or_mix": [
+        "rhabdomyolysis는 CK, 소변색, K, Cr 변화를 추적한다.",
+        "수술 후 출혈 의심 시 drain 급증, Hb 감소, 저혈압을 즉시 보고한다."
+      ],
+      "orders_or_emr": [
+        "진단명, 주호소, 발생시각, 주요 검사결과, 담당의 보고 및 처방을 확인한다.",
+        "원내 최신 프로토콜과 담당의 지시를 우선한다."
+      ],
+      "charting": [
+        "계통별 문제, 검사결과 변화, 처치, 환자 반응, 보고시간을 시간순으로 기록한다.",
+        "중환자실 인계 시 ABCDE, organ support, line/drain, 약물, I/O, 검사 대기사항을 누락 없이 전달한다."
+      ],
+      "io": [
+        "shock, AKI, CRRT, heart failure, sepsis 환자는 I/O와 daily weight를 특히 엄격히 관리한다."
+      ],
+      "warnings": [
+        "교육용 요약입니다. 실제 처치·투약·검사·보고 기준은 병원 최신 프로토콜과 담당의 지시를 우선합니다.",
+        "환자 상태가 불안정하면 진단명 분류보다 ABCDE와 즉시 보고가 우선입니다."
+      ],
+      "related": [
+        "ABGA 총정리",
+        "심전도 총정리",
+        "EVD ICP CVP 총정리",
+        "수혈 총정리",
+        "뇌졸중 총정리"
+      ],
+      "tags": [
+        "중환자실",
+        "ICU",
+        "질환",
+        "진단",
+        "계통별",
+        "간호"
+      ],
+      "review": {
+        "status": "교육용 구조화",
+        "note": "선생님 요청에 따라 중환자실 대상 환자 질병을 계통별 검색 카드로 추가."
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign adult guidelines",
+        "Berlin ARDS definition / ARDS clinical reviews",
+        "KDIGO AKI guideline",
+        "AHA/ACC/HFSA heart failure guideline",
+        "원내 최신 프로토콜 및 담당의 지시 우선"
+      ],
+      "tables": [
+        {
+          "title": "외상·수술 후 중환자 핵심 체크",
+          "headers": [
+            "영역",
+            "확인할 내용",
+            "위험 신호",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "출혈/순환",
+              "BP, HR, Hb, drain, wound",
+              "저혈압, tachycardia, drain 급증",
+              "IV route, 수혈준비, 보고·기록"
+            ],
+            [
+              "호흡",
+              "SpO₂, CXR, ABGA, 통증으로 인한 얕은 호흡",
+              "저산소, 무기폐, 폐렴",
+              "심호흡, 흡인, 체위, 조기이동"
+            ],
+            [
+              "배액관/상처",
+              "JP/H-vac/chest tube 양상",
+              "밝은 선홍색 급증, 악취, air leak",
+              "압력/고정/드레싱/배액량 기록"
+            ],
+            [
+              "신경혈관",
+              "통증, 감각, 운동, pulse, swelling",
+              "compartment syndrome 의심",
+              "5P 확인, 압박물 확인, 즉시 보고"
+            ],
+            [
+              "감염/DVT",
+              "fever, WBC, line, wound, calf pain",
+              "sepsis, DVT/PE",
+              "손위생, line 관리, DVT 예방, 조기재활"
+            ]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v74_infection_metabolic_heme_summary.png",
+          "alt": "외상 수술 후 중환자 관리 요약",
+          "caption": "감염·패혈증·대사·혈액응고 및 외상/수술 후 관리 포인트"
+        }
+      ],
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -25696,6 +26935,39 @@
       "item_count": 225,
       "table_count": 84,
       "image_count": 206,
+      "video_count": 5
+    }
+  },
+  "v74_update": {
+    "title": "중환자실 대상 환자 질병·진단 계통별 총정리 카드 추가",
+    "added_cards": [
+      "V74_ICU_DISEASE_OVERVIEW",
+      "V74_ICU_CIRCULATORY",
+      "V74_ICU_RESPIRATORY",
+      "V74_ICU_NEURO",
+      "V74_ICU_DIGESTIVE",
+      "V74_ICU_RENAL_METABOLIC",
+      "V74_ICU_INFECTION_SHOCK_HEME",
+      "V74_ICU_POSTOP_TRAUMA"
+    ],
+    "kept": [
+      "V62 Google Drive 동영상 링크 방식 유지",
+      "V63 14개 파일 삭제 상태 유지",
+      "V64 통증 사정 이미지 수혈카드 분리 유지",
+      "V65 신규 자료 표/이미지 기능 유지",
+      "V66 로그인 입력칸 수정 유지",
+      "V67 아그라스타트주 표 유지",
+      "V68 헤파린 요법 노모그램 유지",
+      "V69 뇌졸중 총정리 유지",
+      "V70 심전도 총정리 유지",
+      "V71 EVD/ICP/CVP 총정리 유지",
+      "V72 ABGA 총정리 유지",
+      "V73 수혈 총정리 유지"
+    ],
+    "stats": {
+      "item_count": 233,
+      "table_count": 92,
+      "image_count": 214,
       "video_count": 5
     }
   }
