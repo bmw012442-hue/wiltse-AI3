@@ -129,22 +129,12 @@ function normalize(text) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
-    "원내프로토콜": ["병동간호팀", "병동 매뉴얼", "원내 프로토콜", "91페이지", "101페이지", "115페이지"],
-    "병동간호팀": ["원내 프로토콜", "병동간호팀 간호사메뉴얼", "호흡순환관련간호"],
-    "inspirometer": ["인스피로미터", "폐합병증", "심호흡"],
-    "분무약물": ["nebulizer", "벤토린", "부데코트", "세레타이드", "조터나"],
-    "allen": ["allen test", "ABGA", "요골동맥", "척골동맥"],
-
-    "산소요법": ["nasal prong", "nasal cannula", "simple mask", "reservoir mask", "niv", "nebulizer"],
-    "산소포화도": ["spo2", "desaturation", "저산소"],
-    "고유량": ["hfnc", "high flow", "high flow nasal cannula"],
-    "hfnc": ["고유량", "high flow", "high flow nasal cannula"],
-    "환기": ["ventilator", "인공호흡기"],
-    "흡인": ["suction", "closed suction"],
-    "클로즈드석션": ["closed suction", "흡인"],
-    "기관절개관": ["tracheostomy", "trach", "single cannula", "double cannula", "cuff", "fenestrated", "portex", "tracoe", "koken"],
-    "기관절개": ["tracheostomy", "trach", "기관절개관"],
-    "abga": ["abg", "pH", "PaCO2", "HCO3", "PaO2"],
+    "원내응급간호": ["병동간호팀", "142페이지", "149페이지", "29 응급간호", "E-cart", "제세동기", "Dr call"],
+    "응급카트": ["E-cart", "Emergency-cart", "응급약물", "응급물품"],
+    "제세동기위치": ["AED 위치", "defibrillator location", "배치장소"],
+    "코드블루": ["Code blue", "6114", "CPR방송"],
+    "역할분담": ["응급상황시 간호 분담 역할", "지원간호사", "최초발견간호사"],
+    "전원절차": ["전원 기준", "진료의뢰서", "검사결과지", "CD COPY"],
 
     "사비나": ["savina", "drager", "dräger"],
     "드레거": ["drager", "dräger", "savina"],
@@ -300,9 +290,7 @@ function scoreItem(query, item) {
 
   if ((item.id || "").startsWith("V95_") && /응급|cpr|code blue|제세동기|defibrillator|shock|쇼크|저혈압|경련|seizure|항경련제|응급약물|e-cart|intubation|기관삽관|삽관/.test(q)) score += 35;
   if ((item.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
-  if ((item.id || "").startsWith("V96_") && /호흡|ventilator|인공호흡기|산소요법|nasal|mask|niv|nebulizer|hfnc|high flow|흡인|suction|기관절개|trach|abga|spo2|산소포화도/.test(q)) score += 35;
-  if ((item.id || "") === "V96_TRACH_TYPES_CARE" && /기관절개관|single|double|cuff|fenestrated|portex|tracoe|koken|montgomery/.test(q)) score += 90;
-  if ((item.id || "").startsWith("V97_") && /원내|프로토콜|병동간호팀|91|101|115|호흡순환|흡인|suction|산소요법|inspirometer|분무|nebulizer|abga|allen/.test(q)) score += 80;
+  if ((item.id || "").startsWith("V98_") && /원내|프로토콜|병동간호팀|142|149|응급간호|e-cart|응급카트|제세동기|aed|ekg|역할분담|dr\.?\s*call|6114|코드블루|전원/.test(q)) score += 90;
 
   return Math.max(0, score);
 }
@@ -462,7 +450,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "1.97.0-v97-internal-protocol-respiratory",
+    version: "1.98.0-v98-v95-internal-emergency-protocol",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -651,5 +639,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v97 internal protocol respiratory running on port ${port}`);
+  console.log(`ICU AI Manual v98 V95 internal emergency protocol running on port ${port}`);
 });
