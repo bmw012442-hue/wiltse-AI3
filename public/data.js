@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.94.0-v94-l-sling-link-fix",
+    "version": "1.95.0-v95-emergency-nursing-focus",
     "language": "ko",
-    "source": "V93 기반 + L-sling 링크를 실제 새 영상 링크로 교체",
+    "source": "V94 기반 + 응급간호 1차 정리, 제세동기/응급약물/Shock/경련/항경련제/Intubation 검색개선",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -2370,7 +2370,14 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Electrolyte replacement / K·P·Mg 약물 / 수액 / 마약 약물/전해질 KCL Phosten Mg 전해질 K replacement P replacement Mg replacement Electrolyte replacement 약물 수액 마약 v8_final_reviewed"
+      "search_index": "Electrolyte replacement / K·P·Mg 약물 / 수액 / 마약 약물/전해질 KCL Phosten Mg 전해질 K replacement P replacement Mg replacement Electrolyte replacement 약물 수액 마약 v8_final_reviewed",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "DRUG020",
@@ -3119,7 +3126,14 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "I/O 입력과 마감 Routine Routine/I/O I/O input output 인풋아웃풋 배액 Foley infusion volume 입력과 마감 v8_final_reviewed"
+      "search_index": "I/O 입력과 마감 Routine Routine/I/O I/O input output 인풋아웃풋 배액 Foley infusion volume 입력과 마감 v8_final_reviewed",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "ROUTINE007",
@@ -4439,7 +4453,14 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
-      "search_index": "Lab bottle 종류와 채혈 순서 검사 / 검체 Lab bottle 채혈병 파랑 빨강 노랑 보라 Sodium Citrate Plain SST EDTA 채혈순서 파노보 파랑노랑보라 PT tube 검체 bottle ABGA syringe 랩보틀 검체용기 채혈 순서 채혈 후 검체 용기 분주 순서 ABGA bottle 혈액배양 Plain tube SST tube EDTA tube Lab bottle 종류와 채혈 순서 검사 검체 검사/Lab bottle v11_source_enhanced v49_exact_card Lab bottle 종류와 주요 검사 Tube 주요 검사 분주/주의 1 ABGA 0.5~1mL 2 Blood culture 각각 5mL씩, 혐기성 → 호기성 3 Valproic acid, Vancomycin, Digoxin 등 3~5mL 4 PT, aPTT, D-dimer, DIC panel 등 2.7mL, 검체량 정확히 5 Electrolyte, BUN/Cr, LFT, CRP, Troponin 등 6 CBC, ESR, HbA1c 등 2~3mL Lab bottle / 채혈 순서 참고 이미지 0001 Lab bottle / 채혈 순서 참고 이미지 0002 Lab bottle / 채혈 순서 참고 이미지 0003 Lab bottle / 채혈 순서 참고 이미지 0004 Lab bottle 종류 검체 용기 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지"
+      "search_index": "Lab bottle 종류와 채혈 순서 검사 / 검체 Lab bottle 채혈병 파랑 빨강 노랑 보라 Sodium Citrate Plain SST EDTA 채혈순서 파노보 파랑노랑보라 PT tube 검체 bottle ABGA syringe 랩보틀 검체용기 채혈 순서 채혈 후 검체 용기 분주 순서 ABGA bottle 혈액배양 Plain tube SST tube EDTA tube Lab bottle 종류와 채혈 순서 검사 검체 검사/Lab bottle v11_source_enhanced v49_exact_card Lab bottle 종류와 주요 검사 Tube 주요 검사 분주/주의 1 ABGA 0.5~1mL 2 Blood culture 각각 5mL씩, 혐기성 → 호기성 3 Valproic acid, Vancomycin, Digoxin 등 3~5mL 4 PT, aPTT, D-dimer, DIC panel 등 2.7mL, 검체량 정확히 5 Electrolyte, BUN/Cr, LFT, CRP, Troponin 등 6 CBC, ESR, HbA1c 등 2~3mL Lab bottle / 채혈 순서 참고 이미지 0001 Lab bottle / 채혈 순서 참고 이미지 0002 Lab bottle / 채혈 순서 참고 이미지 0003 Lab bottle / 채혈 순서 참고 이미지 0004 Lab bottle 종류 검체 용기 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "LAB002",
@@ -5228,10 +5249,18 @@ window.ICU_MANUAL_DB = {
         "Assist",
         "호흡",
         "Ventilator",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "기관삽관",
+        "ETT",
+        "기도확보",
+        "BVM",
+        "suction",
+        "ETCO2",
+        "tube 고정"
       ],
       "standard_sections_ready": true,
-      "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed"
+      "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed",
+      "prefer_media_first": true
     },
     {
       "id": "VENT004",
@@ -13356,7 +13385,14 @@ window.ICU_MANUAL_DB = {
         "환자 유형별 I/O 불균형 예시 표"
       ],
       "standard_sections_ready": true,
-      "search_index": "I & O / 섭취량·배설량 / 전해질 교정 I&O·전해질 I&O I/O IO intake output 섭취량 배설량 소변량 urine drain feeding 수액 infusion volume fluid balance 전해질 전해질 교정 K P Mg KCL Phosten MgCl replacement positive balance negative balance I/O 마감 HD I/O 교정 v14_v11_based_menu search_optimized 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표"
+      "search_index": "I & O / 섭취량·배설량 / 전해질 교정 I&O·전해질 I&O I/O IO intake output 섭취량 배설량 소변량 urine drain feeding 수액 infusion volume fluid balance 전해질 전해질 교정 K P Mg KCL Phosten MgCl replacement positive balance negative balance I/O 마감 HD I/O 교정 v14_v11_based_menu search_optimized 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "MENU012",
@@ -16204,7 +16240,14 @@ window.ICU_MANUAL_DB = {
         "환자 유형별 I/O 불균형 예시 표"
       ],
       "standard_sections_ready": true,
-      "search_index": "I/O 입력과 마감 상세 I&O·전해질 I&O·전해질/I&O I/O 마감 I/O 입력 섭취량 배설량 Parenteral Urine infusion pump volume 식사 100 400 Foley PO water inj 50cc FD feeding HD I/O Anti 입력 배액관 I/O 클램프 음압 재설정 positive balance 입력과 마감 상세 I&O 전해질 v26_uploaded_manual_added manual_20260614 Duty별 I/O 기준 Duty 시간 Day 06:00-13:00 Evening 13:00-21:00 Night 21:00-06:00 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표"
+      "search_index": "I/O 입력과 마감 상세 I&O·전해질 I&O·전해질/I&O I/O 마감 I/O 입력 섭취량 배설량 Parenteral Urine infusion pump volume 식사 100 400 Foley PO water inj 50cc FD feeding HD I/O Anti 입력 배액관 I/O 클램프 음압 재설정 positive balance 입력과 마감 상세 I&O 전해질 v26_uploaded_manual_added manual_20260614 Duty별 I/O 기준 Duty 시간 Day 06:00-13:00 Evening 13:00-21:00 Night 21:00-06:00 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "LINE030",
@@ -18894,7 +18937,14 @@ window.ICU_MANUAL_DB = {
         "처방: CRRT kit + NS500 + NS1L 확인"
       ],
       "standard_sections_ready": true,
-      "search_index": "CRRT I/O, Return, Kit change, 처방, 차팅 상세 CRRT / 신장 CRRT CRRT 상세 CRRT I/O CRRT return CRRT retrun Blood return 혈액재주입 Balance 치료종료 kit change Multifiltrate pro kit HOF 600 멀티빅 후탄 prefilter 압력 TMP BFR clot UF N/S 500 NS 1L KCL 포스텐 CRRT cath conti cath CRRT 차팅 Return Kit change 처방 차팅 상세 신장 v26_uploaded_manual_added manual_20260614 CRRT Return 순서 순서 내용 1 Blood return: NS 500 access line 3-way에 연결 후 full drop 2 치료종료 → 혈액재주입 → 확인 3 Balance 확인 및 적용시간 입력 4 NS 500은 5분 이내 들어갈 수 있어 앞에서 대기 5 Nacl 감지 또는 적당히 return 되면 clamp 후 종료 6 환자 disconnect 7 Kit 제거 8 전원 끄기 CRRT Kit change 오류 예방 위해 5분 뒤 전원 켜기 치료 유지 → 기능테스트 100% 후 OK Pre 빨간색 / Post 파란색 연결 Rinse / UF rinse 100% 이후 환자 연결 처방: CRRT kit + NS500 + NS1L 확인 CRRT Return / Kit change 상세"
+      "search_index": "CRRT I/O, Return, Kit change, 처방, 차팅 상세 CRRT / 신장 CRRT CRRT 상세 CRRT I/O CRRT return CRRT retrun Blood return 혈액재주입 Balance 치료종료 kit change Multifiltrate pro kit HOF 600 멀티빅 후탄 prefilter 압력 TMP BFR clot UF N/S 500 NS 1L KCL 포스텐 CRRT cath conti cath CRRT 차팅 Return Kit change 처방 차팅 상세 신장 v26_uploaded_manual_added manual_20260614 CRRT Return 순서 순서 내용 1 Blood return: NS 500 access line 3-way에 연결 후 full drop 2 치료종료 → 혈액재주입 → 확인 3 Balance 확인 및 적용시간 입력 4 NS 500은 5분 이내 들어갈 수 있어 앞에서 대기 5 Nacl 감지 또는 적당히 return 되면 clamp 후 종료 6 환자 disconnect 7 Kit 제거 8 전원 끄기 CRRT Kit change 오류 예방 위해 5분 뒤 전원 켜기 치료 유지 → 기능테스트 100% 후 OK Pre 빨간색 / Post 파란색 연결 Rinse / UF rinse 100% 이후 환자 연결 처방: CRRT kit + NS500 + NS1L 확인 CRRT Return / Kit change 상세",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "NSPROC030",
@@ -19373,7 +19423,16 @@ window.ICU_MANUAL_DB = {
         "전자동의서",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "intubation",
+        "기관삽관",
+        "ETT",
+        "기도확보",
+        "laryngoscope",
+        "BVM",
+        "suction",
+        "ETCO2",
+        "tube 고정"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618) 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
@@ -30735,7 +30794,14 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "STEMI NSTEMI 허혈 심근경색 급성관상동맥증후군 심전도 ST 상승 ST 하강 고칼륨혈증 저칼륨혈증 전해질 이상 ECG T파 역전 U파 STEMI 심전도 허혈 심전도 고칼륨혈증 심전도 저칼륨혈증 심전도 질환별 심전도 변화: 허혈·경색·전해질 이상 심혈관 / 심전도 심전도 해석 기본 부정맥 ECG 변화 심혈관 환자 간호 핵심 아그라스타트주 사용법"
+      "search_index": "STEMI NSTEMI 허혈 심근경색 급성관상동맥증후군 심전도 ST 상승 ST 하강 고칼륨혈증 저칼륨혈증 전해질 이상 ECG T파 역전 U파 STEMI 심전도 허혈 심전도 고칼륨혈증 심전도 저칼륨혈증 심전도 질환별 심전도 변화: 허혈·경색·전해질 이상 심혈관 / 심전도 심전도 해석 기본 부정맥 ECG 변화 심혈관 환자 간호 핵심 아그라스타트주 사용법",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "V70_CARDIOVASCULAR_NURSING",
@@ -46613,7 +46679,14 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "CRRT UF ultrafiltration fluid balance I&O net removal CRRT I/O 제거량 CRRT 제거량·I/O·Balance 기록 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "CRRT UF ultrafiltration fluid balance I&O net removal CRRT I/O 제거량 CRRT 제거량·I/O·Balance 기록 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "V81_DETAIL_05",
@@ -47067,7 +47140,14 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "electrolyte potassium phosphate magnesium calcium acid base ABGA 전해질 K Phos Mg Ca 산염기 CRRT 중 전해질·산염기 모니터링 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "electrolyte potassium phosphate magnesium calcium acid base ABGA 전해질 K Phos Mg Ca 산염기 CRRT 중 전해질·산염기 모니터링 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "exclude_queries": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ett",
+        "기도삽관"
+      ]
     },
     {
       "id": "V81_DETAIL_07",
@@ -57991,7 +58071,16 @@ window.ICU_MANUAL_DB = {
         "기관내관 xray",
         "intubation xray",
         "기관내관(ETT) 위치 확인 X-ray 카드",
-        "검사·검체·영상검사 / X-ray"
+        "검사·검체·영상검사 / X-ray",
+        "intubation",
+        "삽관",
+        "ETT",
+        "기도확보",
+        "laryngoscope",
+        "BVM",
+        "suction",
+        "ETCO2",
+        "tube 고정"
       ],
       "urgency": "high",
       "summary": "기관내관 끝 위치와 carina 기준을 교육용 이미지로 설명하는 카드입니다.",
@@ -58087,7 +58176,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ett 기관내관 기관삽관 튜브위치 xray ETT 위치 기관내관 xray intubation xray 기관내관(ETT) 위치 확인 X-ray 카드 검사·검체·영상검사 / X-ray V87_XRAY_OVERVIEW V79 Ventilator / Dräger Savina"
+      "search_index": "ett 기관내관 기관삽관 튜브위치 xray ETT 위치 기관내관 xray intubation xray 기관내관(ETT) 위치 확인 X-ray 카드 검사·검체·영상검사 / X-ray V87_XRAY_OVERVIEW V79 Ventilator / Dräger Savina",
+      "prefer_media_first": true
     },
     {
       "id": "V87_XRAY_CVC_POSITION",
@@ -61606,6 +61696,820 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "prefer_media_first": true,
       "search_index": "동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동의서 받기(태블릿) 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 동의서 / 태블릿 CONSENT001 SURG030"
+    },
+    {
+      "id": "V95_EMERGENCY_NURSING_OVERVIEW",
+      "category": "응급간호",
+      "title": "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure",
+      "aliases": [
+        "응급간호",
+        "응급상황 목차",
+        "emergency nursing",
+        "응급간호 총정리"
+      ],
+      "search_terms": [
+        "응급간호",
+        "응급상황",
+        "CPR",
+        "Code blue",
+        "E-cart",
+        "응급약물",
+        "intubation",
+        "shock",
+        "seizure",
+        "의식저하",
+        "보호자 응대",
+        "응급기록",
+        "응급상황 목차",
+        "emergency nursing",
+        "응급간호 총정리",
+        "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure"
+      ],
+      "urgency": "emergency",
+      "summary": "응급상황 목차를 한 카드에 묶어 CPR, Code blue, E-cart, Intubation, Shock, Seizure, 기록/보호자 응대를 연결합니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "응급상황 인지 → 도움 요청 → 역할분담 → 우선순위 처치 → 기록/정리 순으로 접근한다."
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "V95_DEFIBRILLATOR_USE",
+        "V95_E_CART_EMERGENCY_MED_TABLE",
+        "V95_SHOCK_INITIAL_RESPONSE",
+        "V95_SEIZURE_RESPONSE_ANTICONVULSANT",
+        "V95_INTUBATION_PREP_ASSIST"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "응급간호 목차표",
+          "caption": "응급상황 12개 목차",
+          "headers": [
+            "순서",
+            "주제",
+            "핵심"
+          ],
+          "rows": [
+            [
+              "1",
+              "CPR 초기 대응",
+              "반응/호흡/맥박 확인, 도움요청, 압박 시작"
+            ],
+            [
+              "2",
+              "Code blue",
+              "원내 응급콜, 역할분담, 기록 시작"
+            ],
+            [
+              "3",
+              "E-cart 위치/구성",
+              "카트 위치, 제세동기, 기도/IV/약물 확인"
+            ],
+            [
+              "4",
+              "응급약물",
+              "CPR, shock, seizure, intubation 약물표"
+            ],
+            [
+              "5-6",
+              "Intubation",
+              "준비물과 보조 절차"
+            ],
+            [
+              "7",
+              "Shock",
+              "ABCDE, 산소, IV, 수액/승압제 준비"
+            ],
+            [
+              "8",
+              "Seizure",
+              "시간 확인, 손상 예방, 기도/혈당/항경련제"
+            ],
+            [
+              "9-12",
+              "의식저하/기록/보호자/정리",
+              "초기확인, 기록, 설명, E-cart 보충"
+            ]
+          ],
+          "search_terms": [
+            "응급간호목차",
+            "응급상황표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_emergency_nursing_overview.png",
+          "alt": "응급간호 목차 이미지",
+          "caption": "응급간호 1차 목차 요약 이미지",
+          "search_terms": [
+            "응급간호이미지",
+            "응급상황목차"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V95_DEFIBRILLATOR_USE",
+      "category": "응급간호",
+      "title": "제세동기 사용법: 패드 부착·리듬 확인·Shock 안전확인",
+      "aliases": [
+        "제세동기",
+        "defibrillator",
+        "AED",
+        "shock 버튼",
+        "패드 위치"
+      ],
+      "search_terms": [
+        "제세동기",
+        "defibrillator",
+        "AED",
+        "shock",
+        "제세동",
+        "패드부착",
+        "VF",
+        "pVT",
+        "리듬확인",
+        "CPR",
+        "shock 버튼",
+        "패드 위치",
+        "제세동기 사용법: 패드 부착·리듬 확인·Shock 안전확인",
+        "응급간호"
+      ],
+      "urgency": "emergency",
+      "summary": "제세동기 사용 흐름과 패드 위치, shock 전후 안전확인을 표와 이미지로 정리한 카드입니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "반응/호흡/맥박 확인 → 도움 요청 → 제세동기 전원/패드 부착 → 리듬 확인 → shock 필요 시 모두 떨어짐 확인 → shock → 즉시 CPR 재개"
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "CPR001",
+        "UPD43_CPR_____LUCAS_E_CART",
+        "V95_EMERGENCY_NURSING_OVERVIEW"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "제세동기 사용 순서표",
+          "caption": "Shock 전후 핵심",
+          "headers": [
+            "단계",
+            "행동",
+            "체크"
+          ],
+          "rows": [
+            [
+              "1",
+              "반응·호흡·맥박 확인",
+              "CPR 필요성 판단"
+            ],
+            [
+              "2",
+              "Code blue/도움 요청",
+              "제세동기·E-cart 요청"
+            ],
+            [
+              "3",
+              "패드 부착",
+              "우상흉부/좌측 흉부 위치 확인"
+            ],
+            [
+              "4",
+              "리듬 확인",
+              "VF/pVT 등 shock rhythm 여부 확인"
+            ],
+            [
+              "5",
+              "Shock",
+              "모두 떨어짐 확인 후 shock"
+            ],
+            [
+              "6",
+              "CPR 재개",
+              "Shock 후 즉시 압박 재개"
+            ]
+          ],
+          "search_terms": [
+            "제세동기순서표",
+            "AED",
+            "defibrillator"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "Shock 전 안전확인",
+          "caption": "팀원 안전",
+          "headers": [
+            "확인",
+            "내용"
+          ],
+          "rows": [
+            [
+              "접촉",
+              "환자/침상 접촉자 없음"
+            ],
+            [
+              "산소/물기",
+              "산소/습기/금속 접촉 위험 확인"
+            ],
+            [
+              "소리내기",
+              "충전·shock 전 “떨어지세요” 확인"
+            ],
+            [
+              "기록",
+              "리듬, 에너지, shock 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "shock안전확인"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_defibrillator_use_flow.png",
+          "alt": "제세동기 사용 흐름",
+          "caption": "제세동기 사용 6단계 순서도",
+          "search_terms": [
+            "제세동기이미지",
+            "defibrillator flow"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v95_defibrillator_pad_position.png",
+          "alt": "제세동기 패드 위치와 안전확인",
+          "caption": "패드 위치, shock 전 확인, shock 후 CPR",
+          "search_terms": [
+            "패드위치",
+            "shock안전"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V95_E_CART_EMERGENCY_MED_TABLE",
+      "category": "응급간호",
+      "title": "E-cart 응급약물표: CPR·Shock·Seizure·Intubation",
+      "aliases": [
+        "E-cart 약물",
+        "응급약물",
+        "응급약물표",
+        "emergency drugs"
+      ],
+      "search_terms": [
+        "응급약물",
+        "E-cart",
+        "에피네프린",
+        "norepinephrine",
+        "lorazepam",
+        "midazolam",
+        "rocuronium",
+        "intubation drug",
+        "shock drug",
+        "항경련제",
+        "E-cart 약물",
+        "응급약물표",
+        "emergency drugs",
+        "E-cart 응급약물표: CPR·Shock·Seizure·Intubation",
+        "응급간호"
+      ],
+      "urgency": "emergency",
+      "summary": "E-cart 응급약물을 CPR, shock, 경련, intubation 상황별로 한눈에 보이게 정리한 카드입니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "상황별 약물군을 확인하고, 병원 응급약물 표준농도/보관위치/투여기록 기준을 따른다."
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "MENU001",
+        "UPD43_CPR_____LUCAS_E_CART",
+        "V95_SEIZURE_RESPONSE_ANTICONVULSANT",
+        "V95_INTUBATION_PREP_ASSIST"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "E-cart 응급약물 상황별 표",
+          "caption": "응급상황별 약물과 간호 확인",
+          "headers": [
+            "상황",
+            "약물 예시",
+            "간호 확인",
+            "주의/기록"
+          ],
+          "rows": [
+            [
+              "CPR",
+              "Epinephrine 등",
+              "투여 시간/리듬 확인",
+              "시간, 용량, 반응 기록"
+            ],
+            [
+              "Shock",
+              "Norepinephrine, 수액 등",
+              "MAP/BP, 말초순환 확인",
+              "농도/속도/혈관상태"
+            ],
+            [
+              "Seizure",
+              "Lorazepam, Midazolam, Diazepam 등",
+              "기도/SpO2/BST/지속시간",
+              "호흡억제 관찰"
+            ],
+            [
+              "Intubation",
+              "Etomidate/Propofol, Rocuronium 등",
+              "흡인/BVM/monitor 준비",
+              "투여 후 BP/호흡 관찰"
+            ],
+            [
+              "전해질/저혈당",
+              "Dextrose, Ca, K/Mg 등",
+              "검사값/BST/ECG 확인",
+              "처방·재검사 기록"
+            ]
+          ],
+          "search_terms": [
+            "응급약물표",
+            "E-cart",
+            "항경련제",
+            "삽관약물"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_emergency_medication_table.png",
+          "alt": "E-cart 응급약물표",
+          "caption": "CPR·Shock·Seizure·Intubation 상황별 응급약물표",
+          "search_terms": [
+            "응급약물표이미지",
+            "E-cart약물"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V95_SHOCK_INITIAL_RESPONSE",
+      "category": "응급간호",
+      "title": "Shock 환자 초기 대응: ABCDE·산소·IV·수액/승압제 준비",
+      "aliases": [
+        "shock 초기대응",
+        "쇼크 환자",
+        "저혈압 초기대응",
+        "shock nursing"
+      ],
+      "search_terms": [
+        "shock",
+        "쇼크",
+        "저혈압",
+        "MAP",
+        "hypotension",
+        "septic shock",
+        "hemorrhagic shock",
+        "norepinephrine",
+        "수액",
+        "승압제",
+        "shock 초기대응",
+        "쇼크 환자",
+        "저혈압 초기대응",
+        "shock nursing",
+        "Shock 환자 초기 대응: ABCDE·산소·IV·수액/승압제 준비",
+        "응급간호"
+      ],
+      "urgency": "emergency",
+      "summary": "Shock 환자 발견 시 ABCDE, 산소, IV line, 수액/승압제 준비, 원인 확인, 기록을 단계별로 정리한 카드입니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "저혈압/MAP 저하 또는 의식변화 인지 → ABCDE 평가 → 산소/monitor/IV line 확보 → lab/혈액배양/수액·승압제 준비 → 원인 감별 → 보고/기록"
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "DRUG004",
+        "V80_DETAIL_02",
+        "V74_ICU_INFECTION_SHOCK_HEME"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "Shock 초기대응 표",
+          "caption": "초기 5분 내 볼 내용",
+          "headers": [
+            "단계",
+            "간호 행동",
+            "확인 포인트"
+          ],
+          "rows": [
+            [
+              "인지",
+              "V/S, 의식, 피부, urine 확인",
+              "MAP, SpO2, mental change"
+            ],
+            [
+              "ABCDE",
+              "기도·호흡·순환 빠른 평가",
+              "기도 폐쇄/호흡곤란/출혈"
+            ],
+            [
+              "산소/라인",
+              "O2, monitor, IV 2개, lab 준비",
+              "혈액배양/젖산 등 병원기준"
+            ],
+            [
+              "수액/승압제",
+              "처방에 따라 fluid/vasopressor 준비",
+              "norepinephrine 등 병원 기준"
+            ],
+            [
+              "보고/기록",
+              "원인/처치/반응 보고",
+              "시간순 기록"
+            ]
+          ],
+          "search_terms": [
+            "shock초기대응표",
+            "저혈압",
+            "승압제"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_shock_initial_response_flow.png",
+          "alt": "Shock 환자 초기 대응 순서도",
+          "caption": "Shock 환자 ABCDE 초기대응 순서",
+          "search_terms": [
+            "shock이미지",
+            "저혈압초기대응"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V95_SEIZURE_RESPONSE_ANTICONVULSANT",
+      "category": "응급간호",
+      "title": "경련 환자 발생 시 대처 순서와 항경련제 사용",
+      "aliases": [
+        "경련 대처",
+        "seizure response",
+        "항경련제",
+        "status epilepticus"
+      ],
+      "search_terms": [
+        "경련",
+        "seizure",
+        "발작",
+        "항경련제",
+        "lorazepam",
+        "midazolam",
+        "diazepam",
+        "keppra",
+        "status epilepticus",
+        "경련환자",
+        "경련 대처",
+        "seizure response",
+        "경련 환자 발생 시 대처 순서와 항경련제 사용",
+        "응급간호"
+      ],
+      "urgency": "emergency",
+      "summary": "경련 발생 시 시간 확인, 손상 예방, 기도/산소/혈당 확인, 항경련제 준비와 기록을 표와 이미지로 정리했습니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "경련 시작시간 확인 → 손상 예방 → 기도/산소/흡인 준비 → BST/V/S/SpO2 확인 → 지속/반복 시 처방 기반 항경련제 준비 → 보고/기록"
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "V74_ICU_NEURO",
+        "V95_E_CART_EMERGENCY_MED_TABLE"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "경련 환자 대처 순서표",
+          "caption": "초기 대응 흐름",
+          "headers": [
+            "단계",
+            "행동",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "1",
+              "시작시간 확인",
+              "경련 시작·종료 시간"
+            ],
+            [
+              "2",
+              "손상 예방",
+              "침상난간, 주변 위험물 제거"
+            ],
+            [
+              "3",
+              "기도/산소",
+              "측위 가능 시 유지, suction/O2 준비"
+            ],
+            [
+              "4",
+              "확인",
+              "SpO2, BST, V/S, 의식, 동공 확인"
+            ],
+            [
+              "5",
+              "항경련제",
+              "처방에 따라 benzodiazepine 등 준비/투여"
+            ],
+            [
+              "6",
+              "보고",
+              "5분 이상/반복/호흡저하/외상 시 즉시 보고"
+            ]
+          ],
+          "search_terms": [
+            "경련대처표",
+            "seizure flow"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "항경련제 사용 요약표",
+          "caption": "약물군과 간호 관찰",
+          "headers": [
+            "약물군",
+            "예시",
+            "사용 상황",
+            "관찰"
+          ],
+          "rows": [
+            [
+              "Benzodiazepine",
+              "Lorazepam, Midazolam, Diazepam",
+              "경련 지속/반복 시 rescue",
+              "호흡억제, BP, SpO2"
+            ],
+            [
+              "Levetiracetam",
+              "Keppra 등",
+              "추가/유지 항경련",
+              "의식변화, 부작용"
+            ],
+            [
+              "Phenytoin 계열",
+              "Phenytoin/Fosphenytoin",
+              "지속 경련 추가치료",
+              "ECG/BP, 주입부위"
+            ],
+            [
+              "Valproate",
+              "Valproate 계열",
+              "금기 고려 후 처방",
+              "간기능/혈소판 확인"
+            ]
+          ],
+          "search_terms": [
+            "항경련제표",
+            "benzodiazepine",
+            "keppra"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_seizure_response_flow.png",
+          "alt": "경련 환자 발생 시 대처 순서도",
+          "caption": "경련 시작부터 보고까지 초기대응 순서도",
+          "search_terms": [
+            "경련대처이미지",
+            "seizure response"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v95_anticonvulsant_table.png",
+          "alt": "항경련제 사용 요약표",
+          "caption": "항경련제 약물군과 간호 관찰 포인트",
+          "search_terms": [
+            "항경련제표이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V95_INTUBATION_PREP_ASSIST",
+      "category": "응급간호",
+      "title": "Intubation 준비물·보조 절차: 검색 분리 개선 카드",
+      "aliases": [
+        "intubation 준비",
+        "기관삽관 준비",
+        "삽관 보조",
+        "ETT 준비"
+      ],
+      "search_terms": [
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ETT",
+        "기도확보",
+        "laryngoscope",
+        "rocuronium",
+        "BVM",
+        "suction",
+        "ETCO2",
+        "intubation 준비",
+        "기관삽관 준비",
+        "삽관 보조",
+        "ETT 준비",
+        "Intubation 준비물·보조 절차: 검색 분리 개선 카드",
+        "응급간호",
+        "tube 고정"
+      ],
+      "urgency": "emergency",
+      "summary": "Intubation 검색 시 I/O·섭취량/배설량·전해질 카드가 섞이지 않도록 별도 검색 집중 카드를 추가하고 검색 제외어를 적용했습니다.",
+      "indications": [
+        "응급상황에서 한눈에 절차/표/이미지를 확인해야 할 때"
+      ],
+      "preparation": [
+        "환자 안전 확보",
+        "도움 요청/역할분담",
+        "모니터·산소·흡인·IV line 준비",
+        "병원 응급간호/Code blue 지침 확인"
+      ],
+      "steps": [
+        "호출 → 장비 준비 → 산소/BVM/suction/monitor 준비 → 약물 확인 → 보조 → cuff/고정/ETCO2/X-ray 확인 → 기록"
+      ],
+      "charting": [
+        "발생 시간, 발견자, V/S, 리듬/의식상태, 호출 시간, 처치, 약물, 환자 반응, 보고 내용을 시간순으로 기록"
+      ],
+      "warnings": [
+        "교육용 요약자료이며 실제 처치는 병원 최신 프로토콜과 담당의 지시를 우선합니다."
+      ],
+      "related": [
+        "VENT003",
+        "UPD43_INTUBATION",
+        "V87_XRAY_ETT_POSITION"
+      ],
+      "source_refs": [
+        "AHA CPR/ECC 알고리즘 및 병원 Code blue 지침",
+        "Surviving Sepsis Campaign/병원 shock protocol",
+        "American Epilepsy Society seizure emergency guidance/병원 항경련제 지침"
+      ],
+      "tables": [
+        {
+          "title": "Intubation 준비물 표",
+          "caption": "삽관 전 준비",
+          "headers": [
+            "영역",
+            "준비물",
+            "확인"
+          ],
+          "rows": [
+            [
+              "기도장비",
+              "laryngoscope, blade, ETT, stylet",
+              "tube size, light, cuff 확인"
+            ],
+            [
+              "산소/환기",
+              "BVM, O2, suction",
+              "preoxygenation, suction 작동"
+            ],
+            [
+              "약물",
+              "진정제/근이완제 처방",
+              "투여 전후 BP/SpO2 관찰"
+            ],
+            [
+              "모니터",
+              "SpO2, ECG, BP, ETCO2",
+              "삽관 전후 상태 비교"
+            ],
+            [
+              "고정/확인",
+              "tube holder, 청진, X-ray",
+              "깊이, cuff pressure, 기록"
+            ]
+          ],
+          "search_terms": [
+            "intubation준비물표",
+            "기관삽관",
+            "삽관보조"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v95_intubation_preparation_flow.png",
+          "alt": "Intubation 준비 보조 순서도",
+          "caption": "삽관 준비물과 보조 절차 6단계",
+          "search_terms": [
+            "intubation이미지",
+            "삽관준비"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -62882,5 +63786,38 @@ window.ICU_MANUAL_DB = {
       "V86_DETAIL_07",
       "VIDEO_V91_L_SLING"
     ]
+  },
+  "v95_update": {
+    "summary": "응급간호 영역에 제세동기 사용법, 응급약물표, Shock 초기대응, 경련환자 대처/항경련제, Intubation 준비/보조 카드를 추가하고 Intubation 검색 시 I/O·전해질 카드가 섞이지 않도록 제외어를 적용.",
+    "added_cards": [
+      "V95_DEFIBRILLATOR_USE",
+      "V95_EMERGENCY_NURSING_OVERVIEW",
+      "V95_E_CART_EMERGENCY_MED_TABLE",
+      "V95_INTUBATION_PREP_ASSIST",
+      "V95_SEIZURE_RESPONSE_ANTICONVULSANT",
+      "V95_SHOCK_INITIAL_RESPONSE"
+    ],
+    "added_images": [
+      "v95_anticonvulsant_table.png",
+      "v95_defibrillator_pad_position.png",
+      "v95_defibrillator_use_flow.png",
+      "v95_emergency_medication_table.png",
+      "v95_emergency_nursing_overview.png",
+      "v95_intubation_preparation_flow.png",
+      "v95_seizure_response_flow.png",
+      "v95_shock_initial_response_flow.png"
+    ],
+    "intubation_exclude_applied_to": [
+      "CRRT030",
+      "DRUG019",
+      "IO030",
+      "LAB001",
+      "MENU011",
+      "ROUTINE006",
+      "V70_ECG_ISCHEMIA_ELECTROLYTE",
+      "V81_DETAIL_04",
+      "V81_DETAIL_06"
+    ],
+    "total_items": 374
   }
 };

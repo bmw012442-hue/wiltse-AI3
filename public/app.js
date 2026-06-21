@@ -356,6 +356,13 @@ function expandSearchTerms(rawTerms) {
     "사비나": ["savina", "drager", "dräger"],
     "드레거": ["drager", "dräger", "savina"],
     "인공호흡기": ["ventilator", "기계환기"],
+    "intubation": ["기관삽관", "삽관", "ETT", "기도확보"],
+    "기관삽관": ["intubation", "삽관", "ETT", "기도확보"],
+    "제세동기": ["defibrillator", "AED", "shock", "제세동"],
+    "응급약물": ["E-cart", "emergency drug", "epinephrine", "norepinephrine", "lorazepam"],
+    "경련": ["seizure", "항경련제", "status epilepticus", "lorazepam", "midazolam"],
+    "항경련제": ["seizure", "lorazepam", "midazolam", "diazepam", "keppra"],
+    "쇼크": ["shock", "저혈압", "hypotension", "MAP", "norepinephrine"],
     "흡인": ["suction"],
     "혈역학": ["hemodynamic", "map", "cvp"],
     "저혈압": ["hypotension", "map", "shock"],
@@ -416,6 +423,8 @@ function cardSearchText(card) {
 function scoreCard(query, card) {
   const q = normalizeText(query);
   if (!q || card.search_hidden) return 0;
+  const excluded = (card.exclude_queries || []).map(normalizeText).filter(Boolean);
+  if (excluded.some(x => q.includes(x) || x.includes(q))) return 0;
   const rawTerms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
   const terms = expandSearchTerms(rawTerms);
   const title = normalizeText(card.title);
@@ -466,6 +475,9 @@ function scoreCard(query, card) {
   if ((card.tables || []).length && /체크리스트|기록|예시|순서도|예방|대체수단|모니터링|폐렴|기흉|폐부종|흉수|무기폐/.test(query)) score += 12;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
+
+  if ((card.id || "").startsWith("V95_") && /응급|cpr|code blue|제세동기|defibrillator|shock|쇼크|저혈압|경련|seizure|항경련제|응급약물|e-cart|intubation|기관삽관|삽관/.test(q)) score += 35;
+  if ((card.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
 
   return Math.max(0, score);
 }
