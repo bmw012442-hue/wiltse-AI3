@@ -129,6 +129,15 @@ function normalize(text) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "항생제": ["AST", "antibiotics", "배양", "TDM", "de-escalation", "감수성"],
+    "수액": ["fluid", "NS", "LR", "3% NaCl", "albumin", "maintenance", "resuscitation"],
+    "고위험약물": ["high alert", "승압제", "인슐린", "항응고제", "전해질", "진정제", "진통제"],
+    "마약": ["향정", "narcotic", "count", "잔량", "반환", "폐기", "투약 오류"],
+    "수혈": ["transfusion", "RBC", "FFP", "platelet", "blood product", "crossmatch"],
+    "혈액제제": ["RBC", "PC", "A-PLT", "FFP", "Cryo"],
+    "수혈부작용": ["TRALI", "TACO", "용혈", "발열성", "알레르기", "아나필락시스"],
+    "응고검사": ["DIC", "coagulation", "PT", "aPTT", "INR", "fibrinogen", "D-dimer"],
+
     "수술명": ["수술명 약어", "NS 수술명", "OS 수술명", "operation name"],
     "수술약어": ["ORIF", "CRIF", "TKRA", "THRA", "Burr hole", "EVD", "SDD", "Coil"],
     "수술전검사": ["pre op exam", "CBC", "chemistry", "coagulation", "Chest PA", "EKG"],
@@ -334,6 +343,9 @@ function scoreItem(query, item) {
 
   if ((item.id || "").startsWith("V103_") && /crrt|fmc|renal|신장|bst|dm|dka|인슐린|혈당|sliding|hypogly|hypergly|electrolyte|k replacement|mg replacement|p replacement|ketone/.test(q)) score += 130;
 
+
+  if ((item.id || "").startsWith("V104_") && /항생|ast|antibi|배양|tdm|de-escalation|수액|fluid|고위험|승압|진정|진통|항경련|lasix|heparin|마약|향정|narcotic|잔량|반환|오류|수혈|transfusion|rbc|ffp|platelet|혈액제제|dic|coag|pt|aptt|fibrinogen/.test(q)) score += 140;
+
   return Math.max(0, score);
 }
 
@@ -492,7 +504,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.03.0-v103-crrt-renal-bst-dm-dka",
+    version: "2.04.0-v104-meds-fluids-narcotics-transfusion-blood",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -681,5 +693,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v103 CRRT renal BST DM DKA running on port ${port}`);
+  console.log(`ICU AI Manual v104 meds fluids narcotics transfusion blood running on port ${port}`);
 });
