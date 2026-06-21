@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.95.0-v95-emergency-nursing-focus",
+    "version": "1.96.0-v96-respiratory-ventilator-focus",
     "language": "ko",
-    "source": "V94 기반 + 응급간호 1차 정리, 제세동기/응급약물/Shock/경련/항경련제/Intubation 검색개선",
+    "source": "V95 기반 + 호흡/Ventilator 총정리, 산소요법/HFNC/Ventilator/흡인/기관절개관/ABGA/SpO2 정리와 검색 개선",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -5256,7 +5256,13 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정"
+        "tube 고정",
+        "ventilator",
+        "흡인",
+        "tracheostomy",
+        "기관절개관",
+        "ABGA",
+        "산소요법"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed",
@@ -8630,10 +8636,17 @@ window.ICU_MANUAL_DB = {
         "간호",
         "호흡",
         "Ventilator",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "ventilator",
+        "흡인",
+        "tracheostomy",
+        "기관절개관",
+        "ABGA",
+        "산소요법"
       ],
       "standard_sections_ready": true,
-      "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories"
+      "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC012",
@@ -21724,10 +21737,16 @@ window.ICU_MANUAL_DB = {
         "기관절개관 참고 이미지 12",
         "기관절개관 이미지",
         "기관절개관 사진",
-        "기관절개관 전체 추출 이미지"
+        "기관절개관 전체 추출 이미지",
+        "ventilator",
+        "흡인",
+        "tracheostomy",
+        "ABGA",
+        "산소요법"
       ],
       "standard_sections_ready": true,
-      "search_index": "기관절개관 목적 / 적용 / 합병증 호흡 / Ventilator 기관절개관 목적 적용 합병증 Tracheostomy T-tube cuff pressure 상부기도폐쇄 호흡부전 cuff fenestrated Portex Tracoe Koken Teflon 호흡 Ventilator v43_uploaded_manual v49_exact_card 기관절개관 참고 이미지 1 기관절개관 참고 이미지 2 기관절개관 참고 이미지 3 기관절개관 참고 이미지 4 기관절개관 참고 이미지 5 기관절개관 참고 이미지 6 기관절개관 참고 이미지 7 기관절개관 참고 이미지 8 기관절개관 참고 이미지 9 기관절개관 참고 이미지 10 기관절개관 참고 이미지 11 기관절개관 참고 이미지 12 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지"
+      "search_index": "기관절개관 목적 / 적용 / 합병증 호흡 / Ventilator 기관절개관 목적 적용 합병증 Tracheostomy T-tube cuff pressure 상부기도폐쇄 호흡부전 cuff fenestrated Portex Tracoe Koken Teflon 호흡 Ventilator v43_uploaded_manual v49_exact_card 기관절개관 참고 이미지 1 기관절개관 참고 이미지 2 기관절개관 참고 이미지 3 기관절개관 참고 이미지 4 기관절개관 참고 이미지 5 기관절개관 참고 이미지 6 기관절개관 참고 이미지 7 기관절개관 참고 이미지 8 기관절개관 참고 이미지 9 기관절개관 참고 이미지 10 기관절개관 참고 이미지 11 기관절개관 참고 이미지 12 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_____SINGLE_DOUBLE_CUFF_FE",
@@ -21847,7 +21866,19 @@ window.ICU_MANUAL_DB = {
         "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
-      "search_index": "기관절개관 종류 / Single·Double / Cuff / Fenestrated 호흡 / Ventilator 기관절개관 종류 Single Double Cuff Fenestrated Single cannula Double cannula Unfenestrated 내관 외관 호흡 Ventilator v43_uploaded_manual Tracheostomy T-tube Portex Tracoe Koken 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지"
+      "search_index": "기관절개관 종류 / Single·Double / Cuff / Fenestrated 호흡 / Ventilator 기관절개관 종류 Single Double Cuff Fenestrated Single cannula Double cannula Unfenestrated 내관 외관 호흡 Ventilator v43_uploaded_manual Tracheostomy T-tube Portex Tracoe Koken 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
+      "exclude_queries": [
+        "기관절개관 종류",
+        "single cannula",
+        "double cannula",
+        "cuffed trach",
+        "fenestrated trach",
+        "Portex",
+        "Tracoe",
+        "Koken",
+        "Montgomery"
+      ],
+      "search_hidden": false
     },
     {
       "id": "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON",
@@ -21987,7 +22018,19 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "standard_sections_ready": true,
-      "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관"
+      "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관",
+      "exclude_queries": [
+        "기관절개관 종류",
+        "single cannula",
+        "double cannula",
+        "cuffed trach",
+        "fenestrated trach",
+        "Portex",
+        "Tracoe",
+        "Koken",
+        "Montgomery"
+      ],
+      "search_hidden": false
     },
     {
       "id": "HWPIMG_RESTORED_ADD_01",
@@ -25209,7 +25252,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_TRACH_02",
@@ -25610,7 +25654,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "DBMEDIA001",
@@ -43332,7 +43377,11 @@ window.ICU_MANUAL_DB = {
         "기관흡인",
         "ETT·Tracheostomy 흡인 간호 체크",
         "호흡 / 흡인",
-        "V79"
+        "V79",
+        "ventilator",
+        "기관절개관",
+        "ABGA",
+        "산소요법"
       ],
       "urgency": "high",
       "summary": "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -43539,7 +43588,8 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "suction ETT tracheostomy closed suction secretion SpO2 무균술 흡인 ETT suction tracheostomy suction 기관흡인 ETT·Tracheostomy 흡인 간호 체크 호흡 / 흡인 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      "search_index": "suction ETT tracheostomy closed suction secretion SpO2 무균술 흡인 ETT suction tracheostomy suction 기관흡인 ETT·Tracheostomy 흡인 간호 체크 호흡 / 흡인 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V79_DETAIL_07",
@@ -62510,6 +62560,1093 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V96_RESP_OVERVIEW",
+      "category": "호흡 / Ventilator",
+      "title": "호흡기계 중환자실 간호 총정리: 산소요법·HFNC·Ventilator·흡인·Trach·ABGA·SpO2",
+      "aliases": [
+        "호흡기계 총정리",
+        "ventilator 총정리",
+        "respiratory ICU nursing",
+        "호흡기계 간호"
+      ],
+      "search_terms": [
+        "호흡기계 중환자실 간호 총정리: 산소요법·HFNC·Ventilator·흡인·Trach·ABGA·SpO2",
+        "호흡 / Ventilator",
+        "호흡기계 총정리",
+        "ventilator 총정리",
+        "respiratory ICU nursing",
+        "호흡기계 간호",
+        "산소요법",
+        "HFNC",
+        "ventilator",
+        "suction",
+        "tracheostomy",
+        "ABGA",
+        "산소포화도"
+      ],
+      "urgency": "routine",
+      "summary": "호흡기계에서 중환자실 간호사가 자주 보는 산소요법, HFNC, 인공호흡기, 흡인 간호, 기관절개관, ABGA, 저산소 대처를 한 카드에 묶은 총정리 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "산소장치 선택 → HFNC/ventilator 관리 → 흡인/기도 관리 → ABGA/SpO2 평가 → 기록/보고 순으로 연결하여 본다."
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V96_OXYGEN_THERAPY",
+        "V96_HFNC",
+        "V96_VENTILATOR_ALARM_NURSING",
+        "V96_SUCTION_CLOSED_SUCTION",
+        "V96_TRACH_TYPES_CARE",
+        "V96_ABGA",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "호흡기계 총정리 목차표",
+          "caption": "핵심 주제 7개",
+          "headers": [
+            "영역",
+            "핵심 내용",
+            "주 체크"
+          ],
+          "rows": [
+            [
+              "산소요법",
+              "Nasal prong, S/M, R/M, NIV, nebulizer",
+              "유량, 적응증, 피부·반응"
+            ],
+            [
+              "HFNC",
+              "적응증, 설정, 관찰",
+              "SpO2, RR, WOB, 피부"
+            ],
+            [
+              "Ventilator",
+              "모드, alarm, 환자 간호",
+              "동조성, 분비물, ABGA"
+            ],
+            [
+              "흡인 간호",
+              "open/closed suction",
+              "적응, 감염예방, 반응"
+            ],
+            [
+              "Trach",
+              "종류, 간호, 빠짐/막힘 대처",
+              "기도개방성, 여분 tube"
+            ],
+            [
+              "ABGA",
+              "채혈, 해석",
+              "pH/PaCO2/HCO3/PaO2"
+            ],
+            [
+              "SpO2 저하",
+              "장비→환자→기도→처치",
+              "악화 시 즉시 보고"
+            ]
+          ],
+          "search_terms": [
+            "호흡기계총정리",
+            "respiratory overview"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 중환자실 간호 총정리 이미지",
+          "caption": "호흡기계 중환자실 간호 총정리 이미지",
+          "search_terms": [
+            "호흡기계총정리이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_OXYGEN_THERAPY",
+      "category": "호흡 / Ventilator",
+      "title": "산소요법 종류와 간호: Nasal prong · S/M · R/M · NIV · Nebulizer",
+      "aliases": [
+        "산소요법",
+        "nasal prong",
+        "simple mask",
+        "reservoir mask",
+        "NIV",
+        "nebulizer"
+      ],
+      "search_terms": [
+        "산소요법 종류와 간호: Nasal prong · S/M · R/M · NIV · Nebulizer",
+        "호흡 / Ventilator",
+        "산소요법",
+        "nasal prong",
+        "simple mask",
+        "reservoir mask",
+        "NIV",
+        "nebulizer",
+        "nasal cannula",
+        "non-rebreather",
+        "BiPAP",
+        "CPAP",
+        "산소장치"
+      ],
+      "urgency": "routine",
+      "summary": "산소요법 종류와 기본 유량, 적응증, 간호 포인트를 표 중심으로 정리한 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "산소처방/목표 SpO2 확인 → 적절한 장치 선택 → 유량/설정 확인 → 피부/호흡 상태 관찰 → 반응 기록"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V96_HFNC",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "산소요법 종류 요약표",
+          "caption": "장치별 유량/적응증/간호",
+          "headers": [
+            "종류",
+            "기본 흐름",
+            "주 사용 상황",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Nasal cannula / prong",
+              "1–6 L/min",
+              "경도 저산소혈증, 식사/대화 유지",
+              "비점막 자극, 피부압박, 유량/반응 확인"
+            ],
+            [
+              "Simple mask (S/M)",
+              "5–10 L/min",
+              "중등도 산소 필요",
+              "최소 5 L/min 유지, CO2 저류 환자 주의"
+            ],
+            [
+              "Reservoir mask (R/M)",
+              "10–15 L/min",
+              "고농도 산소 필요",
+              "백이 1/3 이상 유지되게 확인"
+            ],
+            [
+              "NIV (BiPAP/CPAP)",
+              "설정값 기준",
+              "COPD, 폐부종 등 비침습 환기 필요",
+              "밀착/누출/압박손상/의식 상태 관찰"
+            ],
+            [
+              "Nebulizer 치료",
+              "처방 기준",
+              "기관지확장제/분무치료",
+              "전후 호흡음, HR, tremor, 약물 반응 확인"
+            ]
+          ],
+          "search_terms": [
+            "산소요법표",
+            "nasal prong",
+            "NIV"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_oxygen_therapy_types_table.png",
+          "alt": "산소요법 종류 표 이미지",
+          "caption": "Nasal prong, S/M, R/M, NIV, Nebulizer 요약표",
+          "search_terms": [
+            "산소요법이미지",
+            "nasal prong table"
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "title": "O2 nipple 사용법",
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "caption": "산소 캐뉼라/O2 nipple 사용법 영상",
+          "search_terms": [
+            "O2 nipple",
+            "산소 캐뉼라",
+            "nasal prong"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_HFNC",
+      "category": "호흡 / Ventilator",
+      "title": "HFNC 적용·적응증·관찰·간호",
+      "aliases": [
+        "HFNC",
+        "high flow",
+        "high flow nasal cannula"
+      ],
+      "search_terms": [
+        "HFNC 적용·적응증·관찰·간호",
+        "호흡 / Ventilator",
+        "HFNC",
+        "high flow",
+        "high flow nasal cannula",
+        "HFNC 적용",
+        "HFNC 간호",
+        "high flow 사용법",
+        "FiO2",
+        "flow",
+        "가온가습"
+      ],
+      "urgency": "routine",
+      "summary": "HFNC 사용 방법표, 적응증, 관찰 포인트, 간호를 한눈에 볼 수 있게 정리한 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "적응증과 처방 확인 → cannula/회로/물통 연결 → flow/FiO2/온습도 설정 확인 → SpO2/RR/WOB 관찰 → 피부/건조/탈락 확인 → 반응 기록"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V96_OXYGEN_THERAPY",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "HFNC 핵심 표",
+          "caption": "적응증·설정·관찰·간호",
+          "headers": [
+            "항목",
+            "내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "적응증",
+              "중등도 저산소혈증, 고유량 산소 필요, weaning 보조 등",
+              "병원 적응증 기준 확인"
+            ],
+            [
+              "설정",
+              "Flow, FiO2, 온습도",
+              "처방과 장비 설정 일치 확인"
+            ],
+            [
+              "관찰",
+              "SpO2, RR, WOB, mental state",
+              "악화 시 escalation 보고"
+            ],
+            [
+              "간호",
+              "물통/회로/비강 캐뉼라 연결, 피부 보호",
+              "비강 건조/압박·응축수 확인"
+            ],
+            [
+              "기록",
+              "설정값, 반응, 변경 시점",
+              "SpO2 추세와 함께 기록"
+            ]
+          ],
+          "search_terms": [
+            "HFNC표",
+            "high flow nasal cannula"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용과 간호 요약표",
+          "caption": "HFNC 적응증, 설정, 간호 요약표",
+          "search_terms": [
+            "HFNC이미지",
+            "high flow table"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_VENTILATOR_ALARM_NURSING",
+      "category": "호흡 / Ventilator",
+      "title": "Ventilator 기본 모드·알람 대응·환자 간호",
+      "aliases": [
+        "ventilator 모드",
+        "ventilator 알람",
+        "인공호흡기 간호",
+        "vent nursing"
+      ],
+      "search_terms": [
+        "Ventilator 기본 모드·알람 대응·환자 간호",
+        "호흡 / Ventilator",
+        "ventilator 모드",
+        "ventilator 알람",
+        "인공호흡기 간호",
+        "vent nursing",
+        "A/C",
+        "SIMV",
+        "PSV",
+        "CPAP",
+        "ventilator alarm",
+        "high pressure",
+        "low pressure",
+        "disconnection"
+      ],
+      "urgency": "routine",
+      "summary": "Ventilator 기본 모드, 알람 대응, 인공호흡기 환자 간호를 이미지와 표로 정리한 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "mode/설정 확인 → 환자 상태와 동조성 확인 → alarm 원인 평가(환자·기도·회로·분비물·기계) → 즉시 조치 → 기록/보고"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "VENT003",
+        "V96_SUCTION_CLOSED_SUCTION",
+        "V96_ABGA",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "Ventilator 기본 모드 표",
+          "caption": "A/C, SIMV, PSV, CPAP",
+          "headers": [
+            "모드",
+            "핵심 의미",
+            "주 관찰 포인트"
+          ],
+          "rows": [
+            [
+              "A/C",
+              "설정된 TV/RR 기반 mandatory breath",
+              "과호흡, PIP/VT, auto-trigger"
+            ],
+            [
+              "SIMV",
+              "mandatory breath + 자발호흡 허용",
+              "자발호흡/동조성/weaning"
+            ],
+            [
+              "PSV",
+              "자발호흡 시 pressure support 제공",
+              "RR, VT, WOB, fatigue"
+            ],
+            [
+              "CPAP",
+              "지속양압으로 자발호흡 유지",
+              "산소화와 호흡노력"
+            ],
+            [
+              "공통",
+              "FiO2, PEEP, alarm 확인",
+              "ABGA/SpO2/분비물"
+            ]
+          ],
+          "search_terms": [
+            "ventilator mode table",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "Ventilator 알람 원인/대처 표",
+          "caption": "환자 먼저 보기",
+          "headers": [
+            "알람 상황",
+            "가능 원인",
+            "초기 대처"
+          ],
+          "rows": [
+            [
+              "High pressure",
+              "분비물, biting, kink, bronchospasm",
+              "환자/기도 확인, suction, 회로 확인"
+            ],
+            [
+              "Low pressure/Leak",
+              "disconnect, cuff leak, 회로 이탈",
+              "연결/balloon/cuff 확인"
+            ],
+            [
+              "Low minute volume/Apnea",
+              "호흡억제, 회로 문제, fatigue",
+              "환자 평가, mode/backup 확인"
+            ],
+            [
+              "High RR/Asynchrony",
+              "불안, 통증, 분비물, 설정 부조화",
+              "원인 교정, 보고"
+            ],
+            [
+              "전원/기계 이상",
+              "기계 문제",
+              "bagging 준비, 즉시 지원 요청"
+            ]
+          ],
+          "search_terms": [
+            "ventilator alarm table",
+            "high pressure alarm"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약표",
+          "caption": "A/C, SIMV, PSV, CPAP 요약표",
+          "search_terms": [
+            "vent mode image"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서도",
+          "caption": "환자 먼저 보기, 기도/회로/분비물/설정 확인 순서도",
+          "search_terms": [
+            "vent alarm image"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 이미지",
+          "caption": "인공호흡기 환자 간호 체크포인트 이미지",
+          "search_terms": [
+            "ventilator nursing image"
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "title": "Dräger 인공호흡기 1",
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "caption": "Dräger 인공호흡기 교육 영상 1",
+          "search_terms": [
+            "Dräger",
+            "인공호흡기",
+            "ventilator"
+          ]
+        },
+        {
+          "title": "Dräger 인공호흡기 2",
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "caption": "Dräger 인공호흡기 교육 영상 2",
+          "search_terms": [
+            "Dräger",
+            "인공호흡기",
+            "ventilator"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_SUCTION_CLOSED_SUCTION",
+      "category": "호흡 / Ventilator",
+      "title": "흡인 간호 총정리: Suction 절차 · Closed suction 관리",
+      "aliases": [
+        "흡인 간호",
+        "suction",
+        "closed suction",
+        "기관흡인"
+      ],
+      "search_terms": [
+        "흡인 간호 총정리: Suction 절차 · Closed suction 관리",
+        "호흡 / Ventilator",
+        "흡인 간호",
+        "suction",
+        "closed suction",
+        "기관흡인",
+        "suction 절차",
+        "open suction",
+        "closed suction 관리",
+        "흡인",
+        "분비물"
+      ],
+      "urgency": "routine",
+      "summary": "흡입/흡인 간호를 open suction과 closed suction 중심으로 총정리한 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "적응 확인 → 산소화/장비 준비 → 필요 시 pre-oxygenation → 짧게 흡인 → 전후 반응 확인 → 감염예방·교체 기준 확인 → 기록"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V79_DETAIL_06",
+        "V96_VENTILATOR_ALARM_NURSING",
+        "V96_TRACH_TYPES_CARE"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "흡인 간호 요약표",
+          "caption": "Open vs Closed suction",
+          "headers": [
+            "항목",
+            "Open suction",
+            "Closed suction"
+          ],
+          "rows": [
+            [
+              "적응",
+              "분비물 많음, 거친 호흡음, 보이는 분비물",
+              "기계환기 환자에서 회로 유지하며 흡인"
+            ],
+            [
+              "준비",
+              "흡인압, 카테터, 멸균 준비",
+              "closed catheter 연결상태/기한 확인"
+            ],
+            [
+              "간호",
+              "필요 시 pre-oxygenation, 짧게 시행",
+              "회로 분리 최소화, 오염 방지"
+            ],
+            [
+              "관찰",
+              "SpO2, HR, cough, 분비물 양상",
+              "파형/pressure/분비물 반응 확인"
+            ],
+            [
+              "기록",
+              "시간, 횟수, 양상, 반응",
+              "same + 교체 여부"
+            ]
+          ],
+          "search_terms": [
+            "suction table",
+            "closed suction table"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호와 closed suction 요약표",
+          "caption": "Open suction과 Closed suction 관리 요약표",
+          "search_terms": [
+            "흡인간호 이미지",
+            "closed suction image"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_TRACH_TYPES_CARE",
+      "category": "호흡 / Ventilator",
+      "title": "기관절개관 종류·간호·빠짐/막힘 대처: 사진+표 정리",
+      "aliases": [
+        "기관절개관 종류",
+        "single cannula",
+        "double cannula",
+        "cuffed trach",
+        "fenestrated trach",
+        "Portex",
+        "Tracoe",
+        "Koken"
+      ],
+      "search_terms": [
+        "기관절개관 종류·간호·빠짐/막힘 대처: 사진+표 정리",
+        "호흡 / Ventilator",
+        "기관절개관 종류",
+        "single cannula",
+        "double cannula",
+        "cuffed trach",
+        "fenestrated trach",
+        "Portex",
+        "Tracoe",
+        "Koken",
+        "기관절개관",
+        "tracheostomy tube",
+        "기관절개관 사진",
+        "기관절개관 표",
+        "single",
+        "double",
+        "cuff",
+        "fenestrated",
+        "Montgomery"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 종류를 사진과 표로 다시 정리하고, 기관절개관 환자 간호와 빠짐/막힘 대처를 함께 묶은 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "종류 확인 → 구조/특징 파악 → 환자 간호(기도개방성·피부·cuff pressure·분비물) → 빠짐/막힘 시 즉시 대응과 보고"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "PROC011",
+        "UPD43_2",
+        "UPD43_____SINGLE_DOUBLE_CUFF_FE",
+        "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON",
+        "V96_SUCTION_CLOSED_SUCTION"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "기관절개관 종류 요약표",
+          "caption": "single/double/cuff/fenestrated 및 제품군",
+          "headers": [
+            "종류",
+            "핵심 특징",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Single cannula",
+              "내관 없음, 구조 단순",
+              "분비물 많으면 폐쇄 위험 증가, 관리 포인트 숙지"
+            ],
+            [
+              "Double cannula",
+              "외관+내관 구조",
+              "내관 세척/교체로 기도개방성 유지 도움"
+            ],
+            [
+              "Cuffed",
+              "양압환기/흡인 예방 필요 시",
+              "cuff pressure 병원기준 확인"
+            ],
+            [
+              "Uncuffed",
+              "양압환기 필요 적고 말하기/분비물 관리 목적 등",
+              "흡인 예방 한계 주의"
+            ],
+            [
+              "Fenestrated",
+              "발성/호기 흐름 유도 가능",
+              "적응증과 막힘/흡인 위험 평가"
+            ],
+            [
+              "Portex / Tracoe / Koken 등",
+              "제품별 구조와 부속 차이",
+              "제품별 내관, cuff, accessory 확인"
+            ]
+          ],
+          "search_terms": [
+            "기관절개관종류표",
+            "single cannula",
+            "fenestrated"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "기관절개관 응급대처 표",
+          "caption": "빠짐/막힘 대응",
+          "headers": [
+            "상황",
+            "초기 대처",
+            "준비물"
+          ],
+          "rows": [
+            [
+              "빠짐",
+              "산소상태 확인, 도움요청, stoma/기도 확인",
+              "동일/한사이즈↓ trach, obturator, BVM"
+            ],
+            [
+              "막힘",
+              "내관 확인/교체, suction, 산소 공급",
+              "suction, spare inner cannula, BVM"
+            ],
+            [
+              "일상 간호",
+              "드레싱, 피부, tie, cuff pressure 확인",
+              "드레싱 세트, cuff pressure 장비"
+            ]
+          ],
+          "search_terms": [
+            "기관절개관응급대처",
+            "trach obstruction"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호와 빠짐/막힘 대처 이미지",
+          "caption": "기관절개관 간호와 응급대처 이미지",
+          "search_terms": [
+            "trach care image"
+          ]
+        },
+        {
+          "src": "selected_manual_images/trach_01.jpg",
+          "alt": "기관절개관 사진 1",
+          "caption": "기관절개관 참고 사진 1",
+          "search_terms": [
+            "기관절개관 사진 1"
+          ]
+        },
+        {
+          "src": "selected_manual_images/trach_02.jpg",
+          "alt": "기관절개관 사진 2",
+          "caption": "기관절개관 참고 사진 2",
+          "search_terms": [
+            "기관절개관 사진 2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/trach_03.jpg",
+          "alt": "기관절개관 사진 3",
+          "caption": "기관절개관 참고 사진 3",
+          "search_terms": [
+            "기관절개관 사진 3"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_ABGA",
+      "category": "호흡 / Ventilator",
+      "title": "ABGA 채혈 방법과 결과 해석 기본",
+      "aliases": [
+        "ABGA",
+        "ABG",
+        "ABGA 채혈",
+        "ABGA 해석"
+      ],
+      "search_terms": [
+        "ABGA 채혈 방법과 결과 해석 기본",
+        "호흡 / Ventilator",
+        "ABGA",
+        "ABG",
+        "ABGA 채혈",
+        "ABGA 해석",
+        "ABGA 채혈 방법",
+        "Allen test",
+        "heparin syringe",
+        "pH",
+        "PaCO2",
+        "HCO3",
+        "PaO2"
+      ],
+      "urgency": "routine",
+      "summary": "ABGA 채혈 방법과 기본 해석 순서를 표 중심으로 정리한 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "채혈 전 확인 → 동맥 채혈 → 기포 제거/지혈/전송 → pH→PaCO2→HCO3→PaO2 순으로 해석 → 환자 상태와 함께 평가"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V96_LOW_SPO2",
+        "LAB009"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "ABGA 채혈/해석 표",
+          "caption": "채혈과 기본 해석",
+          "headers": [
+            "항목",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "채혈 전",
+              "환자 확인, 산소장치/FiO2 확인, syringe 준비",
+              "Allen test 여부 병원기준"
+            ],
+            [
+              "채혈 후",
+              "기포 제거, 지혈, 즉시 전송",
+              "천자부 출혈/순환 확인"
+            ],
+            [
+              "정상 범위",
+              "pH 7.35–7.45 / PaCO2 35–45 / HCO3 22–26 / PaO2 80–100",
+              "기기 기준 참고"
+            ],
+            [
+              "해석 순서",
+              "1) pH 2) PaCO2 3) HCO3 4) 산소화",
+              "호흡성/대사성 구분"
+            ],
+            [
+              "기록",
+              "산소장치, FiO2, 채혈시간, 결과 보고",
+              "이상치 즉시 보고"
+            ]
+          ],
+          "search_terms": [
+            "ABGA표",
+            "ABGA해석표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 채혈과 결과 해석 기본 표",
+          "caption": "ABGA 채혈 방법과 결과 해석 기본 표",
+          "search_terms": [
+            "ABGA image",
+            "ABGA table"
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "title": "ABGA (calibration)",
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "caption": "ABGA calibration 관련 영상",
+          "search_terms": [
+            "ABGA",
+            "calibration"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V96_LOW_SPO2",
+      "category": "호흡 / Ventilator",
+      "title": "산소포화도 저하 시 대처",
+      "aliases": [
+        "산소포화도 저하",
+        "SpO2 저하",
+        "desaturation"
+      ],
+      "search_terms": [
+        "산소포화도 저하 시 대처",
+        "호흡 / Ventilator",
+        "산소포화도 저하",
+        "SpO2 저하",
+        "desaturation",
+        "산소포화도",
+        "spo2",
+        "저산소",
+        "호흡곤란",
+        "산소저하 대처"
+      ],
+      "urgency": "routine",
+      "summary": "산소포화도 저하 시 장비와 환자 상태, 기도와 산소장치, 분비물, escalation을 순서대로 확인하는 카드입니다.",
+      "indications": [
+        "호흡기계 중환자실 간호에서 표와 이미지 중심으로 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태 우선 확인",
+        "산소/monitor/흡인/기도 장비 준비",
+        "병원 호흡기계/중환자실 지침과 처방 확인"
+      ],
+      "steps": [
+        "probe/artifact 확인 → 환자 상태 확인 → 기도/산소장치/유량 확인 → 호흡음/분비물 확인 → 체위변경/산소증량/HFNC·NIV 검토 → 보고/기록"
+      ],
+      "warnings": [
+        "교육용 요약이며 실제 적용은 병원 호흡기계·중환자실 지침과 담당의 지시를 우선합니다."
+      ],
+      "charting": [
+        "장치 종류/설정, SpO2, RR, 호흡양상, 분비물, 시행 처치, 환자 반응을 기록"
+      ],
+      "related": [
+        "V96_OXYGEN_THERAPY",
+        "V96_HFNC",
+        "V96_VENTILATOR_ALARM_NURSING",
+        "V96_ABGA"
+      ],
+      "source_refs": [
+        "병원 호흡기계/중환자실 지침",
+        "호흡기 장비 제조사 매뉴얼",
+        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+      ],
+      "tables": [
+        {
+          "title": "산소포화도 저하 대처 표",
+          "caption": "초기 확인 순서",
+          "headers": [
+            "순서",
+            "무엇을 본다",
+            "핵심 포인트"
+          ],
+          "rows": [
+            [
+              "1",
+              "장비",
+              "probe 위치, 손차가움, artifact"
+            ],
+            [
+              "2",
+              "환자",
+              "의식, RR, cyanosis, accessory muscle"
+            ],
+            [
+              "3",
+              "기도/산소",
+              "기도 개방, 장치 위치, 유량, 회로"
+            ],
+            [
+              "4",
+              "분비물",
+              "suction 필요, 호흡음, cough"
+            ],
+            [
+              "5",
+              "확대 처치",
+              "체위변경, 산소증량, HFNC/NIV/ventilator 평가"
+            ],
+            [
+              "6",
+              "보고/기록",
+              "지속 저하·악화 즉시 보고"
+            ]
+          ],
+          "search_terms": [
+            "SpO2저하표",
+            "desaturation flow"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처 순서도",
+          "caption": "probe 확인부터 보고까지 저산소 대응 순서도",
+          "search_terms": [
+            "SpO2 image",
+            "desaturation image"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -63819,5 +64956,31 @@ window.ICU_MANUAL_DB = {
       "V81_DETAIL_06"
     ],
     "total_items": 374
+  },
+  "v96_update": {
+    "summary": "호흡/Ventilator 영역 재정리. 산소요법 종류, HFNC, ventilator 모드·알람·간호, suction/closed suction, 기관절개관 종류 표+사진, ABGA, 산소포화도 저하 대처 카드를 추가하고 기관절개관 종류 검색 시 표/이미지 카드가 우선 보이도록 조정.",
+    "added_cards": [
+      "V96_ABGA",
+      "V96_HFNC",
+      "V96_LOW_SPO2",
+      "V96_OXYGEN_THERAPY",
+      "V96_RESP_OVERVIEW",
+      "V96_SUCTION_CLOSED_SUCTION",
+      "V96_TRACH_TYPES_CARE",
+      "V96_VENTILATOR_ALARM_NURSING"
+    ],
+    "added_images": [
+      "v96_abga_table.png",
+      "v96_hfnc_table.png",
+      "v96_low_spo2_flow.png",
+      "v96_oxygen_therapy_types_table.png",
+      "v96_respiratory_overview.png",
+      "v96_suction_closed_suction_table.png",
+      "v96_trach_emergency_boxes.png",
+      "v96_ventilator_alarm_flow.png",
+      "v96_ventilator_modes_table.png",
+      "v96_ventilator_nursing_boxes.png"
+    ],
+    "total_items": 382
   }
 };

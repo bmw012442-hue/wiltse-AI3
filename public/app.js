@@ -353,6 +353,17 @@ function normalizeText(v) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "산소요법": ["nasal prong", "nasal cannula", "simple mask", "reservoir mask", "niv", "nebulizer"],
+    "산소포화도": ["spo2", "desaturation", "저산소"],
+    "고유량": ["hfnc", "high flow", "high flow nasal cannula"],
+    "hfnc": ["고유량", "high flow", "high flow nasal cannula"],
+    "환기": ["ventilator", "인공호흡기"],
+    "흡인": ["suction", "closed suction"],
+    "클로즈드석션": ["closed suction", "흡인"],
+    "기관절개관": ["tracheostomy", "trach", "single cannula", "double cannula", "cuff", "fenestrated", "portex", "tracoe", "koken"],
+    "기관절개": ["tracheostomy", "trach", "기관절개관"],
+    "abga": ["abg", "pH", "PaCO2", "HCO3", "PaO2"],
+
     "사비나": ["savina", "drager", "dräger"],
     "드레거": ["drager", "dräger", "savina"],
     "인공호흡기": ["ventilator", "기계환기"],
@@ -478,6 +489,8 @@ function scoreCard(query, card) {
 
   if ((card.id || "").startsWith("V95_") && /응급|cpr|code blue|제세동기|defibrillator|shock|쇼크|저혈압|경련|seizure|항경련제|응급약물|e-cart|intubation|기관삽관|삽관/.test(q)) score += 35;
   if ((card.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
+  if ((card.id || "").startsWith("V96_") && /호흡|ventilator|인공호흡기|산소요법|nasal|mask|niv|nebulizer|hfnc|high flow|흡인|suction|기관절개|trach|abga|spo2|산소포화도/.test(q)) score += 35;
+  if ((card.id || "") === "V96_TRACH_TYPES_CARE" && /기관절개관|single|double|cuff|fenestrated|portex|tracoe|koken|montgomery/.test(q)) score += 90;
 
   return Math.max(0, score);
 }
