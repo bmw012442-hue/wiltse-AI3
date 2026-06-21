@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.89.0-v89-transfusion-fix",
+    "version": "1.90.0-v90-clean-structure",
     "language": "ko",
-    "source": "V88 기반 + 수혈 카드 표/이미지 우선 렌더링 개선",
+    "source": "V89 기반 구조 정리본: public 최신본만 단일 기준으로 유지, 구버전 루트/중복 폴더 제거, 서버검색 동기화",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -58531,5 +58531,23 @@ window.ICU_MANUAL_DB = {
       "v89_transfusion_reaction_response.png"
     ],
     "total_items": 358
+  },
+  "v90_cleanup": {
+    "summary": "구조 정리 버전. 표/이미지 없는 카드 포함 전체 카드는 삭제하지 않고 보존.",
+    "cards_preserved": 358,
+    "runtime_public_folder": "public/",
+    "removed_from_runtime": [
+      "root-level outdated app.js/data.js/icu_ai_manual_db_v2.json/index.html",
+      "ICU_AI_Manual_Render_v4_Final duplicate old app folder"
+    ],
+    "function_preservation": [
+      "로그인 화면/login.html",
+      "PWA manifest/icons/sw.js",
+      "AI 질문 /api/ask",
+      "검색 /api/search",
+      "표/이미지 렌더링",
+      "V87/V88/V89 교육용 이미지 자료"
+    ],
+    "note": "표/이미지가 없는 카드도 모두 유지함. 검색 정확도 개선을 위해 server.js 검색 로직을 public/app.js와 유사하게 보강."
   }
 };
