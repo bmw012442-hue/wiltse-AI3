@@ -524,7 +524,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.06.0-v106-tests-lines-imaging-mdro-emr",
+    version: "2.07.0-v107-admin-shift-emr-equipment",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -713,5 +713,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v106 tests lines imaging mdro emr running on port ${port}`);
+  console.log(`ICU AI Manual v107 admin shift emr equipment running on port ${port}`);
 });
