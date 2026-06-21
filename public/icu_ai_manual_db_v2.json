@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.90.0-v90-clean-structure",
+    "version": "1.92.0-v92-partial-upload-video-links",
     "language": "ko",
-    "source": "V89 기반 구조 정리본: public 최신본만 단일 기준으로 유지, 구버전 루트/중복 폴더 제거, 서버검색 동기화",
+    "source": "V91 업무 동영상 링크 추가본 기반 + GitHub 사이트 부분 업로드용 최소 파일 패키지",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -3510,14 +3510,20 @@
       "related": [],
       "tags": [
         "Routine/신체보호대",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
       "tables": [],
       "images": [],
@@ -3531,10 +3537,72 @@
         "restraint",
         "2시간",
         "평가",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "클로브 히치",
+        "clove hitch"
       ],
       "standard_sections_ready": true,
-      "search_index": "신체보호대 평가 Routine Routine/신체보호대 신체보호대 보호대 restraint 2시간 평가 v8_final_reviewed"
+      "search_index": "신체보호대 평가 Routine Routine/신체보호대 신체보호대 보호대 restraint 2시간 평가 v8_final_reviewed 정방향 매듭 square knot 보호대 매듭 동영상 업무동영상 교육영상 클로브 히치 clove hitch",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "신체보호대 평가",
+            "Routine",
+            "Routine/신체보호대",
+            "2시간",
+            "평가",
+            "v8_final_reviewed"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "신체보호대 평가",
+            "Routine",
+            "Routine/신체보호대",
+            "2시간",
+            "평가",
+            "v8_final_reviewed",
+            "정방향 매듭"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "ROUTINE011",
@@ -4491,14 +4559,19 @@
       "related": [],
       "tags": [
         "검사/ABGA",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
       "images": [
@@ -4587,10 +4660,47 @@
         "v8_final_reviewed",
         "ABGA 해석 4단계 공식",
         "동맥혈 ABGA 수행절차",
-        "ABGA 이상 시 단계별 수행"
+        "ABGA 이상 시 단계별 수행",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행"
+      "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABGA 채혈/검사",
+            "검사 / 검체",
+            "검사/ABGA",
+            "arterial blood gas",
+            "혈가스",
+            "채혈",
+            "검사"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "LAB004",
@@ -4777,14 +4887,19 @@
       "related": [],
       "tags": [
         "호흡기/O2",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [],
       "images": [],
@@ -4803,10 +4918,53 @@
         "변동",
         "호흡",
         "Ventilator",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "O2 tapering / 산소 변동 호흡 / Ventilator 호흡기/O2 O2 산소 tapering N/P S/M mask CO2 변동 호흡 Ventilator v8_final_reviewed"
+      "search_index": "O2 tapering / 산소 변동 호흡 / Ventilator 호흡기/O2 O2 산소 tapering N/P S/M mask CO2 변동 호흡 Ventilator v8_final_reviewed O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "O2 tapering / 산소 변동",
+            "호흡 / Ventilator",
+            "호흡기/O2",
+            "O2",
+            "산소",
+            "tapering",
+            "N/P",
+            "S/M",
+            "mask",
+            "CO2"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "VENT002",
@@ -4865,14 +5023,21 @@
       "related": [],
       "tags": [
         "호흡기/Vent",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
       "images": [],
@@ -4901,10 +5066,111 @@
         "호흡",
         "v8_final_reviewed",
         "ventilator 동영상",
-        "Ventilator 사용법 동영상"
+        "Ventilator 사용법 동영상",
+        "Dräger",
+        "Drager",
+        "Savina",
+        "드레거",
+        "ventilator",
+        "Dräger 인공호흡기 1",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
       ],
       "standard_sections_ready": true,
-      "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상"
+      "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상 Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator setup",
+            "호흡 / Ventilator",
+            "호흡기/Vent",
+            "Vent",
+            "Ventilator",
+            "벤트",
+            "circuit",
+            "WFI",
+            "test lung"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator setup",
+            "호흡 / Ventilator",
+            "호흡기/Vent",
+            "Vent",
+            "Ventilator",
+            "벤트",
+            "circuit",
+            "WFI",
+            "test lung"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator setup",
+            "호흡 / Ventilator",
+            "호흡기/Vent",
+            "Vent",
+            "Ventilator",
+            "벤트",
+            "circuit",
+            "WFI",
+            "test lung"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "VENT003",
@@ -5134,14 +5400,19 @@
       "related": [],
       "tags": [
         "호흡기/HFNC",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [],
       "images": [
@@ -5180,10 +5451,53 @@
         "호흡",
         "Ventilator",
         "v8_final_reviewed",
-        "산소요법(O2) 참고 표"
+        "산소요법(O2) 참고 표",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "HFNC / Airvo 호흡 / Ventilator 호흡기/HFNC HFNC Airvo 하이플로우 high flow FiO2 호흡 Ventilator v8_final_reviewed 산소요법(O2) 참고 표"
+      "search_index": "HFNC / Airvo 호흡 / Ventilator 호흡기/HFNC HFNC Airvo 하이플로우 high flow FiO2 호흡 Ventilator v8_final_reviewed 산소요법(O2) 참고 표 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "HFNC / Airvo",
+            "호흡 / Ventilator",
+            "호흡기/HFNC",
+            "HFNC",
+            "Airvo",
+            "하이플로우",
+            "high flow",
+            "FiO2",
+            "호흡",
+            "Ventilator"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "TF001",
@@ -5321,7 +5635,11 @@
       "related": [],
       "tags": [
         "수혈",
-        "v11_source_enhanced"
+        "v11_source_enhanced",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v11_source_enhanced",
@@ -5329,7 +5647,8 @@
         "v64_image_fix": "통증 사정 이미지(bin000f.png)를 수혈 카드에서 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 수혈"
+        "윌스 ICU AI 업무 매뉴얼 수혈",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "tables": [
         {
@@ -5438,7 +5757,17 @@
             "RBC",
             "PC",
             "FFP",
-            "Cryo"
+            "Cryo",
+            "혈액제제 종류 요약",
+            "수혈 절차 상세",
+            "수혈 / 혈액",
+            "수혈",
+            "P-RBC",
+            "A-PLT",
+            "수혈기록지",
+            "수혈 V/S",
+            "혈액요청서",
+            "수혈 tip"
           ],
           "include_rows_in_search": true
         }
@@ -5450,7 +5779,19 @@
           "caption": "수혈 준비부터 종료 기록까지 5단계 순서도",
           "search_terms": [
             "수혈절차이미지",
-            "수혈순서도"
+            "수혈순서도",
+            "수혈 절차 순서도",
+            "수혈 준비부터 종료 기록까지 5단계 순서도",
+            "수혈 절차 상세",
+            "수혈 / 혈액",
+            "수혈",
+            "P-RBC",
+            "FFP",
+            "A-PLT",
+            "수혈기록지",
+            "수혈 V/S",
+            "혈액요청서",
+            "수혈 tip"
           ]
         }
       ],
@@ -5490,12 +5831,54 @@
         "종료 시",
         "V/S, 수혈기록지, I/O blood 용량 입력",
         "부작용 의심",
-        "즉시 중단, 정맥로 유지, 담당의/진검실 보고"
+        "즉시 중단, 정맥로 유지, 담당의/진검실 보고",
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고",
+      "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
       "prefer_media_first": true,
-      "hide_raw_steps": false
+      "hide_raw_steps": false,
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "수혈 절차 상세",
+            "수혈 / 혈액",
+            "수혈",
+            "P-RBC",
+            "FFP",
+            "A-PLT",
+            "수혈기록지",
+            "수혈 V/S",
+            "혈액요청서",
+            "수혈 tip"
+          ]
+        }
+      ]
     },
     {
       "id": "TF003",
@@ -5802,14 +6185,19 @@
       "related": [],
       "tags": [
         "응급/CPR",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "final_reviewed",
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 2026-06-06"
+        "윌스 ICU AI 업무 매뉴얼 2026-06-06",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
       "images": [],
@@ -5836,10 +6224,48 @@
         "card",
         "v8_final_reviewed",
         "LUCAS 동영상",
-        "루카스 사용법 동영상"
+        "루카스 사용법 동영상",
+        "CPCR",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "E-cart",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "CPR quick card 응급상황 응급/CPR CPR code blue 심정지 arrest ROSC Lucas Ambu 에피 심폐소생술 코드블루 compression 제세동 ambu bagging CPR charting quick card v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상"
+      "search_index": "CPR quick card 응급상황 응급/CPR CPR code blue 심정지 arrest ROSC Lucas Ambu 에피 심폐소생술 코드블루 compression 제세동 ambu bagging CPR charting quick card v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 CPCR 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CPR quick card",
+            "응급/CPR",
+            "code blue",
+            "심정지",
+            "arrest",
+            "ROSC",
+            "Ambu"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "ROUTINE018",
@@ -7377,14 +7803,19 @@
       "related": [],
       "tags": [
         "DRESSING/EVD",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v10_user_requested_master_category",
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
       "images": [],
@@ -7400,10 +7831,51 @@
         "Line",
         "Drain",
         "Dressing",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "ICP",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "배액 높이",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "EVD 소독 Line / Drain / Dressing DRESSING/EVD EVD external ventricular drainage 뇌실외배액 소독 Line Drain Dressing v10_master_30_categories"
+      "search_index": "EVD 소독 Line / Drain / Dressing DRESSING/EVD EVD external ventricular drainage 뇌실외배액 소독 Line Drain Dressing v10_master_30_categories ICP tragus 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "EVD 소독",
+            "Line / Drain / Dressing",
+            "DRESSING/EVD",
+            "external ventricular drainage",
+            "소독",
+            "Line",
+            "Drain",
+            "Dressing"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "PROC002",
@@ -7672,14 +8144,19 @@
       "related": [],
       "tags": [
         "검사·시술/영상",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v10_user_requested_master_category",
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
       ],
       "tables": [],
       "images": [],
@@ -7696,10 +8173,53 @@
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "Brain CT 전후 간호 검사 / 검체 검사·시술/영상 Brain CT 뇌 CT CT Brain 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "Brain CT 전후 간호 검사 / 검체 검사·시술/영상 Brain CT 뇌 CT CT Brain 전후 간호 검사 검체 v10_master_30_categories NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 수술환자 이동 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Brain CT 전후 간호",
+            "검사 / 검체",
+            "검사·시술/영상",
+            "뇌 CT",
+            "CT",
+            "Brain",
+            "전후",
+            "간호",
+            "검사"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "PROC006",
@@ -9840,14 +10360,21 @@
       "related": [],
       "tags": [
         "동의서",
-        "v11_source_enhanced"
+        "v11_source_enhanced",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v11_source_enhanced",
         "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 Orientation/DNR/부착기구"
+        "윌스 ICU AI 업무 매뉴얼 Orientation/DNR/부착기구",
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "tables": [],
       "images": [],
@@ -9864,10 +10391,117 @@
         "종류와",
         "확인",
         "상세",
-        "v11_source_enhanced"
+        "v11_source_enhanced",
+        "신체보호대",
+        "보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "restraint",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "클로브 히치",
+        "clove hitch",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서"
       ],
       "standard_sections_ready": true,
-      "search_index": "동의서 종류와 확인 상세 동의서 수술동의서 PCA 동의서 수혈동의서 신체보호대 동의서 DNR Mahurkar Perm cath 종류와 확인 상세 v11_source_enhanced"
+      "search_index": "동의서 종류와 확인 상세 동의서 수술동의서 PCA 동의서 수혈동의서 신체보호대 동의서 DNR Mahurkar Perm cath 종류와 확인 상세 v11_source_enhanced 신체보호대 보호대 정방향 매듭 square knot 보호대 매듭 restraint 동영상 업무동영상 교육영상 클로브 히치 clove hitch 테블릿 태블릿 tablet consent 동의서 받기 전자동의서",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "동의서 종류와 확인 상세",
+            "동의서",
+            "수술동의서",
+            "PCA 동의서",
+            "수혈동의서",
+            "신체보호대 동의서",
+            "DNR",
+            "Mahurkar",
+            "Perm cath",
+            "종류와"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "동의서 종류와 확인 상세",
+            "동의서",
+            "수술동의서",
+            "PCA 동의서",
+            "수혈동의서",
+            "신체보호대 동의서",
+            "DNR",
+            "Mahurkar",
+            "Perm cath",
+            "종류와"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "동의서 종류와 확인 상세",
+            "수술동의서",
+            "PCA 동의서",
+            "수혈동의서",
+            "신체보호대 동의서",
+            "DNR",
+            "Mahurkar",
+            "Perm cath",
+            "종류와"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "DEPT001",
@@ -10146,14 +10780,19 @@
       ],
       "tags": [
         "각과 Routine/신경외과",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v10_user_requested_master_category",
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
       ],
       "tables": [],
       "images": [],
@@ -10168,10 +10807,51 @@
         "GCS",
         "TFCA",
         "Routine",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "신경외과 Routine 신경계 각과 Routine/신경외과 신경외과 NS Brain GCS TFCA Routine v10_master_30_categories Brain patient care / 신경외과 환자"
+      "search_index": "신경외과 Routine 신경계 각과 Routine/신경외과 신경외과 NS Brain GCS TFCA Routine v10_master_30_categories 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 Brain patient care / 신경외과 환자",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "신경외과 Routine",
+            "신경계",
+            "각과 Routine/신경외과",
+            "Brain",
+            "GCS",
+            "TFCA",
+            "Routine",
+            "v10_master_30_categories"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "DEPT005",
@@ -10969,14 +11649,19 @@
       "tags": [
         "응급상황",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v14_v11_based_main_menu",
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
       "images": [],
@@ -11019,10 +11704,51 @@
         "v14_v11_based_menu",
         "search_optimized",
         "LUCAS 동영상",
-        "루카스 사용법 동영상"
+        "루카스 사용법 동영상",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "E-cart",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 CPR quick card"
+      "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "응급상황: E-CART 응급약물·응급기구·응급간호·CPR",
+            "검색",
+            "응급",
+            "E-CART",
+            "E cart",
+            "이카트",
+            "응급카트",
+            "응급약물",
+            "응급기구"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "MENU002",
@@ -11324,14 +12050,24 @@
       "tags": [
         "의료장비",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v14_v11_based_main_menu",
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기",
+        "Google Drive 링크: O2 nipple 사용법 보기",
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
       "images": [
@@ -11466,10 +12202,215 @@
         "산소요법(O2) 참고 표",
         "Bedside monitor 예시 사진",
         "ventilator 동영상",
-        "Ventilator 사용법 동영상"
+        "Ventilator 사용법 동영상",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "Dräger",
+        "Drager",
+        "Savina",
+        "드레거",
+        "Dräger 인공호흡기 1",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
       ],
       "standard_sections_ready": true,
-      "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 Infusion pump 사용법 Syringe pump 사용법"
+      "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 Infusion pump 사용법 Syringe pump 사용법",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "ventilator",
+            "vent",
+            "벤트",
+            "인공호흡기",
+            "high flow",
+            "HFNC"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "ventilator",
+            "vent",
+            "벤트",
+            "인공호흡기",
+            "high flow",
+            "HFNC"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "ventilator",
+            "vent",
+            "벤트",
+            "인공호흡기",
+            "high flow",
+            "HFNC"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "vent",
+            "벤트",
+            "high flow",
+            "HFNC"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "vent",
+            "벤트",
+            "high flow",
+            "HFNC"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
+            "물품 / 장비 / 전화번호",
+            "의료장비",
+            "장비",
+            "vent",
+            "벤트",
+            "high flow",
+            "HFNC"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "MENU005",
@@ -12621,14 +13562,19 @@
       "tags": [
         "ABGA",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v14_v11_based_main_menu",
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
       "images": [
@@ -12771,10 +13717,49 @@
         "ABGA 해석 4단계 공식",
         "ABGA 대표 질환 예시",
         "동맥혈 ABGA 수행절차",
-        "ABGA 이상 시 단계별 수행"
+        "ABGA 이상 시 단계별 수행",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "A-line",
+        "검체",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "ABGA: 혈액가스 분석과 질환 ABGA 혈액가스 혈액가스 분석 arterial blood gas pH PaCO2 PaO2 HCO3 SaO2 lactate acidosis alkalosis respiratory acidosis metabolic acidosis CO2 retention hypoxia 산염기 분석과 질환 v14_v11_based_menu search_optimized ABGA 해석 4단계 공식 ABGA 대표 질환 예시 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행"
+      "search_index": "ABGA: 혈액가스 분석과 질환 ABGA 혈액가스 혈액가스 분석 arterial blood gas pH PaCO2 PaO2 HCO3 SaO2 lactate acidosis alkalosis respiratory acidosis metabolic acidosis CO2 retention hypoxia 산염기 분석과 질환 v14_v11_based_menu search_optimized ABGA 해석 4단계 공식 ABGA 대표 질환 예시 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration A-line 검체 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABGA: 혈액가스 분석과 질환",
+            "혈액가스 분석",
+            "arterial blood gas",
+            "pH",
+            "PaCO2",
+            "PaO2",
+            "HCO3",
+            "SaO2"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "MENU014",
@@ -14553,14 +15538,19 @@
       "tags": [
         "검사·검체/검체통",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "original_category": "검사·검체/검체통",
       "search_terms": [
@@ -14599,10 +15589,51 @@
         "Urine Analysis / UA",
         "투명한 뚜껑 긴 bottle",
         "코니컬 튜브",
-        "투명: 일반캐리어 / 유색: 오토캐리어"
+        "투명: 일반캐리어 / 유색: 오토캐리어",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "A-line",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "검체 통과 채혈·ABGA 실무 검사 / 검체 검사·검체/검체통 검체통 검체 병 c-difficile CDT stool ob통 UA bottle Urine Analysis Urine Culture 코니컬튜브 슈터기 일반캐리어 오토캐리어 ABGA A-line 채혈 리거즈 regurge 바코드 발행 DIC 바코드 검체 통과 채혈 실무 검사 v26_uploaded_manual_added manual_20260614 검체통 종류 검체통/용기 C-difficile / CDT Stool OB통, 블랙 Urine Analysis / UA 투명한 뚜껑 긴 bottle 코니컬 튜브 투명: 일반캐리어 / 유색: 오토캐리어 ABGA 채혈/검사"
+      "search_index": "검체 통과 채혈·ABGA 실무 검사 / 검체 검사·검체/검체통 검체통 검체 병 c-difficile CDT stool ob통 UA bottle Urine Analysis Urine Culture 코니컬튜브 슈터기 일반캐리어 오토캐리어 ABGA A-line 채혈 리거즈 regurge 바코드 발행 DIC 바코드 검체 통과 채혈 실무 검사 v26_uploaded_manual_added manual_20260614 검체통 종류 검체통/용기 C-difficile / CDT Stool OB통, 블랙 Urine Analysis / UA 투명한 뚜껑 긴 bottle 코니컬 튜브 투명: 일반캐리어 / 유색: 오토캐리어 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 동영상 업무동영상 교육영상 ABGA 채혈/검사",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "검체 통과 채혈·ABGA 실무",
+            "검사 / 검체",
+            "검사·검체/검체통",
+            "검체통",
+            "검체 병",
+            "c-difficile",
+            "CDT",
+            "stool ob통",
+            "UA bottle",
+            "Urine Analysis"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "ROUTINE032",
@@ -16847,14 +17878,19 @@
       "tags": [
         "응급상황/CPR",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "original_category": "응급상황/CPR",
       "search_terms": [
@@ -16883,10 +17919,50 @@
         "v26_uploaded_manual_added",
         "manual_20260614",
         "LUCAS 동영상",
-        "루카스 사용법 동영상"
+        "루카스 사용법 동영상",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "E-cart",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPR quick card"
+      "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CPR 실무: Lucas, I-gel, Ambu, 기록",
+            "응급상황/CPR",
+            "CPR 실무",
+            "루카스",
+            "i-gel",
+            "igel",
+            "Ambu",
+            "6초마다"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "IMG030",
@@ -17026,14 +18102,20 @@
       "tags": [
         "검사·시술/영상검사",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "original_category": "검사·시술/영상검사",
       "search_terms": [
@@ -17085,10 +18167,91 @@
         "Lt 18G, metformin 중지 확인, hydration",
         "Lt 18G, NS 500, 동의서, 금식 X",
         "NPO, PICC 조영제 사용 가능",
-        "준비사항 없음, 보통 4-5일 f/u"
+        "준비사항 없음, 보통 4-5일 f/u",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서"
       ],
       "standard_sections_ready": true,
-      "search_index": "CT/MRI 조영제 검사와 주요 영상검사 준비 검사 / 검체 검사·시술/영상검사 CT 조영제 MRI 조영제 3way N/S hydration 조영제 검사 Coronary Angio CT NTG 베타록 Brain MRI non enhance Brain MRI enhance Brain CT Head Neck Angio CT DSA PTA TCD TFCA TRCA metformin 메트포르민 Rt 18G Lt 18G Lt 20G NPO MRI permission CT MRI 조영제 검사와 주요 영상검사 준비 검사 검체 v26_uploaded_manual_added manual_20260614 주요 영상검사 준비사항 CT 5분 전 NTG, 베타록 지참, 조영제 line Brain MRI non-enhance 검사설명서 MRI 설명서, 조영제 동의서, permission, line, NS 500, 금식 X Brain CT non-enhance 준비사항 없음 Lt 18G, metformin 중지 확인, hydration Lt 18G, NS 500, 동의서, 금식 X NPO, PICC 조영제 사용 가능 준비사항 없음, 보통 4-5일 f/u"
+      "search_index": "CT/MRI 조영제 검사와 주요 영상검사 준비 검사 / 검체 검사·시술/영상검사 CT 조영제 MRI 조영제 3way N/S hydration 조영제 검사 Coronary Angio CT NTG 베타록 Brain MRI non enhance Brain MRI enhance Brain CT Head Neck Angio CT DSA PTA TCD TFCA TRCA metformin 메트포르민 Rt 18G Lt 18G Lt 20G NPO MRI permission CT MRI 조영제 검사와 주요 영상검사 준비 검사 검체 v26_uploaded_manual_added manual_20260614 주요 영상검사 준비사항 CT 5분 전 NTG, 베타록 지참, 조영제 line Brain MRI non-enhance 검사설명서 MRI 설명서, 조영제 동의서, permission, line, NS 500, 금식 X Brain CT non-enhance 준비사항 없음 Lt 18G, metformin 중지 확인, hydration Lt 18G, NS 500, 동의서, 금식 X NPO, PICC 조영제 사용 가능 준비사항 없음, 보통 4-5일 f/u NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 수술환자 이동 동영상 업무동영상 교육영상 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CT/MRI 조영제 검사와 주요 영상검사 준비",
+            "검사 / 검체",
+            "검사·시술/영상검사",
+            "CT 조영제",
+            "MRI 조영제",
+            "3way",
+            "N/S hydration",
+            "조영제 검사",
+            "Coronary Angio CT",
+            "NTG"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CT/MRI 조영제 검사와 주요 영상검사 준비",
+            "검사 / 검체",
+            "검사·시술/영상검사",
+            "CT 조영제",
+            "MRI 조영제",
+            "3way",
+            "N/S hydration",
+            "조영제 검사",
+            "Coronary Angio CT",
+            "NTG"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "DRESS030",
@@ -17380,14 +18543,20 @@
       "tags": [
         "수술간호",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "original_category": "수술간호",
       "search_terms": [
@@ -17420,10 +18589,92 @@
         "확인",
         "v26_uploaded_manual_added",
         "manual_20260614",
-        "수술 전후 간호 참고 표"
+        "수술 전후 간호 참고 표",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서"
       ],
       "standard_sections_ready": true,
-      "search_index": "수술/시술 전후 간호와 Pre-op 확인 수술 / 시술 수술간호 수술 전후 간호 Pre Op preop 시술 전 확인 angio permission 표식확인서 PA 124 수술 전 확인표 OR 연락 OP risk PCA 동의서 전신마취 동의서 수술동의서 수술파일 Pre OP Fluid foley 남성 Post OP 처방 수술 시술 전후 간호와 Pre-op 확인 v26_uploaded_manual_added manual_20260614 수술 전후 간호 참고 표 Pre-op care / 수술 전 간호"
+      "search_index": "수술/시술 전후 간호와 Pre-op 확인 수술 / 시술 수술간호 수술 전후 간호 Pre Op preop 시술 전 확인 angio permission 표식확인서 PA 124 수술 전 확인표 OR 연락 OP risk PCA 동의서 전신마취 동의서 수술동의서 수술파일 Pre OP Fluid foley 남성 Post OP 처방 수술 시술 전후 간호와 Pre-op 확인 v26_uploaded_manual_added manual_20260614 수술 전후 간호 참고 표 NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 Pre-op care / 수술 전 간호",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "수술/시술 전후 간호와 Pre-op 확인",
+            "수술 / 시술",
+            "수술간호",
+            "수술 전후 간호",
+            "Pre Op",
+            "preop",
+            "시술 전 확인",
+            "angio",
+            "permission",
+            "표식확인서"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "수술/시술 전후 간호와 Pre-op 확인",
+            "수술 / 시술",
+            "수술간호",
+            "수술 전후 간호",
+            "Pre Op",
+            "preop",
+            "시술 전 확인",
+            "angio",
+            "permission",
+            "표식확인서"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "CRRT030",
@@ -17826,14 +19077,20 @@
       "tags": [
         "검사·시술/신경외과",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v26_uploaded_manual_added",
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "original_category": "검사·시술/신경외과",
       "search_terms": [
@@ -17877,10 +19134,90 @@
         "Tragus 기준 상방 0-15cm",
         "정상 ICP",
         "5-15mmHg",
-        "20mmHg 이상"
+        "20mmHg 이상",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "뇌실외배액",
+        "배액 높이"
       ],
       "standard_sections_ready": true,
-      "search_index": "Burr hole, EVD/SDD, Coil embolization, Tracheostomy 신경계 검사·시술/신경외과 burr hole 버홀 EVD SDD ICP IICP CSF 뇌척수액 Coil embolization coil 전 coil 후 TR band Radial Tracheostomy 기관절개관 기관절개술 PA 124 전신마취동의서 수술 전 처치표 Anti prep Burr hole Coil embolization v26_uploaded_manual_added manual_20260614 신경외과 주요 수치 항목 기준 EVD 정상 CSF 생성 15-20ml/hr EVD 배액 과다 100ml/hr 이상 시 출혈 가능성 EVD setting Tragus 기준 상방 0-15cm 정상 ICP 5-15mmHg 20mmHg 이상"
+      "search_index": "Burr hole, EVD/SDD, Coil embolization, Tracheostomy 신경계 검사·시술/신경외과 burr hole 버홀 EVD SDD ICP IICP CSF 뇌척수액 Coil embolization coil 전 coil 후 TR band Radial Tracheostomy 기관절개관 기관절개술 PA 124 전신마취동의서 수술 전 처치표 Anti prep Burr hole Coil embolization v26_uploaded_manual_added manual_20260614 신경외과 주요 수치 항목 기준 EVD 정상 CSF 생성 15-20ml/hr EVD 배액 과다 100ml/hr 이상 시 출혈 가능성 EVD setting Tragus 기준 상방 0-15cm 정상 ICP 5-15mmHg 20mmHg 이상 NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Burr hole, EVD/SDD, Coil embolization, Tracheostomy",
+            "신경계",
+            "검사·시술/신경외과",
+            "burr hole",
+            "버홀",
+            "EVD",
+            "SDD",
+            "ICP",
+            "IICP",
+            "CSF"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Burr hole, EVD/SDD, Coil embolization, Tracheostomy",
+            "신경계",
+            "검사·시술/신경외과",
+            "burr hole",
+            "버홀",
+            "SDD",
+            "IICP",
+            "CSF"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_CPR_____LUCAS_E_CART",
@@ -17932,14 +19269,19 @@
       "tags": [
         "응급상황",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "uploaded_manual_added",
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
       "images": [],
@@ -17958,10 +19300,47 @@
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)",
         "LUCAS 동영상",
-        "루카스 사용법 동영상"
+        "루카스 사용법 동영상",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "CPR 초기 대응 / Lucas / E-cart 응급상황 CPR 초기 대응 Lucas E-cart 코드 6114 루카스 제세동기 v43_uploaded_manual 추가 업무 매뉴얼(260618) LUCAS 동영상 루카스 사용법 동영상 CPR quick card"
+      "search_index": "CPR 초기 대응 / Lucas / E-cart 응급상황 CPR 초기 대응 Lucas E-cart 코드 6114 루카스 제세동기 v43_uploaded_manual 추가 업무 매뉴얼(260618) LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 동영상 업무동영상 교육영상 CPR quick card",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CPR 초기 대응 / Lucas / E-cart",
+            "초기",
+            "대응",
+            "코드",
+            "6114",
+            "루카스"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_INTUBATION",
@@ -18014,14 +19393,19 @@
       "tags": [
         "응급상황",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "uploaded_manual_added",
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "tables": [],
       "images": [],
@@ -18039,10 +19423,51 @@
         "etomidate",
         "vecuronium",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618)"
+      "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618) 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Intubation 준비물 / 약물 / 동의서",
+            "응급상황",
+            "Intubation",
+            "준비물",
+            "약물",
+            "기관내삽관",
+            "삽관",
+            "Endo tube",
+            "Video laryngoscope"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_ABGA___A_LINE",
@@ -18097,14 +19522,19 @@
       "tags": [
         "검사 / 검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "uploaded_manual_added",
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
       "images": [],
@@ -18123,10 +19553,48 @@
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)",
         "A-line 동영상",
-        "A-line 사용법 동영상"
+        "A-line 사용법 동영상",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "ABGA 채혈 / A-line 목적 검사 / 검체 ABGA 채혈 A-line 목적 동맥혈 arterial line Radial artery 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 ABGA 채혈/검사"
+      "search_index": "ABGA 채혈 / A-line 목적 검사 / 검체 ABGA 채혈 A-line 목적 동맥혈 arterial line Radial artery 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상 ABGA 채혈/검사",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABGA 채혈 / A-line 목적",
+            "검사 / 검체",
+            "채혈",
+            "목적",
+            "동맥혈",
+            "arterial line",
+            "Radial artery",
+            "검사"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_A_LINE_ZEROING",
@@ -18189,14 +19657,20 @@
       "tags": [
         "순환 / 모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "uploaded_manual_added",
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기"
       ],
       "tables": [],
       "images": [],
@@ -18216,10 +19690,89 @@
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)",
         "A-line 동영상",
-        "A-line 사용법 동영상"
+        "A-line 사용법 동영상",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting"
       ],
       "standard_sections_ready": true,
-      "search_index": "A-line zeroing / 파형 확인 순환 / 모니터링 A-line zeroing 파형 확인 A-line zeroing overdamping underdamping MAP 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상"
+      "search_index": "A-line zeroing / 파형 확인 순환 / 모니터링 A-line zeroing 파형 확인 A-line zeroing overdamping underdamping MAP 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "A-line zeroing / 파형 확인",
+            "순환 / 모니터링",
+            "A-line",
+            "zeroing",
+            "파형",
+            "확인",
+            "A-line zeroing",
+            "overdamping",
+            "underdamping",
+            "MAP"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "A-line zeroing / 파형 확인",
+            "순환 / 모니터링",
+            "A-line",
+            "zeroing",
+            "파형",
+            "확인",
+            "A-line zeroing",
+            "overdamping",
+            "underdamping",
+            "MAP"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_CVP",
@@ -18777,7 +20330,19 @@
           "search_terms": [
             "수혈절차",
             "수혈순서",
-            "수혈흐름"
+            "수혈흐름",
+            "수혈 절차 핵심 순서",
+            "준비부터 종료 기록까지",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ],
           "include_rows_in_search": true
         },
@@ -18834,7 +20399,16 @@
             "PC",
             "APLT",
             "FFP",
-            "Cryo"
+            "Cryo",
+            "혈액제제 종류 요약",
+            "종류별 적응증/보관/투여/효과",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자"
           ],
           "include_rows_in_search": true
         },
@@ -18879,7 +20453,18 @@
             "INR",
             "APTT",
             "Fibrinogen",
-            "D-dimer"
+            "D-dimer",
+            "응고인자/검사 요약",
+            "빠르게 보는 해석 포인트",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "RBC",
+            "FFP",
+            "PC"
           ],
           "include_rows_in_search": true
         },
@@ -18911,7 +20496,19 @@
           "search_terms": [
             "수혈부작용",
             "수혈반응",
-            "대응"
+            "대응",
+            "수혈 부작용 의심 시 대응",
+            "즉시 중단·정맥로 유지·보고",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ],
           "include_rows_in_search": true
         }
@@ -18924,7 +20521,19 @@
           "search_terms": [
             "수혈절차이미지",
             "수혈순서도",
-            "blood transfusion flow"
+            "blood transfusion flow",
+            "수혈 절차 순서도",
+            "수혈 준비부터 종료 기록까지 5단계 순서도",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ]
         },
         {
@@ -18933,7 +20542,19 @@
           "caption": "RBC, PC, APLT, FFP, Cryo 요약표",
           "search_terms": [
             "혈액제제표",
-            "RBC PC FFP Cryo"
+            "RBC PC FFP Cryo",
+            "혈액제제 종류 요약표 이미지",
+            "RBC, PC, APLT, FFP, Cryo 요약표",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ]
         },
         {
@@ -18942,7 +20563,19 @@
           "caption": "PT, INR, APTT, Fibrinogen, D-dimer 요약표",
           "search_terms": [
             "응고인자표",
-            "PT INR APTT fibrinogen d-dimer"
+            "PT INR APTT fibrinogen d-dimer",
+            "응고인자 검사 요약표 이미지",
+            "PT, INR, APTT, Fibrinogen, D-dimer 요약표",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ]
         },
         {
@@ -18951,7 +20584,19 @@
           "caption": "이상반응 발생 시 즉시 대응 카드",
           "search_terms": [
             "수혈부작용대응",
-            "수혈반응카드"
+            "수혈반응카드",
+            "수혈 부작용 대응 카드",
+            "이상반응 발생 시 즉시 대응 카드",
+            "수혈 절차 / 혈액제제 종류 / 응고인자",
+            "수혈 / 혈액",
+            "수혈",
+            "절차",
+            "혈액제제",
+            "종류",
+            "응고인자",
+            "RBC",
+            "FFP",
+            "PC"
           ]
         }
       ],
@@ -18996,7 +20641,7 @@
         "이미지"
       ],
       "standard_sections_ready": true,
-      "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 혈액제제 요약",
+      "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 수혈절차표 혈액제제표 응고인자표 수혈부작용대응 표 이미지 혈액제제 요약",
       "prefer_media_first": true,
       "hide_raw_steps": true
     },
@@ -19492,14 +21137,19 @@
       "tags": [
         "Line / Drain / Dressing",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "uploaded_manual_added",
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
       "images": [],
@@ -19518,10 +21168,53 @@
         "Line",
         "Drain",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "ICP",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "뇌실외배액",
+        "배액 높이",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dressing / 소독제 / SDD·EVD 관 제거 Line / Drain / Dressing Dressing 소독제 SDD EVD 제거 베타딘 클로르헥시딘 suture dressing set Line Drain v43_uploaded_manual 추가 업무 매뉴얼(260618) 일반 상처 Dressing 수술 후 상처 Dressing"
+      "search_index": "Dressing / 소독제 / SDD·EVD 관 제거 Line / Drain / Dressing Dressing 소독제 SDD EVD 제거 베타딘 클로르헥시딘 suture dressing set Line Drain v43_uploaded_manual 추가 업무 매뉴얼(260618) ICP tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 일반 상처 Dressing 수술 후 상처 Dressing",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Dressing / 소독제 / SDD·EVD 관 제거",
+            "Line / Drain / Dressing",
+            "Dressing",
+            "소독제",
+            "SDD",
+            "제거",
+            "베타딘",
+            "클로르헥시딘",
+            "suture"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_2",
@@ -24322,7 +26015,18 @@
         "Ventilator 사용법 동영상",
         "인공호흡기 사용법",
         "벤틸레이터 사용법",
-        "호흡 / Ventilator"
+        "호흡 / Ventilator",
+        "Dräger",
+        "Drager",
+        "Savina",
+        "드레거",
+        "ventilator",
+        "Dräger 인공호흡기 1",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
       ],
       "urgency": "routine",
       "summary": "Ventilator 사용법 1, 2 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -24350,14 +26054,18 @@
         "교육영상",
         "v61_video",
         "google_drive_link",
-        "v62_video_link"
+        "v62_video_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v62_drive_link_updated"
       },
       "source_refs": [
         "Google Drive 링크 ventilator-1.mp4",
-        "Google Drive 링크 ventilator-2.mp4"
+        "Google Drive 링크 ventilator-2.mp4",
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
       "images": [],
@@ -24399,10 +26107,98 @@
             "Ventilator 사용법 동영상",
             "인공호흡기 사용법"
           ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator",
+            "벤틸레이터",
+            "ventilator 동영상",
+            "인공호흡기 동영상",
+            "ventilator 사용법",
+            "호흡",
+            "기계환기",
+            "Ventilator 사용법 동영상",
+            "인공호흡기 사용법"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator",
+            "벤틸레이터",
+            "ventilator 동영상",
+            "인공호흡기 동영상",
+            "ventilator 사용법",
+            "호흡",
+            "기계환기",
+            "Ventilator 사용법 동영상",
+            "인공호흡기 사용법"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Ventilator",
+            "벤틸레이터",
+            "ventilator 동영상",
+            "인공호흡기 동영상",
+            "ventilator 사용법",
+            "호흡",
+            "기계환기",
+            "Ventilator 사용법 동영상",
+            "인공호흡기 사용법"
+          ]
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 호흡 / Ventilator"
+      "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 호흡 / Ventilator Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3",
+      "prefer_media_first": true
     },
     {
       "id": "VIDEO002",
@@ -24512,7 +26308,15 @@
         "응급상황",
         "Lucas",
         "CPR 기계",
-        "LUCAS 사용법 동영상"
+        "LUCAS 사용법 동영상",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "E-cart",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "routine",
       "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -24540,13 +26344,15 @@
         "교육영상",
         "v61_video",
         "google_drive_link",
-        "v62_video_link"
+        "v62_video_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "v62_drive_link_updated"
       },
       "source_refs": [
-        "Google Drive 링크 루카스 사용법.mp4"
+        "Google Drive 링크 루카스 사용법.mp4",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
       "images": [],
@@ -24569,10 +26375,39 @@
             "Lucas",
             "CPR 기계"
           ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "LUCAS",
+            "루카스",
+            "루카스 사용법",
+            "CPR 동영상",
+            "흉부압박기",
+            "자동 흉부압박",
+            "CPR 기계"
+          ]
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "LUCAS 루카스 루카스 사용법 CPR CPR 동영상 흉부압박기 자동 흉부압박 응급상황 Lucas CPR 기계 LUCAS 사용법 동영상"
+      "search_index": "LUCAS 루카스 루카스 사용법 CPR CPR 동영상 흉부압박기 자동 흉부압박 응급상황 Lucas CPR 기계 LUCAS 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상",
+      "prefer_media_first": true
     },
     {
       "id": "VIDEO004",
@@ -24690,7 +26525,14 @@
         "기도유지",
         "심장마사지",
         "응급상황",
-        "CPCR 시뮬레이션 절차"
+        "CPCR 시뮬레이션 절차",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "E-cart",
+        "Lucas",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "emergency",
       "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
@@ -24724,10 +26566,16 @@
         "VT/VF 리듬 확인 시 의사지시에 따라 제세동기 200~300J 준비."
       ],
       "related": [],
-      "tags": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
       "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
       "source_refs": [
-        "CPCR 시뮬레이션.jpg"
+        "CPCR 시뮬레이션.jpg",
+        "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
       "images": [
@@ -24755,7 +26603,38 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "CPCR CPR 심폐소생술 코드 CPR 6114 Emergency kit Defibrillator ambu-bagging 기도유지 심장마사지 응급상황 CPCR 시뮬레이션 절차"
+      "search_index": "CPCR CPR 심폐소생술 코드 CPR 6114 Emergency kit Defibrillator ambu-bagging 기도유지 심장마사지 응급상황 CPCR 시뮬레이션 절차 간호사 역할 CPR 간호사 역할 E-cart Lucas 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "코드 CPR",
+            "6114",
+            "Emergency kit",
+            "Defibrillator",
+            "ambu-bagging",
+            "기도유지",
+            "심장마사지"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V65_CPCR_002",
@@ -26912,7 +28791,17 @@
         "항혈전제 중단",
         "보조기 착용기간",
         "신입간호사 숙지사항 2026.04.29",
-        "병동간호팀 간호사 매뉴얼"
+        "병동간호팀 간호사 매뉴얼",
+        "L-sling",
+        "엘슬링",
+        "sling",
+        "보조기",
+        "팔걸이",
+        "L-sling 착용방법",
+        "brace",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "routine",
       "summary": "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다.",
@@ -26930,10 +28819,16 @@
       "io": [],
       "warnings": [],
       "related": [],
-      "tags": [],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
       "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
       "source_refs": [
-        "신입간호사 숙지사항(26.04.29).hwp"
+        "신입간호사 숙지사항(26.04.29).hwp",
+        "Google Drive 링크: L-sling 착용방법 보기"
       ],
       "tables": [
         {
@@ -27053,7 +28948,40 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼"
+      "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼 L-sling 엘슬링 sling 보조기 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "L-sling 착용방법 보기",
+          "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+          "search_terms": [
+            "L-sling 착용방법 보기",
+            "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+            "L-sling",
+            "엘슬링",
+            "sling",
+            "보조기",
+            "팔걸이",
+            "L-sling 착용방법",
+            "brace",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "신입간호사 숙지사항",
+            "신규 간호사",
+            "AST",
+            "수술 후 항생제",
+            "식사 신청",
+            "I/O check list",
+            "간호필요도",
+            "항응고제 중단",
+            "항혈전제 중단",
+            "보조기 착용기간"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V69_STROKE_OVERVIEW",
@@ -28918,7 +30846,23 @@
         "심혈관 간호",
         "심전도 간호",
         "심혈관 환자의 간호: 모니터링·응급대응·기록",
-        "심혈관 / 심전도"
+        "심혈관 / 심전도",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
@@ -28964,7 +30908,11 @@
       "tags": [
         "간호",
         "심혈관",
-        "모니터링"
+        "모니터링",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -28975,7 +30923,9 @@
         "American Heart Association ACLS Adult Tachyarrhythmia With a Pulse Algorithm (2025)",
         "2023 ACC/AHA/ACCP/HRS Guideline for Atrial Fibrillation",
         "2021 ESC Guidelines on Cardiac Pacing and CRT",
-        "급성 관상동맥증후군 관련 임상지침 요약"
+        "급성 관상동맥증후군 관련 임상지침 요약",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기"
       ],
       "tables": [
         {
@@ -29076,7 +31026,70 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "심혈관 환자 간호 심장환자 간호 심전도 모니터링 흉통 간호 부정맥 간호 STEMI 간호 중환자실 심혈관 간호 심혈관 간호 심전도 간호 심혈관 환자의 간호: 모니터링·응급대응·기록 심혈관 / 심전도 심전도 해석 기본 부정맥 ECG 변화 허혈·경색 ECG 변화 CPCR 절차"
+      "search_index": "심혈관 환자 간호 심장환자 간호 심전도 모니터링 흉통 간호 부정맥 간호 STEMI 간호 중환자실 심혈관 간호 심혈관 간호 심전도 간호 심혈관 환자의 간호: 모니터링·응급대응·기록 심혈관 / 심전도 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting 심전도 해석 기본 부정맥 ECG 변화 허혈·경색 ECG 변화 CPCR 절차",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "심혈관 환자 간호",
+            "심장환자 간호",
+            "심전도 모니터링",
+            "흉통 간호",
+            "부정맥 간호",
+            "STEMI 간호",
+            "중환자실 심혈관 간호",
+            "심혈관 간호",
+            "심전도 간호",
+            "심혈관 환자의 간호: 모니터링·응급대응·기록"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "심혈관 환자 간호",
+            "심장환자 간호",
+            "심전도 모니터링",
+            "흉통 간호",
+            "부정맥 간호",
+            "STEMI 간호",
+            "중환자실 심혈관 간호",
+            "심혈관 간호",
+            "심전도 간호",
+            "심혈관 환자의 간호: 모니터링·응급대응·기록"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V71_EVD_ICP_CVP_OVERVIEW",
@@ -29111,7 +31124,27 @@
         "신경계 모니터링",
         "중환자실 필수",
         "EVD · ICP · CVP 총정리: 중환자실 필수 모니터링",
-        "신경계 / 순환 모니터링"
+        "신경계 / 순환 모니터링",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "배액 높이"
       ],
       "urgency": "high",
       "summary": "EVD, ICP, CVP의 목적·기준점·정상/주의 범위·위험·간호 핵심을 한 번에 비교하는 총정리 카드입니다.",
@@ -29162,7 +31195,11 @@
         "ICP",
         "CVP",
         "중환자실",
-        "모니터링"
+        "모니터링",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -29173,7 +31210,10 @@
         "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
         "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
         "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
-        "원내 최신 처방과 프로토콜 우선 적용"
+        "원내 최신 처방과 프로토콜 우선 적용",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [
         {
@@ -29275,7 +31315,98 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "EVD ICP CVP 뇌실외배액 External Ventricular Drain Intracranial Pressure Central Venous Pressure 두개내압 중심정맥압 Foramen of Monro 외이도 tragus phlebostatic axis 4th intercostal space 중환자실 간호 모니터링 EVD ICP CVP 신경계 모니터링 중환자실 필수 EVD · ICP · CVP 총정리: 중환자실 필수 모니터링 신경계 / 순환 모니터링 EVD 간호 핵심 ICP 상승 간호 CVP 측정과 zeroing 뇌졸중 총정리 심혈관 환자 간호"
+      "search_index": "EVD ICP CVP 뇌실외배액 External Ventricular Drain Intracranial Pressure Central Venous Pressure 두개내압 중심정맥압 Foramen of Monro 외이도 tragus phlebostatic axis 4th intercostal space 중환자실 간호 모니터링 EVD ICP CVP 신경계 모니터링 중환자실 필수 EVD · ICP · CVP 총정리: 중환자실 필수 모니터링 신경계 / 순환 모니터링 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting 트라거스 EVD leveling ICP 측정 배액 높이 EVD 간호 핵심 ICP 상승 간호 CVP 측정과 zeroing 뇌졸중 총정리 심혈관 환자 간호",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "EVD",
+            "ICP",
+            "CVP",
+            "뇌실외배액",
+            "External Ventricular Drain",
+            "Intracranial Pressure",
+            "Central Venous Pressure",
+            "두개내압",
+            "중심정맥압",
+            "Foramen of Monro"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "EVD",
+            "ICP",
+            "CVP",
+            "뇌실외배액",
+            "External Ventricular Drain",
+            "Intracranial Pressure",
+            "Central Venous Pressure",
+            "두개내압",
+            "중심정맥압",
+            "Foramen of Monro"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CVP",
+            "External Ventricular Drain",
+            "Intracranial Pressure",
+            "Central Venous Pressure",
+            "두개내압",
+            "중심정맥압",
+            "Foramen of Monro"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V71_EVD_NURSING",
@@ -29311,7 +31442,15 @@
         "EVD level",
         "EVD clamp",
         "EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준",
-        "신경계 / 순환 모니터링"
+        "신경계 / 순환 모니터링",
+        "ICP",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "배액 높이",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "EVD 환자에서 반드시 확인해야 하는 레벨링, 배액, clamp, 감염예방, 즉시 보고 상황을 정리한 카드입니다.",
@@ -29360,7 +31499,11 @@
         "EVD",
         "CSF",
         "뇌실외배액",
-        "감염예방"
+        "감염예방",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -29371,7 +31514,8 @@
         "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
         "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
         "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
-        "원내 최신 처방과 프로토콜 우선 적용"
+        "원내 최신 처방과 프로토콜 우선 적용",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [
         {
@@ -29519,7 +31663,38 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리"
+      "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 ICP 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "External Ventricular Drain",
+            "CSF drainage",
+            "CSF 배액",
+            "Foramen of Monro",
+            "외이도",
+            "레벨링",
+            "zeroing"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V71_ICP_MANAGEMENT",
@@ -29555,7 +31730,16 @@
         "두개내압 간호",
         "뇌압 상승",
         "ICP 총정리: 정상범위·상승징후·CPP·간호",
-        "신경계 / 순환 모니터링"
+        "신경계 / 순환 모니터링",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "뇌실외배액",
+        "배액 높이",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ICP 정상/주의 범위, 상승 징후, CPP 계산, 중환자실 간호·치료 보조 포인트를 정리한 카드입니다.",
@@ -29604,7 +31788,11 @@
         "IICP",
         "CPP",
         "신경계",
-        "두개내압"
+        "두개내압",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -29615,7 +31803,8 @@
         "Royal Children’s Hospital EVD and ICP monitoring guideline: EVD transducer level and drainage checks",
         "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
         "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
-        "원내 최신 처방과 프로토콜 우선 적용"
+        "원내 최신 처방과 프로토콜 우선 적용",
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [
         {
@@ -29764,7 +31953,40 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리"
+      "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "IICP",
+            "두개내압",
+            "뇌압",
+            "Intracranial Pressure",
+            "CPP",
+            "MAP-ICP",
+            "GCS",
+            "pupil",
+            "동공"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V71_CVP_MONITORING",
@@ -30062,7 +32284,16 @@
         "ABGA 채혈",
         "ABGA 해석순서",
         "ABGA 총정리: 정상값·채혈·빠른 해석순서",
-        "호흡 / ABGA / 중환자실"
+        "호흡 / ABGA / 중환자실",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "A-line",
+        "검체",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ABGA의 정상/참고값, 채혈 전후 체크, 빠른 해석 6단계, 즉시 보고 상황을 한 번에 정리한 카드입니다.",
@@ -30119,7 +32350,11 @@
         "ABGA",
         "호흡",
         "산염기",
-        "중환자실"
+        "중환자실",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -30129,7 +32364,8 @@
         "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
         "American Thoracic Society: ABG interpretation guide",
         "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
-        "병원 검사실 기준과 담당의 지시 우선"
+        "병원 검사실 기준과 담당의 지시 우선",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [
         {
@@ -30300,7 +32536,39 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 정상값 정상범위 채혈 Allen test 요골동맥 공기방울 heparin syringe 분석 지연 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 정상값 ABGA 채혈 ABGA 해석순서 ABGA 총정리: 정상값·채혈·빠른 해석순서 호흡 / ABGA / 중환자실 인공호흡기 사용법 EVD ICP CVP 총정리 심전도 총정리 CPCR 절차"
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 정상값 정상범위 채혈 Allen test 요골동맥 공기방울 heparin syringe 분석 지연 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 정상값 ABGA 채혈 ABGA 해석순서 ABGA 총정리: 정상값·채혈·빠른 해석순서 호흡 / ABGA / 중환자실 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 동영상 업무동영상 교육영상 인공호흡기 사용법 EVD ICP CVP 총정리 심전도 총정리 CPCR 절차",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABG",
+            "동맥혈가스분석",
+            "동맥혈 가스 분석",
+            "pH",
+            "PaCO2",
+            "PaO2",
+            "HCO3",
+            "SaO2",
+            "BE"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V72_ABGA_ACID_BASE",
@@ -30893,7 +33161,16 @@
         "ABGA 판독 연습",
         "채혈 후 간호",
         "ABGA 예시 판독과 채혈 후 간호 체크리스트",
-        "호흡 / ABGA / 중환자실"
+        "호흡 / ABGA / 중환자실",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "A-line",
+        "검체",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "대표 ABGA 결과 예시를 보고 산증/알칼리증을 구분하는 연습 카드와 채혈 후 간호 체크리스트입니다.",
@@ -30939,7 +33216,11 @@
         "ABGA",
         "예시",
         "판독",
-        "간호"
+        "간호",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -30949,7 +33230,8 @@
         "NCBI Bookshelf: Arterial Blood Gas 및 정상 ABG 값",
         "American Thoracic Society: ABG interpretation guide",
         "MSD Manual Professional: Acid-base disorders 및 Winter 공식",
-        "병원 검사실 기준과 담당의 지시 우선"
+        "병원 검사실 기준과 담당의 지시 우선",
+        "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [
         {
@@ -31112,7 +33394,39 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 ABGA 예시 판독연습 채혈 후 압박 혈종 출혈 항응고제 검체 오류 재검 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 판독 연습 채혈 후 간호 ABGA 예시 판독과 채혈 후 간호 체크리스트 호흡 / ABGA / 중환자실 ABGA 정상값·채혈·해석순서 ABGA 산염기 장애 판독 ABGA 산소화·환기 간호"
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 ABGA 예시 판독연습 채혈 후 압박 혈종 출혈 항응고제 검체 오류 재검 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 판독 연습 채혈 후 간호 ABGA 예시 판독과 채혈 후 간호 체크리스트 호흡 / ABGA / 중환자실 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 동영상 업무동영상 교육영상 ABGA 정상값·채혈·해석순서 ABGA 산염기 장애 판독 ABGA 산소화·환기 간호",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABG",
+            "동맥혈가스분석",
+            "동맥혈 가스 분석",
+            "pH",
+            "PaCO2",
+            "PaO2",
+            "HCO3",
+            "SaO2",
+            "BE"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V73_TRANSFUSION_OVERVIEW",
@@ -31164,7 +33478,17 @@
         "수혈 간호",
         "수혈 체크리스트",
         "수혈 총정리: 전체 흐름·검사·확인·기록",
-        "수혈 / 혈액"
+        "수혈 / 혈액",
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "수혈 처방 확인부터 수혈 전 검사, 혈액 수령, 2인 확인, 시작 후 15분 관찰, 종료 기록까지 중환자실 간호 흐름을 한 장으로 정리한 카드입니다.",
@@ -31211,7 +33535,11 @@
       "tags": [
         "수혈",
         "간호",
-        "혈액"
+        "혈액",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "원내 기준 확인 필요",
@@ -31222,7 +33550,8 @@
         "보건복지부/국립장기조직혈액관리원 수혈 가이드라인 5판",
         "AABB RBC Transfusion Guidelines",
         "CDC/NHSN Hemovigilance resources",
-        "기존 앱 DB: TF001, TF002, TF003, MENU005, TF030, V65 수혈 관련 자료"
+        "기존 앱 DB: TF001, TF002, TF003, MENU005, TF030, V65 수혈 관련 자료",
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "tables": [
         {
@@ -31328,7 +33657,40 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 수혈 전체 흐름 수혈 절차 수혈 간호 수혈 체크리스트 수혈 총정리: 전체 흐름·검사·확인·기록 수혈 / 혈액 수혈 처방확인 및 바코드 출력 방법 백혈구 제거용 수혈필터 RC2VAE 사용법 혈액 가온기 사용방법 수혈부작용 대응"
+      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 수혈 전체 흐름 수혈 절차 수혈 간호 수혈 체크리스트 수혈 총정리: 전체 흐름·검사·확인·기록 수혈 / 혈액 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상 수혈 처방확인 및 바코드 출력 방법 백혈구 제거용 수혈필터 RC2VAE 사용법 혈액 가온기 사용방법 수혈부작용 대응",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "수혈",
+            "수혈 총정리",
+            "blood transfusion",
+            "transfusion",
+            "혈액제제",
+            "RBC",
+            "PC",
+            "FFP",
+            "SDP",
+            "Cryo"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V73_TRANSFUSION_COMPONENTS",
@@ -32454,7 +34816,17 @@
         "VAP",
         "인공호흡기",
         "호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD",
-        "중환자실 질병 / 호흡기계"
+        "중환자실 질병 / 호흡기계",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다.",
@@ -32506,7 +34878,11 @@
         "질환",
         "진단",
         "계통별",
-        "간호"
+        "간호",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 구조화",
@@ -32517,7 +34893,8 @@
         "Berlin ARDS definition / ARDS clinical reviews",
         "KDIGO AKI guideline",
         "AHA/ACC/HFSA heart failure guideline",
-        "원내 최신 프로토콜 및 담당의 지시 우선"
+        "원내 최신 프로토콜 및 담당의 지시 우선",
+        "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [
         {
@@ -32625,7 +35002,40 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "호흡기계 호흡부전 ARDS 폐렴 중증폐렴 흡인성 폐렴 COPD 천식 기흉 폐부종 mechanical ventilation ventilator P/F ratio ABGA VAP 인공호흡기 호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD 중환자실 질병 / 호흡기계 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
+      "search_index": "호흡기계 호흡부전 ARDS 폐렴 중증폐렴 흡인성 폐렴 COPD 천식 기흉 폐부종 mechanical ventilation ventilator P/F ratio ABGA VAP 인공호흡기 호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD 중환자실 질병 / 호흡기계 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "호흡기계",
+            "호흡부전",
+            "ARDS",
+            "폐렴",
+            "중증폐렴",
+            "흡인성 폐렴",
+            "COPD",
+            "천식",
+            "기흉",
+            "폐부종"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V74_ICU_NEURO",
@@ -37989,7 +40399,23 @@
         "Savina",
         "호흡기",
         "Ventilator · Dräger Savina · 호흡계 총정리",
-        "호흡 / Ventilator"
+        "호흡 / Ventilator",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Dräger",
+        "Drager",
+        "드레거",
+        "Dräger 인공호흡기 1",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 보는 인공호흡기 기본 모드, 주요 설정, 알람 대응, 흡인·산소화 모니터링을 한 번에 정리한 카드입니다.",
@@ -38036,7 +40462,11 @@
       "tags": [
         "호흡",
         "Ventilator",
-        "Savina"
+        "Savina",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -38045,7 +40475,11 @@
       "source_refs": [
         "기계환기 기본 원칙",
         "ABGA/산소화 평가 일반 원칙",
-        "원내 Ventilator 사용 지침 우선"
+        "원내 Ventilator 사용 지침 우선",
+        "Google Drive 링크: O2 nipple 사용법 보기",
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [
         {
@@ -38141,7 +40575,124 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator 기관절개관 산소요법 진정/통증 응급상황"
+      "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 Dräger Drager 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 기관절개관 진정/통증 응급상황",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "drager",
+            "dräger",
+            "savina",
+            "VC",
+            "PC",
+            "SIMV",
+            "PSV"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "기계환기",
+            "drager",
+            "dräger",
+            "savina",
+            "VC",
+            "PC",
+            "SIMV",
+            "PSV"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "기계환기",
+            "drager",
+            "dräger",
+            "savina",
+            "VC",
+            "PC",
+            "SIMV",
+            "PSV"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "기계환기",
+            "drager",
+            "dräger",
+            "savina",
+            "VC",
+            "PC",
+            "SIMV",
+            "PSV"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
@@ -38169,7 +40720,23 @@
         "vasopressor",
         "arterial line",
         "순환계 · 혈역학 모니터링 총정리",
-        "순환 / 혈역학"
+        "순환 / 혈역학",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
@@ -38216,7 +40783,11 @@
       "tags": [
         "혈역학",
         "순환계",
-        "쇼크"
+        "쇼크",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -38224,7 +40795,9 @@
       },
       "source_refs": [
         "기본 중환자 혈역학 모니터링 원칙",
-        "원내 invasive pressure 관리 지침 우선"
+        "원내 invasive pressure 관리 지침 우선",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기"
       ],
       "tables": [
         {
@@ -38315,7 +40888,70 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "hemodynamic 혈역학 순환계 MAP CVP ScvO2 A-line arterial pressure 쇼크 vasopressor arterial line 순환계 · 혈역학 모니터링 총정리 순환 / 혈역학 패혈증 수액요법 혈액가스 심전도"
+      "search_index": "hemodynamic 혈역학 순환계 MAP CVP ScvO2 A-line arterial pressure 쇼크 vasopressor arterial line 순환계 · 혈역학 모니터링 총정리 순환 / 혈역학 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting 패혈증 수액요법 혈액가스 심전도",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "hemodynamic",
+            "혈역학",
+            "순환계",
+            "MAP",
+            "CVP",
+            "ScvO2",
+            "A-line",
+            "arterial pressure",
+            "쇼크",
+            "vasopressor"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "hemodynamic",
+            "혈역학",
+            "순환계",
+            "MAP",
+            "CVP",
+            "ScvO2",
+            "A-line",
+            "arterial pressure",
+            "쇼크",
+            "vasopressor"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V81_RENAL_CRRT_OVERVIEW",
@@ -38690,7 +41326,18 @@
         "동의서",
         "금식",
         "검사 · 검체 · 영상검사 · 시술 · 수술 총정리",
-        "검사 / 시술·수술"
+        "검사 / 시술·수술",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다.",
@@ -38735,7 +41382,11 @@
         "검사",
         "검체",
         "영상검사",
-        "수술"
+        "수술",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
@@ -38743,7 +41394,8 @@
       },
       "source_refs": [
         "기본 환자확인/검체관리 원칙",
-        "원내 검사실·영상의학과·수술실 지침 우선"
+        "원내 검사실·영상의학과·수술실 지침 우선",
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
       ],
       "tables": [
         {
@@ -38835,7 +41487,41 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "검사 검체 영상검사 시술 수술 채혈 소변검사 CT MRI 초음파 동의서 금식 검사 · 검체 · 영상검사 · 시술 · 수술 총정리 검사 / 시술·수술 수혈 소화기계 라인관리 간호기록"
+      "search_index": "검사 검체 영상검사 시술 수술 채혈 소변검사 CT MRI 초음파 동의서 금식 검사 · 검체 · 영상검사 · 시술 · 수술 총정리 검사 / 시술·수술 NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 수혈 소화기계 라인관리 간호기록",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "검사",
+            "검체",
+            "영상검사",
+            "시술",
+            "수술",
+            "채혈",
+            "소변검사",
+            "CT",
+            "MRI",
+            "초음파"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
@@ -39212,7 +41898,16 @@
         "pump",
         "모니터",
         "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드",
-        "병동업무 / 물품·장비"
+        "병동업무 / 물품·장비",
+        "L-sling",
+        "엘슬링",
+        "sling",
+        "팔걸이",
+        "L-sling 착용방법",
+        "brace",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다.",
@@ -39254,14 +41949,19 @@
       "tags": [
         "검색",
         "물품",
-        "장비"
+        "장비",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "교육용 정리",
         "note": "검색 정확도 향상 및 물품/장비 탐색 가이드."
       },
       "source_refs": [
-        "원내 물품/장비/업무 매뉴얼 우선"
+        "원내 물품/장비/업무 매뉴얼 우선",
+        "Google Drive 링크: L-sling 착용방법 보기"
       ],
       "tables": [
         {
@@ -39354,7 +42054,39 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 Line·Drain·Dressing 검사·검체 호흡기 간호업무"
+      "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상 Line·Drain·Dressing 검사·검체 호흡기 간호업무",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "L-sling 착용방법 보기",
+          "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+          "search_terms": [
+            "L-sling 착용방법 보기",
+            "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+            "L-sling",
+            "엘슬링",
+            "sling",
+            "보조기",
+            "팔걸이",
+            "L-sling 착용방법",
+            "brace",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ICU 물품",
+            "ICU 장비",
+            "병동간호팀",
+            "장비검색",
+            "물품검색",
+            "카테터",
+            "pump",
+            "모니터",
+            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V79_DETAIL_01",
@@ -39625,7 +42357,18 @@
         "인공호흡기 점검",
         "Dräger Savina 사용 전·근무 시작 체크",
         "호흡 / Dräger Savina",
-        "V79"
+        "V79",
+        "Dräger",
+        "Drager",
+        "드레거",
+        "인공호흡기",
+        "ventilator",
+        "Dräger 인공호흡기 1",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
       ],
       "urgency": "high",
       "summary": "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -39670,7 +42413,11 @@
         "dräger",
         "ventilator check",
         "circuit check",
-        "leak test"
+        "leak test",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "세분화 카드",
@@ -39678,7 +42425,10 @@
       },
       "source_refs": [
         "ARDSNet/기계환기 일반 원칙",
-        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선",
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [
         {
@@ -39836,7 +42586,100 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 Dräger Drager 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "savina",
+            "drager",
+            "dräger",
+            "ventilator check",
+            "circuit check",
+            "leak test",
+            "humidifier",
+            "oxygen supply",
+            "Dräger Savina",
+            "Drager Savina"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "savina",
+            "drager",
+            "dräger",
+            "ventilator check",
+            "circuit check",
+            "leak test",
+            "humidifier",
+            "oxygen supply",
+            "Dräger Savina",
+            "Drager Savina"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "savina",
+            "drager",
+            "dräger",
+            "ventilator check",
+            "circuit check",
+            "leak test",
+            "humidifier",
+            "oxygen supply",
+            "Dräger Savina",
+            "Drager Savina"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V79_DETAIL_03",
@@ -51872,7 +54715,17 @@
         "흡인장비",
         "호흡기계 물품·장비 검색표",
         "병동업무 / 물품·장비검색",
-        "V86"
+        "V86",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -51916,7 +54769,11 @@
         "savina",
         "ambu bag",
         "oxygen mask",
-        "suction catheter"
+        "suction catheter",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "세분화 카드",
@@ -51924,7 +54781,8 @@
       },
       "source_refs": [
         "원내 병동간호팀/물품·장비 매뉴얼 우선",
-        "앱 내부 검색어·별칭 매핑 기준"
+        "앱 내부 검색어·별칭 매핑 기준",
+        "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [
         {
@@ -52069,7 +54927,40 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "ventilator savina ambu bag oxygen mask suction catheter 호흡장비 ventilator equipment 산소기구 흡인장비 호흡기계 물품·장비 검색표 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      "search_index": "ventilator savina ambu bag oxygen mask suction catheter 호흡장비 ventilator equipment 산소기구 흡인장비 호흡기계 물품·장비 검색표 병동업무 / 물품·장비검색 V86 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ventilator",
+            "savina",
+            "ambu bag",
+            "oxygen mask",
+            "suction catheter",
+            "호흡장비",
+            "ventilator equipment",
+            "산소기구",
+            "흡인장비",
+            "호흡기계 물품·장비 검색표"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V86_DETAIL_03",
@@ -52550,7 +55441,22 @@
         "pump",
         "Infusion pump·Syringe pump·Monitor 검색표",
         "병동업무 / 물품·장비검색",
-        "V86"
+        "V86",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "vital monitor",
+        "patient monitor 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52594,7 +55500,11 @@
         "syringe pump",
         "monitor",
         "alarm",
-        "occlusion"
+        "occlusion",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "세분화 카드",
@@ -52602,7 +55512,9 @@
       },
       "source_refs": [
         "원내 병동간호팀/물품·장비 매뉴얼 우선",
-        "앱 내부 검색어·별칭 매핑 기준"
+        "앱 내부 검색어·별칭 매핑 기준",
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기"
       ],
       "tables": [
         {
@@ -52657,7 +55569,8 @@
             "병동업무",
             "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
             "한눈에 보기",
-            "Infusion pump·Syringe pump·Monitor 검색표 핵심 체크표"
+            "Infusion pump·Syringe pump·Monitor 검색표 핵심 체크표",
+            "patient monitor"
           ],
           "include_rows_in_search": true
         },
@@ -52719,14 +55632,75 @@
             "병동업무",
             "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
             "검색어 연결표",
-            "Infusion pump·Syringe pump·Monitor 검색표 검색 정확도 보강 키워드"
+            "Infusion pump·Syringe pump·Monitor 검색표 검색 정확도 보강 키워드",
+            "patient monitor"
           ],
           "include_rows_in_search": true
         }
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "infusion pump syringe pump monitor alarm occlusion pump Infusion pump·Syringe pump·Monitor 검색표 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      "search_index": "infusion pump syringe pump monitor alarm occlusion pump Infusion pump·Syringe pump·Monitor 검색표 병동업무 / 물품·장비검색 V86 patient monitor 환자감시장치 환자 모니터 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "infusion pump",
+            "syringe pump",
+            "alarm",
+            "occlusion",
+            "pump",
+            "Infusion pump·Syringe pump·Monitor 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "infusion pump",
+            "syringe pump",
+            "monitor",
+            "alarm",
+            "occlusion",
+            "pump",
+            "Infusion pump·Syringe pump·Monitor 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V86_DETAIL_06",
@@ -52972,7 +55946,15 @@
         "bed",
         "체위변경·보조기·침상장비 검색표",
         "병동업무 / 물품·장비검색",
-        "V86"
+        "V86",
+        "L-sling",
+        "엘슬링",
+        "sling",
+        "팔걸이",
+        "L-sling 착용방법",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -53017,7 +55999,11 @@
         "brace",
         "air mattress",
         "turning",
-        "restraint"
+        "restraint",
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
       ],
       "review": {
         "status": "세분화 카드",
@@ -53025,7 +56011,8 @@
       },
       "source_refs": [
         "원내 병동간호팀/물품·장비 매뉴얼 우선",
-        "앱 내부 검색어·별칭 매핑 기준"
+        "앱 내부 검색어·별칭 매핑 기준",
+        "Google Drive 링크: L-sling 착용방법 보기"
       ],
       "tables": [
         {
@@ -53170,7 +56157,38 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 동영상 업무동영상 교육영상 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "L-sling 착용방법 보기",
+          "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+          "search_terms": [
+            "L-sling 착용방법 보기",
+            "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+            "L-sling",
+            "엘슬링",
+            "sling",
+            "보조기",
+            "팔걸이",
+            "L-sling 착용방법",
+            "brace",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "positioning",
+            "splint",
+            "air mattress",
+            "turning",
+            "restraint",
+            "체위변경",
+            "bed",
+            "체위변경·보조기·침상장비 검색표"
+          ]
+        }
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V86_DETAIL_08",
@@ -54012,7 +57030,15 @@
         "주의점",
         "보호대 적용",
         "신체보호대 적용 목적·전 확인사항·주의점 표",
-        "간호업무 / 신체보호대"
+        "간호업무 / 신체보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "클로브 히치",
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "신체보호대의 적용 목적, 적용 전 확인사항, 재평가와 주의점을 표로 정리한 카드입니다.",
@@ -54037,7 +57063,9 @@
         "V87_RESTRAINT_DOCUMENTATION"
       ],
       "source_refs": [
-        "원내 신체보호대 적용 지침 우선"
+        "원내 신체보호대 적용 지침 우선",
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
       "images": [
         {
@@ -54056,7 +57084,9 @@
             "주의점",
             "보호대 적용",
             "신체보호대 적용 목적·전 확인사항·주의점 표",
-            "간호업무 / 신체보호대"
+            "간호업무 / 신체보호대",
+            "정방향 매듭",
+            "square knot"
           ]
         }
       ],
@@ -54114,13 +57144,74 @@
             "주의점",
             "보호대 적용",
             "신체보호대 적용 목적·전 확인사항·주의점 표",
-            "간호업무 / 신체보호대"
+            "간호업무 / 신체보호대",
+            "정방향 매듭",
+            "square knot"
           ],
           "include_rows_in_search": true
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "신체보호대 보호대 restraint 적용목적 주의점 보호대 적용 신체보호대 적용 목적·전 확인사항·주의점 표 간호업무 / 신체보호대 V87_RESTRAINT_TYPES V87_RESTRAINT_SKIN_CIRCULATION V87_RESTRAINT_DOCUMENTATION"
+      "search_index": "신체보호대 보호대 restraint 적용목적 주의점 보호대 적용 신체보호대 적용 목적·전 확인사항·주의점 표 간호업무 / 신체보호대 정방향 매듭 square knot 보호대 매듭 동영상 업무동영상 교육영상 클로브 히치 clove hitch V87_RESTRAINT_TYPES V87_RESTRAINT_SKIN_CIRCULATION V87_RESTRAINT_DOCUMENTATION",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "적용목적",
+            "주의점",
+            "보호대 적용",
+            "신체보호대 적용 목적·전 확인사항·주의점 표",
+            "간호업무 / 신체보호대"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "적용목적",
+            "주의점",
+            "보호대 적용",
+            "신체보호대 적용 목적·전 확인사항·주의점 표",
+            "간호업무 / 신체보호대",
+            "정방향 매듭",
+            "square knot"
+          ]
+        }
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V87_RESTRAINT_TYPES",
@@ -54504,7 +57595,13 @@
         "정방향 매듭",
         "보호대 매듭",
         "정방향 매듭 1-2-3-4 단계 그림 카드",
-        "간호업무 / 매듭방법"
+        "간호업무 / 매듭방법",
+        "신체보호대",
+        "보호대",
+        "restraint",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "보호대 고정 시 참고할 수 있는 정방향 매듭의 단계 그림 카드입니다.",
@@ -54529,7 +57626,8 @@
         "V87_RESTRAINT_OVERVIEW"
       ],
       "source_refs": [
-        "원내 보호대 적용/고정 교육자료 우선"
+        "원내 보호대 적용/고정 교육자료 우선",
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기"
       ],
       "images": [
         {
@@ -54549,7 +57647,8 @@
             "정방향 매듭",
             "보호대 매듭",
             "정방향 매듭 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대"
           ]
         }
       ],
@@ -54590,13 +57689,48 @@
             "정방향 매듭",
             "보호대 매듭",
             "정방향 매듭 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대"
           ],
           "include_rows_in_search": true
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "정방향매듭 square knot 보호대매듭 매듭방법 1-2-3-4 정방향 매듭 보호대 매듭 정방향 매듭 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 V87_KNOT_SLIP V87_KNOT_CLOVE_HITCH V87_RESTRAINT_OVERVIEW"
+      "search_index": "정방향매듭 square knot 보호대매듭 매듭방법 1-2-3-4 정방향 매듭 보호대 매듭 정방향 매듭 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 신체보호대 보호대 restraint 동영상 업무동영상 교육영상 V87_KNOT_SLIP V87_KNOT_CLOVE_HITCH V87_RESTRAINT_OVERVIEW",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "정방향매듭",
+            "보호대매듭",
+            "매듭방법",
+            "1-2-3-4",
+            "정방향 매듭 1-2-3-4 단계 그림 카드",
+            "간호업무 / 매듭방법"
+          ]
+        }
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V87_KNOT_SLIP",
@@ -54724,7 +57858,14 @@
         "클로브 히치",
         "침상 프레임 매듭",
         "클로브 히치 1-2-3-4 단계 그림 카드",
-        "간호업무 / 매듭방법"
+        "간호업무 / 매듭방법",
+        "신체보호대",
+        "보호대",
+        "보호대 매듭",
+        "restraint",
+        "동영상",
+        "업무동영상",
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "침상 프레임 고정에 참고하는 클로브 히치 단계 그림 카드입니다.",
@@ -54748,7 +57889,8 @@
         "V87_KNOT_SLIP"
       ],
       "source_refs": [
-        "원내 보호대 고정 교육자료"
+        "원내 보호대 고정 교육자료",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
       "images": [
         {
@@ -54766,7 +57908,9 @@
             "클로브 히치",
             "침상 프레임 매듭",
             "클로브 히치 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대",
+            "보호대"
           ]
         }
       ],
@@ -54806,13 +57950,49 @@
             "클로브 히치",
             "침상 프레임 매듭",
             "클로브 히치 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대",
+            "보호대"
           ],
           "include_rows_in_search": true
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "클로브히치 clove hitch 침상프레임매듭 보호대매듭 클로브 히치 침상 프레임 매듭 클로브 히치 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 V87_KNOT_SQUARE V87_KNOT_SLIP"
+      "search_index": "클로브히치 clove hitch 침상프레임매듭 보호대매듭 클로브 히치 침상 프레임 매듭 클로브 히치 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 신체보호대 보호대 보호대 매듭 restraint 동영상 업무동영상 교육영상 V87_KNOT_SQUARE V87_KNOT_SLIP",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "클로브히치",
+            "침상프레임매듭",
+            "보호대매듭",
+            "침상 프레임 매듭",
+            "클로브 히치 1-2-3-4 단계 그림 카드",
+            "간호업무 / 매듭방법"
+          ]
+        }
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V87_XRAY_OVERVIEW",
@@ -55989,7 +59169,18 @@
         "restraint application",
         "보호대 적용 순서",
         "신체보호대 적용 순서도 카드",
-        "간호업무 / 신체보호대"
+        "간호업무 / 신체보호대",
+        "신체보호대",
+        "보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "restraint",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "클로브 히치",
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "보호대 적용 전 확인부터 적용, 피부·순환 확인, 기록까지 순서도로 정리한 카드입니다.",
@@ -56027,7 +59218,11 @@
             "restraint application",
             "보호대 적용 순서",
             "신체보호대 적용 순서도 카드",
-            "간호업무 / 신체보호대"
+            "간호업무 / 신체보호대",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot"
           ]
         }
       ],
@@ -56076,12 +59271,81 @@
             "restraint application",
             "보호대 적용 순서",
             "신체보호대 적용 순서도 카드",
-            "간호업무 / 신체보호대"
+            "간호업무 / 신체보호대",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot"
           ]
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대순서 신체보호대적용 restraint application 보호대 적용 순서 신체보호대 적용 순서도 카드 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V88_RESTRAINT_MONITORING_SCHEDULE"
+      "search_index": "보호대순서 신체보호대적용 restraint application 보호대 적용 순서 신체보호대 적용 순서도 카드 간호업무 / 신체보호대 신체보호대 보호대 정방향 매듭 square knot 보호대 매듭 restraint 동영상 업무동영상 교육영상 클로브 히치 clove hitch V87_RESTRAINT_OVERVIEW V88_RESTRAINT_MONITORING_SCHEDULE",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "보호대순서",
+            "신체보호대적용",
+            "restraint application",
+            "보호대 적용 순서",
+            "신체보호대 적용 순서도 카드",
+            "간호업무 / 신체보호대"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "보호대순서",
+            "신체보호대적용",
+            "restraint application",
+            "보호대 적용 순서",
+            "신체보호대 적용 순서도 카드",
+            "간호업무 / 신체보호대",
+            "정방향 매듭",
+            "square knot"
+          ]
+        }
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "source_refs": [
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V88_RESTRAINT_MONITORING_SCHEDULE",
@@ -56433,7 +59697,18 @@
         "knot guide",
         "매듭 선택",
         "보호대 매듭 선택 가이드 표",
-        "간호업무 / 매듭방법"
+        "간호업무 / 매듭방법",
+        "신체보호대",
+        "보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "restraint",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "클로브 히치",
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "정방향, 고리, 클로브 히치 매듭을 언제 사용하는지 비교한 카드입니다.",
@@ -56470,7 +59745,11 @@
             "보호대매듭가이드",
             "knot guide",
             "매듭 선택",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot"
           ]
         }
       ],
@@ -56513,12 +59792,81 @@
             "knot guide",
             "매듭 선택",
             "보호대 매듭 선택 가이드 표",
-            "간호업무 / 매듭방법"
+            "간호업무 / 매듭방법",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot"
           ]
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "매듭선택 보호대매듭가이드 knot guide 매듭 선택 보호대 매듭 선택 가이드 표 간호업무 / 매듭방법 V87_KNOT_SQUARE V87_KNOT_SLIP V87_KNOT_CLOVE_HITCH"
+      "search_index": "매듭선택 보호대매듭가이드 knot guide 매듭 선택 보호대 매듭 선택 가이드 표 간호업무 / 매듭방법 신체보호대 보호대 정방향 매듭 square knot 보호대 매듭 restraint 동영상 업무동영상 교육영상 클로브 히치 clove hitch V87_KNOT_SQUARE V87_KNOT_SLIP V87_KNOT_CLOVE_HITCH",
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "매듭선택",
+            "보호대매듭가이드",
+            "knot guide",
+            "매듭 선택",
+            "보호대 매듭 선택 가이드 표",
+            "간호업무 / 매듭방법"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "매듭선택",
+            "보호대매듭가이드",
+            "knot guide",
+            "매듭 선택",
+            "보호대 매듭 선택 가이드 표",
+            "간호업무 / 매듭방법",
+            "정방향 매듭",
+            "square knot"
+          ]
+        }
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "source_refs": [
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V88_KNOT_COMMON_MISTAKES",
@@ -57345,6 +60693,1141 @@
       ],
       "standard_sections_ready": true,
       "search_index": "튜브위치요약 ETT CVC NGT line tube xray 튜브 위치 요약 line tube summary 라인/튜브 위치 확인 요약 카드 검사·검체·영상검사 / X-ray V87_XRAY_ETT_POSITION V87_XRAY_CVC_POSITION V87_XRAY_NGT_POSITION"
+    },
+    {
+      "id": "VIDEO_V91_PATIENT_MONITOR",
+      "category": "순환 / 모니터링",
+      "title": "Patient monitor 사용법 동영상",
+      "aliases": [
+        "Patient monitor 사용법 동영상",
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting"
+      ],
+      "search_terms": [
+        "patient monitor",
+        "환자감시장치",
+        "환자 모니터",
+        "모니터",
+        "monitor",
+        "vital monitor",
+        "patient monitor 동영상",
+        "central monitor",
+        "centrial monitor",
+        "중앙 모니터",
+        "central monitor setting",
+        "모니터 세팅",
+        "monitor setting",
+        "Patient monitor 사용법 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "순환 / 모니터링"
+      ],
+      "urgency": "routine",
+      "summary": "Patient monitor와 central monitor setting 변경 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V86_DETAIL_05"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: Patient monitor 사용법 보기",
+        "Google Drive 링크: Central monitor setting 변경 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
+          "title": "Patient monitor 사용법 보기",
+          "caption": "Google Drive 외부 링크 · patient monitor 교육 동영상",
+          "search_terms": [
+            "Patient monitor 사용법 보기",
+            "Google Drive 외부 링크 · patient monitor 교육 동영상",
+            "patient monitor",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1vsWYcW5ReM2_SJ3xHFXNRJk-BJszFlNj/view?usp=drive_link",
+          "title": "Central monitor setting 변경 보기",
+          "caption": "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+          "search_terms": [
+            "Central monitor setting 변경 보기",
+            "Google Drive 외부 링크 · central monitor setting 변경 교육 동영상",
+            "central monitor",
+            "centrial monitor",
+            "중앙 모니터",
+            "central monitor setting",
+            "모니터 세팅",
+            "patient monitor",
+            "monitor setting",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "환자감시장치",
+            "환자 모니터",
+            "모니터",
+            "monitor",
+            "vital monitor",
+            "patient monitor 동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting Patient monitor 사용법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 순환 / 모니터링 V80_HEMODYNAMIC_MONITORING_OVERVIEW V86_DETAIL_05"
+    },
+    {
+      "id": "VIDEO_V91_O2_NIPPLE",
+      "category": "호흡 / 산소요법",
+      "title": "O2 nipple 사용법 동영상",
+      "aliases": [
+        "O2 nipple 사용법 동영상",
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비"
+      ],
+      "search_terms": [
+        "O2 nipple",
+        "산소 니플",
+        "oxygen nipple",
+        "산소 연결",
+        "산소요법",
+        "O2 nipple 사용법",
+        "호흡 장비",
+        "O2 nipple 사용법 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "호흡 / 산소요법"
+      ],
+      "urgency": "routine",
+      "summary": "O2 nipple 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "VENT001",
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: O2 nipple 사용법 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
+          "title": "O2 nipple 사용법 보기",
+          "caption": "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+          "search_terms": [
+            "O2 nipple 사용법 보기",
+            "Google Drive 외부 링크 · O2 nipple 사용법 교육 동영상",
+            "O2 nipple",
+            "산소 니플",
+            "oxygen nipple",
+            "산소 연결",
+            "산소요법",
+            "O2 nipple 사용법",
+            "호흡 장비",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "O2 nipple 사용법 동영상",
+            "동영상",
+            "업무동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 O2 nipple 사용법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / 산소요법 VENT001 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+    },
+    {
+      "id": "VIDEO_V91_NS_TRANSFER_PREP",
+      "category": "신경계 / 검사 이동",
+      "title": "NS(뇌) 수술환자 검사 이동 전 준비 동영상",
+      "aliases": [
+        "NS(뇌) 수술환자 검사 이동 전 준비 동영상",
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동"
+      ],
+      "search_terms": [
+        "NS",
+        "신경외과",
+        "뇌 수술환자",
+        "검사 이동",
+        "검사시 이동",
+        "검사 이동 전 준비",
+        "Brain CT",
+        "수술환자 이동",
+        "NS(뇌) 수술환자 검사 이동 전 준비 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "신경계 / 검사 이동"
+      ],
+      "urgency": "routine",
+      "summary": "신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "NSPROC030",
+        "IMG030",
+        "SURG030"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1i9xAP0nHNZq-czX5T4mC_0y-LmHylyxE/view?usp=drive_link",
+          "title": "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+          "caption": "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+          "search_terms": [
+            "NS(뇌) 수술환자 검사 이동 전 준비 보기",
+            "Google Drive 외부 링크 · 신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상",
+            "NS",
+            "신경외과",
+            "뇌 수술환자",
+            "검사 이동",
+            "검사시 이동",
+            "검사 이동 전 준비",
+            "Brain CT",
+            "수술환자 이동",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "NS(뇌) 수술환자 검사 이동 전 준비 동영상",
+            "동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 NS(뇌) 수술환자 검사 이동 전 준비 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 신경계 / 검사 이동 NSPROC030 IMG030 SURG030"
+    },
+    {
+      "id": "VIDEO_V91_L_SLING",
+      "category": "간호업무 / 보조기",
+      "title": "L-sling 착용방법 동영상",
+      "aliases": [
+        "L-sling 착용방법 동영상",
+        "L-sling",
+        "엘슬링",
+        "sling",
+        "보조기",
+        "팔걸이",
+        "L-sling 착용방법",
+        "brace"
+      ],
+      "search_terms": [
+        "L-sling",
+        "엘슬링",
+        "sling",
+        "보조기",
+        "팔걸이",
+        "L-sling 착용방법",
+        "brace",
+        "L-sling 착용방법 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "간호업무 / 보조기"
+      ],
+      "urgency": "routine",
+      "summary": "L-sling 착용방법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "V86_DETAIL_07"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: L-sling 착용방법 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "L-sling 착용방법 보기",
+          "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+          "search_terms": [
+            "L-sling 착용방법 보기",
+            "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
+            "L-sling",
+            "엘슬링",
+            "sling",
+            "보조기",
+            "팔걸이",
+            "L-sling 착용방법",
+            "brace",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "L-sling 착용방법 동영상",
+            "동영상",
+            "업무동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "L-sling 엘슬링 sling 보조기 팔걸이 L-sling 착용방법 brace L-sling 착용방법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 간호업무 / 보조기 V86_DETAIL_07"
+    },
+    {
+      "id": "VIDEO_V91_EVD_ICP_TRAGUS",
+      "category": "신경계 / EVD·ICP",
+      "title": "EVD(tragus) ICP 재는 방법 동영상",
+      "aliases": [
+        "EVD(tragus) ICP 재는 방법 동영상",
+        "EVD",
+        "ICP",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "뇌실외배액",
+        "배액 높이"
+      ],
+      "search_terms": [
+        "EVD",
+        "ICP",
+        "tragus",
+        "트라거스",
+        "EVD leveling",
+        "ICP 측정",
+        "뇌실외배액",
+        "배액 높이",
+        "EVD(tragus) ICP 재는 방법 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "신경계 / EVD·ICP"
+      ],
+      "urgency": "routine",
+      "summary": "EVD tragus 기준 ICP 측정 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "V71_EVD_ICP_CVP_OVERVIEW",
+        "V71_EVD_NURSING"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "title": "EVD(tragus) ICP 재는 방법 보기",
+          "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+          "search_terms": [
+            "EVD(tragus) ICP 재는 방법 보기",
+            "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
+            "EVD",
+            "ICP",
+            "tragus",
+            "트라거스",
+            "EVD leveling",
+            "ICP 측정",
+            "뇌실외배액",
+            "배액 높이",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "EVD(tragus) ICP 재는 방법 동영상",
+            "동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "EVD ICP tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 EVD(tragus) ICP 재는 방법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 신경계 / EVD·ICP V71_EVD_ICP_CVP_OVERVIEW V71_EVD_NURSING"
+    },
+    {
+      "id": "VIDEO_V91_DRAGER_SAVINA",
+      "category": "호흡 / Dräger Savina",
+      "title": "Dräger 인공호흡기 동영상 1·2·3",
+      "aliases": [
+        "Dräger 인공호흡기 동영상 1·2·3",
+        "Dräger",
+        "Drager",
+        "Savina",
+        "드레거",
+        "인공호흡기",
+        "ventilator",
+        "Dräger 인공호흡기 1",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3"
+      ],
+      "search_terms": [
+        "Dräger",
+        "Drager",
+        "Savina",
+        "드레거",
+        "인공호흡기",
+        "ventilator",
+        "Dräger 인공호흡기 1",
+        "Dräger 인공호흡기 2",
+        "Dräger 인공호흡기 3",
+        "Dräger 인공호흡기 동영상 1·2·3",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "호흡 / Dräger Savina"
+      ],
+      "urgency": "routine",
+      "summary": "Dräger/Savina 인공호흡기 교육 동영상 3개를 묶은 카드입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V79_DETAIL_02"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: Dräger 인공호흡기 1 보기",
+        "Google Drive 링크: Dräger 인공호흡기 2 보기",
+        "Google Drive 링크: Dräger 인공호흡기 3 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 1 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+          "search_terms": [
+            "Dräger 인공호흡기 1 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 1",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Dräger 인공호흡기 2",
+            "Dräger 인공호흡기 3",
+            "Dräger 인공호흡기 동영상 1·2·3"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 2 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+          "search_terms": [
+            "Dräger 인공호흡기 2 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 2",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Dräger 인공호흡기 1",
+            "Dräger 인공호흡기 3",
+            "Dräger 인공호흡기 동영상 1·2·3"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
+          "title": "Dräger 인공호흡기 3 보기",
+          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+          "search_terms": [
+            "Dräger 인공호흡기 3 보기",
+            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
+            "Dräger",
+            "Drager",
+            "Savina",
+            "드레거",
+            "인공호흡기",
+            "ventilator",
+            "Dräger 인공호흡기 3",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "Dräger 인공호흡기 1",
+            "Dräger 인공호흡기 2",
+            "Dräger 인공호흡기 동영상 1·2·3"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "Dräger Drager Savina 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 Dräger 인공호흡기 동영상 1·2·3 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / Dräger Savina V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_02"
+    },
+    {
+      "id": "VIDEO_V91_CPR_NURSE_ROLE",
+      "category": "응급상황 / CPR",
+      "title": "CPR시 간호사 역할 동영상",
+      "aliases": [
+        "CPR시 간호사 역할 동영상",
+        "CPR",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "응급상황",
+        "E-cart",
+        "Lucas"
+      ],
+      "search_terms": [
+        "CPR",
+        "CPCR",
+        "심폐소생술",
+        "간호사 역할",
+        "CPR 간호사 역할",
+        "응급상황",
+        "E-cart",
+        "Lucas",
+        "CPR시 간호사 역할 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "응급상황 / CPR"
+      ],
+      "urgency": "routine",
+      "summary": "CPR 상황에서 간호사 역할을 확인하는 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "CPR001",
+        "CPR030",
+        "V65_CPCR_001"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: CPR시 간호사 역할 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
+          "title": "CPR시 간호사 역할 보기",
+          "caption": "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+          "search_terms": [
+            "CPR시 간호사 역할 보기",
+            "Google Drive 외부 링크 · CPR 상황 간호사 역할 교육 동영상",
+            "CPR",
+            "CPCR",
+            "심폐소생술",
+            "간호사 역할",
+            "CPR 간호사 역할",
+            "응급상황",
+            "E-cart",
+            "Lucas",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "CPR시 간호사 역할 동영상",
+            "동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "CPR CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 응급상황 E-cart Lucas CPR시 간호사 역할 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 응급상황 / CPR CPR001 CPR030 V65_CPCR_001"
+    },
+    {
+      "id": "VIDEO_V91_ABGA_CALIBRATION",
+      "category": "호흡 / ABGA",
+      "title": "ABGA calibration 동영상",
+      "aliases": [
+        "ABGA calibration 동영상",
+        "ABGA",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "A-line",
+        "검체"
+      ],
+      "search_terms": [
+        "ABGA",
+        "calibration",
+        "캘리브레이션",
+        "ABGA calibration",
+        "혈액가스",
+        "A-line",
+        "검체",
+        "ABGA calibration 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "호흡 / ABGA"
+      ],
+      "urgency": "routine",
+      "summary": "ABGA calibration 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "LAB003",
+        "V72_ABGA_OVERVIEW"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: ABGA calibration 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
+          "title": "ABGA calibration 보기",
+          "caption": "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+          "search_terms": [
+            "ABGA calibration 보기",
+            "Google Drive 외부 링크 · ABGA calibration 교육 동영상",
+            "ABGA",
+            "calibration",
+            "캘리브레이션",
+            "ABGA calibration",
+            "혈액가스",
+            "A-line",
+            "검체",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "ABGA calibration 동영상",
+            "동영상",
+            "업무동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "ABGA calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 ABGA calibration 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / ABGA LAB003 V72_ABGA_OVERVIEW"
+    },
+    {
+      "id": "VIDEO_V91_RESTRAINT_KNOTS",
+      "category": "간호업무 / 신체보호대·매듭",
+      "title": "신체보호대 매듭 동영상: 정방향·클로브 히치",
+      "aliases": [
+        "신체보호대 매듭 동영상: 정방향·클로브 히치",
+        "신체보호대",
+        "보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "restraint",
+        "클로브 히치",
+        "clove hitch"
+      ],
+      "search_terms": [
+        "신체보호대",
+        "보호대",
+        "정방향 매듭",
+        "square knot",
+        "보호대 매듭",
+        "restraint",
+        "클로브 히치",
+        "clove hitch",
+        "신체보호대 매듭 동영상: 정방향·클로브 히치",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "간호업무 / 신체보호대·매듭"
+      ],
+      "urgency": "routine",
+      "summary": "신체보호대 정방향 매듭과 클로브 히치 매듭 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "V87_KNOT_SQUARE",
+        "V87_KNOT_CLOVE_HITCH",
+        "V88_KNOT_SELECTION_GUIDE"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: 신체보호대 정방향 매듭 보기",
+        "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
+          "title": "신체보호대 정방향 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 정방향 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 정방향 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "정방향 매듭",
+            "square knot",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "클로브 히치",
+            "clove hitch",
+            "신체보호대 매듭 동영상: 정방향·클로브 히치",
+            "동영상"
+          ]
+        },
+        {
+          "href": "https://drive.google.com/file/d/1kA0oBuZrI6C672W_RDX81mFSvN1jg6s3/view?usp=drive_link",
+          "title": "신체보호대 클로브 히치 매듭 보기",
+          "caption": "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+          "search_terms": [
+            "신체보호대 클로브 히치 매듭 보기",
+            "Google Drive 외부 링크 · 신체보호대 클로브 히치 매듭 교육 동영상",
+            "신체보호대",
+            "보호대",
+            "클로브 히치",
+            "clove hitch",
+            "보호대 매듭",
+            "restraint",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "정방향 매듭",
+            "square knot",
+            "신체보호대 매듭 동영상: 정방향·클로브 히치",
+            "동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "신체보호대 보호대 정방향 매듭 square knot 보호대 매듭 restraint 클로브 히치 clove hitch 신체보호대 매듭 동영상: 정방향·클로브 히치 동영상 업무동영상 교육영상 Google Drive v91 video 간호업무 / 신체보호대·매듭 V87_KNOT_SQUARE V87_KNOT_CLOVE_HITCH V88_KNOT_SELECTION_GUIDE"
+    },
+    {
+      "id": "VIDEO_V91_TABLET_CONSENT",
+      "category": "동의서 / 태블릿",
+      "title": "동의서 받기(태블릿) 동영상",
+      "aliases": [
+        "동의서 받기(태블릿) 동영상",
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서"
+      ],
+      "search_terms": [
+        "동의서",
+        "테블릿",
+        "태블릿",
+        "tablet",
+        "consent",
+        "동의서 받기",
+        "전자동의서",
+        "동의서 받기(태블릿) 동영상",
+        "동영상",
+        "업무동영상",
+        "교육영상",
+        "Google Drive",
+        "v91 video",
+        "동의서 / 태블릿"
+      ],
+      "urgency": "routine",
+      "summary": "태블릿으로 동의서를 받는 절차 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
+      "indications": [
+        "해당 업무를 영상으로 확인해야 할 때",
+        "신규/경력직 교육 중 절차를 영상으로 확인할 때"
+      ],
+      "preparation": [
+        "Google Drive 접근 권한과 네트워크 상태를 확인합니다."
+      ],
+      "steps": [
+        "아래 참고 동영상 버튼을 눌러 Google Drive에서 영상을 확인합니다.",
+        "재생이 되지 않으면 Drive 공유 설정 또는 로그인 상태를 확인합니다.",
+        "실제 환자 적용은 병원 최신 프로토콜과 담당의/프리셉터 지시를 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 교육 확인 또는 실제 적용 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "교육용 동영상입니다. 실제 환자 적용 시 병원 최신 지침과 현장 지시를 우선하세요.",
+        "Google Drive 권한이 제한되어 있으면 링크가 열리지 않을 수 있습니다."
+      ],
+      "related": [
+        "CONSENT001",
+        "SURG030"
+      ],
+      "tags": [
+        "동영상",
+        "교육영상",
+        "google_drive_link",
+        "v91_video_link"
+      ],
+      "review": {
+        "status": "v91_video_links_added"
+      },
+      "source_refs": [
+        "Google Drive 링크: 동의서 받기(태블릿) 보기"
+      ],
+      "tables": [],
+      "images": [],
+      "videos": [
+        {
+          "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
+          "title": "동의서 받기(태블릿) 보기",
+          "caption": "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+          "search_terms": [
+            "동의서 받기(태블릿) 보기",
+            "Google Drive 외부 링크 · 태블릿 동의서 받기 교육 동영상",
+            "동의서",
+            "테블릿",
+            "태블릿",
+            "tablet",
+            "consent",
+            "동의서 받기",
+            "전자동의서",
+            "업무 동영상",
+            "교육 동영상",
+            "Google Drive 외부 링크",
+            "v91_video_link",
+            "동의서 받기(태블릿) 동영상",
+            "동영상",
+            "업무동영상"
+          ]
+        }
+      ],
+      "standard_sections_ready": true,
+      "prefer_media_first": true,
+      "search_index": "동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동의서 받기(태블릿) 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 동의서 / 태블릿 CONSENT001 SURG030"
     }
   ],
   "final_review_note": {
@@ -58549,5 +63032,42 @@
       "V87/V88/V89 교육용 이미지 자료"
     ],
     "note": "표/이미지가 없는 카드도 모두 유지함. 검색 정확도 개선을 위해 server.js 검색 로직을 public/app.js와 유사하게 보강."
+  },
+  "v91_update": {
+    "summary": "업무 관련 Google Drive 동영상 링크 14개를 관련 카드에 첨부하고, 검색용 동영상 카드 10개를 추가했습니다.",
+    "preserved_cards_before_video_addition": 358,
+    "total_items": 368,
+    "added_video_cards": [
+      "VIDEO_V91_PATIENT_MONITOR",
+      "VIDEO_V91_O2_NIPPLE",
+      "VIDEO_V91_NS_TRANSFER_PREP",
+      "VIDEO_V91_L_SLING",
+      "VIDEO_V91_EVD_ICP_TRAGUS",
+      "VIDEO_V91_DRAGER_SAVINA",
+      "VIDEO_V91_CPR_NURSE_ROLE",
+      "VIDEO_V91_ABGA_CALIBRATION",
+      "VIDEO_V91_RESTRAINT_KNOTS",
+      "VIDEO_V91_TABLET_CONSENT"
+    ],
+    "video_link_count": 14,
+    "attached_to_existing_cards_count": 78,
+    "note": "동영상은 Google Drive 외부 링크로 새 창에서 열립니다. 재생이 안 되면 Drive 공유 설정을 확인하세요."
+  },
+  "v92_update": {
+    "summary": "V91 동영상 링크 추가 내용을 유지하면서 GitHub 웹사이트에서 일부 파일만 업로드할 수 있도록 구성한 최소 업로드 버전",
+    "cards_preserved": 368,
+    "upload_files": {
+      "repository_root": [
+        "server.js",
+        "V92_부분업로드_안내.txt",
+        "V92_변경사항.txt"
+      ],
+      "public_folder": [
+        "data.js",
+        "icu_ai_manual_db_v2.json"
+      ]
+    },
+    "no_image_upload_needed": true,
+    "note": "새 이미지 추가 없음. 기존 public/selected_manual_images 및 기존 이미지 폴더는 그대로 사용."
   }
 }
