@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.99.0-v99-circulation-monitoring-protocol",
+    "version": "2.02.0-v102-ns-os-preop-table-images",
     "language": "ko",
-    "source": "V98 기반 + 병동간호팀 간호사매뉴얼 p54~56, p102~111, p140~141 순환/모니터링 반영",
+    "source": "V101 기반 + NS/OS 수술명 약어 수술 전 검사/체크리스트/수술 후 관찰표 이미지 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -18491,7 +18491,9 @@ window.ICU_MANUAL_DB = {
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "Pre-op care / 수술 전 간호"
+        "Pre-op care / 수술 전 간호",
+        "V100_NEURO_SURGERY_OVERVIEW",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
       ],
       "tables": [],
       "images": [
@@ -18540,7 +18542,9 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
         "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
-        "Google Drive 링크: 동의서 받기(태블릿) 보기"
+        "Google Drive 링크: 동의서 받기(태블릿) 보기",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
       ],
       "original_category": "수술간호",
       "search_terms": [
@@ -19007,7 +19011,10 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V100_NEURO_SURGERY_OVERVIEW",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
       "tables": [
         {
           "title": "신경외과 주요 수치",
@@ -19081,7 +19088,9 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
         "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
-        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
       ],
       "original_category": "검사·시술/신경외과",
       "search_terms": [
@@ -28635,11 +28644,14 @@ window.ICU_MANUAL_DB = {
       "charting": [],
       "io": [],
       "warnings": [],
-      "related": [],
+      "related": [
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
       "tags": [],
       "review": "업로드 자료 기반. 원내 최신 지침과 담당자 지시를 우선합니다.",
       "source_refs": [
-        "OS 각과별 매뉴얼(26.05.08).hwp"
+        "OS 각과별 매뉴얼(26.05.08).hwp",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
       ],
       "tables": [
         {
@@ -28729,7 +28741,8 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "OS 각과별 매뉴얼 OS Drain Drain Pressure H-vac JP natural full clamp OS1 OS3 OS8 OS10 OS14 OS22 OS24 OS25 TKRA TSRA Hip OP OS 각과별 매뉴얼 Drain Pressure 정리 수술 / 시술"
+      "search_index": "OS 각과별 매뉴얼 OS Drain Drain Pressure H-vac JP natural full clamp OS1 OS3 OS8 OS10 OS14 OS22 OS24 OS25 TKRA TSRA Hip OP OS 각과별 매뉴얼 Drain Pressure 정리 수술 / 시술",
+      "prefer_media_first": true
     },
     {
       "id": "V65_NEW_NURSE_NOTES",
@@ -31470,7 +31483,8 @@ window.ICU_MANUAL_DB = {
       "related": [
         "ICP 상승 간호",
         "EVD · ICP · CVP 총정리",
-        "뇌출혈 총정리"
+        "뇌출혈 총정리",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "EVD",
@@ -31492,7 +31506,8 @@ window.ICU_MANUAL_DB = {
         "External ventricular drains management and complications review: nursing zeroing, placement, sterility, integrity of collecting system",
         "CVP monitoring guidance: phlebostatic axis and pressure monitoring principles",
         "원내 최신 처방과 프로토콜 우선 적용",
-        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
+        "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -38526,7 +38541,8 @@ window.ICU_MANUAL_DB = {
         "뇌졸중 총정리",
         "EVD·ICP·CVP 총정리",
         "ABGA 총정리",
-        "심전도 총정리"
+        "심전도 총정리",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "신경계",
@@ -38544,7 +38560,8 @@ window.ICU_MANUAL_DB = {
         "Glasgow Coma Scale 공식 자료",
         "NICE Head injury neurological observations",
         "NINDS NIH Stroke Scale 정의",
-        "기존 원내 신경계 사정/간호 매뉴얼"
+        "기존 원내 신경계 사정/간호 매뉴얼",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -38645,7 +38662,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "의식사정 신경학적 사정 neuro check GCS PUPIL pupil 동공 MOTOR motor motor power LOC 의식수준 동공반사 편마비 뇌신경계 중환자실 신경사정 neuro assessment GCS Pupil Motor 의식수준 사정 의식사정·신경학적 사정 총정리: GCS·Pupil·Motor 신경계 / 중환자 사정 뇌졸중 총정리 EVD·ICP·CVP 총정리 ABGA 총정리 심전도 총정리"
+      "search_index": "의식사정 신경학적 사정 neuro check GCS PUPIL pupil 동공 MOTOR motor motor power LOC 의식수준 동공반사 편마비 뇌신경계 중환자실 신경사정 neuro assessment GCS Pupil Motor 의식수준 사정 의식사정·신경학적 사정 총정리: GCS·Pupil·Motor 신경계 / 중환자 사정 뇌졸중 총정리 EVD·ICP·CVP 총정리 ABGA 총정리 심전도 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V77_GCS_LOC_ASSESSMENT",
@@ -38720,7 +38738,8 @@ window.ICU_MANUAL_DB = {
       "related": [
         "의식사정·신경학적 사정 총정리",
         "Pupil 사정",
-        "Motor 사정"
+        "Motor 사정",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "GCS",
@@ -38735,7 +38754,8 @@ window.ICU_MANUAL_DB = {
         "Glasgow Coma Scale 공식 자료",
         "NICE Head injury neurological observations",
         "NINDS NIH Stroke Scale 정의",
-        "기존 원내 신경계 사정/간호 매뉴얼"
+        "기존 원내 신경계 사정/간호 매뉴얼",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -38946,7 +38966,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "GCS Glasgow Coma Scale E4 V5 M6 EVM 의식수준 LOC Alert Drowsy Confusion Stupor Semicoma Coma 기관삽관 Vt GCS 점수 LOC 사정 의식수준 단계 GCS·의식수준 LOC 사정표 신경계 / 중환자 사정 의식사정·신경학적 사정 총정리 Pupil 사정 Motor 사정"
+      "search_index": "GCS Glasgow Coma Scale E4 V5 M6 EVM 의식수준 LOC Alert Drowsy Confusion Stupor Semicoma Coma 기관삽관 Vt GCS 점수 LOC 사정 의식수준 단계 GCS·의식수준 LOC 사정표 신경계 / 중환자 사정 의식사정·신경학적 사정 총정리 Pupil 사정 Motor 사정",
+      "prefer_media_first": true
     },
     {
       "id": "V77_PUPIL_ASSESSMENT",
@@ -39020,7 +39041,8 @@ window.ICU_MANUAL_DB = {
       "related": [
         "GCS·의식수준 LOC 사정표",
         "Motor 사정",
-        "EVD·ICP 총정리"
+        "EVD·ICP 총정리",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "동공",
@@ -39035,7 +39057,8 @@ window.ICU_MANUAL_DB = {
         "Glasgow Coma Scale 공식 자료",
         "NICE Head injury neurological observations",
         "NINDS NIH Stroke Scale 정의",
-        "기존 원내 신경계 사정/간호 매뉴얼"
+        "기존 원내 신경계 사정/간호 매뉴얼",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -39131,7 +39154,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "pupil PUPIL 동공 동공사정 동공반사 pupil reflex anisocoria isocoria prompt sluggish fixed pinpoint dilated 동공부등 빛반사 pupil check Pupil 동공 사정 총정리: 크기·반응·대칭 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Motor 사정 EVD·ICP 총정리"
+      "search_index": "pupil PUPIL 동공 동공사정 동공반사 pupil reflex anisocoria isocoria prompt sluggish fixed pinpoint dilated 동공부등 빛반사 pupil check Pupil 동공 사정 총정리: 크기·반응·대칭 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Motor 사정 EVD·ICP 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V77_MOTOR_ASSESSMENT",
@@ -39204,7 +39228,8 @@ window.ICU_MANUAL_DB = {
       "related": [
         "GCS·의식수준 LOC 사정표",
         "Pupil 사정",
-        "뇌졸중 총정리"
+        "뇌졸중 총정리",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "motor",
@@ -39219,7 +39244,8 @@ window.ICU_MANUAL_DB = {
         "Glasgow Coma Scale 공식 자료",
         "NICE Head injury neurological observations",
         "NINDS NIH Stroke Scale 정의",
-        "기존 원내 신경계 사정/간호 매뉴얼"
+        "기존 원내 신경계 사정/간호 매뉴얼",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -39375,7 +39401,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "motor MOTOR motor power motor grade 근력 운동반응 편마비 hemiparesis obey pronator drift motor 5 motor 4 motor 3 motor 2 motor 1 motor 0 운동반응 사정 근력평가 편마비 사정 Motor power 사정 총정리: Grade·좌우비교·보고기준 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Pupil 사정 뇌졸중 총정리"
+      "search_index": "motor MOTOR motor power motor grade 근력 운동반응 편마비 hemiparesis obey pronator drift motor 5 motor 4 motor 3 motor 2 motor 1 motor 0 운동반응 사정 근력평가 편마비 사정 Motor power 사정 총정리: Grade·좌우비교·보고기준 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Pupil 사정 뇌졸중 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V77_ICU_NEURO_NURSING_CHECKLIST",
@@ -50462,7 +50489,8 @@ window.ICU_MANUAL_DB = {
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "V83",
@@ -50479,7 +50507,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "환자확인·검체관리·영상검사 안전 일반 원칙",
-        "원내 검사실/영상의학과/수술실 지침 우선"
+        "원내 검사실/영상의학과/수술실 지침 우선",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -50631,7 +50660,8 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "preoperative checklist consent NPO site marking operation 수술전 pre op 시술전 동의서 금식 수술·시술 전 체크리스트 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      "search_index": "preoperative checklist consent NPO site marking operation 수술전 pre op 시술전 동의서 금식 수술·시술 전 체크리스트 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V83_DETAIL_07",
@@ -50689,7 +50719,8 @@ window.ICU_MANUAL_DB = {
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+        "V100_NEURO_SURGERY_OVERVIEW"
       ],
       "tags": [
         "V83",
@@ -50706,7 +50737,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "환자확인·검체관리·영상검사 안전 일반 원칙",
-        "원내 검사실/영상의학과/수술실 지침 우선"
+        "원내 검사실/영상의학과/수술실 지침 우선",
+        "V100 신경계/수술·시술 원내 프로토콜 재정리 반영"
       ],
       "tables": [
         {
@@ -50844,7 +50876,8 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "post procedure bleeding pain vital signs puncture site 시술후 검사후 출혈관찰 시술·검사 후 출혈·통증·합병증 관찰 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      "search_index": "post procedure bleeding pain vital signs puncture site 시술후 검사후 출혈관찰 시술·검사 후 출혈·통증·합병증 관찰 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V83_DETAIL_08",
@@ -64230,6 +64263,2334 @@ window.ICU_MANUAL_DB = {
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V100_NEURO_SURGERY_OVERVIEW",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "신경계 + 수술/시술 통합 총정리: 사정·EVD/SDD·Burr hole·Coil·Spinal tapping",
+      "aliases": [
+        "신경계 총정리",
+        "수술 시술 총정리",
+        "NS 간호 총정리",
+        "Spinal tapping 포함"
+      ],
+      "search_terms": [
+        "신경계 + 수술/시술 통합 총정리: 사정·EVD/SDD·Burr hole·Coil·Spinal tapping",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "신경계 총정리",
+        "수술 시술 총정리",
+        "NS 간호 총정리",
+        "Spinal tapping 포함",
+        "Mental",
+        "GCS",
+        "Pupil",
+        "Motor",
+        "EVD",
+        "SDD",
+        "Burr hole",
+        "Coil embolization",
+        "TFCA",
+        "Tracheostomy",
+        "EGD",
+        "ERCP",
+        "CFS",
+        "spinal tapping",
+        "CSF study"
+      ],
+      "urgency": "routine",
+      "summary": "신경계 사정과 NS 수술/시술 전후 간호, spinal tapping과 CSF study를 한 카드에서 연결해 볼 수 있게 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "신경계는 Mental/GCS/Pupil/Motor를 같은 시간축으로 반복 비교한다.",
+        "EVD/SDD는 높이, 배액량, 색, clamp, 감염징후를 확인한다.",
+        "Burr hole/Coil/TFCA/Tracheostomy/내시경 전후 확인사항을 표로 확인한다.",
+        "Spinal tapping은 준비·목적·진단·CSF study·시행 후 관찰까지 확인한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "V77_NEURO_ASSESSMENT_OVERVIEW",
+        "V71_EVD_NURSING",
+        "NSPROC030",
+        "V100_SPINAL_TAPPING_CSF",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
+      ],
+      "tables": [
+        {
+          "title": "신경계 + 수술/시술 통합 요약표",
+          "caption": "요청한 목차를 한눈에 연결",
+          "headers": [
+            "영역",
+            "핵심",
+            "확인 포인트"
+          ],
+          "rows": [
+            [
+              "신경계 사정",
+              "Mental/GCS/Pupil/Motor",
+              "악화 추세, 좌우차, seizure/IICP 징후"
+            ],
+            [
+              "EVD/SDD",
+              "높이·배액량·색·ICP·clamp",
+              "tragus 기준, 과배액/폐쇄/감염"
+            ],
+            [
+              "NS 수술 후",
+              "Burr hole, EVD/SDD, Coil",
+              "return 1·2·6시간 f/u, 출혈/신경변화"
+            ],
+            [
+              "수술 전후",
+              "동의서, 금식, 처치표, ICU 입실",
+              "drain/출혈/통증/기록"
+            ],
+            [
+              "시술 전후",
+              "TFCA, Tracheostomy, EGD, ERCP, CFS",
+              "시술별 합병증 관찰"
+            ],
+            [
+              "Spinal tapping",
+              "CSF study 포함",
+              "동의서, 체위, 검체, 두통/누출 관찰"
+            ]
+          ],
+          "search_terms": [
+            "신경계수술시술요약",
+            "V100"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
+          "alt": "신경계 수술 시술 통합 요약 이미지",
+          "caption": "신경계 + 수술/시술 + Spinal tapping 통합 요약",
+          "search_terms": [
+            "신경계 이미지",
+            "수술 시술 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_NEURO_ASSESSMENT",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "신경계 사정 총정리: Mental·GCS·Pupil reflex·Motor power",
+      "aliases": [
+        "Mental 사정",
+        "GCS 사정",
+        "Pupil reflex",
+        "Motor power",
+        "신경학적 사정"
+      ],
+      "search_terms": [
+        "신경계 사정 총정리: Mental·GCS·Pupil reflex·Motor power",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "Mental 사정",
+        "GCS 사정",
+        "Pupil reflex",
+        "Motor power",
+        "신경학적 사정",
+        "Mental",
+        "GCS",
+        "Pupil",
+        "pupil reflex",
+        "LOC",
+        "의식사정",
+        "동공반사",
+        "운동능력",
+        "seizure",
+        "IICP"
+      ],
+      "urgency": "routine",
+      "summary": "Mental, GCS, Pupil reflex, Motor power, Seizure 관찰, 뇌압 상승 의심 증상을 표로 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "Mental level을 이전 사정과 비교한다.",
+        "GCS는 E/V/M 점수로 나눠 기록한다.",
+        "Pupil은 크기·대칭·light reflex를 확인한다.",
+        "Motor power는 좌우/상하지를 비교한다.",
+        "Seizure와 IICP 징후는 즉시 보고한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "V77_NEURO_ASSESSMENT_OVERVIEW",
+        "V77_GCS_LOC_ASSESSMENT",
+        "V77_PUPIL_ASSESSMENT",
+        "V77_MOTOR_ASSESSMENT",
+        "V95_SEIZURE_RESPONSE_ANTICONVULSANT"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "신경계 사정표",
+          "caption": "Mental · GCS · Pupil · Motor · Seizure · IICP",
+          "headers": [
+            "항목",
+            "확인 내용",
+            "간호 포인트",
+            "보고 기준"
+          ],
+          "rows": [
+            [
+              "Mental",
+              "Alert / Drowsy / Stupor / Semicoma / Coma",
+              "기준 자극에 대한 반응과 시간 변화 확인",
+              "악화 시 즉시 보고, 기록은 이전 사정과 비교"
+            ],
+            [
+              "GCS",
+              "Eye 4 + Verbal 5 + Motor 6 = 총 15점",
+              "E/V/M 각각 점수로 기록",
+              "총점만 쓰지 말고 E4V5M6 형태 권장"
+            ],
+            [
+              "Pupil",
+              "Size / Light reflex / 대칭성",
+              "양쪽 크기(mm), prompt/sluggish/fixed 확인",
+              "anisocoria, fixed pupil, 급변 시 보고"
+            ],
+            [
+              "Motor power",
+              "Grade 0~5 좌우 비교",
+              "팔/다리 각각 힘·drift·pain response 확인",
+              "새로운 편측 약화는 즉시 보고"
+            ],
+            [
+              "Seizure 관찰",
+              "시작/종료시간, 양상, 의식, 호흡",
+              "기도/산소/BST/외상/동공 확인",
+              "5분 이상·반복·호흡저하 시 응급보고"
+            ],
+            [
+              "IICP 의심",
+              "두통, 구토, 의식저하, 동공변화, Cushing triad",
+              "BP 상승+서맥+불규칙호흡 동반 확인",
+              "머리 30도, 목 중립, 과자극 방지"
+            ]
+          ],
+          "search_terms": [
+            "신경계사정표",
+            "GCS표",
+            "pupil표",
+            "motor표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_neuro_assessment_table.png",
+          "alt": "신경계 사정 총정리 표 이미지",
+          "caption": "Mental, GCS, Pupil, Motor, Seizure, IICP 이미지",
+          "search_terms": [
+            "GCS 이미지",
+            "Mental 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_EVD_SDD_MANAGEMENT",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "EVD / SDD 관리: 배액량·높이·ICP·Natural drainage",
+      "aliases": [
+        "EVD 관리",
+        "EVD 배액량",
+        "EVD 높이",
+        "SDD 관리",
+        "ICP 측정"
+      ],
+      "search_terms": [
+        "EVD / SDD 관리: 배액량·높이·ICP·Natural drainage",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "EVD 관리",
+        "EVD 배액량",
+        "EVD 높이",
+        "SDD 관리",
+        "ICP 측정",
+        "EVD",
+        "SDD",
+        "ICP",
+        "IICP",
+        "tragus",
+        "CSF",
+        "배액량",
+        "drainage",
+        "natural drainage",
+        "Burr hole"
+      ],
+      "urgency": "routine",
+      "summary": "EVD 높이, 배액량, ICP 기준, 배액백 관리와 SDD natural drainage를 표로 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "EVD는 처방 높이와 실제 chamber 높이가 맞는지 확인한다.",
+        "배액량과 색을 시간별로 기록하고 급증/혈성 변화는 보고한다.",
+        "SDD는 natural drainage 상태로 꼬임/폐쇄/빠짐을 확인한다.",
+        "배액백은 2/3 도달 시 비우고 감염에 주의한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "V71_EVD_NURSING",
+        "V71_EVD_ICP_CVP_OVERVIEW",
+        "V71_ICP_MANAGEMENT",
+        "VIDEO_V91_EVD_ICP_TRAGUS",
+        "UPD43_DRESSING___SDD_EVD"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "EVD / SDD 관리표",
+          "caption": "tragus 기준, CSF 배액량, ICP, natural drainage",
+          "headers": [
+            "항목",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "EVD 목적",
+              "CSF 배액, ICP monitoring, hydrocephalus/IVH 관리",
+              "leveling, zeroing, 배액량/색/감염징후 확인"
+            ],
+            [
+              "EVD 높이",
+              "보통 tragus 기준 상방 0~15 cm setting",
+              "처방 높이와 실제 chamber 높이 일치 확인"
+            ],
+            [
+              "EVD 배액량",
+              "정상 CSF는 무색, 시간당 생성량 약 15~20 mL",
+              "시간당 100 mL 이상이면 출혈 가능성 고려해 즉시 보고"
+            ],
+            [
+              "ICP 기준",
+              "정상 ICP 5~15 mmHg, IICP 20 mmHg 이상",
+              "ICP 수치+신경학적 변화 함께 판단"
+            ],
+            [
+              "배액백",
+              "용량의 2/3 도달 시 비움",
+              "비울 때 clamp, 감염 주의, 후 clamp 해제 확인"
+            ],
+            [
+              "SDD 관리",
+              "땅끝까지 내려 natural drainage 유지",
+              "배액량/색/폐쇄/꼬임/빠짐/감염징후 확인"
+            ]
+          ],
+          "search_terms": [
+            "EVD관리표",
+            "SDD관리표",
+            "ICP표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_evd_sdd_management_table.png",
+          "alt": "EVD SDD 관리와 배액량 높이 표 이미지",
+          "caption": "EVD/SDD 관리 핵심표",
+          "search_terms": [
+            "EVD 이미지",
+            "SDD 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_NS_POSTOP",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "신경계 수술 후 관찰: Burr hole·EVD·SDD·Coil embolization",
+      "aliases": [
+        "Burr hole 수술 후",
+        "EVD insertion 후",
+        "SDD insertion 후",
+        "Coil embolization 후",
+        "신경계 수술 후 기록"
+      ],
+      "search_terms": [
+        "신경계 수술 후 관찰: Burr hole·EVD·SDD·Coil embolization",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "Burr hole 수술 후",
+        "EVD insertion 후",
+        "SDD insertion 후",
+        "Coil embolization 후",
+        "신경계 수술 후 기록",
+        "Burr hole",
+        "EVD insertion",
+        "SDD insertion",
+        "Coil embolization",
+        "Angio",
+        "Radial",
+        "puncture site",
+        "NS postop"
+      ],
+      "urgency": "routine",
+      "summary": "Burr hole 수술 후 1·2·6시간 f/u, EVD/SDD 관리, Coil embolization 전후 관찰과 신경계 수술 후 기록 포인트를 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "Burr hole 후 return 시간과 1·2·6시간 f/u를 확인한다.",
+        "EVD/SDD 배액과 neuro sign을 함께 본다.",
+        "Coil 전 수술 전 처치표, Anti prep, Angio실 인계를 확인한다.",
+        "Coil 후 radial/puncture site, 말초순환, 출혈/혈종을 관찰한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "NSPROC030",
+        "PROC010",
+        "V69_STROKE_HEMORRHAGIC",
+        "V74_ICU_NEURO",
+        "VIDEO_V91_NS_TRANSFER_PREP",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
+      ],
+      "tables": [
+        {
+          "title": "NS 수술 후 관찰표",
+          "caption": "Burr hole · EVD · SDD · Coil embolization",
+          "headers": [
+            "수술/시술",
+            "확인 내용",
+            "기록/보고 포인트"
+          ],
+          "rows": [
+            [
+              "Burr hole 후",
+              "수술 return 시간, 1·2·6시간 f/u",
+              "Mental/GCS/Pupil/Motor, V/S, wound, SDD/EVD 확인"
+            ],
+            [
+              "EVD insertion 후",
+              "높이·배액량·색·ICP·clamp 상태 확인",
+              "tragus 기준 leveling, 감염예방, 과배액 주의"
+            ],
+            [
+              "SDD insertion 후",
+              "natural drainage, drain 위치/꼬임/폐쇄 확인",
+              "배액량 급증/혈성 변화/의식변화 보고"
+            ],
+            [
+              "Coil embolization 전",
+              "수술 전 처치표, Anti prep(AST 확인), Angio실 인계",
+              "동의서/금식/IV/검사 확인"
+            ],
+            [
+              "Coil embolization 후",
+              "Radial 6시간 뒤 제거, 제거 후 슈퍼포아 dressing, 다음날 open",
+              "puncture site dressing 6시간 후 제거, 출혈/혈종/말초순환 확인"
+            ],
+            [
+              "신경계 기록",
+              "return 시간, neuro sign, drain/ICP, puncture site, V/S",
+              "새로운 deficit/출혈/배액변화/통증 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "Burr hole표",
+            "Coil표",
+            "NS수술후표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_ns_postop_table.png",
+          "alt": "신경계 수술 후 관찰 포인트 표 이미지",
+          "caption": "Burr hole/EVD/SDD/Coil 후 관찰표",
+          "search_terms": [
+            "Burr hole 이미지",
+            "Coil 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_SURGERY_PREPOST_ICU",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "수술 전·후 ICU 간호: 동의서·금식·입실·출혈·Drain·기록",
+      "aliases": [
+        "수술 전 준비",
+        "수술 전 동의서",
+        "수술 전 금식",
+        "수술 후 ICU 입실",
+        "수술 후 drain",
+        "수술 후 기록"
+      ],
+      "search_terms": [
+        "수술 전·후 ICU 간호: 동의서·금식·입실·출혈·Drain·기록",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "수술 전 준비",
+        "수술 전 동의서",
+        "수술 전 금식",
+        "수술 후 ICU 입실",
+        "수술 후 drain",
+        "수술 후 기록",
+        "수술전",
+        "pre-op",
+        "post-op",
+        "동의서",
+        "금식",
+        "NPO",
+        "ICU 입실",
+        "drain",
+        "출혈",
+        "수술 후 활력징후"
+      ],
+      "urgency": "routine",
+      "summary": "수술 전 준비, 동의서/금식 확인, 수술 후 ICU 입실, 활력징후, 출혈, drain, 기록 포인트를 한눈에 볼 수 있게 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "수술 전 검사, 항생제 AST, IV, Foley, 금식, 동의서를 확인한다.",
+        "수술 전 처치표를 출력해 항생제와 함께 파일에 넣어 보낸다.",
+        "수술 후 ICU 입실 시 return 시간, V/S, 의식, 통증, 산소, line/drain을 확인한다.",
+        "출혈과 drain 변화는 시간순으로 기록한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "SURG030",
+        "V83_DETAIL_06",
+        "V83_DETAIL_07",
+        "CONSENT001",
+        "VIDEO_V91_TABLET_CONSENT",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
+      ],
+      "tables": [
+        {
+          "title": "수술 전·후 ICU 간호표",
+          "caption": "동의서·금식·입실·출혈·Drain·기록",
+          "headers": [
+            "단계",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "수술 전 준비",
+              "수술 lab, Chest PA, EKG, 항생제 반응검사 확인",
+              "처방된 IV, Foley, 금식, 보조기/항생제 확인"
+            ],
+            [
+              "동의서/표식",
+              "수술동의서, 수술표식/표식지, PCA 동의서 확인",
+              "누락 시 내려가기 전 보완"
+            ],
+            [
+              "금식/이송",
+              "금식 시간, 필요 시 배뇨, 환의 외 부착물 제거",
+              "수술 전 처치표 출력 후 항생제와 파일에 끼워 보냄"
+            ],
+            [
+              "수술 후 ICU 입실",
+              "return 시간, V/S, 의식, 통증, 산소, line/drain 확인",
+              "초기 1·2·6시간 f/u 강화"
+            ],
+            [
+              "출혈/Drain",
+              "op site, dressing, JP/H-vac/EVD/SDD/Foley 확인",
+              "배액량·색·clot·sudden increase 즉시 보고"
+            ],
+            [
+              "기록",
+              "수술명, 마취, 입실시간, V/S, drain, 통증, 투약/항생제",
+              "변화는 시간순으로 기록"
+            ]
+          ],
+          "search_terms": [
+            "수술전후표",
+            "ICU입실표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_surgery_prepost_table.png",
+          "alt": "수술 전후 ICU 간호 체크 표 이미지",
+          "caption": "수술 전·후 ICU 간호 체크표",
+          "search_terms": [
+            "수술 전후 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_PROCEDURE_PREPOST",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "시술 전후 간호: TFCA·Tracheostomy·EGD·ERCP·CFS",
+      "aliases": [
+        "TFCA 전후 간호",
+        "Tracheostomy 전후 간호",
+        "EGD 전후 간호",
+        "ERCP 전후 간호",
+        "CFS 전후 간호"
+      ],
+      "search_terms": [
+        "시술 전후 간호: TFCA·Tracheostomy·EGD·ERCP·CFS",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "TFCA 전후 간호",
+        "Tracheostomy 전후 간호",
+        "EGD 전후 간호",
+        "ERCP 전후 간호",
+        "CFS 전후 간호",
+        "TFCA",
+        "Tracheostomy",
+        "EGD",
+        "ERCP",
+        "CFS",
+        "내시경",
+        "기관절개관",
+        "전후 간호",
+        "puncture site"
+      ],
+      "urgency": "routine",
+      "summary": "TFCA, Tracheostomy, EGD, ERCP, CFS 전후 간호를 준비/관찰 포인트 중심으로 표 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "시술 전 동의서, 금식, IV, 검사결과, 조영제/수면 여부를 확인한다.",
+        "시술 후 출혈, 천공, 췌장염, 기도문제, 말초순환을 시술별로 확인한다.",
+        "기록은 시술명, 시간, 관찰소견, 교육, 보고 내용을 포함한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "PROC011",
+        "PROC012",
+        "PROC013",
+        "PROC014",
+        "V82_DETAIL_08",
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리",
+        "V102 NS/OS 수술명·약어·수술 전 검사 표 이미지 보강"
+      ],
+      "tables": [
+        {
+          "title": "시술 전후 간호표",
+          "caption": "TFCA · Tracheostomy · EGD · ERCP · CFS",
+          "headers": [
+            "검사/시술",
+            "준비/전후 확인",
+            "관찰 포인트"
+          ],
+          "rows": [
+            [
+              "TFCA 전후",
+              "동의서/금식/IV/조영제 알레르기/검사 전후 puncture site 확인",
+              "시술 후 침상안정, 말초순환/출혈/혈종 관찰"
+            ],
+            [
+              "Tracheostomy 전후",
+              "기관절개관 동의서, 전신마취동의서, 수술 전 처치표, 크기별 tube 준비, NPO",
+              "기도개방성, 출혈, 튜브고정, suction, 응급tube 준비"
+            ],
+            [
+              "EGD 전후",
+              "금식, 동의서, 수면 여부 확인",
+              "검사 후 의식/구역반사/복통/출혈 확인, 식이 재개 기준 확인"
+            ],
+            [
+              "ERCP 전후",
+              "금식, 동의서, 조영제/췌장염 위험 확인",
+              "검사 후 복통/발열/췌장염/출혈 관찰"
+            ],
+            [
+              "CFS 전후",
+              "장정결, 금식, 동의서, 수면 여부 확인",
+              "검사 후 복통/출혈/천공 의심 증상 확인"
+            ],
+            [
+              "NS 검사 이동",
+              "검사 전 vital, monitor/O2/drain/line 정리",
+              "EVD/SDD clamp 여부, 산소·응급물품, 인계내용 확인"
+            ]
+          ],
+          "search_terms": [
+            "TFCA표",
+            "Tracheostomy표",
+            "EGD ERCP CFS 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_procedure_prepost_table.png",
+          "alt": "시술 전후 간호 한눈에 보기 이미지",
+          "caption": "TFCA/Tracheostomy/EGD/ERCP/CFS 전후 간호표",
+          "search_terms": [
+            "시술 전후 이미지"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V100_SPINAL_TAPPING_CSF",
+      "category": "신경계 / 수술·시술 / 원내 프로토콜",
+      "title": "Spinal tapping 총정리: 준비·간호·진단·목적·CSF study",
+      "aliases": [
+        "Spinal tapping",
+        "spinal tap",
+        "요추천자",
+        "lumbar puncture",
+        "CSF study",
+        "뇌척수액 검사"
+      ],
+      "search_terms": [
+        "Spinal tapping 총정리: 준비·간호·진단·목적·CSF study",
+        "신경계 / 수술·시술 / 원내 프로토콜",
+        "신경계",
+        "수술 시술",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "9페이지",
+        "13페이지",
+        "21페이지",
+        "28페이지",
+        "43페이지",
+        "119페이지",
+        "131페이지",
+        "Spinal tapping",
+        "spinal tap",
+        "요추천자",
+        "lumbar puncture",
+        "CSF study",
+        "뇌척수액 검사",
+        "spinal tapping",
+        "CSF",
+        "뇌척수액",
+        "cell count",
+        "culture",
+        "protein",
+        "glucose",
+        "cytology"
+      ],
+      "urgency": "routine",
+      "summary": "Spinal tapping의 목적, 진단적 의미, 준비물, 시행 전후 간호, CSF study 검사항목을 표와 흐름도로 정리했습니다.",
+      "indications": [
+        "신경계 환자 사정, EVD/SDD 관리, NS 수술/시술 전후 간호, spinal tapping/CSF study 확인 시"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "동의서/금식/검사/line/drain 확인",
+        "병원 최신 지침과 담당의 지시 우선"
+      ],
+      "steps": [
+        "동의서와 처방 검사를 확인한다.",
+        "항응고제/혈소판/INR, ICP 상승 의심, 영상 확인 필요 여부를 의료진과 확인한다.",
+        "멸균세트, spinal needle, CSF tube, label을 준비한다.",
+        "시행 후 두통, 천자부위 출혈/CSF leakage, 신경학적 변화를 관찰한다.",
+        "CSF study 검체는 label과 검사명을 확인해 즉시 이송한다."
+      ],
+      "warnings": [
+        "원내 매뉴얼 및 기존 앱 DB를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "사정 시각, GCS/Mental/Pupil/Motor, V/S, drain/배액량/높이, 시술 전후 확인, 처치와 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "NSPROC030",
+        "V100_NEURO_ASSESSMENT"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p9~13, p21~28, p43, p119~131 및 기존 신경계/수술·시술 DB 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "Spinal tapping 준비·간호·진단·목적표",
+          "caption": "요추천자 핵심",
+          "headers": [
+            "구분",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "목적",
+              "CSF pressure 측정, CSF study, 감염/출혈/염증/종양성 질환 감별",
+              "검사 목적과 처방 검체 확인"
+            ],
+            [
+              "진단",
+              "meningitis/encephalitis, SAH 의심, demyelinating disease, CNS malignancy 등",
+              "금기/위험요인 확인 후 시행"
+            ],
+            [
+              "준비물",
+              "멸균세트, spinal needle, CSF tube, 소독제, dressing, label, 검체의뢰",
+              "검체 순서와 검사명 사전 확인"
+            ],
+            [
+              "시행 전 간호",
+              "동의서, V/S, 항응고제/혈소판/INR, brain imaging 필요 여부 확인",
+              "ICP 상승 의심 시 의료진 확인 필수"
+            ],
+            [
+              "체위",
+              "lateral decubitus 또는 sitting, 등을 둥글게 말기",
+              "움직이지 않도록 설명, 낙상 예방"
+            ],
+            [
+              "시행 후 간호",
+              "천자부위 출혈/CSF leakage, 두통, 신경학적 변화 관찰",
+              "침상안정/수분섭취/통증보고 교육은 병원 지침 따름"
+            ]
+          ],
+          "search_terms": [
+            "Spinal tapping 표",
+            "요추천자표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "CSF study 검사항목표",
+          "caption": "뇌척수액 검사",
+          "headers": [
+            "검사",
+            "의미",
+            "간호/검체 포인트"
+          ],
+          "rows": [
+            [
+              "Cell count & differential",
+              "WBC/RBC, neutrophil/lymphocyte 비율",
+              "감염/출혈/염증 감별에 사용"
+            ],
+            [
+              "Protein / Glucose",
+              "단백, 당 수치",
+              "혈당 동시 확인 시 해석 도움"
+            ],
+            [
+              "Gram stain / Culture",
+              "세균 감염 확인",
+              "검체 오염 방지, 즉시 이송"
+            ],
+            [
+              "AFB / TB PCR",
+              "결핵성 수막염 의심 시",
+              "처방 여부 확인"
+            ],
+            [
+              "Cytology",
+              "종양성 질환/암세포 의심 시",
+              "충분량과 즉시 이송 중요"
+            ],
+            [
+              "주의",
+              "검체 tube label, 채취시간, 항생제 투여 전 여부",
+              "누락/혼동 방지, 검사실 즉시 전달"
+            ]
+          ],
+          "search_terms": [
+            "CSF study 표",
+            "뇌척수액검사표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v100_spinal_tapping_table.png",
+          "alt": "Spinal tapping 총정리 표 이미지",
+          "caption": "Spinal tapping 준비·목적·진단·간호표",
+          "search_terms": [
+            "spinal tapping 이미지",
+            "요추천자 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v100_csf_study_table.png",
+          "alt": "CSF study 검사항목 표 이미지",
+          "caption": "CSF study 검사항목 요약표",
+          "search_terms": [
+            "CSF study 이미지",
+            "뇌척수액 검사 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v100_spinal_tapping_flow.png",
+          "alt": "Spinal tapping CSF study 흐름 이미지",
+          "caption": "확인→준비→체위→검체→사후관찰→이송 흐름",
+          "search_terms": [
+            "spinal tapping flow"
+          ]
+        }
+      ],
+      "videos": [],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V101_BRACE_ORIGINAL_IMAGES",
+      "category": "수술 / 시술 / 보조기",
+      "title": "보조기 원본 이미지 모음: L-sling·Brace·Splint 착용 확인",
+      "aliases": [
+        "보조기 이미지",
+        "brace image",
+        "L-sling 이미지",
+        "splint 이미지",
+        "보조기 원본"
+      ],
+      "search_terms": [
+        "보조기",
+        "brace",
+        "splint",
+        "L-sling",
+        "엘슬링",
+        "팔걸이",
+        "보조기 사진",
+        "보조기 원본 이미지",
+        "보조기 착용",
+        "보조기 간호"
+      ],
+      "summary": "기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다.",
+      "indications": [
+        "보조기 착용 방법과 원본 이미지를 같이 확인할 때",
+        "수술/시술 후 보조기 적용 상태를 확인할 때"
+      ],
+      "preparation": [
+        "처방된 보조기 종류와 적용부위 확인",
+        "좌우 방향, 사이즈, 피부상태 확인",
+        "환자에게 목적과 불편 시 알릴 내용을 설명"
+      ],
+      "steps": [
+        "보조기 원본 이미지를 보며 종류와 방향을 확인한다.",
+        "적용 전 피부, 말초순환, 감각, 운동, 통증을 baseline으로 확인한다.",
+        "착용 후 압박·저림·손끝색·부종·통증을 다시 확인한다.",
+        "이상 소견은 즉시 완화/보고하고 기록한다."
+      ],
+      "warnings": [
+        "원본 이미지는 교육용 참고자료입니다. 실제 보조기 적용은 처방과 병원 지침, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "보조기 종류, 적용부위, 착용 시간, 피부상태, 말초순환, 감각/통증, 교육내용을 기록"
+      ],
+      "related": [
+        "V65_NEW_NURSE_NOTES",
+        "V86_DETAIL_07",
+        "VIDEO_V91_L_SLING",
+        "V100_SURGERY_PREPOST_ICU"
+      ],
+      "source_refs": [
+        "기존 매뉴얼 추출 보조기 이미지 원본 반영"
+      ],
+      "tables": [
+        {
+          "title": "보조기 착용 확인표",
+          "caption": "보조기 원본 이미지와 함께 확인",
+          "headers": [
+            "구분",
+            "목적/내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "L-sling / Arm sling",
+              "상지 보조·팔걸이 목적",
+              "착용 방향, 압박/말초순환, 피부 눌림 확인"
+            ],
+            [
+              "Brace / Splint류",
+              "수술·외상 후 고정·보호",
+              "피부손상, 저림, 통증, 부종, 고정상태 확인"
+            ],
+            [
+              "착용 전",
+              "처방·적용부위·좌우·사이즈 확인",
+              "환자에게 목적 설명, 피부상태 baseline 확인"
+            ],
+            [
+              "착용 후",
+              "말초순환·감각·운동·통증 확인",
+              "capillary refill, 손끝색, 저림/차가움 관찰"
+            ],
+            [
+              "기록",
+              "적용 시간, 종류, 부위, 피부/순환 상태",
+              "이상 시 제거/완화 여부와 보고내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "보조기표",
+            "brace 표",
+            "L-sling 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/brace_0014.png",
+          "alt": "보조기 원본 이미지 1",
+          "caption": "보조기 원본 이미지 1",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0015.png",
+          "alt": "보조기 원본 이미지 2",
+          "caption": "보조기 원본 이미지 2",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0016.png",
+          "alt": "보조기 원본 이미지 3",
+          "caption": "보조기 원본 이미지 3",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0017.png",
+          "alt": "보조기 원본 이미지 4",
+          "caption": "보조기 원본 이미지 4",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0018.png",
+          "alt": "보조기 원본 이미지 5",
+          "caption": "보조기 원본 이미지 5",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0019.png",
+          "alt": "보조기 원본 이미지 6",
+          "caption": "보조기 원본 이미지 6",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001a.png",
+          "alt": "보조기 원본 이미지 7",
+          "caption": "보조기 원본 이미지 7",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001b.png",
+          "alt": "보조기 원본 이미지 8",
+          "caption": "보조기 원본 이미지 8",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001c.png",
+          "alt": "보조기 원본 이미지 9",
+          "caption": "보조기 원본 이미지 9",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001d.png",
+          "alt": "보조기 원본 이미지 10",
+          "caption": "보조기 원본 이미지 10",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001e.png",
+          "alt": "보조기 원본 이미지 11",
+          "caption": "보조기 원본 이미지 11",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_001f.png",
+          "alt": "보조기 원본 이미지 12",
+          "caption": "보조기 원본 이미지 12",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/brace_0020.png",
+          "alt": "보조기 원본 이미지 13",
+          "caption": "보조기 원본 이미지 13",
+          "search_terms": [
+            "보조기",
+            "brace",
+            "splint",
+            "L-sling",
+            "보조기 이미지",
+            "원본 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V102_NS_OS_PREOP_TABLES_OVERVIEW",
+      "category": "신경계 / 수술·시술 / 원본표 보강",
+      "title": "NS/OS 수술명·약어·수술 전 검사 표 전체 보기",
+      "aliases": [
+        "NS OS 표 전체",
+        "수술명 약어 전체",
+        "수술 전 검사 전체",
+        "원본표 전체보기"
+      ],
+      "search_terms": [
+        "NS/OS 수술명·약어·수술 전 검사 표 전체 보기",
+        "신경계 / 수술·시술 / 원본표 보강",
+        "NS",
+        "OS",
+        "수술명",
+        "약어",
+        "수술 전 검사",
+        "수술 전 준비",
+        "원본표",
+        "병동간호팀 간호사메뉴얼",
+        "NS OS 표 전체",
+        "수술명 약어 전체",
+        "수술 전 검사 전체",
+        "원본표 전체보기",
+        "NS 수술명",
+        "OS 수술명",
+        "수술약어",
+        "pre op exam",
+        "수술전검사",
+        "Burr hole",
+        "ORIF",
+        "TKRA",
+        "THRA"
+      ],
+      "urgency": "routine",
+      "summary": "V100에서 부족했던 NS/OS 수술명, 약어, 수술 전 검사, 수술 전후 관찰표를 사용자가 항상 이미지로 볼 수 있게 묶은 총괄 카드입니다.",
+      "indications": [
+        "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "수술명/약어/부위/좌우 확인",
+        "동의서·검사·금식·약물·이송 준비 확인",
+        "원내 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "NS 수술명·약어표를 확인한다.",
+        "OS 수술명·약어표를 확인한다.",
+        "수술 전 검사와 수술 전 체크리스트를 확인한다.",
+        "NS/OS 수술 후 관찰표와 drain pressure 표를 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다."
+      ],
+      "charting": [
+        "수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록"
+      ],
+      "related": [
+        "V100_NEURO_SURGERY_OVERVIEW",
+        "V100_SURGERY_PREPOST_ICU",
+        "V100_NS_POSTOP",
+        "V101_BRACE_ORIGINAL_IMAGES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강"
+      ],
+      "tables": [
+        {
+          "title": "V102 추가 표 목록",
+          "caption": "이미지로 볼 수 있는 표 목록",
+          "headers": [
+            "표",
+            "이미지 파일",
+            "내용"
+          ],
+          "rows": [
+            [
+              "NS 수술명·약어 표",
+              "v102_ns_surgery_abbrev_table.png",
+              "Burr hole, EVD, SDD, Coil, TFCA, Spinal tapping 등"
+            ],
+            [
+              "OS 수술명·약어 표",
+              "v102_os_surgery_abbrev_table.png",
+              "ORIF, CRIF, TKRA, THRA, PLIF/TLIF 등"
+            ],
+            [
+              "수술 전 검사 표",
+              "v102_preop_exam_table.png",
+              "CBC, Chemistry, Coagulation, Chest PA, EKG 등"
+            ],
+            [
+              "수술 전 체크리스트 표",
+              "v102_preop_checklist_table.png",
+              "동의서, 표식, 금식, 검사, 약물, 이송"
+            ],
+            [
+              "NS 수술 후 관찰표",
+              "v102_ns_postop_check_table.png",
+              "return, 1·2·6hr f/u, drain, wound, seizure/IICP"
+            ],
+            [
+              "OS 수술 후 관찰표",
+              "v102_os_postop_check_table.png",
+              "CMS, drain pressure, brace, DVT, 통증"
+            ],
+            [
+              "OS drain pressure 원본표 재구성",
+              "v102_os_drain_pressure_table.png",
+              "OS 과별 drain pressure / clamp / 제거기준"
+            ]
+          ],
+          "search_terms": [
+            "V102표목록",
+            "수술명약어"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "NS OS 수술명 약어 수술전검사 전체 보강 이미지",
+          "caption": "V102 보강 전체 요약",
+          "search_terms": [
+            "NS OS 전체 이미지",
+            "수술명 약어 전체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_ns_surgery_abbrev_table.png",
+          "alt": "NS 수술명 약어 표 이미지",
+          "caption": "NS 수술명·약어 표",
+          "search_terms": [
+            "NS 수술명 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_os_surgery_abbrev_table.png",
+          "alt": "OS 수술명 약어 표 이미지",
+          "caption": "OS 수술명·약어 표",
+          "search_terms": [
+            "OS 수술명 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_preop_exam_table.png",
+          "alt": "수술 전 검사 표 이미지",
+          "caption": "수술 전 검사 내용 표",
+          "search_terms": [
+            "수술 전 검사 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_preop_checklist_table.png",
+          "alt": "수술 전 체크리스트 표 이미지",
+          "caption": "수술 전 준비 체크리스트",
+          "search_terms": [
+            "수술 전 체크 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_ns_postop_check_table.png",
+          "alt": "NS 수술 후 관찰표 이미지",
+          "caption": "NS 수술 후 관찰표",
+          "search_terms": [
+            "NS 수술 후 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_os_postop_check_table.png",
+          "alt": "OS 수술 후 관찰표 이미지",
+          "caption": "OS 수술 후 관찰표",
+          "search_terms": [
+            "OS 수술 후 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_os_drain_pressure_table.png",
+          "alt": "OS drain pressure 표 이미지",
+          "caption": "OS drain pressure 원본표 재구성",
+          "search_terms": [
+            "OS drain pressure 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V102_NS_SURGERY_ABBREV_TABLE",
+      "category": "신경계 / 수술·시술 / 원본표 보강",
+      "title": "NS 수술명·약어 표: Burr hole·EVD·SDD·Coil·TFCA·Spinal tapping",
+      "aliases": [
+        "NS 수술명",
+        "NS 약어",
+        "신경외과 수술명",
+        "Burr hole 약어",
+        "Coil embolization 약어"
+      ],
+      "search_terms": [
+        "NS 수술명·약어 표: Burr hole·EVD·SDD·Coil·TFCA·Spinal tapping",
+        "신경계 / 수술·시술 / 원본표 보강",
+        "NS",
+        "OS",
+        "수술명",
+        "약어",
+        "수술 전 검사",
+        "수술 전 준비",
+        "원본표",
+        "병동간호팀 간호사메뉴얼",
+        "NS 수술명",
+        "NS 약어",
+        "신경외과 수술명",
+        "Burr hole 약어",
+        "Coil embolization 약어",
+        "Burr hole",
+        "Craniotomy",
+        "Craniectomy",
+        "EVD",
+        "SDD",
+        "VP shunt",
+        "Coil embolization",
+        "TFCA",
+        "DSA",
+        "Spinal tapping",
+        "TCD"
+      ],
+      "urgency": "routine",
+      "summary": "신경외과에서 자주 보는 수술/시술명과 약어, 목적, 간호 포인트를 표 이미지로 보이게 정리했습니다.",
+      "indications": [
+        "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "수술명/약어/부위/좌우 확인",
+        "동의서·검사·금식·약물·이송 준비 확인",
+        "원내 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "약어와 한글 수술명을 확인한다.",
+        "수술/시술 목적을 확인한다.",
+        "수술 후 관찰 포인트를 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다."
+      ],
+      "charting": [
+        "수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록"
+      ],
+      "related": [
+        "NSPROC030",
+        "V100_NS_POSTOP",
+        "V100_SPINAL_TAPPING_CSF"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강"
+      ],
+      "tables": [
+        {
+          "title": "NS 수술명·약어 표",
+          "caption": "신경외과 수술/시술명",
+          "headers": [
+            "약어/수술명",
+            "풀네임/한글",
+            "목적/상황",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Burr hole",
+              "천공술",
+              "SDH/ICH 등 배액 목적",
+              "return 1·2·6hr f/u, mental/GCS/pupil/motor, SDD/EVD 배액 확인"
+            ],
+            [
+              "Craniotomy",
+              "개두술",
+              "종양/출혈/감압 등",
+              "의식변화, 동공변화, 출혈, seizure, drain 관찰"
+            ],
+            [
+              "Craniectomy",
+              "두개골 절제술",
+              "감압 목적",
+              "뇌압상승 징후, flap 보호, 외부충격 주의"
+            ],
+            [
+              "EVD insertion",
+              "뇌실외배액관 삽입",
+              "ICP monitoring/CSF drainage",
+              "tragus 기준 높이, 배액량/색, clamp, 감염징후"
+            ],
+            [
+              "SDD insertion",
+              "경막하 배액관 삽입",
+              "SDH drainage",
+              "natural drainage, 꼬임/폐쇄/빠짐, 배액량/색"
+            ],
+            [
+              "VP shunt",
+              "뇌실복강단락술",
+              "hydrocephalus",
+              "감염, shunt malfunction, 복부증상, mental change"
+            ],
+            [
+              "Coil embolization",
+              "동맥류 코일색전술",
+              "aneurysm 치료",
+              "puncture site, radial/femoral, 말초순환, 출혈/혈종"
+            ],
+            [
+              "TFCA/DSA",
+              "뇌혈관조영술",
+              "혈관평가/치료 전 검사",
+              "조영제, 금식, puncture site, neuro sign 관찰"
+            ],
+            [
+              "Spinal tapping",
+              "요추천자",
+              "CSF pressure/study",
+              "동의서, 검사 tube, 시행 후 두통/CSF leakage 관찰"
+            ],
+            [
+              "TCD",
+              "경두개도플러",
+              "뇌혈류 평가",
+              "검사 전후 특이 준비/기록 확인"
+            ]
+          ],
+          "search_terms": [
+            "NS수술명표",
+            "Burr hole",
+            "EVD",
+            "SDD",
+            "TFCA"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_surgery_abbrev_table.png",
+          "alt": "NS 수술명 약어 표 이미지",
+          "caption": "NS 수술명·약어 표 이미지",
+          "search_terms": [
+            "NS 수술명 표 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V102_OS_SURGERY_ABBREV_TABLE",
+      "category": "신경계 / 수술·시술 / 원본표 보강",
+      "title": "OS 수술명·약어 표: ORIF·CRIF·TKRA·THRA·PLIF/TLIF",
+      "aliases": [
+        "OS 수술명",
+        "OS 약어",
+        "정형외과 수술명",
+        "ORIF",
+        "TKRA",
+        "THRA"
+      ],
+      "search_terms": [
+        "OS 수술명·약어 표: ORIF·CRIF·TKRA·THRA·PLIF/TLIF",
+        "신경계 / 수술·시술 / 원본표 보강",
+        "NS",
+        "OS",
+        "수술명",
+        "약어",
+        "수술 전 검사",
+        "수술 전 준비",
+        "원본표",
+        "병동간호팀 간호사메뉴얼",
+        "OS 수술명",
+        "OS 약어",
+        "정형외과 수술명",
+        "ORIF",
+        "TKRA",
+        "THRA",
+        "CRIF",
+        "CRPP",
+        "IM nail",
+        "TKA",
+        "THA",
+        "ACL",
+        "PCL",
+        "arthroscopy",
+        "PLIF",
+        "TLIF",
+        "laminectomy",
+        "discectomy",
+        "vertebroplasty",
+        "kyphoplasty"
+      ],
+      "urgency": "routine",
+      "summary": "정형외과에서 자주 보는 수술명/약어와 수술 후 관찰 포인트를 표 이미지로 보이게 정리했습니다.",
+      "indications": [
+        "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "수술명/약어/부위/좌우 확인",
+        "동의서·검사·금식·약물·이송 준비 확인",
+        "원내 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "OS 약어와 풀네임을 확인한다.",
+        "수술 부위와 좌우를 확인한다.",
+        "수술 후 말초순환, 보조기, drain, 통증/부종을 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다."
+      ],
+      "charting": [
+        "수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록"
+      ],
+      "related": [
+        "V65_OS_DEPT_MANUAL",
+        "V101_BRACE_ORIGINAL_IMAGES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강"
+      ],
+      "tables": [
+        {
+          "title": "OS 수술명·약어 표",
+          "caption": "정형외과 수술/시술명",
+          "headers": [
+            "약어",
+            "풀네임",
+            "한글/의미",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "ORIF",
+              "Open reduction internal fixation",
+              "개방정복 내고정",
+              "수술부위 출혈/부종/감각·운동·순환, drain 확인"
+            ],
+            [
+              "CRIF",
+              "Closed reduction internal fixation",
+              "폐쇄정복 내고정",
+              "cast/splint 압박, 말초순환, 통증 확인"
+            ],
+            [
+              "CRPP",
+              "Closed reduction percutaneous pinning",
+              "폐쇄정복 핀고정",
+              "pin site, 감염, 출혈, 말초순환 관찰"
+            ],
+            [
+              "IM nail",
+              "Intramedullary nailing",
+              "골수강내 금속정 고정",
+              "출혈, 통증, compartment 증상 확인"
+            ],
+            [
+              "TKRA/TKA",
+              "Total knee replacement arthroplasty",
+              "인공슬관절치환술",
+              "H/V·JP drain, CPM, DVT, 통증/부종 확인"
+            ],
+            [
+              "THRA/THA",
+              "Total hip replacement arthroplasty",
+              "인공고관절치환술",
+              "탈구예방 자세, abduction, DVT, drain 확인"
+            ],
+            [
+              "ACL/PCL reconstruction",
+              "십자인대 재건술",
+              "무릎 인대 수술",
+              "보조기, neurovascular check, 통증/부종"
+            ],
+            [
+              "Arthroscopy",
+              "관절경",
+              "무릎/어깨 등 관절경 수술",
+              "puncture site, 통증/부종, ice/elevation"
+            ],
+            [
+              "PLIF/TLIF",
+              "Lumbar interbody fusion",
+              "요추 유합술",
+              "신경증상, drain, 보조기, 배뇨/통증 확인"
+            ],
+            [
+              "Laminectomy/Discectomy",
+              "후궁절제/디스크제거",
+              "척추 감압/디스크 수술",
+              "하지 감각/운동, 배뇨, 통증, 출혈 관찰"
+            ],
+            [
+              "VP/KP",
+              "Vertebroplasty/Kyphoplasty",
+              "척추성형술/풍선성형술",
+              "시술부위 통증, 하지증상, 출혈 확인"
+            ],
+            [
+              "TSA/RSA",
+              "Shoulder arthroplasty",
+              "어깨 인공관절",
+              "sling/brace, 말초순환, 감각·운동 확인"
+            ]
+          ],
+          "search_terms": [
+            "OS수술명표",
+            "ORIF",
+            "TKRA",
+            "THRA"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_os_surgery_abbrev_table.png",
+          "alt": "OS 수술명 약어 표 이미지",
+          "caption": "OS 수술명·약어 표 이미지",
+          "search_terms": [
+            "OS 수술명 표 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V102_PREOP_EXAM_AND_CHECKLIST_TABLES",
+      "category": "신경계 / 수술·시술 / 원본표 보강",
+      "title": "수술 전 검사 내용·수술 전 준비 체크리스트 표",
+      "aliases": [
+        "수술 전 검사",
+        "pre op lab",
+        "pre-op exam",
+        "수술 전 준비표",
+        "수술 전 체크리스트"
+      ],
+      "search_terms": [
+        "수술 전 검사 내용·수술 전 준비 체크리스트 표",
+        "신경계 / 수술·시술 / 원본표 보강",
+        "NS",
+        "OS",
+        "수술명",
+        "약어",
+        "수술 전 검사",
+        "수술 전 준비",
+        "원본표",
+        "병동간호팀 간호사메뉴얼",
+        "pre op lab",
+        "pre-op exam",
+        "수술 전 준비표",
+        "수술 전 체크리스트",
+        "CBC",
+        "Chemistry",
+        "Coagulation",
+        "PT",
+        "aPTT",
+        "INR",
+        "Chest PA",
+        "EKG",
+        "blood type",
+        "crossmatch",
+        "urinalysis",
+        "pregnancy test",
+        "ABGA",
+        "동의서",
+        "표식",
+        "금식"
+      ],
+      "urgency": "routine",
+      "summary": "수술 전 검사 항목과 수술 전 준비 체크리스트를 표 이미지로 보이게 정리했습니다.",
+      "indications": [
+        "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "수술명/약어/부위/좌우 확인",
+        "동의서·검사·금식·약물·이송 준비 확인",
+        "원내 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "수술 전 검사 누락 여부를 확인한다.",
+        "이상치와 항응고제/항혈소판제 중단 여부를 확인한다.",
+        "동의서, 표식, 금식, line, 이송 준비를 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다."
+      ],
+      "charting": [
+        "수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록"
+      ],
+      "related": [
+        "SURG030",
+        "V83_DETAIL_06",
+        "CONSENT001",
+        "VIDEO_V91_TABLET_CONSENT"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강"
+      ],
+      "tables": [
+        {
+          "title": "수술 전 검사 내용표",
+          "caption": "검사 항목·목적·간호 포인트",
+          "headers": [
+            "검사",
+            "확인 항목",
+            "목적",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "CBC",
+              "Hb/Hct, WBC, Platelet",
+              "빈혈/감염/출혈위험 평가",
+              "Hb 낮음, PLT 낮음은 보고"
+            ],
+            [
+              "Chemistry",
+              "Na/K/Cl, BUN/Cr, AST/ALT, Glucose",
+              "전해질·신장·간기능·혈당 확인",
+              "K 이상, Cr 상승, 혈당 이상 보고"
+            ],
+            [
+              "Coagulation",
+              "PT/INR, aPTT",
+              "출혈위험/항응고제 영향 확인",
+              "항응고제 중단 여부와 함께 확인"
+            ],
+            [
+              "Blood type / Crossmatch",
+              "ABO/Rh, antibody, blood prep",
+              "수혈 가능성 대비",
+              "수술 종류별 혈액 준비 여부 확인"
+            ],
+            [
+              "Urinalysis",
+              "요검사",
+              "감염/신장상태 참고",
+              "감염 의심 시 보고"
+            ],
+            [
+              "Chest PA",
+              "흉부 X-ray",
+              "폐질환/심비대/수술 위험 확인",
+              "비정상 소견은 마취/주치의 확인"
+            ],
+            [
+              "EKG",
+              "12 lead ECG",
+              "부정맥/허혈/전도장애 확인",
+              "이상 리듬/허혈 소견 보고"
+            ],
+            [
+              "Pregnancy test",
+              "가임기 여성",
+              "수술/마취 전 확인",
+              "해당자 누락 없게 확인"
+            ],
+            [
+              "ABGA",
+              "필요 시 시행",
+              "호흡상태/산염기 평가",
+              "FiO2/산소장치 함께 기록"
+            ],
+            [
+              "감염/특수검사",
+              "HBsAg/HCV/HIV 등 병원기준",
+              "수술/시술 감염관리",
+              "원내 기준과 처방 확인"
+            ]
+          ],
+          "search_terms": [
+            "수술전검사표",
+            "pre op exam"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "수술 전 준비 체크리스트",
+          "caption": "동의서·표식·금식·검사·약물·이송",
+          "headers": [
+            "구분",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "동의서",
+              "수술동의서, 마취동의서, PCA/수혈/고위험 동의서",
+              "이름/등록번호/수술명/부위/서명 누락 확인"
+            ],
+            [
+              "표식/부위",
+              "수술표식, site marking, 표식확인서",
+              "좌우 구분 수술은 특히 확인"
+            ],
+            [
+              "금식",
+              "NPO 시작시간, 물/약 복용 여부",
+              "금식 위반 시 즉시 보고"
+            ],
+            [
+              "검사",
+              "수술 전 검사 결과, chest PA, EKG, lab",
+              "결과 누락/이상치 확인"
+            ],
+            [
+              "약물",
+              "항응고제/항혈소판제, DM약, 인슐린, 항생제 AST",
+              "중단/투여 여부 확인"
+            ],
+            [
+              "Line/준비",
+              "IV route, Foley, 보조기, 혈액준비, 영상 CD/동의서 파일",
+              "수술실 연락 전 최종 확인"
+            ],
+            [
+              "이송",
+              "환의, 보석/틀니/렌즈 제거, chart/file, 항생제",
+              "수술 전 처치표 출력 후 함께 보냄"
+            ]
+          ],
+          "search_terms": [
+            "수술전준비표",
+            "수술전체크리스트"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_preop_exam_table.png",
+          "alt": "수술 전 검사 내용표 이미지",
+          "caption": "수술 전 검사 내용표 이미지",
+          "search_terms": [
+            "수술 전 검사 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_preop_checklist_table.png",
+          "alt": "수술 전 준비 체크리스트 이미지",
+          "caption": "수술 전 준비 체크리스트 이미지",
+          "search_terms": [
+            "수술 전 준비 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V102_NS_OS_POSTOP_TABLES",
+      "category": "신경계 / 수술·시술 / 원본표 보강",
+      "title": "NS/OS 수술 후 관찰표: Neuro sign·Drain·CMS·보조기",
+      "aliases": [
+        "NS 수술 후",
+        "OS 수술 후",
+        "수술 후 관찰표",
+        "CMS 확인",
+        "Drain pressure"
+      ],
+      "search_terms": [
+        "NS/OS 수술 후 관찰표: Neuro sign·Drain·CMS·보조기",
+        "신경계 / 수술·시술 / 원본표 보강",
+        "NS",
+        "OS",
+        "수술명",
+        "약어",
+        "수술 전 검사",
+        "수술 전 준비",
+        "원본표",
+        "병동간호팀 간호사메뉴얼",
+        "NS 수술 후",
+        "OS 수술 후",
+        "수술 후 관찰표",
+        "CMS 확인",
+        "Drain pressure",
+        "NS postop",
+        "OS postop",
+        "Burr hole post op",
+        "neuro sign",
+        "CMS",
+        "drain pressure",
+        "H-vac",
+        "JP",
+        "brace",
+        "보조기"
+      ],
+      "urgency": "routine",
+      "summary": "NS 수술 후 neuro sign/drain/IICP 관찰과 OS 수술 후 CMS/drain pressure/보조기 관찰을 표 이미지로 보이게 정리했습니다.",
+      "indications": [
+        "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "수술명/약어/부위/좌우 확인",
+        "동의서·검사·금식·약물·이송 준비 확인",
+        "원내 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "NS 수술 후 return, 1·2·6hr f/u, drain, wound, seizure/IICP를 확인한다.",
+        "OS 수술 후 CMS, 통증/부종, drain pressure, 보조기, DVT를 확인한다.",
+        "OS 과별 drain pressure 표를 함께 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다."
+      ],
+      "charting": [
+        "수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록"
+      ],
+      "related": [
+        "V100_NS_POSTOP",
+        "V65_OS_DEPT_MANUAL",
+        "V101_BRACE_ORIGINAL_IMAGES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강"
+      ],
+      "tables": [
+        {
+          "title": "NS 수술 후 관찰표",
+          "caption": "return · 1·2·6hr f/u · drain · seizure/IICP",
+          "headers": [
+            "구분",
+            "확인 내용",
+            "기록/보고 포인트"
+          ],
+          "rows": [
+            [
+              "Return 직후",
+              "V/S, mental/GCS, pupil, motor, pain",
+              "baseline과 비교, 악화 시 즉시 보고"
+            ],
+            [
+              "1·2·6hr f/u",
+              "neuro sign 반복 사정",
+              "정해진 시간마다 같은 항목으로 비교 기록"
+            ],
+            [
+              "Drain",
+              "EVD/SDD/H-vac/JP 위치, clamp, 배액량/색",
+              "급증/혈성/폐쇄/빠짐 보고"
+            ],
+            [
+              "Wound",
+              "op site dressing, oozing, swelling",
+              "출혈/감염징후 확인"
+            ],
+            [
+              "Seizure/IICP",
+              "seizure, 두통, 구토, 동공변화, Cushing sign",
+              "응급보고 및 처방준비"
+            ],
+            [
+              "기록",
+              "수술명, return 시간, 사정값, 배액, 처치, 보고",
+              "시간순 기록"
+            ]
+          ],
+          "search_terms": [
+            "NS수술후표",
+            "neuro sign"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "OS 수술 후 관찰표",
+          "caption": "CMS · Drain pressure · 보조기 · DVT",
+          "headers": [
+            "구분",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Neurovascular check",
+              "C/M/S: color, movement, sensation, pulse, capillary refill",
+              "cast/brace/splint 압박 확인"
+            ],
+            [
+              "통증/부종",
+              "pain score, swelling, compartment sign",
+              "통증 급증·감각저하·청색증 보고"
+            ],
+            [
+              "Drain/pressure",
+              "H-vac/JP pressure, clamp/natural/full 여부",
+              "과별 지시와 배액량 기준 확인"
+            ],
+            [
+              "보조기",
+              "brace/sling/cast 적용 상태",
+              "피부눌림, 말초순환, 저림/통증 확인"
+            ],
+            [
+              "DVT/호흡",
+              "하지부종/통증, 호흡곤란, SpO2",
+              "조기이상/IPC/항응고 지시 확인"
+            ],
+            [
+              "기록",
+              "수술명, 부위, drain, CMS, 보조기, 통증, 교육",
+              "수술부위와 좌우 정확히 기록"
+            ]
+          ],
+          "search_terms": [
+            "OS수술후표",
+            "CMS",
+            "drain pressure"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "OS 각과별 Drain Pressure 표",
+          "caption": "기존 매뉴얼 표 재구성",
+          "headers": [
+            "OS",
+            "Pressure / Clamp",
+            "제거 기준",
+            "특이사항"
+          ],
+          "rows": [
+            [
+              "OS1 Major",
+              "natural drain 유지",
+              "보통 POD#5 제거",
+              "TSRA JP여도 natural, infection 환자는 H/V full 후 주치의 지시"
+            ],
+            [
+              "OS3 Major",
+              "OP day natural → POD#1 6AM full",
+              "-",
+              "TSRA H/V·JP 모두 full"
+            ],
+            [
+              "OS8 Major",
+              "회복실 입실 기준 1시간 H/V clamp 후 natural 유지",
+              "-",
+              "Hip/TKRA clamp 처방 시 open 시간 확인"
+            ],
+            [
+              "OS10 Major+Minor",
+              "수술 후 병동 리턴 기준 8시간 full → 배액 300cc 이상 시 natural",
+              "POD#2 300cc 이내 제거",
+              "트라넥 사용 시 3시간 clamp 후 8시간 full"
+            ],
+            [
+              "OS14 Major",
+              "TKRA, femur H/V full",
+              "POD#2 100cc 미만 무조건 제거",
+              "infection/synovectomy 제외"
+            ],
+            [
+              "OS22 Major",
+              "TKRA H/V half, 트라넥/마취 인계 시 3시간 clamp",
+              "H/V 40cc 미만 제거",
+              "POD#14 ZIP 제거 후 open"
+            ],
+            [
+              "OS24 Major",
+              "H/V 리턴 기준 3시간 clamp → full",
+              "POD#1 H/V remove",
+              "Infection만 tip cx"
+            ],
+            [
+              "OS25 Major",
+              "TKRA return 후 3시간 clamp → H/V half",
+              "-",
+              "CPM/도수 H/V 제거 후 시행"
+            ]
+          ],
+          "search_terms": [
+            "OS drain pressure",
+            "H-vac",
+            "JP"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_postop_check_table.png",
+          "alt": "NS 수술 후 관찰표 이미지",
+          "caption": "NS 수술 후 관찰표 이미지",
+          "search_terms": [
+            "NS 수술 후 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_os_postop_check_table.png",
+          "alt": "OS 수술 후 관찰표 이미지",
+          "caption": "OS 수술 후 관찰표 이미지",
+          "search_terms": [
+            "OS 수술 후 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v102_os_drain_pressure_table.png",
+          "alt": "OS drain pressure 표 이미지",
+          "caption": "OS drain pressure 표 이미지",
+          "search_terms": [
+            "OS drain 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -65580,5 +67941,70 @@ window.ICU_MANUAL_DB = {
       "140~141"
     ],
     "total_items": 386
+  },
+  "v100_update": {
+    "summary": "신경계 사정, EVD/SDD, Burr hole/Coil, 수술 전후, TFCA/Tracheostomy/EGD/ERCP/CFS, Spinal tapping/CSF study를 표/이미지 중심으로 추가.",
+    "added_cards": [
+      "V100_EVD_SDD_MANAGEMENT",
+      "V100_NEURO_ASSESSMENT",
+      "V100_NEURO_SURGERY_OVERVIEW",
+      "V100_NS_POSTOP",
+      "V100_PROCEDURE_PREPOST",
+      "V100_SPINAL_TAPPING_CSF",
+      "V100_SURGERY_PREPOST_ICU"
+    ],
+    "added_images": [
+      "v100_csf_study_table.png",
+      "v100_evd_sdd_management_table.png",
+      "v100_neuro_assessment_table.png",
+      "v100_neuro_surgery_overview.png",
+      "v100_ns_postop_table.png",
+      "v100_procedure_prepost_table.png",
+      "v100_spinal_tapping_flow.png",
+      "v100_spinal_tapping_table.png",
+      "v100_surgery_prepost_table.png"
+    ],
+    "total_items": 393
+  },
+  "v101_update": {
+    "summary": "V100에 보조기 원본 이미지 13개를 추가하고 보조기 원본 이미지 모음 카드를 추가.",
+    "added_card": "V101_BRACE_ORIGINAL_IMAGES",
+    "brace_original_images": [
+      "brace_0014.png",
+      "brace_0015.png",
+      "brace_0016.png",
+      "brace_0017.png",
+      "brace_0018.png",
+      "brace_0019.png",
+      "brace_001a.png",
+      "brace_001b.png",
+      "brace_001c.png",
+      "brace_001d.png",
+      "brace_001e.png",
+      "brace_001f.png",
+      "brace_0020.png"
+    ],
+    "total_items": 394
+  },
+  "v102_update": {
+    "summary": "V100에서 부족했던 NS/OS 수술명·약어·수술 전 검사 내용·수술 전 체크리스트·NS/OS 수술 후 관찰표·OS drain pressure 표를 이미지로 볼 수 있도록 보강.",
+    "added_cards": [
+      "V102_NS_OS_POSTOP_TABLES",
+      "V102_NS_OS_PREOP_TABLES_OVERVIEW",
+      "V102_NS_SURGERY_ABBREV_TABLE",
+      "V102_OS_SURGERY_ABBREV_TABLE",
+      "V102_PREOP_EXAM_AND_CHECKLIST_TABLES"
+    ],
+    "added_images": [
+      "v102_ns_os_preop_overview.png",
+      "v102_ns_postop_check_table.png",
+      "v102_ns_surgery_abbrev_table.png",
+      "v102_os_drain_pressure_table.png",
+      "v102_os_postop_check_table.png",
+      "v102_os_surgery_abbrev_table.png",
+      "v102_preop_checklist_table.png",
+      "v102_preop_exam_table.png"
+    ],
+    "total_items": 399
   }
 };
