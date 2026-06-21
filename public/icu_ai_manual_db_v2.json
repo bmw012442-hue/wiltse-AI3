@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.93.0-v93-video-link-fix",
+    "version": "1.94.0-v94-l-sling-link-fix",
     "language": "ko",
-    "source": "V92 기반 + L-sling/EVD 링크 분리 및 Dräger 인공호흡기 3번 중복 영상 삭제",
+    "source": "V93 기반 + L-sling 링크를 실제 새 영상 링크로 교체",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -28862,7 +28862,7 @@
       "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼 L-sling 엘슬링 sling 보조기 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
           "title": "L-sling 착용방법 보기",
           "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
           "search_terms": [
@@ -41939,7 +41939,7 @@
       "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상 Line·Drain·Dressing 검사·검체 호흡기 간호업무",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
           "title": "L-sling 착용방법 보기",
           "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
           "search_terms": [
@@ -56011,7 +56011,7 @@
       "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 동영상 업무동영상 교육영상 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
           "title": "L-sling 착용방법 보기",
           "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
           "search_terms": [
@@ -60963,7 +60963,7 @@
       "images": [],
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
           "title": "L-sling 착용방법 보기",
           "caption": "Google Drive 외부 링크 · L-sling 착용방법 교육 동영상",
           "search_terms": [
@@ -62869,6 +62869,18 @@
       "VIDEO001",
       "VIDEO_V91_DRAGER_SAVINA",
       "VIDEO_V91_EVD_ICP_TRAGUS"
+    ]
+  },
+  "v94_update": {
+    "summary": "L-sling 착용방법 링크를 새 Google Drive 링크로 교체. EVD 링크는 유지. Dräger 3 삭제 유지.",
+    "l_sling_link_updated_to": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
+    "evd_link_kept": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
+    "l_sling_links_updated_count": 4,
+    "cards_touched": [
+      "V65_NEW_NURSE_NOTES",
+      "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+      "V86_DETAIL_07",
+      "VIDEO_V91_L_SLING"
     ]
   }
 }
