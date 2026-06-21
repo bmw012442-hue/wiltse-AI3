@@ -129,6 +129,14 @@ function normalize(text) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "순환모니터링": ["순환", "모니터링", "중환자실 순환", "혈역학"],
+    "혈압저하": ["BP 저하", "저혈압", "MAP", "hypotension"],
+    "에이라인": ["A-line", "arterial line", "zeroing", "waveform"],
+    "씨라인": ["C-line", "central line", "CVP", "중심정맥라인"],
+    "부정맥": ["EKG", "ECG", "tachycardia", "bradycardia", "이상 리듬"],
+    "말초순환": ["perfusion", "capillary refill", "청색증", "말초관류"],
+    "승압제": ["vasopressor", "MAP 목표", "norepinephrine", "dopamine"],
+
     "원내응급간호": ["병동간호팀", "142페이지", "149페이지", "29 응급간호", "E-cart", "제세동기", "Dr call"],
     "응급카트": ["E-cart", "Emergency-cart", "응급약물", "응급물품"],
     "제세동기위치": ["AED 위치", "defibrillator location", "배치장소"],
@@ -292,6 +300,9 @@ function scoreItem(query, item) {
   if ((item.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
   if ((item.id || "").startsWith("V98_") && /원내|프로토콜|병동간호팀|142|149|응급간호|e-cart|응급카트|제세동기|aed|ekg|역할분담|dr\.?\s*call|6114|코드블루|전원/.test(q)) score += 90;
 
+  
+  if ((item.id || "").startsWith("V99_") && /순환|모니터링|혈압|vital|에이라인|a-line|arterial line|waveform|zeroing|씨라인|c-line|cvp|ekg|ecg|tachy|brady|i\/o|섭취량|배설량|소변량|승압제|vasopressor|말초순환|perfusion/.test(q)) score += 95;
+
   return Math.max(0, score);
 }
 
@@ -450,7 +461,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "1.98.0-v98-v95-internal-emergency-protocol",
+    version: "1.99.0-v99-circulation-monitoring-protocol",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -639,5 +650,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v98 V95 internal emergency protocol running on port ${port}`);
+  console.log(`ICU AI Manual v99 circulation monitoring protocol running on port ${port}`);
 });
