@@ -116,92 +116,164 @@ const rawDb = loadDb();
 const items = rawDb.items || [];
 
 function normalize(text) {
-  return String(text || "").toLowerCase().replace(/\s+/g, " ").trim();
+  return String(text || "")
+    .toLowerCase()
+    .replace(/dräger/g, "drager")
+    .replace(/fi\s*o2/g, "fio2")
+    .replace(/sp\s*o2/g, "spo2")
+    .replace(/[·•]/g, " ")
+    .replace(/[()[\]{}<>]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function expandSearchTerms(rawTerms) {
+  const synonymMap = {
+    "사비나": ["savina", "drager", "dräger"],
+    "드레거": ["drager", "dräger", "savina"],
+    "인공호흡기": ["ventilator", "기계환기"],
+    "흡인": ["suction"],
+    "혈역학": ["hemodynamic", "map", "cvp"],
+    "저혈압": ["hypotension", "map", "shock"],
+    "투석": ["crrt", "dialysis"],
+    "신장": ["renal", "aki", "crrt"],
+    "위관": ["ng tube", "l-tube", "ngt"],
+    "검체": ["specimen", "bottle", "tube"],
+    "채혈": ["blood", "specimen", "tube"],
+    "수혈": ["transfusion", "blood transfusion", "혈액제제", "rbc", "ffp", "cryo", "plt"],
+    "혈액제제": ["rbc", "ffp", "pc", "aplt", "cryo", "blood product"],
+    "응고인자": ["pt", "inr", "aptt", "fibrinogen", "d-dimer"],
+    "드레싱": ["dressing", "wound", "상처", "소독", "드레싱재료", "폼드레싱"],
+    "소독": ["disinfection", "sterile", "wound cleansing"],
+    "낙상": ["fall", "fall risk"],
+    "욕창": ["pressure injury", "pressure ulcer", "braden", "상처", "드레싱", "체위변경", "예방"],
+    "통증": ["pain", "nrs", "cpot"],
+    "보조기": ["brace", "splint", "positioning", "보호대", "restraint"],
+    "펌프": ["pump", "infusion pump", "syringe pump"],
+    "보호대": ["restraint", "손목보호대", "장갑형", "매듭", "대체수단", "모니터링", "ROM"],
+    "매듭": ["knot", "square knot", "slip knot", "clove hitch", "정방향 매듭", "고리 매듭", "클로브 히치"],
+    "상처": ["wound", "pressure injury", "dressing", "소독", "드레싱"],
+    "엑스레이": ["x-ray", "xray", "radiograph", "chest xray", "폐렴", "기흉", "폐부종", "흉수", "무기폐"],
+    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"]
+  };
+  const out = [...rawTerms];
+  rawTerms.forEach(t => {
+    Object.keys(synonymMap).forEach(k => {
+      if (t.includes(k)) out.push(...synonymMap[k]);
+    });
+  });
+  return [...new Set(out.map(normalize).filter(x => x.length >= 2))];
 }
 
 function flattenTableText(item) {
   const parts = [];
   for (const t of item.tables || []) {
-    parts.push(t.title || "");
-    parts.push(...(t.headers || []));
-    for (const row of t.rows || []) parts.push(...(row || []));
+    parts.push(t.title || "", t.caption || "");
+    parts.push(...(t.search_terms || []), ...(t.headers || []));
+    if (t.include_rows_in_search) {
+      for (const row of t.rows || []) parts.push(...(row || []));
+    }
   }
+  if ((item.tables || []).length) parts.push("표", "테이블", "정리표", "체크리스트", "요약표");
   return parts;
 }
 
 function flattenImageText(item) {
   const parts = [];
-  for (const img of item.images || []) parts.push(img.src || "", img.alt || "", img.caption || "");
-  if ((item.images || []).length) parts.push("그림", "사진", "이미지", "참고 이미지");
-  if ((item.tables || []).length) parts.push("표", "테이블", "정리표");
+  for (const img of item.images || []) {
+    parts.push(img.src || "", img.alt || "", img.caption || "");
+    parts.push(...(img.search_terms || []));
+  }
+  if ((item.images || []).length) parts.push("그림", "사진", "이미지", "참고 이미지", "교육용 이미지");
   return parts;
+}
+
+function flattenVideoText(item) {
+  const parts = [];
+  for (const v of item.videos || []) {
+    parts.push(v.title || "", v.caption || "", v.src || "", v.href || "", v.url || "", v.link || "");
+    parts.push(...(v.search_terms || []));
+  }
+  if ((item.videos || []).length) parts.push("동영상", "영상", "video");
+  return parts;
+}
+
+function mediaText(item) {
+  return [...flattenTableText(item), ...flattenImageText(item), ...flattenVideoText(item)].join(" ");
 }
 
 function itemText(item) {
   return [
-    item.id, item.category, item.title, item.summary, item.urgency,
+    item.id, item.category, item.original_category, item.title, item.summary, item.urgency,
+    item.search_index || "",
+    ...(item.search_terms || []),
     ...(item.aliases || []), ...(item.indications || []), ...(item.preparation || []),
     ...(item.steps || []), ...(item.dosage_or_mix || []), ...(item.orders_or_emr || []),
     ...(item.charting || []), ...(item.io || []), ...(item.warnings || []),
     ...(item.related || []), ...(item.tags || []),
-    ...flattenTableText(item), ...flattenImageText(item)
+    mediaText(item)
   ].join(" ");
 }
-
-
 
 function scoreItem(query, item) {
   const q = normalize(query);
   if (!q || item.search_hidden) return 0;
-  const terms = q.split(/[,\s/·]+/).filter(Boolean);
+
+  const rawTerms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
+  const terms = expandSearchTerms(rawTerms);
   const title = normalize(item.title);
   const category = normalize(item.category);
   const originalCategory = normalize(item.original_category);
   const aliases = (item.aliases || []).map(normalize);
   const searchTerms = (item.search_terms || []).map(normalize);
-  const text = normalize(itemText(item));
+  const summary = normalize(item.summary);
+  const media = normalize(mediaText(item));
+  const full = normalize(itemText(item));
+  const directText = [title, category, originalCategory, ...aliases, ...searchTerms, normalize(item.search_index)].join(" ");
   let score = 0;
 
-  if (title === q) score += 180;
-  else if (title.includes(q)) score += 135;
+  if (title === q) score += 220;
+  else if (title.includes(q)) score += 150;
 
   for (const a of aliases) {
     if (!a) continue;
-    if (q === a) score += 150;
+    if (q === a) score += 170;
     else if (q.includes(a) || a.includes(q)) score += 95;
   }
 
   for (const st of searchTerms) {
     if (!st) continue;
-    if (q === st) score += 160;
-    else if (q.includes(st) || st.includes(q)) score += 85;
+    if (q === st) score += 180;
+    else if (q.includes(st) || st.includes(q)) score += 90;
   }
 
   if (category.includes(q) || originalCategory.includes(q)) score += 45;
-  if (normalize(item.summary).includes(q)) score += 18;
+  if (summary.includes(q)) score += 20;
+  if (media.includes(q)) score += 30;
 
-  const directText = [title, category, originalCategory, ...aliases, ...searchTerms].join(" ");
   let directHits = 0;
-
   for (const term of terms) {
     if (term.length < 2) continue;
     if (directText.includes(term)) directHits += 1;
-    if (title.includes(term)) score += 42;
-    if (aliases.some(a => a.includes(term))) score += 36;
-    if (searchTerms.some(a => a.includes(term))) score += 38;
-    if (category.includes(term) || originalCategory.includes(term)) score += 16;
-    if (normalize(item.summary).includes(term)) score += 8;
-    if (text.includes(term)) score += 3;
+    if (title.includes(term)) score += 44;
+    if (aliases.some(a => a.includes(term))) score += 38;
+    if (searchTerms.some(a => a.includes(term))) score += 40;
+    if (category.includes(term) || originalCategory.includes(term)) score += 18;
+    if (summary.includes(term)) score += 10;
+    if (media.includes(term)) score += 12;
+    if (full.includes(term)) score += 3;
   }
 
-  if ((item.tables || []).length && /표|테이블|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/.test(q)) score += 18;
-  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄/.test(q)) score += 18;
+  if ((item.tables || []).length && /표|테이블|table|정리|종류|순서|번호|채혈|검체|수혈|혈액제제|응고인자|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/.test(q)) score += 22;
+  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|수혈|혈액제제|응고인자|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|폐렴|기흉|폐부종|흉수|무기폐/.test(q)) score += 30;
+  if ((item.images || []).length && /욕창|상처|드레싱|보호대|매듭|수혈|혈액제제|응고인자|xray|x-ray|엑스레이|사진|이미지|그림|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|ROM|모니터링/.test(q)) score += 24;
+  if (((item.id || "").startsWith("V87_") || (item.id || "").startsWith("V88_")) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(q)) score += 28;
+  if (item.prefer_media_first && /표|이미지|사진|그림|수혈|혈액제제|응고인자/.test(q)) score += 20;
 
-  if (!directText.includes(q) && directHits === 0) score -= 45;
+  if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
 
   return Math.max(0, score);
 }
-
 
 function retrieveCards(query, limit = 8) {
   const ranked = items.map(item => ({ item, score: scoreItem(query, item) }))
@@ -210,7 +282,7 @@ function retrieveCards(query, limit = 8) {
 
   if (ranked.length === 0) return [];
   const top = ranked[0].score;
-  const minScore = Math.max(12, top * 0.32);
+  const minScore = Math.max(12, top * 0.30);
 
   return ranked
     .filter(x => x.score >= minScore)
@@ -228,16 +300,18 @@ function cardForPrompt(item) {
     urgency: item.urgency,
     indications: item.indications,
     preparation: item.preparation,
-    steps: item.steps,
+    steps: item.hide_raw_steps ? [] : item.steps,
     dosage_or_mix: item.dosage_or_mix,
     orders_or_emr: item.orders_or_emr,
     charting: item.charting,
     io: item.io,
     warnings: item.warnings,
     tables: item.tables,
-    images: item.images
+    images: item.images,
+    videos: item.videos
   };
 }
+
 
 function parseCookies(req) {
   const header = req.headers.cookie || "";
@@ -356,7 +430,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "0.61.0-v61-video-support",
+    version: "1.90.0-v90-clean-structure",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -545,5 +619,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v31 login fix running on port ${port}`);
+  console.log(`ICU AI Manual v90 clean structure running on port ${port}`);
 });
