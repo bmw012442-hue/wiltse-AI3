@@ -129,6 +129,12 @@ function normalize(text) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "약물계산": ["drug calculator", "계산기", "mcg/kg/min", "mg/hr", "unit/hr", "mL/hr"],
+    "수액속도": ["fluid rate", "mL/hr", "수액 주입속도", "총량 나누기 시간"],
+    "gtt": ["gtt/min", "drop factor", "drops per minute", "몇 방울"],
+    "dropfactor": ["drop factor", "gtt", "수액세트", "방울수"],
+    "주입속도": ["mL/hr", "infusion rate", "수액속도", "약물속도"],
+
     "항생제": ["AST", "antibiotics", "배양", "TDM", "de-escalation", "감수성"],
     "수액": ["fluid", "NS", "LR", "3% NaCl", "albumin", "maintenance", "resuscitation"],
     "고위험약물": ["high alert", "승압제", "인슐린", "항응고제", "전해질", "진정제", "진통제"],
@@ -346,6 +352,9 @@ function scoreItem(query, item) {
 
   if ((item.id || "").startsWith("V104_") && /항생|ast|antibi|배양|tdm|de-escalation|수액|fluid|고위험|승압|진정|진통|항경련|lasix|heparin|마약|향정|narcotic|잔량|반환|오류|수혈|transfusion|rbc|ffp|platelet|혈액제제|dic|coag|pt|aptt|fibrinogen/.test(q)) score += 140;
 
+
+  if ((item.id || "").startsWith("V105_") && /계산|계산기|수액속도|주입속도|gtt|drop factor|mcg\/kg\/min|mg\/hr|unit\/hr|ml\/hr|mL\/hr|약물계산/.test(q)) score += 150;
+
   return Math.max(0, score);
 }
 
@@ -504,7 +513,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.04.0-v104-meds-fluids-narcotics-transfusion-blood",
+    version: "2.05.0-v105-drug-fluid-gtt-calculator",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -693,5 +702,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v104 meds fluids narcotics transfusion blood running on port ${port}`);
+  console.log(`ICU AI Manual v105 drug fluid gtt calculator running on port ${port}`);
 });
