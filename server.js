@@ -131,7 +131,7 @@ function expandSearchTerms(rawTerms) {
   const synonymMap = {
     "사비나": ["savina", "drager", "dräger"],
     "드레거": ["drager", "dräger", "savina"],
-    "인공호흡기": ["ventilator", "기계환기"],
+    "인공호흡기": ["ventilator", "기계환기", "drager", "dräger", "savina"],
     "흡인": ["suction"],
     "혈역학": ["hemodynamic", "map", "cvp"],
     "저혈압": ["hypotension", "map", "shock"],
@@ -141,6 +141,11 @@ function expandSearchTerms(rawTerms) {
     "검체": ["specimen", "bottle", "tube"],
     "채혈": ["blood", "specimen", "tube"],
     "수혈": ["transfusion", "blood transfusion", "혈액제제", "rbc", "ffp", "cryo", "plt"],
+    "patient monitor": ["환자감시장치", "환자 모니터", "central monitor"],
+    "o2 nipple": ["산소 니플", "oxygen nipple", "산소 연결"],
+    "신경외과": ["NS", "뇌 수술환자", "검사 이동"],
+    "l-sling": ["엘슬링", "sling", "보조기"],
+    "evd": ["ICP", "tragus", "트라거스", "EVD leveling"],
     "혈액제제": ["rbc", "ffp", "pc", "aplt", "cryo", "blood product"],
     "응고인자": ["pt", "inr", "aptt", "fibrinogen", "d-dimer"],
     "드레싱": ["dressing", "wound", "상처", "소독", "드레싱재료", "폼드레싱"],
@@ -154,7 +159,10 @@ function expandSearchTerms(rawTerms) {
     "매듭": ["knot", "square knot", "slip knot", "clove hitch", "정방향 매듭", "고리 매듭", "클로브 히치"],
     "상처": ["wound", "pressure injury", "dressing", "소독", "드레싱"],
     "엑스레이": ["x-ray", "xray", "radiograph", "chest xray", "폐렴", "기흉", "폐부종", "흉수", "무기폐"],
-    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"]
+    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"],
+    "동의서": ["consent", "태블릿", "테블릿", "tablet"],
+    "abga": ["calibration", "캘리브레이션", "혈액가스"],
+    "cpr": ["CPCR", "심폐소생술", "간호사 역할"]
   };
   const out = [...rawTerms];
   rawTerms.forEach(t => {
@@ -430,7 +438,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "1.90.0-v90-clean-structure",
+    version: "1.92.0-v92-partial-upload-video-links",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -619,5 +627,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v90 clean structure running on port ${port}`);
+  console.log(`ICU AI Manual v92 partial video links running on port ${port}`);
 });

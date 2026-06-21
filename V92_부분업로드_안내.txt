@@ -1,0 +1,23 @@
+V92 GitHub 사이트 부분 업로드 안내
+
+이 zip은 전체 프로젝트가 아니라, GitHub 웹사이트에서 일부 파일만 업로드하기 위한 최소 구성입니다.
+
+[1단계] GitHub 저장소 맨 위(wiltse-AI3 루트)에 업로드
+- 1_GitHub_저장소_맨위에_업로드 폴더 안의 파일들을 올립니다.
+- 올릴 파일: server.js, V92_변경사항.txt, V92_부분업로드_안내.txt
+
+[2단계] GitHub public 폴더 안에 업로드
+- GitHub에서 public 폴더를 클릭해서 들어갑니다.
+- 2_GitHub_public폴더_안에_업로드 폴더 안의 파일들을 올립니다.
+- 올릴 파일: data.js, icu_ai_manual_db_v2.json
+
+[3단계] Commit changes
+- 각 업로드 후 Commit changes를 누릅니다.
+
+[4단계] Render 재배포
+- Render에서 Manual Deploy → Deploy latest commit을 누릅니다.
+
+절대 주의:
+- 1_GitHub_저장소_맨위에_업로드 폴더 자체를 GitHub에 올리지 마세요. 안의 파일만 올리세요.
+- 2_GitHub_public폴더_안에_업로드 폴더 자체를 public 안에 올리지 마세요. 안의 파일 2개만 올리세요.
+- public/data.js와 public/icu_ai_manual_db_v2.json은 반드시 둘 다 교체해야 합니다.
