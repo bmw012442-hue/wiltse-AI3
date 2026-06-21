@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.92.0-v92-partial-upload-video-links",
+    "version": "1.93.0-v93-video-link-fix",
     "language": "ko",
-    "source": "V91 업무 동영상 링크 추가본 기반 + GitHub 사이트 부분 업로드용 최소 파일 패키지",
+    "source": "V92 기반 + L-sling/EVD 링크 분리 및 Dräger 인공호흡기 3번 중복 영상 삭제",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -5076,11 +5076,10 @@
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "standard_sections_ready": true,
-      "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상 Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3",
+      "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상 Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2",
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
@@ -5125,35 +5124,6 @@
             "인공호흡기",
             "ventilator",
             "Dräger 인공호흡기 2",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "Ventilator setup",
-            "호흡 / Ventilator",
-            "호흡기/Vent",
-            "Vent",
-            "Ventilator",
-            "벤트",
-            "circuit",
-            "WFI",
-            "test lung"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
             "업무 동영상",
             "교육 동영상",
             "Google Drive 외부 링크",
@@ -7846,7 +7816,7 @@
       "search_index": "EVD 소독 Line / Drain / Dressing DRESSING/EVD EVD external ventricular drainage 뇌실외배액 소독 Line Drain Dressing v10_master_30_categories ICP tragus 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -12229,11 +12199,10 @@
         "Savina",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "standard_sections_ready": true,
-      "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 Infusion pump 사용법 Syringe pump 사용법",
+      "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Infusion pump 사용법 Syringe pump 사용법",
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1bkvEHRm5NMNvfXngZIpRIyxZqYUqT8m9/view?usp=drive_link",
@@ -12367,34 +12336,6 @@
             "인공호흡기",
             "ventilator",
             "Dräger 인공호흡기 2",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
-            "물품 / 장비 / 전화번호",
-            "의료장비",
-            "장비",
-            "vent",
-            "벤트",
-            "high flow",
-            "HFNC"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
             "업무 동영상",
             "교육 동영상",
             "Google Drive 외부 링크",
@@ -19188,7 +19129,7 @@
           ]
         },
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -21184,7 +21125,7 @@
       "search_index": "Dressing / 소독제 / SDD·EVD 관 제거 Line / Drain / Dressing Dressing 소독제 SDD EVD 제거 베타딘 클로르헥시딘 suture dressing set Line Drain v43_uploaded_manual 추가 업무 매뉴얼(260618) ICP tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 일반 상처 Dressing 수술 후 상처 Dressing",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -26025,8 +25966,7 @@
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "routine",
       "summary": "Ventilator 사용법 1, 2 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -26165,39 +26105,10 @@
             "Ventilator 사용법 동영상",
             "인공호흡기 사용법"
           ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "Ventilator",
-            "벤틸레이터",
-            "ventilator 동영상",
-            "인공호흡기 동영상",
-            "ventilator 사용법",
-            "호흡",
-            "기계환기",
-            "Ventilator 사용법 동영상",
-            "인공호흡기 사용법"
-          ]
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 호흡 / Ventilator Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3",
+      "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 호흡 / Ventilator Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2",
       "prefer_media_first": true
     },
     {
@@ -26535,7 +26446,7 @@
         "교육영상"
       ],
       "urgency": "emergency",
-      "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
+      "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
       "indications": [
         "환자 무반응, 무호흡, 심정지 의심, 맥박/혈압 측정 불가 등 CPCR 상황"
       ],
@@ -31378,7 +31289,7 @@
           ]
         },
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -31666,7 +31577,7 @@
       "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 ICP 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -31956,7 +31867,7 @@
       "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리",
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -40414,8 +40325,7 @@
         "Drager",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 보는 인공호흡기 기본 모드, 주요 설정, 알람 대응, 흡인·산소화 모니터링을 한 번에 정리한 카드입니다.",
@@ -40575,7 +40485,7 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 Dräger Drager 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 기관절개관 진정/통증 응급상황",
+      "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 Dräger Drager 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 기관절개관 진정/통증 응급상황",
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
@@ -40649,34 +40559,6 @@
             "인공호흡기",
             "ventilator",
             "Dräger 인공호흡기 2",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "기계환기",
-            "drager",
-            "dräger",
-            "savina",
-            "VC",
-            "PC",
-            "SIMV",
-            "PSV"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
             "업무 동영상",
             "교육 동영상",
             "Google Drive 외부 링크",
@@ -42367,8 +42249,7 @@
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "high",
       "summary": "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -42586,7 +42467,7 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 Dräger Drager 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 Dräger 인공호흡기 3 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+      "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 Dräger Drager 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
@@ -42632,36 +42513,6 @@
             "인공호흡기",
             "ventilator",
             "Dräger 인공호흡기 2",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "savina",
-            "drager",
-            "dräger",
-            "ventilator check",
-            "circuit check",
-            "leak test",
-            "humidifier",
-            "oxygen supply",
-            "Dräger Savina",
-            "Drager Savina"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
             "업무 동영상",
             "교육 동영상",
             "Google Drive 외부 링크",
@@ -61215,7 +61066,7 @@
       "images": [],
       "videos": [
         {
-          "href": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+          "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
           "title": "EVD(tragus) ICP 재는 방법 보기",
           "caption": "Google Drive 외부 링크 · EVD tragus 기준 ICP 측정 교육 동영상",
           "search_terms": [
@@ -61245,9 +61096,8 @@
     {
       "id": "VIDEO_V91_DRAGER_SAVINA",
       "category": "호흡 / Dräger Savina",
-      "title": "Dräger 인공호흡기 동영상 1·2·3",
+      "title": "Dräger 인공호흡기 동영상 1·2",
       "aliases": [
-        "Dräger 인공호흡기 동영상 1·2·3",
         "Dräger",
         "Drager",
         "Savina",
@@ -61255,8 +61105,7 @@
         "인공호흡기",
         "ventilator",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3"
+        "Dräger 인공호흡기 2"
       ],
       "search_terms": [
         "Dräger",
@@ -61267,8 +61116,7 @@
         "ventilator",
         "Dräger 인공호흡기 1",
         "Dräger 인공호흡기 2",
-        "Dräger 인공호흡기 3",
-        "Dräger 인공호흡기 동영상 1·2·3",
+        "Dräger 인공호흡기 동영상 1·2",
         "동영상",
         "업무동영상",
         "교육영상",
@@ -61277,7 +61125,7 @@
         "호흡 / Dräger Savina"
       ],
       "urgency": "routine",
-      "summary": "Dräger/Savina 인공호흡기 교육 동영상 3개를 묶은 카드입니다. Google Drive 링크로 연결됩니다.",
+      "summary": "Dräger/Savina 인공호흡기 교육 동영상 1·2 링크 카드입니다. 3번 영상은 중복으로 삭제했습니다.",
       "indications": [
         "해당 업무를 영상으로 확인해야 할 때",
         "신규/경력직 교육 중 절차를 영상으로 확인할 때"
@@ -61320,80 +61168,10 @@
       ],
       "tables": [],
       "images": [],
-      "videos": [
-        {
-          "href": "https://drive.google.com/file/d/1bBIpiTRIQu14a7-rMd98Dly-EzxqBt2C/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 1 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
-          "search_terms": [
-            "Dräger 인공호흡기 1 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 1",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 1",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "Dräger 인공호흡기 2",
-            "Dräger 인공호흡기 3",
-            "Dräger 인공호흡기 동영상 1·2·3"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1QTJGQfglSJRnAqafHdN29eAiYqfmVd6X/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 2 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
-          "search_terms": [
-            "Dräger 인공호흡기 2 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 2",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 2",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "Dräger 인공호흡기 1",
-            "Dräger 인공호흡기 3",
-            "Dräger 인공호흡기 동영상 1·2·3"
-          ]
-        },
-        {
-          "href": "https://drive.google.com/file/d/1l3f8LfxeCDdXN4O4Bri5z84SRcjDL5Kd/view?usp=drive_link",
-          "title": "Dräger 인공호흡기 3 보기",
-          "caption": "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-          "search_terms": [
-            "Dräger 인공호흡기 3 보기",
-            "Google Drive 외부 링크 · Dräger/Savina 인공호흡기 교육 동영상 3",
-            "Dräger",
-            "Drager",
-            "Savina",
-            "드레거",
-            "인공호흡기",
-            "ventilator",
-            "Dräger 인공호흡기 3",
-            "업무 동영상",
-            "교육 동영상",
-            "Google Drive 외부 링크",
-            "v91_video_link",
-            "Dräger 인공호흡기 1",
-            "Dräger 인공호흡기 2",
-            "Dräger 인공호흡기 동영상 1·2·3"
-          ]
-        }
-      ],
+      "videos": [],
       "standard_sections_ready": true,
       "prefer_media_first": true,
-      "search_index": "Dräger Drager Savina 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 3 Dräger 인공호흡기 동영상 1·2·3 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / Dräger Savina V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_02"
+      "search_index": "Dräger Drager Savina 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 동영상 1·2 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / Dräger Savina V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_02"
     },
     {
       "id": "VIDEO_V91_CPR_NURSE_ROLE",
@@ -63069,5 +62847,28 @@
     },
     "no_image_upload_needed": true,
     "note": "새 이미지 추가 없음. 기존 public/selected_manual_images 및 기존 이미지 폴더는 그대로 사용."
+  },
+  "v93_update": {
+    "summary": "EVD(tragus) ICP 재는 방법 링크를 새 링크로 교체하고, L-sling 링크는 기존 유지. Dräger 인공호흡기 3번 영상은 중복으로 삭제.",
+    "l_sling_link_kept": "https://drive.google.com/file/d/1XSnxcpZwDaAFFQNFm4la9dDumMBFogay/view?usp=drive_link",
+    "evd_icp_link_updated_to": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
+    "drager_3_removed": true,
+    "evd_links_updated_count": 7,
+    "drager_3_videos_removed_count": 8,
+    "cards_touched": [
+      "DRESS008",
+      "MENU004",
+      "NSPROC030",
+      "UPD43_DRESSING___SDD_EVD",
+      "V71_EVD_ICP_CVP_OVERVIEW",
+      "V71_EVD_NURSING",
+      "V71_ICP_MANAGEMENT",
+      "V79_DETAIL_02",
+      "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+      "VENT002",
+      "VIDEO001",
+      "VIDEO_V91_DRAGER_SAVINA",
+      "VIDEO_V91_EVD_ICP_TRAGUS"
+    ]
   }
 }
