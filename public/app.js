@@ -365,10 +365,17 @@ function expandSearchTerms(rawTerms) {
     "드레싱": ["dressing", "wound"],
     "소독": ["sterile", "disinfection"],
     "낙상": ["fall", "fall risk"],
-    "욕창": ["pressure injury", "braden"],
+    "욕창": ["pressure injury", "pressure ulcer", "braden", "상처", "드레싱", "체위변경", "예방"],
     "통증": ["pain", "nrs", "cpot"],
-    "보조기": ["brace", "splint", "positioning"],
-    "펌프": ["pump", "infusion pump", "syringe pump"]
+    "보조기": ["brace", "splint", "positioning", "보호대", "restraint"],
+    "펌프": ["pump", "infusion pump", "syringe pump"],
+    "보호대": ["restraint", "손목보호대", "장갑형", "매듭", "대체수단", "모니터링", "ROM"],
+    "매듭": ["knot", "square knot", "slip knot", "clove hitch", "정방향 매듭", "고리 매듭", "클로브 히치"],
+    "상처": ["wound", "pressure injury", "dressing", "소독", "드레싱"],
+    "드레싱": ["dressing", "wound", "상처", "소독", "드레싱재료", "폼드레싱"],
+    "소독": ["disinfection", "sterile", "wound cleansing"],
+    "엑스레이": ["x-ray", "xray", "radiograph", "chest xray", "폐렴", "기흉", "폐부종", "흉수", "무기폐"],
+    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"]
   };
   const out = [...rawTerms];
   rawTerms.forEach(t => {
@@ -450,8 +457,11 @@ function scoreCard(query, card) {
     if (full.includes(t)) score += 5;
   }
 
-  if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/i.test(query)) score += 12;
-  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄/i.test(query)) score += 12;
+  if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/i.test(query)) score += 18;
+  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이/.test(query)) score += 26;
+  if ((card.images || []).length && /욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|사진|이미지|그림|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|ROM|모니터링/.test(query)) score += 22;
+  if (((card.id || '').startsWith('V87_') || (card.id || '').startsWith('V88_')) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(query)) score += 26;
+  if ((card.tables || []).length && /체크리스트|기록|예시|순서도|예방|대체수단|모니터링|폐렴|기흉|폐부종|흉수|무기폐/.test(query)) score += 12;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
 
