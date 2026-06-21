@@ -353,6 +353,12 @@ function normalizeText(v) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "원내프로토콜": ["병동간호팀", "병동 매뉴얼", "원내 프로토콜", "91페이지", "101페이지", "115페이지"],
+    "병동간호팀": ["원내 프로토콜", "병동간호팀 간호사메뉴얼", "호흡순환관련간호"],
+    "inspirometer": ["인스피로미터", "폐합병증", "심호흡"],
+    "분무약물": ["nebulizer", "벤토린", "부데코트", "세레타이드", "조터나"],
+    "allen": ["allen test", "ABGA", "요골동맥", "척골동맥"],
+
     "산소요법": ["nasal prong", "nasal cannula", "simple mask", "reservoir mask", "niv", "nebulizer"],
     "산소포화도": ["spo2", "desaturation", "저산소"],
     "고유량": ["hfnc", "high flow", "high flow nasal cannula"],
@@ -491,6 +497,7 @@ function scoreCard(query, card) {
   if ((card.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
   if ((card.id || "").startsWith("V96_") && /호흡|ventilator|인공호흡기|산소요법|nasal|mask|niv|nebulizer|hfnc|high flow|흡인|suction|기관절개|trach|abga|spo2|산소포화도/.test(q)) score += 35;
   if ((card.id || "") === "V96_TRACH_TYPES_CARE" && /기관절개관|single|double|cuff|fenestrated|portex|tracoe|koken|montgomery/.test(q)) score += 90;
+  if ((card.id || "").startsWith("V97_") && /원내|프로토콜|병동간호팀|91|101|115|호흡순환|흡인|suction|산소요법|inspirometer|분무|nebulizer|abga|allen/.test(q)) score += 80;
 
   return Math.max(0, score);
 }

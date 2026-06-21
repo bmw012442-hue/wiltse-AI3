@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.96.0-v96-respiratory-ventilator-focus",
+    "version": "1.97.0-v97-internal-protocol-respiratory",
     "language": "ko",
-    "source": "V95 기반 + 호흡/Ventilator 총정리, 산소요법/HFNC/Ventilator/흡인/기관절개관/ABGA/SpO2 정리와 검색 개선",
+    "source": "V96 기반 + 병동간호팀 간호사메뉴얼 91~101p 및 115p 호흡/Ventilator 원내 프로토콜 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -62612,12 +62612,14 @@ window.ICU_MANUAL_DB = {
         "V96_SUCTION_CLOSED_SUCTION",
         "V96_TRACH_TYPES_CARE",
         "V96_ABGA",
-        "V96_LOW_SPO2"
+        "V96_LOW_SPO2",
+        "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW"
       ],
       "source_refs": [
         "병원 호흡기계/중환자실 지침",
         "호흡기 장비 제조사 매뉴얼",
-        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+        "ABGA/기도관리/흡인 관련 병원 프로토콜",
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 원내 프로토콜 발췌 반영"
       ],
       "tables": [
         {
@@ -62711,7 +62713,10 @@ window.ICU_MANUAL_DB = {
         "non-rebreather",
         "BiPAP",
         "CPAP",
-        "산소장치"
+        "산소장치",
+        "원내 산소요법",
+        "inspirometer",
+        "분무약물요법"
       ],
       "urgency": "routine",
       "summary": "산소요법 종류와 기본 유량, 적응증, 간호 포인트를 표 중심으로 정리한 카드입니다.",
@@ -62734,12 +62739,16 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [
         "V96_HFNC",
-        "V96_LOW_SPO2"
+        "V96_LOW_SPO2",
+        "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW",
+        "V97_INTERNAL_PROTOCOL_OXYGEN_SPIROMETER",
+        "V97_INTERNAL_PROTOCOL_NEBULIZER"
       ],
       "source_refs": [
         "병원 호흡기계/중환자실 지침",
         "호흡기 장비 제조사 매뉴얼",
-        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+        "ABGA/기도관리/흡인 관련 병원 프로토콜",
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 원내 프로토콜 발췌 반영"
       ],
       "tables": [
         {
@@ -63140,7 +63149,11 @@ window.ICU_MANUAL_DB = {
         "open suction",
         "closed suction 관리",
         "흡인",
-        "분비물"
+        "분비물",
+        "원내 흡인간호",
+        "흡인압 110-150",
+        "1회 흡인 10초",
+        "전체 흡인 5분"
       ],
       "urgency": "routine",
       "summary": "흡입/흡인 간호를 open suction과 closed suction 중심으로 총정리한 카드입니다.",
@@ -63164,12 +63177,15 @@ window.ICU_MANUAL_DB = {
       "related": [
         "V79_DETAIL_06",
         "V96_VENTILATOR_ALARM_NURSING",
-        "V96_TRACH_TYPES_CARE"
+        "V96_TRACH_TYPES_CARE",
+        "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW",
+        "V97_INTERNAL_PROTOCOL_SUCTION"
       ],
       "source_refs": [
         "병원 호흡기계/중환자실 지침",
         "호흡기 장비 제조사 매뉴얼",
-        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+        "ABGA/기도관리/흡인 관련 병원 프로토콜",
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 원내 프로토콜 발췌 반영"
       ],
       "tables": [
         {
@@ -63436,7 +63452,10 @@ window.ICU_MANUAL_DB = {
         "pH",
         "PaCO2",
         "HCO3",
-        "PaO2"
+        "PaO2",
+        "천자 후 처치",
+        "5-10분 압박",
+        "ABGA 원내 프로토콜"
       ],
       "urgency": "routine",
       "summary": "ABGA 채혈 방법과 기본 해석 순서를 표 중심으로 정리한 카드입니다.",
@@ -63459,12 +63478,15 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [
         "V96_LOW_SPO2",
-        "LAB009"
+        "LAB009",
+        "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW",
+        "V97_INTERNAL_PROTOCOL_ABGA"
       ],
       "source_refs": [
         "병원 호흡기계/중환자실 지침",
         "호흡기 장비 제조사 매뉴얼",
-        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+        "ABGA/기도관리/흡인 관련 병원 프로토콜",
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 원내 프로토콜 발췌 반영"
       ],
       "tables": [
         {
@@ -63578,12 +63600,14 @@ window.ICU_MANUAL_DB = {
         "V96_OXYGEN_THERAPY",
         "V96_HFNC",
         "V96_VENTILATOR_ALARM_NURSING",
-        "V96_ABGA"
+        "V96_ABGA",
+        "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW"
       ],
       "source_refs": [
         "병원 호흡기계/중환자실 지침",
         "호흡기 장비 제조사 매뉴얼",
-        "ABGA/기도관리/흡인 관련 병원 프로토콜"
+        "ABGA/기도관리/흡인 관련 병원 프로토콜",
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 원내 프로토콜 발췌 반영"
       ],
       "tables": [
         {
@@ -63646,6 +63670,682 @@ window.ICU_MANUAL_DB = {
       ],
       "videos": [],
       "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW",
+      "category": "호흡 / Ventilator / 원내 프로토콜",
+      "title": "원내 프로토콜 호흡/Ventilator 적용 요약: 91~101p + 115p",
+      "aliases": [
+        "원내 프로토콜 호흡",
+        "병동간호팀 매뉴얼 호흡",
+        "91~101p",
+        "115p",
+        "호흡 프로토콜"
+      ],
+      "search_terms": [
+        "원내 프로토콜 호흡/Ventilator 적용 요약: 91~101p + 115p",
+        "호흡 / Ventilator / 원내 프로토콜",
+        "원내 프로토콜",
+        "병동간호팀 간호사메뉴얼",
+        "91페이지",
+        "101페이지",
+        "115페이지",
+        "원내 프로토콜 호흡",
+        "병동간호팀 매뉴얼 호흡",
+        "91~101p",
+        "115p",
+        "호흡 프로토콜",
+        "호흡순환관련간호",
+        "흡인간호",
+        "산소요법",
+        "inspirometer",
+        "흉부물리요법",
+        "분무약물요법",
+        "ABGA",
+        "Allen test"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 간호사 매뉴얼의 91~101p와 115p에서 호흡/Ventilator에 적용 가능한 흡인, 산소요법, inspirometer, 흉부물리, 분무약물, ABGA 내용을 앱용 표·이미지 중심으로 재정리했습니다.",
+      "indications": [
+        "병동간호팀 간호사 매뉴얼 기반으로 호흡기계 간호를 확인할 때"
+      ],
+      "preparation": [
+        "원내 매뉴얼 기준 확인",
+        "담당의 처방 및 병원 최신 프로토콜 확인",
+        "환자 상태와 모니터링 우선"
+      ],
+      "steps": [
+        "91~101p: 호흡순환관련간호, 흉부물리요법, 분무약물요법을 호흡/Ventilator 파트에 연결한다.",
+        "115p: ABGA/Allen test/천자 후 처치 내용을 ABGA 카드와 산소화 평가 카드에 연결한다.",
+        "기존 V96의 산소요법, 흡인, ABGA, SpO2, Ventilator 카드와 함께 보도록 구성한다."
+      ],
+      "warnings": [
+        "원내 프로토콜 발췌 재정리 자료입니다. 실제 처치는 병원 최신 지침, 담당의 처방, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "시행 시간, 장치/설정, V/S, SpO2, 환자 반응, 보고 내용을 기록"
+      ],
+      "related": [
+        "V97_INTERNAL_PROTOCOL_SUCTION",
+        "V97_INTERNAL_PROTOCOL_OXYGEN_SPIROMETER",
+        "V97_INTERNAL_PROTOCOL_NEBULIZER",
+        "V97_INTERNAL_PROTOCOL_ABGA"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "원내 프로토콜 적용 범위",
+          "caption": "사용자가 지정한 페이지 범위",
+          "headers": [
+            "페이지",
+            "원내 매뉴얼 항목",
+            "앱 적용"
+          ],
+          "rows": [
+            [
+              "91~101p",
+              "17. 호흡순환관련간호",
+              "흡인간호, 산소요법, inspirometer 사용법"
+            ],
+            [
+              "91~101p",
+              "18. 흉부물리요법",
+              "percussion, EDBC, 심호흡/기침 교육"
+            ],
+            [
+              "91~101p",
+              "19. 분무약물요법",
+              "벤토린, 부데코트, 세레타이드 디스커스, 조터나"
+            ],
+            [
+              "115p",
+              "22. 검체수집-ABGA",
+              "ABGA 채취부위/방법, Allen test, 천자 후 처치, 결과 해석"
+            ],
+            [
+              "V97 적용",
+              "호흡/Ventilator 카드에 원내 프로토콜 연결",
+              "표·이미지 우선 표시, 검색어 보강"
+            ]
+          ],
+          "search_terms": [
+            "91~101p",
+            "115p",
+            "원내프로토콜"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v97_protocol_resp_overview.png",
+          "alt": "병동간호팀 매뉴얼 호흡기계 적용 요약",
+          "caption": "91~101p + 115p 호흡기계 적용 요약 이미지",
+          "search_terms": [
+            "원내프로토콜이미지",
+            "호흡프로토콜"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V97_INTERNAL_PROTOCOL_SUCTION",
+      "category": "호흡 / Ventilator / 원내 프로토콜",
+      "title": "원내 프로토콜 흡인간호: 체위·압력·삽입·시간·기록",
+      "aliases": [
+        "원내 흡인간호",
+        "흡인간호 프로토콜",
+        "suction protocol",
+        "병동 매뉴얼 흡인"
+      ],
+      "search_terms": [
+        "원내 프로토콜 흡인간호: 체위·압력·삽입·시간·기록",
+        "호흡 / Ventilator / 원내 프로토콜",
+        "원내 프로토콜",
+        "병동간호팀 간호사메뉴얼",
+        "91페이지",
+        "101페이지",
+        "115페이지",
+        "원내 흡인간호",
+        "흡인간호 프로토콜",
+        "suction protocol",
+        "병동 매뉴얼 흡인",
+        "흡인간호",
+        "suction",
+        "비강흡인",
+        "구강흡인",
+        "흡인압",
+        "카테터",
+        "분비물",
+        "SpO2 저하",
+        "흡인 시간"
+      ],
+      "urgency": "routine",
+      "summary": "원내 매뉴얼의 흡인간호 내용을 체위, 흡인압, 삽입 길이, 흡인 시간, 반복/휴식 기준으로 표 정리했습니다.",
+      "indications": [
+        "병동간호팀 간호사 매뉴얼 기반으로 호흡기계 간호를 확인할 때"
+      ],
+      "preparation": [
+        "원내 매뉴얼 기준 확인",
+        "담당의 처방 및 병원 최신 프로토콜 확인",
+        "환자 상태와 모니터링 우선"
+      ],
+      "steps": [
+        "의식 있는 환자는 반좌위, 무의식 환자는 airway 후 측위로 준비한다.",
+        "흡인압을 확인하고 카테터를 부드럽게 삽입한다.",
+        "카테터를 돌려 빼며 5~10초 흡인하고, 1회 흡인은 10초를 넘기지 않는다.",
+        "1~3회 반복하되 흡인 사이 휴식시간을 두고 전체 흡인은 5분 이내로 한다.",
+        "흡인 후 호흡상태, 호흡음, 분비물 양상, 환자 반응을 기록한다."
+      ],
+      "warnings": [
+        "원내 프로토콜 발췌 재정리 자료입니다. 실제 처치는 병원 최신 지침, 담당의 처방, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "시행 시간, 장치/설정, V/S, SpO2, 환자 반응, 보고 내용을 기록"
+      ],
+      "related": [
+        "V96_SUCTION_CLOSED_SUCTION",
+        "V79_DETAIL_06",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "원내 흡인간호 표",
+          "caption": "91~101p 흡인간호 발췌 재정리",
+          "headers": [
+            "구분",
+            "원내 프로토콜 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "체위",
+              "의식 있는 환자: 반좌위 / 무의식 환자: airway 후 측위",
+              "흡인 전 설명, 가능하면 식사 전 시행, aspiration 예방"
+            ],
+            [
+              "압력 확인",
+              "성인 110–150 mmHg / 아동 95–100 mmHg",
+              "조절구멍 막은 상태에서 압력 체크"
+            ],
+            [
+              "삽입 길이",
+              "구강/비강 카테터를 부드럽게 삽입",
+              "비강 삽입 길이 참고: 코에서 귓볼까지, 성인 약 13 cm"
+            ],
+            [
+              "흡인 시간",
+              "카테터를 돌려 빼며 5–10초 흡인",
+              "1회 흡인 10초 초과 금지"
+            ],
+            [
+              "반복/휴식",
+              "1–3회 반복, 흡인 사이 20–30초 휴식",
+              "전체 흡인 5분 이내, 심호흡/기침 권장"
+            ],
+            [
+              "마무리",
+              "카테터 세척, 환자 호흡상태 확인",
+              "분비물 양상과 환자 반응 기록"
+            ]
+          ],
+          "search_terms": [
+            "흡인간호표",
+            "원내 suction"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "흡인 체위·압력·시간·반복 기준 표",
+          "search_terms": [
+            "흡인간호이미지",
+            "suction protocol"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V97_INTERNAL_PROTOCOL_OXYGEN_SPIROMETER",
+      "category": "호흡 / Ventilator / 원내 프로토콜",
+      "title": "원내 프로토콜 산소요법·Inspirometer: 산소장치와 폐합병증 예방",
+      "aliases": [
+        "원내 산소요법",
+        "inspirometer 사용법",
+        "산소요법 프로토콜",
+        "병동 매뉴얼 산소"
+      ],
+      "search_terms": [
+        "원내 프로토콜 산소요법·Inspirometer: 산소장치와 폐합병증 예방",
+        "호흡 / Ventilator / 원내 프로토콜",
+        "원내 프로토콜",
+        "병동간호팀 간호사메뉴얼",
+        "91페이지",
+        "101페이지",
+        "115페이지",
+        "원내 산소요법",
+        "inspirometer 사용법",
+        "산소요법 프로토콜",
+        "병동 매뉴얼 산소",
+        "산소요법",
+        "oxygen inhalation",
+        "nasal prong",
+        "mask",
+        "reservoir",
+        "NIV",
+        "nebulizer",
+        "inspirometer",
+        "폐합병증",
+        "수술환자"
+      ],
+      "urgency": "routine",
+      "summary": "원내 매뉴얼의 산소요법과 inspirometer 사용법을 산소장치/유량/반응 기록과 폐합병증 예방 교육 중심으로 정리했습니다.",
+      "indications": [
+        "병동간호팀 간호사 매뉴얼 기반으로 호흡기계 간호를 확인할 때"
+      ],
+      "preparation": [
+        "원내 매뉴얼 기준 확인",
+        "담당의 처방 및 병원 최신 프로토콜 확인",
+        "환자 상태와 모니터링 우선"
+      ],
+      "steps": [
+        "산소장치, 유량, 목표 SpO2를 확인하고 환자 반응을 관찰한다.",
+        "Inspirometer는 폐 합병증 위험환자, 수술환자, 고령, 발열, 호흡기 질환자에게 교육한다.",
+        "똑바로 앉거나 반좌위에서 시행하고, 3초 동안 공이 떠 있도록 깊게 흡기한다.",
+        "매시간 시행하며 한 번에 4~5회 반복하고 마우스피스를 청결히 보관한다."
+      ],
+      "warnings": [
+        "원내 프로토콜 발췌 재정리 자료입니다. 실제 처치는 병원 최신 지침, 담당의 처방, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "시행 시간, 장치/설정, V/S, SpO2, 환자 반응, 보고 내용을 기록"
+      ],
+      "related": [
+        "V96_OXYGEN_THERAPY",
+        "V96_HFNC",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "원내 산소요법 표",
+          "caption": "산소장치와 간호 기록",
+          "headers": [
+            "구분",
+            "원내 프로토콜 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "산소요법 목적",
+              "저산소증 예방/완화, 조직 산소공급 개선",
+              "처방된 장치·유량·목표 SpO2 확인"
+            ],
+            [
+              "Nasal prong/cannula",
+              "저농도 산소 공급, 식사·대화 가능",
+              "비강 건조, 피부압박, 유량 확인"
+            ],
+            [
+              "Mask / Reservoir",
+              "중등도~고농도 산소 공급",
+              "마스크 밀착, reservoir bag 유지, CO2 재호흡 주의"
+            ],
+            [
+              "NIV",
+              "비침습 환기 보조",
+              "의식상태, 구토위험, 누출, 피부압박 관찰"
+            ],
+            [
+              "Nebulizer",
+              "분무약물 흡입 치료",
+              "전후 호흡음, HR, tremor, 약물 반응 확인"
+            ],
+            [
+              "기록",
+              "산소장치, 유량/FiO2, SpO2, 환자 반응",
+              "변경 시점과 보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "원내산소요법",
+            "nasal prong",
+            "NIV"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "Inspirometer 사용법 표",
+          "caption": "폐합병증 예방 교육",
+          "headers": [
+            "구분",
+            "내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "적응증",
+              "폐 합병증 위험환자, 수술환자, 고령, fever 38℃ 이상, asthma/COPD/pneumonia 등",
+              "수술 후 무기폐 예방 교육과 함께 설명"
+            ],
+            [
+              "자세",
+              "똑바로 앉거나 반좌위",
+              "어깨와 흉곽 이완"
+            ],
+            [
+              "방법",
+              "정상 호기 후 마우스피스를 물고 공이 3초 떠 있도록 깊게 흡기",
+              "숨을 천천히 내쉼"
+            ],
+            [
+              "횟수",
+              "매 시간 시행, 1회 4–5회 반복",
+              "현기증/호흡곤란 시 중단·보고"
+            ],
+            [
+              "보관",
+              "사용 후 마우스피스 청결 보관",
+              "환자 전용 사용"
+            ]
+          ],
+          "search_terms": [
+            "inspirometer",
+            "폐합병증예방"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 산소요법과 inspirometer 표",
+          "caption": "산소요법·Inspirometer 원내 프로토콜 표",
+          "search_terms": [
+            "산소요법이미지",
+            "inspirometer image"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V97_INTERNAL_PROTOCOL_NEBULIZER",
+      "category": "호흡 / Ventilator / 원내 프로토콜",
+      "title": "원내 프로토콜 분무약물요법: 벤토린·부데코트·세레타이드·조터나",
+      "aliases": [
+        "분무약물요법",
+        "nebulizer protocol",
+        "벤토린",
+        "부데코트",
+        "세레타이드",
+        "조터나"
+      ],
+      "search_terms": [
+        "원내 프로토콜 분무약물요법: 벤토린·부데코트·세레타이드·조터나",
+        "호흡 / Ventilator / 원내 프로토콜",
+        "원내 프로토콜",
+        "병동간호팀 간호사메뉴얼",
+        "91페이지",
+        "101페이지",
+        "115페이지",
+        "분무약물요법",
+        "nebulizer protocol",
+        "벤토린",
+        "부데코트",
+        "세레타이드",
+        "조터나",
+        "분무약물",
+        "nebulizer",
+        "ventolin",
+        "budecort",
+        "seretide",
+        "xoterna",
+        "브리즈헬러",
+        "흡입기",
+        "기관지확장제"
+      ],
+      "urgency": "routine",
+      "summary": "원내 매뉴얼의 분무약물요법 페이지를 벤토린, 부데코트, 세레타이드, 조터나 사용·간호 포인트로 표 정리했습니다.",
+      "indications": [
+        "병동간호팀 간호사 매뉴얼 기반으로 호흡기계 간호를 확인할 때"
+      ],
+      "preparation": [
+        "원내 매뉴얼 기준 확인",
+        "담당의 처방 및 병원 최신 프로토콜 확인",
+        "환자 상태와 모니터링 우선"
+      ],
+      "steps": [
+        "처방 약물과 사용기구를 확인한다.",
+        "흡입 전후 호흡음, SpO2, HR, 부작용을 관찰한다.",
+        "스테로이드 흡입제는 사용 후 구강 헹굼을 교육한다.",
+        "조터나는 캡슐을 흡입기에 장착하여 1일 1회 같은 시간에 흡입하며 1일 1회를 초과하지 않는다.",
+        "심혈관질환, 경련성 장애, 갑상선중독증, 저칼륨혈증, 당뇨, 녹내장, 요정체, 중증 신장애 등 주의 환자를 확인한다."
+      ],
+      "warnings": [
+        "원내 프로토콜 발췌 재정리 자료입니다. 실제 처치는 병원 최신 지침, 담당의 처방, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "시행 시간, 장치/설정, V/S, SpO2, 환자 반응, 보고 내용을 기록"
+      ],
+      "related": [
+        "V96_OXYGEN_THERAPY",
+        "V96_RESP_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "원내 분무약물요법 표",
+          "caption": "91~101p 분무약물요법 발췌 재정리",
+          "headers": [
+            "약물/기구",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "벤토린 흡입기",
+              "기관지확장제 계열 흡입 치료",
+              "사용 전후 HR, tremor, 호흡음 확인"
+            ],
+            [
+              "부데코트",
+              "흡입 스테로이드 계열",
+              "사용 후 구강 헹굼 교육"
+            ],
+            [
+              "세레타이드 디스커스",
+              "흡입 복합제 계열",
+              "흡입력/사용법 확인, 사용 후 구강관리"
+            ],
+            [
+              "조터나 흡입기",
+              "브리즈헬러에 캡슐 장착 후 흡입, 1일 1회 같은 시간",
+              "1일 1회 초과 금지, 천식/과민증 등 금기 확인"
+            ],
+            [
+              "주의 환자",
+              "심혈관질환, 경련성 장애, 갑상선중독증, 저칼륨혈증, 당뇨, 녹내장, 요정체, 중증 신장애 등",
+              "처방·금기·부작용 확인 후 투여"
+            ]
+          ],
+          "search_terms": [
+            "분무약물요법표",
+            "조터나",
+            "벤토린"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v97_protocol_nebulizer_table.png",
+          "alt": "원내 프로토콜 분무약물요법 표",
+          "caption": "벤토린·부데코트·세레타이드·조터나 요약표",
+          "search_terms": [
+            "nebulizer image",
+            "분무약물요법 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V97_INTERNAL_PROTOCOL_ABGA",
+      "category": "호흡 / Ventilator / 원내 프로토콜",
+      "title": "원내 프로토콜 ABGA: 채혈·천자 후 처치·Allen test·결과 해석",
+      "aliases": [
+        "원내 ABGA",
+        "ABGA 프로토콜",
+        "Allen test",
+        "ABGA 채혈"
+      ],
+      "search_terms": [
+        "원내 프로토콜 ABGA: 채혈·천자 후 처치·Allen test·결과 해석",
+        "호흡 / Ventilator / 원내 프로토콜",
+        "원내 프로토콜",
+        "병동간호팀 간호사메뉴얼",
+        "91페이지",
+        "101페이지",
+        "115페이지",
+        "원내 ABGA",
+        "ABGA 프로토콜",
+        "Allen test",
+        "ABGA 채혈",
+        "ABGA",
+        "동맥혈 가스분석",
+        "천자 후 처치",
+        "요골동맥",
+        "척골동맥",
+        "pH",
+        "PaCO2",
+        "HCO3",
+        "PaO2"
+      ],
+      "urgency": "routine",
+      "summary": "115p ABGA 내용을 채혈 목적, 천자 후 처치, Allen test 시행방법, 검체 주의, 결과 해석 접근으로 재정리했습니다.",
+      "indications": [
+        "병동간호팀 간호사 매뉴얼 기반으로 호흡기계 간호를 확인할 때"
+      ],
+      "preparation": [
+        "원내 매뉴얼 기준 확인",
+        "담당의 처방 및 병원 최신 프로토콜 확인",
+        "환자 상태와 모니터링 우선"
+      ],
+      "steps": [
+        "ABGA 채혈 전 산소장치/FiO2와 환자 상태를 확인한다.",
+        "요골동맥 천자 전 Allen test로 측부순환을 확인한다.",
+        "천자 후 dressing하고 5~10분간 압박하며, 출혈경향/항응고제 복용 시 더 오래 압박한다.",
+        "검체량, 라벨, 용혈/응고를 확인하고 즉시 전송한다.",
+        "결과는 pH → PaCO2 → HCO3 → PaO2/산소화 순서로 해석한다."
+      ],
+      "warnings": [
+        "원내 프로토콜 발췌 재정리 자료입니다. 실제 처치는 병원 최신 지침, 담당의 처방, 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "시행 시간, 장치/설정, V/S, SpO2, 환자 반응, 보고 내용을 기록"
+      ],
+      "related": [
+        "V96_ABGA",
+        "LAB003",
+        "V96_LOW_SPO2"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼(2026.04.13) p91~101, p115 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "원내 ABGA·Allen test 표",
+          "caption": "115p ABGA 내용 발췌 재정리",
+          "headers": [
+            "구분",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "목적",
+              "폐 가스교환 능력, 인공호흡기/COPD 등 호흡기능, 산-염기 상태 평가",
+              "산소장치와 FiO2 함께 기록"
+            ],
+            [
+              "천자 후 처치",
+              "천자부위 dressing 후 5–10분 압박",
+              "출혈경향/항응고제 복용 시 더 오래 압박"
+            ],
+            [
+              "Allen test 필요성",
+              "요골동맥 천자 전 척골동맥을 통한 측부순환 확인",
+              "순환 불량 시 해당 손 요골동맥 천자 피함"
+            ],
+            [
+              "Allen test 방법",
+              "주먹 쥠 → 요골/척골 압박 → 4–5회 쥐었다 폄 → 손바닥 확인 → 척골 압박 해제",
+              "10–15초 이내 색이 돌아오면 양성"
+            ],
+            [
+              "검체 주의",
+              "적합한 검체량, 라벨 세로 부착, 용혈/응고/고지혈혼탁 주의",
+              "채혈부위 울혈 방지, 항응고제 용기 혼합"
+            ],
+            [
+              "해석 접근",
+              "pH → PaCO2 → HCO3 → PaO2/산소화 순서",
+              "환자 상태와 ventilator/산소설정 함께 판단"
+            ]
+          ],
+          "search_terms": [
+            "ABGA원내프로토콜",
+            "Allen test"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "원내 프로토콜 ABGA Allen test 표",
+          "caption": "ABGA 채혈·Allen test·천자 후 처치 표",
+          "search_terms": [
+            "ABGA 이미지",
+            "Allen test table"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름도",
+          "caption": "채혈 전 확인부터 해석까지 ABGA 순서도",
+          "search_terms": [
+            "ABGA flow",
+            "Allen test 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
       "standard_sections_ready": true
     }
   ],
@@ -64982,5 +65682,25 @@ window.ICU_MANUAL_DB = {
       "v96_ventilator_nursing_boxes.png"
     ],
     "total_items": 382
+  },
+  "v97_update": {
+    "summary": "병동간호팀 간호사메뉴얼 p91~101 및 p115에서 호흡/Ventilator 적용 내용을 발췌해 원내 프로토콜 카드로 추가. 흡인간호, 산소요법/Inspirometer, 분무약물요법, ABGA/Allen test를 표·이미지 중심으로 재정리.",
+    "added_cards": [
+      "V97_INTERNAL_PROTOCOL_ABGA",
+      "V97_INTERNAL_PROTOCOL_NEBULIZER",
+      "V97_INTERNAL_PROTOCOL_OXYGEN_SPIROMETER",
+      "V97_INTERNAL_PROTOCOL_RESP_OVERVIEW",
+      "V97_INTERNAL_PROTOCOL_SUCTION"
+    ],
+    "added_images": [
+      "v97_protocol_abga_allen_table.png",
+      "v97_protocol_abga_flow.png",
+      "v97_protocol_nebulizer_table.png",
+      "v97_protocol_oxygen_spirometer_table.png",
+      "v97_protocol_resp_overview.png",
+      "v97_protocol_suction_table.png"
+    ],
+    "source_page_range_requested_by_user": "91~101 page + 115 page",
+    "total_items": 387
   }
 };
