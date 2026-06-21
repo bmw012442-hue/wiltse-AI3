@@ -329,6 +329,20 @@ function normalizeText(v) {
     .trim();
 }
 
+function mediaSearchText(card) {
+  const tableText = (card.tables || []).flatMap(t => [
+    t.title || "", t.caption || "", ...(t.search_terms || []), ...(t.headers || []),
+    ...(t.include_rows_in_search ? ((t.rows || []).flatMap(row => row || [])) : [])
+  ]);
+  const imageText = (card.images || []).flatMap(img => [
+    img.alt || "", img.caption || "", ...(img.search_terms || [])
+  ]);
+  const videoText = (card.videos || []).flatMap(v => [
+    v.title || "", v.caption || "", ...(v.search_terms || []), v.src || "", v.href || "", v.url || "", v.link || ""
+  ]);
+  return [...tableText, ...imageText, ...videoText].join(" " );
+}
+
 function cardSearchText(card) {
   return [
     ...(card.search_terms || []),
@@ -336,12 +350,8 @@ function cardSearchText(card) {
     ...(card.aliases || []), ...(card.indications || []), ...(card.preparation || []),
     ...(card.steps || []), ...(card.dosage_or_mix || []), ...(card.orders_or_emr || []),
     ...(card.charting || []), ...(card.warnings || []), ...(card.tags || []),
-    ...((card.tables || []).flatMap(t => [
-      t.title || "", ...(t.headers || []), ...((t.rows || []).flatMap(row => row || []))
-    ])),
-    ...((card.images || []).flatMap(img => [img.alt || "", img.caption || ""])),
-    ...((card.videos || []).flatMap(v => [v.title || "", v.caption || "", v.src || "", v.href || "", v.url || "", v.link || ""]))
-  ].join(" ");
+    mediaSearchText(card)
+  ].join(" " );
 }
 
 function scoreCard(query, card) {
@@ -354,6 +364,7 @@ function scoreCard(query, card) {
   const aliases = (card.aliases || []).map(normalizeText);
   const searchTerms = (card.search_terms || []).map(normalizeText);
   const summary = normalizeText(card.summary);
+  const media = normalizeText(mediaSearchText(card));
   const full = normalizeText(cardSearchText(card));
   let score = 0;
 
@@ -384,13 +395,14 @@ function scoreCard(query, card) {
     if (searchTerms.some(a => a.includes(t))) score += 38;
     if (category.includes(t) || originalCategory.includes(t)) score += 16;
     if (summary.includes(t)) score += 8;
+    if (media.includes(t)) score += 9;
     if (full.includes(t)) score += 3;
   }
 
-  if ((card.tables || []).length && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/i.test(query)) score += 18;
-  if ((card.images || []).length && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄/i.test(query)) score += 18;
+  if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/i.test(query)) score += 12;
+  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄/i.test(query)) score += 12;
 
-  if (!directText.includes(q) && directHits === 0) score -= 45;
+  if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
 
   return Math.max(0, score);
 }
