@@ -526,6 +526,9 @@ function scoreCard(query, card) {
 
   if ((card.id || "").startsWith("V102_") && /ns|os|수술명|수술약어|약어|수술전검사|pre.?op|preop|orif|crif|tkra|thra|burr|evd|sdd|coil|tfca|cms|drain pressure|보조기/.test(q)) score += 130;
 
+
+  if ((card.id || "").startsWith("V103_") && /crrt|fmc|renal|신장|bst|dm|dka|인슐린|혈당|sliding|hypogly|hypergly|electrolyte|k replacement|mg replacement|p replacement|ketone/.test(q)) score += 130;
+
   return Math.max(0, score);
 }
 

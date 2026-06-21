@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.02.0-v102-ns-os-preop-table-images",
+    "version": "2.03.0-v103-crrt-renal-bst-dm-dka",
     "language": "ko",
-    "source": "V101 기반 + NS/OS 수술명 약어 수술 전 검사/체크리스트/수술 후 관찰표 이미지 보강",
+    "source": "V102 기반 + 병동간호팀 매뉴얼 57~59page CRRT/신장 + FMC OJT + BST/DM/DKA 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -1984,7 +1984,9 @@
         "저혈당 주의",
         "RI 투여 후 F/U 시간 누락 주의"
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "약물/Mix/Insulin",
         "v8_final_reviewed"
@@ -1994,7 +1996,8 @@
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "업무 지침 매뉴얼(교육전담)"
+        "업무 지침 매뉴얼(교육전담)",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -2018,7 +2021,8 @@
         "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Regular Insulin continuous / RI 약물 / 수액 / 마약 약물/Mix/Insulin RI 휴물린 Humulin-R Insulin 인슐린 DKA BST Regular continuous 약물 수액 마약 v8_final_reviewed"
+      "search_index": "Regular Insulin continuous / RI 약물 / 수액 / 마약 약물/Mix/Insulin RI 휴물린 Humulin-R Insulin 인슐린 DKA BST Regular continuous 약물 수액 마약 v8_final_reviewed",
+      "prefer_media_first": true
     },
     {
       "id": "DRUG015",
@@ -2336,7 +2340,9 @@
       "warnings": [
         "추가 코멘트 없으면 지침서대로, 코멘트 있으면 지시에 맞게 수행"
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "약물/전해질",
         "v8_final_reviewed"
@@ -2346,7 +2352,8 @@
         "rule": "원본 확인 가능 + 중복 제거 + 실무 검색 최적화 + 평가표/서명란/점수 제거"
       },
       "source_refs": [
-        "업무 지침 매뉴얼(교육전담)"
+        "업무 지침 매뉴얼(교육전담)",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -2377,7 +2384,8 @@
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "DRUG020",
@@ -6011,7 +6019,8 @@
         "NS 500은 빠르게 들어갈 수 있어 앞에서 대기합니다. BP 낮으면 UF 조정 여부를 확인합니다."
       ],
       "related": [
-        "CRRT I/O, Return, Kit change, 처방, 차팅 상세"
+        "CRRT I/O, Return, Kit change, 처방, 차팅 상세",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "CRRT",
@@ -6022,7 +6031,8 @@
         "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "윌스 ICU AI 업무 매뉴얼 CRRT"
+        "윌스 ICU AI 업무 매뉴얼 CRRT",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -6120,7 +6130,8 @@
         "BP, pressure, alarm, UF 상태 확인"
       ],
       "standard_sections_ready": true,
-      "search_index": "CRRT Return / Kit change 상세 CRRT / 신장 CRRT return 리턴 kit change filter TMP access pressure 씨알알티 circuit change filter change return blood 혈액재주입 kit 교체 CRRT 알람 TMP 상승 return pressure Kit change 상세 신장 v11_source_enhanced CRRT Return / Kit change 핵심 확인 단계 확인사항 중단 전 CRRT I/O 끊기, pressure/alarm 확인 NS 500ml 연결, 3-way 방향 확인, 혈액 재주입 분리 Return 완료 후 환자와 장비 분리 재시작 새 kit setting, 기능테스트, rinse, line 색상 확인 관찰 BP, pressure, alarm, UF 상태 확인 CRRT I/O, Return, Kit change, 처방, 차팅 상세"
+      "search_index": "CRRT Return / Kit change 상세 CRRT / 신장 CRRT return 리턴 kit change filter TMP access pressure 씨알알티 circuit change filter change return blood 혈액재주입 kit 교체 CRRT 알람 TMP 상승 return pressure Kit change 상세 신장 v11_source_enhanced CRRT Return / Kit change 핵심 확인 단계 확인사항 중단 전 CRRT I/O 끊기, pressure/alarm 확인 NS 500ml 연결, 3-way 방향 확인, 혈액 재주입 분리 Return 완료 후 환자와 장비 분리 재시작 새 kit setting, 기능테스트, rinse, line 색상 확인 관찰 BP, pressure, alarm, UF 상태 확인 CRRT I/O, Return, Kit change, 처방, 차팅 상세",
+      "prefer_media_first": true
     },
     {
       "id": "CPR001",
@@ -9969,7 +9980,9 @@
       "warnings": [
         "조영제 검사 전후 metformin 중지 여부 등은 병원 지침과 처방을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "약물/경구혈당강하제",
         "v10_master_30_categories"
@@ -9979,7 +9992,8 @@
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [],
       "images": [
@@ -10061,7 +10075,8 @@
         "경구 혈당강하제 참고 표"
       ],
       "standard_sections_ready": true,
-      "search_index": "경구 혈당 강하제 확인 약물 / 수액 / 마약 약물/경구혈당강하제 경구혈당강하제 OHA 당뇨약 BST 메트포르민 sulfonylurea 경구 혈당 강하제 확인 약물 수액 마약 v10_master_30_categories 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표"
+      "search_index": "경구 혈당 강하제 확인 약물 / 수액 / 마약 약물/경구혈당강하제 경구혈당강하제 OHA 당뇨약 BST 메트포르민 sulfonylurea 경구 혈당 강하제 확인 약물 수액 마약 v10_master_30_categories 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표",
+      "prefer_media_first": true
     },
     {
       "id": "ECART001",
@@ -10966,7 +10981,9 @@
       "warnings": [
         "DKA 적용은 담당의 처방과 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "프로토콜/DKA",
         "v11_source_enhanced"
@@ -10976,7 +10993,8 @@
         "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "업무 지침 매뉴얼 내과 DKA protocol"
+        "업무 지침 매뉴얼 내과 DKA protocol",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -11056,7 +11074,8 @@
         "stop 유지"
       ],
       "standard_sections_ready": true,
-      "search_index": "DKA protocol 상세 BST / DM / DKA 프로토콜/DKA DKA diabetic ketoacidosis RI continuous BST 케톤산증 protocol 상세 DM v11_source_enhanced DKA RI continuous 조절 기준 조절 > 250 RI +1cc/hr 150-250 마지막 속도 유지, 1시간 후 BST check < 150 1시간 stop 후 2cc/hr로 재시작 < 100 stop 유지"
+      "search_index": "DKA protocol 상세 BST / DM / DKA 프로토콜/DKA DKA diabetic ketoacidosis RI continuous BST 케톤산증 protocol 상세 DM v11_source_enhanced DKA RI continuous 조절 기준 조절 > 250 RI +1cc/hr 150-250 마지막 속도 유지, 1시간 후 BST check < 150 1시간 stop 후 2cc/hr로 재시작 < 100 stop 유지",
+      "prefer_media_first": true
     },
     {
       "id": "BST001",
@@ -11109,7 +11128,9 @@
       "warnings": [
         "과별 sliding scale은 처방과 최신 병원 기준을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "BST Sliding",
         "v11_source_enhanced"
@@ -11119,7 +11140,8 @@
         "rule": "사용자가 지적한 원본 포함 항목을 실제 문서 내용 기준으로 보강"
       },
       "source_refs": [
-        "업무 지침 매뉴얼 RI sliding"
+        "업무 지침 매뉴얼 RI sliding",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -11353,7 +11375,8 @@
         "BST sliding"
       ],
       "standard_sections_ready": true,
-      "search_index": "내과·심장내과 RI sliding 상세 BST / DM / DKA BST Sliding RI sliding 내과 심장내과 저혈당 50DW RI sliding 상세 BST DM DKA v11_source_enhanced 내과 RI Sliding 250 < BST < 299 4 unit 300 < BST < 349 6 unit 350 < BST < 399 8 unit BST ≥ 400 10 unit 심장내과 RI Sliding 140-179 2 unit 180-220 221-260 261-300 301-350 351-400 12 unit > 400 14 unit 저혈당 처치 처치 < 70 50% DW 100 중 30ml IV 후 30분 뒤 BST f/u < 50 50% DW 100 중 60ml IV 후 30분 뒤 BST f/u 인슐린 종류와 작용시간 그래프 BST sliding"
+      "search_index": "내과·심장내과 RI sliding 상세 BST / DM / DKA BST Sliding RI sliding 내과 심장내과 저혈당 50DW RI sliding 상세 BST DM DKA v11_source_enhanced 내과 RI Sliding 250 < BST < 299 4 unit 300 < BST < 349 6 unit 350 < BST < 399 8 unit BST ≥ 400 10 unit 심장내과 RI Sliding 140-179 2 unit 180-220 221-260 261-300 301-350 351-400 12 unit > 400 14 unit 저혈당 처치 처치 < 70 50% DW 100 중 30ml IV 후 30분 뒤 BST f/u < 50 50% DW 100 중 60ml IV 후 30분 뒤 BST f/u 인슐린 종류와 작용시간 그래프 BST sliding",
+      "prefer_media_first": true
     },
     {
       "id": "PROTO002",
@@ -13984,7 +14007,9 @@
       "warnings": [
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V103_RENAL_DM_OVERVIEW"
+      ],
       "tags": [
         "BST·DM",
         "v14_v11_based_menu",
@@ -13995,7 +14020,8 @@
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [],
       "images": [
@@ -14119,7 +14145,8 @@
         "경구 혈당강하제 참고 표"
       ],
       "standard_sections_ready": true,
-      "search_index": "BST / DM / 인슐린 / 혈당관리 BST / DM / DKA BST·DM BST DM diabetes 혈당 BST 정상범위 정상 범위 저혈당 고혈당 상황대처 bst tip insulin 인슐린 인슐린 종류 RI Humulin 휴물린 sliding DKA OHA 경구혈당강하제 DM 약물 metformin 혈당관리 v14_v11_based_menu search_optimized 인슐린 종류와 작용시간 그래프 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표"
+      "search_index": "BST / DM / 인슐린 / 혈당관리 BST / DM / DKA BST·DM BST DM diabetes 혈당 BST 정상범위 정상 범위 저혈당 고혈당 상황대처 bst tip insulin 인슐린 인슐린 종류 RI Humulin 휴물린 sliding DKA OHA 경구혈당강하제 DM 약물 metformin 혈당관리 v14_v11_based_menu search_optimized 인슐린 종류와 작용시간 그래프 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표",
+      "prefer_media_first": true
     },
     {
       "id": "MENU016",
@@ -18733,7 +18760,8 @@
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "CRRT Return / Kit change 상세"
+        "CRRT Return / Kit change 상세",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tables": [
         {
@@ -18872,7 +18900,8 @@
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "original_category": "CRRT",
       "search_terms": [
@@ -18948,7 +18977,8 @@
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "NSPROC030",
@@ -36134,7 +36164,8 @@
         "ABGA 총정리",
         "중환자실 질병 계통별 총정리",
         "심혈관 환자 간호",
-        "EVD ICP CVP 총정리"
+        "EVD ICP CVP 총정리",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "혈당",
@@ -36149,7 +36180,8 @@
       "source_refs": [
         "CDC Diabetes Testing: A1C, fasting glucose, OGTT, random glucose diagnostic ranges",
         "American Diabetes Association Standards of Care in Diabetes: glycemic goals and hypoglycemia guidance",
-        "원내 처방 및 병원 프로토콜 우선 적용"
+        "원내 처방 및 병원 프로토콜 우선 적용",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -36300,7 +36332,8 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "혈당 당뇨 당뇨병 인슐린 BST blood glucose diabetes insulin HbA1c 공복혈당 식후혈당 저혈당 고혈당 DKA HHS sliding scale 혈당 총정리 당뇨 총정리 인슐린 총정리 혈당관리 당뇨 간호 혈당·당뇨·인슐린 총정리: 진단기준·목표·간호 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
+      "search_index": "혈당 당뇨 당뇨병 인슐린 BST blood glucose diabetes insulin HbA1c 공복혈당 식후혈당 저혈당 고혈당 DKA HHS sliding scale 혈당 총정리 당뇨 총정리 인슐린 총정리 혈당관리 당뇨 간호 혈당·당뇨·인슐린 총정리: 진단기준·목표·간호 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V75_HYPO_HYPERGLYCEMIA",
@@ -36377,7 +36410,8 @@
         "ABGA 총정리",
         "중환자실 질병 계통별 총정리",
         "심혈관 환자 간호",
-        "EVD ICP CVP 총정리"
+        "EVD ICP CVP 총정리",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "저혈당",
@@ -36392,7 +36426,8 @@
       "source_refs": [
         "CDC Diabetes Testing: A1C, fasting glucose, OGTT, random glucose diagnostic ranges",
         "American Diabetes Association Standards of Care in Diabetes: glycemic goals and hypoglycemia guidance",
-        "원내 처방 및 병원 프로토콜 우선 적용"
+        "원내 처방 및 병원 프로토콜 우선 적용",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -36528,7 +36563,8 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "저혈당 고혈당 hypoglycemia hyperglycemia 혈당 70 혈당 54 식은땀 떨림 빈맥 의식저하 갈증 다뇨 탈수 케톤 글루카곤 정맥포도당 혈당 응급처치 저혈당·고혈당 증상과 간호 처치 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
+      "search_index": "저혈당 고혈당 hypoglycemia hyperglycemia 혈당 70 혈당 54 식은땀 떨림 빈맥 의식저하 갈증 다뇨 탈수 케톤 글루카곤 정맥포도당 혈당 응급처치 저혈당·고혈당 증상과 간호 처치 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V75_INSULIN_AND_DIABETES_DRUGS",
@@ -36606,7 +36642,8 @@
         "ABGA 총정리",
         "중환자실 질병 계통별 총정리",
         "심혈관 환자 간호",
-        "EVD ICP CVP 총정리"
+        "EVD ICP CVP 총정리",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "인슐린",
@@ -36621,7 +36658,8 @@
       "source_refs": [
         "CDC Diabetes Testing: A1C, fasting glucose, OGTT, random glucose diagnostic ranges",
         "American Diabetes Association Standards of Care in Diabetes: glycemic goals and hypoglycemia guidance",
-        "원내 처방 및 병원 프로토콜 우선 적용"
+        "원내 처방 및 병원 프로토콜 우선 적용",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -36806,7 +36844,8 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "인슐린 인슐린 종류 초속효 속효성 NPH glargine detemir degludec regular insulin sliding scale 메트포르민 SGLT2 DPP4 GLP1 TZD 당뇨약 주사부위 순환 인슐린 주사 인슐린 종류·주사부위·당뇨 약물 총정리 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
+      "search_index": "인슐린 인슐린 종류 초속효 속효성 NPH glargine detemir degludec regular insulin sliding scale 메트포르민 SGLT2 DPP4 GLP1 TZD 당뇨약 주사부위 순환 인슐린 주사 인슐린 종류·주사부위·당뇨 약물 총정리 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V75_DKA_HHS_ICU_NURSING",
@@ -36876,7 +36915,8 @@
         "ABGA 총정리",
         "중환자실 질병 계통별 총정리",
         "심혈관 환자 간호",
-        "EVD ICP CVP 총정리"
+        "EVD ICP CVP 총정리",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "DKA",
@@ -36891,7 +36931,8 @@
       "source_refs": [
         "CDC Diabetes Testing: A1C, fasting glucose, OGTT, random glucose diagnostic ranges",
         "American Diabetes Association Standards of Care in Diabetes: glycemic goals and hypoglycemia guidance",
-        "원내 처방 및 병원 프로토콜 우선 적용"
+        "원내 처방 및 병원 프로토콜 우선 적용",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -37052,7 +37093,8 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "DKA HHS 당뇨병성 케톤산증 고삼투압 고혈당 증후군 케톤산증 고삼투압 Kussmaul respiration 의식저하 탈수 인슐린 drip 전해질 보충 중환자실 혈당 간호 DKA·HHS 핵심과 중환자실 혈당 간호 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
+      "search_index": "DKA HHS 당뇨병성 케톤산증 고삼투압 고혈당 증후군 케톤산증 고삼투압 Kussmaul respiration 의식저하 탈수 인슐린 drip 전해질 보충 중환자실 혈당 간호 DKA·HHS 핵심과 중환자실 혈당 간호 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V76_ICU_MEDICATION_OVERVIEW",
@@ -40993,7 +41035,8 @@
         "전해질 이상",
         "혈역학",
         "수액요법",
-        "ABGA"
+        "ABGA",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "CRRT",
@@ -41006,7 +41049,8 @@
       },
       "source_refs": [
         "CRRT 일반 원칙",
-        "원내 신장내과/장비 프로토콜 우선"
+        "원내 신장내과/장비 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -41098,7 +41142,8 @@
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "CRRT 신장계 투석 renal AKI UF effluent filter clotting 항응고 지속적 신대체요법 hemofiltration 신장계 · CRRT 총정리 신장 / CRRT 전해질 이상 혈역학 수액요법 ABGA"
+      "search_index": "CRRT 신장계 투석 renal AKI UF effluent filter clotting 항응고 지속적 신대체요법 hemofiltration 신장계 · CRRT 총정리 신장 / CRRT 전해질 이상 혈역학 수액요법 ABGA",
+      "prefer_media_first": true
     },
     {
       "id": "V82_GI_DIGESTIVE_OVERVIEW",
@@ -45921,7 +45966,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -45938,7 +45984,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -46076,7 +46123,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "AKI creatinine BUN urine output renal 급성신손상 Cr 상승 oliguria AKI 의심 환자 신장계 기본 사정 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "AKI creatinine BUN urine output renal 급성신손상 Cr 상승 oliguria AKI 의심 환자 신장계 기본 사정 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_02",
@@ -46133,7 +46181,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -46150,7 +46199,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -46288,7 +46338,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "CRRT dialysate replacement blood flow UF target CRRT 시작 투석 준비 지속적 신대체요법 CRRT 시작 전 준비 체크리스트 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "CRRT dialysate replacement blood flow UF target CRRT 시작 투석 준비 지속적 신대체요법 CRRT 시작 전 준비 체크리스트 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_03",
@@ -46345,7 +46396,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -46361,7 +46413,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -46492,7 +46545,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "CRRT alarm TMP filter clotting pressure alarm CRRT 알람 access pressure return pressure CRRT Pressure·TMP 알람 해석 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "CRRT alarm TMP filter clotting pressure alarm CRRT 알람 access pressure return pressure CRRT Pressure·TMP 알람 해석 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_04",
@@ -46550,7 +46604,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -46568,7 +46623,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -46713,7 +46769,8 @@
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_05",
@@ -46771,7 +46828,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -46788,7 +46846,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -46926,7 +46985,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "filter clotting clotting TMP anticoagulation blood flow 필터 클로팅 회로응고 TMP 상승 CRRT Filter Clotting 예방·대응 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "filter clotting clotting TMP anticoagulation blood flow 필터 클로팅 회로응고 TMP 상승 CRRT Filter Clotting 예방·대응 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_06",
@@ -46991,7 +47051,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -47009,7 +47070,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -47174,7 +47236,8 @@
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_07",
@@ -47233,7 +47296,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -47251,7 +47315,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -47396,7 +47461,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "dialysis catheter vascular access CRRT line catheter care dressing infection 투석관 혈액투석 카테터 access CRRT Dialysis Catheter 관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "dialysis catheter vascular access CRRT line catheter care dressing infection 투석관 혈액투석 카테터 access CRRT Dialysis Catheter 관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V81_DETAIL_08",
@@ -47455,7 +47521,8 @@
         "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "V81_RENAL_CRRT_OVERVIEW"
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_RENAL_DM_OVERVIEW"
       ],
       "tags": [
         "V81",
@@ -47472,7 +47539,8 @@
       },
       "source_refs": [
         "KDIGO AKI/신대체요법 지침",
-        "원내 CRRT 장비·신장내과 프로토콜 우선"
+        "원내 CRRT 장비·신장내과 프로토콜 우선",
+        "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [
         {
@@ -47617,7 +47685,8 @@
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "CRRT safety hypotension bleeding hypothermia anticoagulation CRRT 안전 저혈압 출혈 체온저하 CRRT 중 저혈압·출혈·체온저하 안전관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW"
+      "search_index": "CRRT safety hypotension bleeding hypothermia anticoagulation CRRT 안전 저혈압 출혈 체온저하 CRRT 중 저혈압·출혈·체온저하 안전관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V82_DETAIL_01",
@@ -66591,6 +66660,1064 @@
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V103_RENAL_CRRT_MANUAL_57_59",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "병동간호팀 매뉴얼 57~59page 추출: CRRT / 신장 핵심표",
+      "aliases": [
+        "매뉴얼 57 59 CRRT",
+        "CRRT 매뉴얼",
+        "신장계 매뉴얼",
+        "57~59 page"
+      ],
+      "search_terms": [
+        "병동간호팀 매뉴얼 57~59page 추출: CRRT / 신장 핵심표",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "매뉴얼 57 59 CRRT",
+        "CRRT 매뉴얼",
+        "신장계 매뉴얼",
+        "57~59 page",
+        "57~59",
+        "CRRT 준비물",
+        "CRRT start",
+        "CRRT return",
+        "CRRT filter 교체",
+        "CRRT I/O"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 간호사 매뉴얼 57~59page의 CRRT/신장 핵심을 사용자가 항상 이미지로 볼 수 있게 표로 재구성한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "준비·line 연결·start·return·filter·I/O 순서로 확인한다.",
+        "중환자실에서 자주 필요한 항목을 이미지와 표로 우선 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW",
+        "V103_FMC_CRRT_START_RETURN",
+        "V103_CRRT_IO_HYPOTENSION_ELECTROLYTES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "CRRT / 신장 매뉴얼 57~59page 핵심표",
+          "caption": "준비·line 연결·start·return·filter·I/O",
+          "headers": [
+            "구분",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "CRRT start 전",
+              "처방, modality, blood flow, UF 목표, 용액, 항응고제",
+              "기계 setting과 처방 대조 / baseline V/S·labs 확인"
+            ],
+            [
+              "CRRT line 연결",
+              "dialysis catheter patency, access/return 연결방향",
+              "FMC 기계에서 pre/access와 post/return 방향 오류 없게 확인"
+            ],
+            [
+              "CRRT start",
+              "prime 완료, line clamp 해제, blood pump 시작",
+              "pressure·TMP·blood leak·air alarm 초기 안정 확인"
+            ],
+            [
+              "Return",
+              "치료종료 후 NS 500 mL로 blood return",
+              "3-way 방향 확인, 환자 상태·혈압 관찰"
+            ],
+            [
+              "Filter 교체",
+              "TMP 상승, clotting, 반복 alarm, 효율 저하",
+              "kit change 전 I/O 끊고 return 후 새 kit 세팅"
+            ],
+            [
+              "I/O 기록",
+              "정각 기준, CRRT inflow/outflow, net UF",
+              "main/side infusion, feeding, U/O, drain 모두 반영"
+            ]
+          ],
+          "search_terms": [
+            "57 59 CRRT표",
+            "매뉴얼 CRRT"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_manual_57_59_crrt_extract.png",
+          "alt": "병동간호팀 간호사 매뉴얼 57 59page CRRT 추출 이미지",
+          "caption": "매뉴얼 57~59page CRRT/신장 핵심표 이미지",
+          "search_terms": [
+            "57 59 이미지",
+            "CRRT 매뉴얼 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_FMC_CRRT_START_RETURN",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "FMC CRRT 시작 전 준비·line 연결·Start·Return",
+      "aliases": [
+        "FMC CRRT",
+        "CRRT 시작",
+        "CRRT line 연결",
+        "CRRT return",
+        "Multifiltrate"
+      ],
+      "search_terms": [
+        "FMC CRRT 시작 전 준비·line 연결·Start·Return",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "CRRT 시작",
+        "CRRT line 연결",
+        "CRRT return",
+        "Multifiltrate",
+        "FMC",
+        "CRRT 준비물",
+        "line 연결",
+        "blood return",
+        "kit change"
+      ],
+      "urgency": "routine",
+      "summary": "본원 FMC CRRT 장비 기준으로 start 전 준비물, line 연결, start 절차, return 절차를 OJT 참고 내용과 함께 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "처방, mode, BFR, UF, 용액, 항응고를 확인한다.",
+        "prime과 line direction(access/return)을 확인한다.",
+        "start 후 pressure/TMP/alarm과 혈압을 집중 관찰한다.",
+        "종료/kit change 시 정각 I/O 반영 후 NS 500mL로 return 한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "CRRT001",
+        "CRRT030",
+        "V81_DETAIL_02",
+        "V103_RENAL_CRRT_MANUAL_57_59"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "FMC CRRT start 체크리스트",
+          "caption": "준비·연결·start·return",
+          "headers": [
+            "단계",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "준비물",
+              "FMC CRRT machine, filter/kit, NS 500mL·1L, 투석액/보충액, anticoagulant, syringe, warming, dressing",
+              "처방과 kit 종류 확인"
+            ],
+            [
+              "처방 확인",
+              "mode, blood flow(BFR), replacement/dialysate, net UF, anticoagulation",
+              "시작 전 의사 처방과 화면 setting 대조"
+            ],
+            [
+              "환자 준비",
+              "동의/설명, catheter 위치/고정, V/S, labs, ABGA, 전해질",
+              "저혈압·출혈 위험 사전 확인"
+            ],
+            [
+              "회로 준비",
+              "기능테스트, rinse/prime, heating sensor, heparin sensor",
+              "연결부 누수·air bubble·line 꼬임 확인"
+            ],
+            [
+              "연결 확인",
+              "access = patient→filter, return = filter→patient",
+              "pre line 빨간색, post line 파란색 기준 확인"
+            ],
+            [
+              "시작 후",
+              "pressure / TMP / BFR / alarm / UF 안정성",
+              "초기 5~10분 혈압과 회로를 집중 관찰"
+            ]
+          ],
+          "search_terms": [
+            "FMC CRRT start",
+            "line 연결표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작 전 준비와 line 연결 이미지",
+          "caption": "FMC CRRT start/return 체크리스트 이미지",
+          "search_terms": [
+            "FMC CRRT 이미지",
+            "CRRT start 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_crrt_flow.png",
+          "alt": "CRRT start monitoring return 흐름 이미지",
+          "caption": "CRRT 흐름 이미지",
+          "search_terms": [
+            "CRRT flow",
+            "return flow"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v81_crrt_renal_overview.png",
+          "alt": "기존 CRRT overview 이미지",
+          "caption": "기존 CRRT overview 이미지 참고",
+          "search_terms": [
+            "CRRT overview"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_CRRT_ALARM_FILTER_ANTICOAG",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "CRRT 알람 대처 · Filter 교체 · 항응고제 확인",
+      "aliases": [
+        "CRRT 알람 대처",
+        "TMP 알람",
+        "filter 교체",
+        "항응고제 확인"
+      ],
+      "search_terms": [
+        "CRRT 알람 대처 · Filter 교체 · 항응고제 확인",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "CRRT 알람 대처",
+        "TMP 알람",
+        "filter 교체",
+        "항응고제 확인",
+        "access pressure",
+        "return pressure",
+        "TMP",
+        "air alarm",
+        "blood leak",
+        "filter clotting",
+        "heparin",
+        "citrate"
+      ],
+      "urgency": "routine",
+      "summary": "CRRT access/return pressure, TMP, air, blood leak 알람 해석과 filter 교체, 항응고제 확인 포인트를 표 중심으로 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "알람이 울리면 환자 상태와 회로 상태를 같이 본다.",
+        "TMP 상승과 clotting 징후가 있으면 filter 교체 필요성을 판단한다.",
+        "항응고제 처방과 출혈 징후를 함께 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "V81_DETAIL_03",
+        "V81_DETAIL_05",
+        "V81_DETAIL_08"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "CRRT 알람 대응표",
+          "caption": "pressure·TMP·air·blood leak·balance",
+          "headers": [
+            "알람/문제",
+            "먼저 확인",
+            "대응"
+          ],
+          "rows": [
+            [
+              "Access pressure 이상",
+              "카테터 위치, kink, 환자 체위, 혈전",
+              "체위/라인 교정 → 지속 시 보고"
+            ],
+            [
+              "Return pressure 이상",
+              "return line kink, clot, 환자 체위",
+              "라인/회로 확인, 필요 시 line flushing/보고"
+            ],
+            [
+              "TMP 상승",
+              "filter clotting, 막힘, 항응고 부족",
+              "필터 수명·혈류·항응고제 확인, 교체 고려"
+            ],
+            [
+              "Air alarm",
+              "연결부 loose, air bubble, chamber",
+              "환자 우선 확인 후 기계 지침 따라 즉시 대응"
+            ],
+            [
+              "Blood leak",
+              "filter membrane 문제 가능",
+              "치료 중단 여부 확인, 선임/의사 보고"
+            ],
+            [
+              "Balance 문제",
+              "bag 연결/무게, effluent bag, 배액백 full",
+              "bag 위치와 연결 상태 재확인"
+            ]
+          ],
+          "search_terms": [
+            "CRRT 알람표",
+            "TMP 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_crrt_alarm_table.png",
+          "alt": "CRRT 알람 대응 표 이미지",
+          "caption": "CRRT 알람 대응 이미지",
+          "search_terms": [
+            "CRRT 알람 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_CRRT_IO_HYPOTENSION_ELECTROLYTES",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "CRRT I/O 기록 · 저혈압 대처 · K/Mg/P replacement",
+      "aliases": [
+        "CRRT I/O",
+        "CRRT 저혈압",
+        "K replacement",
+        "Mg replacement",
+        "P replacement"
+      ],
+      "search_terms": [
+        "CRRT I/O 기록 · 저혈압 대처 · K/Mg/P replacement",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "CRRT I/O",
+        "CRRT 저혈압",
+        "K replacement",
+        "Mg replacement",
+        "P replacement",
+        "UF",
+        "hypotension",
+        "electrolyte replacement"
+      ],
+      "urgency": "routine",
+      "summary": "CRRT 중 I/O 기록, 저혈압 대처, 항응고 확인, K/Mg/P 전해질 교정 기본을 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "정각 기준으로 CRRT inflow/outflow와 net UF를 기록한다.",
+        "저혈압 시 UF와 혈역학 관계를 먼저 본다.",
+        "K/Mg/P 결과와 ECG, 부정맥, 근력저하, weaning 지연 여부를 함께 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "V81_DETAIL_04",
+        "V81_DETAIL_06",
+        "DRUG019",
+        "MENU011"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "CRRT I/O·저혈압·전해질 교정표",
+          "caption": "I/O · hypotension · anticoag · K/Mg/P replacement",
+          "headers": [
+            "영역",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "CRRT I/O",
+              "정각 기준 끊기, inflow/outflow·UF·U/O·drain 동시 기록",
+              "I/O 누락 방지 / 중단시간 반영"
+            ],
+            [
+              "저혈압",
+              "UF 속도, volume status, vasopressor, bleeding",
+              "UF 낮추기/hold 여부 확인, 환자 우선 평가"
+            ],
+            [
+              "항응고제",
+              "heparin/citrate 처방, coagulation, bleeding sign",
+              "삽입부위/점막 출혈·혈소판·PT/aPTT 확인"
+            ],
+            [
+              "K replacement",
+              "K 결과, ECG 변화, infusion route·rate",
+              "저/고칼륨 모두 부정맥 위험 설명 및 보고"
+            ],
+            [
+              "Mg replacement",
+              "Mg 저하 시 부정맥·경련·근력저하 확인",
+              "Cr/renal replacement 상황과 함께 해석"
+            ],
+            [
+              "P replacement",
+              "저인산 시 횡격막 약화·weaning 지연 가능",
+              "Phos 수치와 feeding/CRRT 지속 여부 확인"
+            ]
+          ],
+          "search_terms": [
+            "CRRT I/O 표",
+            "전해질 교정표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_crrt_io_electrolyte_table.png",
+          "alt": "CRRT I O 저혈압 항응고 전해질 교정 이미지",
+          "caption": "CRRT I/O·저혈압·전해질 교정 이미지",
+          "search_terms": [
+            "CRRT I/O 이미지",
+            "K Mg P 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v70_ecg_ischemia_electrolyte.png",
+          "alt": "전해질 관련 ECG 이미지",
+          "caption": "전해질 변화와 ECG 참고 이미지",
+          "search_terms": [
+            "전해질 ECG"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_BST_DM_OVERVIEW",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "BST / DM / 혈당관리 총정리",
+      "aliases": [
+        "BST 총정리",
+        "DM 총정리",
+        "혈당관리 총정리"
+      ],
+      "search_terms": [
+        "BST / DM / 혈당관리 총정리",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "BST 총정리",
+        "DM 총정리",
+        "혈당관리 총정리",
+        "BST 측정 시간",
+        "BST 정상 범위",
+        "저혈당 대처",
+        "고혈당 대처",
+        "sliding scale",
+        "regular insulin"
+      ],
+      "urgency": "routine",
+      "summary": "BST 측정 시간, 정상/목표 범위, 저혈당·고혈당 대처, sliding scale, regular insulin을 표와 이미지로 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "혈당값과 측정 맥락(식전/식후/NPO/중환자)을 함께 본다.",
+        "저혈당/고혈당은 재측정 후 증상과 의식상태를 확인한다.",
+        "sliding scale과 regular insulin은 식이/NPO 여부를 반드시 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "MENU015",
+        "V75_DIABETES_OVERVIEW",
+        "V75_HYPO_HYPERGLYCEMIA"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "BST / DM 기본표",
+          "caption": "측정 시간·목표 범위·대처·sliding scale·RI",
+          "headers": [
+            "항목",
+            "기준/내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "BST 측정 시간",
+              "식전/취침 전 / NPO·중환자는 처방 기준 q4~6h 또는 q1~2h",
+              "식이·수액·인슐린 시간과 같이 확인"
+            ],
+            [
+              "정상/목표 범위",
+              "일반 70–99 mg/dL, 입원환자 목표 대개 140–180 mg/dL",
+              "환자 상태별 목표 개별화"
+            ],
+            [
+              "저혈당",
+              "<70 mg/dL",
+              "즉시 재측정, 증상·의식 확인, 당분 또는 IV glucose 적용"
+            ],
+            [
+              "고혈당",
+              "지속 상승/증상 동반",
+              "탈수, ketone, 감염, 스테로이드, DKA/HHS 확인"
+            ],
+            [
+              "Sliding scale",
+              "처방표와 현재 BST 대조",
+              "식사/NPO·투여 단위 double check"
+            ],
+            [
+              "Regular insulin",
+              "속효성, IV 사용 가능",
+              "DKA/continuous infusion 시 q1h monitoring"
+            ]
+          ],
+          "search_terms": [
+            "BST 기본표",
+            "혈당관리표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_bst_overview_table.png",
+          "alt": "BST DM 혈당관리 기본표 이미지",
+          "caption": "BST / DM 기본표 이미지",
+          "search_terms": [
+            "BST 이미지",
+            "DM 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v75_diabetes_insulin_summary.png",
+          "alt": "당뇨 인슐린 총정리 이미지",
+          "caption": "기존 혈당·당뇨·인슐린 요약 이미지",
+          "search_terms": [
+            "당뇨 요약 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_INSULIN_OHA_SLIDING",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "인슐린 종류별 작용시간 · 경구 혈당강하제 · Sliding scale",
+      "aliases": [
+        "인슐린 작용시간",
+        "경구 혈당강하제",
+        "sliding scale",
+        "Regular insulin 투여"
+      ],
+      "search_terms": [
+        "인슐린 종류별 작용시간 · 경구 혈당강하제 · Sliding scale",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "인슐린 작용시간",
+        "경구 혈당강하제",
+        "sliding scale",
+        "Regular insulin 투여",
+        "insulin onset peak duration",
+        "OHA",
+        "Metformin",
+        "Sulfonylurea",
+        "SGLT2",
+        "RI"
+      ],
+      "urgency": "routine",
+      "summary": "인슐린 종류별 작용시간, 경구 혈당강하제 계열, sliding scale과 저혈당 처치표를 묶어 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "인슐린은 종류·단위·식이 여부를 double check 한다.",
+        "경구 혈당강하제는 신기능·조영제·수술/시술 전후를 확인한다.",
+        "sliding scale은 과별 기준 차이를 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "BST001",
+        "DRUG024",
+        "DRUG014",
+        "V75_INSULIN_AND_DIABETES_DRUGS"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "인슐린/OHA 표",
+          "caption": "인슐린 작용시간과 경구 혈당강하제",
+          "headers": [
+            "분류",
+            "예/특징",
+            "발현/의미",
+            "최고/주의",
+            "지속/간호"
+          ],
+          "rows": [
+            [
+              "초속효",
+              "lispro/aspart",
+              "10–20분",
+              "1–3시간",
+              "3–5시간"
+            ],
+            [
+              "속효",
+              "regular insulin",
+              "30–60분",
+              "2–4시간",
+              "5–8시간"
+            ],
+            [
+              "중간형",
+              "NPH",
+              "1–2시간",
+              "4–12시간",
+              "12–18시간"
+            ],
+            [
+              "지속형",
+              "glargine/detemir",
+              "1–2시간",
+              "peak 없음",
+              "20–24시간"
+            ],
+            [
+              "Metformin",
+              "1차 약제",
+              "신기능 확인",
+              "위장관 증상",
+              "조영제 전후 주의"
+            ],
+            [
+              "Sulfonylurea",
+              "저혈당 위험",
+              "혈당강하 강함",
+              "식사와 투약시간",
+              "고령 저혈당 주의"
+            ],
+            [
+              "SGLT2 inhibitor",
+              "심·신장 이점",
+              "탈수 가능",
+              "UTI/생식기 감염",
+              "수술 전 중단 확인"
+            ]
+          ],
+          "search_terms": [
+            "인슐린작용시간표",
+            "OHA 표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "Sliding scale + 저혈당 처치표",
+          "caption": "내과·심장내과 RI sliding, 저혈당 대처",
+          "headers": [
+            "구분",
+            "기준",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "내과 RI sliding",
+              "250–299: 4U / 300–349: 6U / 350–399: 8U / ≥400: 10U",
+              "본인 과 처방표 우선"
+            ],
+            [
+              "심장내과 RI sliding",
+              "140–179: 2U / 180–220: 4U / 221–260: 6U / 261–300: 8U / 301–350: 10U / 351–400: 12U / >400: 14U",
+              "과별 기준 차이 주의"
+            ],
+            [
+              "저혈당 처치",
+              "<70: 50%DW 30mL IV / <50: 50%DW 60mL IV 후 30분 뒤 F/U",
+              "의식 없으면 즉시 보고·응급대응"
+            ]
+          ],
+          "search_terms": [
+            "sliding scale 표",
+            "저혈당 처치표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_insulin_oha_table.png",
+          "alt": "인슐린 작용시간과 경구 혈당강하제 이미지",
+          "caption": "인슐린/OHA 표 이미지",
+          "search_terms": [
+            "인슐린 표 이미지",
+            "OHA 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_sliding_scale_table.png",
+          "alt": "sliding scale과 저혈당 처치표 이미지",
+          "caption": "sliding scale 이미지",
+          "search_terms": [
+            "sliding scale 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_DKA_PROTOCOL",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "DKA protocol · I/O 및 lab 관찰 · Insulin infusion · 저칼륨 주의",
+      "aliases": [
+        "DKA protocol",
+        "DKA I/O",
+        "DKA lab",
+        "DKA insulin infusion",
+        "DKA 저칼륨"
+      ],
+      "search_terms": [
+        "DKA protocol · I/O 및 lab 관찰 · Insulin infusion · 저칼륨 주의",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "DKA protocol",
+        "DKA I/O",
+        "DKA lab",
+        "DKA insulin infusion",
+        "DKA 저칼륨",
+        "DKA",
+        "ketoacidosis",
+        "ketone",
+        "ABGA",
+        "RI infusion",
+        "hypokalemia"
+      ],
+      "urgency": "routine",
+      "summary": "DKA protocol, I/O와 lab 관찰, insulin infusion, 저칼륨 주의, 식이와 인슐린 투여 확인을 중환자실 간호 관점에서 정리한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "의식, 탈수, 호흡양상, ketone/ABGA/labs를 먼저 확인한다.",
+        "수액과 RI infusion을 처방대로 적용하고 혈당/전해질을 자주 재평가한다.",
+        "K가 낮으면 인슐린 전후 보충 필요 가능성을 확인한다.",
+        "식이 재개 전후 인슐린 timing을 꼭 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "PROTO001",
+        "V75_DKA_HHS_ICU_NURSING",
+        "V103_BST_DM_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "DKA protocol 표",
+          "caption": "I/O·labs·insulin infusion·K 주의·식이 확인",
+          "headers": [
+            "항목",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "핵심",
+              "수액 + 인슐린 + 전해질 보충",
+              "혈당만 보지 말고 K, ABGA, ketone, I/O 함께"
+            ],
+            [
+              "BST monitoring",
+              "초기 q1h, 안정 후 q2h",
+              "급격한 저하·저혈당 주의"
+            ],
+            [
+              "Insulin infusion",
+              "Regular insulin continuous",
+              "처방 기준으로 증감, line/단위 double check"
+            ],
+            [
+              "I/O / Lab",
+              "I/O, U/O, ketone, ABGA, Na/K/Cl/HCO3, BUN/Cr",
+              "탈수교정·산증·전해질 회복 평가"
+            ],
+            [
+              "저칼륨 주의",
+              "K 낮으면 인슐린 전/중 보충 필요 가능",
+              "부정맥·근력저하·ECG 변화 확인"
+            ],
+            [
+              "식이 / 인슐린",
+              "식이 재개 전후 투여시점 확인",
+              "NPO·오심·구토 시 저혈당 예방"
+            ]
+          ],
+          "search_terms": [
+            "DKA protocol 표",
+            "DKA I/O 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_dka_protocol_table.png",
+          "alt": "DKA protocol I O lab insulin infusion 이미지",
+          "caption": "DKA protocol 이미지",
+          "search_terms": [
+            "DKA 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_dka_flow.png",
+          "alt": "DKA 관리 흐름 이미지",
+          "caption": "DKA 흐름 이미지",
+          "search_terms": [
+            "DKA flow"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V103_RENAL_DM_OVERVIEW",
+      "category": "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+      "title": "CRRT / 신장 + BST / DM / DKA 통합 요약",
+      "aliases": [
+        "CRRT BST DKA 총정리",
+        "신장과 혈당 총정리"
+      ],
+      "search_terms": [
+        "CRRT / 신장 + BST / DM / DKA 통합 요약",
+        "CRRT / 신장 / BST·DM·DKA / 원내 프로토콜",
+        "병동간호팀 간호사메뉴얼 57 59",
+        "FMC CRRT",
+        "OJT",
+        "중환자실",
+        "CRRT BST DKA 총정리",
+        "신장과 혈당 총정리",
+        "CRRT",
+        "renal",
+        "BST",
+        "DM",
+        "DKA",
+        "electrolyte",
+        "FMC"
+      ],
+      "urgency": "routine",
+      "summary": "CRRT/신장계와 BST/DM/DKA를 한눈에 연결해서 볼 수 있도록 통합 요약한 카드입니다.",
+      "indications": [
+        "중환자실 간호사가 CRRT/신장계와 BST/DM/DKA 내용을 빠르게 표/이미지로 확인할 때"
+      ],
+      "preparation": [
+        "환자 상태와 처방 확인",
+        "장비/라인/검사 결과 확인",
+        "실제 적용은 병원 최신 프로토콜과 담당의 지시 우선"
+      ],
+      "steps": [
+        "CRRT 파트와 BST/DM/DKA 파트를 한 카드에서 연결해 확인한다.",
+        "필요 시 세부 카드로 이동해 표와 이미지 중심으로 본다."
+      ],
+      "warnings": [
+        "병동간호팀 간호사 매뉴얼 p57~59 및 기존 OJT/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 병원 최신 지침과 원내 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "시작/중단/return 시간, setting, 압력·alarm, I/O, 전해질, 혈당, 인슐린, 보고·처치 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "V103_RENAL_CRRT_MANUAL_57_59",
+        "V103_BST_DM_OVERVIEW",
+        "V103_DKA_PROTOCOL"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사매뉴얼 p57~59 + 기존 신입간호사 OJT/기존 앱 DB 기반 재정리"
+      ],
+      "tables": [
+        {
+          "title": "통합 요약표",
+          "caption": "CRRT·신장 + BST·DM·DKA 구조",
+          "headers": [
+            "영역",
+            "핵심 내용",
+            "연결 카드"
+          ],
+          "rows": [
+            [
+              "CRRT 매뉴얼 57~59",
+              "준비·line·start·return·filter·I/O",
+              "V103_RENAL_CRRT_MANUAL_57_59"
+            ],
+            [
+              "FMC CRRT",
+              "start·return·OJT 흐름",
+              "V103_FMC_CRRT_START_RETURN"
+            ],
+            [
+              "CRRT 알람/전해질",
+              "TMP·alarm·I/O·K/Mg/P",
+              "V103_CRRT_ALARM_FILTER_ANTICOAG / V103_CRRT_IO_HYPOTENSION_ELECTROLYTES"
+            ],
+            [
+              "BST/DM",
+              "BST 시간·범위·저/고혈당",
+              "V103_BST_DM_OVERVIEW"
+            ],
+            [
+              "인슐린/OHA",
+              "작용시간·경구약·sliding scale",
+              "V103_INSULIN_OHA_SLIDING"
+            ],
+            [
+              "DKA",
+              "I/O·labs·RI infusion·K 주의",
+              "V103_DKA_PROTOCOL"
+            ]
+          ],
+          "search_terms": [
+            "CRRT BST DKA 통합표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT 신장 BST DM DKA 통합 요약 이미지",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합 요약 이미지",
+          "search_terms": [
+            "CRRT DKA overview"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -68006,5 +69133,32 @@
       "v102_preop_exam_table.png"
     ],
     "total_items": 399
+  },
+  "v103_update": {
+    "summary": "CRRT/신장계와 BST/DM/DKA 파트 추가 강화. 매뉴얼 57~59page 기반 CRRT 핵심표, FMC CRRT start/return, alarm, I/O·전해질, BST/DM, insulin/OHA, DKA cards 추가.",
+    "added_cards": [
+      "V103_BST_DM_OVERVIEW",
+      "V103_CRRT_ALARM_FILTER_ANTICOAG",
+      "V103_CRRT_IO_HYPOTENSION_ELECTROLYTES",
+      "V103_DKA_PROTOCOL",
+      "V103_FMC_CRRT_START_RETURN",
+      "V103_INSULIN_OHA_SLIDING",
+      "V103_RENAL_CRRT_MANUAL_57_59",
+      "V103_RENAL_DM_OVERVIEW"
+    ],
+    "added_images": [
+      "v103_bst_overview_table.png",
+      "v103_crrt_alarm_table.png",
+      "v103_crrt_flow.png",
+      "v103_crrt_io_electrolyte_table.png",
+      "v103_dka_flow.png",
+      "v103_dka_protocol_table.png",
+      "v103_fmc_crrt_start_table.png",
+      "v103_insulin_oha_table.png",
+      "v103_manual_57_59_crrt_extract.png",
+      "v103_renal_dm_overview.png",
+      "v103_sliding_scale_table.png"
+    ],
+    "total_items": 407
   }
 }
