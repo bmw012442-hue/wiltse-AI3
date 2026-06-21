@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.86.0-v86-respiratory-hemodynamic-crrt-gi-procedures-line-nursing-equipment",
+    "version": "1.86.2-v86-detailed-cards-search-tuning",
     "language": "ko",
-    "source": "V62 동영상 링크 + V63 삭제 + V64 통증이미지분리 + V65 신규자료 + V66 로그인수정 + V67 아그라스타트 + V68 헤파린 + V69 뇌졸중 + V70 심전도 + V71 EVD/ICP/CVP + V72 ABGA + V73 수혈 + V74 중환자실 질병 + V75 혈당당뇨인슐린 + V76 중환자실 약품수액 + V77 신경학적 사정 + V78 영양수액/TPN 총정리 + V79 Ventilator/Dräger Savina/호흡계 + V80 순환계·혈역학 모니터링 + V81 신장계·CRRT + V82 소화기계 + V83 검사·검체·영상검사·시술·수술 + V84 Line·Drain·Dressing·소독기구 + V85 낙상·욕창·통증·SOAP/EMR·간호처방·근무별업무·ICU flow sheet + V86 ICU 물품·장비·병동간호팀 매뉴얼 검색개선",
+    "source": "V78 기준 유지 + V79~V86 세분화 카드 확장 + 검색어/관련카드/표형 UI 튜닝",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -198,7 +198,15 @@ window.ICU_MANUAL_DB = {
             "PCI",
             "NSTEMI",
             "ACS",
-            "급성관상증후군"
+            "급성관상증후군",
+            "관상동맥",
+            "혈전",
+            "혈소판",
+            "0.4mcg/kg/min",
+            "0.10mcg/kg/min",
+            "0.15mcg/kg/min",
+            "25mcg/kg",
+            "권장용량"
           ],
           "include_rows_in_search": false
         },
@@ -244,7 +252,15 @@ window.ICU_MANUAL_DB = {
             "PCI",
             "NSTEMI",
             "ACS",
-            "급성관상증후군"
+            "급성관상증후군",
+            "관상동맥",
+            "혈전",
+            "혈소판",
+            "0.4mcg/kg/min",
+            "0.10mcg/kg/min",
+            "0.15mcg/kg/min",
+            "25mcg/kg",
+            "권장용량"
           ],
           "include_rows_in_search": false
         },
@@ -442,7 +458,15 @@ window.ICU_MANUAL_DB = {
             "PCI",
             "NSTEMI",
             "ACS",
-            "급성관상증후군"
+            "급성관상증후군",
+            "관상동맥",
+            "혈전",
+            "혈소판",
+            "0.4mcg/kg/min",
+            "0.10mcg/kg/min",
+            "0.15mcg/kg/min",
+            "25mcg/kg",
+            "권장용량"
           ],
           "include_rows_in_search": false
         }
@@ -465,7 +489,15 @@ window.ICU_MANUAL_DB = {
             "PCI",
             "NSTEMI",
             "ACS",
-            "급성관상증후군"
+            "급성관상증후군",
+            "관상동맥",
+            "혈전",
+            "혈소판",
+            "0.4mcg/kg/min",
+            "0.10mcg/kg/min",
+            "0.15mcg/kg/min",
+            "25mcg/kg",
+            "권장용량"
           ]
         },
         {
@@ -485,11 +517,20 @@ window.ICU_MANUAL_DB = {
             "PCI",
             "NSTEMI",
             "ACS",
-            "급성관상증후군"
+            "급성관상증후군",
+            "관상동맥",
+            "혈전",
+            "혈소판",
+            "0.4mcg/kg/min",
+            "0.10mcg/kg/min",
+            "0.15mcg/kg/min",
+            "25mcg/kg",
+            "권장용량"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "아그라스타트 아그라스타트주 Aggrastat tirofiban 티로피반 tpa TPA PTCA PCI NSTEMI ACS 급성관상증후군 관상동맥 혈전 혈소판 0.4mcg/kg/min 0.10mcg/kg/min 0.15mcg/kg/min 25mcg/kg 권장용량 주입속도 유지주입속도 tPA 후 아그라스타트 TPA 후 아그라스타트 PCI 후 아그라스타트 PTCA 후 아그라스타트 급성 관상증후군 불안정 협심증 관상동맥중재술 bolus loading 아그라스타트 용량 V67_AGGRASTAT_TPA_PCI tPA/PCI 후 아그라스타트주 사용법과 권장용량 약물 / 순환기 아그라스타트주(티로피반) 사용 시 희석 방법, PCI/PTCA 또는 급성관상증후군 관련 권장용량, 체중별 주입속도표를 한 번에 확인하는 카드입니다. 약물 순환기 항혈소판제 tPA 주요 약물 약속처방 Mix 법 수혈 처방확인 및 바코드 출력 방법 헤파린 모노그램 정맥로 확보"
     },
     {
       "id": "V68_HEPARIN_NOMOGRAM",
@@ -664,7 +705,15 @@ window.ICU_MANUAL_DB = {
             "5mL",
             "5DW",
             "5DW500",
-            "500ml"
+            "500ml",
+            "aPTT",
+            "APTT",
+            "PTT",
+            "활성화 부분트롬보플라스틴시간",
+            "12unit/kg/hr",
+            "12u/kg/hr",
+            "unit/kg/hr",
+            "u/kg/hr"
           ],
           "include_rows_in_search": false
         },
@@ -726,7 +775,15 @@ window.ICU_MANUAL_DB = {
             "5mL",
             "5DW",
             "5DW500",
-            "500ml"
+            "500ml",
+            "aPTT",
+            "APTT",
+            "PTT",
+            "활성화 부분트롬보플라스틴시간",
+            "12unit/kg/hr",
+            "12u/kg/hr",
+            "unit/kg/hr",
+            "u/kg/hr"
           ],
           "include_rows_in_search": false
         },
@@ -804,7 +861,15 @@ window.ICU_MANUAL_DB = {
             "5mL",
             "5DW",
             "5DW500",
-            "500ml"
+            "500ml",
+            "aPTT",
+            "APTT",
+            "PTT",
+            "활성화 부분트롬보플라스틴시간",
+            "12unit/kg/hr",
+            "12u/kg/hr",
+            "unit/kg/hr",
+            "u/kg/hr"
           ],
           "include_rows_in_search": false
         },
@@ -851,7 +916,15 @@ window.ICU_MANUAL_DB = {
             "5mL",
             "5DW",
             "5DW500",
-            "500ml"
+            "500ml",
+            "aPTT",
+            "APTT",
+            "PTT",
+            "활성화 부분트롬보플라스틴시간",
+            "12unit/kg/hr",
+            "12u/kg/hr",
+            "unit/kg/hr",
+            "u/kg/hr"
           ],
           "include_rows_in_search": false
         }
@@ -875,11 +948,20 @@ window.ICU_MANUAL_DB = {
             "5mL",
             "5DW",
             "5DW500",
-            "500ml"
+            "500ml",
+            "aPTT",
+            "APTT",
+            "PTT",
+            "활성화 부분트롬보플라스틴시간",
+            "12unit/kg/hr",
+            "12u/kg/hr",
+            "unit/kg/hr",
+            "u/kg/hr"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "헤파린 heparin 노모그램 모노그램 nomogram 한림헤파린나트륨주 25000IU 25000U 5mL 5DW 5DW500 500ml aPTT APTT PTT 활성화 부분트롬보플라스틴시간 12unit/kg/hr 12u/kg/hr unit/kg/hr u/kg/hr bolus 1000unit 2000unit 60분 중단 감량 증량 목표수치 항응고 주입속도 mL/hr cc/hr 헤파린 요법 헤파린 노모그램 헤파린 모노그램 heparin nomogram 한림헤파린 한림헤파린나트륨 부분트롬보플라스틴 heparin mix 헤파린 mix 헤파린 주입속도 헤파린 증량 헤파린 감량 V68_HEPARIN_NOMOGRAM 헤파린 요법 노모그램(aPTT 기준 조절표) 약물 / 항응고 / 순환기 한림헤파린나트륨주 25,000IU/5mL를 5DW 500mL에 혼합한 헤파린 요법에서 초기 주입속도와 aPTT 결과별 증량·감량 기준을 확인하는 카드입니다. 약물 고위험약물 순환기 아그라스타트주 사용법과 권장용량 주요 약물 약속처방 Mix 법 정맥로 확보 수혈 절차"
     },
     {
       "id": "DRUG001",
@@ -960,7 +1042,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Amiodarone / Cordarone 약물 / 수액 / 마약 약물/Mix/항부정맥 코다론 Cordarone Amiodarone 아미오다론 VT VF AF loading maintenance 약물 수액 마약 v8_final_reviewed DRUG001 Amiodarone loading 및 maintenance mix."
     },
     {
       "id": "DRUG002",
@@ -1031,7 +1114,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Herben / Diltiazem 약물 / 수액 / 마약 약물/Mix/항부정맥 헤르벤 Herben Diltiazem 딜티아젬 rate control 약물 수액 마약 v8_final_reviewed DRUG002 Herben loading 및 continuous infusion mix."
     },
     {
       "id": "DRUG003",
@@ -1103,7 +1187,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Nitroglycerine / NTG 약물 / 수액 / 마약 약물/Mix/심혈관 니트로 Nitroglycerine 니트로링구알 NTG 흉통 BP control 약물 수액 마약 v8_final_reviewed DRUG003 Nitroglycerine continuous infusion mix."
     },
     {
       "id": "DRUG004",
@@ -1192,7 +1277,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Norepinephrine / 노르핀 약물 / 수액 / 마약 약물/Mix/승압제 노르핀 Norepinephrine NE norepi 승압제 저혈압 shock 노르에피 levophed norepi mix 승압제 mix 약물 수액 마약 v8_final_reviewed DRUG004 저혈압/쇼크 상황에서 사용하는 대표 승압제."
     },
     {
       "id": "DRUG005",
@@ -1262,7 +1348,8 @@ window.ICU_MANUAL_DB = {
         "에피네프린",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Epinephrine / 에피네프린 응급상황 약물/Mix/응급 에피 Epinephrine Epi CPR 심정지 code blue 에피네프린 v8_final_reviewed DRUG005 CPR 및 쇼크 상황에서 사용하는 epinephrine mix."
     },
     {
       "id": "DRUG006",
@@ -1331,7 +1418,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Vasopressin / 바소프레신 약물 / 수액 / 마약 약물/Mix/승압제 바소 Vasopressin 바소프레신 승압제 shock 약물 수액 마약 v8_final_reviewed DRUG006 쇼크 상황에서 사용하는 vasopressin mix."
     },
     {
       "id": "DRUG007",
@@ -1403,7 +1491,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Remifentanil / Ultian 약물 / 수액 / 마약 약물/Mix/진정 울티안 Ultian Remifentanil 진정 sedation vent 약물 수액 마약 v8_final_reviewed DRUG007 Vent 환자 진정/진통 유지에 사용하는 remifentanil mix."
     },
     {
       "id": "DRUG008",
@@ -1470,7 +1559,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Midazolam / 미다컴 약물 / 수액 / 마약 약물/Mix/진정 미다컴 Midazolam 미다졸람 진정 약물 수액 마약 v8_final_reviewed DRUG008 Midazolam continuous infusion mix."
     },
     {
       "id": "DRUG009",
@@ -1537,7 +1627,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dexmedetomidine / 덱스메딘 약물 / 수액 / 마약 약물/Mix/진정 덱스 덱스메딘 Dexmedetomidine 진정 약물 수액 마약 v8_final_reviewed DRUG009 Dexmedetomidine premix/continuous infusion."
     },
     {
       "id": "DRUG010",
@@ -1606,7 +1697,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Propofol / 프레조폴 약물 / 수액 / 마약 약물/Mix/진정 프로포폴 프리폴 Propofol 프레조폴 진정 약물 수액 마약 v8_final_reviewed DRUG010 Propofol premix/continuous infusion."
     },
     {
       "id": "DRUG011",
@@ -1677,7 +1769,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Rocuronium / 로큐니움 약물 / 수액 / 마약 약물/Mix/근이완 로큐니움 Rocuronium 근이완제 intubation 삽관 약물 수액 마약 v8_final_reviewed DRUG011 삽관/vent 관련 근이완제 mix."
     },
     {
       "id": "DRUG012",
@@ -1747,7 +1840,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Nicardipine / Perdipine 약물 / 수액 / 마약 약물/Mix/BP control 페르디핀 Nicardipine Perdipine BP control 혈압 약물 수액 마약 v8_final_reviewed DRUG012 혈압 조절용 nicardipine mix."
     },
     {
       "id": "DRUG013",
@@ -1814,7 +1908,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Labetalol / 라베신 약물 / 수액 / 마약 약물/Mix/BP control 라베신 Labetalol 혈압 BP control 약물 수액 마약 v8_final_reviewed DRUG013 혈압 조절용 labetalol mix."
     },
     {
       "id": "DRUG014",
@@ -1896,7 +1991,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Regular Insulin continuous / RI 약물 / 수액 / 마약 약물/Mix/Insulin RI 휴물린 Humulin-R Insulin 인슐린 DKA BST Regular continuous 약물 수액 마약 v8_final_reviewed DRUG014 RI continuous infusion 및 DKA/BST 조절."
     },
     {
       "id": "DRUG015",
@@ -1964,7 +2060,8 @@ window.ICU_MANUAL_DB = {
         "수액",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Morphine / 몰핀 약물 / 수액 / 마약 약물/Mix/진통 몰핀 Morphine 염몰핀 진통 마약 약물 수액 v8_final_reviewed DRUG015 Morphine infusion mix 및 마약관리 주의."
     },
     {
       "id": "DRUG016",
@@ -2030,7 +2127,8 @@ window.ICU_MANUAL_DB = {
         "Sodium",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Bivon / Sodium bicarbonate 응급상황 약물/Mix/응급 비본 Bivon Bicarbonate 탄산수소나트륨 NaHCO3 Sodium v8_final_reviewed DRUG016 Bicarbonate mix."
     },
     {
       "id": "DRUG017",
@@ -2099,7 +2197,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dobutamine / 도부타민 약물 / 수액 / 마약 약물/Mix/강심제 도부 Dobutamine 도부타민 강심제 심박출 약물 수액 마약 v8_final_reviewed DRUG017 Dobutamine single/doubling mix."
     },
     {
       "id": "DRUG018",
@@ -2164,7 +2263,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dopamine / 도파민 약물 / 수액 / 마약 약물/Mix/승압제 도파민 Dopamine 승압제 약물 수액 마약 v8_final_reviewed DRUG018 Dopamine single/doubling mix."
     },
     {
       "id": "DRUG019",
@@ -2243,7 +2343,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Electrolyte replacement / K·P·Mg 약물 / 수액 / 마약 약물/전해질 KCL Phosten Mg 전해질 K replacement P replacement Mg replacement Electrolyte replacement 약물 수액 마약 v8_final_reviewed DRUG019 K/P/Mg 전해질 교정 mix."
     },
     {
       "id": "DRUG020",
@@ -2319,7 +2420,8 @@ window.ICU_MANUAL_DB = {
         "시행",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "AST 시행 항생제 투약 투약/AST AST 항생제 타박탐 유박탐 세파졸린 타짐 트리악손 맥스핌 시행 v8_final_reviewed DRUG020 AST를 시행해야 하는 항생제 목록. AST 미시행 항생제 AST 표준화 희석/판독"
     },
     {
       "id": "DRUG021",
@@ -2396,7 +2498,8 @@ window.ICU_MANUAL_DB = {
         "항생제",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "AST 미시행 항생제 투약 투약/AST AST 안함 aminoglycoside Vancomycin Carbapenem Quinolone 콜리스틴 AST 미시행 항생제 v8_final_reviewed DRUG021 AST를 하지 않는 항생제 목록. AST 시행 항생제 AST 표준화 희석/판독"
     },
     {
       "id": "DRUG022",
@@ -2477,7 +2580,8 @@ window.ICU_MANUAL_DB = {
         "판독",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "AST 표준화 희석/판독 투약 투약/AST AST 피내주사 ID 항생제 반응검사 skin test 1:5000 표준화 희석 판독 v8_final_reviewed DRUG022 AST 표준화 희석과 판독. AST 시행 항생제 AST 미시행 항생제"
     },
     {
       "id": "ROUTINE001",
@@ -2551,7 +2655,8 @@ window.ICU_MANUAL_DB = {
         "업무",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Day routine / 데이 업무 Routine Routine/Day Day 데이 회진 처방 마약처방전 업무 v8_final_reviewed routine ROUTINE001 Day 근무 핵심 흐름. Evening routine / 이브닝 업무 Night routine / 나이트 업무 상세"
     },
     {
       "id": "ROUTINE002",
@@ -2618,7 +2723,8 @@ window.ICU_MANUAL_DB = {
         "업무",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Evening routine / 이브닝 업무 Routine Routine/Evening Evening 이브닝 익일처방 Cadex 업무 v8_final_reviewed routine ROUTINE002 Evening 근무의 익일 처방/Cadex 정리. Day routine / 데이 업무 Night routine / 나이트 업무 상세"
     },
     {
       "id": "ROUTINE003",
@@ -2721,7 +2827,8 @@ window.ICU_MANUAL_DB = {
         "상세",
         "v11_source_enhanced"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Night routine / 나이트 업무 상세 Routine Routine/Night Night 나이트 initial 환자분류 화재분류 식이 액팅 lab 제세동기 BST 정도관리 야간업무 나이트업무 밤번 N duty 자정이후 채혈접수업무 식이입력 업무 상세 v11_source_enhanced routine ROUTINE003 나이트 근무 전체 흐름과 자정 이후 점검/채혈/식이/I/O 업무. Day routine / 데이 업무 Evening routine / 이브닝 업무"
     },
     {
       "id": "ROUTINE004",
@@ -2793,7 +2900,8 @@ window.ICU_MANUAL_DB = {
         "기준",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "간호액팅 스케줄링 기준 Routine Routine/스케줄링 스케줄링 간호액팅 QD BID TID QID 네뷸 기준 v8_final_reviewed ROUTINE004 Night에서 익일 간호액팅 스케줄링 시 자주 쓰는 시간 기준."
     },
     {
       "id": "ROUTINE005",
@@ -2876,7 +2984,13 @@ window.ICU_MANUAL_DB = {
             "Line",
             "Foley",
             "Vent",
-            "C-line"
+            "C-line",
+            "A-line",
+            "assessment",
+            "ICU",
+            "v8_final_reviewed",
+            "ROUTINE005",
+            "근무 시작 시 환자 상태 확인."
           ]
         }
       ],
@@ -2900,7 +3014,8 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed",
         "신경계 사정 가이드"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Initial assessment / ICU 라운딩 Routine Routine/Initial initial 라운딩 GCS Motor LOC Line Foley Vent C-line A-line assessment ICU v8_final_reviewed 신경계 사정 가이드 ROUTINE005 근무 시작 시 환자 상태 확인."
     },
     {
       "id": "ROUTINE006",
@@ -2974,7 +3089,8 @@ window.ICU_MANUAL_DB = {
         "마감",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "I/O 입력과 마감 Routine Routine/I/O I/O input output 인풋아웃풋 배액 Foley infusion volume 입력과 마감 v8_final_reviewed ROUTINE006 ICU I/O 입력과 마감 기준."
     },
     {
       "id": "ROUTINE007",
@@ -3060,7 +3176,15 @@ window.ICU_MANUAL_DB = {
             "재평가",
             "평가",
             "v8_final_reviewed",
-            "FLACC 통증 평가 척도"
+            "FLACC 통증 평가 척도",
+            "FPS 통증 평가 척도",
+            "통증 사정",
+            "통증 사정표",
+            "NRS",
+            "FPS",
+            "FLACC",
+            "PIPS",
+            "숫자통증척도"
           ]
         },
         {
@@ -3079,7 +3203,15 @@ window.ICU_MANUAL_DB = {
             "재평가",
             "평가",
             "v8_final_reviewed",
-            "NRS 통증 평가 척도"
+            "NRS 통증 평가 척도",
+            "FPS 통증 평가 척도",
+            "통증 사정",
+            "통증 사정표",
+            "NRS",
+            "FPS",
+            "FLACC",
+            "PIPS",
+            "숫자통증척도"
           ]
         },
         {
@@ -3099,7 +3231,14 @@ window.ICU_MANUAL_DB = {
             "평가",
             "v8_final_reviewed",
             "NRS 통증 평가 척도",
-            "FLACC 통증 평가 척도"
+            "FLACC 통증 평가 척도",
+            "통증 사정",
+            "통증 사정표",
+            "NRS",
+            "FPS",
+            "FLACC",
+            "PIPS",
+            "숫자통증척도"
           ]
         },
         {
@@ -3119,7 +3258,15 @@ window.ICU_MANUAL_DB = {
             "평가",
             "v8_final_reviewed",
             "NRS 통증 평가 척도",
-            "FLACC 통증 평가 척도"
+            "FLACC 통증 평가 척도",
+            "FPS 통증 평가 척도",
+            "통증 사정",
+            "통증 사정표",
+            "NRS",
+            "FPS",
+            "FLACC",
+            "PIPS",
+            "숫자통증척도"
           ]
         }
       ],
@@ -3149,7 +3296,8 @@ window.ICU_MANUAL_DB = {
         "소아통증척도",
         "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "낙상·욕창·통증 평가 Routine Routine/평가 낙상 욕창 통증 고위험군 재평가 평가 v8_final_reviewed NRS 통증 평가 척도 FLACC 통증 평가 척도 FPS 통증 평가 척도 통증 사정 통증 사정표 NRS FPS FLACC PIPS 숫자통증척도 얼굴통증척도 소아통증척도 NRS·FPS·FLACC·PIPS 통증 사정표 ROUTINE007 근무조별 낙상/욕창/통증 평가."
     },
     {
       "id": "ROUTINE008",
@@ -3215,7 +3363,8 @@ window.ICU_MANUAL_DB = {
         "입력",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Bundle 입력 Routine Routine/Bundle Bundle 중심정맥관 Foley Vent C-line 입력 v8_final_reviewed ROUTINE008 중심정맥관/Foley/Vent 등 Bundle 입력."
     },
     {
       "id": "ROUTINE009",
@@ -3290,7 +3439,8 @@ window.ICU_MANUAL_DB = {
         "입력",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Flow sheet 입력 Routine Routine/Flow sheet Flow sheet GCS Motor LOC CRRT O2 라인 Flow sheet 입력 v8_final_reviewed ROUTINE009 Flow sheet 입력 시간대와 항목."
     },
     {
       "id": "ROUTINE010",
@@ -3354,7 +3504,8 @@ window.ICU_MANUAL_DB = {
         "평가",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "신체보호대 평가 Routine Routine/신체보호대 신체보호대 보호대 restraint 2시간 평가 v8_final_reviewed ROUTINE010 신체보호대 평가 및 기록."
     },
     {
       "id": "ROUTINE011",
@@ -3420,7 +3571,8 @@ window.ICU_MANUAL_DB = {
         "입력",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "부착기구 입력 Routine Routine/부착기구 부착기구 HD cath trialysis Mahurkar Perm cath 입력 v8_final_reviewed ROUTINE011 Cadex 기본간호와 부착기구 입력."
     },
     {
       "id": "ROUTINE012",
@@ -3490,7 +3642,8 @@ window.ICU_MANUAL_DB = {
         "ICU",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 신환 Orientation 입원 입원/Orientation 신환 Orientation 간호정보조사지 팔찌 ICU 안내문 ICU v8_final_reviewed ROUTINE012 ICU 신환 입실 시 초기 정리."
     },
     {
       "id": "ROUTINE013",
@@ -3555,7 +3708,8 @@ window.ICU_MANUAL_DB = {
         "관리",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "지참약 관리 투약 투약/지참약 지참약 자가약 식별의뢰서 Self 처방 관리 v8_final_reviewed ROUTINE013 지참약 식별/처방/스케줄 관리."
     },
     {
       "id": "ROUTINE014",
@@ -3630,7 +3784,8 @@ window.ICU_MANUAL_DB = {
         "수액",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "마약·향정 관리 약물 / 수액 / 마약 투약/마약 마약 향정 Pink White 마약처방전 반납 잔량 관리 약물 수액 v8_final_reviewed ROUTINE014 ICU 마약/향정 보관, 반납, 기록."
     },
     {
       "id": "ROUTINE015",
@@ -3700,7 +3855,8 @@ window.ICU_MANUAL_DB = {
         "EMR",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "기록·처방·액팅 원칙 EMR / 기록 / 처방 기록/처방 기록 처방 액팅 Cadex flow sheet 간호처방 원칙 EMR v8_final_reviewed ROUTINE015 기구/처치 변경 시 함께 수정해야 하는 항목."
     },
     {
       "id": "ROUTINE016",
@@ -3769,7 +3925,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "픽업·응급발행 처방 처방/Pickup 픽업 응급발행 마약 퇴원약 간호 픽업 v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 ROUTINE016 추가 처방 및 응급발행 기준. 처방 확인·Lab 처방·픽업·응급발행"
     },
     {
       "id": "ROUTINE017",
@@ -3843,7 +4000,8 @@ window.ICU_MANUAL_DB = {
         "처방",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DNR 서류/처방 DNR DNR/동의서 연명의료 9호 10호 11호 13호 가족관계증명서 서류 처방 v8_final_reviewed ROUTINE017 DNR/연명의료 관련 서류와 처방. DNR / 연명의료 서류와 처방"
     },
     {
       "id": "LAB001",
@@ -3987,7 +4145,15 @@ window.ICU_MANUAL_DB = {
             "Sodium Citrate",
             "Plain",
             "SST",
-            "EDTA"
+            "EDTA",
+            "채혈순서",
+            "파노보",
+            "파랑노랑보라",
+            "PT tube",
+            "검체 bottle",
+            "ABGA syringe",
+            "랩보틀",
+            "검체용기"
           ],
           "include_rows_in_search": false
         }
@@ -4010,7 +4176,15 @@ window.ICU_MANUAL_DB = {
             "Sodium Citrate",
             "Plain",
             "SST",
-            "EDTA"
+            "EDTA",
+            "채혈순서",
+            "파노보",
+            "파랑노랑보라",
+            "PT tube",
+            "검체 bottle",
+            "ABGA syringe",
+            "랩보틀",
+            "검체용기"
           ]
         },
         {
@@ -4030,7 +4204,15 @@ window.ICU_MANUAL_DB = {
             "Sodium Citrate",
             "Plain",
             "SST",
-            "EDTA"
+            "EDTA",
+            "채혈순서",
+            "파노보",
+            "파랑노랑보라",
+            "PT tube",
+            "검체 bottle",
+            "ABGA syringe",
+            "랩보틀",
+            "검체용기"
           ]
         },
         {
@@ -4050,7 +4232,15 @@ window.ICU_MANUAL_DB = {
             "Sodium Citrate",
             "Plain",
             "SST",
-            "EDTA"
+            "EDTA",
+            "채혈순서",
+            "파노보",
+            "파랑노랑보라",
+            "PT tube",
+            "검체 bottle",
+            "ABGA syringe",
+            "랩보틀",
+            "검체용기"
           ]
         },
         {
@@ -4070,7 +4260,15 @@ window.ICU_MANUAL_DB = {
             "Sodium Citrate",
             "Plain",
             "SST",
-            "EDTA"
+            "EDTA",
+            "채혈순서",
+            "파노보",
+            "파랑노랑보라",
+            "PT tube",
+            "검체 bottle",
+            "ABGA syringe",
+            "랩보틀",
+            "검체용기"
           ]
         }
       ],
@@ -4143,7 +4341,8 @@ window.ICU_MANUAL_DB = {
         "채혈 순서 이미지",
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Lab bottle 종류와 채혈 순서 검사 / 검체 Lab bottle 채혈병 파랑 빨강 노랑 보라 Sodium Citrate Plain SST EDTA 채혈순서 파노보 파랑노랑보라 PT tube 검체 bottle ABGA syringe 랩보틀 검체용기 채혈 순서 채혈 후 검체 용기 분주 순서 ABGA bottle 혈액배양 Plain tube SST tube EDTA tube Lab bottle 종류와 채혈 순서 검사 검체 검사/Lab bottle v11_source_enhanced v49_exact_card Lab bottle 종류와 주요 검사 Tube 주요 검사 분주/주의 1 ABGA 0.5~1mL 2 Blood culture 각각 5mL씩, 혐기성 → 호기성 3 Valproic acid, Vancomycin, Digoxin 등 3~5mL 4 PT, aPTT, D-dimer, DIC panel 등 2.7mL, 검체량 정확히 5 Electrolyte, BUN/Cr, LFT, CRP, Troponin 등 6 CBC, ESR, HbA1c 등 2~3mL Lab bottle / 채혈 순서 참고 이미지 0001 Lab bottle / 채혈 순서 참고 이미지 0002 Lab bottle / 채혈 순서 참고 이미지 0003 Lab bottle / 채혈 순서 참고 이미지 0004 Lab bottle 종류 검체 용기 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 LAB001 채혈 후 검체 용기 분주 순서와 bottle별 주요 검사 항목 확인."
     },
     {
       "id": "LAB002",
@@ -4218,7 +4417,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "채혈검사 기본 검사 / 검체 검사/채혈 채혈 Lab A-line C-line regurge shooter 채혈검사 기본 검사 검체 v8_final_reviewed LAB002 ICU 채혈검사 접수/채혈 기본."
     },
     {
       "id": "LAB003",
@@ -4289,7 +4489,11 @@ window.ICU_MANUAL_DB = {
             "채혈",
             "검사",
             "검체",
-            "v8_final_reviewed"
+            "v8_final_reviewed",
+            "동맥혈 ABGA 수행절차",
+            "ABGA 이상 시 단계별 수행",
+            "LAB003",
+            "A-line 또는 동맥혈을 이용한 ABGA 검사."
           ]
         },
         {
@@ -4309,7 +4513,10 @@ window.ICU_MANUAL_DB = {
             "검사",
             "검체",
             "v8_final_reviewed",
-            "ABGA 해석 4단계 공식"
+            "ABGA 해석 4단계 공식",
+            "ABGA 이상 시 단계별 수행",
+            "LAB003",
+            "A-line 또는 동맥혈을 이용한 ABGA 검사."
           ]
         },
         {
@@ -4329,7 +4536,10 @@ window.ICU_MANUAL_DB = {
             "검사",
             "검체",
             "v8_final_reviewed",
-            "ABGA 해석 4단계 공식"
+            "ABGA 해석 4단계 공식",
+            "동맥혈 ABGA 수행절차",
+            "LAB003",
+            "A-line 또는 동맥혈을 이용한 ABGA 검사."
           ]
         }
       ],
@@ -4350,7 +4560,8 @@ window.ICU_MANUAL_DB = {
         "동맥혈 ABGA 수행절차",
         "ABGA 이상 시 단계별 수행"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 LAB003 A-line 또는 동맥혈을 이용한 ABGA 검사."
     },
     {
       "id": "LAB004",
@@ -4417,7 +4628,8 @@ window.ICU_MANUAL_DB = {
         "검사",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Stool CDT / C. difficile 검사 / 검체 검사/검체 CDT C-difficile stool 클로스트리듐 검체 C. difficile 검사 v8_final_reviewed LAB004 C. difficile 검사 검체."
     },
     {
       "id": "LAB005",
@@ -4489,7 +4701,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Urine analysis / Urine culture 검사 / 검체 검사/검체 UA Urine Analysis Urine Culture 소변검사 소변배양 Urine analysis culture 검사 검체 v8_final_reviewed LAB005 UA/Urine culture 검체."
     },
     {
       "id": "VENT001",
@@ -4563,7 +4776,8 @@ window.ICU_MANUAL_DB = {
         "Ventilator",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "O2 tapering / 산소 변동 호흡 / Ventilator 호흡기/O2 O2 산소 tapering N/P S/M mask CO2 변동 호흡 Ventilator v8_final_reviewed VENT001 산소요법 변경 시 기록/처방 정리."
     },
     {
       "id": "VENT002",
@@ -4660,7 +4874,8 @@ window.ICU_MANUAL_DB = {
         "ventilator 동영상",
         "Ventilator 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상 VENT002 Vent circuit 연결과 기본 확인."
     },
     {
       "id": "VENT003",
@@ -4750,7 +4965,8 @@ window.ICU_MANUAL_DB = {
         "Ventilator",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed VENT003 Intubation 준비와 assist."
     },
     {
       "id": "VENT004",
@@ -4823,7 +5039,10 @@ window.ICU_MANUAL_DB = {
             "연결",
             "호흡",
             "Ventilator",
-            "v8_final_reviewed"
+            "v8_final_reviewed",
+            "VENT004",
+            "Vent 환자 nebulizer 연결.",
+            "Ventilator setup"
           ]
         }
       ],
@@ -4843,7 +5062,8 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed",
         "Nebulizer 사용 참고 자료"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Vent nebulizer 연결 호흡 / Ventilator 호흡기/Vent Vent Nebulizer 네뷸 AE 유량센서 연결 호흡 Ventilator v8_final_reviewed Nebulizer 사용 참고 자료 VENT004 Vent 환자 nebulizer 연결. Ventilator setup"
     },
     {
       "id": "VENT005",
@@ -4912,7 +5132,9 @@ window.ICU_MANUAL_DB = {
             "FiO2",
             "호흡",
             "Ventilator",
-            "v8_final_reviewed"
+            "v8_final_reviewed",
+            "VENT005",
+            "HFNC 적용 및 Airvo 관리."
           ]
         }
       ],
@@ -4931,7 +5153,8 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed",
         "산소요법(O2) 참고 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "HFNC / Airvo 호흡 / Ventilator 호흡기/HFNC HFNC Airvo 하이플로우 high flow FiO2 호흡 Ventilator v8_final_reviewed 산소요법(O2) 참고 표 VENT005 HFNC 적용 및 Airvo 관리."
     },
     {
       "id": "TF001",
@@ -5012,7 +5235,8 @@ window.ICU_MANUAL_DB = {
         "요청",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 준비/혈액 요청 수혈 / 혈액 수혈 혈액요청서 cross matching ABO Rh irregular P-RBC 준비 혈액 요청 v8_final_reviewed TF001 수혈 처방 후 검체/요청/불출 준비."
     },
     {
       "id": "TF002",
@@ -5130,7 +5354,15 @@ window.ICU_MANUAL_DB = {
             "혈액요청서",
             "수혈 tip",
             "수혈 전처치",
-            "수혈기록"
+            "수혈기록",
+            "수혈 확인",
+            "blood start",
+            "15분 V/S",
+            "수혈 부작용",
+            "혈액 불출",
+            "진검실",
+            "절차",
+            "상세"
           ],
           "include_rows_in_search": false
         }
@@ -5174,7 +5406,8 @@ window.ICU_MANUAL_DB = {
         "부작용 의심",
         "즉시 중단, 정맥로 유지, 담당의/진검실 보고"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고 TF002 수혈 준비, 불출, 시작, 기록, I/O 입력 절차."
     },
     {
       "id": "TF003",
@@ -5245,7 +5478,8 @@ window.ICU_MANUAL_DB = {
         "혈액",
         "v8_final_reviewed"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "혈액제제 요약 수혈 / 혈액 수혈 P-RBC FFP PC A-PLT Cryo 혈액제제 요약 혈액 v8_final_reviewed TF003 혈액제제별 실무 요약."
     },
     {
       "id": "CRRT001",
@@ -5363,7 +5597,15 @@ window.ICU_MANUAL_DB = {
             "access pressure",
             "씨알알티",
             "circuit change",
-            "filter change"
+            "filter change",
+            "return blood",
+            "혈액재주입",
+            "kit 교체",
+            "CRRT 알람",
+            "TMP 상승",
+            "return pressure",
+            "Kit",
+            "change"
           ],
           "include_rows_in_search": false
         }
@@ -5407,7 +5649,8 @@ window.ICU_MANUAL_DB = {
         "관찰",
         "BP, pressure, alarm, UF 상태 확인"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CRRT Return / Kit change 상세 CRRT / 신장 CRRT return 리턴 kit change filter TMP access pressure 씨알알티 circuit change filter change return blood 혈액재주입 kit 교체 CRRT 알람 TMP 상승 return pressure Kit change 상세 신장 v11_source_enhanced CRRT Return / Kit change 핵심 확인 단계 확인사항 중단 전 CRRT I/O 끊기, pressure/alarm 확인 NS 500ml 연결, 3-way 방향 확인, 혈액 재주입 분리 Return 완료 후 환자와 장비 분리 재시작 새 kit setting, 기능테스트, rinse, line 색상 확인 관찰 BP, pressure, alarm, UF 상태 확인 CRRT001 CRRT filter 압력 상승 또는 kit 교체 시 return/재시작. CRRT I/O, Return, Kit change, 처방, 차팅 상세"
     },
     {
       "id": "CPR001",
@@ -5507,7 +5750,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPR quick card 응급상황 응급/CPR CPR code blue 심정지 arrest ROSC Lucas Ambu 에피 심폐소생술 코드블루 compression 제세동 ambu bagging CPR charting quick card v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 CPR001 CPR 시 핵심 주기, 장비, 기록 체크리스트."
     },
     {
       "id": "ROUTINE018",
@@ -5579,7 +5823,8 @@ window.ICU_MANUAL_DB = {
         "상세",
         "v11_source_enhanced"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "제세동기 점검 상세 Routine Routine/제세동기 제세동기 defibrillator 자가점검 manual defib E-cart 점검 상세 v11_source_enhanced ROUTINE018 Night 자정 이후 제세동기 자가점검 절차."
     },
     {
       "id": "ROUTINE019",
@@ -5676,7 +5921,8 @@ window.ICU_MANUAL_DB = {
         "채혈 순서 이미지",
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Lab bottle 검사·채취 방법 Routine Routine/Lab bottle Lab bottle 채혈병 검체 SST EDTA Sodium Citrate Plain 채취방법 Lab bottle 검사 채취 방법 v10_master_30_categories Lab bottle 종류 채혈 순서 검체 bottle 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 ROUTINE019 검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드."
     },
     {
       "id": "ROUTINE020",
@@ -5750,7 +5996,8 @@ window.ICU_MANUAL_DB = {
         "확인",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "식이 처방·Feeding 확인 Routine Routine/식이 식이 diet feeding NPO 금식 경관식 L-tube feeding 처방 확인 v10_master_30_categories ROUTINE020 식이 처방, 금식, 경관식, I/O 입력을 함께 확인하는 카드."
     },
     {
       "id": "ROUTINE021",
@@ -5825,7 +6072,8 @@ window.ICU_MANUAL_DB = {
         "체크리스트",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "환자 파악 및 인계 체크리스트 Routine Routine/환자파악·인계 환자파악 인계 handover rounding 라인 진단명 문제목록 환자 파악 체크리스트 v10_master_30_categories ROUTINE021 근무 시작 전 환자 상태와 주요 처방을 빠르게 파악하는 카드."
     },
     {
       "id": "ROUTINE022",
@@ -5898,7 +6146,8 @@ window.ICU_MANUAL_DB = {
         "기타",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ACTING 업무: 술기·Injection·기타 Routine Routine/Acting acting 액팅 injection 술기 처치 투약 간호액팅 업무 기타 v10_master_30_categories ROUTINE022 근무 중 액팅 업무를 누락 없이 확인하는 카드."
     },
     {
       "id": "ADM001",
@@ -6020,7 +6269,15 @@ window.ICU_MANUAL_DB = {
             "신환",
             "입원 시 절차",
             "ER ICU",
-            "GW ICU"
+            "GW ICU",
+            "간호정보조사",
+            "손목팔찌",
+            "화재 3군",
+            "화재스티커",
+            "중앙모니터",
+            "병록번호",
+            "stand by",
+            "Screen setup"
           ],
           "include_rows_in_search": false
         }
@@ -6081,7 +6338,8 @@ window.ICU_MANUAL_DB = {
         "요약/Cadex",
         "당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 입원 시 절차 / 신환 전입 역할분담 입원·전입 입실 전입 응급실 외래 병동 ICU admission 신환 입원 시 절차 ER ICU GW ICU 간호정보조사 손목팔찌 화재 3군 화재스티커 중앙모니터 병록번호 stand by Screen setup multi bed tile layout RAT VRE CRE CPO MRSA MSSA 보호자 전화번호 AI trics 입원 안내문 자가약 지참약 식별 입실시간 ICU 입원 절차 역할분담 입퇴원/입실 v10_master_30_categories v26_uploaded_manual_added manual_20260614 신환 입원 / 전입 시 역할분담 역할 업무 담당 간호사 환자 전체 사정, EMR, 간호정보조사, 자가약 확인, 동의서, 물품 안내, 라벨/검체 바코드 출력, 담당 환자 액팅 나머지 근무자 환자 정리, line, 배액관, Foley, 욕창 포함 피부상태 확인 후 담당에게 전달 인계 정리 ICU flowsheet(new) 기반 인계, NS/NR 환자는 GCS·pupil qhr 사정 기입 요약/Cadex 당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성 ADM001 신환 또는 전입 환자 ICU 입실 시 모니터 세팅, 감염검사 확인, 보호자 안내, 초기평가, 역할분담 절차."
     },
     {
       "id": "ADM002",
@@ -6151,7 +6409,8 @@ window.ICU_MANUAL_DB = {
         "사망",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "전동·전원 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/전동·전원 전동 전원 transfer 병동 이동 타병원 전원 업무 입퇴원 사망 v10_master_30_categories ADM002 ICU에서 병동 또는 타기관으로 이동 시 확인할 사항."
     },
     {
       "id": "ADM003",
@@ -6223,7 +6482,8 @@ window.ICU_MANUAL_DB = {
         "전원",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "사망 시 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/사망 사망 death 사후처치 영안실 사망진단서 업무 입퇴원 전동 전원 v10_master_30_categories ADM003 사망 확인 후 간호·전산·보호자 안내 업무."
     },
     {
       "id": "RECORD001",
@@ -6293,7 +6553,8 @@ window.ICU_MANUAL_DB = {
         "처방",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "간호기록 작성 원칙 EMR / 기록 / 처방 간호기록 기록 nursing note charting EMR 작성 원칙 처방 v10_master_30_categories RECORD001 ICU 간호기록 작성 시 기본 원칙. ICU 간호기록 체크리스트"
     },
     {
       "id": "ORDER001",
@@ -6368,7 +6629,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "처방 확인·Lab 처방·픽업·응급발행 처방 처방/액팅 액팅 lab 처방 픽업 응급발행 채혈접수 발행 확인 Lab v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상 ORDER001 처방 확인부터 채혈접수/픽업/응급발행까지 흐름. 픽업·응급발행"
     },
     {
       "id": "SAFE001",
@@ -6439,7 +6701,8 @@ window.ICU_MANUAL_DB = {
         "확인",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories SAFE001 약품, 소모품, 개봉 물품의 유효기간 확인."
     },
     {
       "id": "DRESS001",
@@ -6514,7 +6777,8 @@ window.ICU_MANUAL_DB = {
         "Drain",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "일반 상처 Dressing Line / Drain / Dressing DRESSING/일반상처 dressing 상처 일반상처 일반 Line Drain v10_master_30_categories DRESS001 일반 상처 Dressing 체크리스트. 수술 후 상처 Dressing 욕창 부위 Dressing"
     },
     {
       "id": "DRESS002",
@@ -6590,7 +6854,8 @@ window.ICU_MANUAL_DB = {
         "검사",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "감염된 상처 Dressing 감염관리 / 검사 DRESSING/감염상처 감염상처 infected wound pus dressing 감염된 상처 감염관리 검사 v10_master_30_categories DRESS002 감염된 상처 Dressing 체크리스트."
     },
     {
       "id": "DRESS003",
@@ -6669,7 +6934,8 @@ window.ICU_MANUAL_DB = {
         "Drain",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수술 후 상처 Dressing Line / Drain / Dressing DRESSING/수술상처 수술상처 op wound post op dressing 수술 상처 Dressing Line Drain v10_master_30_categories DRESS003 수술 후 상처 Dressing 체크리스트. 일반 상처 Dressing 욕창 부위 Dressing"
     },
     {
       "id": "DRESS004",
@@ -6746,7 +7012,8 @@ window.ICU_MANUAL_DB = {
         "Drain",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "욕창 부위 Dressing Line / Drain / Dressing DRESSING/욕창 욕창 pressure injury sore dressing 부위 Line Drain v10_master_30_categories DRESS004 욕창 부위 Dressing 체크리스트. 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "DRESS005",
@@ -6821,7 +7088,8 @@ window.ICU_MANUAL_DB = {
         "Line",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "PCD 부위 Dressing Line / Drain / Dressing DRESSING/PCD PCD drain catheter dressing 부위 Dressing Line v10_master_30_categories DRESS005 PCD 부위 Dressing 체크리스트. 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "DRESS006",
@@ -6898,7 +7166,8 @@ window.ICU_MANUAL_DB = {
         "Drain",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "장루 관리·Dressing Line / Drain / Dressing DRESSING/장루 장루 stoma ostomy 관리 Dressing Line Drain v10_master_30_categories DRESS006 장루 관리·Dressing 체크리스트. 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "DRESS007",
@@ -6970,7 +7239,8 @@ window.ICU_MANUAL_DB = {
         "Dressing",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "SDD 소독 Line / Drain / Dressing DRESSING/SDD SDD subdural drain 소독 Line Drain Dressing v10_master_30_categories DRESS007 SDD 소독 체크리스트."
     },
     {
       "id": "DRESS008",
@@ -7044,7 +7314,8 @@ window.ICU_MANUAL_DB = {
         "Dressing",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "EVD 소독 Line / Drain / Dressing DRESSING/EVD EVD external ventricular drainage 뇌실외배액 소독 Line Drain Dressing v10_master_30_categories DRESS008 EVD 소독 체크리스트."
     },
     {
       "id": "PROC002",
@@ -7118,7 +7389,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Coronary angio CT 전후 간호 검사 / 검체 검사·시술/영상 coronary angio CT 관상동맥 CT 조영제 CT Coronary angio 전후 간호 검사 검체 v10_master_30_categories PROC002 Coronary angio CT 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC003",
@@ -7192,7 +7464,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Brain MRI non-enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI MRI non enhance brain non enhance Brain MRI non-enhance 전후 간호 검사 검체 v10_master_30_categories PROC003 Brain MRI non-enhance 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC004",
@@ -7266,7 +7539,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Brain MRI enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI enhance 조영 MRI MRI 조영 Brain MRI enhance 전후 간호 검사 검체 v10_master_30_categories PROC004 Brain MRI enhance 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC005",
@@ -7336,7 +7610,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Brain CT 전후 간호 검사 / 검체 검사·시술/영상 Brain CT 뇌 CT CT Brain 전후 간호 검사 검체 v10_master_30_categories PROC005 Brain CT 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC006",
@@ -7414,7 +7689,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Head Neck angio CT 전후 간호 검사 / 검체 검사·시술/영상 Head Neck angio CT HN angio CTA 조영 CT Head Neck angio CT 전후 간호 검사 검체 v10_master_30_categories PROC006 Head Neck angio CT 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC007",
@@ -7477,7 +7753,8 @@ window.ICU_MANUAL_DB = {
         "간호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DSA 전후 간호 신경계 검사·시술/신경혈관 DSA 혈관조영술 전후 간호 v10_master_30_categories PROC007 DSA 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC008",
@@ -7543,7 +7820,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "PTA 전후 간호 검사 / 검체 검사·시술/혈관 PTA angioplasty 전후 간호 검사 검체 v10_master_30_categories PROC008 PTA 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC009",
@@ -7608,7 +7886,8 @@ window.ICU_MANUAL_DB = {
         "간호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "TCD 검사 전후 간호 신경계 검사·시술/신경 TCD transcranial doppler 검사 전후 간호 v10_master_30_categories PROC009 TCD 검사 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC010",
@@ -7677,7 +7956,8 @@ window.ICU_MANUAL_DB = {
         "간호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Coil embolization 전후 간호 신경계 검사·시술/신경혈관 Coil embolization 코일색전술 aneurysm Coil embolization 전후 간호 v10_master_30_categories PROC010 Coil embolization 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC011",
@@ -7745,7 +8025,8 @@ window.ICU_MANUAL_DB = {
         "Ventilator",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories PROC011 Tracheostomy 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC012",
@@ -7813,7 +8094,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "EGD 전후 간호 검사 / 검체 검사·시술/소화기 EGD 위내시경 내시경 전후 간호 검사 검체 v10_master_30_categories PROC012 EGD 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC013",
@@ -7881,7 +8163,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ERCP 전후 간호 검사 / 검체 검사·시술/소화기 ERCP 담췌관 내시경 전후 간호 검사 검체 v10_master_30_categories PROC013 ERCP 전후 간호 기본 체크리스트."
     },
     {
       "id": "PROC014",
@@ -7949,7 +8232,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CFS 전후 간호 검사 / 검체 검사·시술/소화기 CFS 대장내시경 colonoscopy 전후 간호 검사 검체 v10_master_30_categories PROC014 CFS 전후 간호 기본 체크리스트."
     },
     {
       "id": "SPEC001",
@@ -8023,7 +8307,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Blood culture 채취 검사 / 검체 검체/Blood culture Blood culture blood cx 혈액배양 aerobic anaerobic Blood culture 채취 검사 검체 v10_master_30_categories SPEC001 Blood culture 채취 체크리스트."
     },
     {
       "id": "SPEC002",
@@ -8093,7 +8378,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Sputum culture 채취 검사 / 검체 검체/Sputum culture sputum cx sputum culture 객담배양 Sputum culture 채취 검사 검체 v10_master_30_categories SPEC002 Sputum culture 채취 체크리스트."
     },
     {
       "id": "SPEC003",
@@ -8163,7 +8449,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Urine culture 채취 검사 / 검체 검체/Urine culture urine cx urine culture 소변배양 Urine culture 채취 검사 검체 v10_master_30_categories SPEC003 Urine culture 채취 체크리스트."
     },
     {
       "id": "SPEC004",
@@ -8227,7 +8514,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "RAT 검사 검사 / 검체 검체/RAT RAT rapid antigen test 신속항원 검사 검체 v10_master_30_categories SPEC004 RAT 검사 체크리스트."
     },
     {
       "id": "SPEC005",
@@ -8295,7 +8583,9 @@ window.ICU_MANUAL_DB = {
             "직장도말",
             "검체",
             "검사",
-            "v10_master_30_categories"
+            "v10_master_30_categories",
+            "SPEC005",
+            "CRE/CPO 검체 체크리스트."
           ]
         }
       ],
@@ -8313,7 +8603,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories",
         "격리실 간호 참고 자료"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CRE/CPO 검체 검사 / 검체 검체/CRE·CPO CRE CPO 격리검사 직장도말 검체 검사 v10_master_30_categories 격리실 간호 참고 자료 SPEC005 CRE/CPO 검체 체크리스트."
     },
     {
       "id": "SPEC006",
@@ -8383,7 +8674,8 @@ window.ICU_MANUAL_DB = {
         "검체",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Tip culture 채취 검사 / 검체 검체/Tip culture Tip cx tip culture 카테터 tip Tip culture 채취 검사 검체 v10_master_30_categories SPEC006 Tip culture 채취 체크리스트."
     },
     {
       "id": "INFO001",
@@ -8718,7 +9010,15 @@ window.ICU_MANUAL_DB = {
             "의사 전화번호",
             "진료부 번호",
             "협력부서 번호",
-            "약국 식별"
+            "약국 식별",
+            "약국",
+            "원무과",
+            "입원",
+            "퇴원",
+            "응급원무과",
+            "CPR",
+            "전산팀",
+            "영양팀"
           ],
           "include_rows_in_search": false
         }
@@ -8742,7 +9042,15 @@ window.ICU_MANUAL_DB = {
             "의사 전화번호",
             "진료부 번호",
             "협력부서 번호",
-            "약국 식별"
+            "약국 식별",
+            "약국",
+            "원무과",
+            "입원",
+            "퇴원",
+            "응급원무과",
+            "CPR",
+            "전산팀",
+            "영양팀"
           ]
         }
       ],
@@ -8859,7 +9167,8 @@ window.ICU_MANUAL_DB = {
         "0734",
         "0555"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "원내 주요 전화번호 원내 주요 번호 원내번호 원내 내선번호 내선번호 전화번호 연락처 부서 연락처 의사 전화번호 진료부 번호 협력부서 번호 약국 식별 약국 원무과 입원 퇴원 응급원무과 CPR 전산팀 영양팀 병동 31병동 33병동 41병동 51병동 61병동 63병동 응급실 초음파실 심초음파실 holter TCD MRI CT 영상접수 내시경실 회복실 뇌파 angio 인공신장실 진검실 혈액은행 진료부 CV3 문재현 147 협력부서 0610 CV1 이승화 145 6058 GI10 안성민 205 holter(재혈실) 6145 GI11 이대영 203 6102 GI12 도민영 206 6124 GS9 주용현 210 6127 GS8 백남헌 208 6122 NS51 오근 302 내시경실(2층) 0676 NS39 이일희 304 0528 NR6 박건우 306 0654 NR7 박소영 308 angio실 1번 0537 angio실 2번 0540 NR8 강희경 309 인공신장실 외부 6220 인공신장실 원내 6092 PUL 이종민 202 6144 NE 하주형 151 6135 기타 약국(식별) 6226 0634 6228 6133 6043(입원), 6051(퇴원) 6141 0557 0693 6114 6161 6138 6163 0734 0555 INFO001 물품 / 장비 / 전화번호 중환자실 부서원이 원내 주요 내선번호, 진료부, 협력부서, 약국, 병동 번호를 빠르게 확인하는 카드입니다. v56_internal_phone_table"
     },
     {
       "id": "EQUIP001",
@@ -8933,7 +9242,8 @@ window.ICU_MANUAL_DB = {
         "전화번호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Infusion pump 사용법 물품 / 장비 / 전화번호 장비/Infusion pump Infusion pump 인퓨전펌프 pump 수액펌프 Infusion 사용법 물품 장비 전화번호 v10_master_30_categories EQUIP001 Infusion pump 기본 사용 체크리스트. Syringe pump 사용법"
     },
     {
       "id": "EQUIP002",
@@ -9005,7 +9315,8 @@ window.ICU_MANUAL_DB = {
         "전화번호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Syringe pump 사용법 물품 / 장비 / 전화번호 장비/Syringe pump Syringe pump 시린지펌프 syringe pump 사용법 물품 장비 전화번호 v10_master_30_categories EQUIP002 Syringe pump 기본 사용 체크리스트. Infusion pump 사용법"
     },
     {
       "id": "DRUG024",
@@ -9081,7 +9392,14 @@ window.ICU_MANUAL_DB = {
             "sulfonylurea",
             "경구",
             "혈당",
-            "강하제"
+            "강하제",
+            "확인",
+            "약물",
+            "수액",
+            "마약",
+            "v10_master_30_categories",
+            "경구 혈당강하제 참고 표",
+            "DRUG024"
           ]
         },
         {
@@ -9101,7 +9419,14 @@ window.ICU_MANUAL_DB = {
             "sulfonylurea",
             "경구",
             "혈당",
-            "강하제"
+            "강하제",
+            "확인",
+            "약물",
+            "수액",
+            "마약",
+            "v10_master_30_categories",
+            "인슐린 제품/용법 참고 표",
+            "DRUG024"
           ]
         }
       ],
@@ -9127,7 +9452,8 @@ window.ICU_MANUAL_DB = {
         "인슐린 제품/용법 참고 표",
         "경구 혈당강하제 참고 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "경구 혈당 강하제 확인 약물 / 수액 / 마약 약물/경구혈당강하제 경구혈당강하제 OHA 당뇨약 BST 메트포르민 sulfonylurea 경구 혈당 강하제 확인 약물 수액 마약 v10_master_30_categories 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표 DRUG024 입원 환자의 경구혈당강하제 복용 확인 카드."
     },
     {
       "id": "ECART001",
@@ -9221,7 +9547,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "E-cart 응급약물 목록 응급상황 E-cart/응급약물 E-cart 응급약물 에피네프린 노르에피네프린 아트로핀 코다론 아데노신 비본 에토미데이트 마그네슘 칼슘 베카론 응급카트 emergency cart code cart E-cart 약물 ACLS 약물 응급약 목록 v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상 ECART001 E-cart에서 자주 확인하는 응급약물 목록."
     },
     {
       "id": "ECART002",
@@ -9298,7 +9625,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "고주의 약물 관리 약물 / 수액 / 마약 약물/고주의약물 고주의약물 high alert 승압제 인슐린 항응고제 KCL 진정제 고주의 약물 관리 수액 마약 v10_master_30_categories ECART002 ICU에서 주의가 필요한 고위험 약물 관리."
     },
     {
       "id": "ECART003",
@@ -9375,7 +9703,8 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories ECART003 항부정맥제 투여 전후 확인 카드."
     },
     {
       "id": "CONSENT001",
@@ -9448,7 +9777,8 @@ window.ICU_MANUAL_DB = {
         "상세",
         "v11_source_enhanced"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "동의서 종류와 확인 상세 동의서 수술동의서 PCA 동의서 수혈동의서 신체보호대 동의서 DNR Mahurkar Perm cath 종류와 확인 상세 v11_source_enhanced CONSENT001 ICU에서 자주 확인하는 동의서 종류와 확인 포인트."
     },
     {
       "id": "DEPT001",
@@ -9518,7 +9848,8 @@ window.ICU_MANUAL_DB = {
         "각과",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "소화기내과 Routine 각과 Routine 각과 Routine/소화기내과 소화기내과 GI EGD ERCP CFS Routine 각과 v10_master_30_categories DEPT001 소화기내과 Routine 기본 확인 카드. 심장내과 Routine 정형외과 Routine"
     },
     {
       "id": "DEPT002",
@@ -9590,7 +9921,11 @@ window.ICU_MANUAL_DB = {
             "echo",
             "Routine",
             "각과",
-            "v10_master_30_categories"
+            "v10_master_30_categories",
+            "DEPT002",
+            "심장내과 Routine 기본 확인 카드.",
+            "소화기내과 Routine",
+            "정형외과 Routine"
           ]
         }
       ],
@@ -9609,7 +9944,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories",
         "Bedside monitor 예시 사진"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "심장내과 Routine 각과 Routine 각과 Routine/심장내과 심장내과 CV angio CT EKG echo Routine 각과 v10_master_30_categories Bedside monitor 예시 사진 DEPT002 심장내과 Routine 기본 확인 카드. 소화기내과 Routine 정형외과 Routine"
     },
     {
       "id": "DEPT003",
@@ -9676,7 +10012,8 @@ window.ICU_MANUAL_DB = {
         "신장",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "신장내과 Routine CRRT / 신장 각과 Routine/신장내과 신장내과 NEPH CRRT HD BST sling Routine 신장 v10_master_30_categories DEPT003 신장내과 Routine 기본 확인 카드."
     },
     {
       "id": "DEPT004",
@@ -9744,7 +10081,8 @@ window.ICU_MANUAL_DB = {
         "Routine",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "신경외과 Routine 신경계 각과 Routine/신경외과 신경외과 NS Brain GCS TFCA Routine v10_master_30_categories DEPT004 신경외과 Routine 기본 확인 카드. Brain patient care / 신경외과 환자"
     },
     {
       "id": "DEPT005",
@@ -9814,7 +10152,8 @@ window.ICU_MANUAL_DB = {
         "각과",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "정형외과 Routine 각과 Routine 각과 Routine/정형외과 정형외과 OS TKRA THRA post op Routine 각과 v10_master_30_categories DEPT005 정형외과 Routine 기본 확인 카드. 소화기내과 Routine 심장내과 Routine"
     },
     {
       "id": "PROTO001",
@@ -9910,7 +10249,14 @@ window.ICU_MANUAL_DB = {
             "protocol",
             "상세",
             "DM",
-            "v11_source_enhanced"
+            "v11_source_enhanced",
+            "조절",
+            "> 250",
+            "RI +1cc/hr",
+            "150-250",
+            "마지막 속도 유지, 1시간 후 BST check",
+            "< 150",
+            "1시간 stop 후 2cc/hr로 재시작"
           ],
           "include_rows_in_search": false
         }
@@ -9941,7 +10287,8 @@ window.ICU_MANUAL_DB = {
         "< 100",
         "stop 유지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DKA protocol 상세 BST / DM / DKA 프로토콜/DKA DKA diabetic ketoacidosis RI continuous BST 케톤산증 protocol 상세 DM v11_source_enhanced DKA RI continuous 조절 기준 조절 > 250 RI +1cc/hr 150-250 마지막 속도 유지, 1시간 후 BST check < 150 1시간 stop 후 2cc/hr로 재시작 < 100 stop 유지 PROTO001 내과 DKA protocol 및 RI continuous 기준."
     },
     {
       "id": "BST001",
@@ -10045,7 +10392,14 @@ window.ICU_MANUAL_DB = {
             "RI",
             "sliding",
             "상세",
-            "BST"
+            "BST",
+            "DM",
+            "DKA",
+            "v11_source_enhanced",
+            "250 < BST < 299",
+            "4 unit",
+            "300 < BST < 349",
+            "6 unit"
           ],
           "include_rows_in_search": false
         },
@@ -10099,7 +10453,15 @@ window.ICU_MANUAL_DB = {
             "RI",
             "sliding",
             "상세",
-            "BST"
+            "BST",
+            "DM",
+            "DKA",
+            "v11_source_enhanced",
+            "내과 RI Sliding",
+            "250 < BST < 299",
+            "4 unit",
+            "300 < BST < 349",
+            "6 unit"
           ],
           "include_rows_in_search": false
         },
@@ -10133,7 +10495,15 @@ window.ICU_MANUAL_DB = {
             "RI",
             "sliding",
             "상세",
-            "BST"
+            "BST",
+            "DM",
+            "DKA",
+            "v11_source_enhanced",
+            "내과 RI Sliding",
+            "250 < BST < 299",
+            "4 unit",
+            "300 < BST < 349",
+            "6 unit"
           ],
           "include_rows_in_search": false
         }
@@ -10156,7 +10526,15 @@ window.ICU_MANUAL_DB = {
             "RI",
             "sliding",
             "상세",
-            "BST"
+            "BST",
+            "DM",
+            "DKA",
+            "v11_source_enhanced",
+            "내과 RI Sliding",
+            "250 < BST < 299",
+            "4 unit",
+            "300 < BST < 349",
+            "6 unit"
           ]
         }
       ],
@@ -10205,7 +10583,8 @@ window.ICU_MANUAL_DB = {
         "50% DW 100 중 60ml IV 후 30분 뒤 BST f/u",
         "인슐린 종류와 작용시간 그래프"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "내과·심장내과 RI sliding 상세 BST / DM / DKA BST Sliding RI sliding 내과 심장내과 저혈당 50DW RI sliding 상세 BST DM DKA v11_source_enhanced 내과 RI Sliding 250 < BST < 299 4 unit 300 < BST < 349 6 unit 350 < BST < 399 8 unit BST ≥ 400 10 unit 심장내과 RI Sliding 140-179 2 unit 180-220 221-260 261-300 301-350 351-400 12 unit > 400 14 unit 저혈당 처치 처치 < 70 50% DW 100 중 30ml IV 후 30분 뒤 BST f/u < 50 50% DW 100 중 60ml IV 후 30분 뒤 BST f/u 인슐린 종류와 작용시간 그래프 BST sliding BST001 내과/심장내과 BST sliding과 저혈당 처치 기준."
     },
     {
       "id": "PROTO002",
@@ -10282,7 +10661,8 @@ window.ICU_MANUAL_DB = {
         "상세",
         "v11_source_enhanced"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DIC 검사·바코드·관리 상세 프로토콜 프로토콜/DIC DIC D-dimer PT aPTT INR fibrinogen DIC 바코드 검사 바코드 관리 상세 v11_source_enhanced PROTO002 DIC 관련 lab 접수와 출혈 관찰."
     },
     {
       "id": "EMR001",
@@ -10354,7 +10734,8 @@ window.ICU_MANUAL_DB = {
         "기록",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "카멜레온 EMR 기본 사용 EMR / 기록 / 처방 EMR/카멜레온 카멜레온 EMR 전산 간호기록 처방 액팅 기본 사용 기록 v10_master_30_categories EMR001 카멜레온 전산 사용 시 자주 확인하는 항목."
     },
     {
       "id": "EQUIP003",
@@ -10432,7 +10813,8 @@ window.ICU_MANUAL_DB = {
         "전화번호",
         "v10_master_30_categories"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "장비 사용 방법 공통 물품 / 장비 / 전화번호 장비/사용법 장비 사용법 monitor pump vent CRRT 제세동기 사용 방법 공통 물품 전화번호 v10_master_30_categories EQUIP003 ICU 장비 사용 전후 공통 체크리스트."
     },
     {
       "id": "MENU001",
@@ -10549,7 +10931,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 MENU001 응급상황에서 빠르게 보는 E-CART 약물, 응급기구, 응급간호, CPR 순서/방법/기록. CPR quick card"
     },
     {
       "id": "MENU002",
@@ -10669,7 +11052,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "임상 약물: 항생제·수액·자주 사용하는 약물 약물 / 수액 / 마약 임상 약물 임상약물 약물 항생제 항생제 계열 antibiotics AST 세파 타박탐 유박탐 맥스핌 반코 반코마이신 카바페넴 퀴놀론 수액 수액 종류 수액 적응증 fluid N/S NS D/W DW 5DW 5DS Hartmann 하트만 알부민 라식스 만니톨 해열제 진통제 기관지확장제 네뷸약 PPI 위장약 기타 약물 AST 유무 항생제 AST 투약시간 v14_v11_based_menu search_optimized MENU002 항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드."
     },
     {
       "id": "MENU003",
@@ -10784,7 +11168,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "마약 & 향정: 반환·잔량보관·마약성 진통제 약물 / 수액 / 마약 마약·향정 마약 향정 마약장 마약 반환 마약 반납 잔량 잔량 보관 잔량반납 마약성 진통제 마약처방전 반납처방전 pink white 몰핀 morphine 페치딘 pethidine fentanyl remifentanil 울티안 midazolam 미다컴 propofol 프레조폴 dexmedetomidine 덱스메딘 향정신성 반환 잔량보관 마약성 진통제 약물 수액 v14_v11_based_menu search_optimized MENU003 마약/향정의 수령, 보관, 잔량, 반환/반납, 마약성 진통제 검색 카드."
     },
     {
       "id": "MENU004",
@@ -10877,7 +11262,15 @@ window.ICU_MANUAL_DB = {
             "high flow",
             "HFNC",
             "Airvo",
-            "하이플로우"
+            "하이플로우",
+            "CRRT",
+            "씨알알티",
+            "infusion pump",
+            "인퓨전펌프",
+            "syringe pump",
+            "시린지펌프",
+            "syriange pump",
+            "제세동기"
           ]
         },
         {
@@ -10897,7 +11290,15 @@ window.ICU_MANUAL_DB = {
             "high flow",
             "HFNC",
             "Airvo",
-            "하이플로우"
+            "하이플로우",
+            "CRRT",
+            "씨알알티",
+            "infusion pump",
+            "인퓨전펌프",
+            "syringe pump",
+            "시린지펌프",
+            "syriange pump",
+            "제세동기"
           ]
         },
         {
@@ -10917,7 +11318,15 @@ window.ICU_MANUAL_DB = {
             "high flow",
             "HFNC",
             "Airvo",
-            "하이플로우"
+            "하이플로우",
+            "CRRT",
+            "씨알알티",
+            "infusion pump",
+            "인퓨전펌프",
+            "syringe pump",
+            "시린지펌프",
+            "syriange pump",
+            "제세동기"
           ]
         }
       ],
@@ -10969,7 +11378,8 @@ window.ICU_MANUAL_DB = {
         "ventilator 동영상",
         "Ventilator 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 MENU004 Ventilator, high flow, CRRT, infusion/syringe pump, 제세동기, EKG 장비 검색 카드. Infusion pump 사용법 Syringe pump 사용법"
     },
     {
       "id": "MENU005",
@@ -11087,7 +11497,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈: Lab·동의서·전처치·TIP·기록 수혈 / 혈액 수혈 transfusion 수혈 LAB 수혈 동의서 수혈 전처치 전처치 약물 수혈 TIP 수혈 팁 기록 확인사항 P-RBC PRBC FFP PC A-PLT Cryo 혈액요청서 교차시험 cross matching ABO Rh irregular 페니라민 해열제 수혈기록지 수혈부작용 수혈 V/S 혈액 불출 수혈 filter 혈액제제 RBC PC APLT FFP Cryo Lab 동의서 전처치 TIP 혈액 v14_v11_based_menu search_optimized MENU005 수혈 준비, Lab, 동의서, 전처치 약물, 수혈 TIP, 기록과 확인사항 검색 카드."
     },
     {
       "id": "MENU006",
@@ -11204,7 +11615,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "검사/검체: 혈액검사 참고치·의심질환·영상검사 검사 / 검체 검사·검체 검사 검체 혈액검사 혈액 검사 참고치 참고치 정상범위 의심질환 영상검사 자주 시행하는 영상검사 CT MRI angio CT Brain CT Brain MRI CAG TFCA DSA PTA TCD EGD ERCP CFS culture blood culture sputum urine RAT CRE CPO Tip culture 검체통 채혈병 ABGA CT 조영제 MRI 조영제 영상검사 준비 v14_v11_based_menu search_optimized MENU006 검체 채취, 혈액검사 참고치, 의심질환, 자주 시행하는 영상검사 검색 카드."
     },
     {
       "id": "MENU007",
@@ -11325,7 +11737,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized MENU007 Dressing, 각종 line, drain/drainage 종류와 특징을 정리하는 카드. 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "MENU008",
@@ -11438,7 +11851,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DAY / EVENING / NIGHT 세부 업무 근무별 업무 근무업무 DAY 데이 EVENING 이브닝 NIGHT 나이트 근무 routine job 실무 업무 인계 라운딩 initial final 식이 액팅 처방정리 Cadex flow sheet I/O BST 제세동기 점검 채혈접수 환자분류 화재분류 약싸기 입원 시 절차 initial 후 전산 투약시간 교체주기 세부 업무 근무별 v14_v11_based_menu search_optimized MENU008 Day/Evening/Night를 포괄적 설명이 아니라 실제 순서별 세부 업무로 찾는 카드."
     },
     {
       "id": "MENU009",
@@ -11521,7 +11935,15 @@ window.ICU_MANUAL_DB = {
             "멸균물품",
             "forcep",
             "dressing set",
-            "foley set"
+            "foley set",
+            "suture set",
+            "소독물품",
+            "이름",
+            "생김새",
+            "모양",
+            "사진",
+            "물품 이름",
+            "이름과"
           ]
         },
         {
@@ -11541,7 +11963,15 @@ window.ICU_MANUAL_DB = {
             "멸균물품",
             "forcep",
             "dressing set",
-            "foley set"
+            "foley set",
+            "suture set",
+            "소독물품",
+            "이름",
+            "생김새",
+            "모양",
+            "사진",
+            "물품 이름",
+            "이름과"
           ]
         },
         {
@@ -11561,7 +11991,15 @@ window.ICU_MANUAL_DB = {
             "멸균물품",
             "forcep",
             "dressing set",
-            "foley set"
+            "foley set",
+            "suture set",
+            "소독물품",
+            "이름",
+            "생김새",
+            "모양",
+            "사진",
+            "물품 이름",
+            "이름과"
           ]
         },
         {
@@ -11581,7 +12019,15 @@ window.ICU_MANUAL_DB = {
             "멸균물품",
             "forcep",
             "dressing set",
-            "foley set"
+            "foley set",
+            "suture set",
+            "소독물품",
+            "이름",
+            "생김새",
+            "모양",
+            "사진",
+            "물품 이름",
+            "이름과"
           ]
         }
       ],
@@ -11616,7 +12062,8 @@ window.ICU_MANUAL_DB = {
         "Scissors / Mosquito / Magill forcep 사진",
         "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CSR 물품 카운트: 이름과 생김새 물품 / 장비 / 전화번호 CSR 물품 CSR 물품카운트 물품 카운트 물품 카운트 멸균물품 forcep dressing set foley set suture set 소독물품 이름 생김새 모양 사진 물품 이름 이름과 장비 전화번호 v14_v11_based_menu search_optimized Kelly / Long kelly 기구 사진 Forcep / Dressing set 구성 사진 Scissors / Mosquito / Magill forcep 사진 Knife handle / Needle holder / Metzenbaum / Personal scissor 사진 MENU009 CSR 물품 이름과 생김새를 찾기 위한 시작 카드."
     },
     {
       "id": "MENU010",
@@ -11699,7 +12146,15 @@ window.ICU_MANUAL_DB = {
             "CPO",
             "MRSA",
             "MSSA",
-            "MRPA"
+            "MRPA",
+            "MDRO",
+            "격리",
+            "접촉주의",
+            "보호구",
+            "항생제",
+            "적응 별 항생제",
+            "균별 항생제",
+            "배양검사"
           ]
         },
         {
@@ -11719,7 +12174,15 @@ window.ICU_MANUAL_DB = {
             "CPO",
             "MRSA",
             "MSSA",
-            "MRPA"
+            "MRPA",
+            "MDRO",
+            "격리",
+            "접촉주의",
+            "보호구",
+            "항생제",
+            "적응 별 항생제",
+            "균별 항생제",
+            "배양검사"
           ]
         }
       ],
@@ -11752,7 +12215,8 @@ window.ICU_MANUAL_DB = {
         "격리실 간호 참고 자료",
         "다제내성감염균(VRE/CRE 등) 참고표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA 감염관리 / 검사 감염관리 다제내성 감염균 다제내성감염균 VRE CRE CPO MRSA MSSA MRPA MDRO 격리 접촉주의 보호구 항생제 적응 별 항생제 균별 항생제 배양검사 contact precaution 검사 v14_v11_based_menu search_optimized 격리실 간호 참고 자료 다제내성감염균(VRE/CRE 등) 참고표 MENU010 VRE/CRE/CPO/MRSA/MSSA/MRPA와 격리, 항생제 관련 검색 카드."
     },
     {
       "id": "MENU011",
@@ -11843,7 +12307,15 @@ window.ICU_MANUAL_DB = {
             "배설량",
             "소변량",
             "urine",
-            "drain"
+            "drain",
+            "feeding",
+            "수액",
+            "infusion volume",
+            "fluid balance",
+            "전해질",
+            "전해질 교정",
+            "K",
+            "P"
           ]
         },
         {
@@ -11863,7 +12335,15 @@ window.ICU_MANUAL_DB = {
             "배설량",
             "소변량",
             "urine",
-            "drain"
+            "drain",
+            "feeding",
+            "수액",
+            "infusion volume",
+            "fluid balance",
+            "전해질",
+            "전해질 교정",
+            "K",
+            "P"
           ]
         }
       ],
@@ -11903,7 +12383,8 @@ window.ICU_MANUAL_DB = {
         "섭취량 및 배설량(I&O) 기록 그림",
         "환자 유형별 I/O 불균형 예시 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "I & O / 섭취량·배설량 / 전해질 교정 I&O·전해질 I&O I/O IO intake output 섭취량 배설량 소변량 urine drain feeding 수액 infusion volume fluid balance 전해질 전해질 교정 K P Mg KCL Phosten MgCl replacement positive balance negative balance I/O 마감 HD I/O 교정 v14_v11_based_menu search_optimized 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표 MENU011 섭취량/배설량, fluid balance, K/P/Mg 전해질 교정 검색 카드."
     },
     {
       "id": "MENU012",
@@ -11994,7 +12475,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Vital sign: BP·HR·RR·BT Vital Sign vital V/S 활력징후 BP 혈압 HR 맥박 RR 호흡수 BT 체온 fever hypotension hypertension tachycardia bradycardia SpO2 saturation sign v14_v11_based_menu search_optimized Vital sign MENU012 BP, HR, RR, BT 변화와 상황대처 검색 카드."
     },
     {
       "id": "MENU013",
@@ -12076,7 +12558,15 @@ window.ICU_MANUAL_DB = {
             "HCO3",
             "SaO2",
             "lactate",
-            "acidosis"
+            "acidosis",
+            "alkalosis",
+            "respiratory acidosis",
+            "metabolic acidosis",
+            "CO2 retention",
+            "hypoxia",
+            "산염기",
+            "분석과",
+            "질환"
           ]
         },
         {
@@ -12096,7 +12586,15 @@ window.ICU_MANUAL_DB = {
             "HCO3",
             "SaO2",
             "lactate",
-            "acidosis"
+            "acidosis",
+            "alkalosis",
+            "respiratory acidosis",
+            "metabolic acidosis",
+            "CO2 retention",
+            "hypoxia",
+            "산염기",
+            "분석과",
+            "질환"
           ]
         },
         {
@@ -12116,7 +12614,15 @@ window.ICU_MANUAL_DB = {
             "HCO3",
             "SaO2",
             "lactate",
-            "acidosis"
+            "acidosis",
+            "alkalosis",
+            "respiratory acidosis",
+            "metabolic acidosis",
+            "CO2 retention",
+            "hypoxia",
+            "산염기",
+            "분석과",
+            "질환"
           ]
         },
         {
@@ -12136,7 +12642,15 @@ window.ICU_MANUAL_DB = {
             "HCO3",
             "SaO2",
             "lactate",
-            "acidosis"
+            "acidosis",
+            "alkalosis",
+            "respiratory acidosis",
+            "metabolic acidosis",
+            "CO2 retention",
+            "hypoxia",
+            "산염기",
+            "분석과",
+            "질환"
           ]
         }
       ],
@@ -12168,7 +12682,8 @@ window.ICU_MANUAL_DB = {
         "동맥혈 ABGA 수행절차",
         "ABGA 이상 시 단계별 수행"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA: 혈액가스 분석과 질환 ABGA 혈액가스 혈액가스 분석 arterial blood gas pH PaCO2 PaO2 HCO3 SaO2 lactate acidosis alkalosis respiratory acidosis metabolic acidosis CO2 retention hypoxia 산염기 분석과 질환 v14_v11_based_menu search_optimized ABGA 해석 4단계 공식 ABGA 대표 질환 예시 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 MENU013 ABGA 채혈, 혈액가스 분석, 산염기 이상과 관련 질환을 찾는 카드."
     },
     {
       "id": "MENU014",
@@ -12257,7 +12772,15 @@ window.ICU_MANUAL_DB = {
             "의식",
             "LOC",
             "motor",
-            "pupil"
+            "pupil",
+            "seizure",
+            "seizure 종류",
+            "경련",
+            "발작",
+            "항경련제",
+            "antiepileptic",
+            "Keppra",
+            "Valproate"
           ]
         },
         {
@@ -12277,7 +12800,15 @@ window.ICU_MANUAL_DB = {
             "의식",
             "LOC",
             "motor",
-            "pupil"
+            "pupil",
+            "seizure",
+            "seizure 종류",
+            "경련",
+            "발작",
+            "항경련제",
+            "antiepileptic",
+            "Keppra",
+            "Valproate"
           ]
         },
         {
@@ -12297,7 +12828,15 @@ window.ICU_MANUAL_DB = {
             "의식",
             "LOC",
             "motor",
-            "pupil"
+            "pupil",
+            "seizure",
+            "seizure 종류",
+            "경련",
+            "발작",
+            "항경련제",
+            "antiepileptic",
+            "Keppra",
+            "Valproate"
           ]
         }
       ],
@@ -12336,7 +12875,8 @@ window.ICU_MANUAL_DB = {
         "신경계 사정 가이드",
         "동공 크기(Pupil size) 그림"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "GCS / Mental / Seizure / 항경련제 신경계 신경계 사정 GCS GCS 사정 GCS tip mental 멘탈 의식 LOC motor pupil seizure seizure 종류 경련 발작 항경련제 antiepileptic Keppra Valproate Orfil phenytoin 뇌압 IICP neuro sign 신경계 증상 신경계 질환 v14_v11_based_menu search_optimized LOC 단계 정리 그림 신경계 사정 가이드 동공 크기(Pupil size) 그림 MENU014 GCS 사정 tip, seizure 종류, 항경련제, 신경계 증상/질환 검색 카드."
     },
     {
       "id": "MENU015",
@@ -12423,7 +12963,15 @@ window.ICU_MANUAL_DB = {
             "정상 범위",
             "저혈당",
             "고혈당",
-            "상황대처"
+            "상황대처",
+            "bst tip",
+            "insulin",
+            "인슐린",
+            "인슐린 종류",
+            "RI",
+            "Humulin",
+            "휴물린",
+            "sliding"
           ]
         },
         {
@@ -12443,7 +12991,15 @@ window.ICU_MANUAL_DB = {
             "정상 범위",
             "저혈당",
             "고혈당",
-            "상황대처"
+            "상황대처",
+            "bst tip",
+            "insulin",
+            "인슐린",
+            "인슐린 종류",
+            "RI",
+            "Humulin",
+            "휴물린",
+            "sliding"
           ]
         },
         {
@@ -12463,7 +13019,15 @@ window.ICU_MANUAL_DB = {
             "정상 범위",
             "저혈당",
             "고혈당",
-            "상황대처"
+            "상황대처",
+            "bst tip",
+            "insulin",
+            "인슐린",
+            "인슐린 종류",
+            "RI",
+            "Humulin",
+            "휴물린",
+            "sliding"
           ]
         }
       ],
@@ -12501,7 +13065,8 @@ window.ICU_MANUAL_DB = {
         "인슐린 제품/용법 참고 표",
         "경구 혈당강하제 참고 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "BST / DM / 인슐린 / 혈당관리 BST / DM / DKA BST·DM BST DM diabetes 혈당 BST 정상범위 정상 범위 저혈당 고혈당 상황대처 bst tip insulin 인슐린 인슐린 종류 RI Humulin 휴물린 sliding DKA OHA 경구혈당강하제 DM 약물 metformin 혈당관리 v14_v11_based_menu search_optimized 인슐린 종류와 작용시간 그래프 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표 MENU015 DM, BST 정상범위, 상황대처, BST tip, DM 약물, 인슐린 종류와 혈당관리 검색 카드."
     },
     {
       "id": "MENU016",
@@ -12613,7 +13178,8 @@ window.ICU_MANUAL_DB = {
         "ventilator 동영상",
         "Ventilator 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상 MENU016 ICU에서 자주 만나는 질환을 계통별로 검색하기 위한 카드."
     },
     {
       "id": "MENU017",
@@ -12716,7 +13282,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "입퇴원 / 전원 / 전동 / 사망 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 입퇴원 입원 퇴원 전원 전동 사망 입실 전실 응급실 외래 병동 전입 병동전입 퇴실 discharge transfer death 사후처치 영안실 전동간호기록 가퇴원 이동서식 퇴원처방 업무 v14_v11_based_menu search_optimized MENU017 입실, 퇴원, 전동, 전원, 사망 시 필요한 실무 절차 검색 카드. 입퇴원/전동/전원/사망 간호 상세"
     },
     {
       "id": "MENU018",
@@ -12805,7 +13372,8 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "주치의 / 과별 특이사항 주치의·과별 주치의 과별 과별 특이사항 원장님 원장님 routine 특이사항 NS OS 내과 심장내과 신장내과 소화기내과 신경외과 정형외과 routine set order 처방패턴 주치의별 v14_v11_based_menu search_optimized MENU018 각과 및 주치의별 routine, set order, 특이 지시를 모아두는 카드."
     },
     {
       "id": "EQUIP031",
@@ -12915,7 +13483,15 @@ window.ICU_MANUAL_DB = {
             "Low battery",
             "Occlusion",
             "Air",
-            "Door"
+            "Door",
+            "Complete",
+            "수액펌프",
+            "주입속도",
+            "주입용량",
+            "Infusion",
+            "pump",
+            "사용법과",
+            "알람"
           ],
           "include_rows_in_search": false
         }
@@ -12974,7 +13550,8 @@ window.ICU_MANUAL_DB = {
         "총 주입 예정량 완료",
         "처방 확인 후 종료 또는 추가 설정"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Infusion pump B.Braun 사용법과 알람 대처 물품 / 장비 / 전화번호 의료장비/Infusion Pump infusion pump 인퓨전펌프 B.Braun B braun pump alarm Low battery Occlusion Air Door Complete 수액펌프 주입속도 주입용량 Infusion pump 사용법과 알람 대처 물품 장비 전화번호 v26_uploaded_manual_added manual_20260614 Infusion pump 알람 및 대처 의미 배터리 잔량 30분 이내 전원/배터리 연결 라인 꼬임, 장착 오류, 바늘/3-way/조절기 막힘 Line clamp, 3-way 방향, IV function 확인 Air sensor가 공기 감지 또는 수액 종료 Air 제거, 수액 잔량 확인 주입 중 door open Door 재장착 후 재시작 총 주입 예정량 완료 처방 확인 후 종료 또는 추가 설정 EQUIP031 B.Braun infusion pump 기본 사용 순서와 주요 알람별 대처. Infusion pump 사용법 Syringe pump 사용법"
     },
     {
       "id": "ROUTINE030",
@@ -13112,7 +13689,15 @@ window.ICU_MANUAL_DB = {
             "vent circuit",
             "박테리아 필터",
             "엔코",
-            "HFNC"
+            "HFNC",
+            "CRRT kit",
+            "IV",
+            "A-line kit",
+            "C-line dx",
+            "PICC dx",
+            "closed suction catheter",
+            "feeding bag",
+            "T-tube portex"
           ],
           "include_rows_in_search": false
         }
@@ -13169,7 +13754,8 @@ window.ICU_MANUAL_DB = {
         "14일",
         "4일"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 교체 주기 정리 Routine Routine/교체주기 교체주기 교체 주기 Q-syte q site nebulizer vent circuit 박테리아 필터 엔코 HFNC CRRT kit IV A-line kit C-line dx PICC dx closed suction catheter feeding bag T-tube portex 수요일 일요일 extension 3-way ICU 교체 주기 정리 v26_uploaded_manual_added manual_20260614 ICU 교체 주기 항목 3일 7일 14일 4일 ROUTINE030 ICU에서 자주 확인하는 소모품, line, circuit, dressing 교체 주기."
     },
     {
       "id": "ROUTINE031",
@@ -13267,7 +13853,15 @@ window.ICU_MANUAL_DB = {
             "QID",
             "nebulizer 시간",
             "콜리스틴",
-            "Feeding 시간"
+            "Feeding 시간",
+            "경관식",
+            "약 시간",
+            "간호액팅 스케줄링",
+            "약물",
+            "투약",
+            "시간과",
+            "Feeding",
+            "시간"
           ],
           "include_rows_in_search": false
         },
@@ -13300,7 +13894,15 @@ window.ICU_MANUAL_DB = {
             "TID",
             "QID",
             "nebulizer 시간",
-            "콜리스틴"
+            "콜리스틴",
+            "경관식",
+            "약 시간",
+            "간호액팅 스케줄링",
+            "약물",
+            "투약",
+            "시간과",
+            "Feeding",
+            "시간"
           ],
           "include_rows_in_search": false
         }
@@ -13356,7 +13958,8 @@ window.ICU_MANUAL_DB = {
         "07:30 / 12:00 / 17:00",
         "저녁 식이 2개 신청, remark에 익일 아침 분량 메모"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "약물 투약 시간과 Feeding 시간 Routine Routine/투약시간 투약시간 약물 시간 QD BID TID QID nebulizer 시간 콜리스틴 Feeding 시간 경관식 약 시간 간호액팅 스케줄링 약물 투약 시간과 Feeding 시간 v26_uploaded_manual_added manual_20260614 약물 투약 시간 용법 09:00 09:00 / 21:00 06:00 / 14:00 / 22:00 06:00 / 12:00 / 18:00 / 23:59 Nebulizer 4회 07:00 / 12:00 / 17:00 / 21:00 07:00 / 17:00 구분 시간/메모 07:30 / 12:00 / 17:00 저녁 식이 2개 신청, remark에 익일 아침 분량 메모 ROUTINE031 QD/BID/TID/QID 투약 시간과 nebulizer, feeding 기본 시간."
     },
     {
       "id": "PREP001",
@@ -13462,7 +14065,15 @@ window.ICU_MANUAL_DB = {
             "suture 준비",
             "sputum cx",
             "CTD insertion",
-            "NS OP drain"
+            "NS OP drain",
+            "EVD 배액관",
+            "tip cx",
+            "배액관 제거",
+            "배액관 삽입",
+            "thoracostomy",
+            "chest tube",
+            "상황별",
+            "irrigation"
           ],
           "include_rows_in_search": false
         }
@@ -13522,7 +14133,8 @@ window.ICU_MANUAL_DB = {
         "EVD 배액관 비움",
         "D-set, 베타딘, 멸균장갑, 거즈, 고무줄"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "상황별 준비물: irrigation, C-line, suture, sputum cx, CTD, EVD 수술 / 시술 준비물/시술·배액관 상황별 준비 준비물 Bladder irrigation Subclavian insertion C-line insertion suture 준비 sputum cx CTD insertion NS OP drain EVD 배액관 tip cx 배액관 제거 배액관 삽입 thoracostomy chest tube 상황별 irrigation C-line suture sputum cx CTD EVD 수술 시술 v26_uploaded_manual_added manual_20260614 상황별 핵심 준비물 요약 상황 핵심 준비물 D-set, 곡반, N/S, enema syringe 50cc C-line catheter, suture set, sono probe cover, 리도카인, Tegaderm CHG specimen cup, suction line, ET PVC catheter, airway, N/S Thoracostomy set, chest tube 24Fr, chest bottle, chest stand EVD 배액관 비움 D-set, 베타딘, 멸균장갑, 거즈, 고무줄 PREP001 배액관 삽입/제거, 중심정맥관 삽입, suture, sputum culture, CTD, EVD 관련 준비물."
     },
     {
       "id": "DRUG030",
@@ -13650,7 +14262,15 @@ window.ICU_MANUAL_DB = {
             "타박탐",
             "벤제타실",
             "세파제돈",
-            "세파졸린"
+            "세파졸린",
+            "제티암",
+            "후루마린",
+            "타짐",
+            "타포신",
+            "트리악손",
+            "뉴디짐",
+            "맥스핌",
+            "오로페넴"
           ],
           "include_rows_in_search": false
         }
@@ -13725,7 +14345,8 @@ window.ICU_MANUAL_DB = {
         "Vancomycin",
         "반코마이신, 하노마이신"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "항생제 AST 시행 여부 약물 / 수액 / 마약 임상 약물/항생제 항생제 AST AST 유무 AST 시행 AST 안함 유박탐 타박탐 벤제타실 세파제돈 세파졸린 제티암 후루마린 타짐 타포신 트리악손 뉴디짐 맥스핌 오로페넴 아미카신 겐타마이신 반코마이신 하노마이신 사이톱신 레포신 항생제 AST 시행 여부 약물 수액 마약 v26_uploaded_manual_added manual_20260614 AST 시행 항생제 / 미시행 항생제 구분 계열 AST O Penicillin계 유박탐, 벤제타실, 타박탐 Cepha 1세대 세파제돈, 세파졸린 Cepha 2세대 제티암, 후루마린 Cepha 3세대 타짐, 타포신, 트리악손, 뉴디짐 Cepha 4세대 Carbapenem계 AST X Aminoglycoside 신풍아미카신, 겐타마이신 Vancomycin 반코마이신, 하노마이신 DRUG030 ICU에서 자주 사용하는 항생제의 AST 시행 여부를 빠르게 확인하는 카드."
     },
     {
       "id": "LAB030",
@@ -13824,7 +14445,15 @@ window.ICU_MANUAL_DB = {
             "UA bottle",
             "Urine Analysis",
             "Urine Culture",
-            "코니컬튜브"
+            "코니컬튜브",
+            "슈터기",
+            "일반캐리어",
+            "오토캐리어",
+            "ABGA",
+            "A-line 채혈",
+            "리거즈",
+            "regurge",
+            "바코드 발행"
           ],
           "include_rows_in_search": false
         }
@@ -13881,7 +14510,8 @@ window.ICU_MANUAL_DB = {
         "코니컬 튜브",
         "투명: 일반캐리어 / 유색: 오토캐리어"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "검체 통과 채혈·ABGA 실무 검사 / 검체 검사·검체/검체통 검체통 검체 병 c-difficile CDT stool ob통 UA bottle Urine Analysis Urine Culture 코니컬튜브 슈터기 일반캐리어 오토캐리어 ABGA A-line 채혈 리거즈 regurge 바코드 발행 DIC 바코드 검체 통과 채혈 실무 검사 v26_uploaded_manual_added manual_20260614 검체통 종류 검체통/용기 C-difficile / CDT Stool OB통, 블랙 Urine Analysis / UA 투명한 뚜껑 긴 bottle 코니컬 튜브 투명: 일반캐리어 / 유색: 오토캐리어 LAB030 Lab bottle 외 stool/urine 검체통, ABGA 채혈, 슈터기 carrier 구분. ABGA 채혈/검사"
     },
     {
       "id": "ROUTINE032",
@@ -13975,7 +14605,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 식이 확인과 경관식 입력 Routine Routine/식이 식이 NPO 금식 Feeding 경관유동식 당뇨식 칼로리 Remark 뉴케어 KD 신장식 Wet 거즈 추가식사 경관식 식이입력 ICU 확인과 입력 v26_uploaded_manual_added manual_20260614 ROUTINE032 NPO, feeding, 당뇨식, 신장 환자 식이, 경관식 추가 신청 실무."
     },
     {
       "id": "ROUTINE033",
@@ -14085,7 +14716,15 @@ window.ICU_MANUAL_DB = {
             "낙욕통",
             "Bundle",
             "Flow sheet",
-            "신체보호대 평가"
+            "신체보호대 평가",
+            "보호대",
+            "ICU flowsheet",
+            "체위변경표",
+            "통증 재평가",
+            "effect",
+            "D 0800",
+            "E 1600",
+            "N 2300"
           ],
           "include_rows_in_search": false
         }
@@ -14108,7 +14747,15 @@ window.ICU_MANUAL_DB = {
             "낙욕통",
             "Bundle",
             "Flow sheet",
-            "신체보호대 평가"
+            "신체보호대 평가",
+            "보호대",
+            "ICU flowsheet",
+            "체위변경표",
+            "통증 재평가",
+            "effect",
+            "D 0800",
+            "E 1600",
+            "N 2300"
           ]
         },
         {
@@ -14128,7 +14775,15 @@ window.ICU_MANUAL_DB = {
             "낙욕통",
             "Bundle",
             "Flow sheet",
-            "신체보호대 평가"
+            "신체보호대 평가",
+            "보호대",
+            "ICU flowsheet",
+            "체위변경표",
+            "통증 재평가",
+            "effect",
+            "D 0800",
+            "E 1600",
+            "N 2300"
           ]
         },
         {
@@ -14148,7 +14803,15 @@ window.ICU_MANUAL_DB = {
             "낙욕통",
             "Bundle",
             "Flow sheet",
-            "신체보호대 평가"
+            "신체보호대 평가",
+            "보호대",
+            "ICU flowsheet",
+            "체위변경표",
+            "통증 재평가",
+            "effect",
+            "D 0800",
+            "E 1600",
+            "N 2300"
           ]
         },
         {
@@ -14168,7 +14831,15 @@ window.ICU_MANUAL_DB = {
             "낙욕통",
             "Bundle",
             "Flow sheet",
-            "신체보호대 평가"
+            "신체보호대 평가",
+            "보호대",
+            "ICU flowsheet",
+            "체위변경표",
+            "통증 재평가",
+            "effect",
+            "D 0800",
+            "E 1600",
+            "N 2300"
           ]
         }
       ],
@@ -14242,7 +14913,8 @@ window.ICU_MANUAL_DB = {
         "소아통증척도",
         "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Initial 후 전산: 낙상·욕창·통증·Bundle·Flow sheet·보호대 Routine Routine/Initial·전산 Initial 후 전산 initial 낙상 욕창 통증 낙욕통 Bundle Flow sheet 신체보호대 평가 보호대 ICU flowsheet 체위변경표 통증 재평가 effect D 0800 E 1600 N 2300 massage X 전산 Flow sheet v26_uploaded_manual_added manual_20260614 Initial 후 전산 시간 기준 항목 시간/기준 낙상·욕창·통증 D 08:00 / E 16:00 / N 23:00 D 08:00-13:59 / E 16:00-21:59 / N 00:00-05:59 2시간 단위 통증 effect Inject 30분 후 / PO 1시간 후 NRS 통증 평가 척도 FLACC 통증 평가 척도 FPS 통증 평가 척도 통증 사정 통증 사정표 NRS FPS FLACC PIPS 숫자통증척도 얼굴통증척도 소아통증척도 NRS·FPS·FLACC·PIPS 통증 사정표 ROUTINE033 매 근무 initial 후 입력해야 하는 낙상, 욕창, 통증, bundle, flow sheet, 신체보호대 평가 정리."
     },
     {
       "id": "IO030",
@@ -14343,7 +15015,15 @@ window.ICU_MANUAL_DB = {
             "Urine",
             "infusion pump volume",
             "식사 100 400",
-            "Foley"
+            "Foley",
+            "PO water",
+            "inj 50cc",
+            "FD feeding",
+            "HD I/O",
+            "Anti 입력",
+            "배액관 I/O",
+            "클램프",
+            "음압 재설정"
           ],
           "include_rows_in_search": false
         }
@@ -14366,7 +15046,15 @@ window.ICU_MANUAL_DB = {
             "Urine",
             "infusion pump volume",
             "식사 100 400",
-            "Foley"
+            "Foley",
+            "PO water",
+            "inj 50cc",
+            "FD feeding",
+            "HD I/O",
+            "Anti 입력",
+            "배액관 I/O",
+            "클램프",
+            "음압 재설정"
           ]
         },
         {
@@ -14386,7 +15074,15 @@ window.ICU_MANUAL_DB = {
             "Urine",
             "infusion pump volume",
             "식사 100 400",
-            "Foley"
+            "Foley",
+            "PO water",
+            "inj 50cc",
+            "FD feeding",
+            "HD I/O",
+            "Anti 입력",
+            "배액관 I/O",
+            "클램프",
+            "음압 재설정"
           ]
         }
       ],
@@ -14444,7 +15140,8 @@ window.ICU_MANUAL_DB = {
         "섭취량 및 배설량(I&O) 기록 그림",
         "환자 유형별 I/O 불균형 예시 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "I/O 입력과 마감 상세 I&O·전해질 I&O·전해질/I&O I/O 마감 I/O 입력 섭취량 배설량 Parenteral Urine infusion pump volume 식사 100 400 Foley PO water inj 50cc FD feeding HD I/O Anti 입력 배액관 I/O 클램프 음압 재설정 positive balance 입력과 마감 상세 I&O 전해질 v26_uploaded_manual_added manual_20260614 Duty별 I/O 기준 Duty 시간 Day 06:00-13:00 Evening 13:00-21:00 Night 21:00-06:00 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표 IO030 Duty별 I/O 기준, infusion volume, 식사/물/feeding, 배액관 측정과 마감 요령."
     },
     {
       "id": "LINE030",
@@ -14541,7 +15238,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "부착기구 입력: HD cath, Mahurkar, Perm cath Line / Drain / Dressing Line/부착기구 부착기구 Cadex 기본간호 기구입력 HD Cath trialysis 3 lumen 마후카 Mahurkar Perm Cath 투석용 카테터 비터널형 터널형 동의서 다름 입력 HD cath Perm Line Drain Dressing v26_uploaded_manual_added manual_20260614 LINE030 Cadex 기본간호와 부착기구 입력 시 HD cath, Mahurkar, Perm cath 구분."
     },
     {
       "id": "MED030",
@@ -14631,7 +15329,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "지참약 식별 의뢰와 셀프처방 지참약 자가약 식별의뢰 지참약 관리 지참약 식별의뢰서 약국 6211 6212 셀프처방 Self 지참약 검색 지참약품정보 응급발행 식별 완료 스케줄 식별 의뢰와 v26_uploaded_manual_added manual_20260614 MED030 자가약 반입 시 식별의뢰, 약국 전달, 셀프처방, 주치의 Noti 절차."
     },
     {
       "id": "NARC030",
@@ -14742,7 +15441,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "마약 Pink / 향정 White 관리 상세 약물 / 수액 / 마약 마약·향정 마약 Pink 향정 White 마약장 6029 비치마약 마약 prep 마약 처방전 재출력 출력 error 반납처방전 핑크 마약 반납 마약 봉투 DC 공병 잔량 앰플 마약 Pink 향정 White 관리 상세 약물 수액 v26_uploaded_manual_added manual_20260614 NARC030 마약 사용 후 공병/잔량 보관, prep 마약 처방전, 반납처방전 출력과 반납 절차."
     },
     {
       "id": "CHART030",
@@ -14856,7 +15556,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 간호기록 체크리스트 EMR / 기록 / 처방 간호기록 차팅 네뷸 차팅 prn 차팅 산소 변경 약 용량 변경 회진 면회 지참약 식별 차팅 검사결과 Notify 검사결과 복사 OP 후 Dressing 사진 IPC 기록 Lasix BP 페치딘 기록 RI 2시간 F/U hourly check line 제거 차팅 Nebulizer 기록 Feeding 기록 ICU 체크리스트 EMR 기록 처방 v26_uploaded_manual_added manual_20260614 CHART030 ICU에서 자주 누락되는 간호기록 항목과 투약/검사/회진/line 관련 차팅 포인트. 간호기록 작성 원칙"
     },
     {
       "id": "ORDER030",
@@ -14974,7 +15675,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "간호처방과 액팅: Lab, pickup, 응급발행 처방·액팅 간호처방 액팅 Cadex 기본간호 Foley 처방 L-tube 처방 Dressing 처방 IV 처방 O2 처방 O2 inhalation HFNC 수가 Vent 수가 simple dressing 피하주사 pee nebulizer 처방 Lab 처방 채혈접수업무 픽업 응급발행 10:30 마약 픽업 퇴원약 픽업 ICU Chest Portable Y bed side PT 간호처방과 Lab pickup 처방 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 ORDER030 간호처방, 액팅 스케줄링, Lab 처방 발행, pickup과 응급발행 기준."
     },
     {
       "id": "DNR030",
@@ -15069,7 +15771,15 @@ window.ICU_MANUAL_DB = {
             "사전연명의료의향서",
             "가족관계증명서",
             "신분증",
-            "사회복지사 139"
+            "사회복지사 139",
+            "AWU501",
+            "AWU210",
+            "AWU230",
+            "AWU240",
+            "DNR 체크표",
+            "서류와",
+            "처방",
+            "v26_uploaded_manual_added"
           ],
           "include_rows_in_search": false
         }
@@ -15120,7 +15830,8 @@ window.ICU_MANUAL_DB = {
         "이행 관리료",
         "AWU240 / 13호"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DNR / 연명의료 서류와 처방 DNR 연명의료 연명의료중단결정서 별도서식 9 별도서식 10 별도서식 11 별도서식 13 사전연명의료의향서 가족관계증명서 신분증 사회복지사 139 AWU501 AWU210 AWU230 AWU240 DNR 체크표 서류와 처방 v26_uploaded_manual_added manual_20260614 연명의료 관련 처방료 코드 항목 코드 협진료 AWU501 / 9호 계획료 AWU210 / 10호 AWU230 / 11호 이행 관리료 AWU240 / 13호 DNR030 DNR 및 연명의료 관련 별도서식, 신분증/가족관계증명서, 사회복지사 연락, 처방료 코드. DNR 서류/처방"
     },
     {
       "id": "EKG030",
@@ -15219,7 +15930,15 @@ window.ICU_MANUAL_DB = {
             "환자 선택",
             "전극 연결",
             "record",
-            "network"
+            "network",
+            "RU",
+            "LU",
+            "RL",
+            "LL",
+            "빨노검초",
+            "액와중앙선",
+            "EKG Scan",
+            "침습적"
           ],
           "include_rows_in_search": false
         }
@@ -15242,7 +15961,15 @@ window.ICU_MANUAL_DB = {
             "환자 선택",
             "전극 연결",
             "record",
-            "network"
+            "network",
+            "RU",
+            "LU",
+            "RL",
+            "LL",
+            "빨노검초",
+            "액와중앙선",
+            "EKG Scan",
+            "침습적"
           ]
         }
       ],
@@ -15296,7 +16023,8 @@ window.ICU_MANUAL_DB = {
         "초록",
         "Bedside monitor 예시 사진"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "EKG 촬영과 리드 부착 검사 / 검체 검사/EKG EKG ECG 심전도 EKG 접수 부서접수 환자 선택 전극 연결 record network RU LU RL LL 빨노검초 액와중앙선 EKG Scan 침습적 촬영과 리드 부착 검사 검체 v26_uploaded_manual_added manual_20260614 사지 리드 색상 위치 색상 빨강 노랑 검정 초록 Bedside monitor 예시 사진 EKG030 EKG 접수, 전극 연결, 리드 위치, scan 업로드 포인트."
     },
     {
       "id": "SKILL030",
@@ -15412,7 +16140,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Injection / 3-way / IVS 실무 Tip 술기 술기/Injection inject injection MIV IVS 3-way 3way bolus flushing micro syringe TPN Cefa 수혈 3way RI F/U 우리 스틴 페르디핀 mannitol IM 리거즈 PICC flushing A-line zeroing EVD zeroing 액팅체크 실무 Tip v26_uploaded_manual_added manual_20260614 SKILL030 MIV, IVS, 3-way, flushing, TPN/항생제 line, RI F/U, IM, zeroing 등 injection 실무 팁."
     },
     {
       "id": "SKILL031",
@@ -15524,7 +16253,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "기본 술기: Fever, L-tube, Feeding, TR band, Foley 술기 술기/기본간호 기본술기 37.5 ice pack L-tube feeding regurge residual duoderm Ace vac clamping Face care 구강케어 탄륨 TR band CAG PCI puncture Foley ballooning 증류수 기본 Fever TR band Foley v26_uploaded_manual_added manual_20260614 SKILL031 Fever care, L-tube feeding, residual, face/oral care, TR band, Foley ballooning 등 실무 팁."
     },
     {
       "id": "TF030",
@@ -15655,7 +16385,15 @@ window.ICU_MANUAL_DB = {
             "혈액요청서",
             "슈터기",
             "진검실",
-            "혈액불출"
+            "혈액불출",
+            "수혈기록지",
+            "PC",
+            "Cryo",
+            "FFP",
+            "APLT",
+            "페르시스",
+            "수혈 filter",
+            "페니라민"
           ],
           "include_rows_in_search": false
         }
@@ -15725,7 +16463,8 @@ window.ICU_MANUAL_DB = {
         "1-2hr",
         "Fibrinogen 감소"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 실무 Tip과 혈액제제 종류 수혈 / 혈액 수혈 수혈 tip P-RBC 교차시험 ABO Rho irregular 혈액요청서 슈터기 진검실 혈액불출 수혈기록지 PC Cryo FFP APLT 페르시스 수혈 filter 페니라민 blood pumping A-PLT 250 CRYO 40 뮤코필터레이트 fibrinogen PT INR 실무 Tip과 혈액제제 종류 혈액 v26_uploaded_manual_added manual_20260614 혈액제제 종류와 투여 적응증 보관/온도 투여 기대효과 RBC Hb 감소 냉장 1.5-3hr PLT 감소 실온 Full drop A-PLT PT/INR 이상 1-2hr Fibrinogen 감소 TF030 수혈 준비부터 혈액 불출, 수혈기록, I/O, 혈액제제 종류와 기대효과까지 정리. 혈액제제 요약"
     },
     {
       "id": "TRANSFER030",
@@ -15843,7 +16582,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "입퇴원/전동/전원/사망 간호 상세 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 가퇴원 전동간호기록 전동 전원 전실 G/W 병동 퇴원 사망 이동서식 보호자 면담 병실료 병실정보 6043 6050 이송콜 산소탱크 자가약 전동기록지 I/O 마감 A-line 제거 EVD clamp SDD clamp 입퇴원 간호 상세 v26_uploaded_manual_added manual_20260614 TRANSFER030 가퇴원, 전동/전실, 병동 이동, 퇴원, 보호자 면담, 이동서식 관련 실무 절차. 입퇴원 / 전원 / 전동 / 사망 업무"
     },
     {
       "id": "ICUINFO030",
@@ -15950,7 +16690,8 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 숙지사항: 면회, 외부전화, 약국, 이송, Noti, E-cart 물품 / 장비 / 전화번호 원내정보/ICU 숙지 ICU 숙지사항 면회 임종면회 외부전화 9 누르고 약국 비번 6220 냉장고 1234 이송팀 Noti 당직의 병원장 ER CT 4시간 E-cart 봉인라벨 봉인라벨 No 점검대장 ICU 숙지사항 이송 E-cart 물품 장비 전화번호 v26_uploaded_manual_added manual_20260614 ICUINFO030 ICU에서 자주 필요한 면회, 전화, 약국, 이송, Noti, E-cart 봉인라벨 관련 정보."
     },
     {
       "id": "CPR030",
@@ -16053,7 +16794,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPR030 CPR 시 Lucas 시작시간, i-gel, Ambu, rhythm/pulse check, 약물, 기록 포인트. CPR quick card"
     },
     {
       "id": "IMG030",
@@ -16176,7 +16918,15 @@ window.ICU_MANUAL_DB = {
             "Coronary Angio CT",
             "NTG",
             "베타록",
-            "Brain MRI non enhance"
+            "Brain MRI non enhance",
+            "Brain MRI enhance",
+            "Brain CT",
+            "Head Neck Angio CT",
+            "DSA",
+            "PTA",
+            "TCD",
+            "TFCA",
+            "TRCA"
           ],
           "include_rows_in_search": false
         }
@@ -16246,7 +16996,8 @@ window.ICU_MANUAL_DB = {
         "NPO, PICC 조영제 사용 가능",
         "준비사항 없음, 보통 4-5일 f/u"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CT/MRI 조영제 검사와 주요 영상검사 준비 검사 / 검체 검사·시술/영상검사 CT 조영제 MRI 조영제 3way N/S hydration 조영제 검사 Coronary Angio CT NTG 베타록 Brain MRI non enhance Brain MRI enhance Brain CT Head Neck Angio CT DSA PTA TCD TFCA TRCA metformin 메트포르민 Rt 18G Lt 18G Lt 20G NPO MRI permission CT MRI 조영제 검사와 주요 영상검사 준비 검사 검체 v26_uploaded_manual_added manual_20260614 주요 영상검사 준비사항 CT 5분 전 NTG, 베타록 지참, 조영제 line Brain MRI non-enhance 검사설명서 MRI 설명서, 조영제 동의서, permission, line, NS 500, 금식 X Brain CT non-enhance 준비사항 없음 Lt 18G, metformin 중지 확인, hydration Lt 18G, NS 500, 동의서, 금식 X NPO, PICC 조영제 사용 가능 준비사항 없음, 보통 4-5일 f/u IMG030 CT/MRI 조영제 주입, line 준비, hydration, metformin 중지, 주요 영상검사별 준비사항."
     },
     {
       "id": "DRESS030",
@@ -16366,7 +17117,15 @@ window.ICU_MANUAL_DB = {
             "알코올",
             "과산화수소",
             "일반 상처",
-            "감염된 상처"
+            "감염된 상처",
+            "수술 후 상처",
+            "욕창",
+            "PCD",
+            "장루",
+            "SDD dx",
+            "EVD bag 소독",
+            "테가덤 CHG",
+            "oozing"
           ],
           "include_rows_in_search": false
         }
@@ -16430,7 +17189,8 @@ window.ICU_MANUAL_DB = {
         "기포 발생으로 이물질 제거",
         "괴사조직 제거, 지속 사용 금지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dressing 소독제와 상처별 소독 Line / Drain / Dressing Dressing Dressing 소독 소독제 생리식염수 베타딘 클로르헥시딘 알코올 과산화수소 일반 상처 감염된 상처 수술 후 상처 욕창 PCD 장루 SDD dx EVD bag 소독 테가덤 CHG oozing 거즈 필름 7일 픽스 2일 소독제와 상처별 소독 Line Drain v26_uploaded_manual_added manual_20260614 소독제 특징과 사용 예시 특징 사용 예시 세포 자극 적음 일반 상처 세척 광범위 항균 감염 위험 상처, 수술 전 소독 강력한 소독, 피부 친화적 카테터 삽입 부위, 중심정맥관 소독 빠른 살균, 휘발성 주사부위 피부 소독, 개방성 상처 금지 기포 발생으로 이물질 제거 괴사조직 제거, 지속 사용 금지 DRESS030 소독제 특징, 일반/감염/수술 후/욕창 상처 dressing, PCD, 장루, SDD, EVD bag 소독. 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "SURG030",
@@ -16514,7 +17274,15 @@ window.ICU_MANUAL_DB = {
             "permission",
             "표식확인서",
             "PA 124",
-            "수술 전 확인표"
+            "수술 전 확인표",
+            "OR 연락",
+            "OP risk",
+            "PCA 동의서",
+            "전신마취 동의서",
+            "수술동의서",
+            "수술파일",
+            "Pre OP Fluid",
+            "foley 남성"
           ]
         }
       ],
@@ -16563,7 +17331,8 @@ window.ICU_MANUAL_DB = {
         "manual_20260614",
         "수술 전후 간호 참고 표"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수술/시술 전후 간호와 Pre-op 확인 수술 / 시술 수술간호 수술 전후 간호 Pre Op preop 시술 전 확인 angio permission 표식확인서 PA 124 수술 전 확인표 OR 연락 OP risk PCA 동의서 전신마취 동의서 수술동의서 수술파일 Pre OP Fluid foley 남성 Post OP 처방 수술 시술 전후 간호와 Pre-op 확인 v26_uploaded_manual_added manual_20260614 수술 전후 간호 참고 표 SURG030 수술/시술 전 permission, 표식확인서, 동의서, pre-op 확인표, fluid, post-op 처방 확인. Pre-op care / 수술 전 간호"
     },
     {
       "id": "CRRT030",
@@ -16691,7 +17460,15 @@ window.ICU_MANUAL_DB = {
             "혈액재주입",
             "Balance",
             "치료종료",
-            "kit change"
+            "kit change",
+            "Multifiltrate pro kit",
+            "HOF 600",
+            "멀티빅",
+            "후탄",
+            "prefilter 압력",
+            "TMP",
+            "BFR",
+            "clot"
           ],
           "include_rows_in_search": false
         },
@@ -16741,7 +17518,15 @@ window.ICU_MANUAL_DB = {
             "혈액재주입",
             "Balance",
             "치료종료",
-            "kit change"
+            "kit change",
+            "Multifiltrate pro kit",
+            "HOF 600",
+            "멀티빅",
+            "후탄",
+            "prefilter 압력",
+            "TMP",
+            "BFR",
+            "clot"
           ],
           "include_rows_in_search": false
         }
@@ -16825,7 +17610,8 @@ window.ICU_MANUAL_DB = {
         "환자 연결",
         "처방: CRRT kit + NS500 + NS1L 확인"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CRRT I/O, Return, Kit change, 처방, 차팅 상세 CRRT / 신장 CRRT CRRT 상세 CRRT I/O CRRT return CRRT retrun Blood return 혈액재주입 Balance 치료종료 kit change Multifiltrate pro kit HOF 600 멀티빅 후탄 prefilter 압력 TMP BFR clot UF N/S 500 NS 1L KCL 포스텐 CRRT cath conti cath CRRT 차팅 Return Kit change 처방 차팅 상세 신장 v26_uploaded_manual_added manual_20260614 CRRT Return 순서 순서 내용 1 Blood return: NS 500 access line 3-way에 연결 후 full drop 2 치료종료 → 혈액재주입 → 확인 3 Balance 확인 및 적용시간 입력 4 NS 500은 5분 이내 들어갈 수 있어 앞에서 대기 5 Nacl 감지 또는 적당히 return 되면 clamp 후 종료 6 환자 disconnect 7 Kit 제거 8 전원 끄기 CRRT Kit change 오류 예방 위해 5분 뒤 전원 켜기 치료 유지 → 기능테스트 100% 후 OK Pre 빨간색 / Post 파란색 연결 Rinse / UF rinse 100% 이후 환자 연결 처방: CRRT kit + NS500 + NS1L 확인 CRRT030 CRRT I/O 마감, return, kit change, 처방/재료, catheter 행위료, 차팅까지 상세 정리. CRRT Return / Kit change 상세"
     },
     {
       "id": "NSPROC030",
@@ -16932,7 +17718,15 @@ window.ICU_MANUAL_DB = {
             "IICP",
             "CSF",
             "뇌척수액",
-            "Coil embolization"
+            "Coil embolization",
+            "coil 전",
+            "coil 후",
+            "TR band",
+            "Radial",
+            "Tracheostomy",
+            "기관절개관",
+            "기관절개술",
+            "PA 124"
           ],
           "include_rows_in_search": false
         }
@@ -16994,7 +17788,8 @@ window.ICU_MANUAL_DB = {
         "5-15mmHg",
         "20mmHg 이상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Burr hole, EVD/SDD, Coil embolization, Tracheostomy 신경계 검사·시술/신경외과 burr hole 버홀 EVD SDD ICP IICP CSF 뇌척수액 Coil embolization coil 전 coil 후 TR band Radial Tracheostomy 기관절개관 기관절개술 PA 124 전신마취동의서 수술 전 처치표 Anti prep Burr hole Coil embolization v26_uploaded_manual_added manual_20260614 신경외과 주요 수치 항목 기준 EVD 정상 CSF 생성 15-20ml/hr EVD 배액 과다 100ml/hr 이상 시 출혈 가능성 EVD setting Tragus 기준 상방 0-15cm 정상 ICP 5-15mmHg 20mmHg 이상 NSPROC030 Burr hole 수술 후 EVD/SDD 관리, coil embolization 전후, tracheostomy 준비."
     },
     {
       "id": "UPD43_CPR_____LUCAS_E_CART",
@@ -17074,7 +17869,8 @@ window.ICU_MANUAL_DB = {
         "LUCAS 동영상",
         "루카스 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPR 초기 대응 / Lucas / E-cart 응급상황 CPR 초기 대응 Lucas E-cart 코드 6114 루카스 제세동기 v43_uploaded_manual 추가 업무 매뉴얼(260618) LUCAS 동영상 루카스 사용법 동영상 UPD43_CPR_____LUCAS_E_CART 1. CPR CPR quick card"
     },
     {
       "id": "UPD43_INTUBATION",
@@ -17154,7 +17950,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_INTUBATION 2. Intubation"
     },
     {
       "id": "UPD43_ABGA___A_LINE",
@@ -17237,7 +18034,8 @@ window.ICU_MANUAL_DB = {
         "A-line 동영상",
         "A-line 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA 채혈 / A-line 목적 검사 / 검체 ABGA 채혈 A-line 목적 동맥혈 arterial line Radial artery 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 UPD43_ABGA___A_LINE 7. ABGA 채혈 ABGA 채혈/검사"
     },
     {
       "id": "UPD43_A_LINE_ZEROING",
@@ -17329,7 +18127,8 @@ window.ICU_MANUAL_DB = {
         "A-line 동영상",
         "A-line 사용법 동영상"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "A-line zeroing / 파형 확인 순환 / 모니터링 A-line zeroing 파형 확인 A-line zeroing overdamping underdamping MAP 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 UPD43_A_LINE_ZEROING 8. A-line zeroing"
     },
     {
       "id": "UPD43_CVP",
@@ -17418,7 +18217,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CVP 측정 / 정상범위 / 주의사항 순환 / 모니터링 CVP 측정 정상범위 주의사항 중심정맥압 Central venous pressure 우심방 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_CVP 9. CVP(중심정맥압, Central venous pressure)"
     },
     {
       "id": "UPD43___AST_1_5000",
@@ -17531,7 +18331,14 @@ window.ICU_MANUAL_DB = {
             "ID",
             "skin test",
             "약물",
-            "수액"
+            "수액",
+            "마약",
+            "v43_uploaded_manual",
+            "추가 업무 매뉴얼(260618)",
+            "원약 용량",
+            "1차 희석",
+            "최종 목표",
+            "500mg"
           ],
           "include_rows_in_search": false
         }
@@ -17570,7 +18377,8 @@ window.ICU_MANUAL_DB = {
         "N/S 20mL mix",
         "병원 프로토콜 우선"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "항생제 AST 1:5000 희석 약물 / 수액 / 마약 항생제 AST 5000 희석 항생제 AST 1:5000 ID skin test 약물 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) AST 희석 목표 원약 용량 1차 희석 최종 목표 500mg N/S 2.5mL mix 1:5000, 200mcg/1mL 목표 1g N/S 5mL mix 재희석 후 0.1mL ID 2g N/S 10mL mix 10분 후 결과 확인 4.5g N/S 20mL mix 병원 프로토콜 우선 UPD43___AST_1_5000 19. 항생제 AST"
     },
     {
       "id": "UPD43_______AMIODARONE_ADENOS",
@@ -17685,7 +18493,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "고위험 약물 / 항부정맥제 Amiodarone Adenosine 약물 / 수액 / 마약 고위험 약물 항부정맥제 Amiodarone Adenosine 고위험약물 코다론 SVT PSVT cardioversion 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_______AMIODARONE_ADENOS 20. 고위험 약물 Amiodarone / Cordarone"
     },
     {
       "id": "UPD43_DNR",
@@ -17769,7 +18578,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DNR 서류 작성 / 연명의료 입퇴원 / 전동 / 전원 / 사망 DNR 서류 작성 연명의료 사전연명조사지 9호 10호 11호 13호 입퇴원 전동 전원 사망 v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_DNR 23. DNR"
     },
     {
       "id": "UPD43",
@@ -17951,7 +18761,14 @@ window.ICU_MANUAL_DB = {
             "FFP",
             "PC",
             "APLT",
-            "Cryo"
+            "Cryo",
+            "ABO",
+            "Cross matching",
+            "혈액은행",
+            "혈액",
+            "v43_uploaded_manual",
+            "추가 업무 매뉴얼(260618)",
+            "적응증"
           ],
           "include_rows_in_search": false
         }
@@ -17991,7 +18808,8 @@ window.ICU_MANUAL_DB = {
         "1~2hr",
         "Fibrinogen 보충"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 UPD43 24. 수혈 혈액제제 요약"
     },
     {
       "id": "UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX",
@@ -18126,7 +18944,15 @@ window.ICU_MANUAL_DB = {
             "RAT",
             "Lab bottle",
             "채혈순서",
-            "Sputum Cx"
+            "Sputum Cx",
+            "Urine Cx",
+            "검체",
+            "Lab bottle 종류",
+            "채혈 순서",
+            "검체 bottle",
+            "검체 채취",
+            "외주검사",
+            "차광검체"
           ],
           "include_rows_in_search": false
         }
@@ -18174,7 +19000,8 @@ window.ICU_MANUAL_DB = {
         "채혈 순서 이미지",
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Lab bottle 종류와 채혈 순서 / 검체 채취 검사 / 검체 Lab bottle / Sputum Cx / Urine Cx / RAT Lab bottle Sputum Cx Urine RAT Lab bottle 채혈순서 Sputum Cx Urine Cx 검체 Lab bottle 종류 채혈 순서 검체 bottle 검체 채취 외주검사 차광검체 종류와 채혈 순서 채취 검사 v43_uploaded_manual 추가 업무 매뉴얼(260618) 검체 채취 핵심 항목 핵심 포인트 병원 검체 bottle 기준과 검사실 지침 우선 검체 bottle과 은박지 포장 위 라벨 2개 부착 멸균 손/오염 손 구분, suction 연결 방향 확인 포트 소독 후 자연건조, 10cc 정도 채취 호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX 25. Lab bottle Lab bottle 종류와 채혈 순서"
     },
     {
       "id": "UPD43_BLOOD_CULTURE",
@@ -18271,7 +19098,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Blood culture 채혈 절차 검사 / 검체 Blood culture 채혈 절차 Blood culture blood Cx 혈액배양 혐기 호기 녹십자 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_BLOOD_CULTURE 26. Blood culture"
     },
     {
       "id": "UPD43_CRE_CPE_MRAB_VRE_MRSA",
@@ -18363,7 +19191,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CRE / CPE / MRAB / VRE / MRSA 검사 및 격리 검사 / 검체 감염관리 / 검사 CRE CPE MRAB VRE MRSA 검사 격리 CPO Rectal swab 격리해지 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_CRE_CPE_MRAB_VRE_MRSA 27. CRE / CPE"
     },
     {
       "id": "UPD43_DRESSING___SDD_EVD",
@@ -18502,7 +19331,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "추가 업무 매뉴얼(260618)"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Dressing / 소독제 / SDD·EVD 관 제거 Line / Drain / Dressing Dressing 소독제 SDD EVD 제거 베타딘 클로르헥시딘 suture dressing set Line Drain v43_uploaded_manual 추가 업무 매뉴얼(260618) UPD43_DRESSING___SDD_EVD 31. Dressing 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "UPD43_2",
@@ -18656,7 +19486,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18676,7 +19514,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18696,7 +19542,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18716,7 +19570,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18736,7 +19598,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18756,7 +19626,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18776,7 +19654,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18796,7 +19682,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18816,7 +19710,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18836,7 +19738,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18856,7 +19766,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         },
         {
@@ -18876,7 +19794,15 @@ window.ICU_MANUAL_DB = {
             "cuff pressure",
             "상부기도폐쇄",
             "호흡부전",
-            "cuff"
+            "cuff",
+            "fenestrated",
+            "Portex",
+            "Tracoe",
+            "Koken",
+            "Teflon",
+            "호흡",
+            "Ventilator",
+            "v43_uploaded_manual"
           ]
         }
       ],
@@ -18918,7 +19844,8 @@ window.ICU_MANUAL_DB = {
         "기관절개관 사진",
         "기관절개관 전체 추출 이미지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "기관절개관 목적 / 적용 / 합병증 호흡 / Ventilator 기관절개관 목적 적용 합병증 Tracheostomy T-tube cuff pressure 상부기도폐쇄 호흡부전 cuff fenestrated Portex Tracoe Koken Teflon 호흡 Ventilator v43_uploaded_manual v49_exact_card 기관절개관 참고 이미지 1 기관절개관 참고 이미지 2 기관절개관 참고 이미지 3 기관절개관 참고 이미지 4 기관절개관 참고 이미지 5 기관절개관 참고 이미지 6 기관절개관 참고 이미지 7 기관절개관 참고 이미지 8 기관절개관 참고 이미지 9 기관절개관 참고 이미지 10 기관절개관 참고 이미지 11 기관절개관 참고 이미지 12 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 UPD43_2 기관절개관(Tracheosomy) tracheostomy"
     },
     {
       "id": "UPD43_____SINGLE_DOUBLE_CUFF_FE",
@@ -19037,7 +19964,8 @@ window.ICU_MANUAL_DB = {
         "기관절개관 사진",
         "기관절개관 전체 추출 이미지"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "기관절개관 종류 / Single·Double / Cuff / Fenestrated 호흡 / Ventilator 기관절개관 종류 Single Double Cuff Fenestrated Single cannula Double cannula Unfenestrated 내관 외관 호흡 Ventilator v43_uploaded_manual Tracheostomy T-tube Portex Tracoe Koken 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 UPD43_____SINGLE_DOUBLE_CUFF_FE 특징"
     },
     {
       "id": "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON",
@@ -19176,7 +20104,8 @@ window.ICU_MANUAL_DB = {
         "v43_uploaded_manual",
         "기관절개관"
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관 UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON 1. portex tube(폴텍스 튜브)"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_01",
@@ -19276,7 +20205,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19296,7 +20233,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19316,7 +20261,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19336,7 +20289,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19356,7 +20317,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19376,7 +20345,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19396,7 +20373,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19416,7 +20401,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19436,7 +20429,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19456,7 +20457,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19476,7 +20485,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19496,14 +20513,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 1 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_01 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_02",
@@ -19603,7 +20629,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19623,7 +20657,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19643,7 +20685,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19663,7 +20713,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19683,7 +20741,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19703,7 +20769,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19723,7 +20797,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19743,7 +20825,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19763,7 +20853,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19783,7 +20881,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19803,7 +20909,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19823,14 +20937,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 2 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_02 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~24번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_03",
@@ -19930,7 +21053,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19950,7 +21081,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19970,7 +21109,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -19990,7 +21137,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20010,7 +21165,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20030,7 +21193,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20050,7 +21221,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20070,7 +21249,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20090,7 +21277,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20110,7 +21305,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20130,7 +21333,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20150,14 +21361,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 3 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_03 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 25~36번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_04",
@@ -20257,7 +21477,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20277,7 +21505,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20297,7 +21533,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20317,7 +21561,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20337,7 +21589,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20357,7 +21617,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20377,7 +21645,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20397,7 +21673,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20417,7 +21701,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20437,7 +21729,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20457,7 +21757,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20477,14 +21785,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 4 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_04 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 37~48번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_05",
@@ -20584,7 +21901,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20604,7 +21929,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20624,7 +21957,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20644,7 +21985,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20664,7 +22013,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20684,7 +22041,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20704,7 +22069,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20724,7 +22097,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20744,7 +22125,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20764,7 +22153,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20784,7 +22181,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20804,14 +22209,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 5 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_05 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 49~60번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_06",
@@ -20911,7 +22325,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20931,7 +22353,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20951,7 +22381,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20971,7 +22409,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -20991,7 +22437,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21011,7 +22465,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21031,7 +22493,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21051,7 +22521,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21071,7 +22549,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21091,7 +22577,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21111,7 +22605,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21131,14 +22633,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 6 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_06 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 61~72번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_07",
@@ -21238,7 +22749,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21258,7 +22777,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21278,7 +22805,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21298,7 +22833,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         },
         {
@@ -21318,14 +22861,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "보조기"
+            "보조기",
+            "Lab bottle",
+            "채혈 순서",
+            "원내 주요 번호",
+            "수혈",
+            "ABGA",
+            "A-line",
+            "HWP 추출 이미지",
+            "원본 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 7 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_ADD_07 그림 / 사진 / 표 추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 73~77번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_TRACH_01",
@@ -21427,7 +22979,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21447,7 +23007,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21467,7 +23035,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21487,7 +23063,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21507,7 +23091,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21527,7 +23119,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21547,7 +23147,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21567,7 +23175,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21587,7 +23203,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21607,7 +23231,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21627,7 +23259,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21647,14 +23287,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_TRACH_01 그림 / 사진 / 표 기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다. v53_restored_all_images"
     },
     {
       "id": "HWPIMG_RESTORED_TRACH_02",
@@ -21756,7 +23405,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21776,7 +23433,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21796,7 +23461,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21816,7 +23489,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21836,7 +23517,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21856,7 +23545,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21876,7 +23573,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21896,7 +23601,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21916,7 +23629,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21936,7 +23657,15 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         },
         {
@@ -21956,14 +23685,23 @@ window.ICU_MANUAL_DB = {
             "자동 추출",
             "복원",
             "전체 이미지 검색",
-            "Tracheostomy"
+            "Tracheostomy",
+            "T-tube",
+            "cuff",
+            "Portex",
+            "Tracoe",
+            "기관절개관 이미지",
+            "기관절개관 사진",
+            "기관절개관 전체 추출 이미지",
+            "HWP 추출 이미지"
           ]
         }
       ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
-      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외"
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 HWPIMG_RESTORED_TRACH_02 그림 / 사진 / 표 기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~23번입니다. v53_restored_all_images"
     },
     {
       "id": "DBMEDIA001",
@@ -22062,7 +23800,14 @@ window.ICU_MANUAL_DB = {
             "등록된 이미지",
             "등록된 표",
             "전체 카드",
-            "HWP 추출 이미지"
+            "HWP 추출 이미지",
+            "DBMEDIA001",
+            "원내정보/앱 사용",
+            "현재 앱 DB의 카드/표/이미지 현황입니다. V65에서 신규 16개 업로드 자료를 반영한 기준입니다.",
+            "표",
+            "이미지",
+            "사진",
+            "v54_status_card"
           ],
           "include_rows_in_search": false
         }
@@ -22079,7 +23824,8 @@ window.ICU_MANUAL_DB = {
         "등록된 표",
         "전체 카드",
         "HWP 추출 이미지"
-      ]
+      ],
+      "search_index": "표/이미지 현황 이미지 현황 표 현황 DB 현황 자료 현황 등록된 이미지 등록된 표 전체 카드 HWP 추출 이미지 DBMEDIA001 원내정보/앱 사용 현재 앱 DB의 카드/표/이미지 현황입니다. V65에서 신규 16개 업로드 자료를 반영한 기준입니다. 표 이미지 사진 v54_status_card"
     },
     {
       "id": "DRUGCALC001",
@@ -22196,13 +23942,20 @@ window.ICU_MANUAL_DB = {
             "mg/kg/hr",
             "희석 농도",
             "infusion rate",
-            "약물 계산기 사용"
+            "약물 계산기 사용",
+            "DRUGCALC001",
+            "약물 / 수액 / 마약",
+            "약물 총량, 희석 후 총량, 체중, 목표 용량을 입력해 주입속도 또는 실제 용량을 계산하는 기능입니다.",
+            "v55_drug_calculator",
+            "임상 약물",
+            "고위험 약물 / 항부정맥제 Amiodarone Adenosine"
           ],
           "include_rows_in_search": false
         }
       ],
       "images": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "약물 계산기 약물계산 계산기 주입속도 mL/hr mcg/kg/min mcg/min mg/hr mg/kg/hr 희석 농도 infusion rate DRUGCALC001 약물 계산기 사용 약물 / 수액 / 마약 약물 총량, 희석 후 총량, 체중, 목표 용량을 입력해 주입속도 또는 실제 용량을 계산하는 기능입니다. v55_drug_calculator 임상 약물 고위험 약물 / 항부정맥제 Amiodarone Adenosine"
     },
     {
       "id": "LOGINACCT001",
@@ -22307,13 +24060,19 @@ window.ICU_MANUAL_DB = {
             "ICU_USERS_JSON",
             "퇴사자 삭제",
             "부서이동자 삭제",
-            "개별 로그인 계정 안내"
+            "개별 로그인 계정 안내",
+            "LOGINACCT001",
+            "원내정보/앱 사용",
+            "공용 로그인 대신 개인별 아이디/비밀번호로 접속하도록 설정한 계정 안내 카드입니다.",
+            "로그인",
+            "v57_individual_accounts"
           ],
           "include_rows_in_search": false
         }
       ],
       "images": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "개별 로그인 계정 아이디 비밀번호 관리자 유지민 퇴사자 부서이동자 ICU_USERS_JSON 퇴사자 삭제 부서이동자 삭제 LOGINACCT001 개별 로그인 계정 안내 원내정보/앱 사용 공용 로그인 대신 개인별 아이디/비밀번호로 접속하도록 설정한 계정 안내 카드입니다. 로그인 v57_individual_accounts"
     },
     {
       "id": "VIDEO001",
@@ -22416,7 +24175,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 VIDEO001 호흡 / Ventilator Ventilator 사용법 1, 2 교육 동영상입니다. Google Drive 링크로 연결됩니다. 동영상 교육영상 v61_video google_drive_link v62_video_link"
     },
     {
       "id": "VIDEO002",
@@ -22495,7 +24255,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "portable ventilator 이동식 ventilator portable ventilator 동영상 호흡 Ventilator ventilator 동영상 Ventilator 사용법 동영상 이동용 ventilator 포터블 벤틸레이터 VIDEO002 Portable ventilator 사용법 동영상 호흡 / Ventilator Portable ventilator 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다. 동영상 교육영상 v61_video google_drive_link v62_video_link"
     },
     {
       "id": "VIDEO003",
@@ -22577,7 +24338,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "LUCAS 루카스 루카스 사용법 CPR CPR 동영상 흉부압박기 자동 흉부압박 응급상황 Lucas CPR 기계 VIDEO003 LUCAS 사용법 동영상 CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다. 동영상 교육영상 v61_video google_drive_link v62_video_link"
     },
     {
       "id": "VIDEO004",
@@ -22661,7 +24423,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "A-line A line A-line 사용법 A-line 동영상 arterial line A-line zeroing 제로잉 순환 모니터링 A-line 사용법 동영상 VIDEO004 순환 / 모니터링 A-line 사용법과 관련 교육 동영상입니다. Google Drive 링크로 연결됩니다. 동영상 교육영상 v61_video google_drive_link v62_video_link"
     },
     {
       "id": "V65_CPCR_001",
@@ -22751,11 +24514,14 @@ window.ICU_MANUAL_DB = {
             "기도유지",
             "심장마사지",
             "응급상황",
-            "CPCR 시뮬레이션 절차"
+            "CPCR 시뮬레이션 절차",
+            "V65_CPCR_001",
+            "CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPCR CPR 심폐소생술 코드 CPR 6114 Emergency kit Defibrillator ambu-bagging 기도유지 심장마사지 응급상황 CPCR 시뮬레이션 절차 V65_CPCR_001 CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다."
     },
     {
       "id": "V65_CPCR_002",
@@ -22855,7 +24621,9 @@ window.ICU_MANUAL_DB = {
             "의사 도착시간",
             "간호기록",
             "CPCR 기록 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_002",
+            "CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다."
           ],
           "include_rows_in_search": false
         }
@@ -22875,11 +24643,14 @@ window.ICU_MANUAL_DB = {
             "의사 도착시간",
             "간호기록",
             "CPCR 기록 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_002",
+            "CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPCR 기록 기록 담당 간호사 심폐소생술 기록 사망기록 V/S 기록 의사 도착시간 간호기록 CPCR 기록 담당 간호사 체크리스트 응급상황 V65_CPCR_002 CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다."
     },
     {
       "id": "V65_CPCR_003",
@@ -23009,7 +24780,9 @@ window.ICU_MANUAL_DB = {
             "O2",
             "삽관 보조",
             "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_003",
+            "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다."
           ],
           "include_rows_in_search": false
         }
@@ -23031,11 +24804,14 @@ window.ICU_MANUAL_DB = {
             "O2",
             "삽관 보조",
             "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_003",
+            "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPCR 인공호흡 기도확보 intubation E-tube Ambu bag ambu mask suction O2 삽관 보조 CPCR 인공호흡/기도확보 담당 간호사 체크리스트 응급상황 V65_CPCR_003 CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다."
     },
     {
       "id": "V65_CPCR_004",
@@ -23130,7 +24906,9 @@ window.ICU_MANUAL_DB = {
             "리듬 확인",
             "V/S 측정",
             "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_004",
+            "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다."
           ],
           "include_rows_in_search": false
         }
@@ -23151,11 +24929,14 @@ window.ICU_MANUAL_DB = {
             "리듬 확인",
             "V/S 측정",
             "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_004",
+            "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPCR 정맥로 정맥로 확보 투약 담당 C-line 18G 응급약물 리듬 확인 V/S 측정 CPCR 정맥로 확보/투약 담당 간호사 체크리스트 응급상황 V65_CPCR_004 CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다."
     },
     {
       "id": "V65_CPCR_005",
@@ -23262,7 +25043,9 @@ window.ICU_MANUAL_DB = {
             "synchronized button",
             "심전도 리듬",
             "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_005",
+            "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다."
           ],
           "include_rows_in_search": false
         }
@@ -23283,11 +25066,14 @@ window.ICU_MANUAL_DB = {
             "synchronized button",
             "심전도 리듬",
             "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
-            "응급상황"
+            "응급상황",
+            "V65_CPCR_005",
+            "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CPCR 모니터링 제세동기 defibrillator Defibrillation paddle jelly synchronized button 심전도 리듬 CPCR 모니터링/제세동기 담당 간호사 체크리스트 응급상황 V65_CPCR_005 CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다."
     },
     {
       "id": "V65_TRANSFUSION_FILTER",
@@ -23367,7 +25153,9 @@ window.ICU_MANUAL_DB = {
             "수혈마무리",
             "Haemonetics",
             "백혈구 제거용 수혈필터 RC2VAE 사용법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_TRANSFUSION_FILTER",
+            "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다."
           ]
         },
         {
@@ -23385,11 +25173,14 @@ window.ICU_MANUAL_DB = {
             "수혈마무리",
             "Haemonetics",
             "백혈구 제거용 수혈필터 RC2VAE 사용법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_TRANSFUSION_FILTER",
+            "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "백혈구제거 필터 수혈필터 RC2VAE leukocyte removal filter 수혈 준비 혈액교체 수혈마무리 Haemonetics 백혈구 제거용 수혈필터 RC2VAE 사용법 수혈 / 혈액 V65_TRANSFUSION_FILTER 백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다."
     },
     {
       "id": "V65_DRUG_MIX_PROMISE",
@@ -23628,7 +25419,14 @@ window.ICU_MANUAL_DB = {
             "로큐니움",
             "노르에피린",
             "도부타민",
-            "에피네프린"
+            "에피네프린",
+            "바소프레신",
+            "페르디핀",
+            "헤르벤",
+            "이소켓",
+            "코다론",
+            "약물 / 수액 / 마약",
+            "V65_DRUG_MIX_PROMISE"
           ],
           "include_rows_in_search": false
         }
@@ -23651,11 +25449,20 @@ window.ICU_MANUAL_DB = {
             "로큐니움",
             "노르에피린",
             "도부타민",
-            "에피네프린"
+            "에피네프린",
+            "바소프레신",
+            "페르디핀",
+            "헤르벤",
+            "이소켓",
+            "코다론",
+            "주요 약물 약속처방 Mix 법",
+            "약물 / 수액 / 마약",
+            "V65_DRUG_MIX_PROMISE"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "약물약속처방 주요 약물 MIX Continuous Infusion 울티펜 모르핀 미다컴 프리폴 프리세덱스 로큐니움 노르에피린 도부타민 에피네프린 바소프레신 페르디핀 헤르벤 이소켓 코다론 주요 약물 약속처방 Mix 법 약물 / 수액 / 마약 V65_DRUG_MIX_PROMISE 주요 약물의 continuous infusion 약속처방 mix 기준표입니다. 기본 수액은 5DW 기준입니다."
     },
     {
       "id": "V65_LAB_LIGHT_BARCODE",
@@ -23720,7 +25527,9 @@ window.ICU_MANUAL_DB = {
             "검체 바코드",
             "겉면 바코드",
             "차광검사 바코드 붙이는 방법",
-            "검사 / 검체"
+            "검사 / 검체",
+            "V65_LAB_LIGHT_BARCODE",
+            "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다."
           ]
         },
         {
@@ -23737,11 +25546,14 @@ window.ICU_MANUAL_DB = {
             "검체 바코드",
             "겉면 바코드",
             "차광검사 바코드 붙이는 방법",
-            "검사 / 검체"
+            "검사 / 검체",
+            "V65_LAB_LIGHT_BARCODE",
+            "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "차광검사 차광 검체 바코드 바코드 재발행 검체통 검체 바코드 겉면 바코드 차광검사 바코드 붙이는 방법 검사 / 검체 V65_LAB_LIGHT_BARCODE 차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다."
     },
     {
       "id": "V65_BLOOD_WARMER",
@@ -23816,7 +25628,9 @@ window.ICU_MANUAL_DB = {
             "대량수혈",
             "한랭응집소",
             "혈액 가온기 사용방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_BLOOD_WARMER",
+            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
           ]
         },
         {
@@ -23833,7 +25647,9 @@ window.ICU_MANUAL_DB = {
             "대량수혈",
             "한랭응집소",
             "혈액 가온기 사용방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_BLOOD_WARMER",
+            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
           ]
         },
         {
@@ -23850,11 +25666,14 @@ window.ICU_MANUAL_DB = {
             "대량수혈",
             "한랭응집소",
             "혈액 가온기 사용방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_BLOOD_WARMER",
+            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "가온기 혈액 가온기 Blood warmer infusion warmer 수혈 가온 대량수혈 한랭응집소 혈액 가온기 사용방법 수혈 / 혈액 V65_BLOOD_WARMER 혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
     },
     {
       "id": "V65_DRUG_CLOT",
@@ -23955,7 +25774,9 @@ window.ICU_MANUAL_DB = {
             "타포신 TPN",
             "lasix 단독투여",
             "motin 단독투여",
-            "약물 / 수액 / 마약"
+            "약물 / 수액 / 마약",
+            "V65_DRUG_CLOT",
+            "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
           ],
           "include_rows_in_search": false
         }
@@ -23977,7 +25798,9 @@ window.ICU_MANUAL_DB = {
             "lasix 단독투여",
             "motin 단독투여",
             "섞이면 clot 되는 주사제",
-            "약물 / 수액 / 마약"
+            "약물 / 수액 / 마약",
+            "V65_DRUG_CLOT",
+            "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
           ]
         },
         {
@@ -23996,11 +25819,14 @@ window.ICU_MANUAL_DB = {
             "lasix 단독투여",
             "motin 단독투여",
             "섞이면 clot 되는 주사제",
-            "약물 / 수액 / 마약"
+            "약물 / 수액 / 마약",
+            "V65_DRUG_CLOT",
+            "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "섞이면 clot 침전 clot 파세타 레포신 크렉산 사이톱신 트리악손 로이솔 타포신 TPN lasix 단독투여 motin 단독투여 섞이면 clot 되는 주사제 약물 / 수액 / 마약 V65_DRUG_CLOT 혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
     },
     {
       "id": "V65_MDR_ORGANISM",
@@ -24123,7 +25949,13 @@ window.ICU_MANUAL_DB = {
             "격리해지",
             "코호트",
             "Oxacillin",
-            "Vancomycin"
+            "Vancomycin",
+            "Meropenem",
+            "Ertapenem",
+            "접촉주의 다제내성균 해석",
+            "감염 / 격리",
+            "V65_MDR_ORGANISM",
+            "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다."
           ],
           "include_rows_in_search": false
         }
@@ -24146,7 +25978,13 @@ window.ICU_MANUAL_DB = {
             "격리해지",
             "코호트",
             "Oxacillin",
-            "Vancomycin"
+            "Vancomycin",
+            "Meropenem",
+            "Ertapenem",
+            "접촉주의 다제내성균 해석",
+            "감염 / 격리",
+            "V65_MDR_ORGANISM",
+            "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다."
           ]
         },
         {
@@ -24166,11 +26004,18 @@ window.ICU_MANUAL_DB = {
             "격리해지",
             "코호트",
             "Oxacillin",
-            "Vancomycin"
+            "Vancomycin",
+            "Meropenem",
+            "Ertapenem",
+            "접촉주의 다제내성균 해석",
+            "감염 / 격리",
+            "V65_MDR_ORGANISM",
+            "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "접촉주의 다제내성균 MRSA VRE CRE MRAB CRAB MRPA 격리해지 코호트 Oxacillin Vancomycin Meropenem Ertapenem 접촉주의 다제내성균 해석 감염 / 격리 V65_MDR_ORGANISM 접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다."
     },
     {
       "id": "V65_TRANSFUSION_ORDER_BARCODE",
@@ -24270,7 +26115,9 @@ window.ICU_MANUAL_DB = {
             "EB1",
             "PC FFP RBC",
             "수혈 처방확인 및 바코드 출력 방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_TRANSFUSION_ORDER_BARCODE",
+            "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
           ],
           "include_rows_in_search": false
         }
@@ -24293,7 +26140,9 @@ window.ICU_MANUAL_DB = {
             "EB1",
             "PC FFP RBC",
             "수혈 처방확인 및 바코드 출력 방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_TRANSFUSION_ORDER_BARCODE",
+            "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
           ]
         },
         {
@@ -24313,11 +26162,14 @@ window.ICU_MANUAL_DB = {
             "EB1",
             "PC FFP RBC",
             "수혈 처방확인 및 바코드 출력 방법",
-            "수혈 / 혈액"
+            "수혈 / 혈액",
+            "V65_TRANSFUSION_ORDER_BARCODE",
+            "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 처방확인 수혈 바코드 혈액 요청서 ABO Rho 교차시험 비예기항체 irregular antibody EB1 PC FFP RBC 수혈 처방확인 및 바코드 출력 방법 수혈 / 혈액 V65_TRANSFUSION_ORDER_BARCODE 수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
     },
     {
       "id": "V65_PCD_LABEL",
@@ -24389,7 +26241,9 @@ window.ICU_MANUAL_DB = {
             "바코드 재발행",
             "채혈접수 안내",
             "PCD 검체 처방 시 검체라벨 붙이는 방법",
-            "검사 / 검체"
+            "검사 / 검체",
+            "V65_PCD_LABEL",
+            "PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다."
           ]
         },
         {
@@ -24408,11 +26262,14 @@ window.ICU_MANUAL_DB = {
             "바코드 재발행",
             "채혈접수 안내",
             "PCD 검체 처방 시 검체라벨 붙이는 방법",
-            "검사 / 검체"
+            "검사 / 검체",
+            "V65_PCD_LABEL",
+            "PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "PCD 검체 검체라벨 PCD 라벨 체액검사9종 Total amylase LDH Fluid culture 바코드 재발행 채혈접수 안내 PCD 검체 처방 시 검체라벨 붙이는 방법 검사 / 검체 V65_PCD_LABEL PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다."
     },
     {
       "id": "V65_WARD_NURSING_MANUAL",
@@ -24552,7 +26409,15 @@ window.ICU_MANUAL_DB = {
             "motor",
             "수혈간호",
             "흡인간호",
-            "경관영양"
+            "경관영양",
+            "검체수집",
+            "수술 전 간호",
+            "수술 후 간호",
+            "감염 예방관리",
+            "병동간호팀 간호사메뉴얼 2026.04.13",
+            "병동간호팀 간호사 매뉴얼",
+            "V65_WARD_NURSING_MANUAL",
+            "병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다."
           ],
           "include_rows_in_search": false
         },
@@ -24606,13 +26471,22 @@ window.ICU_MANUAL_DB = {
             "motor",
             "수혈간호",
             "흡인간호",
-            "경관영양"
+            "경관영양",
+            "검체수집",
+            "수술 전 간호",
+            "수술 후 간호",
+            "감염 예방관리",
+            "병동간호팀 간호사메뉴얼 2026.04.13",
+            "병동간호팀 간호사 매뉴얼",
+            "V65_WARD_NURSING_MANUAL",
+            "병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다."
           ],
           "include_rows_in_search": false
         }
       ],
       "images": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "병동간호팀 간호사메뉴얼 신규 간호사 메뉴얼 Duty별 업무 Day 업무 Evening 업무 Night 업무 GCS motor 수혈간호 흡인간호 경관영양 검체수집 수술 전 간호 수술 후 간호 감염 예방관리 병동간호팀 간호사메뉴얼 2026.04.13 병동간호팀 간호사 매뉴얼 V65_WARD_NURSING_MANUAL 병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다."
     },
     {
       "id": "V65_OS_DEPT_MANUAL",
@@ -24757,13 +26631,22 @@ window.ICU_MANUAL_DB = {
             "OS1",
             "OS3",
             "OS8",
-            "OS10"
+            "OS10",
+            "OS14",
+            "OS22",
+            "OS24",
+            "OS25",
+            "TKRA",
+            "TSRA",
+            "Hip OP",
+            "OS 각과별 매뉴얼 Drain Pressure 정리"
           ],
           "include_rows_in_search": false
         }
       ],
       "images": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "OS 각과별 매뉴얼 OS Drain Drain Pressure H-vac JP natural full clamp OS1 OS3 OS8 OS10 OS14 OS22 OS24 OS25 TKRA TSRA Hip OP OS 각과별 매뉴얼 Drain Pressure 정리 수술 / 시술 V65_OS_DEPT_MANUAL OS 각 과별 H-vac/JP pressure, clamp, 제거 기준을 검색할 수 있도록 정리한 카드입니다."
     },
     {
       "id": "V65_NEW_NURSE_NOTES",
@@ -24867,7 +26750,9 @@ window.ICU_MANUAL_DB = {
             "항혈전제 중단",
             "보조기 착용기간",
             "신입간호사 숙지사항 2026.04.29",
-            "병동간호팀 간호사 매뉴얼"
+            "병동간호팀 간호사 매뉴얼",
+            "V65_NEW_NURSE_NOTES",
+            "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다."
           ],
           "include_rows_in_search": false
         },
@@ -24925,13 +26810,16 @@ window.ICU_MANUAL_DB = {
             "항혈전제 중단",
             "보조기 착용기간",
             "신입간호사 숙지사항 2026.04.29",
-            "병동간호팀 간호사 매뉴얼"
+            "병동간호팀 간호사 매뉴얼",
+            "V65_NEW_NURSE_NOTES",
+            "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다."
           ],
           "include_rows_in_search": false
         }
       ],
       "images": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼 V65_NEW_NURSE_NOTES 신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다."
     },
     {
       "id": "V69_STROKE_OVERVIEW",
@@ -25100,7 +26988,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         },
@@ -25146,7 +27042,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         }
@@ -25170,12 +27074,21 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ]
         }
       ],
       "videos": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 뇌졸중 총정리 stroke overview FAST 평가 응급 뇌졸중 중풍 갑자기 말 어눌 팔다리 힘빠짐 119 V69_STROKE_OVERVIEW 뇌졸중 총정리: 증상·진단·검사·초기 간호 신경계 뇌졸중은 뇌혈관이 막히거나 터져 뇌조직 손상이 발생하는 응급질환입니다. 증상 발생 시각 확인, FAST 확인, 즉시 영상검사와 전문의 보고가 핵심입니다."
     },
     {
       "id": "V69_STROKE_ISCHEMIC",
@@ -25367,7 +27280,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         },
@@ -25413,7 +27334,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         }
@@ -25437,12 +27366,21 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ]
         }
       ],
       "videos": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 뇌경색 종류 허혈성 ischemic stroke cerebral infarction 대혈관 죽상경화성 심장색전성 열공경색 소혈관폐색 lacunar infarct MCA 대혈관폐색 LVO tPA alteplase tenecteplase 혈전용해술 혈전제거술 기계적 혈전제거술 thrombectomy 혈전성 색전성 V69_STROKE_ISCHEMIC 뇌경색(허혈성 뇌졸중): 종류·진단·치료·간호 신경계 뇌경색은 혈관 폐색으로 해당 혈관 영역의 뇌조직 혈류가 차단되는 뇌졸중입니다. 원인에 따라 대혈관 죽상경화성, 심장색전성, 소혈관폐색(열공경색), 기타/원인불명으로 나눌 수 있습니다."
     },
     {
       "id": "V69_STROKE_HEMORRHAGIC",
@@ -25647,7 +27585,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         },
@@ -25701,7 +27647,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         },
@@ -25751,7 +27705,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         }
@@ -25775,12 +27737,21 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ]
         }
       ],
       "videos": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 hemorrhagic stroke ICH intracerebral hemorrhage 뇌내출혈 SAH subarachnoid hemorrhage 지주막하출혈 IVH intraventricular hemorrhage 뇌실내출혈 소뇌출혈 뇌간출혈 동맥류 aneurysm EVD 외부뇌실배액 혈종제거술 감압술 코일색전술 clipping 클리핑 nimodipine 혈관연축 ICP 두개내압 V69_STROKE_HEMORRHAGIC 뇌출혈(출혈성 뇌졸중): 종류·수술·치료·간호 신경계 뇌출혈은 뇌혈관 파열로 뇌실질, 지주막하 공간, 뇌실 등에 출혈이 발생하는 응급질환입니다. 비조영 CT로 출혈 위치와 범위를 빠르게 확인하고 혈압·응고·두개내압 관리 및 수술/시술 여부를 판단합니다."
     },
     {
       "id": "V69_STROKE_COMPARISON",
@@ -25931,7 +27902,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ],
           "include_rows_in_search": false
         }
@@ -25955,7 +27934,15 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ]
         },
         {
@@ -25976,12 +27963,21 @@ window.ICU_MANUAL_DB = {
             "NIHSS",
             "CT",
             "MRI",
-            "DWI"
+            "DWI",
+            "FLAIR",
+            "SWI",
+            "CTA",
+            "MRA",
+            "DSA",
+            "편마비",
+            "안면마비",
+            "언어장애"
           ]
         }
       ],
       "videos": [],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 허혈성 출혈성 비교 뇌경색 뇌출혈 차이 뇌졸중 비교 ischemic hemorrhagic comparison 수술 치료 간호 비교 V69_STROKE_COMPARISON 허혈성 vs 출혈성 뇌졸중 한눈에 비교 신경계 뇌경색과 뇌출혈의 원인, 대표 영상소견, 응급치료 핵심, 간호 포인트를 비교해 빠르게 확인하는 카드입니다."
     },
     {
       "id": "V70_ECG_INTERPRETATION",
@@ -26126,7 +28122,15 @@ window.ICU_MANUAL_DB = {
             "QT",
             "QTc",
             "ST 분절",
-            "T파"
+            "T파",
+            "정상 심전도",
+            "ECG 해석",
+            "EKG 해석",
+            "P파 QRS T파",
+            "V70_ECG_INTERPRETATION",
+            "심전도 해석 기본: 파형·정상범위·해석 순서",
+            "심혈관 / 심전도",
+            "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다."
           ],
           "include_rows_in_search": false
         },
@@ -26188,7 +28192,15 @@ window.ICU_MANUAL_DB = {
             "QT",
             "QTc",
             "ST 분절",
-            "T파"
+            "T파",
+            "정상 심전도",
+            "ECG 해석",
+            "EKG 해석",
+            "P파 QRS T파",
+            "V70_ECG_INTERPRETATION",
+            "심전도 해석 기본: 파형·정상범위·해석 순서",
+            "심혈관 / 심전도",
+            "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다."
           ],
           "include_rows_in_search": false
         }
@@ -26212,11 +28224,20 @@ window.ICU_MANUAL_DB = {
             "QT",
             "QTc",
             "ST 분절",
-            "T파"
+            "T파",
+            "정상 심전도",
+            "ECG 해석",
+            "EKG 해석",
+            "P파 QRS T파",
+            "V70_ECG_INTERPRETATION",
+            "심전도 해석 기본: 파형·정상범위·해석 순서",
+            "심혈관 / 심전도",
+            "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "심전도 ECG EKG 심전도 해석 심전도 기본 P파 QRS PR 간격 QT QTc ST 분절 T파 정상 심전도 ECG 해석 EKG 해석 P파 QRS T파 V70_ECG_INTERPRETATION 심전도 해석 기본: 파형·정상범위·해석 순서 심혈관 / 심전도 심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다. 기본 심방세동 심실빈맥 심실세동 허혈·경색 ECG 변화 심혈관 환자 간호 핵심"
     },
     {
       "id": "V70_ECG_ARRHYTHMIA",
@@ -26389,7 +28410,15 @@ window.ICU_MANUAL_DB = {
             "1도 AV block",
             "Mobitz I",
             "완전방실차단",
-            "심실빈맥"
+            "심실빈맥",
+            "심실세동",
+            "VF",
+            "VT",
+            "부정맥 심전도",
+            "심방세동 심전도",
+            "VT VF ECG",
+            "방실차단 ECG",
+            "V70_ECG_ARRHYTHMIA"
           ],
           "include_rows_in_search": false
         }
@@ -26413,11 +28442,20 @@ window.ICU_MANUAL_DB = {
             "1도 AV block",
             "Mobitz I",
             "완전방실차단",
-            "심실빈맥"
+            "심실빈맥",
+            "심실세동",
+            "VF",
+            "VT",
+            "부정맥 심전도",
+            "심방세동 심전도",
+            "VT VF ECG",
+            "방실차단 ECG",
+            "V70_ECG_ARRHYTHMIA"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "부정맥 심전도 변화 ECG 변화 심방세동 심방조동 SVT 상심실성 빈맥 서맥 1도 AV block Mobitz I 완전방실차단 심실빈맥 심실세동 VF VT 부정맥 심전도 심방세동 심전도 VT VF ECG 방실차단 ECG V70_ECG_ARRHYTHMIA 질환별 심전도 변화: 부정맥 핵심 정리 심혈관 / 심전도 임상에서 자주 보는 부정맥의 리듬 특징, ECG 변화, 치료 방향을 표와 예시 파형으로 정리한 카드입니다. AF AV block 심전도 해석 기본 허혈·경색 ECG 변화 심혈관 환자 간호 핵심 CPCR 절차"
     },
     {
       "id": "V70_ECG_ISCHEMIA_ELECTROLYTE",
@@ -26556,7 +28594,15 @@ window.ICU_MANUAL_DB = {
             "저칼륨혈증",
             "전해질 이상 ECG",
             "T파 역전",
-            "U파"
+            "U파",
+            "STEMI 심전도",
+            "허혈 심전도",
+            "고칼륨혈증 심전도",
+            "저칼륨혈증 심전도",
+            "V70_ECG_ISCHEMIA_ELECTROLYTE",
+            "질환별 심전도 변화: 허혈·경색·전해질 이상",
+            "심혈관 / 심전도",
+            "STEMI/NSTE-ACS와 고칼륨혈증·저칼륨혈증에서 흔히 보는 ECG 변화를 정리한 카드입니다. 그래프 설명, 치료 방향, 간호 포인트를 함께 넣었습니다."
           ],
           "include_rows_in_search": false
         }
@@ -26580,11 +28626,20 @@ window.ICU_MANUAL_DB = {
             "저칼륨혈증",
             "전해질 이상 ECG",
             "T파 역전",
-            "U파"
+            "U파",
+            "STEMI 심전도",
+            "허혈 심전도",
+            "고칼륨혈증 심전도",
+            "저칼륨혈증 심전도",
+            "V70_ECG_ISCHEMIA_ELECTROLYTE",
+            "질환별 심전도 변화: 허혈·경색·전해질 이상",
+            "심혈관 / 심전도",
+            "STEMI/NSTE-ACS와 고칼륨혈증·저칼륨혈증에서 흔히 보는 ECG 변화를 정리한 카드입니다. 그래프 설명, 치료 방향, 간호 포인트를 함께 넣었습니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "STEMI NSTEMI 허혈 심근경색 급성관상동맥증후군 심전도 ST 상승 ST 하강 고칼륨혈증 저칼륨혈증 전해질 이상 ECG T파 역전 U파 STEMI 심전도 허혈 심전도 고칼륨혈증 심전도 저칼륨혈증 심전도 V70_ECG_ISCHEMIA_ELECTROLYTE 질환별 심전도 변화: 허혈·경색·전해질 이상 심혈관 / 심전도 STEMI/NSTE-ACS와 고칼륨혈증·저칼륨혈증에서 흔히 보는 ECG 변화를 정리한 카드입니다. 그래프 설명, 치료 방향, 간호 포인트를 함께 넣었습니다. 경색 전해질 심전도 해석 기본 부정맥 ECG 변화 심혈관 환자 간호 핵심 아그라스타트주 사용법"
     },
     {
       "id": "V70_CARDIOVASCULAR_NURSING",
@@ -26713,7 +28768,17 @@ window.ICU_MANUAL_DB = {
             "중환자실 심혈관 간호",
             "심혈관 간호",
             "심전도 간호",
-            "심혈관 환자의 간호: 모니터링·응급대응·기록"
+            "심혈관 환자의 간호: 모니터링·응급대응·기록",
+            "V70_CARDIOVASCULAR_NURSING",
+            "심혈관 / 심전도",
+            "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
+            "간호",
+            "심혈관",
+            "모니터링",
+            "심전도 해석 기본",
+            "부정맥 ECG 변화",
+            "허혈·경색 ECG 변화",
+            "CPCR 절차"
           ],
           "include_rows_in_search": false
         }
@@ -26735,11 +28800,22 @@ window.ICU_MANUAL_DB = {
             "중환자실 심혈관 간호",
             "심혈관 간호",
             "심전도 간호",
-            "심혈관 환자의 간호: 모니터링·응급대응·기록"
+            "심혈관 환자의 간호: 모니터링·응급대응·기록",
+            "V70_CARDIOVASCULAR_NURSING",
+            "심혈관 / 심전도",
+            "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
+            "간호",
+            "심혈관",
+            "모니터링",
+            "심전도 해석 기본",
+            "부정맥 ECG 변화",
+            "허혈·경색 ECG 변화",
+            "CPCR 절차"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "심혈관 환자 간호 심장환자 간호 심전도 모니터링 흉통 간호 부정맥 간호 STEMI 간호 중환자실 심혈관 간호 심혈관 간호 심전도 간호 V70_CARDIOVASCULAR_NURSING 심혈관 환자의 간호: 모니터링·응급대응·기록 심혈관 / 심전도 심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다. 간호 심혈관 모니터링 심전도 해석 기본 부정맥 ECG 변화 허혈·경색 ECG 변화 CPCR 절차"
     },
     {
       "id": "V71_EVD_ICP_CVP_OVERVIEW",
@@ -26888,7 +28964,15 @@ window.ICU_MANUAL_DB = {
             "중심정맥압",
             "Foramen of Monro",
             "외이도",
-            "tragus"
+            "tragus",
+            "phlebostatic axis",
+            "4th intercostal space",
+            "중환자실 간호",
+            "모니터링",
+            "EVD ICP CVP",
+            "신경계 모니터링",
+            "중환자실 필수",
+            "V71_EVD_ICP_CVP_OVERVIEW"
           ],
           "include_rows_in_search": false
         }
@@ -26912,11 +28996,20 @@ window.ICU_MANUAL_DB = {
             "중심정맥압",
             "Foramen of Monro",
             "외이도",
-            "tragus"
+            "tragus",
+            "phlebostatic axis",
+            "4th intercostal space",
+            "중환자실 간호",
+            "모니터링",
+            "EVD ICP CVP",
+            "신경계 모니터링",
+            "중환자실 필수",
+            "V71_EVD_ICP_CVP_OVERVIEW"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "EVD ICP CVP 뇌실외배액 External Ventricular Drain Intracranial Pressure Central Venous Pressure 두개내압 중심정맥압 Foramen of Monro 외이도 tragus phlebostatic axis 4th intercostal space 중환자실 간호 모니터링 EVD ICP CVP 신경계 모니터링 중환자실 필수 V71_EVD_ICP_CVP_OVERVIEW EVD · ICP · CVP 총정리: 중환자실 필수 모니터링 신경계 / 순환 모니터링 EVD, ICP, CVP의 목적·기준점·정상/주의 범위·위험·간호 핵심을 한 번에 비교하는 총정리 카드입니다. 중환자실 EVD 간호 핵심 ICP 상승 간호 CVP 측정과 zeroing 뇌졸중 총정리 심혈관 환자 간호"
     },
     {
       "id": "V71_EVD_NURSING",
@@ -27054,7 +29147,15 @@ window.ICU_MANUAL_DB = {
             "레벨링",
             "zeroing",
             "clamp",
-            "drainage chamber"
+            "drainage chamber",
+            "ICP monitoring",
+            "수두증",
+            "SAH",
+            "뇌출혈",
+            "EVD 간호",
+            "뇌실외배액 간호",
+            "EVD 배액",
+            "EVD level"
           ],
           "include_rows_in_search": false
         },
@@ -27100,7 +29201,15 @@ window.ICU_MANUAL_DB = {
             "레벨링",
             "zeroing",
             "clamp",
-            "drainage chamber"
+            "drainage chamber",
+            "ICP monitoring",
+            "수두증",
+            "SAH",
+            "뇌출혈",
+            "EVD 간호",
+            "뇌실외배액 간호",
+            "EVD 배액",
+            "EVD level"
           ],
           "include_rows_in_search": false
         }
@@ -27124,11 +29233,20 @@ window.ICU_MANUAL_DB = {
             "레벨링",
             "zeroing",
             "clamp",
-            "drainage chamber"
+            "drainage chamber",
+            "ICP monitoring",
+            "수두증",
+            "SAH",
+            "뇌출혈",
+            "EVD 간호",
+            "뇌실외배액 간호",
+            "EVD 배액",
+            "EVD level"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp V71_EVD_NURSING EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 EVD 환자에서 반드시 확인해야 하는 레벨링, 배액, clamp, 감염예방, 즉시 보고 상황을 정리한 카드입니다. CSF 감염예방 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리"
     },
     {
       "id": "V71_ICP_MANAGEMENT",
@@ -27265,7 +29383,15 @@ window.ICU_MANUAL_DB = {
             "pupil",
             "동공",
             "Cushing triad",
-            "두통"
+            "두통",
+            "구토",
+            "seizure",
+            "herniation",
+            "mannitol",
+            "hypertonic saline",
+            "EVD",
+            "ICP 간호",
+            "두개내압 간호"
           ],
           "include_rows_in_search": false
         },
@@ -27315,7 +29441,15 @@ window.ICU_MANUAL_DB = {
             "pupil",
             "동공",
             "Cushing triad",
-            "두통"
+            "두통",
+            "구토",
+            "seizure",
+            "herniation",
+            "mannitol",
+            "hypertonic saline",
+            "EVD",
+            "ICP 간호",
+            "두개내압 간호"
           ],
           "include_rows_in_search": false
         }
@@ -27339,11 +29473,20 @@ window.ICU_MANUAL_DB = {
             "pupil",
             "동공",
             "Cushing triad",
-            "두통"
+            "두통",
+            "구토",
+            "seizure",
+            "herniation",
+            "mannitol",
+            "hypertonic saline",
+            "EVD",
+            "ICP 간호",
+            "두개내압 간호"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 V71_ICP_MANAGEMENT ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 ICP 정상/주의 범위, 상승 징후, CPP 계산, 중환자실 간호·치료 보조 포인트를 정리한 카드입니다. 신경계 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리"
     },
     {
       "id": "V71_CVP_MONITORING",
@@ -27474,7 +29617,15 @@ window.ICU_MANUAL_DB = {
             "transducer",
             "a wave",
             "c wave",
-            "v wave"
+            "v wave",
+            "우심방압",
+            "수액반응성",
+            "volume status",
+            "CVP 간호",
+            "CVP zeroing",
+            "V71_CVP_MONITORING",
+            "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
+            "신경계 / 순환 모니터링"
           ],
           "include_rows_in_search": false
         },
@@ -27524,7 +29675,15 @@ window.ICU_MANUAL_DB = {
             "transducer",
             "a wave",
             "c wave",
-            "v wave"
+            "v wave",
+            "우심방압",
+            "수액반응성",
+            "volume status",
+            "CVP 간호",
+            "CVP zeroing",
+            "V71_CVP_MONITORING",
+            "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
+            "신경계 / 순환 모니터링"
           ],
           "include_rows_in_search": false
         }
@@ -27548,11 +29707,20 @@ window.ICU_MANUAL_DB = {
             "transducer",
             "a wave",
             "c wave",
-            "v wave"
+            "v wave",
+            "우심방압",
+            "수액반응성",
+            "volume status",
+            "CVP 간호",
+            "CVP zeroing",
+            "V71_CVP_MONITORING",
+            "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
+            "신경계 / 순환 모니터링"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CVP 중심정맥압 Central Venous Pressure CVC phlebostatic axis 4th intercostal space mid axillary line zeroing transducer a wave c wave v wave 우심방압 수액반응성 volume status CVP 간호 CVP zeroing V71_CVP_MONITORING CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단 신경계 / 순환 모니터링 CVP 측정 기준점, zeroing, 파형 확인, 높고 낮을 때 의미, 간호 판단 포인트를 정리한 카드입니다. 순환 모니터링 EVD · ICP · CVP 총정리 심혈관 환자 간호 A-line 사용법"
     },
     {
       "id": "V72_ABGA_OVERVIEW",
@@ -27732,7 +29900,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         },
@@ -27789,7 +29965,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         }
@@ -27813,11 +29997,20 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 정상값 정상범위 채혈 Allen test 요골동맥 공기방울 heparin syringe 분석 지연 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 정상값 ABGA 채혈 ABGA 해석순서 V72_ABGA_OVERVIEW ABGA 총정리: 정상값·채혈·빠른 해석순서 호흡 / ABGA / 중환자실 ABGA의 정상/참고값, 채혈 전후 체크, 빠른 해석 6단계, 즉시 보고 상황을 한 번에 정리한 카드입니다. 호흡 중환자실 인공호흡기 사용법 EVD ICP CVP 총정리 심전도 총정리 CPCR 절차"
     },
     {
       "id": "V72_ABGA_ACID_BASE",
@@ -27978,7 +30171,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         },
@@ -28020,7 +30221,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         }
@@ -28044,11 +30253,20 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 보상 혼합성 산염기 장애 Winter 공식 anion gap DKA COPD 과호흡 구토 이뇨제 arterial blood gas 동맥혈 가스분석 혈액가스분석 산염기 장애 V72_ABGA_ACID_BASE ABGA 산염기 장애 판독: 호흡성·대사성 산증/알칼리증 호흡 / ABGA / 중환자실 호흡성 산증, 호흡성 알칼리증, 대사성 산증, 대사성 알칼리증을 ABGA 방향·원인·치료/간호 포인트로 비교한 카드입니다. ABGA 정상값·채혈·해석순서 산소화·환기 간호 인공호흡기 사용법"
     },
     {
       "id": "V72_ABGA_OXYGENATION_NURSING",
@@ -28211,7 +30429,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         },
@@ -28263,7 +30489,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         }
@@ -28287,11 +30521,20 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 PaO2 저하 PaCO2 상승 CO2 retention ARDS PEEP minute ventilation tidal volume SpO2 I/O 쇼크 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 간호 산소화 평가 환기 평가 V72_ABGA_OXYGENATION_NURSING ABGA 산소화·환기·중환자실 간호 호흡 / ABGA / 중환자실 PaO₂, SaO₂, PaCO₂, HCO₃⁻, lactate를 환자상태·산소요법·인공호흡기와 연결해 보는 중환자실 간호 카드입니다. 중환자실 간호 ABGA 산염기 장애 판독 인공호흡기 사용법 중환자실 모니터링 EVD ICP CVP 총정리"
     },
     {
       "id": "V72_ABGA_EXAMPLES",
@@ -28462,7 +30705,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         },
@@ -28509,7 +30760,15 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ],
           "include_rows_in_search": false
         }
@@ -28533,11 +30792,20 @@ window.ICU_MANUAL_DB = {
             "SaO2",
             "BE",
             "Base excess",
-            "Lactate"
+            "Lactate",
+            "젖산",
+            "P/F ratio",
+            "PF ratio",
+            "FiO2",
+            "산염기",
+            "산증",
+            "알칼리증",
+            "대사성 산증"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 ABGA 예시 판독연습 채혈 후 압박 혈종 출혈 항응고제 검체 오류 재검 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 판독 연습 채혈 후 간호 V72_ABGA_EXAMPLES ABGA 예시 판독과 채혈 후 간호 체크리스트 호흡 / ABGA / 중환자실 대표 ABGA 결과 예시를 보고 산증/알칼리증을 구분하는 연습 카드와 채혈 후 간호 체크리스트입니다. 예시 판독 간호 ABGA 정상값·채혈·해석순서 ABGA 산염기 장애 판독 ABGA 산소화·환기 간호"
     },
     {
       "id": "V73_TRANSFUSION_OVERVIEW",
@@ -28702,7 +30970,15 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ],
           "include_rows_in_search": false
         }
@@ -28726,11 +31002,20 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 수혈 전체 흐름 수혈 절차 수혈 간호 수혈 체크리스트 V73_TRANSFUSION_OVERVIEW 수혈 총정리: 전체 흐름·검사·확인·기록 수혈 / 혈액 수혈 처방 확인부터 수혈 전 검사, 혈액 수령, 2인 확인, 시작 후 15분 관찰, 종료 기록까지 중환자실 간호 흐름을 한 장으로 정리한 카드입니다. 간호 혈액 수혈 처방확인 및 바코드 출력 방법 백혈구 제거용 수혈필터 RC2VAE 사용법 혈액 가온기 사용방법 수혈부작용 대응"
     },
     {
       "id": "V73_TRANSFUSION_COMPONENTS",
@@ -28898,7 +31183,15 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ],
           "include_rows_in_search": false
         }
@@ -28922,11 +31215,20 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 혈액종류 수혈의 종류 혈액제제 종류 수혈 종류 RBC PC FFP Cryo 수혈 종류 표 V73_TRANSFUSION_COMPONENTS 혈액제제 종류와 수혈 전 확인사항 수혈 / 혈액 RBC, 혈소판, FFP, Cryo, Albumin/혈장분획제제의 목적, 수혈 전 확인, 주입관리, 주의반응을 비교한 카드입니다. 수혈 전체 흐름 혈액 가온기 사용방법 수혈필터 사용법"
     },
     {
       "id": "V73_TRANSFUSION_REACTION",
@@ -29104,7 +31406,15 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ],
           "include_rows_in_search": false
         }
@@ -29128,11 +31438,20 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 발열 오한 두드러기 요통 흉통 혈뇨 아나필락시스 패혈증 수혈 이상반응 수혈 reaction TRALI TACO V73_TRANSFUSION_REACTION 수혈부작용 종류와 응급대응 수혈 / 혈액 급성 용혈성 반응, 발열성 비용혈성 반응, 알레르기/아나필락시스, TRALI, TACO, 세균오염 등 수혈부작용 증상과 즉시 대응을 정리한 카드입니다. 용혈 수혈 전체 흐름 응급간호"
     },
     {
       "id": "V73_TRANSFUSION_ICU_NURSING",
@@ -29292,7 +31611,15 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ],
           "include_rows_in_search": false
         }
@@ -29316,11 +31643,20 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "Cryo",
             "농축적혈구",
-            "농축혈소판"
+            "농축혈소판",
+            "신선동결혈장",
+            "동결침전제제",
+            "ABO",
+            "RhD",
+            "비예기항체",
+            "교차시험",
+            "crossmatch",
+            "수혈동의서"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 ICU 중환자실 저체온 저칼슘혈증 고칼륨혈증 응고장애 ICU 수혈 간호 수혈 간호 체크리스트 대량수혈 간호 TACO 간호 V73_TRANSFUSION_ICU_NURSING 중환자실 수혈 간호 체크리스트 수혈 / 혈액 중환자실에서 수혈 전·시작·수혈 중·수혈 후 반드시 확인할 항목과 대량수혈/체액과부하 위험 환자 관찰 포인트를 정리한 카드입니다. 간호 EVD/ICP/CVP 총정리 ABGA 총정리 심전도 총정리 혈액 가온기 사용방법"
     },
     {
       "id": "V74_ICU_DISEASE_OVERVIEW",
@@ -29496,7 +31832,15 @@ window.ICU_MANUAL_DB = {
             "호흡기계",
             "소화기계",
             "뇌신경계",
-            "신장계"
+            "신장계",
+            "감염",
+            "패혈증",
+            "쇼크",
+            "혈액응고",
+            "ICU 질병 총정리",
+            "중환자실 질환",
+            "중환자실 진단별 정리",
+            "계통별 질병"
           ],
           "include_rows_in_search": false
         }
@@ -29520,11 +31864,20 @@ window.ICU_MANUAL_DB = {
             "호흡기계",
             "소화기계",
             "뇌신경계",
-            "신장계"
+            "신장계",
+            "감염",
+            "패혈증",
+            "쇼크",
+            "혈액응고",
+            "ICU 질병 총정리",
+            "중환자실 질환",
+            "중환자실 진단별 정리",
+            "계통별 질병"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 V74_ICU_DISEASE_OVERVIEW 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 중환자실에서 자주 만나는 질환을 순환계, 호흡기계, 뇌신경계, 소화기계, 신장/비뇨계, 내분비/대사, 감염/패혈증, 혈액/응고, 외상/수술 후로 분류한 전체 지도입니다. 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_CIRCULATORY",
@@ -29686,7 +32039,15 @@ window.ICU_MANUAL_DB = {
             "심부전",
             "폐부종",
             "심인성 쇼크",
-            "부정맥"
+            "부정맥",
+            "AF",
+            "VT",
+            "VF",
+            "PE",
+            "폐색전증",
+            "대동맥박리",
+            "심혈관 질환",
+            "V74_ICU_CIRCULATORY"
           ],
           "include_rows_in_search": false
         }
@@ -29710,11 +32071,20 @@ window.ICU_MANUAL_DB = {
             "심부전",
             "폐부종",
             "심인성 쇼크",
-            "부정맥"
+            "부정맥",
+            "AF",
+            "VT",
+            "VF",
+            "PE",
+            "폐색전증",
+            "대동맥박리",
+            "심혈관 질환",
+            "V74_ICU_CIRCULATORY"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "순환계 심혈관 AMI ACS STEMI NSTEMI 심근경색 협심증 심부전 폐부종 심인성 쇼크 부정맥 AF VT VF PE 폐색전증 대동맥박리 심혈관 질환 V74_ICU_CIRCULATORY 순환계 질환 총정리: ACS·심부전·쇼크·부정맥 중환자실 질병 / 순환계 순환계 중환자는 심근허혈, 심부전, 쇼크, 부정맥, 폐색전증을 빠르게 구분하고 ECG·혈압·산소화·lactate 변화를 동시에 보는 것이 핵심입니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_RESPIRATORY",
@@ -29870,7 +32240,15 @@ window.ICU_MANUAL_DB = {
             "기흉",
             "폐부종",
             "mechanical ventilation",
-            "ventilator"
+            "ventilator",
+            "P/F ratio",
+            "ABGA",
+            "VAP",
+            "인공호흡기",
+            "V74_ICU_RESPIRATORY",
+            "호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD",
+            "중환자실 질병 / 호흡기계",
+            "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다."
           ],
           "include_rows_in_search": false
         }
@@ -29894,11 +32272,20 @@ window.ICU_MANUAL_DB = {
             "기흉",
             "폐부종",
             "mechanical ventilation",
-            "ventilator"
+            "ventilator",
+            "P/F ratio",
+            "ABGA",
+            "VAP",
+            "인공호흡기",
+            "V74_ICU_RESPIRATORY",
+            "호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD",
+            "중환자실 질병 / 호흡기계",
+            "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "호흡기계 호흡부전 ARDS 폐렴 중증폐렴 흡인성 폐렴 COPD 천식 기흉 폐부종 mechanical ventilation ventilator P/F ratio ABGA VAP 인공호흡기 V74_ICU_RESPIRATORY 호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD 중환자실 질병 / 호흡기계 호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_NEURO",
@@ -30057,7 +32444,15 @@ window.ICU_MANUAL_DB = {
             "TBI",
             "경련",
             "seizure",
-            "status epilepticus"
+            "status epilepticus",
+            "ICP",
+            "EVD",
+            "GCS",
+            "NIHSS",
+            "동공반사",
+            "V74_ICU_NEURO",
+            "뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련",
+            "중환자실 질병 / 뇌신경계"
           ],
           "include_rows_in_search": false
         }
@@ -30081,11 +32476,20 @@ window.ICU_MANUAL_DB = {
             "TBI",
             "경련",
             "seizure",
-            "status epilepticus"
+            "status epilepticus",
+            "ICP",
+            "EVD",
+            "GCS",
+            "NIHSS",
+            "동공반사",
+            "V74_ICU_NEURO",
+            "뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련",
+            "중환자실 질병 / 뇌신경계"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "뇌신경계 신경계 뇌졸중 뇌경색 뇌출혈 SAH ICH IVH TBI 경련 seizure status epilepticus ICP EVD GCS NIHSS 동공반사 V74_ICU_NEURO 뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련 중환자실 질병 / 뇌신경계 뇌신경계 중환자는 의식, 동공, 운동기능, 경련, ICP/EVD 변화를 시간순으로 추적하는 것이 핵심입니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_DIGESTIVE",
@@ -30242,7 +32646,15 @@ window.ICU_MANUAL_DB = {
             "췌장염",
             "liver failure",
             "간부전",
-            "ileus"
+            "ileus",
+            "bowel ischemia",
+            "perforation",
+            "복막염",
+            "영양",
+            "V74_ICU_DIGESTIVE",
+            "소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염",
+            "중환자실 질병 / 소화기계",
+            "소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다."
           ],
           "include_rows_in_search": false
         }
@@ -30266,11 +32678,20 @@ window.ICU_MANUAL_DB = {
             "췌장염",
             "liver failure",
             "간부전",
-            "ileus"
+            "ileus",
+            "bowel ischemia",
+            "perforation",
+            "복막염",
+            "영양",
+            "V74_ICU_DIGESTIVE",
+            "소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염",
+            "중환자실 질병 / 소화기계",
+            "소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "소화기계 간담도 GI bleeding 위장관출혈 토혈 혈변 melena pancreatitis 췌장염 liver failure 간부전 ileus bowel ischemia perforation 복막염 영양 V74_ICU_DIGESTIVE 소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염 중환자실 질병 / 소화기계 소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_RENAL_METABOLIC",
@@ -30430,7 +32851,15 @@ window.ICU_MANUAL_DB = {
             "hyperkalemia",
             "hyponatremia",
             "DKA",
-            "HHS"
+            "HHS",
+            "저혈당",
+            "고혈당",
+            "대사성 산증",
+            "전해질 이상",
+            "lactate",
+            "신장계",
+            "내분비",
+            "대사"
           ],
           "include_rows_in_search": false
         }
@@ -30454,11 +32883,20 @@ window.ICU_MANUAL_DB = {
             "hyperkalemia",
             "hyponatremia",
             "DKA",
-            "HHS"
+            "HHS",
+            "저혈당",
+            "고혈당",
+            "대사성 산증",
+            "전해질 이상",
+            "lactate",
+            "신장계",
+            "내분비",
+            "대사"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "신장 비뇨계 AKI acute kidney injury CRRT HD 소변량 oliguria hyperkalemia hyponatremia DKA HHS 저혈당 고혈당 대사성 산증 전해질 이상 lactate 신장계 내분비 대사 V74_ICU_RENAL_METABOLIC 신장·비뇨계/내분비·대사 질환 총정리 중환자실 질병 / 신장·대사 신장·대사 질환은 I/O, urine output, 전해질, 산염기, 혈당, fluid balance를 반복적으로 추적하는 것이 핵심입니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_INFECTION_SHOCK_HEME",
@@ -30616,7 +33054,15 @@ window.ICU_MANUAL_DB = {
             "DIC",
             "응고장애",
             "혈소판감소",
-            "대량출혈"
+            "대량출혈",
+            "massive bleeding",
+            "MTP",
+            "수혈",
+            "항생제",
+            "V74_ICU_INFECTION_SHOCK_HEME",
+            "감염·패혈증·쇼크·혈액응고 질환 총정리",
+            "중환자실 질병 / 감염·혈액·쇼크",
+            "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다."
           ],
           "include_rows_in_search": false
         }
@@ -30640,11 +33086,20 @@ window.ICU_MANUAL_DB = {
             "DIC",
             "응고장애",
             "혈소판감소",
-            "대량출혈"
+            "대량출혈",
+            "massive bleeding",
+            "MTP",
+            "수혈",
+            "항생제",
+            "V74_ICU_INFECTION_SHOCK_HEME",
+            "감염·패혈증·쇼크·혈액응고 질환 총정리",
+            "중환자실 질병 / 감염·혈액·쇼크",
+            "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "감염 패혈증 sepsis septic shock 쇼크 MAP lactate source control DIC 응고장애 혈소판감소 대량출혈 massive bleeding MTP 수혈 항생제 V74_ICU_INFECTION_SHOCK_HEME 감염·패혈증·쇼크·혈액응고 질환 총정리 중환자실 질병 / 감염·혈액·쇼크 감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_POSTOP_TRAUMA",
@@ -30795,7 +33250,15 @@ window.ICU_MANUAL_DB = {
             "bleeding",
             "출혈",
             "rhabdomyolysis",
-            "compartment syndrome"
+            "compartment syndrome",
+            "폐색전증",
+            "DVT",
+            "감염",
+            "통증",
+            "쇼크",
+            "횡문근융해",
+            "V74_ICU_POSTOP_TRAUMA",
+            "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증"
           ],
           "include_rows_in_search": false
         }
@@ -30819,11 +33282,20 @@ window.ICU_MANUAL_DB = {
             "bleeding",
             "출혈",
             "rhabdomyolysis",
-            "compartment syndrome"
+            "compartment syndrome",
+            "폐색전증",
+            "DVT",
+            "감염",
+            "통증",
+            "쇼크",
+            "횡문근융해",
+            "V74_ICU_POSTOP_TRAUMA",
+            "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "외상 수술 후 post op post-op trauma 배액관 JP H-vac bleeding 출혈 rhabdomyolysis compartment syndrome 폐색전증 DVT 감염 통증 쇼크 횡문근융해 V74_ICU_POSTOP_TRAUMA 외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증 중환자실 질병 / 외상·수술 후 외상·수술 후 중환자는 출혈, 배액량, 신경혈관 사정, 통증, 감염, DVT/PE, 횡문근융해와 AKI 위험을 반복 확인해야 합니다. 중환자실 ICU 질환 진단 계통별 간호 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V75_DIABETES_OVERVIEW",
@@ -30965,7 +33437,15 @@ window.ICU_MANUAL_DB = {
             "HbA1c",
             "공복혈당",
             "식후혈당",
-            "저혈당"
+            "저혈당",
+            "고혈당",
+            "DKA",
+            "HHS",
+            "sliding scale",
+            "혈당 총정리",
+            "당뇨 총정리",
+            "인슐린 총정리",
+            "혈당관리"
           ],
           "include_rows_in_search": false
         },
@@ -31012,7 +33492,15 @@ window.ICU_MANUAL_DB = {
             "HbA1c",
             "공복혈당",
             "식후혈당",
-            "저혈당"
+            "저혈당",
+            "고혈당",
+            "DKA",
+            "HHS",
+            "sliding scale",
+            "혈당 총정리",
+            "당뇨 총정리",
+            "인슐린 총정리",
+            "혈당관리"
           ],
           "include_rows_in_search": false
         }
@@ -31036,11 +33524,20 @@ window.ICU_MANUAL_DB = {
             "HbA1c",
             "공복혈당",
             "식후혈당",
-            "저혈당"
+            "저혈당",
+            "고혈당",
+            "DKA",
+            "HHS",
+            "sliding scale",
+            "혈당 총정리",
+            "당뇨 총정리",
+            "인슐린 총정리",
+            "혈당관리"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "혈당 당뇨 당뇨병 인슐린 BST blood glucose diabetes insulin HbA1c 공복혈당 식후혈당 저혈당 고혈당 DKA HHS sliding scale 혈당 총정리 당뇨 총정리 인슐린 총정리 혈당관리 당뇨 간호 V75_DIABETES_OVERVIEW 혈당·당뇨·인슐린 총정리: 진단기준·목표·간호 내분비·대사 / 혈당·당뇨 혈당 진단기준, 당뇨 종류, 입원환자 혈당 목표, 저혈당/고혈당 대응, 인슐린·당뇨약물·DKA/HHS·중환자실 간호를 한 번에 확인하는 카드입니다. 중환자실 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
     },
     {
       "id": "V75_HYPO_HYPERGLYCEMIA",
@@ -31165,7 +33662,15 @@ window.ICU_MANUAL_DB = {
             "빈맥",
             "의식저하",
             "갈증",
-            "다뇨"
+            "다뇨",
+            "탈수",
+            "케톤",
+            "글루카곤",
+            "정맥포도당",
+            "혈당 응급처치",
+            "V75_HYPO_HYPERGLYCEMIA",
+            "저혈당·고혈당 증상과 간호 처치",
+            "내분비·대사 / 혈당·당뇨"
           ],
           "include_rows_in_search": false
         },
@@ -31212,7 +33717,15 @@ window.ICU_MANUAL_DB = {
             "빈맥",
             "의식저하",
             "갈증",
-            "다뇨"
+            "다뇨",
+            "탈수",
+            "케톤",
+            "글루카곤",
+            "정맥포도당",
+            "혈당 응급처치",
+            "V75_HYPO_HYPERGLYCEMIA",
+            "저혈당·고혈당 증상과 간호 처치",
+            "내분비·대사 / 혈당·당뇨"
           ],
           "include_rows_in_search": false
         }
@@ -31236,11 +33749,20 @@ window.ICU_MANUAL_DB = {
             "빈맥",
             "의식저하",
             "갈증",
-            "다뇨"
+            "다뇨",
+            "탈수",
+            "케톤",
+            "글루카곤",
+            "정맥포도당",
+            "혈당 응급처치",
+            "V75_HYPO_HYPERGLYCEMIA",
+            "저혈당·고혈당 증상과 간호 처치",
+            "내분비·대사 / 혈당·당뇨"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "저혈당 고혈당 hypoglycemia hyperglycemia 혈당 70 혈당 54 식은땀 떨림 빈맥 의식저하 갈증 다뇨 탈수 케톤 글루카곤 정맥포도당 혈당 응급처치 V75_HYPO_HYPERGLYCEMIA 저혈당·고혈당 증상과 간호 처치 내분비·대사 / 혈당·당뇨 저혈당과 고혈당의 증상, 즉시 간호 처치, 보고 기준을 비교해 정리한 카드입니다. 응급처치 간호 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
     },
     {
       "id": "V75_INSULIN_AND_DIABETES_DRUGS",
@@ -31398,7 +33920,15 @@ window.ICU_MANUAL_DB = {
             "regular insulin",
             "sliding scale",
             "메트포르민",
-            "SGLT2"
+            "SGLT2",
+            "DPP4",
+            "GLP1",
+            "TZD",
+            "당뇨약",
+            "주사부위 순환",
+            "인슐린 주사",
+            "V75_INSULIN_AND_DIABETES_DRUGS",
+            "인슐린 종류·주사부위·당뇨 약물 총정리"
           ],
           "include_rows_in_search": false
         },
@@ -31462,7 +33992,15 @@ window.ICU_MANUAL_DB = {
             "regular insulin",
             "sliding scale",
             "메트포르민",
-            "SGLT2"
+            "SGLT2",
+            "DPP4",
+            "GLP1",
+            "TZD",
+            "당뇨약",
+            "주사부위 순환",
+            "인슐린 주사",
+            "V75_INSULIN_AND_DIABETES_DRUGS",
+            "인슐린 종류·주사부위·당뇨 약물 총정리"
           ],
           "include_rows_in_search": false
         }
@@ -31486,11 +34024,20 @@ window.ICU_MANUAL_DB = {
             "regular insulin",
             "sliding scale",
             "메트포르민",
-            "SGLT2"
+            "SGLT2",
+            "DPP4",
+            "GLP1",
+            "TZD",
+            "당뇨약",
+            "주사부위 순환",
+            "인슐린 주사",
+            "V75_INSULIN_AND_DIABETES_DRUGS",
+            "인슐린 종류·주사부위·당뇨 약물 총정리"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "인슐린 인슐린 종류 초속효 속효성 NPH glargine detemir degludec regular insulin sliding scale 메트포르민 SGLT2 DPP4 GLP1 TZD 당뇨약 주사부위 순환 인슐린 주사 V75_INSULIN_AND_DIABETES_DRUGS 인슐린 종류·주사부위·당뇨 약물 총정리 내분비·대사 / 혈당·당뇨 인슐린 작용시간, 주사 부위 순환, 주요 당뇨약 계열과 간호 주의점을 정리한 카드입니다. 약물 주사 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
     },
     {
       "id": "V75_DKA_HHS_ICU_NURSING",
@@ -31624,7 +34171,15 @@ window.ICU_MANUAL_DB = {
             "탈수",
             "인슐린 drip",
             "전해질 보충",
-            "중환자실 혈당 간호"
+            "중환자실 혈당 간호",
+            "V75_DKA_HHS_ICU_NURSING",
+            "DKA·HHS 핵심과 중환자실 혈당 간호",
+            "내분비·대사 / 혈당·당뇨",
+            "DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다.",
+            "중환자실",
+            "간호",
+            "ABGA 총정리",
+            "중환자실 질병 계통별 총정리"
           ],
           "include_rows_in_search": false
         },
@@ -31681,7 +34236,15 @@ window.ICU_MANUAL_DB = {
             "탈수",
             "인슐린 drip",
             "전해질 보충",
-            "중환자실 혈당 간호"
+            "중환자실 혈당 간호",
+            "V75_DKA_HHS_ICU_NURSING",
+            "DKA·HHS 핵심과 중환자실 혈당 간호",
+            "내분비·대사 / 혈당·당뇨",
+            "DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다.",
+            "중환자실",
+            "간호",
+            "ABGA 총정리",
+            "중환자실 질병 계통별 총정리"
           ],
           "include_rows_in_search": false
         }
@@ -31705,11 +34268,20 @@ window.ICU_MANUAL_DB = {
             "탈수",
             "인슐린 drip",
             "전해질 보충",
-            "중환자실 혈당 간호"
+            "중환자실 혈당 간호",
+            "V75_DKA_HHS_ICU_NURSING",
+            "DKA·HHS 핵심과 중환자실 혈당 간호",
+            "내분비·대사 / 혈당·당뇨",
+            "DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다.",
+            "중환자실",
+            "간호",
+            "ABGA 총정리",
+            "중환자실 질병 계통별 총정리"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "DKA HHS 당뇨병성 케톤산증 고삼투압 고혈당 증후군 케톤산증 고삼투압 Kussmaul respiration 의식저하 탈수 인슐린 drip 전해질 보충 중환자실 혈당 간호 V75_DKA_HHS_ICU_NURSING DKA·HHS 핵심과 중환자실 혈당 간호 내분비·대사 / 혈당·당뇨 DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다. 중환자실 간호 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리"
     },
     {
       "id": "V76_ICU_MEDICATION_OVERVIEW",
@@ -31854,7 +34426,15 @@ window.ICU_MANUAL_DB = {
             "승압제",
             "강심제",
             "인슐린",
-            "heparin"
+            "heparin",
+            "KCl",
+            "고농도 전해질",
+            "항부정맥제",
+            "마약",
+            "향정",
+            "high-alert medication",
+            "약품 총정리",
+            "V76_ICU_MEDICATION_OVERVIEW"
           ],
           "include_rows_in_search": false
         },
@@ -31918,7 +34498,15 @@ window.ICU_MANUAL_DB = {
             "승압제",
             "강심제",
             "인슐린",
-            "heparin"
+            "heparin",
+            "KCl",
+            "고농도 전해질",
+            "항부정맥제",
+            "마약",
+            "향정",
+            "high-alert medication",
+            "약품 총정리",
+            "V76_ICU_MEDICATION_OVERVIEW"
           ],
           "include_rows_in_search": false
         },
@@ -31968,7 +34556,15 @@ window.ICU_MANUAL_DB = {
             "승압제",
             "강심제",
             "인슐린",
-            "heparin"
+            "heparin",
+            "KCl",
+            "고농도 전해질",
+            "항부정맥제",
+            "마약",
+            "향정",
+            "high-alert medication",
+            "약품 총정리",
+            "V76_ICU_MEDICATION_OVERVIEW"
           ],
           "include_rows_in_search": false
         }
@@ -31992,11 +34588,20 @@ window.ICU_MANUAL_DB = {
             "승압제",
             "강심제",
             "인슐린",
-            "heparin"
+            "heparin",
+            "KCl",
+            "고농도 전해질",
+            "항부정맥제",
+            "마약",
+            "향정",
+            "high-alert medication",
+            "약품 총정리",
+            "V76_ICU_MEDICATION_OVERVIEW"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "중환자실 약품 ICU 약물 고위험 약물 고주의 약물 high alert 약품 안전 double check 투약오류 승압제 강심제 인슐린 heparin KCl 고농도 전해질 항부정맥제 마약 향정 high-alert medication 약품 총정리 V76_ICU_MEDICATION_OVERVIEW 중환자실 약품 총정리: 고위험·고주의 약물 안전 약물 / 중환자실 중환자실에서 자주 사용하는 고위험·고주의 약물의 범주, 핵심 위험, 투약 전 확인사항과 즉시 보고 기준을 정리한 카드입니다. 약물 고위험 고주의 ICU 투약안전 마약·향정·항생제 총정리 중환자실 수액 요법 총정리 ABGA 총정리 심전도 총정리 혈당·당뇨·인슐린 총정리"
     },
     {
       "id": "V76_CONTROLLED_SEDATION_ANALGESIA",
@@ -32150,7 +34755,15 @@ window.ICU_MANUAL_DB = {
             "propofol",
             "dexmedetomidine",
             "rocuronium",
-            "naloxone"
+            "naloxone",
+            "flumazenil",
+            "마약 폐기",
+            "마약장",
+            "RASS",
+            "CAM-ICU",
+            "통증 점수",
+            "마약 총정리",
+            "향정 총정리"
           ],
           "include_rows_in_search": false
         }
@@ -32174,11 +34787,20 @@ window.ICU_MANUAL_DB = {
             "propofol",
             "dexmedetomidine",
             "rocuronium",
-            "naloxone"
+            "naloxone",
+            "flumazenil",
+            "마약 폐기",
+            "마약장",
+            "RASS",
+            "CAM-ICU",
+            "통증 점수",
+            "마약 총정리",
+            "향정 총정리"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "마약 향정 진정제 진통제 fentanyl morphine midazolam lorazepam propofol dexmedetomidine rocuronium naloxone flumazenil 마약 폐기 마약장 RASS CAM-ICU 통증 점수 마약 총정리 향정 총정리 controlled drug opioid benzodiazepine V76_CONTROLLED_SEDATION_ANALGESIA 마약·향정·진정/진통제 총정리: 보관·투약·폐기·감시 약물 / 중환자실 마약성 진통제, 향정/benzodiazepine, 진정제, 신경근차단제의 주요 위험과 간호 감시, 보관·폐기 기록 포인트를 정리한 카드입니다. 진정 진통 고위험 약물 안전 심전도 총정리 Ventilator 사용법 CPCR 절차"
     },
     {
       "id": "V76_ANTIBIOTICS_ICU_STEWARDSHIP",
@@ -32330,7 +34952,15 @@ window.ICU_MANUAL_DB = {
             "vancomycin",
             "aminoglycoside",
             "carbapenem",
-            "colistin"
+            "colistin",
+            "cephalosporin",
+            "penicillin",
+            "AST",
+            "알레르기",
+            "C. difficile",
+            "de-escalation",
+            "stop date",
+            "항생제 총정리"
           ],
           "include_rows_in_search": false
         },
@@ -32388,7 +35018,15 @@ window.ICU_MANUAL_DB = {
             "vancomycin",
             "aminoglycoside",
             "carbapenem",
-            "colistin"
+            "colistin",
+            "cephalosporin",
+            "penicillin",
+            "AST",
+            "알레르기",
+            "C. difficile",
+            "de-escalation",
+            "stop date",
+            "항생제 총정리"
           ],
           "include_rows_in_search": false
         }
@@ -32412,11 +35050,20 @@ window.ICU_MANUAL_DB = {
             "vancomycin",
             "aminoglycoside",
             "carbapenem",
-            "colistin"
+            "colistin",
+            "cephalosporin",
+            "penicillin",
+            "AST",
+            "알레르기",
+            "C. difficile",
+            "de-escalation",
+            "stop date",
+            "항생제 총정리"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "항생제 antibiotic stewardship 감염관리 배양검사 culture TDM trough vancomycin aminoglycoside carbapenem colistin cephalosporin penicillin AST 알레르기 C. difficile de-escalation stop date 항생제 총정리 ICU 항생제 antibiotic stewardship AST 항생제 V76_ANTIBIOTICS_ICU_STEWARDSHIP 중환자실 항생제 총정리: 투여 전후 확인·고위험 항생제·감염관리 약물 / 중환자실 중환자실 항생제 투여 전후 확인사항, 고위험 항생제 감시, 배양검사와 de-escalation, TDM 및 이상반응을 정리한 카드입니다. 감염 패혈증·쇼크 총정리 수액요법 총정리 ABGA 총정리 원내 항생제 목록"
     },
     {
       "id": "V76_ICU_FLUID_THERAPY",
@@ -32568,7 +35215,15 @@ window.ICU_MANUAL_DB = {
             "Hartmann",
             "LR",
             "5DW",
-            "0.45% N/S"
+            "0.45% N/S",
+            "3% NaCl",
+            "albumin",
+            "resuscitation",
+            "maintenance",
+            "replacement",
+            "I/O",
+            "fluid overload",
+            "폐부종"
           ],
           "include_rows_in_search": false
         },
@@ -32638,7 +35293,15 @@ window.ICU_MANUAL_DB = {
             "Hartmann",
             "LR",
             "5DW",
-            "0.45% N/S"
+            "0.45% N/S",
+            "3% NaCl",
+            "albumin",
+            "resuscitation",
+            "maintenance",
+            "replacement",
+            "I/O",
+            "fluid overload",
+            "폐부종"
           ],
           "include_rows_in_search": false
         },
@@ -32688,7 +35351,15 @@ window.ICU_MANUAL_DB = {
             "Hartmann",
             "LR",
             "5DW",
-            "0.45% N/S"
+            "0.45% N/S",
+            "3% NaCl",
+            "albumin",
+            "resuscitation",
+            "maintenance",
+            "replacement",
+            "I/O",
+            "fluid overload",
+            "폐부종"
           ],
           "include_rows_in_search": false
         },
@@ -32738,7 +35409,15 @@ window.ICU_MANUAL_DB = {
             "Hartmann",
             "LR",
             "5DW",
-            "0.45% N/S"
+            "0.45% N/S",
+            "3% NaCl",
+            "albumin",
+            "resuscitation",
+            "maintenance",
+            "replacement",
+            "I/O",
+            "fluid overload",
+            "폐부종"
           ],
           "include_rows_in_search": false
         }
@@ -32762,11 +35441,20 @@ window.ICU_MANUAL_DB = {
             "Hartmann",
             "LR",
             "5DW",
-            "0.45% N/S"
+            "0.45% N/S",
+            "3% NaCl",
+            "albumin",
+            "resuscitation",
+            "maintenance",
+            "replacement",
+            "I/O",
+            "fluid overload",
+            "폐부종"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "수액 수액요법 IV fluid fluid therapy crystalloid colloid normal saline N/S Hartmann LR 5DW 0.45% N/S 3% NaCl albumin resuscitation maintenance replacement I/O fluid overload 폐부종 저나트륨 고나트륨 쇼크 수액 수액 요법 수액 총정리 IV fluid therapy fluid resuscitation maintenance fluid V76_ICU_FLUID_THERAPY 중환자실 수액 요법 총정리: 종류·적응증·모니터링·간호 약물 / 중환자실 중환자실 수액요법의 5R, 수액 종류별 특징, 사용 상황, 주의사항, 모니터링과 재평가 기준을 정리한 카드입니다. fluid 쇼크 전해질 ABGA 총정리 EVD·ICP·CVP 총정리 패혈증·쇼크 총정리 수혈 총정리"
     },
     {
       "id": "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
@@ -32899,7 +35587,15 @@ window.ICU_MANUAL_DB = {
             "투약 체크리스트",
             "간호 체크포인트",
             "약물 인계",
-            "수액 약물 항생제 비교"
+            "수액 약물 항생제 비교",
+            "중환자실 간호 체크포인트",
+            "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
+            "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
+            "약물 / 중환자실",
+            "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
+            "약물",
+            "체크리스트",
+            "고위험 약물 안전"
           ],
           "include_rows_in_search": false
         }
@@ -32923,7 +35619,15 @@ window.ICU_MANUAL_DB = {
             "투약 체크리스트",
             "간호 체크포인트",
             "약물 인계",
-            "수액 약물 항생제 비교"
+            "수액 약물 항생제 비교",
+            "중환자실 간호 체크포인트",
+            "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
+            "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
+            "약물 / 중환자실",
+            "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
+            "약물",
+            "체크리스트",
+            "고위험 약물 안전"
           ]
         },
         {
@@ -32944,11 +35648,20 @@ window.ICU_MANUAL_DB = {
             "투약 체크리스트",
             "간호 체크포인트",
             "약물 인계",
-            "수액 약물 항생제 비교"
+            "수액 약물 항생제 비교",
+            "중환자실 간호 체크포인트",
+            "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
+            "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
+            "약물 / 중환자실",
+            "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
+            "약물",
+            "체크리스트",
+            "고위험 약물 안전"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 약물 비교 약물 수액 비교 고위험 약물 마약 향정 항생제 수액 중환자실 간호 투약 체크리스트 간호 체크포인트 약물 인계 수액 약물 항생제 비교 중환자실 간호 체크포인트 V76_ICU_DRUG_FLUID_QUICK_COMPARE ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트 약물 / 중환자실 중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다. 약물 체크리스트 고위험 약물 안전 마약·향정 총정리 항생제 총정리 수액요법 총정리"
     },
     {
       "id": "V77_NEURO_ASSESSMENT_OVERVIEW",
@@ -33098,7 +35811,15 @@ window.ICU_MANUAL_DB = {
             "motor",
             "motor power",
             "LOC",
-            "의식수준"
+            "의식수준",
+            "동공반사",
+            "편마비",
+            "뇌신경계",
+            "중환자실 신경사정",
+            "neuro assessment",
+            "GCS Pupil Motor",
+            "의식수준 사정",
+            "V77_NEURO_ASSESSMENT_OVERVIEW"
           ],
           "include_rows_in_search": false
         }
@@ -33122,11 +35843,20 @@ window.ICU_MANUAL_DB = {
             "motor",
             "motor power",
             "LOC",
-            "의식수준"
+            "의식수준",
+            "동공반사",
+            "편마비",
+            "뇌신경계",
+            "중환자실 신경사정",
+            "neuro assessment",
+            "GCS Pupil Motor",
+            "의식수준 사정",
+            "V77_NEURO_ASSESSMENT_OVERVIEW"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "의식사정 신경학적 사정 neuro check GCS PUPIL pupil 동공 MOTOR motor motor power LOC 의식수준 동공반사 편마비 뇌신경계 중환자실 신경사정 neuro assessment GCS Pupil Motor 의식수준 사정 V77_NEURO_ASSESSMENT_OVERVIEW 의식사정·신경학적 사정 총정리: GCS·Pupil·Motor 신경계 / 중환자 사정 중환자실에서 의식수준, GCS, 동공, motor, 활력징후와 ICP 상승 징후를 한 흐름으로 사정하고 즉시 보고 기준을 확인하는 카드입니다. 신경계 중환자실 뇌졸중 총정리 EVD·ICP·CVP 총정리 ABGA 총정리 심전도 총정리"
     },
     {
       "id": "V77_GCS_LOC_ASSESSMENT",
@@ -33312,7 +36042,15 @@ window.ICU_MANUAL_DB = {
             "Alert",
             "Drowsy",
             "Confusion",
-            "Stupor"
+            "Stupor",
+            "Semicoma",
+            "Coma",
+            "기관삽관 Vt",
+            "GCS 점수",
+            "LOC 사정",
+            "의식수준 단계",
+            "V77_GCS_LOC_ASSESSMENT",
+            "GCS·의식수준 LOC 사정표"
           ],
           "include_rows_in_search": false
         },
@@ -33369,7 +36107,15 @@ window.ICU_MANUAL_DB = {
             "Alert",
             "Drowsy",
             "Confusion",
-            "Stupor"
+            "Stupor",
+            "Semicoma",
+            "Coma",
+            "기관삽관 Vt",
+            "GCS 점수",
+            "LOC 사정",
+            "의식수준 단계",
+            "V77_GCS_LOC_ASSESSMENT",
+            "GCS·의식수준 LOC 사정표"
           ],
           "include_rows_in_search": false
         }
@@ -33393,11 +36139,20 @@ window.ICU_MANUAL_DB = {
             "Alert",
             "Drowsy",
             "Confusion",
-            "Stupor"
+            "Stupor",
+            "Semicoma",
+            "Coma",
+            "기관삽관 Vt",
+            "GCS 점수",
+            "LOC 사정",
+            "의식수준 단계",
+            "V77_GCS_LOC_ASSESSMENT",
+            "GCS·의식수준 LOC 사정표"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "GCS Glasgow Coma Scale E4 V5 M6 EVM 의식수준 LOC Alert Drowsy Confusion Stupor Semicoma Coma 기관삽관 Vt GCS 점수 LOC 사정 의식수준 단계 V77_GCS_LOC_ASSESSMENT GCS·의식수준 LOC 사정표 신경계 / 중환자 사정 GCS Eye/Verbal/Motor 세부점수와 LOC 단계를 표로 확인하고, 기관삽관·진정 상태에서도 기록 원칙을 유지하도록 정리한 카드입니다. 의식사정·신경학적 사정 총정리 Pupil 사정 Motor 사정"
     },
     {
       "id": "V77_PUPIL_ASSESSMENT",
@@ -33534,7 +36289,15 @@ window.ICU_MANUAL_DB = {
             "prompt",
             "sluggish",
             "fixed",
-            "pinpoint"
+            "pinpoint",
+            "dilated",
+            "동공부등",
+            "빛반사",
+            "pupil check",
+            "V77_PUPIL_ASSESSMENT",
+            "Pupil 동공 사정 총정리: 크기·반응·대칭",
+            "신경계 / 중환자 사정",
+            "동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다."
           ],
           "include_rows_in_search": false
         }
@@ -33558,11 +36321,20 @@ window.ICU_MANUAL_DB = {
             "prompt",
             "sluggish",
             "fixed",
-            "pinpoint"
+            "pinpoint",
+            "dilated",
+            "동공부등",
+            "빛반사",
+            "pupil check",
+            "V77_PUPIL_ASSESSMENT",
+            "Pupil 동공 사정 총정리: 크기·반응·대칭",
+            "신경계 / 중환자 사정",
+            "동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다."
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "pupil PUPIL 동공 동공사정 동공반사 pupil reflex anisocoria isocoria prompt sluggish fixed pinpoint dilated 동공부등 빛반사 pupil check V77_PUPIL_ASSESSMENT Pupil 동공 사정 총정리: 크기·반응·대칭 신경계 / 중환자 사정 동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다. GCS·의식수준 LOC 사정표 Motor 사정 EVD·ICP 총정리"
     },
     {
       "id": "V77_MOTOR_ASSESSMENT",
@@ -33701,7 +36473,15 @@ window.ICU_MANUAL_DB = {
             "obey",
             "pronator drift",
             "motor 5",
-            "motor 4"
+            "motor 4",
+            "motor 3",
+            "motor 2",
+            "motor 1",
+            "motor 0",
+            "운동반응 사정",
+            "근력평가",
+            "편마비 사정",
+            "V77_MOTOR_ASSESSMENT"
           ],
           "include_rows_in_search": false
         },
@@ -33748,7 +36528,15 @@ window.ICU_MANUAL_DB = {
             "obey",
             "pronator drift",
             "motor 5",
-            "motor 4"
+            "motor 4",
+            "motor 3",
+            "motor 2",
+            "motor 1",
+            "motor 0",
+            "운동반응 사정",
+            "근력평가",
+            "편마비 사정",
+            "V77_MOTOR_ASSESSMENT"
           ],
           "include_rows_in_search": false
         }
@@ -33772,11 +36560,20 @@ window.ICU_MANUAL_DB = {
             "obey",
             "pronator drift",
             "motor 5",
-            "motor 4"
+            "motor 4",
+            "motor 3",
+            "motor 2",
+            "motor 1",
+            "motor 0",
+            "운동반응 사정",
+            "근력평가",
+            "편마비 사정",
+            "V77_MOTOR_ASSESSMENT"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "motor MOTOR motor power motor grade 근력 운동반응 편마비 hemiparesis obey pronator drift motor 5 motor 4 motor 3 motor 2 motor 1 motor 0 운동반응 사정 근력평가 편마비 사정 V77_MOTOR_ASSESSMENT Motor power 사정 총정리: Grade·좌우비교·보고기준 신경계 / 중환자 사정 상하지 좌우 motor grade를 평가하고, 편측 저하·비정상 자세반응·새로운 weakness를 즉시 보고할 수 있게 정리한 카드입니다. GCS·의식수준 LOC 사정표 Pupil 사정 뇌졸중 총정리"
     },
     {
       "id": "V77_ICU_NEURO_NURSING_CHECKLIST",
@@ -33918,7 +36715,15 @@ window.ICU_MANUAL_DB = {
             "motor 기록",
             "경련",
             "ICP 상승",
-            "Cushing triad"
+            "Cushing triad",
+            "EVD",
+            "ICP monitor",
+            "신경계 간호 체크리스트",
+            "신경학적 사정 기록",
+            "신경계 인계",
+            "V77_ICU_NEURO_NURSING_CHECKLIST",
+            "중환자실 신경학적 사정 간호 체크리스트",
+            "신경계 / 중환자 사정"
           ],
           "include_rows_in_search": false
         },
@@ -33964,7 +36769,15 @@ window.ICU_MANUAL_DB = {
             "motor 기록",
             "경련",
             "ICP 상승",
-            "Cushing triad"
+            "Cushing triad",
+            "EVD",
+            "ICP monitor",
+            "신경계 간호 체크리스트",
+            "신경학적 사정 기록",
+            "신경계 인계",
+            "V77_ICU_NEURO_NURSING_CHECKLIST",
+            "중환자실 신경학적 사정 간호 체크리스트",
+            "신경계 / 중환자 사정"
           ],
           "include_rows_in_search": false
         }
@@ -33988,11 +36801,20 @@ window.ICU_MANUAL_DB = {
             "motor 기록",
             "경련",
             "ICP 상승",
-            "Cushing triad"
+            "Cushing triad",
+            "EVD",
+            "ICP monitor",
+            "신경계 간호 체크리스트",
+            "신경학적 사정 기록",
+            "신경계 인계",
+            "V77_ICU_NEURO_NURSING_CHECKLIST",
+            "중환자실 신경학적 사정 간호 체크리스트",
+            "신경계 / 중환자 사정"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "중환자실 신경학적 사정 ICU neuro check neuro nursing 신경계 간호 기록 인계 GCS 기록 Pupil 기록 motor 기록 경련 ICP 상승 Cushing triad EVD ICP monitor 신경계 간호 체크리스트 신경학적 사정 기록 신경계 인계 V77_ICU_NEURO_NURSING_CHECKLIST 중환자실 신경학적 사정 간호 체크리스트 신경계 / 중환자 사정 중환자실에서 신경학적 사정 항목, 관찰 빈도, 기록 문장, 즉시 보고 문장을 표준화해 확인하는 체크리스트 카드입니다. 신경계 간호체크리스트 보고 EVD·ICP·CVP 총정리 ABGA 총정리 뇌졸중 총정리 중환자실 질병 총정리"
     },
     {
       "id": "V78_ICU_NUTRITION_FLUIDS_OVERVIEW",
@@ -34120,7 +36942,15 @@ window.ICU_MANUAL_DB = {
             "지질",
             "lipid",
             "중환자 영양",
-            "영양지원"
+            "영양지원",
+            "NUTRITION",
+            "아미노산 수액",
+            "지질 수액",
+            "V78_ICU_NUTRITION_FLUIDS_OVERVIEW",
+            "중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름",
+            "영양 / 수액요법",
+            "중환자실에서 영양지원이 필요한 환자에게 EN 우선, PN/TPN 적용 상황, 구성 성분, 간호 확인 사항을 한 번에 보는 카드입니다.",
+            "영양"
           ],
           "include_rows_in_search": false
         }
@@ -34144,11 +36974,20 @@ window.ICU_MANUAL_DB = {
             "지질",
             "lipid",
             "중환자 영양",
-            "영양지원"
+            "영양지원",
+            "NUTRITION",
+            "아미노산 수액",
+            "지질 수액",
+            "V78_ICU_NUTRITION_FLUIDS_OVERVIEW",
+            "중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름",
+            "영양 / 수액요법",
+            "중환자실에서 영양지원이 필요한 환자에게 EN 우선, PN/TPN 적용 상황, 구성 성분, 간호 확인 사항을 한 번에 보는 카드입니다.",
+            "영양"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "영양수액 TPN PN 정맥영양 parenteral nutrition enteral nutrition EN 아미노산 지질 lipid 중환자 영양 영양지원 NUTRITION 아미노산 수액 지질 수액 V78_ICU_NUTRITION_FLUIDS_OVERVIEW 중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름 영양 / 수액요법 중환자실에서 영양지원이 필요한 환자에게 EN 우선, PN/TPN 적용 상황, 구성 성분, 간호 확인 사항을 한 번에 보는 카드입니다. 영양 수액요법 혈당·인슐린 전해질 이상 중심정맥관 관리 패혈증"
     },
     {
       "id": "V78_AMINO_LIPID_TPN_COMPONENTS",
@@ -34287,7 +37126,15 @@ window.ICU_MANUAL_DB = {
             "포도당",
             "전해질",
             "비타민",
-            "미량원소"
+            "미량원소",
+            "Peripheral PN",
+            "Central TPN",
+            "아미노산 수액",
+            "지질유제",
+            "3-in-1 TPN",
+            "2-in-1 TPN",
+            "말초정맥영양",
+            "중심정맥영양"
           ],
           "include_rows_in_search": false
         }
@@ -34311,11 +37158,20 @@ window.ICU_MANUAL_DB = {
             "포도당",
             "전해질",
             "비타민",
-            "미량원소"
+            "미량원소",
+            "Peripheral PN",
+            "Central TPN",
+            "아미노산 수액",
+            "지질유제",
+            "3-in-1 TPN",
+            "2-in-1 TPN",
+            "말초정맥영양",
+            "중심정맥영양"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "아미노산 지질 지방유제 lipid emulsion ILE TPN 구성 3-in-1 2-in-1 포도당 전해질 비타민 미량원소 Peripheral PN Central TPN 아미노산 수액 지질유제 3-in-1 TPN 2-in-1 TPN 말초정맥영양 중심정맥영양 V78_AMINO_LIPID_TPN_COMPONENTS 아미노산·지질·TPN 구성 성분과 종류 총정리 영양 / 수액요법 아미노산, 포도당, 지질유제, 전해질, 비타민/미량원소의 역할과 검사·주의사항을 표로 정리했습니다. TPN성분 혈당·당뇨·인슐린 간기능 검사 신장기능 수액요법"
     },
     {
       "id": "V78_TPN_ADMINISTRATION_SAFETY",
@@ -34439,7 +37295,15 @@ window.ICU_MANUAL_DB = {
             "카테터 감염",
             "CLABSI",
             "무균술",
-            "TPN 투여 간호"
+            "TPN 투여 간호",
+            "TPN 라인관리",
+            "TPN 감염관리",
+            "정맥영양 투여",
+            "V78_TPN_ADMINISTRATION_SAFETY",
+            "TPN 투여·라인·감염관리 간호 총정리",
+            "영양 / 수액요법",
+            "중환자실에서 TPN을 안전하게 투여하기 위한 전용 라인, 필터, 무균술, 혈당/전해질, 이상소견 대응을 정리했습니다.",
+            "TPN"
           ],
           "include_rows_in_search": false
         }
@@ -34463,11 +37327,20 @@ window.ICU_MANUAL_DB = {
             "카테터 감염",
             "CLABSI",
             "무균술",
-            "TPN 투여 간호"
+            "TPN 투여 간호",
+            "TPN 라인관리",
+            "TPN 감염관리",
+            "정맥영양 투여",
+            "V78_TPN_ADMINISTRATION_SAFETY",
+            "TPN 투여·라인·감염관리 간호 총정리",
+            "영양 / 수액요법",
+            "중환자실에서 TPN을 안전하게 투여하기 위한 전용 라인, 필터, 무균술, 혈당/전해질, 이상소견 대응을 정리했습니다.",
+            "TPN"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "TPN 투여 TPN 라인 TPN 감염 central line 전용 lumen TPN filter 필터 라인관리 카테터 감염 CLABSI 무균술 TPN 투여 간호 TPN 라인관리 TPN 감염관리 정맥영양 투여 V78_TPN_ADMINISTRATION_SAFETY TPN 투여·라인·감염관리 간호 총정리 영양 / 수액요법 중환자실에서 TPN을 안전하게 투여하기 위한 전용 라인, 필터, 무균술, 혈당/전해질, 이상소견 대응을 정리했습니다. TPN 감염관리 중심정맥관 관리 혈당·인슐린 수액요법"
     },
     {
       "id": "V78_REFEEDING_TPN_MONITORING",
@@ -34593,7 +37466,15 @@ window.ICU_MANUAL_DB = {
             "LFT 상승",
             "카테터 감염",
             "Refeeding syndrome",
-            "TPN 모니터링"
+            "TPN 모니터링",
+            "V78_REFEEDING_TPN_MONITORING",
+            "재급식증후군·TPN 합병증 모니터링 총정리",
+            "영양 / 수액요법",
+            "재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다.",
+            "TPN모니터링",
+            "합병증",
+            "전해질 이상",
+            "심전도"
           ],
           "include_rows_in_search": false
         }
@@ -34617,11 +37498,20 @@ window.ICU_MANUAL_DB = {
             "LFT 상승",
             "카테터 감염",
             "Refeeding syndrome",
-            "TPN 모니터링"
+            "TPN 모니터링",
+            "V78_REFEEDING_TPN_MONITORING",
+            "재급식증후군·TPN 합병증 모니터링 총정리",
+            "영양 / 수액요법",
+            "재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다.",
+            "TPN모니터링",
+            "합병증",
+            "전해질 이상",
+            "심전도"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "재급식증후군 refeeding refeeding syndrome TPN 합병증 저인산혈증 저칼륨혈증 저마그네슘혈증 TG 상승 LFT 상승 카테터 감염 Refeeding syndrome TPN 모니터링 V78_REFEEDING_TPN_MONITORING 재급식증후군·TPN 합병증 모니터링 총정리 영양 / 수액요법 재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다. TPN모니터링 합병증 전해질 이상 심전도 혈당·인슐린 수액요법"
     },
     {
       "id": "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
@@ -34755,7 +37645,15 @@ window.ICU_MANUAL_DB = {
             "VC",
             "PC",
             "SIMV",
-            "PSV"
+            "PSV",
+            "호흡계",
+            "ABGA",
+            "Ventilator",
+            "Drager Savina",
+            "Dräger Savina",
+            "Savina",
+            "호흡기",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
           ],
           "include_rows_in_search": false
         }
@@ -34782,11 +37680,19 @@ window.ICU_MANUAL_DB = {
             "VC",
             "PC",
             "SIMV",
-            "PSV"
+            "PSV",
+            "ABGA",
+            "Ventilator",
+            "Drager Savina",
+            "Dräger Savina",
+            "Savina",
+            "호흡기",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator 중환자실에서 자주 보는 인공호흡기 기본 모드, 주요 설정, 알람 대응, 흡인·산소화 모니터링을 한 번에 정리한 카드입니다. 호흡 기관절개관 산소요법 진정/통증 응급상황"
     },
     {
       "id": "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
@@ -34914,7 +37820,14 @@ window.ICU_MANUAL_DB = {
             "arterial pressure",
             "vasopressor",
             "arterial line",
-            "순환계 · 혈역학 모니터링 총정리"
+            "순환계 · 혈역학 모니터링 총정리",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "순환 / 혈역학",
+            "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
+            "패혈증",
+            "수액요법",
+            "혈액가스",
+            "심전도"
           ],
           "include_rows_in_search": false
         }
@@ -34938,11 +37851,19 @@ window.ICU_MANUAL_DB = {
             "arterial pressure",
             "vasopressor",
             "arterial line",
-            "순환계 · 혈역학 모니터링 총정리"
+            "순환계 · 혈역학 모니터링 총정리",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "순환 / 혈역학",
+            "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
+            "패혈증",
+            "수액요법",
+            "혈액가스",
+            "심전도"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "hemodynamic 혈역학 순환계 MAP CVP ScvO2 A-line arterial pressure 쇼크 vasopressor arterial line V80_HEMODYNAMIC_MONITORING_OVERVIEW 순환계 · 혈역학 모니터링 총정리 순환 / 혈역학 중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다. 패혈증 수액요법 혈액가스 심전도"
     },
     {
       "id": "V81_RENAL_CRRT_OVERVIEW",
@@ -35066,7 +37987,14 @@ window.ICU_MANUAL_DB = {
             "항응고",
             "지속적 신대체요법",
             "hemofiltration",
-            "신장계 · CRRT 총정리"
+            "신장계 · CRRT 총정리",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "신장 / CRRT",
+            "급성 신손상 환자에서 CRRT 적응증, 회로 확인, 초여과/제거량, 항응고, 알람 대응을 정리했습니다.",
+            "전해질 이상",
+            "혈역학",
+            "수액요법",
+            "ABGA"
           ],
           "include_rows_in_search": false
         }
@@ -35091,11 +38019,19 @@ window.ICU_MANUAL_DB = {
             "항응고",
             "지속적 신대체요법",
             "hemofiltration",
-            "신장계 · CRRT 총정리"
+            "신장계 · CRRT 총정리",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "신장 / CRRT",
+            "급성 신손상 환자에서 CRRT 적응증, 회로 확인, 초여과/제거량, 항응고, 알람 대응을 정리했습니다.",
+            "전해질 이상",
+            "혈역학",
+            "수액요법",
+            "ABGA"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "CRRT 신장계 투석 renal AKI UF effluent filter clotting 항응고 지속적 신대체요법 hemofiltration V81_RENAL_CRRT_OVERVIEW 신장계 · CRRT 총정리 신장 / CRRT 급성 신손상 환자에서 CRRT 적응증, 회로 확인, 초여과/제거량, 항응고, 알람 대응을 정리했습니다. 전해질 이상 혈역학 수액요법 ABGA"
     },
     {
       "id": "V82_GI_DIGESTIVE_OVERVIEW",
@@ -35221,7 +38157,14 @@ window.ICU_MANUAL_DB = {
             "토혈",
             "흑변",
             "위관",
-            "소화기계 총정리"
+            "소화기계 총정리",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "소화기 / 위장관",
+            "위관/장관영양, 복부사정, 위장관 출혈, 장운동 저하, 금식·배액 관리 등 소화기계 핵심 간호를 요약했습니다.",
+            "영양수액",
+            "검사·시술",
+            "라인관리",
+            "수혈"
           ],
           "include_rows_in_search": false
         }
@@ -35246,11 +38189,19 @@ window.ICU_MANUAL_DB = {
             "토혈",
             "흑변",
             "ileus",
-            "위관"
+            "위관",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "소화기 / 위장관",
+            "위관/장관영양, 복부사정, 위장관 출혈, 장운동 저하, 금식·배액 관리 등 소화기계 핵심 간호를 요약했습니다.",
+            "영양수액",
+            "검사·시술",
+            "라인관리",
+            "수혈"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "소화기계 GI 위장관 NG tube L-tube 장관영양 복부팽만 토혈 흑변 ileus 위관 V82_GI_DIGESTIVE_OVERVIEW 소화기계 총정리 소화기 / 위장관 위관/장관영양, 복부사정, 위장관 출혈, 장운동 저하, 금식·배액 관리 등 소화기계 핵심 간호를 요약했습니다. 영양수액 검사·시술 라인관리 수혈"
     },
     {
       "id": "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
@@ -35378,7 +38329,15 @@ window.ICU_MANUAL_DB = {
             "영상검사",
             "채혈",
             "소변검사",
-            "초음파"
+            "초음파",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검사 · 검체 · 영상검사 · 시술 · 수술 총정리",
+            "검사 / 시술·수술",
+            "검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다.",
+            "수혈",
+            "소화기계",
+            "라인관리",
+            "간호기록"
           ],
           "include_rows_in_search": false
         }
@@ -35402,11 +38361,20 @@ window.ICU_MANUAL_DB = {
             "소변검사",
             "초음파",
             "동의서",
-            "금식"
+            "금식",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검사 · 검체 · 영상검사 · 시술 · 수술 총정리",
+            "검사 / 시술·수술",
+            "검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다.",
+            "수혈",
+            "소화기계",
+            "라인관리",
+            "간호기록"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "검사 검체 영상검사 시술 수술 채혈 소변검사 CT MRI 초음파 동의서 금식 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW 검사 · 검체 · 영상검사 · 시술 · 수술 총정리 검사 / 시술·수술 검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다. 수혈 소화기계 라인관리 간호기록"
     },
     {
       "id": "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
@@ -35532,7 +38500,15 @@ window.ICU_MANUAL_DB = {
             "chest tube",
             "Hemovac",
             "JP drain",
-            "중심정맥관"
+            "중심정맥관",
+            "배액관",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "Line · Drain · Dressing · 소독기구 총정리",
+            "기구 / Line·Drain·Dressing",
+            "중심/말초 line, 배액관, dressing, 무균소독 도구의 기본 확인사항과 감염예방 포인트를 정리했습니다.",
+            "감염관리",
+            "검사·시술",
+            "소화기계"
           ],
           "include_rows_in_search": false
         }
@@ -35557,11 +38533,19 @@ window.ICU_MANUAL_DB = {
             "chest tube",
             "Hemovac",
             "JP drain",
-            "중심정맥관"
+            "중심정맥관",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "Line · Drain · Dressing · 소독기구 총정리",
+            "기구 / Line·Drain·Dressing",
+            "중심/말초 line, 배액관, dressing, 무균소독 도구의 기본 확인사항과 감염예방 포인트를 정리했습니다.",
+            "감염관리",
+            "검사·시술",
+            "소화기계"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "line drain dressing 소독기구 CVC PICC A-line Foley chest tube Hemovac JP drain 중심정맥관 배액관 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW Line · Drain · Dressing · 소독기구 총정리 기구 / Line·Drain·Dressing 중심/말초 line, 배액관, dressing, 무균소독 도구의 기본 확인사항과 감염예방 포인트를 정리했습니다. 감염관리 검사·시술 소화기계 혈역학"
     },
     {
       "id": "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
@@ -35690,7 +38674,15 @@ window.ICU_MANUAL_DB = {
             "Braden",
             "NRS",
             "기록",
-            "flow sheet"
+            "flow sheet",
+            "인계",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리",
+            "간호업무 / 안전·기록",
+            "중환자실 간호안전평가와 문서화, 근무별 업무 흐름을 한 카드에 모아 신규/복귀 간호사가 빠르게 참고할 수 있게 정리했습니다.",
+            "안전",
+            "검사·시술",
+            "line/drain"
           ],
           "include_rows_in_search": false
         }
@@ -35714,11 +38706,20 @@ window.ICU_MANUAL_DB = {
             "ICU flow sheet",
             "Braden",
             "NRS",
-            "기록"
+            "기록",
+            "인계",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리",
+            "간호업무 / 안전·기록",
+            "중환자실 간호안전평가와 문서화, 근무별 업무 흐름을 한 카드에 모아 신규/복귀 간호사가 빠르게 참고할 수 있게 정리했습니다.",
+            "안전",
+            "검사·시술",
+            "line/drain"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "낙상 욕창 통증 SOAP EMR 간호처방 근무별 업무 ICU flow sheet Braden NRS 기록 flow sheet 인계 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW 낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리 간호업무 / 안전·기록 중환자실 간호안전평가와 문서화, 근무별 업무 흐름을 한 카드에 모아 신규/복귀 간호사가 빠르게 참고할 수 있게 정리했습니다. 안전 검사·시술 line/drain 영양 호흡기"
     },
     {
       "id": "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
@@ -35836,7 +38837,16 @@ window.ICU_MANUAL_DB = {
             "카테터",
             "pump",
             "모니터",
-            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드"
+            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "병동업무 / 물품·장비",
+            "ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다.",
+            "물품",
+            "장비",
+            "Line·Drain·Dressing",
+            "검사·검체",
+            "호흡기",
+            "간호업무"
           ],
           "include_rows_in_search": false
         }
@@ -35859,11 +38869,14042 @@ window.ICU_MANUAL_DB = {
             "병동간호팀",
             "장비검색",
             "물품검색",
-            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드"
+            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "병동업무 / 물품·장비",
+            "ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다.",
+            "물품",
+            "장비",
+            "Line·Drain·Dressing",
+            "검사·검체",
+            "호흡기",
+            "간호업무"
           ]
         }
       ],
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다. 검색 물품 장비 Line·Drain·Dressing 검사·검체 호흡기 간호업무"
+    },
+    {
+      "id": "V79_DETAIL_01",
+      "category": "호흡 / Ventilator",
+      "title": "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+      "aliases": [
+        "VC",
+        "PC",
+        "SIMV",
+        "PSV",
+        "기계환기 모드",
+        "인공호흡기 모드"
+      ],
+      "search_terms": [
+        "ventilator mode",
+        "volume control",
+        "pressure control",
+        "SIMV",
+        "PSV",
+        "PEEP",
+        "FiO2",
+        "tidal volume",
+        "RR",
+        "VC",
+        "PC",
+        "기계환기 모드",
+        "인공호흡기 모드",
+        "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+        "호흡 / Ventilator",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "모드 확인",
+        "VC",
+        "PC"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "모드 확인: 현재 mode와 처방 mode, 자발호흡 여부 → mode별 목표가 TV인지 pressure인지 구분",
+        "VC: 설정 TV, RR, PEEP, FiO₂ → peak pressure 상승 시 원인 확인",
+        "PC: 설정 pressure, RR, PEEP, FiO₂ → 실제 TV 저하/상승을 관찰",
+        "SIMV/PSV: 자발호흡 수, pressure support, trigger → weaning 단계인지 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V72_ABGA_INTERPRETATION"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "ventilator mode",
+        "volume control",
+        "pressure control",
+        "SIMV",
+        "PSV",
+        "PEEP"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "모드 확인",
+              "현재 mode와 처방 mode, 자발호흡 여부",
+              "mode별 목표가 TV인지 pressure인지 구분",
+              "설정값과 환자 반응 기록"
+            ],
+            [
+              "VC",
+              "설정 TV, RR, PEEP, FiO₂",
+              "peak pressure 상승 시 원인 확인",
+              "TV/압력/SpO₂ 변화 기록"
+            ],
+            [
+              "PC",
+              "설정 pressure, RR, PEEP, FiO₂",
+              "실제 TV 저하/상승을 관찰",
+              "실제 TV와 ABGA 반응 기록"
+            ],
+            [
+              "SIMV/PSV",
+              "자발호흡 수, pressure support, trigger",
+              "weaning 단계인지 확인",
+              "호흡수/노력/동조 기록"
+            ]
+          ],
+          "search_terms": [
+            "ventilator mode",
+            "volume control",
+            "pressure control",
+            "SIMV",
+            "PSV",
+            "PEEP",
+            "FiO2",
+            "tidal volume",
+            "RR",
+            "VC",
+            "PC",
+            "기계환기 모드",
+            "인공호흡기 모드",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+            "한눈에",
+            "체크표",
+            "호흡 / Ventilator",
+            "V79",
+            "V79_DETAIL_01",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "VC",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PC",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "SIMV",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PSV",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "기계환기 모드",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "인공호흡기 모드",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator mode",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "volume control",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressure control",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PEEP",
+              "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ventilator mode",
+            "volume control",
+            "pressure control",
+            "SIMV",
+            "PSV",
+            "PEEP",
+            "FiO2",
+            "tidal volume",
+            "RR",
+            "VC",
+            "PC",
+            "기계환기 모드",
+            "인공호흡기 모드",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
+            "호흡 / Ventilator",
+            "V79",
+            "V79_DETAIL_01",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ventilator mode volume control pressure control SIMV PSV PEEP FiO2 tidal volume RR VC PC 기계환기 모드 인공호흡기 모드 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 호흡 / Ventilator V79 V79_DETAIL_01 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION"
+    },
+    {
+      "id": "V79_DETAIL_02",
+      "category": "호흡 / Dräger Savina",
+      "title": "Dräger Savina 사용 전·근무 시작 체크",
+      "aliases": [
+        "Dräger Savina",
+        "Drager Savina",
+        "Savina",
+        "사비나",
+        "인공호흡기 점검"
+      ],
+      "search_terms": [
+        "savina",
+        "drager",
+        "dräger",
+        "ventilator check",
+        "circuit check",
+        "leak test",
+        "humidifier",
+        "oxygen supply",
+        "Dräger Savina",
+        "Drager Savina",
+        "Savina",
+        "사비나",
+        "인공호흡기 점검",
+        "Dräger Savina 사용 전·근무 시작 체크",
+        "호흡 / Dräger Savina",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "근무 시작 점검",
+        "회로/가온가습",
+        "알람 한계"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "근무 시작 점검: 전원, 산소/공기 공급, 회로 연결 → 화면 setting과 처방 대조",
+        "회로/가온가습: 물 고임, 꺾임, 가습기 상태 → 회로 위치와 condensation 관리",
+        "알람 한계: high pressure, low pressure, apnea → 환자 상태에 맞는 alarm limit 확인",
+        "비상준비: Ambu bag, suction, 산소 연결 → 기계 문제 시 즉시 환기 가능하게 준비"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "savina",
+        "drager",
+        "dräger",
+        "ventilator check",
+        "circuit check",
+        "leak test"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Dräger Savina 사용 전·근무 시작 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "근무 시작 점검",
+              "전원, 산소/공기 공급, 회로 연결",
+              "화면 setting과 처방 대조",
+              "점검 시간과 특이사항 기록"
+            ],
+            [
+              "회로/가온가습",
+              "물 고임, 꺾임, 가습기 상태",
+              "회로 위치와 condensation 관리",
+              "회로 교환/문제 보고 기록"
+            ],
+            [
+              "알람 한계",
+              "high pressure, low pressure, apnea",
+              "환자 상태에 맞는 alarm limit 확인",
+              "알람 변경 사유 기록"
+            ],
+            [
+              "비상준비",
+              "Ambu bag, suction, 산소 연결",
+              "기계 문제 시 즉시 환기 가능하게 준비",
+              "장비 이상 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "savina",
+            "drager",
+            "dräger",
+            "ventilator check",
+            "circuit check",
+            "leak test",
+            "humidifier",
+            "oxygen supply",
+            "Dräger Savina",
+            "Drager Savina",
+            "Savina",
+            "사비나",
+            "인공호흡기 점검",
+            "Dräger Savina 사용 전·근무 시작 체크",
+            "한눈에",
+            "체크표",
+            "호흡 / Dräger Savina",
+            "V79",
+            "V79_DETAIL_02",
+            "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "Dräger Savina 사용 전·근무 시작 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Dräger Savina 사용 전·근무 시작 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "Dräger Savina",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Drager Savina",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Savina",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "사비나",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "인공호흡기 점검",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "savina",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "drager",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dräger",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator check",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "circuit check",
+              "Dräger Savina 사용 전·근무 시작 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "savina",
+            "drager",
+            "dräger",
+            "ventilator check",
+            "circuit check",
+            "leak test",
+            "humidifier",
+            "oxygen supply",
+            "Dräger Savina",
+            "Drager Savina",
+            "Savina",
+            "사비나",
+            "인공호흡기 점검",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Dräger Savina 사용 전·근무 시작 체크",
+            "호흡 / Dräger Savina",
+            "V79",
+            "V79_DETAIL_02",
+            "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "Dräger Savina 사용 전·근무 시작 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 V79_DETAIL_02 Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+    },
+    {
+      "id": "V79_DETAIL_03",
+      "category": "호흡 / Ventilator 알람",
+      "title": "Ventilator High Pressure 알람 대응",
+      "aliases": [
+        "고압 알람",
+        "High pressure",
+        "peak pressure",
+        "기도압 상승",
+        "압력상승"
+      ],
+      "search_terms": [
+        "high pressure alarm",
+        "PIP",
+        "peak inspiratory pressure",
+        "secretions",
+        "kink",
+        "bronchospasm",
+        "bite",
+        "compliance",
+        "고압 알람",
+        "High pressure",
+        "peak pressure",
+        "기도압 상승",
+        "압력상승",
+        "Ventilator High Pressure 알람 대응",
+        "호흡 / Ventilator 알람",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator High Pressure 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "고압 알람 발생",
+        "분비물 의심",
+        "회로 문제"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "고압 알람 발생: SpO₂, 흉곽 움직임, 환자 불편감 → 환자 문제인지 회로 문제인지 즉시 구분",
+        "분비물 의심: 호흡음, 가래, peak pressure 상승 → 필요 시 흡인 준비·시행",
+        "회로 문제: 튜브 kink, bite, water trap, 연결부 → 회로 정리와 bite block 필요성 확인",
+        "폐상태 변화: 기관지경련, 폐부종, pneumothorax 의심 → 급격한 악화는 즉시 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V79_DETAIL_06"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "high pressure alarm",
+        "PIP",
+        "peak inspiratory pressure",
+        "secretions",
+        "kink",
+        "bronchospasm"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator High Pressure 알람 대응 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "고압 알람 발생",
+              "SpO₂, 흉곽 움직임, 환자 불편감",
+              "환자 문제인지 회로 문제인지 즉시 구분",
+              "발생 시간과 SpO₂ 기록"
+            ],
+            [
+              "분비물 의심",
+              "호흡음, 가래, peak pressure 상승",
+              "필요 시 흡인 준비·시행",
+              "흡인 전후 상태 기록"
+            ],
+            [
+              "회로 문제",
+              "튜브 kink, bite, water trap, 연결부",
+              "회로 정리와 bite block 필요성 확인",
+              "수정 후 압력 변화 기록"
+            ],
+            [
+              "폐상태 변화",
+              "기관지경련, 폐부종, pneumothorax 의심",
+              "급격한 악화는 즉시 보고",
+              "의사 보고와 처치 기록"
+            ]
+          ],
+          "search_terms": [
+            "high pressure alarm",
+            "PIP",
+            "peak inspiratory pressure",
+            "secretions",
+            "kink",
+            "bronchospasm",
+            "bite",
+            "compliance",
+            "고압 알람",
+            "High pressure",
+            "peak pressure",
+            "기도압 상승",
+            "압력상승",
+            "Ventilator High Pressure 알람 대응",
+            "한눈에",
+            "체크표",
+            "호흡 / Ventilator 알람",
+            "V79",
+            "V79_DETAIL_03",
+            "Ventilator High Pressure 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "Ventilator High Pressure 알람 대응 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator High Pressure 알람 대응 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "고압 알람",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "High pressure",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "peak pressure",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "기도압 상승",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "압력상승",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "high pressure alarm",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PIP",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "peak inspiratory pressure",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "secretions",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "kink",
+              "Ventilator High Pressure 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "high pressure alarm",
+            "PIP",
+            "peak inspiratory pressure",
+            "secretions",
+            "kink",
+            "bronchospasm",
+            "bite",
+            "compliance",
+            "고압 알람",
+            "High pressure",
+            "peak pressure",
+            "기도압 상승",
+            "압력상승",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator High Pressure 알람 대응",
+            "호흡 / Ventilator 알람",
+            "V79",
+            "V79_DETAIL_03",
+            "Ventilator High Pressure 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "Ventilator High Pressure 알람 대응 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "high pressure alarm PIP peak inspiratory pressure secretions kink bronchospasm bite compliance 고압 알람 High pressure peak pressure 기도압 상승 압력상승 Ventilator High Pressure 알람 대응 호흡 / Ventilator 알람 V79 V79_DETAIL_03 Ventilator High Pressure 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_06"
+    },
+    {
+      "id": "V79_DETAIL_04",
+      "category": "호흡 / Ventilator 알람",
+      "title": "Ventilator Low Pressure·Leak 알람 대응",
+      "aliases": [
+        "저압 알람",
+        "Low pressure",
+        "leak alarm",
+        "cuff leak",
+        "회로이탈"
+      ],
+      "search_terms": [
+        "low pressure alarm",
+        "leak",
+        "disconnect",
+        "cuff pressure",
+        "circuit disconnection",
+        "self extubation",
+        "저압 알람",
+        "Low pressure",
+        "leak alarm",
+        "cuff leak",
+        "회로이탈",
+        "Ventilator Low Pressure·Leak 알람 대응",
+        "호흡 / Ventilator 알람",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator Low Pressure·Leak 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "저압 알람 발생",
+        "cuff leak",
+        "회로 이탈"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "저압 알람 발생: 회로 연결부, 흉곽 움직임, SpO₂ → 연결 이탈/누출 여부 즉시 확인",
+        "cuff leak: air leak 소리, cuff pressure, 음성 발생 → cuff 상태와 tube 위치 확인",
+        "회로 이탈: Y-piece, 필터, humidifier 연결 → 재연결 후 환기 회복 확인",
+        "self-extubation 의심: 튜브 깊이, 고정상태, 호흡곤란 → 즉시 도움 요청, 산소화 확보"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V79_DETAIL_03"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "low pressure alarm",
+        "leak",
+        "disconnect",
+        "cuff pressure",
+        "circuit disconnection",
+        "self extubation"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator Low Pressure·Leak 알람 대응 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "저압 알람 발생",
+              "회로 연결부, 흉곽 움직임, SpO₂",
+              "연결 이탈/누출 여부 즉시 확인",
+              "발생 시간과 조치 기록"
+            ],
+            [
+              "cuff leak",
+              "air leak 소리, cuff pressure, 음성 발생",
+              "cuff 상태와 tube 위치 확인",
+              "cuff 확인 및 보고 기록"
+            ],
+            [
+              "회로 이탈",
+              "Y-piece, 필터, humidifier 연결",
+              "재연결 후 환기 회복 확인",
+              "재연결 전후 SpO₂ 기록"
+            ],
+            [
+              "self-extubation 의심",
+              "튜브 깊이, 고정상태, 호흡곤란",
+              "즉시 도움 요청, 산소화 확보",
+              "응급대응과 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "low pressure alarm",
+            "leak",
+            "disconnect",
+            "cuff pressure",
+            "circuit disconnection",
+            "self extubation",
+            "저압 알람",
+            "Low pressure",
+            "leak alarm",
+            "cuff leak",
+            "회로이탈",
+            "Ventilator Low Pressure·Leak 알람 대응",
+            "한눈에",
+            "체크표",
+            "호흡 / Ventilator 알람",
+            "V79",
+            "V79_DETAIL_04",
+            "Ventilator Low Pressure·Leak 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "V79_DETAIL_03",
+            "한눈에 보기",
+            "Ventilator Low Pressure·Leak 알람 대응 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator Low Pressure·Leak 알람 대응 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "저압 알람",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Low pressure",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "leak alarm",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "cuff leak",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "회로이탈",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "low pressure alarm",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "leak",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "disconnect",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "cuff pressure",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "circuit disconnection",
+              "Ventilator Low Pressure·Leak 알람 대응",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "low pressure alarm",
+            "leak",
+            "disconnect",
+            "cuff pressure",
+            "circuit disconnection",
+            "self extubation",
+            "저압 알람",
+            "Low pressure",
+            "leak alarm",
+            "cuff leak",
+            "회로이탈",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator Low Pressure·Leak 알람 대응",
+            "호흡 / Ventilator 알람",
+            "V79",
+            "V79_DETAIL_04",
+            "Ventilator Low Pressure·Leak 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "V79_DETAIL_03",
+            "검색어 연결표",
+            "Ventilator Low Pressure·Leak 알람 대응 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "low pressure alarm leak disconnect cuff pressure circuit disconnection self extubation 저압 알람 Low pressure leak alarm cuff leak 회로이탈 Ventilator Low Pressure·Leak 알람 대응 호흡 / Ventilator 알람 V79 V79_DETAIL_04 Ventilator Low Pressure·Leak 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_03"
+    },
+    {
+      "id": "V79_DETAIL_05",
+      "category": "호흡 / Weaning",
+      "title": "Ventilator Weaning·SBT 준비 체크",
+      "aliases": [
+        "weaning",
+        "SBT",
+        "자발호흡시험",
+        "ventilator 떼기",
+        "extubation 준비"
+      ],
+      "search_terms": [
+        "weaning",
+        "spontaneous breathing trial",
+        "SBT",
+        "RSBI",
+        "extubation",
+        "PSV",
+        "T-piece",
+        "자발호흡시험",
+        "ventilator 떼기",
+        "extubation 준비",
+        "Ventilator Weaning·SBT 준비 체크",
+        "호흡 / Weaning",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator Weaning·SBT 준비 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "weaning 가능성",
+        "SBT 중",
+        "분비물/기도보호"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "weaning 가능성: 원인 질환 호전, 산소화, 혈역학 안정 → 의사 지시와 기준 충족 여부 확인",
+        "SBT 중: RR, SpO₂, HR/BP, 호흡노력 → 불안·발한·호흡곤란 악화 관찰",
+        "분비물/기도보호: 기침 능력, 의식, secretion 양 → extubation 후 흡인/산소 준비",
+        "실패 시: 저산소증, tachypnea, hemodynamic 변화 → 이전 설정 복귀 여부 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "weaning",
+        "spontaneous breathing trial",
+        "SBT",
+        "RSBI",
+        "extubation",
+        "PSV"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator Weaning·SBT 준비 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "weaning 가능성",
+              "원인 질환 호전, 산소화, 혈역학 안정",
+              "의사 지시와 기준 충족 여부 확인",
+              "시작 전 상태 기록"
+            ],
+            [
+              "SBT 중",
+              "RR, SpO₂, HR/BP, 호흡노력",
+              "불안·발한·호흡곤란 악화 관찰",
+              "중단 기준 발생 시 보고 기록"
+            ],
+            [
+              "분비물/기도보호",
+              "기침 능력, 의식, secretion 양",
+              "extubation 후 흡인/산소 준비",
+              "분비물 양상 기록"
+            ],
+            [
+              "실패 시",
+              "저산소증, tachypnea, hemodynamic 변화",
+              "이전 설정 복귀 여부 확인",
+              "실패 원인과 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "weaning",
+            "spontaneous breathing trial",
+            "SBT",
+            "RSBI",
+            "extubation",
+            "PSV",
+            "T-piece",
+            "자발호흡시험",
+            "ventilator 떼기",
+            "extubation 준비",
+            "Ventilator Weaning·SBT 준비 체크",
+            "한눈에",
+            "체크표",
+            "호흡 / Weaning",
+            "V79",
+            "V79_DETAIL_05",
+            "Ventilator Weaning·SBT 준비 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "Ventilator Weaning·SBT 준비 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator Weaning·SBT 준비 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "weaning",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "SBT",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "자발호흡시험",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator 떼기",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "extubation 준비",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "spontaneous breathing trial",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "RSBI",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "extubation",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PSV",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "T-piece",
+              "Ventilator Weaning·SBT 준비 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "weaning",
+            "spontaneous breathing trial",
+            "SBT",
+            "RSBI",
+            "extubation",
+            "PSV",
+            "T-piece",
+            "자발호흡시험",
+            "ventilator 떼기",
+            "extubation 준비",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator Weaning·SBT 준비 체크",
+            "호흡 / Weaning",
+            "V79",
+            "V79_DETAIL_05",
+            "Ventilator Weaning·SBT 준비 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "Ventilator Weaning·SBT 준비 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "weaning spontaneous breathing trial SBT RSBI extubation PSV T-piece 자발호흡시험 ventilator 떼기 extubation 준비 Ventilator Weaning·SBT 준비 체크 호흡 / Weaning V79 V79_DETAIL_05 Ventilator Weaning·SBT 준비 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+    },
+    {
+      "id": "V79_DETAIL_06",
+      "category": "호흡 / 흡인",
+      "title": "ETT·Tracheostomy 흡인 간호 체크",
+      "aliases": [
+        "흡인",
+        "suction",
+        "ETT suction",
+        "tracheostomy suction",
+        "기관흡인"
+      ],
+      "search_terms": [
+        "suction",
+        "ETT",
+        "tracheostomy",
+        "closed suction",
+        "secretion",
+        "SpO2",
+        "무균술",
+        "흡인",
+        "ETT suction",
+        "tracheostomy suction",
+        "기관흡인",
+        "ETT·Tracheostomy 흡인 간호 체크",
+        "호흡 / 흡인",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "흡인 필요성",
+        "전 준비",
+        "시행 중"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "흡인 필요성: 가래음, peak pressure 상승, SpO₂ 저하 → 필요 시 시행하고 불필요한 반복 흡인 피함",
+        "전 준비: 산소화, suction pressure, catheter, PPE → 무균술·폐쇄형 흡인 기준 확인",
+        "시행 중: SpO₂, HR, 저산소증, 출혈 → 짧고 안전하게 시행, 환자 반응 관찰",
+        "시행 후: 호흡음, SpO₂ 회복, 환자 안정 → 구강간호/체위/가습 상태 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "suction",
+        "ETT",
+        "tracheostomy",
+        "closed suction",
+        "secretion",
+        "SpO2"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "ETT·Tracheostomy 흡인 간호 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "흡인 필요성",
+              "가래음, peak pressure 상승, SpO₂ 저하",
+              "필요 시 시행하고 불필요한 반복 흡인 피함",
+              "흡인 적응증 기록"
+            ],
+            [
+              "전 준비",
+              "산소화, suction pressure, catheter, PPE",
+              "무균술·폐쇄형 흡인 기준 확인",
+              "준비와 시행 시간 기록"
+            ],
+            [
+              "시행 중",
+              "SpO₂, HR, 저산소증, 출혈",
+              "짧고 안전하게 시행, 환자 반응 관찰",
+              "분비물 양/색/점도 기록"
+            ],
+            [
+              "시행 후",
+              "호흡음, SpO₂ 회복, 환자 안정",
+              "구강간호/체위/가습 상태 확인",
+              "전후 변화와 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "suction",
+            "ETT",
+            "tracheostomy",
+            "closed suction",
+            "secretion",
+            "SpO2",
+            "무균술",
+            "흡인",
+            "ETT suction",
+            "tracheostomy suction",
+            "기관흡인",
+            "ETT·Tracheostomy 흡인 간호 체크",
+            "한눈에",
+            "체크표",
+            "호흡 / 흡인",
+            "V79",
+            "V79_DETAIL_06",
+            "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "ETT·Tracheostomy 흡인 간호 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "ETT·Tracheostomy 흡인 간호 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "흡인",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "suction",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ETT suction",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tracheostomy suction",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "기관흡인",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ETT",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tracheostomy",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "closed suction",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "secretion",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "SpO2",
+              "ETT·Tracheostomy 흡인 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "suction",
+            "ETT",
+            "tracheostomy",
+            "closed suction",
+            "secretion",
+            "SpO2",
+            "무균술",
+            "흡인",
+            "ETT suction",
+            "tracheostomy suction",
+            "기관흡인",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "ETT·Tracheostomy 흡인 간호 체크",
+            "호흡 / 흡인",
+            "V79",
+            "V79_DETAIL_06",
+            "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "ETT·Tracheostomy 흡인 간호 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "suction ETT tracheostomy closed suction secretion SpO2 무균술 흡인 ETT suction tracheostomy suction 기관흡인 ETT·Tracheostomy 흡인 간호 체크 호흡 / 흡인 V79 V79_DETAIL_06 ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+    },
+    {
+      "id": "V79_DETAIL_07",
+      "category": "호흡 / ABGA 연동",
+      "title": "Ventilator 환자 ABGA·산소화 해석 연결",
+      "aliases": [
+        "ABGA",
+        "혈액가스",
+        "PaO2",
+        "PaCO2",
+        "pH",
+        "산소화"
+      ],
+      "search_terms": [
+        "ABGA",
+        "arterial blood gas",
+        "PaO2",
+        "PaCO2",
+        "pH",
+        "HCO3",
+        "FiO2",
+        "P/F ratio",
+        "혈액가스",
+        "산소화",
+        "Ventilator 환자 ABGA·산소화 해석 연결",
+        "호흡 / ABGA 연동",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator 환자 ABGA·산소화 해석 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "산소화 확인",
+        "환기 확인",
+        "대사성 동반"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "산소화 확인: PaO₂, SpO₂, FiO₂, PEEP → FiO₂ 변화와 ABGA 반응 연결",
+        "환기 확인: PaCO₂, pH, RR, TV/pressure → CO₂ retention/과환기 여부 확인",
+        "대사성 동반: HCO₃, lactate, 전해질 → 호흡성/대사성 혼합 여부 보고",
+        "급변 시: 의식변화, 호흡곤란, 혈압 변화 → 환자상태 우선 평가 후 즉시 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V72_ABGA_INTERPRETATION"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "ABGA",
+        "arterial blood gas",
+        "PaO2",
+        "PaCO2",
+        "pH",
+        "HCO3"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator 환자 ABGA·산소화 해석 연결 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "산소화 확인",
+              "PaO₂, SpO₂, FiO₂, PEEP",
+              "FiO₂ 변화와 ABGA 반응 연결",
+              "ABGA 채혈 시간과 설정 기록"
+            ],
+            [
+              "환기 확인",
+              "PaCO₂, pH, RR, TV/pressure",
+              "CO₂ retention/과환기 여부 확인",
+              "ventilator 변경 전후 값 기록"
+            ],
+            [
+              "대사성 동반",
+              "HCO₃, lactate, 전해질",
+              "호흡성/대사성 혼합 여부 보고",
+              "검사 결과와 보고 기록"
+            ],
+            [
+              "급변 시",
+              "의식변화, 호흡곤란, 혈압 변화",
+              "환자상태 우선 평가 후 즉시 보고",
+              "응급 보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "ABGA",
+            "arterial blood gas",
+            "PaO2",
+            "PaCO2",
+            "pH",
+            "HCO3",
+            "FiO2",
+            "P/F ratio",
+            "혈액가스",
+            "산소화",
+            "Ventilator 환자 ABGA·산소화 해석 연결",
+            "한눈에",
+            "체크표",
+            "호흡 / ABGA 연동",
+            "V79",
+            "V79_DETAIL_07",
+            "Ventilator 환자 ABGA·산소화 해석 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "V72_ABGA_INTERPRETATION",
+            "한눈에 보기",
+            "Ventilator 환자 ABGA·산소화 해석 연결 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator 환자 ABGA·산소화 해석 연결 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "ABGA",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈액가스",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PaO2",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PaCO2",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pH",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "산소화",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial blood gas",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "HCO3",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "FiO2",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "P/F ratio",
+              "Ventilator 환자 ABGA·산소화 해석 연결",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ABGA",
+            "arterial blood gas",
+            "PaO2",
+            "PaCO2",
+            "pH",
+            "HCO3",
+            "FiO2",
+            "P/F ratio",
+            "혈액가스",
+            "산소화",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator 환자 ABGA·산소화 해석 연결",
+            "호흡 / ABGA 연동",
+            "V79",
+            "V79_DETAIL_07",
+            "Ventilator 환자 ABGA·산소화 해석 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "V72_ABGA_INTERPRETATION",
+            "검색어 연결표",
+            "Ventilator 환자 ABGA·산소화 해석 연결 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ABGA arterial blood gas PaO2 PaCO2 pH HCO3 FiO2 P/F ratio 혈액가스 산소화 Ventilator 환자 ABGA·산소화 해석 연결 호흡 / ABGA 연동 V79 V79_DETAIL_07 Ventilator 환자 ABGA·산소화 해석 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION"
+    },
+    {
+      "id": "V79_DETAIL_08",
+      "category": "호흡 / VAP 예방",
+      "title": "Ventilator 환자 VAP 예방 번들 체크",
+      "aliases": [
+        "VAP",
+        "폐렴 예방",
+        "ventilator bundle",
+        "구강간호",
+        "head elevation"
+      ],
+      "search_terms": [
+        "VAP",
+        "ventilator associated pneumonia",
+        "oral care",
+        "head elevation",
+        "sedation vacation",
+        "subglottic suction",
+        "폐렴 예방",
+        "ventilator bundle",
+        "구강간호",
+        "Ventilator 환자 VAP 예방 번들 체크",
+        "호흡 / VAP 예방",
+        "V79"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator 환자 VAP 예방 번들 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "체위",
+        "구강간호",
+        "회로/분비물"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "체위: 침상머리 상승 가능 여부 → 금기 없으면 흡인 예방 자세 유지",
+        "구강간호: 구강상태, 분비물, 치아/점막 → 정해진 주기와 방법으로 시행",
+        "회로/분비물: 회로 물 고임, suction 필요성 → 오염/역류 방지, 필요 시 흡인",
+        "진정/각성: 진정 수준, weaning 계획 → 처방된 sedation vacation/SBT 여부 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      ],
+      "tags": [
+        "V79",
+        "호흡",
+        "VAP",
+        "ventilator associated pneumonia",
+        "oral care",
+        "head elevation",
+        "sedation vacation",
+        "subglottic suction"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "ARDSNet/기계환기 일반 원칙",
+        "원내 Ventilator/Dräger Savina 장비 매뉴얼 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Ventilator 환자 VAP 예방 번들 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "체위",
+              "침상머리 상승 가능 여부",
+              "금기 없으면 흡인 예방 자세 유지",
+              "체위와 금기 사유 기록"
+            ],
+            [
+              "구강간호",
+              "구강상태, 분비물, 치아/점막",
+              "정해진 주기와 방법으로 시행",
+              "구강간호 시행 기록"
+            ],
+            [
+              "회로/분비물",
+              "회로 물 고임, suction 필요성",
+              "오염/역류 방지, 필요 시 흡인",
+              "분비물 양상 기록"
+            ],
+            [
+              "진정/각성",
+              "진정 수준, weaning 계획",
+              "처방된 sedation vacation/SBT 여부 확인",
+              "진정 점수와 반응 기록"
+            ]
+          ],
+          "search_terms": [
+            "VAP",
+            "ventilator associated pneumonia",
+            "oral care",
+            "head elevation",
+            "sedation vacation",
+            "subglottic suction",
+            "폐렴 예방",
+            "ventilator bundle",
+            "구강간호",
+            "Ventilator 환자 VAP 예방 번들 체크",
+            "한눈에",
+            "체크표",
+            "호흡 / VAP 예방",
+            "V79",
+            "V79_DETAIL_08",
+            "Ventilator 환자 VAP 예방 번들 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "한눈에 보기",
+            "Ventilator 환자 VAP 예방 번들 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Ventilator 환자 VAP 예방 번들 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "VAP",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "폐렴 예방",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator bundle",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "구강간호",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "head elevation",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator associated pneumonia",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "oral care",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sedation vacation",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "subglottic suction",
+              "Ventilator 환자 VAP 예방 번들 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "VAP",
+            "ventilator associated pneumonia",
+            "oral care",
+            "head elevation",
+            "sedation vacation",
+            "subglottic suction",
+            "폐렴 예방",
+            "ventilator bundle",
+            "구강간호",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Ventilator 환자 VAP 예방 번들 체크",
+            "호흡 / VAP 예방",
+            "V79",
+            "V79_DETAIL_08",
+            "Ventilator 환자 VAP 예방 번들 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "호흡",
+            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+            "검색어 연결표",
+            "Ventilator 환자 VAP 예방 번들 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "VAP ventilator associated pneumonia oral care head elevation sedation vacation subglottic suction 폐렴 예방 ventilator bundle 구강간호 Ventilator 환자 VAP 예방 번들 체크 호흡 / VAP 예방 V79 V79_DETAIL_08 Ventilator 환자 VAP 예방 번들 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 호흡 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+    },
+    {
+      "id": "V80_DETAIL_01",
+      "category": "순환 / 혈역학",
+      "title": "MAP·혈압 저하 시 첫 평가",
+      "aliases": [
+        "MAP",
+        "저혈압",
+        "혈압 저하",
+        "hypotension",
+        "쇼크"
+      ],
+      "search_terms": [
+        "MAP",
+        "hypotension",
+        "shock",
+        "blood pressure",
+        "NIBP",
+        "arterial pressure",
+        "perfusion",
+        "저혈압",
+        "혈압 저하",
+        "쇼크",
+        "MAP·혈압 저하 시 첫 평가",
+        "순환 / 혈역학",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "저혈압 확인",
+        "환자상태",
+        "원인 가늠"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "저혈압 확인: NIBP/A-line 값과 waveform, cuff 위치 → 측정 오류인지 실제 저혈압인지 확인",
+        "환자상태: 의식, 피부, CRT, 말초맥박, 소변량 → 장기 관류 저하 징후 확인",
+        "원인 가늠: 출혈, 패혈증, 탈수, 부정맥, 약물 → 최근 처치·투약·I/O 함께 확인",
+        "즉시보고: 목표 MAP 미달, 증상 동반 → 처방된 수액/승압제 계획 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V80_DETAIL_07"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "MAP",
+        "hypotension",
+        "shock",
+        "blood pressure",
+        "NIBP",
+        "arterial pressure"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "MAP·혈압 저하 시 첫 평가 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "저혈압 확인",
+              "NIBP/A-line 값과 waveform, cuff 위치",
+              "측정 오류인지 실제 저혈압인지 확인",
+              "재측정 값과 방법 기록"
+            ],
+            [
+              "환자상태",
+              "의식, 피부, CRT, 말초맥박, 소변량",
+              "장기 관류 저하 징후 확인",
+              "관류 징후와 보고 기록"
+            ],
+            [
+              "원인 가늠",
+              "출혈, 패혈증, 탈수, 부정맥, 약물",
+              "최근 처치·투약·I/O 함께 확인",
+              "의심 원인과 근거 기록"
+            ],
+            [
+              "즉시보고",
+              "목표 MAP 미달, 증상 동반",
+              "처방된 수액/승압제 계획 확인",
+              "보고 시간과 지시 기록"
+            ]
+          ],
+          "search_terms": [
+            "MAP",
+            "hypotension",
+            "shock",
+            "blood pressure",
+            "NIBP",
+            "arterial pressure",
+            "perfusion",
+            "저혈압",
+            "혈압 저하",
+            "쇼크",
+            "MAP·혈압 저하 시 첫 평가",
+            "한눈에",
+            "체크표",
+            "순환 / 혈역학",
+            "V80",
+            "V80_DETAIL_01",
+            "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_07",
+            "한눈에 보기",
+            "MAP·혈압 저하 시 첫 평가 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "MAP·혈압 저하 시 첫 평가 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "MAP",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "저혈압",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈압 저하",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hypotension",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "쇼크",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "shock",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood pressure",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "NIBP",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial pressure",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "perfusion",
+              "MAP·혈압 저하 시 첫 평가",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "MAP",
+            "hypotension",
+            "shock",
+            "blood pressure",
+            "NIBP",
+            "arterial pressure",
+            "perfusion",
+            "저혈압",
+            "혈압 저하",
+            "쇼크",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "MAP·혈압 저하 시 첫 평가",
+            "순환 / 혈역학",
+            "V80",
+            "V80_DETAIL_01",
+            "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_07",
+            "검색어 연결표",
+            "MAP·혈압 저하 시 첫 평가 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "MAP hypotension shock blood pressure NIBP arterial pressure perfusion 저혈압 혈압 저하 쇼크 MAP·혈압 저하 시 첫 평가 순환 / 혈역학 V80 V80_DETAIL_01 MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_07"
+    },
+    {
+      "id": "V80_DETAIL_02",
+      "category": "순환 / A-line",
+      "title": "A-line Zeroing·Waveform·압력백 체크",
+      "aliases": [
+        "A-line",
+        "arterial line",
+        "동맥압",
+        "zeroing",
+        "waveform"
+      ],
+      "search_terms": [
+        "A-line",
+        "arterial line",
+        "zeroing",
+        "leveling",
+        "waveform",
+        "pressure bag",
+        "transducer",
+        "동맥압",
+        "A-line Zeroing·Waveform·압력백 체크",
+        "순환 / A-line",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "zeroing 필요",
+        "waveform 확인",
+        "압력백/flush"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "zeroing 필요: 수치 이상, 체위 변경, 근무 시작 → phlebostatic axis 기준 확인",
+        "waveform 확인: damping, square wave, artifact → 라인 air/kink/clot 여부 확인",
+        "압력백/flush: 압력 유지, flush bag 잔량 → 과다 flush/라인 분리 주의",
+        "채혈/감염: 채혈 후 flush, 삽입부위 → 무균술과 dressing 상태 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "A-line",
+        "arterial line",
+        "zeroing",
+        "leveling",
+        "waveform",
+        "pressure bag"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "A-line Zeroing·Waveform·압력백 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "zeroing 필요",
+              "수치 이상, 체위 변경, 근무 시작",
+              "phlebostatic axis 기준 확인",
+              "zeroing 시간 기록"
+            ],
+            [
+              "waveform 확인",
+              "damping, square wave, artifact",
+              "라인 air/kink/clot 여부 확인",
+              "waveform 이상 보고 기록"
+            ],
+            [
+              "압력백/flush",
+              "압력 유지, flush bag 잔량",
+              "과다 flush/라인 분리 주의",
+              "bag 교환 기록"
+            ],
+            [
+              "채혈/감염",
+              "채혈 후 flush, 삽입부위",
+              "무균술과 dressing 상태 확인",
+              "채혈/삽입부위 기록"
+            ]
+          ],
+          "search_terms": [
+            "A-line",
+            "arterial line",
+            "zeroing",
+            "leveling",
+            "waveform",
+            "pressure bag",
+            "transducer",
+            "동맥압",
+            "A-line Zeroing·Waveform·압력백 체크",
+            "한눈에",
+            "체크표",
+            "순환 / A-line",
+            "V80",
+            "V80_DETAIL_02",
+            "A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "한눈에 보기",
+            "A-line Zeroing·Waveform·압력백 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "A-line Zeroing·Waveform·압력백 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "A-line",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial line",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "동맥압",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "zeroing",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "waveform",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "leveling",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressure bag",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "transducer",
+              "A-line Zeroing·Waveform·압력백 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "A-line",
+            "arterial line",
+            "zeroing",
+            "leveling",
+            "waveform",
+            "pressure bag",
+            "transducer",
+            "동맥압",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "A-line Zeroing·Waveform·압력백 체크",
+            "순환 / A-line",
+            "V80",
+            "V80_DETAIL_02",
+            "A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "검색어 연결표",
+            "A-line Zeroing·Waveform·압력백 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "A-line arterial line zeroing leveling waveform pressure bag transducer 동맥압 A-line Zeroing·Waveform·압력백 체크 순환 / A-line V80 V80_DETAIL_02 A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW"
+    },
+    {
+      "id": "V80_DETAIL_03",
+      "category": "순환 / CVP",
+      "title": "CVP 측정·해석·라인 관리",
+      "aliases": [
+        "CVP",
+        "중심정맥압",
+        "central venous pressure",
+        "C-line pressure"
+      ],
+      "search_terms": [
+        "CVP",
+        "central venous pressure",
+        "CVC",
+        "leveling",
+        "zeroing",
+        "PEEP",
+        "volume status",
+        "중심정맥압",
+        "C-line pressure",
+        "CVP 측정·해석·라인 관리",
+        "순환 / CVP",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "측정 전",
+        "해석",
+        "라인상태"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "측정 전: 라인 연결, leveling, zeroing, 체위 → 오류 요인을 줄이고 같은 조건에서 측정",
+        "해석: 수치보다 추세, 호흡/PEEP 영향 → 단독 판단 금지, BP/UO/부종과 함께 봄",
+        "라인상태: CVC dressing, patency, 감염징후 → 라인 감염과 폐색 확인",
+        "보고상황: 급격한 변화, 저혈압/호흡곤란 동반 → 혈역학 악화 가능성 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V84_DETAIL_02"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "CVP",
+        "central venous pressure",
+        "CVC",
+        "leveling",
+        "zeroing",
+        "PEEP"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CVP 측정·해석·라인 관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "측정 전",
+              "라인 연결, leveling, zeroing, 체위",
+              "오류 요인을 줄이고 같은 조건에서 측정",
+              "측정 조건 기록"
+            ],
+            [
+              "해석",
+              "수치보다 추세, 호흡/PEEP 영향",
+              "단독 판단 금지, BP/UO/부종과 함께 봄",
+              "추세와 동반소견 기록"
+            ],
+            [
+              "라인상태",
+              "CVC dressing, patency, 감염징후",
+              "라인 감염과 폐색 확인",
+              "삽입부위 기록"
+            ],
+            [
+              "보고상황",
+              "급격한 변화, 저혈압/호흡곤란 동반",
+              "혈역학 악화 가능성 보고",
+              "보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "CVP",
+            "central venous pressure",
+            "CVC",
+            "leveling",
+            "zeroing",
+            "PEEP",
+            "volume status",
+            "중심정맥압",
+            "C-line pressure",
+            "CVP 측정·해석·라인 관리",
+            "한눈에",
+            "체크표",
+            "순환 / CVP",
+            "V80",
+            "V80_DETAIL_03",
+            "CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V84_DETAIL_02",
+            "한눈에 보기",
+            "CVP 측정·해석·라인 관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CVP 측정·해석·라인 관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CVP",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "중심정맥압",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "central venous pressure",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "C-line pressure",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CVC",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "leveling",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "zeroing",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PEEP",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "volume status",
+              "CVP 측정·해석·라인 관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CVP",
+            "central venous pressure",
+            "CVC",
+            "leveling",
+            "zeroing",
+            "PEEP",
+            "volume status",
+            "중심정맥압",
+            "C-line pressure",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CVP 측정·해석·라인 관리",
+            "순환 / CVP",
+            "V80",
+            "V80_DETAIL_03",
+            "CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V84_DETAIL_02",
+            "검색어 연결표",
+            "CVP 측정·해석·라인 관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CVP central venous pressure CVC leveling zeroing PEEP volume status 중심정맥압 C-line pressure CVP 측정·해석·라인 관리 순환 / CVP V80 V80_DETAIL_03 CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V84_DETAIL_02"
+    },
+    {
+      "id": "V80_DETAIL_04",
+      "category": "순환 / 승압제",
+      "title": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+      "aliases": [
+        "vasopressor",
+        "승압제",
+        "노르에피",
+        "norepinephrine",
+        "pressor"
+      ],
+      "search_terms": [
+        "vasopressor",
+        "norepinephrine",
+        "dopamine",
+        "dobutamine",
+        "MAP target",
+        "central line",
+        "pump",
+        "승압제",
+        "노르에피",
+        "pressor",
+        "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+        "순환 / 승압제",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "처방 확인",
+        "라인 확인",
+        "titration"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "처방 확인: 약물명, 농도, 속도, 목표 MAP → 펌프 setting과 처방 대조",
+        "라인 확인: 전용 line, 중심/말초 여부, patency → 침윤/누출/호환성 확인",
+        "titration: 혈압 목표와 증상, 심박/리듬 → 프로토콜 범위 내 조절 여부 확인",
+        "부작용: 말초허혈, 부정맥, 과도한 혈압상승 → 피부/리듬/소변량 관찰"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V80_DETAIL_01"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "vasopressor",
+        "norepinephrine",
+        "dopamine",
+        "dobutamine",
+        "MAP target",
+        "central line"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "처방 확인",
+              "약물명, 농도, 속도, 목표 MAP",
+              "펌프 setting과 처방 대조",
+              "시작/변경 시간 기록"
+            ],
+            [
+              "라인 확인",
+              "전용 line, 중심/말초 여부, patency",
+              "침윤/누출/호환성 확인",
+              "라인 상태 기록"
+            ],
+            [
+              "titration",
+              "혈압 목표와 증상, 심박/리듬",
+              "프로토콜 범위 내 조절 여부 확인",
+              "변경 전후 MAP 기록"
+            ],
+            [
+              "부작용",
+              "말초허혈, 부정맥, 과도한 혈압상승",
+              "피부/리듬/소변량 관찰",
+              "이상반응 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "vasopressor",
+            "norepinephrine",
+            "dopamine",
+            "dobutamine",
+            "MAP target",
+            "central line",
+            "pump",
+            "승압제",
+            "노르에피",
+            "pressor",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+            "한눈에",
+            "체크표",
+            "순환 / 승압제",
+            "V80",
+            "V80_DETAIL_04",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_01",
+            "한눈에 보기",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "vasopressor",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "승압제",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "노르에피",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "norepinephrine",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressor",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dopamine",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dobutamine",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "MAP target",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "central line",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pump",
+              "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "vasopressor",
+            "norepinephrine",
+            "dopamine",
+            "dobutamine",
+            "MAP target",
+            "central line",
+            "pump",
+            "승압제",
+            "노르에피",
+            "pressor",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
+            "순환 / 승압제",
+            "V80",
+            "V80_DETAIL_04",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_01",
+            "검색어 연결표",
+            "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "vasopressor norepinephrine dopamine dobutamine MAP target central line pump 승압제 노르에피 pressor Vasopressor 사용 중 라인·펌프·혈압 목표 체크 순환 / 승압제 V80 V80_DETAIL_04 Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01"
+    },
+    {
+      "id": "V80_DETAIL_05",
+      "category": "순환 / I&O 관류",
+      "title": "소변량·Lactate·I&O로 보는 순환 관류",
+      "aliases": [
+        "소변량",
+        "urine output",
+        "lactate",
+        "젖산",
+        "I/O",
+        "관류"
+      ],
+      "search_terms": [
+        "urine output",
+        "lactate",
+        "I&O",
+        "fluid balance",
+        "perfusion",
+        "oliguria",
+        "renal perfusion",
+        "소변량",
+        "젖산",
+        "I/O",
+        "관류",
+        "소변량·Lactate·I&O로 보는 순환 관류",
+        "순환 / I&O 관류",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "소변량 감소",
+        "lactate 상승",
+        "I/O 불균형"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "소변량 감소: 시간당 U/O, Foley patency, 수액 balance → 신장관류 저하·폐색 여부 확인",
+        "lactate 상승: 감염/저관류/간기능 등 동반 평가 → 혈압·말초관류·ABGA와 함께 확인",
+        "I/O 불균형: 수액, 배액, 투석, 출혈량 → 체액과다/부족 가능성 확인",
+        "추세 변화: 갑작스런 U/O 감소, 부종/폐부종 → 치료 반응과 목표 비교"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V81_DETAIL_04"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "urine output",
+        "lactate",
+        "I&O",
+        "fluid balance",
+        "perfusion",
+        "oliguria"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "소변량·Lactate·I&O로 보는 순환 관류 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "소변량 감소",
+              "시간당 U/O, Foley patency, 수액 balance",
+              "신장관류 저하·폐색 여부 확인",
+              "시간당 U/O 기록"
+            ],
+            [
+              "lactate 상승",
+              "감염/저관류/간기능 등 동반 평가",
+              "혈압·말초관류·ABGA와 함께 확인",
+              "검사값과 보고 기록"
+            ],
+            [
+              "I/O 불균형",
+              "수액, 배액, 투석, 출혈량",
+              "체액과다/부족 가능성 확인",
+              "누적 balance 기록"
+            ],
+            [
+              "추세 변화",
+              "갑작스런 U/O 감소, 부종/폐부종",
+              "치료 반응과 목표 비교",
+              "변화 시각 기록"
+            ]
+          ],
+          "search_terms": [
+            "urine output",
+            "lactate",
+            "I&O",
+            "fluid balance",
+            "perfusion",
+            "oliguria",
+            "renal perfusion",
+            "소변량",
+            "젖산",
+            "I/O",
+            "관류",
+            "소변량·Lactate·I&O로 보는 순환 관류",
+            "한눈에",
+            "체크표",
+            "순환 / I&O 관류",
+            "V80",
+            "V80_DETAIL_05",
+            "소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V81_DETAIL_04",
+            "한눈에 보기",
+            "소변량·Lactate·I&O로 보는 순환 관류 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "소변량·Lactate·I&O로 보는 순환 관류 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "소변량",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "urine output",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "lactate",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "젖산",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "I/O",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "관류",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "I&O",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "fluid balance",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "perfusion",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "oliguria",
+              "소변량·Lactate·I&O로 보는 순환 관류",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "urine output",
+            "lactate",
+            "I&O",
+            "fluid balance",
+            "perfusion",
+            "oliguria",
+            "renal perfusion",
+            "소변량",
+            "젖산",
+            "I/O",
+            "관류",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "소변량·Lactate·I&O로 보는 순환 관류",
+            "순환 / I&O 관류",
+            "V80",
+            "V80_DETAIL_05",
+            "소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V81_DETAIL_04",
+            "검색어 연결표",
+            "소변량·Lactate·I&O로 보는 순환 관류 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "urine output lactate I&O fluid balance perfusion oliguria renal perfusion 소변량 젖산 I/O 관류 소변량·Lactate·I&O로 보는 순환 관류 순환 / I&O 관류 V80 V80_DETAIL_05 소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V81_DETAIL_04"
+    },
+    {
+      "id": "V80_DETAIL_06",
+      "category": "순환 / 리듬변화",
+      "title": "부정맥 발생 시 혈역학 확인",
+      "aliases": [
+        "부정맥",
+        "arrhythmia",
+        "AF",
+        "VT",
+        "bradycardia",
+        "tachycardia"
+      ],
+      "search_terms": [
+        "arrhythmia",
+        "AF",
+        "VT",
+        "SVT",
+        "bradycardia",
+        "tachycardia",
+        "ECG",
+        "hemodynamic instability",
+        "부정맥",
+        "부정맥 발생 시 혈역학 확인",
+        "순환 / 리듬변화",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "리듬 변화",
+        "불안정 징후",
+        "원인 확인"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "리듬 변화: ECG rhythm, HR, 혈압, 증상 → 불안정 여부 먼저 판단",
+        "불안정 징후: 저혈압, 의식저하, 흉통, 호흡곤란 → 즉시 보고 및 응급대응 준비",
+        "원인 확인: 전해질, 저산소증, 약물, 통증, 발열 → 교정 가능한 원인 확인",
+        "처치 후: 리듬 회복, 혈압 안정, 재발 여부 → 모니터 지속 관찰"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V70_ECG_MONITORING"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "arrhythmia",
+        "AF",
+        "VT",
+        "SVT",
+        "bradycardia",
+        "tachycardia"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "부정맥 발생 시 혈역학 확인 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "리듬 변화",
+              "ECG rhythm, HR, 혈압, 증상",
+              "불안정 여부 먼저 판단",
+              "발생시간/리듬 기록"
+            ],
+            [
+              "불안정 징후",
+              "저혈압, 의식저하, 흉통, 호흡곤란",
+              "즉시 보고 및 응급대응 준비",
+              "증상과 vital 기록"
+            ],
+            [
+              "원인 확인",
+              "전해질, 저산소증, 약물, 통증, 발열",
+              "교정 가능한 원인 확인",
+              "검사/처치 기록"
+            ],
+            [
+              "처치 후",
+              "리듬 회복, 혈압 안정, 재발 여부",
+              "모니터 지속 관찰",
+              "처치 전후 ECG 기록"
+            ]
+          ],
+          "search_terms": [
+            "arrhythmia",
+            "AF",
+            "VT",
+            "SVT",
+            "bradycardia",
+            "tachycardia",
+            "ECG",
+            "hemodynamic instability",
+            "부정맥",
+            "부정맥 발생 시 혈역학 확인",
+            "한눈에",
+            "체크표",
+            "순환 / 리듬변화",
+            "V80",
+            "V80_DETAIL_06",
+            "부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V70_ECG_MONITORING",
+            "한눈에 보기",
+            "부정맥 발생 시 혈역학 확인 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "부정맥 발생 시 혈역학 확인 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "부정맥",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arrhythmia",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "AF",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "VT",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bradycardia",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tachycardia",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "SVT",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ECG",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hemodynamic instability",
+              "부정맥 발생 시 혈역학 확인",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "arrhythmia",
+            "AF",
+            "VT",
+            "SVT",
+            "bradycardia",
+            "tachycardia",
+            "ECG",
+            "hemodynamic instability",
+            "부정맥",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "부정맥 발생 시 혈역학 확인",
+            "순환 / 리듬변화",
+            "V80",
+            "V80_DETAIL_06",
+            "부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V70_ECG_MONITORING",
+            "검색어 연결표",
+            "부정맥 발생 시 혈역학 확인 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "arrhythmia AF VT SVT bradycardia tachycardia ECG hemodynamic instability 부정맥 부정맥 발생 시 혈역학 확인 순환 / 리듬변화 V80 V80_DETAIL_06 부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V70_ECG_MONITORING"
+    },
+    {
+      "id": "V80_DETAIL_07",
+      "category": "순환 / 쇼크",
+      "title": "쇼크 유형별 관찰 포인트",
+      "aliases": [
+        "쇼크",
+        "septic shock",
+        "cardiogenic shock",
+        "hypovolemic shock",
+        "obstructive shock"
+      ],
+      "search_terms": [
+        "shock",
+        "sepsis",
+        "cardiogenic",
+        "hypovolemic",
+        "obstructive",
+        "anaphylaxis",
+        "perfusion",
+        "쇼크",
+        "septic shock",
+        "cardiogenic shock",
+        "hypovolemic shock",
+        "obstructive shock",
+        "쇼크 유형별 관찰 포인트",
+        "순환 / 쇼크",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "패혈성 쇼크",
+        "심인성 쇼크",
+        "저혈량 쇼크"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "패혈성 쇼크: 감염징후, 발열/저체온, lactate, MAP → 배양/항생제/수액/승압제 계획 확인",
+        "심인성 쇼크: 흉통, ECG, 폐부종, 저관류 → 수액 과다 주의, 심장 관련 검사 확인",
+        "저혈량 쇼크: 출혈, 탈수, 배액, I/O → 수액/수혈 준비와 출혈원 확인",
+        "폐쇄성 쇼크: 기흉, tamponade, PE 의심 → 호흡곤란/경정맥/편측호흡음 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V80_DETAIL_01"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "shock",
+        "sepsis",
+        "cardiogenic",
+        "hypovolemic",
+        "obstructive",
+        "anaphylaxis"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "쇼크 유형별 관찰 포인트 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "패혈성 쇼크",
+              "감염징후, 발열/저체온, lactate, MAP",
+              "배양/항생제/수액/승압제 계획 확인",
+              "sepsis bundle 진행 기록"
+            ],
+            [
+              "심인성 쇼크",
+              "흉통, ECG, 폐부종, 저관류",
+              "수액 과다 주의, 심장 관련 검사 확인",
+              "호흡/순환 변화 기록"
+            ],
+            [
+              "저혈량 쇼크",
+              "출혈, 탈수, 배액, I/O",
+              "수액/수혈 준비와 출혈원 확인",
+              "출혈량과 처치 기록"
+            ],
+            [
+              "폐쇄성 쇼크",
+              "기흉, tamponade, PE 의심",
+              "호흡곤란/경정맥/편측호흡음 확인",
+              "응급 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "shock",
+            "sepsis",
+            "cardiogenic",
+            "hypovolemic",
+            "obstructive",
+            "anaphylaxis",
+            "perfusion",
+            "쇼크",
+            "septic shock",
+            "cardiogenic shock",
+            "hypovolemic shock",
+            "obstructive shock",
+            "쇼크 유형별 관찰 포인트",
+            "한눈에",
+            "체크표",
+            "순환 / 쇼크",
+            "V80",
+            "V80_DETAIL_07",
+            "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_01",
+            "한눈에 보기",
+            "쇼크 유형별 관찰 포인트 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "쇼크 유형별 관찰 포인트 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "쇼크",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "septic shock",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "cardiogenic shock",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hypovolemic shock",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "obstructive shock",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "shock",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sepsis",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "cardiogenic",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hypovolemic",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "obstructive",
+              "쇼크 유형별 관찰 포인트",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "shock",
+            "sepsis",
+            "cardiogenic",
+            "hypovolemic",
+            "obstructive",
+            "anaphylaxis",
+            "perfusion",
+            "쇼크",
+            "septic shock",
+            "cardiogenic shock",
+            "hypovolemic shock",
+            "obstructive shock",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "쇼크 유형별 관찰 포인트",
+            "순환 / 쇼크",
+            "V80",
+            "V80_DETAIL_07",
+            "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V80_DETAIL_01",
+            "검색어 연결표",
+            "쇼크 유형별 관찰 포인트 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "shock sepsis cardiogenic hypovolemic obstructive anaphylaxis perfusion 쇼크 septic shock cardiogenic shock hypovolemic shock obstructive shock 쇼크 유형별 관찰 포인트 순환 / 쇼크 V80 V80_DETAIL_07 쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01"
+    },
+    {
+      "id": "V80_DETAIL_08",
+      "category": "순환 / 패혈증",
+      "title": "패혈증 의심 시 순환·검사·보고 흐름",
+      "aliases": [
+        "패혈증",
+        "sepsis",
+        "septic shock",
+        "감염",
+        "lactate"
+      ],
+      "search_terms": [
+        "sepsis",
+        "septic shock",
+        "lactate",
+        "blood culture",
+        "antibiotics",
+        "MAP",
+        "vasopressor",
+        "패혈증",
+        "감염",
+        "패혈증 의심 시 순환·검사·보고 흐름",
+        "순환 / 패혈증",
+        "V80"
+      ],
+      "urgency": "high",
+      "summary": "패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "의심징후",
+        "검사/배양",
+        "초기처치"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "의심징후: 발열/저체온, 저혈압, 빈맥, 의식변화 → 감염원과 장기기능 변화 확인",
+        "검사/배양: 혈액배양, lactate, CBC/CRP 등 → 항생제 전 배양 여부 확인",
+        "초기처치: 수액, 산소, 승압제 가능성 → 목표 MAP와 치료 반응 확인",
+        "재평가: MAP, U/O, lactate trend, 말초관류 → 호전/악화 추세 지속 관찰"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "V83_DETAIL_02"
+      ],
+      "tags": [
+        "V80",
+        "순환",
+        "sepsis",
+        "septic shock",
+        "lactate",
+        "blood culture",
+        "antibiotics",
+        "MAP"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "Surviving Sepsis Campaign 2021 성인 패혈증/쇼크 지침",
+        "원내 혈역학/vasopressor 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "패혈증 의심 시 순환·검사·보고 흐름 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "의심징후",
+              "발열/저체온, 저혈압, 빈맥, 의식변화",
+              "감염원과 장기기능 변화 확인",
+              "의심 시각 기록"
+            ],
+            [
+              "검사/배양",
+              "혈액배양, lactate, CBC/CRP 등",
+              "항생제 전 배양 여부 확인",
+              "검체 채취 시간 기록"
+            ],
+            [
+              "초기처치",
+              "수액, 산소, 승압제 가능성",
+              "목표 MAP와 치료 반응 확인",
+              "처치 반응 기록"
+            ],
+            [
+              "재평가",
+              "MAP, U/O, lactate trend, 말초관류",
+              "호전/악화 추세 지속 관찰",
+              "재평가 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "sepsis",
+            "septic shock",
+            "lactate",
+            "blood culture",
+            "antibiotics",
+            "MAP",
+            "vasopressor",
+            "패혈증",
+            "감염",
+            "패혈증 의심 시 순환·검사·보고 흐름",
+            "한눈에",
+            "체크표",
+            "순환 / 패혈증",
+            "V80",
+            "V80_DETAIL_08",
+            "패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V83_DETAIL_02",
+            "한눈에 보기",
+            "패혈증 의심 시 순환·검사·보고 흐름 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "패혈증 의심 시 순환·검사·보고 흐름 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "패혈증",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sepsis",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "septic shock",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "감염",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "lactate",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood culture",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "antibiotics",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "MAP",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "vasopressor",
+              "패혈증 의심 시 순환·검사·보고 흐름",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "sepsis",
+            "septic shock",
+            "lactate",
+            "blood culture",
+            "antibiotics",
+            "MAP",
+            "vasopressor",
+            "패혈증",
+            "감염",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "패혈증 의심 시 순환·검사·보고 흐름",
+            "순환 / 패혈증",
+            "V80",
+            "V80_DETAIL_08",
+            "패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "순환",
+            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+            "V83_DETAIL_02",
+            "검색어 연결표",
+            "패혈증 의심 시 순환·검사·보고 흐름 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "sepsis septic shock lactate blood culture antibiotics MAP vasopressor 패혈증 감염 패혈증 의심 시 순환·검사·보고 흐름 순환 / 패혈증 V80 V80_DETAIL_08 패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 순환 V80_HEMODYNAMIC_MONITORING_OVERVIEW V83_DETAIL_02"
+    },
+    {
+      "id": "V81_DETAIL_01",
+      "category": "신장 / CRRT",
+      "title": "AKI 의심 환자 신장계 기본 사정",
+      "aliases": [
+        "AKI",
+        "급성신손상",
+        "Cr 상승",
+        "oliguria"
+      ],
+      "search_terms": [
+        "AKI",
+        "creatinine",
+        "BUN",
+        "urine output",
+        "renal",
+        "급성신손상",
+        "Cr 상승",
+        "oliguria",
+        "AKI 의심 환자 신장계 기본 사정",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "AKI 의심 환자 신장계 기본 사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "소변량 감소",
+        "검사 변화",
+        "원인 확인"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "소변량 감소: 시간당 U/O, Foley 막힘, I/O → 폐색과 실제 oliguria 구분",
+        "검사 변화: BUN/Cr, K, acid-base → 전해질/산증 동반 여부 확인",
+        "원인 확인: 저혈압, 조영제, 약물, 패혈증 → 신독성/저관류 가능성 확인",
+        "처치 확인: 수액, 이뇨제, CRRT 준비 가능성 → 담당의 지시와 목표 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "AKI",
+        "creatinine",
+        "BUN",
+        "urine output",
+        "renal"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "AKI 의심 환자 신장계 기본 사정 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "소변량 감소",
+              "시간당 U/O, Foley 막힘, I/O",
+              "폐색과 실제 oliguria 구분",
+              "U/O 추세 기록"
+            ],
+            [
+              "검사 변화",
+              "BUN/Cr, K, acid-base",
+              "전해질/산증 동반 여부 확인",
+              "검사값 보고 기록"
+            ],
+            [
+              "원인 확인",
+              "저혈압, 조영제, 약물, 패혈증",
+              "신독성/저관류 가능성 확인",
+              "위험요인 기록"
+            ],
+            [
+              "처치 확인",
+              "수액, 이뇨제, CRRT 준비 가능성",
+              "담당의 지시와 목표 확인",
+              "처치 반응 기록"
+            ]
+          ],
+          "search_terms": [
+            "AKI",
+            "creatinine",
+            "BUN",
+            "urine output",
+            "renal",
+            "급성신손상",
+            "Cr 상승",
+            "oliguria",
+            "AKI 의심 환자 신장계 기본 사정",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_01",
+            "AKI 의심 환자 신장계 기본 사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "AKI 의심 환자 신장계 기본 사정 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "AKI 의심 환자 신장계 기본 사정 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "AKI",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "급성신손상",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Cr 상승",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "oliguria",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "creatinine",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "BUN",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "urine output",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "renal",
+              "AKI 의심 환자 신장계 기본 사정",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "AKI",
+            "creatinine",
+            "BUN",
+            "urine output",
+            "renal",
+            "급성신손상",
+            "Cr 상승",
+            "oliguria",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "AKI 의심 환자 신장계 기본 사정",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_01",
+            "AKI 의심 환자 신장계 기본 사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "AKI 의심 환자 신장계 기본 사정 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "AKI creatinine BUN urine output renal 급성신손상 Cr 상승 oliguria AKI 의심 환자 신장계 기본 사정 신장 / CRRT V81 V81_DETAIL_01 AKI 의심 환자 신장계 기본 사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_02",
+      "category": "신장 / CRRT",
+      "title": "CRRT 시작 전 준비 체크리스트",
+      "aliases": [
+        "CRRT 시작",
+        "투석 준비",
+        "지속적 신대체요법"
+      ],
+      "search_terms": [
+        "CRRT",
+        "dialysate",
+        "replacement",
+        "blood flow",
+        "UF target",
+        "CRRT 시작",
+        "투석 준비",
+        "지속적 신대체요법",
+        "CRRT 시작 전 준비 체크리스트",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT 시작 전 준비 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "처방 확인",
+        "접근로",
+        "검사/상태"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "처방 확인: modality, blood flow, UF 목표, 용액 → 기계 setting과 처방 대조",
+        "접근로: dialysis catheter 위치, patency, dressing → 라인 연결 방향과 고정 확인",
+        "검사/상태: 혈압, 전해질, ABGA, CBC/coagulation → 저혈압·출혈 위험 확인",
+        "준비물: 필터, 회로, 투석액/보충액, 항응고 → 장비 prime과 알람 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "CRRT",
+        "dialysate",
+        "replacement",
+        "blood flow",
+        "UF target"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT 시작 전 준비 체크리스트 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "처방 확인",
+              "modality, blood flow, UF 목표, 용액",
+              "기계 setting과 처방 대조",
+              "시작 전 처방 확인 기록"
+            ],
+            [
+              "접근로",
+              "dialysis catheter 위치, patency, dressing",
+              "라인 연결 방향과 고정 확인",
+              "접근로 상태 기록"
+            ],
+            [
+              "검사/상태",
+              "혈압, 전해질, ABGA, CBC/coagulation",
+              "저혈압·출혈 위험 확인",
+              "baseline 값 기록"
+            ],
+            [
+              "준비물",
+              "필터, 회로, 투석액/보충액, 항응고",
+              "장비 prime과 알람 확인",
+              "시작 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "CRRT",
+            "dialysate",
+            "replacement",
+            "blood flow",
+            "UF target",
+            "CRRT 시작",
+            "투석 준비",
+            "지속적 신대체요법",
+            "CRRT 시작 전 준비 체크리스트",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_02",
+            "CRRT 시작 전 준비 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT 시작 전 준비 체크리스트 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT 시작 전 준비 체크리스트 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CRRT 시작",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "투석 준비",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "지속적 신대체요법",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CRRT",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dialysate",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "replacement",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood flow",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "UF target",
+              "CRRT 시작 전 준비 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CRRT",
+            "dialysate",
+            "replacement",
+            "blood flow",
+            "UF target",
+            "CRRT 시작",
+            "투석 준비",
+            "지속적 신대체요법",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT 시작 전 준비 체크리스트",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_02",
+            "CRRT 시작 전 준비 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT 시작 전 준비 체크리스트 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CRRT dialysate replacement blood flow UF target CRRT 시작 투석 준비 지속적 신대체요법 CRRT 시작 전 준비 체크리스트 신장 / CRRT V81 V81_DETAIL_02 CRRT 시작 전 준비 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_03",
+      "category": "신장 / CRRT",
+      "title": "CRRT Pressure·TMP 알람 해석",
+      "aliases": [
+        "CRRT 알람",
+        "TMP",
+        "access pressure",
+        "return pressure"
+      ],
+      "search_terms": [
+        "CRRT alarm",
+        "TMP",
+        "filter clotting",
+        "pressure alarm",
+        "CRRT 알람",
+        "access pressure",
+        "return pressure",
+        "CRRT Pressure·TMP 알람 해석",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT Pressure·TMP 알람 해석 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "Access 압력 이상",
+        "Return 압력 이상",
+        "TMP 상승"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "Access 압력 이상: 카테터 위치, kink, 혈전, 환자 체위 → 라인/체위 조정, 지속 시 보고",
+        "Return 압력 이상: return line kink, 환자 체위, clot → 회로와 catheter 확인",
+        "TMP 상승: 필터 clotting, 막힘, 교환 필요성 → 필터 수명과 항응고 상태 확인",
+        "Air/Leak 알람: 연결부, chamber, 회로 손상 → 기계 지침에 따라 즉시 대응"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "CRRT alarm",
+        "TMP",
+        "filter clotting",
+        "pressure alarm"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT Pressure·TMP 알람 해석 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "Access 압력 이상",
+              "카테터 위치, kink, 혈전, 환자 체위",
+              "라인/체위 조정, 지속 시 보고",
+              "압력값과 조치 기록"
+            ],
+            [
+              "Return 압력 이상",
+              "return line kink, 환자 체위, clot",
+              "회로와 catheter 확인",
+              "조치 후 압력 변화 기록"
+            ],
+            [
+              "TMP 상승",
+              "필터 clotting, 막힘, 교환 필요성",
+              "필터 수명과 항응고 상태 확인",
+              "필터 교체 여부 기록"
+            ],
+            [
+              "Air/Leak 알람",
+              "연결부, chamber, 회로 손상",
+              "기계 지침에 따라 즉시 대응",
+              "알람 종류와 보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "CRRT alarm",
+            "TMP",
+            "filter clotting",
+            "pressure alarm",
+            "CRRT 알람",
+            "access pressure",
+            "return pressure",
+            "CRRT Pressure·TMP 알람 해석",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_03",
+            "CRRT Pressure·TMP 알람 해석 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT Pressure·TMP 알람 해석 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT Pressure·TMP 알람 해석 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CRRT 알람",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "TMP",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "access pressure",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "return pressure",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CRRT alarm",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "filter clotting",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressure alarm",
+              "CRRT Pressure·TMP 알람 해석",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CRRT alarm",
+            "TMP",
+            "filter clotting",
+            "pressure alarm",
+            "CRRT 알람",
+            "access pressure",
+            "return pressure",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT Pressure·TMP 알람 해석",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_03",
+            "CRRT Pressure·TMP 알람 해석 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT Pressure·TMP 알람 해석 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CRRT alarm TMP filter clotting pressure alarm CRRT 알람 access pressure return pressure CRRT Pressure·TMP 알람 해석 신장 / CRRT V81 V81_DETAIL_03 CRRT Pressure·TMP 알람 해석 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_04",
+      "category": "신장 / CRRT",
+      "title": "CRRT 제거량·I/O·Balance 기록",
+      "aliases": [
+        "CRRT I/O",
+        "UF",
+        "제거량",
+        "fluid balance"
+      ],
+      "search_terms": [
+        "CRRT",
+        "UF",
+        "ultrafiltration",
+        "fluid balance",
+        "I&O",
+        "net removal",
+        "CRRT I/O",
+        "제거량",
+        "CRRT 제거량·I/O·Balance 기록",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "목표 확인",
+        "유입/유출",
+        "저혈압 발생"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "목표 확인: 시간당/일일 UF 목표, net balance → 처방 목표와 실제 제거량 비교",
+        "유입/유출: 수액, 약물, feeding, 소변, 배액, CRRT → 항목별 누락 없이 합산",
+        "저혈압 발생: UF와 혈압 변화의 시간관계 → UF 조정 필요성 보고",
+        "필터/일시중단: 중단 시간, 혈액 회수 여부 → 제거량 계산에 반영"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "CRRT",
+        "UF",
+        "ultrafiltration",
+        "fluid balance",
+        "I&O",
+        "net removal"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT 제거량·I/O·Balance 기록 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "목표 확인",
+              "시간당/일일 UF 목표, net balance",
+              "처방 목표와 실제 제거량 비교",
+              "목표/실제값 기록"
+            ],
+            [
+              "유입/유출",
+              "수액, 약물, feeding, 소변, 배액, CRRT",
+              "항목별 누락 없이 합산",
+              "근무별 I/O 기록"
+            ],
+            [
+              "저혈압 발생",
+              "UF와 혈압 변화의 시간관계",
+              "UF 조정 필요성 보고",
+              "변경 전후 혈압 기록"
+            ],
+            [
+              "필터/일시중단",
+              "중단 시간, 혈액 회수 여부",
+              "제거량 계산에 반영",
+              "중단/재시작 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "CRRT",
+            "UF",
+            "ultrafiltration",
+            "fluid balance",
+            "I&O",
+            "net removal",
+            "CRRT I/O",
+            "제거량",
+            "CRRT 제거량·I/O·Balance 기록",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_04",
+            "CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT 제거량·I/O·Balance 기록 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT 제거량·I/O·Balance 기록 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CRRT I/O",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "UF",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "제거량",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "fluid balance",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CRRT",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ultrafiltration",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "I&O",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "net removal",
+              "CRRT 제거량·I/O·Balance 기록",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CRRT",
+            "UF",
+            "ultrafiltration",
+            "fluid balance",
+            "I&O",
+            "net removal",
+            "CRRT I/O",
+            "제거량",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT 제거량·I/O·Balance 기록",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_04",
+            "CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT 제거량·I/O·Balance 기록 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CRRT UF ultrafiltration fluid balance I&O net removal CRRT I/O 제거량 CRRT 제거량·I/O·Balance 기록 신장 / CRRT V81 V81_DETAIL_04 CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_05",
+      "category": "신장 / CRRT",
+      "title": "CRRT Filter Clotting 예방·대응",
+      "aliases": [
+        "filter clotting",
+        "필터 클로팅",
+        "회로응고",
+        "TMP 상승"
+      ],
+      "search_terms": [
+        "filter clotting",
+        "clotting",
+        "TMP",
+        "anticoagulation",
+        "blood flow",
+        "필터 클로팅",
+        "회로응고",
+        "TMP 상승",
+        "CRRT Filter Clotting 예방·대응",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT Filter Clotting 예방·대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "clotting 징후",
+        "혈류 문제",
+        "항응고 확인"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "clotting 징후: TMP 상승, 압력 변화, 색 변화 → 필터 상태와 항응고 여부 확인",
+        "혈류 문제: catheter position, blood flow 저하 → access 문제 해결 필요성 확인",
+        "항응고 확인: 처방된 항응고, 출혈위험, coagulation → 투여 라인과 검사 확인",
+        "필터 교체: 반복 알람, 효율 저하 → 교체 필요 시 선임/의사 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "filter clotting",
+        "clotting",
+        "TMP",
+        "anticoagulation",
+        "blood flow"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT Filter Clotting 예방·대응 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "clotting 징후",
+              "TMP 상승, 압력 변화, 색 변화",
+              "필터 상태와 항응고 여부 확인",
+              "징후 발생 시간 기록"
+            ],
+            [
+              "혈류 문제",
+              "catheter position, blood flow 저하",
+              "access 문제 해결 필요성 확인",
+              "혈류/압력 기록"
+            ],
+            [
+              "항응고 확인",
+              "처방된 항응고, 출혈위험, coagulation",
+              "투여 라인과 검사 확인",
+              "항응고/검사 기록"
+            ],
+            [
+              "필터 교체",
+              "반복 알람, 효율 저하",
+              "교체 필요 시 선임/의사 보고",
+              "필터 수명과 교체 사유 기록"
+            ]
+          ],
+          "search_terms": [
+            "filter clotting",
+            "clotting",
+            "TMP",
+            "anticoagulation",
+            "blood flow",
+            "필터 클로팅",
+            "회로응고",
+            "TMP 상승",
+            "CRRT Filter Clotting 예방·대응",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_05",
+            "CRRT Filter Clotting 예방·대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT Filter Clotting 예방·대응 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT Filter Clotting 예방·대응 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "filter clotting",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "필터 클로팅",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "회로응고",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "TMP 상승",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "clotting",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "TMP",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "anticoagulation",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood flow",
+              "CRRT Filter Clotting 예방·대응",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "filter clotting",
+            "clotting",
+            "TMP",
+            "anticoagulation",
+            "blood flow",
+            "필터 클로팅",
+            "회로응고",
+            "TMP 상승",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT Filter Clotting 예방·대응",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_05",
+            "CRRT Filter Clotting 예방·대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT Filter Clotting 예방·대응 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "filter clotting clotting TMP anticoagulation blood flow 필터 클로팅 회로응고 TMP 상승 CRRT Filter Clotting 예방·대응 신장 / CRRT V81 V81_DETAIL_05 CRRT Filter Clotting 예방·대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_06",
+      "category": "신장 / CRRT",
+      "title": "CRRT 중 전해질·산염기 모니터링",
+      "aliases": [
+        "전해질",
+        "K",
+        "Phos",
+        "Mg",
+        "Ca",
+        "산염기"
+      ],
+      "search_terms": [
+        "electrolyte",
+        "potassium",
+        "phosphate",
+        "magnesium",
+        "calcium",
+        "acid base",
+        "ABGA",
+        "전해질",
+        "K",
+        "Phos",
+        "Mg",
+        "Ca",
+        "산염기",
+        "CRRT 중 전해질·산염기 모니터링",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "K 변화",
+        "Phos/Mg/Ca",
+        "산염기"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "K 변화: 저/고칼륨혈증, ECG 변화 → 부정맥 위험 확인",
+        "Phos/Mg/Ca: 근력저하, 부정맥, 저인산 위험 → 보충 처방 여부 확인",
+        "산염기: pH, HCO₃, lactate, CO₂ → CRRT 처방/환기 상태와 함께 확인",
+        "검사주기: 처방된 lab interval → 급변 시 재검/보고 필요성 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "electrolyte",
+        "potassium",
+        "phosphate",
+        "magnesium",
+        "calcium",
+        "acid base"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT 중 전해질·산염기 모니터링 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "K 변화",
+              "저/고칼륨혈증, ECG 변화",
+              "부정맥 위험 확인",
+              "K와 ECG 변화 기록"
+            ],
+            [
+              "Phos/Mg/Ca",
+              "근력저하, 부정맥, 저인산 위험",
+              "보충 처방 여부 확인",
+              "보충 전후 검사 기록"
+            ],
+            [
+              "산염기",
+              "pH, HCO₃, lactate, CO₂",
+              "CRRT 처방/환기 상태와 함께 확인",
+              "ABGA 결과 기록"
+            ],
+            [
+              "검사주기",
+              "처방된 lab interval",
+              "급변 시 재검/보고 필요성 확인",
+              "검사 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "electrolyte",
+            "potassium",
+            "phosphate",
+            "magnesium",
+            "calcium",
+            "acid base",
+            "ABGA",
+            "전해질",
+            "K",
+            "Phos",
+            "Mg",
+            "Ca",
+            "산염기",
+            "CRRT 중 전해질·산염기 모니터링",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_06",
+            "CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT 중 전해질·산염기 모니터링 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT 중 전해질·산염기 모니터링 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "전해질",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "K",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Phos",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Mg",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Ca",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "산염기",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "electrolyte",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "potassium",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "phosphate",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "magnesium",
+              "CRRT 중 전해질·산염기 모니터링",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "electrolyte",
+            "potassium",
+            "phosphate",
+            "magnesium",
+            "calcium",
+            "acid base",
+            "ABGA",
+            "전해질",
+            "K",
+            "Phos",
+            "Mg",
+            "Ca",
+            "산염기",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT 중 전해질·산염기 모니터링",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_06",
+            "CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT 중 전해질·산염기 모니터링 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "electrolyte potassium phosphate magnesium calcium acid base ABGA 전해질 K Phos Mg Ca 산염기 CRRT 중 전해질·산염기 모니터링 신장 / CRRT V81 V81_DETAIL_06 CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_07",
+      "category": "신장 / CRRT",
+      "title": "CRRT Dialysis Catheter 관리",
+      "aliases": [
+        "dialysis catheter",
+        "투석관",
+        "혈액투석 카테터",
+        "access"
+      ],
+      "search_terms": [
+        "dialysis catheter",
+        "vascular access",
+        "CRRT line",
+        "catheter care",
+        "dressing",
+        "infection",
+        "투석관",
+        "혈액투석 카테터",
+        "access",
+        "CRRT Dialysis Catheter 관리",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT Dialysis Catheter 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "삽입부위",
+        "고정/위치",
+        "patency"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "삽입부위: 발적, 삼출, 통증, bleeding → 감염/출혈 징후 확인",
+        "고정/위치: 라인 당김, 꺾임, 체위 영향 → 불필요한 조작 최소화",
+        "patency: access pressure, 혈류 유지 → 막힘/역류 문제 확인",
+        "감염예방: dressing, hub 소독, 무균술 → 접속/분리 시 감염관리 준수"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "dialysis catheter",
+        "vascular access",
+        "CRRT line",
+        "catheter care",
+        "dressing",
+        "infection"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT Dialysis Catheter 관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "삽입부위",
+              "발적, 삼출, 통증, bleeding",
+              "감염/출혈 징후 확인",
+              "삽입부위 상태 기록"
+            ],
+            [
+              "고정/위치",
+              "라인 당김, 꺾임, 체위 영향",
+              "불필요한 조작 최소화",
+              "고정상태 기록"
+            ],
+            [
+              "patency",
+              "access pressure, 혈류 유지",
+              "막힘/역류 문제 확인",
+              "혈류와 압력 기록"
+            ],
+            [
+              "감염예방",
+              "dressing, hub 소독, 무균술",
+              "접속/분리 시 감염관리 준수",
+              "dressing 교환 기록"
+            ]
+          ],
+          "search_terms": [
+            "dialysis catheter",
+            "vascular access",
+            "CRRT line",
+            "catheter care",
+            "dressing",
+            "infection",
+            "투석관",
+            "혈액투석 카테터",
+            "access",
+            "CRRT Dialysis Catheter 관리",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_07",
+            "CRRT Dialysis Catheter 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT Dialysis Catheter 관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT Dialysis Catheter 관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "dialysis catheter",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "투석관",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈액투석 카테터",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "access",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "vascular access",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CRRT line",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "catheter care",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dressing",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "infection",
+              "CRRT Dialysis Catheter 관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "dialysis catheter",
+            "vascular access",
+            "CRRT line",
+            "catheter care",
+            "dressing",
+            "infection",
+            "투석관",
+            "혈액투석 카테터",
+            "access",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT Dialysis Catheter 관리",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_07",
+            "CRRT Dialysis Catheter 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT Dialysis Catheter 관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "dialysis catheter vascular access CRRT line catheter care dressing infection 투석관 혈액투석 카테터 access CRRT Dialysis Catheter 관리 신장 / CRRT V81 V81_DETAIL_07 CRRT Dialysis Catheter 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V81_DETAIL_08",
+      "category": "신장 / CRRT",
+      "title": "CRRT 중 저혈압·출혈·체온저하 안전관리",
+      "aliases": [
+        "CRRT 안전",
+        "저혈압",
+        "출혈",
+        "체온저하"
+      ],
+      "search_terms": [
+        "CRRT safety",
+        "hypotension",
+        "bleeding",
+        "hypothermia",
+        "anticoagulation",
+        "CRRT 안전",
+        "저혈압",
+        "출혈",
+        "체온저하",
+        "CRRT 중 저혈압·출혈·체온저하 안전관리",
+        "신장 / CRRT",
+        "V81"
+      ],
+      "urgency": "high",
+      "summary": "CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "저혈압",
+        "출혈",
+        "체온저하"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "저혈압: UF 속도, vasopressor, 체액상태 → UF와 혈역학 관계 확인",
+        "출혈: 삽입부위, coagulation, 항응고 → 출혈 위험과 lab 확인",
+        "체온저하: 체온, warming device, 회로 온도 → 보온과 장비 설정 확인",
+        "응급상황: air alarm, 혈액누출, 의식변화 → 환자 우선 평가 후 즉시 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V81_RENAL_CRRT_OVERVIEW"
+      ],
+      "tags": [
+        "V81",
+        "신장",
+        "CRRT safety",
+        "hypotension",
+        "bleeding",
+        "hypothermia",
+        "anticoagulation"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "KDIGO AKI/신대체요법 지침",
+        "원내 CRRT 장비·신장내과 프로토콜 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CRRT 중 저혈압·출혈·체온저하 안전관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "저혈압",
+              "UF 속도, vasopressor, 체액상태",
+              "UF와 혈역학 관계 확인",
+              "혈압 변화 기록"
+            ],
+            [
+              "출혈",
+              "삽입부위, coagulation, 항응고",
+              "출혈 위험과 lab 확인",
+              "출혈 양상 기록"
+            ],
+            [
+              "체온저하",
+              "체온, warming device, 회로 온도",
+              "보온과 장비 설정 확인",
+              "체온 추세 기록"
+            ],
+            [
+              "응급상황",
+              "air alarm, 혈액누출, 의식변화",
+              "환자 우선 평가 후 즉시 보고",
+              "응급대응 기록"
+            ]
+          ],
+          "search_terms": [
+            "CRRT safety",
+            "hypotension",
+            "bleeding",
+            "hypothermia",
+            "anticoagulation",
+            "CRRT 안전",
+            "저혈압",
+            "출혈",
+            "체온저하",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리",
+            "한눈에",
+            "체크표",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_08",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "한눈에 보기",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CRRT 중 저혈압·출혈·체온저하 안전관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CRRT 안전",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "저혈압",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "출혈",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "체온저하",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CRRT safety",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hypotension",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bleeding",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hypothermia",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "anticoagulation",
+              "CRRT 중 저혈압·출혈·체온저하 안전관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CRRT safety",
+            "hypotension",
+            "bleeding",
+            "hypothermia",
+            "anticoagulation",
+            "CRRT 안전",
+            "저혈압",
+            "출혈",
+            "체온저하",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리",
+            "신장 / CRRT",
+            "V81",
+            "V81_DETAIL_08",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "신장",
+            "V81_RENAL_CRRT_OVERVIEW",
+            "검색어 연결표",
+            "CRRT 중 저혈압·출혈·체온저하 안전관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CRRT safety hypotension bleeding hypothermia anticoagulation CRRT 안전 저혈압 출혈 체온저하 CRRT 중 저혈압·출혈·체온저하 안전관리 신장 / CRRT V81 V81_DETAIL_08 CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 신장 V81_RENAL_CRRT_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_01",
+      "category": "소화기 / 위장관",
+      "title": "NG·L-tube 위치·고정·배액 확인",
+      "aliases": [
+        "NG tube",
+        "L-tube",
+        "위관",
+        "Levin tube"
+      ],
+      "search_terms": [
+        "NG tube",
+        "L-tube",
+        "gastric drainage",
+        "suction",
+        "tube position",
+        "위관",
+        "Levin tube",
+        "NG·L-tube 위치·고정·배액 확인",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "위치 확인",
+        "고정/피부",
+        "배액"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "위치 확인: 삽입 길이, 고정 위치, 처방/영상 확인 → 이탈·위치변경 의심 시 feeding 보류 확인",
+        "고정/피부: 코/입 주변 압박, 발적, tape 상태 → 피부손상 예방과 고정 보강",
+        "배액: 색, 양, 냄새, coffee-ground 여부 → 출혈/폐색/흡인압 확인",
+        "suction: 처방 방식과 연결 상태 → 작동 여부 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "NG tube",
+        "L-tube",
+        "gastric drainage",
+        "suction",
+        "tube position"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "NG·L-tube 위치·고정·배액 확인 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "위치 확인",
+              "삽입 길이, 고정 위치, 처방/영상 확인",
+              "이탈·위치변경 의심 시 feeding 보류 확인",
+              "위치 확인 기록"
+            ],
+            [
+              "고정/피부",
+              "코/입 주변 압박, 발적, tape 상태",
+              "피부손상 예방과 고정 보강",
+              "피부상태 기록"
+            ],
+            [
+              "배액",
+              "색, 양, 냄새, coffee-ground 여부",
+              "출혈/폐색/흡인압 확인",
+              "배액량 I/O 기록"
+            ],
+            [
+              "suction",
+              "처방 방식과 연결 상태",
+              "작동 여부 확인",
+              "suction 설정 기록"
+            ]
+          ],
+          "search_terms": [
+            "NG tube",
+            "L-tube",
+            "gastric drainage",
+            "suction",
+            "tube position",
+            "위관",
+            "Levin tube",
+            "NG·L-tube 위치·고정·배액 확인",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_01",
+            "NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "NG·L-tube 위치·고정·배액 확인 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "NG·L-tube 위치·고정·배액 확인 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "NG tube",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "L-tube",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "위관",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Levin tube",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "gastric drainage",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "suction",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tube position",
+              "NG·L-tube 위치·고정·배액 확인",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "NG tube",
+            "L-tube",
+            "gastric drainage",
+            "suction",
+            "tube position",
+            "위관",
+            "Levin tube",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "NG·L-tube 위치·고정·배액 확인",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_01",
+            "NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "NG·L-tube 위치·고정·배액 확인 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "NG tube L-tube gastric drainage suction tube position 위관 Levin tube NG·L-tube 위치·고정·배액 확인 소화기 / 위장관 V82 V82_DETAIL_01 NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_02",
+      "category": "소화기 / 위장관",
+      "title": "Enteral Feeding 내약성·흡인예방 체크",
+      "aliases": [
+        "장관영양",
+        "enteral feeding",
+        "EN",
+        "tube feeding"
+      ],
+      "search_terms": [
+        "enteral nutrition",
+        "feeding",
+        "gastric residual",
+        "aspiration",
+        "diarrhea",
+        "장관영양",
+        "enteral feeding",
+        "EN",
+        "tube feeding",
+        "Enteral Feeding 내약성·흡인예방 체크",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "시작 전",
+        "내약성",
+        "흡인예방"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "시작 전: 처방식이, 속도, tube 위치, 금식 여부 → 환자확인과 흡인위험 확인",
+        "내약성: 복부팽만, 구토, 설사, 잔여량 기준 → 원내 기준에 따라 지속/중단 판단 보고",
+        "흡인예방: 의식상태, 체위, 기도보호 능력 → 침상머리 상승과 구강관리",
+        "혈당/전해질: 영양 시작 후 혈당, 전해질 변화 → TPN/인슐린/수액과 함께 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "enteral nutrition",
+        "feeding",
+        "gastric residual",
+        "aspiration",
+        "diarrhea"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Enteral Feeding 내약성·흡인예방 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "시작 전",
+              "처방식이, 속도, tube 위치, 금식 여부",
+              "환자확인과 흡인위험 확인",
+              "시작 시간/속도 기록"
+            ],
+            [
+              "내약성",
+              "복부팽만, 구토, 설사, 잔여량 기준",
+              "원내 기준에 따라 지속/중단 판단 보고",
+              "증상과 조치 기록"
+            ],
+            [
+              "흡인예방",
+              "의식상태, 체위, 기도보호 능력",
+              "침상머리 상승과 구강관리",
+              "체위/흡인위험 기록"
+            ],
+            [
+              "혈당/전해질",
+              "영양 시작 후 혈당, 전해질 변화",
+              "TPN/인슐린/수액과 함께 확인",
+              "검사/혈당 기록"
+            ]
+          ],
+          "search_terms": [
+            "enteral nutrition",
+            "feeding",
+            "gastric residual",
+            "aspiration",
+            "diarrhea",
+            "장관영양",
+            "enteral feeding",
+            "EN",
+            "tube feeding",
+            "Enteral Feeding 내약성·흡인예방 체크",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_02",
+            "Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "Enteral Feeding 내약성·흡인예방 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Enteral Feeding 내약성·흡인예방 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "장관영양",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "enteral feeding",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "EN",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tube feeding",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "enteral nutrition",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "feeding",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "gastric residual",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "aspiration",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "diarrhea",
+              "Enteral Feeding 내약성·흡인예방 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "enteral nutrition",
+            "feeding",
+            "gastric residual",
+            "aspiration",
+            "diarrhea",
+            "장관영양",
+            "enteral feeding",
+            "EN",
+            "tube feeding",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Enteral Feeding 내약성·흡인예방 체크",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_02",
+            "Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "Enteral Feeding 내약성·흡인예방 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "enteral nutrition feeding gastric residual aspiration diarrhea 장관영양 enteral feeding EN tube feeding Enteral Feeding 내약성·흡인예방 체크 소화기 / 위장관 V82 V82_DETAIL_02 Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_03",
+      "category": "소화기 / 위장관",
+      "title": "GI Bleeding 토혈·흑변·혈변 대응",
+      "aliases": [
+        "GI bleeding",
+        "위장관 출혈",
+        "토혈",
+        "흑변",
+        "혈변"
+      ],
+      "search_terms": [
+        "GI bleeding",
+        "hematemesis",
+        "melena",
+        "hematochezia",
+        "coffee ground",
+        "CBC",
+        "위장관 출혈",
+        "토혈",
+        "흑변",
+        "혈변",
+        "GI Bleeding 토혈·흑변·혈변 대응",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "GI Bleeding 토혈·흑변·혈변 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "출혈징후",
+        "활력/관류",
+        "검사/준비"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "출혈징후: 토혈, coffee-ground, melena, hematochezia → 양상과 양을 즉시 확인",
+        "활력/관류: BP, HR, 의식, 피부, 소변량 → 쇼크 징후 동반 여부 확인",
+        "검사/준비: CBC, coagulation, type/screen, IV line → 수혈/내시경 준비 가능성 확인",
+        "보고: 지속 출혈, 혈압저하, Hb 감소 → 즉시 담당의 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "GI bleeding",
+        "hematemesis",
+        "melena",
+        "hematochezia",
+        "coffee ground",
+        "CBC"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "GI Bleeding 토혈·흑변·혈변 대응 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "출혈징후",
+              "토혈, coffee-ground, melena, hematochezia",
+              "양상과 양을 즉시 확인",
+              "발견 시각/양상 기록"
+            ],
+            [
+              "활력/관류",
+              "BP, HR, 의식, 피부, 소변량",
+              "쇼크 징후 동반 여부 확인",
+              "vital trend 기록"
+            ],
+            [
+              "검사/준비",
+              "CBC, coagulation, type/screen, IV line",
+              "수혈/내시경 준비 가능성 확인",
+              "검사/준비 기록"
+            ],
+            [
+              "보고",
+              "지속 출혈, 혈압저하, Hb 감소",
+              "즉시 담당의 보고",
+              "보고와 지시 기록"
+            ]
+          ],
+          "search_terms": [
+            "GI bleeding",
+            "hematemesis",
+            "melena",
+            "hematochezia",
+            "coffee ground",
+            "CBC",
+            "위장관 출혈",
+            "토혈",
+            "흑변",
+            "혈변",
+            "GI Bleeding 토혈·흑변·혈변 대응",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_03",
+            "GI Bleeding 토혈·흑변·혈변 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "GI Bleeding 토혈·흑변·혈변 대응 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "GI Bleeding 토혈·흑변·혈변 대응 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "GI bleeding",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "위장관 출혈",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "토혈",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "흑변",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈변",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hematemesis",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "melena",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "hematochezia",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "coffee ground",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CBC",
+              "GI Bleeding 토혈·흑변·혈변 대응",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "GI bleeding",
+            "hematemesis",
+            "melena",
+            "hematochezia",
+            "coffee ground",
+            "CBC",
+            "위장관 출혈",
+            "토혈",
+            "흑변",
+            "혈변",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "GI Bleeding 토혈·흑변·혈변 대응",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_03",
+            "GI Bleeding 토혈·흑변·혈변 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "GI Bleeding 토혈·흑변·혈변 대응 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "GI bleeding hematemesis melena hematochezia coffee ground CBC 위장관 출혈 토혈 흑변 혈변 GI Bleeding 토혈·흑변·혈변 대응 소화기 / 위장관 V82 V82_DETAIL_03 GI Bleeding 토혈·흑변·혈변 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_04",
+      "category": "소화기 / 위장관",
+      "title": "복부팽만·Ileus·장폐색 의심 체크",
+      "aliases": [
+        "ileus",
+        "장폐색",
+        "복부팽만",
+        "bowel obstruction"
+      ],
+      "search_terms": [
+        "ileus",
+        "bowel obstruction",
+        "abdominal distension",
+        "bowel sound",
+        "vomiting",
+        "장폐색",
+        "복부팽만",
+        "복부팽만·Ileus·장폐색 의심 체크",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "복부팽만·Ileus·장폐색 의심 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "복부사정",
+        "구토/흡인",
+        "배액/위관"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "복부사정: 팽만, 통증, 장음, 배변/가스 → 악화 추세와 압통 확인",
+        "구토/흡인: 구토 양상, SpO₂, 의식상태 → 흡인예방과 금식 여부 확인",
+        "배액/위관: NG 배액 색/양, suction 작동 → 위관 위치와 폐색 확인",
+        "검사/보고: 영상검사, 전해질, lactate 가능성 → 장폐색/허혈 의심 시 보고"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "ileus",
+        "bowel obstruction",
+        "abdominal distension",
+        "bowel sound",
+        "vomiting"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "복부팽만·Ileus·장폐색 의심 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "복부사정",
+              "팽만, 통증, 장음, 배변/가스",
+              "악화 추세와 압통 확인",
+              "복부사정 기록"
+            ],
+            [
+              "구토/흡인",
+              "구토 양상, SpO₂, 의식상태",
+              "흡인예방과 금식 여부 확인",
+              "구토량/양상 기록"
+            ],
+            [
+              "배액/위관",
+              "NG 배액 색/양, suction 작동",
+              "위관 위치와 폐색 확인",
+              "배액량 I/O 기록"
+            ],
+            [
+              "검사/보고",
+              "영상검사, 전해질, lactate 가능성",
+              "장폐색/허혈 의심 시 보고",
+              "검사/보고 기록"
+            ]
+          ],
+          "search_terms": [
+            "ileus",
+            "bowel obstruction",
+            "abdominal distension",
+            "bowel sound",
+            "vomiting",
+            "장폐색",
+            "복부팽만",
+            "복부팽만·Ileus·장폐색 의심 체크",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_04",
+            "복부팽만·Ileus·장폐색 의심 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "복부팽만·Ileus·장폐색 의심 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "복부팽만·Ileus·장폐색 의심 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "ileus",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "장폐색",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "복부팽만",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bowel obstruction",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "abdominal distension",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bowel sound",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "vomiting",
+              "복부팽만·Ileus·장폐색 의심 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ileus",
+            "bowel obstruction",
+            "abdominal distension",
+            "bowel sound",
+            "vomiting",
+            "장폐색",
+            "복부팽만",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "복부팽만·Ileus·장폐색 의심 체크",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_04",
+            "복부팽만·Ileus·장폐색 의심 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "복부팽만·Ileus·장폐색 의심 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ileus bowel obstruction abdominal distension bowel sound vomiting 장폐색 복부팽만 복부팽만·Ileus·장폐색 의심 체크 소화기 / 위장관 V82 V82_DETAIL_04 복부팽만·Ileus·장폐색 의심 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_05",
+      "category": "소화기 / 위장관",
+      "title": "설사·변비·C.difficile 의심 간호",
+      "aliases": [
+        "설사",
+        "변비",
+        "diarrhea",
+        "constipation",
+        "C.difficile"
+      ],
+      "search_terms": [
+        "diarrhea",
+        "constipation",
+        "C difficile",
+        "stool",
+        "bowel movement",
+        "설사",
+        "변비",
+        "C.difficile",
+        "설사·변비·C.difficile 의심 간호",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "설사·변비·C.difficile 의심 간호 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "설사",
+        "감염 의심",
+        "변비"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "설사: 횟수, 양상, 항생제, fever → 탈수/전해질/피부손상 확인",
+        "감염 의심: C.difficile 위험, 격리 필요성 → 검체 채취와 접촉주의 확인",
+        "변비: 배변일수, 복부팽만, opioid 사용 → 완하제/관장 처방 확인",
+        "피부관리: 실금, 발적, 욕창위험 → barrier와 체위변경 강화"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "diarrhea",
+        "constipation",
+        "C difficile",
+        "stool",
+        "bowel movement"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "설사·변비·C.difficile 의심 간호 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "설사",
+              "횟수, 양상, 항생제, fever",
+              "탈수/전해질/피부손상 확인",
+              "대변 양상 기록"
+            ],
+            [
+              "감염 의심",
+              "C.difficile 위험, 격리 필요성",
+              "검체 채취와 접촉주의 확인",
+              "검체/격리 기록"
+            ],
+            [
+              "변비",
+              "배변일수, 복부팽만, opioid 사용",
+              "완하제/관장 처방 확인",
+              "배변 유무 기록"
+            ],
+            [
+              "피부관리",
+              "실금, 발적, 욕창위험",
+              "barrier와 체위변경 강화",
+              "피부상태 기록"
+            ]
+          ],
+          "search_terms": [
+            "diarrhea",
+            "constipation",
+            "C difficile",
+            "stool",
+            "bowel movement",
+            "설사",
+            "변비",
+            "C.difficile",
+            "설사·변비·C.difficile 의심 간호",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_05",
+            "설사·변비·C.difficile 의심 간호 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "설사·변비·C.difficile 의심 간호 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "설사·변비·C.difficile 의심 간호 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "설사",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "변비",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "diarrhea",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "constipation",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "C.difficile",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "C difficile",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "stool",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bowel movement",
+              "설사·변비·C.difficile 의심 간호",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "diarrhea",
+            "constipation",
+            "C difficile",
+            "stool",
+            "bowel movement",
+            "설사",
+            "변비",
+            "C.difficile",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "설사·변비·C.difficile 의심 간호",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_05",
+            "설사·변비·C.difficile 의심 간호 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "설사·변비·C.difficile 의심 간호 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "diarrhea constipation C difficile stool bowel movement 설사 변비 C.difficile 설사·변비·C.difficile 의심 간호 소화기 / 위장관 V82 V82_DETAIL_05 설사·변비·C.difficile 의심 간호 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_06",
+      "category": "소화기 / 위장관",
+      "title": "복부 Drain·담즙/췌장 배액 관찰",
+      "aliases": [
+        "복부 drain",
+        "담즙배액",
+        "췌장배액",
+        "JP",
+        "Hemovac"
+      ],
+      "search_terms": [
+        "abdominal drain",
+        "bile drainage",
+        "pancreatic drain",
+        "JP drain",
+        "drain color",
+        "복부 drain",
+        "담즙배액",
+        "췌장배액",
+        "JP",
+        "Hemovac",
+        "복부 Drain·담즙/췌장 배액 관찰",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "복부 Drain·담즙/췌장 배액 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "배액량",
+        "색/성상",
+        "고정/음압"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "배액량: 시간당/근무별 양, 갑작스런 증가/감소 → 폐색·출혈·누출 가능성 확인",
+        "색/성상: 담즙색, 혈성, 농성, 악취 → 감염/출혈/누출 여부 관찰",
+        "고정/음압: tube kink, 고정, 음압 유지 → 역류/이탈 방지",
+        "삽입부위: 발적, 삼출, 통증, 누출 → 드레싱과 감염징후 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "abdominal drain",
+        "bile drainage",
+        "pancreatic drain",
+        "JP drain",
+        "drain color"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "복부 Drain·담즙/췌장 배액 관찰 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "배액량",
+              "시간당/근무별 양, 갑작스런 증가/감소",
+              "폐색·출혈·누출 가능성 확인",
+              "배액량 I/O 기록"
+            ],
+            [
+              "색/성상",
+              "담즙색, 혈성, 농성, 악취",
+              "감염/출혈/누출 여부 관찰",
+              "색과 성상 기록"
+            ],
+            [
+              "고정/음압",
+              "tube kink, 고정, 음압 유지",
+              "역류/이탈 방지",
+              "장치상태 기록"
+            ],
+            [
+              "삽입부위",
+              "발적, 삼출, 통증, 누출",
+              "드레싱과 감염징후 확인",
+              "부위 상태 기록"
+            ]
+          ],
+          "search_terms": [
+            "abdominal drain",
+            "bile drainage",
+            "pancreatic drain",
+            "JP drain",
+            "drain color",
+            "복부 drain",
+            "담즙배액",
+            "췌장배액",
+            "JP",
+            "Hemovac",
+            "복부 Drain·담즙/췌장 배액 관찰",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_06",
+            "복부 Drain·담즙/췌장 배액 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "복부 Drain·담즙/췌장 배액 관찰 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "복부 Drain·담즙/췌장 배액 관찰 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "복부 drain",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "담즙배액",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "췌장배액",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "JP",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Hemovac",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "abdominal drain",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bile drainage",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pancreatic drain",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "JP drain",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "drain color",
+              "복부 Drain·담즙/췌장 배액 관찰",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "abdominal drain",
+            "bile drainage",
+            "pancreatic drain",
+            "JP drain",
+            "drain color",
+            "복부 drain",
+            "담즙배액",
+            "췌장배액",
+            "JP",
+            "Hemovac",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "복부 Drain·담즙/췌장 배액 관찰",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_06",
+            "복부 Drain·담즙/췌장 배액 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "복부 Drain·담즙/췌장 배액 관찰 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "abdominal drain bile drainage pancreatic drain JP drain drain color 복부 drain 담즙배액 췌장배액 JP Hemovac 복부 Drain·담즙/췌장 배액 관찰 소화기 / 위장관 V82 V82_DETAIL_06 복부 Drain·담즙/췌장 배액 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_07",
+      "category": "소화기 / 위장관",
+      "title": "간기능·췌장효소 검사와 증상 연결",
+      "aliases": [
+        "LFT",
+        "간기능",
+        "bilirubin",
+        "amylase",
+        "lipase"
+      ],
+      "search_terms": [
+        "LFT",
+        "AST",
+        "ALT",
+        "bilirubin",
+        "amylase",
+        "lipase",
+        "pancreatitis",
+        "간기능",
+        "간기능·췌장효소 검사와 증상 연결",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "간기능 이상",
+        "담도 문제",
+        "췌장효소 상승"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "간기능 이상: AST/ALT, bilirubin, PT/INR → 황달/출혈경향/약물 영향 확인",
+        "담도 문제: 발열, RUQ pain, 담즙 배액 변화 → 감염/폐색 가능성 보고",
+        "췌장효소 상승: 복통, N/V, amylase/lipase → 금식/수액/통증 조절 계획 확인",
+        "영양/약물: TPN, 지질, 간독성 약물 → 처방 변경 여부 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "LFT",
+        "AST",
+        "ALT",
+        "bilirubin",
+        "amylase",
+        "lipase"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "간기능·췌장효소 검사와 증상 연결 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "간기능 이상",
+              "AST/ALT, bilirubin, PT/INR",
+              "황달/출혈경향/약물 영향 확인",
+              "검사값 추세 기록"
+            ],
+            [
+              "담도 문제",
+              "발열, RUQ pain, 담즙 배액 변화",
+              "감염/폐색 가능성 보고",
+              "증상과 배액 기록"
+            ],
+            [
+              "췌장효소 상승",
+              "복통, N/V, amylase/lipase",
+              "금식/수액/통증 조절 계획 확인",
+              "통증/검사 기록"
+            ],
+            [
+              "영양/약물",
+              "TPN, 지질, 간독성 약물",
+              "처방 변경 여부 확인",
+              "약물/영양 변화 기록"
+            ]
+          ],
+          "search_terms": [
+            "LFT",
+            "AST",
+            "ALT",
+            "bilirubin",
+            "amylase",
+            "lipase",
+            "pancreatitis",
+            "간기능",
+            "간기능·췌장효소 검사와 증상 연결",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_07",
+            "간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "간기능·췌장효소 검사와 증상 연결 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "간기능·췌장효소 검사와 증상 연결 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "LFT",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "간기능",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bilirubin",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "amylase",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "lipase",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "AST",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ALT",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pancreatitis",
+              "간기능·췌장효소 검사와 증상 연결",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "LFT",
+            "AST",
+            "ALT",
+            "bilirubin",
+            "amylase",
+            "lipase",
+            "pancreatitis",
+            "간기능",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "간기능·췌장효소 검사와 증상 연결",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_07",
+            "간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "간기능·췌장효소 검사와 증상 연결 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "LFT AST ALT bilirubin amylase lipase pancreatitis 간기능 간기능·췌장효소 검사와 증상 연결 소화기 / 위장관 V82 V82_DETAIL_07 간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V82_DETAIL_08",
+      "category": "소화기 / 위장관",
+      "title": "내시경·ERCP 전후 간호 체크",
+      "aliases": [
+        "내시경",
+        "EGD",
+        "colonoscopy",
+        "ERCP",
+        "검사전 준비"
+      ],
+      "search_terms": [
+        "endoscopy",
+        "EGD",
+        "colonoscopy",
+        "ERCP",
+        "NPO",
+        "sedation",
+        "bleeding",
+        "내시경",
+        "검사전 준비",
+        "내시경·ERCP 전후 간호 체크",
+        "소화기 / 위장관",
+        "V82"
+      ],
+      "urgency": "high",
+      "summary": "내시경·ERCP 전후 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "전 준비",
+        "이송/진정",
+        "검사 후"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "전 준비: 동의서, 금식, 항응고제, allergy → 검사 전 체크리스트 확인",
+        "이송/진정: 산소, 모니터, IV line, baseline VS → 진정 후 낙상/호흡억제 주의",
+        "검사 후: 의식, 호흡, 통증, 출혈, 복부팽만 → 합병증 징후 관찰",
+        "식이 재개: 의식회복, gag reflex, 의사 지시 → 흡인위험 확인 후 진행"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V82_GI_DIGESTIVE_OVERVIEW"
+      ],
+      "tags": [
+        "V82",
+        "소화기",
+        "endoscopy",
+        "EGD",
+        "colonoscopy",
+        "ERCP",
+        "NPO",
+        "sedation"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "중환자 소화기계/장관영양 일반 간호 원칙",
+        "원내 위관·장관영양·내시경 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "내시경·ERCP 전후 간호 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "전 준비",
+              "동의서, 금식, 항응고제, allergy",
+              "검사 전 체크리스트 확인",
+              "준비 완료 기록"
+            ],
+            [
+              "이송/진정",
+              "산소, 모니터, IV line, baseline VS",
+              "진정 후 낙상/호흡억제 주의",
+              "이송/진정 상태 기록"
+            ],
+            [
+              "검사 후",
+              "의식, 호흡, 통증, 출혈, 복부팽만",
+              "합병증 징후 관찰",
+              "복귀 후 상태 기록"
+            ],
+            [
+              "식이 재개",
+              "의식회복, gag reflex, 의사 지시",
+              "흡인위험 확인 후 진행",
+              "재개 시간 기록"
+            ]
+          ],
+          "search_terms": [
+            "endoscopy",
+            "EGD",
+            "colonoscopy",
+            "ERCP",
+            "NPO",
+            "sedation",
+            "bleeding",
+            "내시경",
+            "검사전 준비",
+            "내시경·ERCP 전후 간호 체크",
+            "한눈에",
+            "체크표",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_08",
+            "내시경·ERCP 전후 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "한눈에 보기",
+            "내시경·ERCP 전후 간호 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "내시경·ERCP 전후 간호 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "내시경",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "EGD",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "colonoscopy",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ERCP",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "검사전 준비",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "endoscopy",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "NPO",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sedation",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bleeding",
+              "내시경·ERCP 전후 간호 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "endoscopy",
+            "EGD",
+            "colonoscopy",
+            "ERCP",
+            "NPO",
+            "sedation",
+            "bleeding",
+            "내시경",
+            "검사전 준비",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "내시경·ERCP 전후 간호 체크",
+            "소화기 / 위장관",
+            "V82",
+            "V82_DETAIL_08",
+            "내시경·ERCP 전후 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "소화기",
+            "V82_GI_DIGESTIVE_OVERVIEW",
+            "검색어 연결표",
+            "내시경·ERCP 전후 간호 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "endoscopy EGD colonoscopy ERCP NPO sedation bleeding 내시경 검사전 준비 내시경·ERCP 전후 간호 체크 소화기 / 위장관 V82 V82_DETAIL_08 내시경·ERCP 전후 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 소화기 V82_GI_DIGESTIVE_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_01",
+      "category": "검사 / 시술·수술",
+      "title": "검체 라벨링·채취·이송 오류 예방",
+      "aliases": [
+        "검체",
+        "specimen",
+        "라벨",
+        "바코드",
+        "채취"
+      ],
+      "search_terms": [
+        "specimen",
+        "labeling",
+        "barcode",
+        "patient identification",
+        "sample transport",
+        "검체",
+        "라벨",
+        "바코드",
+        "채취",
+        "검체 라벨링·채취·이송 오류 예방",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "검체 라벨링·채취·이송 오류 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "환자확인",
+        "용기 확인",
+        "라벨링"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "환자확인: 환자확인 관련 환자확인·처방·상태를 먼저 확인 → 검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "용기 확인: 용기 확인 관련 환자확인·처방·상태를 먼저 확인 → 검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "라벨링: 라벨링 관련 환자확인·처방·상태를 먼저 확인 → 검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이송: 이송 관련 환자확인·처방·상태를 먼저 확인 → 검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "specimen",
+        "labeling",
+        "barcode",
+        "patient identification",
+        "sample transport"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "검체 라벨링·채취·이송 오류 예방 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "환자확인",
+              "환자확인 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "환자확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "용기 확인",
+              "용기 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "용기 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "라벨링",
+              "라벨링 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "라벨링 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이송",
+              "이송 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 라벨링·채취·이송 오류 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이송 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "specimen",
+            "labeling",
+            "barcode",
+            "patient identification",
+            "sample transport",
+            "검체",
+            "라벨",
+            "바코드",
+            "채취",
+            "검체 라벨링·채취·이송 오류 예방",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_01",
+            "검체 라벨링·채취·이송 오류 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "검체 라벨링·채취·이송 오류 예방 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "검체 라벨링·채취·이송 오류 예방 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "검체",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "specimen",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "라벨",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "바코드",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "채취",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "labeling",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "barcode",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "patient identification",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sample transport",
+              "검체 라벨링·채취·이송 오류 예방",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "specimen",
+            "labeling",
+            "barcode",
+            "patient identification",
+            "sample transport",
+            "검체",
+            "라벨",
+            "바코드",
+            "채취",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "검체 라벨링·채취·이송 오류 예방",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_01",
+            "검체 라벨링·채취·이송 오류 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "검체 라벨링·채취·이송 오류 예방 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "specimen labeling barcode patient identification sample transport 검체 라벨 바코드 채취 검체 라벨링·채취·이송 오류 예방 검사 / 시술·수술 V83 V83_DETAIL_01 검체 라벨링·채취·이송 오류 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_02",
+      "category": "검사 / 시술·수술",
+      "title": "Blood Culture 혈액배양 채취 체크",
+      "aliases": [
+        "혈액배양",
+        "blood culture",
+        "배양검사",
+        "sepsis culture"
+      ],
+      "search_terms": [
+        "blood culture",
+        "culture bottle",
+        "aerobic",
+        "anaerobic",
+        "sepsis",
+        "혈액배양",
+        "배양검사",
+        "sepsis culture",
+        "Blood Culture 혈액배양 채취 체크",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "Blood Culture 혈액배양 채취 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "채취 전",
+        "무균술",
+        "용기/순서"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "채취 전: 채취 전 관련 환자확인·처방·상태를 먼저 확인 → Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "무균술: 무균술 관련 환자확인·처방·상태를 먼저 확인 → Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "용기/순서: 용기/순서 관련 환자확인·처방·상태를 먼저 확인 → Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이송: 이송 관련 환자확인·처방·상태를 먼저 확인 → Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "blood culture",
+        "culture bottle",
+        "aerobic",
+        "anaerobic",
+        "sepsis"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Blood Culture 혈액배양 채취 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "채취 전",
+              "채취 전 관련 환자확인·처방·상태를 먼저 확인",
+              "Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채취 전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "무균술",
+              "무균술 관련 환자확인·처방·상태를 먼저 확인",
+              "Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "무균술 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "용기/순서",
+              "용기/순서 관련 환자확인·처방·상태를 먼저 확인",
+              "Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "용기/순서 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이송",
+              "이송 관련 환자확인·처방·상태를 먼저 확인",
+              "Blood Culture 혈액배양 채취 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이송 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "blood culture",
+            "culture bottle",
+            "aerobic",
+            "anaerobic",
+            "sepsis",
+            "혈액배양",
+            "배양검사",
+            "sepsis culture",
+            "Blood Culture 혈액배양 채취 체크",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_02",
+            "Blood Culture 혈액배양 채취 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "Blood Culture 혈액배양 채취 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Blood Culture 혈액배양 채취 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "혈액배양",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood culture",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "배양검사",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sepsis culture",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "culture bottle",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "aerobic",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "anaerobic",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sepsis",
+              "Blood Culture 혈액배양 채취 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "blood culture",
+            "culture bottle",
+            "aerobic",
+            "anaerobic",
+            "sepsis",
+            "혈액배양",
+            "배양검사",
+            "sepsis culture",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Blood Culture 혈액배양 채취 체크",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_02",
+            "Blood Culture 혈액배양 채취 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "Blood Culture 혈액배양 채취 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "blood culture culture bottle aerobic anaerobic sepsis 혈액배양 배양검사 sepsis culture Blood Culture 혈액배양 채취 체크 검사 / 시술·수술 V83 V83_DETAIL_02 Blood Culture 혈액배양 채취 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_03",
+      "category": "검사 / 시술·수술",
+      "title": "ABGA 채혈·검체 취급 체크",
+      "aliases": [
+        "ABGA",
+        "동맥혈가스",
+        "혈액가스"
+      ],
+      "search_terms": [
+        "ABGA",
+        "arterial blood gas",
+        "heparin syringe",
+        "air bubble",
+        "동맥혈가스",
+        "혈액가스",
+        "ABGA 채혈·검체 취급 체크",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "ABGA 채혈·검체 취급 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "채혈 전",
+        "채혈",
+        "채혈 후"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "채혈 전: 채혈 전 관련 환자확인·처방·상태를 먼저 확인 → ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "채혈: 채혈 관련 환자확인·처방·상태를 먼저 확인 → ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "채혈 후: 채혈 후 관련 환자확인·처방·상태를 먼저 확인 → ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "결과 연결: 결과 연결 관련 환자확인·처방·상태를 먼저 확인 → ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "ABGA",
+        "arterial blood gas",
+        "heparin syringe",
+        "air bubble"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "ABGA 채혈·검체 취급 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "채혈 전",
+              "채혈 전 관련 환자확인·처방·상태를 먼저 확인",
+              "ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채혈 전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "채혈",
+              "채혈 관련 환자확인·처방·상태를 먼저 확인",
+              "ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채혈 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "채혈 후",
+              "채혈 후 관련 환자확인·처방·상태를 먼저 확인",
+              "ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채혈 후 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "결과 연결",
+              "결과 연결 관련 환자확인·처방·상태를 먼저 확인",
+              "ABGA 채혈·검체 취급 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "결과 연결 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "ABGA",
+            "arterial blood gas",
+            "heparin syringe",
+            "air bubble",
+            "동맥혈가스",
+            "혈액가스",
+            "ABGA 채혈·검체 취급 체크",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_03",
+            "ABGA 채혈·검체 취급 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "ABGA 채혈·검체 취급 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "ABGA 채혈·검체 취급 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "ABGA",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "동맥혈가스",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈액가스",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial blood gas",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "heparin syringe",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "air bubble",
+              "ABGA 채혈·검체 취급 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ABGA",
+            "arterial blood gas",
+            "heparin syringe",
+            "air bubble",
+            "동맥혈가스",
+            "혈액가스",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "ABGA 채혈·검체 취급 체크",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_03",
+            "ABGA 채혈·검체 취급 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "ABGA 채혈·검체 취급 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ABGA arterial blood gas heparin syringe air bubble 동맥혈가스 혈액가스 ABGA 채혈·검체 취급 체크 검사 / 시술·수술 V83 V83_DETAIL_03 ABGA 채혈·검체 취급 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_04",
+      "category": "검사 / 시술·수술",
+      "title": "CT 조영제 검사 전후 안전 체크",
+      "aliases": [
+        "CT",
+        "조영제",
+        "contrast",
+        "조영제 알레르기",
+        "신기능"
+      ],
+      "search_terms": [
+        "CT",
+        "contrast",
+        "allergy",
+        "creatinine",
+        "eGFR",
+        "IV line",
+        "조영제",
+        "조영제 알레르기",
+        "신기능",
+        "CT 조영제 검사 전후 안전 체크",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "검사 전",
+        "라인",
+        "이송"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "검사 전: 검사 전 관련 환자확인·처방·상태를 먼저 확인 → CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "라인: 라인 관련 환자확인·처방·상태를 먼저 확인 → CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이송: 이송 관련 환자확인·처방·상태를 먼저 확인 → CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "검사 후: 검사 후 관련 환자확인·처방·상태를 먼저 확인 → CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "CT",
+        "contrast",
+        "allergy",
+        "creatinine",
+        "eGFR",
+        "IV line"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CT 조영제 검사 전후 안전 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "검사 전",
+              "검사 전 관련 환자확인·처방·상태를 먼저 확인",
+              "CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "검사 전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "라인",
+              "라인 관련 환자확인·처방·상태를 먼저 확인",
+              "CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "라인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이송",
+              "이송 관련 환자확인·처방·상태를 먼저 확인",
+              "CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이송 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "검사 후",
+              "검사 후 관련 환자확인·처방·상태를 먼저 확인",
+              "CT 조영제 검사 전후 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "검사 후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "CT",
+            "contrast",
+            "allergy",
+            "creatinine",
+            "eGFR",
+            "IV line",
+            "조영제",
+            "조영제 알레르기",
+            "신기능",
+            "CT 조영제 검사 전후 안전 체크",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_04",
+            "CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "CT 조영제 검사 전후 안전 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CT 조영제 검사 전후 안전 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CT",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "조영제",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "contrast",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "조영제 알레르기",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "신기능",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "allergy",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "creatinine",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "eGFR",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "IV line",
+              "CT 조영제 검사 전후 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CT",
+            "contrast",
+            "allergy",
+            "creatinine",
+            "eGFR",
+            "IV line",
+            "조영제",
+            "조영제 알레르기",
+            "신기능",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CT 조영제 검사 전후 안전 체크",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_04",
+            "CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "CT 조영제 검사 전후 안전 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CT contrast allergy creatinine eGFR IV line 조영제 조영제 알레르기 신기능 CT 조영제 검사 전후 안전 체크 검사 / 시술·수술 V83 V83_DETAIL_04 CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_05",
+      "category": "검사 / 시술·수술",
+      "title": "MRI 검사 전 금속·장비·이송 안전 체크",
+      "aliases": [
+        "MRI",
+        "자기공명",
+        "금속물",
+        "pacemaker",
+        "MRI safety"
+      ],
+      "search_terms": [
+        "MRI",
+        "metal screening",
+        "pacemaker",
+        "implant",
+        "transport",
+        "자기공명",
+        "금속물",
+        "MRI safety",
+        "MRI 검사 전 금속·장비·이송 안전 체크",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "MRI 검사 전 금속·장비·이송 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "금속 확인",
+        "장비 확인",
+        "환자상태"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "금속 확인: 금속 확인 관련 환자확인·처방·상태를 먼저 확인 → MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "장비 확인: 장비 확인 관련 환자확인·처방·상태를 먼저 확인 → MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "환자상태: 환자상태 관련 환자확인·처방·상태를 먼저 확인 → MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "복귀 후: 복귀 후 관련 환자확인·처방·상태를 먼저 확인 → MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "MRI",
+        "metal screening",
+        "pacemaker",
+        "implant",
+        "transport"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "MRI 검사 전 금속·장비·이송 안전 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "금속 확인",
+              "금속 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "금속 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "장비 확인",
+              "장비 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "장비 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "환자상태",
+              "환자상태 관련 환자확인·처방·상태를 먼저 확인",
+              "MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "환자상태 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "복귀 후",
+              "복귀 후 관련 환자확인·처방·상태를 먼저 확인",
+              "MRI 검사 전 금속·장비·이송 안전 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "복귀 후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "MRI",
+            "metal screening",
+            "pacemaker",
+            "implant",
+            "transport",
+            "자기공명",
+            "금속물",
+            "MRI safety",
+            "MRI 검사 전 금속·장비·이송 안전 체크",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_05",
+            "MRI 검사 전 금속·장비·이송 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "MRI 검사 전 금속·장비·이송 안전 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "MRI 검사 전 금속·장비·이송 안전 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "MRI",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "자기공명",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "금속물",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pacemaker",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "MRI safety",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "metal screening",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "implant",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "transport",
+              "MRI 검사 전 금속·장비·이송 안전 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "MRI",
+            "metal screening",
+            "pacemaker",
+            "implant",
+            "transport",
+            "자기공명",
+            "금속물",
+            "MRI safety",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "MRI 검사 전 금속·장비·이송 안전 체크",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_05",
+            "MRI 검사 전 금속·장비·이송 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "MRI 검사 전 금속·장비·이송 안전 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "MRI metal screening pacemaker implant transport 자기공명 금속물 MRI safety MRI 검사 전 금속·장비·이송 안전 체크 검사 / 시술·수술 V83 V83_DETAIL_05 MRI 검사 전 금속·장비·이송 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_06",
+      "category": "검사 / 시술·수술",
+      "title": "수술·시술 전 체크리스트",
+      "aliases": [
+        "수술전",
+        "pre op",
+        "시술전",
+        "동의서",
+        "금식"
+      ],
+      "search_terms": [
+        "preoperative checklist",
+        "consent",
+        "NPO",
+        "site marking",
+        "operation",
+        "수술전",
+        "pre op",
+        "시술전",
+        "동의서",
+        "금식",
+        "수술·시술 전 체크리스트",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "수술·시술 전 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "동의서/확인",
+        "금식/약물",
+        "라인/검사"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "동의서/확인: 동의서/확인 관련 환자확인·처방·상태를 먼저 확인 → 수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "금식/약물: 금식/약물 관련 환자확인·처방·상태를 먼저 확인 → 수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "라인/검사: 라인/검사 관련 환자확인·처방·상태를 먼저 확인 → 수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이송: 이송 관련 환자확인·처방·상태를 먼저 확인 → 수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "preoperative checklist",
+        "consent",
+        "NPO",
+        "site marking",
+        "operation"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "수술·시술 전 체크리스트 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "동의서/확인",
+              "동의서/확인 관련 환자확인·처방·상태를 먼저 확인",
+              "수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "동의서/확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "금식/약물",
+              "금식/약물 관련 환자확인·처방·상태를 먼저 확인",
+              "수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "금식/약물 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "라인/검사",
+              "라인/검사 관련 환자확인·처방·상태를 먼저 확인",
+              "수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "라인/검사 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이송",
+              "이송 관련 환자확인·처방·상태를 먼저 확인",
+              "수술·시술 전 체크리스트 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이송 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "preoperative checklist",
+            "consent",
+            "NPO",
+            "site marking",
+            "operation",
+            "수술전",
+            "pre op",
+            "시술전",
+            "동의서",
+            "금식",
+            "수술·시술 전 체크리스트",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_06",
+            "수술·시술 전 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "수술·시술 전 체크리스트 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "수술·시술 전 체크리스트 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "수술전",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pre op",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "시술전",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "동의서",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "금식",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "preoperative checklist",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "consent",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "NPO",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "site marking",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "operation",
+              "수술·시술 전 체크리스트",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "preoperative checklist",
+            "consent",
+            "NPO",
+            "site marking",
+            "operation",
+            "수술전",
+            "pre op",
+            "시술전",
+            "동의서",
+            "금식",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "수술·시술 전 체크리스트",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_06",
+            "수술·시술 전 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "수술·시술 전 체크리스트 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "preoperative checklist consent NPO site marking operation 수술전 pre op 시술전 동의서 금식 수술·시술 전 체크리스트 검사 / 시술·수술 V83 V83_DETAIL_06 수술·시술 전 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_07",
+      "category": "검사 / 시술·수술",
+      "title": "시술·검사 후 출혈·통증·합병증 관찰",
+      "aliases": [
+        "시술후",
+        "post procedure",
+        "검사후",
+        "출혈관찰"
+      ],
+      "search_terms": [
+        "post procedure",
+        "bleeding",
+        "pain",
+        "vital signs",
+        "puncture site",
+        "시술후",
+        "검사후",
+        "출혈관찰",
+        "시술·검사 후 출혈·통증·합병증 관찰",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "복귀 직후",
+        "삽입/천자부위",
+        "합병증"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "복귀 직후: 복귀 직후 관련 환자확인·처방·상태를 먼저 확인 → 시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "삽입/천자부위: 삽입/천자부위 관련 환자확인·처방·상태를 먼저 확인 → 시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "합병증: 합병증 관련 환자확인·처방·상태를 먼저 확인 → 시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "식이/활동: 식이/활동 관련 환자확인·처방·상태를 먼저 확인 → 시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "post procedure",
+        "bleeding",
+        "pain",
+        "vital signs",
+        "puncture site"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "시술·검사 후 출혈·통증·합병증 관찰 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "복귀 직후",
+              "복귀 직후 관련 환자확인·처방·상태를 먼저 확인",
+              "시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "복귀 직후 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "삽입/천자부위",
+              "삽입/천자부위 관련 환자확인·처방·상태를 먼저 확인",
+              "시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "삽입/천자부위 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "합병증",
+              "합병증 관련 환자확인·처방·상태를 먼저 확인",
+              "시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "합병증 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "식이/활동",
+              "식이/활동 관련 환자확인·처방·상태를 먼저 확인",
+              "시술·검사 후 출혈·통증·합병증 관찰 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "식이/활동 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "post procedure",
+            "bleeding",
+            "pain",
+            "vital signs",
+            "puncture site",
+            "시술후",
+            "검사후",
+            "출혈관찰",
+            "시술·검사 후 출혈·통증·합병증 관찰",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_07",
+            "시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "시술·검사 후 출혈·통증·합병증 관찰 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "시술·검사 후 출혈·통증·합병증 관찰 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "시술후",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "post procedure",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "검사후",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "출혈관찰",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bleeding",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pain",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "vital signs",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "puncture site",
+              "시술·검사 후 출혈·통증·합병증 관찰",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "post procedure",
+            "bleeding",
+            "pain",
+            "vital signs",
+            "puncture site",
+            "시술후",
+            "검사후",
+            "출혈관찰",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "시술·검사 후 출혈·통증·합병증 관찰",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_07",
+            "시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "시술·검사 후 출혈·통증·합병증 관찰 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "post procedure bleeding pain vital signs puncture site 시술후 검사후 출혈관찰 시술·검사 후 출혈·통증·합병증 관찰 검사 / 시술·수술 V83 V83_DETAIL_07 시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V83_DETAIL_08",
+      "category": "검사 / 시술·수술",
+      "title": "BST·혈당검사·검사기기 QC 확인",
+      "aliases": [
+        "BST",
+        "혈당",
+        "POCT",
+        "glucose check"
+      ],
+      "search_terms": [
+        "BST",
+        "blood sugar test",
+        "POCT",
+        "glucose meter",
+        "quality control",
+        "혈당",
+        "glucose check",
+        "BST·혈당검사·검사기기 QC 확인",
+        "검사 / 시술·수술",
+        "V83"
+      ],
+      "urgency": "high",
+      "summary": "BST·혈당검사·검사기기 QC 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "검사 전",
+        "결과 확인",
+        "QC/기기"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "검사 전: 검사 전 관련 환자확인·처방·상태를 먼저 확인 → BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "결과 확인: 결과 확인 관련 환자확인·처방·상태를 먼저 확인 → BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "QC/기기: QC/기기 관련 환자확인·처방·상태를 먼저 확인 → BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "보고: 보고 관련 환자확인·처방·상태를 먼저 확인 → BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+      ],
+      "tags": [
+        "V83",
+        "검사",
+        "BST",
+        "blood sugar test",
+        "POCT",
+        "glucose meter",
+        "quality control"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "환자확인·검체관리·영상검사 안전 일반 원칙",
+        "원내 검사실/영상의학과/수술실 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "BST·혈당검사·검사기기 QC 확인 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "검사 전",
+              "검사 전 관련 환자확인·처방·상태를 먼저 확인",
+              "BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "검사 전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "결과 확인",
+              "결과 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "결과 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "QC/기기",
+              "QC/기기 관련 환자확인·처방·상태를 먼저 확인",
+              "BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "QC/기기 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "보고",
+              "보고 관련 환자확인·처방·상태를 먼저 확인",
+              "BST·혈당검사·검사기기 QC 확인 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "보고 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "BST",
+            "blood sugar test",
+            "POCT",
+            "glucose meter",
+            "quality control",
+            "혈당",
+            "glucose check",
+            "BST·혈당검사·검사기기 QC 확인",
+            "한눈에",
+            "체크표",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_08",
+            "BST·혈당검사·검사기기 QC 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "한눈에 보기",
+            "BST·혈당검사·검사기기 QC 확인 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "BST·혈당검사·검사기기 QC 확인 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "BST",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "혈당",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "POCT",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "glucose check",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood sugar test",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "glucose meter",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "quality control",
+              "BST·혈당검사·검사기기 QC 확인",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "BST",
+            "blood sugar test",
+            "POCT",
+            "glucose meter",
+            "quality control",
+            "혈당",
+            "glucose check",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "BST·혈당검사·검사기기 QC 확인",
+            "검사 / 시술·수술",
+            "V83",
+            "V83_DETAIL_08",
+            "BST·혈당검사·검사기기 QC 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "검사",
+            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
+            "검색어 연결표",
+            "BST·혈당검사·검사기기 QC 확인 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "BST blood sugar test POCT glucose meter quality control 혈당 glucose check BST·혈당검사·검사기기 QC 확인 검사 / 시술·수술 V83 V83_DETAIL_08 BST·혈당검사·검사기기 QC 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 검사 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_01",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+      "aliases": [
+        "PIV",
+        "말초정맥",
+        "IV line",
+        "침윤",
+        "정맥염"
+      ],
+      "search_terms": [
+        "PIV",
+        "peripheral IV",
+        "infiltration",
+        "extravasation",
+        "phlebitis",
+        "말초정맥",
+        "IV line",
+        "침윤",
+        "정맥염",
+        "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "말초정맥 PIV 삽입부위·침윤·정맥염 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "삽입부위",
+        "주입상태",
+        "고위험 약물"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "삽입부위: 삽입부위 관련 환자확인·처방·상태를 먼저 확인 → 말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "주입상태: 주입상태 관련 환자확인·처방·상태를 먼저 확인 → 말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "고위험 약물: 고위험 약물 관련 환자확인·처방·상태를 먼저 확인 → 말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "교환/제거: 교환/제거 관련 환자확인·처방·상태를 먼저 확인 → 말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "PIV",
+        "peripheral IV",
+        "infiltration",
+        "extravasation",
+        "phlebitis"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "말초정맥 PIV 삽입부위·침윤·정맥염 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "삽입부위",
+              "삽입부위 관련 환자확인·처방·상태를 먼저 확인",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "삽입부위 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "주입상태",
+              "주입상태 관련 환자확인·처방·상태를 먼저 확인",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "주입상태 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "고위험 약물",
+              "고위험 약물 관련 환자확인·처방·상태를 먼저 확인",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "고위험 약물 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "교환/제거",
+              "교환/제거 관련 환자확인·처방·상태를 먼저 확인",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "교환/제거 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "PIV",
+            "peripheral IV",
+            "infiltration",
+            "extravasation",
+            "phlebitis",
+            "말초정맥",
+            "IV line",
+            "침윤",
+            "정맥염",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_01",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "말초정맥 PIV 삽입부위·침윤·정맥염 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "PIV",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "말초정맥",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "IV line",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "침윤",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "정맥염",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "peripheral IV",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "infiltration",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "extravasation",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "phlebitis",
+              "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "PIV",
+            "peripheral IV",
+            "infiltration",
+            "extravasation",
+            "phlebitis",
+            "말초정맥",
+            "IV line",
+            "침윤",
+            "정맥염",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_01",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "말초정맥 PIV 삽입부위·침윤·정맥염 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "PIV peripheral IV infiltration extravasation phlebitis 말초정맥 IV line 침윤 정맥염 말초정맥 PIV 삽입부위·침윤·정맥염 체크 기구 / Line·Drain·Dressing V84 V84_DETAIL_01 말초정맥 PIV 삽입부위·침윤·정맥염 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_02",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "CVC·PICC 중심정맥관 Dressing·감염관리",
+      "aliases": [
+        "CVC",
+        "PICC",
+        "중심정맥관",
+        "central line",
+        "CLABSI"
+      ],
+      "search_terms": [
+        "CVC",
+        "PICC",
+        "central venous catheter",
+        "CLABSI",
+        "dressing",
+        "중심정맥관",
+        "central line",
+        "CVC·PICC 중심정맥관 Dressing·감염관리",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "CVC·PICC 중심정맥관 Dressing·감염관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "삽입부위",
+        "hub/연결부",
+        "dressing"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "삽입부위: 삽입부위 관련 환자확인·처방·상태를 먼저 확인 → CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "hub/연결부: hub/연결부 관련 환자확인·처방·상태를 먼저 확인 → CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "dressing: dressing 관련 환자확인·처방·상태를 먼저 확인 → CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "감염의심: 감염의심 관련 환자확인·처방·상태를 먼저 확인 → CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "CVC",
+        "PICC",
+        "central venous catheter",
+        "CLABSI",
+        "dressing"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "CVC·PICC 중심정맥관 Dressing·감염관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "삽입부위",
+              "삽입부위 관련 환자확인·처방·상태를 먼저 확인",
+              "CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "삽입부위 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "hub/연결부",
+              "hub/연결부 관련 환자확인·처방·상태를 먼저 확인",
+              "CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "hub/연결부 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "dressing",
+              "dressing 관련 환자확인·처방·상태를 먼저 확인",
+              "CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "dressing 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "감염의심",
+              "감염의심 관련 환자확인·처방·상태를 먼저 확인",
+              "CVC·PICC 중심정맥관 Dressing·감염관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "감염의심 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "CVC",
+            "PICC",
+            "central venous catheter",
+            "CLABSI",
+            "dressing",
+            "중심정맥관",
+            "central line",
+            "CVC·PICC 중심정맥관 Dressing·감염관리",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_02",
+            "CVC·PICC 중심정맥관 Dressing·감염관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "CVC·PICC 중심정맥관 Dressing·감염관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "CVC·PICC 중심정맥관 Dressing·감염관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "CVC",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PICC",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "중심정맥관",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "central line",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CLABSI",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "central venous catheter",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "dressing",
+              "CVC·PICC 중심정맥관 Dressing·감염관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CVC",
+            "PICC",
+            "central venous catheter",
+            "CLABSI",
+            "dressing",
+            "중심정맥관",
+            "central line",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "CVC·PICC 중심정맥관 Dressing·감염관리",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_02",
+            "CVC·PICC 중심정맥관 Dressing·감염관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "CVC·PICC 중심정맥관 Dressing·감염관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CVC PICC central venous catheter CLABSI dressing 중심정맥관 central line CVC·PICC 중심정맥관 Dressing·감염관리 기구 / Line·Drain·Dressing V84 V84_DETAIL_02 CVC·PICC 중심정맥관 Dressing·감염관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_03",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "A-line Dressing·Flush·채혈 관리",
+      "aliases": [
+        "A-line 관리",
+        "arterial line care",
+        "동맥라인",
+        "pressure bag"
+      ],
+      "search_terms": [
+        "A-line",
+        "arterial line",
+        "flush",
+        "pressure bag",
+        "blood sampling",
+        "A-line 관리",
+        "arterial line care",
+        "동맥라인",
+        "A-line Dressing·Flush·채혈 관리",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "삽입부위",
+        "waveform/flush",
+        "채혈 후"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "삽입부위: 삽입부위 관련 환자확인·처방·상태를 먼저 확인 → A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "waveform/flush: waveform/flush 관련 환자확인·처방·상태를 먼저 확인 → A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "채혈 후: 채혈 후 관련 환자확인·처방·상태를 먼저 확인 → A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "제거 후: 제거 후 관련 환자확인·처방·상태를 먼저 확인 → A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "A-line",
+        "arterial line",
+        "flush",
+        "pressure bag",
+        "blood sampling"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "A-line Dressing·Flush·채혈 관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "삽입부위",
+              "삽입부위 관련 환자확인·처방·상태를 먼저 확인",
+              "A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "삽입부위 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "waveform/flush",
+              "waveform/flush 관련 환자확인·처방·상태를 먼저 확인",
+              "A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "waveform/flush 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "채혈 후",
+              "채혈 후 관련 환자확인·처방·상태를 먼저 확인",
+              "A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채혈 후 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "제거 후",
+              "제거 후 관련 환자확인·처방·상태를 먼저 확인",
+              "A-line Dressing·Flush·채혈 관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "제거 후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "A-line",
+            "arterial line",
+            "flush",
+            "pressure bag",
+            "blood sampling",
+            "A-line 관리",
+            "arterial line care",
+            "동맥라인",
+            "A-line Dressing·Flush·채혈 관리",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_03",
+            "A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "A-line Dressing·Flush·채혈 관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "A-line Dressing·Flush·채혈 관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "A-line 관리",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial line care",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "동맥라인",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressure bag",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "A-line",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "arterial line",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "flush",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood sampling",
+              "A-line Dressing·Flush·채혈 관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "A-line",
+            "arterial line",
+            "flush",
+            "pressure bag",
+            "blood sampling",
+            "A-line 관리",
+            "arterial line care",
+            "동맥라인",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "A-line Dressing·Flush·채혈 관리",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_03",
+            "A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "A-line Dressing·Flush·채혈 관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "A-line arterial line flush pressure bag blood sampling A-line 관리 arterial line care 동맥라인 A-line Dressing·Flush·채혈 관리 기구 / Line·Drain·Dressing V84 V84_DETAIL_03 A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_04",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "Foley catheter·Urine meter 감염예방과 소변량",
+      "aliases": [
+        "Foley",
+        "도뇨관",
+        "urine meter",
+        "소변백",
+        "CAUTI"
+      ],
+      "search_terms": [
+        "Foley catheter",
+        "urinary catheter",
+        "urine meter",
+        "CAUTI",
+        "urine output",
+        "Foley",
+        "도뇨관",
+        "소변백",
+        "Foley catheter·Urine meter 감염예방과 소변량",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "고정/위치",
+        "소변량",
+        "감염예방"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "고정/위치: 고정/위치 관련 환자확인·처방·상태를 먼저 확인 → Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "소변량: 소변량 관련 환자확인·처방·상태를 먼저 확인 → Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "감염예방: 감염예방 관련 환자확인·처방·상태를 먼저 확인 → Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "폐색의심: 폐색의심 관련 환자확인·처방·상태를 먼저 확인 → Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "Foley catheter",
+        "urinary catheter",
+        "urine meter",
+        "CAUTI",
+        "urine output"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Foley catheter·Urine meter 감염예방과 소변량 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "고정/위치",
+              "고정/위치 관련 환자확인·처방·상태를 먼저 확인",
+              "Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "고정/위치 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "소변량",
+              "소변량 관련 환자확인·처방·상태를 먼저 확인",
+              "Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "소변량 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "감염예방",
+              "감염예방 관련 환자확인·처방·상태를 먼저 확인",
+              "Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "감염예방 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "폐색의심",
+              "폐색의심 관련 환자확인·처방·상태를 먼저 확인",
+              "Foley catheter·Urine meter 감염예방과 소변량 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "폐색의심 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "Foley catheter",
+            "urinary catheter",
+            "urine meter",
+            "CAUTI",
+            "urine output",
+            "Foley",
+            "도뇨관",
+            "소변백",
+            "Foley catheter·Urine meter 감염예방과 소변량",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_04",
+            "Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "Foley catheter·Urine meter 감염예방과 소변량 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Foley catheter·Urine meter 감염예방과 소변량 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "Foley",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "도뇨관",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "urine meter",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "소변백",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CAUTI",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Foley catheter",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "urinary catheter",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "urine output",
+              "Foley catheter·Urine meter 감염예방과 소변량",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "Foley catheter",
+            "urinary catheter",
+            "urine meter",
+            "CAUTI",
+            "urine output",
+            "Foley",
+            "도뇨관",
+            "소변백",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Foley catheter·Urine meter 감염예방과 소변량",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_04",
+            "Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "Foley catheter·Urine meter 감염예방과 소변량 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "Foley catheter urinary catheter urine meter CAUTI urine output Foley 도뇨관 소변백 Foley catheter·Urine meter 감염예방과 소변량 기구 / Line·Drain·Dressing V84 V84_DETAIL_04 Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_05",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "Chest tube 배액·Air leak·흡인압 체크",
+      "aliases": [
+        "Chest tube",
+        "흉관",
+        "흉부배액",
+        "air leak",
+        "water seal"
+      ],
+      "search_terms": [
+        "chest tube",
+        "thoracic drainage",
+        "air leak",
+        "water seal",
+        "suction",
+        "Chest tube",
+        "흉관",
+        "흉부배액",
+        "Chest tube 배액·Air leak·흡인압 체크",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "Chest tube 배액·Air leak·흡인압 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "배액량/색",
+        "air leak",
+        "water seal/suction"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "배액량/색: 배액량/색 관련 환자확인·처방·상태를 먼저 확인 → Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "air leak: air leak 관련 환자확인·처방·상태를 먼저 확인 → Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "water seal/suction: water seal/suction 관련 환자확인·처방·상태를 먼저 확인 → Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "응급상황: 응급상황 관련 환자확인·처방·상태를 먼저 확인 → Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "chest tube",
+        "thoracic drainage",
+        "air leak",
+        "water seal",
+        "suction"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Chest tube 배액·Air leak·흡인압 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "배액량/색",
+              "배액량/색 관련 환자확인·처방·상태를 먼저 확인",
+              "Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "배액량/색 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "air leak",
+              "air leak 관련 환자확인·처방·상태를 먼저 확인",
+              "Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "air leak 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "water seal/suction",
+              "water seal/suction 관련 환자확인·처방·상태를 먼저 확인",
+              "Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "water seal/suction 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "응급상황",
+              "응급상황 관련 환자확인·처방·상태를 먼저 확인",
+              "Chest tube 배액·Air leak·흡인압 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "응급상황 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "chest tube",
+            "thoracic drainage",
+            "air leak",
+            "water seal",
+            "suction",
+            "Chest tube",
+            "흉관",
+            "흉부배액",
+            "Chest tube 배액·Air leak·흡인압 체크",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_05",
+            "Chest tube 배액·Air leak·흡인압 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "Chest tube 배액·Air leak·흡인압 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Chest tube 배액·Air leak·흡인압 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "Chest tube",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "흉관",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "흉부배액",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "air leak",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "water seal",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "chest tube",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "thoracic drainage",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "suction",
+              "Chest tube 배액·Air leak·흡인압 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "chest tube",
+            "thoracic drainage",
+            "air leak",
+            "water seal",
+            "suction",
+            "Chest tube",
+            "흉관",
+            "흉부배액",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Chest tube 배액·Air leak·흡인압 체크",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_05",
+            "Chest tube 배액·Air leak·흡인압 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "Chest tube 배액·Air leak·흡인압 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "chest tube thoracic drainage air leak water seal suction Chest tube 흉관 흉부배액 Chest tube 배액·Air leak·흡인압 체크 기구 / Line·Drain·Dressing V84 V84_DETAIL_05 Chest tube 배액·Air leak·흡인압 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_06",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "Hemovac·JP drain 음압·배액관리",
+      "aliases": [
+        "Hemovac",
+        "JP drain",
+        "배액관",
+        "음압배액"
+      ],
+      "search_terms": [
+        "Hemovac",
+        "JP drain",
+        "surgical drain",
+        "negative pressure",
+        "drain output",
+        "배액관",
+        "음압배액",
+        "Hemovac·JP drain 음압·배액관리",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "Hemovac·JP drain 음압·배액관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "음압 확인",
+        "배액량/성상",
+        "삽입부위"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "음압 확인: 음압 확인 관련 환자확인·처방·상태를 먼저 확인 → Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "배액량/성상: 배액량/성상 관련 환자확인·처방·상태를 먼저 확인 → Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "삽입부위: 삽입부위 관련 환자확인·처방·상태를 먼저 확인 → Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "고정/당김: 고정/당김 관련 환자확인·처방·상태를 먼저 확인 → Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "Hemovac",
+        "JP drain",
+        "surgical drain",
+        "negative pressure",
+        "drain output"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Hemovac·JP drain 음압·배액관리 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "음압 확인",
+              "음압 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "음압 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "배액량/성상",
+              "배액량/성상 관련 환자확인·처방·상태를 먼저 확인",
+              "Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "배액량/성상 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "삽입부위",
+              "삽입부위 관련 환자확인·처방·상태를 먼저 확인",
+              "Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "삽입부위 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "고정/당김",
+              "고정/당김 관련 환자확인·처방·상태를 먼저 확인",
+              "Hemovac·JP drain 음압·배액관리 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "고정/당김 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "Hemovac",
+            "JP drain",
+            "surgical drain",
+            "negative pressure",
+            "drain output",
+            "배액관",
+            "음압배액",
+            "Hemovac·JP drain 음압·배액관리",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_06",
+            "Hemovac·JP drain 음압·배액관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "Hemovac·JP drain 음압·배액관리 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Hemovac·JP drain 음압·배액관리 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "Hemovac",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "JP drain",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "배액관",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "음압배액",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "surgical drain",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "negative pressure",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "drain output",
+              "Hemovac·JP drain 음압·배액관리",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "Hemovac",
+            "JP drain",
+            "surgical drain",
+            "negative pressure",
+            "drain output",
+            "배액관",
+            "음압배액",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Hemovac·JP drain 음압·배액관리",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_06",
+            "Hemovac·JP drain 음압·배액관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "Hemovac·JP drain 음압·배액관리 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "Hemovac JP drain surgical drain negative pressure drain output 배액관 음압배액 Hemovac·JP drain 음압·배액관리 기구 / Line·Drain·Dressing V84 V84_DETAIL_06 Hemovac·JP drain 음압·배액관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_07",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "상처 Dressing 무균술·피부사정",
+      "aliases": [
+        "dressing",
+        "드레싱",
+        "상처소독",
+        "무균술"
+      ],
+      "search_terms": [
+        "dressing",
+        "wound care",
+        "sterile technique",
+        "skin assessment",
+        "드레싱",
+        "상처소독",
+        "무균술",
+        "상처 Dressing 무균술·피부사정",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "상처 Dressing 무균술·피부사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "전 사정",
+        "무균술",
+        "교환 후"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "전 사정: 전 사정 관련 환자확인·처방·상태를 먼저 확인 → 상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "무균술: 무균술 관련 환자확인·처방·상태를 먼저 확인 → 상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "교환 후: 교환 후 관련 환자확인·처방·상태를 먼저 확인 → 상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "악화징후: 악화징후 관련 환자확인·처방·상태를 먼저 확인 → 상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "dressing",
+        "wound care",
+        "sterile technique",
+        "skin assessment"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "상처 Dressing 무균술·피부사정 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "전 사정",
+              "전 사정 관련 환자확인·처방·상태를 먼저 확인",
+              "상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "전 사정 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "무균술",
+              "무균술 관련 환자확인·처방·상태를 먼저 확인",
+              "상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "무균술 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "교환 후",
+              "교환 후 관련 환자확인·처방·상태를 먼저 확인",
+              "상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "교환 후 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "악화징후",
+              "악화징후 관련 환자확인·처방·상태를 먼저 확인",
+              "상처 Dressing 무균술·피부사정 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "악화징후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "dressing",
+            "wound care",
+            "sterile technique",
+            "skin assessment",
+            "드레싱",
+            "상처소독",
+            "무균술",
+            "상처 Dressing 무균술·피부사정",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_07",
+            "상처 Dressing 무균술·피부사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "상처 Dressing 무균술·피부사정 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "상처 Dressing 무균술·피부사정 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "dressing",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "드레싱",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "상처소독",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "무균술",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "wound care",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sterile technique",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "skin assessment",
+              "상처 Dressing 무균술·피부사정",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "dressing",
+            "wound care",
+            "sterile technique",
+            "skin assessment",
+            "드레싱",
+            "상처소독",
+            "무균술",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "상처 Dressing 무균술·피부사정",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_07",
+            "상처 Dressing 무균술·피부사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "상처 Dressing 무균술·피부사정 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "dressing wound care sterile technique skin assessment 드레싱 상처소독 무균술 상처 Dressing 무균술·피부사정 기구 / Line·Drain·Dressing V84 V84_DETAIL_07 상처 Dressing 무균술·피부사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V84_DETAIL_08",
+      "category": "기구 / Line·Drain·Dressing",
+      "title": "소독기구·Sterile set 준비와 오염 예방",
+      "aliases": [
+        "소독기구",
+        "sterile set",
+        "멸균세트",
+        "forceps"
+      ],
+      "search_terms": [
+        "sterile set",
+        "aseptic technique",
+        "disinfection",
+        "chlorhexidine",
+        "소독기구",
+        "멸균세트",
+        "forceps",
+        "소독기구·Sterile set 준비와 오염 예방",
+        "기구 / Line·Drain·Dressing",
+        "V84"
+      ],
+      "urgency": "high",
+      "summary": "소독기구·Sterile set 준비와 오염 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "물품 확인",
+        "무균영역",
+        "소독제"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "물품 확인: 물품 확인 관련 환자확인·처방·상태를 먼저 확인 → 소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "무균영역: 무균영역 관련 환자확인·처방·상태를 먼저 확인 → 소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "소독제: 소독제 관련 환자확인·처방·상태를 먼저 확인 → 소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "폐기/정리: 폐기/정리 관련 환자확인·처방·상태를 먼저 확인 → 소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      ],
+      "tags": [
+        "V84",
+        "기구",
+        "sterile set",
+        "aseptic technique",
+        "disinfection",
+        "chlorhexidine"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "CDC intravascular catheter-related infection prevention guidance",
+        "원내 감염관리·드레싱·배액관 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "소독기구·Sterile set 준비와 오염 예방 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "물품 확인",
+              "물품 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "물품 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "무균영역",
+              "무균영역 관련 환자확인·처방·상태를 먼저 확인",
+              "소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "무균영역 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "소독제",
+              "소독제 관련 환자확인·처방·상태를 먼저 확인",
+              "소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "소독제 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "폐기/정리",
+              "폐기/정리 관련 환자확인·처방·상태를 먼저 확인",
+              "소독기구·Sterile set 준비와 오염 예방 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "폐기/정리 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "sterile set",
+            "aseptic technique",
+            "disinfection",
+            "chlorhexidine",
+            "소독기구",
+            "멸균세트",
+            "forceps",
+            "소독기구·Sterile set 준비와 오염 예방",
+            "한눈에",
+            "체크표",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_08",
+            "소독기구·Sterile set 준비와 오염 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "한눈에 보기",
+            "소독기구·Sterile set 준비와 오염 예방 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "소독기구·Sterile set 준비와 오염 예방 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "소독기구",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "sterile set",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "멸균세트",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "forceps",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "aseptic technique",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "disinfection",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "chlorhexidine",
+              "소독기구·Sterile set 준비와 오염 예방",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "sterile set",
+            "aseptic technique",
+            "disinfection",
+            "chlorhexidine",
+            "소독기구",
+            "멸균세트",
+            "forceps",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "소독기구·Sterile set 준비와 오염 예방",
+            "기구 / Line·Drain·Dressing",
+            "V84",
+            "V84_DETAIL_08",
+            "소독기구·Sterile set 준비와 오염 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "기구",
+            "V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+            "검색어 연결표",
+            "소독기구·Sterile set 준비와 오염 예방 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "sterile set aseptic technique disinfection chlorhexidine 소독기구 멸균세트 forceps 소독기구·Sterile set 준비와 오염 예방 기구 / Line·Drain·Dressing V84 V84_DETAIL_08 소독기구·Sterile set 준비와 오염 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 기구 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_01",
+      "category": "간호업무 / 안전·기록",
+      "title": "낙상 위험평가·예방중재·사건보고",
+      "aliases": [
+        "낙상",
+        "fall risk",
+        "낙상평가",
+        "side rail"
+      ],
+      "search_terms": [
+        "fall risk",
+        "fall prevention",
+        "side rail",
+        "bed alarm",
+        "patient safety",
+        "낙상",
+        "낙상평가",
+        "낙상 위험평가·예방중재·사건보고",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "낙상 위험평가·예방중재·사건보고 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "위험평가",
+        "예방중재",
+        "이동/검사"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "위험평가: 위험평가 관련 환자확인·처방·상태를 먼저 확인 → 낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "예방중재: 예방중재 관련 환자확인·처방·상태를 먼저 확인 → 낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이동/검사: 이동/검사 관련 환자확인·처방·상태를 먼저 확인 → 낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "낙상 발생: 낙상 발생 관련 환자확인·처방·상태를 먼저 확인 → 낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "fall risk",
+        "fall prevention",
+        "side rail",
+        "bed alarm",
+        "patient safety"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "낙상 위험평가·예방중재·사건보고 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "위험평가",
+              "위험평가 관련 환자확인·처방·상태를 먼저 확인",
+              "낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "위험평가 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "예방중재",
+              "예방중재 관련 환자확인·처방·상태를 먼저 확인",
+              "낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "예방중재 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이동/검사",
+              "이동/검사 관련 환자확인·처방·상태를 먼저 확인",
+              "낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이동/검사 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "낙상 발생",
+              "낙상 발생 관련 환자확인·처방·상태를 먼저 확인",
+              "낙상 위험평가·예방중재·사건보고 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "낙상 발생 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "fall risk",
+            "fall prevention",
+            "side rail",
+            "bed alarm",
+            "patient safety",
+            "낙상",
+            "낙상평가",
+            "낙상 위험평가·예방중재·사건보고",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_01",
+            "낙상 위험평가·예방중재·사건보고 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "낙상 위험평가·예방중재·사건보고 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "낙상 위험평가·예방중재·사건보고 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "낙상",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "fall risk",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "낙상평가",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "side rail",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "fall prevention",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bed alarm",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "patient safety",
+              "낙상 위험평가·예방중재·사건보고",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "fall risk",
+            "fall prevention",
+            "side rail",
+            "bed alarm",
+            "patient safety",
+            "낙상",
+            "낙상평가",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "낙상 위험평가·예방중재·사건보고",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_01",
+            "낙상 위험평가·예방중재·사건보고 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "낙상 위험평가·예방중재·사건보고 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "fall risk fall prevention side rail bed alarm patient safety 낙상 낙상평가 낙상 위험평가·예방중재·사건보고 간호업무 / 안전·기록 V85 V85_DETAIL_01 낙상 위험평가·예방중재·사건보고 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_02",
+      "category": "간호업무 / 안전·기록",
+      "title": "욕창 위험평가·피부사정·체위변경",
+      "aliases": [
+        "욕창",
+        "pressure injury",
+        "Braden",
+        "피부사정"
+      ],
+      "search_terms": [
+        "pressure injury",
+        "Braden scale",
+        "skin assessment",
+        "turning",
+        "욕창",
+        "Braden",
+        "피부사정",
+        "욕창 위험평가·피부사정·체위변경",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "욕창 위험평가·피부사정·체위변경 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "위험평가",
+        "피부사정",
+        "예방중재"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "위험평가: 위험평가 관련 환자확인·처방·상태를 먼저 확인 → 욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "피부사정: 피부사정 관련 환자확인·처방·상태를 먼저 확인 → 욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "예방중재: 예방중재 관련 환자확인·처방·상태를 먼저 확인 → 욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "악화/발견: 악화/발견 관련 환자확인·처방·상태를 먼저 확인 → 욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "pressure injury",
+        "Braden scale",
+        "skin assessment",
+        "turning"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "욕창 위험평가·피부사정·체위변경 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "위험평가",
+              "위험평가 관련 환자확인·처방·상태를 먼저 확인",
+              "욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "위험평가 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "피부사정",
+              "피부사정 관련 환자확인·처방·상태를 먼저 확인",
+              "욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "피부사정 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "예방중재",
+              "예방중재 관련 환자확인·처방·상태를 먼저 확인",
+              "욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "예방중재 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "악화/발견",
+              "악화/발견 관련 환자확인·처방·상태를 먼저 확인",
+              "욕창 위험평가·피부사정·체위변경 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "악화/발견 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "pressure injury",
+            "Braden scale",
+            "skin assessment",
+            "turning",
+            "욕창",
+            "Braden",
+            "피부사정",
+            "욕창 위험평가·피부사정·체위변경",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_02",
+            "욕창 위험평가·피부사정·체위변경 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "욕창 위험평가·피부사정·체위변경 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "욕창 위험평가·피부사정·체위변경 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "욕창",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pressure injury",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Braden",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "피부사정",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Braden scale",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "skin assessment",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "turning",
+              "욕창 위험평가·피부사정·체위변경",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "pressure injury",
+            "Braden scale",
+            "skin assessment",
+            "turning",
+            "욕창",
+            "Braden",
+            "피부사정",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "욕창 위험평가·피부사정·체위변경",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_02",
+            "욕창 위험평가·피부사정·체위변경 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "욕창 위험평가·피부사정·체위변경 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "pressure injury Braden scale skin assessment turning 욕창 Braden 피부사정 욕창 위험평가·피부사정·체위변경 간호업무 / 안전·기록 V85 V85_DETAIL_02 욕창 위험평가·피부사정·체위변경 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_03",
+      "category": "간호업무 / 안전·기록",
+      "title": "통증 NRS·CPOT 사정과 재평가",
+      "aliases": [
+        "통증",
+        "NRS",
+        "CPOT",
+        "pain assessment"
+      ],
+      "search_terms": [
+        "pain",
+        "NRS",
+        "CPOT",
+        "analgesia",
+        "reassessment",
+        "통증",
+        "pain assessment",
+        "통증 NRS·CPOT 사정과 재평가",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "통증 NRS·CPOT 사정과 재평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "사정도구",
+        "통증양상",
+        "중재"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "사정도구: 사정도구 관련 환자확인·처방·상태를 먼저 확인 → 통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "통증양상: 통증양상 관련 환자확인·처방·상태를 먼저 확인 → 통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "중재: 중재 관련 환자확인·처방·상태를 먼저 확인 → 통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "재평가: 재평가 관련 환자확인·처방·상태를 먼저 확인 → 통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "pain",
+        "NRS",
+        "CPOT",
+        "analgesia",
+        "reassessment"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "통증 NRS·CPOT 사정과 재평가 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "사정도구",
+              "사정도구 관련 환자확인·처방·상태를 먼저 확인",
+              "통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "사정도구 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "통증양상",
+              "통증양상 관련 환자확인·처방·상태를 먼저 확인",
+              "통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "통증양상 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "중재",
+              "중재 관련 환자확인·처방·상태를 먼저 확인",
+              "통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "중재 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "재평가",
+              "재평가 관련 환자확인·처방·상태를 먼저 확인",
+              "통증 NRS·CPOT 사정과 재평가 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "재평가 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "pain",
+            "NRS",
+            "CPOT",
+            "analgesia",
+            "reassessment",
+            "통증",
+            "pain assessment",
+            "통증 NRS·CPOT 사정과 재평가",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_03",
+            "통증 NRS·CPOT 사정과 재평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "통증 NRS·CPOT 사정과 재평가 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "통증 NRS·CPOT 사정과 재평가 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "통증",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "NRS",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CPOT",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pain assessment",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "pain",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "analgesia",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "reassessment",
+              "통증 NRS·CPOT 사정과 재평가",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "pain",
+            "NRS",
+            "CPOT",
+            "analgesia",
+            "reassessment",
+            "통증",
+            "pain assessment",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "통증 NRS·CPOT 사정과 재평가",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_03",
+            "통증 NRS·CPOT 사정과 재평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "통증 NRS·CPOT 사정과 재평가 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "pain NRS CPOT analgesia reassessment 통증 pain assessment 통증 NRS·CPOT 사정과 재평가 간호업무 / 안전·기록 V85 V85_DETAIL_03 통증 NRS·CPOT 사정과 재평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_04",
+      "category": "간호업무 / 안전·기록",
+      "title": "SOAP 간호기록 작성 구조",
+      "aliases": [
+        "SOAP",
+        "간호기록",
+        "nursing note",
+        "EMR note"
+      ],
+      "search_terms": [
+        "SOAP",
+        "nursing note",
+        "subjective",
+        "objective",
+        "assessment",
+        "plan",
+        "간호기록",
+        "EMR note",
+        "SOAP 간호기록 작성 구조",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "SOAP 간호기록 작성 구조 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "S 주관적",
+        "O 객관적",
+        "A 평가"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "S 주관적: S 주관적 관련 환자확인·처방·상태를 먼저 확인 → SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "O 객관적: O 객관적 관련 환자확인·처방·상태를 먼저 확인 → SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "A 평가: A 평가 관련 환자확인·처방·상태를 먼저 확인 → SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "P 계획/수행: P 계획/수행 관련 환자확인·처방·상태를 먼저 확인 → SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "SOAP",
+        "nursing note",
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "SOAP 간호기록 작성 구조 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "S 주관적",
+              "S 주관적 관련 환자확인·처방·상태를 먼저 확인",
+              "SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "S 주관적 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "O 객관적",
+              "O 객관적 관련 환자확인·처방·상태를 먼저 확인",
+              "SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "O 객관적 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "A 평가",
+              "A 평가 관련 환자확인·처방·상태를 먼저 확인",
+              "SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "A 평가 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "P 계획/수행",
+              "P 계획/수행 관련 환자확인·처방·상태를 먼저 확인",
+              "SOAP 간호기록 작성 구조 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "P 계획/수행 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "SOAP",
+            "nursing note",
+            "subjective",
+            "objective",
+            "assessment",
+            "plan",
+            "간호기록",
+            "EMR note",
+            "SOAP 간호기록 작성 구조",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_04",
+            "SOAP 간호기록 작성 구조 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "SOAP 간호기록 작성 구조 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "SOAP 간호기록 작성 구조 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "SOAP",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "간호기록",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "nursing note",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "EMR note",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "subjective",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "objective",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "assessment",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "plan",
+              "SOAP 간호기록 작성 구조",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "SOAP",
+            "nursing note",
+            "subjective",
+            "objective",
+            "assessment",
+            "plan",
+            "간호기록",
+            "EMR note",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "SOAP 간호기록 작성 구조",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_04",
+            "SOAP 간호기록 작성 구조 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "SOAP 간호기록 작성 구조 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "SOAP nursing note subjective objective assessment plan 간호기록 EMR note SOAP 간호기록 작성 구조 간호업무 / 안전·기록 V85 V85_DETAIL_04 SOAP 간호기록 작성 구조 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_05",
+      "category": "간호업무 / 안전·기록",
+      "title": "EMR·ICU Flow Sheet 누락방지 체크",
+      "aliases": [
+        "EMR",
+        "flow sheet",
+        "ICU flow sheet",
+        "간호기록"
+      ],
+      "search_terms": [
+        "EMR",
+        "ICU flow sheet",
+        "vital signs",
+        "ventilator setting",
+        "I&O",
+        "flow sheet",
+        "간호기록",
+        "EMR·ICU Flow Sheet 누락방지 체크",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "활력/신경",
+        "호흡/장비",
+        "순환/약물"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "활력/신경: 활력/신경 관련 환자확인·처방·상태를 먼저 확인 → EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "호흡/장비: 호흡/장비 관련 환자확인·처방·상태를 먼저 확인 → EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "순환/약물: 순환/약물 관련 환자확인·처방·상태를 먼저 확인 → EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "I/O/라인: I/O/라인 관련 환자확인·처방·상태를 먼저 확인 → EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "EMR",
+        "ICU flow sheet",
+        "vital signs",
+        "ventilator setting",
+        "I&O"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "EMR·ICU Flow Sheet 누락방지 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "활력/신경",
+              "활력/신경 관련 환자확인·처방·상태를 먼저 확인",
+              "EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "활력/신경 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "호흡/장비",
+              "호흡/장비 관련 환자확인·처방·상태를 먼저 확인",
+              "EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "호흡/장비 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "순환/약물",
+              "순환/약물 관련 환자확인·처방·상태를 먼저 확인",
+              "EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "순환/약물 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "I/O/라인",
+              "I/O/라인 관련 환자확인·처방·상태를 먼저 확인",
+              "EMR·ICU Flow Sheet 누락방지 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "I/O/라인 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "EMR",
+            "ICU flow sheet",
+            "vital signs",
+            "ventilator setting",
+            "I&O",
+            "flow sheet",
+            "간호기록",
+            "EMR·ICU Flow Sheet 누락방지 체크",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_05",
+            "EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "EMR·ICU Flow Sheet 누락방지 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "EMR·ICU Flow Sheet 누락방지 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "EMR",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "flow sheet",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ICU flow sheet",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "간호기록",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "vital signs",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator setting",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "I&O",
+              "EMR·ICU Flow Sheet 누락방지 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "EMR",
+            "ICU flow sheet",
+            "vital signs",
+            "ventilator setting",
+            "I&O",
+            "flow sheet",
+            "간호기록",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "EMR·ICU Flow Sheet 누락방지 체크",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_05",
+            "EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "EMR·ICU Flow Sheet 누락방지 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "EMR ICU flow sheet vital signs ventilator setting I&O flow sheet 간호기록 EMR·ICU Flow Sheet 누락방지 체크 간호업무 / 안전·기록 V85 V85_DETAIL_05 EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_06",
+      "category": "간호업무 / 안전·기록",
+      "title": "간호처방 확인·수행·미수행 사유 기록",
+      "aliases": [
+        "간호처방",
+        "nursing order",
+        "처방확인"
+      ],
+      "search_terms": [
+        "nursing order",
+        "care plan",
+        "order check",
+        "implementation",
+        "간호처방",
+        "처방확인",
+        "간호처방 확인·수행·미수행 사유 기록",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "간호처방 확인·수행·미수행 사유 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "처방확인",
+        "수행",
+        "미수행"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "처방확인: 처방확인 관련 환자확인·처방·상태를 먼저 확인 → 간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "수행: 수행 관련 환자확인·처방·상태를 먼저 확인 → 간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "미수행: 미수행 관련 환자확인·처방·상태를 먼저 확인 → 간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "재평가: 재평가 관련 환자확인·처방·상태를 먼저 확인 → 간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "nursing order",
+        "care plan",
+        "order check",
+        "implementation"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "간호처방 확인·수행·미수행 사유 기록 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "처방확인",
+              "처방확인 관련 환자확인·처방·상태를 먼저 확인",
+              "간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "처방확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "수행",
+              "수행 관련 환자확인·처방·상태를 먼저 확인",
+              "간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "수행 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "미수행",
+              "미수행 관련 환자확인·처방·상태를 먼저 확인",
+              "간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "미수행 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "재평가",
+              "재평가 관련 환자확인·처방·상태를 먼저 확인",
+              "간호처방 확인·수행·미수행 사유 기록 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "재평가 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "nursing order",
+            "care plan",
+            "order check",
+            "implementation",
+            "간호처방",
+            "처방확인",
+            "간호처방 확인·수행·미수행 사유 기록",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_06",
+            "간호처방 확인·수행·미수행 사유 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "간호처방 확인·수행·미수행 사유 기록 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "간호처방 확인·수행·미수행 사유 기록 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "간호처방",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "nursing order",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "처방확인",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "care plan",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "order check",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "implementation",
+              "간호처방 확인·수행·미수행 사유 기록",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "nursing order",
+            "care plan",
+            "order check",
+            "implementation",
+            "간호처방",
+            "처방확인",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "간호처방 확인·수행·미수행 사유 기록",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_06",
+            "간호처방 확인·수행·미수행 사유 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "간호처방 확인·수행·미수행 사유 기록 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "nursing order care plan order check implementation 간호처방 처방확인 간호처방 확인·수행·미수행 사유 기록 간호업무 / 안전·기록 V85 V85_DETAIL_06 간호처방 확인·수행·미수행 사유 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_07",
+      "category": "간호업무 / 안전·기록",
+      "title": "Day·Evening·Night 근무별 ICU 업무 흐름",
+      "aliases": [
+        "근무별 업무",
+        "Day duty",
+        "Evening duty",
+        "Night duty",
+        "인계"
+      ],
+      "search_terms": [
+        "shift work",
+        "day evening night",
+        "handoff",
+        "rounding",
+        "ICU workflow",
+        "근무별 업무",
+        "Day duty",
+        "Evening duty",
+        "Night duty",
+        "인계",
+        "Day·Evening·Night 근무별 ICU 업무 흐름",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "Day·Evening·Night 근무별 ICU 업무 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "근무 시작",
+        "근무 중",
+        "마감 전"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "근무 시작: 근무 시작 관련 환자확인·처방·상태를 먼저 확인 → Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "근무 중: 근무 중 관련 환자확인·처방·상태를 먼저 확인 → Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "마감 전: 마감 전 관련 환자확인·처방·상태를 먼저 확인 → Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "인계: 인계 관련 환자확인·처방·상태를 먼저 확인 → Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "shift work",
+        "day evening night",
+        "handoff",
+        "rounding",
+        "ICU workflow"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Day·Evening·Night 근무별 ICU 업무 흐름 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "근무 시작",
+              "근무 시작 관련 환자확인·처방·상태를 먼저 확인",
+              "Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "근무 시작 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "근무 중",
+              "근무 중 관련 환자확인·처방·상태를 먼저 확인",
+              "Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "근무 중 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "마감 전",
+              "마감 전 관련 환자확인·처방·상태를 먼저 확인",
+              "Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "마감 전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "인계",
+              "인계 관련 환자확인·처방·상태를 먼저 확인",
+              "Day·Evening·Night 근무별 ICU 업무 흐름 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "인계 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "shift work",
+            "day evening night",
+            "handoff",
+            "rounding",
+            "ICU workflow",
+            "근무별 업무",
+            "Day duty",
+            "Evening duty",
+            "Night duty",
+            "인계",
+            "Day·Evening·Night 근무별 ICU 업무 흐름",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_07",
+            "Day·Evening·Night 근무별 ICU 업무 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "Day·Evening·Night 근무별 ICU 업무 흐름 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Day·Evening·Night 근무별 ICU 업무 흐름 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "근무별 업무",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Day duty",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Evening duty",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Night duty",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "인계",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "shift work",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "day evening night",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "handoff",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "rounding",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ICU workflow",
+              "Day·Evening·Night 근무별 ICU 업무 흐름",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "shift work",
+            "day evening night",
+            "handoff",
+            "rounding",
+            "ICU workflow",
+            "근무별 업무",
+            "Day duty",
+            "Evening duty",
+            "Night duty",
+            "인계",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Day·Evening·Night 근무별 ICU 업무 흐름",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_07",
+            "Day·Evening·Night 근무별 ICU 업무 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "Day·Evening·Night 근무별 ICU 업무 흐름 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "shift work day evening night handoff rounding ICU workflow 근무별 업무 Day duty Evening duty Night duty 인계 Day·Evening·Night 근무별 ICU 업무 흐름 간호업무 / 안전·기록 V85 V85_DETAIL_07 Day·Evening·Night 근무별 ICU 업무 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V85_DETAIL_08",
+      "category": "간호업무 / 안전·기록",
+      "title": "ICU Hourly rounding·안전점검 체크",
+      "aliases": [
+        "hourly rounding",
+        "ICU rounding",
+        "안전점검",
+        "침상점검"
+      ],
+      "search_terms": [
+        "hourly rounding",
+        "ICU safety check",
+        "bedside check",
+        "line check",
+        "alarm check",
+        "ICU rounding",
+        "안전점검",
+        "침상점검",
+        "ICU Hourly rounding·안전점검 체크",
+        "간호업무 / 안전·기록",
+        "V85"
+      ],
+      "urgency": "high",
+      "summary": "ICU Hourly rounding·안전점검 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "환자안전",
+        "장비/알람",
+        "라인/배액"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "환자안전: 환자안전 관련 환자확인·처방·상태를 먼저 확인 → ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "장비/알람: 장비/알람 관련 환자확인·처방·상태를 먼저 확인 → ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "라인/배액: 라인/배액 관련 환자확인·처방·상태를 먼저 확인 → ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "comfort/needs: comfort/needs 관련 환자확인·처방·상태를 먼저 확인 → ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+      ],
+      "tags": [
+        "V85",
+        "간호업무",
+        "hourly rounding",
+        "ICU safety check",
+        "bedside check",
+        "line check",
+        "alarm check"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "SCCM PADIS/Pain·Agitation·Delirium 관련 ICU 지침",
+        "원내 환자안전·간호기록·EMR 지침 우선"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "ICU Hourly rounding·안전점검 체크 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "환자안전",
+              "환자안전 관련 환자확인·처방·상태를 먼저 확인",
+              "ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "환자안전 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "장비/알람",
+              "장비/알람 관련 환자확인·처방·상태를 먼저 확인",
+              "ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "장비/알람 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "라인/배액",
+              "라인/배액 관련 환자확인·처방·상태를 먼저 확인",
+              "ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "라인/배액 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "comfort/needs",
+              "comfort/needs 관련 환자확인·처방·상태를 먼저 확인",
+              "ICU Hourly rounding·안전점검 체크 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "comfort/needs 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "hourly rounding",
+            "ICU safety check",
+            "bedside check",
+            "line check",
+            "alarm check",
+            "ICU rounding",
+            "안전점검",
+            "침상점검",
+            "ICU Hourly rounding·안전점검 체크",
+            "한눈에",
+            "체크표",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_08",
+            "ICU Hourly rounding·안전점검 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "한눈에 보기",
+            "ICU Hourly rounding·안전점검 체크 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "ICU Hourly rounding·안전점검 체크 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "hourly rounding",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ICU rounding",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "안전점검",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "침상점검",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ICU safety check",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bedside check",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "line check",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "alarm check",
+              "ICU Hourly rounding·안전점검 체크",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "hourly rounding",
+            "ICU safety check",
+            "bedside check",
+            "line check",
+            "alarm check",
+            "ICU rounding",
+            "안전점검",
+            "침상점검",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "ICU Hourly rounding·안전점검 체크",
+            "간호업무 / 안전·기록",
+            "V85",
+            "V85_DETAIL_08",
+            "ICU Hourly rounding·안전점검 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "간호업무",
+            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
+            "검색어 연결표",
+            "ICU Hourly rounding·안전점검 체크 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "hourly rounding ICU safety check bedside check line check alarm check ICU rounding 안전점검 침상점검 ICU Hourly rounding·안전점검 체크 간호업무 / 안전·기록 V85 V85_DETAIL_08 ICU Hourly rounding·안전점검 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 간호업무 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
+    },
+    {
+      "id": "V86_DETAIL_01",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "검색어 입력 규칙: 한글·영문·용도 조합",
+      "aliases": [
+        "검색어",
+        "검색규칙",
+        "AI 검색",
+        "카드검색"
+      ],
+      "search_terms": [
+        "search",
+        "keyword",
+        "alias",
+        "AI search",
+        "검색 정확도",
+        "검색어",
+        "검색규칙",
+        "AI 검색",
+        "카드검색",
+        "검색어 입력 규칙: 한글·영문·용도 조합",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "검색어 입력 규칙: 한글·영문·용도 조합 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "짧은 검색",
+        "조합 검색",
+        "한글/영문"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "짧은 검색: 짧은 검색 관련 환자확인·처방·상태를 먼저 확인 → 검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "조합 검색: 조합 검색 관련 환자확인·처방·상태를 먼저 확인 → 검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "한글/영문: 한글/영문 관련 환자확인·처방·상태를 먼저 확인 → 검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "불필요어 제외: 불필요어 제외 관련 환자확인·처방·상태를 먼저 확인 → 검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "search",
+        "keyword",
+        "alias",
+        "AI search",
+        "검색 정확도"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "검색어 입력 규칙: 한글·영문·용도 조합 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "짧은 검색",
+              "짧은 검색 관련 환자확인·처방·상태를 먼저 확인",
+              "검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "짧은 검색 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "조합 검색",
+              "조합 검색 관련 환자확인·처방·상태를 먼저 확인",
+              "검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "조합 검색 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "한글/영문",
+              "한글/영문 관련 환자확인·처방·상태를 먼저 확인",
+              "검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "한글/영문 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "불필요어 제외",
+              "불필요어 제외 관련 환자확인·처방·상태를 먼저 확인",
+              "검색어 입력 규칙: 한글·영문·용도 조합 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "불필요어 제외 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "search",
+            "keyword",
+            "alias",
+            "AI search",
+            "검색 정확도",
+            "검색어",
+            "검색규칙",
+            "AI 검색",
+            "카드검색",
+            "검색어 입력 규칙: 한글·영문·용도 조합",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_01",
+            "검색어 입력 규칙: 한글·영문·용도 조합 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "검색어 입력 규칙: 한글·영문·용도 조합 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "검색어 입력 규칙: 한글·영문·용도 조합 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "검색어",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "검색규칙",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "AI 검색",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "카드검색",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "search",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "keyword",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "alias",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "AI search",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "검색 정확도",
+              "검색어 입력 규칙: 한글·영문·용도 조합",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "search",
+            "keyword",
+            "alias",
+            "AI search",
+            "검색 정확도",
+            "검색어",
+            "검색규칙",
+            "AI 검색",
+            "카드검색",
+            "별칭",
+            "관련카드",
+            "검색어 입력 규칙: 한글·영문·용도 조합",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_01",
+            "검색어 입력 규칙: 한글·영문·용도 조합 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "검색어 입력 규칙: 한글·영문·용도 조합 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "search keyword alias AI search 검색 정확도 검색어 검색규칙 AI 검색 카드검색 검색어 입력 규칙: 한글·영문·용도 조합 병동업무 / 물품·장비검색 V86 V86_DETAIL_01 검색어 입력 규칙: 한글·영문·용도 조합 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_02",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "호흡기계 물품·장비 검색표",
+      "aliases": [
+        "호흡장비",
+        "ventilator equipment",
+        "산소기구",
+        "흡인장비"
+      ],
+      "search_terms": [
+        "ventilator",
+        "savina",
+        "ambu bag",
+        "oxygen mask",
+        "suction catheter",
+        "호흡장비",
+        "ventilator equipment",
+        "산소기구",
+        "흡인장비",
+        "호흡기계 물품·장비 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "Ventilator",
+        "산소기구",
+        "흡인물품"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "Ventilator: Ventilator 관련 환자확인·처방·상태를 먼저 확인 → 호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "산소기구: 산소기구 관련 환자확인·처방·상태를 먼저 확인 → 호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "흡인물품: 흡인물품 관련 환자확인·처방·상태를 먼저 확인 → 호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "응급환기: 응급환기 관련 환자확인·처방·상태를 먼저 확인 → 호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "ventilator",
+        "savina",
+        "ambu bag",
+        "oxygen mask",
+        "suction catheter"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "호흡기계 물품·장비 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "Ventilator",
+              "Ventilator 관련 환자확인·처방·상태를 먼저 확인",
+              "호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Ventilator 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "산소기구",
+              "산소기구 관련 환자확인·처방·상태를 먼저 확인",
+              "호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "산소기구 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "흡인물품",
+              "흡인물품 관련 환자확인·처방·상태를 먼저 확인",
+              "호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "흡인물품 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "응급환기",
+              "응급환기 관련 환자확인·처방·상태를 먼저 확인",
+              "호흡기계 물품·장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "응급환기 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "ventilator",
+            "savina",
+            "ambu bag",
+            "oxygen mask",
+            "suction catheter",
+            "호흡장비",
+            "ventilator equipment",
+            "산소기구",
+            "흡인장비",
+            "호흡기계 물품·장비 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_02",
+            "호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "호흡기계 물품·장비 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "호흡기계 물품·장비 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "호흡장비",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator equipment",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "산소기구",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "흡인장비",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ventilator",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "savina",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ambu bag",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "oxygen mask",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "suction catheter",
+              "호흡기계 물품·장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ventilator",
+            "savina",
+            "ambu bag",
+            "oxygen mask",
+            "suction catheter",
+            "호흡장비",
+            "ventilator equipment",
+            "산소기구",
+            "흡인장비",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "호흡기계 물품·장비 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_02",
+            "호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "호흡기계 물품·장비 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ventilator savina ambu bag oxygen mask suction catheter 호흡장비 ventilator equipment 산소기구 흡인장비 호흡기계 물품·장비 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_02 호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_03",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "Line·Drain 물품 검색표",
+      "aliases": [
+        "라인물품",
+        "drain 물품",
+        "CVC set",
+        "foley set"
+      ],
+      "search_terms": [
+        "CVC",
+        "PICC",
+        "A-line",
+        "Foley",
+        "chest tube",
+        "Hemovac",
+        "라인물품",
+        "drain 물품",
+        "CVC set",
+        "foley set",
+        "Line·Drain 물품 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "Line",
+        "Drain",
+        "Dressing"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "Line: Line 관련 환자확인·처방·상태를 먼저 확인 → Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "Drain: Drain 관련 환자확인·처방·상태를 먼저 확인 → Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "Dressing: Dressing 관련 환자확인·처방·상태를 먼저 확인 → Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "소독물품: 소독물품 관련 환자확인·처방·상태를 먼저 확인 → Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "CVC",
+        "PICC",
+        "A-line",
+        "Foley",
+        "chest tube",
+        "Hemovac"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Line·Drain 물품 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "Line",
+              "Line 관련 환자확인·처방·상태를 먼저 확인",
+              "Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Line 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "Drain",
+              "Drain 관련 환자확인·처방·상태를 먼저 확인",
+              "Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Drain 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "Dressing",
+              "Dressing 관련 환자확인·처방·상태를 먼저 확인",
+              "Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Dressing 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "소독물품",
+              "소독물품 관련 환자확인·처방·상태를 먼저 확인",
+              "Line·Drain 물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "소독물품 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "CVC",
+            "PICC",
+            "A-line",
+            "Foley",
+            "chest tube",
+            "Hemovac",
+            "라인물품",
+            "drain 물품",
+            "CVC set",
+            "foley set",
+            "Line·Drain 물품 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_03",
+            "Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "Line·Drain 물품 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Line·Drain 물품 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "라인물품",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "drain 물품",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CVC set",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "foley set",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CVC",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "PICC",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "A-line",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Foley",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "chest tube",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Hemovac",
+              "Line·Drain 물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "CVC",
+            "PICC",
+            "A-line",
+            "Foley",
+            "chest tube",
+            "Hemovac",
+            "라인물품",
+            "drain 물품",
+            "CVC set",
+            "foley set",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Line·Drain 물품 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_03",
+            "Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "Line·Drain 물품 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "CVC PICC A-line Foley chest tube Hemovac 라인물품 drain 물품 CVC set foley set Line·Drain 물품 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_03 Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_04",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "검체 Bottle·Tube·검사물품 검색표",
+      "aliases": [
+        "검체병",
+        "bottle",
+        "tube",
+        "채혈튜브"
+      ],
+      "search_terms": [
+        "lab bottle",
+        "blood culture bottle",
+        "EDTA",
+        "SST",
+        "citrate",
+        "heparin tube",
+        "검체병",
+        "bottle",
+        "tube",
+        "채혈튜브",
+        "검체 Bottle·Tube·검사물품 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "검체 Bottle·Tube·검사물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "채혈 tube",
+        "배양 bottle",
+        "소변/대변"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "채혈 tube: 채혈 tube 관련 환자확인·처방·상태를 먼저 확인 → 검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "배양 bottle: 배양 bottle 관련 환자확인·처방·상태를 먼저 확인 → 검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "소변/대변: 소변/대변 관련 환자확인·처방·상태를 먼저 확인 → 검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "이송물품: 이송물품 관련 환자확인·처방·상태를 먼저 확인 → 검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "lab bottle",
+        "blood culture bottle",
+        "EDTA",
+        "SST",
+        "citrate",
+        "heparin tube"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "검체 Bottle·Tube·검사물품 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "채혈 tube",
+              "채혈 tube 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "채혈 tube 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "배양 bottle",
+              "배양 bottle 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "배양 bottle 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "소변/대변",
+              "소변/대변 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "소변/대변 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "이송물품",
+              "이송물품 관련 환자확인·처방·상태를 먼저 확인",
+              "검체 Bottle·Tube·검사물품 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "이송물품 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "lab bottle",
+            "blood culture bottle",
+            "EDTA",
+            "SST",
+            "citrate",
+            "heparin tube",
+            "검체병",
+            "bottle",
+            "tube",
+            "채혈튜브",
+            "검체 Bottle·Tube·검사물품 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_04",
+            "검체 Bottle·Tube·검사물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "검체 Bottle·Tube·검사물품 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "검체 Bottle·Tube·검사물품 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "검체병",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bottle",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "tube",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "채혈튜브",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "lab bottle",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "blood culture bottle",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "EDTA",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "SST",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "citrate",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "heparin tube",
+              "검체 Bottle·Tube·검사물품 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "lab bottle",
+            "blood culture bottle",
+            "EDTA",
+            "SST",
+            "citrate",
+            "heparin tube",
+            "검체병",
+            "bottle",
+            "tube",
+            "채혈튜브",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "검체 Bottle·Tube·검사물품 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_04",
+            "검체 Bottle·Tube·검사물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "검체 Bottle·Tube·검사물품 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "lab bottle blood culture bottle EDTA SST citrate heparin tube 검체병 bottle tube 채혈튜브 검체 Bottle·Tube·검사물품 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_04 검체 Bottle·Tube·검사물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_05",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "Infusion pump·Syringe pump·Monitor 검색표",
+      "aliases": [
+        "pump",
+        "infusion pump",
+        "syringe pump",
+        "monitor"
+      ],
+      "search_terms": [
+        "infusion pump",
+        "syringe pump",
+        "monitor",
+        "alarm",
+        "occlusion",
+        "pump",
+        "Infusion pump·Syringe pump·Monitor 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "Infusion pump",
+        "Syringe pump",
+        "Monitor"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "Infusion pump: Infusion pump 관련 환자확인·처방·상태를 먼저 확인 → Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "Syringe pump: Syringe pump 관련 환자확인·처방·상태를 먼저 확인 → Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "Monitor: Monitor 관련 환자확인·처방·상태를 먼저 확인 → Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "배터리/이송: 배터리/이송 관련 환자확인·처방·상태를 먼저 확인 → Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "infusion pump",
+        "syringe pump",
+        "monitor",
+        "alarm",
+        "occlusion"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "Infusion pump·Syringe pump·Monitor 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "Infusion pump",
+              "Infusion pump 관련 환자확인·처방·상태를 먼저 확인",
+              "Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Infusion pump 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "Syringe pump",
+              "Syringe pump 관련 환자확인·처방·상태를 먼저 확인",
+              "Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Syringe pump 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "Monitor",
+              "Monitor 관련 환자확인·처방·상태를 먼저 확인",
+              "Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Monitor 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "배터리/이송",
+              "배터리/이송 관련 환자확인·처방·상태를 먼저 확인",
+              "Infusion pump·Syringe pump·Monitor 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "배터리/이송 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "infusion pump",
+            "syringe pump",
+            "monitor",
+            "alarm",
+            "occlusion",
+            "pump",
+            "Infusion pump·Syringe pump·Monitor 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_05",
+            "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "Infusion pump·Syringe pump·Monitor 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "Infusion pump·Syringe pump·Monitor 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "pump",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "infusion pump",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "syringe pump",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "monitor",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "alarm",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "occlusion",
+              "Infusion pump·Syringe pump·Monitor 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "infusion pump",
+            "syringe pump",
+            "monitor",
+            "alarm",
+            "occlusion",
+            "pump",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "Infusion pump·Syringe pump·Monitor 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_05",
+            "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "Infusion pump·Syringe pump·Monitor 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "infusion pump syringe pump monitor alarm occlusion pump Infusion pump·Syringe pump·Monitor 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_05 Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_06",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "응급카트·제세동기·Ambu bag 검색표",
+      "aliases": [
+        "응급카트",
+        "제세동기",
+        "defibrillator",
+        "Ambu bag"
+      ],
+      "search_terms": [
+        "crash cart",
+        "emergency cart",
+        "defibrillator",
+        "AED",
+        "ambu bag",
+        "CPR",
+        "응급카트",
+        "제세동기",
+        "Ambu bag",
+        "응급카트·제세동기·Ambu bag 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "응급카트·제세동기·Ambu bag 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "응급카트",
+        "제세동기",
+        "Ambu bag"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "응급카트: 응급카트 관련 환자확인·처방·상태를 먼저 확인 → 응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "제세동기: 제세동기 관련 환자확인·처방·상태를 먼저 확인 → 응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "Ambu bag: Ambu bag 관련 환자확인·처방·상태를 먼저 확인 → 응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "사용 후: 사용 후 관련 환자확인·처방·상태를 먼저 확인 → 응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "crash cart",
+        "emergency cart",
+        "defibrillator",
+        "AED",
+        "ambu bag",
+        "CPR"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "응급카트·제세동기·Ambu bag 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "응급카트",
+              "응급카트 관련 환자확인·처방·상태를 먼저 확인",
+              "응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "응급카트 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "제세동기",
+              "제세동기 관련 환자확인·처방·상태를 먼저 확인",
+              "응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "제세동기 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "Ambu bag",
+              "Ambu bag 관련 환자확인·처방·상태를 먼저 확인",
+              "응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "Ambu bag 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "사용 후",
+              "사용 후 관련 환자확인·처방·상태를 먼저 확인",
+              "응급카트·제세동기·Ambu bag 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "사용 후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "crash cart",
+            "emergency cart",
+            "defibrillator",
+            "AED",
+            "ambu bag",
+            "CPR",
+            "응급카트",
+            "제세동기",
+            "Ambu bag",
+            "응급카트·제세동기·Ambu bag 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_06",
+            "응급카트·제세동기·Ambu bag 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "응급카트·제세동기·Ambu bag 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "응급카트·제세동기·Ambu bag 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "응급카트",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "제세동기",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "defibrillator",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "Ambu bag",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "crash cart",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "emergency cart",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "AED",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ambu bag",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "CPR",
+              "응급카트·제세동기·Ambu bag 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "crash cart",
+            "emergency cart",
+            "defibrillator",
+            "AED",
+            "ambu bag",
+            "CPR",
+            "응급카트",
+            "제세동기",
+            "Ambu bag",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "응급카트·제세동기·Ambu bag 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_06",
+            "응급카트·제세동기·Ambu bag 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "응급카트·제세동기·Ambu bag 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "crash cart emergency cart defibrillator AED ambu bag CPR 응급카트 제세동기 Ambu bag 응급카트·제세동기·Ambu bag 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_06 응급카트·제세동기·Ambu bag 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_07",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "체위변경·보조기·침상장비 검색표",
+      "aliases": [
+        "보조기",
+        "체위변경",
+        "positioning",
+        "bed"
+      ],
+      "search_terms": [
+        "positioning",
+        "splint",
+        "brace",
+        "air mattress",
+        "turning",
+        "restraint",
+        "보조기",
+        "체위변경",
+        "bed",
+        "체위변경·보조기·침상장비 검색표",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "체위보조",
+        "욕창예방",
+        "침상장비"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "체위보조: 체위보조 관련 환자확인·처방·상태를 먼저 확인 → 체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "욕창예방: 욕창예방 관련 환자확인·처방·상태를 먼저 확인 → 체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "침상장비: 침상장비 관련 환자확인·처방·상태를 먼저 확인 → 체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "적용 후: 적용 후 관련 환자확인·처방·상태를 먼저 확인 → 체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "positioning",
+        "splint",
+        "brace",
+        "air mattress",
+        "turning",
+        "restraint"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "체위변경·보조기·침상장비 검색표 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "체위보조",
+              "체위보조 관련 환자확인·처방·상태를 먼저 확인",
+              "체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "체위보조 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "욕창예방",
+              "욕창예방 관련 환자확인·처방·상태를 먼저 확인",
+              "체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "욕창예방 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "침상장비",
+              "침상장비 관련 환자확인·처방·상태를 먼저 확인",
+              "체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "침상장비 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "적용 후",
+              "적용 후 관련 환자확인·처방·상태를 먼저 확인",
+              "체위변경·보조기·침상장비 검색표 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "적용 후 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "positioning",
+            "splint",
+            "brace",
+            "air mattress",
+            "turning",
+            "restraint",
+            "보조기",
+            "체위변경",
+            "bed",
+            "체위변경·보조기·침상장비 검색표",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_07",
+            "체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "체위변경·보조기·침상장비 검색표 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "체위변경·보조기·침상장비 검색표 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "보조기",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "체위변경",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "positioning",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "bed",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "splint",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "brace",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "air mattress",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "turning",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "restraint",
+              "체위변경·보조기·침상장비 검색표",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "positioning",
+            "splint",
+            "brace",
+            "air mattress",
+            "turning",
+            "restraint",
+            "보조기",
+            "체위변경",
+            "bed",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "체위변경·보조기·침상장비 검색표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_07",
+            "체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "체위변경·보조기·침상장비 검색표 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 V86_DETAIL_07 체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+    },
+    {
+      "id": "V86_DETAIL_08",
+      "category": "병동업무 / 물품·장비검색",
+      "title": "병동간호팀 매뉴얼 문서 검색 표준화",
+      "aliases": [
+        "병동간호팀",
+        "업무매뉴얼",
+        "manual",
+        "지침검색"
+      ],
+      "search_terms": [
+        "ward nursing team",
+        "manual",
+        "protocol",
+        "policy",
+        "업무매뉴얼",
+        "병동간호팀",
+        "지침검색",
+        "병동간호팀 매뉴얼 문서 검색 표준화",
+        "병동업무 / 물품·장비검색",
+        "V86"
+      ],
+      "urgency": "high",
+      "summary": "병동간호팀 매뉴얼 문서 검색 표준화 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "indications": [
+        "문서명 검색",
+        "업무별 검색",
+        "버전 확인"
+      ],
+      "preparation": [
+        "처방/프로토콜 확인",
+        "환자 상태 확인",
+        "필요 장비와 물품 확인",
+        "이상 시 담당의·선임 보고"
+      ],
+      "steps": [
+        "문서명 검색: 문서명 검색 관련 환자확인·처방·상태를 먼저 확인 → 병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "업무별 검색: 업무별 검색 관련 환자확인·처방·상태를 먼저 확인 → 병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "버전 확인: 버전 확인 관련 환자확인·처방·상태를 먼저 확인 → 병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+        "현장 적용: 현장 적용 관련 환자확인·처방·상태를 먼저 확인 → 병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인"
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [
+        "처방, 원내 프로토콜, 장비 설정을 실제 환자 상태와 대조합니다.",
+        "임의 변경하지 말고 애매한 경우 담당의·선임에게 확인합니다."
+      ],
+      "charting": [
+        "확인 시간, 환자 상태, 수행한 간호, 보고/지시 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "숫자나 장비 화면만 보지 말고 환자 상태와 함께 확인합니다.",
+        "교육용 요약입니다. 실제 처방·검사·시술·장비 사용은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "related": [
+        "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
+      ],
+      "tags": [
+        "V86",
+        "병동업무",
+        "ward nursing team",
+        "manual",
+        "protocol",
+        "policy",
+        "업무매뉴얼"
+      ],
+      "review": {
+        "status": "세분화 카드",
+        "note": "검색 정확도와 한눈에 보기용 표 구조 강화"
+      },
+      "source_refs": [
+        "원내 병동간호팀/물품·장비 매뉴얼 우선",
+        "앱 내부 검색어·별칭 매핑 기준"
+      ],
+      "tables": [
+        {
+          "title": "한눈에 보기",
+          "caption": "병동간호팀 매뉴얼 문서 검색 표준화 핵심 체크표",
+          "headers": [
+            "상황/목적",
+            "먼저 확인",
+            "간호 포인트",
+            "기록/보고"
+          ],
+          "rows": [
+            [
+              "문서명 검색",
+              "문서명 검색 관련 환자확인·처방·상태를 먼저 확인",
+              "병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "문서명 검색 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "업무별 검색",
+              "업무별 검색 관련 환자확인·처방·상태를 먼저 확인",
+              "병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "업무별 검색 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "버전 확인",
+              "버전 확인 관련 환자확인·처방·상태를 먼저 확인",
+              "병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "버전 확인 결과·시간·이상소견·보고 내용 기록"
+            ],
+            [
+              "현장 적용",
+              "현장 적용 관련 환자확인·처방·상태를 먼저 확인",
+              "병동간호팀 매뉴얼 문서 검색 표준화 기준에 맞게 수행하고 이상소견은 즉시 확인",
+              "현장 적용 결과·시간·이상소견·보고 내용 기록"
+            ]
+          ],
+          "search_terms": [
+            "ward nursing team",
+            "manual",
+            "protocol",
+            "policy",
+            "업무매뉴얼",
+            "병동간호팀",
+            "지침검색",
+            "병동간호팀 매뉴얼 문서 검색 표준화",
+            "한눈에",
+            "체크표",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_08",
+            "병동간호팀 매뉴얼 문서 검색 표준화 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "한눈에 보기",
+            "병동간호팀 매뉴얼 문서 검색 표준화 핵심 체크표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "검색어 연결표",
+          "caption": "병동간호팀 매뉴얼 문서 검색 표준화 검색 정확도 보강 키워드",
+          "headers": [
+            "검색어",
+            "연결 카드",
+            "비고"
+          ],
+          "rows": [
+            [
+              "병동간호팀",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "업무매뉴얼",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "manual",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "지침검색",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "ward nursing team",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "protocol",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ],
+            [
+              "policy",
+              "병동간호팀 매뉴얼 문서 검색 표준화",
+              "별칭/검색어로 직접 연결"
+            ]
+          ],
+          "search_terms": [
+            "ward nursing team",
+            "manual",
+            "protocol",
+            "policy",
+            "업무매뉴얼",
+            "병동간호팀",
+            "지침검색",
+            "검색어",
+            "별칭",
+            "관련카드",
+            "병동간호팀 매뉴얼 문서 검색 표준화",
+            "병동업무 / 물품·장비검색",
+            "V86",
+            "V86_DETAIL_08",
+            "병동간호팀 매뉴얼 문서 검색 표준화 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+            "병동업무",
+            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
+            "검색어 연결표",
+            "병동간호팀 매뉴얼 문서 검색 표준화 검색 정확도 보강 키워드"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "standard_sections_ready": true,
+      "search_index": "ward nursing team manual protocol policy 업무매뉴얼 병동간호팀 지침검색 병동간호팀 매뉴얼 문서 검색 표준화 병동업무 / 물품·장비검색 V86 V86_DETAIL_08 병동간호팀 매뉴얼 문서 검색 표준화 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다. 병동업무 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
     }
   ],
   "final_review_note": {
@@ -36970,6 +54011,22 @@ window.ICU_MANUAL_DB = {
       "Ventilator/Dräger Savina, 혈역학, CRRT, 소화기계, 검사·시술, line/drain/dressing, 간호기록·안전, ICU 물품/장비 요약 카드 추가",
       "이미지/표 caption, alt, search_terms 자동 보강",
       "추가 업무 매뉴얼 전체 추출 이미지 묶음은 search_hidden 처리"
+    ]
+  },
+  "v86_2_detail_update": {
+    "summary": "V79~V86 세부 카드 64개 추가, 검색어/별칭/관련카드/표 중심 구조 강화",
+    "added_detail_cards": 64,
+    "total_items": 323,
+    "format_tuning": [
+      "세부 카드마다 한눈에 보기 표 제공",
+      "검색어 연결표 제공",
+      "상세 화면에 관련카드/검색어 노출"
+    ],
+    "search_tuning": [
+      "search_index 추가",
+      "표 row 검색 활성화",
+      "한글/영문/약어 별칭 확장",
+      "전체 추출 이미지 일반검색 제외 유지"
     ]
   }
 };

@@ -148,6 +148,12 @@ function renderAliasChips(aliases) {
   return `<div class="alias-chips">${arr.map(a => `<span>${esc(a)}</span>`).join("")}</div>`;
 }
 
+
+function renderSearchChips(card) {
+  const arr = [...new Set([...(card.aliases || []), ...(card.search_terms || [])].filter(Boolean))].slice(0, 32);
+  return renderAliasChips(arr);
+}
+
 function renderRelatedCards(related) {
   const arr = Array.isArray(related) ? related.filter(Boolean) : [];
   if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
@@ -279,6 +285,11 @@ function renderStructuredCard(card) {
         ${renderSimpleLines(whenToUse)}
       </section>
 
+      <section class="detail-section">
+        <h4>검색어 / 별칭</h4>
+        ${renderSearchChips(card)}
+      </section>
+
       <section class="detail-section core-section">
         <h4>핵심 절차</h4>
         ${renderSimpleLines(coreSteps)}
@@ -293,6 +304,11 @@ function renderStructuredCard(card) {
       ${renderOptionalSection("주의사항", renderSimpleLines(card.warnings), hasWarnings, "warning-section")}
 
       ${renderOptionalSection("기록 포인트", renderSimpleLines(recordPoints), hasRecords)}
+
+      <section class="detail-section related-section">
+        <h4>관련 카드</h4>
+        ${renderRelatedCards(card.related)}
+      </section>
 
       <section class="detail-section source-section">
         <h4>출처 / 기준</h4>
@@ -324,9 +340,43 @@ function openCard(id) {
 function normalizeText(v) {
   return String(v ?? "")
     .toLowerCase()
-    .replace(/\s+/g, " ")
+    .replace(/dräger/g, "drager")
+    .replace(/fi\s*o2/g, "fio2")
+    .replace(/sp\s*o2/g, "spo2")
+    .replace(/[·•]/g, " ")
     .replace(/[()[\]{}<>]/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
+}
+
+function expandSearchTerms(rawTerms) {
+  const synonymMap = {
+    "사비나": ["savina", "drager", "dräger"],
+    "드레거": ["drager", "dräger", "savina"],
+    "인공호흡기": ["ventilator", "기계환기"],
+    "흡인": ["suction"],
+    "혈역학": ["hemodynamic", "map", "cvp"],
+    "저혈압": ["hypotension", "map", "shock"],
+    "투석": ["crrt", "dialysis"],
+    "신장": ["renal", "aki", "crrt"],
+    "위관": ["ng tube", "l-tube"],
+    "검체": ["specimen", "bottle", "tube"],
+    "채혈": ["blood", "specimen", "tube"],
+    "드레싱": ["dressing", "wound"],
+    "소독": ["sterile", "disinfection"],
+    "낙상": ["fall", "fall risk"],
+    "욕창": ["pressure injury", "braden"],
+    "통증": ["pain", "nrs", "cpot"],
+    "보조기": ["brace", "splint", "positioning"],
+    "펌프": ["pump", "infusion pump", "syringe pump"]
+  };
+  const out = [...rawTerms];
+  rawTerms.forEach(t => {
+    Object.keys(synonymMap).forEach(k => {
+      if (t.includes(k)) out.push(...synonymMap[k]);
+    });
+  });
+  return [...new Set(out.map(normalizeText).filter(x => x.length >= 2))];
 }
 
 function mediaSearchText(card) {
@@ -345,7 +395,7 @@ function mediaSearchText(card) {
 
 function cardSearchText(card) {
   return [
-    ...(card.search_terms || []),
+    ...(card.search_terms || []), card.search_index || "",
     card.id, card.category, card.original_category, card.title, card.summary,
     ...(card.aliases || []), ...(card.indications || []), ...(card.preparation || []),
     ...(card.steps || []), ...(card.dosage_or_mix || []), ...(card.orders_or_emr || []),
@@ -357,7 +407,8 @@ function cardSearchText(card) {
 function scoreCard(query, card) {
   const q = normalizeText(query);
   if (!q || card.search_hidden) return 0;
-  const terms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
+  const rawTerms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
+  const terms = expandSearchTerms(rawTerms);
   const title = normalizeText(card.title);
   const category = normalizeText(card.category);
   const originalCategory = normalizeText(card.original_category);
@@ -395,8 +446,8 @@ function scoreCard(query, card) {
     if (searchTerms.some(a => a.includes(t))) score += 38;
     if (category.includes(t) || originalCategory.includes(t)) score += 16;
     if (summary.includes(t)) score += 8;
-    if (media.includes(t)) score += 9;
-    if (full.includes(t)) score += 3;
+    if (media.includes(t)) score += 16;
+    if (full.includes(t)) score += 5;
   }
 
   if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관/i.test(query)) score += 12;
@@ -423,25 +474,22 @@ function localSearch(query, limit = 40) {
 
 function makeLocalManualAnswer(query, cards) {
   const q = String(query || "").trim();
-  const used = (cards && cards.length ? cards : localSearch(q, 6)).slice(0, 5);
+  const used = (cards && cards.length ? cards : localSearch(q, 8)).slice(0, 8);
   if (!used.length) return "관련 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
 
   const lines = [];
-  lines.push("AI 연결이 불안정하여, 매뉴얼 DB 기반 요약 답변을 표시합니다.");
-  lines.push("");
+  lines.push("매뉴얼 DB 기반 AI 검색 요약");
   lines.push("질문: " + q);
   lines.push("");
-
+  lines.push("순위 | 카드 | 먼저 볼 내용 | 표/이미지");
+  lines.push("--- | --- | --- | ---");
   used.forEach((card, idx) => {
-    lines.push(`${idx + 1}. ${card.title}`);
-    if (card.summary) lines.push(`- 핵심: ${card.summary}`);
-    const steps = (card.steps || []).slice(0, 6);
-    steps.forEach(s => lines.push(`- ${s}`));
-    if ((card.tables || []).length) lines.push(`- 표 ${card.tables.length}개 포함: 카드 상세에서 확인`);
-    if ((card.images || []).length) lines.push(`- 그림/사진 ${card.images.length}개 포함: 카드 상세에서 확인`);
-    lines.push("");
+    const firstStep = (card.steps || card.indications || ["상세 카드 확인"])[0] || "상세 카드 확인";
+    const media = `표 ${(card.tables || []).length}개 / 이미지 ${(card.images || []).length}개`;
+    lines.push(`${idx + 1} | ${card.title} | ${firstStep} | ${media}`);
   });
-
+  lines.push("");
+  lines.push("관련 카드를 눌러 한눈에 보기 표, 검색어 연결표, 관련카드를 확인하세요.");
   lines.push("※ 담당의 지시와 병원 최신 프로토콜 우선");
   return lines.join("\n");
 }
