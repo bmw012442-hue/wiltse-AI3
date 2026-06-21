@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.98.0-v98-v95-internal-emergency-protocol",
+    "version": "1.99.0-v99-circulation-monitoring-protocol",
     "language": "ko",
-    "source": "V95 기반 + 병동간호팀 간호사메뉴얼 142~149p 응급간호 원내 프로토콜 반영",
+    "source": "V98 기반 + 병동간호팀 간호사매뉴얼 p54~56, p102~111, p140~141 순환/모니터링 반영",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -63444,6 +63444,792 @@ window.ICU_MANUAL_DB = {
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V99_CIRCULATION_OVERVIEW",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "순환 / 모니터링 원내 프로토콜 총정리: Vital sign·A-line·CVP·EKG·I/O·승압제",
+      "aliases": [
+        "순환 모니터링 총정리",
+        "중환자실 순환",
+        "중환자실 모니터링",
+        "원내 순환 프로토콜"
+      ],
+      "search_terms": [
+        "순환 / 모니터링 원내 프로토콜 총정리: Vital sign·A-line·CVP·EKG·I/O·승압제",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "순환 모니터링 총정리",
+        "중환자실 순환",
+        "중환자실 모니터링",
+        "원내 순환 프로토콜",
+        "Vital sign",
+        "A-line",
+        "A-line zeroing",
+        "C-line",
+        "CVP",
+        "EKG monitor",
+        "Tachycardia",
+        "Bradycardia",
+        "I/O",
+        "승압제",
+        "말초순환"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 간호사 매뉴얼 54~56, 102~111, 140~141page를 바탕으로 중환자실 간호사가 꼭 알아야 할 순환/모니터링 내용을 한눈에 볼 수 있게 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "Vital sign과 BP 저하 시 확인사항을 먼저 확인한다.",
+        "A-line waveform / zeroing과 C-line/CVP 관리 포인트를 확인한다.",
+        "EKG monitor 부착과 Tachy/Brady 대응을 확인한다.",
+        "I/O, 소변량, 승압제, 말초순환 관찰을 통합해서 perfusion을 판단한다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+        "VIDEO_V91_PATIENT_MONITOR",
+        "UPD43_A_LINE_ZEROING",
+        "UPD43_CVP"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "순환/모니터링 원내 프로토콜 요약표",
+          "caption": "매뉴얼 페이지 범위와 앱 반영 내용",
+          "headers": [
+            "페이지 범위",
+            "핵심 주제",
+            "앱 반영 내용"
+          ],
+          "rows": [
+            [
+              "54~56p",
+              "혈액검사 채혈 / 순환 모니터링 기초",
+              "A-line·C-line·EKG·I/O 확인의 기초를 앱 카드로 정리"
+            ],
+            [
+              "102~111p",
+              "순환 / 모니터링 핵심 프로토콜",
+              "Vital sign·BP 저하·A-line zeroing·CVP·부정맥 대응·승압제 관찰"
+            ],
+            [
+              "140~141p",
+              "원내 프로세스 / 기록·관찰 강화",
+              "말초순환, 소변량 감소, I/O, 중환자실 관찰 체크포인트 강화"
+            ]
+          ],
+          "search_terms": [
+            "순환모니터링요약",
+            "원내프로토콜"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_circulation_overview.png",
+          "alt": "순환 모니터링 원내 프로토콜 총정리 이미지",
+          "caption": "순환/모니터링 파트 전체 요약 이미지",
+          "search_terms": [
+            "순환 모니터링 이미지",
+            "원내 프로토콜"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v99_monitoring_flow.png",
+          "alt": "중환자실 순환 모니터링 판단 흐름 이미지",
+          "caption": "Vital sign부터 치료/보고까지의 흐름",
+          "search_terms": [
+            "모니터링 flow",
+            "순환 흐름"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V99_VITAL_SIGNS_BP",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "Vital sign 측정 기준과 BP 저하 시 확인사항",
+      "aliases": [
+        "Vital sign 기준",
+        "혈압 저하 확인",
+        "BP 저하 시 체크",
+        "저혈압 확인사항"
+      ],
+      "search_terms": [
+        "Vital sign 측정 기준과 BP 저하 시 확인사항",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "Vital sign 기준",
+        "혈압 저하 확인",
+        "BP 저하 시 체크",
+        "저혈압 확인사항",
+        "BP",
+        "HR",
+        "RR",
+        "BT",
+        "SpO2",
+        "vital sign",
+        "hypotension",
+        "MAP"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실에서 Vital sign을 어떻게 보고, 혈압 저하 시 어떤 순서로 확인/보고해야 하는지 표 중심으로 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "혈압, 심박수, 호흡수, 체온, SpO₂의 수치와 신뢰도를 확인한다.",
+        "혈압이 낮으면 NIBP 재측정, A-line 비교, cuff/체위/파형을 재확인한다.",
+        "의식, 피부색, 땀, 말초냉감, 소변량을 함께 보고 원인을 탐색한다.",
+        "필요 시 산소·IV route·수액/승압제·검사를 준비하고 핵심값을 묶어 보고한다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "MENU012",
+        "V80_DETAIL_01",
+        "V95_SHOCK_INITIAL_RESPONSE"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "Vital sign 기준표",
+          "caption": "중환자실 순환 모니터링의 첫 단계",
+          "headers": [
+            "항목",
+            "측정 기준",
+            "확인사항",
+            "핵심 포인트"
+          ],
+          "rows": [
+            [
+              "혈압(BP)",
+              "기관/병동 기준 주기대로 측정",
+              "SBP/MAP 변화, cuff size·체위·A-line 비교 확인",
+              "MAP <65 또는 급격한 저하는 즉시 원인평가·보고"
+            ],
+            [
+              "심박수(HR)",
+              "모니터 + 촉지로 확인",
+              "맥박의 규칙성, Tachy/Brady 동반증상",
+              "불규칙 리듬이면 EKG strip 확보"
+            ],
+            [
+              "호흡수(RR)",
+              "1분 직접 관찰 또는 모니터",
+              "호흡곤란, effort, SpO₂ 동반 확인",
+              "산소요법/기도상태 함께 확인"
+            ],
+            [
+              "체온(BT)",
+              "정해진 시간/필요 시 추가",
+              "발열·저체온, 패혈증/출혈/수술 후 여부",
+              "말초관류와 함께 해석"
+            ],
+            [
+              "SpO₂",
+              "연속 모니터링",
+              "파형 신뢰도, 말초순환, 센서 위치",
+              "저하 시 산소공급/기도/환기 확인"
+            ]
+          ],
+          "search_terms": [
+            "Vital sign 기준표",
+            "저혈압체크"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "BP 저하 시 단계별 확인표",
+          "caption": "측정값 재확인부터 보고까지",
+          "headers": [
+            "단계",
+            "확인 내용"
+          ],
+          "rows": [
+            [
+              "측정값 재확인",
+              "NIBP 재측정 / A-line 값 비교 / cuff·체위·파형 오류 확인"
+            ],
+            [
+              "환자 상태 확인",
+              "의식, 피부색, 땀, 말초냉감, capillary refill, urine output 확인"
+            ],
+            [
+              "원인 탐색",
+              "출혈·패혈증·부정맥·진정제/항고혈압제·탈수·심기능저하 여부 확인"
+            ],
+            [
+              "즉시 조치",
+              "기도/산소, IV route, 수액/승압제 준비, 혈액검사·lactate·ABGA·ECG 확인"
+            ],
+            [
+              "보고 포인트",
+              "저하 시작시간, 현재 BP/MAP/HR, 소변량, 승압제 사용 여부, 의식상태를 묶어 보고"
+            ]
+          ],
+          "search_terms": [
+            "BP저하시확인",
+            "MAP 낮을때"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_vitals_bp_table.png",
+          "alt": "Vital sign 기준과 BP 저하 시 확인사항 이미지",
+          "caption": "Vital sign 기준과 핵심 포인트 이미지",
+          "search_terms": [
+            "vital sign 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v99_bp_low_check_table.png",
+          "alt": "혈압 저하 시 단계별 확인표 이미지",
+          "caption": "저혈압 확인 순서 이미지",
+          "search_terms": [
+            "혈압 저하 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V99_ALINE_MONITORING",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "A-line waveform 확인과 A-line zeroing 총정리",
+      "aliases": [
+        "A-line waveform",
+        "A-line zeroing",
+        "A-line 파형",
+        "동맥라인 제로잉"
+      ],
+      "search_terms": [
+        "A-line waveform 확인과 A-line zeroing 총정리",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "A-line waveform",
+        "A-line zeroing",
+        "A-line 파형",
+        "동맥라인 제로잉",
+        "A-line",
+        "arterial line",
+        "waveform",
+        "zeroing",
+        "압력백",
+        "ABGA 채혈",
+        "파형 확인"
+      ],
+      "urgency": "routine",
+      "summary": "A-line의 목적, 압력백/flush/파형 확인, zeroing 절차, 채혈 후 관리까지 표와 이미지로 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "압력백 300 mmHg, flush line, air bubble 여부를 확인한다.",
+        "파형의 과소감쇠/과대감쇠, baseline drift 여부를 확인한다.",
+        "phlebostatic axis에 맞춰 zeroing을 시행한다.",
+        "채혈 후 flush, 출혈/허혈/감염을 확인한다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "UPD43_A_LINE_ZEROING",
+        "UPD43_ABGA___A_LINE",
+        "V80_DETAIL_02",
+        "V84_DETAIL_03"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "A-line 관리표",
+          "caption": "waveform·zeroing·채혈 관리",
+          "headers": [
+            "항목",
+            "핵심 내용"
+          ],
+          "rows": [
+            [
+              "적응증/목적",
+              "연속 혈압 모니터링, 잦은 ABGA/검체 채혈, 쇼크·승압제 환자"
+            ],
+            [
+              "기본 확인",
+              "압력백 300 mmHg, flush line, blood backflow, 연결부위 누수/air bubble 점검"
+            ],
+            [
+              "Waveform 확인",
+              "과소감쇠/과대감쇠, whip, baseline drift 여부 확인"
+            ],
+            [
+              "Zeroing",
+              "phlebostatic axis 높이 맞춤 → stopcock 대기개방 → zero → 다시 환자와 연결"
+            ],
+            [
+              "채혈 후 관리",
+              "flush로 line 유지, dressing·출혈·허혈·감염 확인"
+            ]
+          ],
+          "search_terms": [
+            "A-line관리표",
+            "zeroing표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_aline_table.png",
+          "alt": "A-line waveform zeroing 채혈 관리 이미지",
+          "caption": "A-line 핵심 체크포인트 이미지",
+          "search_terms": [
+            "A-line 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V99_CLINE_CVP_MONITORING",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "C-line 관리와 CVP 측정 / 의미",
+      "aliases": [
+        "C-line 관리",
+        "CVP 측정",
+        "CVP 의미",
+        "중심정맥라인 관리"
+      ],
+      "search_terms": [
+        "C-line 관리와 CVP 측정 / 의미",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "C-line 관리",
+        "CVP 측정",
+        "CVP 의미",
+        "중심정맥라인 관리",
+        "C-line",
+        "central line",
+        "CVP",
+        "phlebostatic axis",
+        "zeroing",
+        "중심정맥압"
+      ],
+      "urgency": "routine",
+      "summary": "C-line 삽입부위 관리, CVP 측정 준비와 해석, 함께 봐야 할 혈역학 지표를 표와 이미지로 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "삽입부위 dressing, 고정상태, 오염·air 유입, 감염징후를 확인한다.",
+        "체위와 레벨을 일정하게 하고 zeroing 후 CVP를 측정한다.",
+        "단독 숫자보다 BP·소변량·lactate·폐부종과 함께 해석한다.",
+        "기계환기, 기침, 체위변화가 수치에 영향을 줄 수 있음을 고려한다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "UPD43_CVP",
+        "V71_CVP_MONITORING",
+        "V80_DETAIL_03",
+        "PREP001"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "C-line / CVP 관리표",
+          "caption": "중심정맥라인·CVP 추세 평가",
+          "headers": [
+            "항목",
+            "핵심 내용"
+          ],
+          "rows": [
+            [
+              "C-line 기본 관리",
+              "삽입부위 dressing, 고정상태, 연결부위 오염/air 유입, 감염징후 확인"
+            ],
+            [
+              "CVP 측정 준비",
+              "supine/half Fowler 일정한 체위, phlebostatic axis 레벨링, zeroing"
+            ],
+            [
+              "정상범위/의미",
+              "단독 수치보다 추세와 환자상태로 판단: 저혈량/volume overload/우심부담 추정"
+            ],
+            [
+              "해석 시 함께 볼 것",
+              "BP·MAP·HR·소변량·lactate·말초순환·폐부종/부종"
+            ],
+            [
+              "주의사항",
+              "기침·기계환기·체위변화는 수치에 영향, 감염/혈전/기흉 합병증 감시"
+            ]
+          ],
+          "search_terms": [
+            "C-line관리표",
+            "CVP표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_cline_cvp_table.png",
+          "alt": "C-line 관리와 CVP 측정 의미 이미지",
+          "caption": "C-line과 CVP 핵심표 이미지",
+          "search_terms": [
+            "CVP 이미지",
+            "C-line 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V99_EKG_RHYTHM_RESPONSE",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "EKG monitor 부착과 EKG 이상 리듬 기본 확인: Tachycardia / Bradycardia 대처",
+      "aliases": [
+        "EKG monitor 부착",
+        "이상 리듬 확인",
+        "tachycardia 대처",
+        "bradycardia 대처"
+      ],
+      "search_terms": [
+        "EKG monitor 부착과 EKG 이상 리듬 기본 확인: Tachycardia / Bradycardia 대처",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "EKG monitor 부착",
+        "이상 리듬 확인",
+        "tachycardia 대처",
+        "bradycardia 대처",
+        "EKG",
+        "ECG",
+        "monitor lead",
+        "tachycardia",
+        "bradycardia",
+        "arrhythmia",
+        "리듬"
+      ],
+      "urgency": "routine",
+      "summary": "EKG monitor를 정확히 부착하고, Tachycardia / Bradycardia 발생 시 환자 안정성을 우선 평가하는 흐름을 표로 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "피부 정리 후 lead를 부착하고 artifact를 줄인다.",
+        "rate, regularity, QRS 폭, P파, ST 변화를 본다.",
+        "Tachy/Brady 시 불안정 징후(BP, 의식, 흉통, 호흡곤란)를 먼저 본다.",
+        "strip 또는 12lead를 확보하고 전해질/ABGA/약물 영향까지 확인해 보고한다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "EKG030",
+        "V70_CARDIOVASCULAR_NURSING",
+        "V80_DETAIL_06",
+        "V98_INTERNAL_EKG_LEADS"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "EKG monitor / 리듬 대응표",
+          "caption": "리듬 확인 → 환자 안정성 평가 → strip 확보 → 보고",
+          "headers": [
+            "항목",
+            "핵심 내용"
+          ],
+          "rows": [
+            [
+              "부착",
+              "피부 정리 후 lead 부착, artifact 줄이기, 리드선 연결 확인"
+            ],
+            [
+              "기본 확인",
+              "rate, regularity, QRS 폭, P파 존재, ST 변화 여부"
+            ],
+            [
+              "Tachycardia",
+              "환자 안정/불안정 구분 → BP·의식·흉통·호흡곤란 확인 → strip 확보·보고"
+            ],
+            [
+              "Bradycardia",
+              "어지럼·실신·저혈압 여부 확인 → 산소/IV route/AED 준비 → 처방 대비"
+            ],
+            [
+              "이상 리듬 대응",
+              "모니터 알람만 보지 말고 환자 평가 + 12lead/strip + 전해질/ABGA 확인"
+            ]
+          ],
+          "search_terms": [
+            "EKG부착표",
+            "tachy brady"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_ekg_rhythm_table.png",
+          "alt": "EKG monitor 부착과 Tachycardia Bradycardia 대응 이미지",
+          "caption": "리듬 대응 핵심표 이미지",
+          "search_terms": [
+            "EKG 리듬 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V99_IO_VASOPRESSOR_PERFUSION",
+      "category": "순환 / 모니터링 / 원내 프로토콜",
+      "title": "I/O 확인 기본 · 소변량 감소 · 승압제 사용 환자 관찰 · 말초순환 확인",
+      "aliases": [
+        "I/O 기본",
+        "소변량 감소",
+        "승압제 관찰",
+        "말초순환 확인"
+      ],
+      "search_terms": [
+        "I/O 확인 기본 · 소변량 감소 · 승압제 사용 환자 관찰 · 말초순환 확인",
+        "순환 / 모니터링 / 원내 프로토콜",
+        "중환자실 순환 모니터링",
+        "병동간호팀 간호사메뉴얼",
+        "원내 프로토콜",
+        "54페이지",
+        "56페이지",
+        "102페이지",
+        "111페이지",
+        "140페이지",
+        "141페이지",
+        "I/O 기본",
+        "소변량 감소",
+        "승압제 관찰",
+        "말초순환 확인",
+        "I/O",
+        "섭취량 배설량",
+        "urine output",
+        "oliguria",
+        "vasopressor",
+        "perfusion",
+        "capillary refill",
+        "말초순환"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실에서 perfusion을 판단할 때 꼭 보는 I/O, 소변량, 승압제 사용 환자 관찰, 말초순환 확인 포인트를 표와 이미지로 정리했습니다.",
+      "indications": [
+        "중환자실 간호사가 순환/모니터링 업무를 빠르게 확인할 때",
+        "병동간호팀 간호사매뉴얼의 원내 프로세스를 앱 카드로 볼 때"
+      ],
+      "preparation": [
+        "환자 ID 확인",
+        "모니터와 라인 연결상태 점검",
+        "장비 알람 및 수치의 신뢰도 확인",
+        "실제 처치와 보고는 병원 최신 지침과 담당의 지시를 우선"
+      ],
+      "steps": [
+        "시간당 I/O를 빠짐없이 기록한다.",
+        "소변량 감소 시 foley 문제, BP/MAP, volume status, nephrotoxin을 확인한다.",
+        "승압제 사용 중에는 목표 MAP, line 상태, 누출/허혈, pump setting을 확인한다.",
+        "피부색·온도·capillary refill·청색증·사지통증 등 말초순환을 자주 본다."
+      ],
+      "warnings": [
+        "이 카드는 매뉴얼 발췌를 바탕으로 표/이미지 중심으로 재정리한 참고 자료입니다. 실제 적용은 병원 최신 프로토콜과 환자 상태를 우선합니다."
+      ],
+      "charting": [
+        "확인 시각, 수치 변화, 파형/리듬 소견, line 상태, 소변량, 승압제 용량, 보고 내용과 반응을 시간순으로 기록"
+      ],
+      "related": [
+        "ROUTINE006",
+        "IO030",
+        "V80_DETAIL_04",
+        "V80_DETAIL_05",
+        "V80_DETAIL_07"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사메뉴얼 p54~56, p102~111, p140~141 발췌 재정리"
+      ],
+      "tables": [
+        {
+          "title": "I/O · 소변량 · 승압제 · 말초순환 확인표",
+          "caption": "Perfusion 판단용 ICU 관찰 포인트",
+          "headers": [
+            "항목",
+            "핵심 내용"
+          ],
+          "rows": [
+            [
+              "I/O 기본",
+              "시간당 intake·output 누락 없이 기록, IV/경구/배액/소변 모두 포함"
+            ],
+            [
+              "소변량 감소",
+              "<0.5 mL/kg/hr 또는 급감 시 foley kink, bladder, BP/MAP, volume status, nephrotoxin 확인"
+            ],
+            [
+              "승압제 환자 관찰",
+              "MAP 목표, line 확보, infiltration/necrosis, pump setting, 말초청색증 확인"
+            ],
+            [
+              "말초순환",
+              "피부색·온도·capillary refill·부종·맥박 촉지·사지 통증/감각 변화 확인"
+            ],
+            [
+              "보고 시 묶음",
+              "최근 BP/MAP·HR, urine output, lactate/Cr, 승압제 용량, 말초순환 소견을 함께 보고"
+            ]
+          ],
+          "search_terms": [
+            "소변량감소표",
+            "승압제관찰표",
+            "말초순환표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v99_io_perf_table.png",
+          "alt": "I/O 소변량 승압제 말초순환 확인표 이미지",
+          "caption": "Perfusion 관련 핵심표 이미지",
+          "search_terms": [
+            "I/O 이미지",
+            "말초순환 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v99_vasopressor_perfusion_boxes.png",
+          "alt": "승압제 사용 환자와 말초순환 관찰 포인트 이미지",
+          "caption": "승압제와 말초관류 관찰 박스형 요약",
+          "search_terms": [
+            "승압제 이미지",
+            "perfusion box"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -64777,5 +65563,22 @@ window.ICU_MANUAL_DB = {
     ],
     "source_page_range_requested_by_user": "142~149 page",
     "total_items": 380
+  },
+  "v99_update": {
+    "summary": "순환/모니터링 파트를 병동간호팀 간호사매뉴얼 p54~56, p102~111, p140~141를 바탕으로 표/이미지 중심으로 재정리. Vital sign, BP 저하, A-line, C-line/CVP, EKG 리듬, I/O·승압제·말초순환 카드를 추가.",
+    "added_cards": [
+      "V99_ALINE_MONITORING",
+      "V99_CIRCULATION_OVERVIEW",
+      "V99_CLINE_CVP_MONITORING",
+      "V99_EKG_RHYTHM_RESPONSE",
+      "V99_IO_VASOPRESSOR_PERFUSION",
+      "V99_VITAL_SIGNS_BP"
+    ],
+    "source_page_ranges": [
+      "54~56",
+      "102~111",
+      "140~141"
+    ],
+    "total_items": 386
   }
 };
