@@ -131,7 +131,14 @@ function expandSearchTerms(rawTerms) {
   const synonymMap = {
     "사비나": ["savina", "drager", "dräger"],
     "드레거": ["drager", "dräger", "savina"],
-    "인공호흡기": ["ventilator", "기계환기", "drager", "dräger", "savina"],
+    "인공호흡기": ["ventilator", "기계환기"],
+    "intubation": ["기관삽관", "삽관", "ETT", "기도확보"],
+    "기관삽관": ["intubation", "삽관", "ETT", "기도확보"],
+    "제세동기": ["defibrillator", "AED", "shock", "제세동"],
+    "응급약물": ["E-cart", "emergency drug", "epinephrine", "norepinephrine", "lorazepam"],
+    "경련": ["seizure", "항경련제", "status epilepticus", "lorazepam", "midazolam"],
+    "항경련제": ["seizure", "lorazepam", "midazolam", "diazepam", "keppra"],
+    "쇼크": ["shock", "저혈압", "hypotension", "MAP", "norepinephrine"],
     "흡인": ["suction"],
     "혈역학": ["hemodynamic", "map", "cvp"],
     "저혈압": ["hypotension", "map", "shock"],
@@ -141,11 +148,6 @@ function expandSearchTerms(rawTerms) {
     "검체": ["specimen", "bottle", "tube"],
     "채혈": ["blood", "specimen", "tube"],
     "수혈": ["transfusion", "blood transfusion", "혈액제제", "rbc", "ffp", "cryo", "plt"],
-    "patient monitor": ["환자감시장치", "환자 모니터", "central monitor"],
-    "o2 nipple": ["산소 니플", "oxygen nipple", "산소 연결"],
-    "신경외과": ["NS", "뇌 수술환자", "검사 이동"],
-    "l-sling": ["엘슬링", "sling", "보조기"],
-    "evd": ["ICP", "tragus", "트라거스", "EVD leveling"],
     "혈액제제": ["rbc", "ffp", "pc", "aplt", "cryo", "blood product"],
     "응고인자": ["pt", "inr", "aptt", "fibrinogen", "d-dimer"],
     "드레싱": ["dressing", "wound", "상처", "소독", "드레싱재료", "폼드레싱"],
@@ -159,10 +161,7 @@ function expandSearchTerms(rawTerms) {
     "매듭": ["knot", "square knot", "slip knot", "clove hitch", "정방향 매듭", "고리 매듭", "클로브 히치"],
     "상처": ["wound", "pressure injury", "dressing", "소독", "드레싱"],
     "엑스레이": ["x-ray", "xray", "radiograph", "chest xray", "폐렴", "기흉", "폐부종", "흉수", "무기폐"],
-    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"],
-    "동의서": ["consent", "태블릿", "테블릿", "tablet"],
-    "abga": ["calibration", "캘리브레이션", "혈액가스"],
-    "cpr": ["CPCR", "심폐소생술", "간호사 역할"]
+    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"]
   };
   const out = [...rawTerms];
   rawTerms.forEach(t => {
@@ -226,6 +225,8 @@ function itemText(item) {
 function scoreItem(query, item) {
   const q = normalize(query);
   if (!q || item.search_hidden) return 0;
+  const excluded = (item.exclude_queries || []).map(normalize).filter(Boolean);
+  if (excluded.some(x => q.includes(x) || x.includes(q))) return 0;
 
   const rawTerms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
   const terms = expandSearchTerms(rawTerms);
@@ -279,6 +280,9 @@ function scoreItem(query, item) {
   if (item.prefer_media_first && /표|이미지|사진|그림|수혈|혈액제제|응고인자/.test(q)) score += 20;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
+
+  if ((item.id || "").startsWith("V95_") && /응급|cpr|code blue|제세동기|defibrillator|shock|쇼크|저혈압|경련|seizure|항경련제|응급약물|e-cart|intubation|기관삽관|삽관/.test(q)) score += 35;
+  if ((item.id || "") === "V95_INTUBATION_PREP_ASSIST" && /intubation|기관삽관|삽관|ett|기도확보/.test(q)) score += 80;
 
   return Math.max(0, score);
 }
@@ -438,7 +442,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "1.92.0-v92-partial-upload-video-links",
+    version: "1.95.0-v95-emergency-nursing-focus",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -627,5 +631,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v92 partial video links running on port ${port}`);
+  console.log(`ICU AI Manual v95 emergency nursing focus running on port ${port}`);
 });
