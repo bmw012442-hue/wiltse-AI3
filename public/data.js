@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.04.0-v104-meds-fluids-narcotics-transfusion-blood",
+    "version": "2.05.0-v105-drug-fluid-gtt-calculator",
     "language": "ko",
-    "source": "V103 기반 + 약물/수액/마약 + 수혈/혈액(업무매뉴얼 60~90page 참고) 보강",
+    "source": "V104 기반 + 병동간호팀 업무매뉴얼 p60 약물계산 + 수액속도/gtt 계산표 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -25885,7 +25885,9 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [
         "임상 약물",
-        "고위험 약물 / 항부정맥제 Amiodarone Adenosine"
+        "고위험 약물 / 항부정맥제 Amiodarone Adenosine",
+        "V105_CALCULATOR_OVERVIEW",
+        "V105_FLUID_RATE_GTT_TABLE"
       ],
       "tags": [
         "약물 계산기",
@@ -25895,7 +25897,8 @@ window.ICU_MANUAL_DB = {
         "status": "v55_added"
       },
       "source_refs": [
-        "앱 내 계산식"
+        "앱 내 계산식",
+        "V105 약물 계산기/수액속도/gtt 계산표 보강 반영"
       ],
       "tables": [
         {
@@ -25954,7 +25957,8 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "standard_sections_ready": true,
-      "search_index": "약물 계산기 약물계산 계산기 주입속도 mL/hr mcg/kg/min mcg/min mg/hr mg/kg/hr 희석 농도 infusion rate 약물 계산기 사용 약물 / 수액 / 마약 임상 약물 고위험 약물 / 항부정맥제 Amiodarone Adenosine"
+      "search_index": "약물 계산기 약물계산 계산기 주입속도 mL/hr mcg/kg/min mcg/min mg/hr mg/kg/hr 희석 농도 infusion rate 약물 계산기 사용 약물 / 수액 / 마약 임상 약물 고위험 약물 / 항부정맥제 Amiodarone Adenosine",
+      "prefer_media_first": true
     },
     {
       "id": "LOGINACCT001",
@@ -37235,7 +37239,9 @@ window.ICU_MANUAL_DB = {
         "ABGA 총정리",
         "심전도 총정리",
         "혈당·당뇨·인슐린 총정리",
-        "V104_MEDICATION_BLOOD_OVERVIEW"
+        "V104_MEDICATION_BLOOD_OVERVIEW",
+        "V105_CALCULATOR_OVERVIEW",
+        "V105_FLUID_RATE_GTT_TABLE"
       ],
       "tags": [
         "약물",
@@ -37253,7 +37259,8 @@ window.ICU_MANUAL_DB = {
         "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
         "Surviving Sepsis Campaign Guidelines 2021",
         "NICE Intravenous fluid therapy in adults in hospital",
-        "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
+        "V104 약물/수액/마약 + 수혈/혈액 보강 반영",
+        "V105 약물 계산기/수액속도/gtt 계산표 보강 반영"
       ],
       "tables": [
         {
@@ -38053,7 +38060,9 @@ window.ICU_MANUAL_DB = {
         "EVD·ICP·CVP 총정리",
         "패혈증·쇼크 총정리",
         "수혈 총정리",
-        "V104_MEDICATION_BLOOD_OVERVIEW"
+        "V104_MEDICATION_BLOOD_OVERVIEW",
+        "V105_CALCULATOR_OVERVIEW",
+        "V105_FLUID_RATE_GTT_TABLE"
       ],
       "tags": [
         "수액",
@@ -38071,7 +38080,8 @@ window.ICU_MANUAL_DB = {
         "CDC Core Elements of Hospital Antibiotic Stewardship Programs",
         "Surviving Sepsis Campaign Guidelines 2021",
         "NICE Intravenous fluid therapy in adults in hospital",
-        "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
+        "V104 약물/수액/마약 + 수혈/혈액 보강 반영",
+        "V105 약물 계산기/수액속도/gtt 계산표 보강 반영"
       ],
       "tables": [
         {
@@ -68157,10 +68167,13 @@ window.ICU_MANUAL_DB = {
         "V76_ICU_MEDICATION_OVERVIEW",
         "V76_ICU_FLUID_THERAPY",
         "V68_HEPARIN_NOMOGRAM",
-        "V95_SHOCK_INITIAL_RESPONSE"
+        "V95_SHOCK_INITIAL_RESPONSE",
+        "V105_CALCULATOR_OVERVIEW",
+        "V105_FLUID_RATE_GTT_TABLE"
       ],
       "source_refs": [
-        "병동간호팀 업무매뉴얼 p60~90 참고 + 기존 앱 DB 재정리"
+        "병동간호팀 업무매뉴얼 p60~90 참고 + 기존 앱 DB 재정리",
+        "V105 약물 계산기/수액속도/gtt 계산표 보강 반영"
       ],
       "tables": [
         {
@@ -68950,6 +68963,533 @@ window.ICU_MANUAL_DB = {
           "caption": "수혈 안전 흐름",
           "search_terms": [
             "수혈 흐름"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V105_CALCULATOR_OVERVIEW",
+      "category": "약물 / 수액 / 계산기 / 원내 프로토콜",
+      "title": "약물 계산기 안내 + 수액속도 + gtt/min 계산 총정리",
+      "aliases": [
+        "약물 계산기",
+        "계산기 안내",
+        "수액속도 계산",
+        "gtt 계산",
+        "mL/hr 계산"
+      ],
+      "search_terms": [
+        "약물 계산기 안내 + 수액속도 + gtt/min 계산 총정리",
+        "약물 / 수액 / 계산기 / 원내 프로토콜",
+        "약물계산",
+        "수액속도",
+        "gtt",
+        "mL/hr",
+        "병동간호팀 업무매뉴얼 p60",
+        "약물 계산기",
+        "계산기 안내",
+        "수액속도 계산",
+        "gtt 계산",
+        "mL/hr 계산",
+        "drug calculator",
+        "fluid rate",
+        "gtt/min",
+        "drop factor",
+        "mcg/kg/min",
+        "mg/hr",
+        "unit/hr"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 업무매뉴얼 p60 약물계산 내용을 앱에서 바로 이해할 수 있도록 계산기 사용법, 수액속도, gtt/min, 고위험 약물 계산 주의사항을 한 카드로 정리했습니다.",
+      "indications": [
+        "약물계산기 사용법, 수액 주입속도, gtt/min, 고위험 약물 지속주입 계산을 확인할 때"
+      ],
+      "preparation": [
+        "처방 단위, 약물 총량, 희석 후 총량, 환자 체중, 목표 용량, drop factor 확인",
+        "계산값은 처방/프로토콜과 독립 double check"
+      ],
+      "steps": [
+        "앱 약물 계산기에서 지원하는 단위를 확인한다.",
+        "일반 수액은 총량÷시간으로 mL/hr를 계산한다.",
+        "drop factor를 확인해 gtt/min을 계산한다.",
+        "고위험 약물은 계산 후 반드시 독립 double check 한다."
+      ],
+      "warnings": [
+        "계산 결과는 참고값입니다. 실제 투여 전 처방, 농도, 단위, 체중, pump setting, 원내 프로토콜을 반드시 double check 합니다."
+      ],
+      "charting": [
+        "계산 근거, 농도, 목표용량, mL/hr 또는 gtt/min, pump setting, 변경시간, 환자반응을 기록"
+      ],
+      "related": [
+        "DRUGCALC001",
+        "V104_FLUID_HIGHALERT",
+        "V76_ICU_MEDICATION_OVERVIEW"
+      ],
+      "source_refs": [
+        "병동간호팀 업무매뉴얼 p60 약물계산 참고 + 기존 앱 약물 계산기 기능 보강"
+      ],
+      "tables": [
+        {
+          "title": "앱 계산기 사용 안내표",
+          "caption": "약물 계산기 + 수액속도 + gtt/min",
+          "headers": [
+            "구분",
+            "계산 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "현재 앱 계산기",
+              "mcg/kg/min, mcg/min, mg/hr, mg/kg/hr → mL/hr 계산",
+              "약물 총량·희석 총량·체중·목표용량 입력"
+            ],
+            [
+              "수액 주입속도",
+              "mL/hr = 총량(mL) ÷ 시간(hr)",
+              "일반 수액, 수혈 외 maintenance/replacement 속도 확인"
+            ],
+            [
+              "gtt/min",
+              "gtt/min = mL/hr × drop factor ÷ 60",
+              "수액세트 10/15/20/60 gtt/mL 차이를 반드시 확인"
+            ],
+            [
+              "고위험 약물",
+              "농도 기반 계산 후 pump mL/hr 확인",
+              "승압제, heparin, insulin, sedation은 독립 double check"
+            ],
+            [
+              "기록/확인",
+              "계산식·농도·속도·변경시간 기록",
+              "계산값과 실제 처방/펌프 setting 불일치 시 보고"
+            ]
+          ],
+          "search_terms": [
+            "계산기 안내표",
+            "수액속도 gtt"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v105_calc_overview.png",
+          "alt": "약물 계산기 수액속도 gtt 통합 요약 이미지",
+          "caption": "계산기 통합 요약 이미지",
+          "search_terms": [
+            "계산기 overview"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_calculator_formula_summary.png",
+          "alt": "약물 계산 공식 요약 이미지",
+          "caption": "계산 공식 요약 이미지",
+          "search_terms": [
+            "약물 계산 공식"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_calculator_guide_table.png",
+          "alt": "앱 약물 계산기 사용 안내 표 이미지",
+          "caption": "앱 계산기 사용 안내 이미지",
+          "search_terms": [
+            "앱 계산기 안내"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V105_FLUID_RATE_GTT_TABLE",
+      "category": "약물 / 수액 / 계산기 / 원내 프로토콜",
+      "title": "수액 주입속도 mL/hr 계산표와 gtt/min 계산표",
+      "aliases": [
+        "수액 주입속도",
+        "수액 속도 계산",
+        "gtt/min",
+        "drop factor",
+        "몇 방울"
+      ],
+      "search_terms": [
+        "수액 주입속도 mL/hr 계산표와 gtt/min 계산표",
+        "약물 / 수액 / 계산기 / 원내 프로토콜",
+        "약물계산",
+        "수액속도",
+        "gtt",
+        "mL/hr",
+        "병동간호팀 업무매뉴얼 p60",
+        "수액 주입속도",
+        "수액 속도 계산",
+        "gtt/min",
+        "drop factor",
+        "몇 방울",
+        "수액 계산",
+        "500mL 8시간",
+        "1000mL 24시간"
+      ],
+      "urgency": "routine",
+      "summary": "일반 수액 주입속도 mL/hr와 gtt/min을 계산할 수 있게 공식과 흔한 예시를 표/이미지로 정리했습니다.",
+      "indications": [
+        "약물계산기 사용법, 수액 주입속도, gtt/min, 고위험 약물 지속주입 계산을 확인할 때"
+      ],
+      "preparation": [
+        "처방 단위, 약물 총량, 희석 후 총량, 환자 체중, 목표 용량, drop factor 확인",
+        "계산값은 처방/프로토콜과 독립 double check"
+      ],
+      "steps": [
+        "총 수액량과 주입시간으로 mL/hr를 계산한다.",
+        "수액세트의 drop factor를 확인한다.",
+        "mL/hr × drop factor ÷ 60으로 gtt/min을 계산한다.",
+        "pump 사용 시 계산값과 처방속도를 비교한다."
+      ],
+      "warnings": [
+        "계산 결과는 참고값입니다. 실제 투여 전 처방, 농도, 단위, 체중, pump setting, 원내 프로토콜을 반드시 double check 합니다."
+      ],
+      "charting": [
+        "계산 근거, 농도, 목표용량, mL/hr 또는 gtt/min, pump setting, 변경시간, 환자반응을 기록"
+      ],
+      "related": [
+        "V105_CALCULATOR_OVERVIEW",
+        "V76_ICU_FLUID_THERAPY",
+        "MENU011"
+      ],
+      "source_refs": [
+        "병동간호팀 업무매뉴얼 p60 약물계산 참고 + 기존 앱 약물 계산기 기능 보강"
+      ],
+      "tables": [
+        {
+          "title": "수액 주입속도 mL/hr 계산표",
+          "caption": "mL/hr = 총량 ÷ 시간",
+          "headers": [
+            "상황",
+            "계산식",
+            "결과",
+            "주의점"
+          ],
+          "rows": [
+            [
+              "100mL / 30분",
+              "100 ÷ 0.5",
+              "200 mL/hr",
+              "짧은 시간 주입·항생제 등에서 확인"
+            ],
+            [
+              "100mL / 1시간",
+              "100 ÷ 1",
+              "100 mL/hr",
+              "항생제/전처치 주입 시간 확인"
+            ],
+            [
+              "250mL / 2시간",
+              "250 ÷ 2",
+              "125 mL/hr",
+              "replacement 수액"
+            ],
+            [
+              "500mL / 4시간",
+              "500 ÷ 4",
+              "125 mL/hr",
+              "중환자실 흔한 수액 속도"
+            ],
+            [
+              "500mL / 8시간",
+              "500 ÷ 8",
+              "62.5 mL/hr",
+              "pump는 62 또는 63으로 기관 기준 적용"
+            ],
+            [
+              "1000mL / 8시간",
+              "1000 ÷ 8",
+              "125 mL/hr",
+              "유지/보충 수액"
+            ],
+            [
+              "1000mL / 12시간",
+              "1000 ÷ 12",
+              "83.3 mL/hr",
+              "계산 후 처방 속도와 비교"
+            ],
+            [
+              "1000mL / 24시간",
+              "1000 ÷ 24",
+              "41.7 mL/hr",
+              "장시간 유지수액"
+            ]
+          ],
+          "search_terms": [
+            "수액속도표",
+            "mL/hr 계산표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "gtt/min 계산표",
+          "caption": "gtt/min = mL/hr × drop factor ÷ 60",
+          "headers": [
+            "Drop factor",
+            "공식",
+            "예시",
+            "비고"
+          ],
+          "rows": [
+            [
+              "10 gtt/mL",
+              "mL/hr × 10 ÷ 60",
+              "100 mL/hr → 16.7 gtt/min",
+              "macrodrip 세트"
+            ],
+            [
+              "15 gtt/mL",
+              "mL/hr × 15 ÷ 60",
+              "100 mL/hr → 25 gtt/min",
+              "수액세트 확인"
+            ],
+            [
+              "20 gtt/mL",
+              "mL/hr × 20 ÷ 60",
+              "100 mL/hr → 33.3 gtt/min",
+              "일부 기본 세트"
+            ],
+            [
+              "60 gtt/mL",
+              "mL/hr × 60 ÷ 60",
+              "100 mL/hr → 100 gtt/min",
+              "microdrip"
+            ],
+            [
+              "500mL 8시간 20gtt",
+              "62.5 × 20 ÷ 60",
+              "20.8 gtt/min",
+              "약 21 gtt/min"
+            ],
+            [
+              "1000mL 24시간 20gtt",
+              "41.7 × 20 ÷ 60",
+              "13.9 gtt/min",
+              "약 14 gtt/min"
+            ]
+          ],
+          "search_terms": [
+            "gtt 계산표",
+            "drop factor 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v105_fluid_rate_table.png",
+          "alt": "수액 주입속도 mL hr 계산표 이미지",
+          "caption": "수액 주입속도 계산표 이미지",
+          "search_terms": [
+            "수액속도 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_gtt_min_table.png",
+          "alt": "gtt min 계산표 이미지",
+          "caption": "gtt/min 계산표 이미지",
+          "search_terms": [
+            "gtt 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V105_DRUG_INFUSION_CALC_TABLE",
+      "category": "약물 / 수액 / 계산기 / 원내 프로토콜",
+      "title": "약물 지속주입 mL/hr 계산표: mcg/kg/min · mg/hr · unit/hr",
+      "aliases": [
+        "약물 지속주입 계산",
+        "mcg/kg/min 계산",
+        "mg/hr 계산",
+        "unit/hr 계산",
+        "고위험 약물 계산"
+      ],
+      "search_terms": [
+        "약물 지속주입 mL/hr 계산표: mcg/kg/min · mg/hr · unit/hr",
+        "약물 / 수액 / 계산기 / 원내 프로토콜",
+        "약물계산",
+        "수액속도",
+        "gtt",
+        "mL/hr",
+        "병동간호팀 업무매뉴얼 p60",
+        "약물 지속주입 계산",
+        "mcg/kg/min 계산",
+        "mg/hr 계산",
+        "unit/hr 계산",
+        "고위험 약물 계산",
+        "mcg/kg/min",
+        "mcg/min",
+        "mg/hr",
+        "mg/kg/hr",
+        "unit/hr",
+        "norepinephrine",
+        "heparin",
+        "insulin"
+      ],
+      "urgency": "routine",
+      "summary": "약물 총량과 희석 후 총량으로 농도를 확인하고 mcg/kg/min, mcg/min, mg/hr, mg/kg/hr, unit/hr를 mL/hr로 바꾸는 계산표입니다.",
+      "indications": [
+        "약물계산기 사용법, 수액 주입속도, gtt/min, 고위험 약물 지속주입 계산을 확인할 때"
+      ],
+      "preparation": [
+        "처방 단위, 약물 총량, 희석 후 총량, 환자 체중, 목표 용량, drop factor 확인",
+        "계산값은 처방/프로토콜과 독립 double check"
+      ],
+      "steps": [
+        "약물 총량과 희석 후 총량으로 농도를 계산한다.",
+        "처방 단위가 mcg/kg/min인지 mg/hr인지 unit/hr인지 확인한다.",
+        "공식에 따라 mL/hr를 계산한 뒤 pump setting과 처방을 double check 한다."
+      ],
+      "warnings": [
+        "계산 결과는 참고값입니다. 실제 투여 전 처방, 농도, 단위, 체중, pump setting, 원내 프로토콜을 반드시 double check 합니다."
+      ],
+      "charting": [
+        "계산 근거, 농도, 목표용량, mL/hr 또는 gtt/min, pump setting, 변경시간, 환자반응을 기록"
+      ],
+      "related": [
+        "DRUGCALC001",
+        "V104_FLUID_HIGHALERT",
+        "V68_HEPARIN_NOMOGRAM",
+        "V103_INSULIN_OHA_SLIDING"
+      ],
+      "source_refs": [
+        "병동간호팀 업무매뉴얼 p60 약물계산 참고 + 기존 앱 약물 계산기 기능 보강"
+      ],
+      "tables": [
+        {
+          "title": "약물 지속주입 계산표",
+          "caption": "mcg/kg/min · mcg/min · mg/hr · mg/kg/hr · unit/hr",
+          "headers": [
+            "처방 단위",
+            "계산식",
+            "예시 약물",
+            "주의점"
+          ],
+          "rows": [
+            [
+              "mcg/kg/min",
+              "목표 × 체중 × 60 ÷ 농도(mcg/mL)",
+              "Norepinephrine 등",
+              "농도와 체중 확인"
+            ],
+            [
+              "mcg/min",
+              "목표 × 60 ÷ 농도(mcg/mL)",
+              "Nitroglycerin 등",
+              "체중 미사용 처방인지 확인"
+            ],
+            [
+              "mg/hr",
+              "목표 ÷ 농도(mg/mL)",
+              "Heparin 등",
+              "unit/hr 처방은 별도 환산 주의"
+            ],
+            [
+              "mg/kg/hr",
+              "목표 × 체중 ÷ 농도(mg/mL)",
+              "일부 지속주입",
+              "체중 기준 확인"
+            ],
+            [
+              "unit/hr",
+              "목표 unit/hr ÷ 농도(unit/mL)",
+              "Heparin, insulin",
+              "unit와 mL 혼동 금지"
+            ]
+          ],
+          "search_terms": [
+            "약물 지속주입 계산표",
+            "mcg/kg/min 계산표"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "고위험 약물 계산 double check 표",
+          "caption": "승압제·Heparin·Insulin·Sedation·Analgesia·Electrolyte",
+          "headers": [
+            "약물군",
+            "흔한 단위",
+            "계산 전 확인",
+            "간호 감시"
+          ],
+          "rows": [
+            [
+              "Norepinephrine",
+              "mcg/kg/min",
+              "농도(mcg/mL), 체중, 목표 MAP",
+              "central line, MAP·말초순환 관찰"
+            ],
+            [
+              "Heparin",
+              "unit/hr 또는 U/kg/hr",
+              "농도 unit/mL, aPTT, 체중",
+              "출혈, PLT, aPTT 노모그램 확인"
+            ],
+            [
+              "Regular insulin",
+              "unit/hr",
+              "농도 unit/mL, BST, K",
+              "저혈당/저칼륨, q1h BST"
+            ],
+            [
+              "Midazolam/Propofol",
+              "mg/hr 또는 mcg/kg/min",
+              "RASS 목표, BP, 호흡",
+              "과진정/저혈압/호흡억제"
+            ],
+            [
+              "Fentanyl/Remifentanil",
+              "mcg/hr 또는 mcg/kg/min",
+              "통증, RR, SpO2, 의식",
+              "호흡억제, naloxone 가능성"
+            ],
+            [
+              "Electrolyte",
+              "mEq/hr, mmol/hr",
+              "K/Mg/P 수치, line, infusion rate",
+              "부정맥, ECG, 신기능 확인"
+            ]
+          ],
+          "search_terms": [
+            "고위험 약물 계산표",
+            "double check"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v105_drug_dose_calculation_table.png",
+          "alt": "약물 지속주입 mL hr 계산표 이미지",
+          "caption": "약물 지속주입 계산표 이미지",
+          "search_terms": [
+            "약물계산 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_highrisk_calc_check_table.png",
+          "alt": "고위험 약물 계산 double check 표 이미지",
+          "caption": "고위험 약물 계산 double check 이미지",
+          "search_terms": [
+            "고위험 약물 계산 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_calculator_formula_summary.png",
+          "alt": "계산 공식 요약 이미지",
+          "caption": "계산 공식 요약 이미지",
+          "search_terms": [
+            "계산 공식"
           ]
         }
       ],
@@ -70424,5 +70964,23 @@ window.ICU_MANUAL_DB = {
       "v104_transfusion_safe_flow.png"
     ],
     "total_items": 414
+  },
+  "v105_update": {
+    "summary": "앱 약물 계산기 안내, 수액 주입속도 mL/hr, gtt/min, 약물 지속주입 계산표, 고위험 약물 계산 double check 표 추가.",
+    "added_cards": [
+      "V105_CALCULATOR_OVERVIEW",
+      "V105_DRUG_INFUSION_CALC_TABLE",
+      "V105_FLUID_RATE_GTT_TABLE"
+    ],
+    "added_images": [
+      "v105_calc_overview.png",
+      "v105_calculator_formula_summary.png",
+      "v105_calculator_guide_table.png",
+      "v105_drug_dose_calculation_table.png",
+      "v105_fluid_rate_table.png",
+      "v105_gtt_min_table.png",
+      "v105_highrisk_calc_check_table.png"
+    ],
+    "total_items": 417
   }
 };
