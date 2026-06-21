@@ -129,6 +129,25 @@ function normalize(text) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "수술명": ["수술명 약어", "NS 수술명", "OS 수술명", "operation name"],
+    "수술약어": ["ORIF", "CRIF", "TKRA", "THRA", "Burr hole", "EVD", "SDD", "Coil"],
+    "수술전검사": ["pre op exam", "CBC", "chemistry", "coagulation", "Chest PA", "EKG"],
+    "NS수술": ["Burr hole", "Craniotomy", "EVD", "SDD", "Coil embolization", "TFCA"],
+    "OS수술": ["ORIF", "CRIF", "CRPP", "IM nail", "TKRA", "THRA", "PLIF", "TLIF"],
+    "CMS": ["color", "movement", "sensation", "말초순환", "감각", "운동"],
+
+    "신경계": ["neuro", "GCS", "Mental", "Pupil", "Motor", "EVD", "SDD", "Burr hole"],
+    "의식사정": ["Mental", "GCS", "LOC"],
+    "동공반사": ["Pupil reflex", "pupil", "anisocoria"],
+    "운동능력": ["Motor power", "motor grade", "편측약화"],
+    "뇌압": ["ICP", "IICP", "EVD", "두개내압"],
+    "요추천자": ["spinal tapping", "spinal tap", "lumbar puncture", "CSF study", "뇌척수액"],
+    "spinal tapping": ["요추천자", "lumbar puncture", "CSF study", "뇌척수액 검사"],
+    "csf": ["CSF study", "뇌척수액", "cell count", "protein", "glucose", "culture"],
+    "버홀": ["Burr hole", "EVD", "SDD"],
+    "코일": ["Coil embolization", "Angio", "radial", "puncture site"],
+    "수술시술": ["pre-op", "post-op", "동의서", "금식", "TFCA", "EGD", "ERCP", "CFS"],
+
     "순환모니터링": ["순환", "모니터링", "중환자실 순환", "혈역학"],
     "혈압저하": ["BP 저하", "저혈압", "MAP", "hypotension"],
     "에이라인": ["A-line", "arterial line", "zeroing", "waveform"],
@@ -303,6 +322,15 @@ function scoreItem(query, item) {
   
   if ((item.id || "").startsWith("V99_") && /순환|모니터링|혈압|vital|에이라인|a-line|arterial line|waveform|zeroing|씨라인|c-line|cvp|ekg|ecg|tachy|brady|i\/o|섭취량|배설량|소변량|승압제|vasopressor|말초순환|perfusion/.test(q)) score += 95;
 
+
+  if ((item.id || "").startsWith("V100_") && /신경|neuro|mental|gcs|pupil|motor|seizure|항경련|뇌압|icp|iicp|evd|sdd|burr|coil|수술|시술|tfca|tracheostomy|egd|ercp|cfs|spinal|요추천자|lumbar|csf|뇌척수액/.test(q)) score += 110;
+
+
+  if ((item.id || "") === "V101_BRACE_ORIGINAL_IMAGES" && /보조기|brace|splint|l-sling|엘슬링|팔걸이/.test(q)) score += 120;
+
+
+  if ((item.id || "").startsWith("V102_") && /ns|os|수술명|수술약어|약어|수술전검사|pre.?op|preop|orif|crif|tkra|thra|burr|evd|sdd|coil|tfca|cms|drain pressure|보조기/.test(q)) score += 130;
+
   return Math.max(0, score);
 }
 
@@ -461,7 +489,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "1.99.0-v99-circulation-monitoring-protocol",
+    version: "2.02.0-v102-ns-os-preop-table-images",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -650,5 +678,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v99 circulation monitoring protocol running on port ${port}`);
+  console.log(`ICU AI Manual v102 NS OS preop table images running on port ${port}`);
 });
