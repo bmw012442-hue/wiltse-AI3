@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "1.88.0-v79-v88-ultra-detailed",
+    "version": "1.89.0-v89-transfusion-fix",
     "language": "ko",
-    "source": "V87 기반 + V88 초세분화 확장 (욕창/보호대/X-ray/매듭/기록 강화)",
+    "source": "V88 기반 + 수혈 카드 표/이미지 우선 렌더링 개선",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-21"
   },
@@ -5307,16 +5307,7 @@ window.ICU_MANUAL_DB = {
         "혈액박스"
       ],
       "steps": [
-        "처방 확인 후 혈액요청서와 검체를 준비한다.",
-        "P-RBC + 교차시험 처방세트, ABO+Rh, irregular, 수혈용 추가 생성 확인",
-        "채혈자, 혈액요청서 이름, 검체 라벨을 대조한다.",
-        "혈액요청서와 검체를 고무줄로 묶어 진검실로 보낸다.",
-        "보낸 후 진검실에 연락해 확인을 요청한다.",
-        "P-RBC 불출 시 ice pack 포함 여부를 확인한다.",
-        "혈액정보 라벨을 수혈기록지에 붙인다.",
-        "수혈 시작, 15분 후, 종료 시 V/S와 간호기록/V/S 메모를 입력한다.",
-        "수혈기록지 수혈번호와 수혈일자를 확인 후 스캔한다.",
-        "I/O에 Blood 종류와 용량을 입력한다."
+        "처방 확인 → 혈액요청서/검체 준비 → 진검실 전달 → 혈액 수령 → 이중확인 후 수혈 시작 → 15분/종료 V/S 및 수혈기록지/I&O 입력"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
@@ -5394,9 +5385,75 @@ window.ICU_MANUAL_DB = {
             "상세"
           ],
           "include_rows_in_search": false
+        },
+        {
+          "title": "혈액제제 종류 요약",
+          "headers": [
+            "종류",
+            "적응증",
+            "보관/온도",
+            "투여",
+            "기대효과"
+          ],
+          "rows": [
+            [
+              "RBC",
+              "Hb 저하",
+              "냉장",
+              "1.5~3hr",
+              "Hb 약 1g/dL 상승"
+            ],
+            [
+              "PC",
+              "PLT 저하",
+              "실온",
+              "Full drop",
+              "PLT 약 5K 상승"
+            ],
+            [
+              "APLT",
+              "PLT 저하",
+              "실온",
+              "Full drop",
+              "PLT 약 30K 상승"
+            ],
+            [
+              "FFP",
+              "PT/INR 상승",
+              "해동 후 사용",
+              "1~2hr",
+              "INR 보정"
+            ],
+            [
+              "Cryo",
+              "Fibrinogen 보충",
+              "해동 후 사용",
+              "Full drop",
+              "Fibrinogen 상승"
+            ]
+          ],
+          "caption": "혈액제제 종류 요약",
+          "search_terms": [
+            "혈액제제표",
+            "RBC",
+            "PC",
+            "FFP",
+            "Cryo"
+          ],
+          "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v89_transfusion_procedure_flow.png",
+          "alt": "수혈 절차 순서도",
+          "caption": "수혈 준비부터 종료 기록까지 5단계 순서도",
+          "search_terms": [
+            "수혈절차이미지",
+            "수혈순서도"
+          ]
+        }
+      ],
       "original_category": "수혈",
       "search_terms": [
         "수혈 절차 상세",
@@ -5436,7 +5493,9 @@ window.ICU_MANUAL_DB = {
         "즉시 중단, 정맥로 유지, 담당의/진검실 보고"
       ],
       "standard_sections_ready": true,
-      "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고"
+      "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고",
+      "prefer_media_first": true,
+      "hide_raw_steps": false
     },
     {
       "id": "TF003",
@@ -18638,74 +18697,21 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "urgency": "urgent",
-      "summary": "24. 수혈",
+      "summary": "수혈 절차, 혈액제제 종류, 응고인자 핵심을 표·이미지 중심으로 정리한 카드",
       "indications": [
-        "24. 수혈"
+        "수혈 준비부터 종료 기록까지 전체 흐름이 필요할 때",
+        "RBC/PC/APLT/FFP/Cryo 차이를 한눈에 보고 싶을 때",
+        "PT/INR/APTT/Fibrinogen/D-dimer 의미를 빠르게 확인할 때"
       ],
-      "preparation": [],
+      "preparation": [
+        "수혈동의서 확인",
+        "수혈처방 확인",
+        "혈액요청서(EMR) 출력",
+        "ABO/Rh, 항체검사, cross matching 검체 준비",
+        "수혈기록지 준비"
+      ],
       "steps": [
-        "24. 수혈",
-        "혈액 수령 방법",
-        "수혈 절차",
-        "1. 수혈동의서(입원마다",
-        "2. 수혈처방",
-        "3. 혈액요청서(EMR) 뽑아서 내리기",
-        "수혈예정일:처방일",
-        "채혈일: cross matching 검체 내린 날",
-        "4. ABO,Rh Typing(EDTA 1,하루 한 번)",
-        "5. Antibody : 비정상적 항체 확인(",
-        "Plain 1, 하루 한 번)",
-        "6. Cross- matching(72시간마다) : 응집반응 평가",
-        "7. 6135(혈액은행, 진검)전화해서 준비되면 타달라고 하기",
-        "종류",
-        "적응증",
-        "온도",
-        "투여",
-        "기대",
-        "RBC",
-        "Hg",
-        "냉장",
-        "1.5-3hr",
-        "1g/dL­",
-        "PC",
-        "PLT",
-        "실온",
-        "Full drop",
-        "5Kmm­",
-        "APLT",
-        "PLT",
-        "실온",
-        "Full drop",
-        "30Kmm­",
-        "FFP",
-        "PT INR­",
-        "냉장",
-        "1-2hr",
-        "INR 2~10%￸",
-        "Cryo",
-        "Fibrinogen",
-        "냉장",
-        "Full drop",
-        "1팩당",
-        "10mg/dl­",
-        "*FFP : 혈소판 제외 모든 clotting factor 보충",
-        "*PC,APLT는 아이스백 필요없음.",
-        "적혈구 제외 모든 물질 포함=혈장",
-        "응고인자(피브리노겐, 프로트롬빈), 알부민, 면역 글로불린",
-        "*Cryoprecipitate : 동결침전제제",
-        "FFP를 centrifuge해서 얻어짐.",
-        "피브리노겐 중심의 응고인자 보충에 사용",
-        "I/O 40",
-        "*RBC 수혈시 칼슘농도 monitor : RBC 안 sodium citrate(항응고물질)있어 출혈 위험성이 커짐. 칼슘이 sodium citrate와 binding하여 출혈 위험성￸",
-        "*APLT : apheresis platelet =Single donor plateltet",
-        "APLT 1=PC 6~8개",
-        "<응고인자>",
-        "l PT(prothrombin time) : 와파린 복용시 prolong",
-        "l PT INR : 정상범위(0.8~1.3) 와파린 복용(2~3)",
-        "l APTT(activated partial thromboplastin time)",
-        "정산범위(22.7~44.3)헤파린 복용 환자의 경우 정상의 1.5-2.5배",
-        "l Fibrinogen : 감소시 출혈가능성­",
-        "l D-dimer : 섬유소 분해산물로 혈액속에서 발견되는 경우는 혈전이 있다 사라진 것을 의미. 폐색전증 환자나 파종성 혈관 내 응고장애를 가진 환자에게 발생 정상(0~0.61)"
+        "처방/동의 확인 → 혈액요청서 출력 및 검체 준비 → 혈액은행 확인/수령 → 환자/혈액 이중확인 후 수혈 시작 → 15분·종료 시 V/S 및 기록"
       ],
       "dosage_or_mix": [],
       "orders_or_emr": [],
@@ -18714,8 +18720,8 @@ window.ICU_MANUAL_DB = {
       ],
       "io": [],
       "warnings": [
-        "담당의 지시와 병원 최신 프로토콜 우선",
-        "업로드된 추가 매뉴얼 원문 기준으로 재확인"
+        "수혈 부작용 의심 시 즉시 중단하고 생리식염수로 정맥로 유지 후 담당의/혈액은행에 즉시 보고",
+        "최신 병원 수혈 프로토콜을 항상 우선 적용"
       ],
       "related": [
         "혈액제제 요약"
@@ -18734,7 +18740,50 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [
         {
+          "title": "수혈 절차 핵심 순서",
+          "caption": "준비부터 종료 기록까지",
+          "headers": [
+            "단계",
+            "무엇을 하나",
+            "핵심 체크"
+          ],
+          "rows": [
+            [
+              "1. 처방/동의",
+              "수혈동의서와 수혈처방 확인",
+              "수혈 예정 제제 확인"
+            ],
+            [
+              "2. 혈액요청/검체",
+              "혈액요청서 출력, ABO/Rh, 항체, cross matching 검체 준비",
+              "채혈자/환자 정보 대조"
+            ],
+            [
+              "3. 혈액수령",
+              "혈액은행 준비 확인 후 혈액 수령",
+              "혈액제제/환자 정보 확인"
+            ],
+            [
+              "4. 수혈시작",
+              "환자/혈액 이중확인 후 시작",
+              "초기 부작용 관찰"
+            ],
+            [
+              "5. 종료/기록",
+              "15분/종료 V/S, 수혈기록지, I/O 입력",
+              "스캔/EMR 기록"
+            ]
+          ],
+          "search_terms": [
+            "수혈절차",
+            "수혈순서",
+            "수혈흐름"
+          ],
+          "include_rows_in_search": true
+        },
+        {
           "title": "혈액제제 종류 요약",
+          "caption": "종류별 적응증/보관/투여/효과",
           "headers": [
             "종류",
             "적응증",
@@ -18767,45 +18816,145 @@ window.ICU_MANUAL_DB = {
             [
               "FFP",
               "PT/INR 상승",
-              "냉장",
+              "해동 후 사용",
               "1~2hr",
-              "INR 보정"
+              "응고인자 보충 / INR 보정"
             ],
             [
               "Cryo",
               "Fibrinogen 보충",
-              "냉장",
+              "해동 후 사용",
               "Full drop",
               "Fibrinogen 상승"
             ]
           ],
-          "caption": "혈액제제 종류 요약",
           "search_terms": [
-            "혈액제제 종류 요약",
-            "수혈 절차 / 혈액제제 종류 / 응고인자",
-            "수혈 / 혈액",
-            "수혈",
-            "절차",
-            "혈액제제",
-            "종류",
-            "응고인자",
+            "혈액제제표",
             "RBC",
-            "FFP",
             "PC",
             "APLT",
-            "Cryo",
-            "ABO",
-            "Cross matching",
-            "혈액은행",
-            "혈액",
-            "v43_uploaded_manual",
-            "추가 업무 매뉴얼(260618)",
-            "적응증"
+            "FFP",
+            "Cryo"
           ],
-          "include_rows_in_search": false
+          "include_rows_in_search": true
+        },
+        {
+          "title": "응고인자/검사 요약",
+          "caption": "빠르게 보는 해석 포인트",
+          "headers": [
+            "항목",
+            "의미",
+            "비고"
+          ],
+          "rows": [
+            [
+              "PT",
+              "외인성 응고경로 평가",
+              "와파린 관련"
+            ],
+            [
+              "PT INR",
+              "PT 표준화 값",
+              "정상 약 0.8~1.3 / 와파린 치료 목표 확인"
+            ],
+            [
+              "APTT",
+              "내인성 응고경로 평가",
+              "헤파린 모니터링에 활용"
+            ],
+            [
+              "Fibrinogen",
+              "응고 단백질",
+              "감소 시 출혈 위험 증가"
+            ],
+            [
+              "D-dimer",
+              "섬유소 분해산물",
+              "혈전/분해 활성 반영"
+            ]
+          ],
+          "search_terms": [
+            "응고인자",
+            "PT",
+            "INR",
+            "APTT",
+            "Fibrinogen",
+            "D-dimer"
+          ],
+          "include_rows_in_search": true
+        },
+        {
+          "title": "수혈 부작용 의심 시 대응",
+          "caption": "즉시 중단·정맥로 유지·보고",
+          "headers": [
+            "상황",
+            "즉시 행동"
+          ],
+          "rows": [
+            [
+              "발열/오한/발진/호흡곤란 등",
+              "수혈 즉시 중단, 생리식염수로 정맥로 유지"
+            ],
+            [
+              "보고",
+              "담당의와 혈액은행/진검실 즉시 보고"
+            ],
+            [
+              "확인",
+              "환자정보/혈액백 정보 재확인"
+            ],
+            [
+              "기록",
+              "증상, 시간, 보고, 후속처치 기록"
+            ]
+          ],
+          "search_terms": [
+            "수혈부작용",
+            "수혈반응",
+            "대응"
+          ],
+          "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v89_transfusion_procedure_flow.png",
+          "alt": "수혈 절차 순서도",
+          "caption": "수혈 준비부터 종료 기록까지 5단계 순서도",
+          "search_terms": [
+            "수혈절차이미지",
+            "수혈순서도",
+            "blood transfusion flow"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v89_blood_products_summary.png",
+          "alt": "혈액제제 종류 요약표 이미지",
+          "caption": "RBC, PC, APLT, FFP, Cryo 요약표",
+          "search_terms": [
+            "혈액제제표",
+            "RBC PC FFP Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v89_coagulation_factors_summary.png",
+          "alt": "응고인자 검사 요약표 이미지",
+          "caption": "PT, INR, APTT, Fibrinogen, D-dimer 요약표",
+          "search_terms": [
+            "응고인자표",
+            "PT INR APTT fibrinogen d-dimer"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v89_transfusion_reaction_response.png",
+          "alt": "수혈 부작용 대응 카드",
+          "caption": "이상반응 발생 시 즉시 대응 카드",
+          "search_terms": [
+            "수혈부작용대응",
+            "수혈반응카드"
+          ]
+        }
+      ],
       "search_terms": [
         "수혈 절차 / 혈액제제 종류 / 응고인자",
         "수혈 / 혈액",
@@ -18838,10 +18987,18 @@ window.ICU_MANUAL_DB = {
         "Full drop",
         "PT/INR 상승",
         "1~2hr",
-        "Fibrinogen 보충"
+        "Fibrinogen 보충",
+        "수혈절차표",
+        "혈액제제표",
+        "응고인자표",
+        "수혈부작용대응",
+        "표",
+        "이미지"
       ],
       "standard_sections_ready": true,
-      "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 혈액제제 요약"
+      "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 혈액제제 요약",
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX",
@@ -58358,6 +58515,20 @@ window.ICU_MANUAL_DB = {
       "v88_xray_pneumothorax_pattern.png",
       "v88_xray_pulmonary_edema_pattern.png",
       "v88_xray_systematic_checklist.png"
+    ],
+    "total_items": 358
+  },
+  "v89_update": {
+    "summary": "수혈 절차 / 혈액제제 종류 / 응고인자 카드의 가독성을 개선. 표/이미지 우선 표시, 수혈 순서도/혈액제제/응고인자/부작용 대응 이미지 추가",
+    "fixed_cards": [
+      "UPD43",
+      "TF002"
+    ],
+    "added_images": [
+      "v89_blood_products_summary.png",
+      "v89_coagulation_factors_summary.png",
+      "v89_transfusion_procedure_flow.png",
+      "v89_transfusion_reaction_response.png"
     ],
     "total_items": 358
   }

@@ -272,6 +272,14 @@ function renderStructuredCard(card) {
   const hasPrep = hasMeaningfulList(card.preparation);
   const hasWarnings = hasMeaningfulList(card.warnings);
   const hasRecords = hasMeaningfulList(recordPoints);
+  const hasMedia = (Array.isArray(card.tables) && card.tables.length) || (Array.isArray(card.images) && card.images.length) || (Array.isArray(card.videos) && card.videos.length);
+  const preferMediaFirst = !!card.prefer_media_first || hasMedia;
+  const hideRawSteps = !!card.hide_raw_steps && hasMedia;
+  const stepsSection = hideRawSteps ? "" : `<section class="detail-section core-section">
+        <h4>핵심 절차</h4>
+        ${renderSimpleLines(coreSteps)}
+      </section>`;
+  const mediaBlock = `${renderVideos(card.videos)}${renderTables(card.tables)}${renderImages(card.images)}`;
 
   return `
     <div class="structured-card simple-core-card">
@@ -290,16 +298,10 @@ function renderStructuredCard(card) {
         ${renderSearchChips(card)}
       </section>
 
-      <section class="detail-section core-section">
-        <h4>핵심 절차</h4>
-        ${renderSimpleLines(coreSteps)}
-      </section>
-
+      ${preferMediaFirst ? mediaBlock : ""}
       ${renderOptionalSection("준비물", renderSimpleLines(card.preparation), hasPrep)}
-
-      ${renderVideos(card.videos)}
-      ${renderTables(card.tables)}
-      ${renderImages(card.images)}
+      ${stepsSection}
+      ${preferMediaFirst ? "" : mediaBlock}
 
       ${renderOptionalSection("주의사항", renderSimpleLines(card.warnings), hasWarnings, "warning-section")}
 

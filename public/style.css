@@ -1427,3 +1427,6 @@ main {
   font-size: 12px;
   font-weight: 800;
 }
+
+.table-section table td, .table-section table th { vertical-align: top; }
+.image-section figure { background:#fff; border:1px solid #d9e3f2; border-radius:16px; padding:12px; }
