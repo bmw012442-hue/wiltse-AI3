@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.06.0-v106-tests-lines-imaging-mdro-emr",
+    "version": "2.07.0-v107-admin-shift-emr-equipment",
     "language": "ko",
-    "source": "V105 기반 + 검사/검체 + Line/Drain/Dressing + 방사선영상 + 다제내성균 + 공급실/전산 원본 이미지 보강",
+    "source": "V106 기반 + 입퇴원/전동/전원/사망 + 근무별 업무 + EMR/기록/처방 + 물품/장비/전화번호 총정리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -9510,7 +9510,7 @@ window.ICU_MANUAL_DB = {
         "0537"
       ],
       "urgency": "routine",
-      "summary": "중환자실 부서원이 원내 주요 내선번호, 진료부, 협력부서, 약국, 병동 번호를 빠르게 확인하는 카드입니다.",
+      "summary": "중환자실 부서원이 원내 주요 내선번호, 주치의/협력부서 연락, 층별 안내를 빠르게 확인하는 카드입니다.",
       "indications": [
         "원내 주요 부서 또는 진료부 내선번호를 확인해야 할 때",
         "약국 식별, 원무과, 영상검사, 진검실, 혈액은행, 병동, 응급실 번호를 확인해야 할 때",
@@ -9797,6 +9797,14 @@ window.ICU_MANUAL_DB = {
             "CPR",
             "전산팀",
             "영양팀"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v107_hospital_floor_guide.png",
+          "alt": "원내 위치 층별 안내 요약",
+          "caption": "원내 위치 / 층별 안내 요약",
+          "search_terms": [
+            "층별안내"
           ]
         }
       ],
@@ -71114,6 +71122,1389 @@ window.ICU_MANUAL_DB = {
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V107_ADMISSION_TRANSFER_DISCHARGE_OVERVIEW",
+      "category": "입퇴원 / 전동 / 전원 / 사망",
+      "title": "ICU 입실·전동·전원·퇴실·사망 절차 총정리",
+      "aliases": [
+        "ICU 입실 절차",
+        "응급실 입실 환자 받기",
+        "외래 입실 환자 받기",
+        "병동 전입 환자 받기",
+        "전동 절차",
+        "전원 절차",
+        "퇴실 절차",
+        "사망 환자 절차"
+      ],
+      "search_terms": [
+        "ICU 입실·전동·전원·퇴실·사망 절차 총정리",
+        "입퇴원 / 전동 / 전원 / 사망",
+        "ICU 입실 절차",
+        "응급실 입실 환자 받기",
+        "외래 입실 환자 받기",
+        "병동 전입 환자 받기",
+        "전동 절차",
+        "전원 절차",
+        "퇴실 절차",
+        "사망 환자 절차",
+        "ADM002",
+        "ADM003",
+        "TRANSFER030",
+        "MENU017",
+        "UPD43_DNR"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실 입실부터 전동, 타원 전원, 퇴실/사망까지 중환자실 간호사가 꼭 숙지해야 할 절차를 요약한 카드입니다.",
+      "indications": [
+        "신규 환자 입실, 전동/전원 준비, 퇴실 또는 사망 절차를 한눈에 정리할 때"
+      ],
+      "preparation": [
+        "환자확인, 주진단/입실사유, 활력징후, line/drain/기구, 지참약, DNR/연명의료 문서, 보호자 연락처를 준비한다."
+      ],
+      "steps": [
+        "입실 시 Initial assessment와 부착기구/지참약을 확인한다.",
+        "전동/전원 전 현재 상태, 미완료 처방, line/drain, 투약/수액을 정리한다.",
+        "사망 시 의사 확인, 보호자 안내, 사후처치, 기록과 관련 부서 연락을 시행한다."
+      ],
+      "warnings": [
+        "실제 이송/사망 관련 서류와 병원 최신 프로세스를 우선한다."
+      ],
+      "charting": [
+        "입실 사정, 인수인계 내용, line/drain/기구 상태, 보호자 설명, 전동/전원 사유, 사망 시각과 절차를 기록한다."
+      ],
+      "related": [
+        "ADM002",
+        "ADM003",
+        "TRANSFER030",
+        "MENU017",
+        "UPD43_DNR"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p5~8, p17~50, p175~183 참고"
+      ],
+      "tables": [
+        {
+          "title": "입퇴원/전동/전원/사망 체크표",
+          "caption": "핵심 확인사항",
+          "headers": [
+            "영역",
+            "무엇을 확인하나",
+            "실무 포인트"
+          ],
+          "rows": [
+            [
+              "원내 위치",
+              "층별 안내/부서 위치는 원본 이미지 카드 확인",
+              "신입간호사 숙지사항 원본 이미지 기반 확인"
+            ],
+            [
+              "검사실/영상의학과",
+              "검사실, 영상의학과, 수혈은행, 약제팀 연락처 확인",
+              "이송 전 검사 준비와 동선 확인"
+            ],
+            [
+              "ICU 물품 위치",
+              "E-cart, suction, dressing cart, CSR, emergency supplies 위치 숙지",
+              "신규 간호사 교육 시 반복 확인"
+            ]
+          ],
+          "search_terms": [
+            "입퇴원 전동 전원 사망 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v107_admission_transfer_overview.png",
+          "alt": "입퇴원/전동/전원/사망 총정리 이미지",
+          "caption": "입퇴원/전동/전원/사망 총정리",
+          "search_terms": [
+            "입퇴원 전동 전원 사망"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_DNR_PROCESS_SIMPLE",
+      "category": "DNR",
+      "title": "연명의료중단(DNR) 프로세스 쉽게 보기",
+      "aliases": [
+        "연명의료중단",
+        "DNR 프로세스",
+        "사전연명의향서",
+        "연명의료계획서"
+      ],
+      "search_terms": [
+        "연명의료중단(DNR) 프로세스 쉽게 보기",
+        "DNR",
+        "연명의료중단",
+        "DNR 프로세스",
+        "사전연명의향서",
+        "연명의료계획서",
+        "UPD43_DNR",
+        "RECORD001",
+        "EMR001"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실에서 자주 혼동되는 DNR/연명의료 관련 흐름을 팀장과 사회복지사 역할까지 포함해 간단한 표로 정리했습니다.",
+      "indications": [
+        "DNR, 사전연명의향서, 연명의료 관련 문서와 역할 분담을 확인할 때"
+      ],
+      "preparation": [
+        "환자 의사표현 가능 여부, 사전연명의향서/연명의료계획서, 보호자 관계, 주치의 설명 여부를 확인한다."
+      ],
+      "steps": [
+        "문서 존재 여부를 확인한다.",
+        "주치의 설명과 보호자 이해/서명 상태를 확인한다.",
+        "중환자실 팀장(6213)이 사전연명의향서 작성 유무를 관리·확인한다.",
+        "사회복지사(6139)가 기관 등록 업무를 담당한다.",
+        "EMR 기록과 인수인계에 반영한다."
+      ],
+      "warnings": [
+        "문서가 불명확한 경우 임의 판단하지 말고 주치의/당직의와 즉시 확인한다."
+      ],
+      "charting": [
+        "DNR 관련 문서 종류, 설명 시각, 보호자 관계, 연락 결과, 기관 등록 진행상황을 기록한다."
+      ],
+      "related": [
+        "UPD43_DNR",
+        "RECORD001",
+        "EMR001"
+      ],
+      "source_refs": [
+        "병원 내부 프로세스 반영: 팀장 6213 / 사회복지사 6139 역할 명시"
+      ],
+      "tables": [
+        {
+          "title": "DNR 프로세스",
+          "caption": "쉽게 보는 병원 프로세스",
+          "headers": [
+            "순서",
+            "확인 내용",
+            "병원 프로세스"
+          ],
+          "rows": [
+            [
+              "1단계",
+              "문서 확인",
+              "사전연명의향서/연명의료계획서/DNR 문서 확인"
+            ],
+            [
+              "2단계",
+              "설명 확인",
+              "주치의 설명, 보호자 이해·서명 상태 확인"
+            ],
+            [
+              "3단계",
+              "역할 분담",
+              "팀장 6213: 작성 유무 관리\n사회복지사 6139: 기관 등록"
+            ],
+            [
+              "4단계",
+              "EMR 기록",
+              "문서 종류, 설명 내용, 보호자 연락, 결정 시각 기록"
+            ],
+            [
+              "5단계",
+              "인계/공유",
+              "당직자·주치의·간호사 간 동일 내용 공유"
+            ]
+          ],
+          "search_terms": [
+            "DNR 프로세스 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v107_dnr_process_table.png",
+          "alt": "연명의료중단 DNR 프로세스 표",
+          "caption": "연명의료중단(DNR) 프로세스 표",
+          "search_terms": [
+            "DNR",
+            "연명의료중단"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_SHIFT_WORKFLOW_HANDOFF",
+      "category": "근무별 업무",
+      "title": "Day / Evening / Night 업무 흐름 + 인수인계 체크",
+      "aliases": [
+        "Day 근무",
+        "Evening 근무",
+        "Night 근무",
+        "인수인계",
+        "근무 중 우선순위"
+      ],
+      "search_terms": [
+        "Day / Evening / Night 업무 흐름 + 인수인계 체크",
+        "근무별 업무",
+        "Day 근무",
+        "Evening 근무",
+        "Night 근무",
+        "인수인계",
+        "근무 중 우선순위",
+        "MENU008",
+        "CHART030",
+        "ROUTINE015"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실 근무별 반복 업무와 인수인계 필수 확인사항을 한 장으로 정리했습니다.",
+      "indications": [
+        "근무 시작 전 우선순위와 인수인계 포인트를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "인계지, 미완료 처방, vital sign, 투약/feeding 일정, 검사 일정, I/O 현황을 준비한다."
+      ],
+      "steps": [
+        "근무 시작 직후 안전 확인과 급성 문제를 우선 파악한다.",
+        "정규 medication, feeding, dressing, lab follow-up, 물품/장비 점검을 수행한다.",
+        "퇴근 전 미완료 업무와 인수인계 포인트를 정리한다."
+      ],
+      "warnings": [
+        "업무 우선순위는 환자 안전과 급성 상태 변화 대응이 최우선이다."
+      ],
+      "charting": [
+        "근무별 특이사항, 미완료 처방, I/O 마감, dressing/feeding, 장비 점검, 물품 count를 인수인계 기록에 반영한다."
+      ],
+      "related": [
+        "MENU008",
+        "CHART030",
+        "ROUTINE015"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p17~50 참고"
+      ],
+      "tables": [
+        {
+          "title": "근무별 업무 체크표",
+          "caption": "Day/Evening/Night",
+          "headers": [
+            "근무",
+            "핵심 업무",
+            "실무 포인트"
+          ],
+          "rows": [
+            [
+              "Day",
+              "회진 준비, 검사/시술, 정규 투약, feeding, dressing, 보호자 설명",
+              "검사 결과와 처방 액팅을 집중 확인"
+            ],
+            [
+              "Evening",
+              "이월 업무 확인, 저녁 투약, feeding, dressing, 결과 follow-up",
+              "야간 전 준비와 환자 상태 재평가"
+            ],
+            [
+              "Night",
+              "safety round, alarms, 정규 투약, 새벽 검사 준비, I/O 마감",
+              "야간 급변 대응과 아침 인계 준비"
+            ],
+            [
+              "인수인계",
+              "상태 변화, line/drain, 투약/수액, 검사, DNR, 미완료 업무",
+              "핵심만 빠짐없이 구조화해 전달"
+            ]
+          ],
+          "search_terms": [
+            "근무별 업무 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v107_shift_workflow_table.png",
+          "alt": "근무별 업무 흐름 표",
+          "caption": "Day / Evening / Night 업무 흐름",
+          "search_terms": [
+            "근무별 업무"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_EMR_ORDER_RECORD_MASTER",
+      "category": "EMR / 기록 / 처방",
+      "title": "EMR / 기록 / 처방 총정리 + 원본 이미지 연동",
+      "aliases": [
+        "EMR",
+        "간호기록",
+        "처방 확인",
+        "처방 액팅",
+        "수혈 기록",
+        "I/O 기록",
+        "CRRT 기록",
+        "Ventilator 기록"
+      ],
+      "search_terms": [
+        "EMR / 기록 / 처방 총정리 + 원본 이미지 연동",
+        "EMR / 기록 / 처방",
+        "EMR",
+        "간호기록",
+        "처방 확인",
+        "처방 액팅",
+        "수혈 기록",
+        "I/O 기록",
+        "CRRT 기록",
+        "Ventilator 기록",
+        "EMR001",
+        "RECORD001",
+        "CHART030",
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실에서 자주 쓰는 EMR·기록·처방 확인 포인트를 정리하고, 원본 전산 이미지 카드와 연결한 카드입니다.",
+      "indications": [
+        "EMR 사용, 간호기록, 특수기록, 처방 액팅의 흐름을 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 현재 처방, 검사/시술 일정, 기록해야 하는 기구/수액/중재를 준비한다."
+      ],
+      "steps": [
+        "기본 간호기록과 initial 기록을 구조화해 남긴다.",
+        "lab/검사/응급발행/픽업 처방을 확인하고 액팅한다.",
+        "수혈, I/O, CRRT, Ventilator, DNR, 사망, 인수인계 기록을 누락 없이 반영한다."
+      ],
+      "warnings": [
+        "EMR 화면은 병원 업데이트에 따라 달라질 수 있으므로 원본 이미지와 최신 프로세스를 우선 확인한다."
+      ],
+      "charting": [
+        "상태, 중재, 반응, 보고, 시행/미시행 사유, 특수기록 값을 시간 순으로 남긴다."
+      ],
+      "related": [
+        "EMR001",
+        "RECORD001",
+        "CHART030",
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p17~50, p133~139, p175~183 참고 + 원본 전산 이미지 카드 연결"
+      ],
+      "tables": [
+        {
+          "title": "EMR/기록/처방 요약표",
+          "caption": "핵심 기록 항목",
+          "headers": [
+            "영역",
+            "주요 내용",
+            "기록 포인트"
+          ],
+          "rows": [
+            [
+              "기본 기록",
+              "initial, 간호기록, 통증/낙상/욕창",
+              "상태-중재-반응-보고"
+            ],
+            [
+              "처방/액팅",
+              "lab, 응급발행, 검사 픽업",
+              "시행 여부와 지연 사유 기록"
+            ],
+            [
+              "특수 기록",
+              "수혈, I/O, CRRT, Ventilator",
+              "설정값·시각·반응 기록"
+            ],
+            [
+              "행정 기록",
+              "DNR, 사망, 인수인계",
+              "문서 확인 및 전달 내용 명시"
+            ]
+          ],
+          "search_terms": [
+            "EMR 기록 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v107_emr_record_overview.png",
+          "alt": "EMR 기록 총정리 이미지",
+          "caption": "EMR / 기록 / 처방 총정리",
+          "search_terms": [
+            "EMR"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
+          "alt": "원본 전산 이미지 예시 1",
+          "caption": "원본 전산 이미지 예시 1",
+          "search_terms": [
+            "전산"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
+          "alt": "원본 전산 이미지 예시 2",
+          "caption": "원본 전산 이미지 예시 2",
+          "search_terms": [
+            "전산"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0033_png.png",
+          "alt": "원본 전산 이미지 예시 3",
+          "caption": "원본 전산 이미지 예시 3",
+          "search_terms": [
+            "전산"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_EQUIPMENT_SUPPLIES_PHONE_MASTER",
+      "category": "물품 / 장비 / 전화번호",
+      "title": "물품 / 장비 / 전화번호 총정리",
+      "aliases": [
+        "Infusion pump",
+        "Syringe pump",
+        "Feeding pump",
+        "제세동기",
+        "EKG monitor",
+        "Portable suction",
+        "Nebulizer",
+        "High flow",
+        "Ventilator",
+        "CRRT",
+        "CSR 물품",
+        "원내 전화번호"
+      ],
+      "search_terms": [
+        "물품 / 장비 / 전화번호 총정리",
+        "물품 / 장비 / 전화번호",
+        "Infusion pump",
+        "Syringe pump",
+        "Feeding pump",
+        "제세동기",
+        "EKG monitor",
+        "Portable suction",
+        "Nebulizer",
+        "High flow",
+        "Ventilator",
+        "CRRT",
+        "CSR 물품",
+        "원내 전화번호",
+        "EQUIP001",
+        "EQUIP002",
+        "MENU004",
+        "MENU009",
+        "INFO001",
+        "ICUINFO030"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실 장비 준비와 연락체계를 한눈에 볼 수 있게 정리한 카드입니다. 인퓨전 펌프와 CSR 물품, 원내 연락체계까지 포함합니다.",
+      "indications": [
+        "장비 준비, 물품 위치, 연락체계, CSR 물품을 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "장비 전원/배터리, 회로/튜브, 소모품, 설정값, alarm, 멸균 상태와 유효기간을 확인한다."
+      ],
+      "steps": [
+        "사용 장비의 기본 점검 항목을 확인한다.",
+        "CSR 물품 이름/생김새와 count를 점검한다.",
+        "대표 연락체계와 원내 위치 안내는 요약표와 원본 이미지로 함께 확인한다."
+      ],
+      "warnings": [
+        "장비 세부 설정은 실제 장비 모델과 병원 최신 프로토콜을 우선한다."
+      ],
+      "charting": [
+        "장비 이상, 점검 결과, 물품 부족, 연락·보고 내용을 기록한다."
+      ],
+      "related": [
+        "EQUIP001",
+        "EQUIP002",
+        "MENU004",
+        "MENU009",
+        "INFO001",
+        "ICUINFO030"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p61~62, p133~139, p175~183 참고 + 신입간호사 숙지사항"
+      ],
+      "tables": [
+        {
+          "title": "장비/물품/연락체계 요약표",
+          "caption": "한눈에 보는 체크포인트",
+          "headers": [
+            "영역",
+            "포함 내용",
+            "실무 포인트"
+          ],
+          "rows": [
+            [
+              "원내 위치",
+              "층별 안내/부서 위치는 원본 이미지 카드 확인",
+              "신입간호사 숙지사항 원본 이미지 기반 확인"
+            ],
+            [
+              "검사실/영상의학과",
+              "검사실, 영상의학과, 수혈은행, 약제팀 연락처 확인",
+              "이송 전 검사 준비와 동선 확인"
+            ],
+            [
+              "ICU 물품 위치",
+              "E-cart, suction, dressing cart, CSR, emergency supplies 위치 숙지",
+              "신규 간호사 교육 시 반복 확인"
+            ]
+          ],
+          "search_terms": [
+            "장비 물품 전화번호 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v107_equipment_phone_overview.png",
+          "alt": "물품 장비 전화번호 총정리 이미지",
+          "caption": "물품 / 장비 / 전화번호 총정리",
+          "search_terms": [
+            "장비",
+            "전화번호"
+          ]
+        },
+        {
+          "src": "selected_manual_images/wiltse_internal_phone_numbers.png",
+          "alt": "원내 주요 전화번호 요약",
+          "caption": "대표 원내 연락체계",
+          "search_terms": [
+            "전화번호"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v107_hospital_floor_guide.png",
+          "alt": "원내 위치 층별 안내 요약",
+          "caption": "원내 위치 / 층별 안내 요약",
+          "search_terms": [
+            "층별안내"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
+          "alt": "CSR 원본 이미지",
+          "caption": "CSR 원본 이미지",
+          "search_terms": [
+            "CSR"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_MANUAL_RAW_IMAGES_SET_A",
+      "category": "병동간호팀 간호사 매뉴얼",
+      "title": "원내 매뉴얼 원본 이미지 모음 A (p5~8 / p17~50 일부)",
+      "aliases": [
+        "원본 이미지 모음",
+        "매뉴얼 원본",
+        "병동간호팀 매뉴얼 이미지"
+      ],
+      "search_terms": [
+        "원내 매뉴얼 원본 이미지 모음 A (p5~8 / p17~50 일부)",
+        "병동간호팀 간호사 매뉴얼",
+        "원본 이미지 모음",
+        "매뉴얼 원본",
+        "병동간호팀 매뉴얼 이미지",
+        "V106_HOSPITAL_EMR_RAW_IMAGES",
+        "V106_CSR_STERILE_TOOLS_ORIGINAL"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀/신입간호사 숙지사항에서 추출한 원본 이미지 일부를 앱에서 그대로 볼 수 있게 묶은 카드입니다.",
+      "indications": [
+        "원내 프로세스, 표, 사진, 전산 화면 원본을 직접 확인할 때"
+      ],
+      "preparation": [
+        "원본 이미지는 요약 카드와 함께 대조해 확인한다."
+      ],
+      "steps": [
+        "이미지를 확대해 표와 문구를 확인한다.",
+        "실제 적용은 병원 최신 프로토콜과 원본 문서를 우선한다."
+      ],
+      "warnings": [
+        "추출 이미지 해상도에 따라 가독성이 다를 수 있다."
+      ],
+      "charting": [
+        "필요 시 카드 제목과 함께 참고 사실을 기록한다."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES",
+        "V106_CSR_STERILE_TOOLS_ORIGINAL"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p5~8, p17~50 일부 / 신입간호사 숙지사항 원본 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0001_bmp.png",
+          "alt": "원본 이미지 add260618_bin0001_bmp.png",
+          "caption": "원본 이미지 add260618_bin0001_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0002_bmp.png",
+          "alt": "원본 이미지 add260618_bin0002_bmp.png",
+          "caption": "원본 이미지 add260618_bin0002_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0003_bmp.png",
+          "alt": "원본 이미지 add260618_bin0003_bmp.png",
+          "caption": "원본 이미지 add260618_bin0003_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
+          "alt": "원본 이미지 add260618_bin0004_bmp.png",
+          "caption": "원본 이미지 add260618_bin0004_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
+          "alt": "원본 이미지 add260618_bin0005_bmp.png",
+          "caption": "원본 이미지 add260618_bin0005_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0006_bmp.png",
+          "alt": "원본 이미지 add260618_bin0006_bmp.png",
+          "caption": "원본 이미지 add260618_bin0006_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0007_bmp.png",
+          "alt": "원본 이미지 add260618_bin0007_bmp.png",
+          "caption": "원본 이미지 add260618_bin0007_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0008_bmp.png",
+          "alt": "원본 이미지 add260618_bin0008_bmp.png",
+          "caption": "원본 이미지 add260618_bin0008_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0009_bmp.png",
+          "alt": "원본 이미지 add260618_bin0009_bmp.png",
+          "caption": "원본 이미지 add260618_bin0009_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000a_bmp.png",
+          "alt": "원본 이미지 add260618_bin000a_bmp.png",
+          "caption": "원본 이미지 add260618_bin000a_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000b_bmp.png",
+          "alt": "원본 이미지 add260618_bin000b_bmp.png",
+          "caption": "원본 이미지 add260618_bin000b_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000c_bmp.png",
+          "alt": "원본 이미지 add260618_bin000c_bmp.png",
+          "caption": "원본 이미지 add260618_bin000c_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000d_bmp.png",
+          "alt": "원본 이미지 add260618_bin000d_bmp.png",
+          "caption": "원본 이미지 add260618_bin000d_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000e_bmp.png",
+          "alt": "원본 이미지 add260618_bin000e_bmp.png",
+          "caption": "원본 이미지 add260618_bin000e_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000f_bmp.png",
+          "alt": "원본 이미지 add260618_bin000f_bmp.png",
+          "caption": "원본 이미지 add260618_bin000f_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0010_bmp.png",
+          "alt": "원본 이미지 add260618_bin0010_bmp.png",
+          "caption": "원본 이미지 add260618_bin0010_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0011_bmp.png",
+          "alt": "원본 이미지 add260618_bin0011_bmp.png",
+          "caption": "원본 이미지 add260618_bin0011_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0012_bmp.png",
+          "alt": "원본 이미지 add260618_bin0012_bmp.png",
+          "caption": "원본 이미지 add260618_bin0012_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0013_bmp.png",
+          "alt": "원본 이미지 add260618_bin0013_bmp.png",
+          "caption": "원본 이미지 add260618_bin0013_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0014_bmp.png",
+          "alt": "원본 이미지 add260618_bin0014_bmp.png",
+          "caption": "원본 이미지 add260618_bin0014_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0015_bmp.png",
+          "alt": "원본 이미지 add260618_bin0015_bmp.png",
+          "caption": "원본 이미지 add260618_bin0015_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0016_bmp.png",
+          "alt": "원본 이미지 add260618_bin0016_bmp.png",
+          "caption": "원본 이미지 add260618_bin0016_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0017_bmp.png",
+          "alt": "원본 이미지 add260618_bin0017_bmp.png",
+          "caption": "원본 이미지 add260618_bin0017_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0018_bmp.png",
+          "alt": "원본 이미지 add260618_bin0018_bmp.png",
+          "caption": "원본 이미지 add260618_bin0018_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0019_bmp.png",
+          "alt": "원본 이미지 add260618_bin0019_bmp.png",
+          "caption": "원본 이미지 add260618_bin0019_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001a_bmp.png",
+          "alt": "원본 이미지 add260618_bin001a_bmp.png",
+          "caption": "원본 이미지 add260618_bin001a_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001b_bmp.png",
+          "alt": "원본 이미지 add260618_bin001b_bmp.png",
+          "caption": "원본 이미지 add260618_bin001b_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001c_bmp.png",
+          "alt": "원본 이미지 add260618_bin001c_bmp.png",
+          "caption": "원본 이미지 add260618_bin001c_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001d_bmp.png",
+          "alt": "원본 이미지 add260618_bin001d_bmp.png",
+          "caption": "원본 이미지 add260618_bin001d_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001e_bmp.png",
+          "alt": "원본 이미지 add260618_bin001e_bmp.png",
+          "caption": "원본 이미지 add260618_bin001e_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin001f_bmp.png",
+          "alt": "원본 이미지 add260618_bin001f_bmp.png",
+          "caption": "원본 이미지 add260618_bin001f_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0020_bmp.png",
+          "alt": "원본 이미지 add260618_bin0020_bmp.png",
+          "caption": "원본 이미지 add260618_bin0020_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
+          "alt": "원본 이미지 add260618_bin0021_bmp.png",
+          "caption": "원본 이미지 add260618_bin0021_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
+          "alt": "원본 이미지 add260618_bin0022_bmp.png",
+          "caption": "원본 이미지 add260618_bin0022_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0023_bmp.png",
+          "alt": "원본 이미지 add260618_bin0023_bmp.png",
+          "caption": "원본 이미지 add260618_bin0023_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0024_bmp.png",
+          "alt": "원본 이미지 add260618_bin0024_bmp.png",
+          "caption": "원본 이미지 add260618_bin0024_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0025_bmp.png",
+          "alt": "원본 이미지 add260618_bin0025_bmp.png",
+          "caption": "원본 이미지 add260618_bin0025_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0026_bmp.png",
+          "alt": "원본 이미지 add260618_bin0026_bmp.png",
+          "caption": "원본 이미지 add260618_bin0026_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V107_MANUAL_RAW_IMAGES_SET_B",
+      "category": "병동간호팀 간호사 매뉴얼",
+      "title": "원내 매뉴얼 원본 이미지 모음 B (p133~139 / p175~183 포함)",
+      "aliases": [
+        "원본 이미지 모음 2",
+        "매뉴얼 원본 2",
+        "사진/표/이미지"
+      ],
+      "search_terms": [
+        "원내 매뉴얼 원본 이미지 모음 B (p133~139 / p175~183 포함)",
+        "병동간호팀 간호사 매뉴얼",
+        "원본 이미지 모음 2",
+        "매뉴얼 원본 2",
+        "사진/표/이미지",
+        "INFO001",
+        "MENU009",
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "urgency": "routine",
+      "summary": "원내 프로세스, 장비, 기록, 전화번호, 안내 자료 등 추출된 원본 이미지를 이어서 제공하는 카드입니다.",
+      "indications": [
+        "원내 표/사진/안내 이미지를 앱에서 그대로 보고 싶을 때"
+      ],
+      "preparation": [
+        "필요한 항목은 검색어와 함께 이 카드에서 원본 이미지를 확인한다."
+      ],
+      "steps": [
+        "이미지를 확대해 표/사진/안내문을 확인한다.",
+        "요약 카드와 원본 이미지가 다를 경우 원본과 최신 병원 공지를 우선한다."
+      ],
+      "warnings": [
+        "원본 이미지는 교육용 참고이며, 최신 변경사항은 별도 공지를 확인한다."
+      ],
+      "charting": [
+        "관련 원본 이미지를 참고했다는 점을 기록에 남길 필요는 없으며, 실제 업무는 원내 프로토콜대로 시행한다."
+      ],
+      "related": [
+        "INFO001",
+        "MENU009",
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p133~139, p175~183 포함 원본 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0027_bmp.png",
+          "alt": "원본 이미지 add260618_bin0027_bmp.png",
+          "caption": "원본 이미지 add260618_bin0027_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0028_bmp.png",
+          "alt": "원본 이미지 add260618_bin0028_bmp.png",
+          "caption": "원본 이미지 add260618_bin0028_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0029_bmp.png",
+          "alt": "원본 이미지 add260618_bin0029_bmp.png",
+          "caption": "원본 이미지 add260618_bin0029_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002a_bmp.png",
+          "alt": "원본 이미지 add260618_bin002a_bmp.png",
+          "caption": "원본 이미지 add260618_bin002a_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002b_png.png",
+          "alt": "원본 이미지 add260618_bin002b_png.png",
+          "caption": "원본 이미지 add260618_bin002b_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002c_bmp.png",
+          "alt": "원본 이미지 add260618_bin002c_bmp.png",
+          "caption": "원본 이미지 add260618_bin002c_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002d_png.png",
+          "alt": "원본 이미지 add260618_bin002d_png.png",
+          "caption": "원본 이미지 add260618_bin002d_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002e_png.png",
+          "alt": "원본 이미지 add260618_bin002e_png.png",
+          "caption": "원본 이미지 add260618_bin002e_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002f_png.png",
+          "alt": "원본 이미지 add260618_bin002f_png.png",
+          "caption": "원본 이미지 add260618_bin002f_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0030_png.png",
+          "alt": "원본 이미지 add260618_bin0030_png.png",
+          "caption": "원본 이미지 add260618_bin0030_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0031_png.png",
+          "alt": "원본 이미지 add260618_bin0031_png.png",
+          "caption": "원본 이미지 add260618_bin0031_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0032_png.png",
+          "alt": "원본 이미지 add260618_bin0032_png.png",
+          "caption": "원본 이미지 add260618_bin0032_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0033_png.png",
+          "alt": "원본 이미지 add260618_bin0033_png.png",
+          "caption": "원본 이미지 add260618_bin0033_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0034_png.png",
+          "alt": "원본 이미지 add260618_bin0034_png.png",
+          "caption": "원본 이미지 add260618_bin0034_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0035_png.png",
+          "alt": "원본 이미지 add260618_bin0035_png.png",
+          "caption": "원본 이미지 add260618_bin0035_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0036_png.png",
+          "alt": "원본 이미지 add260618_bin0036_png.png",
+          "caption": "원본 이미지 add260618_bin0036_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0037_png.png",
+          "alt": "원본 이미지 add260618_bin0037_png.png",
+          "caption": "원본 이미지 add260618_bin0037_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0038_png.png",
+          "alt": "원본 이미지 add260618_bin0038_png.png",
+          "caption": "원본 이미지 add260618_bin0038_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0039_png.png",
+          "alt": "원본 이미지 add260618_bin0039_png.png",
+          "caption": "원본 이미지 add260618_bin0039_png.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003a_bmp.png",
+          "alt": "원본 이미지 add260618_bin003a_bmp.png",
+          "caption": "원본 이미지 add260618_bin003a_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003b_bmp.png",
+          "alt": "원본 이미지 add260618_bin003b_bmp.png",
+          "caption": "원본 이미지 add260618_bin003b_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003c_bmp.png",
+          "alt": "원본 이미지 add260618_bin003c_bmp.png",
+          "caption": "원본 이미지 add260618_bin003c_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003d_bmp.png",
+          "alt": "원본 이미지 add260618_bin003d_bmp.png",
+          "caption": "원본 이미지 add260618_bin003d_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003e_bmp.png",
+          "alt": "원본 이미지 add260618_bin003e_bmp.png",
+          "caption": "원본 이미지 add260618_bin003e_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003f_bmp.png",
+          "alt": "원본 이미지 add260618_bin003f_bmp.png",
+          "caption": "원본 이미지 add260618_bin003f_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0040_bmp.png",
+          "alt": "원본 이미지 add260618_bin0040_bmp.png",
+          "caption": "원본 이미지 add260618_bin0040_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0041_bmp.png",
+          "alt": "원본 이미지 add260618_bin0041_bmp.png",
+          "caption": "원본 이미지 add260618_bin0041_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0042_bmp.png",
+          "alt": "원본 이미지 add260618_bin0042_bmp.png",
+          "caption": "원본 이미지 add260618_bin0042_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0043_bmp.png",
+          "alt": "원본 이미지 add260618_bin0043_bmp.png",
+          "caption": "원본 이미지 add260618_bin0043_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0044_bmp.png",
+          "alt": "원본 이미지 add260618_bin0044_bmp.png",
+          "caption": "원본 이미지 add260618_bin0044_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0045_bmp.png",
+          "alt": "원본 이미지 add260618_bin0045_bmp.png",
+          "caption": "원본 이미지 add260618_bin0045_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0046_bmp.png",
+          "alt": "원본 이미지 add260618_bin0046_bmp.png",
+          "caption": "원본 이미지 add260618_bin0046_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0047_bmp.png",
+          "alt": "원본 이미지 add260618_bin0047_bmp.png",
+          "caption": "원본 이미지 add260618_bin0047_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0048_bmp.png",
+          "alt": "원본 이미지 add260618_bin0048_bmp.png",
+          "caption": "원본 이미지 add260618_bin0048_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0049_bmp.png",
+          "alt": "원본 이미지 add260618_bin0049_bmp.png",
+          "caption": "원본 이미지 add260618_bin0049_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004a_bmp.png",
+          "alt": "원본 이미지 add260618_bin004a_bmp.png",
+          "caption": "원본 이미지 add260618_bin004a_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004b_bmp.png",
+          "alt": "원본 이미지 add260618_bin004b_bmp.png",
+          "caption": "원본 이미지 add260618_bin004b_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004c_bmp.png",
+          "alt": "원본 이미지 add260618_bin004c_bmp.png",
+          "caption": "원본 이미지 add260618_bin004c_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin004d_bmp.png",
+          "alt": "원본 이미지 add260618_bin004d_bmp.png",
+          "caption": "원본 이미지 add260618_bin004d_bmp.png",
+          "search_terms": [
+            "원본 이미지",
+            "매뉴얼"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -72623,5 +74014,17 @@ window.ICU_MANUAL_DB = {
     "uploaded_manual_images_count": 77,
     "total_items": 423,
     "hospital_emr_raw_images_count": 34
+  },
+  "v107_update": {
+    "base": "V106",
+    "focus": [
+      "입퇴원/전동/전원/사망",
+      "근무별 업무",
+      "EMR/기록/처방",
+      "물품/장비/전화번호",
+      "DNR 프로세스",
+      "원본 매뉴얼 이미지 가시화"
+    ],
+    "manual_refs": "병동간호팀 간호사 메뉴얼 p5~8, p17~50, p133~139, p175~183 / CSR p14~16 / infusion pump p61~62 / 신입간호사 숙지사항 참고"
   }
 };
