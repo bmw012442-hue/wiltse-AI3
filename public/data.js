@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.05.0-v105-drug-fluid-gtt-calculator",
+    "version": "2.06.0-v106-tests-lines-imaging-mdro-emr",
     "language": "ko",
-    "source": "V104 기반 + 병동간호팀 업무매뉴얼 p60 약물계산 + 수액속도/gtt 계산표 보강",
+    "source": "V105 기반 + 검사/검체 + Line/Drain/Dressing + 방사선영상 + 다제내성균 + 공급실/전산 원본 이미지 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -4202,7 +4202,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "파랑 tube는 정확히 채워야 하며 가장 먼저 채혈합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사/Lab bottle",
         "v11_source_enhanced",
@@ -4217,7 +4221,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "윌스 ICU AI 업무 매뉴얼 Lab bottle",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [
         {
@@ -4484,7 +4489,8 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "LAB002",
@@ -7955,7 +7961,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/영상",
         "v10_master_30_categories"
@@ -7965,7 +7975,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -7987,7 +7998,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Coronary angio CT 전후 간호 검사 / 검체 검사·시술/영상 coronary angio CT 관상동맥 CT 조영제 CT Coronary angio 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "Coronary angio CT 전후 간호 검사 / 검체 검사·시술/영상 coronary angio CT 관상동맥 CT 조영제 CT Coronary angio 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC003",
@@ -8030,7 +8042,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/영상",
         "v10_master_30_categories"
@@ -8040,7 +8056,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8062,7 +8079,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Brain MRI non-enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI MRI non enhance brain non enhance Brain MRI non-enhance 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "Brain MRI non-enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI MRI non enhance brain non enhance Brain MRI non-enhance 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC004",
@@ -8105,7 +8123,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/영상",
         "v10_master_30_categories"
@@ -8115,7 +8137,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8137,7 +8160,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Brain MRI enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI enhance 조영 MRI MRI 조영 Brain MRI enhance 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "Brain MRI enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI enhance 조영 MRI MRI 조영 Brain MRI enhance 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC005",
@@ -8178,7 +8202,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/영상",
         "v10_master_30_categories",
@@ -8193,7 +8221,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "사용자 제시 30개 카테고리",
-        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8301,7 +8330,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/영상",
         "v10_master_30_categories"
@@ -8311,7 +8344,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8335,7 +8369,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Head Neck angio CT 전후 간호 검사 / 검체 검사·시술/영상 Head Neck angio CT HN angio CTA 조영 CT Head Neck angio CT 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "Head Neck angio CT 전후 간호 검사 / 검체 검사·시술/영상 Head Neck angio CT HN angio CTA 조영 CT Head Neck angio CT 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC007",
@@ -8373,7 +8408,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/신경혈관",
         "v10_master_30_categories"
@@ -8383,7 +8422,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8399,7 +8439,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "DSA 전후 간호 신경계 검사·시술/신경혈관 DSA 혈관조영술 전후 간호 v10_master_30_categories"
+      "search_index": "DSA 전후 간호 신경계 검사·시술/신경혈관 DSA 혈관조영술 전후 간호 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC008",
@@ -8438,7 +8479,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/혈관",
         "v10_master_30_categories"
@@ -8448,7 +8493,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8466,7 +8512,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "PTA 전후 간호 검사 / 검체 검사·시술/혈관 PTA angioplasty 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "PTA 전후 간호 검사 / 검체 검사·시술/혈관 PTA angioplasty 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC009",
@@ -8711,7 +8758,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/소화기",
         "v10_master_30_categories"
@@ -8721,7 +8772,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8740,7 +8792,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "EGD 전후 간호 검사 / 검체 검사·시술/소화기 EGD 위내시경 내시경 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "EGD 전후 간호 검사 / 검체 검사·시술/소화기 EGD 위내시경 내시경 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC013",
@@ -8780,7 +8833,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/소화기",
         "v10_master_30_categories"
@@ -8790,7 +8847,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8809,7 +8867,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "ERCP 전후 간호 검사 / 검체 검사·시술/소화기 ERCP 담췌관 내시경 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "ERCP 전후 간호 검사 / 검체 검사·시술/소화기 ERCP 담췌관 내시경 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "PROC014",
@@ -8849,7 +8908,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검사별 세부 준비는 해당 부서 지침과 주치의 지시를 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검사·시술/소화기",
         "v10_master_30_categories"
@@ -8859,7 +8922,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8878,7 +8942,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "CFS 전후 간호 검사 / 검체 검사·시술/소화기 CFS 대장내시경 colonoscopy 전후 간호 검사 검체 v10_master_30_categories"
+      "search_index": "CFS 전후 간호 검사 / 검체 검사·시술/소화기 CFS 대장내시경 colonoscopy 전후 간호 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC001",
@@ -8921,7 +8986,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/Blood culture",
         "v10_master_30_categories"
@@ -8931,7 +9000,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -8953,7 +9023,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Blood culture 채취 검사 / 검체 검체/Blood culture Blood culture blood cx 혈액배양 aerobic anaerobic Blood culture 채취 검사 검체 v10_master_30_categories"
+      "search_index": "Blood culture 채취 검사 / 검체 검체/Blood culture Blood culture blood cx 혈액배양 aerobic anaerobic Blood culture 채취 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC002",
@@ -8994,7 +9065,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/Sputum culture",
         "v10_master_30_categories"
@@ -9004,7 +9079,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -9024,7 +9100,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Sputum culture 채취 검사 / 검체 검체/Sputum culture sputum cx sputum culture 객담배양 Sputum culture 채취 검사 검체 v10_master_30_categories"
+      "search_index": "Sputum culture 채취 검사 / 검체 검체/Sputum culture sputum cx sputum culture 객담배양 Sputum culture 채취 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC003",
@@ -9065,7 +9142,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/Urine culture",
         "v10_master_30_categories"
@@ -9075,7 +9156,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -9095,7 +9177,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Urine culture 채취 검사 / 검체 검체/Urine culture urine cx urine culture 소변배양 Urine culture 채취 검사 검체 v10_master_30_categories"
+      "search_index": "Urine culture 채취 검사 / 검체 검체/Urine culture urine cx urine culture 소변배양 Urine culture 채취 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC004",
@@ -9133,7 +9216,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/RAT",
         "v10_master_30_categories"
@@ -9143,7 +9230,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -9160,7 +9248,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "RAT 검사 검사 / 검체 검체/RAT RAT rapid antigen test 신속항원 검사 검체 v10_master_30_categories"
+      "search_index": "RAT 검사 검사 / 검체 검체/RAT RAT rapid antigen test 신속항원 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC005",
@@ -9199,7 +9288,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/CRE·CPO",
         "v10_master_30_categories"
@@ -9209,7 +9302,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [
@@ -9249,7 +9343,8 @@ window.ICU_MANUAL_DB = {
         "격리실 간호 참고 자료"
       ],
       "standard_sections_ready": true,
-      "search_index": "CRE/CPO 검체 검사 / 검체 검체/CRE·CPO CRE CPO 격리검사 직장도말 검체 검사 v10_master_30_categories 격리실 간호 참고 자료"
+      "search_index": "CRE/CPO 검체 검사 / 검체 검체/CRE·CPO CRE CPO 격리검사 직장도말 검체 검사 v10_master_30_categories 격리실 간호 참고 자료",
+      "prefer_media_first": true
     },
     {
       "id": "SPEC006",
@@ -9290,7 +9385,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "검체별 용기와 채취법은 진단검사의학과 지침을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "검체/Tip culture",
         "v10_master_30_categories"
@@ -9300,7 +9399,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자 제시 30개 카테고리 기반 추가 카드. 세부 수치/프로토콜은 병원 최신 지침 확인 필요."
       },
       "source_refs": [
-        "사용자 제시 30개 카테고리"
+        "사용자 제시 30개 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -9320,7 +9420,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Tip culture 채취 검사 / 검체 검체/Tip culture Tip cx tip culture 카테터 tip Tip culture 채취 검사 검체 v10_master_30_categories"
+      "search_index": "Tip culture 채취 검사 / 검체 검체/Tip culture Tip cx tip culture 카테터 tip Tip culture 채취 검사 검체 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "INFO001",
@@ -12735,7 +12836,10 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [
         "일반 상처 Dressing",
-        "수술 후 상처 Dressing"
+        "수술 후 상처 Dressing",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tags": [
         "Dressing·Line",
@@ -12747,7 +12851,8 @@ window.ICU_MANUAL_DB = {
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [],
@@ -12797,7 +12902,8 @@ window.ICU_MANUAL_DB = {
         "search_optimized"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized 일반 상처 Dressing 수술 후 상처 Dressing"
+      "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized 일반 상처 Dressing 수술 후 상처 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "MENU008",
@@ -12962,7 +13068,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "CSR 물품",
         "v14_v11_based_menu",
@@ -12973,7 +13083,8 @@ window.ICU_MANUAL_DB = {
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [
@@ -13122,7 +13233,8 @@ window.ICU_MANUAL_DB = {
         "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진"
       ],
       "standard_sections_ready": true,
-      "search_index": "CSR 물품 카운트: 이름과 생김새 물품 / 장비 / 전화번호 CSR 물품 CSR 물품카운트 물품 카운트 물품 카운트 멸균물품 forcep dressing set foley set suture set 소독물품 이름 생김새 모양 사진 물품 이름 이름과 장비 전화번호 v14_v11_based_menu search_optimized Kelly / Long kelly 기구 사진 Forcep / Dressing set 구성 사진 Scissors / Mosquito / Magill forcep 사진 Knife handle / Needle holder / Metzenbaum / Personal scissor 사진"
+      "search_index": "CSR 물품 카운트: 이름과 생김새 물품 / 장비 / 전화번호 CSR 물품 CSR 물품카운트 물품 카운트 물품 카운트 멸균물품 forcep dressing set foley set suture set 소독물품 이름 생김새 모양 사진 물품 이름 이름과 장비 전화번호 v14_v11_based_menu search_optimized Kelly / Long kelly 기구 사진 Forcep / Dressing set 구성 사진 Scissors / Mosquito / Magill forcep 사진 Knife handle / Needle holder / Metzenbaum / Personal scissor 사진",
+      "prefer_media_first": true
     },
     {
       "id": "MENU010",
@@ -13173,7 +13285,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tags": [
         "감염관리",
         "v14_v11_based_menu",
@@ -13184,7 +13300,8 @@ window.ICU_MANUAL_DB = {
         "rule": "V11 기반, 윌스 심볼 제거, 첫화면 실무메뉴 및 검색어 확장"
       },
       "source_refs": [
-        "사용자 제시 V14 첫화면 카테고리"
+        "사용자 제시 V14 첫화면 카테고리",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
       "images": [
@@ -13275,7 +13392,8 @@ window.ICU_MANUAL_DB = {
         "다제내성감염균(VRE/CRE 등) 참고표"
       ],
       "standard_sections_ready": true,
-      "search_index": "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA 감염관리 / 검사 감염관리 다제내성 감염균 다제내성감염균 VRE CRE CPO MRSA MSSA MRPA MDRO 격리 접촉주의 보호구 항생제 적응 별 항생제 균별 항생제 배양검사 contact precaution 검사 v14_v11_based_menu search_optimized 격리실 간호 참고 자료 다제내성감염균(VRE/CRE 등) 참고표"
+      "search_index": "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA 감염관리 / 검사 감염관리 다제내성 감염균 다제내성감염균 VRE CRE CPO MRSA MSSA MRPA MDRO 격리 접촉주의 보호구 항생제 적응 별 항생제 균별 항생제 배양검사 contact precaution 검사 v14_v11_based_menu search_optimized 격리실 간호 참고 자료 다제내성감염균(VRE/CRE 등) 참고표",
+      "prefer_media_first": true
     },
     {
       "id": "MENU011",
@@ -15523,7 +15641,10 @@ window.ICU_MANUAL_DB = {
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
       "related": [
-        "ABGA 채혈/검사"
+        "ABGA 채혈/검사",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tables": [
         {
@@ -15593,7 +15714,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
-        "Google Drive 링크: ABGA calibration 보기"
+        "Google Drive 링크: ABGA calibration 보기",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "original_category": "검사·검체/검체통",
       "search_terms": [
@@ -18082,7 +18204,11 @@ window.ICU_MANUAL_DB = {
       "warnings": [
         "실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
       ],
-      "related": [],
+      "related": [
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
+      ],
       "tables": [
         {
           "title": "주요 영상검사 준비사항",
@@ -18172,7 +18298,8 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
         "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
-        "Google Drive 링크: 동의서 받기(태블릿) 보기"
+        "Google Drive 링크: 동의서 받기(태블릿) 보기",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "original_category": "검사·시술/영상검사",
       "search_terms": [
@@ -18377,7 +18504,10 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [
         "일반 상처 Dressing",
-        "수술 후 상처 Dressing"
+        "수술 후 상처 Dressing",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tables": [
         {
@@ -18452,7 +18582,8 @@ window.ICU_MANUAL_DB = {
         "rule": "사용자가 업로드한 업무 매뉴얼 내용을 검색 DB에 추가"
       },
       "source_refs": [
-        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp"
+        "업로드 파일: 매뉴얼 (수정)2026-06-14 184940(2).hwp",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "original_category": "Dressing",
       "search_terms": [
@@ -18501,7 +18632,8 @@ window.ICU_MANUAL_DB = {
         "괴사조직 제거, 지속 사용 금지"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dressing 소독제와 상처별 소독 Line / Drain / Dressing Dressing Dressing 소독 소독제 생리식염수 베타딘 클로르헥시딘 알코올 과산화수소 일반 상처 감염된 상처 수술 후 상처 욕창 PCD 장루 SDD dx EVD bag 소독 테가덤 CHG oozing 거즈 필름 7일 픽스 2일 소독제와 상처별 소독 Line Drain v26_uploaded_manual_added manual_20260614 소독제 특징과 사용 예시 특징 사용 예시 세포 자극 적음 일반 상처 세척 광범위 항균 감염 위험 상처, 수술 전 소독 강력한 소독, 피부 친화적 카테터 삽입 부위, 중심정맥관 소독 빠른 살균, 휘발성 주사부위 피부 소독, 개방성 상처 금지 기포 발생으로 이물질 제거 괴사조직 제거, 지속 사용 금지 일반 상처 Dressing 수술 후 상처 Dressing"
+      "search_index": "Dressing 소독제와 상처별 소독 Line / Drain / Dressing Dressing Dressing 소독 소독제 생리식염수 베타딘 클로르헥시딘 알코올 과산화수소 일반 상처 감염된 상처 수술 후 상처 욕창 PCD 장루 SDD dx EVD bag 소독 테가덤 CHG oozing 거즈 필름 7일 픽스 2일 소독제와 상처별 소독 Line Drain v26_uploaded_manual_added manual_20260614 소독제 특징과 사용 예시 특징 사용 예시 세포 자극 적음 일반 상처 세척 광범위 항균 감염 위험 상처, 수술 전 소독 강력한 소독, 피부 친화적 카테터 삽입 부위, 중심정맥관 소독 빠른 살균, 휘발성 주사부위 피부 소독, 개방성 상처 금지 기포 발생으로 이물질 제거 괴사조직 제거, 지속 사용 금지 일반 상처 Dressing 수술 후 상처 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "SURG030",
@@ -20808,7 +20940,10 @@ window.ICU_MANUAL_DB = {
         "업로드된 추가 매뉴얼 원문 기준으로 재확인"
       ],
       "related": [
-        "Lab bottle 종류와 채혈 순서"
+        "Lab bottle 종류와 채혈 순서",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tags": [
         "검사 / 검체",
@@ -20820,7 +20955,8 @@ window.ICU_MANUAL_DB = {
         "rule": "업로드 HWP 자료 기반 신규/보강 카드"
       },
       "source_refs": [
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [
         {
@@ -20922,7 +21058,8 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
-      "search_index": "Lab bottle 종류와 채혈 순서 / 검체 채취 검사 / 검체 Lab bottle / Sputum Cx / Urine Cx / RAT Lab bottle Sputum Cx Urine RAT Lab bottle 채혈순서 Sputum Cx Urine Cx 검체 Lab bottle 종류 채혈 순서 검체 bottle 검체 채취 외주검사 차광검체 종류와 채혈 순서 채취 검사 v43_uploaded_manual 추가 업무 매뉴얼(260618) 검체 채취 핵심 항목 핵심 포인트 병원 검체 bottle 기준과 검사실 지침 우선 검체 bottle과 은박지 포장 위 라벨 2개 부착 멸균 손/오염 손 구분, suction 연결 방향 확인 포트 소독 후 자연건조, 10cc 정도 채취 호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 Lab bottle 종류와 채혈 순서"
+      "search_index": "Lab bottle 종류와 채혈 순서 / 검체 채취 검사 / 검체 Lab bottle / Sputum Cx / Urine Cx / RAT Lab bottle Sputum Cx Urine RAT Lab bottle 채혈순서 Sputum Cx Urine Cx 검체 Lab bottle 종류 채혈 순서 검체 bottle 검체 채취 외주검사 차광검체 종류와 채혈 순서 채취 검사 v43_uploaded_manual 추가 업무 매뉴얼(260618) 검체 채취 핵심 항목 핵심 포인트 병원 검체 bottle 기준과 검사실 지침 우선 검체 bottle과 은박지 포장 위 라벨 2개 부착 멸균 손/오염 손 구분, suction 연결 방향 확인 포트 소독 후 자연건조, 10cc 정도 채취 호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 Lab bottle 종류와 채혈 순서",
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_BLOOD_CULTURE",
@@ -22143,7 +22280,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -22156,7 +22295,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -22501,7 +22641,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 1 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 1 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_02",
@@ -22570,7 +22711,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -22583,7 +22726,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -22928,7 +23072,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 2 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 2 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_03",
@@ -22997,7 +23142,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -23010,7 +23157,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -23355,7 +23503,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 3 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 3 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_04",
@@ -23424,7 +23573,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -23437,7 +23588,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -23782,7 +23934,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 4 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 4 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_05",
@@ -23851,7 +24004,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -23864,7 +24019,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -24209,7 +24365,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 5 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 5 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_06",
@@ -24278,7 +24435,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -24291,7 +24450,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -24636,7 +24796,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 6 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 6 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_ADD_07",
@@ -24705,7 +24866,9 @@ window.ICU_MANUAL_DB = {
         "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
         "병원 최신 지침과 처방을 우선 확인하세요."
       ],
-      "related": [],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
       "tags": [
         "복원",
         "HWP 추출 이미지",
@@ -24718,7 +24881,8 @@ window.ICU_MANUAL_DB = {
         "status": "v53_restored_all_hwp_images"
       },
       "source_refs": [
-        "추가 업무 매뉴얼"
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
       ],
       "tables": [],
       "images": [
@@ -24867,7 +25031,8 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 7 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 7 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
     },
     {
       "id": "HWPIMG_RESTORED_TRACH_01",
@@ -41477,7 +41642,10 @@ window.ICU_MANUAL_DB = {
         "수혈",
         "소화기계",
         "라인관리",
-        "간호기록"
+        "간호기록",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tags": [
         "검사",
@@ -41496,7 +41664,8 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "기본 환자확인/검체관리 원칙",
         "원내 검사실·영상의학과·수술실 지침 우선",
-        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기"
+        "Google Drive 링크: NS(뇌) 수술환자 검사 이동 전 준비 보기",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [
         {
@@ -41692,7 +41861,10 @@ window.ICU_MANUAL_DB = {
         "감염관리",
         "검사·시술",
         "소화기계",
-        "혈역학"
+        "혈역학",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V106_LINE_DRAIN_DRESSING_TOTAL",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "tags": [
         "line",
@@ -41705,7 +41877,8 @@ window.ICU_MANUAL_DB = {
       },
       "source_refs": [
         "기본 라인/배액관 관리 원칙",
-        "원내 감염관리/드레싱 지침 우선"
+        "원내 감염관리/드레싱 지침 우선",
+        "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [
         {
@@ -41797,7 +41970,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "line drain dressing 소독기구 CVC PICC A-line Foley chest tube Hemovac JP drain 중심정맥관 배액관 Line · Drain · Dressing · 소독기구 총정리 기구 / Line·Drain·Dressing 감염관리 검사·시술 소화기계 혈역학"
+      "search_index": "line drain dressing 소독기구 CVC PICC A-line Foley chest tube Hemovac JP drain 중심정맥관 배액관 Line · Drain · Dressing · 소독기구 총정리 기구 / Line·Drain·Dressing 감염관리 검사·시술 소화기계 혈역학",
+      "prefer_media_first": true
     },
     {
       "id": "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
@@ -69496,6 +69670,1450 @@ window.ICU_MANUAL_DB = {
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V106_TEST_SPECIMEN_LAB_CULTURE",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "검사 / 검체 총정리: Lab bottle·채혈순서·CBC/Chemistry·Coagulation·ABGA·Culture",
+      "aliases": [
+        "검사 검체",
+        "Lab bottle",
+        "채혈 순서",
+        "CBC Chemistry",
+        "Coagulation",
+        "ABGA",
+        "Blood culture",
+        "Sputum culture",
+        "Urine culture",
+        "Tip culture",
+        "RAT"
+      ],
+      "search_terms": [
+        "검사 / 검체 총정리: Lab bottle·채혈순서·CBC/Chemistry·Coagulation·ABGA·Culture",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "검사 검체",
+        "Lab bottle",
+        "채혈 순서",
+        "CBC Chemistry",
+        "Coagulation",
+        "ABGA",
+        "Blood culture",
+        "Sputum culture",
+        "Urine culture",
+        "Tip culture",
+        "RAT",
+        "lab bottle",
+        "CBC",
+        "Chemistry",
+        "blood culture",
+        "sputum",
+        "urine culture",
+        "tip culture",
+        "검체 라벨"
+      ],
+      "urgency": "routine",
+      "summary": "검사/검체 파트에서 중환자실 간호사가 꼭 확인해야 할 bottle 종류, 채혈 순서, CBC/Chemistry, coagulation, ABGA, culture 검체와 픽업/응급발행 포인트를 정리했습니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "검사명과 bottle, 채혈량, 라벨을 확인한다.",
+        "채혈 순서를 지키고 culture는 오염을 최소화한다.",
+        "ABGA는 air 제거와 산소조건 기록, 빠른 이송을 확인한다.",
+        "응급발행/픽업은 처방·라벨·검체 상태를 다시 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "LAB001",
+        "LAB030",
+        "UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX",
+        "SPEC001",
+        "SPEC002",
+        "SPEC003",
+        "SPEC006",
+        "ORDER030"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "검사/검체 한눈에 보기",
+          "caption": "Lab bottle·채혈순서·검사별 포인트",
+          "headers": [
+            "항목",
+            "핵심 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "Lab bottle 종류",
+              "ABGA, 혈액배양, Plain, Sodium citrate, SST, EDTA",
+              "검체 용기와 채혈량, 검사명을 반드시 확인"
+            ],
+            [
+              "채혈 순서",
+              "Blood culture → citrate → plain/SST → heparin/기타 → EDTA 등 원내 기준",
+              "응고검사 contamination 방지, bottle 순서 준수"
+            ],
+            [
+              "CBC / Chemistry",
+              "CBC: EDTA / Chemistry: SST 등",
+              "Hb/PLT/WBC, 전해질/Cr/LFT/Glucose 확인"
+            ],
+            [
+              "Coagulation",
+              "Sodium citrate, PT/aPTT/INR/D-dimer/fibrinogen",
+              "정확한 채혈량과 혼합 중요"
+            ],
+            [
+              "ABGA",
+              "heparinized syringe, air 제거, 즉시 이송",
+              "FiO2/산소장치, 채혈부위 기록"
+            ],
+            [
+              "Culture",
+              "Blood/Sputum/Urine/Tip culture",
+              "항생제 전 채취, 오염방지, label 정확성"
+            ],
+            [
+              "CRE/CPE/VRE/RAT",
+              "접촉주의/격리/검체 종류 확인",
+              "보균검사와 격리 해제 기준 원내 지침 확인"
+            ]
+          ],
+          "search_terms": [
+            "검사 검체 표",
+            "lab bottle 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리 표 이미지",
+          "caption": "검사/검체 총정리 표 이미지",
+          "search_terms": [
+            "검사 검체 이미지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지 1",
+          "caption": "Lab bottle 원본 이미지 1",
+          "search_terms": [
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0002.png",
+          "alt": "Lab bottle 원본 이미지 2",
+          "caption": "Lab bottle 원본 이미지 2",
+          "search_terms": [
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0003.png",
+          "alt": "Lab bottle 원본 이미지 3",
+          "caption": "Lab bottle 원본 이미지 3",
+          "search_terms": [
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0004.png",
+          "alt": "Lab bottle 원본 이미지 4",
+          "caption": "Lab bottle 원본 이미지 4",
+          "search_terms": [
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0001_bmp.png",
+          "alt": "검체/검사 원본 이미지: add260618_bin0001_bmp.png",
+          "caption": "검체/검사 원본 이미지: add260618_bin0001_bmp.png",
+          "search_terms": [
+            "검체 원본",
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0002_bmp.png",
+          "alt": "검체/검사 원본 이미지: add260618_bin0002_bmp.png",
+          "caption": "검체/검사 원본 이미지: add260618_bin0002_bmp.png",
+          "search_terms": [
+            "검체 원본",
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0003_bmp.png",
+          "alt": "검체/검사 원본 이미지: add260618_bin0003_bmp.png",
+          "caption": "검체/검사 원본 이미지: add260618_bin0003_bmp.png",
+          "search_terms": [
+            "검체 원본",
+            "lab bottle"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
+          "alt": "검체/검사 원본 이미지: add260618_bin0004_bmp.png",
+          "caption": "검체/검사 원본 이미지: add260618_bin0004_bmp.png",
+          "search_terms": [
+            "검체 원본",
+            "lab bottle"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V106_RADIOLOGY_XRAY_CT_MRI_SONO",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "방사선 검사 총정리: X-ray·CT·MRI·SONO·Angio/TFCA·내시경 준비와 영상 예시",
+      "aliases": [
+        "방사선 검사",
+        "X-ray",
+        "CT",
+        "MRI",
+        "SONO",
+        "Angio",
+        "TFCA",
+        "내시경",
+        "Brain CT MRI"
+      ],
+      "search_terms": [
+        "방사선 검사 총정리: X-ray·CT·MRI·SONO·Angio/TFCA·내시경 준비와 영상 예시",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "방사선 검사",
+        "X-ray",
+        "CT",
+        "MRI",
+        "SONO",
+        "Angio",
+        "TFCA",
+        "내시경",
+        "Brain CT MRI",
+        "ultrasound",
+        "EGD",
+        "ERCP",
+        "CFS",
+        "Brain CT",
+        "Brain MRI",
+        "ET tube",
+        "C-line"
+      ],
+      "urgency": "routine",
+      "summary": "X-ray, CT, MRI, SONO, Angio/TFCA, 내시경 검사 전 준비와 영상에서 line/tube/catheter 및 질환 패턴을 확인하는 예시 이미지를 정리했습니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "검사 전 동의서, 금식, 조영제, 신기능, 알레르기, MRI 금속 여부를 확인한다.",
+        "Portable X-ray에서는 ETT, C-line, L-tube, chest tube, PCD, metal 위치를 확인한다.",
+        "Brain CT/MRI는 출혈/경색/SAH/SDH/부종 예시를 참고하되 판독 우선이다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "IMG030",
+        "PROC002",
+        "PROC003",
+        "PROC004",
+        "PROC005",
+        "PROC006",
+        "PROC007",
+        "PROC010",
+        "PROC012",
+        "PROC013",
+        "PROC014",
+        "V87_XRAY_OVERVIEW",
+        "V88_XRAY_LINE_TUBE_SUMMARY"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "영상검사 준비표",
+          "caption": "X-ray·CT·MRI·SONO·Angio/TFCA·내시경",
+          "headers": [
+            "검사",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "X-ray",
+              "portable chest, abdomen, line/tube 위치",
+              "ETT/C-line/L-tube/Chest tube/PCD/metal 위치 확인"
+            ],
+            [
+              "CT",
+              "Brain CT, angio CT, chest/abdomen CT",
+              "조영제 여부, Cr/eGFR, allergy, line, 이송안전"
+            ],
+            [
+              "MRI",
+              "Brain MRI, spine MRI",
+              "금속·pacemaker·pump·monitor 호환 확인"
+            ],
+            [
+              "SONO",
+              "abdomen, chest, DVT, vascular access",
+              "금식 필요 여부, 부위/체위, 이동 가능성"
+            ],
+            [
+              "Angio/TFCA",
+              "혈관조영/뇌혈관 검사",
+              "동의서, 금식, 조영제, puncture site, 말초순환"
+            ],
+            [
+              "내시경",
+              "EGD/ERCP/CFS",
+              "금식, 동의서, sedation, 검사 후 출혈/천공/췌장염 관찰"
+            ]
+          ],
+          "search_terms": [
+            "영상검사 준비표",
+            "CT MRI SONO"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v106_imaging_prep_overview.png",
+          "alt": "방사선 검사 준비 총정리 이미지",
+          "caption": "방사선 검사 준비 총정리 이미지",
+          "search_terms": [
+            "영상검사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 교육용 예시 이미지",
+          "caption": "X-ray line/tube/catheter 교육용 예시 이미지",
+          "search_terms": [
+            "xray line tube catheter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 질환별 교육용 예시 이미지",
+          "caption": "Brain CT/MRI 질환별 교육용 예시 이미지",
+          "search_terms": [
+            "Brain CT MRI"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_xray_overview.png",
+          "alt": "흉부 X-ray 기본 보기 이미지",
+          "caption": "흉부 X-ray 기본 보기 이미지",
+          "search_terms": [
+            "xray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_xray_ett_position.png",
+          "alt": "ET-tube 위치 확인 X-ray 이미지",
+          "caption": "ET-tube 위치 확인 X-ray 이미지",
+          "search_terms": [
+            "ETT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_xray_cvc_position.png",
+          "alt": "C-line/CVC 위치 확인 X-ray 이미지",
+          "caption": "C-line/CVC 위치 확인 X-ray 이미지",
+          "search_terms": [
+            "C-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_xray_ngt_position.png",
+          "alt": "L-tube/NGT 위치 확인 X-ray 이미지",
+          "caption": "L-tube/NGT 위치 확인 X-ray 이미지",
+          "search_terms": [
+            "L-tube"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_line_tube_summary.png",
+          "alt": "X-ray line/tube 위치 요약 이미지",
+          "caption": "X-ray line/tube 위치 요약 이미지",
+          "search_terms": [
+            "line tube xray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_pneumonia_pattern.png",
+          "alt": "폐렴 X-ray 예시 이미지",
+          "caption": "폐렴 X-ray 예시 이미지",
+          "search_terms": [
+            "pneumonia xray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_pneumothorax_pattern.png",
+          "alt": "기흉 X-ray 예시 이미지",
+          "caption": "기흉 X-ray 예시 이미지",
+          "search_terms": [
+            "pneumothorax"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_pulmonary_edema_pattern.png",
+          "alt": "폐부종 X-ray 예시 이미지",
+          "caption": "폐부종 X-ray 예시 이미지",
+          "search_terms": [
+            "pulmonary edema"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_pleural_effusion_pattern.png",
+          "alt": "흉수 X-ray 예시 이미지",
+          "caption": "흉수 X-ray 예시 이미지",
+          "search_terms": [
+            "pleural effusion"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_xray_atelectasis_pattern.png",
+          "alt": "무기폐 X-ray 예시 이미지",
+          "caption": "무기폐 X-ray 예시 이미지",
+          "search_terms": [
+            "atelectasis"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
+          "search_terms": [
+            "brain infarct"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
+          "search_terms": [
+            "brain hemorrhage"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V106_LINE_DRAIN_DRESSING_TOTAL",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "Line / Drain / Dressing 총정리: IV·C-line·A-line·Foley·L-tube·PCD·EVD·SDD·Drain·Dressing",
+      "aliases": [
+        "Line Drain Dressing",
+        "IV line",
+        "C-line dressing",
+        "A-line dressing",
+        "Foley",
+        "L-tube",
+        "PCD",
+        "EVD",
+        "SDD",
+        "Drain",
+        "Dressing",
+        "욕창 dressing",
+        "장루 dressing"
+      ],
+      "search_terms": [
+        "Line / Drain / Dressing 총정리: IV·C-line·A-line·Foley·L-tube·PCD·EVD·SDD·Drain·Dressing",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "Line Drain Dressing",
+        "IV line",
+        "C-line dressing",
+        "A-line dressing",
+        "Foley",
+        "L-tube",
+        "PCD",
+        "EVD",
+        "SDD",
+        "Drain",
+        "Dressing",
+        "욕창 dressing",
+        "장루 dressing",
+        "C-line",
+        "A-line",
+        "dressing",
+        "wound",
+        "pressure injury",
+        "stoma",
+        "drain"
+      ],
+      "urgency": "routine",
+      "summary": "중환자실 line, drain, dressing에서 반드시 확인해야 할 삽입부위, 고정, 감염, 배액량, dressing 종류와 line 제거 후 관찰을 정리했습니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "IV/C-line/A-line은 감염·침윤·파형·flush·dressing을 확인한다.",
+        "Foley/L-tube/PCD/EVD/SDD는 위치, 고정, 배액량/색, 폐쇄/꼬임을 확인한다.",
+        "일반/감염/수술 후/욕창/장루 dressing은 무균술과 기록을 지킨다.",
+        "line 제거 후 출혈/혈종/공기색전/감염을 관찰한다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "MENU007",
+        "DRESS030",
+        "DRESS001",
+        "DRESS002",
+        "DRESS003",
+        "DRESS004",
+        "DRESS005",
+        "DRESS006",
+        "DRESS007",
+        "DRESS008",
+        "V84_DETAIL_01",
+        "V84_DETAIL_02",
+        "V84_DETAIL_03",
+        "V84_DETAIL_04",
+        "V84_DETAIL_05",
+        "V84_DETAIL_06",
+        "V84_DETAIL_07",
+        "V100_EVD_SDD_MANAGEMENT"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "Line / Drain / Dressing 총정리표",
+          "caption": "line·drain·dressing 핵심 확인사항",
+          "headers": [
+            "항목",
+            "확인 내용",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "IV line",
+              "침윤/정맥염/막힘/고정",
+              "통증, 발적, 부종, 주입속도 확인"
+            ],
+            [
+              "C-line",
+              "dressing, hub, 감염, air, 위치",
+              "CLABSI 예방, 필요성 매일 확인"
+            ],
+            [
+              "A-line",
+              "dressing, waveform, pressure bag, flush",
+              "zeroing, 채혈 후 flush, 손 허혈 확인"
+            ],
+            [
+              "Foley",
+              "closed system, urine meter, kink",
+              "CAUTI 예방, 소변량/색/침전 확인"
+            ],
+            [
+              "L-tube",
+              "고정길이, 위치, 배액/feeding",
+              "흡인위험, 폐삽입 의심 시 중단·확인"
+            ],
+            [
+              "PCD",
+              "drain patency, dressing, 배액량/색",
+              "label/검체, 발열/통증/누출 확인"
+            ],
+            [
+              "EVD/SDD",
+              "높이, 배액량, clamp, 감염",
+              "tragus 기준/자연배액/ICP와 neuro sign"
+            ],
+            [
+              "Dressing",
+              "일반/감염/수술 후/욕창/장루",
+              "무균술, wound 상태, 소독제, 기록"
+            ]
+          ],
+          "search_terms": [
+            "line drain dressing 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
+          "alt": "Line/Drain/Dressing 총정리 이미지",
+          "caption": "Line/Drain/Dressing 총정리 이미지",
+          "search_terms": [
+            "line drain dressing"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v84_line_drain_dressing_overview.png",
+          "alt": "기존 Line/Drain/Dressing overview 이미지",
+          "caption": "기존 Line/Drain/Dressing overview 이미지",
+          "search_terms": [
+            "line drain"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "상처 드레싱 준비물 원본 이미지",
+          "caption": "상처 드레싱 준비물 원본 이미지",
+          "search_terms": [
+            "dressing supplies"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_disinfection_sequence.png",
+          "alt": "상처 소독 순서 이미지",
+          "caption": "상처 소독 순서 이미지",
+          "search_terms": [
+            "disinfection"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_sequence.png",
+          "alt": "드레싱 적용 순서 이미지",
+          "caption": "드레싱 적용 순서 이미지",
+          "search_terms": [
+            "dressing sequence"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_wound_dressing_selection.png",
+          "alt": "드레싱 재료 선택 이미지",
+          "caption": "드레싱 재료 선택 이미지",
+          "search_terms": [
+            "dressing selection"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_pressure_injury_stages.png",
+          "alt": "욕창 단계 분류 이미지",
+          "caption": "욕창 단계 분류 이미지",
+          "search_terms": [
+            "pressure injury"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v88_wound_stage_care.png",
+          "alt": "욕창 단계별 간호 이미지",
+          "caption": "욕창 단계별 간호 이미지",
+          "search_terms": [
+            "wound stage"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v100_evd_sdd_management_table.png",
+          "alt": "EVD/SDD 관리 이미지",
+          "caption": "EVD/SDD 관리 이미지",
+          "search_terms": [
+            "EVD SDD"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V106_MDRO_CONTACT_PRECAUTION",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "다제내성균 총정리: CRE/CPE·VRE·MRSA/MSSA·MRPA/MRAB 검사와 격리",
+      "aliases": [
+        "다제내성균",
+        "CRE",
+        "CPE",
+        "VRE",
+        "MRSA",
+        "MSSA",
+        "MRPA",
+        "MRAB",
+        "접촉주의"
+      ],
+      "search_terms": [
+        "다제내성균 총정리: CRE/CPE·VRE·MRSA/MSSA·MRPA/MRAB 검사와 격리",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "다제내성균",
+        "CRE",
+        "CPE",
+        "VRE",
+        "MRSA",
+        "MSSA",
+        "MRPA",
+        "MRAB",
+        "접촉주의",
+        "MDRO",
+        "contact precaution",
+        "rectal swab"
+      ],
+      "urgency": "routine",
+      "summary": "CRE/CPE, VRE, MRSA/MSSA, MRPA/MRAB 등 다제내성균의 의미, 검체, 접촉주의, 전용물품, 환경소독과 격리 해제 확인 포인트를 정리했습니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "검체 종류와 채취 부위를 확인한다.",
+        "접촉주의, 전용장비, 가운/장갑, 손위생을 준수한다.",
+        "격리 해제나 검사 반복은 원내 감염관리 지침을 확인한다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "MENU010",
+        "SPEC005",
+        "UPD43_CRE_CPE_MRAB_VRE_MRSA",
+        "V65_MDR_ORGANISM"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "다제내성균 총정리표",
+          "caption": "균종·검체·격리·간호 포인트",
+          "headers": [
+            "균/영역",
+            "의미",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "CRE/CPE",
+              "carbapenem 내성 장내세균 / 효소 생성",
+              "접촉주의, 손위생, 전용물품, 환경소독"
+            ],
+            [
+              "VRE",
+              "vancomycin 내성 장구균",
+              "접촉주의, 변/소변/상처 분비물 주의"
+            ],
+            [
+              "MRSA/MSSA",
+              "황색포도알균",
+              "상처/비강/혈액 감염 가능성"
+            ],
+            [
+              "MRPA/MRAB",
+              "다제내성 녹농균/아시네토박터",
+              "습한 환경·장비 오염 관리"
+            ],
+            [
+              "검체",
+              "rectal swab, stool, sputum, urine, wound 등",
+              "검체 종류/용기/라벨/이송 확인"
+            ],
+            [
+              "격리",
+              "가운/장갑, 전용장비, 보호자 교육",
+              "원내 격리표지와 해제기준 확인"
+            ]
+          ],
+          "search_terms": [
+            "다제내성균 표",
+            "CRE CPE VRE"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v106_mdro_summary_table.png",
+          "alt": "다제내성균 총정리 이미지",
+          "caption": "다제내성균 총정리 이미지",
+          "search_terms": [
+            "MDRO"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v65_접촉주의_다제내성균_p1.jpg",
+          "alt": "접촉주의 다제내성균 원본 이미지 1",
+          "caption": "접촉주의 다제내성균 원본 이미지 1",
+          "search_terms": [
+            "접촉주의"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v65_접촉주의_다제내성균_p2.jpg",
+          "alt": "접촉주의 다제내성균 원본 이미지 2",
+          "caption": "접촉주의 다제내성균 원본 이미지 2",
+          "search_terms": [
+            "접촉주의"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V106_CSR_STERILE_TOOLS_ORIGINAL",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "공급실 기구 사진 원본 모음: CSR 물품·소독기구·Dressing/Suture set",
+      "aliases": [
+        "공급실 기구",
+        "CSR 물품",
+        "소독기구",
+        "기구 사진",
+        "sterile tools"
+      ],
+      "search_terms": [
+        "공급실 기구 사진 원본 모음: CSR 물품·소독기구·Dressing/Suture set",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "공급실 기구",
+        "CSR 물품",
+        "소독기구",
+        "기구 사진",
+        "sterile tools",
+        "CSR",
+        "공급실",
+        "forcep",
+        "kelly",
+        "mosquito",
+        "needle holder",
+        "dressing set"
+      ],
+      "urgency": "routine",
+      "summary": "공급실 기구 이름과 생김새를 원본 사진으로 볼 수 있게 묶고, 사용 전후 count와 멸균 유지 포인트를 정리했습니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "기구 이름과 생김새를 원본 사진으로 확인한다.",
+        "멸균포 손상, 유효기간, 오염 여부를 확인한다.",
+        "사용 전후 count, 파손/분실 여부를 확인하고 보고한다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "MENU009",
+        "V86_DETAIL_03",
+        "V86_DETAIL_04",
+        "V84_DETAIL_08",
+        "V87_WOUND_DRESSING_SUPPLIES"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "공급실 기구 확인표",
+          "caption": "기구 이름·생김새·간호 포인트",
+          "headers": [
+            "영역",
+            "대표 기구",
+            "간호 포인트"
+          ],
+          "rows": [
+            [
+              "소독기구",
+              "forcep, scissors, Kelly, mosquito, needle holder 등",
+              "공급실 기구 이름과 생김새 구분"
+            ],
+            [
+              "Dressing set",
+              "forcep, gauze, bowl, 소독제",
+              "멸균 유지, 포장 손상/유효기간 확인"
+            ],
+            [
+              "Suture set",
+              "needle holder, scissors, forcep",
+              "오염 방지, sharps count 주의"
+            ],
+            [
+              "Irrigation set",
+              "syringe, bowl, forcep 등",
+              "처방/소독액/폐기물 구분"
+            ],
+            [
+              "Count",
+              "사용 전후 수량 확인",
+              "분실/오염/파손 즉시 보고"
+            ]
+          ],
+          "search_terms": [
+            "공급실 기구 표",
+            "CSR 물품 표"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리 이미지",
+          "caption": "공급실 기구 총정리 이미지",
+          "search_terms": [
+            "CSR"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
+          "alt": "소독기구 원본 이미지",
+          "caption": "소독기구 원본 이미지",
+          "search_terms": [
+            "공급실",
+            "소독기구"
+          ]
+        },
+        {
+          "src": "bin0001.png",
+          "alt": "CSR 기구 사진 1: Kelly / Long kelly",
+          "caption": "CSR 기구 사진 1: Kelly / Long kelly",
+          "search_terms": [
+            "공급실",
+            "CSR"
+          ]
+        },
+        {
+          "src": "bin0002.png",
+          "alt": "CSR 기구 사진 2: Forcep / Dressing set",
+          "caption": "CSR 기구 사진 2: Forcep / Dressing set",
+          "search_terms": [
+            "공급실",
+            "CSR"
+          ]
+        },
+        {
+          "src": "bin0003.png",
+          "alt": "CSR 기구 사진 3: Scissors / Mosquito / Magill forcep",
+          "caption": "CSR 기구 사진 3: Scissors / Mosquito / Magill forcep",
+          "search_terms": [
+            "공급실",
+            "CSR"
+          ]
+        },
+        {
+          "src": "bin0004.png",
+          "alt": "CSR 기구 사진 4: Knife handle / Needle holder / Metzenbaum",
+          "caption": "CSR 기구 사진 4: Knife handle / Needle holder / Metzenbaum",
+          "search_terms": [
+            "공급실",
+            "CSR"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "Dressing 준비물 이미지",
+          "caption": "Dressing 준비물 이미지",
+          "search_terms": [
+            "dressing supplies"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_sequence.png",
+          "alt": "Dressing 순서 이미지",
+          "caption": "Dressing 순서 이미지",
+          "search_terms": [
+            "dressing sequence"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V106_HOSPITAL_EMR_RAW_IMAGES",
+      "category": "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+      "title": "병원 전산 / 처방 / 검사 픽업 원본 이미지 모음",
+      "aliases": [
+        "병원 전산 이미지",
+        "전산 이미지",
+        "검사 픽업",
+        "응급발행",
+        "원본 이미지",
+        "카멜레온 EMR"
+      ],
+      "search_terms": [
+        "병원 전산 / 처방 / 검사 픽업 원본 이미지 모음",
+        "검사 / 검체 / Line / Drain / Dressing / 영상 / 감염관리",
+        "병동간호팀 메뉴얼",
+        "14 16 112 116 118 130 139 150 162 164 174",
+        "병원 전산 이미지",
+        "전산 이미지",
+        "검사 픽업",
+        "응급발행",
+        "원본 이미지",
+        "카멜레온 EMR",
+        "EMR",
+        "전산",
+        "처방",
+        "픽업",
+        "검사 처방"
+      ],
+      "urgency": "routine",
+      "summary": "병동간호팀 메뉴얼에서 추출된 병원 전산/처방/검사 관련 원본 이미지를 사용자가 앱에서 그대로 볼 수 있게 묶은 카드입니다.",
+      "indications": [
+        "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
+      ],
+      "preparation": [
+        "환자확인, 처방/검사명, 라벨, 동의서/금식/조영제 여부, line/drain 상태 확인",
+        "실제 업무는 원내 최신 프로토콜과 담당의/검사실 지시 우선"
+      ],
+      "steps": [
+        "전산 화면 이미지를 보며 처방/검사/픽업/응급발행 흐름을 확인한다.",
+        "실제 전산 화면은 병원 업데이트에 따라 달라질 수 있으므로 현재 화면과 대조한다."
+      ],
+      "warnings": [
+        "병동간호팀 메뉴얼 지정 페이지 범위와 기존 추출 이미지/앱 DB를 기반으로 정리한 참고 자료입니다. 실제 적용은 원내 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "검체 채취 시간/라벨/검사명, 영상검사 준비와 이송, line/drain/dressing 상태, 격리/감염관리, 보고 내용을 시간순으로 기록"
+      ],
+      "related": [
+        "EMR001",
+        "ORDER001",
+        "ORDER030",
+        "IMG030",
+        "LAB030",
+        "V106_TEST_SPECIMEN_LAB_CULTURE"
+      ],
+      "source_refs": [
+        "병동간호팀 간호사 메뉴얼 p14~16, p112, p116~118, p130~139, p150~162, p164~174 범위 참고 및 기존 추출 이미지 재정리"
+      ],
+      "tables": [
+        {
+          "title": "병원 전산 이미지 목록",
+          "caption": "원본 추출 이미지 모음",
+          "headers": [
+            "구분",
+            "내용",
+            "사용 포인트"
+          ],
+          "rows": [
+            [
+              "검체/검사 전산",
+              "body fluid/검사 처방, 검체 용기, 라벨 화면",
+              "검사명·검체·라벨 확인"
+            ],
+            [
+              "검사 픽업/응급발행",
+              "검사 처방/전산 입력 예시",
+              "처방 상태와 접수/픽업 확인"
+            ],
+            [
+              "시술/영상 전산",
+              "CT/MRI/Spinal tapping 등 처방/준비 예시",
+              "동의서/금식/검사 전 확인"
+            ],
+            [
+              "수혈/기록 전산",
+              "수혈 관련 전산/기록 이미지",
+              "수혈 처방/기록 대조"
+            ]
+          ],
+          "search_terms": [
+            "병원 전산 이미지 목록"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0004_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0004_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000a_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000a_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000a_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin000b_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000b_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000b_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0021_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0021_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0022_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0022_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0023_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0023_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0023_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0024_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0024_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0024_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0025_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0025_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0025_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0026_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0026_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0026_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0027_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0027_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0027_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0028_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0028_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0028_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0029_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0029_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0029_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002a_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002a_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002a_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002b_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002b_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002b_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002c_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002c_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002c_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002d_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002d_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002d_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002e_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002e_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002e_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin002f_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002f_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin002f_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0030_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0030_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0030_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0031_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0031_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0031_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0032_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0032_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0032_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0033_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0033_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0033_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0034_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0034_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0034_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0035_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0035_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0035_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0036_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0036_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0036_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0037_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0037_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0037_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0038_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0038_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0038_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin0039_png.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0039_png.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin0039_png.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003a_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003a_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003a_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003b_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003b_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003b_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003c_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003c_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003c_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003d_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003d_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003d_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003e_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003e_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003e_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        },
+        {
+          "src": "uploaded_manual_images/add260618_bin003f_bmp.png",
+          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003f_bmp.png",
+          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin003f_bmp.png",
+          "search_terms": [
+            "병원 전산",
+            "전산 이미지",
+            "원본 이미지"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
@@ -70982,5 +72600,28 @@ window.ICU_MANUAL_DB = {
       "v105_highrisk_calc_check_table.png"
     ],
     "total_items": 417
+  },
+  "v106_update": {
+    "summary": "검사/검체, 방사선 영상, Line/Drain/Dressing, 다제내성균, 공급실 기구, 병원 전산 원본 이미지 카드 추가. public/uploaded_manual_images 원본 이미지 포함.",
+    "added_cards": [
+      "V106_CSR_STERILE_TOOLS_ORIGINAL",
+      "V106_HOSPITAL_EMR_RAW_IMAGES",
+      "V106_LINE_DRAIN_DRESSING_TOTAL",
+      "V106_MDRO_CONTACT_PRECAUTION",
+      "V106_RADIOLOGY_XRAY_CT_MRI_SONO",
+      "V106_TEST_SPECIMEN_LAB_CULTURE"
+    ],
+    "added_selected_images": [
+      "v106_brain_ct_mri_disease_examples.png",
+      "v106_csr_tools_summary_table.png",
+      "v106_imaging_prep_overview.png",
+      "v106_line_drain_dressing_overview.png",
+      "v106_mdro_summary_table.png",
+      "v106_test_specimen_overview.png",
+      "v106_xray_line_tube_catheter_examples.png"
+    ],
+    "uploaded_manual_images_count": 77,
+    "total_items": 423,
+    "hospital_emr_raw_images_count": 34
   }
 };

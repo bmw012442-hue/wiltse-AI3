@@ -353,6 +353,14 @@ function normalizeText(v) {
 
 function expandSearchTerms(rawTerms) {
   const synonymMap = {
+    "검사검체": ["Lab bottle", "채혈순서", "CBC", "Chemistry", "Coagulation", "ABGA", "culture", "검체"],
+    "방사선검사": ["X-ray", "CT", "MRI", "SONO", "ultrasound", "Angio", "TFCA", "영상검사"],
+    "라인드레인": ["Line", "Drain", "Dressing", "IV line", "C-line", "A-line", "Foley", "L-tube", "PCD", "EVD", "SDD"],
+    "다제내성균": ["MDRO", "CRE", "CPE", "VRE", "MRSA", "MSSA", "MRPA", "MRAB", "접촉주의"],
+    "공급실기구": ["CSR", "소독기구", "sterile tools", "forcep", "kelly", "mosquito", "needle holder"],
+    "병원전산": ["EMR", "전산 이미지", "처방 화면", "검사 픽업", "응급발행", "카멜레온"],
+    "엑스레이튜브": ["ET tube", "C-line", "CVC", "L-tube", "NGT", "chest tube", "PCD", "catheter", "metal"],
+
     "약물계산": ["drug calculator", "계산기", "mcg/kg/min", "mg/hr", "unit/hr", "mL/hr"],
     "수액속도": ["fluid rate", "mL/hr", "수액 주입속도", "총량 나누기 시간"],
     "gtt": ["gtt/min", "drop factor", "drops per minute", "몇 방울"],
@@ -549,6 +557,9 @@ function scoreCard(query, card) {
 
 
   if ((card.id || "").startsWith("V105_") && /계산|계산기|수액속도|주입속도|gtt|drop factor|mcg\/kg\/min|mg\/hr|unit\/hr|ml\/hr|mL\/hr|약물계산/.test(q)) score += 150;
+
+
+  if ((card.id || "").startsWith("V106_") && /검사|검체|lab|bottle|채혈|culture|cbc|chemistry|coag|abga|cre|cpe|vre|rat|tip|x-ray|xray|ct|mri|sono|tfca|angio|내시경|line|drain|dressing|foley|l-tube|pcd|evd|sdd|욕창|장루|다제내성|mdro|공급실|csr|전산|emr|카테터|catheter/.test(q)) score += 160;
 
   return Math.max(0, score);
 }
