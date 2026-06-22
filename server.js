@@ -282,6 +282,30 @@ function itemText(item) {
 function scoreItem(query, item) {
   const q = normalize(query);
   if (!q || item.search_hidden) return 0;
+
+  const topicSeed = normalize([
+    item.id || "",
+    item.title || "",
+    (item.aliases || []).join(" "),
+    (item.search_terms || []).join(" "),
+    item.summary || "",
+    item.search_index || ""
+  ].join(" "));
+
+  const topicRules = [
+    { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
+    { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
+    { q: /cpr|코드블루|e-cart|ecart|응급상황|응급간호|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure|emergency/ },
+    { q: /brain ct|brain mri|브레인|뇌ct|뇌 ct|뇌mri|뇌 mri/, keep: /brain|ct|mri|브레인|뇌|신경|영상/ },
+    { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
+    { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
+    { q: /공급실|csr|소독기구|기구 사진|dressing\/suture/, keep: /공급실|csr|소독기구|기구 사진|dressing\/suture|sterile/ },
+    { q: /crrt|fmc|신장|dkA|bst|인슐린|저혈당|고혈당/, keep: /crrt|fmc|신장|renal|bst|dka|인슐린|저혈당|고혈당|dm/ }
+  ];
+  for (const rule of topicRules) {
+    if (rule.q.test(q) && !rule.keep.test(topicSeed)) return 0;
+  }
+
   const excluded = (item.exclude_queries || []).map(normalize).filter(Boolean);
   if (excluded.some(x => q.includes(x) || x.includes(q))) return 0;
 
@@ -295,7 +319,7 @@ function scoreItem(query, item) {
   const summary = normalize(item.summary);
   const media = normalize(mediaText(item));
   const full = normalize(itemText(item));
-  const directText = [title, category, originalCategory, ...aliases, ...searchTerms, normalize(item.search_index)].join(" ");
+  const directText = [title, ...aliases, ...searchTerms, normalize(item.search_index)].join(" ");
   let score = 0;
 
   if (title === q) score += 220;
@@ -313,7 +337,7 @@ function scoreItem(query, item) {
     else if (q.includes(st) || st.includes(q)) score += 90;
   }
 
-  if (category.includes(q) || originalCategory.includes(q)) score += 45;
+  if (category === q || originalCategory === q) score += 18;
   if (summary.includes(q)) score += 20;
   if (media.includes(q)) score += 30;
 
@@ -324,17 +348,13 @@ function scoreItem(query, item) {
     if (title.includes(term)) score += 44;
     if (aliases.some(a => a.includes(term))) score += 38;
     if (searchTerms.some(a => a.includes(term))) score += 40;
-    if (category.includes(term) || originalCategory.includes(term)) score += 18;
+    if (category === term || originalCategory === term) score += 4;
     if (summary.includes(term)) score += 10;
     if (media.includes(term)) score += 12;
     if (full.includes(term)) score += 3;
   }
-
-  if ((item.tables || []).length && /표|테이블|table|정리|종류|순서|번호|채혈|검체|수혈|혈액제제|응고인자|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/.test(q)) score += 22;
-  if ((item.images || []).length && /그림|사진|이미지|image|picture|photo|수혈|혈액제제|응고인자|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|폐렴|기흉|폐부종|흉수|무기폐/.test(q)) score += 30;
-  if ((item.images || []).length && /욕창|상처|드레싱|보호대|매듭|수혈|혈액제제|응고인자|xray|x-ray|엑스레이|사진|이미지|그림|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|ROM|모니터링/.test(q)) score += 24;
   if (((item.id || "").startsWith("V87_") || (item.id || "").startsWith("V88_")) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(q)) score += 28;
-  if (item.prefer_media_first && /표|이미지|사진|그림|수혈|혈액제제|응고인자/.test(q)) score += 20;
+  if (item.prefer_media_first && /표|이미지|사진|그림/.test(q)) score += 8;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
 
@@ -369,14 +389,14 @@ function scoreItem(query, item) {
   return Math.max(0, score);
 }
 
-function retrieveCards(query, limit = 8) {
+function retrieveCards(query, limit = 6) {
   const ranked = items.map(item => ({ item, score: scoreItem(query, item) }))
     .filter(x => x.score > 0)
     .sort((a, b) => b.score - a.score);
 
   if (ranked.length === 0) return [];
   const top = ranked[0].score;
-  const minScore = Math.max(12, top * 0.30);
+  const minScore = Math.max(35, top * 0.58);
 
   return ranked
     .filter(x => x.score >= minScore)
@@ -524,7 +544,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.11.0-v111-mobile-relevance-readability",
+    version: "2.14.0-v114-strict-search-mobile-stable",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -609,7 +629,7 @@ app.get("/api/me", (req, res) => {
 });
 
 app.post("/api/search", (req, res) => {
-  res.json({ cards: retrieveCards(req.body?.query || "", 12) });
+  res.json({ cards: retrieveCards(req.body?.query || "", 6) });
 });
 
 
@@ -639,7 +659,7 @@ app.post("/api/ask", async (req, res) => {
     const query = String(req.body?.query || "").trim();
     if (!query) return res.status(400).json({ error: "질문을 입력하세요." });
 
-    const cards = retrieveCards(query, 10);
+    const cards = retrieveCards(query, 6);
     if (cards.length === 0) {
       return res.json({ answer: "해당 질문과 직접 연결되는 매뉴얼 카드를 찾지 못했습니다.", sources: [], cards: [] });
     }
@@ -691,7 +711,7 @@ app.post("/api/ask", async (req, res) => {
   } catch (err) {
     console.error(err);
     const query = String(req.body?.query || "").trim();
-    const cards = retrieveCards(query, 10);
+    const cards = retrieveCards(query, 6);
     return res.json({
       answer: buildLocalManualAnswer(query, cards),
       sources: cards.map(c => ({ id: c.id, title: c.title, category: c.category })),
@@ -713,5 +733,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v111 mobile relevance readability running on port ${port}`);
+  console.log(`ICU AI Manual v114 strict search mobile stable running on port ${port}`);
 });
