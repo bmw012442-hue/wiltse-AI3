@@ -177,10 +177,10 @@ function renderSourceRefs(card) {
 function renderTables(tables) {
   if (!Array.isArray(tables) || tables.length === 0) return "";
   return tables.map(t => `
-    <section class="detail-section table-section v113-readable-tables">
-      <h4 style="font-size:1.22rem;line-height:1.4;margin-bottom:10px;">참고 표: ${esc(t.title || "표")}</h4>
+    <section class="detail-section table-section v115-readable-tables">
+      <h4 style="font-size:1.2rem;line-height:1.4;margin-bottom:10px;">참고 표: ${esc(t.title || "표")}</h4>
       ${t.caption ? `<p style="font-size:1rem;line-height:1.5;margin:0 0 10px 0;color:#475569;">${esc(t.caption)}</p>` : ""}
-      <div class="v113-table-scroll" style="overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;border:1px solid #cfe0f5;border-radius:14px;background:#fff;">
+      <div class="v115-table-scroll" style="overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;border:1px solid #cfe0f5;border-radius:14px;background:#fff;">
         <table style="width:100%;min-width:680px;border-collapse:collapse;font-size:1.02rem;line-height:1.45;">
           <thead>
             <tr>
@@ -203,7 +203,7 @@ function renderTables(tables) {
 
 function renderImages(images) {
   if (!Array.isArray(images) || images.length === 0) return "";
-  return `<section class="detail-section image-section v113-readable-images">
+  return `<section class="detail-section image-section v115-readable-images">
     <h4 style="font-size:1.22rem;line-height:1.4;margin-bottom:10px;">참고 이미지 / 사진</h4>
     <p style="font-size:.98rem;line-height:1.5;color:#475569;margin:0 0 12px 0;">이미지를 누르면 원본 크기로 열립니다. 휴대폰에서는 원본 화면에서 확대해서 보세요.</p>
     <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:18px;width:100%;">
@@ -502,6 +502,7 @@ function scoreCard(query, card) {
   ].join(" "));
 
   const topicRules = [
+    { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
     { q: /cpr|코드블루|e-cart|ecart|응급상황|응급간호|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure|emergency/ },
@@ -562,9 +563,7 @@ function scoreCard(query, card) {
 
   if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/i.test(query)) score += 18;
   if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이/.test(query)) score += 26;
-  if ((card.images || []).length && /욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|사진|이미지|그림|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|ROM|모니터링/.test(query)) score += 22;
   if (((card.id || '').startsWith('V87_') || (card.id || '').startsWith('V88_')) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(query)) score += 26;
-  if ((card.tables || []).length && /체크리스트|기록|예시|순서도|예방|대체수단|모니터링|폐렴|기흉|폐부종|흉수|무기폐/.test(query)) score += 12;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
 
@@ -1067,3 +1066,25 @@ function bindDrugCalculator() {
 }
 
 bindDrugCalculator();
+
+
+
+document.addEventListener("click", (event) => {
+  const btn = event.target.closest("[data-menu-query], [data-category], .menu-card, .category-card");
+  if (!btn) return;
+  const query = btn.dataset.menuQuery || btn.dataset.category || btn.textContent.trim();
+  if (!query) return;
+  const searchInput = document.getElementById("searchInput") || document.querySelector("input[type='search'], input[name='q'], #queryInput");
+  if (searchInput) searchInput.value = query;
+  if (typeof runSearch === "function") {
+    runSearch(query);
+  } else if (typeof doSearch === "function") {
+    doSearch(query);
+  } else {
+    const cards = typeof localSearch === "function" ? localSearch(query, 6) : [];
+    if (typeof renderCards === "function") renderCards(cards);
+    const heading = document.getElementById("cardsHeading");
+    if (heading) heading.textContent = "검색 결과 카드";
+  }
+});
+
