@@ -293,6 +293,7 @@ function scoreItem(query, item) {
   ].join(" "));
 
   const topicRules = [
+    { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
     { q: /cpr|코드블루|e-cart|ecart|응급상황|응급간호|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure|emergency/ },
@@ -544,7 +545,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.14.0-v114-strict-search-mobile-stable",
+    version: "2.15.0-v115-global-specimen-isolation-menu-click",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -733,5 +734,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v114 strict search mobile stable running on port ${port}`);
+  console.log(`ICU AI Manual v115 global specimen isolation menu click running on port ${port}`);
 });
