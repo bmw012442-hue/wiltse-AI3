@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.11.0-v111-mobile-relevance-readability",
+    "version": "2.14.0-v114-strict-search-mobile-stable",
     "language": "ko",
-    "source": "V110 기반 + CPR/Brain CT/수혈 검색 분리 + 모바일 큰글씨 교육용 렌더링",
+    "source": "V113 기반 + 검색 결과 과다 노출 방지 + 주제별 gate 적용 + 카드 수 제한",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -104,7 +104,7 @@ window.ICU_MANUAL_DB = {
         "약물 / 순환기"
       ],
       "urgency": "high",
-      "summary": "아그라스타트주(티로피반) 사용 시 희석 방법, PCI/PTCA 또는 급성관상증후군 관련 권장용량, 체중별 주입속도표를 한 번에 확인하는 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "주치의 처방으로 아그라스타트주를 시작하거나 유지주입 속도를 확인해야 할 때",
         "PTCA/PCI 또는 급성 관상증후군 관련 항혈소판제 주입 기준을 확인할 때",
@@ -485,39 +485,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -938,65 +927,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "title": "헤파린 모노그램 원본 이미지",
-          "src": "selected_manual_images/v68_heparin_nomogram.jpg",
-          "caption": "헤파린 mix, aPTT 결과별 조절 기준, 60kg 계산 예시",
-          "alt": "헤파린 mix, aPTT 결과별 조절 기준, 60kg 계산 예시",
-          "search_terms": [
-            "헤파린 mix, aPTT 결과별 조절 기준, 60kg 계산 예시",
-            "헤파린",
-            "heparin",
-            "노모그램",
-            "모노그램",
-            "nomogram",
-            "한림헤파린나트륨주",
-            "25000IU",
-            "25000U",
-            "5mL",
-            "5DW",
-            "5DW500",
-            "500ml",
-            "aPTT",
-            "APTT",
-            "PTT",
-            "활성화 부분트롬보플라스틴시간",
-            "12unit/kg/hr",
-            "12u/kg/hr",
-            "unit/kg/hr",
-            "u/kg/hr"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "헤파린 heparin 노모그램 모노그램 nomogram 한림헤파린나트륨주 25000IU 25000U 5mL 5DW 5DW500 500ml aPTT APTT PTT 활성화 부분트롬보플라스틴시간 12unit/kg/hr 12u/kg/hr unit/kg/hr u/kg/hr bolus 1000unit 2000unit 60분 중단 감량 증량 목표수치 항응고 주입속도 mL/hr cc/hr 헤파린 요법 헤파린 노모그램 헤파린 모노그램 heparin nomogram 한림헤파린 한림헤파린나트륨 부분트롬보플라스틴 heparin mix 헤파린 mix 헤파린 주입속도 헤파린 증량 헤파린 감량 헤파린 요법 노모그램(aPTT 기준 조절표) 약물 / 항응고 / 순환기 아그라스타트주 사용법과 권장용량 주요 약물 약속처방 Mix 법 정맥로 확보 수혈 절차",
       "prefer_media_first": true
@@ -1138,38 +1069,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -1340,8 +1250,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -1430,8 +1339,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -1511,8 +1419,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -1874,8 +1781,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -2269,8 +2175,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -2555,7 +2460,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "AST를 시행해야 하는 항생제 목록.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST를 시행해야 하는 항생제 목록."
       ],
@@ -2594,7 +2499,33 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "투약/AST",
       "search_terms": [
         "AST 시행 항생제",
@@ -2635,7 +2566,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "AST를 하지 않는 항생제 목록.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST를 하지 않는 항생제 목록."
       ],
@@ -2675,7 +2606,33 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "투약/AST",
       "search_terms": [
         "AST 미시행 항생제",
@@ -2716,7 +2673,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "AST 표준화 희석과 판독.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST 표준화 희석과 판독."
       ],
@@ -2762,41 +2719,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -3046,25 +2990,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "E-CART"
           ]
         }
       ],
@@ -4419,7 +4345,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
-      "summary": "채혈 후 검체 용기 분주 순서와 bottle별 주요 검사 항목 확인.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검체 bottle 종류와 채혈 순서를 확인해야 할 때",
         "ABGA, Blood culture, PT/aPTT, Chemistry, CBC 검체 용기를 확인할 때"
@@ -4541,44 +4467,32 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
       "search_terms": [
-        "채혈병",
         "파랑",
         "빨강",
         "노랑",
@@ -4587,13 +4501,11 @@ window.ICU_MANUAL_DB = {
         "Plain",
         "SST",
         "EDTA",
-        "채혈순서",
         "파노보",
         "파랑노랑보라",
         "PT tube",
         "ABGA syringe",
         "랩보틀",
-        "채혈 순서",
         "ABGA bottle",
         "혈액배양",
         "Plain tube",
@@ -4602,7 +4514,6 @@ window.ICU_MANUAL_DB = {
         "Lab",
         "bottle",
         "종류와",
-        "채혈",
         "순서",
         "검사",
         "v11_source_enhanced",
@@ -4619,13 +4530,10 @@ window.ICU_MANUAL_DB = {
         "Valproic acid, Vancomycin, Digoxin 등",
         "3~5mL",
         "4",
-        "PT, aPTT, D-dimer, DIC panel 등",
         "5",
         "Electrolyte, BUN/Cr, LFT, CRP, Troponin 등",
         "6",
-        "CBC, ESR, HbA1c 등",
         "2~3mL",
-        "채혈 순서 이미지",
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
@@ -4696,38 +4604,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -4814,38 +4701,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -4960,38 +4826,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -5071,38 +4916,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -5522,24 +5346,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -5880,10 +5687,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -5899,16 +5703,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -6132,10 +5927,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -6151,29 +5943,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v89_transfusion_procedure_flow.png",
-          "alt": "수혈 절차 순서도",
-          "caption": "수혈 준비부터 종료 기록까지 5단계 순서도",
-          "search_terms": [
-            "수혈절차이미지",
-            "수혈순서도",
-            "수혈 절차 순서도",
-            "수혈 준비부터 종료 기록까지 5단계 순서도",
-            "수혈 절차 상세",
-            "수혈 / 혈액",
-            "수혈",
-            "P-RBC",
-            "FFP",
-            "A-PLT",
-            "수혈기록지",
-            "수혈 V/S",
-            "혈액요청서",
-            "수혈 tip"
           ]
         }
       ],
@@ -6324,10 +6094,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -6343,16 +6110,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -6667,8 +6425,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -6800,8 +6557,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -6855,7 +6611,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
-      "summary": "검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드."
       ],
@@ -6891,41 +6647,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -6981,7 +6724,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "식이 처방, 금식, 경관식, I/O 입력을 함께 확인하는 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "식이 처방, 금식, 경관식, I/O 입력을 함께 확인하는 카드."
       ],
@@ -7018,19 +6761,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -7075,7 +6827,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "근무 시작 전 환자 상태와 주요 처방을 빠르게 파악하는 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "근무 시작 전 환자 상태와 주요 처방을 빠르게 파악하는 카드."
       ],
@@ -7109,7 +6861,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "Routine/환자파악·인계",
       "search_terms": [
         "환자 파악 및 인계 체크리스트",
@@ -7128,7 +6906,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "환자 파악 및 인계 체크리스트 Routine Routine/환자파악·인계 환자파악 인계 handover rounding 라인 진단명 문제목록 환자 파악 체크리스트 v10_master_30_categories"
+      "search_index": "환자 파악 및 인계 체크리스트 Routine Routine/환자파악·인계 환자파악 인계 handover rounding 라인 진단명 문제목록 환자 파악 체크리스트 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "ROUTINE022",
@@ -7150,7 +6929,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "근무 중 액팅 업무를 누락 없이 확인하는 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "근무 중 액팅 업무를 누락 없이 확인하는 카드."
       ],
@@ -7186,19 +6965,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -7259,7 +7047,7 @@ window.ICU_MANUAL_DB = {
         "입원 안내문"
       ],
       "urgency": "routine",
-      "summary": "신환 또는 전입 환자 ICU 입실 시 모니터 세팅, 감염검사 확인, 보호자 안내, 초기평가, 역할분담 절차.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신환 또는 전입 환자 ICU 입실 시 모니터 세팅, 감염검사 확인, 보호자 안내, 초기평가, 역할분담 절차."
       ],
@@ -7357,41 +7145,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -7472,7 +7247,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "ICU에서 병동 또는 타기관으로 이동 시 확인할 사항.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 병동 또는 타기관으로 이동 시 확인할 사항."
       ],
@@ -7506,7 +7281,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "입퇴원/전동·전원",
       "search_terms": [
         "전동·전원 업무",
@@ -7523,7 +7324,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "전동·전원 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/전동·전원 전동 전원 transfer 병동 이동 타병원 전원 업무 입퇴원 사망 v10_master_30_categories"
+      "search_index": "전동·전원 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/전동·전원 전동 전원 transfer 병동 이동 타병원 전원 업무 입퇴원 사망 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "ADM003",
@@ -7544,7 +7346,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "사망 확인 후 간호·전산·보호자 안내 업무.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "사망 확인 후 간호·전산·보호자 안내 업무."
       ],
@@ -7578,7 +7380,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "입퇴원/사망",
       "search_terms": [
         "사망 시 업무",
@@ -7596,7 +7424,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "사망 시 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/사망 사망 death 사후처치 영안실 사망진단서 업무 입퇴원 전동 전원 v10_master_30_categories"
+      "search_index": "사망 시 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/사망 사망 death 사후처치 영안실 사망진단서 업무 입퇴원 전동 전원 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "RECORD001",
@@ -7615,7 +7444,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "ICU 간호기록 작성 시 기본 원칙.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU 간호기록 작성 시 기본 원칙."
       ],
@@ -7651,7 +7480,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "간호기록",
       "search_terms": [
         "간호기록 작성 원칙",
@@ -7667,7 +7522,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "간호기록 작성 원칙 EMR / 기록 / 처방 간호기록 기록 nursing note charting EMR 작성 원칙 처방 v10_master_30_categories ICU 간호기록 체크리스트"
+      "search_index": "간호기록 작성 원칙 EMR / 기록 / 처방 간호기록 기록 nursing note charting EMR 작성 원칙 처방 v10_master_30_categories ICU 간호기록 체크리스트",
+      "prefer_media_first": true
     },
     {
       "id": "ORDER001",
@@ -7688,7 +7544,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "처방 확인부터 채혈접수/픽업/응급발행까지 흐름.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "처방 확인부터 채혈접수/픽업/응급발행까지 흐름."
       ],
@@ -7726,41 +7582,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -7776,7 +7619,6 @@ window.ICU_MANUAL_DB = {
         "채혈접수",
         "발행",
         "확인",
-        "Lab",
         "v10_master_30_categories",
         "LUCAS 동영상",
         "루카스 사용법 동영상"
@@ -7804,7 +7646,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "약품, 소모품, 개봉 물품의 유효기간 확인.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "약품, 소모품, 개봉 물품의 유효기간 확인."
       ],
@@ -7838,7 +7680,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "안전/유효기간",
       "search_terms": [
         "유효기간·사용기한 확인",
@@ -7855,7 +7723,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories"
+      "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS001",
@@ -7873,7 +7742,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "일반 상처 Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "일반 상처 Dressing 체크리스트."
       ],
@@ -7916,7 +7785,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/일반상처",
       "search_terms": [
         "일반 상처 Dressing",
@@ -7931,7 +7826,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "일반 상처 Dressing Line / Drain / Dressing DRESSING/일반상처 dressing 상처 일반상처 일반 Line Drain v10_master_30_categories 수술 후 상처 Dressing 욕창 부위 Dressing"
+      "search_index": "일반 상처 Dressing Line / Drain / Dressing DRESSING/일반상처 dressing 상처 일반상처 일반 Line Drain v10_master_30_categories 수술 후 상처 Dressing 욕창 부위 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS002",
@@ -7951,7 +7847,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "감염된 상처 Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "감염된 상처 Dressing 체크리스트."
       ],
@@ -7993,41 +7889,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -8043,7 +7926,6 @@ window.ICU_MANUAL_DB = {
         "감염된",
         "상처",
         "감염관리",
-        "검사",
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
@@ -8068,7 +7950,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "수술 후 상처 Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "수술 후 상처 Dressing 체크리스트."
       ],
@@ -8111,7 +7993,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/수술상처",
       "search_terms": [
         "수술 후 상처 Dressing",
@@ -8128,7 +8036,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "수술 후 상처 Dressing Line / Drain / Dressing DRESSING/수술상처 수술상처 op wound post op dressing 수술 상처 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 욕창 부위 Dressing"
+      "search_index": "수술 후 상처 Dressing Line / Drain / Dressing DRESSING/수술상처 수술상처 op wound post op dressing 수술 상처 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 욕창 부위 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS004",
@@ -8147,7 +8056,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "욕창 부위 Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "욕창 부위 Dressing 체크리스트."
       ],
@@ -8190,7 +8099,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/욕창",
       "search_terms": [
         "욕창 부위 Dressing",
@@ -8206,7 +8141,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "욕창 부위 Dressing Line / Drain / Dressing DRESSING/욕창 욕창 pressure injury sore dressing 부위 Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing"
+      "search_index": "욕창 부위 Dressing Line / Drain / Dressing DRESSING/욕창 욕창 pressure injury sore dressing 부위 Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS005",
@@ -8224,7 +8160,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "PCD 부위 Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "PCD 부위 Dressing 체크리스트."
       ],
@@ -8269,19 +8205,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -8319,7 +8264,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "장루 관리·Dressing 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "장루 관리·Dressing 체크리스트."
       ],
@@ -8362,7 +8307,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/장루",
       "search_terms": [
         "장루 관리·Dressing",
@@ -8378,7 +8349,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "장루 관리·Dressing Line / Drain / Dressing DRESSING/장루 장루 stoma ostomy 관리 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing"
+      "search_index": "장루 관리·Dressing Line / Drain / Dressing DRESSING/장루 장루 stoma ostomy 관리 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS007",
@@ -8396,7 +8368,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "SDD 소독 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "SDD 소독 체크리스트."
       ],
@@ -8436,7 +8408,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/SDD",
       "search_terms": [
         "SDD 소독",
@@ -8451,7 +8449,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "SDD 소독 Line / Drain / Dressing DRESSING/SDD SDD subdural drain 소독 Line Drain Dressing v10_master_30_categories"
+      "search_index": "SDD 소독 Line / Drain / Dressing DRESSING/SDD SDD subdural drain 소독 Line Drain Dressing v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "DRESS008",
@@ -8470,7 +8469,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "EVD 소독 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EVD 소독 체크리스트."
       ],
@@ -8515,7 +8514,33 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "DRESSING/EVD",
       "search_terms": [
         "EVD 소독",
@@ -8594,7 +8619,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Coronary angio CT 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Coronary angio CT 전후 간호 기본 체크리스트."
       ],
@@ -8635,19 +8660,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -8690,7 +8724,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Brain MRI non-enhance 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain MRI non-enhance 전후 간호 기본 체크리스트."
       ],
@@ -8731,19 +8765,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -8786,7 +8829,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Brain MRI enhance 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain MRI enhance 전후 간호 기본 체크리스트."
       ],
@@ -8827,19 +8870,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -8880,7 +8932,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Brain CT 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain CT 전후 간호 기본 체크리스트."
       ],
@@ -8926,36 +8978,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "Brain CT"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시",
-          "caption": "Brain CT/MRI 질환별 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT",
-            "MRI"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 교육 이미지",
-          "caption": "뇌경색 교육 이미지",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "뇌경색"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 교육 이미지",
-          "caption": "뇌출혈 교육 이미지",
-          "search_terms": [
-            "뇌출혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -9040,7 +9084,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Head Neck angio CT 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Head Neck angio CT 전후 간호 기본 체크리스트."
       ],
@@ -9081,19 +9125,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -9133,7 +9186,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "DSA 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "DSA 전후 간호 기본 체크리스트."
       ],
@@ -9174,41 +9227,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9243,7 +9283,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "PTA 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "PTA 전후 간호 기본 체크리스트."
       ],
@@ -9284,39 +9324,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -9351,7 +9380,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "TCD 검사 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "TCD 검사 전후 간호 기본 체크리스트."
       ],
@@ -9387,41 +9416,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9432,7 +9448,6 @@ window.ICU_MANUAL_DB = {
         "검사·시술/신경",
         "TCD",
         "transcranial doppler",
-        "검사",
         "전후",
         "간호",
         "v10_master_30_categories"
@@ -9459,7 +9474,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Coil embolization 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Coil embolization 전후 간호 기본 체크리스트."
       ],
@@ -9495,41 +9510,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9568,7 +9570,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Tracheostomy 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Tracheostomy 전후 간호 기본 체크리스트."
       ],
@@ -9604,41 +9606,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9677,7 +9666,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "EGD 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EGD 전후 간호 기본 체크리스트."
       ],
@@ -9718,41 +9707,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9791,7 +9767,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "ERCP 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ERCP 전후 간호 기본 체크리스트."
       ],
@@ -9832,41 +9808,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -9905,7 +9868,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "CFS 전후 간호 기본 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "CFS 전후 간호 기본 체크리스트."
       ],
@@ -9946,41 +9909,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10022,7 +9972,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Blood culture 채취 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Blood culture 채취 체크리스트."
       ],
@@ -10063,41 +10013,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10140,7 +10077,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Sputum culture 채취 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Sputum culture 채취 체크리스트."
       ],
@@ -10181,41 +10118,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10256,7 +10180,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Urine culture 채취 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Urine culture 채취 체크리스트."
       ],
@@ -10297,41 +10221,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10369,7 +10280,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "RAT 검사 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "RAT 검사 체크리스트."
       ],
@@ -10410,41 +10321,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10480,7 +10378,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "CRE/CPO 검체 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "CRE/CPO 검체 체크리스트."
       ],
@@ -10521,41 +10419,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -10595,7 +10480,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Tip culture 채취 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Tip culture 채취 체크리스트."
       ],
@@ -10636,41 +10521,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -11046,45 +10918,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/wiltse_internal_phone_numbers.png",
-          "alt": "원내 주요 전화번호 원본 이미지",
-          "caption": "원내 주요 전화번호 원본 표 이미지",
-          "search_terms": [
-            "원내 주요 전화번호 원본 이미지",
-            "원내 주요 전화번호 원본 표 이미지",
-            "원내 주요 전화번호",
-            "원내 주요 번호",
-            "원내번호",
-            "원내 내선번호",
-            "내선번호",
-            "전화번호",
-            "연락처",
-            "부서 연락처",
-            "의사 전화번호",
-            "진료부 번호",
-            "협력부서 번호",
-            "약국 식별",
-            "약국",
-            "원무과",
-            "입원",
-            "퇴원",
-            "응급원무과",
-            "CPR",
-            "전산팀",
-            "영양팀"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_hospital_floor_guide.png",
-          "alt": "원내 위치 층별 안내 요약",
-          "caption": "원내 위치 / 층별 안내 요약",
-          "search_terms": [
-            "층별안내"
+            "E-CART"
           ]
         }
       ],
@@ -11224,7 +11058,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Infusion pump 기본 사용 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Infusion pump 기본 사용 체크리스트."
       ],
@@ -11260,7 +11094,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "장비/Infusion pump",
       "search_terms": [
         "Infusion pump 사용법",
@@ -11278,7 +11138,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Infusion pump 사용법 물품 / 장비 / 전화번호 장비/Infusion pump Infusion pump 인퓨전펌프 pump 수액펌프 Infusion 사용법 물품 장비 전화번호 v10_master_30_categories Syringe pump 사용법"
+      "search_index": "Infusion pump 사용법 물품 / 장비 / 전화번호 장비/Infusion pump Infusion pump 인퓨전펌프 pump 수액펌프 Infusion 사용법 물품 장비 전화번호 v10_master_30_categories Syringe pump 사용법",
+      "prefer_media_first": true
     },
     {
       "id": "EQUIP002",
@@ -11298,7 +11159,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "Syringe pump 기본 사용 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Syringe pump 기본 사용 체크리스트."
       ],
@@ -11334,7 +11195,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "장비/Syringe pump",
       "search_terms": [
         "Syringe pump 사용법",
@@ -11351,7 +11238,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Syringe pump 사용법 물품 / 장비 / 전화번호 장비/Syringe pump Syringe pump 시린지펌프 syringe pump 사용법 물품 장비 전화번호 v10_master_30_categories Infusion pump 사용법"
+      "search_index": "Syringe pump 사용법 물품 / 장비 / 전화번호 장비/Syringe pump Syringe pump 시린지펌프 syringe pump 사용법 물품 장비 전화번호 v10_master_30_categories Infusion pump 사용법",
+      "prefer_media_first": true
     },
     {
       "id": "DRUG024",
@@ -11376,7 +11264,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "입원 환자의 경구혈당강하제 복용 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "입원 환자의 경구혈당강하제 복용 확인 카드."
       ],
@@ -11414,74 +11302,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin000b.png",
-          "alt": "인슐린 제품/용법 참고 표",
-          "caption": "인슐린 제품/용법 참고 표",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "인슐린 제품/용법 참고 표",
-            "경구 혈당 강하제 확인",
-            "약물 / 수액 / 마약",
-            "약물/경구혈당강하제",
-            "경구혈당강하제",
-            "OHA",
-            "당뇨약",
-            "BST",
-            "메트포르민",
-            "sulfonylurea",
-            "경구",
-            "혈당",
-            "강하제",
-            "확인",
-            "약물",
-            "수액",
-            "마약",
-            "v10_master_30_categories",
-            "경구 혈당강하제 참고 표",
-            "DRUG024"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "bin000c.png",
-          "alt": "경구 혈당강하제 참고 표",
-          "caption": "경구 혈당강하제 참고 표",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "경구 혈당강하제 참고 표",
-            "경구 혈당 강하제 확인",
-            "약물 / 수액 / 마약",
-            "약물/경구혈당강하제",
-            "경구혈당강하제",
-            "OHA",
-            "당뇨약",
-            "BST",
-            "메트포르민",
-            "sulfonylurea",
-            "경구",
-            "혈당",
-            "강하제",
-            "확인",
-            "약물",
-            "수액",
-            "마약",
-            "v10_master_30_categories",
-            "인슐린 제품/용법 참고 표",
-            "DRUG024"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "항생제 투여"
           ]
         }
       ],
@@ -11541,7 +11383,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "emergency",
-      "summary": "E-cart에서 자주 확인하는 응급약물 목록.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "E-cart에서 자주 확인하는 응급약물 목록."
       ],
@@ -11576,13 +11418,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -11640,7 +11497,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "ICU에서 주의가 필요한 고위험 약물 관리.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 주의가 필요한 고위험 약물 관리."
       ],
@@ -11675,20 +11532,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CRRT",
-            "DKA"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "FMC CRRT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -11737,7 +11602,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "항부정맥제 투여 전후 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "항부정맥제 투여 전후 확인 카드."
       ],
@@ -11770,7 +11635,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "약물/항부정맥제",
       "search_terms": [
         "항부정맥제 사용 전 확인",
@@ -11791,7 +11682,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories"
+      "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "CONSENT001",
@@ -11861,10 +11753,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -11880,16 +11769,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -12035,7 +11915,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "소화기내과 Routine 기본 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "소화기내과 Routine 기본 확인 카드."
       ],
@@ -12073,39 +11953,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -12144,7 +12013,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "심장내과 Routine 기본 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "심장내과 Routine 기본 확인 카드."
       ],
@@ -12182,39 +12051,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -12254,7 +12112,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "신장내과 Routine 기본 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신장내과 Routine 기본 확인 카드."
       ],
@@ -12289,39 +12147,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -12360,7 +12207,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "신경외과 Routine 기본 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신경외과 Routine 기본 확인 카드."
       ],
@@ -12402,39 +12249,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -12510,7 +12346,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "정형외과 Routine 기본 확인 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "정형외과 Routine 기본 확인 카드."
       ],
@@ -12548,39 +12384,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -13136,44 +12961,7 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "프로토콜/DIC",
       "search_terms": [
         "DIC 검사·바코드·관리 상세",
@@ -13186,7 +12974,6 @@ window.ICU_MANUAL_DB = {
         "INR",
         "fibrinogen",
         "DIC 바코드",
-        "검사",
         "바코드",
         "관리",
         "상세",
@@ -13215,7 +13002,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "카멜레온 전산 사용 시 자주 확인하는 항목.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "카멜레온 전산 사용 시 자주 확인하는 항목."
       ],
@@ -13249,7 +13036,33 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "original_category": "EMR/카멜레온",
       "search_terms": [
         "카멜레온 EMR 기본 사용",
@@ -13267,7 +13080,8 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "카멜레온 EMR 기본 사용 EMR / 기록 / 처방 EMR/카멜레온 카멜레온 EMR 전산 간호기록 처방 액팅 기본 사용 기록 v10_master_30_categories"
+      "search_index": "카멜레온 EMR 기본 사용 EMR / 기록 / 처방 EMR/카멜레온 카멜레온 EMR 전산 간호기록 처방 액팅 기본 사용 기록 v10_master_30_categories",
+      "prefer_media_first": true
     },
     {
       "id": "EQUIP003",
@@ -13291,7 +13105,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "ICU 장비 사용 전후 공통 체크리스트.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU 장비 사용 전후 공통 체크리스트."
       ],
@@ -13327,30 +13141,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CRRT",
-            "DKA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "FMC CRRT"
+            "항생제 투여"
           ]
         }
       ],
@@ -13462,8 +13274,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -13589,7 +13400,7 @@ window.ICU_MANUAL_DB = {
         "만니톨"
       ],
       "urgency": "routine",
-      "summary": "항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드."
       ],
@@ -13624,39 +13435,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -13785,44 +13585,7 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "마약·향정",
       "search_terms": [
         "마약 & 향정: 반환·잔량보관·마약성 진통제",
@@ -13958,64 +13721,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "bin000d.png",
-          "alt": "Nebulizer 사용 참고 자료",
-          "caption": "Nebulizer 사용 참고 자료",
-          "search_terms": [
-            "Nebulizer 사용 참고 자료",
-            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
-            "물품 / 장비 / 전화번호",
-            "의료장비",
-            "장비",
-            "ventilator",
-            "vent",
-            "벤트",
-            "인공호흡기",
-            "high flow",
-            "HFNC",
-            "Airvo",
-            "하이플로우",
-            "CRRT",
-            "씨알알티",
-            "infusion pump",
-            "인퓨전펌프",
-            "syringe pump",
-            "시린지펌프",
-            "syriange pump",
-            "제세동기"
-          ]
-        },
-        {
-          "src": "bin000e.png",
-          "alt": "산소요법(O2) 참고 표",
-          "caption": "산소요법(O2) 참고 표",
-          "search_terms": [
-            "산소요법(O2) 참고 표",
-            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
-            "물품 / 장비 / 전화번호",
-            "의료장비",
-            "장비",
-            "ventilator",
-            "vent",
-            "벤트",
-            "인공호흡기",
-            "high flow",
-            "HFNC",
-            "Airvo",
-            "하이플로우",
-            "CRRT",
-            "씨알알티",
-            "infusion pump",
-            "인퓨전펌프",
-            "syringe pump",
-            "시린지펌프",
-            "syriange pump",
-            "제세동기"
+            "E-CART"
           ]
         }
       ],
@@ -14324,10 +14030,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -14343,7 +14046,6 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
           ]
         }
@@ -14383,7 +14085,6 @@ window.ICU_MANUAL_DB = {
         "수혈 filter",
         "혈액제제",
         "RBC PC APLT FFP Cryo",
-        "Lab",
         "동의서",
         "전처치",
         "TIP",
@@ -14467,19 +14168,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "X-ray"
+            "Brain CT"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "Brain CT"
+            "Brain CT",
+            "MRI"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
+          "search_terms": [
+            "뇌경색"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
+          "search_terms": [
+            "뇌출혈"
           ]
         }
       ],
@@ -14599,44 +14317,7 @@ window.ICU_MANUAL_DB = {
         "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Dressing·Line",
       "search_terms": [
         "Dressing / 각종 LINE / Drainage 정리",
@@ -14763,25 +14444,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "E-CART"
           ]
         }
       ],
@@ -14897,44 +14560,7 @@ window.ICU_MANUAL_DB = {
         "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "CSR 물품",
       "search_terms": [
         "물품 / 장비 / 전화번호",
@@ -14996,7 +14622,7 @@ window.ICU_MANUAL_DB = {
         "search_optimized"
       ],
       "urgency": "routine",
-      "summary": "VRE/CRE/CPO/MRSA/MSSA/MRPA와 격리, 항생제 관련 검색 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "VRE/CRE/CPO/MRSA/MSSA/MRPA와 격리, 항생제 관련 검색 카드."
       ],
@@ -15036,39 +14662,28 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
+            "항생제 투여"
           ]
         }
       ],
@@ -15176,44 +14791,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "I & O / 섭취량·배설량 / 전해질 교정",
         "I&O·전해질",
@@ -15324,44 +14902,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "Vital sign: BP·HR·RR·BT",
         "Vital Sign",
@@ -15459,44 +15000,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "ABGA: 혈액가스 분석과 질환",
         "ABGA",
@@ -15637,6 +15141,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -15756,64 +15272,7 @@ window.ICU_MANUAL_DB = {
         "V103 CRRT/신장 + BST/DM/DKA 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "bin000a.png",
-          "alt": "인슐린 종류와 작용시간 그래프",
-          "caption": "인슐린 종류와 작용시간 그래프",
-          "search_terms": [
-            "인슐린 종류와 작용시간 그래프",
-            "BST / DM / 인슐린 / 혈당관리",
-            "BST / DM / DKA",
-            "BST·DM",
-            "BST",
-            "DM",
-            "diabetes",
-            "혈당",
-            "BST 정상범위",
-            "정상 범위",
-            "저혈당",
-            "고혈당",
-            "상황대처",
-            "bst tip",
-            "insulin",
-            "인슐린",
-            "인슐린 종류",
-            "RI",
-            "Humulin",
-            "휴물린",
-            "sliding"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "BST·DM",
       "search_terms": [
         "BST / DM / 인슐린 / 혈당관리",
@@ -15929,8 +15388,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -16043,44 +15501,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "입퇴원·전원·사망",
       "search_terms": [
         "입퇴원 / 전원 / 전동 / 사망 업무",
@@ -16178,44 +15599,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "주치의 / 과별 특이사항",
         "주치의·과별",
@@ -17002,19 +16386,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "Brain CT"
+            "CBC",
+            "Chemistry",
+            "ABGA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "search_terms": [
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -17113,7 +16519,7 @@ window.ICU_MANUAL_DB = {
         "수액"
       ],
       "urgency": "urgent",
-      "summary": "ICU에서 자주 사용하는 항생제의 AST 시행 여부를 빠르게 확인하는 카드.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 자주 사용하는 항생제의 AST 시행 여부를 빠르게 확인하는 카드."
       ],
@@ -17217,7 +16623,33 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "tags": [
         "임상 약물/항생제",
         "v26_uploaded_manual_added",
@@ -17405,44 +16837,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "검사·검체/검체통",
         "v26_uploaded_manual_added",
@@ -17473,13 +16868,11 @@ window.ICU_MANUAL_DB = {
         "일반캐리어",
         "오토캐리어",
         "ABGA",
-        "A-line 채혈",
         "리거즈",
         "regurge",
         "바코드 발행",
         "DIC 바코드",
         "통과",
-        "채혈",
         "실무",
         "검사",
         "v26_uploaded_manual_added",
@@ -18504,46 +17897,7 @@ window.ICU_MANUAL_DB = {
         "간호기록 작성 원칙"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "간호기록",
         "v26_uploaded_manual_added",
@@ -18659,44 +18013,7 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "처방·액팅",
         "v26_uploaded_manual_added",
@@ -18727,7 +18044,6 @@ window.ICU_MANUAL_DB = {
         "피하주사 pee",
         "nebulizer 처방",
         "Lab 처방",
-        "채혈접수업무",
         "픽업",
         "응급발행",
         "10:30",
@@ -18737,7 +18053,6 @@ window.ICU_MANUAL_DB = {
         "Portable Y",
         "bed side PT",
         "간호처방과",
-        "Lab",
         "pickup",
         "처방",
         "v26_uploaded_manual_added",
@@ -19016,38 +18331,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -19183,10 +18477,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -19202,16 +18493,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -19543,10 +18825,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -19562,16 +18841,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -19831,24 +19101,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -19965,8 +19218,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -20199,19 +19451,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "X-ray"
+            "Brain CT"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "Brain CT"
+            "Brain CT",
+            "MRI"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
+          "search_terms": [
+            "뇌경색"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
+          "search_terms": [
+            "뇌출혈"
           ]
         }
       ],
@@ -20651,60 +19920,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "검사",
-            "검체"
+            "Brain CT"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "Brain CT",
+            "MRI"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "뇌경색"
           ]
         },
         {
-          "src": "bin0005.png",
-          "alt": "수술 전후 간호 참고 표",
-          "caption": "수술 전후 간호 참고 표",
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
           "search_terms": [
-            "수술 전후 간호 참고 표",
-            "수술/시술 전후 간호와 Pre-op 확인",
-            "수술 / 시술",
-            "수술간호",
-            "수술 전후 간호",
-            "Pre Op",
-            "preop",
-            "시술 전 확인",
-            "angio",
-            "permission",
-            "표식확인서",
-            "PA 124",
-            "수술 전 확인표",
-            "OR 연락",
-            "OP risk",
-            "PCA 동의서",
-            "전신마취 동의서",
-            "수술동의서",
-            "수술파일",
-            "Pre OP Fluid",
-            "foley 남성"
+            "뇌출혈"
           ]
         }
       ],
@@ -21046,38 +20291,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -21297,41 +20521,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "검사",
-            "검체"
+            "Brain CT"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "Brain CT",
+            "MRI"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "뇌경색"
           ]
         },
         {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
           "search_terms": [
-            "검사",
-            "검체"
+            "뇌출혈"
           ]
         }
       ],
@@ -21554,8 +20773,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -21689,24 +20907,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -21849,38 +21050,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -22252,7 +21432,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "urgency": "urgent",
-      "summary": "19. 항생제 AST",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "19. 항생제 AST"
       ],
@@ -22353,7 +21533,33 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "search_terms": [
         "항생제 AST 1:5000 희석",
         "약물 / 수액 / 마약",
@@ -22388,7 +21594,8 @@ window.ICU_MANUAL_DB = {
         "병원 프로토콜 우선"
       ],
       "standard_sections_ready": true,
-      "search_index": "항생제 AST 1:5000 희석 약물 / 수액 / 마약 항생제 AST 5000 희석 항생제 AST 1:5000 ID skin test 약물 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) AST 희석 목표 원약 용량 1차 희석 최종 목표 500mg N/S 2.5mL mix 1:5000, 200mcg/1mL 목표 1g N/S 5mL mix 재희석 후 0.1mL ID 2g N/S 10mL mix 10분 후 결과 확인 4.5g N/S 20mL mix 병원 프로토콜 우선"
+      "search_index": "항생제 AST 1:5000 희석 약물 / 수액 / 마약 항생제 AST 5000 희석 항생제 AST 1:5000 ID skin test 약물 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) AST 희석 목표 원약 용량 1차 희석 최종 목표 500mg N/S 2.5mL mix 1:5000, 200mcg/1mL 목표 1g N/S 5mL mix 재희석 후 0.1mL ID 2g N/S 10mL mix 10분 후 결과 확인 4.5g N/S 20mL mix 병원 프로토콜 우선",
+      "prefer_media_first": true
     },
     {
       "id": "UPD43_______AMIODARONE_ADENOS",
@@ -22887,10 +22094,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -22906,30 +22110,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v89_transfusion_procedure_flow.png",
-          "alt": "수혈 절차 순서도",
-          "caption": "수혈 준비부터 종료 기록까지 5단계 순서도",
-          "search_terms": [
-            "수혈절차이미지",
-            "수혈순서도",
-            "blood transfusion flow",
-            "수혈 절차 순서도",
-            "수혈 준비부터 종료 기록까지 5단계 순서도",
-            "수혈 절차 / 혈액제제 종류 / 응고인자",
-            "수혈 / 혈액",
-            "수혈",
-            "절차",
-            "혈액제제",
-            "종류",
-            "응고인자",
-            "RBC",
-            "FFP",
-            "PC"
           ]
         }
       ],
@@ -23128,38 +22309,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -23290,38 +22450,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -23422,38 +22561,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -23807,38 +22925,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -23979,38 +23076,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -24218,7 +23294,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -24270,31 +23345,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -24364,7 +23423,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -24416,31 +23474,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -24510,7 +23552,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -24562,31 +23603,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -24656,7 +23681,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -24708,31 +23732,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -24802,7 +23810,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -24854,31 +23861,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -24948,7 +23939,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -25000,31 +23990,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -25094,7 +24068,6 @@ window.ICU_MANUAL_DB = {
         "복원",
         "전체 이미지 검색",
         "보조기",
-        "채혈 순서",
         "원내 주요 번호",
         "수혈",
         "ABGA",
@@ -25146,31 +24119,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -25643,38 +24600,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -26166,8 +25102,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -26400,8 +25335,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -26551,8 +25485,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -26702,24 +25635,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -26834,24 +25750,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -26978,8 +25877,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -27055,10 +25953,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -27074,16 +25969,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -27394,38 +26280,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -27500,10 +26365,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -27519,16 +26381,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -27687,7 +26540,7 @@ window.ICU_MANUAL_DB = {
         "감염 / 격리"
       ],
       "urgency": "routine",
-      "summary": "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -27780,58 +26633,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v65_접촉주의_다제내성균_p1.jpg",
-          "alt": "접촉주의 다제내성균 표지",
-          "caption": "접촉주의 다제내성균 표지",
-          "search_terms": [
-            "접촉주의 다제내성균 표지",
-            "접촉주의",
-            "다제내성균",
-            "MRSA",
-            "VRE",
-            "CRE",
-            "MRAB",
-            "CRAB",
-            "MRPA",
-            "격리해지",
-            "코호트",
-            "Oxacillin",
-            "Vancomycin",
-            "Meropenem",
-            "Ertapenem",
-            "접촉주의 다제내성균 해석",
-            "감염 / 격리",
-            "V65_MDR_ORGANISM",
-            "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다."
+            "항생제 투여"
           ]
         }
       ],
@@ -27950,10 +26773,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -27969,16 +26789,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -28041,53 +26852,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v65_PCD_검체_처방_시_검체라벨_붙이는_방법_p1.jpg",
-          "alt": "PCD 검체라벨 표지",
-          "caption": "PCD 검체라벨 표지",
-          "search_terms": [
-            "PCD 검체라벨 표지",
-            "PCD 검체",
-            "검체라벨",
-            "PCD 라벨",
-            "체액검사9종",
-            "Total amylase",
-            "LDH",
-            "Fluid culture",
-            "바코드 재발행",
-            "채혈접수 안내",
-            "PCD 검체 처방 시 검체라벨 붙이는 방법",
-            "검사 / 검체",
-            "V65_PCD_LABEL",
-            "PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다."
           ]
         }
       ],
@@ -28313,10 +27091,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -28332,16 +27107,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
           ]
         }
       ],
@@ -28508,44 +27274,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "OS 각과별 매뉴얼 OS Drain Drain Pressure H-vac JP natural full clamp OS1 OS3 OS8 OS10 OS14 OS22 OS24 OS25 TKRA TSRA Hip OP OS 각과별 매뉴얼 Drain Pressure 정리 수술 / 시술",
       "prefer_media_first": true
@@ -28593,7 +27322,7 @@ window.ICU_MANUAL_DB = {
         "교육영상"
       ],
       "urgency": "routine",
-      "summary": "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -28735,7 +27464,33 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "search_terms": [
+            "항생제",
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼 L-sling 엘슬링 sling 보조기 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상",
       "videos": [
@@ -28853,7 +27608,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "뇌졸중은 뇌혈관이 막히거나 터져 뇌조직 손상이 발생하는 응급질환입니다. 증상 발생 시각 확인, FAST 확인, 즉시 영상검사와 전문의 보고가 핵심입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 한쪽 팔다리 힘빠짐 또는 감각이상",
         "안면마비, 말 어눌함, 실어증/언어장애",
@@ -29010,61 +27765,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌졸중 뇌경색 총정리 CT MRI 예시",
-          "caption": "뇌졸중 총정리 ① 뇌경색: 증상·검사·치료·간호 및 예시 CT/MRI",
-          "search_terms": [
-            "뇌졸중 뇌경색 총정리 CT MRI 예시",
-            "뇌졸중 총정리 ① 뇌경색: 증상·검사·치료·간호 및 예시 CT/MRI",
-            "뇌졸중",
-            "stroke",
-            "CVA",
-            "뇌경색",
-            "허혈성 뇌졸중",
-            "뇌출혈",
-            "출혈성 뇌졸중",
-            "FAST",
-            "NIHSS",
-            "CT",
-            "MRI",
-            "DWI",
-            "FLAIR",
-            "SWI",
-            "CTA",
-            "MRA",
-            "DSA",
-            "편마비",
-            "안면마비",
-            "언어장애"
+            "항생제 투여"
           ]
         }
       ],
@@ -29180,7 +27902,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "뇌경색은 혈관 폐색으로 해당 혈관 영역의 뇌조직 혈류가 차단되는 뇌졸중입니다. 원인에 따라 대혈관 죽상경화성, 심장색전성, 소혈관폐색(열공경색), 기타/원인불명으로 나눌 수 있습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 편마비/감각이상, 안면마비",
         "실어증·구음장애, 시야장애",
@@ -29334,48 +28056,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 CT MRI DWI CTA 예시",
-          "caption": "뇌경색 종류와 예시 CT/MRI/DWI/CTA 요약",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "뇌경색 CT MRI DWI CTA 예시",
-            "뇌경색 종류와 예시 CT/MRI/DWI/CTA 요약",
-            "뇌졸중",
-            "stroke",
-            "CVA",
-            "뇌경색",
-            "허혈성 뇌졸중",
-            "뇌출혈",
-            "출혈성 뇌졸중",
-            "FAST",
-            "NIHSS",
-            "CT",
-            "MRI",
-            "DWI",
-            "FLAIR",
-            "SWI",
-            "CTA",
-            "MRA",
-            "DSA",
-            "편마비",
-            "안면마비",
-            "언어장애"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "X-ray"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Brain CT"
+            "항생제 투여"
           ]
         }
       ],
@@ -29501,7 +28203,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "뇌출혈은 뇌혈관 파열로 뇌실질, 지주막하 공간, 뇌실 등에 출혈이 발생하는 응급질환입니다. 비조영 CT로 출혈 위치와 범위를 빠르게 확인하고 혈압·응고·두개내압 관리 및 수술/시술 여부를 판단합니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 심한 두통, 구토, 경부강직",
         "의식저하, 경련, 동공 변화",
@@ -29722,48 +28424,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 CT MRI ICH SAH IVH 소뇌 뇌간 출혈 예시",
-          "caption": "뇌졸중 총정리 ② 뇌출혈: 종류·영상소견·치료·간호 요약",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "뇌출혈 CT MRI ICH SAH IVH 소뇌 뇌간 출혈 예시",
-            "뇌졸중 총정리 ② 뇌출혈: 종류·영상소견·치료·간호 요약",
-            "뇌졸중",
-            "stroke",
-            "CVA",
-            "뇌경색",
-            "허혈성 뇌졸중",
-            "뇌출혈",
-            "출혈성 뇌졸중",
-            "FAST",
-            "NIHSS",
-            "CT",
-            "MRI",
-            "DWI",
-            "FLAIR",
-            "SWI",
-            "CTA",
-            "MRA",
-            "DSA",
-            "편마비",
-            "안면마비",
-            "언어장애"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "X-ray"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Brain CT"
+            "항생제 투여"
           ]
         }
       ],
@@ -29847,7 +28529,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "뇌경색과 뇌출혈의 원인, 대표 영상소견, 응급치료 핵심, 간호 포인트를 비교해 빠르게 확인하는 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -29938,77 +28620,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 요약 이미지",
-          "caption": "뇌경색 요약",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "뇌경색 요약 이미지",
-            "뇌경색 요약",
-            "뇌졸중",
-            "stroke",
-            "CVA",
-            "뇌경색",
-            "허혈성 뇌졸중",
-            "뇌출혈",
-            "출혈성 뇌졸중",
-            "FAST",
-            "NIHSS",
-            "CT",
-            "MRI",
-            "DWI",
-            "FLAIR",
-            "SWI",
-            "CTA",
-            "MRA",
-            "DSA",
-            "편마비",
-            "안면마비",
-            "언어장애"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 요약 이미지",
-          "caption": "뇌출혈 요약",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "뇌출혈 요약 이미지",
-            "뇌출혈 요약",
-            "뇌졸중",
-            "stroke",
-            "CVA",
-            "뇌경색",
-            "허혈성 뇌졸중",
-            "뇌출혈",
-            "출혈성 뇌졸중",
-            "FAST",
-            "NIHSS",
-            "CT",
-            "MRI",
-            "DWI",
-            "FLAIR",
-            "SWI",
-            "CTA",
-            "MRA",
-            "DSA",
-            "편마비",
-            "안면마비",
-            "언어장애"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "항생제 투여"
           ]
         }
       ],
@@ -32197,38 +30830,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -32500,38 +31112,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -32782,38 +31373,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -33084,38 +31654,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -33362,10 +31911,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -33381,37 +31927,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_overview_flow.png",
-          "alt": "수혈 전체 흐름 요약 그림",
-          "caption": "수혈 전체 흐름: 처방 확인부터 종료 기록까지",
-          "search_terms": [
-            "수혈 전체 흐름 요약 그림",
-            "수혈 전체 흐름: 처방 확인부터 종료 기록까지",
-            "수혈",
-            "수혈 총정리",
-            "blood transfusion",
-            "transfusion",
-            "혈액제제",
-            "RBC",
-            "PC",
-            "FFP",
-            "SDP",
-            "Cryo",
-            "농축적혈구",
-            "농축혈소판",
-            "신선동결혈장",
-            "동결침전제제",
-            "ABO",
-            "RhD",
-            "비예기항체",
-            "교차시험",
-            "crossmatch",
-            "수혈동의서"
           ]
         }
       ],
@@ -33644,10 +32160,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -33663,37 +32176,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_components_table.png",
-          "alt": "혈액제제 종류 비교표",
-          "caption": "혈액제제 종류와 주입·관리 포인트",
-          "search_terms": [
-            "혈액제제 종류 비교표",
-            "혈액제제 종류와 주입·관리 포인트",
-            "수혈",
-            "수혈 총정리",
-            "blood transfusion",
-            "transfusion",
-            "혈액제제",
-            "RBC",
-            "PC",
-            "FFP",
-            "SDP",
-            "Cryo",
-            "농축적혈구",
-            "농축혈소판",
-            "신선동결혈장",
-            "동결침전제제",
-            "ABO",
-            "RhD",
-            "비예기항체",
-            "교차시험",
-            "crossmatch",
-            "수혈동의서"
           ]
         }
       ],
@@ -33903,10 +32386,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -33922,37 +32402,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_reaction_algorithm.png",
-          "alt": "수혈부작용 응급대응 알고리즘",
-          "caption": "수혈부작용 의심 시 STOP–KEEP IV–CHECK–REPORT–SAVE–CHART",
-          "search_terms": [
-            "수혈부작용 응급대응 알고리즘",
-            "수혈부작용 의심 시 STOP–KEEP IV–CHECK–REPORT–SAVE–CHART",
-            "수혈",
-            "수혈 총정리",
-            "blood transfusion",
-            "transfusion",
-            "혈액제제",
-            "RBC",
-            "PC",
-            "FFP",
-            "SDP",
-            "Cryo",
-            "농축적혈구",
-            "농축혈소판",
-            "신선동결혈장",
-            "동결침전제제",
-            "ABO",
-            "RhD",
-            "비예기항체",
-            "교차시험",
-            "crossmatch",
-            "수혈동의서"
           ]
         }
       ],
@@ -34142,10 +32592,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "수혈"
           ]
         },
         {
@@ -34161,37 +32608,7 @@ window.ICU_MANUAL_DB = {
           "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
           "search_terms": [
-            "수혈부작용",
             "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_icu_checklist.png",
-          "alt": "중환자실 수혈 간호 체크리스트",
-          "caption": "ICU 수혈 전·중·후 체크리스트와 대량수혈 주의사항",
-          "search_terms": [
-            "중환자실 수혈 간호 체크리스트",
-            "ICU 수혈 전·중·후 체크리스트와 대량수혈 주의사항",
-            "수혈",
-            "수혈 총정리",
-            "blood transfusion",
-            "transfusion",
-            "혈액제제",
-            "RBC",
-            "PC",
-            "FFP",
-            "SDP",
-            "Cryo",
-            "농축적혈구",
-            "농축혈소판",
-            "신선동결혈장",
-            "동결침전제제",
-            "ABO",
-            "RhD",
-            "비예기항체",
-            "교차시험",
-            "crossmatch",
-            "수혈동의서"
           ]
         }
       ],
@@ -34764,38 +33181,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -35017,37 +33413,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
-          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
-          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-          "search_terms": [
-            "뇌신경계 소화기계 신장계 중환자 질환 요약",
-            "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-            "뇌신경계",
-            "신경계",
-            "뇌졸중",
-            "뇌경색",
-            "뇌출혈",
-            "SAH",
-            "ICH",
-            "IVH",
-            "TBI",
-            "경련",
-            "seizure",
-            "status epilepticus",
-            "ICP",
-            "EVD",
-            "GCS",
-            "NIHSS",
-            "동공반사",
-            "V74_ICU_NEURO",
-            "뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련",
-            "중환자실 질병 / 뇌신경계"
+            "E-CART"
           ]
         }
       ],
@@ -35227,61 +33593,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
-          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
-          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-          "search_terms": [
-            "뇌신경계 소화기계 신장계 중환자 질환 요약",
-            "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-            "소화기계",
-            "간담도",
-            "GI bleeding",
-            "위장관출혈",
-            "토혈",
-            "혈변",
-            "melena",
-            "pancreatitis",
-            "췌장염",
-            "liver failure",
-            "간부전",
-            "ileus",
-            "bowel ischemia",
-            "perforation",
-            "복막염",
-            "영양",
-            "V74_ICU_DIGESTIVE",
-            "소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염",
-            "중환자실 질병 / 소화기계",
-            "소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다."
           ]
         }
       ],
@@ -35555,7 +33880,6 @@ window.ICU_MANUAL_DB = {
         "MAP",
         "lactate",
         "source control",
-        "DIC",
         "응고장애",
         "혈소판감소",
         "대량출혈",
@@ -35564,7 +33888,7 @@ window.ICU_MANUAL_DB = {
         "항생제"
       ],
       "urgency": "high",
-      "summary": "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "패혈증/패혈성 쇼크 의심 환자",
         "발열/저체온, 저혈압, lactate 상승 환자",
@@ -35702,29 +34026,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "X-ray"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Brain CT"
+            "항생제 투여"
           ]
         }
       ],
@@ -36119,65 +34442,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v75_diabetes_insulin_summary.png",
-          "alt": "혈당 당뇨 인슐린 총정리 이미지",
-          "caption": "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
-          "search_terms": [
-            "혈당 당뇨 인슐린 총정리 이미지",
-            "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
-            "혈당",
-            "당뇨",
-            "당뇨병",
-            "인슐린",
-            "BST",
-            "blood glucose",
-            "diabetes",
-            "insulin",
-            "HbA1c",
-            "공복혈당",
-            "식후혈당",
-            "저혈당",
-            "고혈당",
-            "DKA",
-            "HHS",
-            "sliding scale",
-            "혈당 총정리",
-            "당뇨 총정리",
-            "인슐린 총정리",
-            "혈당관리"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "혈당 당뇨 당뇨병 인슐린 BST blood glucose diabetes insulin HbA1c 공복혈당 식후혈당 저혈당 고혈당 DKA HHS sliding scale 혈당 총정리 당뇨 총정리 인슐린 총정리 혈당관리 당뇨 간호 혈당·당뇨·인슐린 총정리: 진단기준·목표·간호 내분비·대사 / 혈당·당뇨 ABGA 총정리 중환자실 질병 계통별 총정리 심혈관 환자 간호 EVD ICP CVP 총정리",
       "prefer_media_first": true
@@ -36944,61 +35209,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v75_diabetes_insulin_summary.png",
-          "alt": "혈당 당뇨 인슐린 총정리 이미지",
-          "caption": "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
-          "search_terms": [
-            "혈당 당뇨 인슐린 총정리 이미지",
-            "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
-            "DKA",
-            "HHS",
-            "당뇨병성 케톤산증",
-            "고삼투압 고혈당 증후군",
-            "케톤산증",
-            "고삼투압",
-            "Kussmaul respiration",
-            "의식저하",
-            "탈수",
-            "인슐린 drip",
-            "전해질 보충",
-            "중환자실 혈당 간호",
-            "V75_DKA_HHS_ICU_NURSING",
-            "DKA·HHS 핵심과 중환자실 혈당 간호",
-            "내분비·대사 / 혈당·당뇨",
-            "DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다.",
-            "중환자실",
-            "간호",
-            "ABGA 총정리",
-            "중환자실 질병 계통별 총정리"
           ]
         }
       ],
@@ -37301,65 +35525,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v76_icu_meds_high_alert_overview.png",
-          "alt": "중환자실 약품 고위험 고주의 총정리 이미지",
-          "caption": "ICU 약품 안전 5원칙, 고위험 약물 범주, 즉시 보고 기준",
-          "search_terms": [
-            "중환자실 약품 고위험 고주의 총정리 이미지",
-            "ICU 약품 안전 5원칙, 고위험 약물 범주, 즉시 보고 기준",
-            "중환자실 약품",
-            "ICU 약물",
-            "고위험 약물",
-            "고주의 약물",
-            "high alert",
-            "약품 안전",
-            "double check",
-            "투약오류",
-            "승압제",
-            "강심제",
-            "인슐린",
-            "heparin",
-            "KCl",
-            "고농도 전해질",
-            "항부정맥제",
-            "마약",
-            "향정",
-            "high-alert medication",
-            "약품 총정리",
-            "V76_ICU_MEDICATION_OVERVIEW"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "중환자실 약품 ICU 약물 고위험 약물 고주의 약물 high alert 약품 안전 double check 투약오류 승압제 강심제 인슐린 heparin KCl 고농도 전해질 항부정맥제 마약 향정 high-alert medication 약품 총정리 중환자실 약품 총정리: 고위험·고주의 약물 안전 약물 / 중환자실 마약·향정·항생제 총정리 중환자실 수액 요법 총정리 ABGA 총정리 심전도 총정리 혈당·당뇨·인슐린 총정리",
       "prefer_media_first": true
@@ -37590,7 +35756,6 @@ window.ICU_MANUAL_DB = {
         "stewardship",
         "감염관리",
         "배양검사",
-        "culture",
         "TDM",
         "trough",
         "vancomycin",
@@ -37612,7 +35777,7 @@ window.ICU_MANUAL_DB = {
         "약물 / 중환자실"
       ],
       "urgency": "high",
-      "summary": "중환자실 항생제 투여 전후 확인사항, 고위험 항생제 감시, 배양검사와 de-escalation, TDM 및 이상반응을 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "패혈증/감염 의심으로 항생제를 시작할 때",
         "배양검사 채취 여부와 첫 투여 지연 방지를 확인할 때",
@@ -37812,61 +35977,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v76_controlled_sedation_antibiotics.png",
-          "alt": "마약 향정 항생제 총정리 이미지",
-          "caption": "항생제 투여 전후 확인, TDM, stewardship 체크리스트",
-          "search_terms": [
-            "마약 향정 항생제 총정리 이미지",
-            "항생제 투여 전후 확인, TDM, stewardship 체크리스트",
             "항생제",
-            "antibiotic",
-            "stewardship",
-            "감염관리",
-            "배양검사",
-            "culture",
-            "TDM",
-            "trough",
-            "vancomycin",
-            "aminoglycoside",
-            "carbapenem",
-            "colistin",
-            "cephalosporin",
-            "penicillin",
-            "AST",
-            "알레르기",
-            "C. difficile",
-            "de-escalation",
-            "stop date",
-            "항생제 총정리"
+            "AST"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "search_terms": [
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -38305,7 +36437,7 @@ window.ICU_MANUAL_DB = {
         "약물 / 중환자실"
       ],
       "urgency": "high",
-      "summary": "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "인계 전 약물/수액 핵심 확인이 필요할 때",
         "여러 고위험 약물과 수액이 동시에 들어가는 환자를 볼 때",
@@ -38428,61 +36560,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v76_icu_meds_high_alert_overview.png",
-          "alt": "ICU 약품 안전 총정리",
-          "caption": "고위험 약물 안전 전체 요약",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "ICU 약품 안전 총정리",
-            "고위험 약물 안전 전체 요약",
-            "ICU 약물 비교",
-            "약물 수액 비교",
-            "고위험 약물",
-            "마약",
-            "향정",
             "항생제",
-            "수액",
-            "중환자실 간호",
-            "투약 체크리스트",
-            "간호 체크포인트",
-            "약물 인계",
-            "수액 약물 항생제 비교",
-            "중환자실 간호 체크포인트",
-            "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
-            "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
-            "약물 / 중환자실",
-            "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
-            "약물",
-            "체크리스트",
-            "고위험 약물 안전"
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v76_icu_fluid_therapy_summary.png",
-          "alt": "ICU 수액 요법 총정리",
-          "caption": "수액 요법 전체 요약",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "ICU 수액 요법 총정리",
-            "수액 요법 전체 요약",
-            "ICU 약물 비교",
-            "약물 수액 비교",
-            "고위험 약물",
-            "마약",
-            "향정",
-            "항생제",
-            "수액",
-            "중환자실 간호",
-            "투약 체크리스트",
-            "간호 체크포인트",
-            "약물 인계",
-            "수액 약물 항생제 비교",
-            "중환자실 간호 체크포인트",
-            "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
-            "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
-            "약물 / 중환자실",
-            "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
-            "약물",
-            "체크리스트",
-            "고위험 약물 안전"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -38939,8 +37038,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -39101,44 +37199,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "pupil PUPIL 동공 동공사정 동공반사 pupil reflex anisocoria isocoria prompt sluggish fixed pinpoint dilated 동공부등 빛반사 pupil check Pupil 동공 사정 총정리: 크기·반응·대칭 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Motor 사정 EVD·ICP 총정리",
       "prefer_media_first": true
@@ -39579,8 +37640,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -40040,38 +38100,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -40404,38 +38443,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -40923,61 +38941,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v81_crrt_renal_overview.png",
-          "alt": "신장계 CRRT 총정리",
-          "caption": "CRRT 적응증, 회로 감시, 제거량·알람 대응 요약",
-          "search_terms": [
-            "CRRT",
-            "renal",
-            "AKI",
-            "투석",
-            "UF",
-            "TMP",
-            "신장계",
-            "신장계 CRRT 총정리",
-            "CRRT 적응증, 회로 감시, 제거량·알람 대응 요약",
-            "effluent",
-            "filter clotting",
-            "항응고",
-            "지속적 신대체요법",
-            "hemofiltration",
-            "신장계 · CRRT 총정리",
-            "V81_RENAL_CRRT_OVERVIEW",
-            "신장 / CRRT",
-            "급성 신손상 환자에서 CRRT 적응증, 회로 확인, 초여과/제거량, 항응고, 알람 대응을 정리했습니다.",
-            "전해질 이상",
-            "혈역학",
-            "수액요법",
-            "ABGA"
           ]
         }
       ],
@@ -41306,19 +39283,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "X-ray"
+            "Brain CT"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "Brain CT"
+            "Brain CT",
+            "MRI"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
+          "search_terms": [
+            "뇌경색"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
+          "search_terms": [
+            "뇌출혈"
           ]
         }
       ],
@@ -41506,20 +39500,12 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리",
-          "caption": "공급실 기구 총정리",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
           "src": "bin0001.png",
           "alt": "CSR 기구 사진 1",
           "caption": "CSR 기구 사진 1",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -41527,7 +39513,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 2",
           "caption": "CSR 기구 사진 2",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -41535,7 +39522,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 3",
           "caption": "CSR 기구 사진 3",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -41543,7 +39531,16 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 4",
           "caption": "CSR 기구 사진 4",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "Dressing set 준비물",
+          "caption": "Dressing set 준비물",
+          "search_terms": [
+            "Dressing set"
           ]
         }
       ],
@@ -41845,7 +39842,20 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상 Line·Drain·Dressing 검사·검체 호흡기 간호업무",
       "videos": [
@@ -42682,38 +40692,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -43442,38 +41431,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -43717,38 +41685,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -44237,8 +42184,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -45664,24 +43610,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -45714,7 +43643,7 @@ window.ICU_MANUAL_DB = {
         "V80"
       ],
       "urgency": "high",
-      "summary": "패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "의심징후",
         "검사/배양",
@@ -45912,29 +43841,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "X-ray"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Brain CT"
+            "항생제 투여"
           ]
         }
       ],
@@ -46155,38 +44083,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -46869,38 +44776,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -47129,46 +45015,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "filter clotting clotting TMP anticoagulation blood flow 필터 클로팅 회로응고 TMP 상승 CRRT Filter Clotting 예방·대응 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
       "prefer_media_first": true
@@ -47412,46 +45259,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "electrolyte potassium phosphate magnesium calcium acid base ABGA 전해질 K Phos Mg Ca 산염기 CRRT 중 전해질·산염기 모니터링 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
       "exclude_queries": [
@@ -47941,46 +45749,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "CRRT safety hypotension bleeding hypothermia anticoagulation CRRT 안전 저혈압 출혈 체온저하 CRRT 중 저혈압·출혈·체온저하 안전관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
       "prefer_media_first": true
@@ -48008,7 +45777,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "위치 확인",
         "고정/피부",
@@ -48188,19 +45957,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "X-ray"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "Brain CT"
+            "항생제 계열"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "search_terms": [
+            "항생제 투여"
           ]
         }
       ],
@@ -48233,7 +46011,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "시작 전",
         "내약성",
@@ -48427,41 +46205,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -48696,46 +46461,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "GI bleeding hematemesis melena hematochezia coffee ground CBC 위장관 출혈 토혈 흑변 혈변 GI Bleeding 토혈·흑변·혈변 대응 소화기 / 위장관 V82 V82_GI_DIGESTIVE_OVERVIEW",
       "prefer_media_first": true
@@ -49422,38 +47148,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -49489,7 +47194,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "간기능 이상",
         "담도 문제",
@@ -49677,41 +47382,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -50172,38 +47864,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -50425,38 +48096,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -50660,38 +48310,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -50728,7 +48357,7 @@ window.ICU_MANUAL_DB = {
         "V83"
       ],
       "urgency": "high",
-      "summary": "CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검사 전",
         "라인",
@@ -50923,41 +48552,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
+            "항생제 투여"
           ]
         }
       ],
@@ -51177,38 +48793,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -51447,46 +49042,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "preoperative checklist consent NPO site marking operation 수술전 pre op 시술전 동의서 금식 수술·시술 전 체크리스트 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
       "prefer_media_first": true
@@ -51702,46 +49258,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "post procedure bleeding pain vital signs puncture site 시술후 검사후 출혈관찰 시술·검사 후 출혈·통증·합병증 관찰 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
       "prefer_media_first": true
@@ -51947,46 +49464,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "BST blood sugar test POCT glucose meter quality control 혈당 glucose check BST·혈당검사·검사기기 QC 확인 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
       "prefer_media_first": true
@@ -52211,38 +49689,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -52669,45 +50126,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "A-line arterial line flush pressure bag blood sampling A-line 관리 arterial line care 동맥라인 A-line Dressing·Flush·채혈 관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
       "prefer_media_first": true
@@ -53767,44 +51186,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "sterile set aseptic technique disinfection chlorhexidine 소독기구 멸균세트 forceps 소독기구·Sterile set 준비와 오염 예방 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
       "prefer_media_first": true
@@ -56498,38 +53880,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -57062,8 +54423,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -57302,7 +54662,20 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 동영상 업무동영상 교육영상 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
       "videos": [
@@ -59069,42 +56442,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v87_xray_overview.png",
-          "alt": "흉부 X-ray 기본 보기 교육용 이미지",
-          "caption": "폐야, 심장, 종격동, 횡격막, 삽입기구를 한 화면에서 설명",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "xray사진",
-            "흉부xray이미지",
-            "엑스레이그림",
-            "흉부 X-ray 기본 보기 교육용 이미지",
-            "폐야, 심장, 종격동, 횡격막, 삽입기구를 한 화면에서 설명",
-            "xray",
-            "x-ray",
-            "흉부xray",
-            "흉부x-ray",
-            "chest xray",
-            "엑스레이",
-            "영상검사",
-            "흉부 X-ray",
-            "chest x-ray 기본",
-            "흉부 X-ray 기본 보기 표·설명 이미지",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -59218,41 +56590,12 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v87_xray_ett_position.png",
-          "alt": "기관내관 위치 확인 X-ray 교육용 이미지",
-          "caption": "ETT tip과 carina 기준 위치 설명",
+          "src": "selected_manual_images/v111_cpr_ecart_large.png",
+          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
-            "ett사진",
-            "기관내관xray",
-            "튜브위치사진",
-            "기관내관 위치 확인 X-ray 교육용 이미지",
-            "ETT tip과 carina 기준 위치 설명",
-            "ett",
-            "기관내관",
-            "기관삽관",
-            "튜브위치",
-            "xray",
-            "ETT 위치",
-            "기관내관 xray",
-            "intubation xray",
-            "기관내관(ETT) 위치 확인 X-ray 카드",
-            "검사·검체·영상검사 / X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "CPR",
+            "E-CART"
           ]
         }
       ],
@@ -59348,38 +56691,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v87_xray_cvc_position.png",
-          "alt": "중심정맥관 위치 확인 X-ray 교육용 이미지",
-          "caption": "CVC tip 위치와 합병증 확인 포인트 설명",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "cvc사진",
-            "중심정맥관xray",
-            "중심정맥관 위치 확인 X-ray 교육용 이미지",
-            "CVC tip 위치와 합병증 확인 포인트 설명",
-            "cvc",
-            "중심정맥관",
-            "central line",
-            "xray",
-            "CVC 위치",
-            "중심정맥관 xray",
-            "중심정맥관(CVC) 위치 확인 X-ray 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -59476,41 +56822,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v87_xray_ngt_position.png",
-          "alt": "비위관 위관 위치 확인 X-ray 교육용 이미지",
-          "caption": "식도 경로와 위 내 끝 위치 확인 포인트",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "ngt사진",
-            "위관xray",
-            "비위관xray",
-            "비위관 위관 위치 확인 X-ray 교육용 이미지",
-            "식도 경로와 위 내 끝 위치 확인 포인트",
-            "ngt",
-            "l-tube",
-            "위관",
-            "비위관",
-            "xray",
-            "NGT 위치",
-            "L-tube xray",
-            "위관 위치",
-            "비위관/위관(NGT, L-tube) 위치 확인 X-ray 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -60970,36 +58316,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_systematic_checklist.png",
-          "alt": "흉부 X-ray 체계적 확인 체크표",
-          "caption": "A~E 순서로 확인하는 흉부 X-ray 체크리스트",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "xray체크표",
-            "흉부xray체크리스트",
-            "흉부 X-ray 체계적 확인 체크표",
-            "A~E 순서로 확인하는 흉부 X-ray 체크리스트",
-            "xray체크리스트",
-            "흉부xray체크",
-            "systematic xray",
-            "X-ray 체크리스트",
-            "systematic xray review",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61103,38 +58454,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_pneumonia_pattern.png",
-          "alt": "폐렴 X-ray 교육용 이미지",
-          "caption": "폐렴에서 볼 수 있는 침윤/경결 음영 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "폐렴xray이미지",
-            "침윤사진",
-            "폐렴 X-ray 교육용 이미지",
-            "폐렴에서 볼 수 있는 침윤/경결 음영 예시",
-            "폐렴xray",
-            "pneumonia",
-            "침윤음영",
-            "xray 폐렴",
-            "폐렴 xray",
-            "pneumonia xray",
-            "폐렴 X-ray 설명 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61223,37 +58577,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_pneumothorax_pattern.png",
-          "alt": "기흉 X-ray 교육용 이미지",
-          "caption": "pleural line과 말초 혈관음영 소실 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "기흉xray이미지",
-            "pleural line",
-            "기흉 X-ray 교육용 이미지",
-            "pleural line과 말초 혈관음영 소실 예시",
-            "기흉xray",
-            "pneumothorax",
-            "xray 기흉",
-            "기흉 xray",
-            "pneumothorax xray",
-            "기흉 X-ray 설명 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61341,36 +58699,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_pulmonary_edema_pattern.png",
-          "alt": "폐부종 X-ray 교육용 이미지",
-          "caption": "양측성 퍼지는 음영과 심비대 가능성 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "폐부종xray이미지",
-            "폐부종 X-ray 교육용 이미지",
-            "양측성 퍼지는 음영과 심비대 가능성 예시",
-            "폐부종xray",
-            "pulmonary edema",
-            "양측음영",
-            "폐부종 xray",
-            "pulmonary edema xray",
-            "폐부종 X-ray 설명 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61457,37 +58820,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_pleural_effusion_pattern.png",
-          "alt": "흉수 X-ray 교육용 이미지",
-          "caption": "늑횡격각 둔화와 흉수 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "흉수xray이미지",
-            "늑횡격각사진",
-            "흉수 X-ray 교육용 이미지",
-            "늑횡격각 둔화와 흉수 예시",
-            "흉수xray",
-            "pleural effusion",
-            "늑횡격각 둔화",
-            "흉수 xray",
-            "pleural effusion xray",
-            "흉수 X-ray 설명 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61574,36 +58941,41 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_xray_atelectasis_pattern.png",
-          "alt": "무기폐 X-ray 교육용 이미지",
-          "caption": "용적 감소와 음영 증가 예시",
+          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
+          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
-            "무기폐xray이미지",
-            "무기폐 X-ray 교육용 이미지",
-            "용적 감소와 음영 증가 예시",
-            "무기폐xray",
-            "atelectasis",
-            "volume loss",
-            "무기폐 xray",
-            "atelectasis xray",
-            "무기폐 X-ray 설명 카드",
-            "검사·검체·영상검사 / X-ray"
+            "검사",
+            "검체",
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
           "search_terms": [
-            "X-ray"
+            "CBC",
+            "Chemistry",
+            "ABGA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
-            "Brain CT"
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -61692,38 +59064,17 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -62108,41 +59459,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "검사",
-            "검체"
+            "Brain CT"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "Brain CT",
+            "MRI"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "뇌경색"
           ]
         },
         {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
           "search_terms": [
-            "검사",
-            "검체"
+            "뇌출혈"
           ]
         }
       ],
@@ -62245,7 +59591,20 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: L-sling 착용방법 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        }
+      ],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
@@ -62539,8 +59898,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -62646,38 +60004,17 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -63071,8 +60408,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -63225,8 +60561,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -63352,8 +60687,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -63469,8 +60803,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -63629,8 +60962,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -63749,24 +61081,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "E-CART"
           ]
         }
       ],
@@ -63890,8 +61205,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -64026,8 +61340,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -64192,8 +61505,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -64309,8 +61621,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -64503,8 +61814,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -64667,8 +61977,7 @@ window.ICU_MANUAL_DB = {
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
-            "E-CART",
-            "코드블루"
+            "E-CART"
           ]
         }
       ],
@@ -65062,46 +62371,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리",
-          "caption": "검사/검체 총정리",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -66362,7 +63632,6 @@ window.ICU_MANUAL_DB = {
         "CSF",
         "뇌척수액",
         "cell count",
-        "culture",
         "protein",
         "glucose",
         "cytology"
@@ -66493,35 +63762,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
           "src": "selected_manual_images/v100_spinal_tapping_table.png",
           "alt": "Spinal tapping 총정리 표 이미지",
           "caption": "Spinal tapping 준비·목적·진단·간호표",
@@ -66636,165 +63876,21 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        },
+        {
           "src": "selected_manual_images/brace_0014.png",
           "alt": "보조기 원본 이미지 1",
           "caption": "보조기 원본 이미지 1",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0015.png",
-          "alt": "보조기 원본 이미지 2",
-          "caption": "보조기 원본 이미지 2",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0016.png",
-          "alt": "보조기 원본 이미지 3",
-          "caption": "보조기 원본 이미지 3",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0017.png",
-          "alt": "보조기 원본 이미지 4",
-          "caption": "보조기 원본 이미지 4",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0018.png",
-          "alt": "보조기 원본 이미지 5",
-          "caption": "보조기 원본 이미지 5",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0019.png",
-          "alt": "보조기 원본 이미지 6",
-          "caption": "보조기 원본 이미지 6",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001a.png",
-          "alt": "보조기 원본 이미지 7",
-          "caption": "보조기 원본 이미지 7",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001b.png",
-          "alt": "보조기 원본 이미지 8",
-          "caption": "보조기 원본 이미지 8",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001c.png",
-          "alt": "보조기 원본 이미지 9",
-          "caption": "보조기 원본 이미지 9",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001d.png",
-          "alt": "보조기 원본 이미지 10",
-          "caption": "보조기 원본 이미지 10",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001e.png",
-          "alt": "보조기 원본 이미지 11",
-          "caption": "보조기 원본 이미지 11",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_001f.png",
-          "alt": "보조기 원본 이미지 12",
-          "caption": "보조기 원본 이미지 12",
-          "search_terms": [
-            "보조기",
-            "brace",
-            "splint",
-            "L-sling",
-            "보조기 이미지",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/brace_0020.png",
-          "alt": "보조기 원본 이미지 13",
-          "caption": "보조기 원본 이미지 13",
           "search_terms": [
             "보조기",
             "brace",
@@ -66928,35 +64024,6 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
         {
           "src": "selected_manual_images/v102_ns_os_preop_overview.png",
           "alt": "NS OS 수술명 약어 수술전검사 전체 보강 이미지",
@@ -67123,27 +64190,23 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
+          "search_terms": [
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
+          ]
+        },
+        {
           "src": "selected_manual_images/v102_ns_surgery_abbrev_table.png",
           "alt": "NS 수술명 약어 표 이미지",
           "caption": "NS 수술명·약어 표 이미지",
           "search_terms": [
             "NS 수술명 표 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
           ]
         }
       ],
@@ -67196,7 +64259,7 @@ window.ICU_MANUAL_DB = {
         "kyphoplasty"
       ],
       "urgency": "routine",
-      "summary": "정형외과에서 자주 보는 수술명/약어와 수술 후 관찰 포인트를 표 이미지로 보이게 정리했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
       ],
@@ -67318,40 +64381,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "검사",
-            "검체"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_os_surgery_abbrev_table.png",
-          "alt": "OS 수술명 약어 표 이미지",
-          "caption": "OS 수술명·약어 표 이미지",
-          "search_terms": [
-            "OS 수술명 표 이미지"
+            "항생제 투여"
           ]
         }
       ],
@@ -67564,31 +64615,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "수혈부작용",
-            "DIC"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -67834,32 +64869,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
+          "alt": "v102 ns os preop overview.png",
+          "caption": "v102 ns os preop overview.png",
           "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "NS",
+            "OS",
+            "수술명",
+            "약어",
+            "수술 전 검사"
           ]
         },
         {
@@ -68120,41 +65138,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 전 준비와 line 연결 이미지",
-          "caption": "FMC CRRT start/return 체크리스트 이미지",
-          "search_terms": [
-            "FMC CRRT 이미지",
-            "CRRT start 이미지"
           ]
         }
       ],
@@ -68271,40 +65268,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_crrt_alarm_table.png",
-          "alt": "CRRT 알람 대응 표 이미지",
-          "caption": "CRRT 알람 대응 이미지",
-          "search_terms": [
-            "CRRT 알람 이미지"
           ]
         }
       ],
@@ -68768,41 +65745,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_insulin_oha_table.png",
-          "alt": "인슐린 작용시간과 경구 혈당강하제 이미지",
-          "caption": "인슐린/OHA 표 이미지",
-          "search_terms": [
-            "인슐린 표 이미지",
-            "OHA 이미지"
           ]
         }
       ],
@@ -68919,35 +65875,6 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
         {
           "src": "selected_manual_images/v103_dka_protocol_table.png",
           "alt": "DKA protocol I O lab insulin infusion 이미지",
@@ -69110,24 +66037,19 @@ window.ICU_MANUAL_DB = {
         "원내 프로토콜 60 90"
       ],
       "search_terms": [
-        "병동간호팀 업무매뉴얼 60~90page 기반: 약물/수액/마약 + 수혈/혈액 전체 보기",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
         "수액",
         "60~90 page",
         "약물 수액 마약 매뉴얼",
-        "수혈 혈액 매뉴얼",
         "원내 프로토콜 60 90",
         "병동간호팀 업무매뉴얼 60~90",
-        "전체 보기",
-        "약물 수혈 총정리"
+        "전체 보기"
       ],
       "urgency": "routine",
-      "summary": "병동간호팀 업무매뉴얼 60~90page 범위를 바탕으로 약물/수액/마약과 수혈/혈액 파트를 사용자가 항상 이미지로 볼 수 있게 통합 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -69199,39 +66121,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물 수액 마약 수혈 혈액 통합 요약 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 요약 이미지",
-          "search_terms": [
-            "통합 overview"
+            "항생제 투여"
           ]
         }
       ],
@@ -69251,9 +66162,7 @@ window.ICU_MANUAL_DB = {
       ],
       "search_terms": [
         "항생제 AST · 투여 전 확인사항 · 자주 쓰는 항생제 계열",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
@@ -69268,7 +66177,7 @@ window.ICU_MANUAL_DB = {
         "de-escalation"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열, TDM 및 stewardship를 표와 이미지 중심으로 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -69400,39 +66309,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 및 투여 전 확인 이미지",
-          "caption": "항생제 AST/투여 전 확인 이미지",
-          "search_terms": [
-            "항생제 AST 이미지"
+            "항생제 투여"
           ]
         }
       ],
@@ -69470,7 +66368,6 @@ window.ICU_MANUAL_DB = {
         "Lasix",
         "Heparin",
         "fluid",
-        "high alert medication",
         "vasopressor",
         "sedation",
         "analgesia",
@@ -69479,7 +66376,7 @@ window.ICU_MANUAL_DB = {
         "heparin"
       ],
       "urgency": "routine",
-      "summary": "수액 종류와 적응증, 고위험 약물 관리, 승압제/진정제/진통제/항경련제, Lasix, Heparin 사용 시 주의점을 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -69570,29 +66467,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v104_fluid_highrisk_drug_table.png",
-          "alt": "수액 종류와 고위험 약물 표 이미지",
-          "caption": "수액/고위험 약물 이미지",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "수액 고위험 약물 이미지"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v76_icu_fluid_therapy_summary.png",
-          "alt": "기존 수액 치료 요약 이미지",
-          "caption": "기존 수액 요약 이미지 참고",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수액 요약"
+            "항생제 투여"
           ]
         }
       ],
@@ -69613,9 +66509,7 @@ window.ICU_MANUAL_DB = {
       ],
       "search_terms": [
         "마약 보관 · 마약 투여 · 잔량/반환 · 향정 관리 · 투약 오류 보고",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
@@ -69629,11 +66523,10 @@ window.ICU_MANUAL_DB = {
         "controlled drug",
         "향정",
         "count",
-        "waste",
-        "medication error"
+        "waste"
       ],
       "urgency": "routine",
-      "summary": "마약·향정의 보관, 투여, 잔량/반환, 향정 관리와 투약 오류 발생 시 보고를 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -69711,39 +66604,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_narcotic_management_table.png",
-          "alt": "마약 보관 투여 잔량 반환 향정 관리 이미지",
-          "caption": "마약/향정 관리 이미지",
-          "search_terms": [
-            "마약 관리 이미지"
+            "항생제 투여"
           ]
         }
       ],
@@ -69765,31 +66647,16 @@ window.ICU_MANUAL_DB = {
         "수혈 기록"
       ],
       "search_terms": [
-        "수혈 전 확인 · 동의서 · 혈액제제 · RBC/FFP/Platelet 절차 · 전처치 · V/S · 기록",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
         "수액",
-        "수혈 전 확인사항",
-        "수혈 동의서",
-        "혈액제제 종류",
-        "RBC 수혈",
-        "FFP 수혈",
-        "Platelet 수혈",
-        "수혈 기록",
         "transfusion",
-        "RBC",
-        "FFP",
-        "platelet",
-        "crossmatch",
-        "혈액제제",
-        "수혈 절차"
+        "crossmatch"
       ],
       "urgency": "routine",
-      "summary": "수혈 전 확인사항, 동의서, 혈액제제 종류, RBC/FFP/Platelet 절차, 전처치 약물, 활력징후, 수혈기록을 전체 흐름으로 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -69932,42 +66799,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름",
-          "caption": "수혈 전체 흐름",
-          "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제 투여"
           ]
         }
       ],
@@ -69987,29 +66840,20 @@ window.ICU_MANUAL_DB = {
         "Hb PLT PT aPTT"
       ],
       "search_terms": [
-        "수혈 부작용 대처 · DIC 기본 확인 · Coagulation lab · Hb / PLT / PT / aPTT",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
         "수액",
-        "수혈 부작용",
-        "수혈 이상반응",
-        "DIC",
-        "coagulation lab",
-        "Hb PLT PT aPTT",
         "TRALI",
         "TACO",
         "hemolytic reaction",
         "PT",
-        "aPTT",
         "fibrinogen",
         "D-dimer"
       ],
       "urgency": "routine",
-      "summary": "수혈 부작용 증상과 즉시 대응, DIC 기본 확인, coagulation lab, Hb/PLT/PT/aPTT 해석 포인트를 정리한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -70137,39 +66981,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_reaction_table.png",
-          "alt": "수혈 부작용 증상과 대처",
-          "caption": "수혈 부작용 증상과 대처",
-          "search_terms": [
-            "수혈 부작용"
+            "항생제 투여"
           ]
         }
       ],
@@ -70186,21 +67019,17 @@ window.ICU_MANUAL_DB = {
         "약물 혈액 총정리"
       ],
       "search_terms": [
-        "약물/수액/마약 + 수혈/혈액 통합 요약",
-        "약물 / 수액 / 마약 / 수혈 / 혈액 / 원내 프로토콜",
         "병동간호팀 업무매뉴얼 60 90",
-        "수혈",
         "약물",
         "마약",
         "항생제",
         "수액",
-        "약물 수혈 통합",
         "약물 혈액 총정리",
         "혈액",
         "통합"
       ],
       "urgency": "routine",
-      "summary": "약물/수액/마약과 수혈/혈액을 한눈에 연결해 볼 수 있도록 통합 요약한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -70271,39 +67100,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물 수액 마약 수혈 혈액 통합 요약 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 요약",
-          "search_terms": [
-            "약물 수혈 통합"
+            "항생제 투여"
           ]
         }
       ],
@@ -70417,40 +67235,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v105_calc_overview.png",
-          "alt": "약물 계산기 수액속도 gtt 통합 요약 이미지",
-          "caption": "계산기 통합 요약 이미지",
-          "search_terms": [
-            "계산기 overview"
           ]
         }
       ],
@@ -70637,40 +67435,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v105_fluid_rate_table.png",
-          "alt": "수액 주입속도 mL hr 계산표 이미지",
-          "caption": "수액 주입속도 계산표 이미지",
-          "search_terms": [
-            "수액속도 이미지"
           ]
         }
       ],
@@ -71019,6 +67797,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v110_lab_test_types_large.png",
+          "alt": "검사/검체 큰글씨 ② 검사별 용기",
+          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "search_terms": [
+            "CBC",
+            "Chemistry",
+            "ABGA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
+          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "search_terms": [
+            "Culture",
+            "CRE",
+            "VRE"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
@@ -71158,30 +67964,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "영상검사 준비 총정리",
-          "caption": "영상검사 준비 총정리",
+          "src": "selected_manual_images/v111_brain_ct_care_large.png",
+          "alt": "Brain CT 전후 간호 큰글씨",
+          "caption": "Brain CT 전후 간호 큰글씨",
           "search_terms": [
-            "영상검사"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "Brain CT"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "alt": "Brain CT/MRI 질환별 예시",
+          "caption": "Brain CT/MRI 질환별 예시",
           "search_terms": [
             "Brain CT",
             "MRI"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
+          "alt": "뇌경색 교육 이미지",
+          "caption": "뇌경색 교육 이미지",
+          "search_terms": [
+            "뇌경색"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
+          "alt": "뇌출혈 교육 이미지",
+          "caption": "뇌출혈 교육 이미지",
+          "search_terms": [
+            "뇌출혈"
           ]
         }
       ],
@@ -71337,42 +68149,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리",
-          "caption": "Line/Drain/Dressing 총정리",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
           ]
         }
       ],
@@ -71492,43 +68282,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리",
-          "caption": "다제내성균 총정리",
-          "search_terms": [
-            "다제내성균",
-            "CRE",
-            "CPE",
-            "VRE"
           ]
         }
       ],
@@ -71639,20 +68406,12 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리",
-          "caption": "공급실 기구 총정리",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
           "src": "bin0001.png",
           "alt": "CSR 기구 사진 1",
           "caption": "CSR 기구 사진 1",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -71660,7 +68419,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 2",
           "caption": "CSR 기구 사진 2",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -71668,7 +68428,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 3",
           "caption": "CSR 기구 사진 3",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -71676,7 +68437,16 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 4",
           "caption": "CSR 기구 사진 4",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "Dressing set 준비물",
+          "caption": "Dressing set 준비물",
+          "search_terms": [
+            "Dressing set"
           ]
         }
       ],
@@ -71782,42 +68552,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본 이미지",
+          "caption": "Lab bottle 원본 이미지",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
           "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin000a_bmp.png",
-          "alt": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000a_bmp.png",
-          "caption": "병원 전산/처방/원본 매뉴얼 이미지: add260618_bin000a_bmp.png",
-          "search_terms": [
-            "병원 전산",
-            "전산 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -72161,7 +68909,6 @@ window.ICU_MANUAL_DB = {
         "간호기록",
         "처방 확인",
         "처방 액팅",
-        "수혈 기록",
         "I/O 기록",
         "CRRT 기록",
         "Ventilator 기록",
@@ -72171,7 +68918,7 @@ window.ICU_MANUAL_DB = {
         "V106_HOSPITAL_EMR_RAW_IMAGES"
       ],
       "urgency": "routine",
-      "summary": "중환자실에서 자주 쓰는 EMR·기록·처방 확인 포인트를 정리하고, 원본 전산 이미지 카드와 연결한 카드입니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EMR 사용, 간호기록, 특수기록, 처방 액팅의 흐름을 확인할 때"
       ],
@@ -72237,40 +68984,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "수혈",
-            "RBC",
-            "FFP",
-            "Platelet"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "혈액제제"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "수혈부작용",
-            "DIC"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리",
-          "caption": "EMR/기록/처방 총정리",
-          "search_terms": [
-            "EMR",
-            "기록"
+            "항생제 투여"
           ]
         }
       ],
@@ -72318,7 +69053,7 @@ window.ICU_MANUAL_DB = {
         "ICUINFO030"
       ],
       "urgency": "routine",
-      "summary": "중환자실 장비 준비와 연락체계를 한눈에 볼 수 있게 정리한 카드입니다. 인퓨전 펌프와 CSR 물품, 원내 연락체계까지 포함합니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "장비 준비, 물품 위치, 연락체계, CSR 물품을 빠르게 확인할 때"
       ],
@@ -72381,30 +69116,28 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
+          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
           "search_terms": [
-            "CPR",
-            "E-CART",
-            "코드블루"
+            "항생제",
+            "AST"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리",
-          "caption": "물품/장비/전화번호 총정리",
+          "src": "selected_manual_images/v113_antibiotic_family_large.png",
+          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "항생제 계열"
           ]
         },
         {
-          "src": "selected_manual_images/wiltse_internal_phone_numbers.png",
-          "alt": "원내 주요 전화번호",
-          "caption": "원내 주요 전화번호",
+          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
+          "alt": "항생제 큰글씨 ③ 투여 흐름",
+          "caption": "항생제 큰글씨 ③ 투여 흐름",
           "search_terms": [
-            "전화번호"
+            "항생제 투여"
           ]
         }
       ],
@@ -72458,20 +69191,12 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리",
-          "caption": "공급실 기구 총정리",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
           "src": "bin0001.png",
           "alt": "CSR 기구 사진 1",
           "caption": "CSR 기구 사진 1",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -72479,7 +69204,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 2",
           "caption": "CSR 기구 사진 2",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -72487,7 +69213,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 3",
           "caption": "CSR 기구 사진 3",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -72495,7 +69222,16 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 4",
           "caption": "CSR 기구 사진 4",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "Dressing set 준비물",
+          "caption": "Dressing set 준비물",
+          "search_terms": [
+            "Dressing set"
           ]
         }
       ],
@@ -73069,20 +69805,12 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리",
-          "caption": "공급실 기구 총정리",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
           "src": "bin0001.png",
           "alt": "CSR 기구 사진 1",
           "caption": "CSR 기구 사진 1",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -73090,7 +69818,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 2",
           "caption": "CSR 기구 사진 2",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -73098,7 +69827,8 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 3",
           "caption": "CSR 기구 사진 3",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
           ]
         },
         {
@@ -73106,7 +69836,16 @@ window.ICU_MANUAL_DB = {
           "alt": "CSR 기구 사진 4",
           "caption": "CSR 기구 사진 4",
           "search_terms": [
-            "CSR"
+            "CSR",
+            "공급실"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
+          "alt": "Dressing set 준비물",
+          "caption": "Dressing set 준비물",
+          "search_terms": [
+            "Dressing set"
           ]
         }
       ],
@@ -73191,6 +69930,182 @@ window.ICU_MANUAL_DB = {
           ],
           "search_terms": [
             "모바일 검수 기준"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "prefer_media_first": false,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V112_PRECISE_RELEVANCE_RULE",
+      "category": "검색 / 관련성 기준",
+      "title": "검색어별 관련 이미지·표만 보이게 하는 기준",
+      "aliases": [
+        "정확 검색",
+        "연관 이미지",
+        "관련성 기준"
+      ],
+      "search_terms": [
+        "정확 검색",
+        "연관 이미지",
+        "관련성 기준",
+        "검색어 분리"
+      ],
+      "urgency": "routine",
+      "summary": "무조건 이미지가 보이는 방식이 아니라, 검색어와 직접 연관된 카드·이미지·표만 보이도록 정리한 기준입니다.",
+      "indications": [
+        "부서원 배포 전 검색 결과 검수"
+      ],
+      "preparation": [
+        "검색어가 무엇을 의미하는지 파트를 먼저 구분합니다. 예: 수술 전 검사 ≠ 검사/검체"
+      ],
+      "steps": [
+        "NS 수술명 검색 → NS/OS 수술명·약어·수술 전 검사 카드만 보여야 합니다.",
+        "검사 검체 검색 → Lab bottle, 채혈순서, culture 관련 카드만 보여야 합니다.",
+        "Brain CT 검색 → Brain CT/MRI 영상 관련 카드만 보여야 합니다.",
+        "CPR 검색 → 응급/코드블루/E-CART 카드만 보여야 합니다.",
+        "수혈 검색 → 수혈/혈액제제/DIC 카드만 보여야 합니다."
+      ],
+      "warnings": [
+        "'검사'라는 단어가 포함돼도 무조건 검체 이미지를 붙이지 않습니다. 수술 전 검사는 NS/OS 파트로 분리했습니다."
+      ],
+      "charting": [
+        "교육 앱 검색 기준입니다."
+      ],
+      "related": [
+        "V102_NS_OS_PREOP_TABLES_OVERVIEW",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "PROC005",
+        "MENU001",
+        "MENU005"
+      ],
+      "source_refs": [
+        "V112 검색 관련성 정밀 패치"
+      ],
+      "tables": [
+        {
+          "title": "검색어별 이미지 연결 기준",
+          "caption": "검색어와 직접 관련 있는 이미지만 보이게 하는 기준",
+          "headers": [
+            "검색어",
+            "보여야 하는 이미지/표",
+            "보이면 안 되는 이미지"
+          ],
+          "rows": [
+            [
+              "NS 수술명",
+              "NS/OS 수술명·약어·수술 전 검사",
+              "Lab bottle, 채혈순서, culture"
+            ],
+            [
+              "검사 검체",
+              "Lab bottle, 채혈순서, CBC/Chemistry/ABGA, culture",
+              "NS/OS 수술명, Brain CT, 수혈"
+            ],
+            [
+              "Brain CT",
+              "Brain CT 전후 간호, CT/MRI 질환 예시",
+              "채혈순서, Lab bottle"
+            ],
+            [
+              "CPR",
+              "CPR, E-CART, 코드블루, 제세동",
+              "수혈절차, 검체, 공급실"
+            ],
+            [
+              "수혈",
+              "수혈절차, 혈액제제, DIC",
+              "검체 bottle, 공급실 기구"
+            ]
+          ],
+          "search_terms": [
+            "검색어별 이미지 기준"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [],
+      "prefer_media_first": false,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V113_STABLE_UPLOAD_GUIDE",
+      "category": "검색 / 관련성 기준 / 모바일 가독성",
+      "title": "V113 안정본 기준: 표는 표 형태 유지, 이미지는 크게, 검색은 직접 관련만",
+      "aliases": [
+        "V113 안정본",
+        "검색 관련성",
+        "표 형태 유지",
+        "이미지 크게"
+      ],
+      "search_terms": [
+        "V113 안정본",
+        "검색 관련성",
+        "표 형태 유지",
+        "이미지 크게",
+        "업로드 기준"
+      ],
+      "urgency": "routine",
+      "summary": "V113은 V112의 검색 관련성 기준에 항생제 검색 오류 수정과 표/이미지 표시 기준을 정리한 안정본입니다.",
+      "indications": [
+        "부서 공유 전 최종 테스트 기준을 확인할 때"
+      ],
+      "preparation": [
+        "검색어별 직접 관련 카드와 이미지가 나오는지 확인합니다."
+      ],
+      "steps": [
+        "항생제 검색 → 항생제 AST/계열/투여 흐름만 확인",
+        "수혈 검색 → 수혈/혈액제제/DIC만 확인",
+        "검사 검체 검색 → Lab bottle/culture만 확인",
+        "이미지는 크게 표시하고, 표는 표 형태를 유지합니다."
+      ],
+      "warnings": [
+        "V112는 업로드하지 말고 V113 안정본을 업로드하세요."
+      ],
+      "charting": [
+        "교육 앱 검수 기준입니다."
+      ],
+      "related": [
+        "V104_ANTIBIOTICS_AST",
+        "MENU005",
+        "V106_TEST_SPECIMEN_LAB_CULTURE",
+        "V112_PRECISE_RELEVANCE_RULE"
+      ],
+      "source_refs": [
+        "V113 안정본"
+      ],
+      "tables": [
+        {
+          "title": "V113 기준",
+          "caption": "최종 표시 원칙",
+          "headers": [
+            "항목",
+            "적용 방식",
+            "이유"
+          ],
+          "rows": [
+            [
+              "검색",
+              "검색어와 직접 관련된 카드/이미지만 표시",
+              "무관 이미지 혼입 방지"
+            ],
+            [
+              "표",
+              "표 형태 유지 + 글씨 확대 + 모바일 가로 스크롤",
+              "표 구조가 깨지지 않음"
+            ],
+            [
+              "이미지/사진",
+              "전체폭 크게 표시 + 누르면 원본 열기",
+              "교육용 사진 확인 가능"
+            ]
+          ],
+          "search_terms": [
+            "V113 기준"
           ],
           "include_rows_in_search": true
         }
@@ -74744,5 +71659,26 @@ window.ICU_MANUAL_DB = {
       "v111_transfusion_reaction_dic_large.png"
     ],
     "total_items": 433
+  },
+  "v112_update": {
+    "summary": "NS 수술명 검색에 검사/검체 표가 뜨는 문제 등 '검사' 단어 오매칭을 정리. 검색어와 직접 관련된 이미지/표만 표시하도록 카드별 search_terms/images를 정밀 분리.",
+    "changed_cards": 209,
+    "total_items": 434
+  },
+  "v113_update": {
+    "summary": "V112는 업로드 보류. V113에서 검색 직접 관련성 유지, 항생제 검색 시 수혈표 노출 제거, 표는 표 형태 유지, 이미지는 크게 표시하도록 정리.",
+    "changed_cards": 101,
+    "added_images": [
+      "v113_antibiotic_ast_check_large.png",
+      "v113_antibiotic_family_large.png",
+      "v113_antibiotic_admin_flow_large.png"
+    ],
+    "total_items": 435
+  },
+  "v114_update": {
+    "summary": "부서 교육용 안정화 검수본. 총 435개 카드 유지. 검색 결과는 최대 6개 중심으로 줄이고, 항생제/수혈/CPR/Brain CT/NS수술명/검사검체/공급실/CRRT 등 주요 주제는 직접 관련 카드만 통과하도록 검색 gate 적용.",
+    "total_items": 435,
+    "max_search_results": 6,
+    "min_score_rule": "top score의 58% 이상 또는 35점 이상"
   }
 };

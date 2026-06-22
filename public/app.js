@@ -177,38 +177,42 @@ function renderSourceRefs(card) {
 function renderTables(tables) {
   if (!Array.isArray(tables) || tables.length === 0) return "";
   return tables.map(t => `
-    <section class="detail-section table-section v111-readable-tables" style="font-size:18px;">
-      <h4 style="font-size:1.25rem;line-height:1.4;margin-bottom:12px;">참고 표: ${esc(t.title || "표")}</h4>
-      ${t.caption ? `<p style="font-size:1.05rem;line-height:1.55;margin:0 0 14px 0;color:#475569;">${esc(t.caption)}</p>` : ""}
-      <div class="v111-table-card-list" style="display:flex;flex-direction:column;gap:14px;">
-        ${(t.rows || []).map((row, idx) => `
-          <div class="v111-table-row-card" style="border:1px solid #cfe0f5;border-radius:16px;background:#fff;padding:14px 16px;box-shadow:0 1px 2px rgba(15,23,42,.06);">
-            <div style="font-weight:800;color:#0f3b73;font-size:1.08rem;margin-bottom:8px;">${idx + 1}</div>
-            ${(row || []).map((cell, i) => `
-              <div style="display:block;border-top:${i === 0 ? "0" : "1px solid #edf2f7"};padding:${i === 0 ? "0 0 8px 0" : "10px 0 8px 0"};">
-                <div style="font-weight:800;color:#174ea6;font-size:1.02rem;line-height:1.35;margin-bottom:4px;">${esc((t.headers || [])[i] || `항목 ${i + 1}`)}</div>
-                <div style="font-size:1.08rem;line-height:1.65;color:#111827;white-space:pre-wrap;">${esc(cell)}</div>
-              </div>
+    <section class="detail-section table-section v113-readable-tables">
+      <h4 style="font-size:1.22rem;line-height:1.4;margin-bottom:10px;">참고 표: ${esc(t.title || "표")}</h4>
+      ${t.caption ? `<p style="font-size:1rem;line-height:1.5;margin:0 0 10px 0;color:#475569;">${esc(t.caption)}</p>` : ""}
+      <div class="v113-table-scroll" style="overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;border:1px solid #cfe0f5;border-radius:14px;background:#fff;">
+        <table style="width:100%;min-width:680px;border-collapse:collapse;font-size:1.02rem;line-height:1.45;">
+          <thead>
+            <tr>
+              ${(t.headers || []).map(h => `<th style="text-align:left;background:#e8f2ff;color:#0f3b73;font-weight:800;padding:12px 14px;border:1px solid #cfe0f5;white-space:nowrap;">${esc(h)}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            ${(t.rows || []).map(row => `
+              <tr>
+                ${(row || []).map(cell => `<td style="padding:12px 14px;border:1px solid #dbe7f6;vertical-align:top;color:#111827;white-space:pre-line;">${esc(cell)}</td>`).join("")}
+              </tr>
             `).join("")}
-          </div>
-        `).join("")}
+          </tbody>
+        </table>
       </div>
+      <p style="font-size:.9rem;color:#64748b;margin:8px 0 0 0;">휴대폰에서 표가 좁으면 좌우로 밀어서 보세요.</p>
     </section>
   `).join("");
 }
 
 function renderImages(images) {
   if (!Array.isArray(images) || images.length === 0) return "";
-  return `<section class="detail-section image-section v111-readable-images">
-    <h4 style="font-size:1.25rem;line-height:1.4;margin-bottom:10px;">참고 이미지 / 사진</h4>
-    <p style="font-size:1.02rem;line-height:1.5;color:#475569;margin:0 0 12px 0;">이미지를 누르면 원본 크기로 열립니다. 휴대폰에서는 원본 화면에서 확대해서 보세요.</p>
-    <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:22px;width:100%;">
+  return `<section class="detail-section image-section v113-readable-images">
+    <h4 style="font-size:1.22rem;line-height:1.4;margin-bottom:10px;">참고 이미지 / 사진</h4>
+    <p style="font-size:.98rem;line-height:1.5;color:#475569;margin:0 0 12px 0;">이미지를 누르면 원본 크기로 열립니다. 휴대폰에서는 원본 화면에서 확대해서 보세요.</p>
+    <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:18px;width:100%;">
       ${images.map(img => `
-        <figure style="margin:0;border:1px solid #cfe0f5;border-radius:18px;padding:14px;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.08);width:100%;box-sizing:border-box;">
+        <figure style="margin:0;border:1px solid #cfe0f5;border-radius:18px;padding:12px;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.08);width:100%;box-sizing:border-box;">
           <a href="${esc(img.src)}" target="_blank" rel="noopener noreferrer" style="display:block;width:100%;">
             <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" style="display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;border-radius:12px;background:#f8fafc;" />
           </a>
-          ${img.caption ? `<figcaption style="font-size:1.08rem;line-height:1.5;margin-top:10px;color:#111827;font-weight:600;">${esc(img.caption)}</figcaption>` : ""}
+          ${img.caption ? `<figcaption style="font-size:1rem;line-height:1.45;margin-top:9px;color:#111827;font-weight:600;">${esc(img.caption)}</figcaption>` : ""}
         </figure>
       `).join("")}
     </div>
@@ -487,6 +491,30 @@ function cardSearchText(card) {
 function scoreCard(query, card) {
   const q = normalizeText(query);
   if (!q || card.search_hidden) return 0;
+
+  const topicSeed = normalizeText([
+    card.id || "",
+    card.title || "",
+    (card.aliases || []).join(" "),
+    (card.search_terms || []).join(" "),
+    card.summary || "",
+    card.search_index || ""
+  ].join(" "));
+
+  const topicRules = [
+    { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
+    { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
+    { q: /cpr|코드블루|e-cart|ecart|응급상황|응급간호|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure|emergency/ },
+    { q: /brain ct|brain mri|브레인|뇌ct|뇌 ct|뇌mri|뇌 mri/, keep: /brain|ct|mri|브레인|뇌|신경|영상/ },
+    { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
+    { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
+    { q: /공급실|csr|소독기구|기구 사진|dressing\/suture/, keep: /공급실|csr|소독기구|기구 사진|dressing\/suture|sterile/ },
+    { q: /crrt|fmc|신장|dka|bst|인슐린|저혈당|고혈당/, keep: /crrt|fmc|신장|renal|bst|dka|인슐린|저혈당|고혈당|dm/ }
+  ];
+  for (const rule of topicRules) {
+    if (rule.q.test(q) && !rule.keep.test(topicSeed)) return 0;
+  }
+
   const excluded = (card.exclude_queries || []).map(normalizeText).filter(Boolean);
   if (excluded.some(x => q.includes(x) || x.includes(q))) return 0;
   const rawTerms = q.split(/[, \n\t/&·]+/).filter(t => t.length >= 2);
@@ -516,7 +544,7 @@ function scoreCard(query, card) {
     else if (st.includes(q) || q.includes(st)) score += 85;
   }
 
-  if (category.includes(q) || originalCategory.includes(q)) score += 45;
+  if (category === q || originalCategory === q) score += 18;
   if (summary.includes(q)) score += 18;
 
   let directHits = 0;
@@ -571,7 +599,7 @@ function scoreCard(query, card) {
   return Math.max(0, score);
 }
 
-function localSearch(query, limit = 40) {
+function localSearch(query, limit = 6) {
   const q = normalizeText(query);
   if (!q) return allItems.slice(0, 12);
   const ranked = allItems
@@ -581,7 +609,7 @@ function localSearch(query, limit = 40) {
 
   if (!ranked.length) return [];
   const top = ranked[0].s;
-  const minScore = Math.max(12, top * 0.32);
+  const minScore = Math.max(35, top * 0.58);
   return ranked.filter(x => x.s >= minScore).slice(0, limit).map(x => x.card);
 }
 
@@ -699,7 +727,7 @@ async function searchCards() {
     if (!res.ok) throw new Error("서버 검색 실패");
 
     const data = await res.json();
-    const cards = data.cards || localSearch(query, 12);
+    const cards = data.cards || localSearch(query, 6);
     renderCards(cards);
     $("cardsHeading").textContent = "검색 결과 카드";
     $("status").classList.remove("hidden");
@@ -707,7 +735,7 @@ async function searchCards() {
     const imageCards = cards.filter(c => (c.images || []).length).length;
     $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } catch (err) {
-    const cards = localSearch(query, 12);
+    const cards = localSearch(query, 6);
     renderCards(cards);
     $("cardsHeading").textContent = "검색 결과 카드";
     $("status").classList.remove("hidden");
@@ -756,7 +784,7 @@ async function askAI() {
       el.addEventListener("click", () => openCard(el.dataset.sourceId));
     });
   } catch (err) {
-    const cards = localSearch(query, 12);
+    const cards = localSearch(query, 6);
     $("answer").textContent = makeLocalManualAnswer(query, cards);
     $("sources").innerHTML = cards.slice(0, 6).map(s =>
       `<span class="source clickable" data-source-id="${esc(s.id)}">${esc(s.id)} · ${esc(s.title)}</span>`
