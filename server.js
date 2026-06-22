@@ -524,7 +524,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.09.0-v109-search-relevance-clean",
+    version: "2.11.0-v111-mobile-relevance-readability",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -713,5 +713,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v109 search relevance clean running on port ${port}`);
+  console.log(`ICU AI Manual v111 mobile relevance readability running on port ${port}`);
 });
