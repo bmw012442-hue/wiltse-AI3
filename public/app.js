@@ -66,9 +66,9 @@ function renderMiniTable(card) {
   return `<div class="result-table-preview" aria-label="참고 표 미리보기">
     <div class="preview-title">참고 표 미리보기: ${esc(t.title || "표")}</div>
     <div class="table-wrap mini">
-      <table>
-        <thead><tr>${headers.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
-        <tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+      <table style="font-size:1.05rem;line-height:1.55;">
+        <thead><tr>${headers.map(h => `<th style="font-size:1.05rem;padding:12px 14px;">${esc(h)}</th>`).join("")}</tr></thead>
+        <tbody>${rows.map(row => `<tr>${row.map(cell => `<td style="font-size:1.02rem;padding:12px 14px;">${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
       </table>
     </div>
     <div class="preview-more">전체 표는 카드를 누르면 확인됩니다.</div>
@@ -180,12 +180,12 @@ function renderTables(tables) {
     <section class="detail-section table-section">
       <h4>참고 표: ${esc(t.title || "표")}</h4>
       <div class="table-wrap">
-        <table>
+        <table style="font-size:1.05rem;line-height:1.55;">
           <thead>
-            <tr>${(t.headers || []).map(h => `<th>${esc(h)}</th>`).join("")}</tr>
+            <tr>${(t.headers || []).map(h => `<th style="font-size:1.05rem;padding:12px 14px;">${esc(h)}</th>`).join("")}</tr>
           </thead>
           <tbody>
-            ${(t.rows || []).map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}
+            ${(t.rows || []).map(row => `<tr>${row.map(cell => `<td style="font-size:1.02rem;padding:12px 14px;">${esc(cell)}</td>`).join("")}</tr>`).join("")}
           </tbody>
         </table>
       </div>
@@ -195,13 +195,13 @@ function renderTables(tables) {
 
 function renderImages(images) {
   if (!Array.isArray(images) || images.length === 0) return "";
-  return `<section class="detail-section image-section">
+  return `<section class="detail-section image-section v109-large-images">
     <h4>참고 이미지 / 사진</h4>
-    <div class="image-grid">
+    <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:18px;">
       ${images.map(img => `
-        <figure>
-          <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" />
-          ${img.caption ? `<figcaption>${esc(img.caption)}</figcaption>` : ""}
+        <figure style="margin:0;border:1px solid #cfe0f5;border-radius:16px;padding:14px;background:#fff;">
+          <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" style="display:block;width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:10px;" />
+          ${img.caption ? `<figcaption style="font-size:1rem;line-height:1.45;margin-top:8px;color:#334155;">${esc(img.caption)}</figcaption>` : ""}
         </figure>
       `).join("")}
     </div>
@@ -560,9 +560,6 @@ function scoreCard(query, card) {
 
 
   if ((card.id || "").startsWith("V106_") && /검사|검체|lab|bottle|채혈|culture|cbc|chemistry|coag|abga|cre|cpe|vre|rat|tip|x-ray|xray|ct|mri|sono|tfca|angio|내시경|line|drain|dressing|foley|l-tube|pcd|evd|sdd|욕창|장루|다제내성|mdro|공급실|csr|전산|emr|카테터|catheter/.test(q)) score += 160;
-
-
-  if ((card?.id || item?.id || "") === "V108_IMAGE_SEARCH_HUB" && /사진|이미지|그림|표|원본|메뉴얼|매뉴얼|전산|교육/.test(q)) score += 220;
 
   return Math.max(0, score);
 }

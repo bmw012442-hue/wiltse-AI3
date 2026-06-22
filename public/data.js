@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.08.0-v108-image-search-boost",
+    "version": "2.09.0-v109-search-relevance-clean",
     "language": "ko",
-    "source": "V107 기반 + 부서 공유 전 이미지/사진/표 검색 노출 보강",
+    "source": "V107 기반 + V108 과다 이미지 노출 정리 + 관련 이미지/표만 노출 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -101,17 +101,7 @@ window.ICU_MANUAL_DB = {
         "loading",
         "아그라스타트 용량",
         "tPA/PCI 후 아그라스타트주 사용법과 권장용량",
-        "약물 / 순환기",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 순환기"
       ],
       "urgency": "high",
       "summary": "아그라스타트주(티로피반) 사용 시 희석 방법, PCI/PTCA 또는 급성관상증후군 관련 권장용량, 체중별 주입속도표를 한 번에 확인하는 카드입니다.",
@@ -495,94 +485,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v67_aggrastat_dosing_original.jpg",
-          "alt": "아그라스타트주 원본 권장용량표",
-          "caption": "아그라스타트주 원본 권장용량표",
-          "search_terms": [
-            "아그라스타트주 원본 권장용량표",
-            "아그라스타트",
-            "아그라스타트주",
-            "Aggrastat",
-            "tirofiban",
-            "티로피반",
-            "tpa",
-            "TPA",
-            "PTCA",
-            "PCI",
-            "NSTEMI",
-            "ACS",
-            "급성관상증후군",
-            "관상동맥",
-            "혈전",
-            "혈소판",
-            "0.4mcg/kg/min",
-            "0.10mcg/kg/min",
-            "0.15mcg/kg/min",
-            "25mcg/kg",
-            "권장용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v67_aggrastat_product_image.png",
-          "alt": "아그라스타트주 제품 이미지",
-          "caption": "아그라스타트주 제품 이미지",
-          "search_terms": [
-            "아그라스타트주 제품 이미지",
-            "아그라스타트",
-            "아그라스타트주",
-            "Aggrastat",
-            "tirofiban",
-            "티로피반",
-            "tpa",
-            "TPA",
-            "PTCA",
-            "PCI",
-            "NSTEMI",
-            "ACS",
-            "급성관상증후군",
-            "관상동맥",
-            "혈전",
-            "혈소판",
-            "0.4mcg/kg/min",
-            "0.10mcg/kg/min",
-            "0.15mcg/kg/min",
-            "25mcg/kg",
-            "권장용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_calc_overview.png",
+          "alt": "약물 계산기/수액속도/gtt 요약",
+          "caption": "약물 계산기/수액속도/gtt 요약",
+          "search_terms": [
+            "약물계산"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_gtt_min_table.png",
+          "alt": "gtt/min 계산표",
+          "caption": "gtt/min 계산표",
+          "search_terms": [
+            "gtt"
           ]
         }
       ],
@@ -659,17 +590,7 @@ window.ICU_MANUAL_DB = {
         "헤파린 증량",
         "헤파린 감량",
         "헤파린 요법 노모그램(aPTT 기준 조절표)",
-        "약물 / 항응고 / 순환기",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 항응고 / 순환기"
       ],
       "urgency": "high",
       "summary": "한림헤파린나트륨주 25,000IU/5mL를 5DW 500mL에 혼합한 헤파린 요법에서 초기 주입속도와 aPTT 결과별 증량·감량 기준을 확인하는 카드입니다.",
@@ -1044,38 +965,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -1142,43 +1044,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/항부정맥",
       "search_terms": [
         "Amiodarone / Cordarone",
@@ -1196,21 +1062,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Amiodarone / Cordarone 약물 / 수액 / 마약 약물/Mix/항부정맥 코다론 Cordarone Amiodarone 아미오다론 VT VF AF loading maintenance 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Amiodarone / Cordarone 약물 / 수액 / 마약 약물/Mix/항부정맥 코다론 Cordarone Amiodarone 아미오다론 VT VF AF loading maintenance 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG002",
@@ -1267,30 +1122,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -1307,17 +1152,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Herben / Diltiazem 약물 / 수액 / 마약 약물/Mix/항부정맥 헤르벤 Herben Diltiazem 딜티아젬 rate control 약물 수액 마약 v8_final_reviewed",
@@ -1376,35 +1211,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/심혈관",
       "search_terms": [
         "Nitroglycerine / NTG",
@@ -1419,21 +1226,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Nitroglycerine / NTG 약물 / 수액 / 마약 약물/Mix/심혈관 니트로 Nitroglycerine 니트로링구알 NTG 흉통 BP control 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Nitroglycerine / NTG 약물 / 수액 / 마약 약물/Mix/심혈관 니트로 Nitroglycerine 니트로링구알 NTG 흉통 BP control 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG004",
@@ -1500,43 +1296,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/승압제",
       "search_terms": [
         "Norepinephrine / 노르핀",
@@ -1556,21 +1316,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Norepinephrine / 노르핀 약물 / 수액 / 마약 약물/Mix/승압제 노르핀 Norepinephrine NE norepi 승압제 저혈압 shock 노르에피 levophed norepi mix 승압제 mix 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Norepinephrine / 노르핀 약물 / 수액 / 마약 약물/Mix/승압제 노르핀 Norepinephrine NE norepi 승압제 저혈압 shock 노르에피 levophed norepi mix 승압제 mix 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG005",
@@ -1625,43 +1374,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/응급",
       "search_terms": [
         "Epinephrine / 에피네프린",
@@ -1674,21 +1387,10 @@ window.ICU_MANUAL_DB = {
         "심정지",
         "code blue",
         "에피네프린",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Epinephrine / 에피네프린 응급상황 약물/Mix/응급 에피 Epinephrine Epi CPR 심정지 code blue 에피네프린 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Epinephrine / 에피네프린 응급상황 약물/Mix/응급 에피 Epinephrine Epi CPR 심정지 code blue 에피네프린 v8_final_reviewed"
     },
     {
       "id": "DRUG006",
@@ -1741,43 +1443,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/승압제",
       "search_terms": [
         "Vasopressin / 바소프레신",
@@ -1791,21 +1457,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Vasopressin / 바소프레신 약물 / 수액 / 마약 약물/Mix/승압제 바소 Vasopressin 바소프레신 승압제 shock 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Vasopressin / 바소프레신 약물 / 수액 / 마약 약물/Mix/승압제 바소 Vasopressin 바소프레신 승압제 shock 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG007",
@@ -1860,43 +1515,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/진정",
       "search_terms": [
         "Remifentanil / Ultian",
@@ -1911,21 +1530,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Remifentanil / Ultian 약물 / 수액 / 마약 약물/Mix/진정 울티안 Ultian Remifentanil 진정 sedation vent 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Remifentanil / Ultian 약물 / 수액 / 마약 약물/Mix/진정 울티안 Ultian Remifentanil 진정 sedation vent 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG008",
@@ -1977,35 +1585,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/진정",
       "search_terms": [
         "Midazolam / 미다컴",
@@ -2018,21 +1598,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Midazolam / 미다컴 약물 / 수액 / 마약 약물/Mix/진정 미다컴 Midazolam 미다졸람 진정 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Midazolam / 미다컴 약물 / 수액 / 마약 약물/Mix/진정 미다컴 Midazolam 미다졸람 진정 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG009",
@@ -2084,35 +1653,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/진정",
       "search_terms": [
         "Dexmedetomidine / 덱스메딘",
@@ -2125,21 +1666,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dexmedetomidine / 덱스메딘 약물 / 수액 / 마약 약물/Mix/진정 덱스 덱스메딘 Dexmedetomidine 진정 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Dexmedetomidine / 덱스메딘 약물 / 수액 / 마약 약물/Mix/진정 덱스 덱스메딘 Dexmedetomidine 진정 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG010",
@@ -2192,35 +1722,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/진정",
       "search_terms": [
         "Propofol / 프레조폴",
@@ -2234,21 +1736,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Propofol / 프레조폴 약물 / 수액 / 마약 약물/Mix/진정 프로포폴 프리폴 Propofol 프레조폴 진정 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Propofol / 프레조폴 약물 / 수액 / 마약 약물/Mix/진정 프로포폴 프리폴 Propofol 프레조폴 진정 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG011",
@@ -2303,43 +1794,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/근이완",
       "search_terms": [
         "Rocuronium / 로큐니움",
@@ -2353,21 +1808,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Rocuronium / 로큐니움 약물 / 수액 / 마약 약물/Mix/근이완 로큐니움 Rocuronium 근이완제 intubation 삽관 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Rocuronium / 로큐니움 약물 / 수액 / 마약 약물/Mix/근이완 로큐니움 Rocuronium 근이완제 intubation 삽관 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG012",
@@ -2421,43 +1865,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/BP control",
       "search_terms": [
         "Nicardipine / Perdipine",
@@ -2471,21 +1879,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Nicardipine / Perdipine 약물 / 수액 / 마약 약물/Mix/BP control 페르디핀 Nicardipine Perdipine BP control 혈압 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Nicardipine / Perdipine 약물 / 수액 / 마약 약물/Mix/BP control 페르디핀 Nicardipine Perdipine BP control 혈압 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG013",
@@ -2540,8 +1937,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -2549,18 +1946,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -2576,17 +1965,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Labetalol / 라베신 약물 / 수액 / 마약 약물/Mix/BP control 라베신 Labetalol 혈압 BP control 약물 수액 마약 v8_final_reviewed",
@@ -2657,30 +2036,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "FMC CRRT"
           ]
         }
       ],
@@ -2701,17 +2070,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Regular Insulin continuous / RI 약물 / 수액 / 마약 약물/Mix/Insulin RI 휴물린 Humulin-R Insulin 인슐린 DKA BST Regular continuous 약물 수액 마약 v8_final_reviewed",
@@ -2768,35 +2127,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/진통",
       "search_terms": [
         "Morphine / 몰핀",
@@ -2809,21 +2140,10 @@ window.ICU_MANUAL_DB = {
         "마약",
         "약물",
         "수액",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Morphine / 몰핀 약물 / 수액 / 마약 약물/Mix/진통 몰핀 Morphine 염몰핀 진통 마약 약물 수액 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Morphine / 몰핀 약물 / 수액 / 마약 약물/Mix/진통 몰핀 Morphine 염몰핀 진통 마약 약물 수액 v8_final_reviewed"
     },
     {
       "id": "DRUG016",
@@ -2875,35 +2195,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/응급",
       "search_terms": [
         "Bivon / Sodium bicarbonate",
@@ -2915,21 +2207,10 @@ window.ICU_MANUAL_DB = {
         "탄산수소나트륨",
         "NaHCO3",
         "Sodium",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Bivon / Sodium bicarbonate 응급상황 약물/Mix/응급 비본 Bivon Bicarbonate 탄산수소나트륨 NaHCO3 Sodium v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Bivon / Sodium bicarbonate 응급상황 약물/Mix/응급 비본 Bivon Bicarbonate 탄산수소나트륨 NaHCO3 Sodium v8_final_reviewed"
     },
     {
       "id": "DRUG017",
@@ -2982,43 +2263,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/강심제",
       "search_terms": [
         "Dobutamine / 도부타민",
@@ -3032,21 +2277,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dobutamine / 도부타민 약물 / 수액 / 마약 약물/Mix/강심제 도부 Dobutamine 도부타민 강심제 심박출 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Dobutamine / 도부타민 약물 / 수액 / 마약 약물/Mix/강심제 도부 Dobutamine 도부타민 강심제 심박출 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG018",
@@ -3097,43 +2331,7 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/Mix/승압제",
       "search_terms": [
         "Dopamine / 도파민",
@@ -3145,21 +2343,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dopamine / 도파민 약물 / 수액 / 마약 약물/Mix/승압제 도파민 Dopamine 승압제 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "Dopamine / 도파민 약물 / 수액 / 마약 약물/Mix/승압제 도파민 Dopamine 승압제 약물 수액 마약 v8_final_reviewed"
     },
     {
       "id": "DRUG019",
@@ -3223,32 +2410,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -3269,17 +2443,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Electrolyte replacement / K·P·Mg 약물 / 수액 / 마약 약물/전해질 KCL Phosten Mg 전해질 K replacement P replacement Mg replacement Electrolyte replacement 약물 수액 마약 v8_final_reviewed",
@@ -3351,43 +2515,7 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "투약/AST",
       "search_terms": [
         "AST 시행 항생제",
@@ -3402,17 +2530,7 @@ window.ICU_MANUAL_DB = {
         "트리악손",
         "맥스핌",
         "시행",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "AST 시행 항생제 투약 투약/AST AST 항생제 타박탐 유박탐 세파졸린 타짐 트리악손 맥스핌 시행 v8_final_reviewed AST 미시행 항생제 AST 표준화 희석/판독",
@@ -3478,43 +2596,7 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "투약/AST",
       "search_terms": [
         "AST 미시행 항생제",
@@ -3529,17 +2611,7 @@ window.ICU_MANUAL_DB = {
         "AST",
         "미시행",
         "항생제",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "AST 미시행 항생제 투약 투약/AST AST 안함 aminoglycoside Vancomycin Carbapenem Quinolone 콜리스틴 AST 미시행 항생제 v8_final_reviewed AST 시행 항생제 AST 표준화 희석/판독",
@@ -3612,8 +2684,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -3621,18 +2693,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -3650,17 +2714,7 @@ window.ICU_MANUAL_DB = {
         "표준화",
         "희석",
         "판독",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "AST 표준화 희석/판독 투약 투약/AST AST 피내주사 ID 항생제 반응검사 skin test 1:5000 표준화 희석 판독 v8_final_reviewed AST 시행 항생제 AST 미시행 항생제",
@@ -3724,26 +2778,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/Day",
       "search_terms": [
         "Day routine / 데이 업무",
@@ -3756,21 +2791,10 @@ window.ICU_MANUAL_DB = {
         "마약처방전",
         "업무",
         "v8_final_reviewed",
-        "routine",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "routine"
       ],
       "standard_sections_ready": true,
-      "search_index": "Day routine / 데이 업무 Routine Routine/Day Day 데이 회진 처방 마약처방전 업무 v8_final_reviewed routine Evening routine / 이브닝 업무 Night routine / 나이트 업무 상세",
-      "prefer_media_first": true
+      "search_index": "Day routine / 데이 업무 Routine Routine/Day Day 데이 회진 처방 마약처방전 업무 v8_final_reviewed routine Evening routine / 이브닝 업무 Night routine / 나이트 업무 상세"
     },
     {
       "id": "ROUTINE002",
@@ -3824,26 +2848,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/Evening",
       "search_terms": [
         "Evening routine / 이브닝 업무",
@@ -3855,21 +2860,10 @@ window.ICU_MANUAL_DB = {
         "Cadex",
         "업무",
         "v8_final_reviewed",
-        "routine",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "routine"
       ],
       "standard_sections_ready": true,
-      "search_index": "Evening routine / 이브닝 업무 Routine Routine/Evening Evening 이브닝 익일처방 Cadex 업무 v8_final_reviewed routine Day routine / 데이 업무 Night routine / 나이트 업무 상세",
-      "prefer_media_first": true
+      "search_index": "Evening routine / 이브닝 업무 Routine Routine/Evening Evening 이브닝 익일처방 Cadex 업무 v8_final_reviewed routine Day routine / 데이 업무 Night routine / 나이트 업무 상세"
     },
     {
       "id": "ROUTINE003",
@@ -3947,21 +2941,37 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "물품"
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -3990,17 +3000,7 @@ window.ICU_MANUAL_DB = {
         "업무",
         "상세",
         "v11_source_enhanced",
-        "routine",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "routine"
       ],
       "standard_sections_ready": true,
       "search_index": "Night routine / 나이트 업무 상세 Routine Routine/Night Night 나이트 initial 환자분류 화재분류 식이 액팅 lab 제세동기 BST 정도관리 야간업무 나이트업무 밤번 N duty 자정이후 채혈접수업무 식이입력 업무 상세 v11_source_enhanced routine Day routine / 데이 업무 Evening routine / 이브닝 업무",
@@ -4060,26 +3060,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/스케줄링",
       "search_terms": [
         "간호액팅 스케줄링 기준",
@@ -4093,21 +3074,10 @@ window.ICU_MANUAL_DB = {
         "QID",
         "네뷸",
         "기준",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "간호액팅 스케줄링 기준 Routine Routine/스케줄링 스케줄링 간호액팅 QD BID TID QID 네뷸 기준 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "간호액팅 스케줄링 기준 Routine Routine/스케줄링 스케줄링 간호액팅 QD BID TID QID 네뷸 기준 v8_final_reviewed"
     },
     {
       "id": "ROUTINE005",
@@ -4174,47 +3144,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0014.png",
-          "alt": "신경계 사정 가이드",
-          "caption": "신경계 사정 가이드",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "신경계 사정 가이드",
-            "Initial assessment / ICU 라운딩",
-            "Routine",
-            "Routine/Initial",
-            "initial",
-            "라운딩",
-            "GCS",
-            "Motor",
-            "LOC",
-            "Line",
-            "Foley",
-            "Vent",
-            "C-line",
-            "A-line",
-            "assessment",
-            "ICU",
-            "v8_final_reviewed",
-            "ROUTINE005",
-            "근무 시작 시 환자 상태 확인."
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
           ]
         }
       ],
@@ -4236,17 +3178,7 @@ window.ICU_MANUAL_DB = {
         "assessment",
         "ICU",
         "v8_final_reviewed",
-        "신경계 사정 가이드",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 사정 가이드"
       ],
       "standard_sections_ready": true,
       "search_index": "Initial assessment / ICU 라운딩 Routine Routine/Initial initial 라운딩 GCS Motor LOC Line Foley Vent C-line A-line assessment ICU v8_final_reviewed 신경계 사정 가이드",
@@ -4308,35 +3240,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/I/O",
       "search_terms": [
         "I/O 입력과 마감",
@@ -4350,17 +3254,7 @@ window.ICU_MANUAL_DB = {
         "infusion volume",
         "입력과",
         "마감",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "I/O 입력과 마감 Routine Routine/I/O I/O input output 인풋아웃풋 배액 Foley infusion volume 입력과 마감 v8_final_reviewed",
@@ -4370,8 +3264,7 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ett",
         "기도삽관"
-      ],
-      "prefer_media_first": true
+      ]
     },
     {
       "id": "ROUTINE007",
@@ -4549,24 +3442,6 @@ window.ICU_MANUAL_DB = {
             "PIPS",
             "숫자통증척도"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
         }
       ],
       "original_category": "Routine/평가",
@@ -4593,17 +3468,7 @@ window.ICU_MANUAL_DB = {
         "숫자통증척도",
         "얼굴통증척도",
         "소아통증척도",
-        "NRS·FPS·FLACC·PIPS 통증 사정표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
       "standard_sections_ready": true,
       "search_index": "낙상·욕창·통증 평가 Routine Routine/평가 낙상 욕창 통증 고위험군 재평가 평가 v8_final_reviewed NRS 통증 평가 척도 FLACC 통증 평가 척도 FPS 통증 평가 척도 통증 사정 통증 사정표 NRS FPS FLACC PIPS 숫자통증척도 얼굴통증척도 소아통증척도 NRS·FPS·FLACC·PIPS 통증 사정표",
@@ -4661,32 +3526,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -4701,17 +3553,7 @@ window.ICU_MANUAL_DB = {
         "Vent",
         "C-line",
         "입력",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Bundle 입력 Routine Routine/Bundle Bundle 중심정맥관 Foley Vent C-line 입력 v8_final_reviewed",
@@ -4775,28 +3617,19 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -4815,17 +3648,7 @@ window.ICU_MANUAL_DB = {
         "Flow",
         "sheet",
         "입력",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Flow sheet 입력 Routine Routine/Flow sheet Flow sheet GCS Motor LOC CRRT O2 라인 Flow sheet 입력 v8_final_reviewed",
@@ -4886,27 +3709,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/신체보호대",
       "search_terms": [
         "신체보호대 평가",
@@ -4925,17 +3728,7 @@ window.ICU_MANUAL_DB = {
         "업무동영상",
         "교육영상",
         "클로브 히치",
-        "clove hitch",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "clove hitch"
       ],
       "standard_sections_ready": true,
       "search_index": "신체보호대 평가 Routine Routine/신체보호대 신체보호대 보호대 restraint 2시간 평가 v8_final_reviewed 정방향 매듭 square knot 보호대 매듭 동영상 업무동영상 교육영상 클로브 히치 clove hitch",
@@ -5044,17 +3837,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "V107 장비/전화번호 요약 이미지",
-          "caption": "V107 장비/전화번호 요약 이미지",
-          "search_terms": [
-            "이미지",
-            "요약"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/부착기구",
       "search_terms": [
         "부착기구 입력",
@@ -5066,21 +3849,10 @@ window.ICU_MANUAL_DB = {
         "Mahurkar",
         "Perm cath",
         "입력",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "부착기구 입력 Routine Routine/부착기구 부착기구 HD cath trialysis Mahurkar Perm cath 입력 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "부착기구 입력 Routine Routine/부착기구 부착기구 HD cath trialysis Mahurkar Perm cath 입력 v8_final_reviewed"
     },
     {
       "id": "ROUTINE012",
@@ -5136,28 +3908,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "입원/Orientation",
       "search_terms": [
         "ICU 신환 Orientation",
@@ -5169,21 +3920,10 @@ window.ICU_MANUAL_DB = {
         "팔찌",
         "ICU 안내문",
         "ICU",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "ICU 신환 Orientation 입원 입원/Orientation 신환 Orientation 간호정보조사지 팔찌 ICU 안내문 ICU v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "ICU 신환 Orientation 입원 입원/Orientation 신환 Orientation 간호정보조사지 팔찌 ICU 안내문 ICU v8_final_reviewed"
     },
     {
       "id": "ROUTINE013",
@@ -5235,28 +3975,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "투약/지참약",
       "search_terms": [
         "지참약 관리",
@@ -5267,21 +3986,10 @@ window.ICU_MANUAL_DB = {
         "식별의뢰서",
         "Self 처방",
         "관리",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "지참약 관리 투약 투약/지참약 지참약 자가약 식별의뢰서 Self 처방 관리 v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "지참약 관리 투약 투약/지참약 지참약 자가약 식별의뢰서 Self 처방 관리 v8_final_reviewed"
     },
     {
       "id": "ROUTINE014",
@@ -5341,27 +4049,7 @@ window.ICU_MANUAL_DB = {
         "V104 약물/수액/마약 + 수혈/혈액 보강 반영"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "투약/마약",
       "search_terms": [
         "마약·향정 관리",
@@ -5377,17 +4065,7 @@ window.ICU_MANUAL_DB = {
         "관리",
         "약물",
         "수액",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "마약·향정 관리 약물 / 수액 / 마약 투약/마약 마약 향정 Pink White 마약처방전 반납 잔량 관리 약물 수액 v8_final_reviewed",
@@ -5445,27 +4123,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "기록/처방",
       "search_terms": [
         "기록·처방·액팅 원칙",
@@ -5479,21 +4137,10 @@ window.ICU_MANUAL_DB = {
         "간호처방",
         "원칙",
         "EMR",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "기록·처방·액팅 원칙 EMR / 기록 / 처방 기록/처방 기록 처방 액팅 Cadex flow sheet 간호처방 원칙 EMR v8_final_reviewed",
-      "prefer_media_first": true
+      "search_index": "기록·처방·액팅 원칙 EMR / 기록 / 처방 기록/처방 기록 처방 액팅 Cadex flow sheet 간호처방 원칙 EMR v8_final_reviewed"
     },
     {
       "id": "ROUTINE016",
@@ -5547,28 +4194,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "처방/Pickup",
       "search_terms": [
         "픽업·응급발행",
@@ -5581,21 +4207,10 @@ window.ICU_MANUAL_DB = {
         "간호 픽업",
         "v8_final_reviewed",
         "LUCAS 동영상",
-        "루카스 사용법 동영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "픽업·응급발행 처방 처방/Pickup 픽업 응급발행 마약 퇴원약 간호 픽업 v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 처방 확인·Lab 처방·픽업·응급발행",
-      "prefer_media_first": true
+      "search_index": "픽업·응급발행 처방 처방/Pickup 픽업 응급발행 마약 퇴원약 간호 픽업 v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 처방 확인·Lab 처방·픽업·응급발행"
     },
     {
       "id": "ROUTINE017",
@@ -5653,28 +4268,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DNR/동의서",
       "search_terms": [
         "DNR 서류/처방",
@@ -5688,21 +4282,10 @@ window.ICU_MANUAL_DB = {
         "가족관계증명서",
         "서류",
         "처방",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
-      "search_index": "DNR 서류/처방 DNR DNR/동의서 연명의료 9호 10호 11호 13호 가족관계증명서 서류 처방 v8_final_reviewed DNR / 연명의료 서류와 처방",
-      "prefer_media_first": true
+      "search_index": "DNR 서류/처방 DNR DNR/동의서 연명의료 9호 10호 11호 13호 가족관계증명서 서류 처방 v8_final_reviewed DNR / 연명의료 서류와 처방"
     },
     {
       "id": "LAB001",
@@ -5978,30 +4561,44 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "혈액제제"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "CSR",
-            "기구"
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -6072,17 +4669,7 @@ window.ICU_MANUAL_DB = {
         "검체 용기",
         "Lab bottle 이미지",
         "채혈 순서 이미지",
-        "추가 업무 매뉴얼 전체 추출 이미지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
       "search_index": "Lab bottle 종류와 채혈 순서 검사 / 검체 Lab bottle 채혈병 파랑 빨강 노랑 보라 Sodium Citrate Plain SST EDTA 채혈순서 파노보 파랑노랑보라 PT tube 검체 bottle ABGA syringe 랩보틀 검체용기 채혈 순서 채혈 후 검체 용기 분주 순서 ABGA bottle 혈액배양 Plain tube SST tube EDTA tube Lab bottle 종류와 채혈 순서 검사 검체 검사/Lab bottle v11_source_enhanced v49_exact_card Lab bottle 종류와 주요 검사 Tube 주요 검사 분주/주의 1 ABGA 0.5~1mL 2 Blood culture 각각 5mL씩, 혐기성 → 호기성 3 Valproic acid, Vancomycin, Digoxin 등 3~5mL 4 PT, aPTT, D-dimer, DIC panel 등 2.7mL, 검체량 정확히 5 Electrolyte, BUN/Cr, LFT, CRP, Troponin 등 6 CBC, ESR, HbA1c 등 2~3mL Lab bottle / 채혈 순서 참고 이미지 0001 Lab bottle / 채혈 순서 참고 이미지 0002 Lab bottle / 채혈 순서 참고 이미지 0003 Lab bottle / 채혈 순서 참고 이미지 0004 Lab bottle 종류 검체 용기 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지",
@@ -6153,8 +4740,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -6162,18 +4749,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -6192,17 +4787,7 @@ window.ICU_MANUAL_DB = {
         "기본",
         "검사",
         "검체",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "채혈검사 기본 검사 / 검체 검사/채혈 채혈 Lab A-line C-line regurge shooter 채혈검사 기본 검사 검체 v8_final_reviewed",
@@ -6267,78 +4852,9 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0017.png",
-          "alt": "ABGA 해석 4단계 공식",
-          "caption": "ABGA 해석 4단계 공식",
-          "search_terms": [
-            "ABGA 해석 4단계 공식",
-            "ABGA 채혈/검사",
-            "검사 / 검체",
-            "검사/ABGA",
-            "ABGA",
-            "A-line",
-            "arterial blood gas",
-            "혈가스",
-            "채혈",
-            "검사",
-            "검체",
-            "v8_final_reviewed",
-            "동맥혈 ABGA 수행절차",
-            "ABGA 이상 시 단계별 수행",
-            "LAB003",
-            "A-line 또는 동맥혈을 이용한 ABGA 검사."
-          ]
-        },
-        {
-          "src": "bin0019.png",
-          "alt": "동맥혈 ABGA 수행절차",
-          "caption": "동맥혈 ABGA 수행절차",
-          "search_terms": [
-            "동맥혈 ABGA 수행절차",
-            "ABGA 채혈/검사",
-            "검사 / 검체",
-            "검사/ABGA",
-            "ABGA",
-            "A-line",
-            "arterial blood gas",
-            "혈가스",
-            "채혈",
-            "검사",
-            "검체",
-            "v8_final_reviewed",
-            "ABGA 해석 4단계 공식",
-            "ABGA 이상 시 단계별 수행",
-            "LAB003",
-            "A-line 또는 동맥혈을 이용한 ABGA 검사."
-          ]
-        },
-        {
-          "src": "bin001a.png",
-          "alt": "ABGA 이상 시 단계별 수행",
-          "caption": "ABGA 이상 시 단계별 수행",
-          "search_terms": [
-            "ABGA 이상 시 단계별 수행",
-            "ABGA 채혈/검사",
-            "검사 / 검체",
-            "검사/ABGA",
-            "ABGA",
-            "A-line",
-            "arterial blood gas",
-            "혈가스",
-            "채혈",
-            "검사",
-            "검체",
-            "v8_final_reviewed",
-            "ABGA 해석 4단계 공식",
-            "동맥혈 ABGA 수행절차",
-            "LAB003",
-            "A-line 또는 동맥혈을 이용한 ABGA 검사."
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -6346,18 +4862,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -6383,17 +4891,7 @@ window.ICU_MANUAL_DB = {
         "혈액가스",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상",
@@ -6480,8 +4978,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -6489,18 +4987,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -6517,17 +5007,7 @@ window.ICU_MANUAL_DB = {
         "C.",
         "difficile",
         "검사",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Stool CDT / C. difficile 검사 / 검체 검사/검체 CDT C-difficile stool 클로스트리듐 검체 C. difficile 검사 v8_final_reviewed",
@@ -6588,8 +5068,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -6597,18 +5077,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -6627,17 +5099,7 @@ window.ICU_MANUAL_DB = {
         "culture",
         "검사",
         "검체",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "Urine analysis / Urine culture 검사 / 검체 검사/검체 UA Urine Analysis Urine Culture 소변검사 소변배양 Urine analysis culture 검사 검체 v8_final_reviewed",
@@ -6702,27 +5164,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "호흡기/O2",
       "search_terms": [
         "O2 tapering / 산소 변동",
@@ -6748,17 +5190,7 @@ window.ICU_MANUAL_DB = {
         "호흡 장비",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "O2 tapering / 산소 변동 호흡 / Ventilator 호흡기/O2 O2 산소 tapering N/P S/M mask CO2 변동 호흡 Ventilator v8_final_reviewed O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상",
@@ -6872,30 +5304,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -6934,17 +5355,7 @@ window.ICU_MANUAL_DB = {
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Dräger 인공호흡기 2"
       ],
       "standard_sections_ready": true,
       "search_index": "Ventilator setup 호흡 / Ventilator 호흡기/Vent Vent Ventilator 벤트 인공호흡기 circuit WFI test lung 벤틸레이터 vent setting alarm high pressure low pressure PEEP TV RR FiO2 setup 호흡 v8_final_reviewed ventilator 동영상 Ventilator 사용법 동영상 Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2",
@@ -7081,30 +5492,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -7131,17 +5531,7 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "tube 고정"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed",
@@ -7223,33 +5613,6 @@ window.ICU_MANUAL_DB = {
             "Vent 환자 nebulizer 연결.",
             "Ventilator setup"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
         }
       ],
       "original_category": "호흡기/Vent",
@@ -7266,17 +5629,7 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "v8_final_reviewed",
-        "Nebulizer 사용 참고 자료",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Nebulizer 사용 참고 자료"
       ],
       "standard_sections_ready": true,
       "search_index": "Vent nebulizer 연결 호흡 / Ventilator 호흡기/Vent Vent Nebulizer 네뷸 AE 유량센서 연결 호흡 Ventilator v8_final_reviewed Nebulizer 사용 참고 자료 Ventilator setup",
@@ -7358,33 +5711,6 @@ window.ICU_MANUAL_DB = {
             "VENT005",
             "HFNC 적용 및 Airvo 관리."
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
         }
       ],
       "original_category": "호흡기/HFNC",
@@ -7410,17 +5736,7 @@ window.ICU_MANUAL_DB = {
         "호흡 장비",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "HFNC / Airvo 호흡 / Ventilator 호흡기/HFNC HFNC Airvo 하이플로우 high flow FiO2 호흡 Ventilator v8_final_reviewed 산소요법(O2) 참고 표 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상",
@@ -7525,22 +5841,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -7558,17 +5871,7 @@ window.ICU_MANUAL_DB = {
         "준비",
         "혈액",
         "요청",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 준비/혈액 요청 수혈 / 혈액 수혈 혈액요청서 cross matching ABO Rh irregular P-RBC 준비 혈액 요청 v8_final_reviewed",
@@ -7791,22 +6094,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -7856,17 +6156,7 @@ window.ICU_MANUAL_DB = {
         "전자동의서",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
@@ -7963,38 +6253,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -8011,17 +6282,7 @@ window.ICU_MANUAL_DB = {
         "혈액제제",
         "요약",
         "혈액",
-        "v8_final_reviewed",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v8_final_reviewed"
       ],
       "standard_sections_ready": true,
       "search_index": "혈액제제 요약 수혈 / 혈액 수혈 P-RBC FFP PC A-PLT Cryo 혈액제제 요약 혈액 v8_final_reviewed",
@@ -8160,30 +6421,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Brain CT"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "CSR",
-            "기구"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -8223,17 +6490,7 @@ window.ICU_MANUAL_DB = {
         "재시작",
         "새 kit setting, 기능테스트, rinse, line 색상 확인",
         "관찰",
-        "BP, pressure, alarm, UF 상태 확인",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "BP, pressure, alarm, UF 상태 확인"
       ],
       "standard_sections_ready": true,
       "search_index": "CRRT Return / Kit change 상세 CRRT / 신장 CRRT return 리턴 kit change filter TMP access pressure 씨알알티 circuit change filter change return blood 혈액재주입 kit 교체 CRRT 알람 TMP 상승 return pressure Kit change 상세 신장 v11_source_enhanced CRRT Return / Kit change 핵심 확인 단계 확인사항 중단 전 CRRT I/O 끊기, pressure/alarm 확인 NS 500ml 연결, 3-way 방향 확인, 혈액 재주입 분리 Return 완료 후 환자와 장비 분리 재시작 새 kit setting, 기능테스트, rinse, line 색상 확인 관찰 BP, pressure, alarm, UF 상태 확인 CRRT I/O, Return, Kit change, 처방, 차팅 상세",
@@ -8316,27 +6573,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "응급/CPR",
       "search_terms": [
         "CPR quick card",
@@ -8367,17 +6604,7 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR quick card 응급상황 응급/CPR CPR code blue 심정지 arrest ROSC Lucas Ambu 에피 심폐소생술 코드블루 compression 제세동 ambu bagging CPR charting quick card v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 CPCR 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상",
@@ -8468,26 +6695,7 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 Routine Job / 자정 이후 제세동기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/제세동기",
       "search_terms": [
         "제세동기 점검 상세",
@@ -8500,21 +6708,10 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "점검",
         "상세",
-        "v11_source_enhanced",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v11_source_enhanced"
       ],
       "standard_sections_ready": true,
-      "search_index": "제세동기 점검 상세 Routine Routine/제세동기 제세동기 defibrillator 자가점검 manual defib E-cart 점검 상세 v11_source_enhanced",
-      "prefer_media_first": true
+      "search_index": "제세동기 점검 상세 Routine Routine/제세동기 제세동기 defibrillator 자가점검 manual defib E-cart 점검 상세 v11_source_enhanced"
     },
     {
       "id": "ROUTINE019",
@@ -8585,8 +6782,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -8594,18 +6791,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -8635,17 +6824,7 @@ window.ICU_MANUAL_DB = {
         "랩보틀",
         "Lab bottle 이미지",
         "채혈 순서 이미지",
-        "추가 업무 매뉴얼 전체 추출 이미지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
       "search_index": "Lab bottle 검사·채취 방법 Routine Routine/Lab bottle Lab bottle 채혈병 검체 SST EDTA Sodium Citrate Plain 채취방법 Lab bottle 검사 채취 방법 v10_master_30_categories Lab bottle 종류 채혈 순서 검체 bottle 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지",
@@ -8708,21 +6887,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
           ]
         }
       ],
@@ -8740,17 +6917,7 @@ window.ICU_MANUAL_DB = {
         "L-tube feeding",
         "처방",
         "확인",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "식이 처방·Feeding 확인 Routine Routine/식이 식이 diet feeding NPO 금식 경관식 L-tube feeding 처방 확인 v10_master_30_categories",
@@ -8811,26 +6978,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "Routine/환자파악·인계",
       "search_terms": [
         "환자 파악 및 인계 체크리스트",
@@ -8846,21 +6994,10 @@ window.ICU_MANUAL_DB = {
         "환자",
         "파악",
         "체크리스트",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "환자 파악 및 인계 체크리스트 Routine Routine/환자파악·인계 환자파악 인계 handover rounding 라인 진단명 문제목록 환자 파악 체크리스트 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "환자 파악 및 인계 체크리스트 Routine Routine/환자파악·인계 환자파악 인계 handover rounding 라인 진단명 문제목록 환자 파악 체크리스트 v10_master_30_categories"
     },
     {
       "id": "ROUTINE022",
@@ -8918,21 +7055,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
           ]
         }
       ],
@@ -8950,17 +7085,7 @@ window.ICU_MANUAL_DB = {
         "간호액팅",
         "업무",
         "기타",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "ACTING 업무: 술기·Injection·기타 Routine Routine/Acting acting 액팅 injection 술기 처치 투약 간호액팅 업무 기타 v10_master_30_categories",
@@ -9101,23 +7226,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "Lab bottle"
           ]
         }
       ],
@@ -9174,17 +7296,7 @@ window.ICU_MANUAL_DB = {
         "인계 정리",
         "ICU flowsheet(new) 기반 인계, NS/NR 환자는 GCS·pupil qhr 사정 기입",
         "요약/Cadex",
-        "당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 입원 시 절차 / 신환 전입 역할분담 입원·전입 입실 전입 응급실 외래 병동 ICU admission 신환 입원 시 절차 ER ICU GW ICU 간호정보조사 손목팔찌 화재 3군 화재스티커 중앙모니터 병록번호 stand by Screen setup multi bed tile layout RAT VRE CRE CPO MRSA MSSA 보호자 전화번호 AI trics 입원 안내문 자가약 지참약 식별 입실시간 ICU 입원 절차 역할분담 입퇴원/입실 v10_master_30_categories v26_uploaded_manual_added manual_20260614 신환 입원 / 전입 시 역할분담 역할 업무 담당 간호사 환자 전체 사정, EMR, 간호정보조사, 자가약 확인, 동의서, 물품 안내, 라벨/검체 바코드 출력, 담당 환자 액팅 나머지 근무자 환자 정리, line, 배액관, Foley, 욕창 포함 피부상태 확인 후 담당에게 전달 인계 정리 ICU flowsheet(new) 기반 인계, NS/NR 환자는 GCS·pupil qhr 사정 기입 요약/Cadex 당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성",
@@ -9242,28 +7354,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "입퇴원/전동·전원",
       "search_terms": [
         "전동·전원 업무",
@@ -9277,21 +7368,10 @@ window.ICU_MANUAL_DB = {
         "업무",
         "입퇴원",
         "사망",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "전동·전원 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/전동·전원 전동 전원 transfer 병동 이동 타병원 전원 업무 입퇴원 사망 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "전동·전원 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/전동·전원 전동 전원 transfer 병동 이동 타병원 전원 업무 입퇴원 사망 v10_master_30_categories"
     },
     {
       "id": "ADM003",
@@ -9346,28 +7426,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "입퇴원/사망",
       "search_terms": [
         "사망 시 업무",
@@ -9382,21 +7441,10 @@ window.ICU_MANUAL_DB = {
         "입퇴원",
         "전동",
         "전원",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "사망 시 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/사망 사망 death 사후처치 영안실 사망진단서 업무 입퇴원 전동 전원 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "사망 시 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원/사망 사망 death 사후처치 영안실 사망진단서 업무 입퇴원 전동 전원 v10_master_30_categories"
     },
     {
       "id": "RECORD001",
@@ -9451,27 +7499,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "간호기록",
       "search_terms": [
         "간호기록 작성 원칙",
@@ -9484,21 +7512,10 @@ window.ICU_MANUAL_DB = {
         "작성",
         "원칙",
         "처방",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "간호기록 작성 원칙 EMR / 기록 / 처방 간호기록 기록 nursing note charting EMR 작성 원칙 처방 v10_master_30_categories ICU 간호기록 체크리스트",
-      "prefer_media_first": true
+      "search_index": "간호기록 작성 원칙 EMR / 기록 / 처방 간호기록 기록 nursing note charting EMR 작성 원칙 처방 v10_master_30_categories ICU 간호기록 체크리스트"
     },
     {
       "id": "ORDER001",
@@ -9557,22 +7574,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
           ]
         }
       ],
@@ -9591,17 +7606,7 @@ window.ICU_MANUAL_DB = {
         "Lab",
         "v10_master_30_categories",
         "LUCAS 동영상",
-        "루카스 사용법 동영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true,
       "search_index": "처방 확인·Lab 처방·픽업·응급발행 처방 처방/액팅 액팅 lab 처방 픽업 응급발행 채혈접수 발행 확인 Lab v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상 픽업·응급발행",
@@ -9660,35 +7665,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "안전/유효기간",
       "search_terms": [
         "유효기간·사용기한 확인",
@@ -9702,21 +7679,10 @@ window.ICU_MANUAL_DB = {
         "소모품",
         "수액세트",
         "확인",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories"
     },
     {
       "id": "DRESS001",
@@ -9777,35 +7743,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/일반상처",
       "search_terms": [
         "일반 상처 Dressing",
@@ -9817,21 +7755,10 @@ window.ICU_MANUAL_DB = {
         "일반",
         "Line",
         "Drain",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "일반 상처 Dressing Line / Drain / Dressing DRESSING/일반상처 dressing 상처 일반상처 일반 Line Drain v10_master_30_categories 수술 후 상처 Dressing 욕창 부위 Dressing",
-      "prefer_media_first": true
+      "search_index": "일반 상처 Dressing Line / Drain / Dressing DRESSING/일반상처 dressing 상처 일반상처 일반 Line Drain v10_master_30_categories 수술 후 상처 Dressing 욕창 부위 Dressing"
     },
     {
       "id": "DRESS002",
@@ -9894,8 +7821,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -9903,18 +7830,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -9931,17 +7866,7 @@ window.ICU_MANUAL_DB = {
         "상처",
         "감염관리",
         "검사",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "감염된 상처 Dressing 감염관리 / 검사 DRESSING/감염상처 감염상처 infected wound pus dressing 감염된 상처 감염관리 검사 v10_master_30_categories",
@@ -10008,35 +7933,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/수술상처",
       "search_terms": [
         "수술 후 상처 Dressing",
@@ -10050,21 +7947,10 @@ window.ICU_MANUAL_DB = {
         "Dressing",
         "Line",
         "Drain",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "수술 후 상처 Dressing Line / Drain / Dressing DRESSING/수술상처 수술상처 op wound post op dressing 수술 상처 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 욕창 부위 Dressing",
-      "prefer_media_first": true
+      "search_index": "수술 후 상처 Dressing Line / Drain / Dressing DRESSING/수술상처 수술상처 op wound post op dressing 수술 상처 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 욕창 부위 Dressing"
     },
     {
       "id": "DRESS004",
@@ -10126,35 +8012,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/욕창",
       "search_terms": [
         "욕창 부위 Dressing",
@@ -10167,21 +8025,10 @@ window.ICU_MANUAL_DB = {
         "부위",
         "Line",
         "Drain",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "욕창 부위 Dressing Line / Drain / Dressing DRESSING/욕창 욕창 pressure injury sore dressing 부위 Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
-      "prefer_media_first": true
+      "search_index": "욕창 부위 Dressing Line / Drain / Dressing DRESSING/욕창 욕창 pressure injury sore dressing 부위 Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "DRESS005",
@@ -10244,32 +8091,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -10284,17 +8118,7 @@ window.ICU_MANUAL_DB = {
         "부위",
         "Dressing",
         "Line",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "PCD 부위 Dressing Line / Drain / Dressing DRESSING/PCD PCD drain catheter dressing 부위 Dressing Line v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
@@ -10360,35 +8184,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/장루",
       "search_terms": [
         "장루 관리·Dressing",
@@ -10401,21 +8197,10 @@ window.ICU_MANUAL_DB = {
         "Dressing",
         "Line",
         "Drain",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "장루 관리·Dressing Line / Drain / Dressing DRESSING/장루 장루 stoma ostomy 관리 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
-      "prefer_media_first": true
+      "search_index": "장루 관리·Dressing Line / Drain / Dressing DRESSING/장루 장루 stoma ostomy 관리 Dressing Line Drain v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing"
     },
     {
       "id": "DRESS007",
@@ -10473,35 +8258,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/SDD",
       "search_terms": [
         "SDD 소독",
@@ -10513,21 +8270,10 @@ window.ICU_MANUAL_DB = {
         "Line",
         "Drain",
         "Dressing",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "SDD 소독 Line / Drain / Dressing DRESSING/SDD SDD subdural drain 소독 Line Drain Dressing v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "SDD 소독 Line / Drain / Dressing DRESSING/SDD SDD subdural drain 소독 Line Drain Dressing v10_master_30_categories"
     },
     {
       "id": "DRESS008",
@@ -10591,37 +8337,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "DRESSING/EVD",
       "search_terms": [
         "EVD 소독",
@@ -10643,17 +8359,7 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "EVD 소독 Line / Drain / Dressing DRESSING/EVD EVD external ventricular drainage 뇌실외배액 소독 Line Drain Dressing v10_master_30_categories ICP tragus 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상",
@@ -10752,8 +8458,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -10761,18 +8467,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -10791,17 +8505,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Coronary angio CT 전후 간호 검사 / 검체 검사·시술/영상 coronary angio CT 관상동맥 CT 조영제 CT Coronary angio 전후 간호 검사 검체 v10_master_30_categories",
@@ -10869,8 +8573,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -10878,18 +8582,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -10908,17 +8620,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Brain MRI non-enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI MRI non enhance brain non enhance Brain MRI non-enhance 전후 간호 검사 검체 v10_master_30_categories",
@@ -10986,8 +8688,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -10995,18 +8697,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -11025,17 +8735,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Brain MRI enhance 전후 간호 검사 / 검체 검사·시술/영상 Brain MRI enhance 조영 MRI MRI 조영 Brain MRI enhance 전후 간호 검사 검체 v10_master_30_categories",
@@ -11106,8 +8806,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11115,18 +8815,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -11153,17 +8861,7 @@ window.ICU_MANUAL_DB = {
         "수술환자 이동",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "Brain CT 전후 간호 검사 / 검체 검사·시술/영상 Brain CT 뇌 CT CT Brain 전후 간호 검사 검체 v10_master_30_categories NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 수술환자 이동 동영상 업무동영상 교육영상",
@@ -11265,8 +8963,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11274,18 +8972,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -11306,17 +9012,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Head Neck angio CT 전후 간호 검사 / 검체 검사·시술/영상 Head Neck angio CT HN angio CTA 조영 CT Head Neck angio CT 전후 간호 검사 검체 v10_master_30_categories",
@@ -11379,8 +9075,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11388,18 +9084,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -11412,17 +9100,7 @@ window.ICU_MANUAL_DB = {
         "혈관조영술",
         "전후",
         "간호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "DSA 전후 간호 신경계 검사·시술/신경혈관 DSA 혈관조영술 전후 간호 v10_master_30_categories",
@@ -11485,9 +9163,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11495,18 +9189,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -11521,17 +9207,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "PTA 전후 간호 검사 / 검체 검사·시술/혈관 PTA angioplasty 전후 간호 검사 검체 v10_master_30_categories",
@@ -11590,8 +9266,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11599,18 +9275,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -11624,17 +9292,7 @@ window.ICU_MANUAL_DB = {
         "검사",
         "전후",
         "간호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "TCD 검사 전후 간호 신경계 검사·시술/신경 TCD transcranial doppler 검사 전후 간호 v10_master_30_categories",
@@ -11695,8 +9353,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11704,18 +9362,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -11731,17 +9381,7 @@ window.ICU_MANUAL_DB = {
         "embolization",
         "전후",
         "간호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Coil embolization 전후 간호 신경계 검사·시술/신경혈관 Coil embolization 코일색전술 aneurysm Coil embolization 전후 간호 v10_master_30_categories",
@@ -11800,30 +9440,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -11839,17 +9469,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "호흡",
         "Ventilator",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories",
@@ -11914,8 +9534,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -11923,18 +9543,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -11950,17 +9562,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "EGD 전후 간호 검사 / 검체 검사·시술/소화기 EGD 위내시경 내시경 전후 간호 검사 검체 v10_master_30_categories",
@@ -12025,8 +9627,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12034,18 +9636,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12061,17 +9655,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "ERCP 전후 간호 검사 / 검체 검사·시술/소화기 ERCP 담췌관 내시경 전후 간호 검사 검체 v10_master_30_categories",
@@ -12136,8 +9720,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12145,18 +9729,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12172,17 +9748,7 @@ window.ICU_MANUAL_DB = {
         "간호",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "CFS 전후 간호 검사 / 검체 검사·시술/소화기 CFS 대장내시경 colonoscopy 전후 간호 검사 검체 v10_master_30_categories",
@@ -12250,8 +9816,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12259,18 +9825,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12289,17 +9847,7 @@ window.ICU_MANUAL_DB = {
         "채취",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Blood culture 채취 검사 / 검체 검체/Blood culture Blood culture blood cx 혈액배양 aerobic anaerobic Blood culture 채취 검사 검체 v10_master_30_categories",
@@ -12365,8 +9913,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12374,18 +9922,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12402,17 +9942,7 @@ window.ICU_MANUAL_DB = {
         "채취",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Sputum culture 채취 검사 / 검체 검체/Sputum culture sputum cx sputum culture 객담배양 Sputum culture 채취 검사 검체 v10_master_30_categories",
@@ -12478,8 +10008,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12487,18 +10017,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12515,17 +10037,7 @@ window.ICU_MANUAL_DB = {
         "채취",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Urine culture 채취 검사 / 검체 검체/Urine culture urine cx urine culture 소변배양 Urine culture 채취 검사 검체 v10_master_30_categories",
@@ -12588,8 +10100,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12597,18 +10109,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12622,17 +10126,7 @@ window.ICU_MANUAL_DB = {
         "신속항원",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "RAT 검사 검사 / 검체 검체/RAT RAT rapid antigen test 신속항원 검사 검체 v10_master_30_categories",
@@ -12695,29 +10189,9 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0010.png",
-          "alt": "격리실 간호 참고 자료",
-          "caption": "격리실 간호 참고 자료",
-          "search_terms": [
-            "격리실 간호 참고 자료",
-            "CRE/CPO 검체",
-            "검사 / 검체",
-            "검체/CRE·CPO",
-            "CRE",
-            "CPO",
-            "격리검사",
-            "직장도말",
-            "검체",
-            "검사",
-            "v10_master_30_categories",
-            "SPEC005",
-            "CRE/CPO 검체 체크리스트."
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12725,18 +10199,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12752,17 +10218,7 @@ window.ICU_MANUAL_DB = {
         "검체",
         "검사",
         "v10_master_30_categories",
-        "격리실 간호 참고 자료",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "격리실 간호 참고 자료"
       ],
       "standard_sections_ready": true,
       "search_index": "CRE/CPO 검체 검사 / 검체 검체/CRE·CPO CRE CPO 격리검사 직장도말 검체 검사 v10_master_30_categories 격리실 간호 참고 자료",
@@ -12828,8 +10284,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -12837,18 +10293,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -12865,17 +10313,7 @@ window.ICU_MANUAL_DB = {
         "채취",
         "검사",
         "검체",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "Tip culture 채취 검사 / 검체 검체/Tip culture Tip cx tip culture 카테터 tip Tip culture 채취 검사 검체 v10_master_30_categories",
@@ -13266,23 +10704,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "Brain CT"
           ]
         }
       ],
@@ -13398,17 +10832,7 @@ window.ICU_MANUAL_DB = {
         "6163",
         "0734",
         "0555",
-        "물품 / 장비 / 전화번호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "물품 / 장비 / 전화번호"
       ],
       "standard_sections_ready": true,
       "search_index": "원내 주요 전화번호 원내 주요 번호 원내번호 원내 내선번호 내선번호 전화번호 연락처 부서 연락처 의사 전화번호 진료부 번호 협력부서 번호 약국 식별 약국 원무과 입원 퇴원 응급원무과 CPR 전산팀 영양팀 병동 31병동 33병동 41병동 51병동 61병동 63병동 응급실 초음파실 심초음파실 holter TCD MRI CT 영상접수 내시경실 회복실 뇌파 angio 인공신장실 진검실 혈액은행 진료부 CV3 문재현 147 협력부서 0610 CV1 이승화 145 6058 GI10 안성민 205 holter(재혈실) 6145 GI11 이대영 203 6102 GI12 도민영 206 6124 GS9 주용현 210 6127 GS8 백남헌 208 6122 NS51 오근 302 내시경실(2층) 0676 NS39 이일희 304 0528 NR6 박건우 306 0654 NR7 박소영 308 angio실 1번 0537 angio실 2번 0540 NR8 강희경 309 인공신장실 외부 6220 인공신장실 원내 6092 PUL 이종민 202 6144 NE 하주형 151 6135 기타 약국(식별) 6226 0634 6228 6133 6043(입원), 6051(퇴원) 6141 0557 0693 6114 6161 6138 6163 0734 0555 물품 / 장비 / 전화번호",
@@ -13469,35 +10893,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "장비/Infusion pump",
       "search_terms": [
         "Infusion pump 사용법",
@@ -13512,21 +10908,10 @@ window.ICU_MANUAL_DB = {
         "물품",
         "장비",
         "전화번호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Infusion pump 사용법 물품 / 장비 / 전화번호 장비/Infusion pump Infusion pump 인퓨전펌프 pump 수액펌프 Infusion 사용법 물품 장비 전화번호 v10_master_30_categories Syringe pump 사용법",
-      "prefer_media_first": true
+      "search_index": "Infusion pump 사용법 물품 / 장비 / 전화번호 장비/Infusion pump Infusion pump 인퓨전펌프 pump 수액펌프 Infusion 사용법 물품 장비 전화번호 v10_master_30_categories Syringe pump 사용법"
     },
     {
       "id": "EQUIP002",
@@ -13582,35 +10967,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "장비/Syringe pump",
       "search_terms": [
         "Syringe pump 사용법",
@@ -13624,21 +10981,10 @@ window.ICU_MANUAL_DB = {
         "물품",
         "장비",
         "전화번호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "Syringe pump 사용법 물품 / 장비 / 전화번호 장비/Syringe pump Syringe pump 시린지펌프 syringe pump 사용법 물품 장비 전화번호 v10_master_30_categories Infusion pump 사용법",
-      "prefer_media_first": true
+      "search_index": "Syringe pump 사용법 물품 / 장비 / 전화번호 장비/Syringe pump Syringe pump 시린지펌프 syringe pump 사용법 물품 장비 전화번호 v10_master_30_categories Infusion pump 사용법"
     },
     {
       "id": "DRUG024",
@@ -13755,38 +11101,20 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "약물",
-            "수혈"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
+            "FMC CRRT"
           ]
         }
       ],
@@ -13810,17 +11138,7 @@ window.ICU_MANUAL_DB = {
         "마약",
         "v10_master_30_categories",
         "인슐린 제품/용법 참고 표",
-        "경구 혈당강하제 참고 표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "경구 혈당강하제 참고 표"
       ],
       "standard_sections_ready": true,
       "search_index": "경구 혈당 강하제 확인 약물 / 수액 / 마약 약물/경구혈당강하제 경구혈당강하제 OHA 당뇨약 BST 메트포르민 sulfonylurea 경구 혈당 강하제 확인 약물 수액 마약 v10_master_30_categories 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표",
@@ -13889,37 +11207,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "E-cart/응급약물",
       "search_terms": [
         "E-cart 응급약물 목록",
@@ -13946,21 +11234,10 @@ window.ICU_MANUAL_DB = {
         "목록",
         "v10_master_30_categories",
         "LUCAS 동영상",
-        "루카스 사용법 동영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true,
-      "search_index": "E-cart 응급약물 목록 응급상황 E-cart/응급약물 E-cart 응급약물 에피네프린 노르에피네프린 아트로핀 코다론 아데노신 비본 에토미데이트 마그네슘 칼슘 베카론 응급카트 emergency cart code cart E-cart 약물 ACLS 약물 응급약 목록 v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상",
-      "prefer_media_first": true
+      "search_index": "E-cart 응급약물 목록 응급상황 E-cart/응급약물 E-cart 응급약물 에피네프린 노르에피네프린 아트로핀 코다론 아데노신 비본 에토미데이트 마그네슘 칼슘 베카론 응급카트 emergency cart code cart E-cart 약물 ACLS 약물 응급약 목록 v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상"
     },
     {
       "id": "ECART002",
@@ -14019,38 +11296,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "약물",
-            "수혈"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
+            "FMC CRRT"
           ]
         }
       ],
@@ -14071,17 +11330,7 @@ window.ICU_MANUAL_DB = {
         "관리",
         "수액",
         "마약",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "고주의 약물 관리 약물 / 수액 / 마약 약물/고주의약물 고주의약물 high alert 승압제 인슐린 항응고제 KCL 진정제 고주의 약물 관리 수액 마약 v10_master_30_categories",
@@ -14142,43 +11391,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "약물/항부정맥제",
       "search_terms": [
         "항부정맥제 사용 전 확인",
@@ -14196,21 +11409,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories"
     },
     {
       "id": "CONSENT001",
@@ -14276,23 +11478,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "혈액제제"
           ]
         }
       ],
@@ -14326,17 +11524,7 @@ window.ICU_MANUAL_DB = {
         "tablet",
         "consent",
         "동의서 받기",
-        "전자동의서",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "전자동의서"
       ],
       "standard_sections_ready": true,
       "search_index": "동의서 종류와 확인 상세 동의서 수술동의서 PCA 동의서 수혈동의서 신체보호대 동의서 DNR Mahurkar Perm cath 종류와 확인 상세 v11_source_enhanced 신체보호대 보호대 정방향 매듭 square knot 보호대 매듭 restraint 동영상 업무동영상 교육영상 클로브 히치 clove hitch 테블릿 태블릿 tablet consent 동의서 받기 전자동의서",
@@ -14486,38 +11674,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -14533,17 +11702,7 @@ window.ICU_MANUAL_DB = {
         "CFS",
         "Routine",
         "각과",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "소화기내과 Routine 각과 Routine 각과 Routine/소화기내과 소화기내과 GI EGD ERCP CFS Routine 각과 v10_master_30_categories 심장내과 Routine 정형외과 Routine",
@@ -14604,55 +11763,35 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0012.png",
-          "alt": "Bedside monitor 예시 사진",
-          "caption": "Bedside monitor 예시 사진",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "Bedside monitor 예시 사진",
-            "심장내과 Routine",
-            "각과 Routine",
-            "각과 Routine/심장내과",
-            "심장내과",
-            "CV",
-            "angio CT",
-            "EKG",
-            "echo",
-            "Routine",
-            "각과",
-            "v10_master_30_categories",
-            "DEPT002",
-            "심장내과 Routine 기본 확인 카드.",
-            "소화기내과 Routine",
-            "정형외과 Routine"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -14669,17 +11808,7 @@ window.ICU_MANUAL_DB = {
         "Routine",
         "각과",
         "v10_master_30_categories",
-        "Bedside monitor 예시 사진",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Bedside monitor 예시 사진"
       ],
       "standard_sections_ready": true,
       "search_index": "심장내과 Routine 각과 Routine 각과 Routine/심장내과 심장내과 CV angio CT EKG echo Routine 각과 v10_master_30_categories Bedside monitor 예시 사진 소화기내과 Routine 정형외과 Routine",
@@ -14737,38 +11866,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -14784,17 +11911,7 @@ window.ICU_MANUAL_DB = {
         "BST sling",
         "Routine",
         "신장",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "신장내과 Routine CRRT / 신장 각과 Routine/신장내과 신장내과 NEPH CRRT HD BST sling Routine 신장 v10_master_30_categories",
@@ -14859,9 +11976,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -14869,18 +12002,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -14904,17 +12045,7 @@ window.ICU_MANUAL_DB = {
         "수술환자 이동",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "신경외과 Routine 신경계 각과 Routine/신경외과 신경외과 NS Brain GCS TFCA Routine v10_master_30_categories 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 Brain patient care / 신경외과 환자",
@@ -15006,38 +12137,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -15053,17 +12165,7 @@ window.ICU_MANUAL_DB = {
         "post op",
         "Routine",
         "각과",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "정형외과 Routine 각과 Routine 각과 Routine/정형외과 정형외과 OS TKRA THRA post op Routine 각과 v10_master_30_categories 소화기내과 Routine 심장내과 Routine",
@@ -15181,28 +12283,19 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -15229,17 +12322,7 @@ window.ICU_MANUAL_DB = {
         "< 150",
         "1시간 stop 후 2cc/hr로 재시작",
         "< 100",
-        "stop 유지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "stop 유지"
       ],
       "standard_sections_ready": true,
       "search_index": "DKA protocol 상세 BST / DM / DKA 프로토콜/DKA DKA diabetic ketoacidosis RI continuous BST 케톤산증 protocol 상세 DM v11_source_enhanced DKA RI continuous 조절 기준 조절 > 250 RI +1cc/hr 150-250 마지막 속도 유지, 1시간 후 BST check < 150 1시간 stop 후 2cc/hr로 재시작 < 100 stop 유지",
@@ -15496,30 +12579,20 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
+            "FMC CRRT"
           ]
         }
       ],
@@ -15567,17 +12640,7 @@ window.ICU_MANUAL_DB = {
         "< 50",
         "50% DW 100 중 60ml IV 후 30분 뒤 BST f/u",
         "인슐린 종류와 작용시간 그래프",
-        "BST sliding",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "BST sliding"
       ],
       "standard_sections_ready": true,
       "search_index": "내과·심장내과 RI sliding 상세 BST / DM / DKA BST Sliding RI sliding 내과 심장내과 저혈당 50DW RI sliding 상세 BST DM DKA v11_source_enhanced 내과 RI Sliding 250 < BST < 299 4 unit 300 < BST < 349 6 unit 350 < BST < 399 8 unit BST ≥ 400 10 unit 심장내과 RI Sliding 140-179 2 unit 180-220 221-260 261-300 301-350 351-400 12 unit > 400 14 unit 저혈당 처치 처치 < 70 50% DW 100 중 30ml IV 후 30분 뒤 BST f/u < 50 50% DW 100 중 60ml IV 후 30분 뒤 BST f/u 인슐린 종류와 작용시간 그래프 BST sliding",
@@ -15644,9 +12707,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -15654,18 +12733,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -15685,17 +12756,7 @@ window.ICU_MANUAL_DB = {
         "바코드",
         "관리",
         "상세",
-        "v11_source_enhanced",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v11_source_enhanced"
       ],
       "standard_sections_ready": true,
       "search_index": "DIC 검사·바코드·관리 상세 프로토콜 프로토콜/DIC DIC D-dimer PT aPTT INR fibrinogen DIC 바코드 검사 바코드 관리 상세 v11_source_enhanced",
@@ -15754,27 +12815,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "EMR/카멜레온",
       "search_terms": [
         "카멜레온 EMR 기본 사용",
@@ -15789,21 +12830,10 @@ window.ICU_MANUAL_DB = {
         "기본",
         "사용",
         "기록",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
-      "search_index": "카멜레온 EMR 기본 사용 EMR / 기록 / 처방 EMR/카멜레온 카멜레온 EMR 전산 간호기록 처방 액팅 기본 사용 기록 v10_master_30_categories",
-      "prefer_media_first": true
+      "search_index": "카멜레온 EMR 기본 사용 EMR / 기록 / 처방 EMR/카멜레온 카멜레온 EMR 전산 간호기록 처방 액팅 기본 사용 기록 v10_master_30_categories"
     },
     {
       "id": "EQUIP003",
@@ -15863,30 +12893,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "FMC CRRT"
           ]
         }
       ],
@@ -15907,17 +12927,7 @@ window.ICU_MANUAL_DB = {
         "공통",
         "물품",
         "전화번호",
-        "v10_master_30_categories",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "v10_master_30_categories"
       ],
       "standard_sections_ready": true,
       "search_index": "장비 사용 방법 공통 물품 / 장비 / 전화번호 장비/사용법 장비 사용법 monitor pump vent CRRT 제세동기 사용 방법 공통 물품 전화번호 v10_master_30_categories",
@@ -16003,22 +13013,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -16069,17 +13076,7 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -16189,38 +13186,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -16269,17 +13247,7 @@ window.ICU_MANUAL_DB = {
         "항생제 AST",
         "투약시간",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "임상 약물: 항생제·수액·자주 사용하는 약물 약물 / 수액 / 마약 임상 약물 임상약물 약물 항생제 항생제 계열 antibiotics AST 세파 타박탐 유박탐 맥스핌 반코 반코마이신 카바페넴 퀴놀론 수액 수액 종류 수액 적응증 fluid N/S NS D/W DW 5DW 5DS Hartmann 하트만 알부민 라식스 만니톨 해열제 진통제 기관지확장제 네뷸약 PPI 위장약 기타 약물 AST 유무 항생제 AST 투약시간 v14_v11_based_menu search_optimized",
@@ -16361,22 +13329,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -16419,17 +13384,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "마약 & 향정: 반환·잔량보관·마약성 진통제 약물 / 수액 / 마약 마약·향정 마약 향정 마약장 마약 반환 마약 반납 잔량 잔량 보관 잔량반납 마약성 진통제 마약처방전 반납처방전 pink white 몰핀 morphine 페치딘 pethidine fentanyl remifentanil 울티안 midazolam 미다컴 propofol 프레조폴 dexmedetomidine 덱스메딘 향정신성 반환 잔량보관 마약성 진통제 약물 수액 v14_v11_based_menu search_optimized",
@@ -16576,58 +13531,52 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "bin0012.png",
-          "alt": "Bedside monitor 예시 사진",
-          "caption": "Bedside monitor 예시 사진",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "Bedside monitor 예시 사진",
-            "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
-            "물품 / 장비 / 전화번호",
-            "의료장비",
-            "장비",
-            "ventilator",
-            "vent",
-            "벤트",
-            "인공호흡기",
-            "high flow",
-            "HFNC",
-            "Airvo",
-            "하이플로우",
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
             "CRRT",
-            "씨알알티",
-            "infusion pump",
-            "인퓨전펌프",
-            "syringe pump",
-            "시린지펌프",
-            "syriange pump",
-            "제세동기"
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "FMC CRRT"
           ]
         }
       ],
@@ -16704,17 +13653,7 @@ window.ICU_MANUAL_DB = {
         "Savina",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Dräger 인공호흡기 2"
       ],
       "standard_sections_ready": true,
       "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Infusion pump 사용법 Syringe pump 사용법",
@@ -16942,22 +13881,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
+          "search_terms": [
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -17002,17 +13955,7 @@ window.ICU_MANUAL_DB = {
         "TIP",
         "혈액",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈: Lab·동의서·전처치·TIP·기록 수혈 / 혈액 수혈 transfusion 수혈 LAB 수혈 동의서 수혈 전처치 전처치 약물 수혈 TIP 수혈 팁 기록 확인사항 P-RBC PRBC FFP PC A-PLT Cryo 혈액요청서 교차시험 cross matching ABO Rh irregular 페니라민 해열제 수혈기록지 수혈부작용 수혈 V/S 혈액 불출 수혈 filter 혈액제제 RBC PC APLT FFP Cryo Lab 동의서 전처치 TIP 혈액 v14_v11_based_menu search_optimized",
@@ -17090,9 +14033,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -17100,18 +14059,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -17157,17 +14124,7 @@ window.ICU_MANUAL_DB = {
         "MRI 조영제",
         "영상검사 준비",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "검사/검체: 혈액검사 참고치·의심질환·영상검사 검사 / 검체 검사·검체 검사 검체 혈액검사 혈액 검사 참고치 참고치 정상범위 의심질환 영상검사 자주 시행하는 영상검사 CT MRI angio CT Brain CT Brain MRI CAG TFCA DSA PTA TCD EGD ERCP CFS culture blood culture sputum urine RAT CRE CPO Tip culture 검체통 채혈병 ABGA CT 조영제 MRI 조영제 영상검사 준비 v14_v11_based_menu search_optimized",
@@ -17252,32 +14209,35 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -17324,17 +14284,7 @@ window.ICU_MANUAL_DB = {
         "각종",
         "정리",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized 일반 상처 Dressing 수술 후 상처 Dressing",
@@ -17412,21 +14362,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -17468,17 +14433,7 @@ window.ICU_MANUAL_DB = {
         "업무",
         "근무별",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "DAY / EVENING / NIGHT 세부 업무 근무별 업무 근무업무 DAY 데이 EVENING 이브닝 NIGHT 나이트 근무 routine job 실무 업무 인계 라운딩 initial final 식이 액팅 처방정리 Cadex flow sheet I/O BST 제세동기 점검 채혈접수 환자분류 화재분류 약싸기 입원 시 절차 initial 후 전산 투약시간 교체주기 세부 업무 근무별 v14_v11_based_menu search_optimized",
@@ -17666,21 +14621,27 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
+          "search_terms": [
+            "공급실"
           ]
         }
       ],
@@ -17703,7 +14664,6 @@ window.ICU_MANUAL_DB = {
         "이름",
         "생김새",
         "모양",
-        "사진",
         "물품 이름",
         "이름과",
         "장비",
@@ -17713,16 +14673,7 @@ window.ICU_MANUAL_DB = {
         "Kelly / Long kelly 기구 사진",
         "Forcep / Dressing set 구성 사진",
         "Scissors / Mosquito / Magill forcep 사진",
-        "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Knife handle / Needle holder / Metzenbaum / Personal scissor 사진"
       ],
       "standard_sections_ready": true,
       "search_index": "CSR 물품 카운트: 이름과 생김새 물품 / 장비 / 전화번호 CSR 물품 CSR 물품카운트 물품 카운트 물품 카운트 멸균물품 forcep dressing set foley set suture set 소독물품 이름 생김새 모양 사진 물품 이름 이름과 장비 전화번호 v14_v11_based_menu search_optimized Kelly / Long kelly 기구 사진 Forcep / Dressing set 구성 사진 Scissors / Mosquito / Magill forcep 사진 Knife handle / Needle holder / Metzenbaum / Personal scissor 사진",
@@ -17798,65 +14749,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0010.png",
-          "alt": "격리실 간호 참고 자료",
-          "caption": "격리실 간호 참고 자료",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "격리실 간호 참고 자료",
-            "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA",
-            "감염관리 / 검사",
-            "감염관리",
-            "다제내성",
-            "감염균",
-            "다제내성감염균",
-            "VRE",
-            "CRE",
-            "CPO",
-            "MRSA",
-            "MSSA",
-            "MRPA",
-            "MDRO",
-            "격리",
-            "접촉주의",
-            "보호구",
-            "항생제",
-            "적응 별 항생제",
-            "균별 항생제",
-            "배양검사"
+            "수혈"
           ]
         },
         {
-          "src": "bin0011.png",
-          "alt": "다제내성감염균(VRE/CRE 등) 참고표",
-          "caption": "다제내성감염균(VRE/CRE 등) 참고표",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "다제내성감염균(VRE/CRE 등) 참고표",
-            "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA",
-            "감염관리 / 검사",
-            "감염관리",
-            "다제내성",
-            "감염균",
-            "다제내성감염균",
-            "VRE",
-            "CRE",
-            "CPO",
-            "MRSA",
-            "MSSA",
-            "MRPA",
-            "MDRO",
-            "격리",
-            "접촉주의",
-            "보호구",
-            "항생제",
-            "적응 별 항생제",
-            "균별 항생제",
-            "배양검사"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -17864,18 +14775,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -17906,17 +14825,7 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized",
         "격리실 간호 참고 자료",
-        "다제내성감염균(VRE/CRE 등) 참고표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "다제내성감염균(VRE/CRE 등) 참고표"
       ],
       "standard_sections_ready": true,
       "search_index": "다제내성 감염균: VRE·CRE·CPO·MRSA·MSSA·MRPA 감염관리 / 검사 감염관리 다제내성 감염균 다제내성감염균 VRE CRE CPO MRSA MSSA MRPA MDRO 격리 접촉주의 보호구 항생제 적응 별 항생제 균별 항생제 배양검사 contact precaution 검사 v14_v11_based_menu search_optimized 격리실 간호 참고 자료 다제내성감염균(VRE/CRE 등) 참고표",
@@ -17995,77 +14904,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0015.png",
-          "alt": "섭취량 및 배설량(I&O) 기록 그림",
-          "caption": "섭취량 및 배설량(I&O) 기록 그림",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "섭취량 및 배설량(I&O) 기록 그림",
-            "I & O / 섭취량·배설량 / 전해질 교정",
-            "I&O·전해질",
-            "I&O",
-            "I/O",
-            "IO",
-            "intake",
-            "output",
-            "섭취량",
-            "배설량",
-            "소변량",
-            "urine",
-            "drain",
-            "feeding",
-            "수액",
-            "infusion volume",
-            "fluid balance",
-            "전해질",
-            "전해질 교정",
-            "K",
-            "P"
+            "수혈"
           ]
         },
         {
-          "src": "bin0016.png",
-          "alt": "환자 유형별 I/O 불균형 예시 표",
-          "caption": "환자 유형별 I/O 불균형 예시 표",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "환자 유형별 I/O 불균형 예시 표",
-            "I & O / 섭취량·배설량 / 전해질 교정",
-            "I&O·전해질",
-            "I&O",
-            "I/O",
-            "IO",
-            "intake",
-            "output",
-            "섭취량",
-            "배설량",
-            "소변량",
-            "urine",
-            "drain",
-            "feeding",
-            "수액",
-            "infusion volume",
-            "fluid balance",
-            "전해질",
-            "전해질 교정",
-            "K",
-            "P"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
           ]
         }
       ],
@@ -18103,17 +14954,7 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized",
         "섭취량 및 배설량(I&O) 기록 그림",
-        "환자 유형별 I/O 불균형 예시 표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "환자 유형별 I/O 불균형 예시 표"
       ],
       "standard_sections_ready": true,
       "search_index": "I & O / 섭취량·배설량 / 전해질 교정 I&O·전해질 I&O I/O IO intake output 섭취량 배설량 소변량 urine drain feeding 수액 infusion volume fluid balance 전해질 전해질 교정 K P Mg KCL Phosten MgCl replacement positive balance negative balance I/O 마감 HD I/O 교정 v14_v11_based_menu search_optimized 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
@@ -18191,9 +15032,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -18201,18 +15058,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -18240,17 +15089,7 @@ window.ICU_MANUAL_DB = {
         "sign",
         "v14_v11_based_menu",
         "search_optimized",
-        "Vital sign",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Vital sign"
       ],
       "standard_sections_ready": true,
       "search_index": "Vital sign: BP·HR·RR·BT Vital Sign vital V/S 활력징후 BP 혈압 HR 맥박 RR 호흡수 BT 체온 fever hypotension hypertension tachycardia bradycardia SpO2 saturation sign v14_v11_based_menu search_optimized Vital sign",
@@ -18325,121 +15164,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0017.png",
-          "alt": "ABGA 해석 4단계 공식",
-          "caption": "ABGA 해석 4단계 공식",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "ABGA 해석 4단계 공식",
-            "ABGA: 혈액가스 분석과 질환",
-            "ABGA",
-            "혈액가스",
-            "혈액가스 분석",
-            "arterial blood gas",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "lactate",
-            "acidosis",
-            "alkalosis",
-            "respiratory acidosis",
-            "metabolic acidosis",
-            "CO2 retention",
-            "hypoxia",
-            "산염기",
-            "분석과",
-            "질환"
+            "수혈"
           ]
         },
         {
-          "src": "bin0018.png",
-          "alt": "ABGA 대표 질환 예시",
-          "caption": "ABGA 대표 질환 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "ABGA 대표 질환 예시",
-            "ABGA: 혈액가스 분석과 질환",
-            "ABGA",
-            "혈액가스",
-            "혈액가스 분석",
-            "arterial blood gas",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "lactate",
-            "acidosis",
-            "alkalosis",
-            "respiratory acidosis",
-            "metabolic acidosis",
-            "CO2 retention",
-            "hypoxia",
-            "산염기",
-            "분석과",
-            "질환"
-          ]
-        },
-        {
-          "src": "bin0019.png",
-          "alt": "동맥혈 ABGA 수행절차",
-          "caption": "동맥혈 ABGA 수행절차",
-          "search_terms": [
-            "동맥혈 ABGA 수행절차",
-            "ABGA: 혈액가스 분석과 질환",
-            "ABGA",
-            "혈액가스",
-            "혈액가스 분석",
-            "arterial blood gas",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "lactate",
-            "acidosis",
-            "alkalosis",
-            "respiratory acidosis",
-            "metabolic acidosis",
-            "CO2 retention",
-            "hypoxia",
-            "산염기",
-            "분석과",
-            "질환"
-          ]
-        },
-        {
-          "src": "bin001a.png",
-          "alt": "ABGA 이상 시 단계별 수행",
-          "caption": "ABGA 이상 시 단계별 수행",
-          "search_terms": [
-            "ABGA 이상 시 단계별 수행",
-            "ABGA: 혈액가스 분석과 질환",
-            "ABGA",
-            "혈액가스",
-            "혈액가스 분석",
-            "arterial blood gas",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "lactate",
-            "acidosis",
-            "alkalosis",
-            "respiratory acidosis",
-            "metabolic acidosis",
-            "CO2 retention",
-            "hypoxia",
-            "산염기",
-            "분석과",
-            "질환"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -18447,18 +15190,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -18496,17 +15247,7 @@ window.ICU_MANUAL_DB = {
         "검체",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA: 혈액가스 분석과 질환 ABGA 혈액가스 혈액가스 분석 arterial blood gas pH PaCO2 PaO2 HCO3 SaO2 lactate acidosis alkalosis respiratory acidosis metabolic acidosis CO2 retention hypoxia 산염기 분석과 질환 v14_v11_based_menu search_optimized ABGA 해석 4단계 공식 ABGA 대표 질환 예시 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration A-line 검체 동영상 업무동영상 교육영상",
@@ -18613,122 +15354,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin0013.png",
-          "alt": "LOC 단계 정리 그림",
-          "caption": "LOC 단계 정리 그림",
-          "search_terms": [
-            "LOC 단계 정리 그림",
-            "GCS / Mental / Seizure / 항경련제",
-            "신경계",
-            "신경계 사정",
-            "GCS",
-            "GCS 사정",
-            "GCS tip",
-            "mental",
-            "멘탈",
-            "의식",
-            "LOC",
-            "motor",
-            "pupil",
-            "seizure",
-            "seizure 종류",
-            "경련",
-            "발작",
-            "항경련제",
-            "antiepileptic",
-            "Keppra",
-            "Valproate"
-          ]
-        },
-        {
-          "src": "bin0014.png",
-          "alt": "신경계 사정 가이드",
-          "caption": "신경계 사정 가이드",
-          "search_terms": [
-            "신경계 사정 가이드",
-            "GCS / Mental / Seizure / 항경련제",
-            "신경계",
-            "신경계 사정",
-            "GCS",
-            "GCS 사정",
-            "GCS tip",
-            "mental",
-            "멘탈",
-            "의식",
-            "LOC",
-            "motor",
-            "pupil",
-            "seizure",
-            "seizure 종류",
-            "경련",
-            "발작",
-            "항경련제",
-            "antiepileptic",
-            "Keppra",
-            "Valproate"
-          ]
-        },
-        {
-          "src": "bin001b.png",
-          "alt": "동공 크기(Pupil size) 그림",
-          "caption": "동공 크기(Pupil size) 그림",
-          "search_terms": [
-            "동공 크기(Pupil size) 그림",
-            "GCS / Mental / Seizure / 항경련제",
-            "신경계",
-            "신경계 사정",
-            "GCS",
-            "GCS 사정",
-            "GCS tip",
-            "mental",
-            "멘탈",
-            "의식",
-            "LOC",
-            "motor",
-            "pupil",
-            "seizure",
-            "seizure 종류",
-            "경련",
-            "발작",
-            "항경련제",
-            "antiepileptic",
-            "Keppra",
-            "Valproate"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -18765,17 +15403,7 @@ window.ICU_MANUAL_DB = {
         "search_optimized",
         "LOC 단계 정리 그림",
         "신경계 사정 가이드",
-        "동공 크기(Pupil size) 그림",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "동공 크기(Pupil size) 그림"
       ],
       "standard_sections_ready": true,
       "search_index": "GCS / Mental / Seizure / 항경련제 신경계 신경계 사정 GCS GCS 사정 GCS tip mental 멘탈 의식 LOC motor pupil seizure seizure 종류 경련 발작 항경련제 antiepileptic Keppra Valproate Orfil phenytoin 뇌압 IICP neuro sign 신경계 증상 신경계 질환 v14_v11_based_menu search_optimized LOC 단계 정리 그림 신경계 사정 가이드 동공 크기(Pupil size) 그림",
@@ -18937,38 +15565,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -19004,17 +15630,7 @@ window.ICU_MANUAL_DB = {
         "search_optimized",
         "인슐린 종류와 작용시간 그래프",
         "인슐린 제품/용법 참고 표",
-        "경구 혈당강하제 참고 표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "경구 혈당강하제 참고 표"
       ],
       "standard_sections_ready": true,
       "search_index": "BST / DM / 인슐린 / 혈당관리 BST / DM / DKA BST·DM BST DM diabetes 혈당 BST 정상범위 정상 범위 저혈당 고혈당 상황대처 bst tip insulin 인슐린 인슐린 종류 RI Humulin 휴물린 sliding DKA OHA 경구혈당강하제 DM 약물 metformin 혈당관리 v14_v11_based_menu search_optimized 인슐린 종류와 작용시간 그래프 인슐린 제품/용법 참고 표 경구 혈당강하제 참고 표",
@@ -19092,30 +15708,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "혈액제제"
           ]
         }
       ],
@@ -19156,17 +15761,7 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized",
         "ventilator 동영상",
-        "Ventilator 사용법 동영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Ventilator 사용법 동영상"
       ],
       "standard_sections_ready": true,
       "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상",
@@ -19243,23 +15838,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "혈액제제"
           ]
         }
       ],
@@ -19292,17 +15883,7 @@ window.ICU_MANUAL_DB = {
         "퇴원처방",
         "업무",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "입퇴원 / 전원 / 전동 / 사망 업무 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 입퇴원 입원 퇴원 전원 전동 사망 입실 전실 응급실 외래 병동 전입 병동전입 퇴실 discharge transfer death 사후처치 영안실 전동간호기록 가퇴원 이동서식 퇴원처방 업무 v14_v11_based_menu search_optimized 입퇴원/전동/전원/사망 간호 상세",
@@ -19372,22 +15953,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -19413,17 +15991,7 @@ window.ICU_MANUAL_DB = {
         "처방패턴",
         "주치의별",
         "v14_v11_based_menu",
-        "search_optimized",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "search_optimized"
       ],
       "standard_sections_ready": true,
       "search_index": "주치의 / 과별 특이사항 주치의·과별 주치의 과별 과별 특이사항 원장님 원장님 routine 특이사항 NS OS 내과 심장내과 신장내과 소화기내과 신경외과 정형외과 routine set order 처방패턴 주치의별 v14_v11_based_menu search_optimized",
@@ -19552,23 +16120,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "Brain CT"
           ]
         }
       ],
@@ -19623,17 +16187,7 @@ window.ICU_MANUAL_DB = {
         "주입 중 door open",
         "Door 재장착 후 재시작",
         "총 주입 예정량 완료",
-        "처방 확인 후 종료 또는 추가 설정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "처방 확인 후 종료 또는 추가 설정"
       ],
       "standard_sections_ready": true,
       "search_index": "Infusion pump B.Braun 사용법과 알람 대처 물품 / 장비 / 전화번호 의료장비/Infusion Pump infusion pump 인퓨전펌프 B.Braun B braun pump alarm Low battery Occlusion Air Door Complete 수액펌프 주입속도 주입용량 Infusion pump 사용법과 알람 대처 물품 장비 전화번호 v26_uploaded_manual_added manual_20260614 Infusion pump 알람 및 대처 의미 배터리 잔량 30분 이내 전원/배터리 연결 라인 꼬임, 장착 오류, 바늘/3-way/조절기 막힘 Line clamp, 3-way 방향, IV function 확인 Air sensor가 공기 감지 또는 수액 종료 Air 제거, 수액 잔량 확인 주입 중 door open Door 재장착 후 재시작 총 주입 예정량 완료 처방 확인 후 종료 또는 추가 설정 Infusion pump 사용법 Syringe pump 사용법",
@@ -19790,21 +16344,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -19857,17 +16426,7 @@ window.ICU_MANUAL_DB = {
         "3일",
         "7일",
         "14일",
-        "4일",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "4일"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 교체 주기 정리 Routine Routine/교체주기 교체주기 교체 주기 Q-syte q site nebulizer vent circuit 박테리아 필터 엔코 HFNC CRRT kit IV A-line kit C-line dx PICC dx closed suction catheter feeding bag T-tube portex 수요일 일요일 extension 3-way ICU 교체 주기 정리 v26_uploaded_manual_added manual_20260614 ICU 교체 주기 항목 3일 7일 14일 4일",
@@ -20023,26 +16582,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "Routine/투약시간",
         "v26_uploaded_manual_added",
@@ -20091,21 +16631,10 @@ window.ICU_MANUAL_DB = {
         "구분",
         "시간/메모",
         "07:30 / 12:00 / 17:00",
-        "저녁 식이 2개 신청, remark에 익일 아침 분량 메모",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "저녁 식이 2개 신청, remark에 익일 아침 분량 메모"
       ],
       "standard_sections_ready": true,
-      "search_index": "약물 투약 시간과 Feeding 시간 Routine Routine/투약시간 투약시간 약물 시간 QD BID TID QID nebulizer 시간 콜리스틴 Feeding 시간 경관식 약 시간 간호액팅 스케줄링 약물 투약 시간과 Feeding 시간 v26_uploaded_manual_added manual_20260614 약물 투약 시간 용법 09:00 09:00 / 21:00 06:00 / 14:00 / 22:00 06:00 / 12:00 / 18:00 / 23:59 Nebulizer 4회 07:00 / 12:00 / 17:00 / 21:00 07:00 / 17:00 구분 시간/메모 07:30 / 12:00 / 17:00 저녁 식이 2개 신청, remark에 익일 아침 분량 메모",
-      "prefer_media_first": true
+      "search_index": "약물 투약 시간과 Feeding 시간 Routine Routine/투약시간 투약시간 약물 시간 QD BID TID QID nebulizer 시간 콜리스틴 Feeding 시간 경관식 약 시간 간호액팅 스케줄링 약물 투약 시간과 Feeding 시간 v26_uploaded_manual_added manual_20260614 약물 투약 시간 용법 09:00 09:00 / 21:00 06:00 / 14:00 / 22:00 06:00 / 12:00 / 18:00 / 23:59 Nebulizer 4회 07:00 / 12:00 / 17:00 / 21:00 07:00 / 17:00 구분 시간/메모 07:30 / 12:00 / 17:00 저녁 식이 2개 신청, remark에 익일 아침 분량 메모"
     },
     {
       "id": "PREP001",
@@ -20226,30 +16755,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -20305,17 +16823,7 @@ window.ICU_MANUAL_DB = {
         "specimen cup, suction line, ET PVC catheter, airway, N/S",
         "Thoracostomy set, chest tube 24Fr, chest bottle, chest stand",
         "EVD 배액관 비움",
-        "D-set, 베타딘, 멸균장갑, 거즈, 고무줄",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "D-set, 베타딘, 멸균장갑, 거즈, 고무줄"
       ],
       "standard_sections_ready": true,
       "search_index": "상황별 준비물: irrigation, C-line, suture, sputum cx, CTD, EVD 수술 / 시술 준비물/시술·배액관 상황별 준비 준비물 Bladder irrigation Subclavian insertion C-line insertion suture 준비 sputum cx CTD insertion NS OP drain EVD 배액관 tip cx 배액관 제거 배액관 삽입 thoracostomy chest tube 상황별 irrigation C-line suture sputum cx CTD EVD 수술 시술 v26_uploaded_manual_added manual_20260614 상황별 핵심 준비물 요약 상황 핵심 준비물 D-set, 곡반, N/S, enema syringe 50cc C-line catheter, suture set, sono probe cover, 리도카인, Tegaderm CHG specimen cup, suction line, ET PVC catheter, airway, N/S Thoracostomy set, chest tube 24Fr, chest bottle, chest stand EVD 배액관 비움 D-set, 베타딘, 멸균장갑, 거즈, 고무줄",
@@ -20462,43 +16970,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "임상 약물/항생제",
         "v26_uploaded_manual_added",
@@ -20567,17 +17039,7 @@ window.ICU_MANUAL_DB = {
         "Aminoglycoside",
         "신풍아미카신, 겐타마이신",
         "Vancomycin",
-        "반코마이신, 하노마이신",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "반코마이신, 하노마이신"
       ],
       "standard_sections_ready": true,
       "search_index": "항생제 AST 시행 여부 약물 / 수액 / 마약 임상 약물/항생제 항생제 AST AST 유무 AST 시행 AST 안함 유박탐 타박탐 벤제타실 세파제돈 세파졸린 제티암 후루마린 타짐 타포신 트리악손 뉴디짐 맥스핌 오로페넴 아미카신 겐타마이신 반코마이신 하노마이신 사이톱신 레포신 항생제 AST 시행 여부 약물 수액 마약 v26_uploaded_manual_added manual_20260614 AST 시행 항생제 / 미시행 항생제 구분 계열 AST O Penicillin계 유박탐, 벤제타실, 타박탐 Cepha 1세대 세파제돈, 세파졸린 Cepha 2세대 제티암, 후루마린 Cepha 3세대 타짐, 타포신, 트리악손, 뉴디짐 Cepha 4세대 Carbapenem계 AST X Aminoglycoside 신풍아미카신, 겐타마이신 Vancomycin 반코마이신, 하노마이신",
@@ -20698,9 +17160,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -20708,18 +17186,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -20786,17 +17256,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "검체 통과 채혈·ABGA 실무 검사 / 검체 검사·검체/검체통 검체통 검체 병 c-difficile CDT stool ob통 UA bottle Urine Analysis Urine Culture 코니컬튜브 슈터기 일반캐리어 오토캐리어 ABGA A-line 채혈 리거즈 regurge 바코드 발행 DIC 바코드 검체 통과 채혈 실무 검사 v26_uploaded_manual_added manual_20260614 검체통 종류 검체통/용기 C-difficile / CDT Stool OB통, 블랙 Urine Analysis / UA 투명한 뚜껑 긴 bottle 코니컬 튜브 투명: 일반캐리어 / 유색: 오토캐리어 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 동영상 업무동영상 교육영상 ABGA 채혈/검사",
@@ -20888,26 +17348,7 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "Routine/식이",
         "v26_uploaded_manual_added",
@@ -20943,21 +17384,10 @@ window.ICU_MANUAL_DB = {
         "확인과",
         "입력",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
-      "search_index": "ICU 식이 확인과 경관식 입력 Routine Routine/식이 식이 NPO 금식 Feeding 경관유동식 당뇨식 칼로리 Remark 뉴케어 KD 신장식 Wet 거즈 추가식사 경관식 식이입력 ICU 확인과 입력 v26_uploaded_manual_added manual_20260614",
-      "prefer_media_first": true
+      "search_index": "ICU 식이 확인과 경관식 입력 Routine Routine/식이 식이 NPO 금식 Feeding 경관유동식 당뇨식 칼로리 Remark 뉴케어 KD 신장식 Wet 거즈 추가식사 경관식 식이입력 ICU 확인과 입력 v26_uploaded_manual_added manual_20260614"
     },
     {
       "id": "ROUTINE033",
@@ -21194,21 +17624,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
           ]
         }
       ],
@@ -21280,17 +17708,7 @@ window.ICU_MANUAL_DB = {
         "숫자통증척도",
         "얼굴통증척도",
         "소아통증척도",
-        "NRS·FPS·FLACC·PIPS 통증 사정표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "NRS·FPS·FLACC·PIPS 통증 사정표"
       ],
       "standard_sections_ready": true,
       "search_index": "Initial 후 전산: 낙상·욕창·통증·Bundle·Flow sheet·보호대 Routine Routine/Initial·전산 Initial 후 전산 initial 낙상 욕창 통증 낙욕통 Bundle Flow sheet 신체보호대 평가 보호대 ICU flowsheet 체위변경표 통증 재평가 effect D 0800 E 1600 N 2300 massage X 전산 Flow sheet v26_uploaded_manual_added manual_20260614 Initial 후 전산 시간 기준 항목 시간/기준 낙상·욕창·통증 D 08:00 / E 16:00 / N 23:00 D 08:00-13:59 / E 16:00-21:59 / N 00:00-05:59 2시간 단위 통증 effect Inject 30분 후 / PO 1시간 후 NRS 통증 평가 척도 FLACC 통증 평가 척도 FPS 통증 평가 척도 통증 사정 통증 사정표 NRS FPS FLACC PIPS 숫자통증척도 얼굴통증척도 소아통증척도 NRS·FPS·FLACC·PIPS 통증 사정표",
@@ -21408,82 +17826,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "bin0015.png",
-          "alt": "섭취량 및 배설량(I&O) 기록 그림",
-          "caption": "섭취량 및 배설량(I&O) 기록 그림",
-          "search_terms": [
-            "섭취량 및 배설량(I&O) 기록 그림",
-            "I/O 입력과 마감 상세",
-            "I&O·전해질",
-            "I&O·전해질/I&O",
-            "I/O 마감",
-            "I/O 입력",
-            "섭취량",
-            "배설량",
-            "Parenteral",
-            "Urine",
-            "infusion pump volume",
-            "식사 100 400",
-            "Foley",
-            "PO water",
-            "inj 50cc",
-            "FD feeding",
-            "HD I/O",
-            "Anti 입력",
-            "배액관 I/O",
-            "클램프",
-            "음압 재설정"
-          ]
-        },
-        {
-          "src": "bin0016.png",
-          "alt": "환자 유형별 I/O 불균형 예시 표",
-          "caption": "환자 유형별 I/O 불균형 예시 표",
-          "search_terms": [
-            "환자 유형별 I/O 불균형 예시 표",
-            "I/O 입력과 마감 상세",
-            "I&O·전해질",
-            "I&O·전해질/I&O",
-            "I/O 마감",
-            "I/O 입력",
-            "섭취량",
-            "배설량",
-            "Parenteral",
-            "Urine",
-            "infusion pump volume",
-            "식사 100 400",
-            "Foley",
-            "PO water",
-            "inj 50cc",
-            "FD feeding",
-            "HD I/O",
-            "Anti 입력",
-            "배액관 I/O",
-            "클램프",
-            "음압 재설정"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "I&O·전해질/I&O",
         "v26_uploaded_manual_added",
@@ -21536,17 +17879,7 @@ window.ICU_MANUAL_DB = {
         "Night",
         "21:00-06:00",
         "섭취량 및 배설량(I&O) 기록 그림",
-        "환자 유형별 I/O 불균형 예시 표",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "환자 유형별 I/O 불균형 예시 표"
       ],
       "standard_sections_ready": true,
       "search_index": "I/O 입력과 마감 상세 I&O·전해질 I&O·전해질/I&O I/O 마감 I/O 입력 섭취량 배설량 Parenteral Urine infusion pump volume 식사 100 400 Foley PO water inj 50cc FD feeding HD I/O Anti 입력 배액관 I/O 클램프 음압 재설정 positive balance 입력과 마감 상세 I&O 전해질 v26_uploaded_manual_added manual_20260614 Duty별 I/O 기준 Duty 시간 Day 06:00-13:00 Evening 13:00-21:00 Night 21:00-06:00 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
@@ -21556,8 +17889,7 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ett",
         "기도삽관"
-      ],
-      "prefer_media_first": true
+      ]
     },
     {
       "id": "LINE030",
@@ -21613,37 +17945,7 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "Line/부착기구",
         "v26_uploaded_manual_added",
@@ -21682,21 +17984,10 @@ window.ICU_MANUAL_DB = {
         "Drain",
         "Dressing",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
-      "search_index": "부착기구 입력: HD cath, Mahurkar, Perm cath Line / Drain / Dressing Line/부착기구 부착기구 Cadex 기본간호 기구입력 HD Cath trialysis 3 lumen 마후카 Mahurkar Perm Cath 투석용 카테터 비터널형 터널형 동의서 다름 입력 HD cath Perm Line Drain Dressing v26_uploaded_manual_added manual_20260614",
-      "prefer_media_first": true
+      "search_index": "부착기구 입력: HD cath, Mahurkar, Perm cath Line / Drain / Dressing Line/부착기구 부착기구 Cadex 기본간호 기구입력 HD Cath trialysis 3 lumen 마후카 Mahurkar Perm Cath 투석용 카테터 비터널형 터널형 동의서 다름 입력 HD cath Perm Line Drain Dressing v26_uploaded_manual_added manual_20260614"
     },
     {
       "id": "MED030",
@@ -21751,28 +18042,7 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "지참약",
         "v26_uploaded_manual_added",
@@ -21805,21 +18075,10 @@ window.ICU_MANUAL_DB = {
         "식별",
         "의뢰와",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
-      "search_index": "지참약 식별 의뢰와 셀프처방 지참약 자가약 식별의뢰 지참약 관리 지참약 식별의뢰서 약국 6211 6212 셀프처방 Self 지참약 검색 지참약품정보 응급발행 식별 완료 스케줄 식별 의뢰와 v26_uploaded_manual_added manual_20260614",
-      "prefer_media_first": true
+      "search_index": "지참약 식별 의뢰와 셀프처방 지참약 자가약 식별의뢰 지참약 관리 지참약 식별의뢰서 약국 6211 6212 셀프처방 Self 지참약 검색 지참약품정보 응급발행 식별 완료 스케줄 식별 의뢰와 v26_uploaded_manual_added manual_20260614"
     },
     {
       "id": "NARC030",
@@ -21886,27 +18145,7 @@ window.ICU_MANUAL_DB = {
         "V104_MEDICATION_BLOOD_OVERVIEW"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "마약·향정",
         "v26_uploaded_manual_added",
@@ -21951,17 +18190,7 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
       "search_index": "마약 Pink / 향정 White 관리 상세 약물 / 수액 / 마약 마약·향정 마약 Pink 향정 White 마약장 6029 비치마약 마약 prep 마약 처방전 재출력 출력 error 반납처방전 핑크 마약 반납 마약 봉투 DC 공병 잔량 앰플 마약 Pink 향정 White 관리 상세 약물 수액 v26_uploaded_manual_added manual_20260614",
@@ -22036,23 +18265,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "Lab bottle"
           ]
         }
       ],
@@ -22098,17 +18324,7 @@ window.ICU_MANUAL_DB = {
         "기록",
         "처방",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 간호기록 체크리스트 EMR / 기록 / 처방 간호기록 차팅 네뷸 차팅 prn 차팅 산소 변경 약 용량 변경 회진 면회 지참약 식별 차팅 검사결과 Notify 검사결과 복사 OP 후 Dressing 사진 IPC 기록 Lasix BP 페치딘 기록 RI 2시간 F/U hourly check line 제거 차팅 Nebulizer 기록 Feeding 기록 ICU 체크리스트 EMR 기록 처방 v26_uploaded_manual_added manual_20260614 간호기록 작성 원칙",
@@ -22183,23 +18399,52 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
+          "search_terms": [
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
+          "search_terms": [
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -22249,17 +18494,7 @@ window.ICU_MANUAL_DB = {
         "v26_uploaded_manual_added",
         "manual_20260614",
         "LUCAS 동영상",
-        "루카스 사용법 동영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "루카스 사용법 동영상"
       ],
       "standard_sections_ready": true,
       "search_index": "간호처방과 액팅: Lab, pickup, 응급발행 처방·액팅 간호처방 액팅 Cadex 기본간호 Foley 처방 L-tube 처방 Dressing 처방 IV 처방 O2 처방 O2 inhalation HFNC 수가 Vent 수가 simple dressing 피하주사 pee nebulizer 처방 Lab 처방 채혈접수업무 픽업 응급발행 10:30 마약 픽업 퇴원약 픽업 ICU Chest Portable Y bed side PT 간호처방과 Lab pickup 처방 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상",
@@ -22371,28 +18606,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "DNR",
         "v26_uploaded_manual_added",
@@ -22436,21 +18650,10 @@ window.ICU_MANUAL_DB = {
         "AWU210 / 10호",
         "AWU230 / 11호",
         "이행 관리료",
-        "AWU240 / 13호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "AWU240 / 13호"
       ],
       "standard_sections_ready": true,
-      "search_index": "DNR / 연명의료 서류와 처방 DNR 연명의료 연명의료중단결정서 별도서식 9 별도서식 10 별도서식 11 별도서식 13 사전연명의료의향서 가족관계증명서 신분증 사회복지사 139 AWU501 AWU210 AWU230 AWU240 DNR 체크표 서류와 처방 v26_uploaded_manual_added manual_20260614 연명의료 관련 처방료 코드 항목 코드 협진료 AWU501 / 9호 계획료 AWU210 / 10호 AWU230 / 11호 이행 관리료 AWU240 / 13호 DNR 서류/처방",
-      "prefer_media_first": true
+      "search_index": "DNR / 연명의료 서류와 처방 DNR 연명의료 연명의료중단결정서 별도서식 9 별도서식 10 별도서식 11 별도서식 13 사전연명의료의향서 가족관계증명서 신분증 사회복지사 139 AWU501 AWU210 AWU230 AWU240 DNR 체크표 서류와 처방 v26_uploaded_manual_added manual_20260614 연명의료 관련 처방료 코드 항목 코드 협진료 AWU501 / 9호 계획료 AWU210 / 10호 AWU230 / 11호 이행 관리료 AWU240 / 13호 DNR 서류/처방"
     },
     {
       "id": "EKG030",
@@ -22564,37 +18767,9 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "bin0012.png",
-          "alt": "Bedside monitor 예시 사진",
-          "caption": "Bedside monitor 예시 사진",
-          "search_terms": [
-            "Bedside monitor 예시 사진",
-            "EKG 촬영과 리드 부착",
-            "검사 / 검체",
-            "검사/EKG",
-            "EKG",
-            "ECG",
-            "심전도",
-            "EKG 접수",
-            "부서접수",
-            "환자 선택",
-            "전극 연결",
-            "record",
-            "network",
-            "RU",
-            "LU",
-            "RL",
-            "LL",
-            "빨노검초",
-            "액와중앙선",
-            "EKG Scan",
-            "침습적"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -22602,18 +18777,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -22665,17 +18832,7 @@ window.ICU_MANUAL_DB = {
         "노랑",
         "검정",
         "초록",
-        "Bedside monitor 예시 사진",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Bedside monitor 예시 사진"
       ],
       "standard_sections_ready": true,
       "search_index": "EKG 촬영과 리드 부착 검사 / 검체 검사/EKG EKG ECG 심전도 EKG 접수 부서접수 환자 선택 전극 연결 record network RU LU RL LL 빨노검초 액와중앙선 EKG Scan 침습적 촬영과 리드 부착 검사 검체 v26_uploaded_manual_added manual_20260614 사지 리드 색상 위치 색상 빨강 노랑 검정 초록 Bedside monitor 예시 사진",
@@ -22752,22 +18909,35 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -22813,17 +18983,7 @@ window.ICU_MANUAL_DB = {
         "실무",
         "Tip",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
       "search_index": "Injection / 3-way / IVS 실무 Tip 술기 술기/Injection inject injection MIV IVS 3-way 3way bolus flushing micro syringe TPN Cefa 수혈 3way RI F/U 우리 스틴 페르디핀 mannitol IM 리거즈 PICC flushing A-line zeroing EVD zeroing 액팅체크 실무 Tip v26_uploaded_manual_added manual_20260614",
@@ -22896,21 +19056,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "장비",
-            "물품"
+            "Brain CT"
           ]
         }
       ],
@@ -22956,17 +19114,7 @@ window.ICU_MANUAL_DB = {
         "band",
         "Foley",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
       "search_index": "기본 술기: Fever, L-tube, Feeding, TR band, Foley 술기 술기/기본간호 기본술기 37.5 ice pack L-tube feeding regurge residual duoderm Ace vac clamping Face care 구강케어 탄륨 TR band CAG PCI puncture Foley ballooning 증류수 기본 Fever TR band Foley v26_uploaded_manual_added manual_20260614",
@@ -23117,22 +19265,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -23199,17 +19344,7 @@ window.ICU_MANUAL_DB = {
         "A-PLT",
         "PT/INR 이상",
         "1-2hr",
-        "Fibrinogen 감소",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Fibrinogen 감소"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 실무 Tip과 혈액제제 종류 수혈 / 혈액 수혈 수혈 tip P-RBC 교차시험 ABO Rho irregular 혈액요청서 슈터기 진검실 혈액불출 수혈기록지 PC Cryo FFP APLT 페르시스 수혈 filter 페니라민 blood pumping A-PLT 250 CRYO 40 뮤코필터레이트 fibrinogen PT INR 실무 Tip과 혈액제제 종류 혈액 v26_uploaded_manual_added manual_20260614 혈액제제 종류와 투여 적응증 보관/온도 투여 기대효과 RBC Hb 감소 냉장 1.5-3hr PLT 감소 실온 Full drop A-PLT PT/INR 이상 1-2hr Fibrinogen 감소 혈액제제 요약",
@@ -23284,28 +19419,7 @@ window.ICU_MANUAL_DB = {
         "입퇴원 / 전원 / 전동 / 사망 업무"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "입퇴원·전원·사망",
         "v26_uploaded_manual_added",
@@ -23350,21 +19464,10 @@ window.ICU_MANUAL_DB = {
         "간호",
         "상세",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
-      "search_index": "입퇴원/전동/전원/사망 간호 상세 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 가퇴원 전동간호기록 전동 전원 전실 G/W 병동 퇴원 사망 이동서식 보호자 면담 병실료 병실정보 6043 6050 이송콜 산소탱크 자가약 전동기록지 I/O 마감 A-line 제거 EVD clamp SDD clamp 입퇴원 간호 상세 v26_uploaded_manual_added manual_20260614 입퇴원 / 전원 / 전동 / 사망 업무",
-      "prefer_media_first": true
+      "search_index": "입퇴원/전동/전원/사망 간호 상세 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 가퇴원 전동간호기록 전동 전원 전실 G/W 병동 퇴원 사망 이동서식 보호자 면담 병실료 병실정보 6043 6050 이송콜 산소탱크 자가약 전동기록지 I/O 마감 A-line 제거 EVD clamp SDD clamp 입퇴원 간호 상세 v26_uploaded_manual_added manual_20260614 입퇴원 / 전원 / 전동 / 사망 업무"
     },
     {
       "id": "ICUINFO030",
@@ -23429,30 +19532,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -23497,17 +19589,7 @@ window.ICU_MANUAL_DB = {
         "장비",
         "전화번호",
         "v26_uploaded_manual_added",
-        "manual_20260614",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "manual_20260614"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 숙지사항: 면회, 외부전화, 약국, 이송, Noti, E-cart 물품 / 장비 / 전화번호 원내정보/ICU 숙지 ICU 숙지사항 면회 임종면회 외부전화 9 누르고 약국 비번 6220 냉장고 1234 이송팀 Noti 당직의 병원장 ER CT 4시간 E-cart 봉인라벨 봉인라벨 No 점검대장 ICU 숙지사항 이송 E-cart 물품 장비 전화번호 v26_uploaded_manual_added manual_20260614",
@@ -23572,27 +19654,7 @@ window.ICU_MANUAL_DB = {
         "CPR quick card"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "tags": [
         "응급상황/CPR",
         "v26_uploaded_manual_added",
@@ -23645,17 +19707,7 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -23832,9 +19884,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -23842,18 +19910,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -23943,17 +20019,7 @@ window.ICU_MANUAL_DB = {
         "tablet",
         "consent",
         "동의서 받기",
-        "전자동의서",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "전자동의서"
       ],
       "standard_sections_ready": true,
       "search_index": "CT/MRI 조영제 검사와 주요 영상검사 준비 검사 / 검체 검사·시술/영상검사 CT 조영제 MRI 조영제 3way N/S hydration 조영제 검사 Coronary Angio CT NTG 베타록 Brain MRI non enhance Brain MRI enhance Brain CT Head Neck Angio CT DSA PTA TCD TFCA TRCA metformin 메트포르민 Rt 18G Lt 18G Lt 20G NPO MRI permission CT MRI 조영제 검사와 주요 영상검사 준비 검사 검체 v26_uploaded_manual_added manual_20260614 주요 영상검사 준비사항 CT 5분 전 NTG, 베타록 지참, 조영제 line Brain MRI non-enhance 검사설명서 MRI 설명서, 조영제 동의서, permission, line, NS 500, 금식 X Brain CT non-enhance 준비사항 없음 Lt 18G, metformin 중지 확인, hydration Lt 18G, NS 500, 동의서, 금식 X NPO, PICC 조영제 사용 가능 준비사항 없음, 보통 4-5일 f/u NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 수술환자 이동 동영상 업무동영상 교육영상 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서",
@@ -24158,32 +20224,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -24244,17 +20297,7 @@ window.ICU_MANUAL_DB = {
         "빠른 살균, 휘발성",
         "주사부위 피부 소독, 개방성 상처 금지",
         "기포 발생으로 이물질 제거",
-        "괴사조직 제거, 지속 사용 금지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "괴사조직 제거, 지속 사용 금지"
       ],
       "standard_sections_ready": true,
       "search_index": "Dressing 소독제와 상처별 소독 Line / Drain / Dressing Dressing Dressing 소독 소독제 생리식염수 베타딘 클로르헥시딘 알코올 과산화수소 일반 상처 감염된 상처 수술 후 상처 욕창 PCD 장루 SDD dx EVD bag 소독 테가덤 CHG oozing 거즈 필름 7일 픽스 2일 소독제와 상처별 소독 Line Drain v26_uploaded_manual_added manual_20260614 소독제 특징과 사용 예시 특징 사용 예시 세포 자극 적음 일반 상처 세척 광범위 항균 감염 위험 상처, 수술 전 소독 강력한 소독, 피부 친화적 카테터 삽입 부위, 중심정맥관 소독 빠른 살균, 휘발성 주사부위 피부 소독, 개방성 상처 금지 기포 발생으로 이물질 제거 괴사조직 제거, 지속 사용 금지 일반 상처 Dressing 수술 후 상처 Dressing",
@@ -24356,22 +20399,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -24444,17 +20501,7 @@ window.ICU_MANUAL_DB = {
         "tablet",
         "consent",
         "동의서 받기",
-        "전자동의서",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "전자동의서"
       ],
       "standard_sections_ready": true,
       "search_index": "수술/시술 전후 간호와 Pre-op 확인 수술 / 시술 수술간호 수술 전후 간호 Pre Op preop 시술 전 확인 angio permission 표식확인서 PA 124 수술 전 확인표 OR 연락 OP risk PCA 동의서 전신마취 동의서 수술동의서 수술파일 Pre OP Fluid foley 남성 Post OP 처방 수술 시술 전후 간호와 Pre-op 확인 v26_uploaded_manual_added manual_20260614 수술 전후 간호 참고 표 NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 Pre-op care / 수술 전 간호",
@@ -24723,23 +20770,53 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "DNR",
-            "연명의료중단"
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -24820,17 +20897,7 @@ window.ICU_MANUAL_DB = {
         "Pre 빨간색 / Post 파란색 연결",
         "Rinse / UF rinse 100% 이후",
         "환자 연결",
-        "처방: CRRT kit + NS500 + NS1L 확인",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "처방: CRRT kit + NS500 + NS1L 확인"
       ],
       "standard_sections_ready": true,
       "search_index": "CRRT I/O, Return, Kit change, 처방, 차팅 상세 CRRT / 신장 CRRT CRRT 상세 CRRT I/O CRRT return CRRT retrun Blood return 혈액재주입 Balance 치료종료 kit change Multifiltrate pro kit HOF 600 멀티빅 후탄 prefilter 압력 TMP BFR clot UF N/S 500 NS 1L KCL 포스텐 CRRT cath conti cath CRRT 차팅 Return Kit change 처방 차팅 상세 신장 v26_uploaded_manual_added manual_20260614 CRRT Return 순서 순서 내용 1 Blood return: NS 500 access line 3-way에 연결 후 full drop 2 치료종료 → 혈액재주입 → 확인 3 Balance 확인 및 적용시간 입력 4 NS 500은 5분 이내 들어갈 수 있어 앞에서 대기 5 Nacl 감지 또는 적당히 return 되면 clamp 후 종료 6 환자 disconnect 7 Kit 제거 8 전원 끄기 CRRT Kit change 오류 예방 위해 5분 뒤 전원 켜기 치료 유지 → 기능테스트 100% 후 OK Pre 빨간색 / Post 파란색 연결 Rinse / UF rinse 100% 이후 환자 연결 처방: CRRT kit + NS500 + NS1L 확인 CRRT Return / Kit change 상세",
@@ -24967,8 +21034,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -24976,18 +21043,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -25070,17 +21145,7 @@ window.ICU_MANUAL_DB = {
         "EVD leveling",
         "ICP 측정",
         "뇌실외배액",
-        "배액 높이",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "배액 높이"
       ],
       "standard_sections_ready": true,
       "search_index": "Burr hole, EVD/SDD, Coil embolization, Tracheostomy 신경계 검사·시술/신경외과 burr hole 버홀 EVD SDD ICP IICP CSF 뇌척수액 Coil embolization coil 전 coil 후 TR band Radial Tracheostomy 기관절개관 기관절개술 PA 124 전신마취동의서 수술 전 처치표 Anti prep Burr hole Coil embolization v26_uploaded_manual_added manual_20260614 신경외과 주요 수치 항목 기준 EVD 정상 CSF 생성 15-20ml/hr EVD 배액 과다 100ml/hr 이상 시 출혈 가능성 EVD setting Tragus 기준 상방 0-15cm 정상 ICP 5-15mmHg 20mmHg 이상 NS 신경외과 뇌 수술환자 검사 이동 검사시 이동 검사 이동 전 준비 Brain CT 수술환자 이동 동영상 업무동영상 교육영상 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이",
@@ -25213,35 +21278,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "CPR 초기 대응 / Lucas / E-cart",
         "응급상황",
@@ -25264,17 +21301,7 @@ window.ICU_MANUAL_DB = {
         "CPR 간호사 역할",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR 초기 대응 / Lucas / E-cart 응급상황 CPR 초기 대응 Lucas E-cart 코드 6114 루카스 제세동기 v43_uploaded_manual 추가 업무 매뉴얼(260618) LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 동영상 업무동영상 교육영상 CPR quick card",
@@ -25377,32 +21404,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -25438,17 +21452,7 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "tube 고정"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618) 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
@@ -25556,8 +21560,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -25565,18 +21569,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -25602,17 +21598,7 @@ window.ICU_MANUAL_DB = {
         "혈액가스",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA 채혈 / A-line 목적 검사 / 검체 ABGA 채혈 A-line 목적 동맥혈 arterial line Radial artery 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상 ABGA 채혈/검사",
@@ -25727,32 +21713,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -25788,17 +21761,7 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "monitor setting"
       ],
       "standard_sections_ready": true,
       "search_index": "A-line zeroing / 파형 확인 순환 / 모니터링 A-line zeroing 파형 확인 A-line zeroing overdamping underdamping MAP 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting",
@@ -25937,17 +21900,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "V107 장비/전화번호 요약 이미지",
-          "caption": "V107 장비/전화번호 요약 이미지",
-          "search_terms": [
-            "이미지",
-            "요약"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "CVP 측정 / 정상범위 / 주의사항",
         "순환 / 모니터링",
@@ -25961,21 +21914,10 @@ window.ICU_MANUAL_DB = {
         "순환",
         "모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼(260618)"
       ],
       "standard_sections_ready": true,
-      "search_index": "CVP 측정 / 정상범위 / 주의사항 순환 / 모니터링 CVP 측정 정상범위 주의사항 중심정맥압 Central venous pressure 우심방 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618)",
-      "prefer_media_first": true
+      "search_index": "CVP 측정 / 정상범위 / 주의사항 순환 / 모니터링 CVP 측정 정상범위 주의사항 중심정맥압 Central venous pressure 우심방 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618)"
     },
     {
       "id": "UPD43___AST_1_5000",
@@ -26100,43 +22042,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "항생제 AST 1:5000 희석",
         "약물 / 수액 / 마약",
@@ -26168,21 +22074,10 @@ window.ICU_MANUAL_DB = {
         "10분 후 결과 확인",
         "4.5g",
         "N/S 20mL mix",
-        "병원 프로토콜 우선",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "병원 프로토콜 우선"
       ],
       "standard_sections_ready": true,
-      "search_index": "항생제 AST 1:5000 희석 약물 / 수액 / 마약 항생제 AST 5000 희석 항생제 AST 1:5000 ID skin test 약물 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) AST 희석 목표 원약 용량 1차 희석 최종 목표 500mg N/S 2.5mL mix 1:5000, 200mcg/1mL 목표 1g N/S 5mL mix 재희석 후 0.1mL ID 2g N/S 10mL mix 10분 후 결과 확인 4.5g N/S 20mL mix 병원 프로토콜 우선",
-      "prefer_media_first": true
+      "search_index": "항생제 AST 1:5000 희석 약물 / 수액 / 마약 항생제 AST 5000 희석 항생제 AST 1:5000 ID skin test 약물 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) AST 희석 목표 원약 용량 1차 희석 최종 목표 500mg N/S 2.5mL mix 1:5000, 200mcg/1mL 목표 1g N/S 5mL mix 재희석 후 0.1mL ID 2g N/S 10mL mix 10분 후 결과 확인 4.5g N/S 20mL mix 병원 프로토콜 우선"
     },
     {
       "id": "UPD43_______AMIODARONE_ADENOS",
@@ -26278,43 +22173,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "고위험 약물 / 항부정맥제 Amiodarone Adenosine",
         "약물 / 수액 / 마약",
@@ -26331,21 +22190,10 @@ window.ICU_MANUAL_DB = {
         "수액",
         "마약",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼(260618)"
       ],
       "standard_sections_ready": true,
-      "search_index": "고위험 약물 / 항부정맥제 Amiodarone Adenosine 약물 / 수액 / 마약 고위험 약물 항부정맥제 Amiodarone Adenosine 고위험약물 코다론 SVT PSVT cardioversion 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) Amiodarone / Cordarone",
-      "prefer_media_first": true
+      "search_index": "고위험 약물 / 항부정맥제 Amiodarone Adenosine 약물 / 수액 / 마약 고위험 약물 항부정맥제 Amiodarone Adenosine 고위험약물 코다론 SVT PSVT cardioversion 수액 마약 v43_uploaded_manual 추가 업무 매뉴얼(260618) Amiodarone / Cordarone"
     },
     {
       "id": "UPD43_DNR",
@@ -26409,28 +22257,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "DNR 서류 작성 / 연명의료",
         "입퇴원 / 전동 / 전원 / 사망",
@@ -26448,21 +22275,10 @@ window.ICU_MANUAL_DB = {
         "전원",
         "사망",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼(260618)"
       ],
       "standard_sections_ready": true,
-      "search_index": "DNR 서류 작성 / 연명의료 입퇴원 / 전동 / 전원 / 사망 DNR 서류 작성 연명의료 사전연명조사지 9호 10호 11호 13호 입퇴원 전동 전원 사망 v43_uploaded_manual 추가 업무 매뉴얼(260618)",
-      "prefer_media_first": true
+      "search_index": "DNR 서류 작성 / 연명의료 입퇴원 / 전동 / 전원 / 사망 DNR 서류 작성 연명의료 사전연명조사지 9호 10호 11호 13호 입퇴원 전동 전원 사망 v43_uploaded_manual 추가 업무 매뉴얼(260618)"
     },
     {
       "id": "UPD43",
@@ -26799,27 +22615,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v89_coagulation_factors_summary.png",
-          "alt": "응고인자 검사 요약표 이미지",
-          "caption": "PT, INR, APTT, Fibrinogen, D-dimer 요약표",
-          "search_terms": [
-            "응고인자표",
-            "PT INR APTT fibrinogen d-dimer",
-            "응고인자 검사 요약표 이미지",
-            "PT, INR, APTT, Fibrinogen, D-dimer 요약표",
-            "수혈 절차 / 혈액제제 종류 / 응고인자",
-            "수혈 / 혈액",
-            "수혈",
-            "절차",
-            "혈액제제",
-            "종류",
-            "응고인자",
-            "RBC",
-            "FFP",
-            "PC"
-          ]
-        },
-        {
           "src": "selected_manual_images/v89_transfusion_reaction_response.png",
           "alt": "수혈 부작용 대응 카드",
           "caption": "이상반응 발생 시 즉시 대응 카드",
@@ -26841,38 +22636,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -26912,17 +22688,7 @@ window.ICU_MANUAL_DB = {
         "수혈절차표",
         "혈액제제표",
         "응고인자표",
-        "수혈부작용대응",
-        "표",
-        "이미지",
-        "사진",
-        "그림",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈부작용대응"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 수혈절차표 혈액제제표 응고인자표 수혈부작용대응 표 이미지 혈액제제 요약",
@@ -27082,8 +22848,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -27091,18 +22857,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -27146,17 +22920,7 @@ window.ICU_MANUAL_DB = {
         "랩보틀",
         "Lab bottle 이미지",
         "채혈 순서 이미지",
-        "추가 업무 매뉴얼 전체 추출 이미지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
       "search_index": "Lab bottle 종류와 채혈 순서 / 검체 채취 검사 / 검체 Lab bottle / Sputum Cx / Urine Cx / RAT Lab bottle Sputum Cx Urine RAT Lab bottle 채혈순서 Sputum Cx Urine Cx 검체 Lab bottle 종류 채혈 순서 검체 bottle 검체 채취 외주검사 차광검체 종류와 채혈 순서 채취 검사 v43_uploaded_manual 추가 업무 매뉴얼(260618) 검체 채취 핵심 항목 핵심 포인트 병원 검체 bottle 기준과 검사실 지침 우선 검체 bottle과 은박지 포장 위 라벨 2개 부착 멸균 손/오염 손 구분, suction 연결 방향 확인 포트 소독 후 자연건조, 10cc 정도 채취 호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 Lab bottle 종류와 채혈 순서",
@@ -27241,8 +23005,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -27250,18 +23014,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -27281,17 +23037,7 @@ window.ICU_MANUAL_DB = {
         "검사",
         "검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼(260618)"
       ],
       "standard_sections_ready": true,
       "search_index": "Blood culture 채혈 절차 검사 / 검체 Blood culture 채혈 절차 Blood culture blood Cx 혈액배양 혐기 호기 녹십자 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618)",
@@ -27370,8 +23116,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -27379,18 +23125,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -27411,17 +23165,7 @@ window.ICU_MANUAL_DB = {
         "격리해지",
         "검체",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "추가 업무 매뉴얼(260618)"
       ],
       "standard_sections_ready": true,
       "search_index": "CRE / CPE / MRAB / VRE / MRSA 검사 및 격리 검사 / 검체 감염관리 / 검사 CRE CPE MRAB VRE MRSA 검사 격리 CPO Rectal swab 격리해지 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618)",
@@ -27551,37 +23295,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "Dressing / 소독제 / SDD·EVD 관 제거",
         "Line / Drain / Dressing",
@@ -27607,17 +23321,7 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "standard_sections_ready": true,
       "search_index": "Dressing / 소독제 / SDD·EVD 관 제거 Line / Drain / Dressing Dressing 소독제 SDD EVD 제거 베타딘 클로르헥시딘 suture dressing set Line Drain v43_uploaded_manual 추가 업무 매뉴얼(260618) ICP tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 일반 상처 Dressing 수술 후 상처 Dressing",
@@ -27791,366 +23495,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/trach_01.jpg",
-          "alt": "기관절개관 참고 이미지 1",
-          "caption": "기관절개관 참고 이미지 1",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "기관절개관 참고 이미지 1",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/trach_02.jpg",
-          "alt": "기관절개관 참고 이미지 2",
-          "caption": "기관절개관 참고 이미지 2",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "기관절개관 참고 이미지 2",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/trach_03.jpg",
-          "alt": "기관절개관 참고 이미지 3",
-          "caption": "기관절개관 참고 이미지 3",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "기관절개관 참고 이미지 3",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/trach_04.jpg",
-          "alt": "기관절개관 참고 이미지 4",
-          "caption": "기관절개관 참고 이미지 4",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "기관절개관 참고 이미지 4",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_05.jpg",
-          "alt": "기관절개관 참고 이미지 5",
-          "caption": "기관절개관 참고 이미지 5",
-          "search_terms": [
-            "기관절개관 참고 이미지 5",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_06.jpg",
-          "alt": "기관절개관 참고 이미지 6",
-          "caption": "기관절개관 참고 이미지 6",
-          "search_terms": [
-            "기관절개관 참고 이미지 6",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_07.jpg",
-          "alt": "기관절개관 참고 이미지 7",
-          "caption": "기관절개관 참고 이미지 7",
-          "search_terms": [
-            "기관절개관 참고 이미지 7",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_08.jpg",
-          "alt": "기관절개관 참고 이미지 8",
-          "caption": "기관절개관 참고 이미지 8",
-          "search_terms": [
-            "기관절개관 참고 이미지 8",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_09.jpg",
-          "alt": "기관절개관 참고 이미지 9",
-          "caption": "기관절개관 참고 이미지 9",
-          "search_terms": [
-            "기관절개관 참고 이미지 9",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_10.jpg",
-          "alt": "기관절개관 참고 이미지 10",
-          "caption": "기관절개관 참고 이미지 10",
-          "search_terms": [
-            "기관절개관 참고 이미지 10",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_11.jpg",
-          "alt": "기관절개관 참고 이미지 11",
-          "caption": "기관절개관 참고 이미지 11",
-          "search_terms": [
-            "기관절개관 참고 이미지 11",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/trach_12.jpg",
-          "alt": "기관절개관 참고 이미지 12",
-          "caption": "기관절개관 참고 이미지 12",
-          "search_terms": [
-            "기관절개관 참고 이미지 12",
-            "기관절개관 목적 / 적용 / 합병증",
-            "호흡 / Ventilator",
-            "기관절개관",
-            "목적",
-            "적용",
-            "합병증",
-            "Tracheostomy",
-            "T-tube",
-            "cuff pressure",
-            "상부기도폐쇄",
-            "호흡부전",
-            "cuff",
-            "fenestrated",
-            "Portex",
-            "Tracoe",
-            "Koken",
-            "Teflon",
-            "호흡",
-            "Ventilator",
-            "v43_uploaded_manual"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -28190,17 +23564,7 @@ window.ICU_MANUAL_DB = {
         "기관절개관 참고 이미지 12",
         "기관절개관 이미지",
         "기관절개관 사진",
-        "기관절개관 전체 추출 이미지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
       "search_index": "기관절개관 목적 / 적용 / 합병증 호흡 / Ventilator 기관절개관 목적 적용 합병증 Tracheostomy T-tube cuff pressure 상부기도폐쇄 호흡부전 cuff fenestrated Portex Tracoe Koken Teflon 호흡 Ventilator v43_uploaded_manual v49_exact_card 기관절개관 참고 이미지 1 기관절개관 참고 이미지 2 기관절개관 참고 이미지 3 기관절개관 참고 이미지 4 기관절개관 참고 이미지 5 기관절개관 참고 이미지 6 기관절개관 참고 이미지 7 기관절개관 참고 이미지 8 기관절개관 참고 이미지 9 기관절개관 참고 이미지 10 기관절개관 참고 이미지 11 기관절개관 참고 이미지 12 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
@@ -28298,30 +23662,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -28349,17 +23703,7 @@ window.ICU_MANUAL_DB = {
         "Koken",
         "기관절개관 이미지",
         "기관절개관 사진",
-        "기관절개관 전체 추출 이미지",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "기관절개관 전체 추출 이미지"
       ],
       "standard_sections_ready": true,
       "search_index": "기관절개관 종류 / Single·Double / Cuff / Fenestrated 호흡 / Ventilator 기관절개관 종류 Single Double Cuff Fenestrated Single cannula Double cannula Unfenestrated 내관 외관 호흡 Ventilator v43_uploaded_manual Tracheostomy T-tube Portex Tracoe Koken 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
@@ -28484,35 +23828,7 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "search_terms": [
         "Portex / Tracoe / Koken / Teflon / Montgomery tube",
         "호흡 / Ventilator",
@@ -28528,21 +23844,10 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "v43_uploaded_manual",
-        "기관절개관",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "기관절개관"
       ],
       "standard_sections_ready": true,
-      "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관",
-      "prefer_media_first": true
+      "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관"
     },
     {
       "id": "HWPIMG_RESTORED_ADD_01",
@@ -28571,10 +23876,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -28587,13 +23888,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
@@ -28974,9 +24269,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -28984,18 +24295,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -29033,10 +24336,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -29049,13 +24348,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~24번입니다.",
@@ -29436,9 +24729,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -29446,18 +24755,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -29495,10 +24796,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -29511,13 +24808,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 25~36번입니다.",
@@ -29898,9 +25189,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -29908,18 +25215,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -29957,10 +25256,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -29973,13 +25268,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 37~48번입니다.",
@@ -30360,9 +25649,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -30370,18 +25675,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -30419,10 +25716,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -30435,13 +25728,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 49~60번입니다.",
@@ -30822,9 +26109,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -30832,18 +26135,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -30881,10 +26176,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -30897,13 +26188,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 61~72번입니다.",
@@ -31284,9 +26569,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -31294,18 +26595,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -31343,10 +26636,6 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -31359,13 +26648,7 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 73~77번입니다.",
@@ -31550,9 +26833,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -31560,18 +26859,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -31610,10 +26901,6 @@ window.ICU_MANUAL_DB = {
         "기관절개관",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -31627,13 +26914,7 @@ window.ICU_MANUAL_DB = {
         "기관절개관 전체 추출 이미지",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
@@ -31673,378 +26954,12 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "uploaded_manual_images/trach_bin0001_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0001_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0001_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0001_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0002_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0002_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0002_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0002_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0003_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0003_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0003_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0003_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0004_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0004_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0004_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0004_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0005_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0005_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0005_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0005_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0006_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0006_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0006_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0006_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0007_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0007_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0007_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0007_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0008_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0008_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0008_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0008_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0009_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0009_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0009_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0009_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin000a_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000a_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000a_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000a_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin000b_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000b_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000b_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000b_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin000c_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000c_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000c_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000c_jpeg",
-            "기관절개관 전체 추출 이미지 1",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
-      "prefer_media_first": true
+      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
     },
     {
       "id": "HWPIMG_RESTORED_TRACH_02",
@@ -32074,10 +26989,6 @@ window.ICU_MANUAL_DB = {
         "기관절개관",
         "HWP",
         "전체 추출 이미지",
-        "그림",
-        "사진",
-        "이미지",
-        "표",
         "자동 추출",
         "복원",
         "전체 이미지 검색",
@@ -32091,13 +27002,7 @@ window.ICU_MANUAL_DB = {
         "기관절개관 전체 추출 이미지",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "그림 / 사진 / 표"
       ],
       "urgency": "routine",
       "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~23번입니다.",
@@ -32137,350 +27042,12 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "uploaded_manual_images/trach_bin000d_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000d_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000d_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000d_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin000e_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000e_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000e_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000e_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin000f_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin000f_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin000f_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin000f_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0010_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0010_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0010_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0010_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0011_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0011_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0011_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0011_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0012_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0012_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0012_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0012_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0013_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0013_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0013_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0013_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0014_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0014_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0014_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0014_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0015_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0015_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0015_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0015_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0016_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0016_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0016_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0016_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/trach_bin0017_jpeg.jpg",
-          "alt": "기관절개관 추출 이미지/사진/그림 - trach_bin0017_jpeg",
-          "caption": "기관절개관 추출 이미지/사진/그림 - trach_bin0017_jpeg",
-          "search_terms": [
-            "기관절개관 추출 이미지/사진/그림 - trach_bin0017_jpeg",
-            "기관절개관 전체 추출 이미지 2",
-            "기관절개관",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "Tracheostomy",
-            "T-tube",
-            "cuff",
-            "Portex",
-            "Tracoe",
-            "기관절개관 이미지",
-            "기관절개관 사진",
-            "기관절개관 전체 추출 이미지",
-            "HWP 추출 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
       "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
-      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
-      "prefer_media_first": true
+      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표"
     },
     {
       "id": "DBMEDIA001",
@@ -32591,17 +27158,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "V107 장비/전화번호 요약 이미지",
-          "caption": "V107 장비/전화번호 요약 이미지",
-          "search_terms": [
-            "이미지",
-            "요약"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_terms": [
         "표/이미지 현황",
@@ -32613,20 +27170,9 @@ window.ICU_MANUAL_DB = {
         "등록된 표",
         "전체 카드",
         "HWP 추출 이미지",
-        "원내정보/앱 사용",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "원내정보/앱 사용"
       ],
-      "search_index": "표/이미지 현황 이미지 현황 표 현황 DB 현황 자료 현황 등록된 이미지 등록된 표 전체 카드 HWP 추출 이미지 원내정보/앱 사용",
-      "prefer_media_first": true
+      "search_index": "표/이미지 현황 이미지 현황 표 현황 DB 현황 자료 현황 등록된 이미지 등록된 표 전체 카드 HWP 추출 이미지 원내정보/앱 사용"
     },
     {
       "id": "DRUGCALC001",
@@ -32655,17 +27201,7 @@ window.ICU_MANUAL_DB = {
         "희석 농도",
         "infusion rate",
         "약물 계산기 사용",
-        "약물 / 수액 / 마약",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 수액 / 마약"
       ],
       "urgency": "routine",
       "summary": "약물 총량, 희석 후 총량, 체중, 목표 용량을 입력해 주입속도 또는 실제 용량을 계산하는 기능입니다.",
@@ -32771,30 +27307,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Lab bottle"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v105_calc_overview.png",
+          "alt": "약물 계산기/수액속도/gtt 요약",
+          "caption": "약물 계산기/수액속도/gtt 요약",
           "search_terms": [
-            "CSR",
-            "기구"
+            "약물계산"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_gtt_min_table.png",
+          "alt": "gtt/min 계산표",
+          "caption": "gtt/min 계산표",
+          "search_terms": [
+            "gtt"
           ]
         }
       ],
@@ -32828,17 +27370,7 @@ window.ICU_MANUAL_DB = {
         "퇴사자 삭제",
         "부서이동자 삭제",
         "개별 로그인 계정 안내",
-        "원내정보/앱 사용",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "원내정보/앱 사용"
       ],
       "urgency": "routine",
       "summary": "공용 로그인 대신 개인별 아이디/비밀번호로 접속하도록 설정한 계정 안내 카드입니다.",
@@ -32931,32 +27463,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -32999,17 +27518,7 @@ window.ICU_MANUAL_DB = {
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "routine",
       "summary": "Ventilator 사용법 1, 2 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -33051,35 +27560,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1QgSpX3I2sgaV_aKDhC_TjyIefqZQWXEA/view?usp=drive_link",
@@ -33204,17 +27685,7 @@ window.ICU_MANUAL_DB = {
         "이동용 ventilator",
         "포터블 벤틸레이터",
         "Portable ventilator 사용법 동영상",
-        "호흡 / Ventilator",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / Ventilator"
       ],
       "urgency": "routine",
       "summary": "Portable ventilator 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -33251,35 +27722,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크 portable ventilator.mp4"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/10P-PgVm-74VhOCWBkdFEGiyhT2uIOTTf/view?usp=drive_link",
@@ -33302,8 +27745,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "portable ventilator 이동식 ventilator portable ventilator 동영상 호흡 Ventilator ventilator 동영상 Ventilator 사용법 동영상 이동용 ventilator 포터블 벤틸레이터 Portable ventilator 사용법 동영상 호흡 / Ventilator",
-      "prefer_media_first": true
+      "search_index": "portable ventilator 이동식 ventilator portable ventilator 동영상 호흡 Ventilator ventilator 동영상 Ventilator 사용법 동영상 이동용 ventilator 포터블 벤틸레이터 Portable ventilator 사용법 동영상 호흡 / Ventilator"
     },
     {
       "id": "VIDEO003",
@@ -33337,17 +27779,7 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "routine",
       "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -33386,35 +27818,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1oxN0wNc6QlvaM5iZU7rWdTil0YIRVicA/view?usp=drive_link",
@@ -33492,17 +27896,7 @@ window.ICU_MANUAL_DB = {
         "순환",
         "모니터링",
         "A-line 사용법 동영상",
-        "순환 / 모니터링",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "순환 / 모니터링"
       ],
       "urgency": "routine",
       "summary": "A-line 사용법과 관련 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -33539,37 +27933,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크 A-line 사용법.mp4"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1-wV8i1Va1h-LvNjTFU56PSBSXAdu2pOY/view?usp=drive_link",
@@ -33592,8 +27956,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "A-line A line A-line 사용법 A-line 동영상 arterial line A-line zeroing 제로잉 순환 모니터링 A-line 사용법 동영상 순환 / 모니터링",
-      "prefer_media_first": true
+      "search_index": "A-line A line A-line 사용법 A-line 동영상 arterial line A-line zeroing 제로잉 순환 모니터링 A-line 사용법 동영상 순환 / 모니터링"
     },
     {
       "id": "V65_CPCR_001",
@@ -33632,17 +27995,7 @@ window.ICU_MANUAL_DB = {
         "Lucas",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "emergency",
       "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
@@ -33688,49 +28041,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v65_cpcr.jpg",
-          "alt": "CPCR 시뮬레이션 절차 원본 이미지",
-          "caption": "CPCR 시뮬레이션 절차 원본 이미지",
-          "search_terms": [
-            "CPCR 시뮬레이션 절차 원본 이미지",
-            "CPCR",
-            "CPR",
-            "심폐소생술",
-            "코드 CPR",
-            "6114",
-            "Emergency kit",
-            "Defibrillator",
-            "ambu-bagging",
-            "기도유지",
-            "심장마사지",
-            "응급상황",
-            "CPCR 시뮬레이션 절차",
-            "V65_CPCR_001",
-            "CPCR 발생 시 목격 간호사와 간호사 1·2·3 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "CPCR CPR 심폐소생술 코드 CPR 6114 Emergency kit Defibrillator ambu-bagging 기도유지 심장마사지 응급상황 CPCR 시뮬레이션 절차 간호사 역할 CPR 간호사 역할 E-cart Lucas 동영상 업무동영상 교육영상",
       "videos": [
@@ -33789,17 +28100,7 @@ window.ICU_MANUAL_DB = {
         "의사 도착시간",
         "간호기록",
         "CPCR 기록 담당 간호사 체크리스트",
-        "응급상황",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급상황"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다.",
@@ -33880,50 +28181,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v65_record_check.jpg",
-          "alt": "기록 담당 간호사 체크리스트 이미지",
-          "caption": "기록 담당 간호사 체크리스트 이미지",
-          "search_terms": [
-            "기록 담당 간호사 체크리스트 이미지",
-            "CPCR 기록",
-            "기록 담당 간호사",
-            "심폐소생술 기록",
-            "사망기록",
-            "V/S 기록",
-            "의사 도착시간",
-            "간호기록",
-            "CPCR 기록 담당 간호사 체크리스트",
-            "응급상황",
-            "V65_CPCR_002",
-            "CPCR 상황에서 기록 담당 간호사가 확인해야 할 항목입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "CPCR 기록 기록 담당 간호사 심폐소생술 기록 사망기록 V/S 기록 의사 도착시간 간호기록 CPCR 기록 담당 간호사 체크리스트 응급상황",
-      "prefer_media_first": true
+      "search_index": "CPCR 기록 기록 담당 간호사 심폐소생술 기록 사망기록 V/S 기록 의사 도착시간 간호기록 CPCR 기록 담당 간호사 체크리스트 응급상황"
     },
     {
       "id": "V65_CPCR_003",
@@ -33953,17 +28213,7 @@ window.ICU_MANUAL_DB = {
         "O2",
         "삽관 보조",
         "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
-        "응급상황",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급상황"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다.",
@@ -34072,53 +28322,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v65_airway_check.jpg",
-          "alt": "인공호흡/기도확보 담당 간호사 체크리스트 이미지",
-          "caption": "인공호흡/기도확보 담당 간호사 체크리스트 이미지",
-          "search_terms": [
-            "인공호흡/기도확보 담당 간호사 체크리스트 이미지",
-            "CPCR 인공호흡",
-            "기도확보",
-            "intubation",
-            "E-tube",
-            "Ambu bag",
-            "ambu mask",
-            "suction",
-            "O2",
-            "삽관 보조",
-            "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
-            "응급상황",
-            "V65_CPCR_003",
-            "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -34152,17 +28368,7 @@ window.ICU_MANUAL_DB = {
         "리듬 확인",
         "V/S 측정",
         "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
-        "응급상황",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급상황"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다.",
@@ -34238,52 +28444,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v65_iv_check.jpg",
-          "alt": "정맥로 확보/투약 담당 간호사 체크리스트 이미지",
-          "caption": "정맥로 확보/투약 담당 간호사 체크리스트 이미지",
-          "search_terms": [
-            "정맥로 확보/투약 담당 간호사 체크리스트 이미지",
-            "CPCR 정맥로",
-            "정맥로 확보",
-            "투약 담당",
-            "C-line",
-            "18G",
-            "응급약물",
-            "리듬 확인",
-            "V/S 측정",
-            "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
-            "응급상황",
-            "V65_CPCR_004",
-            "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -34317,17 +28490,7 @@ window.ICU_MANUAL_DB = {
         "synchronized button",
         "심전도 리듬",
         "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
-        "응급상황",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급상황"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다.",
@@ -34413,58 +28576,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v65_defib_check.jpg",
-          "alt": "모니터링/제세동기 담당 간호사 체크리스트 이미지",
-          "caption": "모니터링/제세동기 담당 간호사 체크리스트 이미지",
-          "search_terms": [
-            "모니터링/제세동기 담당 간호사 체크리스트 이미지",
-            "CPCR 모니터링",
-            "제세동기",
-            "defibrillator",
-            "Defibrillation",
-            "paddle",
-            "jelly",
-            "synchronized button",
-            "심전도 리듬",
-            "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
-            "응급상황",
-            "V65_CPCR_005",
-            "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "CPCR 모니터링 제세동기 defibrillator Defibrillation paddle jelly synchronized button 심전도 리듬 CPCR 모니터링/제세동기 담당 간호사 체크리스트 응급상황",
-      "prefer_media_first": true
+      "search_index": "CPCR 모니터링 제세동기 defibrillator Defibrillation paddle jelly synchronized button 심전도 리듬 CPCR 모니터링/제세동기 담당 간호사 체크리스트 응급상황"
     },
     {
       "id": "V65_TRANSFUSION_FILTER",
@@ -34492,17 +28606,7 @@ window.ICU_MANUAL_DB = {
         "수혈마무리",
         "Haemonetics",
         "백혈구 제거용 수혈필터 RC2VAE 사용법",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "routine",
       "summary": "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다.",
@@ -34540,78 +28644,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v65_백혈구제거_필터_사용법_p1.jpg",
-          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 1페이지",
-          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 1페이지",
-          "search_terms": [
-            "백혈구 제거용 수혈필터 RC2VAE 사용법 1페이지",
-            "백혈구제거 필터",
-            "수혈필터",
-            "RC2VAE",
-            "leukocyte removal filter",
-            "수혈 준비",
-            "혈액교체",
-            "수혈마무리",
-            "Haemonetics",
-            "백혈구 제거용 수혈필터 RC2VAE 사용법",
-            "수혈 / 혈액",
-            "V65_TRANSFUSION_FILTER",
-            "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v65_백혈구제거_필터_사용법_p2.jpg",
-          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 2페이지",
-          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 2페이지",
-          "search_terms": [
-            "백혈구 제거용 수혈필터 RC2VAE 사용법 2페이지",
-            "백혈구제거 필터",
-            "수혈필터",
-            "RC2VAE",
-            "leukocyte removal filter",
-            "수혈 준비",
-            "혈액교체",
-            "수혈마무리",
-            "Haemonetics",
-            "백혈구 제거용 수혈필터 RC2VAE 사용법",
-            "수혈 / 혈액",
-            "V65_TRANSFUSION_FILTER",
-            "백혈구 제거용 수혈필터 RC2VAE 연결·수혈 준비·혈액 교체·마무리 절차입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -34663,17 +28708,7 @@ window.ICU_MANUAL_DB = {
         "이소켓",
         "코다론",
         "주요 약물 약속처방 Mix 법",
-        "약물 / 수액 / 마약",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 수액 / 마약"
       ],
       "urgency": "routine",
       "summary": "주요 약물의 continuous infusion 약속처방 mix 기준표입니다. 기본 수액은 5DW 기준입니다.",
@@ -34878,58 +28913,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v65_약물약속처방_p1.jpg",
-          "alt": "주요 약물 약속처방 Mix 법 원본 표 이미지",
-          "caption": "주요 약물 약속처방 Mix 법 원본 표 이미지",
-          "search_terms": [
-            "주요 약물 약속처방 Mix 법 원본 표 이미지",
-            "약물약속처방",
-            "주요 약물 MIX",
-            "Continuous Infusion",
-            "울티펜",
-            "모르핀",
-            "미다컴",
-            "프리폴",
-            "프리세덱스",
-            "로큐니움",
-            "노르에피린",
-            "도부타민",
-            "에피네프린",
-            "바소프레신",
-            "페르디핀",
-            "헤르벤",
-            "이소켓",
-            "코다론",
-            "주요 약물 약속처방 Mix 법",
-            "약물 / 수액 / 마약",
-            "V65_DRUG_MIX_PROMISE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "약물약속처방 주요 약물 MIX Continuous Infusion 울티펜 모르핀 미다컴 프리폴 프리세덱스 로큐니움 노르에피린 도부타민 에피네프린 바소프레신 페르디핀 헤르벤 이소켓 코다론 주요 약물 약속처방 Mix 법 약물 / 수액 / 마약",
-      "prefer_media_first": true
+      "search_index": "약물약속처방 주요 약물 MIX Continuous Infusion 울티펜 모르핀 미다컴 프리폴 프리세덱스 로큐니움 노르에피린 도부타민 에피네프린 바소프레신 페르디핀 헤르벤 이소켓 코다론 주요 약물 약속처방 Mix 법 약물 / 수액 / 마약"
     },
     {
       "id": "V65_LAB_LIGHT_BARCODE",
@@ -34955,17 +28941,7 @@ window.ICU_MANUAL_DB = {
         "검체 바코드",
         "겉면 바코드",
         "차광검사 바코드 붙이는 방법",
-        "검사 / 검체",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사 / 검체"
       ],
       "urgency": "routine",
       "summary": "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다.",
@@ -34991,60 +28967,20 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v65_차광검사_나갈_시_바코드_붙이는_방법_p1.jpg",
-          "alt": "차광검사 바코드 방법 표지",
-          "caption": "차광검사 바코드 방법 표지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "차광검사 바코드 방법 표지",
-            "차광검사",
-            "차광 검체",
-            "바코드",
-            "바코드 재발행",
-            "검체통",
-            "검체 바코드",
-            "겉면 바코드",
-            "차광검사 바코드 붙이는 방법",
-            "검사 / 검체",
-            "V65_LAB_LIGHT_BARCODE",
-            "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다."
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v65_차광검사_나갈_시_바코드_붙이는_방법_p2.jpg",
-          "alt": "차광검사 바코드 출력/재발행 방법",
-          "caption": "차광검사 바코드 출력/재발행 방법",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "차광검사 바코드 출력/재발행 방법",
-            "차광검사",
-            "차광 검체",
-            "바코드",
-            "바코드 재발행",
-            "검체통",
-            "검체 바코드",
-            "겉면 바코드",
-            "차광검사 바코드 붙이는 방법",
-            "검사 / 검체",
-            "V65_LAB_LIGHT_BARCODE",
-            "차광검사 처방 시 검체통 바코드와 겉면 바코드를 구분해 출력·부착하는 방법입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
           ]
         }
       ],
@@ -35076,17 +29012,7 @@ window.ICU_MANUAL_DB = {
         "대량수혈",
         "한랭응집소",
         "혈액 가온기 사용방법",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "routine",
       "summary": "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다.",
@@ -35122,87 +29048,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v65_가온기_사용방법_p1.jpg",
-          "alt": "혈액 가온기 표지",
-          "caption": "혈액 가온기 표지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "혈액 가온기 표지",
-            "가온기",
-            "혈액 가온기",
-            "Blood warmer",
-            "infusion warmer",
-            "수혈 가온",
-            "대량수혈",
-            "한랭응집소",
-            "혈액 가온기 사용방법",
-            "수혈 / 혈액",
-            "V65_BLOOD_WARMER",
-            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v65_가온기_사용방법_p2.jpg",
-          "alt": "혈액 가온기 사용 절차",
-          "caption": "혈액 가온기 사용 절차",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "혈액 가온기 사용 절차",
-            "가온기",
-            "혈액 가온기",
-            "Blood warmer",
-            "infusion warmer",
-            "수혈 가온",
-            "대량수혈",
-            "한랭응집소",
-            "혈액 가온기 사용방법",
-            "수혈 / 혈액",
-            "V65_BLOOD_WARMER",
-            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v65_가온기_사용방법_p3.jpg",
-          "alt": "혈액 가온기 적응증",
-          "caption": "혈액 가온기 적응증",
-          "search_terms": [
-            "혈액 가온기 적응증",
-            "가온기",
-            "혈액 가온기",
-            "Blood warmer",
-            "infusion warmer",
-            "수혈 가온",
-            "대량수혈",
-            "한랭응집소",
-            "혈액 가온기 사용방법",
-            "수혈 / 혈액",
-            "V65_BLOOD_WARMER",
-            "혈액/수액 가온기 사용 절차와 적응증을 정리한 카드입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "혈액제제"
           ]
         }
       ],
@@ -35238,17 +29096,7 @@ window.ICU_MANUAL_DB = {
         "lasix 단독투여",
         "motin 단독투여",
         "섞이면 clot 되는 주사제",
-        "약물 / 수액 / 마약",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 수액 / 마약"
       ],
       "urgency": "routine",
       "summary": "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다.",
@@ -35326,88 +29174,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v65_섞이면_clot되는_주사제_p1.jpg",
-          "alt": "섞이면 clot 되는 주사제 표지",
-          "caption": "섞이면 clot 되는 주사제 표지",
-          "search_terms": [
-            "섞이면 clot 되는 주사제 표지",
-            "섞이면 clot",
-            "침전",
-            "clot",
-            "파세타 레포신",
-            "크렉산 사이톱신",
-            "트리악손 로이솔",
-            "타포신 TPN",
-            "lasix 단독투여",
-            "motin 단독투여",
-            "섞이면 clot 되는 주사제",
-            "약물 / 수액 / 마약",
-            "V65_DRUG_CLOT",
-            "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v65_섞이면_clot되는_주사제_p2.jpg",
-          "alt": "섞이면 clot 되는 주사제 목록 이미지",
-          "caption": "섞이면 clot 되는 주사제 목록 이미지",
-          "search_terms": [
-            "섞이면 clot 되는 주사제 목록 이미지",
-            "섞이면 clot",
-            "침전",
-            "clot",
-            "파세타 레포신",
-            "크렉산 사이톱신",
-            "트리악손 로이솔",
-            "타포신 TPN",
-            "lasix 단독투여",
-            "motin 단독투여",
-            "섞이면 clot 되는 주사제",
-            "약물 / 수액 / 마약",
-            "V65_DRUG_CLOT",
-            "혼합 시 clot 또는 침전이 발생할 수 있어 함께 섞지 않도록 주의해야 하는 주사제 목록입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "섞이면 clot 침전 clot 파세타 레포신 크렉산 사이톱신 트리악손 로이솔 타포신 TPN lasix 단독투여 motin 단독투여 섞이면 clot 되는 주사제 약물 / 수액 / 마약",
-      "prefer_media_first": true
+      "search_index": "섞이면 clot 침전 clot 파세타 레포신 크렉산 사이톱신 트리악손 로이솔 타포신 TPN lasix 단독투여 motin 단독투여 섞이면 clot 되는 주사제 약물 / 수액 / 마약"
     },
     {
       "id": "V65_MDR_ORGANISM",
@@ -35447,17 +29216,7 @@ window.ICU_MANUAL_DB = {
         "Meropenem",
         "Ertapenem",
         "접촉주의 다제내성균 해석",
-        "감염 / 격리",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "감염 / 격리"
       ],
       "urgency": "routine",
       "summary": "접촉주의 대상 다제내성균의 균명, 기준 항생제, 격리방법, 격리해지 기준입니다.",
@@ -35606,8 +29365,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -35615,18 +29374,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -35664,17 +29415,7 @@ window.ICU_MANUAL_DB = {
         "EB1",
         "PC FFP RBC",
         "수혈 처방확인 및 바코드 출력 방법",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "routine",
       "summary": "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다.",
@@ -35751,66 +29492,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v65_수혈_처방확인_및_바코드_출력_방법_p1.jpg",
-          "alt": "수혈 처방확인 및 바코드 출력 방법 1",
-          "caption": "수혈 처방확인 및 바코드 출력 방법 1",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "수혈 처방확인 및 바코드 출력 방법 1",
-            "수혈 처방확인",
-            "수혈 바코드",
-            "혈액 요청서",
-            "ABO",
-            "Rho",
-            "교차시험",
-            "비예기항체",
-            "irregular antibody",
-            "EB1",
-            "PC FFP RBC",
-            "수혈 처방확인 및 바코드 출력 방법",
-            "수혈 / 혈액",
-            "V65_TRANSFUSION_ORDER_BARCODE",
-            "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v65_수혈_처방확인_및_바코드_출력_방법_p2.jpg",
-          "alt": "수혈 처방확인 및 바코드 출력 방법 2",
-          "caption": "수혈 처방확인 및 바코드 출력 방법 2",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "수혈 처방확인 및 바코드 출력 방법 2",
-            "수혈 처방확인",
-            "수혈 바코드",
-            "혈액 요청서",
-            "ABO",
-            "Rho",
-            "교차시험",
-            "비예기항체",
-            "irregular antibody",
-            "EB1",
-            "PC FFP RBC",
-            "수혈 처방확인 및 바코드 출력 방법",
-            "수혈 / 혈액",
-            "V65_TRANSFUSION_ORDER_BARCODE",
-            "수혈 처방 확인, 혈액요청서 작성, 검체 채취와 바코드 출력 시 확인할 항목입니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -35846,17 +29540,7 @@ window.ICU_MANUAL_DB = {
         "바코드 재발행",
         "채혈접수 안내",
         "PCD 검체 처방 시 검체라벨 붙이는 방법",
-        "검사 / 검체",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사 / 검체"
       ],
       "urgency": "routine",
       "summary": "PCD 검체 처방 시 처방보조에서 라벨을 출력하고 체액검사/Fluid culture에 맞춰 바코드를 붙이는 방법입니다.",
@@ -35925,22 +29609,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -35990,17 +29688,7 @@ window.ICU_MANUAL_DB = {
         "수술 후 간호",
         "감염 예방관리",
         "병동간호팀 간호사메뉴얼 2026.04.13",
-        "병동간호팀 간호사 매뉴얼",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "병동간호팀 간호사 매뉴얼"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다.",
@@ -36173,21 +29861,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
+          "search_terms": [
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -36243,17 +29946,7 @@ window.ICU_MANUAL_DB = {
         "TSRA",
         "Hip OP",
         "OS 각과별 매뉴얼 Drain Pressure 정리",
-        "수술 / 시술",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수술 / 시술"
       ],
       "urgency": "routine",
       "summary": "OS 각 과별 H-vac/JP pressure, clamp, 제거 기준을 검색할 수 있도록 정리한 카드입니다.",
@@ -36366,30 +30059,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
+            "혈액제제"
           ]
         }
       ],
@@ -36437,17 +30119,7 @@ window.ICU_MANUAL_DB = {
         "brace",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "routine",
       "summary": "신입간호사가 자주 확인하는 AST 희석, 수술 후 항생제 적용, 식사 신청, I/O 기준, 항응고·항혈전제 중단 기준을 묶은 검색 카드입니다.",
@@ -36592,37 +30264,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "신입간호사 숙지사항 신규 간호사 AST 수술 후 항생제 식사 신청 I/O check list 간호필요도 항응고제 중단 항혈전제 중단 보조기 착용기간 신입간호사 숙지사항 2026.04.29 병동간호팀 간호사 매뉴얼 L-sling 엘슬링 sling 보조기 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상",
       "videos": [
@@ -36737,17 +30379,7 @@ window.ICU_MANUAL_DB = {
         "팔다리 힘빠짐",
         "119",
         "뇌졸중 총정리: 증상·진단·검사·초기 간호",
-        "신경계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계"
       ],
       "urgency": "emergency",
       "summary": "뇌졸중은 뇌혈관이 막히거나 터져 뇌조직 손상이 발생하는 응급질환입니다. 증상 발생 시각 확인, FAST 확인, 즉시 영상검사와 전문의 보고가 핵심입니다.",
@@ -36937,8 +30569,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -36946,18 +30578,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -37070,17 +30710,7 @@ window.ICU_MANUAL_DB = {
         "혈전성",
         "색전성",
         "뇌경색(허혈성 뇌졸중): 종류·진단·치료·간호",
-        "신경계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계"
       ],
       "urgency": "emergency",
       "summary": "뇌경색은 혈관 폐색으로 해당 혈관 영역의 뇌조직 혈류가 차단되는 뇌졸중입니다. 원인에 따라 대혈관 죽상경화성, 심장색전성, 소혈관폐색(열공경색), 기타/원인불명으로 나눌 수 있습니다.",
@@ -37266,32 +30896,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -37414,17 +31031,7 @@ window.ICU_MANUAL_DB = {
         "ICP",
         "두개내압",
         "뇌출혈(출혈성 뇌졸중): 종류·수술·치료·간호",
-        "신경계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계"
       ],
       "urgency": "emergency",
       "summary": "뇌출혈은 뇌혈관 파열로 뇌실질, 지주막하 공간, 뇌실 등에 출혈이 발생하는 응급질환입니다. 비조영 CT로 출혈 위치와 범위를 빠르게 확인하고 혈압·응고·두개내압 관리 및 수술/시술 여부를 판단합니다.",
@@ -37677,32 +31284,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -37783,17 +31377,7 @@ window.ICU_MANUAL_DB = {
         "ischemic hemorrhagic comparison",
         "수술 치료 간호 비교",
         "허혈성 vs 출혈성 뇌졸중 한눈에 비교",
-        "신경계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계"
       ],
       "urgency": "emergency",
       "summary": "뇌경색과 뇌출혈의 원인, 대표 영상소견, 응급치료 핵심, 간호 포인트를 비교해 빠르게 확인하는 카드입니다.",
@@ -37945,32 +31529,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -38008,17 +31579,7 @@ window.ICU_MANUAL_DB = {
         "EKG 해석",
         "P파 QRS T파",
         "심전도 해석 기본: 파형·정상범위·해석 순서",
-        "심혈관 / 심전도",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "심혈관 / 심전도"
       ],
       "urgency": "high",
       "summary": "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다.",
@@ -38220,40 +31781,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v70_ecg_basics_summary.png",
-          "alt": "심전도 해석 기본 요약 이미지",
-          "caption": "심전도 해석 기본: P파·QRS·T파, 정상 범위, 해석 순서",
-          "search_terms": [
-            "심전도 해석 기본 요약 이미지",
-            "심전도 해석 기본: P파·QRS·T파, 정상 범위, 해석 순서",
-            "심전도",
-            "ECG",
-            "EKG",
-            "심전도 해석",
-            "심전도 기본",
-            "P파",
-            "QRS",
-            "PR 간격",
-            "QT",
-            "QTc",
-            "ST 분절",
-            "T파",
-            "정상 심전도",
-            "ECG 해석",
-            "EKG 해석",
-            "P파 QRS T파",
-            "V70_ECG_INTERPRETATION",
-            "심전도 해석 기본: 파형·정상범위·해석 순서",
-            "심혈관 / 심전도",
-            "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다."
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "심전도 ECG EKG 심전도 해석 심전도 기본 P파 QRS PR 간격 QT QTc ST 분절 T파 정상 심전도 ECG 해석 EKG 해석 P파 QRS T파 심전도 해석 기본: 파형·정상범위·해석 순서 심혈관 / 심전도 심방세동 심실빈맥 심실세동 허혈·경색 ECG 변화 심혈관 환자 간호 핵심",
-      "prefer_media_first": true
+      "search_index": "심전도 ECG EKG 심전도 해석 심전도 기본 P파 QRS PR 간격 QT QTc ST 분절 T파 정상 심전도 ECG 해석 EKG 해석 P파 QRS T파 심전도 해석 기본: 파형·정상범위·해석 순서 심혈관 / 심전도 심방세동 심실빈맥 심실세동 허혈·경색 ECG 변화 심혈관 환자 간호 핵심"
     },
     {
       "id": "V70_ECG_ARRHYTHMIA",
@@ -38286,17 +31816,7 @@ window.ICU_MANUAL_DB = {
         "VT VF ECG",
         "방실차단 ECG",
         "질환별 심전도 변화: 부정맥 핵심 정리",
-        "심혈관 / 심전도",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "심혈관 / 심전도"
       ],
       "urgency": "high",
       "summary": "임상에서 자주 보는 부정맥의 리듬 특징, ECG 변화, 치료 방향을 표와 예시 파형으로 정리한 카드입니다.",
@@ -38455,40 +31975,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v70_ecg_arrhythmia_grid.png",
-          "alt": "자주 보는 부정맥 ECG 변화 예시",
-          "caption": "정상 동리듬, AF, 심방조동, SVT, AV block, VT, VF 예시",
-          "search_terms": [
-            "자주 보는 부정맥 ECG 변화 예시",
-            "정상 동리듬, AF, 심방조동, SVT, AV block, VT, VF 예시",
-            "부정맥",
-            "심전도 변화",
-            "ECG 변화",
-            "심방세동",
-            "심방조동",
-            "SVT",
-            "상심실성 빈맥",
-            "서맥",
-            "1도 AV block",
-            "Mobitz I",
-            "완전방실차단",
-            "심실빈맥",
-            "심실세동",
-            "VF",
-            "VT",
-            "부정맥 심전도",
-            "심방세동 심전도",
-            "VT VF ECG",
-            "방실차단 ECG",
-            "V70_ECG_ARRHYTHMIA"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "부정맥 심전도 변화 ECG 변화 심방세동 심방조동 SVT 상심실성 빈맥 서맥 1도 AV block Mobitz I 완전방실차단 심실빈맥 심실세동 VF VT 부정맥 심전도 심방세동 심전도 VT VF ECG 방실차단 ECG 질환별 심전도 변화: 부정맥 핵심 정리 심혈관 / 심전도 심전도 해석 기본 허혈·경색 ECG 변화 심혈관 환자 간호 핵심 CPCR 절차",
-      "prefer_media_first": true
+      "search_index": "부정맥 심전도 변화 ECG 변화 심방세동 심방조동 SVT 상심실성 빈맥 서맥 1도 AV block Mobitz I 완전방실차단 심실빈맥 심실세동 VF VT 부정맥 심전도 심방세동 심전도 VT VF ECG 방실차단 ECG 질환별 심전도 변화: 부정맥 핵심 정리 심혈관 / 심전도 심전도 해석 기본 허혈·경색 ECG 변화 심혈관 환자 간호 핵심 CPCR 절차"
     },
     {
       "id": "V70_ECG_ISCHEMIA_ELECTROLYTE",
@@ -38518,17 +32007,7 @@ window.ICU_MANUAL_DB = {
         "고칼륨혈증 심전도",
         "저칼륨혈증 심전도",
         "질환별 심전도 변화: 허혈·경색·전해질 이상",
-        "심혈관 / 심전도",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "심혈관 / 심전도"
       ],
       "urgency": "high",
       "summary": "STEMI/NSTE-ACS와 고칼륨혈증·저칼륨혈증에서 흔히 보는 ECG 변화를 정리한 카드입니다. 그래프 설명, 치료 방향, 간호 포인트를 함께 넣었습니다.",
@@ -38658,61 +32137,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v70_ecg_ischemia_electrolyte.png",
-          "alt": "허혈 경색 전해질 이상 ECG 예시",
-          "caption": "STEMI, 허혈/NSTE-ACS, 고칼륨혈증, 저칼륨혈증 ECG 예시",
-          "search_terms": [
-            "허혈 경색 전해질 이상 ECG 예시",
-            "STEMI, 허혈/NSTE-ACS, 고칼륨혈증, 저칼륨혈증 ECG 예시",
-            "STEMI",
-            "NSTEMI",
-            "허혈",
-            "심근경색",
-            "급성관상동맥증후군",
-            "심전도 ST 상승",
-            "ST 하강",
-            "고칼륨혈증",
-            "저칼륨혈증",
-            "전해질 이상 ECG",
-            "T파 역전",
-            "U파",
-            "STEMI 심전도",
-            "허혈 심전도",
-            "고칼륨혈증 심전도",
-            "저칼륨혈증 심전도",
-            "V70_ECG_ISCHEMIA_ELECTROLYTE",
-            "질환별 심전도 변화: 허혈·경색·전해질 이상",
-            "심혈관 / 심전도",
-            "STEMI/NSTE-ACS와 고칼륨혈증·저칼륨혈증에서 흔히 보는 ECG 변화를 정리한 카드입니다. 그래프 설명, 치료 방향, 간호 포인트를 함께 넣었습니다."
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -38763,17 +32200,7 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
@@ -38907,51 +32334,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v70_cardiac_nursing_flow.png",
-          "alt": "심혈관 환자 간호 핵심 흐름",
-          "caption": "심혈관 환자 간호 핵심 흐름: 초기 사정부터 기록까지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "심혈관 환자 간호 핵심 흐름",
-            "심혈관 환자 간호 핵심 흐름: 초기 사정부터 기록까지",
-            "심혈관 환자 간호",
-            "심장환자 간호",
-            "심전도 모니터링",
-            "흉통 간호",
-            "부정맥 간호",
-            "STEMI 간호",
-            "중환자실 심혈관 간호",
-            "심혈관 간호",
-            "심전도 간호",
-            "심혈관 환자의 간호: 모니터링·응급대응·기록",
-            "V70_CARDIOVASCULAR_NURSING",
-            "심혈관 / 심전도",
-            "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
-            "간호",
-            "심혈관",
-            "모니터링",
-            "심전도 해석 기본",
-            "부정맥 ECG 변화",
-            "허혈·경색 ECG 변화",
-            "CPCR 절차"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Brain CT"
           ]
         }
       ],
@@ -39074,17 +32469,7 @@ window.ICU_MANUAL_DB = {
         "트라거스",
         "EVD leveling",
         "ICP 측정",
-        "배액 높이",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "배액 높이"
       ],
       "urgency": "high",
       "summary": "EVD, ICP, CVP의 목적·기준점·정상/주의 범위·위험·간호 핵심을 한 번에 비교하는 총정리 카드입니다.",
@@ -39225,61 +32610,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v71_evd_icp_cvp_overview.png",
-          "alt": "EVD ICP CVP 총정리 비교 이미지",
-          "caption": "EVD · ICP · CVP 총정리: 기준점·위험·간호 핵심 비교",
-          "search_terms": [
-            "EVD ICP CVP 총정리 비교 이미지",
-            "EVD · ICP · CVP 총정리: 기준점·위험·간호 핵심 비교",
-            "EVD",
-            "ICP",
-            "CVP",
-            "뇌실외배액",
-            "External Ventricular Drain",
-            "Intracranial Pressure",
-            "Central Venous Pressure",
-            "두개내압",
-            "중심정맥압",
-            "Foramen of Monro",
-            "외이도",
-            "tragus",
-            "phlebostatic axis",
-            "4th intercostal space",
-            "중환자실 간호",
-            "모니터링",
-            "EVD ICP CVP",
-            "신경계 모니터링",
-            "중환자실 필수",
-            "V71_EVD_ICP_CVP_OVERVIEW"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -39419,17 +32762,7 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "EVD 환자에서 반드시 확인해야 하는 레벨링, 배액, clamp, 감염예방, 즉시 보고 상황을 정리한 카드입니다.",
@@ -39612,66 +32945,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v71_evd_nursing_summary.png",
-          "alt": "EVD 간호 핵심 이미지",
-          "caption": "EVD 간호 핵심: 레벨링, 배액, 감염예방, 보고 기준",
-          "search_terms": [
-            "EVD 간호 핵심 이미지",
-            "EVD 간호 핵심: 레벨링, 배액, 감염예방, 보고 기준",
-            "EVD",
-            "뇌실외배액",
-            "External Ventricular Drain",
-            "CSF drainage",
-            "CSF 배액",
-            "Foramen of Monro",
-            "외이도",
-            "tragus",
-            "레벨링",
-            "zeroing",
-            "clamp",
-            "drainage chamber",
-            "ICP monitoring",
-            "수두증",
-            "SAH",
-            "뇌출혈",
-            "EVD 간호",
-            "뇌실외배액 간호",
-            "EVD 배액",
-            "EVD level"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 ICP 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리",
       "videos": [
@@ -39749,17 +33023,7 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ICP 정상/주의 범위, 상승 징후, CPP 계산, 중환자실 간호·치료 보조 포인트를 정리한 카드입니다.",
@@ -39941,66 +33205,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v71_icp_management_summary.png",
-          "alt": "ICP 총정리 이미지",
-          "caption": "ICP 총정리: 수치 해석, 상승 징후, CPP, 간호/치료 보조",
-          "search_terms": [
-            "ICP 총정리 이미지",
-            "ICP 총정리: 수치 해석, 상승 징후, CPP, 간호/치료 보조",
-            "ICP",
-            "IICP",
-            "두개내압",
-            "뇌압",
-            "Intracranial Pressure",
-            "CPP",
-            "MAP-ICP",
-            "GCS",
-            "pupil",
-            "동공",
-            "Cushing triad",
-            "두통",
-            "구토",
-            "seizure",
-            "herniation",
-            "mannitol",
-            "hypertonic saline",
-            "EVD",
-            "ICP 간호",
-            "두개내압 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리",
       "videos": [
@@ -40066,17 +33271,7 @@ window.ICU_MANUAL_DB = {
         "CVP 간호",
         "CVP zeroing",
         "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
-        "신경계 / 순환 모니터링",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 순환 모니터링"
       ],
       "urgency": "high",
       "summary": "CVP 측정 기준점, zeroing, 파형 확인, 높고 낮을 때 의미, 간호 판단 포인트를 정리한 카드입니다.",
@@ -40251,67 +33446,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v71_cvp_monitoring_summary.png",
-          "alt": "CVP 총정리 이미지",
-          "caption": "CVP 총정리: zeroing 기준점, 해석, 파형, 간호 체크리스트",
-          "search_terms": [
-            "CVP 총정리 이미지",
-            "CVP 총정리: zeroing 기준점, 해석, 파형, 간호 체크리스트",
-            "CVP",
-            "중심정맥압",
-            "Central Venous Pressure",
-            "CVC",
-            "phlebostatic axis",
-            "4th intercostal space",
-            "mid axillary line",
-            "zeroing",
-            "transducer",
-            "a wave",
-            "c wave",
-            "v wave",
-            "우심방압",
-            "수액반응성",
-            "volume status",
-            "CVP 간호",
-            "CVP zeroing",
-            "V71_CVP_MONITORING",
-            "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
-            "신경계 / 순환 모니터링"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "CVP 중심정맥압 Central Venous Pressure CVC phlebostatic axis 4th intercostal space mid axillary line zeroing transducer a wave c wave v wave 우심방압 수액반응성 volume status CVP 간호 CVP zeroing CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단 신경계 / 순환 모니터링 EVD · ICP · CVP 총정리 심혈관 환자 간호 A-line 사용법",
-      "prefer_media_first": true
+      "search_index": "CVP 중심정맥압 Central Venous Pressure CVC phlebostatic axis 4th intercostal space mid axillary line zeroing transducer a wave c wave v wave 우심방압 수액반응성 volume status CVP 간호 CVP zeroing CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단 신경계 / 순환 모니터링 EVD · ICP · CVP 총정리 심혈관 환자 간호 A-line 사용법"
     },
     {
       "id": "V72_ABGA_OVERVIEW",
@@ -40380,17 +33517,7 @@ window.ICU_MANUAL_DB = {
         "검체",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ABGA의 정상/참고값, 채혈 전후 체크, 빠른 해석 6단계, 즉시 보고 상황을 한 번에 정리한 카드입니다.",
@@ -40603,59 +33730,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v72_abga_overview.png",
-          "alt": "ABGA 정상값 채혈 해석순서 요약",
-          "caption": "ABGA 총정리 ① 정상값·채혈·해석순서",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "ABGA 정상값 채혈 해석순서 요약",
-            "ABGA 총정리 ① 정상값·채혈·해석순서",
-            "ABGA",
-            "ABG",
-            "동맥혈가스분석",
-            "동맥혈 가스 분석",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "BE",
-            "Base excess",
-            "Lactate",
-            "젖산",
-            "P/F ratio",
-            "PF ratio",
-            "FiO2",
-            "산염기",
-            "산증",
-            "알칼리증",
-            "대사성 산증"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "X-ray"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -40753,17 +33857,7 @@ window.ICU_MANUAL_DB = {
         "혈액가스분석",
         "산염기 장애",
         "ABGA 산염기 장애 판독: 호흡성·대사성 산증/알칼리증",
-        "호흡 / ABGA / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / ABGA / 중환자실"
       ],
       "urgency": "high",
       "summary": "호흡성 산증, 호흡성 알칼리증, 대사성 산증, 대사성 알칼리증을 ABGA 방향·원인·치료/간호 포인트로 비교한 카드입니다.",
@@ -40934,59 +34028,53 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v72_abga_acidbase_table.png",
-          "alt": "ABGA 산염기 장애 판독표",
-          "caption": "ABGA 총정리 ② 산염기 장애 판독표",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "ABGA 산염기 장애 판독표",
-            "ABGA 총정리 ② 산염기 장애 판독표",
-            "ABGA",
-            "ABG",
-            "동맥혈가스분석",
-            "동맥혈 가스 분석",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "BE",
-            "Base excess",
-            "Lactate",
-            "젖산",
-            "P/F ratio",
-            "PF ratio",
-            "FiO2",
-            "산염기",
-            "산증",
-            "알칼리증",
-            "대사성 산증"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "X-ray"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -41055,17 +34143,7 @@ window.ICU_MANUAL_DB = {
         "산소화 평가",
         "환기 평가",
         "ABGA 산소화·환기·중환자실 간호",
-        "호흡 / ABGA / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / ABGA / 중환자실"
       ],
       "urgency": "high",
       "summary": "PaO₂, SaO₂, PaCO₂, HCO₃⁻, lactate를 환자상태·산소요법·인공호흡기와 연결해 보는 중환자실 간호 카드입니다.",
@@ -41244,59 +34322,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v72_abga_oxygenation_nursing.png",
-          "alt": "ABGA 산소화 환기 간호 요약",
-          "caption": "ABGA 총정리 ③ 산소화·환기·간호",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "ABGA 산소화 환기 간호 요약",
-            "ABGA 총정리 ③ 산소화·환기·간호",
-            "ABGA",
-            "ABG",
-            "동맥혈가스분석",
-            "동맥혈 가스 분석",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "BE",
-            "Base excess",
-            "Lactate",
-            "젖산",
-            "P/F ratio",
-            "PF ratio",
-            "FiO2",
-            "산염기",
-            "산증",
-            "알칼리증",
-            "대사성 산증"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "X-ray"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -41370,17 +34425,7 @@ window.ICU_MANUAL_DB = {
         "검체",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "대표 ABGA 결과 예시를 보고 산증/알칼리증을 구분하는 연습 카드와 채혈 후 간호 체크리스트입니다.",
@@ -41574,59 +34619,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v72_abga_examples.png",
-          "alt": "ABGA 예시 판독과 채혈 후 간호 체크리스트",
-          "caption": "ABGA 총정리 ④ 예시 판독 연습",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "ABGA 예시 판독과 채혈 후 간호 체크리스트",
-            "ABGA 총정리 ④ 예시 판독 연습",
-            "ABGA",
-            "ABG",
-            "동맥혈가스분석",
-            "동맥혈 가스 분석",
-            "pH",
-            "PaCO2",
-            "PaO2",
-            "HCO3",
-            "SaO2",
-            "BE",
-            "Base excess",
-            "Lactate",
-            "젖산",
-            "P/F ratio",
-            "PF ratio",
-            "FiO2",
-            "산염기",
-            "산증",
-            "알칼리증",
-            "대사성 산증"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "X-ray"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -41725,17 +34747,7 @@ window.ICU_MANUAL_DB = {
         "전자동의서",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "수혈 처방 확인부터 수혈 전 검사, 혈액 수령, 2인 확인, 시작 후 15분 관찰, 종료 기록까지 중환자실 간호 흐름을 한 장으로 정리한 카드입니다.",
@@ -41905,22 +34917,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
+          "search_terms": [
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -42012,17 +35038,7 @@ window.ICU_MANUAL_DB = {
         "RBC PC FFP Cryo",
         "수혈 종류 표",
         "혈액제제 종류와 수혈 전 확인사항",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "high",
       "summary": "RBC, 혈소판, FFP, Cryo, Albumin/혈장분획제제의 목적, 수혈 전 확인, 주입관리, 주의반응을 비교한 카드입니다.",
@@ -42188,22 +35204,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -42268,17 +35281,7 @@ window.ICU_MANUAL_DB = {
         "수혈 reaction",
         "TRALI TACO",
         "수혈부작용 종류와 응급대응",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "high",
       "summary": "급성 용혈성 반응, 발열성 비용혈성 반응, 알레르기/아나필락시스, TRALI, TACO, 세균오염 등 수혈부작용 증상과 즉시 대응을 정리한 카드입니다.",
@@ -42448,22 +35451,35 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
+          "search_terms": [
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -42527,17 +35543,7 @@ window.ICU_MANUAL_DB = {
         "대량수혈 간호",
         "TACO 간호",
         "중환자실 수혈 간호 체크리스트",
-        "수혈 / 혈액",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 / 혈액"
       ],
       "urgency": "high",
       "summary": "중환자실에서 수혈 전·시작·수혈 중·수혈 후 반드시 확인할 항목과 대량수혈/체액과부하 위험 환자 관찰 포인트를 정리한 카드입니다.",
@@ -42688,22 +35694,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -42745,17 +35748,7 @@ window.ICU_MANUAL_DB = {
         "계통별 질병",
         "과별 질병 정리",
         "중환자실 대상 환자 질병 총정리: 계통별 빠른 분류",
-        "중환자실 질병 / 계통별",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 계통별"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 만나는 질환을 순환계, 호흡기계, 뇌신경계, 소화기계, 신장/비뇨계, 내분비/대사, 감염/패혈증, 혈액/응고, 외상/수술 후로 분류한 전체 지도입니다.",
@@ -42915,75 +35908,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v74_icu_disease_system_map.png",
-          "alt": "중환자실 질환 계통별 전체 지도",
-          "caption": "중환자실 대상 질병·진단 계통별 전체 지도",
-          "search_terms": [
-            "중환자실 질환 계통별 전체 지도",
-            "중환자실 대상 질병·진단 계통별 전체 지도",
-            "중환자실",
-            "ICU",
-            "질병",
-            "진단",
-            "질환",
-            "계통별",
-            "과별",
-            "순환계",
-            "호흡기계",
-            "소화기계",
-            "뇌신경계",
-            "신장계",
-            "감염",
-            "패혈증",
-            "쇼크",
-            "혈액응고",
-            "ICU 질병 총정리",
-            "중환자실 질환",
-            "중환자실 진단별 정리",
-            "계통별 질병"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
-      "prefer_media_first": true
+      "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_CIRCULATORY",
@@ -43021,17 +35948,7 @@ window.ICU_MANUAL_DB = {
         "대동맥박리",
         "심혈관 질환",
         "순환계 질환 총정리: ACS·심부전·쇼크·부정맥",
-        "중환자실 질병 / 순환계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 순환계"
       ],
       "urgency": "high",
       "summary": "순환계 중환자는 심근허혈, 심부전, 쇼크, 부정맥, 폐색전증을 빠르게 구분하고 ECG·혈압·산소화·lactate 변화를 동시에 보는 것이 핵심입니다.",
@@ -43171,69 +36088,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v74_circulation_respiration_summary.png",
-          "alt": "순환계와 호흡기계 중환자 질환 요약",
-          "caption": "순환계·호흡기계 주요 진단과 간호 포인트",
-          "search_terms": [
-            "순환계와 호흡기계 중환자 질환 요약",
-            "순환계·호흡기계 주요 진단과 간호 포인트",
-            "순환계",
-            "심혈관",
-            "AMI",
-            "ACS",
-            "STEMI",
-            "NSTEMI",
-            "심근경색",
-            "협심증",
-            "심부전",
-            "폐부종",
-            "심인성 쇼크",
-            "부정맥",
-            "AF",
-            "VT",
-            "VF",
-            "PE",
-            "폐색전증",
-            "대동맥박리",
-            "심혈관 질환",
-            "V74_ICU_CIRCULATORY"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "순환계 심혈관 AMI ACS STEMI NSTEMI 심근경색 협심증 심부전 폐부종 심인성 쇼크 부정맥 AF VT VF PE 폐색전증 대동맥박리 심혈관 질환 순환계 질환 총정리: ACS·심부전·쇼크·부정맥 중환자실 질병 / 순환계 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
-      "prefer_media_first": true
+      "search_index": "순환계 심혈관 AMI ACS STEMI NSTEMI 심근경색 협심증 심부전 폐부종 심인성 쇼크 부정맥 AF VT VF PE 폐색전증 대동맥박리 심혈관 질환 순환계 질환 총정리: ACS·심부전·쇼크·부정맥 중환자실 질병 / 순환계 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V74_ICU_RESPIRATORY",
@@ -43276,17 +36133,7 @@ window.ICU_MANUAL_DB = {
         "호흡 장비",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다.",
@@ -43432,59 +36279,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v74_circulation_respiration_summary.png",
-          "alt": "순환계와 호흡기계 중환자 질환 요약",
-          "caption": "순환계·호흡기계 주요 진단과 간호 포인트",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "순환계와 호흡기계 중환자 질환 요약",
-            "순환계·호흡기계 주요 진단과 간호 포인트",
-            "호흡기계",
-            "호흡부전",
-            "ARDS",
-            "폐렴",
-            "중증폐렴",
-            "흡인성 폐렴",
-            "COPD",
-            "천식",
-            "기흉",
-            "폐부종",
-            "mechanical ventilation",
-            "ventilator",
-            "P/F ratio",
-            "ABGA",
-            "VAP",
-            "인공호흡기",
-            "V74_ICU_RESPIRATORY",
-            "호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD",
-            "중환자실 질병 / 호흡기계",
-            "호흡기계 중환자는 산소화와 환기 문제를 분리해서 보고, ABGA·P/F ratio·CXR·ventilator setting 변화를 함께 확인합니다."
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -43557,17 +36365,7 @@ window.ICU_MANUAL_DB = {
         "NIHSS",
         "동공반사",
         "뇌신경계 질환 총정리: 뇌졸중·뇌출혈·ICP·경련",
-        "중환자실 질병 / 뇌신경계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 뇌신경계"
       ],
       "urgency": "high",
       "summary": "뇌신경계 중환자는 의식, 동공, 운동기능, 경련, ICP/EVD 변화를 시간순으로 추적하는 것이 핵심입니다.",
@@ -43737,32 +36535,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "혈액제제"
           ]
         }
       ],
@@ -43801,17 +36586,7 @@ window.ICU_MANUAL_DB = {
         "복막염",
         "영양",
         "소화기계·간담도 질환 총정리: GI bleeding·간부전·췌장염",
-        "중환자실 질병 / 소화기계",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 소화기계"
       ],
       "urgency": "high",
       "summary": "소화기계 중환자는 출혈, 복부팽만, 패혈증 원인, 간기능/응고장애, 영양 문제를 함께 관찰합니다.",
@@ -43982,8 +36757,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -43991,18 +36766,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -44047,17 +36814,7 @@ window.ICU_MANUAL_DB = {
         "내분비",
         "대사",
         "신장·비뇨계/내분비·대사 질환 총정리",
-        "중환자실 질병 / 신장·대사",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 신장·대사"
       ],
       "urgency": "high",
       "summary": "신장·대사 질환은 I/O, urine output, 전해질, 산염기, 혈당, fluid balance를 반복적으로 추적하는 것이 핵심입니다.",
@@ -44227,32 +36984,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -44291,17 +37052,7 @@ window.ICU_MANUAL_DB = {
         "수혈",
         "항생제",
         "감염·패혈증·쇼크·혈액응고 질환 총정리",
-        "중환자실 질병 / 감염·혈액·쇼크",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 감염·혈액·쇼크"
       ],
       "urgency": "high",
       "summary": "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다.",
@@ -44442,61 +37193,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v74_infection_metabolic_heme_summary.png",
-          "alt": "감염 패혈증 내분비 대사 혈액응고 요약",
-          "caption": "감염·패혈증·대사·혈액응고 주요 진단과 간호 포인트",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "감염 패혈증 내분비 대사 혈액응고 요약",
-            "감염·패혈증·대사·혈액응고 주요 진단과 간호 포인트",
-            "감염",
-            "패혈증",
-            "sepsis",
-            "septic shock",
-            "쇼크",
-            "MAP",
-            "lactate",
-            "source control",
-            "DIC",
-            "응고장애",
-            "혈소판감소",
-            "대량출혈",
-            "massive bleeding",
-            "MTP",
-            "수혈",
-            "항생제",
-            "V74_ICU_INFECTION_SHOCK_HEME",
-            "감염·패혈증·쇼크·혈액응고 질환 총정리",
-            "중환자실 질병 / 감염·혈액·쇼크",
-            "감염·패혈증과 혈액응고 문제는 조기 인지, lactate/MAP/소변량, 배양-항생제, source control, 출혈·DIC 감시가 핵심입니다."
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -44537,17 +37262,7 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "횡문근융해",
         "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증",
-        "중환자실 질병 / 외상·수술 후",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중환자실 질병 / 외상·수술 후"
       ],
       "urgency": "high",
       "summary": "외상·수술 후 중환자는 출혈, 배액량, 신경혈관 사정, 통증, 감염, DVT/PE, 횡문근융해와 AKI 위험을 반복 확인해야 합니다.",
@@ -44680,68 +37395,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v74_infection_metabolic_heme_summary.png",
-          "alt": "외상 수술 후 중환자 관리 요약",
-          "caption": "감염·패혈증·대사·혈액응고 및 외상/수술 후 관리 포인트",
-          "search_terms": [
-            "외상 수술 후 중환자 관리 요약",
-            "감염·패혈증·대사·혈액응고 및 외상/수술 후 관리 포인트",
-            "외상",
-            "수술 후",
-            "post op",
-            "post-op",
-            "trauma",
-            "배액관",
-            "JP",
-            "H-vac",
-            "bleeding",
-            "출혈",
-            "rhabdomyolysis",
-            "compartment syndrome",
-            "폐색전증",
-            "DVT",
-            "감염",
-            "통증",
-            "쇼크",
-            "횡문근융해",
-            "V74_ICU_POSTOP_TRAUMA",
-            "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "외상 수술 후 post op post-op trauma 배액관 JP H-vac bleeding 출혈 rhabdomyolysis compartment syndrome 폐색전증 DVT 감염 통증 쇼크 횡문근융해 외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증 중환자실 질병 / 외상·수술 후 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
-      "prefer_media_first": true
+      "search_index": "외상 수술 후 post op post-op trauma 배액관 JP H-vac bleeding 출혈 rhabdomyolysis compartment syndrome 폐색전증 DVT 감염 통증 쇼크 횡문근융해 외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증 중환자실 질병 / 외상·수술 후 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
     },
     {
       "id": "V75_DIABETES_OVERVIEW",
@@ -44779,17 +37435,7 @@ window.ICU_MANUAL_DB = {
         "혈당관리",
         "당뇨 간호",
         "혈당·당뇨·인슐린 총정리: 진단기준·목표·간호",
-        "내분비·대사 / 혈당·당뇨",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "내분비·대사 / 혈당·당뇨"
       ],
       "urgency": "high",
       "summary": "혈당 진단기준, 당뇨 종류, 입원환자 혈당 목표, 저혈당/고혈당 대응, 인슐린·당뇨약물·DKA/HHS·중환자실 간호를 한 번에 확인하는 카드입니다.",
@@ -45001,38 +37647,20 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "약물",
-            "수혈"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
+            "FMC CRRT"
           ]
         }
       ],
@@ -45070,17 +37698,7 @@ window.ICU_MANUAL_DB = {
         "정맥포도당",
         "혈당 응급처치",
         "저혈당·고혈당 증상과 간호 처치",
-        "내분비·대사 / 혈당·당뇨",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "내분비·대사 / 혈당·당뇨"
       ],
       "urgency": "high",
       "summary": "저혈당과 고혈당의 증상, 즉시 간호 처치, 보고 기준을 비교해 정리한 카드입니다.",
@@ -45278,28 +37896,19 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -45338,17 +37947,7 @@ window.ICU_MANUAL_DB = {
         "주사부위 순환",
         "인슐린 주사",
         "인슐린 종류·주사부위·당뇨 약물 총정리",
-        "내분비·대사 / 혈당·당뇨",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "내분비·대사 / 혈당·당뇨"
       ],
       "urgency": "high",
       "summary": "인슐린 작용시간, 주사 부위 순환, 주요 당뇨약 계열과 간호 주의점을 정리한 카드입니다.",
@@ -45594,38 +38193,20 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "약물",
-            "수혈"
+            "CRRT",
+            "DKA"
           ]
         },
         {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
+            "FMC CRRT"
           ]
         }
       ],
@@ -45658,17 +38239,7 @@ window.ICU_MANUAL_DB = {
         "전해질 보충",
         "중환자실 혈당 간호",
         "DKA·HHS 핵심과 중환자실 혈당 간호",
-        "내분비·대사 / 혈당·당뇨",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "내분비·대사 / 혈당·당뇨"
       ],
       "urgency": "high",
       "summary": "DKA와 HHS의 차이, 응급치료 핵심, 중환자실 혈당 간호 체크리스트를 정리한 카드입니다.",
@@ -45889,8 +38460,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -45898,18 +38469,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -45950,17 +38530,7 @@ window.ICU_MANUAL_DB = {
         "high-alert medication",
         "약품 총정리",
         "중환자실 약품 총정리: 고위험·고주의 약물 안전",
-        "약물 / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 중환자실"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 사용하는 고위험·고주의 약물의 범주, 핵심 위험, 투약 전 확인사항과 즉시 보고 기준을 정리한 카드입니다.",
@@ -46253,21 +38823,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -46313,17 +38898,7 @@ window.ICU_MANUAL_DB = {
         "opioid",
         "benzodiazepine",
         "마약·향정·진정/진통제 총정리: 보관·투약·폐기·감시",
-        "약물 / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 중환자실"
       ],
       "urgency": "high",
       "summary": "마약성 진통제, 향정/benzodiazepine, 진정제, 신경근차단제의 주요 위험과 간호 감시, 보관·폐기 기록 포인트를 정리한 카드입니다.",
@@ -46488,25 +39063,6 @@ window.ICU_MANUAL_DB = {
             "마약 총정리",
             "향정 총정리"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
         }
       ],
       "standard_sections_ready": true,
@@ -46549,17 +39105,7 @@ window.ICU_MANUAL_DB = {
         "antibiotic stewardship",
         "AST 항생제",
         "중환자실 항생제 총정리: 투여 전후 확인·고위험 항생제·감염관리",
-        "약물 / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 중환자실"
       ],
       "urgency": "high",
       "summary": "중환자실 항생제 투여 전후 확인사항, 고위험 항생제 감시, 배양검사와 de-escalation, TDM 및 이상반응을 정리한 카드입니다.",
@@ -46792,8 +39338,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -46801,18 +39347,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -46861,17 +39399,7 @@ window.ICU_MANUAL_DB = {
         "fluid resuscitation",
         "maintenance fluid",
         "중환자실 수액 요법 총정리: 종류·적응증·모니터링·간호",
-        "약물 / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 중환자실"
       ],
       "urgency": "high",
       "summary": "중환자실 수액요법의 5R, 수액 종류별 특징, 사용 상황, 주의사항, 모니터링과 재평가 기준을 정리한 카드입니다.",
@@ -47228,33 +39756,6 @@ window.ICU_MANUAL_DB = {
             "fluid overload",
             "폐부종"
           ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
         }
       ],
       "standard_sections_ready": true,
@@ -47285,17 +39786,7 @@ window.ICU_MANUAL_DB = {
         "수액 약물 항생제 비교",
         "중환자실 간호 체크포인트",
         "ICU 약물·항생제·수액 한눈에 비교: 간호 체크포인트",
-        "약물 / 중환자실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 / 중환자실"
       ],
       "urgency": "high",
       "summary": "중환자실에서 약물, 마약/향정, 항생제, 수액을 한눈에 비교하고 투여 전후 간호 확인사항을 빠르게 확인하는 카드입니다.",
@@ -47477,41 +39968,6 @@ window.ICU_MANUAL_DB = {
             "체크리스트",
             "고위험 약물 안전"
           ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
         }
       ],
       "standard_sections_ready": true,
@@ -47551,17 +40007,7 @@ window.ICU_MANUAL_DB = {
         "GCS Pupil Motor",
         "의식수준 사정",
         "의식사정·신경학적 사정 총정리: GCS·Pupil·Motor",
-        "신경계 / 중환자 사정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 중환자 사정"
       ],
       "urgency": "high",
       "summary": "중환자실에서 의식수준, GCS, 동공, motor, 활력징후와 ICP 상승 징후를 한 흐름으로 사정하고 즉시 보고 기준을 확인하는 카드입니다.",
@@ -47696,65 +40142,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v77_neuro_assessment_overview.png",
-          "alt": "의식사정 신경학적 사정 총정리 이미지",
-          "caption": "의식사정·신경학적 사정 총정리: GCS, Pupil, Motor, 보고 기준",
-          "search_terms": [
-            "의식사정 신경학적 사정 총정리 이미지",
-            "의식사정·신경학적 사정 총정리: GCS, Pupil, Motor, 보고 기준",
-            "의식사정",
-            "신경학적 사정",
-            "neuro check",
-            "GCS",
-            "PUPIL",
-            "pupil",
-            "동공",
-            "MOTOR",
-            "motor",
-            "motor power",
-            "LOC",
-            "의식수준",
-            "동공반사",
-            "편마비",
-            "뇌신경계",
-            "중환자실 신경사정",
-            "neuro assessment",
-            "GCS Pupil Motor",
-            "의식수준 사정",
-            "V77_NEURO_ASSESSMENT_OVERVIEW"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "의식사정 신경학적 사정 neuro check GCS PUPIL pupil 동공 MOTOR motor motor power LOC 의식수준 동공반사 편마비 뇌신경계 중환자실 신경사정 neuro assessment GCS Pupil Motor 의식수준 사정 의식사정·신경학적 사정 총정리: GCS·Pupil·Motor 신경계 / 중환자 사정 뇌졸중 총정리 EVD·ICP·CVP 총정리 ABGA 총정리 심전도 총정리",
       "prefer_media_first": true
@@ -47790,17 +40178,7 @@ window.ICU_MANUAL_DB = {
         "LOC 사정",
         "의식수준 단계",
         "GCS·의식수준 LOC 사정표",
-        "신경계 / 중환자 사정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 중환자 사정"
       ],
       "urgency": "high",
       "summary": "GCS Eye/Verbal/Motor 세부점수와 LOC 단계를 표로 확인하고, 기관삽관·진정 상태에서도 기록 원칙을 유지하도록 정리한 카드입니다.",
@@ -48038,56 +40416,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v77_gcs_loc_table.png",
-          "alt": "GCS 의식수준 사정표 이미지",
-          "caption": "GCS Eye/Verbal/Motor 세부점수와 LOC 단계",
-          "search_terms": [
-            "GCS 의식수준 사정표 이미지",
-            "GCS Eye/Verbal/Motor 세부점수와 LOC 단계",
-            "GCS",
-            "Glasgow Coma Scale",
-            "E4",
-            "V5",
-            "M6",
-            "EVM",
-            "의식수준",
-            "LOC",
-            "Alert",
-            "Drowsy",
-            "Confusion",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "기관삽관 Vt",
-            "GCS 점수",
-            "LOC 사정",
-            "의식수준 단계",
-            "V77_GCS_LOC_ASSESSMENT",
-            "GCS·의식수준 LOC 사정표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "GCS Glasgow Coma Scale E4 V5 M6 EVM 의식수준 LOC Alert Drowsy Confusion Stupor Semicoma Coma 기관삽관 Vt GCS 점수 LOC 사정 의식수준 단계 GCS·의식수준 LOC 사정표 신경계 / 중환자 사정 의식사정·신경학적 사정 총정리 Pupil 사정 Motor 사정",
       "prefer_media_first": true
@@ -48122,17 +40451,7 @@ window.ICU_MANUAL_DB = {
         "빛반사",
         "pupil check",
         "Pupil 동공 사정 총정리: 크기·반응·대칭",
-        "신경계 / 중환자 사정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 중환자 사정"
       ],
       "urgency": "high",
       "summary": "동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다.",
@@ -48257,60 +40576,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v77_pupil_motor_assessment.png",
-          "alt": "Pupil Motor 신경학적 사정 이미지",
-          "caption": "동공사정과 motor power grade 핵심 요약",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "Pupil Motor 신경학적 사정 이미지",
-            "동공사정과 motor power grade 핵심 요약",
-            "pupil",
-            "PUPIL",
-            "동공",
-            "동공사정",
-            "동공반사",
-            "pupil reflex",
-            "anisocoria",
-            "isocoria",
-            "prompt",
-            "sluggish",
-            "fixed",
-            "pinpoint",
-            "dilated",
-            "동공부등",
-            "빛반사",
-            "pupil check",
-            "V77_PUPIL_ASSESSMENT",
-            "Pupil 동공 사정 총정리: 크기·반응·대칭",
-            "신경계 / 중환자 사정",
-            "동공 크기, 모양, 좌우 대칭, 빛반응을 평가하고 새 동공부등·fixed pupil 등 즉시 보고 기준을 정리한 카드입니다."
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
+            "혈액제제"
           ]
         }
       ],
@@ -48350,17 +40628,7 @@ window.ICU_MANUAL_DB = {
         "근력평가",
         "편마비 사정",
         "Motor power 사정 총정리: Grade·좌우비교·보고기준",
-        "신경계 / 중환자 사정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 중환자 사정"
       ],
       "urgency": "high",
       "summary": "상하지 좌우 motor grade를 평가하고, 편측 저하·비정상 자세반응·새로운 weakness를 즉시 보고할 수 있게 정리한 카드입니다.",
@@ -48540,65 +40808,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v77_pupil_motor_assessment.png",
-          "alt": "Motor power grade 이미지",
-          "caption": "Motor power grade와 좌우 비교 평가",
-          "search_terms": [
-            "Motor power grade 이미지",
-            "Motor power grade와 좌우 비교 평가",
-            "motor",
-            "MOTOR",
-            "motor power",
-            "motor grade",
-            "근력",
-            "운동반응",
-            "편마비",
-            "hemiparesis",
-            "obey",
-            "pronator drift",
-            "motor 5",
-            "motor 4",
-            "motor 3",
-            "motor 2",
-            "motor 1",
-            "motor 0",
-            "운동반응 사정",
-            "근력평가",
-            "편마비 사정",
-            "V77_MOTOR_ASSESSMENT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "motor MOTOR motor power motor grade 근력 운동반응 편마비 hemiparesis obey pronator drift motor 5 motor 4 motor 3 motor 2 motor 1 motor 0 운동반응 사정 근력평가 편마비 사정 Motor power 사정 총정리: Grade·좌우비교·보고기준 신경계 / 중환자 사정 GCS·의식수준 LOC 사정표 Pupil 사정 뇌졸중 총정리",
       "prefer_media_first": true
@@ -48632,17 +40842,7 @@ window.ICU_MANUAL_DB = {
         "신경학적 사정 기록",
         "신경계 인계",
         "중환자실 신경학적 사정 간호 체크리스트",
-        "신경계 / 중환자 사정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 중환자 사정"
       ],
       "urgency": "high",
       "summary": "중환자실에서 신경학적 사정 항목, 관찰 빈도, 기록 문장, 즉시 보고 문장을 표준화해 확인하는 체크리스트 카드입니다.",
@@ -48825,59 +41025,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v77_icu_neuro_checklist.png",
-          "alt": "중환자실 신경학적 사정 간호 체크리스트 이미지",
-          "caption": "ICU Neuro Check: 관찰, 보고, 기록, 인계 체크리스트",
-          "search_terms": [
-            "중환자실 신경학적 사정 간호 체크리스트 이미지",
-            "ICU Neuro Check: 관찰, 보고, 기록, 인계 체크리스트",
-            "중환자실 신경학적 사정",
-            "ICU neuro check",
-            "neuro nursing",
-            "신경계 간호",
-            "기록",
-            "인계",
-            "GCS 기록",
-            "Pupil 기록",
-            "motor 기록",
-            "경련",
-            "ICP 상승",
-            "Cushing triad",
-            "EVD",
-            "ICP monitor",
-            "신경계 간호 체크리스트",
-            "신경학적 사정 기록",
-            "신경계 인계",
-            "V77_ICU_NEURO_NURSING_CHECKLIST",
-            "중환자실 신경학적 사정 간호 체크리스트",
-            "신경계 / 중환자 사정"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "중환자실 신경학적 사정 ICU neuro check neuro nursing 신경계 간호 기록 인계 GCS 기록 Pupil 기록 motor 기록 경련 ICP 상승 Cushing triad EVD ICP monitor 신경계 간호 체크리스트 신경학적 사정 기록 신경계 인계 중환자실 신경학적 사정 간호 체크리스트 신경계 / 중환자 사정 EVD·ICP·CVP 총정리 ABGA 총정리 뇌졸중 총정리 중환자실 질병 총정리",
-      "prefer_media_first": true
+      "search_index": "중환자실 신경학적 사정 ICU neuro check neuro nursing 신경계 간호 기록 인계 GCS 기록 Pupil 기록 motor 기록 경련 ICP 상승 Cushing triad EVD ICP monitor 신경계 간호 체크리스트 신경학적 사정 기록 신경계 인계 중환자실 신경학적 사정 간호 체크리스트 신경계 / 중환자 사정 EVD·ICP·CVP 총정리 ABGA 총정리 뇌졸중 총정리 중환자실 질병 총정리"
     },
     {
       "id": "V78_ICU_NUTRITION_FLUIDS_OVERVIEW",
@@ -48909,17 +41059,7 @@ window.ICU_MANUAL_DB = {
         "아미노산 수액",
         "지질 수액",
         "중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름",
-        "영양 / 수액요법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "영양 / 수액요법"
       ],
       "urgency": "high",
       "summary": "중환자실에서 영양지원이 필요한 환자에게 EN 우선, PN/TPN 적용 상황, 구성 성분, 간호 확인 사항을 한 번에 보는 카드입니다.",
@@ -49032,75 +41172,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v78_nutrition_fluids_overview.png",
-          "alt": "ICU 영양수액 총정리 흐름도",
-          "caption": "중환자실 영양지원 흐름, EN/PN 선택 기준, TPN 구성과 간호 확인",
-          "search_terms": [
-            "ICU 영양수액 총정리 흐름도",
-            "중환자실 영양지원 흐름, EN/PN 선택 기준, TPN 구성과 간호 확인",
-            "영양수액",
-            "TPN",
-            "PN",
-            "정맥영양",
-            "parenteral nutrition",
-            "enteral nutrition",
-            "EN",
-            "아미노산",
-            "지질",
-            "lipid",
-            "중환자 영양",
-            "영양지원",
-            "NUTRITION",
-            "아미노산 수액",
-            "지질 수액",
-            "V78_ICU_NUTRITION_FLUIDS_OVERVIEW",
-            "중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름",
-            "영양 / 수액요법",
-            "중환자실에서 영양지원이 필요한 환자에게 EN 우선, PN/TPN 적용 상황, 구성 성분, 간호 확인 사항을 한 번에 보는 카드입니다.",
-            "영양"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "영양수액 TPN PN 정맥영양 parenteral nutrition enteral nutrition EN 아미노산 지질 lipid 중환자 영양 영양지원 NUTRITION 아미노산 수액 지질 수액 중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름 영양 / 수액요법 수액요법 혈당·인슐린 전해질 이상 중심정맥관 관리 패혈증",
-      "prefer_media_first": true
+      "search_index": "영양수액 TPN PN 정맥영양 parenteral nutrition enteral nutrition EN 아미노산 지질 lipid 중환자 영양 영양지원 NUTRITION 아미노산 수액 지질 수액 중환자실 영양수액 총정리: EN·PN·TPN 선택과 흐름 영양 / 수액요법 수액요법 혈당·인슐린 전해질 이상 중심정맥관 관리 패혈증"
     },
     {
       "id": "V78_AMINO_LIPID_TPN_COMPONENTS",
@@ -49137,17 +41211,7 @@ window.ICU_MANUAL_DB = {
         "말초정맥영양",
         "중심정맥영양",
         "아미노산·지질·TPN 구성 성분과 종류 총정리",
-        "영양 / 수액요법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "영양 / 수액요법"
       ],
       "urgency": "high",
       "summary": "아미노산, 포도당, 지질유제, 전해질, 비타민/미량원소의 역할과 검사·주의사항을 표로 정리했습니다.",
@@ -49270,65 +41334,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v78_nutrition_components_table.png",
-          "alt": "아미노산 지질 TPN 구성 성분 비교표",
-          "caption": "아미노산·지질·TPN 구성 성분, 중심/말초 PN 비교",
-          "search_terms": [
-            "아미노산 지질 TPN 구성 성분 비교표",
-            "아미노산·지질·TPN 구성 성분, 중심/말초 PN 비교",
-            "아미노산",
-            "지질",
-            "지방유제",
-            "lipid emulsion",
-            "ILE",
-            "TPN 구성",
-            "3-in-1",
-            "2-in-1",
-            "포도당",
-            "전해질",
-            "비타민",
-            "미량원소",
-            "Peripheral PN",
-            "Central TPN",
-            "아미노산 수액",
-            "지질유제",
-            "3-in-1 TPN",
-            "2-in-1 TPN",
-            "말초정맥영양",
-            "중심정맥영양"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "아미노산 지질 지방유제 lipid emulsion ILE TPN 구성 3-in-1 2-in-1 포도당 전해질 비타민 미량원소 Peripheral PN Central TPN 아미노산 수액 지질유제 3-in-1 TPN 2-in-1 TPN 말초정맥영양 중심정맥영양 아미노산·지질·TPN 구성 성분과 종류 총정리 영양 / 수액요법 혈당·당뇨·인슐린 간기능 검사 신장기능 수액요법",
-      "prefer_media_first": true
+      "search_index": "아미노산 지질 지방유제 lipid emulsion ILE TPN 구성 3-in-1 2-in-1 포도당 전해질 비타민 미량원소 Peripheral PN Central TPN 아미노산 수액 지질유제 3-in-1 TPN 2-in-1 TPN 말초정맥영양 중심정맥영양 아미노산·지질·TPN 구성 성분과 종류 총정리 영양 / 수액요법 혈당·당뇨·인슐린 간기능 검사 신장기능 수액요법"
     },
     {
       "id": "V78_TPN_ADMINISTRATION_SAFETY",
@@ -49357,17 +41365,7 @@ window.ICU_MANUAL_DB = {
         "TPN 감염관리",
         "정맥영양 투여",
         "TPN 투여·라인·감염관리 간호 총정리",
-        "영양 / 수액요법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "영양 / 수액요법"
       ],
       "urgency": "high",
       "summary": "중환자실에서 TPN을 안전하게 투여하기 위한 전용 라인, 필터, 무균술, 혈당/전해질, 이상소견 대응을 정리했습니다.",
@@ -49483,38 +41481,9 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v78_tpn_administration_safety.png",
-          "alt": "TPN 투여 라인 감염관리 체크리스트",
-          "caption": "TPN 투여 전 확인, 투여 중 모니터링, 이상소견 대응",
-          "search_terms": [
-            "TPN 투여 라인 감염관리 체크리스트",
-            "TPN 투여 전 확인, 투여 중 모니터링, 이상소견 대응",
-            "TPN 투여",
-            "TPN 라인",
-            "TPN 감염",
-            "central line",
-            "전용 lumen",
-            "TPN filter",
-            "필터",
-            "라인관리",
-            "카테터 감염",
-            "CLABSI",
-            "무균술",
-            "TPN 투여 간호",
-            "TPN 라인관리",
-            "TPN 감염관리",
-            "정맥영양 투여",
-            "V78_TPN_ADMINISTRATION_SAFETY",
-            "TPN 투여·라인·감염관리 간호 총정리",
-            "영양 / 수액요법",
-            "중환자실에서 TPN을 안전하게 투여하기 위한 전용 라인, 필터, 무균술, 혈당/전해질, 이상소견 대응을 정리했습니다.",
-            "TPN"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -49522,18 +41491,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -49565,17 +41526,7 @@ window.ICU_MANUAL_DB = {
         "Refeeding syndrome",
         "TPN 모니터링",
         "재급식증후군·TPN 합병증 모니터링 총정리",
-        "영양 / 수액요법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "영양 / 수액요법"
       ],
       "urgency": "high",
       "summary": "재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다.",
@@ -49692,58 +41643,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v78_refeeding_monitoring.png",
-          "alt": "재급식증후군 TPN 합병증 모니터링",
-          "caption": "재급식증후군 위험군, TPN 모니터링, 합병증 보고 기준",
-          "search_terms": [
-            "재급식증후군 TPN 합병증 모니터링",
-            "재급식증후군 위험군, TPN 모니터링, 합병증 보고 기준",
-            "재급식증후군",
-            "refeeding",
-            "refeeding syndrome",
-            "TPN 합병증",
-            "저인산혈증",
-            "저칼륨혈증",
-            "저마그네슘혈증",
-            "TG 상승",
-            "LFT 상승",
-            "카테터 감염",
-            "Refeeding syndrome",
-            "TPN 모니터링",
-            "V78_REFEEDING_TPN_MONITORING",
-            "재급식증후군·TPN 합병증 모니터링 총정리",
-            "영양 / 수액요법",
-            "재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다.",
-            "TPN모니터링",
-            "합병증",
-            "전해질 이상",
-            "심전도"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "재급식증후군 refeeding refeeding syndrome TPN 합병증 저인산혈증 저칼륨혈증 저마그네슘혈증 TG 상승 LFT 상승 카테터 감염 Refeeding syndrome TPN 모니터링 재급식증후군·TPN 합병증 모니터링 총정리 영양 / 수액요법 전해질 이상 심전도 혈당·인슐린 수액요법",
-      "prefer_media_first": true
+      "search_index": "재급식증후군 refeeding refeeding syndrome TPN 합병증 저인산혈증 저칼륨혈증 저마그네슘혈증 TG 상승 LFT 상승 카테터 감염 Refeeding syndrome TPN 모니터링 재급식증후군·TPN 합병증 모니터링 총정리 영양 / 수액요법 전해질 이상 심전도 혈당·인슐린 수액요법"
     },
     {
       "id": "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
@@ -49794,17 +41696,7 @@ window.ICU_MANUAL_DB = {
         "Drager",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 보는 인공호흡기 기본 모드, 주요 설정, 알람 대응, 흡인·산소화 모니터링을 한 번에 정리한 카드입니다.",
@@ -49932,61 +41824,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v79_ventilator_savina_overview.png",
-          "alt": "Ventilator Dräger Savina 호흡계 총정리",
-          "caption": "Ventilator 모드, 설정, 알람 대응, 흡인·모니터링 요약",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "ventilator",
-            "drager savina",
-            "인공호흡기",
-            "호흡계",
-            "기계환기",
-            "알람",
-            "FiO2",
-            "PEEP",
-            "Ventilator Dräger Savina 호흡계 총정리",
-            "Ventilator 모드, 설정, 알람 대응, 흡인·모니터링 요약",
-            "drager",
-            "dräger",
-            "savina",
-            "VC",
-            "PC",
-            "SIMV",
-            "PSV",
-            "ABGA",
-            "Ventilator",
-            "Drager Savina",
-            "Dräger Savina",
-            "Savina",
-            "호흡기",
-            "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -50124,17 +41975,7 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
@@ -50257,60 +42098,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v80_hemodynamic_monitoring_overview.png",
-          "alt": "순환계 혈역학 모니터링 총정리",
-          "caption": "MAP·HR·CVP·소변량 중심 혈역학 평가 요약",
-          "search_terms": [
-            "혈역학",
-            "순환계",
-            "MAP",
-            "CVP",
-            "A-line",
-            "hemodynamic",
-            "쇼크",
-            "순환계 혈역학 모니터링 총정리",
-            "MAP·HR·CVP·소변량 중심 혈역학 평가 요약",
-            "ScvO2",
-            "arterial pressure",
-            "vasopressor",
-            "arterial line",
-            "순환계 · 혈역학 모니터링 총정리",
-            "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
-            "순환 / 혈역학",
-            "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
-            "패혈증",
-            "수액요법",
-            "혈액가스",
-            "심전도"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -50404,17 +42204,7 @@ window.ICU_MANUAL_DB = {
         "지속적 신대체요법",
         "hemofiltration",
         "신장계 · CRRT 총정리",
-        "신장 / CRRT",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신장 / CRRT"
       ],
       "urgency": "high",
       "summary": "급성 신손상 환자에서 CRRT 적응증, 회로 확인, 초여과/제거량, 항응고, 알람 대응을 정리했습니다.",
@@ -50562,8 +42352,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -50571,18 +42361,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -50615,17 +42414,7 @@ window.ICU_MANUAL_DB = {
         "ileus",
         "위관",
         "소화기계 총정리",
-        "소화기 / 위장관",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "소화기 / 위장관"
       ],
       "urgency": "high",
       "summary": "위관/장관영양, 복부사정, 위장관 출혈, 장운동 저하, 금식·배액 관리 등 소화기계 핵심 간호를 요약했습니다.",
@@ -50741,61 +42530,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v82_digestive_gi_overview.png",
-          "alt": "소화기계 총정리",
-          "caption": "위관·장관영양·GI 출혈·복부사정 요약",
-          "search_terms": [
-            "소화기계",
-            "위장관",
-            "GI",
-            "NG tube",
-            "장관영양",
-            "복부사정",
-            "출혈",
-            "소화기계 총정리",
-            "위관·장관영양·GI 출혈·복부사정 요약",
-            "L-tube",
-            "복부팽만",
-            "토혈",
-            "흑변",
-            "ileus",
-            "위관",
-            "V82_GI_DIGESTIVE_OVERVIEW",
-            "소화기 / 위장관",
-            "위관/장관영양, 복부사정, 위장관 출혈, 장운동 저하, 금식·배액 관리 등 소화기계 핵심 간호를 요약했습니다.",
-            "영양수액",
-            "검사·시술",
-            "라인관리",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -50842,17 +42589,7 @@ window.ICU_MANUAL_DB = {
         "수술환자 이동",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다.",
@@ -50976,38 +42713,9 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v83_tests_procedure_overview.png",
-          "alt": "검사 검체 영상검사 시술 수술 총정리",
-          "caption": "검체 채취, 영상검사, 시술·수술 전후 체크리스트",
-          "search_terms": [
-            "검사",
-            "검체",
-            "영상검사",
-            "시술",
-            "수술",
-            "CT",
-            "MRI",
-            "채혈",
-            "검사 검체 영상검사 시술 수술 총정리",
-            "검체 채취, 영상검사, 시술·수술 전후 체크리스트",
-            "소변검사",
-            "초음파",
-            "동의서",
-            "금식",
-            "V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
-            "검사 · 검체 · 영상검사 · 시술 · 수술 총정리",
-            "검사 / 시술·수술",
-            "검체 채취·라벨링, 영상검사 전 준비, 시술·수술 전후 확인사항을 통합 정리한 카드입니다.",
-            "수혈",
-            "소화기계",
-            "라인관리",
-            "간호기록"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -51015,18 +42723,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -51094,17 +42810,7 @@ window.ICU_MANUAL_DB = {
         "중심정맥관",
         "배액관",
         "Line · Drain · Dressing · 소독기구 총정리",
-        "기구 / Line·Drain·Dressing",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "기구 / Line·Drain·Dressing"
       ],
       "urgency": "high",
       "summary": "중심/말초 line, 배액관, dressing, 무균소독 도구의 기본 확인사항과 감염예방 포인트를 정리했습니다.",
@@ -51253,32 +42959,35 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "공급실"
+          ]
+        },
+        {
+          "src": "bin0001.png",
+          "alt": "CSR 기구 사진",
+          "caption": "CSR 기구 사진",
+          "search_terms": [
+            "CSR"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -51315,17 +43024,7 @@ window.ICU_MANUAL_DB = {
         "flow sheet",
         "인계",
         "낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리",
-        "간호업무 / 안전·기록",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 안전·기록"
       ],
       "urgency": "high",
       "summary": "중환자실 간호안전평가와 문서화, 근무별 업무 흐름을 한 카드에 모아 신규/복귀 간호사가 빠르게 참고할 수 있게 정리했습니다.",
@@ -51440,58 +43139,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v85_nursing_workflow_overview.png",
-          "alt": "낙상 욕창 통증 SOAP EMR ICU flow sheet 총정리",
-          "caption": "안전평가, 문서화, 근무별 업무, flow sheet 요약",
-          "search_terms": [
-            "낙상",
-            "욕창",
-            "통증",
-            "SOAP",
-            "EMR",
-            "간호처방",
-            "flow sheet",
-            "근무별 업무",
-            "낙상 욕창 통증 SOAP EMR ICU flow sheet 총정리",
-            "안전평가, 문서화, 근무별 업무, flow sheet 요약",
-            "ICU flow sheet",
-            "Braden",
-            "NRS",
-            "기록",
-            "인계",
-            "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-            "낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리",
-            "간호업무 / 안전·기록",
-            "중환자실 간호안전평가와 문서화, 근무별 업무 흐름을 한 카드에 모아 신규/복귀 간호사가 빠르게 참고할 수 있게 정리했습니다.",
-            "안전",
-            "검사·시술",
-            "line/drain"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "낙상 욕창 통증 SOAP EMR 간호처방 근무별 업무 ICU flow sheet Braden NRS 기록 flow sheet 인계 낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리 간호업무 / 안전·기록 검사·시술 line/drain 영양 호흡기",
-      "prefer_media_first": true
+      "search_index": "낙상 욕창 통증 SOAP EMR 간호처방 근무별 업무 ICU flow sheet Braden NRS 기록 flow sheet 인계 낙상 · 욕창 · 통증 · SOAP · EMR · 간호처방 · 근무별 업무 · ICU flow sheet 총정리 간호업무 / 안전·기록 검사·시술 line/drain 영양 호흡기"
     },
     {
       "id": "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
@@ -51524,17 +43174,7 @@ window.ICU_MANUAL_DB = {
         "brace",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다.",
@@ -51649,64 +43289,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v86_equipment_search_guide.png",
-          "alt": "ICU 물품 장비 병동간호팀 매뉴얼 검색 가이드",
-          "caption": "ICU 물품·장비 검색어 구성과 카테고리별 예시",
-          "search_terms": [
-            "ICU 물품",
-            "ICU 장비",
-            "검색",
-            "보조기",
-            "카테터",
-            "pump",
-            "모니터",
-            "ICU 물품 장비 병동간호팀 매뉴얼 검색 가이드",
-            "ICU 물품·장비 검색어 구성과 카테고리별 예시",
-            "병동간호팀",
-            "장비검색",
-            "물품검색",
-            "병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드",
-            "V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
-            "병동업무 / 물품·장비",
-            "ICU에서 자주 찾는 물품·장비를 카테고리별로 정리하고 검색어를 구체화해서 원하는 카드가 더 정확히 나오도록 돕는 가이드 카드입니다.",
-            "물품",
-            "장비",
-            "Line·Drain·Dressing",
-            "검사·검체",
-            "호흡기",
-            "간호업무"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "ICU 물품 ICU 장비 병동간호팀 장비검색 물품검색 보조기 카테터 pump 모니터 병원 ICU 물품 · 장비 · 병동간호팀 매뉴얼 검색 가이드 병동업무 / 물품·장비 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 brace 동영상 업무동영상 교육영상 Line·Drain·Dressing 검사·검체 호흡기 간호업무",
       "videos": [
@@ -51770,17 +43353,7 @@ window.ICU_MANUAL_DB = {
         "인공호흡기 모드",
         "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기",
         "호흡 / Ventilator",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -51990,38 +43563,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "ventilator mode volume control pressure control SIMV PSV PEEP FiO2 tidal volume RR VC PC 기계환기 모드 인공호흡기 모드 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 호흡 / Ventilator V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION",
-      "prefer_media_first": true
+      "search_index": "ventilator mode volume control pressure control SIMV PSV PEEP FiO2 tidal volume RR VC PC 기계환기 모드 인공호흡기 모드 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 호흡 / Ventilator V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION"
     },
     {
       "id": "V79_DETAIL_02",
@@ -52060,17 +43604,7 @@ window.ICU_MANUAL_DB = {
         "동영상",
         "업무동영상",
         "교육영상",
-        "Dräger 인공호흡기 2",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Dräger 인공호흡기 2"
       ],
       "urgency": "high",
       "summary": "Dräger Savina 사용 전·근무 시작 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52286,26 +43820,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 Dräger Drager 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
       "videos": [
@@ -52399,17 +43914,7 @@ window.ICU_MANUAL_DB = {
         "압력상승",
         "Ventilator High Pressure 알람 대응",
         "호흡 / Ventilator 알람",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator High Pressure 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52621,30 +44126,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -52677,17 +44172,7 @@ window.ICU_MANUAL_DB = {
         "회로이탈",
         "Ventilator Low Pressure·Leak 알람 대응",
         "호흡 / Ventilator 알람",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator Low Pressure·Leak 알람 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52897,30 +44382,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -52952,17 +44426,7 @@ window.ICU_MANUAL_DB = {
         "extubation 준비",
         "Ventilator Weaning·SBT 준비 체크",
         "호흡 / Weaning",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator Weaning·SBT 준비 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -53165,38 +44629,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "weaning spontaneous breathing trial SBT RSBI extubation PSV T-piece 자발호흡시험 ventilator 떼기 extubation 준비 Ventilator Weaning·SBT 준비 체크 호흡 / Weaning V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "weaning spontaneous breathing trial SBT RSBI extubation PSV T-piece 자발호흡시험 ventilator 떼기 extubation 준비 Ventilator Weaning·SBT 준비 체크 호흡 / Weaning V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
     },
     {
       "id": "V79_DETAIL_06",
@@ -53223,17 +44658,7 @@ window.ICU_MANUAL_DB = {
         "기관흡인",
         "ETT·Tracheostomy 흡인 간호 체크",
         "호흡 / 흡인",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -53441,8 +44866,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -53450,18 +44875,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -53494,17 +44927,7 @@ window.ICU_MANUAL_DB = {
         "산소화",
         "Ventilator 환자 ABGA·산소화 해석 연결",
         "호흡 / ABGA 연동",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator 환자 ABGA·산소화 해석 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -53712,30 +45135,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -53766,17 +45179,7 @@ window.ICU_MANUAL_DB = {
         "구강간호",
         "Ventilator 환자 VAP 예방 번들 체크",
         "호흡 / VAP 예방",
-        "V79",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V79"
       ],
       "urgency": "high",
       "summary": "Ventilator 환자 VAP 예방 번들 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -53974,30 +45377,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -54029,17 +45421,7 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "MAP·혈압 저하 시 첫 평가",
         "순환 / 혈역학",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -54245,39 +45627,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "MAP hypotension shock blood pressure NIBP arterial pressure perfusion 저혈압 혈압 저하 쇼크 MAP·혈압 저하 시 첫 평가 순환 / 혈역학 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_07",
-      "prefer_media_first": true
+      "search_index": "MAP hypotension shock blood pressure NIBP arterial pressure perfusion 저혈압 혈압 저하 쇼크 MAP·혈압 저하 시 첫 평가 순환 / 혈역학 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_07"
     },
     {
       "id": "V80_DETAIL_02",
@@ -54301,17 +45653,7 @@ window.ICU_MANUAL_DB = {
         "동맥압",
         "A-line Zeroing·Waveform·압력백 체크",
         "순환 / A-line",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -54500,38 +45842,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "A-line arterial line zeroing leveling waveform pressure bag transducer 동맥압 A-line Zeroing·Waveform·압력백 체크 순환 / A-line V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "A-line arterial line zeroing leveling waveform pressure bag transducer 동맥압 A-line Zeroing·Waveform·압력백 체크 순환 / A-line V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW"
     },
     {
       "id": "V80_DETAIL_03",
@@ -54555,17 +45868,7 @@ window.ICU_MANUAL_DB = {
         "C-line pressure",
         "CVP 측정·해석·라인 관리",
         "순환 / CVP",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -54766,32 +46069,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -54823,17 +46113,7 @@ window.ICU_MANUAL_DB = {
         "pressor",
         "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
         "순환 / 승압제",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -55039,38 +46319,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "vasopressor norepinephrine dopamine dobutamine MAP target central line pump 승압제 노르에피 pressor Vasopressor 사용 중 라인·펌프·혈압 목표 체크 순환 / 승압제 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01",
-      "prefer_media_first": true
+      "search_index": "vasopressor norepinephrine dopamine dobutamine MAP target central line pump 승압제 노르에피 pressor Vasopressor 사용 중 라인·펌프·혈압 목표 체크 순환 / 승압제 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01"
     },
     {
       "id": "V80_DETAIL_05",
@@ -55098,17 +46349,7 @@ window.ICU_MANUAL_DB = {
         "관류",
         "소변량·Lactate·I&O로 보는 순환 관류",
         "순환 / I&O 관류",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -55318,32 +46559,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -55375,17 +46603,7 @@ window.ICU_MANUAL_DB = {
         "부정맥",
         "부정맥 발생 시 혈역학 확인",
         "순환 / 리듬변화",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -55584,39 +46802,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "arrhythmia AF VT SVT bradycardia tachycardia ECG hemodynamic instability 부정맥 부정맥 발생 시 혈역학 확인 순환 / 리듬변화 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V70_ECG_MONITORING",
-      "prefer_media_first": true
+      "search_index": "arrhythmia AF VT SVT bradycardia tachycardia ECG hemodynamic instability 부정맥 부정맥 발생 시 혈역학 확인 순환 / 리듬변화 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V70_ECG_MONITORING"
     },
     {
       "id": "V80_DETAIL_07",
@@ -55644,17 +46832,7 @@ window.ICU_MANUAL_DB = {
         "obstructive shock",
         "쇼크 유형별 관찰 포인트",
         "순환 / 쇼크",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -55866,32 +47044,52 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -55922,17 +47120,7 @@ window.ICU_MANUAL_DB = {
         "감염",
         "패혈증 의심 시 순환·검사·보고 흐름",
         "순환 / 패혈증",
-        "V80",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V80"
       ],
       "urgency": "high",
       "summary": "패혈증 의심 시 순환·검사·보고 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56133,9 +47321,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -56143,18 +47347,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -56183,17 +47395,7 @@ window.ICU_MANUAL_DB = {
         "oliguria",
         "AKI 의심 환자 신장계 기본 사정",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "AKI 의심 환자 신장계 기본 사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56386,8 +47588,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -56395,18 +47597,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -56434,17 +47645,7 @@ window.ICU_MANUAL_DB = {
         "지속적 신대체요법",
         "CRRT 시작 전 준비 체크리스트",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT 시작 전 준비 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56637,28 +47838,19 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -56686,17 +47878,7 @@ window.ICU_MANUAL_DB = {
         "return pressure",
         "CRRT Pressure·TMP 알람 해석",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT Pressure·TMP 알람 해석 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56881,28 +48063,19 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -56931,17 +48104,7 @@ window.ICU_MANUAL_DB = {
         "제거량",
         "CRRT 제거량·I/O·Balance 기록",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -57134,22 +48297,37 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -57185,17 +48363,7 @@ window.ICU_MANUAL_DB = {
         "TMP 상승",
         "CRRT Filter Clotting 예방·대응",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT Filter Clotting 예방·대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -57387,9 +48555,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -57397,18 +48581,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -57444,17 +48637,7 @@ window.ICU_MANUAL_DB = {
         "산염기",
         "CRRT 중 전해질·산염기 모니터링",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -57668,8 +48851,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -57677,18 +48860,43 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -57725,17 +48933,7 @@ window.ICU_MANUAL_DB = {
         "access",
         "CRRT Dialysis Catheter 관리",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT Dialysis Catheter 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -57935,32 +49133,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -57990,17 +49192,7 @@ window.ICU_MANUAL_DB = {
         "체온저하",
         "CRRT 중 저혈압·출혈·체온저하 안전관리",
         "신장 / CRRT",
-        "V81",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V81"
       ],
       "urgency": "high",
       "summary": "CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -58199,9 +49391,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -58209,18 +49417,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -58248,17 +49465,7 @@ window.ICU_MANUAL_DB = {
         "Levin tube",
         "NG·L-tube 위치·고정·배액 확인",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "NG·L-tube 위치·고정·배액 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -58441,32 +49648,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -58496,17 +49690,7 @@ window.ICU_MANUAL_DB = {
         "tube feeding",
         "Enteral Feeding 내약성·흡인예방 체크",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "Enteral Feeding 내약성·흡인예방 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -58703,21 +49887,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "장비",
-            "물품"
+            "Lab bottle"
           ]
         }
       ],
@@ -58749,17 +49932,7 @@ window.ICU_MANUAL_DB = {
         "혈변",
         "GI Bleeding 토혈·흑변·혈변 대응",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "GI Bleeding 토혈·흑변·혈변 대응 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -58965,8 +50138,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -58974,18 +50147,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -59013,17 +50178,7 @@ window.ICU_MANUAL_DB = {
         "복부팽만",
         "복부팽만·Ileus·장폐색 의심 체크",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "복부팽만·Ileus·장폐색 의심 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -59206,32 +50361,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -59261,17 +50420,7 @@ window.ICU_MANUAL_DB = {
         "C.difficile",
         "설사·변비·C.difficile 의심 간호",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "설사·변비·C.difficile 의심 간호 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -59459,39 +50608,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "diarrhea constipation C difficile stool bowel movement 설사 변비 C.difficile 설사·변비·C.difficile 의심 간호 소화기 / 위장관 V82 V82_GI_DIGESTIVE_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "diarrhea constipation C difficile stool bowel movement 설사 변비 C.difficile 설사·변비·C.difficile 의심 간호 소화기 / 위장관 V82 V82_GI_DIGESTIVE_OVERVIEW"
     },
     {
       "id": "V82_DETAIL_06",
@@ -59517,17 +50636,7 @@ window.ICU_MANUAL_DB = {
         "Hemovac",
         "복부 Drain·담즙/췌장 배액 관찰",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "복부 Drain·담즙/췌장 배액 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -59732,8 +50841,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -59741,18 +50850,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -59782,17 +50883,7 @@ window.ICU_MANUAL_DB = {
         "간기능",
         "간기능·췌장효소 검사와 증상 연결",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "간기능·췌장효소 검사와 증상 연결 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -59984,8 +51075,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -59993,18 +51084,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -60035,17 +51118,7 @@ window.ICU_MANUAL_DB = {
         "검사전 준비",
         "내시경·ERCP 전후 간호 체크",
         "소화기 / 위장관",
-        "V82",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V82"
       ],
       "urgency": "high",
       "summary": "내시경·ERCP 전후 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -60244,8 +51317,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -60253,18 +51326,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -60295,17 +51360,7 @@ window.ICU_MANUAL_DB = {
         "채취",
         "검체 라벨링·채취·이송 오류 예방",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "검체 라벨링·채취·이송 오류 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -60503,8 +51558,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -60512,18 +51567,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -60552,17 +51599,7 @@ window.ICU_MANUAL_DB = {
         "sepsis culture",
         "Blood Culture 혈액배양 채취 체크",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "Blood Culture 혈액배양 채취 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -60753,8 +51790,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -60762,18 +51799,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -60799,17 +51828,7 @@ window.ICU_MANUAL_DB = {
         "혈액가스",
         "ABGA 채혈·검체 취급 체크",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "ABGA 채혈·검체 취급 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -60984,30 +52003,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -61038,17 +52047,7 @@ window.ICU_MANUAL_DB = {
         "신기능",
         "CT 조영제 검사 전후 안전 체크",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "CT 조영제 검사 전후 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -61247,8 +52246,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -61256,18 +52255,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -61297,17 +52304,7 @@ window.ICU_MANUAL_DB = {
         "MRI safety",
         "MRI 검사 전 금속·장비·이송 안전 체크",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "MRI 검사 전 금속·장비·이송 안전 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -61497,30 +52494,36 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Lab bottle"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -61552,17 +52555,7 @@ window.ICU_MANUAL_DB = {
         "금식",
         "수술·시술 전 체크리스트",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "수술·시술 전 체크리스트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -61769,8 +52762,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -61778,18 +52771,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -61818,17 +52803,7 @@ window.ICU_MANUAL_DB = {
         "출혈관찰",
         "시술·검사 후 출혈·통증·합병증 관찰",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -62021,8 +52996,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -62030,18 +53005,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -62069,17 +53052,7 @@ window.ICU_MANUAL_DB = {
         "glucose check",
         "BST·혈당검사·검사기기 QC 확인",
         "검사 / 시술·수술",
-        "V83",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V83"
       ],
       "urgency": "high",
       "summary": "BST·혈당검사·검사기기 QC 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -62263,8 +53236,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -62272,18 +53245,43 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -62314,17 +53312,7 @@ window.ICU_MANUAL_DB = {
         "정맥염",
         "말초정맥 PIV 삽입부위·침윤·정맥염 체크",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "말초정맥 PIV 삽입부위·침윤·정맥염 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -62522,8 +53510,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -62531,18 +53519,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -62571,17 +53551,7 @@ window.ICU_MANUAL_DB = {
         "central line",
         "CVC·PICC 중심정맥관 Dressing·감염관리",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "CVC·PICC 중심정맥관 Dressing·감염관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -62765,8 +53735,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -62774,18 +53744,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -62814,17 +53776,7 @@ window.ICU_MANUAL_DB = {
         "동맥라인",
         "A-line Dressing·Flush·채혈 관리",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -63012,36 +53964,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "A-line arterial line flush pressure bag blood sampling A-line 관리 arterial line care 동맥라인 A-line Dressing·Flush·채혈 관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "A-line arterial line flush pressure bag blood sampling A-line 관리 arterial line care 동맥라인 A-line Dressing·Flush·채혈 관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
     },
     {
       "id": "V84_DETAIL_04",
@@ -63065,17 +53990,7 @@ window.ICU_MANUAL_DB = {
         "소변백",
         "Foley catheter·Urine meter 감염예방과 소변량",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -63263,38 +54178,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "Foley catheter urinary catheter urine meter CAUTI urine output Foley 도뇨관 소변백 Foley catheter·Urine meter 감염예방과 소변량 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "Foley catheter urinary catheter urine meter CAUTI urine output Foley 도뇨관 소변백 Foley catheter·Urine meter 감염예방과 소변량 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
     },
     {
       "id": "V84_DETAIL_05",
@@ -63318,17 +54204,7 @@ window.ICU_MANUAL_DB = {
         "흉부배액",
         "Chest tube 배액·Air leak·흡인압 체크",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "Chest tube 배액·Air leak·흡인압 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -63518,32 +54394,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -63571,17 +54434,7 @@ window.ICU_MANUAL_DB = {
         "음압배액",
         "Hemovac·JP drain 음압·배액관리",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "Hemovac·JP drain 음압·배액관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -63762,38 +54615,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "Hemovac JP drain surgical drain negative pressure drain output 배액관 음압배액 Hemovac·JP drain 음압·배액관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "Hemovac JP drain surgical drain negative pressure drain output 배액관 음압배액 Hemovac·JP drain 음압·배액관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
     },
     {
       "id": "V84_DETAIL_07",
@@ -63815,17 +54639,7 @@ window.ICU_MANUAL_DB = {
         "무균술",
         "상처 Dressing 무균술·피부사정",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "상처 Dressing 무균술·피부사정 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -64005,38 +54819,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "dressing wound care sterile technique skin assessment 드레싱 상처소독 무균술 상처 Dressing 무균술·피부사정 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "dressing wound care sterile technique skin assessment 드레싱 상처소독 무균술 상처 Dressing 무균술·피부사정 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
     },
     {
       "id": "V84_DETAIL_08",
@@ -64058,17 +54843,7 @@ window.ICU_MANUAL_DB = {
         "forceps",
         "소독기구·Sterile set 준비와 오염 예방",
         "기구 / Line·Drain·Dressing",
-        "V84",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V84"
       ],
       "urgency": "high",
       "summary": "소독기구·Sterile set 준비와 오염 예방 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -64250,32 +55025,51 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
+          "search_terms": [
+            "공급실"
+          ]
+        },
+        {
+          "src": "bin0001.png",
+          "alt": "CSR 기구 사진",
+          "caption": "CSR 기구 사진",
+          "search_terms": [
+            "CSR"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -64303,17 +55097,7 @@ window.ICU_MANUAL_DB = {
         "낙상평가",
         "낙상 위험평가·예방중재·사건보고",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "낙상 위험평가·예방중재·사건보고 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -64494,30 +55278,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "fall risk fall prevention side rail bed alarm patient safety 낙상 낙상평가 낙상 위험평가·예방중재·사건보고 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "fall risk fall prevention side rail bed alarm patient safety 낙상 낙상평가 낙상 위험평가·예방중재·사건보고 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V85_DETAIL_02",
@@ -64539,17 +55302,7 @@ window.ICU_MANUAL_DB = {
         "피부사정",
         "욕창 위험평가·피부사정·체위변경",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "욕창 위험평가·피부사정·체위변경 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -64729,30 +55482,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "pressure injury Braden scale skin assessment turning 욕창 Braden 피부사정 욕창 위험평가·피부사정·체위변경 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "pressure injury Braden scale skin assessment turning 욕창 Braden 피부사정 욕창 위험평가·피부사정·체위변경 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V85_DETAIL_03",
@@ -64774,17 +55506,7 @@ window.ICU_MANUAL_DB = {
         "pain assessment",
         "통증 NRS·CPOT 사정과 재평가",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "통증 NRS·CPOT 사정과 재평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -64965,30 +55687,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "pain NRS CPOT analgesia reassessment 통증 pain assessment 통증 NRS·CPOT 사정과 재평가 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "pain NRS CPOT analgesia reassessment 통증 pain assessment 통증 NRS·CPOT 사정과 재평가 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V85_DETAIL_04",
@@ -65011,17 +55712,7 @@ window.ICU_MANUAL_DB = {
         "EMR note",
         "SOAP 간호기록 작성 구조",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "SOAP 간호기록 작성 구조 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -65212,22 +55903,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "X-ray"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Brain CT"
           ]
         }
       ],
@@ -65255,17 +55943,7 @@ window.ICU_MANUAL_DB = {
         "간호기록",
         "EMR·ICU Flow Sheet 누락방지 체크",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -65448,22 +56126,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "X-ray"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Brain CT"
           ]
         }
       ],
@@ -65489,17 +56164,7 @@ window.ICU_MANUAL_DB = {
         "처방확인",
         "간호처방 확인·수행·미수행 사유 기록",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "간호처방 확인·수행·미수행 사유 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -65672,30 +56337,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "nursing order care plan order check implementation 간호처방 처방확인 간호처방 확인·수행·미수행 사유 기록 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "nursing order care plan order check implementation 간호처방 처방확인 간호처방 확인·수행·미수행 사유 기록 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V85_DETAIL_07",
@@ -65721,17 +56365,7 @@ window.ICU_MANUAL_DB = {
         "인계",
         "Day·Evening·Night 근무별 ICU 업무 흐름",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "Day·Evening·Night 근무별 ICU 업무 흐름 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -65933,29 +56567,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "shift work day evening night handoff rounding ICU workflow 근무별 업무 Day duty Evening duty Night duty 인계 Day·Evening·Night 근무별 ICU 업무 흐름 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "shift work day evening night handoff rounding ICU workflow 근무별 업무 Day duty Evening duty Night duty 인계 Day·Evening·Night 근무별 ICU 업무 흐름 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V85_DETAIL_08",
@@ -65978,17 +56592,7 @@ window.ICU_MANUAL_DB = {
         "침상점검",
         "ICU Hourly rounding·안전점검 체크",
         "간호업무 / 안전·기록",
-        "V85",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V85"
       ],
       "urgency": "high",
       "summary": "ICU Hourly rounding·안전점검 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -66176,30 +56780,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "hourly rounding ICU safety check bedside check line check alarm check ICU rounding 안전점검 침상점검 ICU Hourly rounding·안전점검 체크 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "hourly rounding ICU safety check bedside check line check alarm check ICU rounding 안전점검 침상점검 ICU Hourly rounding·안전점검 체크 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"
     },
     {
       "id": "V86_DETAIL_01",
@@ -66223,17 +56806,7 @@ window.ICU_MANUAL_DB = {
         "카드검색",
         "검색어 입력 규칙: 한글·영문·용도 조합",
         "병동업무 / 물품·장비검색",
-        "V86",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V86"
       ],
       "urgency": "high",
       "summary": "검색어 입력 규칙: 한글·영문·용도 조합 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -66427,38 +57000,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "search keyword alias AI search 검색 정확도 검색어 검색규칙 AI 검색 카드검색 검색어 입력 규칙: 한글·영문·용도 조합 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
-      "prefer_media_first": true
+      "search_index": "search keyword alias AI search 검색 정확도 검색어 검색규칙 AI 검색 카드검색 검색어 입력 규칙: 한글·영문·용도 조합 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
     },
     {
       "id": "V86_DETAIL_02",
@@ -66492,17 +57036,7 @@ window.ICU_MANUAL_DB = {
         "호흡 장비",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "호흡기계 물품·장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -66704,30 +57238,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -66790,17 +57313,7 @@ window.ICU_MANUAL_DB = {
         "foley set",
         "Line·Drain 물품 검색표",
         "병동업무 / 물품·장비검색",
-        "V86",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V86"
       ],
       "urgency": "high",
       "summary": "Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -67005,30 +57518,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -67059,17 +57561,7 @@ window.ICU_MANUAL_DB = {
         "채혈튜브",
         "검체 Bottle·Tube·검사물품 검색표",
         "병동업무 / 물품·장비검색",
-        "V86",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V86"
       ],
       "urgency": "high",
       "summary": "검체 Bottle·Tube·검사물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -67274,30 +57766,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Lab bottle"
           ]
         }
       ],
@@ -67339,17 +57821,7 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "monitor setting"
       ],
       "urgency": "high",
       "summary": "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -67533,30 +58005,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -67645,17 +58106,7 @@ window.ICU_MANUAL_DB = {
         "Ambu bag",
         "응급카트·제세동기·Ambu bag 검색표",
         "병동업무 / 물품·장비검색",
-        "V86",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V86"
       ],
       "urgency": "high",
       "summary": "응급카트·제세동기·Ambu bag 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -67851,38 +58302,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "crash cart emergency cart defibrillator AED ambu bag CPR 응급카트 제세동기 Ambu bag 응급카트·제세동기·Ambu bag 검색표 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
-      "prefer_media_first": true
+      "search_index": "crash cart emergency cart defibrillator AED ambu bag CPR 응급카트 제세동기 Ambu bag 응급카트·제세동기·Ambu bag 검색표 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
     },
     {
       "id": "V86_DETAIL_07",
@@ -67914,17 +58336,7 @@ window.ICU_MANUAL_DB = {
         "L-sling 착용방법",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "체위변경·보조기·침상장비 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -68125,35 +58537,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "positioning splint brace air mattress turning restraint 보조기 체위변경 bed 체위변경·보조기·침상장비 검색표 병동업무 / 물품·장비검색 V86 L-sling 엘슬링 sling 팔걸이 L-sling 착용방법 동영상 업무동영상 교육영상 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
       "videos": [
@@ -68208,17 +58592,7 @@ window.ICU_MANUAL_DB = {
         "지침검색",
         "병동간호팀 매뉴얼 문서 검색 표준화",
         "병동업무 / 물품·장비검색",
-        "V86",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V86"
       ],
       "urgency": "high",
       "summary": "병동간호팀 매뉴얼 문서 검색 표준화 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -68399,38 +58773,9 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "ward nursing team manual protocol policy 업무매뉴얼 병동간호팀 지침검색 병동간호팀 매뉴얼 문서 검색 표준화 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE",
-      "prefer_media_first": true
+      "search_index": "ward nursing team manual protocol policy 업무매뉴얼 병동간호팀 지침검색 병동간호팀 매뉴얼 문서 검색 표준화 병동업무 / 물품·장비검색 V86 V86_ICU_ITEMS_EQUIPMENT_TEAM_MANUAL_SEARCH_GUIDE"
     },
     {
       "id": "V87_PI_STAGE_CLASSIFICATION",
@@ -68454,17 +58799,7 @@ window.ICU_MANUAL_DB = {
         "욕창 분류",
         "상처 단계",
         "욕창 단계 분류 사진·표 정리",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "욕창 1~4단계를 그림과 표로 한눈에 구분하는 카드입니다.",
@@ -68569,25 +58904,6 @@ window.ICU_MANUAL_DB = {
             "욕창 단계 분류 사진·표 정리",
             "간호업무 / 욕창·상처드레싱"
           ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
         }
       ],
       "standard_sections_ready": true,
@@ -68610,17 +58926,7 @@ window.ICU_MANUAL_DB = {
         "wound dressing",
         "상처 드레싱 준비",
         "욕창/상처 드레싱 전 준비물 사진·표 정리",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "욕창·상처 드레싱 전에 필요한 준비물과 사전 확인사항을 정리한 카드입니다.",
@@ -68666,24 +58972,6 @@ window.ICU_MANUAL_DB = {
             "상처 드레싱 준비",
             "욕창/상처 드레싱 전 준비물 사진·표 정리",
             "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
           ]
         }
       ],
@@ -68759,17 +59047,7 @@ window.ICU_MANUAL_DB = {
         "상처 소독",
         "욕창 소독",
         "욕창/상처 소독 순서 이미지 카드",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "상처 소독 순서를 단계 이미지와 표로 정리한 카드입니다.",
@@ -68818,32 +59096,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -68918,17 +59183,7 @@ window.ICU_MANUAL_DB = {
         "드레싱 순서",
         "상처 드레싱 순서",
         "욕창/상처 드레싱 적용 순서 카드",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "상처 평가부터 드레싱 적용, 기록까지 순서대로 정리한 카드입니다.",
@@ -68973,25 +59228,6 @@ window.ICU_MANUAL_DB = {
             "상처 드레싱 순서",
             "욕창/상처 드레싱 적용 순서 카드",
             "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
           ]
         }
       ],
@@ -69064,17 +59300,7 @@ window.ICU_MANUAL_DB = {
         "드레싱 주의사항",
         "상처 드레싱 체크리스트",
         "욕창/상처 드레싱 주의사항 체크리스트 표",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "드레싱 시 무균술, 감염, 통증, 피부보호를 빠르게 점검하는 한 장 체크리스트입니다.",
@@ -69119,33 +59345,6 @@ window.ICU_MANUAL_DB = {
             "상처 드레싱 체크리스트",
             "욕창/상처 드레싱 주의사항 체크리스트 표",
             "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
           ]
         }
       ],
@@ -69242,17 +59441,7 @@ window.ICU_MANUAL_DB = {
         "업무동영상",
         "교육영상",
         "클로브 히치",
-        "clove hitch",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "신체보호대의 적용 목적, 적용 전 확인사항, 재평가와 주의점을 표로 정리한 카드입니다.",
@@ -69281,58 +59470,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: 신체보호대 정방향 매듭 보기",
         "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_restraint_overview.png",
-          "alt": "신체보호대 한눈에 보기 표",
-          "caption": "적용 목적, 적용 전 확인, 적용 중 관찰, 해제/주의점 표",
-          "search_terms": [
-            "보호대표",
-            "신체보호대표",
-            "신체보호대 한눈에 보기 표",
-            "적용 목적, 적용 전 확인, 적용 중 관찰, 해제/주의점 표",
-            "신체보호대",
-            "보호대",
-            "restraint",
-            "적용목적",
-            "주의점",
-            "보호대 적용",
-            "신체보호대 적용 목적·전 확인사항·주의점 표",
-            "간호업무 / 신체보호대",
-            "정방향 매듭",
-            "square knot"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "신체보호대 기본표",
@@ -69474,17 +59612,7 @@ window.ICU_MANUAL_DB = {
         "손목 보호대",
         "장갑형 보호대",
         "신체보호대 종류별 특징 표",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "신체보호대 종류별 목적, 특징, 주의점을 비교한 카드입니다.",
@@ -69510,26 +59638,7 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 신체보호대 종류별 사용 기준"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_restraint_types.png",
-          "alt": "신체보호대 종류별 특징 표",
-          "caption": "손목·발목·장갑형·벨트형 보호대 특징과 주의점",
-          "search_terms": [
-            "보호대종류표",
-            "손목보호대",
-            "장갑형보호대",
-            "신체보호대 종류별 특징 표",
-            "손목·발목·장갑형·벨트형 보호대 특징과 주의점",
-            "보호대종류",
-            "restraint type",
-            "보호대 종류",
-            "손목 보호대",
-            "장갑형 보호대",
-            "간호업무 / 신체보호대"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "보호대 종류 비교표",
@@ -69587,8 +59696,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대종류 손목보호대 장갑형보호대 restraint type 보호대 종류 손목 보호대 장갑형 보호대 신체보호대 종류별 특징 표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_SKIN_CIRCULATION",
-      "prefer_media_first": true
+      "search_index": "보호대종류 손목보호대 장갑형보호대 restraint type 보호대 종류 손목 보호대 장갑형 보호대 신체보호대 종류별 특징 표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_SKIN_CIRCULATION"
     },
     {
       "id": "V87_RESTRAINT_SKIN_CIRCULATION",
@@ -69606,17 +59714,7 @@ window.ICU_MANUAL_DB = {
         "보호대 순환",
         "보호대 피부 확인",
         "신체보호대 피부·순환 확인 포인트 체크표",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "보호대 적용 후 피부와 순환을 확인하는 핵심 포인트를 표로 정리했습니다.",
@@ -69642,27 +59740,7 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 restraint monitoring 기준"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_restraint_skin_circulation.png",
-          "alt": "신체보호대 피부 순환 체크표",
-          "caption": "보호대 적용 중 피부와 순환 확인 포인트 체크리스트",
-          "search_terms": [
-            "보호대피부표",
-            "보호대순환표",
-            "신체보호대 피부 순환 체크표",
-            "보호대 적용 중 피부와 순환 확인 포인트 체크리스트",
-            "보호대피부",
-            "보호대순환",
-            "capillary refill",
-            "restraint check",
-            "보호대 순환",
-            "보호대 피부 확인",
-            "신체보호대 피부·순환 확인 포인트 체크표",
-            "간호업무 / 신체보호대"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "피부/순환 체크표",
@@ -69716,8 +59794,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대피부 보호대순환 capillary refill restraint check 보호대 순환 보호대 피부 확인 신체보호대 피부·순환 확인 포인트 체크표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_DOCUMENTATION",
-      "prefer_media_first": true
+      "search_index": "보호대피부 보호대순환 capillary refill restraint check 보호대 순환 보호대 피부 확인 신체보호대 피부·순환 확인 포인트 체크표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_DOCUMENTATION"
     },
     {
       "id": "V87_RESTRAINT_DOCUMENTATION",
@@ -69735,17 +59812,7 @@ window.ICU_MANUAL_DB = {
         "보호대 기록",
         "보호대 문서화",
         "신체보호대 기록 방법 표",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "신체보호대 적용 사유, 관찰, 중재, 해제/재평가를 어떻게 기록하는지 정리한 카드입니다.",
@@ -69771,44 +59838,7 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 restraint documentation 기준"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_restraint_documentation.png",
-          "alt": "신체보호대 기록 방법 표",
-          "caption": "보호대 적용 사유, 관찰, 중재, 해제/재평가 기록 예시",
-          "search_terms": [
-            "보호대기록표",
-            "신체보호대 기록 방법 표",
-            "보호대 적용 사유, 관찰, 중재, 해제/재평가 기록 예시",
-            "보호대기록",
-            "restraint documentation",
-            "신체보호대기록",
-            "EMR",
-            "보호대 기록",
-            "보호대 문서화",
-            "간호업무 / 신체보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "보호대 기록 예시표",
@@ -69869,8 +59899,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대기록 restraint documentation 신체보호대기록 EMR 보호대 기록 보호대 문서화 신체보호대 기록 방법 표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_SKIN_CIRCULATION",
-      "prefer_media_first": true
+      "search_index": "보호대기록 restraint documentation 신체보호대기록 EMR 보호대 기록 보호대 문서화 신체보호대 기록 방법 표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_SKIN_CIRCULATION"
     },
     {
       "id": "V87_KNOT_SQUARE",
@@ -69896,17 +59925,7 @@ window.ICU_MANUAL_DB = {
         "restraint",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "보호대 고정 시 참고할 수 있는 정방향 매듭의 단계 그림 카드입니다.",
@@ -69934,58 +59953,7 @@ window.ICU_MANUAL_DB = {
         "원내 보호대 적용/고정 교육자료 우선",
         "Google Drive 링크: 신체보호대 정방향 매듭 보기"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_knot_square_steps.png",
-          "alt": "정방향 매듭 단계 그림",
-          "caption": "정방향 매듭 1-2-3-4 단계 그림과 설명",
-          "search_terms": [
-            "정방향매듭그림",
-            "보호대매듭사진",
-            "정방향 매듭 단계 그림",
-            "정방향 매듭 1-2-3-4 단계 그림과 설명",
-            "정방향매듭",
-            "square knot",
-            "보호대매듭",
-            "매듭방법",
-            "1-2-3-4",
-            "정방향 매듭",
-            "보호대 매듭",
-            "정방향 매듭 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법",
-            "신체보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "정방향 매듭 요약표",
@@ -70083,17 +60051,7 @@ window.ICU_MANUAL_DB = {
         "고리 매듭",
         "빠르게 푸는 매듭",
         "고리 매듭 1-2-3-4 단계 그림 카드",
-        "간호업무 / 매듭방법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 매듭방법"
       ],
       "urgency": "high",
       "summary": "응급 시 빠르게 풀 수 있는 고리 매듭의 단계 그림 카드입니다.",
@@ -70119,27 +60077,7 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 보호대 고정 교육자료"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_knot_slip_steps.png",
-          "alt": "고리 매듭 단계 그림",
-          "caption": "고리 매듭 1-2-3-4 단계 그림과 설명",
-          "search_terms": [
-            "고리매듭그림",
-            "보호대매듭사진",
-            "고리 매듭 단계 그림",
-            "고리 매듭 1-2-3-4 단계 그림과 설명",
-            "고리매듭",
-            "slip knot",
-            "빠른해제 매듭",
-            "보호대매듭",
-            "고리 매듭",
-            "빠르게 푸는 매듭",
-            "고리 매듭 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "고리 매듭 요약표",
@@ -70183,8 +60121,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "고리매듭 slip knot 빠른해제 매듭 보호대매듭 고리 매듭 빠르게 푸는 매듭 고리 매듭 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 V87_KNOT_SQUARE V87_KNOT_CLOVE_HITCH",
-      "prefer_media_first": true
+      "search_index": "고리매듭 slip knot 빠른해제 매듭 보호대매듭 고리 매듭 빠르게 푸는 매듭 고리 매듭 1-2-3-4 단계 그림 카드 간호업무 / 매듭방법 V87_KNOT_SQUARE V87_KNOT_CLOVE_HITCH"
     },
     {
       "id": "V87_KNOT_CLOVE_HITCH",
@@ -70210,17 +60147,7 @@ window.ICU_MANUAL_DB = {
         "restraint",
         "동영상",
         "업무동영상",
-        "교육영상",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "교육영상"
       ],
       "urgency": "high",
       "summary": "침상 프레임 고정에 참고하는 클로브 히치 단계 그림 카드입니다.",
@@ -70247,57 +60174,7 @@ window.ICU_MANUAL_DB = {
         "원내 보호대 고정 교육자료",
         "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_knot_clove_hitch_steps.png",
-          "alt": "클로브 히치 단계 그림",
-          "caption": "클로브 히치 1-2-3-4 단계 그림과 설명",
-          "search_terms": [
-            "클로브히치그림",
-            "침상프레임매듭",
-            "클로브 히치 단계 그림",
-            "클로브 히치 1-2-3-4 단계 그림과 설명",
-            "클로브히치",
-            "clove hitch",
-            "보호대매듭",
-            "클로브 히치",
-            "침상 프레임 매듭",
-            "클로브 히치 1-2-3-4 단계 그림 카드",
-            "간호업무 / 매듭방법",
-            "신체보호대",
-            "보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "클로브 히치 요약표",
@@ -70398,17 +60275,7 @@ window.ICU_MANUAL_DB = {
         "흉부 X-ray",
         "chest x-ray 기본",
         "흉부 X-ray 기본 보기 표·설명 이미지",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "흉부 X-ray에서 폐야, 심장, 종격동, 횡격막, 삽입기구를 어떤 순서로 볼지 정리한 카드입니다.",
@@ -70462,8 +60329,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -70471,18 +60338,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -70569,17 +60444,7 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "tube 고정"
       ],
       "urgency": "high",
       "summary": "기관내관 끝 위치와 carina 기준을 교육용 이미지로 설명하는 카드입니다.",
@@ -70630,8 +60495,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -70639,18 +60504,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -70719,17 +60592,7 @@ window.ICU_MANUAL_DB = {
         "CVC 위치",
         "중심정맥관 xray",
         "중심정맥관(CVC) 위치 확인 X-ray 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "중심정맥관 tip 위치와 합병증 확인 포인트를 교육용 이미지로 설명하는 카드입니다.",
@@ -70777,8 +60640,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -70786,18 +60649,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -70867,17 +60738,7 @@ window.ICU_MANUAL_DB = {
         "L-tube xray",
         "위관 위치",
         "비위관/위관(NGT, L-tube) 위치 확인 X-ray 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "비위관/위관 경로와 끝 위치를 교육용 이미지로 설명하는 카드입니다.",
@@ -70928,8 +60789,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -70937,18 +60798,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -71022,17 +60891,7 @@ window.ICU_MANUAL_DB = {
         "한장 요약표",
         "단계별 그림 카드",
         "동영상 대체안: 순서도 이미지·한 장 요약표·단계별 그림 카드",
-        "간호업무 / 동영상 대체안",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 동영상 대체안"
       ],
       "urgency": "routine",
       "summary": "동영상 없이도 빠르게 학습할 수 있는 이미지 카드 구성을 정리한 카드입니다.",
@@ -71059,59 +60918,7 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 교육자료 구성 원칙"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v87_video_alternative_cards.png",
-          "alt": "동영상 대체안 카드",
-          "caption": "순서도 이미지, 한 장 요약표, 단계별 그림 카드, 체크리스트 대체안",
-          "search_terms": [
-            "동영상대체안",
-            "순서도",
-            "요약표",
-            "체크리스트",
-            "동영상 대체안 카드",
-            "순서도 이미지, 한 장 요약표, 단계별 그림 카드, 체크리스트 대체안",
-            "순서도이미지",
-            "한장요약표",
-            "단계별그림",
-            "동영상 대체안",
-            "순서도 이미지",
-            "한장 요약표",
-            "단계별 그림 카드",
-            "동영상 대체안: 순서도 이미지·한 장 요약표·단계별 그림 카드",
-            "간호업무 / 동영상 대체안"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "동영상 대체 구성표",
@@ -71164,8 +60971,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "동영상대체안 순서도이미지 한장요약표 체크리스트 단계별그림 동영상 대체안 순서도 이미지 한장 요약표 단계별 그림 카드 동영상 대체안: 순서도 이미지·한 장 요약표·단계별 그림 카드 간호업무 / 동영상 대체안 V87_WOUND_DISINFECTION_SEQUENCE V87_KNOT_SQUARE V87_RESTRAINT_OVERVIEW",
-      "prefer_media_first": true
+      "search_index": "동영상대체안 순서도이미지 한장요약표 체크리스트 단계별그림 동영상 대체안 순서도 이미지 한장 요약표 단계별 그림 카드 동영상 대체안: 순서도 이미지·한 장 요약표·단계별 그림 카드 간호업무 / 동영상 대체안 V87_WOUND_DISINFECTION_SEQUENCE V87_KNOT_SQUARE V87_RESTRAINT_OVERVIEW"
     },
     {
       "id": "V88_WOUND_STAGE_CARE",
@@ -71183,17 +60989,7 @@ window.ICU_MANUAL_DB = {
         "욕창 단계별 간호",
         "욕창 단계 간호",
         "욕창 단계별 간호 포인트 세분화 카드",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "욕창 1~4단계별로 우선 확인할 항목과 간호를 세분화한 카드입니다.",
@@ -71234,33 +61030,6 @@ window.ICU_MANUAL_DB = {
             "욕창 단계 간호",
             "욕창 단계별 간호 포인트 세분화 카드",
             "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
           ]
         }
       ],
@@ -71330,17 +61099,7 @@ window.ICU_MANUAL_DB = {
         "드레싱 재료 선택",
         "상처별 드레싱",
         "상처 상태별 드레싱 재료 선택 개요 표",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "상처 상태와 삼출량에 따라 어떤 방향으로 드레싱을 선택하는지 개요를 보여주는 카드입니다.",
@@ -71384,32 +61143,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -71491,17 +61237,7 @@ window.ICU_MANUAL_DB = {
         "욕창 예방",
         "욕창 prevention",
         "욕창 예방 체위변경·피부관찰 순서도",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "욕창 예방을 위한 위험평가, 체위변경, 피부관찰, 보조도구, 기록 순서도를 보여주는 카드입니다.",
@@ -71542,25 +61278,6 @@ window.ICU_MANUAL_DB = {
             "욕창 prevention",
             "욕창 예방 체위변경·피부관찰 순서도",
             "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
           ]
         }
       ],
@@ -71635,17 +61352,7 @@ window.ICU_MANUAL_DB = {
         "상처 기록",
         "욕창 기록 예시",
         "욕창/상처 기록 예시 표",
-        "간호업무 / 욕창·상처드레싱",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 욕창·상처드레싱"
       ],
       "urgency": "high",
       "summary": "상처 기록에 꼭 들어갈 항목과 예시를 표로 정리한 카드입니다.",
@@ -71668,46 +61375,7 @@ window.ICU_MANUAL_DB = {
         "V87_WOUND_PRECAUTIONS_CHECKLIST",
         "V88_WOUND_DRESSING_SELECTION"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_wound_documentation_example.png",
-          "alt": "욕창 상처 기록 예시 표",
-          "caption": "위치, 크기, 상태, 중재, 반응을 어떻게 기록하는지 예시",
-          "search_terms": [
-            "욕창기록표",
-            "상처기록예시",
-            "욕창 상처 기록 예시 표",
-            "위치, 크기, 상태, 중재, 반응을 어떻게 기록하는지 예시",
-            "상처기록",
-            "욕창기록",
-            "SOAP",
-            "EMR wound",
-            "상처 기록",
-            "욕창 기록 예시",
-            "욕창/상처 기록 예시 표",
-            "간호업무 / 욕창·상처드레싱"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "기록 예시표",
@@ -71766,8 +61434,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "상처기록 욕창기록 SOAP EMR wound 상처 기록 욕창 기록 예시 욕창/상처 기록 예시 표 간호업무 / 욕창·상처드레싱 V87_WOUND_PRECAUTIONS_CHECKLIST V88_WOUND_DRESSING_SELECTION",
-      "prefer_media_first": true
+      "search_index": "상처기록 욕창기록 SOAP EMR wound 상처 기록 욕창 기록 예시 욕창/상처 기록 예시 표 간호업무 / 욕창·상처드레싱 V87_WOUND_PRECAUTIONS_CHECKLIST V88_WOUND_DRESSING_SELECTION"
     },
     {
       "id": "V88_RESTRAINT_ALTERNATIVES",
@@ -71783,17 +61450,7 @@ window.ICU_MANUAL_DB = {
         "restraint alternatives",
         "보호대 대체수단",
         "신체보호대 적용 전 대체수단 카드",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "보호대 적용 전에 먼저 시도할 수 있는 환경조정, 행동중재, 치료정비, 재평가 항목을 정리했습니다.",
@@ -71816,50 +61473,7 @@ window.ICU_MANUAL_DB = {
         "V87_RESTRAINT_OVERVIEW",
         "V88_RESTRAINT_APPLICATION_STEPS"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_restraint_alternatives.png",
-          "alt": "신체보호대 적용 전 대체수단 카드",
-          "caption": "환경조정, 행동중재, 치료정비, 재평가 순서",
-          "search_terms": [
-            "보호대대체수단이미지",
-            "신체보호대 적용 전 대체수단 카드",
-            "환경조정, 행동중재, 치료정비, 재평가 순서",
-            "보호대대체",
-            "대체수단",
-            "restraint alternatives",
-            "보호대 대체수단",
-            "간호업무 / 신체보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "대체수단 예시",
@@ -71905,8 +61519,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대대체 대체수단 restraint alternatives 보호대 대체수단 신체보호대 적용 전 대체수단 카드 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V88_RESTRAINT_APPLICATION_STEPS",
-      "prefer_media_first": true
+      "search_index": "보호대대체 대체수단 restraint alternatives 보호대 대체수단 신체보호대 적용 전 대체수단 카드 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V88_RESTRAINT_APPLICATION_STEPS"
     },
     {
       "id": "V88_RESTRAINT_APPLICATION_STEPS",
@@ -71933,17 +61546,7 @@ window.ICU_MANUAL_DB = {
         "업무동영상",
         "교육영상",
         "클로브 히치",
-        "clove hitch",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "보호대 적용 전 확인부터 적용, 피부·순환 확인, 기록까지 순서도로 정리한 카드입니다.",
@@ -71966,48 +61569,7 @@ window.ICU_MANUAL_DB = {
         "V87_RESTRAINT_OVERVIEW",
         "V88_RESTRAINT_MONITORING_SCHEDULE"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_restraint_application_steps.png",
-          "alt": "신체보호대 적용 순서도",
-          "caption": "사전확인부터 기록까지 5단계 흐름",
-          "search_terms": [
-            "보호대순서도",
-            "신체보호대적용순서",
-            "신체보호대 적용 순서도",
-            "사전확인부터 기록까지 5단계 흐름",
-            "보호대순서",
-            "신체보호대적용",
-            "restraint application",
-            "보호대 적용 순서",
-            "신체보호대 적용 순서도 카드",
-            "간호업무 / 신체보호대",
-            "신체보호대",
-            "보호대",
-            "정방향 매듭",
-            "square knot"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "적용 순서 요약",
@@ -72144,17 +61706,7 @@ window.ICU_MANUAL_DB = {
         "보호대 모니터링",
         "보호대 체크",
         "신체보호대 모니터링 체크표 세분화",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "피부, 순환, 신경, 기본간호, 필요성 재평가를 세분화한 보호대 모니터링 카드입니다.",
@@ -72177,53 +61729,7 @@ window.ICU_MANUAL_DB = {
         "V87_RESTRAINT_SKIN_CIRCULATION",
         "V88_RESTRAINT_RELEASE_ROM"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_restraint_monitoring_schedule.png",
-          "alt": "신체보호대 모니터링 체크표",
-          "caption": "피부·순환·신경·기본간호·필요성 재평가 체크표",
-          "search_terms": [
-            "보호대모니터링표",
-            "신체보호대 모니터링 체크표",
-            "피부·순환·신경·기본간호·필요성 재평가 체크표",
-            "보호대모니터링",
-            "보호대체크",
-            "restraint monitoring",
-            "보호대 모니터링",
-            "보호대 체크",
-            "신체보호대 모니터링 체크표 세분화",
-            "간호업무 / 신체보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "모니터링 표",
@@ -72281,8 +61787,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대모니터링 보호대체크 restraint monitoring 보호대 모니터링 보호대 체크 신체보호대 모니터링 체크표 세분화 간호업무 / 신체보호대 V87_RESTRAINT_SKIN_CIRCULATION V88_RESTRAINT_RELEASE_ROM",
-      "prefer_media_first": true
+      "search_index": "보호대모니터링 보호대체크 restraint monitoring 보호대 모니터링 보호대 체크 신체보호대 모니터링 체크표 세분화 간호업무 / 신체보호대 V87_RESTRAINT_SKIN_CIRCULATION V88_RESTRAINT_RELEASE_ROM"
     },
     {
       "id": "V88_RESTRAINT_RELEASE_ROM",
@@ -72301,17 +61806,7 @@ window.ICU_MANUAL_DB = {
         "보호대 해제",
         "보호대 기본간호",
         "보호대 해제·ROM·기본간호 체크표",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "high",
       "summary": "보호대 해제 시 피부/순환 확인, ROM, 기본간호, 재평가를 어떻게 볼지 정리한 카드입니다.",
@@ -72334,27 +61829,7 @@ window.ICU_MANUAL_DB = {
         "V88_RESTRAINT_MONITORING_SCHEDULE",
         "V87_RESTRAINT_DOCUMENTATION"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_restraint_release_rom.png",
-          "alt": "보호대 해제와 ROM 체크표",
-          "caption": "해제, ROM, 기본간호, 재평가를 정리한 표",
-          "search_terms": [
-            "보호대해제표",
-            "ROM표",
-            "보호대 해제와 ROM 체크표",
-            "해제, ROM, 기본간호, 재평가를 정리한 표",
-            "보호대해제",
-            "ROM",
-            "range of motion",
-            "restraint release",
-            "보호대 해제",
-            "보호대 기본간호",
-            "보호대 해제·ROM·기본간호 체크표",
-            "간호업무 / 신체보호대"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "해제/ROM 표",
@@ -72407,8 +61882,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대해제 ROM range of motion restraint release 보호대 해제 보호대 기본간호 보호대 해제·ROM·기본간호 체크표 간호업무 / 신체보호대 V88_RESTRAINT_MONITORING_SCHEDULE V87_RESTRAINT_DOCUMENTATION",
-      "prefer_media_first": true
+      "search_index": "보호대해제 ROM range of motion restraint release 보호대 해제 보호대 기본간호 보호대 해제·ROM·기본간호 체크표 간호업무 / 신체보호대 V88_RESTRAINT_MONITORING_SCHEDULE V87_RESTRAINT_DOCUMENTATION"
     },
     {
       "id": "V88_RESTRAINT_FAMILY_EXPLAIN",
@@ -72425,17 +61899,7 @@ window.ICU_MANUAL_DB = {
         "보호대 설명",
         "보호자 설명",
         "보호대 환자·보호자 설명 카드",
-        "간호업무 / 신체보호대",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대"
       ],
       "urgency": "routine",
       "summary": "보호대 적용 이유, 관찰 내용, 보호자 협조사항을 간단히 설명하는 교육용 카드입니다.",
@@ -72458,45 +61922,7 @@ window.ICU_MANUAL_DB = {
         "V88_RESTRAINT_ALTERNATIVES",
         "V87_RESTRAINT_DOCUMENTATION"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_restraint_family_explain.png",
-          "alt": "보호대 환자 보호자 설명 카드",
-          "caption": "적용 목적, 관찰 내용, 보호자 협조 사항 설명",
-          "search_terms": [
-            "보호대교육이미지",
-            "보호대 환자 보호자 설명 카드",
-            "적용 목적, 관찰 내용, 보호자 협조 사항 설명",
-            "보호대설명",
-            "보호자설명",
-            "restraint education",
-            "보호대 설명",
-            "보호자 설명",
-            "보호대 환자·보호자 설명 카드",
-            "간호업무 / 신체보호대"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "설명 포인트",
@@ -72543,8 +61969,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대설명 보호자설명 restraint education 보호대 설명 보호자 설명 보호대 환자·보호자 설명 카드 간호업무 / 신체보호대 V88_RESTRAINT_ALTERNATIVES V87_RESTRAINT_DOCUMENTATION",
-      "prefer_media_first": true
+      "search_index": "보호대설명 보호자설명 restraint education 보호대 설명 보호자 설명 보호대 환자·보호자 설명 카드 간호업무 / 신체보호대 V88_RESTRAINT_ALTERNATIVES V87_RESTRAINT_DOCUMENTATION"
     },
     {
       "id": "V88_KNOT_SELECTION_GUIDE",
@@ -72571,17 +61996,7 @@ window.ICU_MANUAL_DB = {
         "업무동영상",
         "교육영상",
         "클로브 히치",
-        "clove hitch",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "clove hitch"
       ],
       "urgency": "high",
       "summary": "정방향, 고리, 클로브 히치 매듭을 언제 사용하는지 비교한 카드입니다.",
@@ -72607,51 +62022,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v88_knot_selection_guide.png",
-          "alt": "보호대 매듭 선택 가이드 표",
-          "caption": "정방향, 고리, 클로브 히치의 용도와 주의점 비교",
-          "search_terms": [
-            "매듭가이드표",
-            "보호대 매듭 선택 가이드 표",
-            "정방향, 고리, 클로브 히치의 용도와 주의점 비교",
-            "매듭선택",
-            "보호대매듭가이드",
-            "knot guide",
-            "매듭 선택",
-            "간호업무 / 매듭방법",
-            "신체보호대",
-            "보호대",
-            "정방향 매듭",
-            "square knot"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -72784,17 +62167,7 @@ window.ICU_MANUAL_DB = {
         "knot mistakes",
         "매듭 실수",
         "매듭 방법 자주 하는 실수 카드",
-        "간호업무 / 매듭방법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 매듭방법"
       ],
       "urgency": "high",
       "summary": "보호대 매듭 시 자주 하는 실수와 교정 포인트를 보여주는 카드입니다.",
@@ -72817,23 +62190,7 @@ window.ICU_MANUAL_DB = {
         "V88_KNOT_SELECTION_GUIDE",
         "V87_RESTRAINT_SKIN_CIRCULATION"
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v88_knot_common_mistakes.png",
-          "alt": "매듭 방법 자주 하는 실수 카드",
-          "caption": "매듭 실수와 교정 포인트 4가지",
-          "search_terms": [
-            "매듭실수이미지",
-            "매듭 방법 자주 하는 실수 카드",
-            "매듭 실수와 교정 포인트 4가지",
-            "매듭실수",
-            "보호대매듭실수",
-            "knot mistakes",
-            "매듭 실수",
-            "간호업무 / 매듭방법"
-          ]
-        }
-      ],
+      "images": [],
       "tables": [
         {
           "title": "매듭 실수 체크",
@@ -72879,8 +62236,7 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "매듭실수 보호대매듭실수 knot mistakes 매듭 실수 매듭 방법 자주 하는 실수 카드 간호업무 / 매듭방법 V88_KNOT_SELECTION_GUIDE V87_RESTRAINT_SKIN_CIRCULATION",
-      "prefer_media_first": true
+      "search_index": "매듭실수 보호대매듭실수 knot mistakes 매듭 실수 매듭 방법 자주 하는 실수 카드 간호업무 / 매듭방법 V88_KNOT_SELECTION_GUIDE V87_RESTRAINT_SKIN_CIRCULATION"
     },
     {
       "id": "V88_XRAY_SYSTEMATIC_CHECKLIST",
@@ -72897,17 +62253,7 @@ window.ICU_MANUAL_DB = {
         "X-ray 체크리스트",
         "systematic xray review",
         "흉부 X-ray 체계적 확인 체크표",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "흉부 X-ray를 기도/폐야/심장/횡격막/기구 순서로 체계적으로 확인하는 카드입니다.",
@@ -72950,8 +62296,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -72959,18 +62305,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73050,17 +62404,7 @@ window.ICU_MANUAL_DB = {
         "폐렴 xray",
         "pneumonia xray",
         "폐렴 X-ray 설명 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "폐렴 의심 시 X-ray에서 침윤/경결 음영을 어떻게 보는지 교육용으로 정리한 카드입니다.",
@@ -73105,8 +62449,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73114,18 +62458,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73190,17 +62542,7 @@ window.ICU_MANUAL_DB = {
         "기흉 xray",
         "pneumothorax xray",
         "기흉 X-ray 설명 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "기흉 의심 시 pleural line과 말초 혈관음영 소실을 어떻게 보는지 정리한 카드입니다.",
@@ -73244,8 +62586,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73253,18 +62595,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73328,17 +62678,7 @@ window.ICU_MANUAL_DB = {
         "폐부종 xray",
         "pulmonary edema xray",
         "폐부종 X-ray 설명 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "폐부종 의심 시 양측성 음영 증가와 심비대 가능성을 교육용으로 설명하는 카드입니다.",
@@ -73381,8 +62721,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73390,18 +62730,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73464,17 +62812,7 @@ window.ICU_MANUAL_DB = {
         "흉수 xray",
         "pleural effusion xray",
         "흉수 X-ray 설명 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "흉수 의심 시 늑횡격각 둔화와 아래쪽 음영 증가를 교육용으로 보여주는 카드입니다.",
@@ -73518,8 +62856,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73527,18 +62865,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73601,17 +62947,7 @@ window.ICU_MANUAL_DB = {
         "무기폐 xray",
         "atelectasis xray",
         "무기폐 X-ray 설명 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "무기폐에서 보일 수 있는 용적 감소와 음영 증가를 교육용으로 정리한 카드입니다.",
@@ -73654,8 +62990,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73663,18 +62999,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73737,17 +63081,7 @@ window.ICU_MANUAL_DB = {
         "튜브 위치 요약",
         "line tube summary",
         "라인/튜브 위치 확인 요약 카드",
-        "검사·검체·영상검사 / X-ray",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사·검체·영상검사 / X-ray"
       ],
       "urgency": "high",
       "summary": "ETT, CVC, NGT 위치 확인 포인트를 한 카드에 묶은 요약 카드입니다.",
@@ -73791,8 +63125,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -73800,18 +63134,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -73899,17 +63241,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "순환 / 모니터링",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "순환 / 모니터링"
       ],
       "urgency": "routine",
       "summary": "Patient monitor와 central monitor setting 변경 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -73955,32 +63287,19 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -74067,17 +63386,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "호흡 / 산소요법",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / 산소요법"
       ],
       "urgency": "routine",
       "summary": "O2 nipple 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74120,35 +63429,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1XGATSJTForwyR0WJ_fFZ9aipxg6TWfDW/view?usp=drive_link",
@@ -74208,17 +63489,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "신경계 / 검사 이동",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / 검사 이동"
       ],
       "urgency": "routine",
       "summary": "신경외과/뇌 수술환자 검사 이동 전 준비 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74265,8 +63536,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -74274,18 +63545,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -74346,17 +63625,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "간호업무 / 보조기",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 보조기"
       ],
       "urgency": "routine",
       "summary": "L-sling 착용방법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74398,37 +63667,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: L-sling 착용방법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1byAHuUhBSH6rJ4MeTT5qjv-v33fPGa05/view?usp=drive_link",
@@ -74488,17 +63727,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "신경계 / EVD·ICP",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "신경계 / EVD·ICP"
       ],
       "urgency": "routine",
       "summary": "EVD tragus 기준 ICP 측정 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74541,37 +63770,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: EVD(tragus) ICP 재는 방법 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1Y7jUQv-ugyNZ0nxGpDr2JLfkXQ8h16R6/view?usp=drive_link",
@@ -74630,17 +63829,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "호흡 / Dräger Savina",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / Dräger Savina"
       ],
       "urgency": "routine",
       "summary": "Dräger/Savina 인공호흡기 교육 동영상 1·2 링크 카드입니다. 3번 영상은 중복으로 삭제했습니다.",
@@ -74685,35 +63874,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [],
       "standard_sections_ready": true,
       "prefer_media_first": true,
@@ -74749,17 +63910,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "응급상황 / CPR",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급상황 / CPR"
       ],
       "urgency": "routine",
       "summary": "CPR 상황에서 간호사 역할을 확인하는 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74803,37 +63954,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: CPR시 간호사 역할 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1NOvwHLfVwPyB5fgwP3jHxuo-KMi_JqnV/view?usp=drive_link",
@@ -74891,17 +64012,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "호흡 / ABGA",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "호흡 / ABGA"
       ],
       "urgency": "routine",
       "summary": "ABGA calibration 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -74947,8 +64058,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -74956,18 +64067,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -75030,17 +64133,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "간호업무 / 신체보호대·매듭",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "간호업무 / 신체보호대·매듭"
       ],
       "urgency": "routine",
       "summary": "신체보호대 정방향 매듭과 클로브 히치 매듭 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -75085,37 +64178,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: 신체보호대 클로브 히치 매듭 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/14YZccV-5DjbPOzHxGyUWQoEROsVC9UQm/view?usp=drive_link",
@@ -75196,17 +64259,7 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "동의서 / 태블릿",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "동의서 / 태블릿"
       ],
       "urgency": "routine",
       "summary": "태블릿으로 동의서를 받는 절차 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -75249,37 +64302,7 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: 동의서 받기(태블릿) 보기"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT",
-            "Brain MRI"
-          ]
-        }
-      ],
+      "images": [],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
@@ -75335,17 +64358,7 @@ window.ICU_MANUAL_DB = {
         "응급상황 목차",
         "emergency nursing",
         "응급간호 총정리",
-        "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure"
       ],
       "urgency": "emergency",
       "summary": "응급상황 목차를 한 카드에 묶어 CPR, Code blue, E-cart, Intubation, Shock, Seizure, 기록/보호자 응대를 연결합니다.",
@@ -75441,37 +64454,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v95_emergency_nursing_overview.png",
-          "alt": "응급간호 목차 이미지",
-          "caption": "응급간호 1차 목차 요약 이미지",
-          "search_terms": [
-            "응급간호이미지",
-            "응급상황목차"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "standard_sections_ready": true
     },
@@ -75500,17 +64483,7 @@ window.ICU_MANUAL_DB = {
         "shock 버튼",
         "패드 위치",
         "제세동기 사용법: 패드 부착·리듬 확인·Shock 안전확인",
-        "응급간호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급간호"
       ],
       "urgency": "emergency",
       "summary": "제세동기 사용 흐름과 패드 위치, shock 전후 안전확인을 표와 이미지로 정리한 카드입니다.",
@@ -75624,53 +64597,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v95_defibrillator_use_flow.png",
-          "alt": "제세동기 사용 흐름",
-          "caption": "제세동기 사용 6단계 순서도",
-          "search_terms": [
-            "제세동기이미지",
-            "defibrillator flow"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v95_defibrillator_pad_position.png",
-          "alt": "제세동기 패드 위치와 안전확인",
-          "caption": "패드 위치, shock 전 확인, shock 후 CPR",
-          "search_terms": [
-            "패드위치",
-            "shock안전"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "standard_sections_ready": true
     },
@@ -75699,17 +64626,7 @@ window.ICU_MANUAL_DB = {
         "응급약물표",
         "emergency drugs",
         "E-cart 응급약물표: CPR·Shock·Seizure·Intubation",
-        "응급간호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급간호"
       ],
       "urgency": "emergency",
       "summary": "E-cart 응급약물을 CPR, shock, 경련, intubation 상황별로 한눈에 보이게 정리한 카드입니다.",
@@ -75796,52 +64713,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v95_emergency_medication_table.png",
-          "alt": "E-cart 응급약물표",
-          "caption": "CPR·Shock·Seizure·Intubation 상황별 응급약물표",
-          "search_terms": [
-            "응급약물표이미지",
-            "E-cart약물"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "standard_sections_ready": true
     },
@@ -75871,17 +64743,7 @@ window.ICU_MANUAL_DB = {
         "저혈압 초기대응",
         "shock nursing",
         "Shock 환자 초기 대응: ABCDE·산소·IV·수액/승압제 준비",
-        "응급간호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급간호"
       ],
       "urgency": "emergency",
       "summary": "Shock 환자 발견 시 ABCDE, 산소, IV line, 수액/승압제 준비, 원인 확인, 기록을 단계별로 정리한 카드입니다.",
@@ -75959,31 +64821,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v95_shock_initial_response_flow.png",
-          "alt": "Shock 환자 초기 대응 순서도",
-          "caption": "Shock 환자 ABCDE 초기대응 순서",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "shock이미지",
-            "저혈압초기대응"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -76014,17 +64864,7 @@ window.ICU_MANUAL_DB = {
         "경련 대처",
         "seizure response",
         "경련 환자 발생 시 대처 순서와 항경련제 사용",
-        "응급간호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "응급간호"
       ],
       "urgency": "emergency",
       "summary": "경련 발생 시 시간 확인, 손상 예방, 기도/산소/혈당 확인, 항경련제 준비와 기록을 표와 이미지로 정리했습니다.",
@@ -76147,39 +64987,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v95_seizure_response_flow.png",
-          "alt": "경련 환자 발생 시 대처 순서도",
-          "caption": "경련 시작부터 보고까지 초기대응 순서도",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "경련대처이미지",
-            "seizure response"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v95_anticonvulsant_table.png",
-          "alt": "항경련제 사용 요약표",
-          "caption": "항경련제 약물군과 간호 관찰 포인트",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "항경련제표이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "혈액제제"
           ]
         }
       ],
@@ -76213,17 +65033,7 @@ window.ICU_MANUAL_DB = {
         "ETT 준비",
         "Intubation 준비물·보조 절차: 검색 분리 개선 카드",
         "응급간호",
-        "tube 고정",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "tube 고정"
       ],
       "urgency": "emergency",
       "summary": "Intubation 검색 시 I/O·섭취량/배설량·전해질 카드가 섞이지 않도록 별도 검색 집중 카드를 추가하고 검색 제외어를 적용했습니다.",
@@ -76303,41 +65113,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v95_intubation_preparation_flow.png",
-          "alt": "Intubation 준비 보조 순서도",
-          "caption": "삽관 준비물과 보조 절차 6단계",
-          "search_terms": [
-            "intubation이미지",
-            "삽관준비"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -76374,17 +65162,7 @@ window.ICU_MANUAL_DB = {
         "CPR 역할분담",
         "Dr call",
         "6114",
-        "전원절차",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "전원절차"
       ],
       "urgency": "emergency",
       "summary": "병동간호팀 간호사메뉴얼 142~149p의 응급간호 항목을 한 카드에서 볼 수 있게 정리했습니다.",
@@ -76464,37 +65242,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v98_manual_emergency_overview.png",
-          "alt": "원내 응급간호 142~149p 요약 이미지",
-          "caption": "응급간호 전체 흐름 요약 이미지",
-          "search_terms": [
-            "원내 응급간호 이미지",
-            "142~149p"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -76529,17 +65277,7 @@ window.ICU_MANUAL_DB = {
         "에피네프린",
         "황산마그네슘",
         "탄산수소나트륨",
-        "E-cart",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "E-cart"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 E-cart 약품 점검 기준과 응급약물 이름/용량/갯수를 표와 이미지로 정리했습니다.",
@@ -76629,52 +65367,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v98_manual_ecart_drugs_table.png",
-          "alt": "원내 E-cart 응급약물표 이미지",
-          "caption": "E-cart 응급약물 이름·용량·갯수 이미지",
-          "search_terms": [
-            "E-cart 약물 이미지",
-            "응급약물표 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -76712,17 +65405,7 @@ window.ICU_MANUAL_DB = {
         "비수술센터",
         "내시경실",
         "집중치료실",
-        "인공신장실",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "인공신장실"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 병원 내 제세동기/AED 배치장소를 층별 표와 이미지로 정리했습니다.",
@@ -76842,39 +65525,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v98_manual_defib_locations_table.png",
-          "alt": "원내 제세동기 AED 배치장소 이미지",
-          "caption": "층별 AED/제세동기 배치장소 이미지",
-          "search_terms": [
-            "제세동기 위치 이미지",
-            "AED 위치"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "공급실"
           ]
         },
         {
           "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "alt": "CSR 기구 사진",
+          "caption": "CSR 기구 사진",
           "search_terms": [
-            "CSR",
-            "기구"
+            "CSR"
           ]
         }
       ],
@@ -76913,17 +65576,7 @@ window.ICU_MANUAL_DB = {
         "V5",
         "V6",
         "전극 부착부위",
-        "심전도",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "심전도"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 EKG V1~V6 전극 부착부위를 표와 이미지로 정리했습니다.",
@@ -76995,18 +65648,9 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v98_manual_ekg_leads_table.png",
-          "alt": "원내 EKG 전극 부착부위 이미지",
-          "caption": "V1~V6 부착부위 이미지",
-          "search_terms": [
-            "EKG 이미지",
-            "전극 부착부위"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -77014,18 +65658,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -77062,17 +65698,7 @@ window.ICU_MANUAL_DB = {
         "권한표",
         "I-gel",
         "Biphasic AED",
-        "Monophasic AED",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Monophasic AED"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 의사/최초발견간호사/지원간호사 역할과 의사·간호사 수행 권한표를 거의 표 형태 그대로 볼 수 있게 정리했습니다.",
@@ -77221,24 +65847,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v98_manual_emergency_roles_table.png",
-          "alt": "응급상황 간호 분담 역할 이미지",
-          "caption": "의사/최초발견간호사/지원간호사 역할 이미지",
-          "search_terms": [
-            "역할분담 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v98_manual_emergency_authority_table.png",
-          "alt": "응급상황 수행 권한표 이미지",
-          "caption": "의사/간호사 수행 가능 권한표 이미지",
-          "search_terms": [
-            "권한표 이미지"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -77274,17 +65883,7 @@ window.ICU_MANUAL_DB = {
         "응급승강기",
         "전원 기준",
         "진료의뢰서",
-        "CD COPY",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "CD COPY"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 주간/야간 Dr.call 체제, 6114 Code blue 방송, 응급환자 전원 기준과 절차를 표와 이미지로 정리했습니다.",
@@ -77401,54 +66000,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v98_manual_dr_call_table.png",
-          "alt": "원내 응급상황 Dr call 체제 이미지",
-          "caption": "주간/야간 Dr.call 체제와 6114 방송 이미지",
-          "search_terms": [
-            "Dr call 이미지",
-            "6114"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v98_manual_transfer_table.png",
-          "alt": "응급환자 전원 기준과 절차 이미지",
-          "caption": "응급환자 전원 기준과 절차 이미지",
-          "search_terms": [
-            "전원절차 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v98_manual_codeblue_flow.png",
-          "alt": "원내 Code Blue 초기 흐름 이미지",
-          "caption": "발견부터 Code blue 방송, CPR, 역할분담, 전원까지 흐름",
-          "search_terms": [
-            "Code Blue flow",
-            "CPR방송"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -77489,17 +66041,7 @@ window.ICU_MANUAL_DB = {
         "Bradycardia",
         "I/O",
         "승압제",
-        "말초순환",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "말초순환"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼 54~56, 102~111, 140~141page를 바탕으로 중환자실 간호사가 꼭 알아야 할 순환/모니터링 내용을 한눈에 볼 수 있게 정리했습니다.",
@@ -77569,48 +66111,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v99_circulation_overview.png",
-          "alt": "순환 모니터링 원내 프로토콜 총정리 이미지",
-          "caption": "순환/모니터링 파트 전체 요약 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "순환 모니터링 이미지",
-            "원내 프로토콜"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v99_monitoring_flow.png",
-          "alt": "중환자실 순환 모니터링 판단 흐름 이미지",
-          "caption": "Vital sign부터 치료/보고까지의 흐름",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "모니터링 flow",
-            "순환 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "Brain CT"
           ]
         }
       ],
@@ -77651,17 +66164,7 @@ window.ICU_MANUAL_DB = {
         "SpO2",
         "vital sign",
         "hypotension",
-        "MAP",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "MAP"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 Vital sign을 어떻게 보고, 혈압 저하 시 어떤 순서로 확인/보고해야 하는지 표 중심으로 정리했습니다.",
@@ -77779,52 +66282,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v99_vitals_bp_table.png",
-          "alt": "Vital sign 기준과 BP 저하 시 확인사항 이미지",
-          "caption": "Vital sign 기준과 핵심 포인트 이미지",
-          "search_terms": [
-            "vital sign 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v99_bp_low_check_table.png",
-          "alt": "혈압 저하 시 단계별 확인표 이미지",
-          "caption": "저혈압 확인 순서 이미지",
-          "search_terms": [
-            "혈압 저하 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -77861,17 +66319,7 @@ window.ICU_MANUAL_DB = {
         "zeroing",
         "압력백",
         "ABGA 채혈",
-        "파형 확인",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "파형 확인"
       ],
       "urgency": "routine",
       "summary": "A-line의 목적, 압력백/flush/파형 확인, zeroing 절차, 채혈 후 관리까지 표와 이미지로 정리했습니다.",
@@ -77945,17 +66393,9 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v99_aline_table.png",
-          "alt": "A-line waveform zeroing 채혈 관리 이미지",
-          "caption": "A-line 핵심 체크포인트 이미지",
-          "search_terms": [
-            "A-line 이미지"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -77963,18 +66403,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -78013,17 +66445,7 @@ window.ICU_MANUAL_DB = {
         "CVP",
         "phlebostatic axis",
         "zeroing",
-        "중심정맥압",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "중심정맥압"
       ],
       "urgency": "routine",
       "summary": "C-line 삽입부위 관리, CVP 측정 준비와 해석, 함께 봐야 할 혈역학 지표를 표와 이미지로 정리했습니다.",
@@ -78097,41 +66519,19 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v99_cline_cvp_table.png",
-          "alt": "C-line 관리와 CVP 측정 의미 이미지",
-          "caption": "C-line과 CVP 핵심표 이미지",
-          "search_terms": [
-            "CVP 이미지",
-            "C-line 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -78171,17 +66571,7 @@ window.ICU_MANUAL_DB = {
         "tachycardia",
         "bradycardia",
         "arrhythmia",
-        "리듬",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "리듬"
       ],
       "urgency": "routine",
       "summary": "EKG monitor를 정확히 부착하고, Tachycardia / Bradycardia 발생 시 환자 안정성을 우선 평가하는 흐름을 표로 정리했습니다.",
@@ -78253,43 +66643,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v99_ekg_rhythm_table.png",
-          "alt": "EKG monitor 부착과 Tachycardia Bradycardia 대응 이미지",
-          "caption": "리듬 대응 핵심표 이미지",
-          "search_terms": [
-            "EKG 리듬 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -78327,17 +66681,7 @@ window.ICU_MANUAL_DB = {
         "vasopressor",
         "perfusion",
         "capillary refill",
-        "말초순환",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "말초순환"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 perfusion을 판단할 때 꼭 보는 I/O, 소변량, 승압제 사용 환자 관찰, 말초순환 확인 포인트를 표와 이미지로 정리했습니다.",
@@ -78411,61 +66755,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v99_io_perf_table.png",
-          "alt": "I/O 소변량 승압제 말초순환 확인표 이미지",
-          "caption": "Perfusion 관련 핵심표 이미지",
-          "search_terms": [
-            "I/O 이미지",
-            "말초순환 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v99_vasopressor_perfusion_boxes.png",
-          "alt": "승압제 사용 환자와 말초순환 관찰 포인트 이미지",
-          "caption": "승압제와 말초관류 관찰 박스형 요약",
-          "search_terms": [
-            "승압제 이미지",
-            "perfusion box"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
-          "search_terms": [
-            "DIC",
-            "coagulation"
-          ]
-        }
-      ],
+      "images": [],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -78512,17 +66802,7 @@ window.ICU_MANUAL_DB = {
         "ERCP",
         "CFS",
         "spinal tapping",
-        "CSF study",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "CSF study"
       ],
       "urgency": "routine",
       "summary": "신경계 사정과 NS 수술/시술 전후 간호, spinal tapping과 CSF study를 한 카드에서 연결해 볼 수 있게 정리했습니다.",
@@ -78614,33 +66894,6 @@ window.ICU_MANUAL_DB = {
             "신경계 이미지",
             "수술 시술 이미지"
           ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
         }
       ],
       "videos": [],
@@ -78687,17 +66940,7 @@ window.ICU_MANUAL_DB = {
         "동공반사",
         "운동능력",
         "seizure",
-        "IICP",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "IICP"
       ],
       "urgency": "routine",
       "summary": "Mental, GCS, Pupil reflex, Motor power, Seizure 관찰, 뇌압 상승 의심 증상을 표로 정리했습니다.",
@@ -78798,25 +67041,6 @@ window.ICU_MANUAL_DB = {
             "GCS 이미지",
             "Mental 이미지"
           ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
         }
       ],
       "videos": [],
@@ -78863,17 +67087,7 @@ window.ICU_MANUAL_DB = {
         "배액량",
         "drainage",
         "natural drainage",
-        "Burr hole",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "Burr hole"
       ],
       "urgency": "routine",
       "summary": "EVD 높이, 배액량, ICP 기준, 배액백 관리와 SDD natural drainage를 표로 정리했습니다.",
@@ -78965,33 +67179,6 @@ window.ICU_MANUAL_DB = {
             "EVD 이미지",
             "SDD 이미지"
           ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 이미지",
-          "caption": "욕창 단계 이미지",
-          "search_terms": [
-            "욕창"
-          ]
         }
       ],
       "videos": [],
@@ -79036,17 +67223,7 @@ window.ICU_MANUAL_DB = {
         "Angio",
         "Radial",
         "puncture site",
-        "NS postop",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "NS postop"
       ],
       "urgency": "routine",
       "summary": "Burr hole 수술 후 1·2·6시간 f/u, EVD/SDD 관리, Coil embolization 전후 관찰과 신경계 수술 후 기록 포인트를 정리했습니다.",
@@ -79142,22 +67319,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "X-ray"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Brain CT"
           ]
         }
       ],
@@ -79207,17 +67381,7 @@ window.ICU_MANUAL_DB = {
         "ICU 입실",
         "drain",
         "출혈",
-        "수술 후 활력징후",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수술 후 활력징후"
       ],
       "urgency": "routine",
       "summary": "수술 전 준비, 동의서/금식 확인, 수술 후 ICU 입실, 활력징후, 출혈, drain, 기록 포인트를 한눈에 볼 수 있게 정리했습니다.",
@@ -79309,26 +67473,6 @@ window.ICU_MANUAL_DB = {
           "search_terms": [
             "수술 전후 이미지"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
         }
       ],
       "videos": [],
@@ -79374,17 +67518,7 @@ window.ICU_MANUAL_DB = {
         "내시경",
         "기관절개관",
         "전후 간호",
-        "puncture site",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "puncture site"
       ],
       "urgency": "routine",
       "summary": "TFCA, Tracheostomy, EGD, ERCP, CFS 전후 간호를 준비/관찰 포인트 중심으로 표 정리했습니다.",
@@ -79479,32 +67613,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
           ]
         }
       ],
@@ -79552,17 +67673,7 @@ window.ICU_MANUAL_DB = {
         "culture",
         "protein",
         "glucose",
-        "cytology",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "cytology"
       ],
       "urgency": "routine",
       "summary": "Spinal tapping의 목적, 진단적 의미, 준비물, 시행 전후 간호, CSF study 검사항목을 표와 흐름도로 정리했습니다.",
@@ -79717,8 +67828,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -79726,18 +67837,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -79767,17 +67886,7 @@ window.ICU_MANUAL_DB = {
         "보조기 사진",
         "보조기 원본 이미지",
         "보조기 착용",
-        "보조기 간호",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "보조기 간호"
       ],
       "summary": "기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다.",
       "indications": [
@@ -80023,34 +68132,6 @@ window.ICU_MANUAL_DB = {
             "보조기 이미지",
             "원본 이미지"
           ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "caption": "NS/OS 수술명·약어·수술 전 검사 이미지",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명"
-          ]
         }
       ],
       "prefer_media_first": true,
@@ -80089,17 +68170,7 @@ window.ICU_MANUAL_DB = {
         "Burr hole",
         "ORIF",
         "TKRA",
-        "THRA",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "THRA"
       ],
       "urgency": "routine",
       "summary": "V100에서 부족했던 NS/OS 수술명, 약어, 수술 전 검사, 수술 전후 관찰표를 사용자가 항상 이미지로 볼 수 있게 묶은 총괄 카드입니다.",
@@ -80253,8 +68324,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -80262,18 +68333,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -80318,17 +68381,7 @@ window.ICU_MANUAL_DB = {
         "TFCA",
         "DSA",
         "Spinal tapping",
-        "TCD",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "TCD"
       ],
       "urgency": "routine",
       "summary": "신경외과에서 자주 보는 수술/시술명과 약어, 목적, 간호 포인트를 표 이미지로 보이게 정리했습니다.",
@@ -80452,8 +68505,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -80461,18 +68514,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -80522,17 +68583,7 @@ window.ICU_MANUAL_DB = {
         "laminectomy",
         "discectomy",
         "vertebroplasty",
-        "kyphoplasty",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "kyphoplasty"
       ],
       "urgency": "routine",
       "summary": "정형외과에서 자주 보는 수술명/약어와 수술 후 관찰 포인트를 표 이미지로 보이게 정리했습니다.",
@@ -80666,8 +68717,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -80675,18 +68726,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -80735,17 +68794,7 @@ window.ICU_MANUAL_DB = {
         "ABGA",
         "동의서",
         "표식",
-        "금식",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "금식"
       ],
       "urgency": "routine",
       "summary": "수술 전 검사 항목과 수술 전 준비 체크리스트를 표 이미지로 보이게 정리했습니다.",
@@ -80925,9 +68974,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -80935,18 +69000,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -80990,17 +69047,7 @@ window.ICU_MANUAL_DB = {
         "H-vac",
         "JP",
         "brace",
-        "보조기",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "보조기"
       ],
       "urgency": "routine",
       "summary": "NS 수술 후 neuro sign/drain/IICP 관찰과 OS 수술 후 CMS/drain pressure/보조기 관찰을 표 이미지로 보이게 정리했습니다.",
@@ -81219,8 +69266,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -81228,18 +69275,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -81273,17 +69312,7 @@ window.ICU_MANUAL_DB = {
         "CRRT start",
         "CRRT return",
         "CRRT filter 교체",
-        "CRRT I/O",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "CRRT I/O"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼 57~59page의 CRRT/신장 핵심을 사용자가 항상 이미지로 볼 수 있게 표로 재구성한 카드입니다.",
@@ -81373,28 +69402,19 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -81428,17 +69448,7 @@ window.ICU_MANUAL_DB = {
         "CRRT 준비물",
         "line 연결",
         "blood return",
-        "kit change",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "kit change"
       ],
       "urgency": "routine",
       "summary": "본원 FMC CRRT 장비 기준으로 start 전 준비물, line 연결, start 절차, return 절차를 OJT 참고 내용과 함께 정리한 카드입니다.",
@@ -81547,30 +69557,29 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Lab bottle"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "CSR",
-            "기구"
+            "CRRT",
+            "DKA"
           ]
         }
       ],
@@ -81606,17 +69615,7 @@ window.ICU_MANUAL_DB = {
         "blood leak",
         "filter clotting",
         "heparin",
-        "citrate",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "citrate"
       ],
       "urgency": "routine",
       "summary": "CRRT access/return pressure, TMP, air, blood leak 알람 해석과 filter 교체, 항응고제 확인 포인트를 표 중심으로 정리한 카드입니다.",
@@ -81706,8 +69705,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -81715,18 +69714,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -81759,17 +69767,7 @@ window.ICU_MANUAL_DB = {
         "P replacement",
         "UF",
         "hypotension",
-        "electrolyte replacement",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "electrolyte replacement"
       ],
       "urgency": "routine",
       "summary": "CRRT 중 I/O 기록, 저혈압 대처, 항응고 확인, K/Mg/P 전해질 교정 기본을 정리한 카드입니다.",
@@ -81860,30 +69858,36 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v70_ecg_ischemia_electrolyte.png",
-          "alt": "전해질 관련 ECG 이미지",
-          "caption": "전해질 변화와 ECG 참고 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "전해질 ECG"
+            "X-ray"
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "Brain CT"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -81915,17 +69919,7 @@ window.ICU_MANUAL_DB = {
         "저혈당 대처",
         "고혈당 대처",
         "sliding scale",
-        "regular insulin",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "regular insulin"
       ],
       "urgency": "routine",
       "summary": "BST 측정 시간, 정상/목표 범위, 저혈당·고혈당 대처, sliding scale, regular insulin을 표와 이미지로 정리한 카드입니다.",
@@ -82024,28 +70018,19 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
             "CRRT",
-            "BST",
             "DKA"
           ]
         },
         {
           "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
           "search_terms": [
             "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA"
           ]
         }
       ],
@@ -82079,17 +70064,7 @@ window.ICU_MANUAL_DB = {
         "Metformin",
         "Sulfonylurea",
         "SGLT2",
-        "RI",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "RI"
       ],
       "urgency": "routine",
       "summary": "인슐린 종류별 작용시간, 경구 혈당강하제 계열, sliding scale과 저혈당 처치표를 묶어 정리한 카드입니다.",
@@ -82241,8 +70216,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -82250,18 +70225,27 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "다제내성균"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -82297,17 +70281,7 @@ window.ICU_MANUAL_DB = {
         "ketone",
         "ABGA",
         "RI infusion",
-        "hypokalemia",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "hypokalemia"
       ],
       "urgency": "routine",
       "summary": "DKA protocol, I/O와 lab 관찰, insulin infusion, 저칼륨 주의, 식이와 인슐린 투여 확인을 중환자실 간호 관점에서 정리한 카드입니다.",
@@ -82405,30 +70379,37 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Lab bottle"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "CSR",
-            "기구"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -82459,17 +70440,7 @@ window.ICU_MANUAL_DB = {
         "DM",
         "DKA",
         "electrolyte",
-        "FMC",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "FMC"
       ],
       "urgency": "routine",
       "summary": "CRRT/신장계와 BST/DM/DKA를 한눈에 연결해서 볼 수 있도록 통합 요약한 카드입니다.",
@@ -82556,32 +70527,27 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
+            "X-ray"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT",
-            "Brain MRI"
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -82614,17 +70580,7 @@ window.ICU_MANUAL_DB = {
         "원내 프로토콜 60 90",
         "병동간호팀 업무매뉴얼 60~90",
         "전체 보기",
-        "약물 수혈 총정리",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "약물 수혈 총정리"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 업무매뉴얼 60~90page 범위를 바탕으로 약물/수액/마약과 수혈/혈액 파트를 사용자가 항상 이미지로 볼 수 있게 통합 정리한 카드입니다.",
@@ -82707,29 +70663,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 절차 이미지",
-          "caption": "수혈 절차 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
             "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC/응고검사 이미지",
-          "caption": "DIC/응고검사 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "DIC",
-            "coagulation"
+            "혈액제제"
           ]
         }
       ],
@@ -82764,17 +70710,7 @@ window.ICU_MANUAL_DB = {
         "antibiotics",
         "TDM",
         "culture",
-        "de-escalation",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "de-escalation"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열, TDM 및 stewardship를 표와 이미지 중심으로 정리한 카드입니다.",
@@ -82933,9 +70869,25 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -82943,18 +70895,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -83000,17 +70944,7 @@ window.ICU_MANUAL_DB = {
         "analgesia",
         "antiepileptic",
         "lasix",
-        "heparin",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "heparin"
       ],
       "urgency": "routine",
       "summary": "수액 종류와 적응증, 고위험 약물 관리, 승압제/진정제/진통제/항경련제, Lasix, Heparin 사용 시 주의점을 정리한 카드입니다.",
@@ -83136,21 +71070,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
           ]
         }
       ],
@@ -83188,17 +71120,7 @@ window.ICU_MANUAL_DB = {
         "향정",
         "count",
         "waste",
-        "medication error",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "medication error"
       ],
       "urgency": "routine",
       "summary": "마약·향정의 보관, 투여, 잔량/반환, 향정 관리와 투약 오류 발생 시 보고를 정리한 카드입니다.",
@@ -83303,21 +71225,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
           ]
         }
       ],
@@ -83360,17 +71280,7 @@ window.ICU_MANUAL_DB = {
         "platelet",
         "crossmatch",
         "혈액제제",
-        "수혈 절차",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "수혈 절차"
       ],
       "urgency": "routine",
       "summary": "수혈 전 확인사항, 동의서, 혈액제제 종류, RBC/FFP/Platelet 절차, 전처치 약물, 활력징후, 수혈기록을 전체 흐름으로 정리한 카드입니다.",
@@ -83517,69 +71427,37 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v104_transfusion_flow_table.png",
-          "alt": "수혈 전체 흐름 표 이미지",
-          "caption": "수혈 전체 흐름 이미지",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "수혈 흐름 이미지"
+            "수혈",
+            "RBC",
+            "FFP",
+            "Platelet"
           ]
         },
         {
           "src": "selected_manual_images/v104_blood_components_table.png",
-          "alt": "혈액제제 종류 표 이미지",
-          "caption": "혈액제제 종류 이미지",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "혈액제제 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_overview_flow.png",
-          "alt": "기존 수혈 흐름 이미지",
-          "caption": "기존 수혈 overview 이미지 참고",
-          "search_terms": [
-            "수혈 overview"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v73_transfusion_components_table.png",
-          "alt": "기존 혈액제제 표 이미지",
-          "caption": "기존 혈액제제 비교 이미지 참고",
+          "alt": "혈액제제 원본/기존 표",
+          "caption": "혈액제제 원본/기존 표",
           "search_terms": [
-            "혈액제제 표"
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v89_transfusion_procedure_flow.png",
-          "alt": "기존 수혈 절차 flow 이미지",
-          "caption": "기존 수혈 절차 flow 참고",
+          "alt": "수혈 절차 flow",
+          "caption": "수혈 절차 flow",
           "search_terms": [
-            "수혈 절차 flow"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v89_blood_products_summary.png",
-          "alt": "기존 혈액제제 요약 이미지",
-          "caption": "기존 혈액제제 요약 이미지 참고",
-          "search_terms": [
-            "혈액제제 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "수혈 절차"
           ]
         }
       ],
@@ -83618,17 +71496,7 @@ window.ICU_MANUAL_DB = {
         "PT",
         "aPTT",
         "fibrinogen",
-        "D-dimer",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "D-dimer"
       ],
       "urgency": "routine",
       "summary": "수혈 부작용 증상과 즉시 대응, DIC 기본 확인, coagulation lab, Hb/PLT/PT/aPTT 해석 포인트를 정리한 카드입니다.",
@@ -83760,48 +71628,49 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v104_transfusion_reaction_table.png",
-          "alt": "수혈 부작용 증상과 대처 이미지",
-          "caption": "수혈 부작용 대처 이미지",
+          "alt": "수혈 부작용 증상과 대처",
+          "caption": "수혈 부작용 증상과 대처",
           "search_terms": [
-            "수혈 부작용 이미지"
+            "수혈 부작용"
           ]
         },
         {
           "src": "selected_manual_images/v104_coag_dic_table.png",
-          "alt": "DIC와 coagulation lab 표 이미지",
-          "caption": "DIC / coagulation lab 이미지",
+          "alt": "DIC/응고검사",
+          "caption": "DIC/응고검사",
           "search_terms": [
-            "DIC 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_reaction_algorithm.png",
-          "alt": "기존 수혈부작용 알고리즘 이미지",
-          "caption": "기존 수혈부작용 알고리즘 이미지 참고",
-          "search_terms": [
-            "수혈반응 알고리즘"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v73_transfusion_icu_checklist.png",
-          "alt": "기존 ICU 수혈 체크리스트 이미지",
-          "caption": "기존 ICU 수혈 체크리스트 이미지 참고",
-          "search_terms": [
-            "수혈 체크리스트"
+            "DIC",
+            "coagulation"
           ]
         },
         {
           "src": "selected_manual_images/v89_transfusion_reaction_response.png",
-          "alt": "기존 수혈 반응 대응 이미지",
-          "caption": "기존 수혈 반응 대응 이미지 참고",
+          "alt": "수혈 반응 대응",
+          "caption": "수혈 반응 대응",
           "search_terms": [
-            "수혈반응 대응"
+            "수혈 반응"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
+          "search_terms": [
+            "수혈"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "혈액제제"
           ]
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -83809,18 +71678,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -83848,17 +71725,7 @@ window.ICU_MANUAL_DB = {
         "약물 수혈 통합",
         "약물 혈액 총정리",
         "혈액",
-        "통합",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "통합"
       ],
       "urgency": "routine",
       "summary": "약물/수액/마약과 수혈/혈액을 한눈에 연결해 볼 수 있도록 통합 요약한 카드입니다.",
@@ -83956,21 +71823,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "수혈"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "장비",
-            "물품"
+            "혈액제제"
           ]
         }
       ],
@@ -84008,17 +71873,7 @@ window.ICU_MANUAL_DB = {
         "drop factor",
         "mcg/kg/min",
         "mg/hr",
-        "unit/hr",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "unit/hr"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 업무매뉴얼 p60 약물계산 내용을 앱에서 바로 이해할 수 있도록 계산기 사용법, 수액속도, gtt/min, 고위험 약물 계산 주의사항을 한 카드로 정리했습니다.",
@@ -84119,8 +71974,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -84128,18 +71983,34 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_gtt_min_table.png",
+          "alt": "gtt/min 계산표",
+          "caption": "gtt/min 계산표",
+          "search_terms": [
+            "gtt"
           ]
         }
       ],
@@ -84173,17 +72044,7 @@ window.ICU_MANUAL_DB = {
         "몇 방울",
         "수액 계산",
         "500mL 8시간",
-        "1000mL 24시간",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "1000mL 24시간"
       ],
       "urgency": "routine",
       "summary": "일반 수액 주입속도 mL/hr와 gtt/min을 계산할 수 있게 공식과 흔한 예시를 표/이미지로 정리했습니다.",
@@ -84353,8 +72214,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -84362,18 +72223,34 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v105_calc_overview.png",
+          "alt": "약물 계산기/수액속도/gtt 요약",
+          "caption": "약물 계산기/수액속도/gtt 요약",
+          "search_terms": [
+            "약물계산"
           ]
         }
       ],
@@ -84412,17 +72289,7 @@ window.ICU_MANUAL_DB = {
         "unit/hr",
         "norepinephrine",
         "heparin",
-        "insulin",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "insulin"
       ],
       "urgency": "routine",
       "summary": "약물 총량과 희석 후 총량으로 농도를 확인하고 mcg/kg/min, mcg/min, mg/hr, mg/kg/hr, unit/hr를 mL/hr로 바꾸는 계산표입니다.",
@@ -84581,30 +72448,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v105_calc_overview.png",
+          "alt": "약물 계산기/수액속도/gtt 요약",
+          "caption": "약물 계산기/수액속도/gtt 요약",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "약물계산"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/v105_gtt_min_table.png",
+          "alt": "gtt/min 계산표",
+          "caption": "gtt/min 계산표",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
-          "search_terms": [
-            "CSR",
-            "기구"
+            "gtt"
           ]
         }
       ],
@@ -84652,17 +72508,7 @@ window.ICU_MANUAL_DB = {
         "sputum",
         "urine culture",
         "tip culture",
-        "검체 라벨",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검체 라벨"
       ],
       "urgency": "routine",
       "summary": "검사/검체 파트에서 중환자실 간호사가 꼭 확인해야 할 bottle 종류, 채혈 순서, CBC/Chemistry, coagulation, ABGA, culture 검체와 픽업/응급발행 포인트를 정리했습니다.",
@@ -84754,97 +72600,43 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 표 이미지",
-          "caption": "검사/검체 총정리 표 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "검사 검체 이미지"
+            "검사",
+            "검체"
           ]
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지 1",
-          "caption": "Lab bottle 원본 이미지 1",
+          "alt": "Lab bottle 원본 1",
+          "caption": "Lab bottle 원본 1",
           "search_terms": [
-            "lab bottle"
+            "Lab bottle"
           ]
         },
         {
           "src": "selected_manual_images/lab_bottle_0002.png",
-          "alt": "Lab bottle 원본 이미지 2",
-          "caption": "Lab bottle 원본 이미지 2",
+          "alt": "Lab bottle 원본 2",
+          "caption": "Lab bottle 원본 2",
           "search_terms": [
-            "lab bottle"
+            "Lab bottle"
           ]
         },
         {
           "src": "selected_manual_images/lab_bottle_0003.png",
-          "alt": "Lab bottle 원본 이미지 3",
-          "caption": "Lab bottle 원본 이미지 3",
+          "alt": "Lab bottle 원본 3",
+          "caption": "Lab bottle 원본 3",
           "search_terms": [
-            "lab bottle"
+            "Lab bottle"
           ]
         },
         {
           "src": "selected_manual_images/lab_bottle_0004.png",
-          "alt": "Lab bottle 원본 이미지 4",
-          "caption": "Lab bottle 원본 이미지 4",
+          "alt": "Lab bottle 원본 4",
+          "caption": "Lab bottle 원본 4",
           "search_terms": [
-            "lab bottle"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0001_bmp.png",
-          "alt": "검체/검사 원본 이미지: add260618_bin0001_bmp.png",
-          "caption": "검체/검사 원본 이미지: add260618_bin0001_bmp.png",
-          "search_terms": [
-            "검체 원본",
-            "lab bottle"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0002_bmp.png",
-          "alt": "검체/검사 원본 이미지: add260618_bin0002_bmp.png",
-          "caption": "검체/검사 원본 이미지: add260618_bin0002_bmp.png",
-          "search_terms": [
-            "검체 원본",
-            "lab bottle"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0003_bmp.png",
-          "alt": "검체/검사 원본 이미지: add260618_bin0003_bmp.png",
-          "caption": "검체/검사 원본 이미지: add260618_bin0003_bmp.png",
-          "search_terms": [
-            "검체 원본",
-            "lab bottle"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0004_bmp.png",
-          "alt": "검체/검사 원본 이미지: add260618_bin0004_bmp.png",
-          "caption": "검체/검사 원본 이미지: add260618_bin0004_bmp.png",
-          "search_terms": [
-            "검체 원본",
-            "lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
+            "Lab bottle"
           ]
         }
       ],
@@ -84888,17 +72680,7 @@ window.ICU_MANUAL_DB = {
         "Brain CT",
         "Brain MRI",
         "ET tube",
-        "C-line",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "C-line"
       ],
       "urgency": "routine",
       "summary": "X-ray, CT, MRI, SONO, Angio/TFCA, 내시경 검사 전 준비와 영상에서 line/tube/catheter 및 질환 패턴을 확인하는 예시 이미지를 정리했습니다.",
@@ -84989,128 +72771,35 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
+          "alt": "영상검사 준비 총정리",
+          "caption": "영상검사 준비 총정리",
           "search_terms": [
             "영상검사"
           ]
         },
         {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 교육용 예시 이미지",
-          "caption": "X-ray line/tube/catheter 교육용 예시 이미지",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "xray line tube catheter"
+            "X-ray",
+            "line",
+            "tube"
           ]
         },
         {
           "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 교육용 예시 이미지",
-          "caption": "Brain CT/MRI 질환별 교육용 예시 이미지",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
           "search_terms": [
-            "Brain CT MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_xray_overview.png",
-          "alt": "흉부 X-ray 기본 보기 이미지",
-          "caption": "흉부 X-ray 기본 보기 이미지",
-          "search_terms": [
-            "xray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_xray_ett_position.png",
-          "alt": "ET-tube 위치 확인 X-ray 이미지",
-          "caption": "ET-tube 위치 확인 X-ray 이미지",
-          "search_terms": [
-            "ETT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_xray_cvc_position.png",
-          "alt": "C-line/CVC 위치 확인 X-ray 이미지",
-          "caption": "C-line/CVC 위치 확인 X-ray 이미지",
-          "search_terms": [
-            "C-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_xray_ngt_position.png",
-          "alt": "L-tube/NGT 위치 확인 X-ray 이미지",
-          "caption": "L-tube/NGT 위치 확인 X-ray 이미지",
-          "search_terms": [
-            "L-tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_line_tube_summary.png",
-          "alt": "X-ray line/tube 위치 요약 이미지",
-          "caption": "X-ray line/tube 위치 요약 이미지",
-          "search_terms": [
-            "line tube xray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_pneumonia_pattern.png",
-          "alt": "폐렴 X-ray 예시 이미지",
-          "caption": "폐렴 X-ray 예시 이미지",
-          "search_terms": [
-            "pneumonia xray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_pneumothorax_pattern.png",
-          "alt": "기흉 X-ray 예시 이미지",
-          "caption": "기흉 X-ray 예시 이미지",
-          "search_terms": [
-            "pneumothorax"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_pulmonary_edema_pattern.png",
-          "alt": "폐부종 X-ray 예시 이미지",
-          "caption": "폐부종 X-ray 예시 이미지",
-          "search_terms": [
-            "pulmonary edema"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_pleural_effusion_pattern.png",
-          "alt": "흉수 X-ray 예시 이미지",
-          "caption": "흉수 X-ray 예시 이미지",
-          "search_terms": [
-            "pleural effusion"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_xray_atelectasis_pattern.png",
-          "alt": "무기폐 X-ray 예시 이미지",
-          "caption": "무기폐 X-ray 예시 이미지",
-          "search_terms": [
-            "atelectasis"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 교육 이미지",
-          "caption": "뇌경색 교육 이미지",
-          "search_terms": [
-            "brain infarct"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 교육 이미지",
-          "caption": "뇌출혈 교육 이미지",
-          "search_terms": [
-            "brain hemorrhage"
+            "Brain CT",
+            "MRI"
           ]
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -85118,18 +72807,10 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
-          "search_terms": [
-            "다제내성균"
           ]
         }
       ],
@@ -85180,17 +72861,7 @@ window.ICU_MANUAL_DB = {
         "wound",
         "pressure injury",
         "stoma",
-        "drain",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "drain"
       ],
       "urgency": "routine",
       "summary": "중환자실 line, drain, dressing에서 반드시 확인해야 할 삽입부위, 고정, 감염, 배액량, dressing 종류와 line 제거 후 관찰을 정리했습니다.",
@@ -85296,80 +72967,34 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
+          "alt": "Line/Drain/Dressing 총정리",
+          "caption": "Line/Drain/Dressing 총정리",
           "search_terms": [
-            "line drain dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v84_line_drain_dressing_overview.png",
-          "alt": "기존 Line/Drain/Dressing overview 이미지",
-          "caption": "기존 Line/Drain/Dressing overview 이미지",
-          "search_terms": [
-            "line drain"
+            "Line",
+            "Drain",
+            "Dressing"
           ]
         },
         {
           "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "상처 드레싱 준비물 원본 이미지",
-          "caption": "상처 드레싱 준비물 원본 이미지",
+          "alt": "드레싱 준비물",
+          "caption": "드레싱 준비물",
           "search_terms": [
-            "dressing supplies"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_disinfection_sequence.png",
-          "alt": "상처 소독 순서 이미지",
-          "caption": "상처 소독 순서 이미지",
-          "search_terms": [
-            "disinfection"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_sequence.png",
-          "alt": "드레싱 적용 순서 이미지",
-          "caption": "드레싱 적용 순서 이미지",
-          "search_terms": [
-            "dressing sequence"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_wound_dressing_selection.png",
-          "alt": "드레싱 재료 선택 이미지",
-          "caption": "드레싱 재료 선택 이미지",
-          "search_terms": [
-            "dressing selection"
+            "Dressing"
           ]
         },
         {
           "src": "selected_manual_images/v87_pressure_injury_stages.png",
-          "alt": "욕창 단계 분류 이미지",
-          "caption": "욕창 단계 분류 이미지",
+          "alt": "욕창 단계",
+          "caption": "욕창 단계",
           "search_terms": [
-            "pressure injury"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v88_wound_stage_care.png",
-          "alt": "욕창 단계별 간호 이미지",
-          "caption": "욕창 단계별 간호 이미지",
-          "search_terms": [
-            "wound stage"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_evd_sdd_management_table.png",
-          "alt": "EVD/SDD 관리 이미지",
-          "caption": "EVD/SDD 관리 이미지",
-          "search_terms": [
-            "EVD SDD"
+            "욕창"
           ]
         },
         {
           "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
             "검사",
             "검체"
@@ -85377,18 +73002,26 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
             "Lab bottle"
           ]
         },
         {
-          "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "다제내성균"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -85427,17 +73060,7 @@ window.ICU_MANUAL_DB = {
         "접촉주의",
         "MDRO",
         "contact precaution",
-        "rectal swab",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "rectal swab"
       ],
       "urgency": "routine",
       "summary": "CRE/CPE, VRE, MRSA/MSSA, MRPA/MRAB 등 다제내성균의 의미, 검체, 접촉주의, 전용물품, 환경소독과 격리 해제 확인 포인트를 정리했습니다.",
@@ -85519,53 +73142,64 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_mdro_summary_table.png",
-          "alt": "다제내성균 총정리 이미지",
-          "caption": "다제내성균 총정리 이미지",
+          "alt": "다제내성균 총정리",
+          "caption": "다제내성균 총정리",
           "search_terms": [
-            "MDRO"
+            "다제내성균",
+            "CRE",
+            "CPE",
+            "VRE"
           ]
         },
         {
           "src": "selected_manual_images/v65_접촉주의_다제내성균_p1.jpg",
-          "alt": "접촉주의 다제내성균 원본 이미지 1",
-          "caption": "접촉주의 다제내성균 원본 이미지 1",
+          "alt": "접촉주의 다제내성균 원본 1",
+          "caption": "접촉주의 다제내성균 원본 1",
           "search_terms": [
-            "접촉주의"
+            "접촉주의",
+            "다제내성균"
           ]
         },
         {
           "src": "selected_manual_images/v65_접촉주의_다제내성균_p2.jpg",
-          "alt": "접촉주의 다제내성균 원본 이미지 2",
-          "caption": "접촉주의 다제내성균 원본 이미지 2",
+          "alt": "접촉주의 다제내성균 원본 2",
+          "caption": "접촉주의 다제내성균 원본 2",
           "search_terms": [
-            "접촉주의"
+            "접촉주의",
+            "다제내성균"
           ]
         },
         {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "장비",
-            "전화번호"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "CSR",
-            "공급실 기구"
+            "Lab bottle"
           ]
         },
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 원본 사진",
-          "caption": "CSR 기구 원본 사진",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "CSR",
-            "기구"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
           ]
         }
       ],
@@ -85600,17 +73234,7 @@ window.ICU_MANUAL_DB = {
         "kelly",
         "mosquito",
         "needle holder",
-        "dressing set",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "dressing set"
       ],
       "urgency": "routine",
       "summary": "공급실 기구 이름과 생김새를 원본 사진으로 볼 수 있게 묶고, 사용 전후 count와 멸균 유지 포인트를 정리했습니다.",
@@ -85688,25 +73312,17 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리 이미지",
-          "caption": "공급실 기구 총정리 이미지",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
           "search_terms": [
+            "공급실",
             "CSR"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
-          "alt": "소독기구 원본 이미지",
-          "caption": "소독기구 원본 이미지",
-          "search_terms": [
-            "공급실",
-            "소독기구"
-          ]
-        },
-        {
           "src": "bin0001.png",
-          "alt": "CSR 기구 사진 1: Kelly / Long kelly",
-          "caption": "CSR 기구 사진 1: Kelly / Long kelly",
+          "alt": "CSR 기구 사진 1",
+          "caption": "CSR 기구 사진 1",
           "search_terms": [
             "공급실",
             "CSR"
@@ -85714,8 +73330,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "bin0002.png",
-          "alt": "CSR 기구 사진 2: Forcep / Dressing set",
-          "caption": "CSR 기구 사진 2: Forcep / Dressing set",
+          "alt": "CSR 기구 사진 2",
+          "caption": "CSR 기구 사진 2",
           "search_terms": [
             "공급실",
             "CSR"
@@ -85723,8 +73339,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "bin0003.png",
-          "alt": "CSR 기구 사진 3: Scissors / Mosquito / Magill forcep",
-          "caption": "CSR 기구 사진 3: Scissors / Mosquito / Magill forcep",
+          "alt": "CSR 기구 사진 3",
+          "caption": "CSR 기구 사진 3",
           "search_terms": [
             "공급실",
             "CSR"
@@ -85732,36 +73348,28 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "bin0004.png",
-          "alt": "CSR 기구 사진 4: Knife handle / Needle holder / Metzenbaum",
-          "caption": "CSR 기구 사진 4: Knife handle / Needle holder / Metzenbaum",
+          "alt": "CSR 기구 사진 4",
+          "caption": "CSR 기구 사진 4",
           "search_terms": [
             "공급실",
             "CSR"
           ]
         },
         {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "Dressing 준비물 이미지",
-          "caption": "Dressing 준비물 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "dressing supplies"
+            "검사",
+            "검체"
           ]
         },
         {
-          "src": "selected_manual_images/v87_wound_dressing_sequence.png",
-          "alt": "Dressing 순서 이미지",
-          "caption": "Dressing 순서 이미지",
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
           "search_terms": [
-            "dressing sequence"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품/장비/전화번호 총정리 이미지",
-          "caption": "물품/장비/전화번호 총정리 이미지",
-          "search_terms": [
-            "장비",
-            "전화번호"
+            "Lab bottle"
           ]
         }
       ],
@@ -85796,17 +73404,7 @@ window.ICU_MANUAL_DB = {
         "전산",
         "처방",
         "픽업",
-        "검사 처방",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "검사 처방"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 메뉴얼에서 추출된 병원 전산/처방/검사 관련 원본 이미지를 사용자가 앱에서 그대로 볼 수 있게 묶은 카드입니다.",
@@ -86217,13 +73815,20 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_test_specimen_overview.png",
+          "alt": "검사/검체 총정리",
+          "caption": "검사/검체 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "검사",
+            "검체"
+          ]
+        },
+        {
+          "src": "selected_manual_images/lab_bottle_0001.png",
+          "alt": "Lab bottle 원본",
+          "caption": "Lab bottle 원본",
+          "search_terms": [
+            "Lab bottle"
           ]
         }
       ],
@@ -86260,17 +73865,7 @@ window.ICU_MANUAL_DB = {
         "ADM003",
         "TRANSFER030",
         "MENU017",
-        "UPD43_DNR",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "UPD43_DNR"
       ],
       "urgency": "routine",
       "summary": "중환자실 입실부터 전동, 타원 전원, 퇴실/사망까지 중환자실 간호사가 꼭 숙지해야 할 절차를 요약한 카드입니다.",
@@ -86341,15 +73936,6 @@ window.ICU_MANUAL_DB = {
           "search_terms": [
             "입퇴원 전동 전원 사망"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
         }
       ],
       "prefer_media_first": true,
@@ -86375,17 +73961,7 @@ window.ICU_MANUAL_DB = {
         "연명의료계획서",
         "UPD43_DNR",
         "RECORD001",
-        "EMR001",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "EMR001"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 자주 혼동되는 DNR/연명의료 관련 흐름을 팀장과 사회복지사 역할까지 포함해 간단한 표로 정리했습니다.",
@@ -86461,22 +74037,11 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단 DNR 프로세스 표",
-          "caption": "연명의료중단(DNR) 프로세스 표",
+          "alt": "연명의료중단(DNR) 프로세스",
+          "caption": "연명의료중단(DNR) 프로세스",
           "search_terms": [
             "DNR",
-            "연명의료중단"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
+            "연명의료"
           ]
         }
       ],
@@ -86505,17 +74070,7 @@ window.ICU_MANUAL_DB = {
         "근무 중 우선순위",
         "MENU008",
         "CHART030",
-        "ROUTINE015",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "ROUTINE015"
       ],
       "urgency": "routine",
       "summary": "중환자실 근무별 반복 업무와 인수인계 필수 확인사항을 한 장으로 정리했습니다.",
@@ -86584,19 +74139,11 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 표",
-          "caption": "Day / Evening / Night 업무 흐름",
+          "alt": "근무별 업무 흐름",
+          "caption": "근무별 업무 흐름",
           "search_terms": [
-            "근무별 업무"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
+            "근무",
+            "인수인계"
           ]
         }
       ],
@@ -86632,17 +74179,7 @@ window.ICU_MANUAL_DB = {
         "EMR001",
         "RECORD001",
         "CHART030",
-        "V106_HOSPITAL_EMR_RAW_IMAGES",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 자주 쓰는 EMR·기록·처방 확인 포인트를 정리하고, 원본 전산 이미지 카드와 연결한 카드입니다.",
@@ -86712,34 +74249,44 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR 기록 총정리 이미지",
-          "caption": "EMR / 기록 / 처방 총정리",
+          "alt": "EMR/기록/처방 총정리",
+          "caption": "EMR/기록/처방 총정리",
           "search_terms": [
-            "EMR"
+            "EMR",
+            "기록"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "원본 전산 이미지 예시 1",
-          "caption": "원본 전산 이미지 예시 1",
+          "src": "selected_manual_images/v104_transfusion_flow_table.png",
+          "alt": "수혈 전체 흐름",
+          "caption": "수혈 전체 흐름",
           "search_terms": [
-            "전산"
+            "수혈"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0022_bmp.png",
-          "alt": "원본 전산 이미지 예시 2",
-          "caption": "원본 전산 이미지 예시 2",
+          "src": "selected_manual_images/v104_blood_components_table.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "전산"
+            "혈액제제"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0033_png.png",
-          "alt": "원본 전산 이미지 예시 3",
-          "caption": "원본 전산 이미지 예시 3",
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
           "search_terms": [
-            "전산"
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -86785,17 +74332,7 @@ window.ICU_MANUAL_DB = {
         "MENU004",
         "MENU009",
         "INFO001",
-        "ICUINFO030",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "ICUINFO030"
       ],
       "urgency": "routine",
       "summary": "중환자실 장비 준비와 연락체계를 한눈에 볼 수 있게 정리한 카드입니다. 인퓨전 펌프와 CSR 물품, 원내 연락체계까지 포함합니다.",
@@ -86862,8 +74399,8 @@ window.ICU_MANUAL_DB = {
       "images": [
         {
           "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "물품 장비 전화번호 총정리 이미지",
-          "caption": "물품 / 장비 / 전화번호 총정리",
+          "alt": "물품/장비/전화번호 총정리",
+          "caption": "물품/장비/전화번호 총정리",
           "search_terms": [
             "장비",
             "전화번호"
@@ -86871,35 +74408,67 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/wiltse_internal_phone_numbers.png",
-          "alt": "원내 주요 전화번호 요약",
-          "caption": "대표 원내 연락체계",
+          "alt": "원내 주요 전화번호",
+          "caption": "원내 주요 전화번호",
           "search_terms": [
             "전화번호"
           ]
         },
         {
           "src": "selected_manual_images/v107_hospital_floor_guide.png",
-          "alt": "원내 위치 층별 안내 요약",
-          "caption": "원내 위치 / 층별 안내 요약",
+          "alt": "원내 위치/층별 안내",
+          "caption": "원내 위치/층별 안내",
           "search_terms": [
             "층별안내"
           ]
         },
         {
-          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
-          "alt": "CSR 원본 이미지",
-          "caption": "CSR 원본 이미지",
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
+          "search_terms": [
+            "공급실"
+          ]
+        },
+        {
+          "src": "bin0001.png",
+          "alt": "CSR 기구 사진",
+          "caption": "CSR 기구 사진",
           "search_terms": [
             "CSR"
           ]
         },
         {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
+          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
+          "alt": "X-ray line/tube/catheter 예시",
+          "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
-            "근무별 업무",
-            "인수인계"
+            "X-ray"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
+          "alt": "Brain CT/MRI 예시",
+          "caption": "Brain CT/MRI 예시",
+          "search_terms": [
+            "Brain CT"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_renal_dm_overview.png",
+          "alt": "CRRT/신장 + BST/DM/DKA 통합",
+          "caption": "CRRT/신장 + BST/DM/DKA 통합",
+          "search_terms": [
+            "CRRT",
+            "DKA"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
+          "alt": "FMC CRRT 시작",
+          "caption": "FMC CRRT 시작",
+          "search_terms": [
+            "FMC CRRT"
           ]
         }
       ],
@@ -86923,17 +74492,7 @@ window.ICU_MANUAL_DB = {
         "매뉴얼 원본",
         "병동간호팀 매뉴얼 이미지",
         "V106_HOSPITAL_EMR_RAW_IMAGES",
-        "V106_CSR_STERILE_TOOLS_ORIGINAL",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V106_CSR_STERILE_TOOLS_ORIGINAL"
       ],
       "urgency": "routine",
       "summary": "병동간호팀/신입간호사 숙지사항에서 추출한 원본 이미지 일부를 앱에서 그대로 볼 수 있게 묶은 카드입니다.",
@@ -87305,13 +74864,19 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
+          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
+          "alt": "공급실 기구 총정리",
+          "caption": "공급실 기구 총정리",
           "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
+            "공급실"
+          ]
+        },
+        {
+          "src": "bin0001.png",
+          "alt": "CSR 기구 사진",
+          "caption": "CSR 기구 사진",
+          "search_terms": [
+            "CSR"
           ]
         }
       ],
@@ -87336,17 +74901,7 @@ window.ICU_MANUAL_DB = {
         "사진/표/이미지",
         "INFO001",
         "MENU009",
-        "V106_HOSPITAL_EMR_RAW_IMAGES",
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "교육자료",
-        "간호부 교육",
-        "한눈에 보기"
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
       ],
       "urgency": "routine",
       "summary": "원내 프로세스, 장비, 기록, 전화번호, 안내 자료 등 추출된 원본 이미지를 이어서 제공하는 카드입니다.",
@@ -87726,25 +75281,6 @@ window.ICU_MANUAL_DB = {
             "원본 이미지",
             "매뉴얼"
           ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
         }
       ],
       "prefer_media_first": true,
@@ -87752,304 +75288,93 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true
     },
     {
-      "id": "V108_IMAGE_SEARCH_HUB",
-      "category": "이미지 / 사진 / 표 / 원본 모음",
-      "title": "이미지·사진·표·원본 모음 전체 검색 허브",
+      "id": "V109_SEARCH_RELEVANCE_GUIDE",
+      "category": "검색 / 정리 기준",
+      "title": "검색 결과 정리 기준: 관련 이미지와 표만 보기",
       "aliases": [
-        "사진 모음",
-        "이미지 모음",
-        "표 모음",
-        "원본 이미지",
-        "매뉴얼 사진",
-        "교육 이미지"
+        "검색 정리",
+        "이미지 정리",
+        "관련 이미지",
+        "관련 표"
       ],
       "search_terms": [
-        "사진",
-        "이미지",
-        "그림",
-        "표",
-        "원본",
-        "메뉴얼",
-        "매뉴얼",
-        "전산 이미지",
-        "공급실 기구",
-        "DNR",
-        "수혈",
-        "CRRT",
-        "X-ray",
-        "Brain CT",
-        "Line Drain Dressing",
-        "약물계산",
-        "장비",
-        "전화번호",
-        "간호부 교육"
+        "검색 정리",
+        "관련 이미지",
+        "관련 표",
+        "검색 기준",
+        "이미지 정리"
       ],
       "urgency": "routine",
-      "summary": "검색어가 애매해도 사진/이미지/표가 먼저 보이도록 만든 이미지 검색 허브 카드입니다.",
+      "summary": "검색 결과에 관련 없는 사진이 섞이지 않도록 V109에서 정리한 기준입니다.",
       "indications": [
-        "부서원 교육 시 이미지, 표, 원본 매뉴얼 화면을 빠르게 찾을 때"
+        "부서원 교육 전 검색 결과 확인 기준을 볼 때"
       ],
       "preparation": [
-        "검색창에 사진, 이미지, 표, 원본, 또는 원하는 업무명을 함께 입력합니다."
+        "검색어는 업무명 + 핵심 단어로 입력합니다. 예: 수혈 RBC, X-ray L-tube, DNR, CRRT 알람"
       ],
       "steps": [
-        "관련 이미지 모음을 먼저 확인합니다.",
-        "세부 업무 카드를 함께 열어 표와 원본 이미지를 대조합니다."
+        "검색어와 직접 관련된 카드만 우선 확인합니다.",
+        "사진/표가 맞지 않으면 해당 카드를 교육용으로 쓰지 않습니다.",
+        "원본 이미지는 반드시 해당 업무 카드에서만 보도록 정리했습니다."
       ],
       "warnings": [
-        "이미지는 교육용 참고자료입니다. 실제 처치와 기록은 원내 최신 프로토콜과 처방을 우선합니다."
+        "원본 이미지 모음은 '원본', '병원 전산', '공급실 기구' 등 직접 검색할 때만 참고용으로 사용합니다."
       ],
       "charting": [
-        "교육용 이미지 확인 자체는 별도 기록 대상이 아니며, 실제 간호중재와 보고 내용은 EMR에 기록합니다."
+        "교육자료 검색 기준이며 EMR 기록 항목은 아닙니다."
       ],
       "related": [
         "V107_DNR_PROCESS_SIMPLE",
-        "V106_RADIOLOGY_XRAY_CT_MRI_SONO",
-        "V106_HOSPITAL_EMR_RAW_IMAGES",
-        "V106_CSR_STERILE_TOOLS_ORIGINAL"
+        "V104_TRANSFUSION_OVERVIEW",
+        "V106_RADIOLOGY_XRAY_CT_MRI_SONO"
       ],
       "source_refs": [
-        "V108 이미지 검색 보강"
+        "V109 검색 정리 보강"
       ],
       "tables": [
         {
-          "title": "이미지 검색 추천어",
-          "caption": "이렇게 검색하면 이미지 카드가 잘 보입니다.",
+          "title": "검색어별 권장 검색 방식",
+          "caption": "관련 이미지/표만 보이게 검색하는 방식",
           "headers": [
-            "검색 목적",
-            "추천 검색어",
-            "나오는 이미지"
+            "찾을 내용",
+            "권장 검색어",
+            "주의"
           ],
           "rows": [
             [
-              "원본 이미지",
-              "원본 이미지 / 병원 전산 / 매뉴얼 사진",
-              "전산·검사·원본 매뉴얼 화면"
+              "수혈",
+              "수혈 / RBC / FFP / Platelet / DIC",
+              "공급실, 검체 이미지는 제외되어야 정상"
             ],
             [
-              "검사/영상",
-              "X-ray line tube / Brain CT / CT MRI SONO",
-              "영상검사와 카테터 예시"
+              "응급/CPR",
+              "CPR / 코드블루 / 제세동기 / E-cart",
+              "검체 절차 이미지는 제외되어야 정상"
             ],
             [
-              "기구/장비",
-              "공급실 기구 / Infusion pump / 장비",
-              "CSR·장비·전화번호"
+              "검체",
+              "검사 검체 / Lab bottle / ABGA / Blood culture",
+              "수혈·CSR 이미지는 제외되어야 정상"
             ],
             [
-              "약물/수혈",
-              "항생제 AST / 수혈 / DIC / 약물계산",
-              "약물·수혈·계산표"
+              "기구",
+              "공급실 기구 / CSR / 소독기구",
+              "수혈·검체 이미지는 제외되어야 정상"
             ],
             [
-              "업무 흐름",
-              "DNR / 인수인계 / EMR 기록 / 입실 절차",
-              "업무 프로세스 표"
+              "영상",
+              "X-ray L-tube / Brain CT / CT MRI SONO",
+              "해당 영상 관련 이미지만 확인"
             ]
           ],
           "search_terms": [
-            "이미지 검색 추천어"
+            "검색 기준"
           ],
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v107_admission_transfer_overview.png",
-          "alt": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "caption": "입퇴원/전동/전원/사망 절차 요약 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_dnr_process_table.png",
-          "alt": "연명의료중단(DNR) 프로세스 이미지",
-          "caption": "연명의료중단(DNR) 프로세스 이미지",
-          "search_terms": [
-            "DNR",
-            "연명의료중단"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_shift_workflow_table.png",
-          "alt": "근무별 업무 흐름 이미지",
-          "caption": "근무별 업무 흐름 이미지",
-          "search_terms": [
-            "근무별 업무",
-            "인수인계"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_equipment_phone_overview.png",
-          "alt": "장비/물품/전화번호 요약 이미지",
-          "caption": "장비/물품/전화번호 요약 이미지",
-          "search_terms": [
-            "장비",
-            "물품"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v107_emr_record_overview.png",
-          "alt": "EMR/기록/처방 총정리 이미지",
-          "caption": "EMR/기록/처방 총정리 이미지",
-          "search_terms": [
-            "EMR",
-            "기록",
-            "처방"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0021_bmp.png",
-          "alt": "병원 전산 원본 이미지 예시",
-          "caption": "병원 전산 원본 이미지 예시",
-          "search_terms": [
-            "병원 전산",
-            "원본 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구/CSR 요약 이미지",
-          "caption": "공급실 기구/CSR 요약 이미지",
-          "search_terms": [
-            "CSR",
-            "공급실 기구"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_test_specimen_overview.png",
-          "alt": "검사/검체 총정리 이미지",
-          "caption": "검사/검체 총정리 이미지",
-          "search_terms": [
-            "검사",
-            "검체"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_imaging_prep_overview.png",
-          "alt": "방사선 검사 준비 총정리 이미지",
-          "caption": "방사선 검사 준비 총정리 이미지",
-          "search_terms": [
-            "방사선",
-            "CT",
-            "MRI"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시 이미지",
-          "caption": "X-ray line/tube/catheter 예시 이미지",
-          "search_terms": [
-            "X-ray",
-            "line",
-            "tube"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_line_drain_dressing_overview.png",
-          "alt": "Line/Drain/Dressing 총정리 이미지",
-          "caption": "Line/Drain/Dressing 총정리 이미지",
-          "search_terms": [
-            "Line",
-            "Drain",
-            "Dressing"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v87_wound_dressing_supplies.png",
-          "alt": "드레싱 준비물 이미지",
-          "caption": "드레싱 준비물 이미지",
-          "search_terms": [
-            "Dressing",
-            "상처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_med_blood_overview.png",
-          "alt": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "caption": "약물/수액/마약 + 수혈/혈액 통합 이미지",
-          "search_terms": [
-            "약물",
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v104_antibiotic_ast_table.png",
-          "alt": "항생제 AST 이미지",
-          "caption": "항생제 AST 이미지",
-          "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v105_calc_overview.png",
-          "alt": "약물 계산기/수액속도/gtt 통합 이미지",
-          "caption": "약물 계산기/수액속도/gtt 통합 이미지",
-          "search_terms": [
-            "계산기",
-            "수액속도",
-            "gtt"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v105_calculator_formula_summary.png",
-          "alt": "약물 계산 공식 이미지",
-          "caption": "약물 계산 공식 이미지",
-          "search_terms": [
-            "약물계산"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합 이미지",
-          "search_terms": [
-            "CRRT",
-            "BST",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작 체크리스트 이미지",
-          "caption": "FMC CRRT 시작 체크리스트 이미지",
-          "search_terms": [
-            "FMC CRRT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계+수술/시술 통합 이미지",
-          "caption": "신경계+수술/시술 통합 이미지",
-          "search_terms": [
-            "신경계",
-            "수술"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_assessment_table.png",
-          "alt": "신경계 사정 이미지",
-          "caption": "신경계 사정 이미지",
-          "search_terms": [
-            "GCS",
-            "Mental"
-          ]
-        }
-      ],
-      "prefer_media_first": true,
+      "images": [],
+      "prefer_media_first": false,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     }
@@ -89574,9 +76899,8 @@ window.ICU_MANUAL_DB = {
     ],
     "manual_refs": "병동간호팀 간호사 메뉴얼 p5~8, p17~50, p133~139, p175~183 / CSR p14~16 / infusion pump p61~62 / 신입간호사 숙지사항 참고"
   },
-  "v108_update": {
-    "summary": "부서 공유 전 검색어별 사진/이미지/표 노출을 강화. 기존 카드에 대표 이미지를 자동 보강하고 이미지 검색 허브 카드를 추가.",
-    "patched_items_with_images": 421,
+  "v109_update": {
+    "summary": "V108에서 과하게 넓힌 이미지 연결을 정리하고 관련 검색카드에 직접 관련된 이미지/표만 남김. 원본 이미지 모음과 DX 등 무관 이미지가 일반 검색에 뜨지 않도록 검색어를 좁힘.",
     "total_items": 431
   }
 };
