@@ -66,9 +66,9 @@ function renderMiniTable(card) {
   return `<div class="result-table-preview" aria-label="참고 표 미리보기">
     <div class="preview-title">참고 표 미리보기: ${esc(t.title || "표")}</div>
     <div class="table-wrap mini">
-      <table style="font-size:1.05rem;line-height:1.55;">
-        <thead><tr>${headers.map(h => `<th style="font-size:1.05rem;padding:12px 14px;">${esc(h)}</th>`).join("")}</tr></thead>
-        <tbody>${rows.map(row => `<tr>${row.map(cell => `<td style="font-size:1.02rem;padding:12px 14px;">${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+      <table>
+        <thead><tr>${headers.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+        <tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
       </table>
     </div>
     <div class="preview-more">전체 표는 카드를 누르면 확인됩니다.</div>
@@ -177,17 +177,21 @@ function renderSourceRefs(card) {
 function renderTables(tables) {
   if (!Array.isArray(tables) || tables.length === 0) return "";
   return tables.map(t => `
-    <section class="detail-section table-section">
-      <h4>참고 표: ${esc(t.title || "표")}</h4>
-      <div class="table-wrap">
-        <table style="font-size:1.05rem;line-height:1.55;">
-          <thead>
-            <tr>${(t.headers || []).map(h => `<th style="font-size:1.05rem;padding:12px 14px;">${esc(h)}</th>`).join("")}</tr>
-          </thead>
-          <tbody>
-            ${(t.rows || []).map(row => `<tr>${row.map(cell => `<td style="font-size:1.02rem;padding:12px 14px;">${esc(cell)}</td>`).join("")}</tr>`).join("")}
-          </tbody>
-        </table>
+    <section class="detail-section table-section v111-readable-tables" style="font-size:18px;">
+      <h4 style="font-size:1.25rem;line-height:1.4;margin-bottom:12px;">참고 표: ${esc(t.title || "표")}</h4>
+      ${t.caption ? `<p style="font-size:1.05rem;line-height:1.55;margin:0 0 14px 0;color:#475569;">${esc(t.caption)}</p>` : ""}
+      <div class="v111-table-card-list" style="display:flex;flex-direction:column;gap:14px;">
+        ${(t.rows || []).map((row, idx) => `
+          <div class="v111-table-row-card" style="border:1px solid #cfe0f5;border-radius:16px;background:#fff;padding:14px 16px;box-shadow:0 1px 2px rgba(15,23,42,.06);">
+            <div style="font-weight:800;color:#0f3b73;font-size:1.08rem;margin-bottom:8px;">${idx + 1}</div>
+            ${(row || []).map((cell, i) => `
+              <div style="display:block;border-top:${i === 0 ? "0" : "1px solid #edf2f7"};padding:${i === 0 ? "0 0 8px 0" : "10px 0 8px 0"};">
+                <div style="font-weight:800;color:#174ea6;font-size:1.02rem;line-height:1.35;margin-bottom:4px;">${esc((t.headers || [])[i] || `항목 ${i + 1}`)}</div>
+                <div style="font-size:1.08rem;line-height:1.65;color:#111827;white-space:pre-wrap;">${esc(cell)}</div>
+              </div>
+            `).join("")}
+          </div>
+        `).join("")}
       </div>
     </section>
   `).join("");
@@ -195,13 +199,16 @@ function renderTables(tables) {
 
 function renderImages(images) {
   if (!Array.isArray(images) || images.length === 0) return "";
-  return `<section class="detail-section image-section v109-large-images">
-    <h4>참고 이미지 / 사진</h4>
-    <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:18px;">
+  return `<section class="detail-section image-section v111-readable-images">
+    <h4 style="font-size:1.25rem;line-height:1.4;margin-bottom:10px;">참고 이미지 / 사진</h4>
+    <p style="font-size:1.02rem;line-height:1.5;color:#475569;margin:0 0 12px 0;">이미지를 누르면 원본 크기로 열립니다. 휴대폰에서는 원본 화면에서 확대해서 보세요.</p>
+    <div class="image-grid" style="display:grid;grid-template-columns:1fr;gap:22px;width:100%;">
       ${images.map(img => `
-        <figure style="margin:0;border:1px solid #cfe0f5;border-radius:16px;padding:14px;background:#fff;">
-          <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" style="display:block;width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:10px;" />
-          ${img.caption ? `<figcaption style="font-size:1rem;line-height:1.45;margin-top:8px;color:#334155;">${esc(img.caption)}</figcaption>` : ""}
+        <figure style="margin:0;border:1px solid #cfe0f5;border-radius:18px;padding:14px;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.08);width:100%;box-sizing:border-box;">
+          <a href="${esc(img.src)}" target="_blank" rel="noopener noreferrer" style="display:block;width:100%;">
+            <img src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "참고 이미지")}" loading="lazy" style="display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;border-radius:12px;background:#f8fafc;" />
+          </a>
+          ${img.caption ? `<figcaption style="font-size:1.08rem;line-height:1.5;margin-top:10px;color:#111827;font-weight:600;">${esc(img.caption)}</figcaption>` : ""}
         </figure>
       `).join("")}
     </div>
