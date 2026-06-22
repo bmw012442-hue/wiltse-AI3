@@ -366,9 +366,6 @@ function scoreItem(query, item) {
 
   if ((item.id || "").startsWith("V106_") && /검사|검체|lab|bottle|채혈|culture|cbc|chemistry|coag|abga|cre|cpe|vre|rat|tip|x-ray|xray|ct|mri|sono|tfca|angio|내시경|line|drain|dressing|foley|l-tube|pcd|evd|sdd|욕창|장루|다제내성|mdro|공급실|csr|전산|emr|카테터|catheter/.test(q)) score += 160;
 
-
-  if ((card?.id || item?.id || "") === "V108_IMAGE_SEARCH_HUB" && /사진|이미지|그림|표|원본|메뉴얼|매뉴얼|전산|교육/.test(q)) score += 220;
-
   return Math.max(0, score);
 }
 
@@ -527,7 +524,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.08.0-v108-image-search-boost",
+    version: "2.09.0-v109-search-relevance-clean",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -716,5 +713,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v108 image search boost running on port ${port}`);
+  console.log(`ICU AI Manual v109 search relevance clean running on port ${port}`);
 });
