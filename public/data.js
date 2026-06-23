@@ -1,11 +1,11 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.16.0-v116-emergency-relevance",
+    "version": "2.18.0-v118-respiratory-search-audit",
     "language": "ko",
-    "source": "V115 기반 + 응급상황 파트 검수: E-cart 응급약물표, intubation 절차, shock 항생제 오연결 제거",
+    "source": "V117 기반 + 호흡기계 검색어별 검수 추가: Ventilator, suction, tracheostomy, HFNC, ABGA",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-06-22"
+    "updated_at": "2026-06-23"
   },
   "schema": {
     "id": "string",
@@ -4562,58 +4562,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -4801,7 +4786,9 @@ window.ICU_MANUAL_DB = {
         "검사",
         "검체",
         "검사/ABGA",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "Allen test",
+        "혈액가스"
       ],
       "urgency": "urgent",
       "summary": "A-line 또는 동맥혈을 이용한 ABGA 검사.",
@@ -4846,40 +4833,35 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 정상값과 결과 해석 기본"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
           "search_terms": [
-            "Lab bottle"
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "검사",
-            "검체"
+            "ABGA Allen test 표"
           ]
         }
       ],
@@ -4905,7 +4887,8 @@ window.ICU_MANUAL_DB = {
         "혈액가스",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "Allen test"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상",
@@ -5218,7 +5201,64 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: O2 nipple 사용법 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_oxygen_therapy_types_table.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
+          "search_terms": [
+            "산소요법 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        }
+      ],
       "original_category": "호흡기/O2",
       "search_terms": [
         "O2 tapering / 산소 변동",
@@ -5358,19 +5398,35 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
           "search_terms": [
-            "X-ray"
+            "Ventilator 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
           "search_terms": [
-            "Brain CT"
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
           ]
         }
       ],
@@ -5546,21 +5602,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
-            "Intubation",
-            "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "search_terms": [
-            "CPR",
-            "E-CART"
+            "Intubation 시행 절차 큰글씨"
           ]
         }
       ],
@@ -5610,7 +5688,9 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "호흡기/Vent",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "네뷸라이저",
+        "흡입간호"
       ],
       "urgency": "routine",
       "summary": "Vent 환자 nebulizer 연결.",
@@ -5650,26 +5730,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin000d.png",
-          "alt": "Nebulizer 사용 참고 자료",
-          "caption": "Nebulizer 사용 참고 자료",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "Nebulizer 사용 참고 자료",
-            "Vent nebulizer 연결",
-            "호흡 / Ventilator",
-            "호흡기/Vent",
-            "Vent",
-            "Nebulizer",
-            "네뷸",
-            "AE",
-            "유량센서",
-            "연결",
-            "호흡",
-            "Ventilator",
-            "v8_final_reviewed",
-            "VENT004",
-            "Vent 환자 nebulizer 연결.",
-            "Ventilator setup"
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -5687,7 +5784,10 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "v8_final_reviewed",
-        "Nebulizer 사용 참고 자료"
+        "Nebulizer 사용 참고 자료",
+        "네뷸라이저",
+        "흡입간호",
+        "분무요법"
       ],
       "standard_sections_ready": true,
       "search_index": "Vent nebulizer 연결 호흡 / Ventilator 호흡기/Vent Vent Nebulizer 네뷸 AE 유량센서 연결 호흡 Ventilator v8_final_reviewed Nebulizer 사용 참고 자료 Ventilator setup",
@@ -5707,7 +5807,9 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "호흡기/HFNC",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "산소요법",
+        "O2 간호"
       ],
       "urgency": "urgent",
       "summary": "HFNC 적용 및 Airvo 관리.",
@@ -5750,24 +5852,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "bin000e.png",
-          "alt": "산소요법(O2) 참고 표",
-          "caption": "산소요법(O2) 참고 표",
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
           "search_terms": [
-            "산소요법(O2) 참고 표",
-            "HFNC / Airvo",
-            "호흡 / Ventilator",
-            "호흡기/HFNC",
-            "HFNC",
-            "Airvo",
-            "하이플로우",
-            "high flow",
-            "FiO2",
-            "호흡",
-            "Ventilator",
-            "v8_final_reviewed",
-            "VENT005",
-            "HFNC 적용 및 Airvo 관리."
+            "HFNC / Airvo 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -5794,7 +5915,8 @@ window.ICU_MANUAL_DB = {
         "호흡 장비",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "O2 간호"
       ],
       "standard_sections_ready": true,
       "search_index": "HFNC / Airvo 호흡 / Ventilator 호흡기/HFNC HFNC Airvo 하이플로우 high flow FiO2 호흡 Ventilator v8_final_reviewed 산소요법(O2) 참고 표 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상",
@@ -6137,24 +6259,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "수혈",
       "search_terms": [
         "수혈 절차 상세",
@@ -10045,7 +10150,10 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "검사·시술/호흡기",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "기관절개관",
+        "기관절개관 간호",
+        "기관절개관 목적"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -10084,20 +10192,27 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Tracheostomy / 기관절개관 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
           "search_terms": [
-            "항생제 계열"
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -10113,7 +10228,12 @@ window.ICU_MANUAL_DB = {
         "간호",
         "호흡",
         "Ventilator",
-        "v10_master_30_categories"
+        "v10_master_30_categories",
+        "기관절개관",
+        "기관절개관 간호",
+        "기관절개관 목적",
+        "기관절개관 합병증",
+        "T-tube"
       ],
       "standard_sections_ready": true,
       "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories",
@@ -14427,21 +14547,51 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
           "search_terms": [
-            "Intubation",
-            "기관삽관"
+            "HFNC / Airvo 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "CPR",
-            "E-CART"
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
           ]
         }
       ],
@@ -14892,41 +15042,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -14935,14 +15087,6 @@ window.ICU_MANUAL_DB = {
           "caption": "뇌경색 교육 이미지",
           "search_terms": [
             "뇌경색"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 교육 이미지",
-          "caption": "뇌출혈 교육 이미지",
-          "search_terms": [
-            "뇌출혈"
           ]
         }
       ],
@@ -15062,7 +15206,40 @@ window.ICU_MANUAL_DB = {
         "V106 검사/검체 + Line/Drain/Dressing + 영상/전산 이미지 보강 반영"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
       "original_category": "Dressing·Line",
       "search_terms": [
         "Dressing / 각종 LINE / Drainage 정리",
@@ -15752,7 +15929,32 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
       "search_terms": [
         "ABGA: 혈액가스 분석과 질환",
         "ABGA",
@@ -16147,13 +16349,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
           "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
           ]
         },
         {
@@ -16753,19 +16985,51 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
           "search_terms": [
-            "X-ray"
+            "HFNC / Airvo 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "Brain CT"
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
           ]
         }
       ],
@@ -17147,23 +17411,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -17582,41 +17858,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -18795,7 +19073,48 @@ window.ICU_MANUAL_DB = {
       ],
       "related": [],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
+          "search_terms": [
+            "HFNC / Airvo 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        }
+      ],
       "tags": [
         "처방·액팅",
         "v26_uploaded_manual_added",
@@ -21356,20 +21675,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
           "search_terms": [
-            "Brain CT"
+            "Tracheostomy / 기관절개관 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 질환별 예시",
-          "caption": "Brain CT/MRI 질환별 예시",
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
           "search_terms": [
-            "Brain CT",
-            "MRI"
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
           ]
         }
       ],
@@ -21736,21 +22070,44 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
             "Intubation",
             "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "search_terms": [
-            "CPR",
-            "E-CART"
           ]
         }
       ],
@@ -21895,40 +22252,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "검사",
-            "검체"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -23172,7 +23532,40 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        }
+      ],
       "search_terms": [
         "Lab",
         "bottle",
@@ -23790,7 +24183,32 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "search_terms": [
         "기관절개관 목적 / 적용 / 합병증",
         "호흡 / Ventilator",
@@ -23922,7 +24340,40 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "search_terms": [
         "호흡 / Ventilator",
         "기관절개관",
@@ -23968,7 +24419,9 @@ window.ICU_MANUAL_DB = {
         "Ventilator",
         "호흡 / Ventilator",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "T-tube",
+        "Montgomery tube"
       ],
       "urgency": "routine",
       "summary": "1. portex tube(폴텍스 튜브)",
@@ -24069,7 +24522,40 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "search_terms": [
         "Portex / Tracoe / Koken / Teflon / Montgomery tube",
         "호흡 / Ventilator",
@@ -24085,7 +24571,9 @@ window.ICU_MANUAL_DB = {
         "호흡",
         "Ventilator",
         "v43_uploaded_manual",
-        "기관절개관"
+        "기관절개관",
+        "T-tube",
+        "Montgomery tube"
       ],
       "standard_sections_ready": true,
       "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관",
@@ -24173,41 +24661,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -24220,34 +24710,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0005_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0005_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0005_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0005_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 1",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -24340,41 +24802,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -24387,34 +24851,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin000d_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000d_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000d_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin000d_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 2",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -24507,41 +24943,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -24554,34 +24992,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0019_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0019_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0019_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0019_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 3",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -24674,41 +25084,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -24721,34 +25133,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0025_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0025_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0025_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0025_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 4",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -24841,41 +25225,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -24888,34 +25274,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0031_png.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0031_png",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0031_png",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0031_png",
-            "추가 업무 매뉴얼 전체 추출 이미지 5",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -25008,41 +25366,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -25055,34 +25415,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin003d_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003d_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003d_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin003d_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 6",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -25175,41 +25507,43 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA Allen test 표"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA 원내 프로토콜 흐름"
           ]
         },
         {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
-            "Lab bottle"
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         },
         {
@@ -25222,34 +25556,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "uploaded_manual_images/add260618_bin0049_bmp.png",
-          "alt": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0049_bmp",
-          "caption": "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0049_bmp",
-          "search_terms": [
-            "추가 업무 매뉴얼 추출 이미지/표/그림 - add260618_bin0049_bmp",
-            "추가 업무 매뉴얼 전체 추출 이미지 7",
-            "추가 업무 매뉴얼",
-            "HWP",
-            "전체 추출 이미지",
-            "그림",
-            "사진",
-            "이미지",
-            "표",
-            "자동 추출",
-            "복원",
-            "전체 이미지 검색",
-            "보조기",
-            "Lab bottle",
-            "채혈 순서",
-            "원내 주요 번호",
-            "수혈",
-            "ABGA",
-            "A-line",
-            "HWP 추출 이미지",
-            "원본 이미지"
           ]
         }
       ],
@@ -25341,7 +25647,40 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
@@ -25430,7 +25769,40 @@ window.ICU_MANUAL_DB = {
         "기관절개관"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
       "image_archive": true,
       "standard_sections_ready": true,
       "search_hidden": true,
@@ -25953,7 +26325,48 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1QgSpX3I2sgaV_aKDhC_TjyIefqZQWXEA/view?usp=drive_link",
@@ -26115,7 +26528,48 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크 portable ventilator.mp4"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/10P-PgVm-74VhOCWBkdFEGiyhT2uIOTTf/view?usp=drive_link",
@@ -26794,21 +27248,44 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
             "Intubation",
             "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "search_terms": [
-            "CPR",
-            "E-CART"
           ]
         }
       ],
@@ -28354,19 +28831,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "수혈"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "혈액제제"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -29024,20 +29517,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -29307,20 +29815,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -29667,20 +30190,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -29855,20 +30393,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -32060,7 +32613,40 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 정상값 정상범위 채혈 Allen test 요골동맥 공기방울 heparin syringe 분석 지연 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 정상값 ABGA 채혈 ABGA 해석순서 ABGA 총정리: 정상값·채혈·빠른 해석순서 호흡 / ABGA / 중환자실 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 동영상 업무동영상 교육영상 인공호흡기 사용법 EVD ICP CVP 총정리 심전도 총정리 CPCR 절차",
       "videos": [
@@ -32322,7 +32908,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 보상 혼합성 산염기 장애 Winter 공식 anion gap DKA COPD 과호흡 구토 이뇨제 arterial blood gas 동맥혈 가스분석 혈액가스분석 산염기 장애 ABGA 산염기 장애 판독: 호흡성·대사성 산증/알칼리증 호흡 / ABGA / 중환자실 ABGA 정상값·채혈·해석순서 산소화·환기 간호 인공호흡기 사용법",
       "prefer_media_first": true
@@ -32569,13 +33196,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -32832,7 +33489,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 ABGA 예시 판독연습 채혈 후 압박 혈종 출혈 항응고제 검체 오류 재검 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 판독 연습 채혈 후 간호 ABGA 예시 판독과 채혈 후 간호 체크리스트 호흡 / ABGA / 중환자실 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 동영상 업무동영상 교육영상 ABGA 정상값·채혈·해석순서 ABGA 산염기 장애 판독 ABGA 산소화·환기 간호",
       "videos": [
@@ -33976,18 +34674,7 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
-          "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
       "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
       "prefer_media_first": true
@@ -34175,13 +34862,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -34373,7 +35090,56 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "호흡기계 호흡부전 ARDS 폐렴 중증폐렴 흡인성 폐렴 COPD 천식 기흉 폐부종 mechanical ventilation ventilator P/F ratio ABGA VAP 인공호흡기 호흡기계 질환 총정리: 호흡부전·ARDS·폐렴·COPD 중환자실 질병 / 호흡기계 O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
       "videos": [
@@ -35000,6 +35766,46 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
           "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
           "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
           "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
@@ -35026,39 +35832,6 @@ window.ICU_MANUAL_DB = {
             "신장계",
             "내분비",
             "대사"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
           ]
         }
       ],
@@ -39735,7 +40508,56 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ventilator 인공호흡기 기계환기 drager dräger savina VC PC SIMV PSV PEEP FiO2 호흡계 ABGA Ventilator Drager Savina Dräger Savina Savina 호흡기 Ventilator · Dräger Savina · 호흡계 총정리 호흡 / Ventilator O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 동영상 업무동영상 교육영상 Dräger Drager 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 기관절개관 진정/통증 응급상황",
       "videos": [
@@ -41432,7 +42254,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ventilator mode volume control pressure control SIMV PSV PEEP FiO2 tidal volume RR VC PC 기계환기 모드 인공호흡기 모드 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 호흡 / Ventilator V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION",
       "prefer_media_first": true
@@ -41690,7 +42553,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "savina drager dräger ventilator check circuit check leak test humidifier oxygen supply Dräger Savina Drager Savina Savina 사비나 인공호흡기 점검 Dräger Savina 사용 전·근무 시작 체크 호흡 / Dräger Savina V79 Dräger Drager 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
       "videos": [
@@ -41992,7 +42896,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "high pressure alarm PIP peak inspiratory pressure secretions kink bronchospasm bite compliance 고압 알람 High pressure peak pressure 기도압 상승 압력상승 Ventilator High Pressure 알람 대응 호흡 / Ventilator 알람 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_06",
       "prefer_media_first": true
@@ -42232,19 +43177,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
           "search_terms": [
-            "X-ray"
+            "Ventilator 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
           "search_terms": [
-            "Brain CT"
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
           ]
         }
       ],
@@ -42479,7 +43448,56 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "weaning spontaneous breathing trial SBT RSBI extubation PSV T-piece 자발호흡시험 ventilator 떼기 extubation 준비 Ventilator Weaning·SBT 준비 체크 호흡 / Weaning V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
       "prefer_media_first": true
@@ -42493,7 +43511,9 @@ window.ICU_MANUAL_DB = {
         "suction",
         "ETT suction",
         "tracheostomy suction",
-        "기관흡인"
+        "기관흡인",
+        "흡입간호",
+        "흡인간호"
       ],
       "search_terms": [
         "suction",
@@ -42508,7 +43528,9 @@ window.ICU_MANUAL_DB = {
         "기관흡인",
         "ETT·Tracheostomy 흡인 간호 체크",
         "호흡 / 흡인",
-        "V79"
+        "V79",
+        "흡입간호",
+        "흡인간호"
       ],
       "urgency": "high",
       "summary": "ETT·Tracheostomy 흡인 간호 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -42713,7 +43735,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "suction ETT tracheostomy closed suction secretion SpO2 무균술 흡인 ETT suction tracheostomy suction 기관흡인 ETT·Tracheostomy 흡인 간호 체크 호흡 / 흡인 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
       "prefer_media_first": true
@@ -42948,7 +44011,40 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA arterial blood gas PaO2 PaCO2 pH HCO3 FiO2 P/F ratio 혈액가스 산소화 Ventilator 환자 ABGA·산소화 해석 연결 호흡 / ABGA 연동 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION",
       "prefer_media_first": true
@@ -43174,19 +44270,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "X-ray"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "Brain CT"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -46561,7 +47681,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "electrolyte potassium phosphate magnesium calcium acid base ABGA 전해질 K Phos Mg Ca 산염기 CRRT 중 전해질·산염기 모니터링 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
       "exclude_queries": [
@@ -47259,28 +48420,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "항생제 투여"
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -47506,20 +48674,35 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "항생제 계열"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
           ]
         }
       ],
@@ -49691,7 +50874,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA arterial blood gas heparin syringe air bubble 동맥혈가스 혈액가스 ABGA 채혈·검체 취급 체크 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
       "prefer_media_first": true
@@ -51963,19 +53187,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
           "alt": "X-ray line/tube/catheter 예시",
           "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
             "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
           ]
         }
       ],
@@ -53646,19 +54894,51 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
           "alt": "X-ray line/tube/catheter 예시",
           "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
             "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
           ]
         }
       ],
@@ -54758,19 +56038,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
           "search_terms": [
-            "X-ray"
+            "Suction / 흡인 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "Brain CT"
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -57988,21 +59292,44 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
             "Intubation",
             "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "search_terms": [
-            "CPR",
-            "E-CART"
           ]
         }
       ],
@@ -60888,7 +62215,48 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: Dräger 인공호흡기 3 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
       "videos": [],
       "standard_sections_ready": true,
       "prefer_media_first": true,
@@ -61090,7 +62458,48 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크: ABGA calibration 보기"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1yvuB2LrSw1CWhd-mvpN5cHmYWVT2bMfu/view?usp=drive_link",
@@ -61910,16 +63319,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
-          "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
-          ]
-        },
-        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -62212,21 +63611,44 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
             "Intubation",
             "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "search_terms": [
-            "CPR",
-            "E-CART"
           ]
         }
       ],
@@ -63583,7 +65005,48 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -64060,6 +65523,38 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        },
         {
           "src": "selected_manual_images/v100_neuro_surgery_overview.png",
           "alt": "신경계 수술 시술 통합 요약 이미지",
@@ -64791,19 +66286,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        },
+        {
           "src": "selected_manual_images/v100_procedure_prepost_table.png",
           "alt": "시술 전후 간호 한눈에 보기 이미지",
           "caption": "TFCA/Tracheostomy/EGD/ERCP/CFS 전후 간호표",
           "search_terms": [
             "시술 전후 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
           ]
         }
       ],
@@ -65831,6 +67350,46 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
+        {
           "src": "selected_manual_images/v102_ns_os_preop_overview.png",
           "alt": "v102 ns os preop overview.png",
           "caption": "v102 ns os preop overview.png",
@@ -65840,14 +67399,6 @@ window.ICU_MANUAL_DB = {
             "수술명",
             "약어",
             "수술 전 검사"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_preop_exam_table.png",
-          "alt": "수술 전 검사 내용표 이미지",
-          "caption": "수술 전 검사 내용표 이미지",
-          "search_terms": [
-            "수술 전 검사 이미지"
           ]
         }
       ],
@@ -67151,6 +68702,46 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        },
         {
           "src": "selected_manual_images/v103_dka_protocol_table.png",
           "alt": "DKA protocol I O lab insulin infusion 이미지",
@@ -69023,23 +70614,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
+            "ABGA 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
           "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -70275,20 +71886,43 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
           "search_terms": [
-            "항생제",
-            "AST"
+            "Ventilator 검색 검수 기준"
           ]
         },
         {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
           "search_terms": [
-            "항생제 계열"
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
           ]
         }
       ],
@@ -70398,12 +72032,51 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v116_emergency_overview_large.png",
-          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
-          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
           "search_terms": [
-            "CPR",
-            "응급상황"
+            "HFNC / Airvo 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
           ]
         }
       ],
@@ -71527,8 +73200,49 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
-      "prefer_media_first": false,
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     },
@@ -72611,6 +74325,567 @@ window.ICU_MANUAL_DB = {
             "Shock",
             "저혈압",
             "쇼크"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_RESP_SEARCH_AUDIT_HUB",
+      "title": "호흡기계 검색어별 검수표: Ventilator·suction·tracheostomy·HFNC·ABGA",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "호흡기계 검수",
+        "검색어별 검수",
+        "respiratory audit"
+      ],
+      "search_terms": [
+        "호흡기계 검수",
+        "검색어별 검수",
+        "Ventilator",
+        "suction",
+        "tracheostomy",
+        "HFNC",
+        "ABGA"
+      ],
+      "urgency": "routine",
+      "summary": "호흡기계 주요 검색어별로 보여야 하는 이미지와 보이면 안 되는 이미지를 정리한 검수 카드입니다.",
+      "indications": [
+        "호흡기계 파트 배포 전 검수",
+        "검색 결과 오연결 확인"
+      ],
+      "preparation": [
+        "각 검색어로 검색 후 첫 1~3개 카드와 참고 이미지/사진을 확인합니다."
+      ],
+      "steps": [
+        "Ventilator, suction, tracheostomy, HFNC, ABGA를 각각 검색합니다.",
+        "검체 bottle, Brain CT, 수혈, 항생제 등 무관 이미지가 보이면 수정 대상입니다."
+      ],
+      "warnings": [
+        "검색 결과는 교육용 보조자료이며 실제 처치와 장비 사용은 원내 프로토콜과 처방을 우선합니다."
+      ],
+      "charting": [
+        "검수용 카드입니다."
+      ],
+      "related": [
+        "V118_VENTILATOR_SEARCH_AUDIT",
+        "V118_SUCTION_SEARCH_AUDIT",
+        "V118_TRACH_SEARCH_AUDIT",
+        "V118_HFNC_SEARCH_AUDIT",
+        "V118_ABGA_SEARCH_AUDIT"
+      ],
+      "source_refs": [
+        "V118 호흡기계 검색어별 검수"
+      ],
+      "tables": [
+        {
+          "title": "호흡기계 검색어별 정상 기준",
+          "caption": "각 검색어에서 직접 관련 자료만 보이는지 확인합니다.",
+          "headers": [
+            "검색어",
+            "보여야 하는 자료",
+            "보이면 안 되는 자료"
+          ],
+          "rows": [
+            [
+              "Ventilator",
+              "호흡/Ventilator 총정리\nmode · alarm · nursing\nDräger/Savina 자료",
+              "검체 bottle\nBrain CT/MRI\n수혈/항생제/CSR"
+            ],
+            [
+              "suction / 흡인",
+              "흡인간호 표\nclosed suction\n병동 매뉴얼 93~94",
+              "검체 bottle\nBrain CT\n수혈/항생제"
+            ],
+            [
+              "tracheostomy\n기관절개관",
+              "목적/적용/합병증\nT-tube 종류\ntrach emergency",
+              "항생제 AST\n검체/수혈\nBrain CT"
+            ],
+            [
+              "HFNC / Airvo",
+              "HFNC 적용표\nO2 간호 원본\n산소요법/Inspirometer",
+              "검체 bottle\n기관절개관 사진\n수혈/항생제"
+            ],
+            [
+              "ABGA",
+              "Allen test\nABGA 흐름\nABGA 해석/산소화",
+              "Lab bottle 전체표\nBrain CT\n수혈/CSR"
+            ]
+          ],
+          "search_terms": [
+            "호흡기계 검색 검수"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_respiratory_search_audit_matrix.png",
+          "alt": "호흡기계 검색어별 검수표",
+          "caption": "호흡기계 검색어별 검수표",
+          "search_terms": [
+            "호흡기계 검색어별 검수표"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_VENTILATOR_SEARCH_AUDIT",
+      "title": "Ventilator 검색 검수: mode·alarm·nursing·Dräger/Savina",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "Ventilator 검수",
+        "인공호흡기 검수"
+      ],
+      "search_terms": [
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "Dräger",
+        "Savina",
+        "ventilator alarm",
+        "ventilator mode"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator 검색 시 mode, alarm, nursing, Dräger/Savina 관련 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "Ventilator 검색 결과 확인"
+      ],
+      "preparation": [
+        "검체 bottle, Brain CT/MRI, 수혈/항생제 이미지가 없어야 합니다."
+      ],
+      "steps": [
+        "mode 확인",
+        "alarm 확인",
+        "환자 간호와 Dräger/Savina 자료 확인"
+      ],
+      "warnings": [
+        "Ventilator 설정 변경은 담당의 지시와 병원 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "Vent setting, alarm, SpO₂, ABGA, 환자반응 기록"
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V79_DETAIL_01",
+        "V79_DETAIL_03",
+        "V79_DETAIL_08"
+      ],
+      "source_refs": [
+        "V118 검수"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_SUCTION_SEARCH_AUDIT",
+      "title": "Suction / 흡인 검색 검수: 흡인간호·closed suction",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "흡인 검수",
+        "suction 검수",
+        "흡입간호"
+      ],
+      "search_terms": [
+        "suction",
+        "흡인",
+        "흡입간호",
+        "closed suction",
+        "기관흡인",
+        "ETT suction",
+        "tracheostomy suction"
+      ],
+      "urgency": "high",
+      "summary": "suction/흡인 검색 시 원내 흡인간호 표와 closed suction 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "ETT/기관절개관 흡인",
+        "closed suction 확인"
+      ],
+      "preparation": [
+        "흡인 전 산소화, suction pressure, PPE, catheter 준비"
+      ],
+      "steps": [
+        "필요성 확인",
+        "전 산소화",
+        "짧게 흡인",
+        "SpO₂/HR/분비물 관찰",
+        "기록"
+      ],
+      "warnings": [
+        "불필요한 반복 흡인과 장시간 흡인은 저산소증 위험이 있습니다."
+      ],
+      "charting": [
+        "분비물 양/색/점도, SpO₂ 변화, 환자반응 기록"
+      ],
+      "related": [
+        "V79_DETAIL_06"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 93~94"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_TRACH_SEARCH_AUDIT",
+      "title": "Tracheostomy / 기관절개관 검색 검수: 목적·적용·합병증·T-tube",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "기관절개관 검수",
+        "T-tube 검수",
+        "tracheostomy 검수"
+      ],
+      "search_terms": [
+        "tracheostomy",
+        "기관절개관",
+        "기관절개",
+        "T-tube",
+        "Portex",
+        "Tracoe",
+        "Koken",
+        "Montgomery",
+        "cuff pressure"
+      ],
+      "urgency": "high",
+      "summary": "기관절개관 검색 시 목적/적용/합병증, T-tube 종류, 빠진 경우 대처만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "기관절개관 환자 간호",
+        "T-tube 확인",
+        "trach emergency 교육"
+      ],
+      "preparation": [
+        "예비 tube, ambu, suction, O₂ 준비"
+      ],
+      "steps": [
+        "고정상태 확인",
+        "stoma 피부 관찰",
+        "cuff pressure 확인",
+        "분비물/흡인 확인",
+        "응급상황 대비"
+      ],
+      "warnings": [
+        "탈관/폐색/출혈/호흡곤란 시 즉시 도움 요청합니다."
+      ],
+      "charting": [
+        "tube 종류/size, cuff, stoma 상태, 분비물, 환자반응 기록"
+      ],
+      "related": [
+        "PROC011",
+        "UPD43_2",
+        "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON"
+      ],
+      "source_refs": [
+        "V118 검수"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_HFNC_SEARCH_AUDIT",
+      "title": "HFNC / Airvo 검색 검수: high flow·산소요법",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "HFNC 검수",
+        "Airvo 검수",
+        "high flow 검수"
+      ],
+      "search_terms": [
+        "HFNC",
+        "Airvo",
+        "high flow",
+        "하이플로우",
+        "산소요법",
+        "O2 간호"
+      ],
+      "urgency": "routine",
+      "summary": "HFNC/Airvo 검색 시 HFNC 적용표, O2 간호 원본, 산소요법 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "HFNC 적용 환자 교육",
+        "산소요법 확인"
+      ],
+      "preparation": [
+        "flow, FiO₂, humidification, cannula size, 피부상태 확인"
+      ],
+      "steps": [
+        "처방 확인",
+        "장비/가온가습 확인",
+        "SpO₂/RR/호흡곤란 관찰",
+        "피부손상 예방"
+      ],
+      "warnings": [
+        "FiO₂/flow 조정은 처방과 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "flow, FiO₂, SpO₂, RR, 환자반응 기록"
+      ],
+      "related": [
+        "VENT005",
+        "V96_HFNC"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 91~92"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
+          "search_terms": [
+            "HFNC / Airvo 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V118_ABGA_SEARCH_AUDIT",
+      "title": "ABGA 검색 검수: Allen test·채혈·해석·산소화",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "ABGA 검수",
+        "혈액가스 검수",
+        "Allen test"
+      ],
+      "search_terms": [
+        "ABGA",
+        "혈액가스",
+        "Allen test",
+        "산염기",
+        "oxygenation",
+        "산소화",
+        "ABGA 해석"
+      ],
+      "urgency": "routine",
+      "summary": "ABGA 검색 시 Allen test, ABGA 흐름, 해석/산소화 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "ABGA 채혈/해석",
+        "ventilator/산소화 평가"
+      ],
+      "preparation": [
+        "Allen test, heparinized syringe, air 제거, 즉시 전달"
+      ],
+      "steps": [
+        "환자 확인",
+        "Allen test",
+        "채혈",
+        "공기 제거",
+        "즉시 전달",
+        "결과 해석"
+      ],
+      "warnings": [
+        "ABGA 검색에서 Lab bottle 전체표가 우선 보이면 안 됩니다."
+      ],
+      "charting": [
+        "FiO₂/산소조건, 채혈시간, 결과, 보고내용 기록"
+      ],
+      "related": [
+        "LAB003",
+        "V72_ABGA_OVERVIEW",
+        "V72_ABGA_OXYGENATION_NURSING"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 95~96"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -74201,5 +76476,19 @@ window.ICU_MANUAL_DB = {
       "v116_shock_initial_response_large.png"
     ],
     "total_items": 452
+  },
+  "v118_update": {
+    "summary": "호흡기계 주요 검색어별 검수 카드와 이미지 추가. Ventilator/suction/tracheostomy/HFNC/ABGA 검색 시 직접 관련 자료만 보이도록 이미지 연결 재정렬.",
+    "added_audit_cards": 6,
+    "patched_respiratory_cards": 85,
+    "total_items": 458,
+    "added_images": [
+      "v118_respiratory_search_audit_matrix.png",
+      "v118_ventilator_search_check.png",
+      "v118_suction_search_check.png",
+      "v118_trach_search_check.png",
+      "v118_hfnc_search_check.png",
+      "v118_abga_search_check.png"
+    ]
   }
 };
