@@ -281,7 +281,7 @@ function itemText(item) {
 
 function scoreItem(query, item) {
   const q = normalize(query);
-  if (!q || item.search_hidden) return 0;
+  if (!q || item.search_hidden || item.internal_only) return 0;
 
   const topicSeed = normalize([
     item.id || "",
@@ -545,7 +545,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.18.0-v118-respiratory-search-audit",
+    version: "2.19.0-v119-hide-audit-aline-circulation",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -734,5 +734,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v118 respiratory search audit running on port ${port}`);
+  console.log(`ICU AI Manual v119 hide audit aline circulation running on port ${port}`);
 });
