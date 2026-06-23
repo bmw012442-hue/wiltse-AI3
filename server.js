@@ -296,7 +296,7 @@ function scoreItem(query, item) {
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
-    { q: /cpr|코드블루|e-cart|ecart|응급상황|응급간호|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급|제세동|defib|shock|intubation|기관삽관|삽관|경련|seizure|emergency/ },
+    { q: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure|emergency/ },
     { q: /brain ct|brain mri|브레인|뇌ct|뇌 ct|뇌mri|뇌 mri/, keep: /brain|ct|mri|브레인|뇌|신경|영상/ },
     { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
     { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
@@ -545,7 +545,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.15.0-v115-global-specimen-isolation-menu-click",
+    version: "2.18.0-v118-respiratory-search-audit",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -734,5 +734,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v115 global specimen isolation menu click running on port ${port}`);
+  console.log(`ICU AI Manual v118 respiratory search audit running on port ${port}`);
 });
