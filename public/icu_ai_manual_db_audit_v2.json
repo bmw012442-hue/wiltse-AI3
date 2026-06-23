@@ -1,9 +1,9 @@
-window.ICU_MANUAL_DB = {
+{
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.20.0-v120-part-overview-education-db",
+    "version": "2.20.0-v120-audit-db",
     "language": "ko",
-    "source": "V119 기반 + 파트별 총정리 이미지 11장 연결 + 교육용 DB/검수용 DB 분리",
+    "source": "V120 검수용 DB - 사용자 앱에는 업로드하지 않는 내부 검수용",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-23"
   },
@@ -27397,6 +27397,1118 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_01",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 1",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 1",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 1",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 1 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_02",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 2",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 2",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 2",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~24번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 2 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_03",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 3",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 3",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 3",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 25~36번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 3 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_04",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 4",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 4",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 4",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 37~48번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 4 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_05",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 5",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 5",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 5",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 49~60번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 5 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_06",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 6",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 6",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 6",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 61~72번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 6 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_ADD_07",
+      "category": "그림 / 사진 / 표",
+      "title": "추가 업무 매뉴얼 전체 추출 이미지 7",
+      "aliases": [
+        "추가 업무 매뉴얼 전체 추출 이미지 7",
+        "추가 업무 매뉴얼",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "보조기",
+        "Lab bottle",
+        "채혈 순서",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line"
+      ],
+      "search_terms": [
+        "추가 업무 매뉴얼 전체 추출 이미지 7",
+        "추가 업무 매뉴얼",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "보조기",
+        "원내 주요 번호",
+        "수혈",
+        "ABGA",
+        "A-line",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
+      ],
+      "urgency": "routine",
+      "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 73~77번입니다.",
+      "indications": [
+        "추가 업무 매뉴얼 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [
+        "V106_HOSPITAL_EMR_RAW_IMAGES"
+      ],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "추가 업무 매뉴얼",
+        "V106 uploaded_manual_images 원본 이미지 포함"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "추가 업무 매뉴얼 전체 추출 이미지 7 추가 업무 매뉴얼 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 보조기 Lab bottle 채혈 순서 원내 주요 번호 수혈 ABGA A-line HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_TRACH_01",
+      "category": "그림 / 사진 / 표",
+      "title": "기관절개관 전체 추출 이미지 1",
+      "aliases": [
+        "기관절개관 전체 추출 이미지 1",
+        "기관절개관",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "search_terms": [
+        "기관절개관 전체 추출 이미지 1",
+        "기관절개관",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
+      "indications": [
+        "기관절개관 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "기관절개관"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "기관절개관 전체 추출 이미지 1 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
+      "prefer_media_first": true
+    },
+    {
+      "id": "HWPIMG_RESTORED_TRACH_02",
+      "category": "그림 / 사진 / 표",
+      "title": "기관절개관 전체 추출 이미지 2",
+      "aliases": [
+        "기관절개관 전체 추출 이미지 2",
+        "기관절개관",
+        "전체 추출 이미지",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "이미지",
+        "표",
+        "원본 이미지",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지"
+      ],
+      "search_terms": [
+        "기관절개관 전체 추출 이미지 2",
+        "기관절개관",
+        "HWP",
+        "전체 추출 이미지",
+        "자동 추출",
+        "복원",
+        "전체 이미지 검색",
+        "Tracheostomy",
+        "T-tube",
+        "cuff",
+        "Portex",
+        "Tracoe",
+        "기관절개관 이미지",
+        "기관절개관 사진",
+        "기관절개관 전체 추출 이미지",
+        "HWP 추출 이미지",
+        "원본 이미지",
+        "그림 / 사진 / 표"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~23번입니다.",
+      "indications": [
+        "기관절개관 원본에 포함된 그림, 사진, 표 이미지를 직접 확인해야 할 때",
+        "텍스트 카드만으로 부족하여 원본 이미지를 확인해야 할 때"
+      ],
+      "preparation": [],
+      "steps": [
+        "아래 참고 이미지 / 사진 영역에서 원본 추출 이미지를 확인합니다.",
+        "이미지를 확대하여 표, 그림, 사진의 세부 내용을 확인합니다.",
+        "실제 처치·투약·응급상황은 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "dosage_or_mix": [],
+      "orders_or_emr": [],
+      "charting": [
+        "필요 시 확인한 원본 이미지 기준 내용과 수행 내용을 기록합니다."
+      ],
+      "io": [],
+      "warnings": [
+        "HWP에서 자동 추출된 원본 이미지이므로 관련 텍스트 카드와 함께 확인하세요.",
+        "병원 최신 지침과 처방을 우선 확인하세요."
+      ],
+      "related": [],
+      "tags": [
+        "복원",
+        "HWP 추출 이미지",
+        "그림",
+        "사진",
+        "표",
+        "v53_restored_all_images"
+      ],
+      "review": {
+        "status": "v53_restored_all_hwp_images"
+      },
+      "source_refs": [
+        "기관절개관"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
+      "image_archive": true,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "search_hidden_reason": "전체 추출 이미지 묶음은 일반 검색에서 제외",
+      "search_index": "기관절개관 전체 추출 이미지 2 기관절개관 HWP 전체 추출 이미지 그림 사진 이미지 표 자동 추출 복원 전체 이미지 검색 Tracheostomy T-tube cuff Portex Tracoe 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지 HWP 추출 이미지 원본 이미지 그림 / 사진 / 표",
       "prefer_media_first": true
     },
     {
@@ -80102,6 +81214,585 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true
     },
     {
+      "id": "V118_RESP_SEARCH_AUDIT_HUB",
+      "title": "호흡기계 검색어별 검수표: Ventilator·suction·tracheostomy·HFNC·ABGA",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "호흡기계 검수",
+        "검색어별 검수",
+        "respiratory audit"
+      ],
+      "search_terms": [
+        "호흡기계 검수",
+        "검색어별 검수",
+        "Ventilator",
+        "suction",
+        "tracheostomy",
+        "HFNC",
+        "ABGA"
+      ],
+      "urgency": "routine",
+      "summary": "호흡기계 주요 검색어별로 보여야 하는 이미지와 보이면 안 되는 이미지를 정리한 검수 카드입니다.",
+      "indications": [
+        "호흡기계 파트 배포 전 검수",
+        "검색 결과 오연결 확인"
+      ],
+      "preparation": [
+        "각 검색어로 검색 후 첫 1~3개 카드와 참고 이미지/사진을 확인합니다."
+      ],
+      "steps": [
+        "Ventilator, suction, tracheostomy, HFNC, ABGA를 각각 검색합니다.",
+        "검체 bottle, Brain CT, 수혈, 항생제 등 무관 이미지가 보이면 수정 대상입니다."
+      ],
+      "warnings": [
+        "검색 결과는 교육용 보조자료이며 실제 처치와 장비 사용은 원내 프로토콜과 처방을 우선합니다."
+      ],
+      "charting": [
+        "검수용 카드입니다."
+      ],
+      "related": [
+        "V118_VENTILATOR_SEARCH_AUDIT",
+        "V118_SUCTION_SEARCH_AUDIT",
+        "V118_TRACH_SEARCH_AUDIT",
+        "V118_HFNC_SEARCH_AUDIT",
+        "V118_ABGA_SEARCH_AUDIT"
+      ],
+      "source_refs": [
+        "V118 호흡기계 검색어별 검수"
+      ],
+      "tables": [
+        {
+          "title": "호흡기계 검색어별 정상 기준",
+          "caption": "각 검색어에서 직접 관련 자료만 보이는지 확인합니다.",
+          "headers": [
+            "검색어",
+            "보여야 하는 자료",
+            "보이면 안 되는 자료"
+          ],
+          "rows": [
+            [
+              "Ventilator",
+              "호흡/Ventilator 총정리\nmode · alarm · nursing\nDräger/Savina 자료",
+              "검체 bottle\nBrain CT/MRI\n수혈/항생제/CSR"
+            ],
+            [
+              "suction / 흡인",
+              "흡인간호 표\nclosed suction\n병동 매뉴얼 93~94",
+              "검체 bottle\nBrain CT\n수혈/항생제"
+            ],
+            [
+              "tracheostomy\n기관절개관",
+              "목적/적용/합병증\nT-tube 종류\ntrach emergency",
+              "항생제 AST\n검체/수혈\nBrain CT"
+            ],
+            [
+              "HFNC / Airvo",
+              "HFNC 적용표\nO2 간호 원본\n산소요법/Inspirometer",
+              "검체 bottle\n기관절개관 사진\n수혈/항생제"
+            ],
+            [
+              "ABGA",
+              "Allen test\nABGA 흐름\nABGA 해석/산소화",
+              "Lab bottle 전체표\nBrain CT\n수혈/CSR"
+            ]
+          ],
+          "search_terms": [
+            "호흡기계 검색 검수"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_respiratory_search_audit_matrix.png",
+          "alt": "호흡기계 검색어별 검수표",
+          "caption": "호흡기계 검색어별 검수표",
+          "search_terms": [
+            "호흡기계 검색어별 검수표"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V118_VENTILATOR_SEARCH_AUDIT",
+      "title": "Ventilator 검색 검수: mode·alarm·nursing·Dräger/Savina",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "Ventilator 검수",
+        "인공호흡기 검수"
+      ],
+      "search_terms": [
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "Dräger",
+        "Savina",
+        "ventilator alarm",
+        "ventilator mode"
+      ],
+      "urgency": "high",
+      "summary": "Ventilator 검색 시 mode, alarm, nursing, Dräger/Savina 관련 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "Ventilator 검색 결과 확인"
+      ],
+      "preparation": [
+        "검체 bottle, Brain CT/MRI, 수혈/항생제 이미지가 없어야 합니다."
+      ],
+      "steps": [
+        "mode 확인",
+        "alarm 확인",
+        "환자 간호와 Dräger/Savina 자료 확인"
+      ],
+      "warnings": [
+        "Ventilator 설정 변경은 담당의 지시와 병원 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "Vent setting, alarm, SpO₂, ABGA, 환자반응 기록"
+      ],
+      "related": [
+        "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+        "V79_DETAIL_01",
+        "V79_DETAIL_03",
+        "V79_DETAIL_08"
+      ],
+      "source_refs": [
+        "V118 검수"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_ventilator_search_check.png",
+          "alt": "Ventilator 검색 검수 기준",
+          "caption": "Ventilator 검색 검수 기준",
+          "search_terms": [
+            "Ventilator 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_respiratory_overview.png",
+          "alt": "호흡기계 종합 개요",
+          "caption": "호흡기계 종합 개요",
+          "search_terms": [
+            "호흡기계 종합 개요"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator 기본 모드 요약"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
+          "alt": "Ventilator 알람 대응 순서",
+          "caption": "Ventilator 알람 대응 순서",
+          "search_terms": [
+            "Ventilator 알람 대응 순서"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
+          "alt": "Ventilator 환자 간호 핵심",
+          "caption": "Ventilator 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator 환자 간호 핵심"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V118_SUCTION_SEARCH_AUDIT",
+      "title": "Suction / 흡인 검색 검수: 흡인간호·closed suction",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "흡인 검수",
+        "suction 검수",
+        "흡입간호"
+      ],
+      "search_terms": [
+        "suction",
+        "흡인",
+        "흡입간호",
+        "closed suction",
+        "기관흡인",
+        "ETT suction",
+        "tracheostomy suction"
+      ],
+      "urgency": "high",
+      "summary": "suction/흡인 검색 시 원내 흡인간호 표와 closed suction 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "ETT/기관절개관 흡인",
+        "closed suction 확인"
+      ],
+      "preparation": [
+        "흡인 전 산소화, suction pressure, PPE, catheter 준비"
+      ],
+      "steps": [
+        "필요성 확인",
+        "전 산소화",
+        "짧게 흡인",
+        "SpO₂/HR/분비물 관찰",
+        "기록"
+      ],
+      "warnings": [
+        "불필요한 반복 흡인과 장시간 흡인은 저산소증 위험이 있습니다."
+      ],
+      "charting": [
+        "분비물 양/색/점도, SpO₂ 변화, 환자반응 기록"
+      ],
+      "related": [
+        "V79_DETAIL_06"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 93~94"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_suction_search_check.png",
+          "alt": "Suction / 흡인 검색 검수 기준",
+          "caption": "Suction / 흡인 검색 검수 기준",
+          "search_terms": [
+            "Suction / 흡인 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인 간호 총정리"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜 흡인간호 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
+          "alt": "병동 간호팀 매뉴얼 93~94",
+          "caption": "병동 간호팀 매뉴얼 93~94",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 93~94"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V118_TRACH_SEARCH_AUDIT",
+      "title": "Tracheostomy / 기관절개관 검색 검수: 목적·적용·합병증·T-tube",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "기관절개관 검수",
+        "T-tube 검수",
+        "tracheostomy 검수"
+      ],
+      "search_terms": [
+        "tracheostomy",
+        "기관절개관",
+        "기관절개",
+        "T-tube",
+        "Portex",
+        "Tracoe",
+        "Koken",
+        "Montgomery",
+        "cuff pressure"
+      ],
+      "urgency": "high",
+      "summary": "기관절개관 검색 시 목적/적용/합병증, T-tube 종류, 빠진 경우 대처만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "기관절개관 환자 간호",
+        "T-tube 확인",
+        "trach emergency 교육"
+      ],
+      "preparation": [
+        "예비 tube, ambu, suction, O₂ 준비"
+      ],
+      "steps": [
+        "고정상태 확인",
+        "stoma 피부 관찰",
+        "cuff pressure 확인",
+        "분비물/흡인 확인",
+        "응급상황 대비"
+      ],
+      "warnings": [
+        "탈관/폐색/출혈/호흡곤란 시 즉시 도움 요청합니다."
+      ],
+      "charting": [
+        "tube 종류/size, cuff, stoma 상태, 분비물, 환자반응 기록"
+      ],
+      "related": [
+        "PROC011",
+        "UPD43_2",
+        "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON"
+      ],
+      "source_refs": [
+        "V118 검수"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_trach_search_check.png",
+          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "search_terms": [
+            "Tracheostomy / 기관절개관 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
+          "alt": "기관절개관 목적·적용·합병증 표",
+          "caption": "기관절개관 목적·적용·합병증 표",
+          "search_terms": [
+            "기관절개관 목적·적용·합병증 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_trach_ttube_types.png",
+          "alt": "기관절개관·T-tube 종류 한눈에 보기",
+          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "search_terms": [
+            "기관절개관·T-tube 종류 한눈에 보기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
+          "alt": "기관절개관 간호·빠진 경우 대처",
+          "caption": "기관절개관 간호·빠진 경우 대처",
+          "search_terms": [
+            "기관절개관 간호·빠진 경우 대처"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V118_HFNC_SEARCH_AUDIT",
+      "title": "HFNC / Airvo 검색 검수: high flow·산소요법",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "HFNC 검수",
+        "Airvo 검수",
+        "high flow 검수"
+      ],
+      "search_terms": [
+        "HFNC",
+        "Airvo",
+        "high flow",
+        "하이플로우",
+        "산소요법",
+        "O2 간호"
+      ],
+      "urgency": "routine",
+      "summary": "HFNC/Airvo 검색 시 HFNC 적용표, O2 간호 원본, 산소요법 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "HFNC 적용 환자 교육",
+        "산소요법 확인"
+      ],
+      "preparation": [
+        "flow, FiO₂, humidification, cannula size, 피부상태 확인"
+      ],
+      "steps": [
+        "처방 확인",
+        "장비/가온가습 확인",
+        "SpO₂/RR/호흡곤란 관찰",
+        "피부손상 예방"
+      ],
+      "warnings": [
+        "FiO₂/flow 조정은 처방과 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "flow, FiO₂, SpO₂, RR, 환자반응 기록"
+      ],
+      "related": [
+        "VENT005",
+        "V96_HFNC"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 91~92"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_hfnc_search_check.png",
+          "alt": "HFNC / Airvo 검색 검수 기준",
+          "caption": "HFNC / Airvo 검색 검수 기준",
+          "search_terms": [
+            "HFNC / Airvo 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_hfnc_table.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC 적용·적응증·간호"
+          ]
+        },
+        {
+          "src": "bin000e.png",
+          "alt": "O2 간호 원본 페이지",
+          "caption": "O2 간호 원본 페이지",
+          "search_terms": [
+            "O2 간호 원본 페이지"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
+          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
+          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "search_terms": [
+            "원내 프로토콜 산소요법·Inspirometer 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_low_spo2_flow.png",
+          "alt": "산소포화도 저하 시 대처",
+          "caption": "산소포화도 저하 시 대처",
+          "search_terms": [
+            "산소포화도 저하 시 대처"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V118_ABGA_SEARCH_AUDIT",
+      "title": "ABGA 검색 검수: Allen test·채혈·해석·산소화",
+      "category": "2. 호흡 / Ventilator",
+      "aliases": [
+        "ABGA 검수",
+        "혈액가스 검수",
+        "Allen test"
+      ],
+      "search_terms": [
+        "ABGA",
+        "혈액가스",
+        "Allen test",
+        "산염기",
+        "oxygenation",
+        "산소화",
+        "ABGA 해석"
+      ],
+      "urgency": "routine",
+      "summary": "ABGA 검색 시 Allen test, ABGA 흐름, 해석/산소화 자료만 보이도록 검수한 카드입니다.",
+      "indications": [
+        "ABGA 채혈/해석",
+        "ventilator/산소화 평가"
+      ],
+      "preparation": [
+        "Allen test, heparinized syringe, air 제거, 즉시 전달"
+      ],
+      "steps": [
+        "환자 확인",
+        "Allen test",
+        "채혈",
+        "공기 제거",
+        "즉시 전달",
+        "결과 해석"
+      ],
+      "warnings": [
+        "ABGA 검색에서 Lab bottle 전체표가 우선 보이면 안 됩니다."
+      ],
+      "charting": [
+        "FiO₂/산소조건, 채혈시간, 결과, 보고내용 기록"
+      ],
+      "related": [
+        "LAB003",
+        "V72_ABGA_OVERVIEW",
+        "V72_ABGA_OXYGENATION_NURSING"
+      ],
+      "source_refs": [
+        "V118 검수",
+        "병동 간호팀 매뉴얼 95~96"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v118_abga_search_check.png",
+          "alt": "ABGA 검색 검수 기준",
+          "caption": "ABGA 검색 검수 기준",
+          "search_terms": [
+            "ABGA 검색 검수 기준"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
+          "alt": "ABGA Allen test 표",
+          "caption": "ABGA Allen test 표",
+          "search_terms": [
+            "ABGA Allen test 표"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v97_protocol_abga_flow.png",
+          "alt": "ABGA 원내 프로토콜 흐름",
+          "caption": "ABGA 원내 프로토콜 흐름",
+          "search_terms": [
+            "ABGA 원내 프로토콜 흐름"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v96_abga_table.png",
+          "alt": "ABGA 정상값과 결과 해석 기본",
+          "caption": "ABGA 정상값과 결과 해석 기본",
+          "search_terms": [
+            "ABGA 정상값과 결과 해석 기본"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
+          "alt": "병동 간호팀 매뉴얼 95~96",
+          "caption": "병동 간호팀 매뉴얼 95~96",
+          "search_terms": [
+            "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
       "id": "V119_ALINE_ZEROING_WAVEFORM_EDU",
       "category": "3. 순환 / 모니터링",
       "title": "A-line zeroing / waveform 확인 총정리",
@@ -80217,198 +81908,6 @@ window.ICU_MANUAL_DB = {
             "순환",
             "모니터링",
             "A-line"
-          ]
-        }
-      ],
-      "prefer_media_first": true,
-      "hide_raw_steps": false,
-      "standard_sections_ready": true
-    },
-    {
-      "id": "V120_ALL_PART_OVERVIEW_IMAGES",
-      "category": "16. 병동간호팀 간호사 매뉴얼",
-      "title": "중환자실 간호사 교육용 참고자료: 파트별 총정리 이미지 11장",
-      "aliases": [
-        "교육용 참고자료",
-        "파트별 총정리 이미지",
-        "총정리 이미지 11장"
-      ],
-      "search_terms": [
-        "교육용 참고자료",
-        "총정리 이미지",
-        "파트별 총정리",
-        "11장 이미지",
-        "중환자실 교육자료"
-      ],
-      "urgency": "routine",
-      "summary": "각 파트 검색 시 해당 파트의 대표 총정리 이미지가 먼저 보이도록 구성한 교육용 이미지 모음 카드입니다.",
-      "indications": [
-        "부서원 교육자료 전체 확인",
-        "파트별 대표 이미지 확인"
-      ],
-      "preparation": [
-        "각 파트 검색 시 해당 이미지가 개별적으로 보입니다."
-      ],
-      "steps": [
-        "응급상황, 호흡, 순환, 신경계, CRRT/혈당, 약물/수혈, 검사/라인/드레싱, 수술/시술, 입퇴원/EMR, 물품/장비 파트를 확인합니다."
-      ],
-      "warnings": [
-        "이 카드는 전체 이미지 확인용입니다. 실제 처치와 투약은 원내 최신 프로토콜과 처방을 우선합니다."
-      ],
-      "charting": [
-        "교육자료 확인용 카드입니다."
-      ],
-      "related": [],
-      "source_refs": [
-        "V120 파트별 총정리 이미지"
-      ],
-      "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/v120_part01_emergency_overview.png",
-          "alt": "1. 응급상황 총정리 이미지",
-          "caption": "1. 응급상황 총정리 이미지",
-          "search_terms": [
-            "응급상황",
-            "CPR",
-            "E-cart",
-            "응급약물",
-            "shock",
-            "intubation"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part05_06_renal_crrt_bst_dka_overview.png",
-          "alt": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "caption": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "search_terms": [
-            "CRRT",
-            "신장",
-            "BST",
-            "DM",
-            "DKA",
-            "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part06_bst_dm_insulin_overview_user_selected.png",
-          "alt": "6. 혈당 / 내분비 총정리 이미지",
-          "caption": "6. 혈당 / 내분비 총정리 이미지",
-          "search_terms": [
-            "혈당",
-            "BST",
-            "DM",
-            "당뇨",
-            "인슐린",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
-          "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
-          "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
-          "search_terms": [
-            "약물",
-            "수액",
-            "마약",
-            "수혈",
-            "혈액",
-            "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part09_10_test_line_dressing_overview.png",
-          "alt": "9. 검사 / 검체 · 10. Line / Drain / Dressing 총정리 이미지",
-          "caption": "9. 검사 / 검체 · 10. Line / Drain / Dressing 총정리 이미지",
-          "search_terms": [
-            "검사",
-            "검체",
-            "Line",
-            "Drain",
-            "Dressing",
-            "욕창"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part11_surgery_procedure_overview.png",
-          "alt": "11. 수술 / 시술 총정리 이미지",
-          "caption": "11. 수술 / 시술 총정리 이미지",
-          "search_terms": [
-            "수술",
-            "시술",
-            "Spinal tapping",
-            "CSF",
-            "TFCA",
-            "EVD"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part12_13_14_workflow_emr_overview.png",
-          "alt": "12. 입퇴원 / 전동 / 전원 / 사망 · 13. 근무별 업무 · 14. EMR / 기록 / 처방 총정리 이미지",
-          "caption": "12. 입퇴원 / 전동 / 전원 / 사망 · 13. 근무별 업무 · 14. EMR / 기록 / 처방 총정리 이미지",
-          "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망",
-            "근무",
-            "EMR",
-            "기록",
-            "처방",
-            "DNR"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part15_equipment_phone_overview.png",
-          "alt": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "caption": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "search_terms": [
-            "물품",
-            "장비",
-            "전화번호",
-            "pump",
-            "CSR",
-            "제세동기"
           ]
         }
       ],
@@ -82023,23 +83522,5 @@ window.ICU_MANUAL_DB = {
       "v119_circulation_monitoring_overview.png"
     ]
   },
-  "v120_update": {
-    "summary": "10장 생성 이미지와 사용자 선택 혈당/내분비 이미지 1장을 합쳐 총 11장 대표 총정리 이미지를 검색 파트별로 연결. 내부 검수용 카드는 교육용 DB에서 제거하고 별도 검수용 DB로 분리.",
-    "education_items": 445,
-    "audit_items_separated": 15,
-    "patched_items_with_overview_images": 425,
-    "overview_images": [
-      "v120_part01_emergency_overview.png",
-      "v120_part02_respiratory_ventilator_overview.png",
-      "v120_part03_circulation_monitoring_overview.png",
-      "v120_part04_neuro_overview.png",
-      "v120_part05_06_renal_crrt_bst_dka_overview.png",
-      "v120_part07_08_medication_transfusion_overview.png",
-      "v120_part09_10_test_line_dressing_overview.png",
-      "v120_part11_surgery_procedure_overview.png",
-      "v120_part12_13_14_workflow_emr_overview.png",
-      "v120_part15_equipment_phone_overview.png",
-      "v120_part06_bst_dm_insulin_overview_user_selected.png"
-    ]
-  }
-};
+  "v120_note": "이 DB는 검수용입니다. 교육용 앱에는 icu_ai_manual_db_v2.json만 사용하세요."
+}
