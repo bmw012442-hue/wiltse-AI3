@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.15.0-v115-global-specimen-isolation-menu-click",
+    "version": "2.16.0-v116-emergency-relevance",
     "language": "ko",
-    "source": "V114 기반 + 검체 이미지 전역 분리 + Ventilator/호흡 이미지 정리 + 16개 실무 메뉴 클릭 카드 보강",
+    "source": "V115 기반 + 응급상황 파트 검수: E-cart 응급약물표, intubation 절차, shock 항생제 오연결 제거",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-22"
   },
@@ -1265,6 +1265,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -1293,7 +1303,10 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "쇼크",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "standard_sections_ready": true,
       "search_index": "Norepinephrine / 노르핀 약물 / 수액 / 마약 약물/Mix/승압제 노르핀 Norepinephrine NE norepi 승압제 저혈압 shock 노르에피 levophed norepi mix 승압제 mix 약물 수액 마약 v8_final_reviewed",
@@ -1354,6 +1367,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -1375,7 +1398,12 @@ window.ICU_MANUAL_DB = {
         "심정지",
         "code blue",
         "에피네프린",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "shock",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "standard_sections_ready": true,
       "search_index": "Epinephrine / 에피네프린 응급상황 약물/Mix/응급 에피 Epinephrine Epi CPR 심정지 code blue 에피네프린 v8_final_reviewed",
@@ -1434,6 +1462,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -1456,7 +1494,11 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "standard_sections_ready": true,
       "search_index": "Vasopressin / 바소프레신 약물 / 수액 / 마약 약물/Mix/승압제 바소 Vasopressin 바소프레신 승압제 shock 약물 수액 마약 v8_final_reviewed",
@@ -1796,6 +1838,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -1818,7 +1869,11 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "기관삽관",
+        "ETT",
+        "기도삽관",
+        "삽관 절차"
       ],
       "standard_sections_ready": true,
       "search_index": "Rocuronium / 로큐니움 약물 / 수액 / 마약 약물/Mix/근이완 로큐니움 Rocuronium 근이완제 intubation 삽관 약물 수액 마약 v8_final_reviewed",
@@ -2189,6 +2244,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -3005,6 +3072,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -3033,7 +3109,6 @@ window.ICU_MANUAL_DB = {
         "밤번",
         "N duty",
         "자정이후",
-        "채혈접수업무",
         "식이입력",
         "업무",
         "상세",
@@ -5471,6 +5546,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -5503,7 +5587,9 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정"
+        "tube 고정",
+        "기도삽관",
+        "삽관 절차"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed",
@@ -6542,6 +6628,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -6581,7 +6677,12 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR quick card 응급상황 응급/CPR CPR code blue 심정지 arrest ROSC Lucas Ambu 에피 심폐소생술 코드블루 compression 제세동 ambu bagging CPR charting quick card v8_final_reviewed LUCAS 동영상 루카스 사용법 동영상 CPCR 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상",
@@ -6674,6 +6775,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -6695,7 +6806,12 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "점검",
         "상세",
-        "v11_source_enhanced"
+        "v11_source_enhanced",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "제세동기 점검 상세 Routine Routine/제세동기 제세동기 defibrillator 자가점검 manual defib E-cart 점검 상세 v11_source_enhanced",
@@ -11537,6 +11653,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -12042,28 +12167,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "E-CART",
+            "응급약물표",
+            "응급약물"
           ]
         }
       ],
@@ -12091,9 +12201,11 @@ window.ICU_MANUAL_DB = {
         "ACLS 약물",
         "응급약",
         "목록",
-        "v10_master_30_categories",
         "LUCAS 동영상",
-        "루카스 사용법 동영상"
+        "루카스 사용법 동영상",
+        "E-CART",
+        "응급약물표",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "E-cart 응급약물 목록 응급상황 E-cart/응급약물 E-cart 응급약물 에피네프린 노르에피네프린 아트로핀 코다론 아데노신 비본 에토미데이트 마그네슘 칼슘 베카론 응급카트 emergency cart code cart E-cart 약물 ACLS 약물 응급약 목록 v10_master_30_categories LUCAS 동영상 루카스 사용법 동영상",
@@ -12156,28 +12268,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "E-CART",
+            "응급약물표",
+            "응급약물"
           ]
         }
       ],
@@ -12198,7 +12295,12 @@ window.ICU_MANUAL_DB = {
         "관리",
         "수액",
         "마약",
-        "v10_master_30_categories"
+        "E-cart",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "고주의 약물 관리 약물 / 수액 / 마약 약물/고주의약물 고주의약물 high alert 승압제 인슐린 항응고제 KCL 진정제 고주의 약물 관리 수액 마약 v10_master_30_categories",
@@ -12261,28 +12363,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "E-CART",
+            "응급약물표",
+            "응급약물"
           ]
         }
       ],
@@ -12303,7 +12390,12 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v10_master_30_categories"
+        "E-cart",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "항부정맥제 사용 전 확인 약물 / 수액 / 마약 약물/항부정맥제 항부정맥제 Cordarone Adenosine Amiodarone arrhythmia VT SVT 사용 확인 약물 수액 마약 v10_master_30_categories",
@@ -13765,28 +13857,12 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "CPR",
+            "응급상황"
           ]
         }
       ],
@@ -13800,14 +13876,12 @@ window.ICU_MANUAL_DB = {
         "monitor",
         "pump",
         "vent",
-        "CRRT",
         "제세동기",
         "사용",
         "방법",
         "공통",
         "물품",
-        "전화번호",
-        "v10_master_30_categories"
+        "전화번호"
       ],
       "standard_sections_ready": true,
       "search_index": "장비 사용 방법 공통 물품 / 장비 / 전화번호 장비/사용법 장비 사용법 monitor pump vent CRRT 제세동기 사용 방법 공통 물품 전화번호 v10_master_30_categories",
@@ -13893,6 +13967,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -13949,7 +14033,10 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -14340,6 +14427,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -14351,7 +14447,6 @@ window.ICU_MANUAL_DB = {
       ],
       "original_category": "의료장비",
       "search_terms": [
-        "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG",
         "물품 / 장비 / 전화번호",
         "의료장비",
         "장비",
@@ -14363,7 +14458,6 @@ window.ICU_MANUAL_DB = {
         "HFNC",
         "Airvo",
         "하이플로우",
-        "CRRT",
         "씨알알티",
         "infusion pump",
         "인퓨전펌프",
@@ -14422,7 +14516,13 @@ window.ICU_MANUAL_DB = {
         "Savina",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2"
+        "Dräger 인공호흡기 2",
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ETT",
+        "기도삽관",
+        "삽관 절차"
       ],
       "standard_sections_ready": true,
       "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Infusion pump 사용법 Syringe pump 사용법",
@@ -15084,6 +15184,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -15119,7 +15228,6 @@ window.ICU_MANUAL_DB = {
         "I/O",
         "BST",
         "제세동기 점검",
-        "채혈접수",
         "환자분류",
         "화재분류",
         "약싸기",
@@ -15785,6 +15893,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
+        {
           "src": "selected_manual_images/v102_ns_os_preop_overview.png",
           "alt": "v102 ns os preop overview.png",
           "caption": "v102 ns os preop overview.png",
@@ -16027,6 +16147,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -16070,7 +16200,11 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized",
         "ventilator 동영상",
-        "Ventilator 사용법 동영상"
+        "Ventilator 사용법 동영상",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "standard_sections_ready": true,
       "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상",
@@ -19764,6 +19898,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -19814,7 +19958,12 @@ window.ICU_MANUAL_DB = {
         "장비",
         "전화번호",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 숙지사항: 면회, 외부전화, 약국, 이송, Noti, E-cart 물품 / 장비 / 전화번호 원내정보/ICU 숙지 ICU 숙지사항 면회 임종면회 외부전화 9 누르고 약국 비번 6220 냉장고 1234 이송팀 Noti 당직의 병원장 ER CT 4시간 E-cart 봉인라벨 봉인라벨 No 점검대장 ICU 숙지사항 이송 E-cart 물품 장비 전화번호 v26_uploaded_manual_added manual_20260614",
@@ -19881,6 +20030,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -19942,7 +20101,12 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -21423,6 +21587,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -21454,7 +21628,12 @@ window.ICU_MANUAL_DB = {
         "CPR 간호사 역할",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR 초기 대응 / Lucas / E-cart 응급상황 CPR 초기 대응 Lucas E-cart 코드 6114 루카스 제세동기 v43_uploaded_manual 추가 업무 매뉴얼(260618) LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 동영상 업무동영상 교육영상 CPR quick card",
@@ -21557,6 +21736,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -21598,7 +21786,9 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정"
+        "tube 고정",
+        "기도삽관",
+        "삽관 절차"
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비물 / 약물 / 동의서 응급상황 Intubation 준비물 약물 동의서 기관내삽관 삽관 Endo tube Video laryngoscope etomidate vecuronium v43_uploaded_manual 추가 업무 매뉴얼(260618) 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
@@ -25983,7 +26173,12 @@ window.ICU_MANUAL_DB = {
         "E-cart",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "routine",
       "summary": "CPR 상황에서 사용하는 LUCAS 장비 사용법 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -26023,6 +26218,16 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -26209,7 +26414,12 @@ window.ICU_MANUAL_DB = {
         "Lucas",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "CPCR 발생 시 목격 간호사와 간호사 1·2 역할, CPCR팀 도착 후 인계·기록 흐름을 정리한 카드입니다.",
@@ -26256,6 +26466,16 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -26407,6 +26627,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -26448,7 +26680,12 @@ window.ICU_MANUAL_DB = {
         "O2",
         "삽관 보조",
         "CPCR 인공호흡/기도확보 담당 간호사 체크리스트",
-        "응급상황"
+        "응급상황",
+        "기관삽관",
+        "삽관",
+        "ETT",
+        "기도삽관",
+        "삽관 절차"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 기도확보 및 인공호흡 담당 간호사가 수행할 항목입니다.",
@@ -26557,6 +26794,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -26596,7 +26842,12 @@ window.ICU_MANUAL_DB = {
         "리듬 확인",
         "V/S 측정",
         "CPCR 정맥로 확보/투약 담당 간호사 체크리스트",
-        "응급상황"
+        "응급상황",
+        "E-cart",
+        "E-CART",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다.",
@@ -26671,6 +26922,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -26798,6 +27059,15 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -31262,7 +31532,20 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ICP IICP 두개내압 뇌압 Intracranial Pressure CPP MAP-ICP GCS pupil 동공 Cushing triad 두통 구토 seizure herniation mannitol hypertonic saline EVD ICP 간호 두개내압 간호 뇌압 상승 ICP 총정리: 정상범위·상승징후·CPP·간호 신경계 / 순환 모니터링 tragus 트라거스 EVD leveling ICP 측정 뇌실외배액 배액 높이 동영상 업무동영상 교육영상 EVD 간호 핵심 뇌졸중 총정리 뇌출혈 총정리",
       "videos": [
@@ -32103,7 +32386,11 @@ window.ICU_MANUAL_DB = {
         "산소화 평가",
         "환기 평가",
         "ABGA 산소화·환기·중환자실 간호",
-        "호흡 / ABGA / 중환자실"
+        "호흡 / ABGA / 중환자실",
+        "shock",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "PaO₂, SaO₂, PaCO₂, HCO₃⁻, lactate를 환자상태·산소요법·인공호흡기와 연결해 보는 중환자실 간호 카드입니다.",
@@ -32280,7 +32567,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 PaO2 저하 PaCO2 상승 CO2 retention ARDS PEEP minute ventilation tidal volume SpO2 I/O 쇼크 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 간호 산소화 평가 환기 평가 ABGA 산소화·환기·중환자실 간호 호흡 / ABGA / 중환자실 ABGA 산염기 장애 판독 인공호흡기 사용법 중환자실 모니터링 EVD ICP CVP 총정리",
       "prefer_media_first": true
@@ -33514,7 +33812,11 @@ window.ICU_MANUAL_DB = {
         "계통별 질병",
         "과별 질병 정리",
         "중환자실 대상 환자 질병 총정리: 계통별 빠른 분류",
-        "중환자실 질병 / 계통별"
+        "중환자실 질병 / 계통별",
+        "shock",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 만나는 질환을 순환계, 호흡기계, 뇌신경계, 소화기계, 신장/비뇨계, 내분비/대사, 감염/패혈증, 혈액/응고, 외상/수술 후로 분류한 전체 지도입니다.",
@@ -33674,7 +33976,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
       "prefer_media_first": true
@@ -33715,7 +34028,12 @@ window.ICU_MANUAL_DB = {
         "대동맥박리",
         "심혈관 질환",
         "순환계 질환 총정리: ACS·심부전·쇼크·부정맥",
-        "중환자실 질병 / 순환계"
+        "중환자실 질병 / 순환계",
+        "shock",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "순환계 중환자는 심근허혈, 심부전, 쇼크, 부정맥, 폐색전증을 빠르게 구분하고 ECG·혈압·산소화·lactate 변화를 동시에 보는 것이 핵심입니다.",
@@ -33855,9 +34173,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "순환계 심혈관 AMI ACS STEMI NSTEMI 심근경색 협심증 심부전 폐부종 심인성 쇼크 부정맥 AF VT VF PE 폐색전증 대동맥박리 심혈관 질환 순환계 질환 총정리: ACS·심부전·쇼크·부정맥 중환자실 질병 / 순환계 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
+      "search_index": "순환계 심혈관 AMI ACS STEMI NSTEMI 심근경색 협심증 심부전 폐부종 심인성 쇼크 부정맥 AF VT VF PE 폐색전증 대동맥박리 심혈관 질환 순환계 질환 총정리: ACS·심부전·쇼크·부정맥 중환자실 질병 / 순환계 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V74_ICU_RESPIRATORY",
@@ -34253,6 +34583,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -34751,7 +35093,10 @@ window.ICU_MANUAL_DB = {
         "대량출혈",
         "massive bleeding",
         "MTP",
-        "항생제"
+        "shock",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -34892,28 +35237,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "Shock",
+            "저혈압",
+            "쇼크"
           ]
         }
       ],
@@ -34954,7 +35284,11 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "횡문근융해",
         "외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증",
-        "중환자실 질병 / 외상·수술 후"
+        "중환자실 질병 / 외상·수술 후",
+        "shock",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "외상·수술 후 중환자는 출혈, 배액량, 신경혈관 사정, 통증, 감염, DVT/PE, 횡문근융해와 AKI 위험을 반복 확인해야 합니다.",
@@ -35087,9 +35421,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "외상 수술 후 post op post-op trauma 배액관 JP H-vac bleeding 출혈 rhabdomyolysis compartment syndrome 폐색전증 DVT 감염 통증 쇼크 횡문근융해 외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증 중환자실 질병 / 외상·수술 후 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리"
+      "search_index": "외상 수술 후 post op post-op trauma 배액관 JP H-vac bleeding 출혈 rhabdomyolysis compartment syndrome 폐색전증 DVT 감염 통증 쇼크 횡문근융해 외상·수술 후 중환자 총정리: 출혈·배액·통증·합병증 중환자실 질병 / 외상·수술 후 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
+      "prefer_media_first": true
     },
     {
       "id": "V75_DIABETES_OVERVIEW",
@@ -36933,7 +37279,12 @@ window.ICU_MANUAL_DB = {
         "fluid resuscitation",
         "maintenance fluid",
         "중환자실 수액 요법 총정리: 종류·적응증·모니터링·간호",
-        "약물 / 중환자실"
+        "약물 / 중환자실",
+        "shock",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "중환자실 수액요법의 5R, 수액 종류별 특징, 사용 상황, 주의사항, 모니터링과 재평가 기준을 정리한 카드입니다.",
@@ -37262,6 +37613,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
         {
           "src": "selected_manual_images/v76_icu_fluid_therapy_summary.png",
           "alt": "중환자실 수액 요법 총정리 이미지",
@@ -37679,7 +38040,13 @@ window.ICU_MANUAL_DB = {
         "LOC 사정",
         "의식수준 단계",
         "GCS·의식수준 LOC 사정표",
-        "신경계 / 중환자 사정"
+        "신경계 / 중환자 사정",
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ETT",
+        "기도삽관",
+        "삽관 절차"
       ],
       "urgency": "high",
       "summary": "GCS Eye/Verbal/Motor 세부점수와 LOC 단계를 표로 확인하고, 기관삽관·진정 상태에서도 기록 원칙을 유지하도록 정리한 카드입니다.",
@@ -37918,6 +38285,15 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -38520,6 +38896,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -39482,7 +39870,13 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting"
+        "monitor setting",
+        "intubation",
+        "기관삽관",
+        "삽관",
+        "ETT",
+        "기도삽관",
+        "삽관 절차"
       ],
       "urgency": "high",
       "summary": "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
@@ -39605,19 +39999,20 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
           "alt": "X-ray line/tube/catheter 예시",
           "caption": "X-ray line/tube/catheter 예시",
           "search_terms": [
             "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
           ]
         }
       ],
@@ -42823,7 +43218,9 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "MAP·혈압 저하 시 첫 평가",
         "순환 / 혈역학",
-        "V80"
+        "V80",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -43030,6 +43427,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -44245,7 +44652,10 @@ window.ICU_MANUAL_DB = {
         "obstructive shock",
         "쇼크 유형별 관찰 포인트",
         "순환 / 쇼크",
-        "V80"
+        "V80",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -44457,6 +44867,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -44492,7 +44912,12 @@ window.ICU_MANUAL_DB = {
         "감염",
         "패혈증 의심 시 순환·검사·보고 흐름",
         "순환 / 패혈증",
-        "V80"
+        "V80",
+        "shock",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "high",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -44693,28 +45118,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "Shock",
+            "저혈압",
+            "쇼크"
           ]
         }
       ],
@@ -55434,6 +55844,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -57539,7 +57958,9 @@ window.ICU_MANUAL_DB = {
         "BVM",
         "suction",
         "ETCO2",
-        "tube 고정"
+        "tube 고정",
+        "기도삽관",
+        "삽관 절차"
       ],
       "urgency": "high",
       "summary": "기관내관 끝 위치와 carina 기준을 교육용 이미지로 설명하는 카드입니다.",
@@ -57566,6 +57987,15 @@ window.ICU_MANUAL_DB = {
         "중환자 기도관리 일반 원칙"
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -60494,7 +60924,12 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "응급상황 / CPR"
+        "응급상황 / CPR",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "routine",
       "summary": "CPR 상황에서 간호사 역할을 확인하는 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -60539,6 +60974,16 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -60930,7 +61375,11 @@ window.ICU_MANUAL_DB = {
         "응급상황 목차",
         "emergency nursing",
         "응급간호 총정리",
-        "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure"
+        "응급간호 목차 1차 정리: CPR·Code blue·E-cart·Intubation·Shock·Seizure",
+        "E-CART",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "응급상황 목차를 한 카드에 묶어 CPR, Code blue, E-cart, Intubation, Shock, Seizure, 기록/보호자 응대를 연결합니다.",
@@ -61028,6 +61477,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61065,7 +61524,11 @@ window.ICU_MANUAL_DB = {
         "shock 버튼",
         "패드 위치",
         "제세동기 사용법: 패드 부착·리듬 확인·Shock 안전확인",
-        "응급간호"
+        "응급간호",
+        "쇼크",
+        "저혈압",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "emergency",
       "summary": "제세동기 사용 흐름과 패드 위치, shock 전후 안전확인을 표와 이미지로 정리한 카드입니다.",
@@ -61181,6 +61644,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61218,7 +61691,9 @@ window.ICU_MANUAL_DB = {
         "응급약물표",
         "emergency drugs",
         "E-cart 응급약물표: CPR·Shock·Seizure·Intubation",
-        "응급간호"
+        "응급간호",
+        "E-CART",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "E-cart 응급약물을 CPR, shock, 경련, intubation 상황별로 한눈에 보이게 정리한 카드입니다.",
@@ -61307,6 +61782,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61345,7 +61830,9 @@ window.ICU_MANUAL_DB = {
         "저혈압 초기대응",
         "shock nursing",
         "Shock 환자 초기 대응: ABCDE·산소·IV·수액/승압제 준비",
-        "응급간호"
+        "응급간호",
+        "shock 환자",
+        "쇼크 초기대응"
       ],
       "urgency": "emergency",
       "summary": "Shock 환자 발견 시 ABCDE, 산소, IV line, 수액/승압제 준비, 원인 확인, 기록을 단계별로 정리한 카드입니다.",
@@ -61422,6 +61909,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61582,6 +62079,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61621,7 +62130,9 @@ window.ICU_MANUAL_DB = {
         "ETT 준비",
         "Intubation 준비물·보조 절차: 검색 분리 개선 카드",
         "응급간호",
-        "tube 고정"
+        "tube 고정",
+        "기도삽관",
+        "삽관 절차"
       ],
       "urgency": "emergency",
       "summary": "Intubation 검색 시 I/O·섭취량/배설량·전해질 카드가 섞이지 않도록 별도 검색 집중 카드를 추가하고 검색 제외어를 적용했습니다.",
@@ -61701,6 +62212,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61743,7 +62263,11 @@ window.ICU_MANUAL_DB = {
         "CPR 역할분담",
         "Dr call",
         "6114",
-        "전원절차"
+        "전원절차",
+        "E-CART",
+        "응급약물표",
+        "E-cart 약물",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "병동간호팀 간호사메뉴얼 142~149p의 응급간호 항목을 한 카드에서 볼 수 있게 정리했습니다.",
@@ -61825,6 +62349,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -61868,7 +62402,11 @@ window.ICU_MANUAL_DB = {
         "에피네프린",
         "황산마그네슘",
         "탄산수소나트륨",
-        "E-cart"
+        "E-cart",
+        "E-CART",
+        "응급약물",
+        "응급약물표",
+        "응급카트 약물"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 E-cart 약품 점검 기준과 응급약물 이름/용량/갯수를 표와 이미지로 정리했습니다.",
@@ -61959,6 +62497,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -62125,6 +62673,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -62240,6 +62797,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -62434,6 +63003,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
+        {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
           "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -62596,6 +63174,15 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -63620,6 +64207,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
         {
           "src": "selected_manual_images/v100_neuro_assessment_table.png",
           "alt": "신경계 사정 총정리 표 이미지",
@@ -67034,7 +67633,6 @@ window.ICU_MANUAL_DB = {
         "병동간호팀 업무매뉴얼 60 90",
         "약물",
         "마약",
-        "항생제",
         "수액",
         "수액 종류",
         "고위험 약물",
@@ -67144,28 +67742,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
           ]
         }
       ],
@@ -69741,7 +70326,6 @@ window.ICU_MANUAL_DB = {
         "Nebulizer",
         "High flow",
         "Ventilator",
-        "CRRT",
         "원내 전화번호",
         "EQUIP001",
         "EQUIP002",
@@ -69814,20 +70398,12 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
+            "CPR",
+            "응급상황"
           ]
         }
       ],
@@ -70626,8 +71202,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
-      "prefer_media_first": false,
+      "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "CPR",
+            "응급상황"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     },
@@ -70865,8 +71451,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
-      "prefer_media_first": false,
+      "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     },
@@ -71870,6 +72469,152 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [],
       "prefer_media_first": false,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V116_EMERGENCY_OVERVIEW_HUB",
+      "category": "1. 응급상황",
+      "title": "응급상황 총정리: CPR · E-CART 응급약물 · Shock · Intubation",
+      "aliases": [
+        "응급상황",
+        "CPR",
+        "E-CART",
+        "응급약물표",
+        "Shock",
+        "Intubation",
+        "코드블루"
+      ],
+      "search_terms": [
+        "응급상황",
+        "CPR",
+        "코드블루",
+        "E-CART",
+        "E-cart",
+        "응급카트",
+        "응급약물",
+        "응급약물표",
+        "Shock",
+        "쇼크",
+        "저혈압",
+        "Intubation",
+        "기관삽관",
+        "삽관",
+        "제세동기",
+        "Defibrillator"
+      ],
+      "urgency": "high",
+      "summary": "응급상황 파트의 교육용 입구 카드입니다. CPR, E-CART 응급약물, shock 초기대응, intubation 절차를 한눈에 확인합니다.",
+      "indications": [
+        "응급상황 신규교육",
+        "코드블루 전후 역할 확인",
+        "E-cart/응급약물/삽관 준비 확인"
+      ],
+      "preparation": [
+        "모니터/산소/흡인/IV route/E-CART/제세동기 준비 상태 확인"
+      ],
+      "steps": [
+        "환자 반응과 호흡/맥박 확인",
+        "도움 요청 및 코드블루 방송",
+        "역할분담 후 CPR/airway/drug/record 수행",
+        "ROSC 또는 상황 종료 후 기록과 물품 보충"
+      ],
+      "warnings": [
+        "응급상황에서는 담당의 지시와 원내 코드블루 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발견시간, CPR 시작/종료, rhythm, shock, 약물, ROSC, 보고내용 기록"
+      ],
+      "related": [
+        "MENU001",
+        "V95_E_CART_EMERGENCY_MED_TABLE",
+        "V95_SHOCK_INITIAL_RESPONSE",
+        "V95_INTUBATION_PREP_ASSIST"
+      ],
+      "source_refs": [
+        "V116 응급상황 정리"
+      ],
+      "tables": [
+        {
+          "title": "응급상황 검색 정상 기준",
+          "caption": "응급상황 검색 시 응급 관련 자료만 보여야 합니다.",
+          "headers": [
+            "검색어",
+            "보여야 하는 자료",
+            "보이면 안 되는 자료"
+          ],
+          "rows": [
+            [
+              "E-cart",
+              "E-CART 응급약물표, 응급약물, 응급카트",
+              "항생제 AST, 검체 bottle, 수혈표"
+            ],
+            [
+              "Intubation",
+              "삽관 준비물, 삽관 절차, tube 위치 확인",
+              "검체, 수혈, 항생제"
+            ],
+            [
+              "Shock",
+              "저혈압/MAP, 산소, IV route, fluid/vasopressor, 원인 확인",
+              "항생제 큰글씨 투여 흐름"
+            ],
+            [
+              "CPR",
+              "코드블루, 제세동기, CPR 역할, 응급약물",
+              "검체/수혈/항생제"
+            ]
+          ],
+          "search_terms": [
+            "응급상황 검색 기준"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v116_emergency_overview_large.png",
+          "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
+          "search_terms": [
+            "응급상황",
+            "CPR",
+            "E-CART",
+            "Shock",
+            "Intubation"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
+          "alt": "E-CART 응급약물표 큰글씨",
+          "caption": "E-CART 응급약물표 큰글씨",
+          "search_terms": [
+            "E-CART",
+            "응급약물표",
+            "응급약물"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v116_intubation_procedure_large.png",
+          "alt": "Intubation 시행 절차 큰글씨",
+          "caption": "Intubation 시행 절차 큰글씨",
+          "search_terms": [
+            "Intubation",
+            "기관삽관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v116_shock_initial_response_large.png",
+          "alt": "Shock 환자 초기대응 큰글씨",
+          "caption": "Shock 환자 초기대응 큰글씨",
+          "search_terms": [
+            "Shock",
+            "저혈압",
+            "쇼크"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     }
@@ -73445,5 +74190,16 @@ window.ICU_MANUAL_DB = {
     "fixed_respiratory_cards": 55,
     "menu_hub_cards_added": 16,
     "total_items": 451
+  },
+  "v116_update": {
+    "summary": "응급상황 파트 재검수. E-cart 검색에 응급약물표 연결, Intubation 절차 이미지 추가, Shock 검색에서 항생제 이미지 제거, 응급상황 hub 카드 추가.",
+    "changed_emergency_cards": 63,
+    "added_images": [
+      "v116_emergency_overview_large.png",
+      "v116_ecart_emergency_drugs_large.png",
+      "v116_intubation_procedure_large.png",
+      "v116_shock_initial_response_large.png"
+    ],
+    "total_items": 452
   }
 };
