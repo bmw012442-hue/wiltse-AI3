@@ -488,43 +488,18 @@ function cardSearchText(card) {
   ].join(" " );
 }
 
-
-function strictTopicAllowed(q, seed) {
-  if (/cpr|코드블루|code\s*blue|e-?cart|응급카트|응급약물|응급상황|응급간호|제세동|defib|shock|쇼크|intubation|기관삽관|삽관/.test(q)) {
-    return /cpr|코드블루|code\s*blue|e-?cart|응급카트|응급약물|응급상황|응급간호|제세동|defib|shock|쇼크|intubation|기관삽관|삽관|emergency|v95|v98|v116|menu001|drug005/.test(seed);
-  }
-  if (/ventilator|인공호흡기|dräger|draeger|savina/.test(q)) {
-    return /ventilator|인공호흡기|dräger|draeger|savina|호흡\/ventilator|v79|vent002|video|호흡기계/.test(seed);
-  }
-  if (/hfnc|airvo|high\s*flow|하이플로우/.test(q)) {
-    return /hfnc|airvo|high\s*flow|하이플로우|산소요법|o2 간호|vent005|호흡/.test(seed);
-  }
-  if (/suction|흡인|흡입간호|closed\s*suction/.test(q)) {
-    return /suction|흡인|흡입간호|closed\s*suction|기관흡인|v79_detail_06|호흡/.test(seed);
-  }
-  if (/tracheostomy|기관절개|기관절개관|t-?tube|portex|tracoe|koken|montgomery/.test(q)) {
-    return /tracheostomy|기관절개|기관절개관|t-?tube|portex|tracoe|koken|montgomery|proc011|upd43/.test(seed);
-  }
-  if (/abga|allen\s*test|혈액가스/.test(q)) {
-    return /abga|allen\s*test|혈액가스|lab003|v72|산소화|호흡/.test(seed);
-  }
-  if (/뇌경색|뇌졸중|뇌출혈|stroke|ich|sah/.test(q)) {
-    return /뇌경색|뇌졸중|뇌출혈|stroke|ich|sah|신경|neuro|v69|v74|brain/.test(seed);
-  }
-  if (/csr|공급실|소독기구|멸균물품|suture\s*set|dressing\s*set|forcep|kelly/.test(q)) {
-    return /csr|공급실|소독기구|멸균물품|suture\s*set|dressing\s*set|forcep|kelly|sterile|v106_csr|v121_csr/.test(seed);
-  }
-  if (/보조기|brace|splint|l-?sling|atlas/.test(q)) {
-    return /보조기|brace|splint|l-?sling|atlas|v101_brace|v102|ns\/os|수술/.test(seed);
-  }
-  return true;
-}
-
 function scoreCard(query, card) {
   const q = normalizeText(query);
   if (!q || card.search_hidden || card.internal_only) return 0;
-  const topicSeed = normalizeText([card.id || "", card.title || "", card.category || "", (card.aliases || []).join(" "), (card.search_terms || []).join(" "), card.summary || ""].join(" "));
-  if (!strictTopicAllowed(q, topicSeed)) return 0;
+
+  const topicSeed = normalizeText([
+    card.id || "",
+    card.title || "",
+    (card.aliases || []).join(" "),
+    (card.search_terms || []).join(" "),
+    card.summary || "",
+    card.search_index || ""
+  ].join(" "));
 
   const topicRules = [
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
