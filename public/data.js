@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.18.0-v118-respiratory-search-audit",
+    "version": "2.19.0-v119-hide-audit-aline-circulation",
     "language": "ko",
-    "source": "V117 기반 + 호흡기계 검색어별 검수 추가: Ventilator, suction, tracheostomy, HFNC, ABGA",
+    "source": "V118 기반 + 검수용 카드 사용자 노출 제외 + A-line/순환 검색 무관 이미지 제거",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-23"
   },
@@ -101,7 +101,16 @@ window.ICU_MANUAL_DB = {
         "loading",
         "아그라스타트 용량",
         "tPA/PCI 후 아그라스타트주 사용법과 권장용량",
-        "약물 / 순환기"
+        "약물 / 순환기",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -485,28 +494,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -583,7 +577,16 @@ window.ICU_MANUAL_DB = {
         "헤파린 증량",
         "헤파린 감량",
         "헤파린 요법 노모그램(aPTT 기준 조절표)",
-        "약물 / 항응고 / 순환기"
+        "약물 / 항응고 / 순환기",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "한림헤파린나트륨주 25,000IU/5mL를 5DW 500mL에 혼합한 헤파린 요법에서 초기 주입속도와 aPTT 결과별 증량·감량 기준을 확인하는 카드입니다.",
@@ -927,7 +930,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "헤파린 heparin 노모그램 모노그램 nomogram 한림헤파린나트륨주 25000IU 25000U 5mL 5DW 5DW500 500ml aPTT APTT PTT 활성화 부분트롬보플라스틴시간 12unit/kg/hr 12u/kg/hr unit/kg/hr u/kg/hr bolus 1000unit 2000unit 60분 중단 감량 증량 목표수치 항응고 주입속도 mL/hr cc/hr 헤파린 요법 헤파린 노모그램 헤파린 모노그램 heparin nomogram 한림헤파린 한림헤파린나트륨 부분트롬보플라스틴 heparin mix 헤파린 mix 헤파린 주입속도 헤파린 증량 헤파린 감량 헤파린 요법 노모그램(aPTT 기준 조절표) 약물 / 항응고 / 순환기 아그라스타트주 사용법과 권장용량 주요 약물 약속처방 Mix 법 정맥로 확보 수혈 절차",
       "prefer_media_first": true
@@ -1178,7 +1192,18 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "약물/Mix/심혈관",
       "search_terms": [
         "Nitroglycerine / NTG",
@@ -1193,10 +1218,20 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
-      "search_index": "Nitroglycerine / NTG 약물 / 수액 / 마약 약물/Mix/심혈관 니트로 Nitroglycerine 니트로링구알 NTG 흉통 BP control 약물 수액 마약 v8_final_reviewed"
+      "search_index": "Nitroglycerine / NTG 약물 / 수액 / 마약 약물/Mix/심혈관 니트로 Nitroglycerine 니트로링구알 NTG 흉통 BP control 약물 수액 마약 v8_final_reviewed",
+      "prefer_media_first": true
     },
     {
       "id": "DRUG004",
@@ -1265,6 +1300,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -1306,7 +1351,16 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed",
         "쇼크",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Norepinephrine / 노르핀 약물 / 수액 / 마약 약물/Mix/승압제 노르핀 Norepinephrine NE norepi 승압제 저혈압 shock 노르에피 levophed norepi mix 승압제 mix 약물 수액 마약 v8_final_reviewed",
@@ -1367,6 +1421,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -1403,7 +1467,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Epinephrine / 에피네프린 응급상황 약물/Mix/응급 에피 Epinephrine Epi CPR 심정지 code blue 에피네프린 v8_final_reviewed",
@@ -1462,6 +1535,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -1498,7 +1581,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Vasopressin / 바소프레신 약물 / 수액 / 마약 약물/Mix/승압제 바소 Vasopressin 바소프레신 승압제 shock 약물 수액 마약 v8_final_reviewed",
@@ -1931,7 +2023,18 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "약물/Mix/BP control",
       "search_terms": [
         "Nicardipine / Perdipine",
@@ -1945,10 +2048,20 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
-      "search_index": "Nicardipine / Perdipine 약물 / 수액 / 마약 약물/Mix/BP control 페르디핀 Nicardipine Perdipine BP control 혈압 약물 수액 마약 v8_final_reviewed"
+      "search_index": "Nicardipine / Perdipine 약물 / 수액 / 마약 약물/Mix/BP control 페르디핀 Nicardipine Perdipine BP control 혈압 약물 수액 마약 v8_final_reviewed",
+      "prefer_media_first": true
     },
     {
       "id": "DRUG013",
@@ -2000,7 +2113,18 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "약물/Mix/BP control",
       "search_terms": [
         "Labetalol / 라베신",
@@ -2013,7 +2137,16 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Labetalol / 라베신 약물 / 수액 / 마약 약물/Mix/BP control 라베신 Labetalol 혈압 BP control 약물 수액 마약 v8_final_reviewed",
@@ -2402,7 +2535,18 @@ window.ICU_MANUAL_DB = {
         "업무 지침 매뉴얼(교육전담)"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "약물/Mix/승압제",
       "search_terms": [
         "Dopamine / 도파민",
@@ -2414,10 +2558,20 @@ window.ICU_MANUAL_DB = {
         "약물",
         "수액",
         "마약",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
-      "search_index": "Dopamine / 도파민 약물 / 수액 / 마약 약물/Mix/승압제 도파민 Dopamine 승압제 약물 수액 마약 v8_final_reviewed"
+      "search_index": "Dopamine / 도파민 약물 / 수액 / 마약 약물/Mix/승압제 도파민 Dopamine 승압제 약물 수액 마약 v8_final_reviewed",
+      "prefer_media_first": true
     },
     {
       "id": "DRUG019",
@@ -3072,6 +3226,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -3113,7 +3277,16 @@ window.ICU_MANUAL_DB = {
         "업무",
         "상세",
         "v11_source_enhanced",
-        "routine"
+        "routine",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Night routine / 나이트 업무 상세 Routine Routine/Night Night 나이트 initial 환자분류 화재분류 식이 액팅 lab 제세동기 BST 정도관리 야간업무 나이트업무 밤번 N duty 자정이후 채혈접수업무 식이입력 업무 상세 v11_source_enhanced routine Day routine / 데이 업무 Evening routine / 이브닝 업무",
@@ -3257,19 +3430,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -3291,7 +3458,16 @@ window.ICU_MANUAL_DB = {
         "assessment",
         "ICU",
         "v8_final_reviewed",
-        "신경계 사정 가이드"
+        "신경계 사정 가이드",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Initial assessment / ICU 라운딩 Routine Routine/Initial initial 라운딩 GCS Motor LOC Line Foley Vent C-line A-line assessment ICU v8_final_reviewed 신경계 사정 가이드",
@@ -3353,7 +3529,18 @@ window.ICU_MANUAL_DB = {
         "윌스 ICU AI 업무 매뉴얼 2026-06-06"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "Routine/I/O",
       "search_terms": [
         "I/O 입력과 마감",
@@ -3367,7 +3554,16 @@ window.ICU_MANUAL_DB = {
         "infusion volume",
         "입력과",
         "마감",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "I/O 입력과 마감 Routine Routine/I/O I/O input output 인풋아웃풋 배액 Foley infusion volume 입력과 마감 v8_final_reviewed",
@@ -3377,7 +3573,8 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "ROUTINE007",
@@ -3639,19 +3836,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -3666,7 +3857,16 @@ window.ICU_MANUAL_DB = {
         "Vent",
         "C-line",
         "입력",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Bundle 입력 Routine Routine/Bundle Bundle 중심정맥관 Foley Vent C-line 입력 v8_final_reviewed",
@@ -4714,40 +4914,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -4766,7 +4939,16 @@ window.ICU_MANUAL_DB = {
         "기본",
         "검사",
         "검체",
-        "v8_final_reviewed"
+        "v8_final_reviewed",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "채혈검사 기본 검사 / 검체 검사/채혈 채혈 Lab A-line C-line regurge shooter 채혈검사 기본 검사 검체 v8_final_reviewed",
@@ -4833,6 +5015,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -4846,22 +5038,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
             "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
           ]
         }
       ],
@@ -4888,7 +5064,16 @@ window.ICU_MANUAL_DB = {
         "동영상",
         "업무동영상",
         "교육영상",
-        "Allen test"
+        "Allen test",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA 채혈/검사 검사 / 검체 검사/ABGA ABGA A-line arterial blood gas 혈가스 채혈 검사 검체 v8_final_reviewed ABGA 해석 4단계 공식 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상",
@@ -6259,7 +6444,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "original_category": "수혈",
       "search_terms": [
         "수혈 절차 상세",
@@ -6306,7 +6502,16 @@ window.ICU_MANUAL_DB = {
         "전자동의서",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
@@ -6579,36 +6784,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -6648,7 +6830,16 @@ window.ICU_MANUAL_DB = {
         "재시작",
         "새 kit setting, 기능테스트, rinse, line 색상 확인",
         "관찰",
-        "BP, pressure, alarm, UF 상태 확인"
+        "BP, pressure, alarm, UF 상태 확인",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "CRRT Return / Kit change 상세 CRRT / 신장 CRRT return 리턴 kit change filter TMP access pressure 씨알알티 circuit change filter change return blood 혈액재주입 kit 교체 CRRT 알람 TMP 상승 return pressure Kit change 상세 신장 v11_source_enhanced CRRT Return / Kit change 핵심 확인 단계 확인사항 중단 전 CRRT I/O 끊기, pressure/alarm 확인 NS 500ml 연결, 3-way 방향 확인, 혈액 재주입 분리 Return 완료 후 환자와 장비 분리 재시작 새 kit setting, 기능테스트, rinse, line 색상 확인 관찰 BP, pressure, alarm, UF 상태 확인 CRRT I/O, Return, Kit change, 처방, 차팅 상세",
@@ -12388,6 +12579,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
           "alt": "E-CART 응급약물표 큰글씨",
           "caption": "E-CART 응급약물표 큰글씨",
@@ -12420,7 +12621,16 @@ window.ICU_MANUAL_DB = {
         "응급약물",
         "응급약물표",
         "E-cart 약물",
-        "응급카트 약물"
+        "응급카트 약물",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "고주의 약물 관리 약물 / 수액 / 마약 약물/고주의약물 고주의약물 high alert 승압제 인슐린 항응고제 KCL 진정제 고주의 약물 관리 수액 마약 v10_master_30_categories",
@@ -12887,28 +13097,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -12925,7 +13120,16 @@ window.ICU_MANUAL_DB = {
         "Routine",
         "각과",
         "v10_master_30_categories",
-        "Bedside monitor 예시 사진"
+        "Bedside monitor 예시 사진",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "심장내과 Routine 각과 Routine 각과 Routine/심장내과 심장내과 CV angio CT EKG echo Routine 각과 v10_master_30_categories Bedside monitor 예시 사진 소화기내과 Routine 정형외과 Routine",
@@ -14087,6 +14291,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
           "alt": "E-CART 응급약물표 큰글씨",
           "caption": "E-CART 응급약물표 큰글씨",
@@ -14156,7 +14370,16 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "응급약물표",
         "E-cart 약물",
-        "응급카트 약물"
+        "응급카트 약물",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "응급상황: E-CART 응급약물·응급기구·응급간호·CPR 응급상황 검색 응급 E-CART E cart 이카트 응급카트 응급약물 응급기구 응급간호 CPR CPR 순서 CPR 방법 CPR 기록 code blue 코드블루 심정지 ROSC 에피 에피네프린 아트로핀 코다론 아데노신 비본 제세동 defib ambu I-gel Lucas 기관삽관 intubation airway crash cart CPR 모니터링 기록지 v14_v11_based_menu search_optimized LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -14547,6 +14770,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_hfnc_search_check.png",
           "alt": "HFNC / Airvo 검색 검수 기준",
           "caption": "HFNC / Airvo 검색 검수 기준",
@@ -14560,38 +14793,6 @@ window.ICU_MANUAL_DB = {
           "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
             "HFNC 적용·적응증·간호"
-          ]
-        },
-        {
-          "src": "bin000e.png",
-          "alt": "O2 간호 원본 페이지",
-          "caption": "O2 간호 원본 페이지",
-          "search_terms": [
-            "O2 간호 원본 페이지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
-          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
-          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
-          "search_terms": [
-            "원내 프로토콜 산소요법·Inspirometer 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_low_spo2_flow.png",
-          "alt": "산소포화도 저하 시 대처",
-          "caption": "산소포화도 저하 시 대처",
-          "search_terms": [
-            "산소포화도 저하 시 대처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
           ]
         }
       ],
@@ -14672,7 +14873,16 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ETT",
         "기도삽관",
-        "삽관 절차"
+        "삽관 절차",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "의료장비: Ventilator·High Flow·CRRT·Pump·제세동기·EKG 물품 / 장비 / 전화번호 의료장비 장비 ventilator vent 벤트 인공호흡기 high flow HFNC Airvo 하이플로우 CRRT 씨알알티 infusion pump 인퓨전펌프 syringe pump 시린지펌프 syriange pump 제세동기 defibrillator EKG ECG monitor 모니터 alarm 알람 pump 사용법 Infusion pump B.Braun pump alarm Low battery Occlusion Air alarm High Flow Pump 물품 전화번호 v14_v11_based_menu search_optimized Nebulizer 사용 참고 자료 산소요법(O2) 참고 표 Bedside monitor 예시 사진 ventilator 동영상 Ventilator 사용법 동영상 patient monitor 환자감시장치 환자 모니터 vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 Dräger Drager Savina 드레거 Dräger 인공호흡기 1 Dräger 인공호흡기 2 Infusion pump 사용법 Syringe pump 사용법",
@@ -15208,35 +15418,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v118_trach_search_check.png",
-          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
-          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Tracheostomy / 기관절개관 검색 검수 기준"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
-          "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
-          "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -15283,7 +15471,16 @@ window.ICU_MANUAL_DB = {
         "각종",
         "정리",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized 일반 상처 Dressing 수술 후 상처 Dressing",
@@ -15361,6 +15558,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -15416,7 +15623,16 @@ window.ICU_MANUAL_DB = {
         "업무",
         "근무별",
         "v14_v11_based_menu",
-        "search_optimized"
+        "search_optimized",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "DAY / EVENING / NIGHT 세부 업무 근무별 업무 근무업무 DAY 데이 EVENING 이브닝 NIGHT 나이트 근무 routine job 실무 업무 인계 라운딩 initial final 식이 액팅 처방정리 Cadex flow sheet I/O BST 제세동기 점검 채혈접수 환자분류 화재분류 약싸기 입원 시 절차 initial 후 전산 투약시간 교체주기 세부 업무 근무별 v14_v11_based_menu search_optimized",
@@ -15721,7 +15937,18 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "search_terms": [
         "I & O / 섭취량·배설량 / 전해질 교정",
         "I&O·전해질",
@@ -15756,7 +15983,16 @@ window.ICU_MANUAL_DB = {
         "v14_v11_based_menu",
         "search_optimized",
         "섭취량 및 배설량(I&O) 기록 그림",
-        "환자 유형별 I/O 불균형 예시 표"
+        "환자 유형별 I/O 불균형 예시 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "I & O / 섭취량·배설량 / 전해질 교정 I&O·전해질 I&O I/O IO intake output 섭취량 배설량 소변량 urine drain feeding 수액 infusion volume fluid balance 전해질 전해질 교정 K P Mg KCL Phosten MgCl replacement positive balance negative balance I/O 마감 HD I/O 교정 v14_v11_based_menu search_optimized 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
@@ -15832,7 +16068,18 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 V14 첫화면 카테고리"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "search_terms": [
         "Vital sign: BP·HR·RR·BT",
         "Vital Sign",
@@ -15856,7 +16103,16 @@ window.ICU_MANUAL_DB = {
         "sign",
         "v14_v11_based_menu",
         "search_optimized",
-        "Vital sign"
+        "Vital sign",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Vital sign: BP·HR·RR·BT Vital Sign vital V/S 활력징후 BP 혈압 HR 맥박 RR 호흡수 BT 체온 fever hypotension hypertension tachycardia bradycardia SpO2 saturation sign v14_v11_based_menu search_optimized Vital sign",
@@ -15931,6 +16187,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -15944,14 +16210,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
             "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
           ]
         }
       ],
@@ -15988,7 +16246,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA: 혈액가스 분석과 질환 ABGA 혈액가스 혈액가스 분석 arterial blood gas pH PaCO2 PaO2 HCO3 SaO2 lactate acidosis alkalosis respiratory acidosis metabolic acidosis CO2 retention hypoxia 산염기 분석과 질환 v14_v11_based_menu search_optimized ABGA 해석 4단계 공식 ABGA 대표 질환 예시 동맥혈 ABGA 수행절차 ABGA 이상 시 단계별 수행 calibration 캘리브레이션 ABGA calibration A-line 검체 동영상 업무동영상 교육영상",
@@ -16349,11 +16616,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Ventilator 검색 검수 기준"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -16362,30 +16631,6 @@ window.ICU_MANUAL_DB = {
           "caption": "호흡기계 종합 개요",
           "search_terms": [
             "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
-          "search_terms": [
-            "Ventilator 기본 모드 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
           ]
         },
         {
@@ -16436,7 +16681,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상",
@@ -16985,6 +17239,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_hfnc_search_check.png",
           "alt": "HFNC / Airvo 검색 검수 기준",
           "caption": "HFNC / Airvo 검색 검수 기준",
@@ -16998,38 +17262,6 @@ window.ICU_MANUAL_DB = {
           "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
             "HFNC 적용·적응증·간호"
-          ]
-        },
-        {
-          "src": "bin000e.png",
-          "alt": "O2 간호 원본 페이지",
-          "caption": "O2 간호 원본 페이지",
-          "search_terms": [
-            "O2 간호 원본 페이지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
-          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
-          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
-          "search_terms": [
-            "원내 프로토콜 산소요법·Inspirometer 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_low_spo2_flow.png",
-          "alt": "산소포화도 저하 시 대처",
-          "caption": "산소포화도 저하 시 대처",
-          "search_terms": [
-            "산소포화도 저하 시 대처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_trach_search_check.png",
-          "alt": "Tracheostomy / 기관절개관 검색 검수 기준",
-          "caption": "Tracheostomy / 기관절개관 검색 검수 기준",
-          "search_terms": [
-            "Tracheostomy / 기관절개관 검색 검수 기준"
           ]
         }
       ],
@@ -17082,7 +17314,16 @@ window.ICU_MANUAL_DB = {
         "3일",
         "7일",
         "14일",
-        "4일"
+        "4일",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 교체 주기 정리 Routine Routine/교체주기 교체주기 교체 주기 Q-syte q site nebulizer vent circuit 박테리아 필터 엔코 HFNC CRRT kit IV A-line kit C-line dx PICC dx closed suction catheter feeding bag T-tube portex 수요일 일요일 extension 3-way ICU 교체 주기 정리 v26_uploaded_manual_added manual_20260614 ICU 교체 주기 항목 3일 7일 14일 4일",
@@ -17411,27 +17652,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v118_suction_search_check.png",
-          "alt": "Suction / 흡인 검색 검수 기준",
-          "caption": "Suction / 흡인 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Suction / 흡인 검색 검수 기준"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
-          "alt": "흡인 간호 총정리",
-          "caption": "흡인 간호 총정리",
-          "search_terms": [
-            "흡인 간호 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
-          "alt": "원내 프로토콜 흡인간호 표",
-          "caption": "원내 프로토콜 흡인간호 표",
-          "search_terms": [
-            "원내 프로토콜 흡인간호 표"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -17495,7 +17722,16 @@ window.ICU_MANUAL_DB = {
         "specimen cup, suction line, ET PVC catheter, airway, N/S",
         "Thoracostomy set, chest tube 24Fr, chest bottle, chest stand",
         "EVD 배액관 비움",
-        "D-set, 베타딘, 멸균장갑, 거즈, 고무줄"
+        "D-set, 베타딘, 멸균장갑, 거즈, 고무줄",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "상황별 준비물: irrigation, C-line, suture, sputum cx, CTD, EVD 수술 / 시술 준비물/시술·배액관 상황별 준비 준비물 Bladder irrigation Subclavian insertion C-line insertion suture 준비 sputum cx CTD insertion NS OP drain EVD 배액관 tip cx 배액관 제거 배액관 삽입 thoracostomy chest tube 상황별 irrigation C-line suture sputum cx CTD EVD 수술 시술 v26_uploaded_manual_added manual_20260614 상황별 핵심 준비물 요약 상황 핵심 준비물 D-set, 곡반, N/S, enema syringe 50cc C-line catheter, suture set, sono probe cover, 리도카인, Tegaderm CHG specimen cup, suction line, ET PVC catheter, airway, N/S Thoracostomy set, chest tube 24Fr, chest bottle, chest stand EVD 배액관 비움 D-set, 베타딘, 멸균장갑, 거즈, 고무줄",
@@ -17858,6 +18094,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -17871,30 +18117,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -17950,7 +18172,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "검체 통과 채혈·ABGA 실무 검사 / 검체 검사·검체/검체통 검체통 검체 병 c-difficile CDT stool ob통 UA bottle Urine Analysis Urine Culture 코니컬튜브 슈터기 일반캐리어 오토캐리어 ABGA A-line 채혈 리거즈 regurge 바코드 발행 DIC 바코드 검체 통과 채혈 실무 검사 v26_uploaded_manual_added manual_20260614 검체통 종류 검체통/용기 C-difficile / CDT Stool OB통, 블랙 Urine Analysis / UA 투명한 뚜껑 긴 bottle 코니컬 튜브 투명: 일반캐리어 / 유색: 오토캐리어 calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 동영상 업무동영상 교육영상 ABGA 채혈/검사",
@@ -18520,7 +18751,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tags": [
         "I&O·전해질/I&O",
         "v26_uploaded_manual_added",
@@ -18573,7 +18815,16 @@ window.ICU_MANUAL_DB = {
         "Night",
         "21:00-06:00",
         "섭취량 및 배설량(I&O) 기록 그림",
-        "환자 유형별 I/O 불균형 예시 표"
+        "환자 유형별 I/O 불균형 예시 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "I/O 입력과 마감 상세 I&O·전해질 I&O·전해질/I&O I/O 마감 I/O 입력 섭취량 배설량 Parenteral Urine infusion pump volume 식사 100 400 Foley PO water inj 50cc FD feeding HD I/O Anti 입력 배액관 I/O 클램프 음압 재설정 positive balance 입력과 마감 상세 I&O 전해질 v26_uploaded_manual_added manual_20260614 Duty별 I/O 기준 Duty 시간 Day 06:00-13:00 Evening 13:00-21:00 Night 21:00-06:00 섭취량 및 배설량(I&O) 기록 그림 환자 유형별 I/O 불균형 예시 표",
@@ -18583,7 +18834,8 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ett",
         "기도삽관"
-      ]
+      ],
+      "prefer_media_first": true
     },
     {
       "id": "LINE030",
@@ -18957,7 +19209,18 @@ window.ICU_MANUAL_DB = {
         "간호기록 작성 원칙"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tags": [
         "간호기록",
         "v26_uploaded_manual_added",
@@ -19000,7 +19263,16 @@ window.ICU_MANUAL_DB = {
         "기록",
         "처방",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 간호기록 체크리스트 EMR / 기록 / 처방 간호기록 차팅 네뷸 차팅 prn 차팅 산소 변경 약 용량 변경 회진 면회 지참약 식별 차팅 검사결과 Notify 검사결과 복사 OP 후 Dressing 사진 IPC 기록 Lasix BP 페치딘 기록 RI 2시간 F/U hourly check line 제거 차팅 Nebulizer 기록 Feeding 기록 ICU 체크리스트 EMR 기록 처방 v26_uploaded_manual_added manual_20260614 간호기록 작성 원칙",
@@ -19432,40 +19704,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -19517,7 +19762,16 @@ window.ICU_MANUAL_DB = {
         "노랑",
         "검정",
         "초록",
-        "Bedside monitor 예시 사진"
+        "Bedside monitor 예시 사진",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "EKG 촬영과 리드 부착 검사 / 검체 검사/EKG EKG ECG 심전도 EKG 접수 부서접수 환자 선택 전극 연결 record network RU LU RL LL 빨노검초 액와중앙선 EKG Scan 침습적 촬영과 리드 부착 검사 검체 v26_uploaded_manual_added manual_20260614 사지 리드 색상 위치 색상 빨강 노랑 검정 초록 Bedside monitor 예시 사진",
@@ -19594,27 +19848,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -19660,7 +19900,15 @@ window.ICU_MANUAL_DB = {
         "실무",
         "Tip",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "Injection / 3-way / IVS 실무 Tip 술기 술기/Injection inject injection MIV IVS 3-way 3way bolus flushing micro syringe TPN Cefa 수혈 3way RI F/U 우리 스틴 페르디핀 mannitol IM 리거즈 PICC flushing A-line zeroing EVD zeroing 액팅체크 실무 Tip v26_uploaded_manual_added manual_20260614",
@@ -19942,27 +20190,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -20029,7 +20263,16 @@ window.ICU_MANUAL_DB = {
         "A-PLT",
         "PT/INR 이상",
         "1-2hr",
-        "Fibrinogen 감소"
+        "Fibrinogen 감소",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 실무 Tip과 혈액제제 종류 수혈 / 혈액 수혈 수혈 tip P-RBC 교차시험 ABO Rho irregular 혈액요청서 슈터기 진검실 혈액불출 수혈기록지 PC Cryo FFP APLT 페르시스 수혈 filter 페니라민 blood pumping A-PLT 250 CRYO 40 뮤코필터레이트 fibrinogen PT INR 실무 Tip과 혈액제제 종류 혈액 v26_uploaded_manual_added manual_20260614 혈액제제 종류와 투여 적응증 보관/온도 투여 기대효과 RBC Hb 감소 냉장 1.5-3hr PLT 감소 실온 Full drop A-PLT PT/INR 이상 1-2hr Fibrinogen 감소 혈액제제 요약",
@@ -20104,7 +20347,18 @@ window.ICU_MANUAL_DB = {
         "입퇴원 / 전원 / 전동 / 사망 업무"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tags": [
         "입퇴원·전원·사망",
         "v26_uploaded_manual_added",
@@ -20149,10 +20403,20 @@ window.ICU_MANUAL_DB = {
         "간호",
         "상세",
         "v26_uploaded_manual_added",
-        "manual_20260614"
+        "manual_20260614",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
-      "search_index": "입퇴원/전동/전원/사망 간호 상세 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 가퇴원 전동간호기록 전동 전원 전실 G/W 병동 퇴원 사망 이동서식 보호자 면담 병실료 병실정보 6043 6050 이송콜 산소탱크 자가약 전동기록지 I/O 마감 A-line 제거 EVD clamp SDD clamp 입퇴원 간호 상세 v26_uploaded_manual_added manual_20260614 입퇴원 / 전원 / 전동 / 사망 업무"
+      "search_index": "입퇴원/전동/전원/사망 간호 상세 입퇴원 / 전동 / 전원 / 사망 입퇴원·전원·사망 가퇴원 전동간호기록 전동 전원 전실 G/W 병동 퇴원 사망 이동서식 보호자 면담 병실료 병실정보 6043 6050 이송콜 산소탱크 자가약 전동기록지 I/O 마감 A-line 제거 EVD clamp SDD clamp 입퇴원 간호 상세 v26_uploaded_manual_added manual_20260614 입퇴원 / 전원 / 전동 / 사망 업무",
+      "prefer_media_first": true
     },
     {
       "id": "ICUINFO030",
@@ -20349,6 +20613,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
           "alt": "E-CART 응급약물표 큰글씨",
           "caption": "E-CART 응급약물표 큰글씨",
@@ -20425,7 +20699,16 @@ window.ICU_MANUAL_DB = {
         "응급약물",
         "응급약물표",
         "E-cart 약물",
-        "응급카트 약물"
+        "응급카트 약물",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "CPR 실무: Lucas, I-gel, Ambu, 기록 응급상황 응급상황/CPR CPR 실무 루카스 Lucas i-gel igel Ambu 6초마다 ROSC 2분마다 맥박 3-5분 에피 비본 N/S CPR 모니터링 기록지 J 사용약물 flow 기록 code blue CPR 실무 기록 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상 CPCR 심폐소생술 간호사 역할 CPR 간호사 역할 E-cart 동영상 업무동영상 교육영상 CPR quick card",
@@ -21461,7 +21744,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tags": [
         "CRRT",
         "v26_uploaded_manual_added",
@@ -21539,7 +21833,16 @@ window.ICU_MANUAL_DB = {
         "Pre 빨간색 / Post 파란색 연결",
         "Rinse / UF rinse 100% 이후",
         "환자 연결",
-        "처방: CRRT kit + NS500 + NS1L 확인"
+        "처방: CRRT kit + NS500 + NS1L 확인",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "CRRT I/O, Return, Kit change, 처방, 차팅 상세 CRRT / 신장 CRRT CRRT 상세 CRRT I/O CRRT return CRRT retrun Blood return 혈액재주입 Balance 치료종료 kit change Multifiltrate pro kit HOF 600 멀티빅 후탄 prefilter 압력 TMP BFR clot UF N/S 500 NS 1L KCL 포스텐 CRRT cath conti cath CRRT 차팅 Return Kit change 처방 차팅 상세 신장 v26_uploaded_manual_added manual_20260614 CRRT Return 순서 순서 내용 1 Blood return: NS 500 access line 3-way에 연결 후 full drop 2 치료종료 → 혈액재주입 → 확인 3 Balance 확인 및 적용시간 입력 4 NS 500은 5분 이내 들어갈 수 있어 앞에서 대기 5 Nacl 감지 또는 적당히 return 되면 clamp 후 종료 6 환자 disconnect 7 Kit 제거 8 전원 끄기 CRRT Kit change 오류 예방 위해 5분 뒤 전원 켜기 치료 유지 → 기능테스트 100% 후 OK Pre 빨간색 / Post 파란색 연결 Rinse / UF rinse 100% 이후 환자 연결 처방: CRRT kit + NS500 + NS1L 확인 CRRT Return / Kit change 상세",
@@ -22252,6 +22555,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -22265,30 +22578,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -22314,7 +22603,15 @@ window.ICU_MANUAL_DB = {
         "혈액가스",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA 채혈 / A-line 목적 검사 / 검체 ABGA 채혈 A-line 목적 동맥혈 arterial line Radial artery 검사 검체 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 calibration 캘리브레이션 ABGA calibration 혈액가스 동영상 업무동영상 교육영상 ABGA 채혈/검사",
@@ -22429,19 +22726,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -22477,7 +22768,14 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting"
+        "monitor setting",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
       "search_index": "A-line zeroing / 파형 확인 순환 / 모니터링 A-line zeroing 파형 확인 A-line zeroing overdamping underdamping MAP 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618) A-line 동영상 A-line 사용법 동영상 patient monitor 환자감시장치 환자 모니터 모니터 monitor vital monitor patient monitor 동영상 동영상 업무동영상 교육영상 central monitor centrial monitor 중앙 모니터 central monitor setting 모니터 세팅 monitor setting",
@@ -22616,7 +22914,18 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "search_terms": [
         "CVP 측정 / 정상범위 / 주의사항",
         "순환 / 모니터링",
@@ -22630,10 +22939,20 @@ window.ICU_MANUAL_DB = {
         "순환",
         "모니터링",
         "v43_uploaded_manual",
-        "추가 업무 매뉴얼(260618)"
+        "추가 업무 매뉴얼(260618)",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "standard_sections_ready": true,
-      "search_index": "CVP 측정 / 정상범위 / 주의사항 순환 / 모니터링 CVP 측정 정상범위 주의사항 중심정맥압 Central venous pressure 우심방 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618)"
+      "search_index": "CVP 측정 / 정상범위 / 주의사항 순환 / 모니터링 CVP 측정 정상범위 주의사항 중심정맥압 Central venous pressure 우심방 순환 모니터링 v43_uploaded_manual 추가 업무 매뉴얼(260618)",
+      "prefer_media_first": true
     },
     {
       "id": "UPD43___AST_1_5000",
@@ -24616,7 +24935,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 1~12번입니다.",
@@ -24661,6 +24989,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -24674,42 +25012,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -24757,7 +25059,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 13~24번입니다.",
@@ -24802,6 +25113,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -24815,42 +25136,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -24898,7 +25183,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 25~36번입니다.",
@@ -24943,6 +25237,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -24956,42 +25260,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -25039,7 +25307,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 37~48번입니다.",
@@ -25084,6 +25361,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -25097,42 +25384,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -25180,7 +25431,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 49~60번입니다.",
@@ -25225,6 +25485,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -25238,42 +25508,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -25321,7 +25555,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 61~72번입니다.",
@@ -25366,6 +25609,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -25379,42 +25632,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -25462,7 +25679,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "HWP 추출 이미지",
         "원본 이미지",
-        "그림 / 사진 / 표"
+        "그림 / 사진 / 표",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "추가 업무 매뉴얼 HWP에서 자동 추출된 이미지/표/그림 전체 중 73~77번입니다.",
@@ -25507,6 +25733,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -25520,42 +25756,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -26769,7 +26969,14 @@ window.ICU_MANUAL_DB = {
         "순환",
         "모니터링",
         "A-line 사용법 동영상",
-        "순환 / 모니터링"
+        "순환 / 모니터링",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "A-line 사용법과 관련 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -26806,7 +27013,18 @@ window.ICU_MANUAL_DB = {
         "Google Drive 링크 A-line 사용법.mp4"
       ],
       "tables": [],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1-wV8i1Va1h-LvNjTFU56PSBSXAdu2pOY/view?usp=drive_link",
@@ -26829,7 +27047,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "A-line A line A-line 사용법 A-line 동영상 arterial line A-line zeroing 제로잉 순환 모니터링 A-line 사용법 동영상 순환 / 모니터링"
+      "search_index": "A-line A line A-line 사용법 A-line 동영상 arterial line A-line zeroing 제로잉 순환 모니터링 A-line 사용법 동영상 순환 / 모니터링",
+      "prefer_media_first": true
     },
     {
       "id": "V65_CPCR_001",
@@ -27324,7 +27543,16 @@ window.ICU_MANUAL_DB = {
         "E-CART",
         "응급약물표",
         "E-cart 약물",
-        "응급카트 약물"
+        "응급카트 약물",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 정맥로 확보와 약물 투여 담당 간호사가 수행할 항목입니다.",
@@ -27400,6 +27628,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
           "alt": "E-CART 응급약물표 큰글씨",
           "caption": "E-CART 응급약물표 큰글씨",
@@ -27449,7 +27687,16 @@ window.ICU_MANUAL_DB = {
         "synchronized button",
         "심전도 리듬",
         "CPCR 모니터링/제세동기 담당 간호사 체크리스트",
-        "응급상황"
+        "응급상황",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "CPCR 상황에서 모니터링과 제세동기 담당 간호사가 수행할 항목입니다.",
@@ -27536,6 +27783,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -28658,7 +28915,16 @@ window.ICU_MANUAL_DB = {
         "수술 후 간호",
         "감염 예방관리",
         "병동간호팀 간호사메뉴얼 2026.04.13",
-        "병동간호팀 간호사 매뉴얼"
+        "병동간호팀 간호사 매뉴얼",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼의 목차와 핵심 검색 연결 카드입니다. Duty 업무, 기본간호, 수혈, 호흡순환, 검체, 수술 전후, 감염관리 항목으로 검색되도록 반영했습니다.",
@@ -28831,27 +29097,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v118_suction_search_check.png",
-          "alt": "Suction / 흡인 검색 검수 기준",
-          "caption": "Suction / 흡인 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Suction / 흡인 검색 검수 기준"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
-          "alt": "흡인 간호 총정리",
-          "caption": "흡인 간호 총정리",
-          "search_terms": [
-            "흡인 간호 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
-          "alt": "원내 프로토콜 흡인간호 표",
-          "caption": "원내 프로토콜 흡인간호 표",
-          "search_terms": [
-            "원내 프로토콜 흡인간호 표"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -29071,7 +29323,16 @@ window.ICU_MANUAL_DB = {
         "brace",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -29218,28 +29479,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "search_terms": [
-            "항생제 계열"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
-          "search_terms": [
-            "항생제 투여"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -30459,7 +30705,16 @@ window.ICU_MANUAL_DB = {
         "EKG 해석",
         "P파 QRS T파",
         "심전도 해석 기본: 파형·정상범위·해석 순서",
-        "심혈관 / 심전도"
+        "심혈관 / 심전도",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "심전도 기본 파형 의미, 정상 범위, 해석 순서를 한눈에 보는 카드입니다. 초보자도 P파, PR, QRS, ST, T파를 순서대로 확인할 수 있게 정리했습니다.",
@@ -30661,9 +30916,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "심전도 ECG EKG 심전도 해석 심전도 기본 P파 QRS PR 간격 QT QTc ST 분절 T파 정상 심전도 ECG 해석 EKG 해석 P파 QRS T파 심전도 해석 기본: 파형·정상범위·해석 순서 심혈관 / 심전도 심방세동 심실빈맥 심실세동 허혈·경색 ECG 변화 심혈관 환자 간호 핵심"
+      "search_index": "심전도 ECG EKG 심전도 해석 심전도 기본 P파 QRS PR 간격 QT QTc ST 분절 T파 정상 심전도 ECG 해석 EKG 해석 P파 QRS T파 심전도 해석 기본: 파형·정상범위·해석 순서 심혈관 / 심전도 심방세동 심실빈맥 심실세동 허혈·경색 ECG 변화 심혈관 환자 간호 핵심",
+      "prefer_media_first": true
     },
     {
       "id": "V70_ECG_ARRHYTHMIA",
@@ -30696,7 +30963,16 @@ window.ICU_MANUAL_DB = {
         "VT VF ECG",
         "방실차단 ECG",
         "질환별 심전도 변화: 부정맥 핵심 정리",
-        "심혈관 / 심전도"
+        "심혈관 / 심전도",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "임상에서 자주 보는 부정맥의 리듬 특징, ECG 변화, 치료 방향을 표와 예시 파형으로 정리한 카드입니다.",
@@ -30855,9 +31131,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "부정맥 심전도 변화 ECG 변화 심방세동 심방조동 SVT 상심실성 빈맥 서맥 1도 AV block Mobitz I 완전방실차단 심실빈맥 심실세동 VF VT 부정맥 심전도 심방세동 심전도 VT VF ECG 방실차단 ECG 질환별 심전도 변화: 부정맥 핵심 정리 심혈관 / 심전도 심전도 해석 기본 허혈·경색 ECG 변화 심혈관 환자 간호 핵심 CPCR 절차"
+      "search_index": "부정맥 심전도 변화 ECG 변화 심방세동 심방조동 SVT 상심실성 빈맥 서맥 1도 AV block Mobitz I 완전방실차단 심실빈맥 심실세동 VF VT 부정맥 심전도 심방세동 심전도 VT VF ECG 방실차단 ECG 질환별 심전도 변화: 부정맥 핵심 정리 심혈관 / 심전도 심전도 해석 기본 허혈·경색 ECG 변화 심혈관 환자 간호 핵심 CPCR 절차",
+      "prefer_media_first": true
     },
     {
       "id": "V70_ECG_ISCHEMIA_ELECTROLYTE",
@@ -31080,7 +31368,16 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting"
+        "monitor setting",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "심혈관 환자를 볼 때 필요한 초기 사정, 모니터링, 즉시 보고 기준, 처치 보조, 약물 안전, 교육·기록을 정리한 카드입니다.",
@@ -31214,19 +31511,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -31349,7 +31640,15 @@ window.ICU_MANUAL_DB = {
         "트라거스",
         "EVD leveling",
         "ICP 측정",
-        "배액 높이"
+        "배액 높이",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer"
       ],
       "urgency": "high",
       "summary": "EVD, ICP, CVP의 목적·기준점·정상/주의 범위·위험·간호 핵심을 한 번에 비교하는 총정리 카드입니다.",
@@ -31490,19 +31789,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -31642,7 +31935,15 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "EVD 환자에서 반드시 확인해야 하는 레벨링, 배액, clamp, 감염예방, 즉시 보고 상황을 정리한 카드입니다.",
@@ -31825,7 +32126,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "EVD 뇌실외배액 External Ventricular Drain CSF drainage CSF 배액 Foramen of Monro 외이도 tragus 레벨링 zeroing clamp drainage chamber ICP monitoring 수두증 SAH 뇌출혈 EVD 간호 뇌실외배액 간호 EVD 배액 EVD level EVD clamp EVD 간호 핵심: 레벨링·배액·감염예방·보고 기준 신경계 / 순환 모니터링 ICP 트라거스 EVD leveling ICP 측정 배액 높이 동영상 업무동영상 교육영상 ICP 상승 간호 EVD · ICP · CVP 총정리 뇌출혈 총정리",
       "videos": [
@@ -31903,7 +32215,16 @@ window.ICU_MANUAL_DB = {
         "배액 높이",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "ICP 정상/주의 범위, 상승 징후, CPP 계산, 중환자실 간호·치료 보조 포인트를 정리한 카드입니다.",
@@ -32087,6 +32408,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -32164,7 +32495,13 @@ window.ICU_MANUAL_DB = {
         "CVP 간호",
         "CVP zeroing",
         "CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단",
-        "신경계 / 순환 모니터링"
+        "신경계 / 순환 모니터링",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형"
       ],
       "urgency": "high",
       "summary": "CVP 측정 기준점, zeroing, 파형 확인, 높고 낮을 때 의미, 간호 판단 포인트를 정리한 카드입니다.",
@@ -32339,9 +32676,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "CVP 중심정맥압 Central Venous Pressure CVC phlebostatic axis 4th intercostal space mid axillary line zeroing transducer a wave c wave v wave 우심방압 수액반응성 volume status CVP 간호 CVP zeroing CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단 신경계 / 순환 모니터링 EVD · ICP · CVP 총정리 심혈관 환자 간호 A-line 사용법"
+      "search_index": "CVP 중심정맥압 Central Venous Pressure CVC phlebostatic axis 4th intercostal space mid axillary line zeroing transducer a wave c wave v wave 우심방압 수액반응성 volume status CVP 간호 CVP zeroing CVP 총정리: Zeroing·Phlebostatic axis·파형·간호 판단 신경계 / 순환 모니터링 EVD · ICP · CVP 총정리 심혈관 환자 간호 A-line 사용법",
+      "prefer_media_first": true
     },
     {
       "id": "V72_ABGA_OVERVIEW",
@@ -32402,7 +32751,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "ABGA의 정상/참고값, 채혈 전후 체크, 빠른 해석 6단계, 즉시 보고 상황을 한 번에 정리한 카드입니다.",
@@ -32615,6 +32973,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -32628,22 +32996,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA 정상값과 결과 해석 기본",
           "search_terms": [
             "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
-          "search_terms": [
-            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -33017,7 +33369,16 @@ window.ICU_MANUAL_DB = {
         "shock",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "PaO₂, SaO₂, PaCO₂, HCO₃⁻, lactate를 환자상태·산소요법·인공호흡기와 연결해 보는 중환자실 간호 카드입니다.",
@@ -33196,6 +33557,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -33209,30 +33580,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA 원내 프로토콜 흐름",
           "search_terms": [
             "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
-          "search_terms": [
-            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -33297,7 +33644,16 @@ window.ICU_MANUAL_DB = {
         "A-line",
         "동영상",
         "업무동영상",
-        "교육영상"
+        "교육영상",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "대표 ABGA 결과 예시를 보고 산증/알칼리증을 구분하는 연습 카드와 채혈 후 간호 체크리스트입니다.",
@@ -33491,6 +33847,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -33504,30 +33870,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
-          "search_terms": [
-            "Ventilator 검색 검수 기준"
           ]
         }
       ],
@@ -34514,7 +34856,16 @@ window.ICU_MANUAL_DB = {
         "shock",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 만나는 질환을 순환계, 호흡기계, 뇌신경계, 소화기계, 신장/비뇨계, 내분비/대사, 감염/패혈증, 혈액/응고, 외상/수술 후로 분류한 전체 지도입니다.",
@@ -34674,7 +35025,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
       "prefer_media_first": true
@@ -34720,7 +35082,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "순환계 중환자는 심근허혈, 심부전, 쇼크, 부정맥, 폐색전증을 빠르게 구분하고 ECG·혈압·산소화·lactate 변화를 동시에 보는 것이 핵심입니다.",
@@ -34862,6 +35233,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -34875,30 +35256,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -35625,7 +35982,16 @@ window.ICU_MANUAL_DB = {
         "내분비",
         "대사",
         "신장·비뇨계/내분비·대사 질환 총정리",
-        "중환자실 질병 / 신장·대사"
+        "중환자실 질병 / 신장·대사",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "신장·대사 질환은 I/O, urine output, 전해질, 산염기, 혈당, fluid balance를 반복적으로 추적하는 것이 핵심입니다.",
@@ -35766,6 +36132,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -35779,59 +36155,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v74_neuro_digestive_renal_summary.png",
-          "alt": "뇌신경계 소화기계 신장계 중환자 질환 요약",
-          "caption": "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-          "search_terms": [
-            "뇌신경계 소화기계 신장계 중환자 질환 요약",
-            "뇌신경계·소화기계·신장계 주요 진단과 간호 포인트",
-            "신장",
-            "비뇨계",
-            "AKI",
-            "acute kidney injury",
-            "CRRT",
-            "HD",
-            "소변량",
-            "oliguria",
-            "hyperkalemia",
-            "hyponatremia",
-            "DKA",
-            "HHS",
-            "저혈당",
-            "고혈당",
-            "대사성 산증",
-            "전해질 이상",
-            "lactate",
-            "신장계",
-            "내분비",
-            "대사"
           ]
         }
       ],
@@ -35869,7 +36192,16 @@ window.ICU_MANUAL_DB = {
         "shock",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -36010,6 +36342,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -36061,7 +36403,16 @@ window.ICU_MANUAL_DB = {
         "shock",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "외상·수술 후 중환자는 출혈, 배액량, 신경혈관 사정, 통증, 감염, DVT/PE, 횡문근융해와 AKI 위험을 반복 확인해야 합니다.",
@@ -36195,6 +36546,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
@@ -36711,7 +37072,16 @@ window.ICU_MANUAL_DB = {
         "주사부위 순환",
         "인슐린 주사",
         "인슐린 종류·주사부위·당뇨 약물 총정리",
-        "내분비·대사 / 혈당·당뇨"
+        "내분비·대사 / 혈당·당뇨",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "인슐린 작용시간, 주사 부위 순환, 주요 당뇨약 계열과 간호 주의점을 정리한 카드입니다.",
@@ -36928,49 +37298,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v75_diabetes_insulin_summary.png",
-          "alt": "혈당 당뇨 인슐린 총정리 이미지",
-          "caption": "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "혈당 당뇨 인슐린 총정리 이미지",
-            "혈당·당뇨·인슐린 총정리: 진단, 목표, 인슐린, 약물, DKA/HHS, 중환자실 간호",
-            "인슐린",
-            "인슐린 종류",
-            "초속효",
-            "속효성",
-            "NPH",
-            "glargine",
-            "detemir",
-            "degludec",
-            "regular insulin",
-            "sliding scale",
-            "메트포르민",
-            "SGLT2",
-            "DPP4",
-            "GLP1",
-            "TZD",
-            "당뇨약",
-            "주사부위 순환",
-            "인슐린 주사",
-            "V75_INSULIN_AND_DIABETES_DRUGS",
-            "인슐린 종류·주사부위·당뇨 약물 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -37268,7 +37602,16 @@ window.ICU_MANUAL_DB = {
         "high-alert medication",
         "약품 총정리",
         "중환자실 약품 총정리: 고위험·고주의 약물 안전",
-        "약물 / 중환자실"
+        "약물 / 중환자실",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 사용하는 고위험·고주의 약물의 범주, 핵심 위험, 투약 전 확인사항과 즉시 보고 기준을 정리한 카드입니다.",
@@ -37530,7 +37873,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "중환자실 약품 ICU 약물 고위험 약물 고주의 약물 high alert 약품 안전 double check 투약오류 승압제 강심제 인슐린 heparin KCl 고농도 전해질 항부정맥제 마약 향정 high-alert medication 약품 총정리 중환자실 약품 총정리: 고위험·고주의 약물 안전 약물 / 중환자실 마약·향정·항생제 총정리 중환자실 수액 요법 총정리 ABGA 총정리 심전도 총정리 혈당·당뇨·인슐린 총정리",
       "prefer_media_first": true
@@ -38057,7 +38411,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중환자실 수액요법의 5R, 수액 종류별 특징, 사용 상황, 주의사항, 모니터링과 재평가 기준을 정리한 카드입니다.",
@@ -38386,6 +38749,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
@@ -40212,7 +40585,16 @@ window.ICU_MANUAL_DB = {
         "Refeeding syndrome",
         "TPN 모니터링",
         "재급식증후군·TPN 합병증 모니터링 총정리",
-        "영양 / 수액요법"
+        "영양 / 수액요법",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "재급식증후군 위험군, 시작 전·시작 후 모니터링, 대사성/간담도/감염성/기계적 합병증을 정리했습니다.",
@@ -40329,9 +40711,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": false
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "재급식증후군 refeeding refeeding syndrome TPN 합병증 저인산혈증 저칼륨혈증 저마그네슘혈증 TG 상승 LFT 상승 카테터 감염 Refeeding syndrome TPN 모니터링 재급식증후군·TPN 합병증 모니터링 총정리 영양 / 수액요법 전해질 이상 심전도 혈당·인슐린 수액요법"
+      "search_index": "재급식증후군 refeeding refeeding syndrome TPN 합병증 저인산혈증 저칼륨혈증 저마그네슘혈증 TG 상승 LFT 상승 카테터 감염 Refeeding syndrome TPN 모니터링 재급식증후군·TPN 합병증 모니터링 총정리 영양 / 수액요법 전해질 이상 심전도 혈당·인슐린 수액요법",
+      "prefer_media_first": true
     },
     {
       "id": "V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
@@ -40382,7 +40776,16 @@ window.ICU_MANUAL_DB = {
         "Drager",
         "드레거",
         "Dräger 인공호흡기 1",
-        "Dräger 인공호흡기 2"
+        "Dräger 인공호흡기 2",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중환자실에서 자주 보는 인공호흡기 기본 모드, 주요 설정, 알람 대응, 흡인·산소화 모니터링을 한 번에 정리한 카드입니다.",
@@ -40510,6 +40913,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -40523,38 +40936,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_suction_search_check.png",
-          "alt": "Suction / 흡인 검색 검수 기준",
-          "caption": "Suction / 흡인 검색 검수 기준",
-          "search_terms": [
-            "Suction / 흡인 검색 검수 기준"
           ]
         }
       ],
@@ -40698,7 +41079,15 @@ window.ICU_MANUAL_DB = {
         "삽관",
         "ETT",
         "기도삽관",
-        "삽관 절차"
+        "삽관 절차",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중환자실 혈압·MAP·맥박·소변량·CVP 등 기본 혈역학 자료를 통합해서 보는 방법과 쇼크 감시 포인트를 정리했습니다.",
@@ -40821,20 +41210,22 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
           "alt": "Intubation 시행 절차 큰글씨",
           "caption": "Intubation 시행 절차 큰글씨",
           "search_terms": [
             "Intubation",
             "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
           ]
         }
       ],
@@ -41505,7 +41896,16 @@ window.ICU_MANUAL_DB = {
         "중심정맥관",
         "배액관",
         "Line · Drain · Dressing · 소독기구 총정리",
-        "기구 / Line·Drain·Dressing"
+        "기구 / Line·Drain·Dressing",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "중심/말초 line, 배액관, dressing, 무균소독 도구의 기본 확인사항과 감염예방 포인트를 정리했습니다.",
@@ -41625,39 +42025,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "bin0001.png",
-          "alt": "CSR 기구 사진 1",
-          "caption": "CSR 기구 사진 1",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
-          "src": "bin0002.png",
-          "alt": "CSR 기구 사진 2",
-          "caption": "CSR 기구 사진 2",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
-          "src": "bin0003.png",
-          "alt": "CSR 기구 사진 3",
-          "caption": "CSR 기구 사진 3",
-          "search_terms": [
-            "CSR",
-            "공급실"
-          ]
-        },
-        {
-          "src": "bin0004.png",
-          "alt": "CSR 기구 사진 4",
-          "caption": "CSR 기구 사진 4",
-          "search_terms": [
-            "CSR",
-            "공급실"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -44340,7 +44714,16 @@ window.ICU_MANUAL_DB = {
         "순환 / 혈역학",
         "V80",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "MAP·혈압 저하 시 첫 평가 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -44548,6 +44931,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -44593,7 +44986,13 @@ window.ICU_MANUAL_DB = {
         "동맥압",
         "A-line Zeroing·Waveform·압력백 체크",
         "순환 / A-line",
-        "V80"
+        "V80",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "동맥압 파형",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "A-line Zeroing·Waveform·압력백 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -44782,9 +45181,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "A-line arterial line zeroing leveling waveform pressure bag transducer 동맥압 A-line Zeroing·Waveform·압력백 체크 순환 / A-line V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW"
+      "search_index": "A-line arterial line zeroing leveling waveform pressure bag transducer 동맥압 A-line Zeroing·Waveform·압력백 체크 순환 / A-line V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V80_DETAIL_03",
@@ -44808,7 +45219,15 @@ window.ICU_MANUAL_DB = {
         "C-line pressure",
         "CVP 측정·해석·라인 관리",
         "순환 / CVP",
-        "V80"
+        "V80",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "CVP 측정·해석·라인 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -45009,19 +45428,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -45053,7 +45466,16 @@ window.ICU_MANUAL_DB = {
         "pressor",
         "Vasopressor 사용 중 라인·펌프·혈압 목표 체크",
         "순환 / 승압제",
-        "V80"
+        "V80",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "Vasopressor 사용 중 라인·펌프·혈압 목표 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -45259,9 +45681,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "vasopressor norepinephrine dopamine dobutamine MAP target central line pump 승압제 노르에피 pressor Vasopressor 사용 중 라인·펌프·혈압 목표 체크 순환 / 승압제 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01"
+      "search_index": "vasopressor norepinephrine dopamine dobutamine MAP target central line pump 승압제 노르에피 pressor Vasopressor 사용 중 라인·펌프·혈압 목표 체크 순환 / 승압제 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V80_DETAIL_01",
+      "prefer_media_first": true
     },
     {
       "id": "V80_DETAIL_05",
@@ -45289,7 +45723,16 @@ window.ICU_MANUAL_DB = {
         "관류",
         "소변량·Lactate·I&O로 보는 순환 관류",
         "순환 / I&O 관류",
-        "V80"
+        "V80",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "소변량·Lactate·I&O로 보는 순환 관류 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -45499,19 +45942,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -45543,7 +45980,16 @@ window.ICU_MANUAL_DB = {
         "부정맥",
         "부정맥 발생 시 혈역학 확인",
         "순환 / 리듬변화",
-        "V80"
+        "V80",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "부정맥 발생 시 혈역학 확인 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -45742,9 +46188,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "arrhythmia AF VT SVT bradycardia tachycardia ECG hemodynamic instability 부정맥 부정맥 발생 시 혈역학 확인 순환 / 리듬변화 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V70_ECG_MONITORING"
+      "search_index": "arrhythmia AF VT SVT bradycardia tachycardia ECG hemodynamic instability 부정맥 부정맥 발생 시 혈역학 확인 순환 / 리듬변화 V80 V80_HEMODYNAMIC_MONITORING_OVERVIEW V70_ECG_MONITORING",
+      "prefer_media_first": true
     },
     {
       "id": "V80_DETAIL_07",
@@ -45775,7 +46233,16 @@ window.ICU_MANUAL_DB = {
         "V80",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "쇼크 유형별 관찰 포인트 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -45987,6 +46454,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
           "caption": "Shock 환자 초기대응 큰글씨",
@@ -46037,7 +46514,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -46237,6 +46723,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
@@ -46985,7 +47481,16 @@ window.ICU_MANUAL_DB = {
         "제거량",
         "CRRT 제거량·I/O·Balance 기록",
         "신장 / CRRT",
-        "V81"
+        "V81",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "CRRT 제거량·I/O·Balance 기록 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -47178,40 +47683,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -47470,7 +47948,16 @@ window.ICU_MANUAL_DB = {
         "산염기",
         "CRRT 중 전해질·산염기 모니터링",
         "신장 / CRRT",
-        "V81"
+        "V81",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "CRRT 중 전해질·산염기 모니터링 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -47683,6 +48170,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -47696,30 +48193,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -48015,7 +48488,16 @@ window.ICU_MANUAL_DB = {
         "체온저하",
         "CRRT 중 저혈압·출혈·체온저하 안전관리",
         "신장 / CRRT",
-        "V81"
+        "V81",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "CRRT 중 저혈압·출혈·체온저하 안전관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -48212,7 +48694,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "CRRT safety hypotension bleeding hypothermia anticoagulation CRRT 안전 저혈압 출혈 체온저하 CRRT 중 저혈압·출혈·체온저하 안전관리 신장 / CRRT V81 V81_RENAL_CRRT_OVERVIEW",
       "prefer_media_first": true
@@ -51678,7 +52171,16 @@ window.ICU_MANUAL_DB = {
         "출혈관찰",
         "시술·검사 후 출혈·통증·합병증 관찰",
         "검사 / 시술·수술",
-        "V83"
+        "V83",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "시술·검사 후 출혈·통증·합병증 관찰 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -51868,7 +52370,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "post procedure bleeding pain vital signs puncture site 시술후 검사후 출혈관찰 시술·검사 후 출혈·통증·합병증 관찰 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
       "prefer_media_first": true
@@ -52568,7 +53081,15 @@ window.ICU_MANUAL_DB = {
         "동맥라인",
         "A-line Dressing·Flush·채혈 관리",
         "기구 / Line·Drain·Dressing",
-        "V84"
+        "V84",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "A-line Dressing·Flush·채혈 관리 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52756,7 +53277,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
       "search_index": "A-line arterial line flush pressure bag blood sampling A-line 관리 arterial line care 동맥라인 A-line Dressing·Flush·채혈 관리 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
       "prefer_media_first": true
@@ -52783,7 +53315,16 @@ window.ICU_MANUAL_DB = {
         "소변백",
         "Foley catheter·Urine meter 감염예방과 소변량",
         "기구 / Line·Drain·Dressing",
-        "V84"
+        "V84",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "Foley catheter·Urine meter 감염예방과 소변량 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -52971,9 +53512,21 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "standard_sections_ready": true,
-      "search_index": "Foley catheter urinary catheter urine meter CAUTI urine output Foley 도뇨관 소변백 Foley catheter·Urine meter 감염예방과 소변량 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW"
+      "search_index": "Foley catheter urinary catheter urine meter CAUTI urine output Foley 도뇨관 소변백 Foley catheter·Urine meter 감염예방과 소변량 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
+      "prefer_media_first": true
     },
     {
       "id": "V84_DETAIL_05",
@@ -54711,7 +55264,16 @@ window.ICU_MANUAL_DB = {
         "간호기록",
         "EMR·ICU Flow Sheet 누락방지 체크",
         "간호업무 / 안전·기록",
-        "V85"
+        "V85",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "EMR·ICU Flow Sheet 누락방지 체크 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -54894,11 +55456,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Ventilator 검색 검수 기준"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -54907,38 +55471,6 @@ window.ICU_MANUAL_DB = {
           "caption": "호흡기계 종합 개요",
           "search_terms": [
             "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
-          "search_terms": [
-            "Ventilator 기본 모드 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
           ]
         }
       ],
@@ -56137,7 +56669,16 @@ window.ICU_MANUAL_DB = {
         "foley set",
         "Line·Drain 물품 검색표",
         "병동업무 / 물품·장비검색",
-        "V86"
+        "V86",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "Line·Drain 물품 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56342,19 +56883,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -56665,7 +57200,16 @@ window.ICU_MANUAL_DB = {
         "중앙 모니터",
         "central monitor setting",
         "모니터 세팅",
-        "monitor setting"
+        "monitor setting",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "Infusion pump·Syringe pump·Monitor 검색표 관련 내용을 서술형보다 표·체크리스트 중심으로 한눈에 보도록 세분화한 카드입니다.",
@@ -56849,19 +57393,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -58591,7 +59129,16 @@ window.ICU_MANUAL_DB = {
         "보호대 순환",
         "보호대 피부 확인",
         "신체보호대 피부·순환 확인 포인트 체크표",
-        "간호업무 / 신체보호대"
+        "간호업무 / 신체보호대",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "보호대 적용 후 피부와 순환을 확인하는 핵심 포인트를 표로 정리했습니다.",
@@ -58617,7 +59164,18 @@ window.ICU_MANUAL_DB = {
       "source_refs": [
         "원내 restraint monitoring 기준"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tables": [
         {
           "title": "피부/순환 체크표",
@@ -58671,7 +59229,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대피부 보호대순환 capillary refill restraint check 보호대 순환 보호대 피부 확인 신체보호대 피부·순환 확인 포인트 체크표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_DOCUMENTATION"
+      "search_index": "보호대피부 보호대순환 capillary refill restraint check 보호대 순환 보호대 피부 확인 신체보호대 피부·순환 확인 포인트 체크표 간호업무 / 신체보호대 V87_RESTRAINT_OVERVIEW V87_RESTRAINT_DOCUMENTATION",
+      "prefer_media_first": true
     },
     {
       "id": "V87_RESTRAINT_DOCUMENTATION",
@@ -60241,7 +60800,16 @@ window.ICU_MANUAL_DB = {
         "업무동영상",
         "교육영상",
         "클로브 히치",
-        "clove hitch"
+        "clove hitch",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "보호대 적용 전 확인부터 적용, 피부·순환 확인, 기록까지 순서도로 정리한 카드입니다.",
@@ -60264,7 +60832,18 @@ window.ICU_MANUAL_DB = {
         "V87_RESTRAINT_OVERVIEW",
         "V88_RESTRAINT_MONITORING_SCHEDULE"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tables": [
         {
           "title": "적용 순서 요약",
@@ -60401,7 +60980,16 @@ window.ICU_MANUAL_DB = {
         "보호대 모니터링",
         "보호대 체크",
         "신체보호대 모니터링 체크표 세분화",
-        "간호업무 / 신체보호대"
+        "간호업무 / 신체보호대",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "피부, 순환, 신경, 기본간호, 필요성 재평가를 세분화한 보호대 모니터링 카드입니다.",
@@ -60424,7 +61012,18 @@ window.ICU_MANUAL_DB = {
         "V87_RESTRAINT_SKIN_CIRCULATION",
         "V88_RESTRAINT_RELEASE_ROM"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tables": [
         {
           "title": "모니터링 표",
@@ -60482,7 +61081,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대모니터링 보호대체크 restraint monitoring 보호대 모니터링 보호대 체크 신체보호대 모니터링 체크표 세분화 간호업무 / 신체보호대 V87_RESTRAINT_SKIN_CIRCULATION V88_RESTRAINT_RELEASE_ROM"
+      "search_index": "보호대모니터링 보호대체크 restraint monitoring 보호대 모니터링 보호대 체크 신체보호대 모니터링 체크표 세분화 간호업무 / 신체보호대 V87_RESTRAINT_SKIN_CIRCULATION V88_RESTRAINT_RELEASE_ROM",
+      "prefer_media_first": true
     },
     {
       "id": "V88_RESTRAINT_RELEASE_ROM",
@@ -60501,7 +61101,16 @@ window.ICU_MANUAL_DB = {
         "보호대 해제",
         "보호대 기본간호",
         "보호대 해제·ROM·기본간호 체크표",
-        "간호업무 / 신체보호대"
+        "간호업무 / 신체보호대",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "보호대 해제 시 피부/순환 확인, ROM, 기본간호, 재평가를 어떻게 볼지 정리한 카드입니다.",
@@ -60524,7 +61133,18 @@ window.ICU_MANUAL_DB = {
         "V88_RESTRAINT_MONITORING_SCHEDULE",
         "V87_RESTRAINT_DOCUMENTATION"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "tables": [
         {
           "title": "해제/ROM 표",
@@ -60577,7 +61197,8 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "standard_sections_ready": true,
-      "search_index": "보호대해제 ROM range of motion restraint release 보호대 해제 보호대 기본간호 보호대 해제·ROM·기본간호 체크표 간호업무 / 신체보호대 V88_RESTRAINT_MONITORING_SCHEDULE V87_RESTRAINT_DOCUMENTATION"
+      "search_index": "보호대해제 ROM range of motion restraint release 보호대 해제 보호대 기본간호 보호대 해제·ROM·기본간호 체크표 간호업무 / 신체보호대 V88_RESTRAINT_MONITORING_SCHEDULE V87_RESTRAINT_DOCUMENTATION",
+      "prefer_media_first": true
     },
     {
       "id": "V88_RESTRAINT_FAMILY_EXPLAIN",
@@ -61569,7 +62190,16 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "순환 / 모니터링"
+        "순환 / 모니터링",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "Patient monitor와 central monitor setting 변경 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -61615,19 +62245,13 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -62415,7 +63039,16 @@ window.ICU_MANUAL_DB = {
         "교육영상",
         "Google Drive",
         "v91 video",
-        "호흡 / ABGA"
+        "호흡 / ABGA",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "ABGA calibration 교육 동영상입니다. Google Drive 링크로 연결됩니다.",
@@ -62460,6 +63093,16 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -62473,30 +63116,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -62937,7 +63556,16 @@ window.ICU_MANUAL_DB = {
         "쇼크",
         "저혈압",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "제세동기 사용 흐름과 패드 위치, shock 전후 안전확인을 표와 이미지로 정리한 카드입니다.",
@@ -63052,6 +63680,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
           "alt": "Shock 환자 초기대응 큰글씨",
@@ -63241,7 +63879,16 @@ window.ICU_MANUAL_DB = {
         "Shock 환자 초기 대응: ABCDE·산소·IV·수액/승압제 준비",
         "응급간호",
         "shock 환자",
-        "쇼크 초기대응"
+        "쇼크 초기대응",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "Shock 환자 발견 시 ABCDE, 산소, IV line, 수액/승압제 준비, 원인 확인, 기록을 단계별로 정리한 카드입니다.",
@@ -63318,6 +63965,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
           "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
@@ -63531,7 +64188,16 @@ window.ICU_MANUAL_DB = {
         "응급간호",
         "tube 고정",
         "기도삽관",
-        "삽관 절차"
+        "삽관 절차",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "Intubation 검색 시 I/O·섭취량/배설량·전해질 카드가 섞이지 않도록 별도 검색 집중 카드를 추가하고 검색 제외어를 적용했습니다.",
@@ -63611,27 +64277,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v118_suction_search_check.png",
-          "alt": "Suction / 흡인 검색 검수 기준",
-          "caption": "Suction / 흡인 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Suction / 흡인 검색 검수 기준"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
-          "alt": "흡인 간호 총정리",
-          "caption": "흡인 간호 총정리",
-          "search_terms": [
-            "흡인 간호 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
-          "alt": "원내 프로토콜 흡인간호 표",
-          "caption": "원내 프로토콜 흡인간호 표",
-          "search_terms": [
-            "원내 프로토콜 흡인간호 표"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -63689,7 +64341,16 @@ window.ICU_MANUAL_DB = {
         "E-CART",
         "응급약물표",
         "E-cart 약물",
-        "응급카트 약물"
+        "응급카트 약물",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "병동간호팀 간호사메뉴얼 142~149p의 응급간호 항목을 한 카드에서 볼 수 있게 정리했습니다.",
@@ -63770,6 +64431,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
           "alt": "E-CART 응급약물표 큰글씨",
@@ -64148,7 +64819,16 @@ window.ICU_MANUAL_DB = {
         "V5",
         "V6",
         "전극 부착부위",
-        "심전도"
+        "심전도",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "emergency",
       "summary": "원내 매뉴얼의 EKG V1~V6 전극 부착부위를 표와 이미지로 정리했습니다.",
@@ -64219,6 +64899,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -64655,7 +65345,15 @@ window.ICU_MANUAL_DB = {
         "Bradycardia",
         "I/O",
         "승압제",
-        "말초순환"
+        "말초순환",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼 54~56, 102~111, 140~141page를 바탕으로 중환자실 간호사가 꼭 알아야 할 순환/모니터링 내용을 한눈에 볼 수 있게 정리했습니다.",
@@ -64725,19 +65423,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -64778,7 +65470,16 @@ window.ICU_MANUAL_DB = {
         "SpO2",
         "vital sign",
         "hypotension",
-        "MAP"
+        "MAP",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 Vital sign을 어떻게 보고, 혈압 저하 시 어떤 순서로 확인/보고해야 하는지 표 중심으로 정리했습니다.",
@@ -64896,7 +65597,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -64933,7 +65645,11 @@ window.ICU_MANUAL_DB = {
         "zeroing",
         "압력백",
         "ABGA 채혈",
-        "파형 확인"
+        "파형 확인",
+        "A-line zero",
+        "동맥압 파형",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "A-line의 목적, 압력백/flush/파형 확인, zeroing 절차, 채혈 후 관리까지 표와 이미지로 정리했습니다.",
@@ -65007,6 +65723,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -65020,30 +65746,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
           ]
         }
       ],
@@ -65082,7 +65784,14 @@ window.ICU_MANUAL_DB = {
         "CVP",
         "phlebostatic axis",
         "zeroing",
-        "중심정맥압"
+        "중심정맥압",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "transducer"
       ],
       "urgency": "routine",
       "summary": "C-line 삽입부위 관리, CVP 측정 준비와 해석, 함께 봐야 할 혈역학 지표를 표와 이미지로 정리했습니다.",
@@ -65156,19 +65865,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -65208,7 +65911,16 @@ window.ICU_MANUAL_DB = {
         "tachycardia",
         "bradycardia",
         "arrhythmia",
-        "리듬"
+        "리듬",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "EKG monitor를 정확히 부착하고, Tachycardia / Bradycardia 발생 시 환자 안정성을 우선 평가하는 흐름을 표로 정리했습니다.",
@@ -65280,7 +65992,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -65318,7 +66041,16 @@ window.ICU_MANUAL_DB = {
         "vasopressor",
         "perfusion",
         "capillary refill",
-        "말초순환"
+        "말초순환",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "중환자실에서 perfusion을 판단할 때 꼭 보는 I/O, 소변량, 승압제 사용 환자 관찰, 말초순환 확인 포인트를 표와 이미지로 정리했습니다.",
@@ -65392,7 +66124,18 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
@@ -66532,7 +67275,16 @@ window.ICU_MANUAL_DB = {
         "보조기 사진",
         "보조기 원본 이미지",
         "보조기 착용",
-        "보조기 간호"
+        "보조기 간호",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "summary": "기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다.",
       "indications": [
@@ -66610,6 +67362,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v102_ns_os_preop_overview.png",
           "alt": "v102 ns os preop overview.png",
@@ -67186,7 +67948,16 @@ window.ICU_MANUAL_DB = {
         "ABGA",
         "동의서",
         "표식",
-        "금식"
+        "금식",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "수술 전 검사 항목과 수술 전 준비 체크리스트를 표 이미지로 보이게 정리했습니다.",
@@ -67350,6 +68121,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -67363,42 +68144,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v102_ns_os_preop_overview.png",
-          "alt": "v102 ns os preop overview.png",
-          "caption": "v102 ns os preop overview.png",
-          "search_terms": [
-            "NS",
-            "OS",
-            "수술명",
-            "약어",
-            "수술 전 검사"
           ]
         }
       ],
@@ -67686,7 +68431,16 @@ window.ICU_MANUAL_DB = {
         "CRRT start",
         "CRRT return",
         "CRRT filter 교체",
-        "CRRT I/O"
+        "CRRT I/O",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼 57~59page의 CRRT/신장 핵심을 사용자가 항상 이미지로 볼 수 있게 표로 재구성한 카드입니다.",
@@ -67766,29 +68520,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v103_manual_57_59_crrt_extract.png",
-          "alt": "병동간호팀 간호사 매뉴얼 57 59page CRRT 추출 이미지",
-          "caption": "매뉴얼 57~59page CRRT/신장 핵심표 이미지",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "57 59 이미지",
-            "CRRT 매뉴얼 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -68121,7 +68859,16 @@ window.ICU_MANUAL_DB = {
         "P replacement",
         "UF",
         "hypotension",
-        "electrolyte replacement"
+        "electrolyte replacement",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "CRRT 중 I/O 기록, 저혈압 대처, 항응고 확인, K/Mg/P 전해질 교정 기본을 정리한 카드입니다.",
@@ -68203,45 +68950,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v103_crrt_io_electrolyte_table.png",
-          "alt": "CRRT I O 저혈압 항응고 전해질 교정 이미지",
-          "caption": "CRRT I/O·저혈압·전해질 교정 이미지",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CRRT I/O 이미지",
-            "K Mg P 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT/MRI 예시",
-          "caption": "Brain CT/MRI 예시",
-          "search_terms": [
-            "Brain CT"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_renal_dm_overview.png",
-          "alt": "CRRT/신장 + BST/DM/DKA 통합",
-          "caption": "CRRT/신장 + BST/DM/DKA 통합",
-          "search_terms": [
-            "CRRT",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_fmc_crrt_start_table.png",
-          "alt": "FMC CRRT 시작",
-          "caption": "FMC CRRT 시작",
-          "search_terms": [
-            "FMC CRRT"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -68621,7 +69336,16 @@ window.ICU_MANUAL_DB = {
         "ketone",
         "ABGA",
         "RI infusion",
-        "hypokalemia"
+        "hypokalemia",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "DKA protocol, I/O와 lab 관찰, insulin infusion, 저칼륨 주의, 식이와 인슐린 투여 확인을 중환자실 간호 관점에서 정리한 카드입니다.",
@@ -68703,6 +69427,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_abga_search_check.png",
           "alt": "ABGA 검색 검수 기준",
           "caption": "ABGA 검색 검수 기준",
@@ -68716,38 +69450,6 @@ window.ICU_MANUAL_DB = {
           "caption": "ABGA Allen test 표",
           "search_terms": [
             "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v103_dka_protocol_table.png",
-          "alt": "DKA protocol I O lab insulin infusion 이미지",
-          "caption": "DKA protocol 이미지",
-          "search_terms": [
-            "DKA 이미지"
           ]
         }
       ],
@@ -69239,7 +69941,16 @@ window.ICU_MANUAL_DB = {
         "analgesia",
         "antiepileptic",
         "lasix",
-        "heparin"
+        "heparin",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -69332,6 +70043,16 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
         {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -70693,7 +71414,16 @@ window.ICU_MANUAL_DB = {
         "Brain CT",
         "Brain MRI",
         "ET tube",
-        "C-line"
+        "C-line",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "X-ray, CT, MRI, SONO, Angio/TFCA, 내시경 검사 전 준비와 영상에서 line/tube/catheter 및 질환 패턴을 확인하는 예시 이미지를 정리했습니다.",
@@ -70783,57 +71513,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "검사",
-            "검체",
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
-          "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 교육 이미지",
-          "caption": "뇌경색 교육 이미지",
-          "search_terms": [
-            "뇌경색"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_hemorrhage_summary.png",
-          "alt": "뇌출혈 교육 이미지",
-          "caption": "뇌출혈 교육 이미지",
-          "search_terms": [
-            "뇌출혈"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -70884,7 +71570,16 @@ window.ICU_MANUAL_DB = {
         "wound",
         "pressure injury",
         "stoma",
-        "drain"
+        "drain",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "중환자실 line, drain, dressing에서 반드시 확인해야 할 삽입부위, 고정, 감염, 배액량, dressing 종류와 line 제거 후 관찰을 정리했습니다.",
@@ -70989,40 +71684,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "CBC",
-            "Chemistry",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "search_terms": [
-            "Culture",
-            "CRE",
-            "VRE"
-          ]
-        },
-        {
-          "src": "selected_manual_images/lab_bottle_0001.png",
-          "alt": "Lab bottle 원본 이미지",
-          "caption": "Lab bottle 원본 이미지",
-          "search_terms": [
-            "Lab bottle"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "search_terms": [
-            "검사",
-            "검체"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -71817,7 +72485,16 @@ window.ICU_MANUAL_DB = {
         "EMR001",
         "RECORD001",
         "CHART030",
-        "V106_HOSPITAL_EMR_RAW_IMAGES"
+        "V106_HOSPITAL_EMR_RAW_IMAGES",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -71886,11 +72563,13 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/v118_ventilator_search_check.png",
-          "alt": "Ventilator 검색 검수 기준",
-          "caption": "Ventilator 검색 검수 기준",
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
           "search_terms": [
-            "Ventilator 검색 검수 기준"
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         },
         {
@@ -71899,30 +72578,6 @@ window.ICU_MANUAL_DB = {
           "caption": "호흡기계 종합 개요",
           "search_terms": [
             "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
-          "search_terms": [
-            "Ventilator 기본 모드 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
           ]
         }
       ],
@@ -71966,7 +72621,16 @@ window.ICU_MANUAL_DB = {
         "MENU004",
         "MENU009",
         "INFO001",
-        "ICUINFO030"
+        "ICUINFO030",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
@@ -72032,6 +72696,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v118_hfnc_search_check.png",
           "alt": "HFNC / Airvo 검색 검수 기준",
           "caption": "HFNC / Airvo 검색 검수 기준",
@@ -72045,38 +72719,6 @@ window.ICU_MANUAL_DB = {
           "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
             "HFNC 적용·적응증·간호"
-          ]
-        },
-        {
-          "src": "bin000e.png",
-          "alt": "O2 간호 원본 페이지",
-          "caption": "O2 간호 원본 페이지",
-          "search_terms": [
-            "O2 간호 원본 페이지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
-          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
-          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
-          "search_terms": [
-            "원내 프로토콜 산소요법·Inspirometer 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_low_spo2_flow.png",
-          "alt": "산소포화도 저하 시 대처",
-          "caption": "산소포화도 저하 시 대처",
-          "search_terms": [
-            "산소포화도 저하 시 대처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v118_suction_search_check.png",
-          "alt": "Suction / 흡인 검색 검수 기준",
-          "caption": "Suction / 흡인 검색 검수 기준",
-          "search_terms": [
-            "Suction / 흡인 검색 검수 기준"
           ]
         }
       ],
@@ -73258,7 +73900,16 @@ window.ICU_MANUAL_DB = {
       "search_terms": [
         "3. 순환 / 모니터링",
         "순환 / 모니터링",
-        "실무 메뉴 전체 보기"
+        "실무 메뉴 전체 보기",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "routine",
       "summary": "3. 순환 / 모니터링 대분류에 해당하는 교육 카드와 총정리 이미지를 모아 보는 입구 카드입니다.",
@@ -73304,8 +73955,19 @@ window.ICU_MANUAL_DB = {
           "include_rows_in_search": true
         }
       ],
-      "images": [],
-      "prefer_media_first": false,
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
     },
@@ -74215,7 +74877,16 @@ window.ICU_MANUAL_DB = {
         "기관삽관",
         "삽관",
         "제세동기",
-        "Defibrillator"
+        "Defibrillator",
+        "A-line zeroing",
+        "A-line waveform",
+        "A-line 파형",
+        "A-line zero",
+        "arterial line",
+        "동맥압 파형",
+        "zeroing",
+        "transducer",
+        "phlebostatic axis"
       ],
       "urgency": "high",
       "summary": "응급상황 파트의 교육용 입구 카드입니다. CPR, E-CART 응급약물, shock 초기대응, intubation 절차를 한눈에 확인합니다.",
@@ -74287,6 +74958,16 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
+          ]
+        },
+        {
           "src": "selected_manual_images/v116_emergency_overview_large.png",
           "alt": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
           "caption": "응급상황 총정리: CPR · E-CART · Shock · Intubation",
@@ -74306,25 +74987,6 @@ window.ICU_MANUAL_DB = {
             "E-CART",
             "응급약물표",
             "응급약물"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
-          "search_terms": [
-            "Intubation",
-            "기관삽관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
-          "search_terms": [
-            "Shock",
-            "저혈압",
-            "쇼크"
           ]
         }
       ],
@@ -74433,7 +75095,10 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
     },
     {
       "id": "V118_VENTILATOR_SEARCH_AUDIT",
@@ -74525,7 +75190,10 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
     },
     {
       "id": "V118_SUCTION_SEARCH_AUDIT",
@@ -74611,7 +75279,10 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
     },
     {
       "id": "V118_TRACH_SEARCH_AUDIT",
@@ -74701,7 +75372,10 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
     },
     {
       "id": "V118_HFNC_SEARCH_AUDIT",
@@ -74794,7 +75468,10 @@ window.ICU_MANUAL_DB = {
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
     },
     {
       "id": "V118_ABGA_SEARCH_AUDIT",
@@ -74886,6 +75563,119 @@ window.ICU_MANUAL_DB = {
           "caption": "병동 간호팀 매뉴얼 95~96",
           "search_terms": [
             "병동 간호팀 매뉴얼 95~96"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": false,
+      "standard_sections_ready": true,
+      "search_hidden": true,
+      "internal_only": true,
+      "hidden_reason": "V119: 내부 검수용 카드라 사용자 검색 결과에서 제외"
+    },
+    {
+      "id": "V119_ALINE_ZEROING_WAVEFORM_EDU",
+      "category": "3. 순환 / 모니터링",
+      "title": "A-line zeroing / waveform 확인 총정리",
+      "aliases": [
+        "A-line zeroing",
+        "A-line 파형",
+        "동맥압 파형",
+        "arterial line zeroing"
+      ],
+      "search_terms": [
+        "A-line zeroing",
+        "A-line zero",
+        "A-line 파형",
+        "A-line waveform",
+        "arterial line",
+        "동맥압",
+        "transducer",
+        "phlebostatic axis",
+        "zeroing"
+      ],
+      "urgency": "urgent",
+      "summary": "A-line zeroing과 waveform 확인을 중환자실 간호사용으로 정리한 교육 카드입니다. Brain CT/MRI, X-ray catheter 예시는 제외했습니다.",
+      "indications": [
+        "A-line BP 값이 이상할 때",
+        "체위 변경 후",
+        "transducer 높이 변경 후",
+        "파형이 damped/overdamped일 때"
+      ],
+      "preparation": [
+        "압력백 300mmHg 확인",
+        "flush system 확인",
+        "air bubble 제거",
+        "transducer 위치 확인"
+      ],
+      "steps": [
+        "Transducer를 phlebostatic axis와 같은 높이에 맞춥니다.",
+        "3-way stopcock을 patient off / air open 상태로 둡니다.",
+        "monitor에서 zero/calibrate를 시행합니다.",
+        "zero 완료 후 patient open으로 돌리고 waveform과 MAP 값을 확인합니다.",
+        "체위 변경, 침상 높이 변경, transducer 위치 변경 시 다시 zeroing 합니다."
+      ],
+      "warnings": [
+        "Damped waveform이면 line kink, clot, air bubble, loose connection, flush 문제를 먼저 확인합니다.",
+        "A-line BP와 cuff BP가 크게 다르면 환자 상태와 파형을 함께 확인하고 보고합니다."
+      ],
+      "charting": [
+        "zeroing 시행 시간, waveform 상태, MAP/BP, 이상 시 조치와 보고 내용을 기록합니다."
+      ],
+      "related": [
+        "UPD43_A_LINE_ZEROING",
+        "MENU003"
+      ],
+      "source_refs": [
+        "V119 순환/모니터링 정리"
+      ],
+      "tables": [
+        {
+          "title": "A-line zeroing / waveform 핵심",
+          "caption": "A-line 검색 시 순환/모니터링 관련 내용만 보여야 합니다.",
+          "headers": [
+            "항목",
+            "정상 확인",
+            "이상 시 확인"
+          ],
+          "rows": [
+            [
+              "Zeroing",
+              "Transducer 높이 = phlebostatic axis",
+              "체위/침상/Transducer 변경 시 재실시"
+            ],
+            [
+              "정상 파형",
+              "빠른 upstroke, systolic peak, dicrotic notch",
+              "파형 없거나 둔하면 line 문제 확인"
+            ],
+            [
+              "Damped waveform",
+              "해당 없음",
+              "air, clot, kink, loose connection, flush pressure 확인"
+            ],
+            [
+              "값 확인",
+              "MAP trend와 환자상태 일치",
+              "cuff BP와 큰 차이 시 재확인/보고"
+            ]
+          ],
+          "search_terms": [
+            "A-line zeroing",
+            "A-line waveform"
+          ],
+          "include_rows_in_search": true
+        }
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
+          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "search_terms": [
+            "순환",
+            "모니터링",
+            "A-line"
           ]
         }
       ],
@@ -76489,6 +77279,15 @@ window.ICU_MANUAL_DB = {
       "v118_trach_search_check.png",
       "v118_hfnc_search_check.png",
       "v118_abga_search_check.png"
+    ]
+  },
+  "v119_update": {
+    "summary": "검수용 카드가 사용자 검색에 보이는 문제 해결. A-line zeroing 검색에서 Brain CT/MRI, X-ray catheter 예시 등 무관 이미지 제거. A-line zeroing/waveform 전용 교육 카드 추가.",
+    "hidden_audit_cards": 6,
+    "patched_circulation_cards": 121,
+    "total_items": 459,
+    "added_images": [
+      "v119_circulation_monitoring_overview.png"
     ]
   }
 };

@@ -490,7 +490,7 @@ function cardSearchText(card) {
 
 function scoreCard(query, card) {
   const q = normalizeText(query);
-  if (!q || card.search_hidden) return 0;
+  if (!q || card.search_hidden || card.internal_only) return 0;
 
   const topicSeed = normalizeText([
     card.id || "",
