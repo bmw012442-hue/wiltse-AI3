@@ -545,7 +545,7 @@ function requireAuth(req, res, next) {
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.19.0-v119-hide-audit-aline-circulation",
+    version: "2.20.0-v120-part-overview-education-db",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -734,5 +734,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v119 hide audit aline circulation running on port ${port}`);
+  console.log(`ICU AI Manual v120 part overview education DB running on port ${port}`);
 });
