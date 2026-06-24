@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.29.0-v129-transfusion-clean-detail" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.31.0-v131-abga-workflow-images" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.29.0-v129-transfusion-clean-detail",
+    version: "2.31.0-v131-abga-workflow-images",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v129 transfusion clean detail running on port ${port}`);
+  console.log(`ICU AI Manual v131 abga workflow images running on port ${port}`);
 });
