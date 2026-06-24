@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.25.0-v125-responsive-layout-tuning",
+    "version": "2.28.0-v128-transfusion-unified-images",
     "language": "ko",
-    "source": "V124 기반 + PC 폭 복원 + 모바일 검색 버튼 3개 한 줄 + 화면 안정화 보강",
+    "source": "V125 기반 + 수혈 통일디자인 이미지 6장 + RC2VAE 검색 연결",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-24"
   },
@@ -45,6 +45,432 @@ window.ICU_MANUAL_DB = {
     ]
   },
   "items": [
+    {
+      "id": "V128_TRANSFUSION_BLOOD_PRODUCT_TYPES",
+      "category": "수혈 / 혈액제제",
+      "title": "혈액제제 종류",
+      "aliases": [
+        "수혈",
+        "혈액제제 종류",
+        "RBC",
+        "Packed RBC",
+        "PC",
+        "Platelet",
+        "SDP",
+        "FFP",
+        "Cryo",
+        "혈소판",
+        "응고인자",
+        "피브리노겐"
+      ],
+      "search_terms": [
+        "수혈",
+        "혈액제제 종류",
+        "RBC",
+        "Packed RBC",
+        "PC",
+        "Platelet",
+        "SDP",
+        "FFP",
+        "Cryo",
+        "혈소판",
+        "응고인자",
+        "피브리노겐"
+      ],
+      "urgency": "high",
+      "summary": "혈액제제 종류 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인_큰글씨제거.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "Packed RBC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo",
+            "혈소판",
+            "응고인자",
+            "피브리노겐"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V128_TRANSFUSION_SET_FILTER_SELECTION",
+      "category": "수혈 / 혈액제제",
+      "title": "수혈 세트 · 필터 선택",
+      "aliases": [
+        "수혈",
+        "수혈세트",
+        "혈소판 수혈 세트",
+        "백혈구 제거 필터",
+        "방사선 조사",
+        "일반 수혈 세트",
+        "RC2VAE",
+        "필터"
+      ],
+      "search_terms": [
+        "수혈",
+        "수혈세트",
+        "혈소판 수혈 세트",
+        "백혈구 제거 필터",
+        "방사선 조사",
+        "일반 수혈 세트",
+        "RC2VAE",
+        "필터"
+      ],
+      "urgency": "high",
+      "summary": "수혈 세트 · 필터 선택 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인_큰글씨제거.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사",
+            "일반 수혈 세트",
+            "RC2VAE",
+            "필터"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V128_TRANSFUSION_EXPIRY_STORAGE",
+      "category": "수혈 / 혈액제제",
+      "title": "혈액제제 유효기간 · 보관 온도",
+      "aliases": [
+        "수혈",
+        "혈액 보관",
+        "혈액제제 유효기간",
+        "보관 온도",
+        "냉장 보관",
+        "실온 보관",
+        "FFP 해동",
+        "Cryo",
+        "혈소판 보관"
+      ],
+      "search_terms": [
+        "수혈",
+        "혈액 보관",
+        "혈액제제 유효기간",
+        "보관 온도",
+        "냉장 보관",
+        "실온 보관",
+        "FFP 해동",
+        "Cryo",
+        "혈소판 보관"
+      ],
+      "urgency": "high",
+      "summary": "혈액제제 유효기간 · 보관 온도 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인_큰글씨제거.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관",
+            "FFP 해동",
+            "Cryo",
+            "혈소판 보관"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V128_TRANSFUSION_IO_VOLUME",
+      "category": "수혈 / 혈액제제",
+      "title": "수혈 I/O 입력 용량",
+      "aliases": [
+        "수혈",
+        "수혈 I/O",
+        "I/O 입력",
+        "IO 입력",
+        "혈액 I/O",
+        "PRC 400",
+        "PRC 320",
+        "FFP 400",
+        "SDP 용량",
+        "수혈 용량"
+      ],
+      "search_terms": [
+        "수혈",
+        "수혈 I/O",
+        "I/O 입력",
+        "IO 입력",
+        "혈액 I/O",
+        "PRC 400",
+        "PRC 320",
+        "FFP 400",
+        "SDP 용량",
+        "수혈 용량"
+      ],
+      "urgency": "high",
+      "summary": "수혈 I/O 입력 용량 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인_큰글씨제거.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "I/O 입력",
+            "IO 입력",
+            "혈액 I/O",
+            "PRC 400",
+            "PRC 320",
+            "FFP 400",
+            "SDP 용량",
+            "수혈 용량"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V128_TRANSFUSION_RC2VAE_USAGE_1",
+      "category": "수혈 / 혈액제제",
+      "title": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+      "aliases": [
+        "수혈",
+        "RC2VAE",
+        "백혈구 제거용 수혈필터",
+        "백혈구 제거 필터",
+        "Leukocyte Depleted Filter",
+        "PRC 필터",
+        "PC 필터",
+        "HLA",
+        "CMV"
+      ],
+      "search_terms": [
+        "수혈",
+        "RC2VAE",
+        "백혈구 제거용 수혈필터",
+        "백혈구 제거 필터",
+        "Leukocyte Depleted Filter",
+        "PRC 필터",
+        "PC 필터",
+        "HLA",
+        "CMV"
+      ],
+      "urgency": "high",
+      "summary": "백혈구 제거용 수혈필터 RC2VAE 사용법 ① 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인_큰글씨제거.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter",
+            "PRC 필터",
+            "PC 필터",
+            "HLA",
+            "CMV"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V128_TRANSFUSION_RC2VAE_USAGE_2",
+      "category": "수혈 / 혈액제제",
+      "title": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+      "aliases": [
+        "수혈",
+        "RC2VAE 사용법",
+        "Chamber",
+        "챔버",
+        "수혈 필터 연결",
+        "공기 제거",
+        "수혈 필터 막힘",
+        "필터 주의사항"
+      ],
+      "search_terms": [
+        "수혈",
+        "RC2VAE 사용법",
+        "Chamber",
+        "챔버",
+        "수혈 필터 연결",
+        "공기 제거",
+        "수혈 필터 막힘",
+        "필터 주의사항"
+      ],
+      "urgency": "high",
+      "summary": "백혈구 제거용 수혈필터 RC2VAE 사용법 ② 교육용 이미지 카드입니다.",
+      "indications": [
+        "수혈 관련 실무 확인",
+        "혈액제제/수혈세트/필터/기록 기준 확인"
+      ],
+      "preparation": [
+        "카드를 열어 이미지를 크게 확대해 확인합니다."
+      ],
+      "steps": [
+        "표와 간호 포인트를 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 처치/투약은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "수혈 관련 확인사항은 원내 기록 기준에 따라 입력합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "V128 수혈 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인_큰글씨제거.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거",
+            "수혈 필터 막힘",
+            "필터 주의사항"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
     {
       "id": "V67_AGGRASTAT_TPA_PCI",
       "category": "약물 / 순환기",
@@ -88022,5 +88448,11 @@ window.ICU_MANUAL_DB = {
     "summary": "PC 화면이 너무 넓고 커 보이는 문제를 줄이기 위해 desktop max-width를 복원했습니다. 모바일에서는 AI 답변/카드 검색/초기화 3개 버튼이 한 줄에 보이도록 조정하고, 좌우 흔들림 방지 CSS를 보강했습니다.",
     "desktop_width": "1180px centered",
     "mobile_buttons": "3 columns in one row"
+  },
+  "v128_update": {
+    "summary": "수혈 교육용 이미지에서 '큰글씨' 문구를 제거하고, 통일 디자인 이미지 6장을 추가했습니다. RC2VAE 사용법 2장도 '수혈' 검색 시 보이도록 사용자 DB에 연결했습니다.",
+    "new_cards": 6,
+    "image_count": 6,
+    "important": "'큰글씨' 단어가 제목에 노출되지 않도록 이미지와 카드 제목을 정리했습니다."
   }
 };
