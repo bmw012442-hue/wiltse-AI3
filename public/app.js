@@ -725,11 +725,6 @@ function renderStructuredCard(card) {
       </section>
 
       <section class="detail-section">
-        <h4>언제 보는 카드인가</h4>
-        ${renderSimpleLines(whenToUse)}
-      </section>
-
-      <section class="detail-section">
         <h4>검색어 / 별칭</h4>
         ${renderSearchChips(card)}
       </section>

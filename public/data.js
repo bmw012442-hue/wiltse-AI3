@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.28.0-v128-transfusion-unified-images",
+    "version": "2.29.0-v129-transfusion-clean-detail",
     "language": "ko",
-    "source": "V125 기반 + 수혈 통일디자인 이미지 6장 + RC2VAE 검색 연결",
+    "source": "V128 기반 + 수혈 구버전 큰글씨 이미지 제거 + 언제 보는 카드인가 섹션 숨김",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-24"
   },
@@ -102,7 +102,32 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_혈액제제종류_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
           "alt": "혈액제제 종류",
           "caption": "혈액제제 종류",
           "search_terms": [
@@ -173,7 +198,44 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
           "alt": "수혈 세트 · 필터 선택",
           "caption": "수혈 세트 · 필터 선택",
           "search_terms": [
@@ -242,7 +304,48 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
           "alt": "혈액제제 유효기간 · 보관 온도",
           "caption": "혈액제제 유효기간 · 보관 온도",
           "search_terms": [
@@ -314,7 +417,36 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
           "alt": "수혈 I/O 입력 용량",
           "caption": "수혈 I/O 입력 용량",
           "search_terms": [
@@ -385,7 +517,61 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
           "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
           "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
           "search_terms": [
@@ -453,7 +639,44 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인_큰글씨제거.png",
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
           "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
           "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
           "search_terms": [
@@ -539,7 +762,7 @@ window.ICU_MANUAL_DB = {
         "phlebostatic axis"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "주치의 처방으로 아그라스타트주를 시작하거나 유지주입 속도를 확인해야 할 때",
         "PTCA/PCI 또는 급성 관상증후군 관련 항혈소판제 주입 기준을 확인할 때",
@@ -920,44 +1143,31 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         }
       ],
@@ -1888,8 +2098,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -1898,8 +2108,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -2040,8 +2250,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -2050,8 +2260,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -2185,8 +2395,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -2195,8 +2405,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -2661,8 +2871,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -2670,8 +2880,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -3273,8 +3483,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -3671,7 +3881,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST를 시행해야 하는 항생제 목록."
       ],
@@ -3712,6 +3922,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -3745,8 +3967,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -3754,16 +3976,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -3809,7 +4031,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST를 하지 않는 항생제 목록."
       ],
@@ -3851,6 +4073,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -3884,8 +4118,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -3893,16 +4127,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -3948,7 +4182,7 @@ window.ICU_MANUAL_DB = {
         "v8_final_reviewed"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "AST 표준화 희석과 판독."
       ],
@@ -3994,6 +4228,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -4027,8 +4273,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -4036,16 +4282,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -4408,8 +4654,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -6146,7 +6392,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검체 bottle 종류와 채혈 순서를 확인해야 할 때",
         "ABGA, Blood culture, PT/aPTT, Chemistry, CBC 검체 용기를 확인할 때"
@@ -6267,6 +6513,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
@@ -6774,8 +7032,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -6784,8 +7042,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -6802,8 +7060,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -6897,8 +7155,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -6907,8 +7165,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -6925,8 +7183,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -7500,8 +7758,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation 시행 절차 큰글씨"
           ]
@@ -7916,22 +8174,31 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/05_소화기계_중증질환_총정리.png",
-          "alt": "소화기계 중증질환 총정리",
-          "caption": "소화기계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "소화기계",
-            "GI bleeding",
-            "위장관출혈",
-            "간경변",
-            "간성혼수",
-            "복수",
-            "식도정맥류",
-            "췌장염",
-            "장폐색",
-            "복막염",
-            "NG",
-            "L-tube"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -7945,30 +8212,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -8188,21 +8431,44 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -8216,16 +8482,6 @@ window.ICU_MANUAL_DB = {
             "suction",
             "tracheostomy",
             "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
           ]
         }
       ],
@@ -8381,6 +8637,47 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -8391,30 +8688,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -8773,8 +9046,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -8783,8 +9056,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -8951,8 +9224,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -8961,8 +9234,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -9024,7 +9297,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼 전체 추출 이미지"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검체 채취 전 bottle 종류와 채혈 순서를 확인하는 카드."
       ],
@@ -9060,6 +9333,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -9093,8 +9378,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -9102,8 +9387,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -9161,7 +9446,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "식이 처방, 금식, 경관식, I/O 입력을 함께 확인하는 카드."
       ],
@@ -9198,6 +9483,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -9231,8 +9528,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -9240,16 +9537,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -9296,7 +9593,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "근무 시작 전 환자 상태와 주요 처방을 빠르게 파악하는 카드."
       ],
@@ -9332,6 +9629,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -9365,8 +9674,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -9374,16 +9683,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -9430,7 +9739,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "근무 중 액팅 업무를 누락 없이 확인하는 카드."
       ],
@@ -9466,6 +9775,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -9499,8 +9820,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -9508,16 +9829,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -9580,7 +9901,7 @@ window.ICU_MANUAL_DB = {
         "입원 안내문"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신환 또는 전입 환자 ICU 입실 시 모니터 세팅, 감염검사 확인, 보호자 안내, 초기평가, 역할분담 절차."
       ],
@@ -9677,6 +9998,34 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -9798,7 +10147,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 병동 또는 타기관으로 이동 시 확인할 사항."
       ],
@@ -9833,6 +10182,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -9917,7 +10278,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "사망 확인 후 간호·전산·보호자 안내 업무."
       ],
@@ -9952,6 +10313,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -10035,7 +10408,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU 간호기록 작성 시 기본 원칙."
       ],
@@ -10073,6 +10446,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10106,8 +10491,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10115,16 +10500,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10167,7 +10552,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "처방 확인부터 채혈접수/픽업/응급발행까지 흐름."
       ],
@@ -10205,6 +10590,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10238,8 +10635,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10247,16 +10644,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10301,7 +10698,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "약품, 소모품, 개봉 물품의 유효기간 확인."
       ],
@@ -10337,6 +10734,31 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10370,8 +10792,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10379,16 +10801,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10429,7 +10851,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "일반 상처 Dressing 체크리스트."
       ],
@@ -10474,6 +10896,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10507,8 +10941,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10516,16 +10950,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10566,7 +11000,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "감염된 상처 Dressing 체크리스트."
       ],
@@ -10608,6 +11042,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10641,8 +11087,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10650,16 +11096,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10701,7 +11147,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "수술 후 상처 Dressing 체크리스트."
       ],
@@ -10745,6 +11191,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -10814,7 +11272,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "욕창 부위 Dressing 체크리스트."
       ],
@@ -10859,6 +11317,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -10892,8 +11362,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -10901,16 +11371,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -10950,7 +11420,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "PCD 부위 Dressing 체크리스트."
       ],
@@ -10995,6 +11465,34 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -11028,8 +11526,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -11037,16 +11535,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -11086,7 +11584,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "장루 관리·Dressing 체크리스트."
       ],
@@ -11131,6 +11629,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -11164,8 +11674,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -11173,16 +11683,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -11222,7 +11732,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "SDD 소독 체크리스트."
       ],
@@ -11263,6 +11773,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -11329,7 +11851,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EVD 소독 체크리스트."
       ],
@@ -11375,6 +11897,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -11485,7 +12019,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Coronary angio CT 전후 간호 기본 체크리스트."
       ],
@@ -11526,6 +12060,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -11559,8 +12105,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -11569,8 +12115,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -11617,7 +12163,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain MRI non-enhance 전후 간호 기본 체크리스트."
       ],
@@ -11658,6 +12204,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -11691,8 +12249,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -11701,8 +12259,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -11749,7 +12307,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain MRI enhance 전후 간호 기본 체크리스트."
       ],
@@ -11790,6 +12348,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -11823,8 +12393,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -11833,8 +12403,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -11879,7 +12449,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Brain CT 전후 간호 기본 체크리스트."
       ],
@@ -11924,6 +12494,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -12039,7 +12621,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Head Neck angio CT 전후 간호 기본 체크리스트."
       ],
@@ -12080,6 +12662,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -12113,8 +12707,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -12123,8 +12717,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -12168,7 +12762,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "DSA 전후 간호 기본 체크리스트."
       ],
@@ -12208,6 +12802,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -12271,7 +12877,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "PTA 전후 간호 기본 체크리스트."
       ],
@@ -12312,6 +12918,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -12345,8 +12963,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -12355,8 +12973,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -12395,7 +13013,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "TCD 검사 전후 간호 기본 체크리스트."
       ],
@@ -12430,6 +13048,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -12495,7 +13125,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Coil embolization 전후 간호 기본 체크리스트."
       ],
@@ -12530,6 +13160,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -12600,7 +13242,7 @@ window.ICU_MANUAL_DB = {
         "기관절개관 목적"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Tracheostomy 전후 간호 기본 체크리스트."
       ],
@@ -12635,6 +13277,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
@@ -12715,7 +13369,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EGD 전후 간호 기본 체크리스트."
       ],
@@ -12756,6 +13410,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -12789,8 +13455,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -12799,8 +13465,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -12843,7 +13509,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ERCP 전후 간호 기본 체크리스트."
       ],
@@ -12884,6 +13550,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -12917,8 +13595,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -12927,8 +13605,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -12971,7 +13649,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "CFS 전후 간호 기본 체크리스트."
       ],
@@ -13012,6 +13690,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13045,8 +13735,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -13055,8 +13745,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -13102,7 +13792,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Blood culture 채취 체크리스트."
       ],
@@ -13143,6 +13833,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13176,8 +13878,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13185,8 +13887,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -13231,7 +13933,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Sputum culture 채취 체크리스트."
       ],
@@ -13272,6 +13974,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13305,8 +14019,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13314,8 +14028,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -13358,7 +14072,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Urine culture 채취 체크리스트."
       ],
@@ -13399,6 +14113,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13432,8 +14158,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13441,8 +14167,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -13482,7 +14208,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "RAT 검사 체크리스트."
       ],
@@ -13523,6 +14249,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13556,8 +14294,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13565,8 +14303,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -13604,7 +14342,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "CRE/CPO 검체 체크리스트."
       ],
@@ -13645,6 +14383,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13678,8 +14428,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13687,8 +14437,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -13730,7 +14480,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Tip culture 채취 체크리스트."
       ],
@@ -13771,6 +14521,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -13804,8 +14566,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -13813,8 +14575,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -14227,8 +14989,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -14371,7 +15133,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Infusion pump 기본 사용 체크리스트."
       ],
@@ -14408,6 +15170,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -14478,7 +15252,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "Syringe pump 기본 사용 체크리스트."
       ],
@@ -14515,6 +15289,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -14589,7 +15375,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "입원 환자의 경구혈당강하제 복용 확인 카드."
       ],
@@ -14626,6 +15412,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -14728,7 +15526,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "emergency",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "E-cart에서 자주 확인하는 응급약물 목록."
       ],
@@ -14763,6 +15561,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -14796,8 +15606,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -14861,7 +15671,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 주의가 필요한 고위험 약물 관리."
       ],
@@ -14896,21 +15706,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -14940,19 +15744,9 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -15019,7 +15813,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "항부정맥제 투여 전후 확인 카드."
       ],
@@ -15054,21 +15848,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -15086,8 +15874,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -15186,6 +15974,34 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/07_대사성질환_전해질이상_총정리.png",
           "alt": "대사성 질환 · 전해질 이상 총정리",
@@ -15360,7 +16176,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "소화기내과 Routine 기본 확인 카드."
       ],
@@ -15397,6 +16213,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -15465,7 +16293,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "심장내과 Routine 기본 확인 카드."
       ],
@@ -15503,44 +16331,15 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         }
       ],
@@ -15589,7 +16388,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신장내과 Routine 기본 확인 카드."
       ],
@@ -15623,6 +16422,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -15704,7 +16515,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "신경외과 Routine 기본 확인 카드."
       ],
@@ -15745,6 +16556,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -15849,7 +16672,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "정형외과 Routine 기본 확인 카드."
       ],
@@ -15886,6 +16709,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -16633,7 +17468,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "카멜레온 전산 사용 시 자주 확인하는 항목."
       ],
@@ -16669,6 +17504,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -16702,8 +17549,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -16711,16 +17558,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -16768,7 +17615,7 @@ window.ICU_MANUAL_DB = {
         "v10_master_30_categories"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU 장비 사용 전후 공통 체크리스트."
       ],
@@ -16803,6 +17650,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -16987,8 +17846,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -16997,8 +17856,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -17139,7 +17998,7 @@ window.ICU_MANUAL_DB = {
         "만니톨"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "항생제 계열, AST 여부, 수액 종류와 적응증, ICU에서 자주 쓰는 약물 검색용 카드."
       ],
@@ -17173,6 +18032,18 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -17856,22 +18727,31 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/05_소화기계_중증질환_총정리.png",
-          "alt": "소화기계 중증질환 총정리",
-          "caption": "소화기계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "소화기계",
-            "GI bleeding",
-            "위장관출혈",
-            "간경변",
-            "간성혼수",
-            "복수",
-            "식도정맥류",
-            "췌장염",
-            "장폐색",
-            "복막염",
-            "NG",
-            "L-tube"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -17885,30 +18765,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -18453,8 +19309,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -18703,7 +19559,7 @@ window.ICU_MANUAL_DB = {
         "search_optimized"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "VRE/CRE/CPO/MRSA/MSSA/MRPA와 격리, 항생제 관련 검색 카드."
       ],
@@ -18743,6 +19599,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -18776,8 +19644,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -18785,16 +19653,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -19470,8 +20338,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART",
@@ -19785,8 +20653,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -21107,7 +21975,7 @@ window.ICU_MANUAL_DB = {
         "수액"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "ICU에서 자주 사용하는 항생제의 AST 시행 여부를 빠르게 확인하는 카드."
       ],
@@ -21213,6 +22081,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -21246,8 +22126,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -21255,16 +22135,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -23513,6 +24393,18 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -23527,29 +24419,6 @@ window.ICU_MANUAL_DB = {
             "EVD",
             "SDD",
             "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
           ]
         }
       ],
@@ -23917,44 +24786,82 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
           ]
         }
       ],
@@ -24300,8 +25207,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -24310,8 +25217,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -24473,8 +25380,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -24483,8 +25390,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -25284,8 +26191,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT"
           ]
@@ -26217,8 +27124,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -26227,8 +27134,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -26405,8 +27312,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -27060,7 +27967,7 @@ window.ICU_MANUAL_DB = {
         "추가 업무 매뉴얼(260618)"
       ],
       "urgency": "urgent",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "19. 항생제 AST"
       ],
@@ -27163,6 +28070,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -27196,8 +28115,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -27205,16 +28124,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -27801,22 +28720,44 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/05_소화기계_중증질환_총정리.png",
-          "alt": "소화기계 중증질환 총정리",
-          "caption": "소화기계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "소화기계",
-            "GI bleeding",
-            "위장관출혈",
-            "간경변",
-            "간성혼수",
-            "복수",
-            "식도정맥류",
-            "췌장염",
-            "장폐색",
-            "복막염",
-            "NG",
-            "L-tube"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -27830,30 +28771,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -28370,8 +29287,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -28380,8 +29297,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -28398,8 +29315,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -30221,8 +31138,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -30231,8 +31148,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -30550,8 +31467,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -30560,8 +31477,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -30735,8 +31652,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -30929,8 +31846,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -31099,8 +32016,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -31109,8 +32026,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -31295,8 +32212,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -31371,6 +32288,72 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -31381,30 +32364,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -31744,8 +32703,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -31754,8 +32713,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -31772,8 +32731,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -31844,6 +32803,34 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -31854,30 +32841,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -32051,7 +33014,7 @@ window.ICU_MANUAL_DB = {
         "감염 / 격리"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -32144,6 +33107,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -32177,8 +33152,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -32186,8 +33161,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -32304,6 +33279,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -32314,30 +33317,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -32414,8 +33393,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -32424,8 +33403,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -32442,8 +33421,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -32677,6 +33656,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -32704,16 +33695,6 @@ window.ICU_MANUAL_DB = {
             "suction",
             "tracheostomy",
             "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
           ]
         },
         {
@@ -32963,7 +33944,7 @@ window.ICU_MANUAL_DB = {
         "ATLAS K"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -33107,21 +34088,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -33406,7 +34381,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 한쪽 팔다리 힘빠짐 또는 감각이상",
         "안면마비, 말 어눌함, 실어증/언어장애",
@@ -33563,6 +34538,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -33603,8 +34590,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -33738,7 +34725,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 편마비/감각이상, 안면마비",
         "실어증·구음장애, 시야장애",
@@ -33892,6 +34879,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -33932,8 +34931,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -34077,7 +35076,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "갑작스러운 심한 두통, 구토, 경부강직",
         "의식저하, 경련, 동공 변화",
@@ -34298,6 +35297,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -34338,8 +35349,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -34441,7 +35452,7 @@ window.ICU_MANUAL_DB = {
         "신경계"
       ],
       "urgency": "emergency",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [],
       "preparation": [],
       "steps": [
@@ -34532,6 +35543,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -34572,8 +35595,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -36239,8 +37262,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -38392,6 +39415,85 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -38402,30 +39504,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -38654,6 +39732,85 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -38664,30 +39821,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -38893,6 +40026,85 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -38922,30 +40134,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -39131,22 +40319,82 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/05_소화기계_중증질환_총정리.png",
-          "alt": "소화기계 중증질환 총정리",
-          "caption": "소화기계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "소화기계",
-            "GI bleeding",
-            "위장관출혈",
-            "간경변",
-            "간성혼수",
-            "복수",
-            "식도정맥류",
-            "췌장염",
-            "장폐색",
-            "복막염",
-            "NG",
-            "L-tube"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
           ]
         },
         {
@@ -39160,30 +40408,6 @@ window.ICU_MANUAL_DB = {
             "수혈",
             "혈액",
             "항생제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_process_large.png",
-          "alt": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "caption": "수혈 큰글씨 ① 수혈 전 확인 · RBC/FFP/Platelet",
-          "search_terms": [
-            "수혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_blood_components_large.png",
-          "alt": "수혈 큰글씨 ② 혈액제제 종류",
-          "caption": "수혈 큰글씨 ② 혈액제제 종류",
-          "search_terms": [
-            "혈액제제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_transfusion_reaction_dic_large.png",
-          "alt": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "caption": "수혈 큰글씨 ③ 부작용 · DIC · Coagulation lab",
-          "search_terms": [
-            "DIC"
           ]
         }
       ],
@@ -40180,8 +41404,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT 전후 간호 큰글씨"
           ]
@@ -40208,8 +41432,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -40425,8 +41649,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -40435,8 +41659,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -40453,8 +41677,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -40760,7 +41984,7 @@ window.ICU_MANUAL_DB = {
         "phlebostatic axis"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "패혈증/패혈성 쇼크 의심 환자",
         "발열/저체온, 저혈압, lactate 상승 환자",
@@ -40898,21 +42122,82 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/02_수혈세트_필터선택_통일디자인.png",
+          "alt": "수혈 세트 · 필터 선택",
+          "caption": "수혈 세트 · 필터 선택",
+          "search_terms": [
+            "수혈",
+            "수혈세트",
+            "필터",
+            "혈소판 수혈 세트",
+            "백혈구 제거 필터",
+            "방사선 조사"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
+          "src": "selected_manual_images/05_RC2VAE_사용법1_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ①",
+          "search_terms": [
+            "수혈",
+            "RC2VAE",
+            "백혈구 제거용 수혈필터",
+            "백혈구 제거 필터",
+            "Leukocyte Depleted Filter"
+          ]
+        },
+        {
+          "src": "selected_manual_images/06_RC2VAE_사용법2_통일디자인.png",
+          "alt": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "caption": "백혈구 제거용 수혈필터 RC2VAE 사용법 ②",
+          "search_terms": [
+            "수혈",
+            "RC2VAE 사용법",
+            "Chamber",
+            "챔버",
+            "수혈 필터 연결",
+            "공기 제거"
           ]
         },
         {
@@ -40929,19 +42214,9 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -41176,8 +42451,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -42971,7 +44246,7 @@ window.ICU_MANUAL_DB = {
         "약물 / 중환자실"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "패혈증/감염 의심으로 항생제를 시작할 때",
         "배양검사 채취 여부와 첫 투여 지연 방지를 확인할 때",
@@ -43170,6 +44445,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
@@ -43644,8 +44931,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -43713,7 +45000,7 @@ window.ICU_MANUAL_DB = {
         "약물 / 중환자실"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "인계 전 약물/수액 핵심 확인이 필요할 때",
         "여러 고위험 약물과 수액이 동시에 들어가는 환자를 볼 때",
@@ -43836,6 +45123,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -43869,8 +45168,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -43878,16 +45177,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -44411,8 +45710,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -44420,8 +45719,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -45129,8 +46428,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -46435,8 +47734,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -47074,8 +48373,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT"
           ]
@@ -50659,8 +51958,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -50669,8 +51968,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -52379,8 +53678,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -52389,8 +53688,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -52440,7 +53739,7 @@ window.ICU_MANUAL_DB = {
         "phlebostatic axis"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "의심징후",
         "검사/배양",
@@ -52638,50 +53937,21 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -54878,7 +56148,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "위치 확인",
         "고정/피부",
@@ -55058,6 +56328,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
           "caption": "호흡기계 중증질환 총정리",
@@ -55141,7 +56423,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "시작 전",
         "내약성",
@@ -55334,6 +56616,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -56419,8 +57713,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -56429,8 +57723,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -56447,8 +57741,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -56484,7 +57778,7 @@ window.ICU_MANUAL_DB = {
         "V82"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "간기능 이상",
         "담도 문제",
@@ -56672,6 +57966,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -56705,8 +58011,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -56714,8 +58020,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
@@ -57243,8 +58549,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -57253,8 +58559,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -57510,8 +58816,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -57520,8 +58826,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -57819,7 +59125,7 @@ window.ICU_MANUAL_DB = {
         "V83"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "검사 전",
         "라인",
@@ -58013,6 +59319,18 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -58560,8 +59878,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -58570,8 +59888,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -59354,8 +60672,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -59364,8 +60682,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -59382,8 +60700,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -64870,8 +66188,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -67521,8 +68839,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -70654,8 +71972,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호 큰글씨",
-          "caption": "Brain CT 전후 간호 큰글씨",
+          "alt": "Brain CT 전후 간호",
+          "caption": "Brain CT 전후 간호",
           "search_terms": [
             "Brain CT"
           ]
@@ -71395,8 +72713,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -71405,8 +72723,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -71986,8 +73304,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -71996,8 +73314,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -72203,8 +73521,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock",
             "저혈압",
@@ -72213,8 +73531,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -72371,8 +73689,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -72381,8 +73699,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -72549,8 +73867,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -72751,8 +74069,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -72930,8 +74248,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation",
             "기관삽관"
@@ -73108,8 +74426,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -73118,8 +74436,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -73288,8 +74606,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART",
             "응급약물표",
@@ -73298,8 +74616,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -73503,8 +74821,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -73681,8 +74999,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -73914,8 +75232,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -74117,8 +75435,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v111_cpr_ecart_large.png",
-          "alt": "응급상황 큰글씨: CPR · E-CART · 코드블루",
-          "caption": "응급상황 큰글씨: CPR · E-CART · 코드블루",
+          "alt": "응급상황 : CPR · E-CART · 코드블루",
+          "caption": "응급상황 : CPR · E-CART · 코드블루",
           "search_terms": [
             "CPR",
             "E-CART"
@@ -77158,7 +78476,7 @@ window.ICU_MANUAL_DB = {
         "kyphoplasty"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때"
       ],
@@ -77279,6 +78597,34 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
@@ -79443,7 +80789,7 @@ window.ICU_MANUAL_DB = {
         "전체 보기"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -79515,6 +80861,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -79548,8 +80922,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -79557,16 +80931,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -79603,7 +80977,7 @@ window.ICU_MANUAL_DB = {
         "de-escalation"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -79735,6 +81109,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -79830,7 +81216,7 @@ window.ICU_MANUAL_DB = {
         "phlebostatic axis"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -79921,44 +81307,31 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -80008,7 +81381,7 @@ window.ICU_MANUAL_DB = {
         "waste"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -80086,6 +81459,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -80119,8 +81504,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -80128,16 +81513,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -80170,7 +81555,7 @@ window.ICU_MANUAL_DB = {
         "crossmatch"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -80313,6 +81698,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -80346,8 +81772,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -80355,16 +81781,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -80399,7 +81825,7 @@ window.ICU_MANUAL_DB = {
         "D-dimer"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -80527,6 +81953,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -80560,8 +82014,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -80569,16 +82023,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -80607,7 +82061,7 @@ window.ICU_MANUAL_DB = {
         "통합"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "중환자실 간호사가 약물/수액/마약 및 수혈/혈액 내용을 표/이미지 중심으로 빠르게 확인할 때"
       ],
@@ -80678,6 +82132,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -80711,8 +82193,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_ast_check_large.png",
-          "alt": "항생제 큰글씨 ① AST · 투여 전 확인",
-          "caption": "항생제 큰글씨 ① AST · 투여 전 확인",
+          "alt": "항생제 ① AST · 투여 전 확인",
+          "caption": "항생제 ① AST · 투여 전 확인",
           "search_terms": [
             "항생제",
             "AST"
@@ -80720,16 +82202,16 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v113_antibiotic_family_large.png",
-          "alt": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
-          "caption": "항생제 큰글씨 ② 자주 쓰는 항생제 계열",
+          "alt": "항생제 ② 자주 쓰는 항생제 계열",
+          "caption": "항생제 ② 자주 쓰는 항생제 계열",
           "search_terms": [
             "항생제 계열"
           ]
         },
         {
           "src": "selected_manual_images/v113_antibiotic_admin_flow_large.png",
-          "alt": "항생제 큰글씨 ③ 투여 흐름",
-          "caption": "항생제 큰글씨 ③ 투여 흐름",
+          "alt": "항생제 ③ 투여 흐름",
+          "caption": "항생제 ③ 투여 흐름",
           "search_terms": [
             "항생제 투여"
           ]
@@ -81360,7 +82842,7 @@ window.ICU_MANUAL_DB = {
         "검체 라벨"
       ],
       "urgency": "routine",
-      "summary": "검사/검체 파트를 작은 요약이미지 대신 큰글씨 표 3장으로 분리했습니다.",
+      "summary": "검사/검체 파트를 작은 요약이미지 대신 표 3장으로 분리했습니다.",
       "indications": [
         "검사/검체, 영상검사, line/drain/dressing, 다제내성균, 병원 전산/원본 이미지를 빠르게 확인할 때"
       ],
@@ -82040,8 +83522,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -82050,8 +83532,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -82068,8 +83550,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -82376,8 +83858,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -82386,8 +83868,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -82404,8 +83886,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체"
@@ -82865,7 +84347,7 @@ window.ICU_MANUAL_DB = {
         "phlebostatic axis"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "EMR 사용, 간호기록, 특수기록, 처방 액팅의 흐름을 확인할 때"
       ],
@@ -82931,6 +84413,18 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
           "caption": "호흡기계 중증질환 총정리",
@@ -82959,16 +84453,6 @@ window.ICU_MANUAL_DB = {
             "DM",
             "DKA",
             "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
           ]
         },
         {
@@ -83040,7 +84524,7 @@ window.ICU_MANUAL_DB = {
         "Kelly"
       ],
       "urgency": "routine",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 큰글씨 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
       "indications": [
         "장비 준비, 물품 위치, 연락체계, CSR 물품을 빠르게 확인할 때"
       ],
@@ -83102,6 +84586,31 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
+          "alt": "혈액제제 유효기간 · 보관 온도",
+          "caption": "혈액제제 유효기간 · 보관 온도",
+          "search_terms": [
+            "수혈",
+            "혈액 보관",
+            "혈액제제 유효기간",
+            "보관 온도",
+            "냉장 보관",
+            "실온 보관"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
         {
           "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
           "alt": "호흡기계 중증질환 총정리",
@@ -84014,21 +85523,15 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
           ]
         },
         {
@@ -85035,6 +86538,34 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
+          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
+          "alt": "혈액제제 종류",
+          "caption": "혈액제제 종류",
+          "search_terms": [
+            "수혈",
+            "혈액제제 종류",
+            "RBC",
+            "PRC",
+            "PC",
+            "Platelet",
+            "SDP",
+            "FFP",
+            "Cryo"
+          ]
+        },
+        {
+          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
+          "alt": "수혈 I/O 입력 용량",
+          "caption": "수혈 I/O 입력 용량",
+          "search_terms": [
+            "수혈",
+            "수혈 I/O",
+            "IO 입력",
+            "I/O 입력",
+            "수혈 용량"
+          ]
+        },
+        {
           "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
           "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
           "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
@@ -85126,8 +86657,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_bottle_order_large.png",
-          "alt": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
-          "caption": "검사/검체 큰글씨 ① Lab bottle · 채혈 순서",
+          "alt": "검사/검체 ① Lab bottle · 채혈 순서",
+          "caption": "검사/검체 ① Lab bottle · 채혈 순서",
           "search_terms": [
             "검사",
             "검체",
@@ -85136,8 +86667,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_lab_test_types_large.png",
-          "alt": "검사/검체 큰글씨 ② 검사별 용기",
-          "caption": "검사/검체 큰글씨 ② 검사별 용기",
+          "alt": "검사/검체 ② 검사별 용기",
+          "caption": "검사/검체 ② 검사별 용기",
           "search_terms": [
             "CBC",
             "Chemistry",
@@ -85146,8 +86677,8 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v110_culture_mdr_pickup_large.png",
-          "alt": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
-          "caption": "검사/검체 큰글씨 ③ Culture · 다제내성균 · 픽업",
+          "alt": "검사/검체 ③ Culture · 다제내성균 · 픽업",
+          "caption": "검사/검체 ③ Culture · 다제내성균 · 픽업",
           "search_terms": [
             "Culture",
             "CRE",
@@ -85828,24 +87359,24 @@ window.ICU_MANUAL_DB = {
         },
         {
           "src": "selected_manual_images/v116_ecart_emergency_drugs_large.png",
-          "alt": "E-CART 응급약물표 큰글씨",
-          "caption": "E-CART 응급약물표 큰글씨",
+          "alt": "E-CART 응급약물표",
+          "caption": "E-CART 응급약물표",
           "search_terms": [
             "E-CART 응급약물표 큰글씨"
           ]
         },
         {
           "src": "selected_manual_images/v116_intubation_procedure_large.png",
-          "alt": "Intubation 시행 절차 큰글씨",
-          "caption": "Intubation 시행 절차 큰글씨",
+          "alt": "Intubation 시행 절차",
+          "caption": "Intubation 시행 절차",
           "search_terms": [
             "Intubation 시행 절차 큰글씨"
           ]
         },
         {
           "src": "selected_manual_images/v116_shock_initial_response_large.png",
-          "alt": "Shock 환자 초기대응 큰글씨",
-          "caption": "Shock 환자 초기대응 큰글씨",
+          "alt": "Shock 환자 초기대응",
+          "caption": "Shock 환자 초기대응",
           "search_terms": [
             "Shock 환자 초기대응 큰글씨"
           ]
@@ -88324,7 +89855,7 @@ window.ICU_MANUAL_DB = {
     "total_items": 431
   },
   "v110_update": {
-    "summary": "공급실 기구 카드에서 검사/검체 이미지가 섞이는 문제 수정. 검사/검체 총정리 이미지를 큰글씨 3장으로 분리.",
+    "summary": "공급실 기구 카드에서 검사/검체 이미지가 섞이는 문제 수정. 검사/검체 총정리 이미지를 3장으로 분리.",
     "added_images": [
       "v110_lab_bottle_order_large.png",
       "v110_lab_test_types_large.png",
@@ -88333,7 +89864,7 @@ window.ICU_MANUAL_DB = {
     "total_items": 432
   },
   "v111_update": {
-    "summary": "CPR/Brain CT/수혈/검체/CSR 이미지 관련성 분리. 모바일에서 표는 카드형 큰글씨로, 이미지는 한 줄 전체폭과 원본 열기 방식으로 표시.",
+    "summary": "CPR/Brain CT/수혈/검체/CSR 이미지 관련성 분리. 모바일에서 표는 카드형 로, 이미지는 한 줄 전체폭과 원본 열기 방식으로 표시.",
     "added_images": [
       "v111_cpr_ecart_large.png",
       "v111_brain_ct_care_large.png",
@@ -88450,9 +89981,16 @@ window.ICU_MANUAL_DB = {
     "mobile_buttons": "3 columns in one row"
   },
   "v128_update": {
-    "summary": "수혈 교육용 이미지에서 '큰글씨' 문구를 제거하고, 통일 디자인 이미지 6장을 추가했습니다. RC2VAE 사용법 2장도 '수혈' 검색 시 보이도록 사용자 DB에 연결했습니다.",
+    "summary": "수혈 교육용 이미지에서 '' 문구를 제거하고, 통일 디자인 이미지 6장을 추가했습니다. RC2VAE 사용법 2장도 '수혈' 검색 시 보이도록 사용자 DB에 연결했습니다.",
     "new_cards": 6,
     "image_count": 6,
-    "important": "'큰글씨' 단어가 제목에 노출되지 않도록 이미지와 카드 제목을 정리했습니다."
+    "important": "'' 단어가 제목에 노출되지 않도록 이미지와 카드 제목을 정리했습니다."
+  },
+  "v129_update": {
+    "summary": "수혈 검색에서 구버전 '수혈 큰글씨' 이미지가 먼저 보이는 문제를 수정했습니다. 수혈 관련 기존 카드에 새 통일 디자인 이미지 6장을 우선 연결하고, 오래된 큰글씨 이미지/관련 없는 순환·질환 이미지를 제거했습니다. 상세 화면의 '언제 보는 카드인가' 섹션은 숨겨 검색어/별칭 중심으로 간소화했습니다.",
+    "patched_transfusion_cards": 107,
+    "removed_old_or_irrelevant_images": 65,
+    "image_names_without_large_text_word": true,
+    "detail_when_to_use_section_hidden": true
   }
 };
