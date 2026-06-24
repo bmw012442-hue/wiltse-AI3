@@ -1,9 +1,9 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.24.0-v124-mobile-stabilize-login",
+    "version": "2.25.0-v125-responsive-layout-tuning",
     "language": "ko",
-    "source": "V123 기반 + 모바일 좌우 흔들림 방지 + Render 깨움 확인용 healthz 추가",
+    "source": "V124 기반 + PC 폭 복원 + 모바일 검색 버튼 3개 한 줄 + 화면 안정화 보강",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-24"
   },
@@ -88017,5 +88017,10 @@
   "v124_update": {
     "summary": "휴대폰 화면 좌우 흔들림/가로 밀림 방지 CSS를 app.js에 주입하고, 카드 상세 모달 폭을 모바일 화면에 고정했습니다. Render free cold start 확인용 /healthz, /ping 엔드포인트도 추가했습니다.",
     "important_note": "Render free web service가 잠든 상태에서 보이는 Render Application Loading 화면은 앱 코드로 바꿀 수 없습니다. 경영진용 즉시 로그인 화면은 Render paid instance 또는 외부 health ping이 필요합니다."
+  },
+  "v125_update": {
+    "summary": "PC 화면이 너무 넓고 커 보이는 문제를 줄이기 위해 desktop max-width를 복원했습니다. 모바일에서는 AI 답변/카드 검색/초기화 3개 버튼이 한 줄에 보이도록 조정하고, 좌우 흔들림 방지 CSS를 보강했습니다.",
+    "desktop_width": "1180px centered",
+    "mobile_buttons": "3 columns in one row"
   }
 }

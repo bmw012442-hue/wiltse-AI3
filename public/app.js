@@ -145,7 +145,7 @@ window.addEventListener("error", (event) => {
         }
         .result-stats {
           display: grid !important;
-          grid-template-columns: 1fr 1fr !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 6px !important;
         }
         .result-stats span {
@@ -154,7 +154,7 @@ window.addEventListener("error", (event) => {
         }
         .action-row, .search-actions {
           display: grid !important;
-          grid-template-columns: 1fr 1fr !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 8px !important;
         }
         input, textarea, select, button {
@@ -175,6 +175,260 @@ window.addEventListener("error", (event) => {
     window.addEventListener("orientationchange", () => setTimeout(window.__v124ClampScroll, 250), { passive: true });
   } catch (e) {
     console.warn("V124 mobile stabilizer failed", e);
+  }
+})();
+
+
+// V125_LAYOUT_TUNER: PC 폭 복원 + 모바일 버튼 3개 한 줄 + 흔들림 추가 안정화
+(function injectV125LayoutTuner() {
+  try {
+    if (document.getElementById("v125-layout-tuner-style")) return;
+    const style = document.createElement("style");
+    style.id = "v125-layout-tuner-style";
+    style.textContent = `
+      :root {
+        --v125-desktop-width: 1180px;
+        --v125-mobile-card-radius: 18px;
+      }
+
+      /* PC: V124에서 너무 넓어진 화면을 다시 보기 좋은 교육자료 폭으로 제한 */
+      @media (min-width: 900px) {
+        body {
+          background: #f3f7fb !important;
+        }
+
+        body > header,
+        body > main,
+        body > section,
+        body > footer,
+        body > div:not(#status):not(#toast):not(.toast):not(.modal):not(.dialog),
+        #app,
+        .app,
+        .page,
+        .shell,
+        .wrap,
+        .container,
+        main {
+          max-width: var(--v125-desktop-width) !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        /* 상단 병원/ICU 배너가 PC에서 과하게 커지는 현상 보정 */
+        .hero,
+        .app-hero,
+        .top-hero,
+        .main-hero,
+        .brand-hero,
+        .header-banner,
+        .top-banner,
+        .hospital-banner,
+        header.hero,
+        header .hero,
+        header img,
+        .hero img,
+        .app-hero img,
+        .top-banner img,
+        .header-banner img,
+        img[src*="banner"],
+        img[src*="hero"],
+        img[alt*="ICU"],
+        img[alt*="업무"],
+        img[alt*="윌스"] {
+          max-height: 170px !important;
+          width: 100% !important;
+          object-fit: cover !important;
+          object-position: center !important;
+        }
+
+        .search-panel,
+        .search-card,
+        .card,
+        article.card,
+        .accordion,
+        .calculator,
+        .menu-section,
+        .category-section {
+          max-width: var(--v125-desktop-width) !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+
+      /* 모바일: 전체 화면은 고정하되 버튼 3개는 한 줄로 */
+      @media (max-width: 640px) {
+        html,
+        body {
+          width: 100% !important;
+          max-width: 100% !important;
+          overflow-x: hidden !important;
+        }
+
+        body {
+          background: #f3f7fb !important;
+        }
+
+        #app,
+        main,
+        .app,
+        .page,
+        .shell,
+        .wrap,
+        .container {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .search-card,
+        .search-panel,
+        .card,
+        article.card,
+        .accordion,
+        .calculator,
+        .menu-section,
+        .category-section {
+          width: 100% !important;
+          max-width: 100% !important;
+          border-radius: var(--v125-mobile-card-radius) !important;
+        }
+
+        /* AI 답변 / 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
+        .action-row,
+        .search-actions,
+        .search-action-row,
+        .button-row,
+        .actions {
+          display: grid !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 6px !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          align-items: stretch !important;
+        }
+
+        .action-row button,
+        .search-actions button,
+        .search-action-row button,
+        .button-row button,
+        .actions button,
+        #aiBtn,
+        #searchBtn,
+        #resetBtn,
+        #aiAnswerBtn,
+        #cardSearchBtn {
+          min-width: 0 !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          white-space: nowrap !important;
+          font-size: 0.88rem !important;
+          line-height: 1.15 !important;
+          padding: 10px 4px !important;
+          min-height: 44px !important;
+          border-radius: 14px !important;
+        }
+
+        textarea,
+        input[type="text"],
+        input[type="search"] {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 16px !important;
+        }
+
+        /* 상단 배너는 모바일에서 과도하게 길어지지 않게 */
+        .hero,
+        .app-hero,
+        .top-hero,
+        .main-hero,
+        .brand-hero,
+        .header-banner,
+        .top-banner,
+        .hospital-banner,
+        header img,
+        .hero img,
+        .app-hero img,
+        .top-banner img,
+        .header-banner img,
+        img[src*="banner"],
+        img[src*="hero"] {
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 96px !important;
+          object-fit: cover !important;
+          object-position: center !important;
+          border-radius: 12px !important;
+        }
+
+        /* 검색 결과/상세 카드가 미세하게 좌우로 밀리지 않도록 */
+        #cards,
+        .cards,
+        .answer-box,
+        #answerBox,
+        .ai-answer,
+        #cardDialog,
+        #detailBody,
+        .structured-card,
+        .detail-section,
+        .image-grid,
+        .v115-readable-images {
+          width: 100% !important;
+          max-width: 100% !important;
+          min-width: 0 !important;
+          overflow-x: hidden !important;
+        }
+
+        .table-wrap,
+        .v115-table-scroll,
+        .result-table-preview,
+        .table-section {
+          overflow-x: auto !important;
+          max-width: 100% !important;
+          -webkit-overflow-scrolling: touch !important;
+        }
+
+        .alias-chips,
+        .example-chips,
+        .chips {
+          max-width: 100% !important;
+          overflow-x: auto !important;
+          -webkit-overflow-scrolling: touch !important;
+        }
+      }
+
+      /* 아주 좁은 화면에서도 3개 버튼 유지 */
+      @media (max-width: 360px) {
+        .action-row button,
+        .search-actions button,
+        .search-action-row button,
+        .button-row button,
+        .actions button,
+        #aiBtn,
+        #searchBtn,
+        #resetBtn,
+        #aiAnswerBtn,
+        #cardSearchBtn {
+          font-size: 0.8rem !important;
+          padding-left: 2px !important;
+          padding-right: 2px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    const clamp = () => {
+      if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+      document.documentElement.scrollLeft = 0;
+      if (document.body) document.body.scrollLeft = 0;
+    };
+    window.addEventListener("load", clamp, { passive: true });
+    window.addEventListener("resize", clamp, { passive: true });
+    window.addEventListener("orientationchange", () => setTimeout(clamp, 200), { passive: true });
+  } catch (e) {
+    console.warn("V125 layout tuner failed", e);
   }
 })();
 
