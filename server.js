@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.25.0-v125-responsive-layout-tuning" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.28.0-v128-transfusion-unified-images" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.25.0-v125-responsive-layout-tuning",
+    version: "2.28.0-v128-transfusion-unified-images",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v125 responsive layout tuning running on port ${port}`);
+  console.log(`ICU AI Manual v128 transfusion unified images running on port ${port}`);
 });
