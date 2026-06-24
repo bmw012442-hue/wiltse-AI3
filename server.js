@@ -542,10 +542,19 @@ function requireAuth(req, res, next) {
   return res.redirect(`/login?next=${encodeURIComponent(req.originalUrl || "/")}`);
 }
 
+
+app.get("/healthz", (req, res) => {
+  res.status(200).type("text/plain").send("ok");
+});
+
+app.get("/ping", (req, res) => {
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.24.0-v124-mobile-stabilize-login" });
+});
+
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.21.0-v121-education-only-relevance-fix",
+    version: "2.24.0-v124-mobile-stabilize-login",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -734,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v121 education only relevance fix running on port ${port}`);
+  console.log(`ICU AI Manual v124 mobile stabilize login running on port ${port}`);
 });
