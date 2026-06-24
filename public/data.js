@@ -1,11 +1,11 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.23.0-v123-disease-overview-image-search",
+    "version": "2.24.0-v124-mobile-stabilize-login",
     "language": "ko",
-    "source": "V121 기반 + 질환 파트별 총정리 이미지 8장 DB 검색 연결",
+    "source": "V123 기반 + 모바일 좌우 흔들림 방지 + Render 깨움 확인용 healthz 추가",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-06-23"
+    "updated_at": "2026-06-24"
   },
   "schema": {
     "id": "string",
@@ -88013,5 +88013,9 @@ window.ICU_MANUAL_DB = {
     "patched_existing_cards": 372,
     "audit_cards_removed_from_user_db": 0,
     "total_user_items": 453
+  },
+  "v124_update": {
+    "summary": "휴대폰 화면 좌우 흔들림/가로 밀림 방지 CSS를 app.js에 주입하고, 카드 상세 모달 폭을 모바일 화면에 고정했습니다. Render free cold start 확인용 /healthz, /ping 엔드포인트도 추가했습니다.",
+    "important_note": "Render free web service가 잠든 상태에서 보이는 Render Application Loading 화면은 앱 코드로 바꿀 수 없습니다. 경영진용 즉시 로그인 화면은 Render paid instance 또는 외부 health ping이 필요합니다."
   }
 };

@@ -7,6 +7,177 @@ window.addEventListener("error", (event) => {
   }
   console.error(event.error || event.message);
 });
+
+// V124_MOBILE_STABILIZER: 모바일 화면 흔들림/좌우 밀림 방지
+(function injectV124MobileStabilizer() {
+  try {
+    let viewport = document.querySelector('meta[name="viewport"]');
+    if (!viewport) {
+      viewport = document.createElement("meta");
+      viewport.name = "viewport";
+      document.head.appendChild(viewport);
+    }
+    viewport.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"
+    );
+
+    if (document.getElementById("v124-mobile-stabilizer-style")) return;
+    const style = document.createElement("style");
+    style.id = "v124-mobile-stabilizer-style";
+    style.textContent = `
+      html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-x: hidden !important;
+        overscroll-behavior-x: none !important;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        position: relative;
+      }
+      body {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        touch-action: pan-y;
+      }
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
+      body.modal-open,
+      html.modal-open {
+        overflow: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      #app, main, .app, .page, .shell, .container, .wrap, .content,
+      #cards, .cards, .card, article.card,
+      #answerBox, .answer-box, .ai-answer, .result-stats,
+      .structured-card, .simple-core-card, .detail-section,
+      .result-table-preview, .result-video-preview, .result-image-preview,
+      .alias-chips, .related-cards, .action-row, .category-row, .menu-grid,
+      .menu-card, .category-card {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-wrap: anywhere;
+      }
+      .card, article.card, .detail-section {
+        overflow-x: hidden !important;
+      }
+      img, video, canvas, svg {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      .result-image-preview img {
+        max-width: 100% !important;
+        object-fit: cover;
+      }
+      .table-wrap, .v115-table-scroll, .result-table-preview,
+      .mini, .table-section {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+      table {
+        max-width: 100%;
+      }
+      #cardDialog {
+        width: min(960px, calc(100vw - 12px)) !important;
+        max-width: calc(100vw - 12px) !important;
+        max-height: calc(100dvh - 10px) !important;
+        margin: auto !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+      }
+      #cardDialog::backdrop {
+        background: rgba(15, 23, 42, .58);
+      }
+      #detailBody {
+        max-width: 100% !important;
+        width: 100% !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        max-height: calc(100dvh - 128px) !important;
+        padding-left: max(12px, env(safe-area-inset-left)) !important;
+        padding-right: max(12px, env(safe-area-inset-right)) !important;
+      }
+      #detailTitle, #detailMeta {
+        max-width: calc(100% - 70px) !important;
+        overflow-wrap: anywhere;
+      }
+      #closeDialog {
+        flex: 0 0 auto;
+      }
+      .image-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
+      .image-grid figure,
+      .v115-readable-images figure {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+      }
+      .image-grid img,
+      .v115-readable-images img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+      }
+      @media (max-width: 640px) {
+        body {
+          font-size: 16px;
+        }
+        #cardDialog {
+          width: calc(100vw - 8px) !important;
+          max-width: calc(100vw - 8px) !important;
+          max-height: calc(100dvh - 8px) !important;
+          border-radius: 16px !important;
+        }
+        #detailBody {
+          max-height: calc(100dvh - 116px) !important;
+        }
+        .result-stats {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr !important;
+          gap: 6px !important;
+        }
+        .result-stats span {
+          min-width: 0 !important;
+          white-space: normal !important;
+        }
+        .action-row, .search-actions {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr !important;
+          gap: 8px !important;
+        }
+        input, textarea, select, button {
+          max-width: 100% !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    window.__v124ClampScroll = function __v124ClampScroll() {
+      if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+      document.documentElement.scrollLeft = 0;
+      document.body.scrollLeft = 0;
+    };
+
+    window.addEventListener("load", window.__v124ClampScroll, { passive: true });
+    window.addEventListener("resize", window.__v124ClampScroll, { passive: true });
+    window.addEventListener("orientationchange", () => setTimeout(window.__v124ClampScroll, 250), { passive: true });
+  } catch (e) {
+    console.warn("V124 mobile stabilizer failed", e);
+  }
+})();
+
 const $ = (id) => document.getElementById(id);
 const allItems = window.ICU_MANUAL_DB?.items || [];
 if ($("cardCount")) $("cardCount").textContent = `${allItems.length} cards`;
@@ -340,6 +511,15 @@ function openCard(id) {
   $("detailMeta").textContent = `${card.id} · ${card.category} · ${card.urgency || "routine"}`;
   $("detailBody").innerHTML = renderStructuredCard(card);
   $("cardDialog").showModal();
+  document.documentElement.classList.add("modal-open");
+  document.body.classList.add("modal-open");
+  setTimeout(() => {
+    window.__v124ClampScroll && window.__v124ClampScroll();
+    const dlg = $("cardDialog");
+    const body = $("detailBody");
+    if (dlg) dlg.scrollLeft = 0;
+    if (body) body.scrollLeft = 0;
+  }, 0);
 
   document.querySelectorAll("[data-related-id]").forEach(el => {
     el.addEventListener("click", () => openCard(el.dataset.relatedId));
@@ -828,7 +1008,20 @@ bindClick("clearBtn", () => {
   document.querySelectorAll(".action-row button").forEach(btn => btn.classList.remove("active"));
   document.querySelectorAll("[data-menu-q]").forEach(btn => btn.classList.remove("active"));
 });
-bindClick("closeDialog", () => $("cardDialog").close());
+bindClick("closeDialog", () => {
+  $("cardDialog").close();
+  document.documentElement.classList.remove("modal-open");
+  document.body.classList.remove("modal-open");
+  window.__v124ClampScroll && window.__v124ClampScroll();
+});
+const __v124Dialog = $("cardDialog");
+if (__v124Dialog) {
+  __v124Dialog.addEventListener("close", () => {
+    document.documentElement.classList.remove("modal-open");
+    document.body.classList.remove("modal-open");
+    window.__v124ClampScroll && window.__v124ClampScroll();
+  });
+}
 document.querySelectorAll("[data-q]").forEach(btn => {
   btn.addEventListener("click", () => { $("question").value = btn.dataset.q; searchCards(); });
 });
