@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.31.0-v131-abga-workflow-images" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.35.0-v135-ns-brain-basic-assessment" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.31.0-v131-abga-workflow-images",
+    version: "2.35.0-v135-ns-brain-basic-assessment",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v131 abga workflow images running on port ${port}`);
+  console.log(`ICU AI Manual v135 NS Brain basic assessment running on port ${port}`);
 });
