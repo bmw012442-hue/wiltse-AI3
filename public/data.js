@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.47.0-v147-ns-brain-emergency-26-33-layout-fixed",
+    "version": "2.49.0-v149-cv-critical-care-circulation-monitoring-db-linked",
     "language": "ko",
-    "source": "V146 기반 + NS Brain 26~33 응급상황 대처 화면맞춤형 이미지 교체",
+    "source": "V147 기반 + V148 CV 순환계/모니터링 이미지 10장 앱 DB 검색어 연결",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-28"
   },
@@ -45,6 +45,2165 @@ window.ICU_MANUAL_DB = {
     ]
   },
   "items": [
+    {
+      "id": "V149_CV_CRITICAL_CARE_03_HUB",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV (심혈관) 중증환자 간호 ③ 순환계 / 모니터링",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "3. 순환계",
+        "3. 순환계 모니터링",
+        "순환계 모니터링",
+        "CV 파트",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "개심술",
+        "보조장치",
+        "시술 후 간호",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "심혈관계 응급상황"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "3. 순환계",
+        "3. 순환계 모니터링",
+        "순환계 모니터링",
+        "CV 파트",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "개심술",
+        "보조장치",
+        "시술 후 간호",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "심혈관계 응급상황"
+      ],
+      "urgency": "high",
+      "summary": "심혈관계 진단 검사, 질환, 개심술·보조장치, ECG 증상별 질환, 약물, 응급상황까지 연결한 CV 순환계/모니터링 허브 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        },
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/31_CV_Critical_Care_basic_circulation_monitoring.png",
+          "alt": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링",
+          "caption": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "기본 순환계 사정",
+            "순환계 사정",
+            "순환 모니터링",
+            "HR",
+            "BP",
+            "MAP",
+            "rhythm",
+            "perfusion",
+            "urine output",
+            "lactate",
+            "말초 관류",
+            "소변량",
+            "저관류",
+            "vital sign",
+            "맥박",
+            "혈압"
+          ]
+        },
+        {
+          "src": "selected_manual_images/32_CV_Critical_Care_ECG_monitoring_arrhythmia_assessment.png",
+          "alt": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "caption": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "ECG 모니터링",
+            "EKG 모니터링",
+            "부정맥",
+            "arrhythmia",
+            "Bradycardia",
+            "Tachycardia",
+            "Atrial fibrillation",
+            "AF",
+            "A-fib",
+            "VT",
+            "VF",
+            "12 lead ECG",
+            "ECG strip",
+            "artifact"
+          ]
+        },
+        {
+          "src": "selected_manual_images/33_CV_Critical_Care_ABP_arterial_line_management.png",
+          "alt": "CV Critical Care 3-3 ABP / Arterial line 관리",
+          "caption": "CV Critical Care 3-3 ABP / Arterial line 관리",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "ABP",
+            "Arterial line",
+            "A-line",
+            "동맥압",
+            "동맥라인",
+            "arterial pressure",
+            "waveform",
+            "zeroing",
+            "leveling",
+            "transducer",
+            "phlebostatic axis",
+            "distal pulse",
+            "distal perfusion",
+            "MAP"
+          ]
+        },
+        {
+          "src": "selected_manual_images/34_CV_Critical_Care_CVP_central_line_monitoring.png",
+          "alt": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링",
+          "caption": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "CVP",
+            "중심정맥관",
+            "C-line",
+            "central line",
+            "central venous pressure",
+            "CVP trend",
+            "infusion safety",
+            "port",
+            "hub",
+            "감염",
+            "line safety",
+            "catheter migration",
+            "air embolism"
+          ]
+        },
+        {
+          "src": "selected_manual_images/35_CV_Critical_Care_hypoperfusion_assessment.png",
+          "alt": "CV Critical Care 3-5 저관류 / 순환저하 판단",
+          "caption": "CV Critical Care 3-5 저관류 / 순환저하 판단",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "저관류",
+            "순환저하",
+            "hypoperfusion",
+            "shock",
+            "MAP",
+            "pulse pressure",
+            "skin perfusion",
+            "mental status",
+            "UO",
+            "lactate",
+            "CRT",
+            "capillary refill",
+            "oliguria",
+            "cold mottled skin"
+          ]
+        },
+        {
+          "src": "selected_manual_images/36_CV_Critical_Care_vasopressor_inotrope_monitoring.png",
+          "alt": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "caption": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "승압제",
+            "강심제",
+            "vasopressor",
+            "inotrope",
+            "norepinephrine",
+            "노르에피네프린",
+            "dopamine",
+            "dobutamine",
+            "syringe pump",
+            "MAP target",
+            "pump alarm",
+            "extravasation",
+            "perfusion 평가"
+          ]
+        },
+        {
+          "src": "selected_manual_images/37_CV_Critical_Care_shock_initial_response.png",
+          "alt": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "caption": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "Shock",
+            "shock 의심",
+            "쇼크",
+            "저혈압",
+            "hypotension",
+            "tachycardia",
+            "perfusion 저하",
+            "원인 감별",
+            "cardiogenic shock",
+            "hypovolemic shock",
+            "distributive shock",
+            "obstructive shock",
+            "lactate",
+            "ABG"
+          ]
+        },
+        {
+          "src": "selected_manual_images/38_CV_Critical_Care_chest_pain_ACS_monitoring.png",
+          "alt": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "caption": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "흉통",
+            "ACS",
+            "acute coronary syndrome",
+            "MI",
+            "myocardial infarction",
+            "심근경색",
+            "angina",
+            "12-lead ECG",
+            "ST elevation",
+            "ST depression",
+            "troponin",
+            "cardiac enzyme",
+            "chest pain",
+            "hemodynamic change"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_DIAGNOSTIC_TESTS",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "심혈관계 진단 검사",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관 진단검사",
+        "CV 진단검사",
+        "ECG",
+        "심전도",
+        "심초음파",
+        "Echo",
+        "Chest X-ray",
+        "Cardiac enzyme",
+        "Troponin",
+        "Coronary angiography",
+        "ABGA",
+        "심장효소",
+        "관상동맥조영술"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관 진단검사",
+        "CV 진단검사",
+        "ECG",
+        "심전도",
+        "심초음파",
+        "Echo",
+        "Chest X-ray",
+        "Cardiac enzyme",
+        "Troponin",
+        "Coronary angiography",
+        "ABGA",
+        "심장효소",
+        "관상동맥조영술"
+      ],
+      "urgency": "high",
+      "summary": "ECG, Echocardiography, Chest X-ray, cardiac enzyme, lipid profile, coronary angiography, ABGA 등 심혈관계 진단검사를 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_DISEASES",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "심혈관계 질환",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 질환",
+        "심혈관 질환",
+        "관상동맥질환",
+        "협심증",
+        "심근경색",
+        "심부전",
+        "부정맥",
+        "고혈압",
+        "판막질환",
+        "심근증",
+        "ACS",
+        "heart failure",
+        "arrhythmia"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 질환",
+        "심혈관 질환",
+        "관상동맥질환",
+        "협심증",
+        "심근경색",
+        "심부전",
+        "부정맥",
+        "고혈압",
+        "판막질환",
+        "심근증",
+        "ACS",
+        "heart failure",
+        "arrhythmia"
+      ],
+      "urgency": "high",
+      "summary": "관상동맥질환, 심부전, 부정맥, 고혈압, 판막질환, 심근증 등 심혈관계 질환의 증상과 간호 핵심을 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        },
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_OPEN_HEART_DEVICES_POSTCARE",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "개심술과 보조장치, 시술 후 간호",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "개심술",
+        "개심술 후 간호",
+        "심혈관계 시술 후 간호",
+        "시술 후 간호",
+        "수술 후 간호",
+        "CABG",
+        "판막치환술",
+        "판막성형술",
+        "선천성 심장 수술",
+        "대동맥 수술",
+        "IABP",
+        "Impella",
+        "ECMO",
+        "VAD",
+        "보조장치",
+        "순환보조장치",
+        "Chest tube",
+        "PCA"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "개심술",
+        "개심술 후 간호",
+        "심혈관계 시술 후 간호",
+        "시술 후 간호",
+        "수술 후 간호",
+        "CABG",
+        "판막치환술",
+        "판막성형술",
+        "선천성 심장 수술",
+        "대동맥 수술",
+        "IABP",
+        "Impella",
+        "ECMO",
+        "VAD",
+        "보조장치",
+        "순환보조장치",
+        "Chest tube",
+        "PCA"
+      ],
+      "urgency": "high",
+      "summary": "개심술 종류, IABP/Impella/ECMO/VAD 등 보조장치, 수술·시술 후 관찰과 간호 포인트를 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_ECG_DISEASES",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "ECG 증상별 질환",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ECG 증상별 질환",
+        "EKG 증상별 질환",
+        "ECG 질환",
+        "EKG 질환",
+        "ST elevation",
+        "ST depression",
+        "ischemia",
+        "Atrial fibrillation",
+        "Ventricular tachycardia",
+        "Sinus bradycardia",
+        "Heart block",
+        "부정맥",
+        "심전도 질환"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ECG 증상별 질환",
+        "EKG 증상별 질환",
+        "ECG 질환",
+        "EKG 질환",
+        "ST elevation",
+        "ST depression",
+        "ischemia",
+        "Atrial fibrillation",
+        "Ventricular tachycardia",
+        "Sinus bradycardia",
+        "Heart block",
+        "부정맥",
+        "심전도 질환"
+      ],
+      "urgency": "high",
+      "summary": "ECG 변화와 관련 질환, 주요 특징과 증상을 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/32_CV_Critical_Care_ECG_monitoring_arrhythmia_assessment.png",
+          "alt": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "caption": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "ECG 모니터링",
+            "EKG 모니터링",
+            "부정맥",
+            "arrhythmia",
+            "Bradycardia",
+            "Tachycardia",
+            "Atrial fibrillation",
+            "AF",
+            "A-fib",
+            "VT",
+            "VF",
+            "12 lead ECG",
+            "ECG strip",
+            "artifact"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_MEDICATIONS",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "심혈관계 약물",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 약물",
+        "심혈관 약물",
+        "항혈소판제",
+        "항응고제",
+        "베타차단제",
+        "ACE 억제제",
+        "이뇨제",
+        "질산제",
+        "칼슘채널차단제",
+        "Aspirin",
+        "Clopidogrel",
+        "Heparin",
+        "Warfarin",
+        "Apixaban",
+        "Metoprolol",
+        "Bisoprolol",
+        "Enalapril",
+        "Lisinopril",
+        "Furosemide",
+        "Nitroglycerin",
+        "Amlodipine",
+        "Diltiazem",
+        "승압제",
+        "강심제"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 약물",
+        "심혈관 약물",
+        "항혈소판제",
+        "항응고제",
+        "베타차단제",
+        "ACE 억제제",
+        "이뇨제",
+        "질산제",
+        "칼슘채널차단제",
+        "Aspirin",
+        "Clopidogrel",
+        "Heparin",
+        "Warfarin",
+        "Apixaban",
+        "Metoprolol",
+        "Bisoprolol",
+        "Enalapril",
+        "Lisinopril",
+        "Furosemide",
+        "Nitroglycerin",
+        "Amlodipine",
+        "Diltiazem",
+        "승압제",
+        "강심제"
+      ],
+      "urgency": "high",
+      "summary": "항혈소판제, 항응고제, 베타차단제, ACE 억제제, 이뇨제, 질산제, 칼슘채널차단제와 승압제/강심제 모니터링을 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/36_CV_Critical_Care_vasopressor_inotrope_monitoring.png",
+          "alt": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "caption": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "승압제",
+            "강심제",
+            "vasopressor",
+            "inotrope",
+            "norepinephrine",
+            "노르에피네프린",
+            "dopamine",
+            "dobutamine",
+            "syringe pump",
+            "MAP target",
+            "pump alarm",
+            "extravasation",
+            "perfusion 평가"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_EMERGENCY_SITUATIONS",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "심혈관계 응급 상황",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 응급 상황",
+        "심혈관계 응급상황",
+        "심혈관 응급",
+        "CV 응급",
+        "ACS",
+        "심정지",
+        "CPA",
+        "VT",
+        "VF",
+        "급성 폐부종",
+        "대동맥 박리",
+        "심인성 쇼크",
+        "shock",
+        "쇼크",
+        "흉통",
+        "심근경색",
+        "Code Blue"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "심혈관계 응급 상황",
+        "심혈관계 응급상황",
+        "심혈관 응급",
+        "CV 응급",
+        "ACS",
+        "심정지",
+        "CPA",
+        "VT",
+        "VF",
+        "급성 폐부종",
+        "대동맥 박리",
+        "심인성 쇼크",
+        "shock",
+        "쇼크",
+        "흉통",
+        "심근경색",
+        "Code Blue"
+      ],
+      "urgency": "high",
+      "summary": "ACS, CPA, VT/VF, 급성 폐부종, 대동맥 박리, 심인성 쇼크 등 심혈관계 응급상황의 증상과 즉시 간호·보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/37_CV_Critical_Care_shock_initial_response.png",
+          "alt": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "caption": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "Shock",
+            "shock 의심",
+            "쇼크",
+            "저혈압",
+            "hypotension",
+            "tachycardia",
+            "perfusion 저하",
+            "원인 감별",
+            "cardiogenic shock",
+            "hypovolemic shock",
+            "distributive shock",
+            "obstructive shock",
+            "lactate",
+            "ABG"
+          ]
+        },
+        {
+          "src": "selected_manual_images/38_CV_Critical_Care_chest_pain_ACS_monitoring.png",
+          "alt": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "caption": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "흉통",
+            "ACS",
+            "acute coronary syndrome",
+            "MI",
+            "myocardial infarction",
+            "심근경색",
+            "angina",
+            "12-lead ECG",
+            "ST elevation",
+            "ST depression",
+            "troponin",
+            "cardiac enzyme",
+            "chest pain",
+            "hemodynamic change"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_31_BASIC_CIRCULATION_MONITORING",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "기본 순환계 사정",
+        "순환계 사정",
+        "HR",
+        "BP",
+        "MAP",
+        "rhythm",
+        "perfusion",
+        "urine output",
+        "lactate",
+        "vital sign"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "기본 순환계 사정",
+        "순환계 사정",
+        "HR",
+        "BP",
+        "MAP",
+        "rhythm",
+        "perfusion",
+        "urine output",
+        "lactate",
+        "vital sign"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/31_CV_Critical_Care_basic_circulation_monitoring.png",
+          "alt": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링",
+          "caption": "CV Critical Care 3-1 기본 순환계 사정 / 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "기본 순환계 사정",
+            "순환계 사정",
+            "순환 모니터링",
+            "HR",
+            "BP",
+            "MAP",
+            "rhythm",
+            "perfusion",
+            "urine output",
+            "lactate",
+            "말초 관류",
+            "소변량",
+            "저관류",
+            "vital sign",
+            "맥박",
+            "혈압"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_32_ECG_MONITORING",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ECG 모니터링",
+        "EKG 모니터링",
+        "부정맥",
+        "Atrial fibrillation",
+        "Bradycardia",
+        "Tachycardia",
+        "artifact",
+        "12-lead ECG"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ECG 모니터링",
+        "EKG 모니터링",
+        "부정맥",
+        "Atrial fibrillation",
+        "Bradycardia",
+        "Tachycardia",
+        "artifact",
+        "12-lead ECG"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/32_CV_Critical_Care_ECG_monitoring_arrhythmia_assessment.png",
+          "alt": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "caption": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "ECG 모니터링",
+            "EKG 모니터링",
+            "부정맥",
+            "arrhythmia",
+            "Bradycardia",
+            "Tachycardia",
+            "Atrial fibrillation",
+            "AF",
+            "A-fib",
+            "VT",
+            "VF",
+            "12 lead ECG",
+            "ECG strip",
+            "artifact"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_33_ABP_ARTERIAL_LINE",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-3 ABP / Arterial line 관리",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ABP",
+        "A-line",
+        "Arterial line",
+        "동맥압",
+        "동맥라인",
+        "waveform",
+        "zeroing",
+        "leveling",
+        "transducer",
+        "distal perfusion"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "ABP",
+        "A-line",
+        "Arterial line",
+        "동맥압",
+        "동맥라인",
+        "waveform",
+        "zeroing",
+        "leveling",
+        "transducer",
+        "distal perfusion"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-3 ABP / Arterial line 관리 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/33_CV_Critical_Care_ABP_arterial_line_management.png",
+          "alt": "CV Critical Care 3-3 ABP / Arterial line 관리",
+          "caption": "CV Critical Care 3-3 ABP / Arterial line 관리",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "ABP",
+            "Arterial line",
+            "A-line",
+            "동맥압",
+            "동맥라인",
+            "arterial pressure",
+            "waveform",
+            "zeroing",
+            "leveling",
+            "transducer",
+            "phlebostatic axis",
+            "distal pulse",
+            "distal perfusion",
+            "MAP"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_34_CVP_CENTRAL_LINE",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "CVP",
+        "중심정맥관",
+        "C-line",
+        "central line",
+        "CVP trend",
+        "line safety",
+        "infection signs"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "CVP",
+        "중심정맥관",
+        "C-line",
+        "central line",
+        "CVP trend",
+        "line safety",
+        "infection signs"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/34_CV_Critical_Care_CVP_central_line_monitoring.png",
+          "alt": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링",
+          "caption": "CV Critical Care 3-4 CVP / 중심정맥관 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "CVP",
+            "중심정맥관",
+            "C-line",
+            "central line",
+            "central venous pressure",
+            "CVP trend",
+            "infusion safety",
+            "port",
+            "hub",
+            "감염",
+            "line safety",
+            "catheter migration",
+            "air embolism"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_35_HYPOPERFUSION",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-5 저관류 / 순환저하 판단",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "저관류",
+        "순환저하",
+        "hypoperfusion",
+        "CRT",
+        "capillary refill",
+        "oliguria",
+        "lactate",
+        "cold mottled skin"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "저관류",
+        "순환저하",
+        "hypoperfusion",
+        "CRT",
+        "capillary refill",
+        "oliguria",
+        "lactate",
+        "cold mottled skin"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-5 저관류 / 순환저하 판단 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/35_CV_Critical_Care_hypoperfusion_assessment.png",
+          "alt": "CV Critical Care 3-5 저관류 / 순환저하 판단",
+          "caption": "CV Critical Care 3-5 저관류 / 순환저하 판단",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "저관류",
+            "순환저하",
+            "hypoperfusion",
+            "shock",
+            "MAP",
+            "pulse pressure",
+            "skin perfusion",
+            "mental status",
+            "UO",
+            "lactate",
+            "CRT",
+            "capillary refill",
+            "oliguria",
+            "cold mottled skin"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_36_VASOPRESSOR_INOTROPE",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "승압제",
+        "강심제",
+        "vasopressor",
+        "inotrope",
+        "norepinephrine",
+        "syringe pump",
+        "MAP target",
+        "extravasation"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "승압제",
+        "강심제",
+        "vasopressor",
+        "inotrope",
+        "norepinephrine",
+        "syringe pump",
+        "MAP target",
+        "extravasation"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-6 승압제 / 강심제 모니터링 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/36_CV_Critical_Care_vasopressor_inotrope_monitoring.png",
+          "alt": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "caption": "CV Critical Care 3-6 승압제 / 강심제 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "승압제",
+            "강심제",
+            "vasopressor",
+            "inotrope",
+            "norepinephrine",
+            "노르에피네프린",
+            "dopamine",
+            "dobutamine",
+            "syringe pump",
+            "MAP target",
+            "pump alarm",
+            "extravasation",
+            "perfusion 평가"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_37_SHOCK_INITIAL_RESPONSE",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-7 Shock 의심 초기 대응",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "Shock",
+        "쇼크",
+        "저혈압",
+        "hypotension",
+        "tachycardia",
+        "lactate",
+        "ABG",
+        "원인 감별",
+        "perfusion 저하"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "Shock",
+        "쇼크",
+        "저혈압",
+        "hypotension",
+        "tachycardia",
+        "lactate",
+        "ABG",
+        "원인 감별",
+        "perfusion 저하"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-7 Shock 의심 초기 대응 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/37_CV_Critical_Care_shock_initial_response.png",
+          "alt": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "caption": "CV Critical Care 3-7 Shock 의심 초기 대응",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "Shock",
+            "shock 의심",
+            "쇼크",
+            "저혈압",
+            "hypotension",
+            "tachycardia",
+            "perfusion 저하",
+            "원인 감별",
+            "cardiogenic shock",
+            "hypovolemic shock",
+            "distributive shock",
+            "obstructive shock",
+            "lactate",
+            "ABG"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V149_CV_38_CHEST_PAIN_ACS",
+      "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
+      "title": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+      "aliases": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "흉통",
+        "ACS",
+        "심근경색",
+        "MI",
+        "12-lead ECG",
+        "ST elevation",
+        "troponin",
+        "chest pain",
+        "hemodynamic change"
+      ],
+      "search_terms": [
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "순환계",
+        "순환 / 모니터링",
+        "중환자실 심혈관",
+        "심혈관계 중증환자 간호",
+        "흉통",
+        "ACS",
+        "심근경색",
+        "MI",
+        "12-lead ECG",
+        "ST elevation",
+        "troponin",
+        "chest pain",
+        "hemodynamic change"
+      ],
+      "urgency": "high",
+      "summary": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 기본 개념 확인",
+        "경력간호사 인계·사정 기준 확인",
+        "순환계 모니터링, 심혈관계 질환, ECG, 약물, 응급상황 검색 시 참고"
+      ],
+      "preparation": [
+        "환자 상태와 병원 프로토콜, 의사 처방을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·수치·처치 반응을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·검사는 담당의 지시와 병원 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발생 시간, 수치, 관찰 소견, 처치, 보고 내용, 재평가 결과를 기록합니다."
+      ],
+      "related": [
+        "순환 / 모니터링",
+        "A-line",
+        "CVP",
+        "ECG",
+        "Shock",
+        "ACS",
+        "승압제"
+      ],
+      "source_refs": [
+        "CV Critical Care 교육용 요약 이미지 V149"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/38_CV_Critical_Care_chest_pain_ACS_monitoring.png",
+          "alt": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "caption": "CV Critical Care 3-8 흉통 / ACS 의심 모니터링",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "흉통",
+            "ACS",
+            "acute coronary syndrome",
+            "MI",
+            "myocardial infarction",
+            "심근경색",
+            "angina",
+            "12-lead ECG",
+            "ST elevation",
+            "ST depression",
+            "troponin",
+            "cardiac enzyme",
+            "chest pain",
+            "hemodynamic change"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
     {
       "id": "V147_NS_BRAIN_EMERGENCY_05_HUB",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
@@ -94746,7 +96905,19 @@ window.ICU_MANUAL_DB = {
         "순환 모니터링 총정리",
         "중환자실 순환",
         "중환자실 모니터링",
-        "원내 순환 프로토콜"
+        "원내 순환 프로토콜",
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "search_terms": [
         "순환 / 모니터링 원내 프로토콜 총정리: Vital sign·A-line·CVP·EKG·I/O·승압제",
@@ -94782,7 +96953,19 @@ window.ICU_MANUAL_DB = {
         "동맥압 파형",
         "zeroing",
         "transducer",
-        "phlebostatic axis"
+        "phlebostatic axis",
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "urgency": "routine",
       "summary": "병동간호팀 간호사 매뉴얼 54~56, 102~111, 140~141page를 바탕으로 중환자실 간호사가 꼭 알아야 할 순환/모니터링 내용을 한눈에 볼 수 있게 정리했습니다.",
@@ -94851,6 +97034,74 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        },
         {
           "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
           "alt": "NS Brain 31 EVD obstruction 응급 대처",
@@ -108574,7 +110825,19 @@ window.ICU_MANUAL_DB = {
       "aliases": [
         "순환 / 모니터링",
         "실무 메뉴",
-        "대분류"
+        "대분류",
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "search_terms": [
         "3. 순환 / 모니터링",
@@ -108588,7 +110851,19 @@ window.ICU_MANUAL_DB = {
         "동맥압 파형",
         "zeroing",
         "transducer",
-        "phlebostatic axis"
+        "phlebostatic axis",
+        "CV",
+        "심혈관",
+        "심혈관계",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "urgency": "routine",
       "summary": "3. 순환 / 모니터링 대분류에 해당하는 교육 카드와 총정리 이미지를 모아 보는 입구 카드입니다.",
@@ -108635,6 +110910,74 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        },
         {
           "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
           "alt": "NS Brain 31 EVD obstruction 응급 대처",
@@ -111017,7 +113360,18 @@ window.ICU_MANUAL_DB = {
         "CPR",
         "A-line",
         "CVP",
-        "승압제"
+        "승압제",
+        "CV",
+        "심혈관",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "search_terms": [
         "심혈관계",
@@ -111030,7 +113384,18 @@ window.ICU_MANUAL_DB = {
         "CPR",
         "A-line",
         "CVP",
-        "승압제"
+        "승압제",
+        "CV",
+        "심혈관",
+        "CV 중증환자 간호",
+        "심혈관계 진단 검사",
+        "심혈관계 질환",
+        "ECG 증상별 질환",
+        "심혈관계 약물",
+        "심혈관계 응급 상황",
+        "개심술",
+        "보조장치",
+        "시술 후 간호"
       ],
       "urgency": "high",
       "summary": "ACS, 심부전, 부정맥, 쇼크, CPR, A-line/CVP, 승압제 관찰을 정리한 이미지 카드입니다.",
@@ -111056,6 +113421,74 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
+        {
+          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "ECG 증상별 질환",
+            "심혈관계 약물",
+            "심혈관계 응급 상황",
+            "ACS",
+            "CPA",
+            "VT",
+            "VF",
+            "폐부종",
+            "대동맥 박리",
+            "심인성 쇼크",
+            "흉통",
+            "NRS",
+            "PQRST",
+            "말초 관류",
+            "항혈소판제",
+            "항응고제",
+            "베타차단제",
+            "ACE 억제제",
+            "이뇨제",
+            "질산제",
+            "칼슘채널차단제"
+          ]
+        },
+        {
+          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
+          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "search_terms": [
+            "CV",
+            "심혈관",
+            "심혈관계",
+            "순환계",
+            "순환 / 모니터링",
+            "CV Critical Care",
+            "중환자실 심혈관",
+            "모니터링",
+            "CV 중증환자 간호",
+            "심혈관계 진단 검사",
+            "심혈관계 질환",
+            "개심술",
+            "보조장치",
+            "시술 후 간호",
+            "CABG",
+            "ECMO",
+            "IABP",
+            "VAD",
+            "ECG",
+            "Echo",
+            "심초음파",
+            "Chest X-ray",
+            "cardiac enzyme",
+            "ABGA",
+            "coronary angiography"
+          ]
+        },
         {
           "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
           "alt": "심혈관계 중증질환 총정리",
@@ -114694,5 +117127,38 @@ window.ICU_MANUAL_DB = {
       "33_NS_Brain_Fever_meningitis_suspected_emergency.png"
     ],
     "upload_note": "GitHub에는 압축파일을 올리지 말고, 압축을 푼 뒤 각 폴더 안 파일을 지정 위치에 업로드합니다."
+  },
+  "v149_update": {
+    "title": "V149 CV 심혈관 중증환자 간호 3. 순환계/모니터링 앱 DB 연결",
+    "added_cards": 15,
+    "added_images": [
+      "30_CV_Critical_Care_overview_page1.png",
+      "39_CV_Critical_Care_overview_page2.png",
+      "31_CV_Critical_Care_basic_circulation_monitoring.png",
+      "32_CV_Critical_Care_ECG_monitoring_arrhythmia_assessment.png",
+      "33_CV_Critical_Care_ABP_arterial_line_management.png",
+      "34_CV_Critical_Care_CVP_central_line_monitoring.png",
+      "35_CV_Critical_Care_hypoperfusion_assessment.png",
+      "36_CV_Critical_Care_vasopressor_inotrope_monitoring.png",
+      "37_CV_Critical_Care_shock_initial_response.png",
+      "38_CV_Critical_Care_chest_pain_ACS_monitoring.png"
+    ],
+    "search_keywords": [
+      "심혈관계 진단 검사",
+      "심혈관계 질환",
+      "개심술",
+      "보조장치",
+      "시술 후 간호",
+      "ECG 증상별 질환",
+      "심혈관계 약물",
+      "심혈관계 응급 상황",
+      "CV",
+      "순환계 모니터링",
+      "A-line",
+      "CVP",
+      "Shock",
+      "ACS",
+      "승압제"
+    ]
   }
 };
