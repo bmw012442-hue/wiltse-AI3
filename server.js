@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.38.0-v138-ns-brain-evd-care" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.40.0-v140-ns-brain-postop-procedure-care" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.38.0-v138-ns-brain-evd-care",
+    version: "2.40.0-v140-ns-brain-postop-procedure-care",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v138 NS Brain EVD care running on port ${port}`);
+  console.log(`ICU AI Manual v140 NS Brain postop procedure care running on port ${port}`);
 });
