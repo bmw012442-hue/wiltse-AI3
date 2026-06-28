@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.40.0-v140-ns-brain-postop-procedure-care" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.41.0-v141-ns-brain-emergency-response" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.40.0-v140-ns-brain-postop-procedure-care",
+    version: "2.41.0-v141-ns-brain-emergency-response",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v140 NS Brain postop procedure care running on port ${port}`);
+  console.log(`ICU AI Manual v141 NS Brain emergency response running on port ${port}`);
 });
