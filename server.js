@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.42.0-v142-ns-brain-documentation-handoff" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.43.0-v143-ns-brain-documentation-handoff-fixed" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.42.0-v142-ns-brain-documentation-handoff",
+    version: "2.43.0-v143-ns-brain-documentation-handoff-fixed",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
