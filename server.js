@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.44.0-v144-ns-brain-emergency-fixed-response" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.45.0-v145-ns-brain-emergency-layout-fixed-response" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.44.0-v144-ns-brain-emergency-fixed-response",
+    version: "2.45.0-v145-ns-brain-emergency-layout-fixed-response",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
