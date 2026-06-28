@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.44.0-v144-ns-brain-emergency-fixed-response",
+    "version": "2.45.0-v145-ns-brain-emergency-layout-fixed-response",
     "language": "ko",
     "source": "V140 기반 + NS Brain 응급상황 대처 이미지 8장 DB 연결",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
@@ -46,7 +46,7 @@
   },
   "items": [
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_05_HUB",
+      "id": "V145_NS_BRAIN_EMERGENCY_05_HUB",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain ⑤ Brain 응급상황 대처",
       "aliases": [
@@ -146,7 +146,7 @@
         "NS Brain ④ Brain 수술/시술 후 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지 8장"
+        "V145 NS Brain 응급상황 대처 이미지 8장"
       ],
       "tables": [],
       "images": [
@@ -372,7 +372,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_26_ICP",
+      "id": "V145_NS_BRAIN_EMERGENCY_26_ICP",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 26 ICP 상승 의심 응급 대처",
       "aliases": [
@@ -451,7 +451,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -488,7 +488,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_27_PUPIL_CHANGE",
+      "id": "V145_NS_BRAIN_EMERGENCY_27_PUPIL_CHANGE",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 27 Pupil change 응급 대처",
       "aliases": [
@@ -565,7 +565,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -601,7 +601,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_28_SUDDEN_MENTAL_CHANGE",
+      "id": "V145_NS_BRAIN_EMERGENCY_28_SUDDEN_MENTAL_CHANGE",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 28 Sudden mental change 응급 대처",
       "aliases": [
@@ -676,7 +676,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -711,7 +711,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_29_SEIZURE",
+      "id": "V145_NS_BRAIN_EMERGENCY_29_SEIZURE",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 29 Seizure 응급 대처",
       "aliases": [
@@ -792,7 +792,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -830,7 +830,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_30_EXCESSIVE_CSF_DRAINAGE",
+      "id": "V145_NS_BRAIN_EMERGENCY_30_EXCESSIVE_CSF_DRAINAGE",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 30 Excessive CSF drainage 응급 대처",
       "aliases": [
@@ -903,7 +903,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -937,7 +937,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_31_EVD_OBSTRUCTION",
+      "id": "V145_NS_BRAIN_EMERGENCY_31_EVD_OBSTRUCTION",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 31 EVD obstruction 응급 대처",
       "aliases": [
@@ -1014,7 +1014,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -1050,7 +1050,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_32_CSF_LEAKAGE",
+      "id": "V145_NS_BRAIN_EMERGENCY_32_CSF_LEAKAGE",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 32 CSF leakage 응급 대처",
       "aliases": [
@@ -1125,7 +1125,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
@@ -1160,7 +1160,7 @@
       "standard_sections_ready": true
     },
     {
-      "id": "V144_NS_BRAIN_EMERGENCY_33_FEVER_MENINGITIS",
+      "id": "V145_NS_BRAIN_EMERGENCY_33_FEVER_MENINGITIS",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
       "aliases": [
@@ -1241,7 +1241,7 @@
         "NS Brain ③ EVD 간호"
       ],
       "source_refs": [
-        "V144 NS Brain 응급상황 대처 이미지"
+        "V145 NS Brain 응급상황 대처 이미지"
       ],
       "tables": [],
       "images": [
