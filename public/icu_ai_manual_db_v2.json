@@ -1,12 +1,12 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.59.0-v159-cv-critical-care-4-1-4-5-db-connected",
+    "version": "2.61.0-v161-aggrastat-disease-link-fix",
     "language": "ko",
-    "source": "V157 기반 + CV Critical Care 4-1~4-5 이미지 5장 앱 DB 연결",
+    "source": "V159 기반 + 아그라스타트 카드 이미지 오류 제거 + 질환별 정리 이미지 8장 연결 수정",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-06-28",
-    "updated": "2026-06-28"
+    "updated_at": "2026-06-29",
+    "updated": "2026-06-29"
   },
   "schema": {
     "id": "string",
@@ -10424,7 +10424,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V128_TRANSFUSION_SET_FILTER_SELECTION",
@@ -10528,7 +10541,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V128_TRANSFUSION_EXPIRY_STORAGE",
@@ -10639,7 +10665,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V128_TRANSFUSION_IO_VOLUME",
@@ -10741,7 +10780,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V128_TRANSFUSION_RC2VAE_USAGE_1",
@@ -10865,7 +10917,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V128_TRANSFUSION_RC2VAE_USAGE_2",
@@ -10969,7 +11034,20 @@
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V67_AGGRASTAT_TPA_PCI",
@@ -10982,7 +11060,6 @@
         "티로피반",
         "tirofiban",
         "tPA 후 아그라스타트",
-        "TPA 후 아그라스타트",
         "PCI 후 아그라스타트",
         "PTCA 후 아그라스타트",
         "급성 관상증후군",
@@ -10999,47 +11076,37 @@
         "Aggrastat",
         "tirofiban",
         "티로피반",
-        "tpa",
-        "TPA",
+        "tPA",
         "PTCA",
         "PCI",
         "NSTEMI",
         "ACS",
         "급성관상증후군",
-        "관상동맥",
-        "혈전",
+        "급성 관상증후군",
+        "관상동맥중재술",
+        "불안정 협심증",
         "혈소판",
+        "항혈소판제",
         "0.4mcg/kg/min",
         "0.10mcg/kg/min",
         "0.15mcg/kg/min",
         "25mcg/kg",
+        "bolus",
+        "loading",
         "권장용량",
         "주입속도",
         "유지주입속도",
+        "희석방법",
+        "희석",
         "tPA 후 아그라스타트",
-        "TPA 후 아그라스타트",
         "PCI 후 아그라스타트",
         "PTCA 후 아그라스타트",
-        "급성 관상증후군",
-        "불안정 협심증",
-        "관상동맥중재술",
-        "bolus",
-        "loading",
-        "아그라스타트 용량",
         "tPA/PCI 후 아그라스타트주 사용법과 권장용량",
-        "약물 / 순환기",
-        "A-line zeroing",
-        "A-line waveform",
-        "A-line 파형",
-        "A-line zero",
-        "arterial line",
-        "동맥압 파형",
-        "zeroing",
-        "transducer",
-        "phlebostatic axis"
+        "약물",
+        "순환기"
       ],
       "urgency": "high",
-      "summary": "항생제 AST, 투여 전 확인사항, 자주 쓰는 항생제 계열을 표로 정리한 카드입니다. 수혈 관련 이미지는 제외했습니다.",
+      "summary": "tPA/PCI 후 아그라스타트주 희석 방법, 권장용량, 체중별 주입속도를 한눈에 정리한 카드입니다. 혈액제제/수혈 자료는 연결하지 않았습니다.",
       "indications": [
         "주치의 처방으로 아그라스타트주를 시작하거나 유지주입 속도를 확인해야 할 때",
         "PTCA/PCI 또는 급성 관상증후군 관련 항혈소판제 주입 기준을 확인할 때",
@@ -11084,7 +11151,6 @@
       ],
       "related": [
         "주요 약물 약속처방 Mix 법",
-        "수혈 처방확인 및 바코드 출력 방법",
         "헤파린 모노그램",
         "정맥로 확보"
       ],
@@ -11418,27 +11484,18 @@
           "include_rows_in_search": false
         }
       ],
-      "images": [
-        {
-          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
-          "alt": "혈액제제 종류",
-          "caption": "혈액제제 종류",
-          "search_terms": [
-            "수혈",
-            "혈액제제 종류",
-            "RBC",
-            "PRC",
-            "PC",
-            "Platelet",
-            "SDP",
-            "FFP",
-            "Cryo"
-          ]
-        }
-      ],
+      "images": [],
       "standard_sections_ready": true,
-      "search_index": "아그라스타트 아그라스타트주 Aggrastat tirofiban 티로피반 tpa TPA PTCA PCI NSTEMI ACS 급성관상증후군 관상동맥 혈전 혈소판 0.4mcg/kg/min 0.10mcg/kg/min 0.15mcg/kg/min 25mcg/kg 권장용량 주입속도 유지주입속도 tPA 후 아그라스타트 TPA 후 아그라스타트 PCI 후 아그라스타트 PTCA 후 아그라스타트 급성 관상증후군 불안정 협심증 관상동맥중재술 bolus loading 아그라스타트 용량 tPA/PCI 후 아그라스타트주 사용법과 권장용량 약물 / 순환기 주요 약물 약속처방 Mix 법 수혈 처방확인 및 바코드 출력 방법 헤파린 모노그램 정맥로 확보",
-      "prefer_media_first": true
+      "search_index": "tPA/PCI 후 아그라스타트주 사용법과 권장용량 약물 / 순환기 tPA/PCI 후 아그라스타트주 희석 방법, 권장용량, 체중별 주입속도를 한눈에 정리한 카드입니다. 혈액제제/수혈 자료는 연결하지 않았습니다. high 아그라스타트 아그라스타트주 Aggrastat 티로피반 tirofiban tPA 후 아그라스타트 PCI 후 아그라스타트 PTCA 후 아그라스타트 급성 관상증후군 불안정 협심증 NSTEMI 관상동맥중재술 bolus loading 아그라스타트 용량 tPA PTCA PCI ACS 급성관상증후군 혈소판 항혈소판제 0.4mcg/kg/min 0.10mcg/kg/min 0.15mcg/kg/min 25mcg/kg 권장용량 주입속도 유지주입속도 희석방법 희석 약물 순환기 주치의 처방으로 아그라스타트주를 시작하거나 유지주입 속도를 확인해야 할 때 PTCA/PCI 또는 급성 관상증후군 관련 항혈소판제 주입 기준을 확인할 때 tPA/혈전 관련 처치 후 원내 처방에 따라 아그라스타트주 투여 여부와 속도를 확인할 때 아그라스타트주 50mL 바이알 0.9% 생리식염수 또는 5% 포도당 주사액 정맥주입펌프 또는 원내 기준에 맞는 주입장치 주치의 처방, 신기능, 출혈 위험, 혈소판 수치 확인 투여 전 주치의 처방, 투여 목적, 금기 및 출혈 위험을 확인한다. 처방된 요법이 0.4µg/kg/min loading 요법인지, 25µg/kg bolus 요법인지 확인한다. 희석액은 투여 전에 잘 흔들어 섞고, 다른 약물과 혼합하지 않는다. 체중 및 신기능에 따라 주입속도를 확인하고, 중증 신부전 환자는 원칙적으로 통상 주입량의 1/2 적용 여부를 처방으로 확인한다. 투여 중 출혈, 혈압 변화, 혈소판 감소 등 이상반응을 관찰하고 필요 시 즉시 보고한다. 고위험 항혈소판제입니다. 원내 최신 프로토콜, 약제부 기준, 주치의 처방을 우선합니다. 출혈, 혈소판 감소, 신기능 저하 환자에서는 특히 주의합니다. 원본 이미지 하단 우측 일부가 잘려 146–153kg 구간의 bolus 요법 값은 원본 확인이 필요합니다. 이 카드는 업무 확인용이며 실제 처방·투여 결정은 담당의 처방과 병원 기준을 따릅니다. 투여 시작 시각, 주입속도(mL/hr), 요법(loading/bolus/maintenance)을 기록한다. 출혈 징후, 활력징후, 주치의 보고 및 처치 내용을 기록한다. 용량 변경 시 변경 사유와 변경 후 속도를 기록한다. 주요 약물 약속처방 Mix 법 헤파린 모노그램 정맥로 확보 아그라스타트주 희석 방법 관상동맥 혈전 구분 희석 방법 비고 권장용량 요약 상황 초기/bolus 유지 주입 기간/주의 체중별 주입속도표 체중(kg) 0.4 loading: 30분 초기(mL/hr) 0.4 loading: 유지(mL/hr) 0.4 loading 중증 신부전: 30분 초기(mL/hr) 0.4 loading 중증 신부전: 유지(mL/hr) 25µg/kg bolus: Bolus(mL) 25µg/kg bolus: 유지(mL/hr) 25µg/kg bolus 중증 신부전: Bolus(mL) 25µg/kg bolus 중증 신부전: 유지(mL/hr)",
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "수혈",
+        "혈액제제 종류",
+        "수혈 I/O",
+        "수혈 IO",
+        "혈액 종류",
+        "혈액제제 유효기간"
+      ]
     },
     {
       "id": "V68_HEPARIN_NOMOGRAM",
@@ -19472,7 +19529,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 준비/혈액 요청 수혈 / 혈액 수혈 혈액요청서 cross matching ABO Rh irregular P-RBC 준비 혈액 요청 v8_final_reviewed",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "TF002",
@@ -19761,6 +19831,19 @@
             "수혈 tip"
           ]
         }
+      ],
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
       ]
     },
     {
@@ -19892,7 +19975,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "혈액제제 요약 수혈 / 혈액 수혈 P-RBC FFP PC A-PLT Cryo 혈액제제 요약 혈액 v8_final_reviewed",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "CRRT001",
@@ -21375,7 +21471,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 입원 시 절차 / 신환 전입 역할분담 입원·전입 입실 전입 응급실 외래 병동 ICU admission 신환 입원 시 절차 ER ICU GW ICU 간호정보조사 손목팔찌 화재 3군 화재스티커 중앙모니터 병록번호 stand by Screen setup multi bed tile layout RAT VRE CRE CPO MRSA MSSA 보호자 전화번호 AI trics 입원 안내문 자가약 지참약 식별 입실시간 ICU 입원 절차 역할분담 입퇴원/입실 v10_master_30_categories v26_uploaded_manual_added manual_20260614 신환 입원 / 전입 시 역할분담 역할 업무 담당 간호사 환자 전체 사정, EMR, 간호정보조사, 자가약 확인, 동의서, 물품 안내, 라벨/검체 바코드 출력, 담당 환자 액팅 나머지 근무자 환자 정리, line, 배액관, Foley, 욕창 포함 피부상태 확인 후 담당에게 전달 인계 정리 ICU flowsheet(new) 기반 인계, NS/NR 환자는 GCS·pupil qhr 사정 기입 요약/Cadex 당일 인계 내용, 진단명, 누적해서 챙겨야 할 내용 작성",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "ADM002",
@@ -22029,7 +22138,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "유효기간·사용기한 확인 안전 안전/유효기간 유효기간 사용기한 개봉일 폐기일 약품 소모품 수액세트 확인 v10_master_30_categories",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "DRESS001",
@@ -22701,7 +22823,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "PCD 부위 Dressing Line / Drain / Dressing DRESSING/PCD PCD drain catheter dressing 부위 Dressing Line v10_master_30_categories 일반 상처 Dressing 수술 후 상처 Dressing",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "DRESS006",
@@ -27103,7 +27238,20 @@
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "DEPT001",
@@ -29896,7 +30044,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈: Lab·동의서·전처치·TIP·기록 수혈 / 혈액 수혈 transfusion 수혈 LAB 수혈 동의서 수혈 전처치 전처치 약물 수혈 TIP 수혈 팁 기록 확인사항 P-RBC PRBC FFP PC A-PLT Cryo 혈액요청서 교차시험 cross matching ABO Rh irregular 페니라민 해열제 수혈기록지 수혈부작용 수혈 V/S 혈액 불출 수혈 filter 혈액제제 RBC PC APLT FFP Cryo Lab 동의서 전처치 TIP 혈액 v14_v11_based_menu search_optimized",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "MENU006",
@@ -31731,22 +31892,28 @@
     {
       "id": "MENU016",
       "category": "질환별 정리",
-      "title": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성",
+      "title": "질환별 정리: 심혈관·호흡기·신경·소화기·감염·내분비·대사성·다발성",
       "aliases": [
-        "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성",
+        "질환별 정리",
         "질환",
         "질환별",
-        "질환별 정리",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
         "심혈관계",
         "호흡기계",
-        "비뇨기계",
         "신경계",
         "소화기계",
-        "혈액",
-        "종양",
-        "혈액종양",
+        "감염계",
         "내분비계",
+        "대사성질환",
+        "전해질이상",
         "다발성 질환",
+        "복합중증환자",
         "CHF",
         "MI",
         "pneumonia",
@@ -31757,15 +31924,10 @@
         "ICH",
         "GI bleeding",
         "sepsis",
-        "shock",
-        "정리",
-        "심혈관",
-        "호흡기",
-        "비뇨기",
-        "신경"
+        "shock"
       ],
       "urgency": "routine",
-      "summary": "ICU에서 자주 만나는 질환을 계통별로 검색하기 위한 카드.",
+      "summary": "ICU에서 자주 만나는 중증질환을 계통별 총정리 이미지 8장으로 빠르게 확인하는 허브 카드입니다.",
       "indications": [
         "ICU에서 자주 만나는 질환을 계통별로 검색하기 위한 카드."
       ],
@@ -31800,71 +31962,213 @@
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
+          "src": "selected_manual_images/64_Neuro_Critical_Disease_Overview.png",
+          "alt": "신경계 중증질환 총정리",
+          "caption": "신경계 중증질환 총정리",
           "search_terms": [
-            "Ventilator",
-            "ventilator",
-            "인공호흡기",
-            "기계환기",
-            "ventilator mode",
-            "모드",
-            "mode",
-            "A/C",
-            "SIMV",
-            "PSV",
-            "CPAP",
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "신경계",
+            "뇌신경계",
+            "뇌졸중",
+            "stroke",
+            "ICH",
+            "SAH",
+            "seizure",
+            "경련",
+            "뇌출혈",
+            "뇌경색",
+            "신경계 중증질환"
+          ]
+        },
+        {
+          "src": "selected_manual_images/65_Respiratory_Critical_Disease_Overview.png",
+          "alt": "호흡기계 중증질환 총정리",
+          "caption": "호흡기계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "호흡기계",
             "호흡기",
-            "vent setup",
-            "Ventilator setup",
-            "Dräger",
-            "Savina"
-          ]
-        },
-        {
-          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
-          "alt": "인공호흡기 환자 간호 핵심",
-          "caption": "인공호흡기 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator",
+            "pneumonia",
+            "COPD",
+            "ARDS",
+            "폐렴",
+            "호흡부전",
             "ventilator",
-            "인공호흡기",
-            "인공호흡기 환자",
-            "ventilator patient",
-            "기계환기",
-            "기도관리",
-            "cuff pressure",
-            "suction",
-            "VAP",
-            "진정",
-            "restraint",
-            "alarm",
-            "ABGA",
-            "SpO2"
+            "HFNC",
+            "호흡기계 중증질환"
           ]
         },
         {
-          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
-          "alt": "저산소 / SpO2 저하 대응",
-          "caption": "저산소 / SpO2 저하 대응",
+          "src": "selected_manual_images/66_Cardiovascular_Critical_Disease_Overview.png",
+          "alt": "심혈관계 중증질환 총정리",
+          "caption": "심혈관계 중증질환 총정리",
           "search_terms": [
-            "저산소",
-            "저산소증",
-            "hypoxemia",
-            "desaturation",
-            "SpO2",
-            "산소포화도",
-            "SpO2 저하",
-            "산소포화도 저하",
-            "cyanosis",
-            "청색증",
-            "호흡곤란",
-            "ABGA",
-            "oxygen escalation",
-            "산소증량",
-            "airway",
-            "호흡기"
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "심혈관계",
+            "심혈관",
+            "순환계",
+            "CHF",
+            "MI",
+            "ACS",
+            "shock",
+            "부정맥",
+            "심부전",
+            "심근경색",
+            "심혈관계 중증질환"
+          ]
+        },
+        {
+          "src": "selected_manual_images/67_Infectious_Critical_Disease_Overview.png",
+          "alt": "감염계 중증질환 총정리",
+          "caption": "감염계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "감염계",
+            "감염",
+            "sepsis",
+            "septic shock",
+            "패혈증",
+            "패혈성 쇼크",
+            "감염계 중증질환"
+          ]
+        },
+        {
+          "src": "selected_manual_images/68_Digestive_Critical_Disease_Overview.png",
+          "alt": "소화기계 중증질환 총정리",
+          "caption": "소화기계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "소화기계",
+            "소화기",
+            "GI bleeding",
+            "위장관출혈",
+            "간경변",
+            "췌장염",
+            "간성혼수",
+            "복수",
+            "소화기계 중증질환"
+          ]
+        },
+        {
+          "src": "selected_manual_images/69_Endocrine_Critical_Disease_Overview.png",
+          "alt": "내분비계 중증질환 총정리",
+          "caption": "내분비계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "내분비계",
+            "내분비",
+            "DKA",
+            "HHS",
+            "갑상선중독증",
+            "부신기능저하",
+            "당뇨",
+            "인슐린",
+            "내분비계 중증질환"
+          ]
+        },
+        {
+          "src": "selected_manual_images/70_Metabolic_Electrolyte_Overview.png",
+          "alt": "대사성질환 / 전해질이상 총정리",
+          "caption": "대사성질환 / 전해질이상 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "대사성질환",
+            "전해질",
+            "전해질이상",
+            "저나트륨",
+            "고칼륨",
+            "대사성 산증",
+            "metabolic",
+            "electrolyte",
+            "산염기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/71_Multisystem_Critical_Disease_Overview.png",
+          "alt": "다발성질환 / 복합중증환자 총정리",
+          "caption": "다발성질환 / 복합중증환자 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "다발성 질환",
+            "다발성질환",
+            "복합중증환자",
+            "multisystem",
+            "multi organ failure",
+            "MODS",
+            "DIC",
+            "복합질환"
           ]
         }
       ],
@@ -31872,55 +32176,1109 @@
         "질환별 정리",
         "질환",
         "질환별",
-        "심혈관계",
-        "호흡기계",
-        "비뇨기계",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
         "신경계",
-        "소화기계",
-        "종양",
-        "내분비계",
-        "다발성 질환",
-        "CHF",
-        "MI",
-        "pneumonia",
-        "COPD",
-        "AKI",
-        "CKD",
+        "뇌신경계",
+        "뇌졸중",
         "stroke",
         "ICH",
-        "GI bleeding",
-        "sepsis",
-        "shock",
-        "정리",
-        "심혈관",
+        "SAH",
+        "seizure",
+        "경련",
+        "뇌출혈",
+        "뇌경색",
+        "신경계 중증질환",
+        "호흡기계",
         "호흡기",
-        "비뇨기",
-        "신경",
+        "pneumonia",
+        "COPD",
+        "ARDS",
+        "폐렴",
+        "호흡부전",
+        "ventilator",
+        "HFNC",
+        "호흡기계 중증질환",
+        "심혈관계",
+        "심혈관",
+        "순환계",
+        "CHF",
+        "MI",
+        "ACS",
+        "shock",
+        "부정맥",
+        "심부전",
+        "심근경색",
+        "심혈관계 중증질환",
+        "감염계",
+        "감염",
+        "sepsis",
+        "septic shock",
+        "패혈증",
+        "패혈성 쇼크",
+        "감염계 중증질환",
+        "소화기계",
         "소화기",
+        "GI bleeding",
+        "위장관출혈",
+        "간경변",
+        "췌장염",
+        "간성혼수",
+        "복수",
+        "소화기계 중증질환",
+        "내분비계",
         "내분비",
-        "다발성",
-        "v14_v11_based_menu",
-        "search_optimized",
-        "ventilator 동영상",
-        "Ventilator 사용법 동영상",
-        "쇼크",
-        "저혈압",
-        "shock 환자",
-        "쇼크 초기대응",
-        "A-line zeroing",
-        "A-line waveform",
-        "A-line 파형",
-        "A-line zero",
-        "arterial line",
-        "동맥압 파형",
-        "zeroing",
-        "transducer",
-        "phlebostatic axis"
+        "DKA",
+        "HHS",
+        "갑상선중독증",
+        "부신기능저하",
+        "당뇨",
+        "인슐린",
+        "내분비계 중증질환",
+        "대사성질환",
+        "전해질",
+        "전해질이상",
+        "저나트륨",
+        "고칼륨",
+        "대사성 산증",
+        "metabolic",
+        "electrolyte",
+        "산염기",
+        "다발성 질환",
+        "다발성질환",
+        "복합중증환자",
+        "multisystem",
+        "multi organ failure",
+        "MODS",
+        "DIC",
+        "복합질환"
       ],
       "standard_sections_ready": true,
-      "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상",
+      "search_index": "질환별 정리: 심혈관·호흡기·신경·소화기·감염·내분비·대사성·다발성 질환별 정리 ICU에서 자주 만나는 중증질환을 계통별 총정리 이미지 8장으로 빠르게 확인하는 허브 카드입니다. routine 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 심혈관계 호흡기계 신경계 소화기계 감염계 내분비계 대사성질환 전해질이상 다발성 질환 복합중증환자 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 뇌신경계 뇌졸중 SAH seizure 경련 뇌출혈 뇌경색 신경계 중증질환 호흡기 ARDS 폐렴 호흡부전 ventilator HFNC 호흡기계 중증질환 심혈관 순환계 ACS 부정맥 심부전 심근경색 심혈관계 중증질환 감염 septic shock 패혈증 패혈성 쇼크 감염계 중증질환 소화기 위장관출혈 간경변 췌장염 간성혼수 복수 소화기계 중증질환 내분비 DKA HHS 갑상선중독증 부신기능저하 당뇨 인슐린 내분비계 중증질환 전해질 저나트륨 고칼륨 대사성 산증 metabolic electrolyte 산염기 다발성질환 multisystem multi organ failure MODS DIC 복합질환 ICU에서 자주 만나는 질환을 계통별로 검색하기 위한 카드. 계통별 진단명과 주요 문제를 먼저 확인한다. 관련 V/S, lab, 영상, 약물, 처치, I/O를 연결해서 본다. 질환별 위험징후와 notify 기준을 정리한다. 실제 처치·투약은 담당의 지시와 병원 최신 프로토콜을 우선합니다. 필요 시 수행 내용과 환자 상태를 기록 신경계 중증질환 총정리 호흡기계 중증질환 총정리 심혈관계 중증질환 총정리 감염계 중증질환 총정리 소화기계 중증질환 총정리 내분비계 중증질환 총정리 대사성질환 / 전해질이상 총정리 다발성질환 / 복합중증환자 총정리",
       "prefer_media_first": true,
-      "hide_raw_steps": true
+      "hide_raw_steps": true,
+      "priority": 1200,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ]
+    },
+    {
+      "id": "V161_DISEASE_NEURO",
+      "category": "질환별 정리 / 신경계",
+      "title": "신경계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "신경계 중증질환 총정리",
+        "신경계",
+        "뇌신경계",
+        "뇌졸중",
+        "stroke",
+        "ICH",
+        "SAH",
+        "seizure",
+        "경련",
+        "뇌출혈",
+        "뇌경색",
+        "신경계 중증질환",
+        "뇌신경계 중증질환",
+        "NS Brain 질환",
+        "뇌질환",
+        "SDH",
+        "EDH",
+        "ICP",
+        "EVD"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "신경계 중증질환 총정리",
+        "신경계",
+        "뇌신경계",
+        "뇌졸중",
+        "stroke",
+        "ICH",
+        "SAH",
+        "seizure",
+        "경련",
+        "뇌출혈",
+        "뇌경색",
+        "신경계 중증질환",
+        "뇌신경계 중증질환",
+        "NS Brain 질환",
+        "뇌질환",
+        "SDH",
+        "EDH",
+        "ICP",
+        "EVD"
+      ],
+      "urgency": "routine",
+      "summary": "신경계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/64_Neuro_Critical_Disease_Overview.png",
+          "alt": "신경계 중증질환 총정리",
+          "caption": "신경계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "신경계 중증질환 총정리",
+            "신경계",
+            "뇌신경계",
+            "뇌졸중",
+            "stroke",
+            "ICH",
+            "SAH",
+            "seizure",
+            "경련",
+            "뇌출혈",
+            "뇌경색",
+            "신경계 중증질환",
+            "뇌신경계 중증질환",
+            "NS Brain 질환",
+            "뇌질환",
+            "SDH",
+            "EDH",
+            "ICP",
+            "EVD"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "신경계 중증질환 총정리 질환별 정리 / 신경계 신경계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 신경계 뇌신경계 뇌졸중 stroke ICH SAH seizure 경련 뇌출혈 뇌경색 신경계 중증질환 뇌신경계 중증질환 NS Brain 질환 뇌질환 SDH EDH ICP EVD 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_RESPIRATORY",
+      "category": "질환별 정리 / 호흡기계",
+      "title": "호흡기계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "호흡기계 중증질환 총정리",
+        "호흡기계",
+        "호흡기",
+        "pneumonia",
+        "COPD",
+        "ARDS",
+        "폐렴",
+        "호흡부전",
+        "ventilator",
+        "HFNC",
+        "호흡기계 중증질환",
+        "호흡기 질환",
+        "호흡기계 질환",
+        "인공호흡기",
+        "SpO2"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "호흡기계 중증질환 총정리",
+        "호흡기계",
+        "호흡기",
+        "pneumonia",
+        "COPD",
+        "ARDS",
+        "폐렴",
+        "호흡부전",
+        "ventilator",
+        "HFNC",
+        "호흡기계 중증질환",
+        "호흡기 질환",
+        "호흡기계 질환",
+        "인공호흡기",
+        "SpO2"
+      ],
+      "urgency": "routine",
+      "summary": "호흡기계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/65_Respiratory_Critical_Disease_Overview.png",
+          "alt": "호흡기계 중증질환 총정리",
+          "caption": "호흡기계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "호흡기계 중증질환 총정리",
+            "호흡기계",
+            "호흡기",
+            "pneumonia",
+            "COPD",
+            "ARDS",
+            "폐렴",
+            "호흡부전",
+            "ventilator",
+            "HFNC",
+            "호흡기계 중증질환",
+            "호흡기 질환",
+            "호흡기계 질환",
+            "인공호흡기",
+            "SpO2"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "호흡기계 중증질환 총정리 질환별 정리 / 호흡기계 호흡기계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 호흡기계 호흡기 pneumonia COPD ARDS 폐렴 호흡부전 ventilator HFNC 호흡기계 중증질환 호흡기 질환 호흡기계 질환 인공호흡기 SpO2 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_CARDIOVASCULAR",
+      "category": "질환별 정리 / 심혈관계",
+      "title": "심혈관계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "심혈관계 중증질환 총정리",
+        "심혈관계",
+        "심혈관",
+        "순환계",
+        "CHF",
+        "MI",
+        "ACS",
+        "shock",
+        "부정맥",
+        "심부전",
+        "심근경색",
+        "심혈관계 중증질환",
+        "심혈관계 질환",
+        "심혈관 질환",
+        "순환계 질환",
+        "폐부종",
+        "흉통"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "심혈관계 중증질환 총정리",
+        "심혈관계",
+        "심혈관",
+        "순환계",
+        "CHF",
+        "MI",
+        "ACS",
+        "shock",
+        "부정맥",
+        "심부전",
+        "심근경색",
+        "심혈관계 중증질환",
+        "심혈관계 질환",
+        "심혈관 질환",
+        "순환계 질환",
+        "폐부종",
+        "흉통"
+      ],
+      "urgency": "routine",
+      "summary": "심혈관계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/66_Cardiovascular_Critical_Disease_Overview.png",
+          "alt": "심혈관계 중증질환 총정리",
+          "caption": "심혈관계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "심혈관계 중증질환 총정리",
+            "심혈관계",
+            "심혈관",
+            "순환계",
+            "CHF",
+            "MI",
+            "ACS",
+            "shock",
+            "부정맥",
+            "심부전",
+            "심근경색",
+            "심혈관계 중증질환",
+            "심혈관계 질환",
+            "심혈관 질환",
+            "순환계 질환",
+            "폐부종",
+            "흉통"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "심혈관계 중증질환 총정리 질환별 정리 / 심혈관계 심혈관계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 심혈관계 심혈관 순환계 CHF MI ACS shock 부정맥 심부전 심근경색 심혈관계 중증질환 심혈관계 질환 심혈관 질환 순환계 질환 폐부종 흉통 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_INFECTION",
+      "category": "질환별 정리 / 감염계",
+      "title": "감염계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "감염계 중증질환 총정리",
+        "감염계",
+        "감염",
+        "sepsis",
+        "septic shock",
+        "패혈증",
+        "패혈성 쇼크",
+        "감염계 중증질환",
+        "감염 질환",
+        "CRE",
+        "CPE",
+        "VRE",
+        "MDRO",
+        "항생제"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "감염계 중증질환 총정리",
+        "감염계",
+        "감염",
+        "sepsis",
+        "septic shock",
+        "패혈증",
+        "패혈성 쇼크",
+        "감염계 중증질환",
+        "감염 질환",
+        "CRE",
+        "CPE",
+        "VRE",
+        "MDRO",
+        "항생제"
+      ],
+      "urgency": "routine",
+      "summary": "감염계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/67_Infectious_Critical_Disease_Overview.png",
+          "alt": "감염계 중증질환 총정리",
+          "caption": "감염계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "감염계 중증질환 총정리",
+            "감염계",
+            "감염",
+            "sepsis",
+            "septic shock",
+            "패혈증",
+            "패혈성 쇼크",
+            "감염계 중증질환",
+            "감염 질환",
+            "CRE",
+            "CPE",
+            "VRE",
+            "MDRO",
+            "항생제"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "감염계 중증질환 총정리 질환별 정리 / 감염계 감염계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 감염계 감염 sepsis septic shock 패혈증 패혈성 쇼크 감염계 중증질환 감염 질환 CRE CPE VRE MDRO 항생제 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_DIGESTIVE",
+      "category": "질환별 정리 / 소화기계",
+      "title": "소화기계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "소화기계 중증질환 총정리",
+        "소화기계",
+        "소화기",
+        "GI bleeding",
+        "위장관출혈",
+        "간경변",
+        "췌장염",
+        "간성혼수",
+        "복수",
+        "소화기계 중증질환",
+        "소화기계 질환",
+        "소화기 질환"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "소화기계 중증질환 총정리",
+        "소화기계",
+        "소화기",
+        "GI bleeding",
+        "위장관출혈",
+        "간경변",
+        "췌장염",
+        "간성혼수",
+        "복수",
+        "소화기계 중증질환",
+        "소화기계 질환",
+        "소화기 질환"
+      ],
+      "urgency": "routine",
+      "summary": "소화기계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/68_Digestive_Critical_Disease_Overview.png",
+          "alt": "소화기계 중증질환 총정리",
+          "caption": "소화기계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "소화기계 중증질환 총정리",
+            "소화기계",
+            "소화기",
+            "GI bleeding",
+            "위장관출혈",
+            "간경변",
+            "췌장염",
+            "간성혼수",
+            "복수",
+            "소화기계 중증질환",
+            "소화기계 질환",
+            "소화기 질환"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "소화기계 중증질환 총정리 질환별 정리 / 소화기계 소화기계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 소화기계 소화기 GI bleeding 위장관출혈 간경변 췌장염 간성혼수 복수 소화기계 중증질환 소화기계 질환 소화기 질환 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_ENDOCRINE",
+      "category": "질환별 정리 / 내분비계",
+      "title": "내분비계 중증질환 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "내분비계 중증질환 총정리",
+        "내분비계",
+        "내분비",
+        "DKA",
+        "HHS",
+        "갑상선중독증",
+        "부신기능저하",
+        "당뇨",
+        "인슐린",
+        "내분비계 중증질환",
+        "내분비계 질환",
+        "내분비 질환",
+        "저혈당",
+        "고혈당",
+        "갑상선"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "내분비계 중증질환 총정리",
+        "내분비계",
+        "내분비",
+        "DKA",
+        "HHS",
+        "갑상선중독증",
+        "부신기능저하",
+        "당뇨",
+        "인슐린",
+        "내분비계 중증질환",
+        "내분비계 질환",
+        "내분비 질환",
+        "저혈당",
+        "고혈당",
+        "갑상선"
+      ],
+      "urgency": "routine",
+      "summary": "내분비계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/69_Endocrine_Critical_Disease_Overview.png",
+          "alt": "내분비계 중증질환 총정리",
+          "caption": "내분비계 중증질환 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "내분비계 중증질환 총정리",
+            "내분비계",
+            "내분비",
+            "DKA",
+            "HHS",
+            "갑상선중독증",
+            "부신기능저하",
+            "당뇨",
+            "인슐린",
+            "내분비계 중증질환",
+            "내분비계 질환",
+            "내분비 질환",
+            "저혈당",
+            "고혈당",
+            "갑상선"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "내분비계 중증질환 총정리 질환별 정리 / 내분비계 내분비계 중증질환 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 내분비계 내분비 DKA HHS 갑상선중독증 부신기능저하 당뇨 인슐린 내분비계 중증질환 내분비계 질환 내분비 질환 저혈당 고혈당 갑상선 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_METABOLIC",
+      "category": "질환별 정리 / 대사성·전해질",
+      "title": "대사성질환 / 전해질이상 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "대사성질환 / 전해질이상 총정리",
+        "대사성·전해질",
+        "대사성질환",
+        "전해질",
+        "전해질이상",
+        "저나트륨",
+        "고칼륨",
+        "대사성 산증",
+        "metabolic",
+        "electrolyte",
+        "산염기",
+        "대사성 질환",
+        "전해질 이상",
+        "ABGA",
+        "acidosis",
+        "alkalosis",
+        "저칼륨",
+        "고나트륨"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "대사성질환 / 전해질이상 총정리",
+        "대사성·전해질",
+        "대사성질환",
+        "전해질",
+        "전해질이상",
+        "저나트륨",
+        "고칼륨",
+        "대사성 산증",
+        "metabolic",
+        "electrolyte",
+        "산염기",
+        "대사성 질환",
+        "전해질 이상",
+        "ABGA",
+        "acidosis",
+        "alkalosis",
+        "저칼륨",
+        "고나트륨"
+      ],
+      "urgency": "routine",
+      "summary": "대사성질환 / 전해질이상 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/70_Metabolic_Electrolyte_Overview.png",
+          "alt": "대사성질환 / 전해질이상 총정리",
+          "caption": "대사성질환 / 전해질이상 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "대사성질환 / 전해질이상 총정리",
+            "대사성·전해질",
+            "대사성질환",
+            "전해질",
+            "전해질이상",
+            "저나트륨",
+            "고칼륨",
+            "대사성 산증",
+            "metabolic",
+            "electrolyte",
+            "산염기",
+            "대사성 질환",
+            "전해질 이상",
+            "ABGA",
+            "acidosis",
+            "alkalosis",
+            "저칼륨",
+            "고나트륨"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "대사성질환 / 전해질이상 총정리 질환별 정리 / 대사성·전해질 대사성질환 / 전해질이상 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 대사성·전해질 대사성질환 전해질 전해질이상 저나트륨 고칼륨 대사성 산증 metabolic electrolyte 산염기 대사성 질환 전해질 이상 ABGA acidosis alkalosis 저칼륨 고나트륨 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
+    },
+    {
+      "id": "V161_DISEASE_MULTISYSTEM",
+      "category": "질환별 정리 / 다발성·복합중증",
+      "title": "다발성질환 / 복합중증환자 총정리",
+      "aliases": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "다발성질환 / 복합중증환자 총정리",
+        "다발성·복합중증",
+        "다발성 질환",
+        "다발성질환",
+        "복합중증환자",
+        "multisystem",
+        "multi organ failure",
+        "MODS",
+        "DIC",
+        "복합질환",
+        "다기관부전",
+        "shock",
+        "sepsis"
+      ],
+      "search_terms": [
+        "질환별 정리",
+        "질환",
+        "질환별",
+        "질환별 총정리",
+        "질환 파트",
+        "중환자 질환",
+        "ICU 질환",
+        "중환자실 질환",
+        "중환자실 간호사 교육용",
+        "중환자실 실무 교육용",
+        "다발성질환 / 복합중증환자 총정리",
+        "다발성·복합중증",
+        "다발성 질환",
+        "다발성질환",
+        "복합중증환자",
+        "multisystem",
+        "multi organ failure",
+        "MODS",
+        "DIC",
+        "복합질환",
+        "다기관부전",
+        "shock",
+        "sepsis"
+      ],
+      "urgency": "routine",
+      "summary": "다발성질환 / 복합중증환자 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다.",
+      "indications": [
+        "신규간호사 기초 이해",
+        "경력간호사 인계/사정 기준 확인",
+        "중환자실 실무 교육 자료 확인"
+      ],
+      "preparation": [],
+      "steps": [],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요."
+      ],
+      "charting": [],
+      "related": [
+        "MENU016"
+      ],
+      "source_refs": [
+        "사용자 생성 교육 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/71_Multisystem_Critical_Disease_Overview.png",
+          "alt": "다발성질환 / 복합중증환자 총정리",
+          "caption": "다발성질환 / 복합중증환자 총정리",
+          "search_terms": [
+            "질환별 정리",
+            "질환",
+            "질환별",
+            "질환별 총정리",
+            "질환 파트",
+            "중환자 질환",
+            "ICU 질환",
+            "중환자실 질환",
+            "중환자실 간호사 교육용",
+            "중환자실 실무 교육용",
+            "다발성질환 / 복합중증환자 총정리",
+            "다발성·복합중증",
+            "다발성 질환",
+            "다발성질환",
+            "복합중증환자",
+            "multisystem",
+            "multi organ failure",
+            "MODS",
+            "DIC",
+            "복합질환",
+            "다기관부전",
+            "shock",
+            "sepsis"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1190,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반"
+      ],
+      "search_index": "다발성질환 / 복합중증환자 총정리 질환별 정리 / 다발성·복합중증 다발성질환 / 복합중증환자 총정리 이미지를 앱에서 바로 확인하는 교육용 카드입니다. 검색어와 직접 연결된 질환별 총정리 이미지만 표시합니다. routine 질환별 정리 질환 질환별 질환별 총정리 질환 파트 중환자 질환 ICU 질환 중환자실 질환 중환자실 간호사 교육용 중환자실 실무 교육용 다발성·복합중증 다발성 질환 다발성질환 복합중증환자 multisystem multi organ failure MODS DIC 복합질환 다기관부전 shock sepsis 신규간호사 기초 이해 경력간호사 인계/사정 기준 확인 중환자실 실무 교육 자료 확인 교육용 요약본입니다. 실제 적용은 병원 프로토콜과 의사 지시를 우선하세요. MENU016"
     },
     {
       "id": "MENU017",
@@ -36396,7 +37754,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 실무 Tip과 혈액제제 종류 수혈 / 혈액 수혈 수혈 tip P-RBC 교차시험 ABO Rho irregular 혈액요청서 슈터기 진검실 혈액불출 수혈기록지 PC Cryo FFP APLT 페르시스 수혈 filter 페니라민 blood pumping A-PLT 250 CRYO 40 뮤코필터레이트 fibrinogen PT INR 실무 Tip과 혈액제제 종류 혈액 v26_uploaded_manual_added manual_20260614 혈액제제 종류와 투여 적응증 보관/온도 투여 기대효과 RBC Hb 감소 냉장 1.5-3hr PLT 감소 실온 Full drop A-PLT PT/INR 이상 1-2hr Fibrinogen 감소 혈액제제 요약",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "TRANSFER030",
@@ -40906,7 +42277,20 @@
       "standard_sections_ready": true,
       "search_index": "수혈 절차 / 혈액제제 종류 / 응고인자 수혈 / 혈액 수혈 절차 혈액제제 종류 응고인자 RBC FFP PC APLT Cryo ABO Cross matching 혈액은행 혈액 v43_uploaded_manual 추가 업무 매뉴얼(260618) 혈액제제 종류 요약 적응증 보관/온도 투여 기대효과 Hb 저하 냉장 1.5~3hr PLT 저하 실온 Full drop PT/INR 상승 1~2hr Fibrinogen 보충 수혈절차표 혈액제제표 응고인자표 수혈부작용대응 표 이미지 혈액제제 요약",
       "prefer_media_first": true,
-      "hide_raw_steps": true
+      "hide_raw_steps": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "UPD43_LAB_BOTTLE_SPUTUM_CX_URINE_CX",
@@ -44367,7 +45751,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "백혈구제거 필터 수혈필터 RC2VAE leukocyte removal filter 수혈 준비 혈액교체 수혈마무리 Haemonetics 백혈구 제거용 수혈필터 RC2VAE 사용법 수혈 / 혈액",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V65_DRUG_MIX_PROMISE",
@@ -44900,7 +46297,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "가온기 혈액 가온기 Blood warmer infusion warmer 수혈 가온 대량수혈 한랭응집소 혈액 가온기 사용방법 수혈 / 혈액",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V65_DRUG_CLOT",
@@ -45392,7 +46802,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 처방확인 수혈 바코드 혈액 요청서 ABO Rho 교차시험 비예기항체 irregular antibody EB1 PC FFP RBC 수혈 처방확인 및 바코드 출력 방법 수혈 / 혈액",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V65_PCD_LABEL",
@@ -51962,7 +53385,20 @@
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V73_TRANSFUSION_COMPONENTS",
@@ -52247,7 +53683,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 혈액종류 수혈의 종류 혈액제제 종류 수혈 종류 RBC PC FFP Cryo 수혈 종류 표 혈액제제 종류와 수혈 전 확인사항 수혈 / 혈액 수혈 전체 흐름 혈액 가온기 사용방법 수혈필터 사용법",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V73_TRANSFUSION_REACTION",
@@ -52560,7 +54009,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 발열 오한 두드러기 요통 흉통 혈뇨 아나필락시스 패혈증 수혈 이상반응 수혈 reaction TRALI TACO 수혈부작용 종류와 응급대응 수혈 / 혈액 수혈 전체 흐름 응급간호",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V73_TRANSFUSION_ICU_NURSING",
@@ -52834,7 +54296,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수혈 수혈 총정리 blood transfusion transfusion 혈액제제 RBC PC FFP SDP Cryo 농축적혈구 농축혈소판 신선동결혈장 동결침전제제 ABO RhD 비예기항체 교차시험 crossmatch 수혈동의서 혈액요청서 혈액수령 혈액반납 수혈부작용 TRALI TACO 용혈성 반응 발열성 비용혈성 반응 알레르기 반응 백혈구제거 필터 혈액 가온기 대량수혈 MTP 수혈 기록 ICU 중환자실 저체온 저칼슘혈증 고칼륨혈증 응고장애 ICU 수혈 간호 수혈 간호 체크리스트 대량수혈 간호 TACO 간호 중환자실 수혈 간호 체크리스트 수혈 / 혈액 EVD/ICP/CVP 총정리 ABGA 총정리 심전도 총정리 혈액 가온기 사용방법",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V74_ICU_DISEASE_OVERVIEW",
@@ -53047,7 +54522,20 @@
       "standard_sections_ready": true,
       "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
       "prefer_media_first": true,
-      "hide_raw_steps": true
+      "hide_raw_steps": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V74_ICU_CIRCULATORY",
@@ -54967,7 +56455,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "감염 패혈증 sepsis septic shock 쇼크 MAP lactate source control DIC 응고장애 혈소판감소 대량출혈 massive bleeding MTP 수혈 항생제 감염·패혈증·쇼크·혈액응고 질환 총정리 중환자실 질병 / 감염·혈액·쇼크 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V74_ICU_POSTOP_TRAUMA",
@@ -57787,7 +59288,20 @@
       ],
       "standard_sections_ready": true,
       "search_index": "수액 수액요법 IV fluid fluid therapy crystalloid colloid normal saline N/S Hartmann LR 5DW 0.45% N/S 3% NaCl albumin resuscitation maintenance replacement I/O fluid overload 폐부종 저나트륨 고나트륨 쇼크 수액 수액 요법 수액 총정리 IV fluid therapy fluid resuscitation maintenance fluid 중환자실 수액 요법 총정리: 종류·적응증·모니터링·간호 약물 / 중환자실 ABGA 총정리 EVD·ICP·CVP 총정리 패혈증·쇼크 총정리 수혈 총정리",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V76_ICU_DRUG_FLUID_QUICK_COMPARE",
@@ -94532,7 +96046,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V102_PREOP_EXAM_AND_CHECKLIST_TABLES",
@@ -96829,7 +98356,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_ANTIBIOTICS_AST",
@@ -97077,7 +98617,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_FLUID_HIGHALERT",
@@ -97274,7 +98827,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_NARCOTIC_CONTROL",
@@ -97483,7 +99049,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_TRANSFUSION_OVERVIEW",
@@ -97779,7 +99358,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_TRANSFUSION_REACTION_COAG",
@@ -98049,7 +99641,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V104_MEDICATION_BLOOD_OVERVIEW",
@@ -98256,7 +99861,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V105_CALCULATOR_OVERVIEW",
@@ -101742,7 +103360,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V111_MOBILE_RELEVANCE_GUIDE",
@@ -101874,7 +103505,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V112_PRECISE_RELEVANCE_RULE",
@@ -102005,7 +103649,20 @@
       ],
       "prefer_media_first": false,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V113_STABLE_UPLOAD_GUIDE",
@@ -102121,7 +103778,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V115_MENU_HUB_01",
@@ -103854,7 +105524,20 @@
       ],
       "prefer_media_first": true,
       "hide_raw_steps": false,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "exclude_queries": [
+        "아그라스타트",
+        "아그라스타트주",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "tPA 후 아그라스타트",
+        "PCI 후 아그라스타트",
+        "PTCA 후 아그라스타트",
+        "아그라스타트 용량",
+        "아그라스타트 희석",
+        "아그라스타트 권장용량"
+      ]
     },
     {
       "id": "V115_MENU_HUB_09",
@@ -110814,5 +112497,13 @@
       "CV Critical Care 4-5 부정맥 발생 시 혈역학 확인",
       "CVP/A-line/ECG/부정맥 기존 검색 카드에도 신규 이미지를 우선 연결"
     ]
+  },
+  "v160_update": {
+    "date": "2026-06-29",
+    "summary": "V67 아그라스타트 카드에서 잘못 연결된 혈액제제 이미지를 제거하고, MENU016 질환별 정리 카드에 질환 총정리 이미지 8장을 연결. 검색어 오염 정리."
+  },
+  "v161_update": {
+    "date": "2026-06-29",
+    "summary": "아그라스타트주 카드에서 혈액제제/수혈 이미지를 완전 분리하고, 질환별 정리 8장 이미지를 MENU016 및 계통별 개별 카드로 직접 연결. 수혈/혈액제제 카드는 아그라스타트 검색에서 제외."
   }
 }
