@@ -1,11 +1,11 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.35.0-v135-ns-brain-basic-assessment",
+    "version": "2.36.0-v136-ns-brain-disease-core-care",
     "language": "ko",
-    "source": "V131 기반 + NS Brain 기본 사정 이미지 6장 DB 연결",
+    "source": "V135 기반 + NS Brain 질환별 핵심 간호 이미지 6장 DB 연결",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-06-24"
+    "updated_at": "2026-06-27"
   },
   "schema": {
     "id": "string",
@@ -97267,10 +97267,913 @@ window.ICU_MANUAL_DB = {
       "prefer_media_first": true,
       "hide_raw_steps": false,
       "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_02_DISEASE_CORE_CARE_HUB",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ② Brain 질환별 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌경색",
+        "허혈성 뇌졸중",
+        "뇌출혈",
+        "출혈성 뇌졸중",
+        "SAH",
+        "지주막하출혈",
+        "SDH",
+        "EDH",
+        "ICH",
+        "IVH",
+        "뇌부종",
+        "ICP",
+        "Seizure",
+        "Status epilepticus",
+        "경련",
+        "발작"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌경색",
+        "허혈성 뇌졸중",
+        "뇌출혈",
+        "출혈성 뇌졸중",
+        "SAH",
+        "지주막하출혈",
+        "SDH",
+        "EDH",
+        "ICH",
+        "IVH",
+        "뇌부종",
+        "ICP",
+        "Seizure",
+        "Status epilepticus",
+        "경련",
+        "발작"
+      ],
+      "urgency": "high",
+      "summary": "뇌경색/뇌출혈, SAH, SDH·EDH, ICH·IVH, 뇌부종·ICP 상승, Seizure·Status epilepticus를 질환별로 정리한 NS Brain 파트 2 허브 카드입니다.",
+      "indications": [
+        "질환별 신경계 중증환자 교육",
+        "중환자실 실무 핵심 간호 정리",
+        "신규간호사/경력간호사 교육 및 인계 기준 통일"
+      ],
+      "preparation": [
+        "아래 이미지 6장을 순서대로 확인합니다."
+      ],
+      "steps": [
+        "7. 뇌경색 vs 뇌출혈",
+        "8. SAH",
+        "9. SDH / EDH",
+        "10. ICH / IVH",
+        "11. 뇌부종 / ICP 상승",
+        "12. Seizure / Status epilepticus"
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "baseline 대비 변화, 사정 시간, 주요 신경학적 변화, 보고 여부를 간호기록과 인계에 남깁니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿",
+        "NS Brain ① 뇌신경계 기본 사정"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/07_NS_Brain_뇌경색_vs_뇌출혈_핵심간호.png",
+          "alt": "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+          "caption": "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "뇌경색",
+            "허혈성 뇌졸중",
+            "Ischemic stroke",
+            "뇌출혈",
+            "출혈성 뇌졸중",
+            "Hemorrhagic stroke",
+            "stroke"
+          ]
+        },
+        {
+          "src": "selected_manual_images/08_NS_Brain_SAH_핵심간호.png",
+          "alt": "NS Brain ⑧ SAH 핵심 간호",
+          "caption": "NS Brain ⑧ SAH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "SAH",
+            "지주막하출혈",
+            "Subarachnoid hemorrhage",
+            "thunderclap headache",
+            "nimodipine",
+            "vasospasm"
+          ]
+        },
+        {
+          "src": "selected_manual_images/09_NS_Brain_SDH_EDH_핵심간호.png",
+          "alt": "NS Brain ⑨ SDH / EDH 핵심 간호",
+          "caption": "NS Brain ⑨ SDH / EDH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "SDH",
+            "경막하혈종",
+            "Subdural hematoma",
+            "EDH",
+            "경막외혈종",
+            "Epidural hematoma",
+            "lucid interval"
+          ]
+        },
+        {
+          "src": "selected_manual_images/10_NS_Brain_ICH_IVH_핵심간호.png",
+          "alt": "NS Brain ⑩ ICH / IVH 핵심 간호",
+          "caption": "NS Brain ⑩ ICH / IVH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "ICH",
+            "뇌실질내출혈",
+            "intracerebral hemorrhage",
+            "IVH",
+            "뇌실내출혈",
+            "intraventricular hemorrhage",
+            "수두증"
+          ]
+        },
+        {
+          "src": "selected_manual_images/11_NS_Brain_뇌부종_ICP상승_핵심간호.png",
+          "alt": "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+          "caption": "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "뇌부종",
+            "cerebral edema",
+            "ICP",
+            "ICP 상승",
+            "intracranial pressure",
+            "midline shift",
+            "Cushing"
+          ]
+        },
+        {
+          "src": "selected_manual_images/12_NS_Brain_Seizure_Status_epilepticus_핵심간호.png",
+          "alt": "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호",
+          "caption": "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "Seizure",
+            "경련",
+            "발작",
+            "Status epilepticus",
+            "상태간질",
+            "EEG",
+            "항경련제"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_07_STROKE_COMPARE",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌경색",
+        "허혈성 뇌졸중",
+        "Ischemic stroke",
+        "뇌출혈",
+        "출혈성 뇌졸중",
+        "Hemorrhagic stroke",
+        "stroke",
+        "MRI-DWI",
+        "CT",
+        "재관류 치료",
+        "tPA",
+        "thrombectomy"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌경색",
+        "허혈성 뇌졸중",
+        "Ischemic stroke",
+        "뇌출혈",
+        "출혈성 뇌졸중",
+        "Hemorrhagic stroke",
+        "stroke",
+        "MRI-DWI",
+        "CT",
+        "재관류 치료",
+        "tPA",
+        "thrombectomy"
+      ],
+      "urgency": "high",
+      "summary": "허혈성 뇌졸중과 출혈성 뇌졸중의 대표 영상, 초기 증상, 핵심 간호, 즉시 보고 기준을 비교한 카드입니다.",
+      "indications": [
+        "뇌졸중 초기 평가 교육",
+        "허혈성 vs 출혈성 감별 교육",
+        "응급/중환자실 신경계 간호"
+      ],
+      "preparation": [
+        "발병 시간(Last known well)과 영상검사 종류를 함께 확인합니다.",
+        "기저 신경학적 사정 결과와 현재 변화를 비교합니다."
+      ],
+      "steps": [
+        "영상과 증상을 함께 확인합니다.",
+        "허혈성 뇌졸중은 재관류 치료 가능 시간 여부를 즉시 확인합니다.",
+        "출혈성 뇌졸중은 혈압·신경학적 악화·출혈 확장 징후를 집중 관찰합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "신경학적 사정 결과, 혈압/산소포화도, 발병 시간, 재관류 치료 또는 출혈 악화 의심 여부를 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/07_NS_Brain_뇌경색_vs_뇌출혈_핵심간호.png",
+          "alt": "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+          "caption": "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "뇌경색",
+            "허혈성 뇌졸중",
+            "Ischemic stroke",
+            "뇌출혈",
+            "출혈성 뇌졸중",
+            "Hemorrhagic stroke",
+            "MRI-DWI",
+            "CT",
+            "재관류 치료",
+            "tPA",
+            "thrombectomy",
+            "stroke"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_08_SAH",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑧ SAH 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "SAH",
+        "지주막하출혈",
+        "Subarachnoid hemorrhage",
+        "thunderclap headache",
+        "CTA",
+        "MRA",
+        "nimodipine",
+        "vasospasm",
+        "수두증"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "SAH",
+        "지주막하출혈",
+        "Subarachnoid hemorrhage",
+        "thunderclap headache",
+        "CTA",
+        "MRA",
+        "nimodipine",
+        "vasospasm",
+        "수두증"
+      ],
+      "urgency": "high",
+      "summary": "SAH의 대표 CT/CTA-MRA 영상, 특징적 증상, 핵심 간호, 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "SAH 교육",
+        "뇌동맥류 출혈 환자 간호",
+        "니모디핀/재출혈 예방 교육"
+      ],
+      "preparation": [
+        "번개치는 두통, 경부 강직, 오심/구토, 의식 변화 여부를 먼저 확인합니다.",
+        "CTA/MRA 결과와 뇌동맥류 여부를 확인합니다."
+      ],
+      "steps": [
+        "신경학적 사정과 통증·혈압·수액 균형을 함께 관찰합니다.",
+        "재출혈 예방, vasospasm 감시, 뇌혈관연축 관련 변화 관찰을 강조합니다.",
+        "EVD 필요성, 수두증, 배변 시 과도한 힘주기 예방 등을 확인합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "두통 변화, 의식 변화, 혈압 변화, 니모디핀 투여 및 부작용, EVD/배액 관련 정보를 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/08_NS_Brain_SAH_핵심간호.png",
+          "alt": "NS Brain ⑧ SAH 핵심 간호",
+          "caption": "NS Brain ⑧ SAH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "SAH",
+            "지주막하출혈",
+            "Subarachnoid hemorrhage",
+            "CTA",
+            "MRA",
+            "thunderclap headache",
+            "nimodipine",
+            "vasospasm",
+            "뇌동맥류"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_09_SDH_EDH",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑨ SDH / EDH 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "SDH",
+        "경막하혈종",
+        "Subdural hematoma",
+        "EDH",
+        "경막외혈종",
+        "Epidural hematoma",
+        "lucid interval",
+        "bridging vein"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "SDH",
+        "경막하혈종",
+        "Subdural hematoma",
+        "EDH",
+        "경막외혈종",
+        "Epidural hematoma",
+        "lucid interval",
+        "bridging vein"
+      ],
+      "urgency": "high",
+      "summary": "SDH와 EDH의 CT 소견, 손상 특징, 핵심 간호, 즉시 보고 기준을 비교한 카드입니다.",
+      "indications": [
+        "두부 외상 후 SDH/EDH 감별 교육",
+        "신경외과 수술 전후 관찰",
+        "두개내압 상승 징후 교육"
+      ],
+      "preparation": [
+        "외상 기전, 항응고제 복용력, 두부 타격 부위를 확인합니다.",
+        "기저 신경학적 사정 결과와 현재 변화를 비교합니다."
+      ],
+      "steps": [
+        "SDH는 점진적 의식 저하, EDH는 lucid interval 후 악화 가능성을 염두에 둡니다.",
+        "동공 반응, GCS, 편측 약화, ICP 상승 징후를 지속 관찰합니다.",
+        "긴급 수술/감압술 준비 가능성을 염두에 둡니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "의식 변화, 동공 변화, GCS, 편측 약화, 두통/구토, 수술 준비 및 보호자 설명 여부를 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/09_NS_Brain_SDH_EDH_핵심간호.png",
+          "alt": "NS Brain ⑨ SDH / EDH 핵심 간호",
+          "caption": "NS Brain ⑨ SDH / EDH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "SDH",
+            "경막하혈종",
+            "Subdural hematoma",
+            "EDH",
+            "경막외혈종",
+            "Epidural hematoma",
+            "lucid interval",
+            "bridging vein",
+            "두부외상"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_10_ICH_IVH",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑩ ICH / IVH 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "ICH",
+        "뇌실질내출혈",
+        "intracerebral hemorrhage",
+        "IVH",
+        "뇌실내출혈",
+        "intraventricular hemorrhage",
+        "수두증",
+        "EVD"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "ICH",
+        "뇌실질내출혈",
+        "intracerebral hemorrhage",
+        "IVH",
+        "뇌실내출혈",
+        "intraventricular hemorrhage",
+        "수두증",
+        "EVD"
+      ],
+      "urgency": "high",
+      "summary": "ICH와 IVH의 대표 CT 영상, 주요 소견, 핵심 간호, 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "뇌출혈 중환자 간호 교육",
+        "ICH/IVH 감시",
+        "수두증 및 EVD 연계 교육"
+      ],
+      "preparation": [
+        "혈종 위치/크기와 뇌실 침범 여부, 수두증 소견을 확인합니다.",
+        "혈압, 의식 상태, 동공, 호흡 양상 baseline을 확보합니다."
+      ],
+      "steps": [
+        "신경학적 재평가를 자주 시행합니다.",
+        "BP 관리, 기도/산소화 유지, ICP/수두증/EVD 관련 모니터링을 강조합니다.",
+        "항응고제 사용력, 전해질·혈당·체온 관리, 경련 감시를 포함합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "GCS, pupil, motor, BP, EVD 배액량·색, Na/혈당, 보고 여부를 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/10_NS_Brain_ICH_IVH_핵심간호.png",
+          "alt": "NS Brain ⑩ ICH / IVH 핵심 간호",
+          "caption": "NS Brain ⑩ ICH / IVH 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "ICH",
+            "뇌실질내출혈",
+            "intracerebral hemorrhage",
+            "IVH",
+            "뇌실내출혈",
+            "intraventricular hemorrhage",
+            "수두증",
+            "EVD",
+            "CT"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_11_CEREBRAL_EDEMA_ICP",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌부종",
+        "cerebral edema",
+        "ICP",
+        "ICP 상승",
+        "intracranial pressure",
+        "midline shift",
+        "mass effect",
+        "Cushing triad",
+        "osmotherapy"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "뇌부종",
+        "cerebral edema",
+        "ICP",
+        "ICP 상승",
+        "intracranial pressure",
+        "midline shift",
+        "mass effect",
+        "Cushing triad",
+        "osmotherapy"
+      ],
+      "urgency": "high",
+      "summary": "뇌부종과 ICP 상승의 대표 영상, 위험 징후, 핵심 간호, 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "ICP 상승 환자 감시 교육",
+        "뇌부종/중선편위 영상 이해",
+        "EVD/삼투요법 연계 교육"
+      ],
+      "preparation": [
+        "두통, 반복 구토, 의식 저하, 동공 변화, motor change 여부를 먼저 확인합니다.",
+        "CT/MRI에서 midline shift, mass effect, 뇌고랑 소실 여부를 확인합니다."
+      ],
+      "steps": [
+        "HOB 30°, 목 중립 유지, 저산소증/고탄산혈증 예방을 기본으로 합니다.",
+        "처방에 따른 osmotherapy, EVD/ICP monitoring, I/O와 Na 모니터링을 시행합니다.",
+        "불필요한 자극 최소화와 기침/발살바 방지를 강조합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "의식 변화, 동공, 자세 이상, 활력징후, ICP/EVD, 삼투요법 반응, I/O를 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/11_NS_Brain_뇌부종_ICP상승_핵심간호.png",
+          "alt": "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+          "caption": "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "뇌부종",
+            "cerebral edema",
+            "ICP",
+            "ICP 상승",
+            "intracranial pressure",
+            "midline shift",
+            "mass effect",
+            "Cushing",
+            "osmotherapy"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V136_NS_BRAIN_12_SEIZURE_STATUS",
+      "category": "NS (Brain) / 뇌신경계 중증환자 간호",
+      "title": "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호",
+      "aliases": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "Seizure",
+        "경련",
+        "발작",
+        "Status epilepticus",
+        "상태간질",
+        "EEG",
+        "aura",
+        "postictal",
+        "항경련제"
+      ],
+      "search_terms": [
+        "NS Brain",
+        "Brain",
+        "뇌신경계",
+        "신경계",
+        "뇌신경계 중증환자",
+        "Brain care",
+        "NS 간호",
+        "NS Brain 파트",
+        "Brain 파트",
+        "Brain 질환별 핵심 간호",
+        "Seizure",
+        "경련",
+        "발작",
+        "Status epilepticus",
+        "상태간질",
+        "EEG",
+        "aura",
+        "postictal",
+        "항경련제"
+      ],
+      "urgency": "high",
+      "summary": "Seizure와 Status epilepticus의 대표 검사/영상, 관찰 포인트, 핵심 간호, 즉시 보고 기준을 정리한 카드입니다.",
+      "indications": [
+        "경련 환자 응급간호 교육",
+        "EEG/구조적 병변 연계 이해",
+        "항경련제 투여 전후 관찰 교육"
+      ],
+      "preparation": [
+        "발작 전조, 발작 유형, 지속 시간, 발작 후 상태(postictal)를 확인합니다.",
+        "산소·흡인·IV line 등 응급 준비 상태를 점검합니다."
+      ],
+      "steps": [
+        "환자와 주변 안전 확보를 최우선으로 합니다.",
+        "산소화 유지, 흡인 준비, 저혈당/전해질 이상 등 유발 요인 확인을 포함합니다.",
+        "회복 없이 반복되는 발작은 status epilepticus로 판단하고 즉시 보고합니다."
+      ],
+      "warnings": [
+        "교육용 요약 자료입니다. 실제 적용은 담당의 지시와 원내 최신 프로토콜을 우선합니다."
+      ],
+      "charting": [
+        "발작 시작 시간/지속 시간, 양상, cyanosis/SpO2, 의식 회복 여부, 처방 약물 투여 내용을 기록합니다."
+      ],
+      "related": [
+        "NS Brain ① 뇌신경계 기본 사정",
+        "EVD Bundle Check",
+        "Brain 응급상황 대처",
+        "간호기록·인계 템플릿"
+      ],
+      "source_refs": [
+        "V136 NS Brain 질환별 핵심 간호 통일 디자인 이미지"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/12_NS_Brain_Seizure_Status_epilepticus_핵심간호.png",
+          "alt": "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호",
+          "caption": "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호",
+          "search_terms": [
+            "NS Brain",
+            "Brain",
+            "뇌신경계",
+            "신경계",
+            "뇌신경계 중증환자",
+            "Brain care",
+            "NS 간호",
+            "NS Brain 파트",
+            "Brain 파트",
+            "Brain 질환별 핵심 간호",
+            "Seizure",
+            "경련",
+            "발작",
+            "Status epilepticus",
+            "상태간질",
+            "EEG",
+            "aura",
+            "postictal",
+            "항경련제",
+            "저혈당"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "standard_sections_ready": true
     }
   ],
   "final_review_note": {
-    "card_count": 71,
+    "card_count": 476,
     "review_policy": [
       "원본에서 확인되는 내용만 유지",
       "OJT 평가표, 서명란, 점수표, 프리셉터/프리셉티 문구 제거",
@@ -98965,5 +99868,40 @@ window.ICU_MANUAL_DB = {
       "Seizure",
       "ICP"
     ]
+  },
+  "v136_update": {
+    "summary": "NS Brain 파트 2 질환별 핵심 간호 이미지 6장과 허브 카드 1장을 추가하여 검색과 상세 화면에 연결",
+    "new_cards": [
+      "NS Brain ② Brain 질환별 핵심 간호",
+      "NS Brain ⑦ 뇌경색 vs 뇌출혈 핵심 간호",
+      "NS Brain ⑧ SAH 핵심 간호",
+      "NS Brain ⑨ SDH / EDH 핵심 간호",
+      "NS Brain ⑩ ICH / IVH 핵심 간호",
+      "NS Brain ⑪ 뇌부종 / ICP 상승 핵심 간호",
+      "NS Brain ⑫ Seizure / Status epilepticus 핵심 간호"
+    ],
+    "patched_existing_cards": [],
+    "images": [
+      "07_NS_Brain_뇌경색_vs_뇌출혈_핵심간호.png",
+      "08_NS_Brain_SAH_핵심간호.png",
+      "09_NS_Brain_SDH_EDH_핵심간호.png",
+      "10_NS_Brain_ICH_IVH_핵심간호.png",
+      "11_NS_Brain_뇌부종_ICP상승_핵심간호.png",
+      "12_NS_Brain_Seizure_Status_epilepticus_핵심간호.png"
+    ],
+    "search_focus": [
+      "뇌경색",
+      "뇌출혈",
+      "SAH",
+      "SDH",
+      "EDH",
+      "ICH",
+      "IVH",
+      "뇌부종",
+      "ICP",
+      "Seizure",
+      "Status epilepticus"
+    ],
+    "total_items": 476
   }
 };
