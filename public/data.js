@@ -1,9 +1,9 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.46.0-v146-ns-brain-emergency-bigtext-fixed-response",
+    "version": "2.47.0-v147-ns-brain-emergency-26-33-layout-fixed",
     "language": "ko",
-    "source": "V140 기반 + NS Brain 응급상황 대처 이미지 8장 DB 연결",
+    "source": "V146 기반 + NS Brain 26~33 응급상황 대처 화면맞춤형 이미지 교체",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
     "updated_at": "2026-06-28"
   },
@@ -46,7 +46,7 @@ window.ICU_MANUAL_DB = {
   },
   "items": [
     {
-      "id": "V146_NS_BRAIN_EMERGENCY_05_HUB",
+      "id": "V147_NS_BRAIN_EMERGENCY_05_HUB",
       "category": "NS (Brain) / 뇌신경계 중증환자 간호",
       "title": "NS Brain ⑤ Brain 응급상황 대처",
       "aliases": [
@@ -78,7 +78,11 @@ window.ICU_MANUAL_DB = {
         "과배액",
         "EVD 폐색",
         "CSF 누출",
-        "수막염"
+        "수막염",
+        "V147",
+        "화면맞춤형",
+        "레이아웃 정리",
+        "글씨 겹침 없음"
       ],
       "search_terms": [
         "NS Brain",
@@ -109,10 +113,14 @@ window.ICU_MANUAL_DB = {
         "과배액",
         "EVD 폐색",
         "CSF 누출",
-        "수막염"
+        "수막염",
+        "V147",
+        "화면맞춤형",
+        "레이아웃 정리",
+        "글씨 겹침 없음"
       ],
       "urgency": "high",
-      "summary": "ICP 상승 의심, pupil change, sudden mental change, seizure, excessive CSF drainage, EVD obstruction, CSF leakage, fever/meningitis 의심 상황을 한 파트로 묶은 응급상황 대처 허브 카드입니다.",
+      "summary": "ICP 상승 의심, pupil change, sudden mental change, seizure, excessive CSF drainage, EVD obstruction, CSF leakage, fever/meningitis 의심 상황을 화면맞춤형 이미지 8장으로 정리한 응급상황 대처 허브 카드입니다.",
       "indications": [
         "NS Brain 응급상황 교육",
         "중환자실 신경계 악화 조기 발견",
@@ -146,7 +154,7 @@ window.ICU_MANUAL_DB = {
         "NS Brain ④ Brain 수술/시술 후 간호"
       ],
       "source_refs": [
-        "V146 NS Brain 응급상황 대처 이미지 8장"
+        "V147 NS Brain 응급상황 대처 화면맞춤형 이미지 8장"
       ],
       "tables": [],
       "images": [
@@ -114666,5 +114674,25 @@ window.ICU_MANUAL_DB = {
       "fever",
       "meningitis"
     ]
+  },
+  "v147_update": {
+    "title": "NS Brain 26~33 응급상황 대처 이미지 화면맞춤형 재정리",
+    "changes": [
+      "26~33번 응급상황 대처 이미지 8장을 표/글씨 겹침 없이 재배치한 화면맞춤형 이미지로 교체",
+      "기존 앱 DB 이미지 파일명과 경로를 유지하여 기존 검색어 연결이 그대로 작동",
+      "모바일/앱 화면에서 가독성이 좋아지도록 글자 크기와 여백을 개선",
+      "검색어: ICP 상승, pupil change, sudden mental change, seizure, excessive CSF drainage, EVD obstruction, CSF leakage, fever/meningitis"
+    ],
+    "image_files": [
+      "26_NS_Brain_ICP_increase_emergency.png",
+      "27_NS_Brain_Pupil_change_emergency.png",
+      "28_NS_Brain_Sudden_mental_change_emergency.png",
+      "29_NS_Brain_Seizure_emergency.png",
+      "30_NS_Brain_Excessive_CSF_drainage_emergency.png",
+      "31_NS_Brain_EVD_obstruction_emergency.png",
+      "32_NS_Brain_CSF_leakage_emergency.png",
+      "33_NS_Brain_Fever_meningitis_suspected_emergency.png"
+    ],
+    "upload_note": "GitHub에는 압축파일을 올리지 말고, 압축을 푼 뒤 각 폴더 안 파일을 지정 위치에 업로드합니다."
   }
 };
