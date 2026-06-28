@@ -548,13 +548,13 @@ app.get("/healthz", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.43.0-v143-ns-brain-documentation-handoff-fixed" });
+  res.status(200).json({ ok: true, service: "wiltse-ai3", version: "2.44.0-v144-ns-brain-emergency-fixed-response" });
 });
 
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
-    version: "2.43.0-v143-ns-brain-documentation-handoff-fixed",
+    version: "2.44.0-v144-ns-brain-emergency-fixed-response",
     cards: items.length,
     loginConfigured: loginConfigured(),
     loginMode: INDIVIDUAL_ACCOUNTS.length > 0 ? "individual" : "legacy",
@@ -743,5 +743,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`ICU AI Manual v142 NS Brain documentation handoff running on port ${port}`);
+  console.log(`ICU AI Manual v141 NS Brain emergency response running on port ${port}`);
 });
