@@ -1,11 +1,12 @@
 window.ICU_MANUAL_DB = {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.52.0-v152-search-relevance-emergency-cleanup",
+    "version": "2.56.0-v156-respiratory-ventilator-10images-db-connected",
     "language": "ko",
     "source": "V151 기반 + 응급상황/CPR/E-CART/제세동기/원내응급 검색 연관성 전체 정리",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-06-28"
+    "updated_at": "2026-06-28",
+    "updated": "2026-06-28"
   },
   "schema": {
     "id": "string",
@@ -45,6 +46,1230 @@ window.ICU_MANUAL_DB = {
     ]
   },
   "items": [
+    {
+      "id": "V156_RESP_50_OVERVIEW",
+      "category": "호흡 / Ventilator / 교육 이미지",
+      "title": "호흡기 / Ventilator 10장 총정리",
+      "aliases": [
+        "호흡기 종합 개요",
+        "호흡기 중환자실 간호 총정리",
+        "호흡기계 총정리",
+        "호흡기 교육자료",
+        "ventilator 정리",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "호흡기 종합 개요",
+        "호흡기 중환자실 간호 총정리",
+        "호흡기계 총정리",
+        "호흡기 교육자료",
+        "ventilator 정리",
+        "호흡기 중환자실 간호",
+        "HFNC",
+        "Airvo",
+        "흡인",
+        "suction",
+        "기관절개관",
+        "tracheostomy",
+        "trach",
+        "ABGA",
+        "SpO2",
+        "산소요법",
+        "저산소",
+        "기계환기",
+        "ventilator mode",
+        "모드",
+        "mode",
+        "A/C",
+        "SIMV",
+        "PSV",
+        "CPAP",
+        "vent setup",
+        "Ventilator setup",
+        "Dräger",
+        "Savina",
+        "high flow",
+        "고유량",
+        "고유량 비강캐뉼라",
+        "High Flow Nasal Cannula",
+        "FiO2",
+        "flow",
+        "가온가습",
+        "흡인 간호",
+        "석션",
+        "open suction",
+        "closed suction",
+        "ETT suction",
+        "기관흡인",
+        "기도흡인",
+        "분비물",
+        "ABG",
+        "Allen test",
+        "Allen",
+        "알렌테스트",
+        "알렌 테스트",
+        "동맥혈가스",
+        "arterial blood gas",
+        "혈액가스",
+        "PaO2",
+        "PaCO2",
+        "HCO3",
+        "pH",
+        "산염기",
+        "oxygen therapy",
+        "산소",
+        "O2",
+        "nasal prong",
+        "nasal cannula",
+        "simple mask",
+        "reservoir mask",
+        "NIV",
+        "BiPAP",
+        "nebulizer",
+        "네뷸라이저",
+        "인공호흡기 환자",
+        "ventilator patient",
+        "기도관리",
+        "cuff pressure",
+        "VAP",
+        "진정",
+        "restraint",
+        "alarm",
+        "원내 프로토콜",
+        "흡인간호",
+        "suction protocol",
+        "카테터",
+        "기관절개",
+        "T-tube",
+        "cuff",
+        "obturator",
+        "기관절개관 빠짐",
+        "기관절개관 교체",
+        "BVM",
+        "저산소증",
+        "hypoxemia",
+        "desaturation",
+        "산소포화도",
+        "SpO2 저하",
+        "산소포화도 저하",
+        "cyanosis",
+        "청색증",
+        "호흡곤란",
+        "oxygen escalation",
+        "산소증량",
+        "airway"
+      ],
+      "urgency": "high",
+      "summary": "호흡기 중환자실 간호 10장 이미지를 한 번에 확인하는 허브 카드입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
+          "search_terms": [
+            "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "HFNC",
+            "Airvo",
+            "흡인",
+            "suction",
+            "기관절개관",
+            "tracheostomy",
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
+          ]
+        },
+        {
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
+          "search_terms": [
+            "ABGA",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
+          "search_terms": [
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
+          "search_terms": [
+            "기관절개관",
+            "기관절개",
+            "tracheostomy",
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_51_VENTILATOR_MODES",
+      "category": "호흡 / Ventilator",
+      "title": "Ventilator 기본 모드 요약",
+      "aliases": [
+        "Ventilator 기본 모드",
+        "A/C",
+        "SIMV",
+        "PSV",
+        "CPAP",
+        "ventilator setup",
+        "mode",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "Ventilator 기본 모드",
+        "A/C",
+        "SIMV",
+        "PSV",
+        "CPAP",
+        "ventilator setup",
+        "mode",
+        "기계환기",
+        "ventilator mode",
+        "모드",
+        "vent setup",
+        "Ventilator setup",
+        "Dräger",
+        "Savina"
+      ],
+      "urgency": "routine",
+      "summary": "Ventilator 모드별 핵심 의미와 관찰 포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_52_HFNC",
+      "category": "호흡 / HFNC / Airvo",
+      "title": "HFNC 적용·적응증·간호",
+      "aliases": [
+        "HFNC",
+        "Airvo",
+        "high flow",
+        "고유량 산소",
+        "HFNC 간호",
+        "HFNC 적용",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "HFNC",
+        "Airvo",
+        "high flow",
+        "고유량 산소",
+        "HFNC 간호",
+        "HFNC 적용",
+        "고유량",
+        "고유량 비강캐뉼라",
+        "High Flow Nasal Cannula",
+        "FiO2",
+        "flow",
+        "가온가습",
+        "SpO2",
+        "산소요법",
+        "저산소"
+      ],
+      "urgency": "routine",
+      "summary": "HFNC 적용과 간호 포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
+          "search_terms": [
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_53_SUCTION",
+      "category": "호흡 / 흡인 / suction",
+      "title": "흡인 간호 총정리",
+      "aliases": [
+        "흡인",
+        "suction",
+        "open suction",
+        "closed suction",
+        "석션",
+        "흡인간호",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "흡인",
+        "suction",
+        "open suction",
+        "closed suction",
+        "석션",
+        "흡인간호",
+        "흡인 간호",
+        "ETT suction",
+        "기관흡인",
+        "기도흡인",
+        "분비물",
+        "SpO2"
+      ],
+      "urgency": "routine",
+      "summary": "Open/Closed suction 간호 포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
+          "search_terms": [
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_54_ABGA_ALLEN",
+      "category": "호흡 / ABGA",
+      "title": "ABGA · Allen test 프로토콜 안내",
+      "aliases": [
+        "ABGA",
+        "Allen test",
+        "ABG",
+        "동맥혈가스분석",
+        "알렌테스트",
+        "혈액가스",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "ABGA",
+        "Allen test",
+        "ABG",
+        "동맥혈가스분석",
+        "알렌테스트",
+        "혈액가스",
+        "Allen",
+        "알렌 테스트",
+        "동맥혈가스",
+        "arterial blood gas",
+        "PaO2",
+        "PaCO2",
+        "HCO3",
+        "pH",
+        "FiO2",
+        "산염기"
+      ],
+      "urgency": "high",
+      "summary": "ABGA 채혈과 Allen test 핵심을 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
+          "search_terms": [
+            "ABGA",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_55_OXYGEN_THERAPY",
+      "category": "호흡 / 산소요법",
+      "title": "산소요법 종류 한눈에 보기",
+      "aliases": [
+        "산소요법",
+        "oxygen therapy",
+        "nasal prong",
+        "simple mask",
+        "reservoir mask",
+        "NIV",
+        "nebulizer",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "산소요법",
+        "oxygen therapy",
+        "nasal prong",
+        "simple mask",
+        "reservoir mask",
+        "NIV",
+        "nebulizer",
+        "산소",
+        "O2",
+        "nasal cannula",
+        "BiPAP",
+        "CPAP",
+        "네뷸라이저",
+        "저산소",
+        "SpO2"
+      ],
+      "urgency": "routine",
+      "summary": "산소요법 장치별 기본 흐름과 간호 포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
+          "search_terms": [
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_56_VENTILATED_PATIENT",
+      "category": "호흡 / Ventilator",
+      "title": "인공호흡기 환자 간호 핵심",
+      "aliases": [
+        "인공호흡기 환자 간호",
+        "ventilator patient",
+        "기도관리",
+        "VAP",
+        "cuff pressure",
+        "ventilator alarm",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "인공호흡기 환자 간호",
+        "ventilator patient",
+        "기도관리",
+        "VAP",
+        "cuff pressure",
+        "ventilator alarm",
+        "인공호흡기 환자",
+        "기계환기",
+        "suction",
+        "진정",
+        "restraint",
+        "alarm",
+        "ABGA",
+        "SpO2"
+      ],
+      "urgency": "high",
+      "summary": "인공호흡기 환자 간호 핵심 체크포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_57_SUCTION_PROTOCOL",
+      "category": "호흡 / 흡인 / 원내 프로토콜",
+      "title": "원내 프로토콜 흡인간호 표",
+      "aliases": [
+        "원내 프로토콜 흡인간호",
+        "suction protocol",
+        "흡인 프로토콜",
+        "폐쇄형 흡인",
+        "개방형 흡인",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "원내 프로토콜 흡인간호",
+        "suction protocol",
+        "흡인 프로토콜",
+        "폐쇄형 흡인",
+        "개방형 흡인",
+        "원내 프로토콜",
+        "흡인",
+        "흡인간호",
+        "suction",
+        "기관흡인",
+        "open suction",
+        "closed suction",
+        "카테터",
+        "기도관리"
+      ],
+      "urgency": "routine",
+      "summary": "흡인간호 프로토콜을 표로 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_58_TRACHEOSTOMY",
+      "category": "호흡 / 기관절개관",
+      "title": "기관절개관 간호 체크포인트",
+      "aliases": [
+        "기관절개관",
+        "tracheostomy",
+        "trach",
+        "T-tube",
+        "기관절개관 간호",
+        "obturator",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "기관절개관",
+        "tracheostomy",
+        "trach",
+        "T-tube",
+        "기관절개관 간호",
+        "obturator",
+        "기관절개",
+        "cuff",
+        "기관절개관 빠짐",
+        "기관절개관 교체",
+        "suction",
+        "기도관리",
+        "BVM"
+      ],
+      "urgency": "routine",
+      "summary": "기관절개관 간호와 응급 체크포인트를 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
+          "search_terms": [
+            "기관절개관",
+            "기관절개",
+            "tracheostomy",
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
+    {
+      "id": "V156_RESP_59_HYPOXEMIA_DESATURATION",
+      "category": "호흡 / 저산소 / SpO2",
+      "title": "저산소 / SpO2 저하 대응",
+      "aliases": [
+        "저산소",
+        "저산소증",
+        "SpO2 저하",
+        "산소포화도 저하",
+        "desaturation",
+        "hypoxemia",
+        "cyanosis",
+        "호흡곤란",
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리"
+      ],
+      "search_terms": [
+        "호흡",
+        "호흡기",
+        "Respiratory",
+        "respiratory",
+        "Ventilator",
+        "ventilator",
+        "인공호흡기",
+        "호흡기계",
+        "호흡/Ventilator 정리",
+        "저산소",
+        "저산소증",
+        "SpO2 저하",
+        "산소포화도 저하",
+        "desaturation",
+        "hypoxemia",
+        "cyanosis",
+        "호흡곤란",
+        "SpO2",
+        "산소포화도",
+        "청색증",
+        "ABGA",
+        "oxygen escalation",
+        "산소증량",
+        "airway"
+      ],
+      "urgency": "high",
+      "summary": "저산소와 SpO2 저하 시 사정·준비·보고 기준을 정리한 이미지입니다.",
+      "indications": [
+        "호흡기/인공호흡기 관련 검색 시 교육용 이미지 확인",
+        "신규간호사 교육 및 경력간호사 인계·사정 기준 확인"
+      ],
+      "preparation": [],
+      "steps": [
+        "이미지 요약표를 먼저 확인하고, 환자 상태·처방·병원 프로토콜을 함께 판단합니다."
+      ],
+      "warnings": [
+        "실제 처치·투약·기기 설정은 담당의 지시와 병원 최신 지침을 우선합니다."
+      ],
+      "charting": [
+        "증상 변화 시간, 산소/기기 설정, SpO2/ABGA, 처치 반응을 기록합니다."
+      ],
+      "related": [],
+      "source_refs": [
+        "교육용 요약본: 실제 처치와 투약은 병원 최신 프로토콜과 의사 지시를 우선합니다."
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true
+    },
     {
       "id": "V149_CV_CRITICAL_CARE_03_HUB",
       "category": "CV (심혈관) 중증환자 간호 / 3. 순환계·모니터링",
@@ -511,35 +1736,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/30_CV_Critical_Care_overview_page1.png",
-          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
-          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 1",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
-            "CV",
-            "심혈관",
-            "심혈관계",
-            "순환계",
-            "순환 / 모니터링",
-            "CV Critical Care",
-            "중환자실 심혈관",
-            "모니터링",
-            "CV 중증환자 간호",
-            "심혈관계 진단 검사",
-            "심혈관계 질환",
-            "개심술",
-            "보조장치",
-            "시술 후 간호",
-            "CABG",
-            "ECMO",
-            "IABP",
-            "VAD",
-            "ECG",
-            "Echo",
-            "심초음파",
-            "Chest X-ray",
-            "cardiac enzyme",
             "ABGA",
-            "coronary angiography"
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -917,67 +2132,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/39_CV_Critical_Care_overview_page2.png",
-          "alt": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
-          "caption": "CV 심혈관 중증환자 간호 3. 순환계/모니터링 Page 2",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "CV",
-            "심혈관",
-            "심혈관계",
-            "순환계",
-            "순환 / 모니터링",
-            "CV Critical Care",
-            "중환자실 심혈관",
-            "모니터링",
-            "ECG 증상별 질환",
-            "심혈관계 약물",
-            "심혈관계 응급 상황",
-            "ACS",
-            "CPA",
-            "VT",
-            "VF",
-            "폐부종",
-            "대동맥 박리",
-            "심인성 쇼크",
-            "흉통",
-            "NRS",
-            "PQRST",
-            "말초 관류",
-            "항혈소판제",
-            "항응고제",
-            "베타차단제",
-            "ACE 억제제",
-            "이뇨제",
-            "질산제",
-            "칼슘채널차단제"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/32_CV_Critical_Care_ECG_monitoring_arrhythmia_assessment.png",
-          "alt": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
-          "caption": "CV Critical Care 3-2 ECG 모니터링 / 부정맥 우선 사정",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "CV",
-            "심혈관",
-            "심혈관계",
-            "순환계",
-            "순환 / 모니터링",
-            "CV Critical Care",
-            "중환자실 심혈관",
-            "ECG 모니터링",
-            "EKG 모니터링",
-            "부정맥",
-            "arrhythmia",
-            "Bradycardia",
-            "Tachycardia",
-            "Atrial fibrillation",
-            "AF",
-            "A-fib",
-            "VT",
-            "VF",
-            "12 lead ECG",
-            "ECG strip",
-            "artifact"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -2941,37 +4160,46 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/29_NS_Brain_Seizure_emergency.png",
-          "alt": "NS Brain 29 Seizure 응급 대처",
-          "caption": "NS Brain 29 Seizure 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Seizure",
-            "경련",
-            "발작",
-            "status epilepticus",
-            "상태간질",
-            "airway",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "oxygen",
-            "duration check",
-            "postictal",
-            "항경련제"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V146_NS_BRAIN_EMERGENCY_30_EXCESSIVE_CSF_DRAINAGE",
@@ -3390,37 +4618,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/33_NS_Brain_Fever_meningitis_suspected_emergency.png",
-          "alt": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
-          "caption": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "fever",
-            "meningitis",
-            "수막염",
-            "ventriculitis",
-            "발열",
-            "목강직",
-            "neck stiffness",
-            "mental change",
-            "cloudy CSF",
-            "culture",
-            "CSF 검사"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V140_NS_BRAIN_POSTOP_04_HUB",
@@ -4520,88 +5788,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/30_NS_Brain_Excessive_CSF_drainage_emergency.png",
-          "alt": "NS Brain 30 Excessive CSF drainage 응급 대처",
-          "caption": "NS Brain 30 Excessive CSF drainage 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "excessive CSF drainage",
-            "CSF 과배액",
-            "과다배액",
-            "배액량 증가",
-            "EVD level",
-            "level 재확인",
-            "drain status"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/32_NS_Brain_CSF_leakage_emergency.png",
-          "alt": "NS Brain 32 CSF leakage 응급 대처",
-          "caption": "NS Brain 32 CSF leakage 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "CSF leakage",
-            "CSF leak",
-            "dressing wetness",
-            "맑은 삼출",
-            "CSF 누출",
-            "sterile management",
-            "감염 위험",
-            "삽입부 누출"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/24_NS_Brain_SDD_EVD_Hemovac_management.png",
-          "alt": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "caption": "NS Brain 24 SDD / EVD / Hemovac 관리",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "SDD",
-            "Subdural Drain",
-            "경막하 배액",
-            "EVD",
-            "External Ventricular Drain",
-            "Hemovac",
-            "drain",
-            "배액관",
-            "배액량",
-            "배액색",
-            "CSF leak",
-            "무배액",
-            "과다배액"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -4622,7 +5873,8 @@ window.ICU_MANUAL_DB = {
         "defibrillator",
         "원내 응급간호",
         "원내 제세동기"
-      ]
+      ],
+      "hide_raw_steps": true
     },
     {
       "id": "V140_NS_BRAIN_POSTOP_24_VP_SHUNT",
@@ -4716,36 +5968,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/24_NS_Brain_VP_shunt_aftercare.png",
-          "alt": "NS Brain 24 VP shunt 후 간호",
-          "caption": "NS Brain 24 VP shunt 후 간호",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "VP shunt",
-            "Ventriculoperitoneal shunt",
-            "뇌실복강단락술",
-            "수두증",
-            "hydrocephalus",
-            "shunt obstruction",
-            "shunt malfunction",
-            "overdrainage",
-            "underdrainge",
-            "programmable valve",
-            "valve",
-            "복부 합병증"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -4766,7 +6053,8 @@ window.ICU_MANUAL_DB = {
         "defibrillator",
         "원내 응급간호",
         "원내 제세동기"
-      ]
+      ],
+      "hide_raw_steps": true
     },
     {
       "id": "V140_NS_BRAIN_POSTOP_25_CRANIECTOMY",
@@ -5082,238 +6370,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_13_PURPOSE_STRUCTURE",
@@ -5421,75 +6548,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "EVD 목적",
-            "EVD 구조",
-            "ventricular catheter",
-            "3-way stopcock",
-            "burette",
-            "drain chamber",
-            "collection bag",
-            "transducer",
-            "ICP monitoring",
-            "ventriculostomy",
-            "뇌실 카테터",
-            "배액 챔버",
-            "배액백",
-            "압력 눈금",
-            "감염 예방"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_14_LEVELING",
@@ -5597,75 +6726,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "EVD leveling",
-            "EVD level",
-            "leveling",
-            "zeroing",
-            "Tragus",
-            "FOM",
-            "Foramen of Monro",
-            "reference point",
-            "cmH2O",
-            "체위 변경",
-            "re-leveling",
-            "배액 높이",
-            "영점",
-            "외이도",
-            "Monro공"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_15_DRAIN_STATUS",
@@ -5771,74 +6902,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "drain status",
-            "open",
-            "clamp",
-            "clamped",
-            "intermittent",
-            "stopcock",
-            "3-way stopcock",
-            "배액 상태",
-            "개방",
-            "차단",
-            "간헐적 배액",
-            "EVD clamp",
-            "배액 경로",
-            "이송 시 clamp"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_16_HOURLY_DRAINAGE_CSF",
@@ -5948,105 +7082,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/33_NS_Brain_Fever_meningitis_suspected_emergency.png",
-          "alt": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
-          "caption": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "fever",
-            "meningitis",
-            "수막염",
-            "ventriculitis",
-            "발열",
-            "목강직",
-            "neck stiffness",
-            "mental change",
-            "cloudy CSF",
-            "culture",
-            "CSF 검사"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "hourly drainage",
-            "CSF color",
-            "CSF 성상",
-            "CSF 색",
-            "뇌척수액 색",
-            "clear CSF",
-            "bloody CSF",
-            "xanthochromic",
-            "cloudy CSF",
-            "purulent CSF",
-            "배액량",
-            "시간당 배액량",
-            "총 배액량",
-            "mL/hr",
-            "응고물",
-            "clot"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_17_OSCILLATION_WAVEFORM",
@@ -6154,102 +7260,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "oscillation",
-            "patency",
-            "ICP waveform",
-            "waveform",
-            "ICP 파형",
-            "파동",
-            "개통성",
-            "P1",
-            "P2",
-            "P3",
-            "damped waveform",
-            "flat waveform",
-            "obstruction",
-            "EVD 폐색",
-            "waveform loss"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_18_COMPLICATION",
@@ -6365,134 +7446,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/32_NS_Brain_CSF_leakage_emergency.png",
-          "alt": "NS Brain 32 CSF leakage 응급 대처",
-          "caption": "NS Brain 32 CSF leakage 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "CSF leakage",
-            "CSF leak",
-            "dressing wetness",
-            "맑은 삼출",
-            "CSF 누출",
-            "sterile management",
-            "감염 위험",
-            "삽입부 누출"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/33_NS_Brain_Fever_meningitis_suspected_emergency.png",
-          "alt": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
-          "caption": "NS Brain 33 Fever / Meningitis 의심 응급 대처",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "fever",
-            "meningitis",
-            "수막염",
-            "ventriculitis",
-            "발열",
-            "목강직",
-            "neck stiffness",
-            "mental change",
-            "cloudy CSF",
-            "culture",
-            "CSF 검사"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "EVD complication",
-            "EVD 합병증",
-            "ventriculitis",
-            "meningitis",
-            "infection",
-            "obstruction",
-            "overdrainage",
-            "underdrainage",
-            "CSF leak",
-            "dislodgement",
-            "hemorrhage",
-            "slit ventricle",
-            "subdural hematoma",
-            "발열",
-            "혼탁 CSF",
-            "누출",
-            "이탈",
-            "폐색",
-            "과배액"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V138_NS_BRAIN_EVD_19_BUNDLE_CHECK_DOCUMENTATION",
@@ -6604,104 +7628,77 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "EVD bundle",
-            "EVD checklist",
-            "EVD bundle check",
-            "EVD 기록",
-            "EVD 인계",
-            "간호기록",
-            "인계 템플릿",
-            "documentation",
-            "handoff",
-            "SBAR",
-            "EVD level 기록",
-            "drain status 기록",
-            "hourly drainage 기록",
-            "CSF color 기록",
-            "ICP 기록",
-            "waveform 기록",
-            "re-leveling 기록"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V135_NS_BRAIN_00_BASIC_ASSESSMENT_HUB",
@@ -8019,35 +9016,31 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
+            "pH",
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V131_ABGA_RESULT_INTERPRETATION",
@@ -8115,32 +9108,31 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
-            "pH",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
             "PaCO2",
             "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
+            "pH",
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V131_INJECTION_EMERGENCY_TEST_IV_OVERVIEW",
@@ -9367,18 +10359,6 @@ window.ICU_MANUAL_DB = {
             "SDP",
             "FFP",
             "Cryo"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         }
       ],
@@ -10732,44 +11712,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part07_08_medication_transfusion_overview.png",
-          "alt": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
-          "caption": "7. 약물 / 수액 / 마약 · 8. 수혈 / 혈액 총정리 이미지",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "약물",
-            "수액",
-            "마약",
-            "수혈",
-            "혈액",
-            "항생제"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -10791,7 +11798,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Remifentanil / Ultian 약물 / 수액 / 마약 약물/Mix/진정 울티안 Ultian Remifentanil 진정 sedation vent 약물 수액 마약 v8_final_reviewed",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "DRUG008",
@@ -12555,18 +13563,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -12731,18 +13727,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -12914,18 +13898,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -13537,250 +14509,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_NS_Brain_Motor_grade_편측약화_사정.png",
-          "alt": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "caption": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Motor",
-            "motor grade",
-            "motor power",
-            "근력",
-            "편측 약화",
-            "hemiparesis",
-            "drift",
-            "lateralization",
-            "decorticate",
-            "decerebrate",
-            "pain response",
-            "통증자극",
-            "motor change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/05_NS_Brain_Seizure_관찰포인트.png",
-          "alt": "NS Brain ⑤ Seizure 관찰 포인트",
-          "caption": "NS Brain ⑤ Seizure 관찰 포인트",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Seizure",
-            "seizure assessment",
-            "경련",
-            "발작",
-            "status epilepticus",
-            "tonic",
-            "clonic",
-            "focal",
-            "postictal",
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
             "cyanosis",
-            "눈 편위",
-            "발작 지속시간",
-            "경련 관찰"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -13815,7 +14608,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Initial assessment / ICU 라운딩 Routine Routine/Initial initial 라운딩 GCS Motor LOC Line Foley Vent C-line A-line assessment ICU v8_final_reviewed 신경계 사정 가이드",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "ROUTINE006",
@@ -14241,44 +15035,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part03_circulation_monitoring_overview.png",
-          "alt": "3. 순환 / 모니터링 총정리 이미지",
-          "caption": "3. 순환 / 모니터링 총정리 이미지",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line",
-            "C-line",
-            "EKG",
-            "CVP"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -14306,7 +15127,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Bundle 입력 Routine Routine/Bundle Bundle 중심정맥관 Foley Vent C-line 입력 v8_final_reviewed",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "ROUTINE009",
@@ -15554,129 +16376,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -15733,7 +16451,8 @@ window.ICU_MANUAL_DB = {
         "ett",
         "기도삽관"
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "LAB002",
@@ -15924,103 +16643,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -16089,7 +16730,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "LAB004",
@@ -16415,82 +17057,75 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
-          "search_terms": [
-            "Ventilator 기본 모드 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_oxygen_therapy_types_table.png",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
           "alt": "산소요법 종류 한눈에 보기",
           "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "산소요법 종류 한눈에 보기"
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_hfnc_table.png",
-          "alt": "HFNC 적용·적응증·간호",
-          "caption": "HFNC 적용·적응증·간호",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "HFNC 적용·적응증·간호"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
+          "search_terms": [
+            "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "HFNC",
+            "Airvo",
+            "흡인",
+            "suction",
+            "기관절개관",
+            "tracheostomy",
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
           ]
         }
       ],
@@ -16555,7 +17190,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VENT002",
@@ -16633,58 +17269,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -16787,7 +17436,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VENT003",
@@ -16860,41 +17510,40 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -16927,7 +17576,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Intubation 준비/Assist 호흡 / Ventilator 호흡기/Intubation intubation intu 삽관 E-tube laryngoscope Etomidate Ambu 준비 Assist 호흡 Ventilator v8_final_reviewed",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VENT004",
@@ -16946,7 +17596,10 @@ window.ICU_MANUAL_DB = {
         "호흡기/Vent",
         "v8_final_reviewed",
         "네뷸라이저",
-        "흡입간호"
+        "흡입간호",
+        "Vent nebulizer",
+        "Vent circuit",
+        "호흡 / Ventilator"
       ],
       "urgency": "routine",
       "summary": "Vent 환자 nebulizer 연결.",
@@ -16986,58 +17639,74 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
             "Ventilator",
-            "HFNC",
-            "ABGA",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
             "suction",
-            "tracheostomy"
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
+          "search_terms": [
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
           "search_terms": [
             "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
             "Ventilator",
+            "ventilator",
+            "인공호흡기",
             "HFNC",
+            "Airvo",
+            "흡인",
             "suction",
+            "기관절개관",
             "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
-          "alt": "흡인 간호 총정리",
-          "caption": "흡인 간호 총정리",
-          "search_terms": [
-            "흡인 간호 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
-          "alt": "원내 프로토콜 흡인간호 표",
-          "caption": "원내 프로토콜 흡인간호 표",
-          "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
           ]
         }
       ],
@@ -17058,11 +17727,14 @@ window.ICU_MANUAL_DB = {
         "Nebulizer 사용 참고 자료",
         "네뷸라이저",
         "흡입간호",
-        "분무요법"
+        "분무요법",
+        "Vent nebulizer",
+        "인공호흡기"
       ],
       "standard_sections_ready": true,
       "search_index": "Vent nebulizer 연결 호흡 / Ventilator 호흡기/Vent Vent Nebulizer 네뷸 AE 유량센서 연결 호흡 Ventilator v8_final_reviewed Nebulizer 사용 참고 자료 Ventilator setup",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VENT005",
@@ -17123,58 +17795,68 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_hfnc_table.png",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
           "alt": "HFNC 적용·적응증·간호",
           "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "HFNC 적용·적응증·간호"
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_oxygen_spirometer_table.png",
-          "alt": "원내 프로토콜 산소요법·Inspirometer 표",
-          "caption": "원내 프로토콜 산소요법·Inspirometer 표",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "원내 프로토콜 산소요법·Inspirometer 표"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v96_low_spo2_flow.png",
-          "alt": "산소포화도 저하 시 대처",
-          "caption": "산소포화도 저하 시 대처",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "산소포화도 저하 시 대처"
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
           ]
         }
       ],
@@ -17238,7 +17920,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "TF001",
@@ -17564,57 +18247,30 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_혈액제제종류_통일디자인.png",
-          "alt": "혈액제제 종류",
-          "caption": "혈액제제 종류",
-          "search_terms": [
-            "수혈",
-            "혈액제제 종류",
-            "RBC",
-            "PRC",
-            "PC",
-            "Platelet",
-            "SDP",
-            "FFP",
-            "Cryo"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_혈액제제_유효기간_보관온도_통일디자인.png",
-          "alt": "혈액제제 유효기간 · 보관 온도",
-          "caption": "혈액제제 유효기간 · 보관 온도",
-          "search_terms": [
-            "수혈",
-            "혈액 보관",
-            "혈액제제 유효기간",
-            "보관 온도",
-            "냉장 보관",
-            "실온 보관"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
           "search_terms": [
             "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
             "Ventilator",
+            "ventilator",
+            "인공호흡기",
             "HFNC",
+            "Airvo",
+            "흡인",
             "suction",
+            "기관절개관",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
           ]
         }
       ],
@@ -17678,7 +18334,7 @@ window.ICU_MANUAL_DB = {
       "standard_sections_ready": true,
       "search_index": "수혈 절차 상세 수혈 / 혈액 수혈 P-RBC FFP A-PLT 수혈기록지 수혈 V/S 혈액요청서 수혈 tip 수혈 전처치 수혈기록 수혈 확인 blood start 15분 V/S 수혈 부작용 혈액 불출 진검실 절차 상세 혈액 v11_source_enhanced 수혈 V/S 및 기록 포인트 시점 확인/기록 수혈 전 동의서, 혈액요청서, 혈액정보, 환자확인, V/S 시작 직후 부작용 증상 관찰 15분 후 V/S, 발열/오한/발진/호흡곤란 확인 종료 시 V/S, 수혈기록지, I/O blood 용량 입력 부작용 의심 즉시 중단, 정맥로 유지, 담당의/진검실 보고 동의서 테블릿 태블릿 tablet consent 동의서 받기 전자동의서 동영상 업무동영상 교육영상",
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "videos": [
         {
           "href": "https://drive.google.com/file/d/1vwaBVQW0vD9AHolTWaqaUIhckgoZuNLe/view?usp=drive_link",
@@ -18443,18 +19099,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -18593,18 +19237,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -18738,18 +19370,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -18910,18 +19530,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -19272,18 +19880,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -19440,18 +20036,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -19570,18 +20154,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -19702,18 +20274,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -20000,18 +20560,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -20149,18 +20697,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -20294,18 +20830,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -20445,18 +20969,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -20569,18 +21081,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -20734,18 +21234,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -20881,18 +21369,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -21061,18 +21537,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -21185,279 +21649,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -21517,7 +21773,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "PROC002",
@@ -21579,18 +21836,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -21724,18 +21969,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -21867,18 +22100,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -22014,18 +22235,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -22181,18 +22390,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -22355,18 +22552,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -22469,18 +22654,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -22629,18 +22802,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -22774,18 +22935,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -22891,54 +23040,42 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -22963,7 +23100,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Tracheostomy 전후 간호 호흡 / Ventilator 검사·시술/호흡기 Tracheostomy 기관절개 T-can 전후 간호 호흡 Ventilator v10_master_30_categories",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "PROC012",
@@ -23022,18 +23160,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -23163,18 +23289,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -23302,18 +23416,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -23446,18 +23548,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -23587,18 +23677,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -23726,18 +23804,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -23862,18 +23928,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -23995,18 +24049,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -24133,18 +24175,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -24801,18 +24831,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -24919,18 +24937,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -25068,18 +25074,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -25629,18 +25623,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/07_대사성질환_전해질이상_총정리.png",
           "alt": "대사성 질환 · 전해질 이상 총정리",
           "caption": "대사성 질환 · 전해질 이상 총정리",
@@ -25852,18 +25834,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -25967,20 +25937,7 @@ window.ICU_MANUAL_DB = {
         "사용자 제시 30개 카테고리"
       ],
       "tables": [],
-      "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        }
-      ],
+      "images": [],
       "original_category": "각과 Routine/심장내과",
       "search_terms": [
         "심장내과 Routine",
@@ -26060,18 +26017,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -26255,18 +26200,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -26407,18 +26340,6 @@ window.ICU_MANUAL_DB = {
       ],
       "tables": [],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
@@ -27230,18 +27151,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -27377,40 +27286,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/40_Emergency_Overview_CPR_ECART_Shock_Intubation.png",
-          "alt": "응급상황: CPR · E-CART · 코드블루",
-          "caption": "응급상황: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "CPR quick card",
-            "코드블루 방송",
-            "6114",
-            "E-CART",
-            "제세동기",
-            "Defibrillator",
-            "ROSC"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -27433,7 +27373,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "장비 사용 방법 공통 물품 / 장비 / 전화번호 장비/사용법 장비 사용법 monitor pump vent CRRT 제세동기 사용 방법 공통 물품 전화번호 v10_master_30_categories",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU001",
@@ -27907,18 +27848,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -28267,41 +28196,46 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
-            "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -28543,7 +28477,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU005",
@@ -28778,157 +28713,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/23_NS_Brain_TFCA_aftercare.png",
-          "alt": "NS Brain 23 TFCA 후 간호",
-          "caption": "NS Brain 23 TFCA 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "TFCA",
-            "cerebral angiography",
-            "뇌혈관조영술",
-            "혈관조영",
-            "천자부위",
-            "puncture site",
-            "distal pulse",
-            "bed rest",
-            "contrast",
-            "조영제",
-            "후복막 출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v69_stroke_ischemic_summary.png",
-          "alt": "뇌경색 교육 이미지",
-          "caption": "뇌경색 교육 이미지",
-          "search_terms": [
-            "뇌경색"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -28969,7 +28772,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "검사/검체: 혈액검사 참고치·의심질환·영상검사 검사 / 검체 검사·검체 검사 검체 혈액검사 혈액 검사 참고치 참고치 정상범위 의심질환 영상검사 자주 시행하는 영상검사 CT MRI angio CT Brain CT Brain MRI CAG TFCA DSA PTA TCD EGD ERCP CFS culture blood culture sputum urine RAT CRE CPO Tip culture 검체통 채혈병 ABGA CT 조영제 MRI 조영제 영상검사 준비 v14_v11_based_menu search_optimized",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU007",
@@ -29050,279 +28854,42 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
-          "src": "selected_manual_images/24_NS_Brain_SDD_EVD_Hemovac_management.png",
-          "alt": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "caption": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "SDD",
-            "Subdural Drain",
-            "경막하 배액",
-            "EVD",
-            "External Ventricular Drain",
-            "Hemovac",
-            "drain",
-            "배액관",
-            "배액량",
-            "배액색",
-            "CSF leak",
-            "무배액",
-            "과다배액"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -29382,7 +28949,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Dressing / 각종 LINE / Drainage 정리 Line / Drain / Dressing Dressing·Line dressing 드레싱 상처 일반상처 감염상처 수술상처 욕창 PCD EVD SDD 장루 line 라인 각종 LINE C-line A-line PICC HD cath Mahurkar Perm cath drain drainage drainage 종류 drainage 특징 JP Hemovac L-tube Foley T-tube tracheostomy 소독제 상처 소독 장루 dressing EVD bag 소독 PCD dressing 각종 정리 v14_v11_based_menu search_optimized 일반 상처 Dressing 수술 후 상처 Dressing",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU008",
@@ -29775,18 +29343,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -30140,44 +29696,48 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -30217,7 +29777,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Vital sign: BP·HR·RR·BT Vital Sign vital V/S 활력징후 BP 혈압 HR 맥박 RR 호흡수 BT 체온 fever hypotension hypertension tachycardia bradycardia SpO2 saturation sign v14_v11_based_menu search_optimized Vital sign",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU013",
@@ -30288,103 +29849,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -30464,7 +29947,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU014",
@@ -31110,43 +30594,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/44_Shock_Initial_Response.png",
-          "alt": "Shock 환자 초기대응",
-          "caption": "Shock 환자 초기대응",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "MAP",
-            "lactate",
-            "vasopressor",
-            "승압제",
-            "perfusion",
-            "저관류",
-            "hypotension",
-            "sepsis",
-            "출혈",
-            "감염"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -31201,7 +30713,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "질환별 정리: 심혈관·호흡기·비뇨기·신경·소화기·혈액종양·내분비·다발성 질환별 정리 질환 질환별 심혈관계 호흡기계 비뇨기계 신경계 소화기계 혈액 종양 혈액종양 내분비계 다발성 질환 CHF MI pneumonia COPD AKI CKD stroke ICH GI bleeding sepsis shock 정리 심혈관 호흡기 비뇨기 신경 소화기 내분비 다발성 v14_v11_based_menu search_optimized ventilator 동영상 Ventilator 사용법 동영상",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "MENU017",
@@ -31827,80 +31340,46 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part05_06_renal_crrt_bst_dka_overview.png",
-          "alt": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "caption": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "search_terms": [
-            "CRRT",
-            "신장",
-            "BST",
-            "DM",
-            "DKA",
-            "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_hfnc_table.png",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
           "alt": "HFNC 적용·적응증·간호",
           "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "HFNC 적용·적응증·간호"
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -31966,7 +31445,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "ICU 교체 주기 정리 Routine Routine/교체주기 교체주기 교체 주기 Q-syte q site nebulizer vent circuit 박테리아 필터 엔코 HFNC CRRT kit IV A-line kit C-line dx PICC dx closed suction catheter feeding bag T-tube portex 수요일 일요일 extension 3-way ICU 교체 주기 정리 v26_uploaded_manual_added manual_20260614 ICU 교체 주기 항목 3일 7일 14일 4일",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "ROUTINE031",
@@ -32165,19 +31645,6 @@ window.ICU_MANUAL_DB = {
             "NG",
             "L-tube"
           ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
         }
       ],
       "tags": [
@@ -32353,292 +31820,40 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/24_NS_Brain_SDD_EVD_Hemovac_management.png",
-          "alt": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "caption": "NS Brain 24 SDD / EVD / Hemovac 관리",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "SDD",
-            "Subdural Drain",
-            "경막하 배액",
-            "EVD",
-            "External Ventricular Drain",
-            "Hemovac",
-            "drain",
-            "배액관",
-            "배액량",
-            "배액색",
-            "CSF leak",
-            "무배액",
-            "과다배액"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part15_equipment_phone_overview.png",
-          "alt": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "caption": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "search_terms": [
-            "물품",
-            "장비",
-            "전화번호",
-            "CSR",
-            "pump"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v121_csr_sterile_tools_real_photo.png",
-          "alt": "공급실 소독기구 실물 사진 원본",
-          "caption": "공급실 소독기구 실물 사진 원본",
-          "search_terms": [
-            "공급실 소독기구 실물 사진 원본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_csr_tools_summary_table.png",
-          "alt": "공급실 기구 총정리 표",
-          "caption": "공급실 기구 총정리 표",
-          "search_terms": [
-            "공급실 기구 총정리 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part09_10_test_line_dressing_overview.png",
-          "alt": "Line / Drain / Dressing 관련 총정리 이미지",
-          "caption": "Line / Drain / Dressing 관련 총정리 이미지",
-          "search_terms": [
-            "Line / Drain / Dressing 관련 총정리 이미지"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -32715,7 +31930,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "상황별 준비물: irrigation, C-line, suture, sputum cx, CTD, EVD 수술 / 시술 준비물/시술·배액관 상황별 준비 준비물 Bladder irrigation Subclavian insertion C-line insertion suture 준비 sputum cx CTD insertion NS OP drain EVD 배액관 tip cx 배액관 제거 배액관 삽입 thoracostomy chest tube 상황별 irrigation C-line suture sputum cx CTD EVD 수술 시술 v26_uploaded_manual_added manual_20260614 상황별 핵심 준비물 요약 상황 핵심 준비물 D-set, 곡반, N/S, enema syringe 50cc C-line catheter, suture set, sono probe cover, 리도카인, Tegaderm CHG specimen cup, suction line, ET PVC catheter, airway, N/S Thoracostomy set, chest tube 24Fr, chest bottle, chest stand EVD 배액관 비움 D-set, 베타딘, 멸균장갑, 거즈, 고무줄",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "DRUG030",
@@ -32885,18 +32101,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -33146,103 +32350,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -33343,7 +32469,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "ROUTINE032",
@@ -34611,29 +33738,6 @@ window.ICU_MANUAL_DB = {
             "CVP",
             "승압제"
           ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
         }
       ],
       "tags": [
@@ -34762,40 +33866,46 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/40_Emergency_Overview_CPR_ECART_Shock_Intubation.png",
-          "alt": "응급상황: CPR · E-CART · 코드블루",
-          "caption": "응급상황: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "CPR quick card",
-            "코드블루 방송",
-            "6114",
-            "E-CART",
-            "제세동기",
-            "Defibrillator",
-            "ROSC"
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -34847,7 +33957,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "간호처방과 액팅: Lab, pickup, 응급발행 처방·액팅 간호처방 액팅 Cadex 기본간호 Foley 처방 L-tube 처방 Dressing 처방 IV 처방 O2 처방 O2 inhalation HFNC 수가 Vent 수가 simple dressing 피하주사 pee nebulizer 처방 Lab 처방 채혈접수업무 픽업 응급발행 10:30 마약 픽업 퇴원약 픽업 ICU Chest Portable Y bed side PT 간호처방과 Lab pickup 처방 v26_uploaded_manual_added manual_20260614 LUCAS 동영상 루카스 사용법 동영상",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "DNR030",
@@ -35309,33 +34420,6 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
           "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
           "alt": "NS Brain 13 EVD 목적 · 구조",
           "caption": "NS Brain 13 EVD 목적 · 구조",
@@ -35536,18 +34620,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -38443,419 +37515,42 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/20_NS_Brain_Burr_hole_aftercare.png",
-          "alt": "NS Brain 20 Burr hole 후 간호",
-          "caption": "NS Brain 20 Burr hole 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "Burr hole",
-            "burrhole",
-            "버홀",
-            "천두술",
-            "천공술",
-            "두개천공",
-            "혈종 배액",
-            "drain",
-            "dressing",
-            "LOC",
-            "headache",
-            "vomiting",
-            "neuro check"
-          ]
-        },
-        {
-          "src": "selected_manual_images/22_NS_Brain_Coil_embolization_aftercare.png",
-          "alt": "NS Brain 22 Coil embolization 후 간호",
-          "caption": "NS Brain 22 Coil embolization 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "Coil embolization",
-            "coil",
-            "코일색전술",
-            "색전술",
-            "뇌동맥류",
-            "aneurysm",
-            "puncture site",
-            "천자부위",
-            "vasospasm",
-            "rebleeding",
-            "항혈소판",
-            "항응고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/24_NS_Brain_SDD_EVD_Hemovac_management.png",
-          "alt": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "caption": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "SDD",
-            "Subdural Drain",
-            "경막하 배액",
-            "EVD",
-            "External Ventricular Drain",
-            "Hemovac",
-            "drain",
-            "배액관",
-            "배액량",
-            "배액색",
-            "CSF leak",
-            "무배액",
-            "과다배액"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
-          "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -39004,7 +37699,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_CPR_____LUCAS_E_CART",
@@ -39240,41 +37936,40 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -39347,7 +38042,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_ABGA___A_LINE",
@@ -39419,103 +38115,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -39583,7 +38201,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_A_LINE_ZEROING",
@@ -40103,18 +38722,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -41033,58 +39640,40 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -41112,7 +39701,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Lab bottle 종류와 채혈 순서 / 검체 채취 검사 / 검체 Lab bottle / Sputum Cx / Urine Cx / RAT Lab bottle Sputum Cx Urine RAT Lab bottle 채혈순서 Sputum Cx Urine Cx 검체 Lab bottle 종류 채혈 순서 검체 bottle 검체 채취 외주검사 차광검체 종류와 채혈 순서 채취 검사 v43_uploaded_manual 추가 업무 매뉴얼(260618) 검체 채취 핵심 항목 핵심 포인트 병원 검체 bottle 기준과 검사실 지침 우선 검체 bottle과 은박지 포장 위 라벨 2개 부착 멸균 손/오염 손 구분, suction 연결 방향 확인 포트 소독 후 자연건조, 10cc 정도 채취 호흡기 PCR 검체 채취 후 현장 검사 결과 관리 입력 검체 용기 랩보틀 Lab bottle 이미지 채혈 순서 이미지 추가 업무 매뉴얼 전체 추출 이미지 Lab bottle 종류와 채혈 순서",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_BLOOD_CULTURE",
@@ -41780,42 +40370,42 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -41858,7 +40448,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "기관절개관 목적 / 적용 / 합병증 호흡 / Ventilator 기관절개관 목적 적용 합병증 Tracheostomy T-tube cuff pressure 상부기도폐쇄 호흡부전 cuff fenestrated Portex Tracoe Koken Teflon 호흡 Ventilator v43_uploaded_manual v49_exact_card 기관절개관 참고 이미지 1 기관절개관 참고 이미지 2 기관절개관 참고 이미지 3 기관절개관 참고 이미지 4 기관절개관 참고 이미지 5 기관절개관 참고 이미지 6 기관절개관 참고 이미지 7 기관절개관 참고 이미지 8 기관절개관 참고 이미지 9 기관절개관 참고 이미지 10 기관절개관 참고 이미지 11 기관절개관 참고 이미지 12 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_____SINGLE_DOUBLE_CUFF_FE",
@@ -41952,50 +40543,42 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -42024,7 +40607,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "기관절개관 종류 / Single·Double / Cuff / Fenestrated 호흡 / Ventilator 기관절개관 종류 Single Double Cuff Fenestrated Single cannula Double cannula Unfenestrated 내관 외관 호흡 Ventilator v43_uploaded_manual Tracheostomy T-tube Portex Tracoe Koken 기관절개관 이미지 기관절개관 사진 기관절개관 전체 추출 이미지",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "UPD43_PORTEX_TRACOE_KOKEN_TEFLON_MON",
@@ -42149,50 +40733,42 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
@@ -42217,7 +40793,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Portex / Tracoe / Koken / Teflon / Montgomery tube 호흡 / Ventilator Portex Tracoe Koken Teflon Montgomery tube Vocalaid Adjustable Speech valve 호흡 Ventilator v43_uploaded_manual 기관절개관",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "DBMEDIA001",
@@ -42791,94 +41368,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -42982,7 +41536,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "Ventilator 벤틸레이터 인공호흡기 ventilator 동영상 인공호흡기 동영상 ventilator 사용법 호흡 기계환기 Ventilator 사용법 동영상 인공호흡기 사용법 벤틸레이터 사용법 호흡 / Ventilator Dräger Drager Savina 드레거 ventilator Dräger 인공호흡기 1 동영상 업무동영상 교육영상 Dräger 인공호흡기 2",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VIDEO002",
@@ -43045,94 +41600,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -43159,7 +41691,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "portable ventilator 이동식 ventilator portable ventilator 동영상 호흡 Ventilator ventilator 동영상 Ventilator 사용법 동영상 이동용 ventilator 포터블 벤틸레이터 Portable ventilator 사용법 동영상 호흡 / Ventilator",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "VIDEO003",
@@ -43944,46 +42477,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/40_Emergency_Overview_CPR_ECART_Shock_Intubation.png",
-          "alt": "응급상황: CPR · E-CART · 코드블루",
-          "caption": "응급상황: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "CPR quick card",
-            "코드블루 방송",
-            "6114",
-            "E-CART",
-            "제세동기",
-            "Defibrillator",
-            "ROSC"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "CPCR 인공호흡 기도확보 intubation E-tube Ambu bag ambu mask suction O2 삽관 보조 CPCR 인공호흡/기도확보 담당 간호사 체크리스트 응급상황",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V65_CPCR_004",
@@ -45273,18 +43807,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -45822,144 +44344,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_NS_Brain_Motor_grade_편측약화_사정.png",
-          "alt": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "caption": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Motor",
-            "motor grade",
-            "motor power",
-            "근력",
-            "편측 약화",
-            "hemiparesis",
-            "drift",
-            "lateralization",
-            "decorticate",
-            "decerebrate",
-            "pain response",
-            "통증자극",
-            "motor change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "tracheostomy",
-            "ABGA"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "병동간호팀 간호사메뉴얼 신규 간호사 메뉴얼 Duty별 업무 Day 업무 Evening 업무 Night 업무 GCS motor 수혈간호 흡인간호 경관영양 검체수집 수술 전 간호 수술 후 간호 감염 예방관리 병동간호팀 간호사메뉴얼 2026.04.13 병동간호팀 간호사 매뉴얼",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V65_OS_DEPT_MANUAL",
@@ -46338,18 +44763,6 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
         {
           "src": "selected_manual_images/v120_part11_surgery_procedure_overview.png",
           "alt": "11. 수술 / 시술 총정리 이미지",
@@ -46789,228 +45202,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/27_NS_Brain_Pupil_change_emergency.png",
-          "alt": "NS Brain 27 Pupil change 응급 대처",
-          "caption": "NS Brain 27 Pupil change 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Pupil",
-            "pupil change",
-            "동공 변화",
-            "anisocoria",
-            "unilateral dilation",
-            "fixed pupil",
-            "sluggish",
-            "동공반사",
-            "빛반사"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/28_NS_Brain_Sudden_mental_change_emergency.png",
-          "alt": "NS Brain 28 Sudden mental change 응급 대처",
-          "caption": "NS Brain 28 Sudden mental change 응급 대처",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "sudden mental change",
-            "mental change",
-            "LOC 저하",
-            "의식저하",
-            "의식변화",
-            "CT 준비",
-            "검사 준비",
-            "보고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT / MRI 질환별 예시 이미지",
-          "caption": "Brain CT / MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT / MRI 질환별 예시 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호",
-          "caption": "Brain CT 전후 간호",
-          "search_terms": [
-            "Brain CT 전후 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 + 수술/시술 통합 총정리",
-          "caption": "신경계 + 수술/시술 통합 총정리",
-          "search_terms": [
-            "신경계 + 수술/시술 통합 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "standard_sections_ready": true,
       "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 뇌졸중 총정리 stroke overview FAST 평가 응급 뇌졸중 중풍 갑자기 말 어눌 팔다리 힘빠짐 119 뇌졸중 총정리: 증상·진단·검사·초기 간호 신경계",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V69_STROKE_ISCHEMIC",
@@ -47273,228 +45506,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/27_NS_Brain_Pupil_change_emergency.png",
-          "alt": "NS Brain 27 Pupil change 응급 대처",
-          "caption": "NS Brain 27 Pupil change 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Pupil",
-            "pupil change",
-            "동공 변화",
-            "anisocoria",
-            "unilateral dilation",
-            "fixed pupil",
-            "sluggish",
-            "동공반사",
-            "빛반사"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/28_NS_Brain_Sudden_mental_change_emergency.png",
-          "alt": "NS Brain 28 Sudden mental change 응급 대처",
-          "caption": "NS Brain 28 Sudden mental change 응급 대처",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "sudden mental change",
-            "mental change",
-            "LOC 저하",
-            "의식저하",
-            "의식변화",
-            "CT 준비",
-            "검사 준비",
-            "보고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT / MRI 질환별 예시 이미지",
-          "caption": "Brain CT / MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT / MRI 질환별 예시 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호",
-          "caption": "Brain CT 전후 간호",
-          "search_terms": [
-            "Brain CT 전후 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 + 수술/시술 통합 총정리",
-          "caption": "신경계 + 수술/시술 통합 총정리",
-          "search_terms": [
-            "신경계 + 수술/시술 통합 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "standard_sections_ready": true,
       "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 뇌경색 종류 허혈성 ischemic stroke cerebral infarction 대혈관 죽상경화성 심장색전성 열공경색 소혈관폐색 lacunar infarct MCA 대혈관폐색 LVO tPA alteplase tenecteplase 혈전용해술 혈전제거술 기계적 혈전제거술 thrombectomy 혈전성 색전성 뇌경색(허혈성 뇌졸중): 종류·진단·치료·간호 신경계",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V69_STROKE_HEMORRHAGIC",
@@ -47834,522 +45887,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/27_NS_Brain_Pupil_change_emergency.png",
-          "alt": "NS Brain 27 Pupil change 응급 대처",
-          "caption": "NS Brain 27 Pupil change 응급 대처",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Pupil",
-            "pupil change",
-            "동공 변화",
-            "anisocoria",
-            "unilateral dilation",
-            "fixed pupil",
-            "sluggish",
-            "동공반사",
-            "빛반사"
-          ]
-        },
-        {
-          "src": "selected_manual_images/28_NS_Brain_Sudden_mental_change_emergency.png",
-          "alt": "NS Brain 28 Sudden mental change 응급 대처",
-          "caption": "NS Brain 28 Sudden mental change 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "sudden mental change",
-            "mental change",
-            "LOC 저하",
-            "의식저하",
-            "의식변화",
-            "CT 준비",
-            "검사 준비",
-            "보고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/22_NS_Brain_Coil_embolization_aftercare.png",
-          "alt": "NS Brain 22 Coil embolization 후 간호",
-          "caption": "NS Brain 22 Coil embolization 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "Coil embolization",
-            "coil",
-            "코일색전술",
-            "색전술",
-            "뇌동맥류",
-            "aneurysm",
-            "puncture site",
-            "천자부위",
-            "vasospasm",
-            "rebleeding",
-            "항혈소판",
-            "항응고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT / MRI 질환별 예시 이미지",
-          "caption": "Brain CT / MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT / MRI 질환별 예시 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호",
-          "caption": "Brain CT 전후 간호",
-          "search_terms": [
-            "Brain CT 전후 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 + 수술/시술 통합 총정리",
-          "caption": "신경계 + 수술/시술 통합 총정리",
-          "search_terms": [
-            "신경계 + 수술/시술 통합 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "standard_sections_ready": true,
       "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 hemorrhagic stroke ICH intracerebral hemorrhage 뇌내출혈 SAH subarachnoid hemorrhage 지주막하출혈 IVH intraventricular hemorrhage 뇌실내출혈 소뇌출혈 뇌간출혈 동맥류 aneurysm EVD 외부뇌실배액 혈종제거술 감압술 코일색전술 clipping 클리핑 nimodipine 혈관연축 ICP 두개내압 뇌출혈(출혈성 뇌졸중): 종류·수술·치료·간호 신경계",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V69_STROKE_COMPARISON",
@@ -48517,228 +46096,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/27_NS_Brain_Pupil_change_emergency.png",
-          "alt": "NS Brain 27 Pupil change 응급 대처",
-          "caption": "NS Brain 27 Pupil change 응급 대처",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Pupil",
-            "pupil change",
-            "동공 변화",
-            "anisocoria",
-            "unilateral dilation",
-            "fixed pupil",
-            "sluggish",
-            "동공반사",
-            "빛반사"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/28_NS_Brain_Sudden_mental_change_emergency.png",
-          "alt": "NS Brain 28 Sudden mental change 응급 대처",
-          "caption": "NS Brain 28 Sudden mental change 응급 대처",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "sudden mental change",
-            "mental change",
-            "LOC 저하",
-            "의식저하",
-            "의식변화",
-            "CT 준비",
-            "검사 준비",
-            "보고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT / MRI 질환별 예시 이미지",
-          "caption": "Brain CT / MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT / MRI 질환별 예시 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호",
-          "caption": "Brain CT 전후 간호",
-          "search_terms": [
-            "Brain CT 전후 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 + 수술/시술 통합 총정리",
-          "caption": "신경계 + 수술/시술 통합 총정리",
-          "search_terms": [
-            "신경계 + 수술/시술 통합 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "standard_sections_ready": true,
       "search_index": "뇌졸중 stroke CVA 뇌경색 허혈성 뇌졸중 뇌출혈 출혈성 뇌졸중 FAST NIHSS CT MRI DWI FLAIR SWI CTA MRA DSA 편마비 안면마비 언어장애 구음장애 의식저하 동공 GCS 연하평가 NPO 흡인예방 허혈성 출혈성 비교 뇌경색 뇌출혈 차이 뇌졸중 비교 ischemic hemorrhagic comparison 수술 치료 간호 비교 허혈성 vs 출혈성 뇌졸중 한눈에 비교 신경계",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V70_ECG_INTERPRETATION",
@@ -49965,304 +47364,71 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -50358,7 +47524,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V71_EVD_NURSING",
@@ -50595,361 +47762,71 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/26_NS_Brain_ICP_increase_emergency.png",
-          "alt": "NS Brain 26 ICP 상승 의심 응급 대처",
-          "caption": "NS Brain 26 ICP 상승 의심 응급 대처",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "ICP",
-            "ICP 상승",
-            "두개내압",
-            "뇌압 상승",
-            "Cushing",
-            "midline shift",
-            "vital sign",
-            "drain 확인",
-            "level 확인",
-            "의사 보고"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/24_NS_Brain_VP_shunt_aftercare.png",
-          "alt": "NS Brain 24 VP shunt 후 간호",
-          "caption": "NS Brain 24 VP shunt 후 간호",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "VP shunt",
-            "Ventriculoperitoneal shunt",
-            "뇌실복강단락술",
-            "수두증",
-            "hydrocephalus",
-            "shunt obstruction",
-            "shunt malfunction",
-            "overdrainage",
-            "underdrainge",
-            "programmable valve",
-            "valve",
-            "복부 합병증"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_brain_ct_mri_disease_examples.png",
-          "alt": "Brain CT / MRI 질환별 예시 이미지",
-          "caption": "Brain CT / MRI 질환별 예시 이미지",
-          "search_terms": [
-            "Brain CT / MRI 질환별 예시 이미지"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v111_brain_ct_care_large.png",
-          "alt": "Brain CT 전후 간호",
-          "caption": "Brain CT 전후 간호",
-          "search_terms": [
-            "Brain CT 전후 간호"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 + 수술/시술 통합 총정리",
-          "caption": "신경계 + 수술/시술 통합 총정리",
-          "search_terms": [
-            "신경계 + 수술/시술 통합 총정리"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -50985,7 +47862,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V71_ICP_MANAGEMENT",
@@ -51304,33 +48182,6 @@ window.ICU_MANUAL_DB = {
             "duration check",
             "postictal",
             "항경련제"
-          ]
-        },
-        {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
           ]
         },
         {
@@ -51915,33 +48766,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
           "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
           "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
           "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
@@ -52295,41 +49119,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
-            "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "ABGA",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -52366,7 +49174,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V72_ABGA_ACID_BASE",
@@ -52596,49 +49405,32 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/44_Shock_Initial_Response.png",
-          "alt": "Shock 환자 초기대응",
-          "caption": "Shock 환자 초기대응",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "MAP",
-            "lactate",
-            "vasopressor",
-            "승압제",
-            "perfusion",
-            "저관류",
-            "hypotension",
-            "sepsis",
-            "출혈",
-            "감염"
+            "ABGA",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 보상 혼합성 산염기 장애 Winter 공식 anion gap DKA COPD 과호흡 구토 이뇨제 arterial blood gas 동맥혈 가스분석 혈액가스분석 산염기 장애 ABGA 산염기 장애 판독: 호흡성·대사성 산증/알칼리증 호흡 / ABGA / 중환자실 ABGA 정상값·채혈·해석순서 산소화·환기 간호 인공호흡기 사용법",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V72_ABGA_OXYGENATION_NURSING",
@@ -52891,47 +49683,55 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
-            "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "ABGA",
+            "ABG",
+            "Allen test",
+            "Allen",
+            "알렌테스트",
+            "알렌 테스트",
+            "동맥혈가스",
+            "arterial blood gas",
+            "혈액가스",
+            "PaO2",
+            "PaCO2",
+            "HCO3",
+            "pH",
+            "FiO2",
+            "산염기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA ABG 동맥혈가스분석 동맥혈 가스 분석 pH PaCO2 PaO2 HCO3 SaO2 BE Base excess Lactate 젖산 P/F ratio PF ratio FiO2 산염기 산증 알칼리증 대사성 산증 호흡성 산증 대사성 알칼리증 호흡성 알칼리증 인공호흡기 ventilator 산소화 환기 PaO2 저하 PaCO2 상승 CO2 retention ARDS PEEP minute ventilation tidal volume SpO2 I/O 쇼크 arterial blood gas 동맥혈 가스분석 혈액가스분석 ABGA 간호 산소화 평가 환기 평가 ABGA 산소화·환기·중환자실 간호 호흡 / ABGA / 중환자실 ABGA 산염기 장애 판독 인공호흡기 사용법 중환자실 모니터링 EVD ICP CVP 총정리",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V72_ABGA_EXAMPLES",
@@ -53193,103 +49993,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -53326,7 +50048,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V73_TRANSFUSION_OVERVIEW",
@@ -54738,49 +51461,37 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/44_Shock_Initial_Response.png",
-          "alt": "Shock 환자 초기대응",
-          "caption": "Shock 환자 초기대응",
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "MAP",
-            "lactate",
-            "vasopressor",
-            "승압제",
-            "perfusion",
-            "저관류",
-            "hypotension",
-            "sepsis",
-            "출혈",
-            "감염"
+            "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "HFNC",
+            "Airvo",
+            "흡인",
+            "suction",
+            "기관절개관",
+            "tracheostomy",
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "중환자실 ICU 질병 진단 질환 계통별 과별 순환계 호흡기계 소화기계 뇌신경계 신장계 감염 패혈증 쇼크 혈액응고 ICU 질병 총정리 중환자실 질환 중환자실 진단별 정리 계통별 질병 과별 질병 정리 중환자실 대상 환자 질병 총정리: 계통별 빠른 분류 중환자실 질병 / 계통별 ABGA 총정리 심전도 총정리 EVD ICP CVP 총정리 수혈 총정리 뇌졸중 총정리",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V74_ICU_CIRCULATORY",
@@ -55204,117 +51915,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -55352,7 +51971,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V74_ICU_NEURO",
@@ -58550,33 +55170,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
           "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
           "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
           "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
@@ -59815,18 +56408,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -62175,130 +58756,98 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
-          "search_terms": [
-            "ABGA",
-            "Allen test",
-            "Allen",
-            "알렌테스트",
-            "알렌 테스트",
-            "ABGA 채혈",
-            "동맥혈가스",
-            "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
-            "PaO2",
-            "PaCO2",
-            "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
-            "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/50_Respiratory_ICU_Care_Overview.png",
+          "alt": "호흡기 중환자실 간호 총정리",
+          "caption": "호흡기 중환자실 간호 총정리",
           "search_terms": [
             "호흡",
+            "호흡기",
+            "호흡기계",
+            "respiratory",
+            "호흡기 중환자실 간호",
+            "호흡기계 총정리",
             "Ventilator",
+            "ventilator",
+            "인공호흡기",
             "HFNC",
+            "Airvo",
+            "흡인",
             "suction",
+            "기관절개관",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "ABGA",
+            "SpO2",
+            "산소요법",
+            "저산소"
           ]
         },
         {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "ABGA Allen test 표"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -62392,7 +58941,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V80_HEMODYNAMIC_MONITORING_OVERVIEW",
@@ -64380,72 +60930,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "ventilator mode volume control pressure control SIMV PSV PEEP FiO2 tidal volume RR VC PC 기계환기 모드 인공호흡기 모드 Ventilator 기본 모드 VC·PC·SIMV·PSV 한눈에 보기 호흡 / Ventilator V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_02",
@@ -64702,66 +61258,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
             "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
-          "alt": "Ventilator 기본 모드 요약",
-          "caption": "Ventilator 기본 모드 요약",
-          "search_terms": [
-            "Ventilator 기본 모드 요약"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
-          "search_terms": [
-            "Ventilator 알람 대응 순서"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
-          "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -64829,7 +61367,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_03",
@@ -65068,72 +61607,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "high pressure alarm PIP peak inspiratory pressure secretions kink bronchospasm bite compliance 고압 알람 High pressure peak pressure 기도압 상승 압력상승 Ventilator High Pressure 알람 대응 호흡 / Ventilator 알람 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_06",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_04",
@@ -65370,72 +61915,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "low pressure alarm leak disconnect cuff pressure circuit disconnection self extubation 저압 알람 Low pressure leak alarm cuff leak 회로이탈 Ventilator Low Pressure·Leak 알람 대응 호흡 / Ventilator 알람 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_03",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_05",
@@ -65666,80 +62217,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_low_spo2_flow.png",
-          "alt": "산소포화도 저하 시 대처",
-          "caption": "산소포화도 저하 시 대처",
-          "search_terms": [
-            "산소포화도 저하 시 대처"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "weaning spontaneous breathing trial SBT RSBI extubation PSV T-piece 자발호흡시험 ventilator 떼기 extubation 준비 Ventilator Weaning·SBT 준비 체크 호흡 / Weaning V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_06",
@@ -65976,64 +62525,67 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "tracheostomy"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
             "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
+          "search_terms": [
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
-          "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
-          "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "suction ETT tracheostomy closed suction secretion SpO2 무균술 흡인 ETT suction tracheostomy suction 기관흡인 ETT·Tracheostomy 흡인 간호 체크 호흡 / 흡인 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_07",
@@ -66267,107 +62819,77 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
+            "FiO2",
+            "산염기"
           ]
         },
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
             "Ventilator",
-            "HFNC",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
             "ABGA",
-            "suction",
-            "tracheostomy"
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA arterial blood gas PaO2 PaCO2 pH HCO3 FiO2 P/F ratio 혈액가스 산소화 Ventilator 환자 ABGA·산소화 해석 연결 호흡 / ABGA 연동 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V72_ABGA_INTERPRETATION",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V79_DETAIL_08",
@@ -66590,64 +63112,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "VAP ventilator associated pneumonia oral care head elevation sedation vacation subglottic suction 폐렴 예방 ventilator bundle 구강간호 Ventilator 환자 VAP 예방 번들 체크 호흡 / VAP 예방 V79 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V80_DETAIL_01",
@@ -70448,103 +66953,25 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part05_06_renal_crrt_bst_dka_overview.png",
-          "alt": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "caption": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "search_terms": [
-            "CRRT",
-            "신장",
-            "BST",
-            "DM",
-            "DKA",
-            "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -70557,7 +66984,8 @@ window.ICU_MANUAL_DB = {
         "ett",
         "기도삽관"
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V81_DETAIL_07",
@@ -71319,76 +67747,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "NG tube L-tube gastric drainage suction tube position 위관 Levin tube NG·L-tube 위치·고정·배액 확인 소화기 / 위장관 V82 V82_GI_DIGESTIVE_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V82_DETAIL_02",
@@ -71608,77 +68007,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
-          "alt": "감염계 중증질환 총정리",
-          "caption": "감염계 중증질환 총정리",
-          "search_terms": [
-            "감염계",
-            "sepsis",
-            "septic shock",
-            "패혈증",
-            "혈액배양",
-            "CRE",
-            "CPE",
-            "VRE",
-            "MDRO",
-            "격리",
-            "항생제",
-            "AST"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "enteral nutrition feeding gastric residual aspiration diarrhea 장관영양 enteral feeding EN tube feeding Enteral Feeding 내약성·흡인예방 체크 소화기 / 위장관 V82 V82_GI_DIGESTIVE_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V82_DETAIL_03",
@@ -72978,18 +69347,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/04_감염계_중증질환_총정리.png",
           "alt": "감염계 중증질환 총정리",
           "caption": "감염계 중증질환 총정리",
@@ -74044,123 +70401,32 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "ABGA arterial blood gas heparin syringe air bubble 동맥혈가스 혈액가스 ABGA 채혈·검체 취급 체크 검사 / 시술·수술 V83 V83_TEST_SPECIMEN_IMAGING_PROCEDURE_SURGERY_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V83_DETAIL_04",
@@ -74408,18 +70674,6 @@ window.ICU_MANUAL_DB = {
             "간호 수행",
             "업무 요약",
             "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
           ]
         },
         {
@@ -76897,72 +73151,47 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v106_xray_line_tube_catheter_examples.png",
-          "alt": "X-ray line/tube/catheter 예시",
-          "caption": "X-ray line/tube/catheter 예시",
-          "search_terms": [
-            "X-ray"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "chest tube thoracic drainage air leak water seal suction Chest tube 흉관 흉부배액 Chest tube 배액·Air leak·흡인압 체크 기구 / Line·Drain·Dressing V84 V84_LINE_DRAIN_DRESSING_STERILE_TOOLS_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V84_DETAIL_06",
@@ -77971,42 +74200,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/08_다발성질환_복합중증환자_총정리.png",
-          "alt": "다발성 질환 · 복합 중증환자 총정리",
-          "caption": "다발성 질환 · 복합 중증환자 총정리",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "다발성 질환",
-            "복합 중증환자",
-            "MODS",
-            "다기관부전",
-            "DIC",
-            "delirium",
-            "욕창",
-            "낙상",
-            "피부손상",
-            "조기재활"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part12_13_14_workflow_emr_overview.png",
-          "alt": "12. 입퇴원 / 전동 / 전원 / 사망 · 13. 근무별 업무 · 14. EMR / 기록 / 처방 총정리 이미지",
-          "caption": "12. 입퇴원 / 전동 / 전원 / 사망 · 13. 근무별 업무 · 14. EMR / 기록 / 처방 총정리 이미지",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "입퇴원",
-            "전동",
-            "전원",
-            "사망",
-            "근무",
-            "EMR",
-            "기록",
-            "처방",
-            "DNR"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "fall risk fall prevention side rail bed alarm patient safety 낙상 낙상평가 낙상 위험평가·예방중재·사건보고 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V85_DETAIL_02",
@@ -78973,58 +75238,78 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
             "Ventilator",
-            "HFNC",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
             "ABGA",
-            "suction",
-            "tracheostomy"
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "standard_sections_ready": true,
       "search_index": "EMR ICU flow sheet vital signs ventilator setting I&O flow sheet 간호기록 EMR·ICU Flow Sheet 누락방지 체크 간호업무 / 안전·기록 V85 V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V85_DETAIL_06",
@@ -80241,57 +76526,40 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part15_equipment_phone_overview.png",
-          "alt": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "caption": "15. 물품 / 장비 / 전화번호 총정리 이미지",
-          "search_terms": [
-            "물품",
-            "장비",
-            "전화번호",
-            "CSR",
-            "pump"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_suction_closed_suction_table.png",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
           "alt": "흡인 간호 총정리",
           "caption": "흡인 간호 총정리",
           "search_terms": [
-            "흡인 간호 총정리"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v97_protocol_suction_table.png",
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
           "alt": "원내 프로토콜 흡인간호 표",
           "caption": "원내 프로토콜 흡인간호 표",
           "search_terms": [
-            "원내 프로토콜 흡인간호 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p93_94.png",
-          "alt": "병동 간호팀 매뉴얼 93~94",
-          "caption": "병동 간호팀 매뉴얼 93~94",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 93~94"
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -80329,7 +76597,8 @@ window.ICU_MANUAL_DB = {
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V86_DETAIL_03",
@@ -84030,41 +80299,40 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
@@ -84115,7 +80383,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "ett 기관내관 기관삽관 튜브위치 xray ETT 위치 기관내관 xray intubation xray 기관내관(ETT) 위치 확인 X-ray 카드 검사·검체·영상검사 / X-ray V87_XRAY_OVERVIEW V79 Ventilator / Dräger Savina",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V87_XRAY_CVC_POSITION",
@@ -84832,54 +81101,71 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/05_소화기계_중증질환_총정리.png",
-          "alt": "소화기계 중증질환 총정리",
-          "caption": "소화기계 중증질환 총정리",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "소화기계",
-            "GI bleeding",
-            "위장관출혈",
-            "간경변",
-            "간성혼수",
-            "복수",
-            "식도정맥류",
-            "췌장염",
-            "장폐색",
-            "복막염",
-            "NG",
-            "L-tube"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part09_10_test_line_dressing_overview.png",
-          "alt": "9. 검사 / 검체 · 10. Line / Drain / Dressing 총정리 이미지",
-          "caption": "9. 검사 / 검체 · 10. Line / Drain / Dressing 총정리 이미지",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "검사",
-            "검체",
-            "Line",
-            "Drain",
-            "Dressing",
-            "욕창"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v88_wound_repositioning_prevention.png",
-          "alt": "욕창 예방 체위변경 순서도",
-          "caption": "위험평가부터 기록까지 욕창 예방 흐름",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "체위변경순서도",
-            "욕창예방이미지",
-            "욕창 예방 체위변경 순서도",
-            "위험평가부터 기록까지 욕창 예방 흐름",
-            "체위변경",
-            "욕창예방",
-            "reposition",
-            "pressure injury prevention",
-            "욕창 예방",
-            "욕창 prevention",
-            "욕창 예방 체위변경·피부관찰 순서도",
-            "간호업무 / 욕창·상처드레싱"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -84936,7 +81222,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "search_index": "체위변경 욕창예방 reposition pressure injury prevention 욕창 예방 욕창 prevention 욕창 예방 체위변경·피부관찰 순서도 간호업무 / 욕창·상처드레싱 V87_PI_STAGE_CLASSIFICATION V88_WOUND_STAGE_CARE",
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V88_WOUND_DOCUMENTATION_EXAMPLE",
@@ -87131,44 +83418,48 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -87199,7 +83490,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "prefer_media_first": true,
-      "search_index": "O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 O2 nipple 사용법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / 산소요법 VENT001 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW"
+      "search_index": "O2 nipple 산소 니플 oxygen nipple 산소 연결 산소요법 O2 nipple 사용법 호흡 장비 O2 nipple 사용법 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / 산소요법 VENT001 V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW",
+      "hide_raw_steps": true
     },
     {
       "id": "VIDEO_V91_NS_TRANSFER_PREP",
@@ -88186,101 +84478,79 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "standard_sections_ready": true,
       "prefer_media_first": true,
-      "search_index": "Dräger Drager Savina 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 동영상 1·2 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / Dräger Savina V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_02"
+      "search_index": "Dräger Drager Savina 드레거 인공호흡기 ventilator Dräger 인공호흡기 1 Dräger 인공호흡기 2 Dräger 인공호흡기 동영상 1·2 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / Dräger Savina V79_VENTILATOR_SAVINA_RESPIRATORY_OVERVIEW V79_DETAIL_02",
+      "hide_raw_steps": true
     },
     {
       "id": "VIDEO_V91_CPR_NURSE_ROLE",
@@ -88507,131 +84777,25 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_주사_응급간호_검사_투약수액_통합요약.png",
-          "alt": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "caption": "주사 · 응급간호 · 검사 · 투약/수액 통합요약",
-          "search_terms": [
-            "주사",
-            "투약",
-            "투약 전 확인",
-            "5 Rights",
-            "응급간호",
-            "응급상황",
-            "code blue",
-            "코드블루",
-            "검사",
-            "검사 전 간호",
-            "검사 후 간호",
-            "투약 수액",
-            "수액",
-            "IV",
-            "정맥투약",
-            "라인 확인",
-            "수액 확인",
-            "EMR 기록",
-            "간호 수행",
-            "업무 요약",
-            "간호 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
@@ -88662,7 +84826,8 @@ window.ICU_MANUAL_DB = {
       ],
       "standard_sections_ready": true,
       "prefer_media_first": true,
-      "search_index": "ABGA calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 ABGA calibration 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / ABGA LAB003 V72_ABGA_OVERVIEW"
+      "search_index": "ABGA calibration 캘리브레이션 ABGA calibration 혈액가스 A-line 검체 ABGA calibration 동영상 동영상 업무동영상 교육영상 Google Drive v91 video 호흡 / ABGA LAB003 V72_ABGA_OVERVIEW",
+      "hide_raw_steps": true
     },
     {
       "id": "VIDEO_V91_RESTRAINT_KNOTS",
@@ -90170,46 +86335,46 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/43_Intubation_Procedure_Checklist.png",
-          "alt": "Intubation 시행 절차",
-          "caption": "Intubation 시행 절차",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "ETT",
-            "laryngoscope",
-            "BVM",
+            "흡인",
+            "흡인 간호",
             "suction",
-            "ETCO2",
-            "tube depth",
-            "삽관 보조",
-            "airway"
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/57_Suction_Nursing_Protocol_Guide.png",
+          "alt": "원내 프로토콜 흡인간호 표",
+          "caption": "원내 프로토콜 흡인간호 표",
+          "search_terms": [
+            "원내 프로토콜",
+            "흡인",
+            "흡인간호",
+            "suction protocol",
+            "suction",
+            "기관흡인",
+            "open suction",
+            "closed suction",
+            "카테터",
+            "기도관리",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "standard_sections_ready": true
+      "standard_sections_ready": true,
+      "hide_raw_steps": true
     },
     {
       "id": "V98_INTERNAL_EMERGENCY_OVERVIEW",
@@ -91852,49 +88017,53 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
-          "alt": "심혈관계 중증질환 총정리",
-          "caption": "심혈관계 중증질환 총정리",
+          "src": "selected_manual_images/55_Oxygen_Therapy_Types_At_a_Glance.png",
+          "alt": "산소요법 종류 한눈에 보기",
+          "caption": "산소요법 종류 한눈에 보기",
           "search_terms": [
-            "심혈관계",
-            "심근경색",
-            "ACS",
-            "심부전",
-            "폐부종",
-            "부정맥",
-            "쇼크",
-            "CPR",
-            "A-line",
-            "CVP",
-            "승압제"
+            "산소요법",
+            "oxygen therapy",
+            "산소",
+            "O2",
+            "nasal prong",
+            "nasal cannula",
+            "simple mask",
+            "reservoir mask",
+            "NIV",
+            "BiPAP",
+            "CPAP",
+            "nebulizer",
+            "네뷸라이저",
+            "저산소",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -92007,108 +88176,30 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -92718,580 +88809,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/27_NS_Brain_Pupil_change_emergency.png",
-          "alt": "NS Brain 27 Pupil change 응급 대처",
-          "caption": "NS Brain 27 Pupil change 응급 대처",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "Pupil",
-            "pupil change",
-            "동공 변화",
-            "anisocoria",
-            "unilateral dilation",
-            "fixed pupil",
-            "sluggish",
-            "동공반사",
-            "빛반사"
+            "기관절개관",
+            "기관절개",
+            "tracheostomy",
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/20_NS_Brain_Burr_hole_aftercare.png",
-          "alt": "NS Brain 20 Burr hole 후 간호",
-          "caption": "NS Brain 20 Burr hole 후 간호",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "Burr hole",
-            "burrhole",
-            "버홀",
-            "천두술",
-            "천공술",
-            "두개천공",
-            "혈종 배액",
-            "drain",
-            "dressing",
-            "LOC",
-            "headache",
-            "vomiting",
-            "neuro check"
-          ]
-        },
-        {
-          "src": "selected_manual_images/22_NS_Brain_Coil_embolization_aftercare.png",
-          "alt": "NS Brain 22 Coil embolization 후 간호",
-          "caption": "NS Brain 22 Coil embolization 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "Coil embolization",
-            "coil",
-            "코일색전술",
-            "색전술",
-            "뇌동맥류",
-            "aneurysm",
-            "puncture site",
-            "천자부위",
-            "vasospasm",
-            "rebleeding",
-            "항혈소판",
-            "항응고"
-          ]
-        },
-        {
-          "src": "selected_manual_images/23_NS_Brain_TFCA_aftercare.png",
-          "alt": "NS Brain 23 TFCA 후 간호",
-          "caption": "NS Brain 23 TFCA 후 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "TFCA",
-            "cerebral angiography",
-            "뇌혈관조영술",
-            "혈관조영",
-            "천자부위",
-            "puncture site",
-            "distal pulse",
-            "bed rest",
-            "contrast",
-            "조영제",
-            "후복막 출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/24_NS_Brain_SDD_EVD_Hemovac_management.png",
-          "alt": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "caption": "NS Brain 24 SDD / EVD / Hemovac 관리",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "SDD",
-            "Subdural Drain",
-            "경막하 배액",
-            "EVD",
-            "External Ventricular Drain",
-            "Hemovac",
-            "drain",
-            "배액관",
-            "배액량",
-            "배액색",
-            "CSF leak",
-            "무배액",
-            "과다배액"
-          ]
-        },
-        {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
-          ]
-        },
-        {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_NS_Brain_의식상태_Mental_status.png",
-          "alt": "NS Brain ① 의식상태 / Mental status",
-          "caption": "NS Brain ① 의식상태 / Mental status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Mental",
-            "Mental status",
-            "LOC",
-            "의식상태",
-            "의식수준",
-            "Alert",
-            "Drowsy",
-            "Stupor",
-            "Semicoma",
-            "Coma",
-            "지남력",
-            "반응성",
-            "sedation",
-            "mental change",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_NS_Brain_GCS_사정.png",
-          "alt": "NS Brain ② GCS 사정",
-          "caption": "NS Brain ② GCS 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "GCS",
-            "Glasgow Coma Scale",
-            "Eye",
-            "Verbal",
-            "Motor",
-            "EVM",
-            "GCS 사정",
-            "Vt",
-            "삽관환자 GCS",
-            "GCS 변화",
-            "의식 평가"
-          ]
-        },
-        {
-          "src": "selected_manual_images/03_NS_Brain_Pupil_reflex_사정.png",
-          "alt": "NS Brain ③ Pupil reflex 사정",
-          "caption": "NS Brain ③ Pupil reflex 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Pupil",
-            "pupil reflex",
-            "동공",
-            "동공반사",
-            "빛반사",
-            "pupil size",
-            "anisocoria",
-            "unequal pupil",
-            "fixed pupil",
-            "dilated pupil",
-            "sluggish",
-            "brisk",
-            "pupil change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/04_NS_Brain_Motor_grade_편측약화_사정.png",
-          "alt": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "caption": "NS Brain ④ Motor grade / 편측 약화 사정",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Motor",
-            "motor grade",
-            "motor power",
-            "근력",
-            "편측 약화",
-            "hemiparesis",
-            "drift",
-            "lateralization",
-            "decorticate",
-            "decerebrate",
-            "pain response",
-            "통증자극",
-            "motor change"
-          ]
-        },
-        {
-          "src": "selected_manual_images/05_NS_Brain_Seizure_관찰포인트.png",
-          "alt": "NS Brain ⑤ Seizure 관찰 포인트",
-          "caption": "NS Brain ⑤ Seizure 관찰 포인트",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "Seizure",
-            "seizure assessment",
-            "경련",
-            "발작",
-            "status epilepticus",
-            "tonic",
-            "clonic",
-            "focal",
-            "postictal",
-            "cyanosis",
-            "눈 편위",
-            "발작 지속시간",
-            "경련 관찰"
-          ]
-        },
-        {
-          "src": "selected_manual_images/06_NS_Brain_ICP상승_의심증상.png",
-          "alt": "NS Brain ⑥ ICP 상승 의심 증상",
-          "caption": "NS Brain ⑥ ICP 상승 의심 증상",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "neuro assessment",
-            "neuro check",
-            "신경계 사정",
-            "Brain care",
-            "NS 간호",
-            "ICP",
-            "ICP 상승",
-            "intracranial pressure",
-            "두개내압",
-            "Cushing triad",
-            "headache",
-            "vomiting",
-            "mental deterioration",
-            "pupil change",
-            "motor change",
-            "midline shift",
-            "뇌압 상승",
-            "의식저하"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part04_neuro_overview.png",
-          "alt": "4. 신경계 총정리 이미지",
-          "caption": "4. 신경계 총정리 이미지",
-          "search_terms": [
-            "신경계",
-            "GCS",
-            "Pupil",
-            "EVD",
-            "SDD",
-            "뇌경색",
-            "뇌출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
-          "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
-          "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_neuro_surgery_overview.png",
-          "alt": "신경계 수술 시술 통합 요약 이미지",
-          "caption": "신경계 + 수술/시술 + Spinal tapping 통합 요약",
-          "search_terms": [
-            "신경계 이미지",
-            "수술 시술 이미지"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -94963,103 +90522,48 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/23_NS_Brain_TFCA_aftercare.png",
-          "alt": "NS Brain 23 TFCA 후 간호",
-          "caption": "NS Brain 23 TFCA 후 간호",
+          "src": "selected_manual_images/58_Tracheostomy_Care_Checkpoints.png",
+          "alt": "기관절개관 간호 체크포인트",
+          "caption": "기관절개관 간호 체크포인트",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "TFCA",
-            "cerebral angiography",
-            "뇌혈관조영술",
-            "혈관조영",
-            "천자부위",
-            "puncture site",
-            "distal pulse",
-            "bed rest",
-            "contrast",
-            "조영제",
-            "후복막 출혈"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
+            "기관절개관",
+            "기관절개",
             "tracheostomy",
-            "ABGA"
+            "trach",
+            "T-tube",
+            "cuff",
+            "obturator",
+            "기관절개관 빠짐",
+            "기관절개관 교체",
+            "suction",
+            "기도관리",
+            "BVM",
+            "호흡기"
           ]
         },
         {
-          "src": "selected_manual_images/v117_trach_purpose_apply_complications.png",
-          "alt": "기관절개관 목적·적용·합병증 표",
-          "caption": "기관절개관 목적·적용·합병증 표",
+          "src": "selected_manual_images/53_Suction_Care_Summary.png",
+          "alt": "흡인 간호 총정리",
+          "caption": "흡인 간호 총정리",
           "search_terms": [
-            "기관절개관 목적·적용·합병증 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_trach_ttube_types.png",
-          "alt": "기관절개관·T-tube 종류 한눈에 보기",
-          "caption": "기관절개관·T-tube 종류 한눈에 보기",
-          "search_terms": [
-            "기관절개관·T-tube 종류 한눈에 보기"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_trach_emergency_boxes.png",
-          "alt": "기관절개관 간호·빠진 경우 대처",
-          "caption": "기관절개관 간호·빠진 경우 대처",
-          "search_terms": [
-            "기관절개관 간호·빠진 경우 대처"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v100_procedure_prepost_table.png",
-          "alt": "시술 전후 간호 한눈에 보기 이미지",
-          "caption": "TFCA/Tracheostomy/EGD/ERCP/CFS 전후 간호표",
-          "search_terms": [
-            "시술 전후 이미지"
+            "흡인",
+            "흡인 간호",
+            "suction",
+            "석션",
+            "open suction",
+            "closed suction",
+            "ETT suction",
+            "기관흡인",
+            "기도흡인",
+            "분비물",
+            "SpO2",
+            "호흡기"
           ]
         }
       ],
       "videos": [],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -96621,18 +92125,6 @@ window.ICU_MANUAL_DB = {
           ]
         },
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
-          "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
           "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
           "alt": "신경계 중증질환 총정리",
           "caption": "신경계 중증질환 총정리",
@@ -96882,134 +92374,30 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/01_신경계_중증질환_총정리.png",
-          "alt": "신경계 중증질환 총정리",
-          "caption": "신경계 중증질환 총정리",
-          "search_terms": [
-            "신경계",
-            "뇌경색",
-            "뇌출혈",
-            "뇌졸중",
-            "GCS",
-            "pupil",
-            "seizure",
-            "EVD",
-            "SDD",
-            "ICP"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -98703,121 +94091,30 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part06_bst_dm_insulin_overview_user_selected.png",
-          "alt": "6. 혈당 / 내분비 총정리 이미지",
-          "caption": "6. 혈당 / 내분비 총정리 이미지",
-          "search_terms": [
-            "혈당",
-            "BST",
-            "DM",
-            "당뇨",
-            "인슐린",
-            "DKA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part05_06_renal_crrt_bst_dka_overview.png",
-          "alt": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "caption": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "search_terms": [
-            "CRRT",
-            "신장",
-            "BST",
-            "DM",
-            "DKA",
-            "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v119_circulation_monitoring_overview.png",
-          "alt": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "caption": "순환/모니터링 총정리: Vital sign · A-line · C-line · EKG · I/O · 승압제",
-          "search_terms": [
-            "순환",
-            "모니터링",
-            "A-line"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -101426,122 +96723,30 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/54_ABGA_Allen_Test_Protocol_Guide.png",
+          "alt": "ABGA·Allen test 프로토콜 안내",
+          "caption": "ABGA·Allen test 프로토콜 안내",
           "search_terms": [
             "ABGA",
+            "ABG",
             "Allen test",
             "Allen",
             "알렌테스트",
             "알렌 테스트",
-            "ABGA 채혈",
             "동맥혈가스",
             "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
+            "혈액가스",
             "PaO2",
             "PaCO2",
             "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
             "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_allen_table.png",
-          "alt": "ABGA Allen test 표",
-          "caption": "ABGA Allen test 표",
-          "search_terms": [
-            "ABGA Allen test 표"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v97_protocol_abga_flow.png",
-          "alt": "ABGA 원내 프로토콜 흐름",
-          "caption": "ABGA 원내 프로토콜 흐름",
-          "search_terms": [
-            "ABGA 원내 프로토콜 흐름"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_abga_table.png",
-          "alt": "ABGA 정상값과 결과 해석 기본",
-          "caption": "ABGA 정상값과 결과 해석 기본",
-          "search_terms": [
-            "ABGA 정상값과 결과 해석 기본"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v117_resp_manual_p95_96.png",
-          "alt": "병동 간호팀 매뉴얼 95~96",
-          "caption": "병동 간호팀 매뉴얼 95~96",
-          "search_terms": [
-            "병동 간호팀 매뉴얼 95~96"
+            "FiO2",
+            "산염기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -101677,33 +96882,6 @@ window.ICU_MANUAL_DB = {
         }
       ],
       "images": [
-        {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
         {
           "src": "selected_manual_images/23_NS_Brain_TFCA_aftercare.png",
           "alt": "NS Brain 23 TFCA 후 간호",
@@ -103311,59 +98489,76 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/04_수혈_IO입력용량_통일디자인.png",
-          "alt": "수혈 I/O 입력 용량",
-          "caption": "수혈 I/O 입력 용량",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "수혈",
-            "수혈 I/O",
-            "IO 입력",
-            "I/O 입력",
-            "수혈 용량"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
             "Ventilator",
-            "HFNC",
-            "ABGA",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
+          ]
+        },
+        {
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
+          "search_terms": [
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
             "suction",
-            "tracheostomy"
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v120_part05_06_renal_crrt_bst_dka_overview.png",
-          "alt": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
-          "caption": "5. 신장 / CRRT · 6. 혈당 / 내분비 통합 총정리 이미지",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "CRRT",
-            "신장",
-            "BST",
-            "DM",
-            "DKA",
-            "전해질"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -103485,45 +98680,51 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/40_Emergency_Overview_CPR_ECART_Shock_Intubation.png",
-          "alt": "응급상황: CPR · E-CART · 코드블루",
-          "caption": "응급상황: CPR · E-CART · 코드블루",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "응급상황",
-            "응급",
-            "응급간호",
-            "emergency",
-            "CPR",
-            "심폐소생술",
-            "코드블루",
-            "Code Blue",
-            "code blue",
-            "E-CART",
-            "E-cart",
-            "응급카트",
-            "응급약물",
-            "응급약물표",
-            "Shock",
-            "shock",
-            "쇼크",
-            "저혈압",
-            "Intubation",
-            "intubation",
-            "기관삽관",
-            "삽관",
-            "기도확보",
-            "CPR quick card",
-            "코드블루 방송",
-            "6114",
-            "E-CART",
-            "제세동기",
-            "Defibrillator",
-            "ROSC"
+            "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -104994,71 +100195,76 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
-            "HFNC",
-            "ABGA",
-            "suction",
-            "tracheostomy"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v120_part02_respiratory_ventilator_overview.png",
-          "alt": "2. 호흡 / Ventilator 총정리 이미지",
-          "caption": "2. 호흡 / Ventilator 총정리 이미지",
-          "search_terms": [
-            "호흡",
-            "Ventilator",
-            "HFNC",
-            "suction",
-            "tracheostomy",
-            "ABGA"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_respiratory_overview.png",
-          "alt": "호흡기계 종합 개요",
-          "caption": "호흡기계 종합 개요",
-          "search_terms": [
-            "호흡기계 종합 개요"
-          ]
-        },
-        {
-          "src": "selected_manual_images/v96_ventilator_modes_table.png",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
           "alt": "Ventilator 기본 모드 요약",
           "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "Ventilator 기본 모드 요약"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_alarm_flow.png",
-          "alt": "Ventilator 알람 대응 순서",
-          "caption": "Ventilator 알람 대응 순서",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "Ventilator 알람 대응 순서"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/v96_ventilator_nursing_boxes.png",
-          "alt": "Ventilator 환자 간호 핵심",
-          "caption": "Ventilator 환자 간호 핵심",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "Ventilator 환자 간호 핵심"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -106771,33 +101977,6 @@ window.ICU_MANUAL_DB = {
       ],
       "images": [
         {
-          "src": "selected_manual_images/31_NS_Brain_EVD_obstruction_emergency.png",
-          "alt": "NS Brain 31 EVD obstruction 응급 대처",
-          "caption": "NS Brain 31 EVD obstruction 응급 대처",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "응급상황",
-            "응급 대처",
-            "emergency",
-            "neuro emergency",
-            "중환자실 응급",
-            "EVD obstruction",
-            "EVD 폐색",
-            "no drainage",
-            "waveform 이상",
-            "oscillation 소실",
-            "line kink",
-            "tubing",
-            "flushing 금지",
-            "ICP 상승"
-          ]
-        },
-        {
           "src": "selected_manual_images/03_심혈관계_중증질환_총정리.png",
           "alt": "심혈관계 중증질환 총정리",
           "caption": "심혈관계 중증질환 총정리",
@@ -107569,77 +102748,51 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/01_원내_프로토콜_ABGA_Allen_test_통일디자인.png",
-          "alt": "원내 프로토콜 ABGA · Allen test",
-          "caption": "원내 프로토콜 ABGA · Allen test",
+          "src": "selected_manual_images/52_HFNC_Application_and_Care_Summary.png",
+          "alt": "HFNC 적용·적응증·간호",
+          "caption": "HFNC 적용·적응증·간호",
           "search_terms": [
-            "ABGA",
-            "Allen test",
-            "Allen",
-            "알렌테스트",
-            "알렌 테스트",
-            "ABGA 채혈",
-            "동맥혈가스",
-            "arterial blood gas",
-            "요골동맥",
-            "radial artery",
-            "천자",
-            "heparinized syringe",
-            "FiO2",
-            "PaO2",
-            "PaCO2",
-            "HCO3",
-            "산염기",
-            "채혈 후 압박",
-            "ABGA protocol",
-            "원내 프로토콜"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_ABGA_채혈과_결과해석_기본_통일디자인.png",
-          "alt": "ABGA 채혈과 결과 해석 기본",
-          "caption": "ABGA 채혈과 결과 해석 기본",
-          "search_terms": [
-            "ABGA",
-            "ABGA 해석",
-            "ABGA 정상범위",
-            "ABGA 결과",
-            "ABGA 채혈",
-            "pH",
-            "PaCO2",
-            "HCO3",
-            "PaO2",
-            "산소화",
-            "산염기",
-            "대사성 산증",
-            "호흡성 산증",
-            "anion gap",
-            "lactate",
-            "저산소혈증",
-            "CO2 저류"
-          ]
-        },
-        {
-          "src": "selected_manual_images/02_호흡기계_중증질환_총정리.png",
-          "alt": "호흡기계 중증질환 총정리",
-          "caption": "호흡기계 중증질환 총정리",
-          "search_terms": [
-            "호흡기계",
-            "호흡부전",
-            "폐렴",
-            "ARDS",
-            "COPD",
-            "천식",
-            "Ventilator",
             "HFNC",
+            "Airvo",
+            "high flow",
+            "고유량",
+            "고유량 비강캐뉼라",
+            "High Flow Nasal Cannula",
+            "FiO2",
+            "flow",
+            "가온가습",
+            "SpO2",
+            "산소요법",
+            "저산소",
+            "호흡기"
+          ]
+        },
+        {
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
+          "search_terms": [
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
             "ABGA",
-            "suction",
-            "tracheostomy"
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
       "prefer_media_first": true,
-      "hide_raw_steps": false,
+      "hide_raw_steps": true,
       "standard_sections_ready": true
     },
     {
@@ -109029,237 +104182,71 @@ window.ICU_MANUAL_DB = {
       "tables": [],
       "images": [
         {
-          "src": "selected_manual_images/24_NS_Brain_VP_shunt_aftercare.png",
-          "alt": "NS Brain 24 VP shunt 후 간호",
-          "caption": "NS Brain 24 VP shunt 후 간호",
+          "src": "selected_manual_images/51_Ventilator_Basic_Modes_Summary.png",
+          "alt": "Ventilator 기본 모드 요약",
+          "caption": "Ventilator 기본 모드 요약",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "NS 간호",
-            "Brain care",
-            "수술 후 간호",
-            "시술 후 간호",
-            "수술/시술 후 간호",
-            "신경외과 수술",
-            "신경외과 시술",
-            "neurosurgery",
-            "post op",
-            "postoperative care",
-            "VP shunt",
-            "Ventriculoperitoneal shunt",
-            "뇌실복강단락술",
-            "수두증",
-            "hydrocephalus",
-            "shunt obstruction",
-            "shunt malfunction",
-            "overdrainage",
-            "underdrainge",
-            "programmable valve",
-            "valve",
-            "복부 합병증"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "기계환기",
+            "ventilator mode",
+            "모드",
+            "mode",
+            "A/C",
+            "SIMV",
+            "PSV",
+            "CPAP",
+            "호흡기",
+            "vent setup",
+            "Ventilator setup",
+            "Dräger",
+            "Savina"
           ]
         },
         {
-          "src": "selected_manual_images/13_NS_Brain_EVD_purpose_structure.png",
-          "alt": "NS Brain 13 EVD 목적 · 구조",
-          "caption": "NS Brain 13 EVD 목적 · 구조",
+          "src": "selected_manual_images/56_Ventilated_Patient_Nursing_Keypoints.png",
+          "alt": "인공호흡기 환자 간호 핵심",
+          "caption": "인공호흡기 환자 간호 핵심",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 13 EVD 목적 · 구조"
+            "Ventilator",
+            "ventilator",
+            "인공호흡기",
+            "인공호흡기 환자",
+            "ventilator patient",
+            "기계환기",
+            "기도관리",
+            "cuff pressure",
+            "suction",
+            "VAP",
+            "진정",
+            "restraint",
+            "alarm",
+            "ABGA",
+            "SpO2"
           ]
         },
         {
-          "src": "selected_manual_images/14_NS_Brain_EVD_leveling.png",
-          "alt": "NS Brain 14 EVD leveling",
-          "caption": "NS Brain 14 EVD leveling",
+          "src": "selected_manual_images/59_Hypoxemia_SpO2_Desaturation_Response.png",
+          "alt": "저산소 / SpO2 저하 대응",
+          "caption": "저산소 / SpO2 저하 대응",
           "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 14 EVD leveling"
-          ]
-        },
-        {
-          "src": "selected_manual_images/15_NS_Brain_EVD_drain_status.png",
-          "alt": "NS Brain 15 EVD drain status",
-          "caption": "NS Brain 15 EVD drain status",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 15 EVD drain status"
-          ]
-        },
-        {
-          "src": "selected_manual_images/16_NS_Brain_EVD_hourly_drainage_CSF.png",
-          "alt": "NS Brain 16 EVD hourly drainage · CSF",
-          "caption": "NS Brain 16 EVD hourly drainage · CSF",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 16 EVD hourly drainage · CSF"
-          ]
-        },
-        {
-          "src": "selected_manual_images/17_NS_Brain_EVD_oscillation_waveform.png",
-          "alt": "NS Brain 17 EVD oscillation · waveform",
-          "caption": "NS Brain 17 EVD oscillation · waveform",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 17 EVD oscillation · waveform"
-          ]
-        },
-        {
-          "src": "selected_manual_images/18_NS_Brain_EVD_complication.png",
-          "alt": "NS Brain 18 EVD complication",
-          "caption": "NS Brain 18 EVD complication",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 18 EVD complication"
-          ]
-        },
-        {
-          "src": "selected_manual_images/19_NS_Brain_EVD_bundle_check_documentation.png",
-          "alt": "NS Brain 19 EVD bundle check 기록",
-          "caption": "NS Brain 19 EVD bundle check 기록",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "Brain care",
-            "NS 간호",
-            "EVD",
-            "External Ventricular Drain",
-            "뇌실외배액",
-            "뇌실 배액",
-            "EVD 간호",
-            "EVD 관리",
-            "ICP",
-            "두개내압",
-            "CSF",
-            "뇌척수액",
-            "중환자실 EVD",
-            "NS Brain 19 EVD bundle check 기록"
-          ]
-        },
-        {
-          "src": "selected_manual_images/10_NS_Brain_ICH_IVH_핵심간호.png",
-          "alt": "NS Brain ⑩ ICH / IVH 핵심 간호",
-          "caption": "NS Brain ⑩ ICH / IVH 핵심 간호",
-          "search_terms": [
-            "NS Brain",
-            "Brain",
-            "뇌신경계",
-            "신경계",
-            "뇌신경계 중증환자",
-            "Brain care",
-            "NS 간호",
-            "NS Brain 파트",
-            "Brain 파트",
-            "Brain 질환별 핵심 간호",
-            "ICH",
-            "뇌실질내출혈",
-            "intracerebral hemorrhage",
-            "IVH",
-            "뇌실내출혈",
-            "intraventricular hemorrhage",
-            "수두증",
-            "EVD",
-            "CT"
+            "저산소",
+            "저산소증",
+            "hypoxemia",
+            "desaturation",
+            "SpO2",
+            "산소포화도",
+            "SpO2 저하",
+            "산소포화도 저하",
+            "cyanosis",
+            "청색증",
+            "호흡곤란",
+            "ABGA",
+            "oxygen escalation",
+            "산소증량",
+            "airway",
+            "호흡기"
           ]
         }
       ],
@@ -109280,7 +104267,8 @@ window.ICU_MANUAL_DB = {
         "defibrillator",
         "원내 응급간호",
         "원내 제세동기"
-      ]
+      ],
+      "hide_raw_steps": true
     },
     {
       "id": "V136_NS_BRAIN_11_CEREBRAL_EDEMA_ICP",
@@ -111556,6 +106544,18 @@ window.ICU_MANUAL_DB = {
       "MENU001",
       "V98_INTERNAL_EKG_LEADS",
       "V151_EMERGENCY_CPR_ECART_SHOCK_INTUBATION_CODEBLUE_HUB removed"
+    ]
+  },
+  "v156_update": {
+    "title": "V156 호흡/Ventilator 10장 실제 DB 연결 및 검색 관련성 정리",
+    "changes": [
+      "10장 이미지를 selected_manual_images 경로로 추가",
+      "V156_RESP_50~59 신규 카드 생성 및 검색어 연결",
+      "VENT001/VENT002/VENT004/VENT005/V79/V72/LAB003 등 기존 호흡·Ventilator·ABGA 관련 카드에 새 이미지를 직접 연결",
+      "Vent nebulizer 카드에서 흡인 표가 보이던 문제 정리",
+      "Ventilator/Savina 카드에서 NS Brain EVD obstruction 이미지가 보이던 문제 정리",
+      "ABGA Allen test 중복·작은 구버전 이미지를 새 통일 디자인 이미지 중심으로 정리",
+      "Infusion/Syringe pump 등 비수혈 카드에서 수혈 I/O 이미지가 보이지 않도록 정리"
     ]
   }
 };
