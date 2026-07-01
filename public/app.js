@@ -1024,6 +1024,13 @@ function scoreCard(query, card) {
 
   if ((card.id || "").startsWith("V106_") && /검사|검체|lab|bottle|채혈|culture|cbc|chemistry|coag|abga|cre|cpe|vre|rat|tip|x-ray|xray|ct|mri|sono|tfca|angio|내시경|line|drain|dressing|foley|l-tube|pcd|evd|sdd|욕창|장루|다제내성|mdro|공급실|csr|전산|emr|카테터|catheter/.test(q)) score += 160;
 
+
+
+  // V165: NS/Spine 보조기 1·2가 검색어와 관계없이 같이 보이도록 hub 카드 우선 노출
+  if ((item.id || "") === "V165_NS_SPINE_BRACE_HUB_BOTH_IMAGES" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|목보조기|목 보조기|경추|cervical|philadelphia|atlas|아틀라스|팔자붕대|8자붕대|tlso|콜셋|코르셋|허리보조기|허리 보조기|척추 보조기|lumbar brace|corset/i.test(q)) score += 1200;
+  if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_1" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|목보조기|목 보조기|경추|cervical|philadelphia|atlas|아틀라스|팔자붕대|8자붕대/i.test(q)) score += 900;
+  if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_2" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|tlso|콜셋|코르셋|허리보조기|허리 보조기|척추 보조기|lumbar brace|corset/i.test(q)) score += 900;
+
   return Math.max(0, score);
 }
 
