@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "2.63.0-v163-ns-os-spine-db-link",
+    "version": "2.64.0-v164-ns-spine-brace-1-2-link-patch",
     "language": "ko",
     "source": "V159 기반 + 아그라스타트 카드 이미지 오류 제거 + 질환별 정리 이미지 8장 연결 수정",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
@@ -81860,7 +81860,26 @@
           ]
         }
       ],
-      "prefer_media_first": true
+      "prefer_media_first": true,
+      "exclude_queries": [
+        "경추 보조기",
+        "NS 보조기",
+        "NS Spine 보조기",
+        "아틀라스 K",
+        "NS/Spine 보조기",
+        "코르셋",
+        "ATLAS-K",
+        "콜셋",
+        "허리 보조기",
+        "spine brace",
+        "8자붕대",
+        "TLSO",
+        "허리보조기",
+        "목 보조기",
+        "ATLAS K",
+        "목보조기",
+        "팔자붕대"
+      ]
     },
     {
       "id": "V86_DETAIL_08",
@@ -94773,7 +94792,7 @@
         "보조기 착용",
         "보조기 간호"
       ],
-      "summary": "기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다. V163에서 통일 디자인 이미지로 정리되어 검색 관련 이미지가 먼저 보이도록 보강했습니다.",
+      "summary": "기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다. V163에서 통일 디자인 이미지로 정리되어 검색 관련 이미지가 먼저 보이도록 보강했습니다. / V164 이후 검색 노출 숨김: 통일 디자인 보조기 카드로 대체",
       "indications": [
         "보조기 착용 방법과 원본 이미지를 같이 확인할 때",
         "수술/시술 후 보조기 적용 상태를 확인할 때"
@@ -94954,22 +94973,41 @@
       "standard_sections_ready": true,
       "priority": 1235,
       "exclude_queries": [
+        "경추 보조기",
+        "아틀라스 K",
+        "A-line waveform",
+        "콜셋",
+        "spine brace",
+        "8자붕대",
         "A-line",
         "A-line zeroing",
-        "A-line waveform",
         "동맥압",
-        "zeroing",
-        "transducer",
+        "TLSO",
         "CVP",
-        "ECG",
-        "Ventilator",
-        "ABGA",
         "아그라스타트",
+        "ECG",
+        "수혈 I/O",
+        "zeroing",
+        "NS Spine 보조기",
+        "NS/Spine 보조기",
+        "ATLAS K",
+        "목보조기",
+        "transducer",
+        "팔자붕대",
         "혈액제제",
-        "수혈 I/O"
+        "NS 보조기",
+        "코르셋",
+        "허리 보조기",
+        "ATLAS-K",
+        "ABGA",
+        "허리보조기",
+        "목 보조기",
+        "Ventilator"
       ],
       "hide_raw_steps": true,
-      "search_index": "V101_BRACE_ORIGINAL_IMAGES 보조기 원본 이미지 모음: L-sling·Brace·Splint 착용 확인 수술 / 시술 / 보조기 기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다. V163에서 통일 디자인 이미지로 정리되어 검색 관련 이미지가 먼저 보이도록 보강했습니다. 보조기 이미지 brace image L-sling 이미지 splint 이미지 보조기 원본 OS 보조기 NS 보조기 Donjoy brace MCL brace H-V shoes ATLAS K OS 보조기 1 OS 보조기 정형외과 보조기 보조기 brace OS brace 울트라슬링 Ultra sling 울트라 슬링 shoulder brace 어깨 보조기 arm sling 팔걸이 팔 보조기 elbow OP wrist OP Hip brace 고관절 보조기 THRA bipolar ASD shoulder RCR TSRA 피부압박 말초순환 감각 운동 보행 교육 OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace L-sling 엘슬링 splint 보조기 착용 보조기 간호 보조기 착용 방법과 원본 이미지를 같이 확인할 때 수술/시술 후 보조기 적용 상태를 확인할 때 처방된 보조기 종류와 적용부위 확인 좌우 방향, 사이즈, 피부상태 확인 환자에게 목적과 불편 시 알릴 내용을 설명 보조기 원본 이미지를 보며 종류와 방향을 확인한다. 적용 전 피부, 말초순환, 감각, 운동, 통증을 baseline으로 확인한다. 착용 후 압박·저림·손끝색·부종·통증을 다시 확인한다. 이상 소견은 즉시 완화/보고하고 기록한다. 원본 이미지는 교육용 참고자료입니다. 실제 보조기 적용은 처방과 병원 지침, 환자 상태를 우선합니다. 보조기 종류, 적용부위, 착용 시간, 피부상태, 말초순환, 감각/통증, 교육내용을 기록 V65_NEW_NURSE_NOTES V86_DETAIL_07 VIDEO_V91_L_SLING V100_SURGERY_PREPOST_ICU 기존 매뉴얼 추출 보조기 이미지 원본 반영 보조기 착용 확인표 보조기 원본 이미지와 함께 확인 구분 목적/내용 간호 포인트 L-sling / Arm sling 상지 보조·팔걸이 목적 착용 방향, 압박/말초순환, 피부 눌림 확인 Brace / Splint류 수술·외상 후 고정·보호 피부손상, 저림, 통증, 부종, 고정상태 확인 착용 전 처방·적용부위·좌우·사이즈 확인 환자에게 목적 설명, 피부상태 baseline 확인 착용 후 말초순환·감각·운동·통증 확인 capillary refill, 손끝색, 저림/차가움 관찰 기록 적용 시간, 종류, 부위, 피부/순환 상태 이상 시 제거/완화 여부와 보고내용 기록 보조기표 brace 표 L-sling 표 True OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 OS 보조기 정형외과 보조기 보조기 brace OS brace 울트라슬링 Ultra sling 울트라 슬링 shoulder brace 어깨 보조기 arm sling 팔걸이 팔 보조기 elbow OP wrist OP Hip brace 고관절 보조기 THRA bipolar ASD shoulder RCR TSRA 피부압박 말초순환 감각 운동 보행 교육 OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace"
+      "search_index": "V101_BRACE_ORIGINAL_IMAGES 보조기 원본 이미지 모음: L-sling·Brace·Splint 착용 확인 수술 / 시술 / 보조기 기존 매뉴얼에서 추출된 보조기 원본 이미지를 그대로 볼 수 있게 묶은 카드입니다. 착용 전후 피부·말초순환·감각·통증 확인표를 함께 제공합니다. V163에서 통일 디자인 이미지로 정리되어 검색 관련 이미지가 먼저 보이도록 보강했습니다. 보조기 이미지 brace image L-sling 이미지 splint 이미지 보조기 원본 OS 보조기 NS 보조기 Donjoy brace MCL brace H-V shoes ATLAS K OS 보조기 1 OS 보조기 정형외과 보조기 보조기 brace OS brace 울트라슬링 Ultra sling 울트라 슬링 shoulder brace 어깨 보조기 arm sling 팔걸이 팔 보조기 elbow OP wrist OP Hip brace 고관절 보조기 THRA bipolar ASD shoulder RCR TSRA 피부압박 말초순환 감각 운동 보행 교육 OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace L-sling 엘슬링 splint 보조기 착용 보조기 간호 보조기 착용 방법과 원본 이미지를 같이 확인할 때 수술/시술 후 보조기 적용 상태를 확인할 때 처방된 보조기 종류와 적용부위 확인 좌우 방향, 사이즈, 피부상태 확인 환자에게 목적과 불편 시 알릴 내용을 설명 보조기 원본 이미지를 보며 종류와 방향을 확인한다. 적용 전 피부, 말초순환, 감각, 운동, 통증을 baseline으로 확인한다. 착용 후 압박·저림·손끝색·부종·통증을 다시 확인한다. 이상 소견은 즉시 완화/보고하고 기록한다. 원본 이미지는 교육용 참고자료입니다. 실제 보조기 적용은 처방과 병원 지침, 환자 상태를 우선합니다. 보조기 종류, 적용부위, 착용 시간, 피부상태, 말초순환, 감각/통증, 교육내용을 기록 V65_NEW_NURSE_NOTES V86_DETAIL_07 VIDEO_V91_L_SLING V100_SURGERY_PREPOST_ICU 기존 매뉴얼 추출 보조기 이미지 원본 반영 보조기 착용 확인표 보조기 원본 이미지와 함께 확인 구분 목적/내용 간호 포인트 L-sling / Arm sling 상지 보조·팔걸이 목적 착용 방향, 압박/말초순환, 피부 눌림 확인 Brace / Splint류 수술·외상 후 고정·보호 피부손상, 저림, 통증, 부종, 고정상태 확인 착용 전 처방·적용부위·좌우·사이즈 확인 환자에게 목적 설명, 피부상태 baseline 확인 착용 후 말초순환·감각·운동·통증 확인 capillary refill, 손끝색, 저림/차가움 관찰 기록 적용 시간, 종류, 부위, 피부/순환 상태 이상 시 제거/완화 여부와 보고내용 기록 보조기표 brace 표 L-sling 표 True OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 OS 보조기 정형외과 보조기 보조기 brace OS brace 울트라슬링 Ultra sling 울트라 슬링 shoulder brace 어깨 보조기 arm sling 팔걸이 팔 보조기 elbow OP wrist OP Hip brace 고관절 보조기 THRA bipolar ASD shoulder RCR TSRA 피부압박 말초순환 감각 운동 보행 교육 OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace",
+      "search_hidden": true,
+      "internal_only": true
     },
     {
       "id": "V102_NS_OS_PREOP_TABLES_OVERVIEW",
@@ -96290,18 +96328,36 @@
       "standard_sections_ready": true,
       "priority": 1240,
       "exclude_queries": [
-        "GCS",
+        "경추 보조기",
+        "아틀라스 K",
         "Mental",
+        "콜셋",
         "Seizure",
-        "환경관리",
-        "아그라스타트",
-        "혈액제제",
-        "수혈 I/O",
-        "Ventilator",
+        "spine brace",
+        "8자붕대",
         "호흡기",
-        "CVP",
+        "환경관리",
         "A-line",
-        "ECG"
+        "TLSO",
+        "아그라스타트",
+        "CVP",
+        "ECG",
+        "수혈 I/O",
+        "NS Spine 보조기",
+        "NS/Spine 보조기",
+        "보조기",
+        "ATLAS K",
+        "목보조기",
+        "팔자붕대",
+        "NS 보조기",
+        "혈액제제",
+        "코르셋",
+        "허리 보조기",
+        "ATLAS-K",
+        "GCS",
+        "허리보조기",
+        "목 보조기",
+        "Ventilator"
       ],
       "search_index": "V102_NS_OS_POSTOP_TABLES NS/OS 수술 후 관찰표: Neuro sign·Drain·CMS·보조기 신경계 / 수술·시술 / 원본표 보강 NS 수술 후 neuro sign/drain/IICP 관찰과 OS 수술 후 CMS/drain pressure/보조기 관찰을 표 이미지로 보이게 정리했습니다. V163에서 통일 디자인 이미지로 정리되어 검색 관련 이미지가 먼저 보이도록 보강했습니다. routine NS 수술 후 OS 수술 후 수술 후 관찰표 CMS 확인 Drain pressure NS/OS 수술 후 관찰표: Neuro sign·Drain·CMS·보조기 신경계 / 수술·시술 / 원본표 보강 NS OS 수술명 약어 수술 전 검사 수술 전 준비 원본표 병동간호팀 간호사메뉴얼 NS 수술 후 OS 수술 후 수술 후 관찰표 CMS 확인 Drain pressure NS postop OS postop Burr hole post op neuro sign CMS drain pressure H-vac JP brace 보조기 splint L-sling NS 보조기 OS 보조기 ATLAS K NS/OS 수술명·약어·수술 전 검사·수술 전후 관찰을 표/이미지로 확인할 때 수술명/약어/부위/좌우 확인 동의서·검사·금식·약물·이송 준비 확인 원내 최신 프로토콜과 담당의 지시 우선 NS 수술 후 return, 1·2·6hr f/u, drain, wound, seizure/IICP를 확인한다. OS 수술 후 CMS, 통증/부종, drain pressure, 보조기, DVT를 확인한다. OS 과별 drain pressure 표를 함께 확인한다. 병동간호팀 간호사 매뉴얼과 기존 앱 DB를 바탕으로 앱용 표 이미지로 재구성했습니다. 실제 업무는 원내 최신 지침과 처방을 우선합니다. 수술명/시술명, 부위/좌우, 검사/동의서/금식 확인, 수술 후 관찰값, drain/보조기/말초순환을 시간순 기록 V100_NS_POSTOP V65_OS_DEPT_MANUAL V101_BRACE_ORIGINAL_IMAGES 병동간호팀 간호사매뉴얼 p9~13, p21~28, p43, p119~131 범위 중 NS/OS 수술명·약어·수술 전 검사 관련 내용 보강 NS 수술 후 관찰표 return · 1·2·6hr f/u · drain · seizure/IICP 구분 확인 내용 기록/보고 포인트 Return 직후 V/S, mental/GCS, pupil, motor, pain baseline과 비교, 악화 시 즉시 보고 1·2·6hr f/u neuro sign 반복 사정 정해진 시간마다 같은 항목으로 비교 기록 Drain EVD/SDD/H-vac/JP 위치, clamp, 배액량/색 급증/혈성/폐쇄/빠짐 보고 Wound op site dressing, oozing, swelling 출혈/감염징후 확인 Seizure/IICP seizure, 두통, 구토, 동공변화, Cushing sign 응급보고 및 처방준비 기록 수술명, return 시간, 사정값, 배액, 처치, 보고 시간순 기록 NS수술후표 neuro sign True OS 수술 후 관찰표 CMS · Drain pressure · 보조기 · DVT 구분 확인 내용 간호 포인트 Neurovascular check C/M/S: color, movement, sensation, pulse, capillary refill cast/brace/splint 압박 확인 통증/부종 pain score, swelling, compartment sign 통증 급증·감각저하·청색증 보고 Drain/pressure H-vac/JP pressure, clamp/natural/full 여부 과별 지시와 배액량 기준 확인 보조기 brace/sling/cast 적용 상태 피부눌림, 말초순환, 저림/통증 확인 DVT/호흡 하지부종/통증, 호흡곤란, SpO2 조기이상/IPC/항응고 지시 확인 기록 수술명, 부위, drain, CMS, 보조기, 통증, 교육 수술부위와 좌우 정확히 기록 OS수술후표 CMS drain pressure True OS 각과별 Drain Pressure 표 기존 매뉴얼 표 재구성 OS Pressure / Clamp 제거 기준 특이사항 OS1 Major natural drain 유지 보통 POD#5 제거 TSRA JP여도 natural, infection 환자는 H/V full 후 주치의 지시 OS3 Major OP day natural → POD#1 6AM full - TSRA H/V·JP 모두 full OS8 Major 회복실 입실 기준 1시간 H/V clamp 후 natural 유지 - Hip/TKRA clamp 처방 시 open 시간 확인 OS10 Major+Minor 수술 후 병동 리턴 기준 8시간 full → 배액 300cc 이상 시 natural POD#2 300cc 이내 제거 트라넥 사용 시 3시간 clamp 후 8시간 full OS14 Major TKRA, femur H/V full POD#2 100cc 미만 무조건 제거 infection/synovectomy 제외 OS22 Major TKRA H/V half, 트라넥/마취 인계 시 3시간 clamp H/V 40cc 미만 제거 POD#14 ZIP 제거 후 open OS24 Major H/V 리턴 기준 3시간 clamp → full POD#1 H/V remove Infection만 tip cx OS25 Major TKRA return 후 3시간 clamp → H/V half - CPM/도수 H/V 제거 후 시행 OS drain pressure H-vac JP True NS/OS 수술 후 관찰 및 수술명·약어 총정리 NS/OS 수술 후 관찰 및 수술명·약어 총정리 NS/OS 수술명·약어·수술 전 검사·수술 후 관찰 NS OS 수술명 약어 NS/OS 수술명 NS 수술명 NS 약어 신경외과 수술명 신경외과 약어 OS 수술명 OS 약어 정형외과 수술명 정형외과 약어 수술명 수술 약어 수술약어 수술 전 검사 수술전검사 preop pre op exam 수술 전 체크 수술 전 준비 수술 후 관찰 수술후관찰 postop post op NS 수술 후 OS 수술 후 수술 후 관찰표 neuro sign CMS Drain pressure Burr hole EVD SDD VP shunt Coil embolization Coil TFCA DSA Spinal tapping CSF study TCD ORIF CRIF CRPP IM nail TKRA TKA THRA THA PLIF TLIF laminectomy discectomy arthroscopy vertebroplasty kyphoplasty OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 / 어깨·팔·고관절 보조기 OS 보조기 1 OS 보조기 정형외과 보조기 보조기 brace OS brace 울트라슬링 Ultra sling 울트라 슬링 shoulder brace 어깨 보조기 arm sling 팔걸이 팔 보조기 elbow OP wrist OP Hip brace 고관절 보조기 THRA bipolar ASD shoulder RCR TSRA 피부압박 말초순환 감각 운동 보행 교육 OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace"
     },
@@ -110686,10 +110742,12 @@
       "search_index": "V163_OS_BRACE_OVERVIEW_2 OS 보조기 2 / Donjoy·MCL brace·H-V shoes 정형외과 / 보조기 / 하지 보조기 Donjoy brace, MCL brace, H-V shoes의 적용 목적과 착용 확인 포인트를 정리한 교육용 이미지 카드입니다. routine OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술 신규간호사 교육 시 기본 개념 확인 경력간호사 인계·사정 기준 확인 검색 시 해당 주제의 이미지 요약표를 먼저 확인 환자 상태, 처방, 수술·시술명, 병원 프로토콜을 함께 확인합니다. 이미지 요약표를 먼저 확인하고, 환자 상태 변화·관찰 기준·보고 기준을 함께 판단합니다. 교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요. 관찰 시간, 수치, 처치, 보고 내용, 재평가 결과를 누락 없이 기록합니다. V101_BRACE_ORIGINAL_IMAGES V102_NS_OS_POSTOP_TABLES 사용자 요청 제작 교육 이미지 V162/V163 OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 / Donjoy·MCL brace·H-V shoes OS 보조기 2 Donjoy brace Donjoy HTO brace MCL brace MCL H-V shoes HV shoes H/V shoes 하지 보조기 무릎 보조기 knee brace ACL PCL ACL recon PCL recon MCL injury MCL repair knee OP OATs 수술화 보행화 전족부 수술 족부 수술"
     },
     {
-      "id": "V163_NS_SPINE_BRACE_OVERVIEW_1",
-      "category": "신경외과·척추 / 보조기 / 목·척추 보조기",
+      "id": "V164_NS_SPINE_BRACE_OVERVIEW_1",
+      "category": "신경외과·척추 / 보조기 / 목·경추·팔자붕대",
       "title": "NS/Spine 보조기 1 / 목보조기·팔자붕대",
       "aliases": [
+        "NS Spine 보조기 1",
+        "NS/Spine 보조기 1",
         "NS Spine 보조기",
         "NS/Spine 보조기",
         "NS 보조기",
@@ -110699,26 +110757,32 @@
         "경추 보조기",
         "cervical collar",
         "Philadelphia collar",
+        "필라델피아",
         "ATLAS K",
+        "ATLAS-K",
         "아틀라스 K",
         "Philadelphia",
         "팔자붕대",
         "8자붕대",
         "figure of eight brace",
         "clavicle brace",
+        "팔자 bandage",
         "ACD F",
+        "ACDF",
         "TDR",
         "foraminotomy",
         "laminoplasty",
         "nucleoplasty",
         "cervical spine",
         "경추 수술",
-        "허리보조기",
-        "TLSO",
-        "코르셋",
-        "lumbar brace"
+        "목 수술",
+        "목보조기 착용",
+        "팔자붕대 착용",
+        "보조기"
       ],
       "search_terms": [
+        "NS Spine 보조기 1",
+        "NS/Spine 보조기 1",
         "NS Spine 보조기",
         "NS/Spine 보조기",
         "NS 보조기",
@@ -110728,50 +110792,55 @@
         "경추 보조기",
         "cervical collar",
         "Philadelphia collar",
+        "필라델피아",
         "ATLAS K",
+        "ATLAS-K",
         "아틀라스 K",
         "Philadelphia",
         "팔자붕대",
         "8자붕대",
         "figure of eight brace",
         "clavicle brace",
+        "팔자 bandage",
         "ACD F",
+        "ACDF",
         "TDR",
         "foraminotomy",
         "laminoplasty",
         "nucleoplasty",
         "cervical spine",
         "경추 수술",
-        "허리보조기",
-        "TLSO",
-        "코르셋",
-        "lumbar brace"
+        "목 수술",
+        "목보조기 착용",
+        "팔자붕대 착용",
+        "보조기"
       ],
       "urgency": "routine",
-      "summary": "ATLAS K, 목보조기, 팔자붕대의 적용 목적과 착용 확인 포인트를 정리한 교육용 이미지 카드입니다.",
+      "summary": "ATLAS K, Philadelphia collar, 목보조기, 팔자붕대의 적용 목적과 착용 확인 포인트를 통일 디자인으로 정리한 교육용 이미지 카드입니다.",
       "indications": [
-        "신규간호사 교육 시 기본 개념 확인",
-        "경력간호사 인계·사정 기준 확인",
-        "검색 시 해당 주제의 이미지 요약표를 먼저 확인"
+        "신규간호사 교육 시 목보조기·팔자붕대 적용 목적 확인",
+        "경력간호사 인계·사정 시 피부상태, 압박, 착용 위치, 감각·운동 확인 기준으로 사용",
+        "NS/Spine 보조기 검색 시 보조기 1과 2가 함께 보이도록 연결"
       ],
       "preparation": [
-        "환자 상태, 처방, 수술·시술명, 병원 프로토콜을 함께 확인합니다."
+        "환자 상태, 수술·시술명, 처방, 병원 프로토콜을 함께 확인합니다."
       ],
       "steps": [
-        "이미지 요약표를 먼저 확인하고, 환자 상태 변화·관찰 기준·보고 기준을 함께 판단합니다."
+        "이미지 요약표에서 ATLAS K·목보조기·팔자붕대 적용증과 착용 포인트를 확인합니다.",
+        "피부 발적, 압박, 통증, 감각·운동 변화, 보행/이동 안전을 함께 사정합니다."
       ],
       "warnings": [
         "교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요."
       ],
       "charting": [
-        "관찰 시간, 수치, 처치, 보고 내용, 재평가 결과를 누락 없이 기록합니다."
+        "착용 보조기 종류, 위치, 피부상태, 통증/감각/운동, 교육 내용, 이상 시 보고 내용을 기록합니다."
       ],
       "related": [
-        "V101_BRACE_ORIGINAL_IMAGES",
-        "V102_NS_OS_POSTOP_TABLES"
+        "V164_NS_SPINE_BRACE_OVERVIEW_2",
+        "V163_NS_OS_SURGERY_PREOP_POSTOP_OVERVIEW"
       ],
       "source_refs": [
-        "사용자 요청 제작 교육 이미지 V162/V163"
+        "사용자 요청 제작 교육 이미지 V164"
       ],
       "tables": [],
       "images": [
@@ -110780,6 +110849,8 @@
           "alt": "NS/Spine 보조기 1 / 목보조기·팔자붕대",
           "caption": "NS/Spine 보조기 1 / 목보조기·팔자붕대",
           "search_terms": [
+            "NS Spine 보조기 1",
+            "NS/Spine 보조기 1",
             "NS Spine 보조기",
             "NS/Spine 보조기",
             "NS 보조기",
@@ -110789,31 +110860,35 @@
             "경추 보조기",
             "cervical collar",
             "Philadelphia collar",
+            "필라델피아",
             "ATLAS K",
+            "ATLAS-K",
             "아틀라스 K",
             "Philadelphia",
             "팔자붕대",
             "8자붕대",
             "figure of eight brace",
             "clavicle brace",
+            "팔자 bandage",
             "ACD F",
+            "ACDF",
             "TDR",
             "foraminotomy",
             "laminoplasty",
             "nucleoplasty",
             "cervical spine",
             "경추 수술",
-            "허리보조기",
-            "TLSO",
-            "코르셋",
-            "lumbar brace"
+            "목 수술",
+            "목보조기 착용",
+            "팔자붕대 착용",
+            "보조기"
           ]
         }
       ],
       "prefer_media_first": true,
       "hide_raw_steps": true,
       "standard_sections_ready": true,
-      "priority": 1330,
+      "priority": 1510,
       "exclude_queries": [
         "아그라스타트",
         "Aggrastat",
@@ -110833,9 +110908,176 @@
         "syringe pump",
         "CVP",
         "A-line",
-        "ECG"
+        "ECG",
+        "EKG",
+        "중심정맥압",
+        "동맥라인",
+        "응급약물"
       ],
-      "search_index": "V163_NS_SPINE_BRACE_OVERVIEW_1 NS/Spine 보조기 1 / 목보조기·팔자붕대 신경외과·척추 / 보조기 / 목·척추 보조기 ATLAS K, 목보조기, 팔자붕대의 적용 목적과 착용 확인 포인트를 정리한 교육용 이미지 카드입니다. routine NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace 신규간호사 교육 시 기본 개념 확인 경력간호사 인계·사정 기준 확인 검색 시 해당 주제의 이미지 요약표를 먼저 확인 환자 상태, 처방, 수술·시술명, 병원 프로토콜을 함께 확인합니다. 이미지 요약표를 먼저 확인하고, 환자 상태 변화·관찰 기준·보고 기준을 함께 판단합니다. 교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요. 관찰 시간, 수치, 처치, 보고 내용, 재평가 결과를 누락 없이 기록합니다. V101_BRACE_ORIGINAL_IMAGES V102_NS_OS_POSTOP_TABLES 사용자 요청 제작 교육 이미지 V162/V163 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar ATLAS K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace ACD F TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 허리보조기 TLSO 코르셋 lumbar brace"
+      "search_index": "V164_NS_SPINE_BRACE_OVERVIEW_1 NS/Spine 보조기 1 / 목보조기·팔자붕대 신경외과·척추 / 보조기 / 목·경추·팔자붕대 ATLAS K, Philadelphia collar, 목보조기, 팔자붕대의 적용 목적과 착용 확인 포인트를 통일 디자인으로 정리한 교육용 이미지 카드입니다. routine NS Spine 보조기 1 NS/Spine 보조기 1 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar 필라델피아 ATLAS K ATLAS-K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace 팔자 bandage ACD F ACDF TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 목 수술 목보조기 착용 팔자붕대 착용 보조기 NS Spine 보조기 1 NS/Spine 보조기 1 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar 필라델피아 ATLAS K ATLAS-K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace 팔자 bandage ACD F ACDF TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 목 수술 목보조기 착용 팔자붕대 착용 보조기 신규간호사 교육 시 목보조기·팔자붕대 적용 목적 확인 경력간호사 인계·사정 시 피부상태, 압박, 착용 위치, 감각·운동 확인 기준으로 사용 NS/Spine 보조기 검색 시 보조기 1과 2가 함께 보이도록 연결 환자 상태, 수술·시술명, 처방, 병원 프로토콜을 함께 확인합니다. 이미지 요약표에서 ATLAS K·목보조기·팔자붕대 적용증과 착용 포인트를 확인합니다. 피부 발적, 압박, 통증, 감각·운동 변화, 보행/이동 안전을 함께 사정합니다. 교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요. 착용 보조기 종류, 위치, 피부상태, 통증/감각/운동, 교육 내용, 이상 시 보고 내용을 기록합니다. V164_NS_SPINE_BRACE_OVERVIEW_2 V163_NS_OS_SURGERY_PREOP_POSTOP_OVERVIEW 사용자 요청 제작 교육 이미지 V164 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS/Spine 보조기 1 / 목보조기·팔자붕대 NS Spine 보조기 1 NS/Spine 보조기 1 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 목 보조기 목보조기 경추 보조기 cervical collar Philadelphia collar 필라델피아 ATLAS K ATLAS-K 아틀라스 K Philadelphia 팔자붕대 8자붕대 figure of eight brace clavicle brace 팔자 bandage ACD F ACDF TDR foraminotomy laminoplasty nucleoplasty cervical spine 경추 수술 목 수술 목보조기 착용 팔자붕대 착용 보조기"
+    },
+    {
+      "id": "V164_NS_SPINE_BRACE_OVERVIEW_2",
+      "category": "신경외과·척추 / 보조기 / TLSO·콜셋·허리보조기",
+      "title": "NS/Spine 보조기 2 / TLSO·콜셋·허리보조기",
+      "aliases": [
+        "NS Spine 보조기 2",
+        "NS/Spine 보조기 2",
+        "NS Spine 보조기",
+        "NS/Spine 보조기",
+        "NS 보조기",
+        "spine brace",
+        "척추 보조기",
+        "허리 보조기",
+        "허리보조기",
+        "흉요추 보조기",
+        "TLSO",
+        "TLSO brace",
+        "콜셋",
+        "코르셋",
+        "corset",
+        "lumbar brace",
+        "thoracolumbar brace",
+        "요추 보조기",
+        "TLIF",
+        "PLIF",
+        "ALIF",
+        "PTLIF",
+        "PVA",
+        "압박골절",
+        "요추 압박골절",
+        "척추 수술 후 보조기",
+        "골셋",
+        "수술 후 3개월",
+        "보조기"
+      ],
+      "search_terms": [
+        "NS Spine 보조기 2",
+        "NS/Spine 보조기 2",
+        "NS Spine 보조기",
+        "NS/Spine 보조기",
+        "NS 보조기",
+        "spine brace",
+        "척추 보조기",
+        "허리 보조기",
+        "허리보조기",
+        "흉요추 보조기",
+        "TLSO",
+        "TLSO brace",
+        "콜셋",
+        "코르셋",
+        "corset",
+        "lumbar brace",
+        "thoracolumbar brace",
+        "요추 보조기",
+        "TLIF",
+        "PLIF",
+        "ALIF",
+        "PTLIF",
+        "PVA",
+        "압박골절",
+        "요추 압박골절",
+        "척추 수술 후 보조기",
+        "골셋",
+        "수술 후 3개월",
+        "보조기"
+      ],
+      "urgency": "routine",
+      "summary": "TLSO, 콜셋, 허리보조기의 적용 목적과 착용 확인 포인트를 통일 디자인으로 정리한 교육용 이미지 카드입니다.",
+      "indications": [
+        "신규간호사 교육 시 TLSO·콜셋 적용 목적 확인",
+        "경력간호사 인계·사정 시 피부상태, 호흡불편, 복부압박, 보행 안전 확인 기준으로 사용",
+        "NS/Spine 보조기 검색 시 보조기 1과 2가 함께 보이도록 연결"
+      ],
+      "preparation": [
+        "환자 상태, 수술·시술명, 처방, 병원 프로토콜을 함께 확인합니다."
+      ],
+      "steps": [
+        "이미지 요약표에서 TLSO·콜셋 적용증과 착용 순서, 공통 주의사항을 확인합니다.",
+        "피부 눌림, 발적, 호흡불편, 복부압박, 통증, 보행 시 안전을 함께 사정합니다."
+      ],
+      "warnings": [
+        "교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요."
+      ],
+      "charting": [
+        "착용 보조기 종류, 위치, 피부상태, 호흡불편/통증, 보행 교육, 이상 시 보고 내용을 기록합니다."
+      ],
+      "related": [
+        "V164_NS_SPINE_BRACE_OVERVIEW_1",
+        "V163_NS_OS_SURGERY_PREOP_POSTOP_OVERVIEW"
+      ],
+      "source_refs": [
+        "사용자 요청 제작 교육 이미지 V164"
+      ],
+      "tables": [],
+      "images": [
+        {
+          "src": "selected_manual_images/06_NS_Spine_보조기_2_TLSO_콜셋.png",
+          "alt": "NS/Spine 보조기 2 / TLSO·콜셋·허리보조기",
+          "caption": "NS/Spine 보조기 2 / TLSO·콜셋·허리보조기",
+          "search_terms": [
+            "NS Spine 보조기 2",
+            "NS/Spine 보조기 2",
+            "NS Spine 보조기",
+            "NS/Spine 보조기",
+            "NS 보조기",
+            "spine brace",
+            "척추 보조기",
+            "허리 보조기",
+            "허리보조기",
+            "흉요추 보조기",
+            "TLSO",
+            "TLSO brace",
+            "콜셋",
+            "코르셋",
+            "corset",
+            "lumbar brace",
+            "thoracolumbar brace",
+            "요추 보조기",
+            "TLIF",
+            "PLIF",
+            "ALIF",
+            "PTLIF",
+            "PVA",
+            "압박골절",
+            "요추 압박골절",
+            "척추 수술 후 보조기",
+            "골셋",
+            "수술 후 3개월",
+            "보조기"
+          ]
+        }
+      ],
+      "prefer_media_first": true,
+      "hide_raw_steps": true,
+      "standard_sections_ready": true,
+      "priority": 1505,
+      "exclude_queries": [
+        "아그라스타트",
+        "Aggrastat",
+        "tirofiban",
+        "티로피반",
+        "호흡기",
+        "Ventilator",
+        "ABGA Allen test",
+        "HFNC",
+        "E-cart",
+        "CPR",
+        "Shock",
+        "제세동기",
+        "혈액제제",
+        "수혈 I/O",
+        "infusion pump",
+        "syringe pump",
+        "CVP",
+        "A-line",
+        "ECG",
+        "EKG",
+        "중심정맥압",
+        "동맥라인",
+        "응급약물"
+      ],
+      "search_index": "V164_NS_SPINE_BRACE_OVERVIEW_2 NS/Spine 보조기 2 / TLSO·콜셋·허리보조기 신경외과·척추 / 보조기 / TLSO·콜셋·허리보조기 TLSO, 콜셋, 허리보조기의 적용 목적과 착용 확인 포인트를 통일 디자인으로 정리한 교육용 이미지 카드입니다. routine NS Spine 보조기 2 NS/Spine 보조기 2 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 척추 보조기 허리 보조기 허리보조기 흉요추 보조기 TLSO TLSO brace 콜셋 코르셋 corset lumbar brace thoracolumbar brace 요추 보조기 TLIF PLIF ALIF PTLIF PVA 압박골절 요추 압박골절 척추 수술 후 보조기 골셋 수술 후 3개월 보조기 NS Spine 보조기 2 NS/Spine 보조기 2 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 척추 보조기 허리 보조기 허리보조기 흉요추 보조기 TLSO TLSO brace 콜셋 코르셋 corset lumbar brace thoracolumbar brace 요추 보조기 TLIF PLIF ALIF PTLIF PVA 압박골절 요추 압박골절 척추 수술 후 보조기 골셋 수술 후 3개월 보조기 신규간호사 교육 시 TLSO·콜셋 적용 목적 확인 경력간호사 인계·사정 시 피부상태, 호흡불편, 복부압박, 보행 안전 확인 기준으로 사용 NS/Spine 보조기 검색 시 보조기 1과 2가 함께 보이도록 연결 환자 상태, 수술·시술명, 처방, 병원 프로토콜을 함께 확인합니다. 이미지 요약표에서 TLSO·콜셋 적용증과 착용 순서, 공통 주의사항을 확인합니다. 피부 눌림, 발적, 호흡불편, 복부압박, 통증, 보행 시 안전을 함께 사정합니다. 교육용 요약본입니다. 실제 적용은 병원 최신 프로토콜과 담당의 지시를 우선하세요. 착용 보조기 종류, 위치, 피부상태, 호흡불편/통증, 보행 교육, 이상 시 보고 내용을 기록합니다. V164_NS_SPINE_BRACE_OVERVIEW_1 V163_NS_OS_SURGERY_PREOP_POSTOP_OVERVIEW 사용자 요청 제작 교육 이미지 V164 NS/Spine 보조기 2 / TLSO·콜셋·허리보조기 NS/Spine 보조기 2 / TLSO·콜셋·허리보조기 NS Spine 보조기 2 NS/Spine 보조기 2 NS Spine 보조기 NS/Spine 보조기 NS 보조기 spine brace 척추 보조기 허리 보조기 허리보조기 흉요추 보조기 TLSO TLSO brace 콜셋 코르셋 corset lumbar brace thoracolumbar brace 요추 보조기 TLIF PLIF ALIF PTLIF PVA 압박골절 요추 압박골절 척추 수술 후 보조기 골셋 수술 후 3개월 보조기"
     }
   ],
   "final_review_note": {
@@ -112871,6 +113113,19 @@
       "NS Spine 보조기",
       "ATLAS K",
       "팔자붕대"
+    ]
+  },
+  "v164_update": {
+    "version": "V164",
+    "title": "NS/Spine 보조기 1·2 검색 연결 DB 패치",
+    "date": "2026-07-01",
+    "changes": [
+      "NS/Spine 보조기 1(목보조기·팔자붕대) 카드를 검색 노출로 재연결",
+      "NS/Spine 보조기 2(TLSO·콜셋·허리보조기) 카드를 별도 검색 노출로 연결",
+      "NS/Spine 보조기, NS 보조기, spine brace 검색 시 1번과 2번이 함께 보이도록 공통 검색어 적용",
+      "기존 원본 보조기 이미지 카드 V101은 검색 노출 숨김 처리",
+      "V102 수술 후 관찰표는 일반 수술 검색에서는 유지하되 보조기 대표 검색어에서는 우선 노출되지 않도록 제외어 적용",
+      "V86/V101/V102의 기존 기본 보조기 이미지가 NS/Spine 보조기 검색에서 우선 노출되지 않도록 제외어 적용"
     ]
   }
 }
