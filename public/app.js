@@ -1170,8 +1170,8 @@ function localSearch(query, limit = 6) {
       ids: ["V115_MENU_HUB_09", "V170_RADIOLOGY_EXAM_REFERENCE", "V170_TUBE_LINE_CATHETER_POSITION_CHECK"]
     },
     {
-      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set/,
-      ids: ["V115_MENU_HUB_10", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
+      q: /공급실|csr|소독기구|sterile tools|forcep|forceps|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|수술기구|기구 이름|기구 생김새|scalpel|blade|clamp|retractor|yankauer|cautery/,
+      ids: ["V174_CSR_STERILE_SURGICAL_INSTRUMENTS_CORE", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW", "V115_MENU_HUB_10"]
     },
     {
       q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen/,
@@ -1197,8 +1197,8 @@ function localSearch(query, limit = 6) {
       ids: ["V103_BST_DM_OVERVIEW"]
     },
     {
-      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
-      ids: ["V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
+      q: /공급실|csr|소독기구|sterile tools|forcep|forceps|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|수술기구|기구 이름|기구 생김새|scalpel|blade|clamp|retractor|yankauer|cautery|sharps count|기구 이름|기구 생김새/,
+      ids: ["V174_CSR_STERILE_SURGICAL_INSTRUMENTS_CORE", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
     },
     {
       q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen|2 lumen|3 lumen/,
