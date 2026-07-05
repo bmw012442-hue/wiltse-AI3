@@ -1045,40 +1045,91 @@ function localSearch(query, limit = 6) {
   const medicationFocusRulesV172 = [
     {
       q: /고주의|고위험|high alert|승압제|vasopressor|인슐린|heparin|헤파린|kcl|전해질|아미오다론|아데노신|항부정맥/,
-      ids: ["V76_ICU_MEDICATION_OVERVIEW"]
+      ids: ["V115_MENU_HUB_07", "V76_ICU_MEDICATION_OVERVIEW"]
     },
     {
       q: /마약|향정|narcotic|opioid|controlled drug|fentanyl|morphine|remifentanil|midazolam|propofol|ketamine|dexmedetomidine|count|잔량|폐기/,
-      ids: ["V76_CONTROLLED_SEDATION_ANALGESIA"]
+      ids: ["V115_MENU_HUB_07", "V76_CONTROLLED_SEDATION_ANALGESIA"]
     },
     {
       q: /항생제 체크리스트|culture|renal dose|line compatibility|c\. difficile|review/,
-      ids: ["V171_ICU_ANTIBIOTIC_CHECKLIST"]
+      ids: ["V115_MENU_HUB_07", "V171_ICU_ANTIBIOTIC_CHECKLIST"]
     },
     {
       q: /항생제 사용|고위험 항생제|de-?escalation|stop date|stewardship/,
-      ids: ["V171_ICU_ANTIBIOTIC_USAGE_CORE"]
+      ids: ["V115_MENU_HUB_07", "V171_ICU_ANTIBIOTIC_USAGE_CORE"]
     },
     {
       q: /ast 1:?5000|1:?5000|희석|피부반응|skin test/,
-      ids: ["UPD43___AST_1_5000"]
+      ids: ["V115_MENU_HUB_07", "UPD43___AST_1_5000"]
     },
     {
       q: /ast 시행|ast 미시행|ast 여부|routine ast|시행 항생제|미시행 항생제/,
-      ids: ["DRUG030"]
+      ids: ["V115_MENU_HUB_07", "DRUG030"]
     },
     {
       q: /항생제|antibiotic|vancomycin|반코마이신|meropenem|메로페넴|cefepime|세페핌|aminoglycoside|아미노글리코사이드|tdm/,
-      ids: ["V76_ANTIBIOTICS_ICU_STEWARDSHIP", "V171_ICU_ANTIBIOTIC_CHECKLIST", "V171_ICU_ANTIBIOTIC_USAGE_CORE", "DRUG030", "UPD43___AST_1_5000"]
+      ids: ["V115_MENU_HUB_07", "V76_ANTIBIOTICS_ICU_STEWARDSHIP", "V171_ICU_ANTIBIOTIC_CHECKLIST", "V171_ICU_ANTIBIOTIC_USAGE_CORE", "DRUG030", "UPD43___AST_1_5000"]
     },
     {
       q: /수액|iv fluid|normal saline|n\/s|d5w|hartmann|albumin|3% nacl|fluid therapy|i\/o/,
-      ids: ["V76_ICU_FLUID_THERAPY"]
+      ids: ["V115_MENU_HUB_07", "V76_ICU_FLUID_THERAPY"]
     }
   ];
 
   let searchPool = visibleItems;
   for (const rule of medicationFocusRulesV172) {
+    if (rule.q.test(q)) {
+      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
+      if (focused.length) searchPool = focused;
+      break;
+    }
+  }
+
+  const hierarchyFocusRulesV172 = [
+    {
+      q: /신경계|neuro|mental|gcs|pupil|동공|motor|운동능력|seizure|경련|iicp|icp|두개내압/,
+      ids: ["V115_MENU_HUB_04", "V172_NEURO_ASSESSMENT_UNIFIED"]
+    },
+    {
+      q: /evd|sdd|csf|뇌척수액|배액|leveling|oscillation|뇌실외배액|icp/,
+      ids: ["V115_MENU_HUB_04", "V172_NEURO_EVD_SDD_UNIFIED", "V172_NEURO_ASSESSMENT_UNIFIED"]
+    },
+    {
+      q: /burr hole|craniotomy|coil|tfca|craniectomy|ns postop|신경계 수술|수술 후 관찰/,
+      ids: ["V115_MENU_HUB_04", "V172_NEURO_POSTOP_PROCEDURE_UNIFIED"]
+    },
+    {
+      q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|culture|abga|cbc|chemistry|coagulation/,
+      ids: ["V115_MENU_HUB_09", "V172_TEST_SPECIMEN_UNIFIED"]
+    },
+    {
+      q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|filter|kit change|blood return|net uf/,
+      ids: ["V115_MENU_HUB_05", "V103_RENAL_CRRT_MANUAL_57_59"]
+    },
+    {
+      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|sliding|저혈당|고혈당|dka|hhs|glucose|hba1c/,
+      ids: ["V115_MENU_HUB_06", "V103_BST_DM_OVERVIEW"]
+    },
+    {
+      q: /line|라인|catheter|카테터|drain|drainage|배액|dressing|드레싱|foley|l-tube|ng tube|pcd|chest drain|a-line|c-line|cvc/,
+      ids: ["V115_MENU_HUB_10", "V170_LINE_CATH_DRAIN_DRESSING_OVERVIEW", "V170_TUBE_LINE_CATHETER_POSITION_CHECK", "V170_DISINFECTION_DRESSING_OVERVIEW"]
+    },
+    {
+      q: /영상검사|방사선|radiology|x-ray|xray|엑스레이|ct|mri|sono|초음파|angio|tfca|내시경/,
+      ids: ["V115_MENU_HUB_09", "V170_RADIOLOGY_EXAM_REFERENCE", "V170_TUBE_LINE_CATHETER_POSITION_CHECK"]
+    },
+    {
+      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set/,
+      ids: ["V115_MENU_HUB_10", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
+    },
+    {
+      q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen/,
+      ids: ["V115_MENU_HUB_10", "V170_ATTACHED_DEVICE_INPUT_MANAGEMENT"]
+    }
+  ];
+
+  for (const rule of hierarchyFocusRulesV172) {
     if (rule.q.test(q)) {
       const focused = visibleItems.filter(card => rule.ids.includes(card.id));
       if (focused.length) searchPool = focused;
