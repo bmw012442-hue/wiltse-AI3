@@ -1042,6 +1042,50 @@ function localSearch(query, limit = 6) {
   const q = normalizeText(query);
   if (!q) return visibleItems.slice(0, 12);
 
+  const medicationFocusRulesV172 = [
+    {
+      q: /고주의|고위험|high alert|승압제|vasopressor|인슐린|heparin|헤파린|kcl|전해질|아미오다론|아데노신|항부정맥/,
+      ids: ["V76_ICU_MEDICATION_OVERVIEW"]
+    },
+    {
+      q: /마약|향정|narcotic|opioid|controlled drug|fentanyl|morphine|remifentanil|midazolam|propofol|ketamine|dexmedetomidine|count|잔량|폐기/,
+      ids: ["V76_CONTROLLED_SEDATION_ANALGESIA"]
+    },
+    {
+      q: /항생제 체크리스트|culture|renal dose|line compatibility|c\. difficile|review/,
+      ids: ["V171_ICU_ANTIBIOTIC_CHECKLIST"]
+    },
+    {
+      q: /항생제 사용|고위험 항생제|de-?escalation|stop date|stewardship/,
+      ids: ["V171_ICU_ANTIBIOTIC_USAGE_CORE"]
+    },
+    {
+      q: /ast 1:?5000|1:?5000|희석|피부반응|skin test/,
+      ids: ["UPD43___AST_1_5000"]
+    },
+    {
+      q: /ast 시행|ast 미시행|ast 여부|routine ast|시행 항생제|미시행 항생제/,
+      ids: ["DRUG030"]
+    },
+    {
+      q: /항생제|antibiotic|vancomycin|반코마이신|meropenem|메로페넴|cefepime|세페핌|aminoglycoside|아미노글리코사이드|tdm/,
+      ids: ["V76_ANTIBIOTICS_ICU_STEWARDSHIP", "V171_ICU_ANTIBIOTIC_CHECKLIST", "V171_ICU_ANTIBIOTIC_USAGE_CORE", "DRUG030", "UPD43___AST_1_5000"]
+    },
+    {
+      q: /수액|iv fluid|normal saline|n\/s|d5w|hartmann|albumin|3% nacl|fluid therapy|i\/o/,
+      ids: ["V76_ICU_FLUID_THERAPY"]
+    }
+  ];
+
+  let searchPool = visibleItems;
+  for (const rule of medicationFocusRulesV172) {
+    if (rule.q.test(q)) {
+      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
+      if (focused.length) searchPool = focused;
+      break;
+    }
+  }
+
   const focusQueryRules = [
     {
       q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|access pressure|return pressure|blood leak|air alarm|filter|kit change|blood return|return|line 연결|net uf|bfr|uf|dialysis catheter/,
