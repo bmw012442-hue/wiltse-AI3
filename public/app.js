@@ -434,7 +434,9 @@ window.addEventListener("error", (event) => {
 
 const $ = (id) => document.getElementById(id);
 const allItems = window.ICU_MANUAL_DB?.items || [];
-if ($("cardCount")) $("cardCount").textContent = `${allItems.length} cards`;
+const isUiHiddenCard = (card) => !!(card && (card.search_hidden || card.internal_only || card.hidden_from_ui));
+const visibleItems = allItems.filter(card => !isUiHiddenCard(card));
+if ($("cardCount")) $("cardCount").textContent = `${visibleItems.length} cards`;
 
 const fieldLabels = {
   indications: "적응증/상황", preparation: "준비물", steps: "절차",
@@ -446,16 +448,18 @@ const fieldLabels = {
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 function findById(id) { return allItems.find(x => x.id === id); }
 function findByTitle(title) { return allItems.find(x => x.title === title); }
+function findVisibleById(id) { return visibleItems.find(x => x.id === id); }
+function findVisibleByTitle(title) { return visibleItems.find(x => x.title === title); }
 
 function renderCategoryButtons() {
   const box = $("categoryButtons");
   if (!box) return;
-  const groups = [...new Set(allItems.map(x => (x.category || "기타").split("/")[0]))].sort();
+  const groups = [...new Set(visibleItems.map(x => (x.category || "기타").split("/")[0]))].sort();
   box.innerHTML = groups.map(g => `<button data-category="${esc(g)}">${esc(g)}</button>`).join("");
   document.querySelectorAll("[data-category]").forEach(btn => {
     btn.addEventListener("click", () => {
       const cat = btn.dataset.category;
-      const cards = allItems.filter(x => (x.category || "").startsWith(cat));
+      const cards = visibleItems.filter(x => (x.category || "").startsWith(cat));
       $("cardsHeading").textContent = `${cat} 카드`;
       renderCards(cards);
       $("status").textContent = `${cat}: ${cards.length}개 카드`;
@@ -584,7 +588,7 @@ function renderRelatedCards(related) {
   if (arr.length === 0) return `<div class="empty-line">해당 항목 없음</div>`;
   return `<div class="related-cards">
     ${arr.map(r => {
-      const found = findByTitle(r) || findById(r);
+      const found = findVisibleByTitle(r) || findVisibleById(r);
       if (found) return `<button type="button" data-related-id="${esc(found.id)}">${esc(found.title)}</button>`;
       return `<span>${esc(r)}</span>`;
     }).join("")}
@@ -755,7 +759,7 @@ function renderStructuredCard(card) {
 
 function openCard(id) {
   const card = findById(id);
-  if (!card) return;
+  if (!card || isUiHiddenCard(card)) return;
   $("detailTitle").textContent = card.title;
   $("detailMeta").textContent = `${card.id} · ${card.category} · ${card.urgency || "routine"}`;
   $("detailBody").innerHTML = renderStructuredCard(card);
@@ -1036,8 +1040,28 @@ function scoreCard(query, card) {
 
 function localSearch(query, limit = 6) {
   const q = normalizeText(query);
-  if (!q) return allItems.slice(0, 12);
-  const ranked = allItems
+  if (!q) return visibleItems.slice(0, 12);
+
+  const focusQueryRules = [
+    {
+      q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|access pressure|return pressure|blood leak|air alarm|filter|kit change|blood return|return|line 연결|net uf|bfr|uf|dialysis catheter/,
+      ids: ["V103_RENAL_CRRT_MANUAL_57_59"]
+    },
+    {
+      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c/,
+      ids: ["V103_BST_DM_OVERVIEW"]
+    }
+  ];
+
+  let searchPool = visibleItems;
+  for (const rule of focusQueryRules) {
+    if (rule.q.test(q)) {
+      searchPool = visibleItems.filter(card => rule.ids.includes(card.id));
+      break;
+    }
+  }
+
+  const ranked = searchPool
     .map(card => ({card, s: scoreCard(q, card)}))
     .filter(x => x.s > 0)
     .sort((a,b) => b.s - a.s);
