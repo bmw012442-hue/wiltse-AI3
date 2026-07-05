@@ -1125,10 +1125,10 @@ function localSearch(query, limit = 6) {
     }
   ];
 
-  let searchPool = visibleItems;
   for (const rule of focusQueryRules) {
     if (rule.q.test(q)) {
-      searchPool = visibleItems.filter(card => rule.ids.includes(card.id));
+      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
+      if (focused.length) searchPool = focused;
       break;
     }
   }
