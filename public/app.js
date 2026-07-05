@@ -1050,6 +1050,34 @@ function localSearch(query, limit = 6) {
     {
       q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c/,
       ids: ["V103_BST_DM_OVERVIEW"]
+    },
+    {
+      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
+      ids: ["V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
+    },
+    {
+      q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen|2 lumen|3 lumen/,
+      ids: ["V170_ATTACHED_DEVICE_INPUT_MANAGEMENT"]
+    },
+    {
+      q: /(x-ray|xray|엑스레이|영상).*(ett|c-line|cvc|l-tube|ng tube|chest tube|pcd|튜브|라인|카테터|삽입|위치)|((ett|c-line|cvc|l-tube|ng tube|chest tube|pcd|튜브|라인|카테터).*(x-ray|xray|엑스레이|영상|삽입|위치|carina|svc|ra junction|고정 길이|삽입 깊이))/,
+      ids: ["V170_TUBE_LINE_CATHETER_POSITION_CHECK"]
+    },
+    {
+      q: /영상검사|방사선|radiology|x-ray|xray|엑스레이|ct|mri|sono|초음파|angio|tfca|내시경|egd|ercp|cfs|normal chest|정상 흉부|consolidation|폐경화|tuberculosis|결핵|pleural effusion|흉수|pneumothorax|기흉|metastasis|전이|pneumonia|폐렴|brain ct|chest ct|abdomen ct|brain mri|spine mri/,
+      ids: ["V170_RADIOLOGY_EXAM_REFERENCE"]
+    },
+    {
+      q: /(line|라인).*(drain|배액|dressing|드레싱|catheter|카테터)|(drain|배액).*(dressing|드레싱|line|라인|catheter|카테터)|line \/ drain|line drain|line catheter|catheter drainage|라인 드레싱|배액 드레싱/,
+      ids: ["V170_LINE_CATH_DRAIN_DRESSING_OVERVIEW"]
+    },
+    {
+      q: /소독|dressing|드레싱|상처|wound|욕창|압박상처|pressure injury|pressure ulcer|saline|생리식염수|chlorhexidine|클로르헥시딘|betadine|베타딘|povidone|거즈|gauze|transparent film|투명 드레싱|foam dressing|폼 드레싱|hydrocolloid|하이드로콜로이드|alginate|알지네이트|삼출물|exudate/,
+      ids: ["V170_DISINFECTION_DRESSING_OVERVIEW"]
+    },
+    {
+      q: /iv line|c-line|cvc|a-line|foley|l-tube|ng tube|pcd|chest drain|evd|sdd|drainage|drain|라인|카테터|배액|배액관|urine meter|infiltration|extravasation|occlusion|kink|air leak|patency/,
+      ids: ["V170_LINE_CATH_DRAIN_DRESSING_OVERVIEW"]
     }
   ];
 
