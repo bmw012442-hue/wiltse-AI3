@@ -938,7 +938,7 @@ function scoreCard(query, card) {
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
-    { q: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure|emergency/ },
+    { q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure/, keep: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure|emergency/ },
     { q: /brain ct|brain mri|브레인|뇌ct|뇌 ct|뇌mri|뇌 mri/, keep: /brain|ct|mri|브레인|뇌|신경|영상/ },
     { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
     { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
@@ -1042,152 +1042,19 @@ function localSearch(query, limit = 6) {
   const q = normalizeText(query);
   if (!q) return visibleItems.slice(0, 12);
 
-  const priorityFocusRulesV273 = [
-    {
-      q: /(dressing|드레싱|소독|소독제).*(sdd|evd|관\s*제거|배액관)|(sdd|evd).*(dressing|드레싱|소독|소독제|관\s*제거)/,
-      ids: ["V173_DRESSING_SDD_EVD_MANAGEMENT_CORE", "V173_EVD_NURSING_CORE", "V173_EVD_BUNDLE_CHECK_DOCUMENTATION_CORE"]
-    },
-    {
-      q: /evd\s*bundle|bundle\s*check|evd.*기록|evd.*인계|evd.*documentation|번들/,
-      ids: ["V173_EVD_BUNDLE_CHECK_DOCUMENTATION_CORE", "V173_EVD_NURSING_CORE", "V138_NS_BRAIN_EVD_19_BUNDLE_CHECK_DOCUMENTATION"]
-    },
-    {
-      q: /evd|sdd|csf|뇌척수액|leveling|oscillation|drain status|hourly drainage|배액량|icp|stopcock|clamp/,
-      ids: ["V173_EVD_NURSING_CORE", "V173_EVD_BUNDLE_CHECK_DOCUMENTATION_CORE", "V138_NS_BRAIN_EVD_00_HUB", "V138_NS_BRAIN_EVD_13_PURPOSE_STRUCTURE", "V138_NS_BRAIN_EVD_14_LEVELING", "V138_NS_BRAIN_EVD_15_DRAIN_STATUS", "V138_NS_BRAIN_EVD_16_HOURLY_DRAINAGE_CSF", "V138_NS_BRAIN_EVD_17_OSCILLATION_WAVEFORM", "V138_NS_BRAIN_EVD_18_COMPLICATION", "V138_NS_BRAIN_EVD_19_BUNDLE_CHECK_DOCUMENTATION"]
-    },
-    {
-      q: /응급|cpr|e-?cart|코드블루|code blue|shock|심정지|제세동|defib|rosc|intubation|기도삽관/,
-      ids: ["V173_EMERGENCY_CORE_SUMMARY", "V115_MENU_HUB_01"]
-    },
-    {
-      q: /gcs|mental|의식|pupil|동공|motor|운동능력|seizure|경련|iicp|신경계 기본|신경계 사정/,
-      ids: ["V173_NEURO_BASIC_ASSESSMENT_CORE", "V115_MENU_HUB_04", "V173_EVD_NURSING_CORE"]
-    },
-    {
-      q: /검체\s*bottle|검체\s*tube|검사\s*물품|bottle|tube|edta|sst|citrate|heparin.*abga|urine cup|sputum cup|검체백|라벨/,
-      ids: ["V173_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V173_TEST_SPECIMEN_CORE_SUMMARY"]
-    },
-    {
-      q: /검사\s*\/?\s*검체|검사검체|lab bottle|채혈|채혈순서|blood culture|culture|abga|cbc|chemistry|coagulation|검체라벨/,
-      ids: ["V173_TEST_SPECIMEN_CORE_SUMMARY", "V173_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V115_MENU_HUB_09"]
-    },
-    {
-      q: /day duty|evening duty|night duty|day|evening|night|근무별|근무\s*업무|업무\s*흐름|인계|handoff|근무\s*시작|마감\s*전/,
-      ids: ["V173_SHIFT_WORKFLOW_CORE", "V173_NURSING_SAFETY_DOCUMENTATION_CORE"]
-    },
-    {
-      q: /낙상|욕창|통증|soap|emr|간호처방|flow sheet|icu flow sheet|기록|안전기록|braden|nrs/,
-      ids: ["V173_NURSING_SAFETY_DOCUMENTATION_CORE", "V173_SHIFT_WORKFLOW_CORE"]
-    },
-    {
-      q: /상황별\s*준비물|준비물|irrigation|방광세척|c-line|central line|suture|봉합|sputum cx|객담배양|ctd|chest tube|evd 드레싱/,
-      ids: ["V173_SITUATION_PREPARATION_SUPPLIES_CORE", "V173_DRESSING_SDD_EVD_MANAGEMENT_CORE"]
-    }
-  ];
-
-  for (const rule of priorityFocusRulesV273) {
-    if (rule.q.test(q)) {
-      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
-      if (focused.length) return focused.slice(0, limit);
-    }
-  }
-
-  const medicationFocusRulesV172 = [
-    {
-      q: /고주의|고위험|high alert|승압제|vasopressor|인슐린|heparin|헤파린|kcl|전해질|아미오다론|아데노신|항부정맥/,
-      ids: ["V115_MENU_HUB_07", "V76_ICU_MEDICATION_OVERVIEW"]
-    },
-    {
-      q: /마약|향정|narcotic|opioid|controlled drug|fentanyl|morphine|remifentanil|midazolam|propofol|ketamine|dexmedetomidine|count|잔량|폐기/,
-      ids: ["V115_MENU_HUB_07", "V76_CONTROLLED_SEDATION_ANALGESIA"]
-    },
-    {
-      q: /항생제 체크리스트|culture|renal dose|line compatibility|c\. difficile|review/,
-      ids: ["V115_MENU_HUB_07", "V171_ICU_ANTIBIOTIC_CHECKLIST"]
-    },
-    {
-      q: /항생제 사용|고위험 항생제|de-?escalation|stop date|stewardship/,
-      ids: ["V115_MENU_HUB_07", "V171_ICU_ANTIBIOTIC_USAGE_CORE"]
-    },
-    {
-      q: /ast 1:?5000|1:?5000|희석|피부반응|skin test/,
-      ids: ["V115_MENU_HUB_07", "UPD43___AST_1_5000"]
-    },
-    {
-      q: /ast 시행|ast 미시행|ast 여부|routine ast|시행 항생제|미시행 항생제/,
-      ids: ["V115_MENU_HUB_07", "DRUG030"]
-    },
-    {
-      q: /항생제|antibiotic|vancomycin|반코마이신|meropenem|메로페넴|cefepime|세페핌|aminoglycoside|아미노글리코사이드|tdm/,
-      ids: ["V115_MENU_HUB_07", "V76_ANTIBIOTICS_ICU_STEWARDSHIP", "V171_ICU_ANTIBIOTIC_CHECKLIST", "V171_ICU_ANTIBIOTIC_USAGE_CORE", "DRUG030", "UPD43___AST_1_5000"]
-    },
-    {
-      q: /수액|iv fluid|normal saline|n\/s|d5w|hartmann|albumin|3% nacl|fluid therapy|i\/o/,
-      ids: ["V115_MENU_HUB_07", "V76_ICU_FLUID_THERAPY"]
-    }
-  ];
-
-  let searchPool = visibleItems;
-  for (const rule of medicationFocusRulesV172) {
-    if (rule.q.test(q)) {
-      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
-      if (focused.length) searchPool = focused;
-      break;
-    }
-  }
-
-  const hierarchyFocusRulesV172 = [
-    {
-      q: /신경계|neuro|mental|gcs|pupil|동공|motor|운동능력|seizure|경련|iicp|icp|두개내압/,
-      ids: ["V173_NEURO_BASIC_ASSESSMENT_CORE", "V115_MENU_HUB_04"]
-    },
-    {
-      q: /evd|sdd|csf|뇌척수액|배액|leveling|oscillation|뇌실외배액|icp/,
-      ids: ["V173_EVD_NURSING_CORE", "V173_EVD_BUNDLE_CHECK_DOCUMENTATION_CORE", "V115_MENU_HUB_04", "V172_NEURO_EVD_SDD_UNIFIED"]
-    },
-    {
-      q: /burr hole|craniotomy|coil|tfca|craniectomy|ns postop|신경계 수술|수술 후 관찰/,
-      ids: ["V115_MENU_HUB_04", "V172_NEURO_POSTOP_PROCEDURE_UNIFIED"]
-    },
-    {
-      q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|culture|abga|cbc|chemistry|coagulation/,
-      ids: ["V173_TEST_SPECIMEN_CORE_SUMMARY", "V173_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V115_MENU_HUB_09"]
-    },
-    {
-      q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|filter|kit change|blood return|net uf/,
-      ids: ["V115_MENU_HUB_05", "V103_RENAL_CRRT_MANUAL_57_59"]
-    },
-    {
-      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|sliding|저혈당|고혈당|dka|hhs|glucose|hba1c/,
-      ids: ["V115_MENU_HUB_06", "V103_BST_DM_OVERVIEW"]
-    },
-    {
-      q: /line|라인|catheter|카테터|drain|drainage|배액|dressing|드레싱|foley|l-tube|ng tube|pcd|chest drain|a-line|c-line|cvc/,
-      ids: ["V115_MENU_HUB_10", "V173_DRESSING_SDD_EVD_MANAGEMENT_CORE", "V170_LINE_CATH_DRAIN_DRESSING_OVERVIEW", "V170_TUBE_LINE_CATHETER_POSITION_CHECK", "V170_DISINFECTION_DRESSING_OVERVIEW"]
-    },
-    {
-      q: /영상검사|방사선|radiology|x-ray|xray|엑스레이|ct|mri|sono|초음파|angio|tfca|내시경/,
-      ids: ["V115_MENU_HUB_09", "V170_RADIOLOGY_EXAM_REFERENCE", "V170_TUBE_LINE_CATHETER_POSITION_CHECK"]
-    },
-    {
-      q: /공급실|csr|소독기구|sterile tools|forcep|forceps|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|수술기구|기구 이름|기구 생김새|scalpel|blade|clamp|retractor|yankauer|cautery/,
-      ids: ["V174_CSR_STERILE_SURGICAL_INSTRUMENTS_CORE", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW", "V115_MENU_HUB_10"]
-    },
-    {
-      q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen/,
-      ids: ["V115_MENU_HUB_10", "V170_ATTACHED_DEVICE_INPUT_MANAGEMENT"]
-    }
-  ];
-
-  for (const rule of hierarchyFocusRulesV172) {
-    if (rule.q.test(q)) {
-      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
-      if (focused.length) searchPool = focused;
-      break;
-    }
-  }
-
   const focusQueryRules = [
+    {
+      q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr 기계|기계압박/,
+      ids: ["V277_EMERGENCY_LUCAS_CORE", "VIDEO003", "CPR030", "UPD43_CPR_____LUCAS_E_CART", "V277_EMERGENCY_CORE_HUB", "V115_MENU_HUB_01"]
+    },
+    {
+      q: /intubation|기관삽관|삽관|기도삽관|기도확보|airway|ett|laryngoscope|후두경|etco2|capnography/,
+      ids: ["V277_EMERGENCY_INTUBATION_CORE", "V95_INTUBATION_PREP_ASSIST", "UPD43_INTUBATION", "VENT003", "V277_EMERGENCY_CORE_HUB", "V277_EMERGENCY_LUCAS_CORE"]
+    },
+    {
+      q: /응급상황|응급|cpr|심폐소생술|cpcr|e-cart|ecart|응급카트|코드블루|code blue|제세동|defib|shock|rosc/,
+      ids: ["V277_EMERGENCY_CORE_HUB", "V277_EMERGENCY_LUCAS_CORE", "V277_EMERGENCY_INTUBATION_CORE", "VIDEO003", "V115_MENU_HUB_01", "MENU001", "V116_EMERGENCY_OVERVIEW_HUB"]
+    },
     {
       q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|access pressure|return pressure|blood leak|air alarm|filter|kit change|blood return|return|line 연결|net uf|bfr|uf|dialysis catheter/,
       ids: ["V103_RENAL_CRRT_MANUAL_57_59"]
@@ -1197,8 +1064,8 @@ function localSearch(query, limit = 6) {
       ids: ["V103_BST_DM_OVERVIEW"]
     },
     {
-      q: /공급실|csr|소독기구|sterile tools|forcep|forceps|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|수술기구|기구 이름|기구 생김새|scalpel|blade|clamp|retractor|yankauer|cautery|sharps count|기구 이름|기구 생김새/,
-      ids: ["V174_CSR_STERILE_SURGICAL_INSTRUMENTS_CORE", "V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
+      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
+      ids: ["V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
     },
     {
       q: /부착기구|attached device|hd cath|trialysis|mahurkar|마후카|perm cath|cadex|flow sheet|bundle|lumen|2 lumen|3 lumen/,
@@ -1218,7 +1085,7 @@ function localSearch(query, limit = 6) {
     },
     {
       q: /소독|dressing|드레싱|상처|wound|욕창|압박상처|pressure injury|pressure ulcer|saline|생리식염수|chlorhexidine|클로르헥시딘|betadine|베타딘|povidone|거즈|gauze|transparent film|투명 드레싱|foam dressing|폼 드레싱|hydrocolloid|하이드로콜로이드|alginate|알지네이트|삼출물|exudate/,
-      ids: ["V173_DRESSING_SDD_EVD_MANAGEMENT_CORE", "V170_DISINFECTION_DRESSING_OVERVIEW"]
+      ids: ["V170_DISINFECTION_DRESSING_OVERVIEW"]
     },
     {
       q: /iv line|c-line|cvc|a-line|foley|l-tube|ng tube|pcd|chest drain|evd|sdd|drainage|drain|라인|카테터|배액|배액관|urine meter|infiltration|extravasation|occlusion|kink|air leak|patency/,
@@ -1226,10 +1093,10 @@ function localSearch(query, limit = 6) {
     }
   ];
 
+  let searchPool = visibleItems;
   for (const rule of focusQueryRules) {
     if (rule.q.test(q)) {
-      const focused = visibleItems.filter(card => rule.ids.includes(card.id));
-      if (focused.length) searchPool = focused;
+      searchPool = visibleItems.filter(card => rule.ids.includes(card.id));
       break;
     }
   }
