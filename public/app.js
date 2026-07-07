@@ -936,6 +936,7 @@ function scoreCard(query, card) {
 
   const topicRules = [
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
+    { q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/, keep: /검사\s*\/?\s*검체|검사검체|검체|lab|bottle|채혈|채취|culture|컬쳐|혈액배양|객담배양|소변배양|cre|cpo|cpe|vre|rat|pcd|검체라벨|edta|sst|citrate|abga|specimen/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
     { q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure/, keep: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure|emergency/ },
@@ -1043,6 +1044,10 @@ function localSearch(query, limit = 6) {
   if (!q) return visibleItems.slice(0, 12);
 
   const focusQueryRules = [
+    {
+      q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/,
+      ids: ["V281_LAB_SPECIMEN_CORE", "V281_LAB_CULTURE_COLLECTION_CORE", "V281_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V106_TEST_SPECIMEN_LAB_CULTURE", "V115_MENU_HUB_09", "V86_DETAIL_04", "LAB001", "SPEC001", "SPEC002", "SPEC003", "SPEC005", "V65_PCD_LABEL"]
+    },
     {
       q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr 기계|기계압박/,
       ids: ["V277_EMERGENCY_LUCAS_CORE", "VIDEO003", "CPR030", "UPD43_CPR_____LUCAS_E_CART", "V277_EMERGENCY_CORE_HUB", "V115_MENU_HUB_01"]
