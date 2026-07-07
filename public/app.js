@@ -296,7 +296,7 @@ window.addEventListener("error", (event) => {
           border-radius: var(--v125-mobile-card-radius) !important;
         }
 
-        /* AI 답변 / 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
+        /* AI 요약 답변 / 매뉴얼 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
         .action-row,
         .search-actions,
         .search-action-row,
@@ -1118,7 +1118,7 @@ function makeLocalManualAnswer(query, cards) {
   if (!used.length) return "관련 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
 
   const lines = [];
-  lines.push("매뉴얼 DB 기반 AI 검색 요약");
+  lines.push("매뉴얼 DB 기반 AI 요약 답변");
   lines.push("질문: " + q);
   lines.push("");
   lines.push("순위 | 카드 | 먼저 볼 내용 | 표/이미지");
@@ -1212,7 +1212,7 @@ async function searchCards() {
 
   showResultsArea();
   $("answerBox").classList.add("hidden");
-  setLoading("카드 검색 중입니다...");
+  setLoading("매뉴얼 카드 검색 중입니다...");
   setBusyButton("searchBtn", true, "검색 중...");
   setActionActive("searchBtn");
 
@@ -1232,7 +1232,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>매뉴얼 카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } catch (err) {
     const cards = localSearch(query, 6);
     renderCards(cards);
@@ -1240,7 +1240,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>매뉴얼 카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } finally {
     const hint = $("loadingHint");
     if (hint) hint.classList.add("hidden");
@@ -1260,7 +1260,7 @@ async function askAI() {
   showResultsArea();
   setActionActive("askBtn");
   $("status").classList.remove("hidden");
-  $("status").textContent = "매뉴얼 DB 검색 후 AI 답변 생성 중...";
+  $("status").textContent = "매뉴얼 DB 검색 후 AI 요약 답변 생성 중...";
   $("answerBox").classList.add("hidden");
   $("cards").innerHTML = "";
   try {
@@ -1317,6 +1317,29 @@ function bindClick(id, handler) {
     handler(event);
   });
 }
+
+
+function applyPrimaryButtonLabelsV278() {
+  const labels = {
+    askBtn: "AI 요약 답변",
+    searchBtn: "매뉴얼 카드 검색",
+    clearBtn: "초기화",
+    resetBtn: "초기화"
+  };
+  Object.entries(labels).forEach(([id, label]) => {
+    const btn = $(id) || document.getElementById(id);
+    if (!btn) return;
+    btn.textContent = label;
+    btn.dataset.originalText = label;
+    btn.setAttribute("aria-label", label);
+    if (id === "askBtn") btn.title = "검색어에 맞는 매뉴얼 내용을 AI가 요약합니다.";
+    if (id === "searchBtn") btn.title = "검색어와 관련된 매뉴얼 카드·이미지·동영상을 찾습니다.";
+    if (id === "clearBtn" || id === "resetBtn") btn.title = "검색어와 결과를 초기화합니다.";
+  });
+}
+
+applyPrimaryButtonLabelsV278();
+document.addEventListener("DOMContentLoaded", applyPrimaryButtonLabelsV278);
 
 bindClick("askBtn", askAI);
 bindClick("searchBtn", searchCards);
