@@ -1060,8 +1060,8 @@ function localSearch(query, limit = 6) {
       ids: ["V103_RENAL_CRRT_MANUAL_57_59"]
     },
     {
-      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c/,
-      ids: ["V103_BST_DM_OVERVIEW"]
+      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c|바이알|vial|펜|pen|경구약|경구 혈당강하제|혈당강하제|oral diabetes|oral hypoglycemic|dpp-4|sglt2|tzd|glimepiride|gliclazide|repaglinide|sitagliptin|linagliptin|empagliflozin|dapagliflozin|pioglitazone|acarbose|voglibose/,
+      ids: ["V280_INSULIN_VIAL_PEN_CORE", "V280_ORAL_DIABETES_MEDICATION_CORE", "V103_BST_DM_OVERVIEW"]
     },
     {
       q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
