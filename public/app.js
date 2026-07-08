@@ -1,3 +1,4 @@
+// V283_HEMODYNAMIC_MONITORING_RELEVANCE_FIXED
 // V282_SHIFT_WORKFLOW_RELEVANCE_FIXED
 // V47_BOOT_ERROR_HANDLER
 window.addEventListener("error", (event) => {
@@ -1040,6 +1041,10 @@ function scoreCard(query, card) {
 
   if (["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13"].includes(card.id || "") && /day\s*\/\s*evening\s*\/\s*night|day\s*duty|evening\s*duty|night\s*duty|데이|이브닝|나이트|근무별|근무\s*업무|근무\s*흐름|세부\s*업무|실무\s*업무|인계|handoff|라운딩|rounding|initial|final|액팅|처방정리|cadex|채혈접수|환자분류/.test(q)) score += 220;
 
+
+  if (["V80_HEMODYNAMIC_MONITORING_OVERVIEW", "V149_CV_CRITICAL_CARE_03_HUB", "V149_CV_31_BASIC_CIRCULATION_MONITORING"].includes(card.id || "") && /혈역학|hemodynamic|순환계\s*모니터링|MAP|ABP|A-line|A\s*line|arterial\s*line|동맥라인|CVP|중심정맥압|zeroing|leveling|transducer|waveform|파형|vasopressor|승압제|저혈압|hypotension|말초관류|perfusion|lactate|젖산|urine\s*output|소변량|patient\s*monitor|bedside\s*monitor|환자\s*모니터/.test(q)) score += 240;
+  if ((card.id || "") === "V80_HEMODYNAMIC_MONITORING_OVERVIEW" && /intubation|기관삽관|삽관|기도확보|ETT|laryngoscope|BVM|suction|tube\s*depth|루카스|LUCAS/.test(q)) score -= 300;
+
   return Math.max(0, score);
 }
 
@@ -1048,6 +1053,10 @@ function localSearch(query, limit = 6) {
   if (!q) return visibleItems.slice(0, 12);
 
   const focusQueryRules = [
+    {
+      q: /혈역학|hemodynamic|순환계\s*모니터링|순환\s*\/\s*혈역학|MAP|ABP|A-line|A\s*line|arterial\s*line|동맥라인|CVP|중심정맥압|zeroing|leveling|transducer|waveform|파형|vasopressor|승압제|저혈압|hypotension|말초관류|perfusion|lactate|젖산|urine\s*output|소변량|patient\s*monitor|bedside\s*monitor|환자\s*모니터/,
+      ids: ["V80_HEMODYNAMIC_MONITORING_OVERVIEW", "V149_CV_CRITICAL_CARE_03_HUB", "V149_CV_31_BASIC_CIRCULATION_MONITORING", "V149_CV_33_ABP_ARTERIAL_LINE_MANAGEMENT", "V149_CV_34_CVP_CENTRAL_LINE_MONITORING", "V149_CV_35_HYPOPERFUSION_ASSESSMENT", "V149_CV_36_VASOPRESSOR_INOTROPE_MONITORING"]
+    },
     {
       q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/,
       ids: ["V281_LAB_SPECIMEN_CORE", "V281_LAB_CULTURE_COLLECTION_CORE", "V281_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V106_TEST_SPECIMEN_LAB_CULTURE", "V115_MENU_HUB_09", "V86_DETAIL_04", "LAB001", "SPEC001", "SPEC002", "SPEC003", "SPEC005", "V65_PCD_LABEL"]
