@@ -298,7 +298,7 @@ window.addEventListener("error", (event) => {
           border-radius: var(--v125-mobile-card-radius) !important;
         }
 
-        /* AI 요약 답변 / 매뉴얼 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
+        /* AI 요약 답변 / 매뉴얼 매뉴얼 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
         .action-row,
         .search-actions,
         .search-action-row,
@@ -937,6 +937,9 @@ function scoreCard(query, card) {
   ].join(" "));
 
   const topicRules = [
+
+    { q: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|i\/?o|활력징후|v\/s/, keep: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|emr|간호기록|v\/s|활력징후|i\/?o|line|drain|배액|호흡|ventilator|순환|약물|v85|routine009/ },
+    { q: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별\s*업무/, keep: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별|documentation|nursing|v85|chart030|record001|emr001/ },
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
     { q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/, keep: /검사\s*\/?\s*검체|검사검체|검체|lab|bottle|채혈|채취|culture|컬쳐|혈액배양|객담배양|소변배양|cre|cpo|cpe|vre|rat|pcd|검체라벨|edta|sst|citrate|abga|specimen/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
@@ -1234,7 +1237,7 @@ async function searchCards() {
 
   showResultsArea();
   $("answerBox").classList.add("hidden");
-  setLoading("매뉴얼 카드 검색 중입니다...");
+  setLoading("매뉴얼 매뉴얼 카드 검색 중입니다...");
   setBusyButton("searchBtn", true, "검색 중...");
   setActionActive("searchBtn");
 
@@ -1254,7 +1257,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>매뉴얼 카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>매뉴얼 매뉴얼 카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } catch (err) {
     const cards = localSearch(query, 6);
     renderCards(cards);
@@ -1262,7 +1265,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>매뉴얼 카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>매뉴얼 매뉴얼 카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } finally {
     const hint = $("loadingHint");
     if (hint) hint.classList.add("hidden");
@@ -1344,7 +1347,7 @@ function bindClick(id, handler) {
 function applyPrimaryButtonLabelsV278() {
   const labels = {
     askBtn: "AI 요약 답변",
-    searchBtn: "매뉴얼 카드 검색",
+    searchBtn: "매뉴얼 매뉴얼 카드 검색",
     clearBtn: "초기화",
     resetBtn: "초기화"
   };
