@@ -1,3 +1,4 @@
+// V282_SHIFT_WORKFLOW_RELEVANCE_FIXED
 // V47_BOOT_ERROR_HANDLER
 window.addEventListener("error", (event) => {
   const status = document.getElementById("status");
@@ -996,7 +997,7 @@ function scoreCard(query, card) {
   }
 
   if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/i.test(query)) score += 18;
-  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이/.test(query)) score += 26;
+  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|근무|인계|handoff|day|evening|night/.test(query)) score += 26;
   if (((card.id || '').startsWith('V87_') || (card.id || '').startsWith('V88_')) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(query)) score += 26;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
@@ -1036,6 +1037,9 @@ function scoreCard(query, card) {
   if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_1" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|목보조기|목 보조기|경추|cervical|philadelphia|atlas|아틀라스|팔자붕대|8자붕대/i.test(q)) score += 900;
   if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_2" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|tlso|콜셋|코르셋|허리보조기|허리 보조기|척추 보조기|lumbar brace|corset/i.test(q)) score += 900;
 
+
+  if (["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13"].includes(card.id || "") && /day\s*\/\s*evening\s*\/\s*night|day\s*duty|evening\s*duty|night\s*duty|데이|이브닝|나이트|근무별|근무\s*업무|근무\s*흐름|세부\s*업무|실무\s*업무|인계|handoff|라운딩|rounding|initial|final|액팅|처방정리|cadex|채혈접수|환자분류/.test(q)) score += 220;
+
   return Math.max(0, score);
 }
 
@@ -1067,6 +1071,10 @@ function localSearch(query, limit = 6) {
     {
       q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c|바이알|vial|펜|pen|경구약|경구 혈당강하제|혈당강하제|oral diabetes|oral hypoglycemic|dpp-4|sglt2|tzd|glimepiride|gliclazide|repaglinide|sitagliptin|linagliptin|empagliflozin|dapagliflozin|pioglitazone|acarbose|voglibose/,
       ids: ["V280_INSULIN_VIAL_PEN_CORE", "V280_ORAL_DIABETES_MEDICATION_CORE", "V103_BST_DM_OVERVIEW"]
+    },
+    {
+      q: /day\s*\/\s*evening\s*\/\s*night|day\s*duty|evening\s*duty|night\s*duty|데이|이브닝|나이트|근무별|근무\s*업무|근무\s*흐름|세부\s*업무|실무\s*업무|인계|handoff|라운딩|rounding|initial|final|액팅|처방정리|cadex|채혈접수|환자분류/,
+      ids: ["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13", "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"]
     },
     {
       q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
