@@ -1,5 +1,3 @@
-// V283_HEMODYNAMIC_MONITORING_RELEVANCE_FIXED
-// V282_SHIFT_WORKFLOW_RELEVANCE_FIXED
 // V47_BOOT_ERROR_HANDLER
 window.addEventListener("error", (event) => {
   const status = document.getElementById("status");
@@ -298,7 +296,7 @@ window.addEventListener("error", (event) => {
           border-radius: var(--v125-mobile-card-radius) !important;
         }
 
-        /* AI 요약 답변 / 매뉴얼 매뉴얼 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
+        /* AI 답변 / 카드 검색 / 초기화: 모바일에서도 3개 한 줄 */
         .action-row,
         .search-actions,
         .search-action-row,
@@ -937,14 +935,10 @@ function scoreCard(query, card) {
   ].join(" "));
 
   const topicRules = [
-
-    { q: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|i\/?o|활력징후|v\/s/, keep: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|emr|간호기록|v\/s|활력징후|i\/?o|line|drain|배액|호흡|ventilator|순환|약물|v85|routine009/ },
-    { q: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별\s*업무/, keep: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별|documentation|nursing|v85|chart030|record001|emr001/ },
     { q: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소요법|흡인|tracheostomy|기관절개|spo2/, keep: /ventilator|인공호흡기|dräger|savina|호흡|hfnc|산소|흡인|tracheostomy|기관절개|spo2|abga|respiratory/ },
-    { q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/, keep: /검사\s*\/?\s*검체|검사검체|검체|lab|bottle|채혈|채취|culture|컬쳐|혈액배양|객담배양|소변배양|cre|cpo|cpe|vre|rat|pcd|검체라벨|edta|sst|citrate|abga|specimen/ },
     { q: /항생제|ast|vancomycin|meropenem|cefepime|aminoglycoside|tdm|antibiotic/, keep: /항생제|ast|antibiotic|vancomycin|meropenem|cefepime|aminoglycoside|tdm|감염|약물/ },
     { q: /수혈|혈액제제|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb/, keep: /수혈|혈액제제|transfusion|rbc|ffp|platelet|plt|dic|coagulation|pt|aptt|hb|혈액/ },
-    { q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure/, keep: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|기도확보|경련|seizure|emergency/ },
+    { q: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급상황|응급간호|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure/, keep: /cpr|코드블루|e-cart|ecart|응급카트|응급약물|응급약물표|응급|제세동|defib|shock|쇼크|저혈압|intubation|기관삽관|삽관|경련|seizure|emergency/ },
     { q: /brain ct|brain mri|브레인|뇌ct|뇌 ct|뇌mri|뇌 mri/, keep: /brain|ct|mri|브레인|뇌|신경|영상/ },
     { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
     { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
@@ -1001,7 +995,7 @@ function scoreCard(query, card) {
   }
 
   if ((card.tables || []).length && media && /표|table|정리|종류|순서|번호|채혈|검체|수혈|보조기|기관절개관|체크리스트|요약표|욕창|드레싱|매듭|xray|엑스레이/i.test(query)) score += 18;
-  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이|근무|인계|handoff|day|evening|night/.test(query)) score += 26;
+  if ((card.images || []).length && media && /그림|사진|이미지|image|photo|보조기|기관절개관|lab bottle|채혈|검체|tube|트라코|코켄|욕창|상처|드레싱|보호대|매듭|xray|x-ray|엑스레이/.test(query)) score += 26;
   if (((card.id || '').startsWith('V87_') || (card.id || '').startsWith('V88_')) && /욕창|상처|드레싱|보호대|매듭|xray|엑스레이|체크리스트|요약표|폐렴|기흉|폐부종|흉수|무기폐|체위변경|예방|대체수단|ROM/.test(query)) score += 26;
 
   if (!directText.includes(q) && !media.includes(q) && directHits === 0) score -= 45;
@@ -1041,13 +1035,6 @@ function scoreCard(query, card) {
   if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_1" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|목보조기|목 보조기|경추|cervical|philadelphia|atlas|아틀라스|팔자붕대|8자붕대/i.test(q)) score += 900;
   if ((item.id || "") === "V164_NS_SPINE_BRACE_OVERVIEW_2" && /ns\/?spine|ns spine|spine brace|ns 보조기|보조기|tlso|콜셋|코르셋|허리보조기|허리 보조기|척추 보조기|lumbar brace|corset/i.test(q)) score += 900;
 
-
-  if (["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13"].includes(card.id || "") && /day\s*\/\s*evening\s*\/\s*night|day\s*duty|evening\s*duty|night\s*duty|데이|이브닝|나이트|근무별|근무\s*업무|근무\s*흐름|세부\s*업무|실무\s*업무|인계|handoff|라운딩|rounding|initial|final|액팅|처방정리|cadex|채혈접수|환자분류/.test(q)) score += 220;
-
-
-  if (["V80_HEMODYNAMIC_MONITORING_OVERVIEW", "V149_CV_CRITICAL_CARE_03_HUB", "V149_CV_31_BASIC_CIRCULATION_MONITORING"].includes(card.id || "") && /혈역학|hemodynamic|순환계\s*모니터링|MAP|ABP|A-line|A\s*line|arterial\s*line|동맥라인|CVP|중심정맥압|zeroing|leveling|transducer|waveform|파형|vasopressor|승압제|저혈압|hypotension|말초관류|perfusion|lactate|젖산|urine\s*output|소변량|patient\s*monitor|bedside\s*monitor|환자\s*모니터/.test(q)) score += 240;
-  if ((card.id || "") === "V80_HEMODYNAMIC_MONITORING_OVERVIEW" && /intubation|기관삽관|삽관|기도확보|ETT|laryngoscope|BVM|suction|tube\s*depth|루카스|LUCAS/.test(q)) score -= 300;
-
   return Math.max(0, score);
 }
 
@@ -1057,36 +1044,12 @@ function localSearch(query, limit = 6) {
 
   const focusQueryRules = [
     {
-      q: /혈역학|hemodynamic|순환계\s*모니터링|순환\s*\/\s*혈역학|MAP|ABP|A-line|A\s*line|arterial\s*line|동맥라인|CVP|중심정맥압|zeroing|leveling|transducer|waveform|파형|vasopressor|승압제|저혈압|hypotension|말초관류|perfusion|lactate|젖산|urine\s*output|소변량|patient\s*monitor|bedside\s*monitor|환자\s*모니터/,
-      ids: ["V80_HEMODYNAMIC_MONITORING_OVERVIEW", "V149_CV_CRITICAL_CARE_03_HUB", "V149_CV_31_BASIC_CIRCULATION_MONITORING", "V149_CV_33_ABP_ARTERIAL_LINE_MANAGEMENT", "V149_CV_34_CVP_CENTRAL_LINE_MONITORING", "V149_CV_35_HYPOPERFUSION_ASSESSMENT", "V149_CV_36_VASOPRESSOR_INOTROPE_MONITORING"]
-    },
-    {
-      q: /검사\s*\/?\s*검체|검사검체|검체|lab\s*bottle|lab\s*culture|채혈|채취|혈액배양|blood\s*culture|blood\s*cx|sputum\s*culture|sputum\s*cx|객담배양|urine\s*culture|urine\s*cx|소변배양|tip\s*culture|tip\s*cx|cre|cpo|cpe|vre|rat|pcd\s*검체|검체라벨|검체\s*라벨|edta|sst|citrate|sodium\s*citrate|abga\s*syringe|culture|컬쳐/,
-      ids: ["V281_LAB_SPECIMEN_CORE", "V281_LAB_CULTURE_COLLECTION_CORE", "V281_SPECIMEN_BOTTLE_TUBE_SUPPLIES", "V106_TEST_SPECIMEN_LAB_CULTURE", "V115_MENU_HUB_09", "V86_DETAIL_04", "LAB001", "SPEC001", "SPEC002", "SPEC003", "SPEC005", "V65_PCD_LABEL"]
-    },
-    {
-      q: /lucas|루카스|흉부압박기|자동 흉부압박|mechanical cpr|cpr 기계|기계압박/,
-      ids: ["V277_EMERGENCY_LUCAS_CORE", "VIDEO003", "CPR030", "UPD43_CPR_____LUCAS_E_CART", "V277_EMERGENCY_CORE_HUB", "V115_MENU_HUB_01"]
-    },
-    {
-      q: /intubation|기관삽관|삽관|기도삽관|기도확보|airway|ett|laryngoscope|후두경|etco2|capnography/,
-      ids: ["V277_EMERGENCY_INTUBATION_CORE", "V95_INTUBATION_PREP_ASSIST", "UPD43_INTUBATION", "VENT003", "V277_EMERGENCY_CORE_HUB", "V277_EMERGENCY_LUCAS_CORE"]
-    },
-    {
-      q: /응급상황|응급|cpr|심폐소생술|cpcr|e-cart|ecart|응급카트|코드블루|code blue|제세동|defib|shock|rosc/,
-      ids: ["V277_EMERGENCY_CORE_HUB", "V277_EMERGENCY_LUCAS_CORE", "V277_EMERGENCY_INTUBATION_CORE", "VIDEO003", "V115_MENU_HUB_01", "MENU001", "V116_EMERGENCY_OVERVIEW_HUB"]
-    },
-    {
       q: /crrt|fmc|신장|renal|kidney|aki|투석|dialysis|tmp|access pressure|return pressure|blood leak|air alarm|filter|kit change|blood return|return|line 연결|net uf|bfr|uf|dialysis catheter/,
       ids: ["V103_RENAL_CRRT_MANUAL_57_59"]
     },
     {
-      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c|바이알|vial|펜|pen|경구약|경구 혈당강하제|혈당강하제|oral diabetes|oral hypoglycemic|dpp-4|sglt2|tzd|glimepiride|gliclazide|repaglinide|sitagliptin|linagliptin|empagliflozin|dapagliflozin|pioglitazone|acarbose|voglibose/,
-      ids: ["V280_INSULIN_VIAL_PEN_CORE", "V280_ORAL_DIABETES_MEDICATION_CORE", "V103_BST_DM_OVERVIEW"]
-    },
-    {
-      q: /day\s*\/\s*evening\s*\/\s*night|day\s*duty|evening\s*duty|night\s*duty|데이|이브닝|나이트|근무별|근무\s*업무|근무\s*흐름|세부\s*업무|실무\s*업무|인계|handoff|라운딩|rounding|initial|final|액팅|처방정리|cadex|채혈접수|환자분류/,
-      ids: ["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13", "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"]
+      q: /혈당|bst|당뇨|dm|diabetes|내분비|endocrine|인슐린|insulin|sliding|regular insulin|ri|oha|metformin|sulfonylurea|sglt2|저혈당|고혈당|hypoglycemia|hyperglycemia|dka|hhs|glucose|hba1c/,
+      ids: ["V103_BST_DM_OVERVIEW"]
     },
     {
       q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
@@ -1143,7 +1106,7 @@ function makeLocalManualAnswer(query, cards) {
   if (!used.length) return "관련 매뉴얼 카드를 찾지 못했습니다. 검색어를 더 짧게 입력해보세요.";
 
   const lines = [];
-  lines.push("매뉴얼 DB 기반 AI 요약 답변");
+  lines.push("매뉴얼 DB 기반 AI 검색 요약");
   lines.push("질문: " + q);
   lines.push("");
   lines.push("순위 | 카드 | 먼저 볼 내용 | 표/이미지");
@@ -1237,7 +1200,7 @@ async function searchCards() {
 
   showResultsArea();
   $("answerBox").classList.add("hidden");
-  setLoading("매뉴얼 매뉴얼 카드 검색 중입니다...");
+  setLoading("카드 검색 중입니다...");
   setBusyButton("searchBtn", true, "검색 중...");
   setActionActive("searchBtn");
 
@@ -1257,7 +1220,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>매뉴얼 매뉴얼 카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>${cards.length}개 관련 카드 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } catch (err) {
     const cards = localSearch(query, 6);
     renderCards(cards);
@@ -1265,7 +1228,7 @@ async function searchCards() {
     $("status").classList.remove("hidden");
     const tableCards = cards.filter(c => (c.tables || []).length).length;
     const imageCards = cards.filter(c => (c.images || []).length).length;
-    $("status").innerHTML = `<b>매뉴얼 매뉴얼 카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
+    $("status").innerHTML = `<b>카드 검색 완료</b><span>기기 내 검색 결과 ${cards.length}개 · 표 포함 ${tableCards}개 · 이미지/사진 포함 ${imageCards}개</span>`;
   } finally {
     const hint = $("loadingHint");
     if (hint) hint.classList.add("hidden");
@@ -1285,7 +1248,7 @@ async function askAI() {
   showResultsArea();
   setActionActive("askBtn");
   $("status").classList.remove("hidden");
-  $("status").textContent = "매뉴얼 DB 검색 후 AI 요약 답변 생성 중...";
+  $("status").textContent = "매뉴얼 DB 검색 후 AI 답변 생성 중...";
   $("answerBox").classList.add("hidden");
   $("cards").innerHTML = "";
   try {
@@ -1342,29 +1305,6 @@ function bindClick(id, handler) {
     handler(event);
   });
 }
-
-
-function applyPrimaryButtonLabelsV278() {
-  const labels = {
-    askBtn: "AI 요약 답변",
-    searchBtn: "매뉴얼 매뉴얼 카드 검색",
-    clearBtn: "초기화",
-    resetBtn: "초기화"
-  };
-  Object.entries(labels).forEach(([id, label]) => {
-    const btn = $(id) || document.getElementById(id);
-    if (!btn) return;
-    btn.textContent = label;
-    btn.dataset.originalText = label;
-    btn.setAttribute("aria-label", label);
-    if (id === "askBtn") btn.title = "검색어에 맞는 매뉴얼 내용을 AI가 요약합니다.";
-    if (id === "searchBtn") btn.title = "검색어와 관련된 매뉴얼 카드·이미지·동영상을 찾습니다.";
-    if (id === "clearBtn" || id === "resetBtn") btn.title = "검색어와 결과를 초기화합니다.";
-  });
-}
-
-applyPrimaryButtonLabelsV278();
-document.addEventListener("DOMContentLoaded", applyPrimaryButtonLabelsV278);
 
 bindClick("askBtn", askAI);
 bindClick("searchBtn", searchCards);
