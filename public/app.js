@@ -937,6 +937,9 @@ function scoreCard(query, card) {
   ].join(" "));
 
   const topicRules = [
+    // v292_restraint_direct_rule: 신체보호대 검색 시 관련 없는 A-line/X-ray/EMR 이미지를 제외
+
+    { q: /신체보호대|억제대|\brestraint\b|\brestrain\b|보호대\s*(적용|기록|평가|모니터링|해제|매듭|순환|피부)|정방향\s*매듭|고리\s*매듭|클로브\s*히치|square\s*knot|slip\s*knot|clove\s*hitch/, keep: /신체보호대|억제대|restraint|restrain|보호대|매듭|knot|routine010|v87_restraint|v88_restraint|v87_knot|v88_knot|video_v91_restraint/ },
 
     { q: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|i\/?o|활력징후|v\/s/, keep: /icu\s*flow\s*sheet|flow\s*sheet|flowsheet|누락방지|emr|간호기록|v\/s|활력징후|i\/?o|line|drain|배액|호흡|ventilator|순환|약물|v85|routine009/ },
     { q: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별\s*업무/, keep: /간호업무|안전기록|낙상|욕창|통증|soap|간호처방|braden|nrs|인계|근무별|documentation|nursing|v85|chart030|record001|emr001/ },
