@@ -1,3 +1,4 @@
+// V293_TTM_VIDEO_SEARCH_LINKED
 // V283_HEMODYNAMIC_MONITORING_RELEVANCE_FIXED
 // V282_SHIFT_WORKFLOW_RELEVANCE_FIXED
 // V47_BOOT_ERROR_HANDLER
@@ -887,7 +888,11 @@ function expandSearchTerms(rawTerms) {
     "드레싱": ["dressing", "wound", "상처", "소독", "드레싱재료", "폼드레싱"],
     "소독": ["disinfection", "sterile", "wound cleansing"],
     "엑스레이": ["x-ray", "xray", "radiograph", "chest xray", "폐렴", "기흉", "폐부종", "흉수", "무기폐"],
-    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"]
+    "xray": ["x-ray", "radiograph", "엑스레이", "pneumonia", "pneumothorax", "edema", "effusion", "atelectasis"],
+    "ttm": ["저체온 치료", "목표 체온 관리", "목표온도관리", "targeted temperature management", "therapeutic hypothermia", "ROSC", "post cardiac arrest", "shivering", "재가온", "교육영상"],
+    "저체온": ["TTM", "저체온 치료", "목표 체온 관리", "targeted temperature management", "cooling vest", "cooling pad", "shivering", "재가온"],
+    "저체온 치료": ["TTM", "targeted temperature management", "therapeutic hypothermia", "ROSC", "심정지 후 관리", "TTM 교육 영상"],
+    "뇌사": ["TTM", "저체온 치료", "체온 관리", "목표 체온 관리", "brain death"]
   };
   const out = [...rawTerms];
   rawTerms.forEach(t => {
@@ -938,6 +943,9 @@ function scoreCard(query, card) {
 
   const topicRules = [
     // v292_restraint_direct_rule: 신체보호대 검색 시 관련 없는 A-line/X-ray/EMR 이미지를 제외
+
+    // v293_ttm_video_search_rule: TTM/저체온 치료 검색 시 TTM 이미지와 교육 영상 카드 우선 표시
+    { q: /ttm|저체온|목표\s*체온|목표온도|targeted\s*temperature|therapeutic\s*hypothermia|cooling\s*vest|cooling\s*pad|shivering|재가온|뇌사|brain\s*death/, keep: /ttm|저체온|목표\s*체온|목표온도|temperature\s*management|therapeutic\s*hypothermia|cooling|shivering|재가온|뇌사|brain\s*death|TTM001|targeted_temperature/ },
 
     { q: /신체보호대|억제대|\brestraint\b|\brestrain\b|보호대\s*(적용|기록|평가|모니터링|해제|매듭|순환|피부)|정방향\s*매듭|고리\s*매듭|클로브\s*히치|square\s*knot|slip\s*knot|clove\s*hitch/, keep: /신체보호대|억제대|restraint|restrain|보호대|매듭|knot|routine010|v87_restraint|v88_restraint|v87_knot|v88_knot|video_v91_restraint/ },
 
@@ -1014,6 +1022,10 @@ function scoreCard(query, card) {
   if ((card.id || "").startsWith("V98_") && /원내|프로토콜|병동간호팀|142|149|응급간호|e-cart|응급카트|제세동기|aed|ekg|역할분담|dr\.?\s*call|6114|코드블루|전원/.test(q)) score += 90;
 
   
+
+  // v293_ttm_video_score_boost: TTM/저체온 치료/뇌사 검색 시 TTM 교육 영상 카드 최우선
+  if (/ttm|저체온|목표\s*체온|목표온도|targeted\s*temperature|therapeutic\s*hypothermia|cooling\s*vest|cooling\s*pad|shivering|재가온|뇌사|brain\s*death/.test(q) && /TTM|저체온|targeted temperature|therapeutic hypothermia|temperature management|뇌사/.test(topicSeed)) score += 260;
+
   if ((card.id || "").startsWith("V99_") && /순환|모니터링|혈압|vital|에이라인|a-line|arterial line|waveform|zeroing|씨라인|c-line|cvp|ekg|ecg|tachy|brady|i\/o|섭취량|배설량|소변량|승압제|vasopressor|말초순환|perfusion/.test(q)) score += 95;
 
 
