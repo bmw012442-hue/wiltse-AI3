@@ -477,13 +477,24 @@ function urgencyBadge(card) {
 }
 
 
+function getDocuments(card) {
+  return [...(Array.isArray(card.documents) ? card.documents : []), ...(Array.isArray(card.file_links) ? card.file_links : [])]
+    .filter(Boolean)
+    .filter((d, idx, arr) => {
+      const key = (d.href || d.src || d.url || d.link || d.title || "") + "|" + (d.title || "");
+      return arr.findIndex(x => ((x.href || x.src || x.url || x.link || x.title || "") + "|" + (x.title || "")) === key) === idx;
+    });
+}
+
 function resultMediaSummary(card) {
   const tableCount = (card.tables || []).length;
   const imageCount = (card.images || []).length;
   const videoCount = (card.videos || []).length;
-  if (!tableCount && !imageCount && !videoCount) return "";
+  const documentCount = getDocuments(card).length;
+  if (!tableCount && !imageCount && !videoCount && !documentCount) return "";
   return `<div class="result-media-summary">
     ${videoCount ? `<span class="media-pill video-pill">동영상 ${videoCount}개</span>` : ""}
+    ${documentCount ? `<span class="media-pill file-pill">자료 파일 ${documentCount}개</span>` : ""}
     ${tableCount ? `<span class="media-pill table-pill">참고 표 ${tableCount}개</span>` : ""}
     ${imageCount ? `<span class="media-pill image-pill">이미지/사진 ${imageCount}개</span>` : ""}
   </div>`;
@@ -508,6 +519,15 @@ function renderMiniTable(card) {
 }
 
 
+function renderMiniDocuments(card) {
+  const docs = getDocuments(card).slice(0, 2);
+  if (!docs.length) return "";
+  return `<div class="result-video-preview" aria-label="자료 파일 미리보기">
+    ${docs.map(d => `<div class="video-preview-chip file-preview-chip">📄 ${esc(d.title || d.caption || "자료 파일")}</div>`).join("")}
+    ${getDocuments(card).length > 2 ? `<span class="more-images">+${getDocuments(card).length - 2}</span>` : ""}
+  </div>`;
+}
+
 function renderMiniVideos(card) {
   const videos = (card.videos || []).slice(0, 2);
   if (!videos.length) return "";
@@ -531,16 +551,20 @@ function renderResultStats(cards) {
   const tableCards = arr.filter(c => (c.tables || []).length).length;
   const imageCards = arr.filter(c => (c.images || []).length).length;
   const videoCards = arr.filter(c => (c.videos || []).length).length;
+  const documentCards = arr.filter(c => getDocuments(c).length).length;
   const tables = arr.reduce((sum, c) => sum + ((c.tables || []).length), 0);
   const images = arr.reduce((sum, c) => sum + ((c.images || []).length), 0);
   const videos = arr.reduce((sum, c) => sum + ((c.videos || []).length), 0);
+  const documents = arr.reduce((sum, c) => sum + getDocuments(c).length, 0);
   if (!arr.length) return "";
   return `<div class="result-stats">
     <span>검색 결과 ${arr.length}개</span>
     <span>동영상 포함 카드 ${videoCards}개</span>
+    <span>자료 파일 포함 카드 ${documentCards}개</span>
     <span>표 포함 카드 ${tableCards}개</span>
     <span>이미지/사진 포함 카드 ${imageCards}개</span>
     <span>동영상 ${videos}개</span>
+    <span>자료 파일 ${documents}개</span>
     <span>표 ${tables}개</span>
     <span>이미지/사진 ${images}개</span>
   </div>`;
@@ -556,6 +580,7 @@ function renderCards(cards) {
       ${urgencyBadge(card)}
       ${resultMediaSummary(card)}
       ${renderMiniVideos(card)}
+      ${renderMiniDocuments(card)}
       ${renderMiniTable(card)}
       ${renderMiniImages(card)}
       <div class="meta">탭하면 상세내용에서 핵심 절차, 참고 표, 이미지/사진을 확인할 수 있습니다.</div>
@@ -652,6 +677,25 @@ function renderImages(images) {
 }
 
 
+function renderDocuments(documents) {
+  const docs = Array.isArray(documents) ? documents.filter(Boolean) : [];
+  if (!docs.length) return "";
+  return `<section class="detail-section file-section">
+    <h4>참고 자료 파일</h4>
+    <div class="video-list file-list">
+      ${docs.map((d, idx) => {
+        const title = d.title || d.caption || `자료 파일 ${idx + 1}`;
+        const target = d.href || d.src || d.url || d.link || "";
+        return `<div class="video-link-item file-link-item">
+          <a class="video-link-button file-link-button" href="${esc(target)}" target="_blank" rel="noopener noreferrer">📄 ${esc(title)}</a>
+          ${d.caption ? `<div class="video-link-caption">${esc(d.caption)}</div>` : ""}
+        </div>`;
+      }).join("")}
+    </div>
+    <div class="video-note">자료 파일은 새 창에서 열리거나 다운로드될 수 있습니다. 열리지 않으면 브라우저 다운로드 목록을 확인하세요.</div>
+  </section>`;
+}
+
 function renderVideos(videos) {
   if (!Array.isArray(videos) || videos.length === 0) return "";
   return `<section class="detail-section video-section">
@@ -715,14 +759,14 @@ function renderStructuredCard(card) {
   const hasPrep = hasMeaningfulList(card.preparation);
   const hasWarnings = hasMeaningfulList(card.warnings);
   const hasRecords = hasMeaningfulList(recordPoints);
-  const hasMedia = (Array.isArray(card.tables) && card.tables.length) || (Array.isArray(card.images) && card.images.length) || (Array.isArray(card.videos) && card.videos.length);
+  const hasMedia = (Array.isArray(card.tables) && card.tables.length) || (Array.isArray(card.images) && card.images.length) || (Array.isArray(card.videos) && card.videos.length) || getDocuments(card).length;
   const preferMediaFirst = !!card.prefer_media_first || hasMedia;
   const hideRawSteps = !!card.hide_raw_steps && hasMedia;
   const stepsSection = hideRawSteps ? "" : `<section class="detail-section core-section">
         <h4>핵심 절차</h4>
         ${renderSimpleLines(coreSteps)}
       </section>`;
-  const mediaBlock = `${renderVideos(card.videos)}${renderTables(card.tables)}${renderImages(card.images)}`;
+  const mediaBlock = `${renderVideos(card.videos)}${renderDocuments(getDocuments(card))}${renderTables(card.tables)}${renderImages(card.images)}`;
 
   return `
     <div class="structured-card simple-core-card">
@@ -914,7 +958,10 @@ function mediaSearchText(card) {
   const videoText = (card.videos || []).flatMap(v => [
     v.title || "", v.caption || "", ...(v.search_terms || []), v.src || "", v.href || "", v.url || "", v.link || ""
   ]);
-  return [...tableText, ...imageText, ...videoText].join(" " );
+  const documentText = getDocuments(card).flatMap(d => [
+    d.title || "", d.caption || "", d.type || "", ...(d.search_terms || []), d.src || "", d.href || "", d.url || "", d.link || ""
+  ]);
+  return [...tableText, ...imageText, ...videoText, ...documentText].join(" " );
 }
 
 function cardSearchText(card) {
