@@ -692,7 +692,7 @@ function renderDocuments(documents) {
         </div>`;
       }).join("")}
     </div>
-    <div class="video-note">자료 파일은 새 창에서 열리거나 다운로드될 수 있습니다. 열리지 않으면 브라우저 다운로드 목록을 확인하세요.</div>
+    <div class="video-note">자료 파일은 새 창에서 열리거나 다운로드될 수 있습니다. PPT가 바로 열리지 않으면 브라우저 다운로드 목록에서 확인하세요.</div>
   </section>`;
 }
 
@@ -719,7 +719,7 @@ function renderVideos(videos) {
         </figure>`;
       }).join("")}
     </div>
-    <div class="video-note">동영상은 Google Drive 링크로 새 창에서 열립니다. 재생이 안 되면 Drive 공유 설정을 확인하세요.</div>
+    <div class="video-note">동영상은 YouTube/Drive 등 외부 링크로 새 창에서 열립니다. 재생이 안 되면 링크 권한 또는 병원 네트워크 설정을 확인하세요.</div>
   </section>`;
 }
 
