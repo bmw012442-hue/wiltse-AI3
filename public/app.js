@@ -1007,6 +1007,7 @@ function scoreCard(query, card) {
     { q: /ns 수술|os 수술|ns\/os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기/, keep: /ns|os|수술명|수술 전 검사|수술전 검사|약어|관찰표|보조기|neuro sign|cms/ },
     { q: /검사 검체|검체|lab bottle|채혈|blood culture|sputum culture|urine culture|tip culture|cre|cpe|vre|rat/, keep: /검사\/검체|검체|lab bottle|채혈|culture|cre|cpe|vre|rat|abga 검체|specimen/ },
     { q: /공급실|csr|소독기구|기구 사진|dressing\/suture/, keep: /공급실|csr|소독기구|기구 사진|dressing\/suture|sterile/ },
+    { q: /마취|마취\s*회복|마취에서\s*빨리\s*깨우는\s*주사제|마취\s*빨리\s*깨우는\s*주사|마취\s*깨우는\s*약|마취\s*길항제|마취\s*역전제|flumazenil|플루마제닐|naloxone|날록손|sugammadex|수가마덱스|neostigmine|네오스티그민|잔여\s*근이완|근이완제\s*역전|pacu/, keep: /마취|마취\s*회복|길항제|역전제|flumazenil|플루마제닐|naloxone|날록손|sugammadex|수가마덱스|neostigmine|네오스티그민|benzodiazepine|opioid|근이완제|신경근|잔여\s*근이완|ANES306|pacu|회복실/ },
     { q: /crrt|fmc|신장|dka|bst|인슐린|저혈당|고혈당/, keep: /crrt|fmc|신장|renal|bst|dka|인슐린|저혈당|고혈당|dm/ }
   ];
   for (const rule of topicRules) {
@@ -1069,6 +1070,10 @@ function scoreCard(query, card) {
   if ((card.id || "").startsWith("V98_") && /원내|프로토콜|병동간호팀|142|149|응급간호|e-cart|응급카트|제세동기|aed|ekg|역할분담|dr\.?\s*call|6114|코드블루|전원/.test(q)) score += 90;
 
   
+
+
+  // v306_anesthesia_reversal_score_boost: 마취 회복 지연/길항제 검색 시 해당 카드 우선
+  if ((card.id || "") === "ANES306_ANESTHESIA_REVERSAL_DRUGS_CORE" && /마취|마취\s*회복|마취에서\s*빨리\s*깨우는\s*주사제|마취\s*깨우는\s*약|마취\s*길항제|flumazenil|플루마제닐|naloxone|날록손|sugammadex|수가마덱스|neostigmine|네오스티그민|잔여\s*근이완|근이완제\s*역전|pacu/.test(q)) score += 150;
 
   // v293_ttm_video_score_boost: TTM/저체온 치료/뇌사 검색 시 TTM 교육 영상 카드 최우선
   if (/ttm|저체온|목표\s*체온|목표온도|targeted\s*temperature|therapeutic\s*hypothermia|cooling\s*vest|cooling\s*pad|shivering|재가온|뇌사|brain\s*death/.test(q) && /TTM|저체온|targeted temperature|therapeutic hypothermia|temperature management|뇌사/.test(topicSeed)) score += 260;
