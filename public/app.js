@@ -1151,7 +1151,9 @@ function localSearch(query, limit = 6) {
       ids: ["MENU008", "V85_DETAIL_07", "V107_SHIFT_WORKFLOW_HANDOFF", "V115_MENU_HUB_13", "V85_NURSING_SAFETY_DOCUMENTATION_WORKFLOW_OVERVIEW"]
     },
     {
-      q: /공급실|csr|소독기구|sterile tools|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
+      // v305_CSR: CSR/공급실/소독기구 검색은 대표 카드 1개만 노출
+      // CPR/E-CART/검체 분리 기준 카드가 섞이지 않도록 검색 풀을 제한합니다.
+      q: /공급실|csr|소독기구|멸균기구|sterile tools|sterile supply|forcep|scissors|kelly|mosquito|needle holder|dressing set|suture set|irrigation set|sharps count|기구 이름|기구 생김새/,
       ids: ["V170_STERILE_SUPPLY_TOOLS_OVERVIEW"]
     },
     {
