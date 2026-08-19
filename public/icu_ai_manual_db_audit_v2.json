@@ -1,11 +1,11 @@
 {
   "app": {
     "name": "ICU AI 업무 매뉴얼",
-    "version": "3.05.0-csr-relevance-cleanup",
+    "version": "3.09.0-specimen-lab-cytology-pcd-acth",
     "language": "ko",
-    "source": "v305 CSR/sterile supply relevance cleanup",
+    "source": "v309 specimen/lab cytology PCD ACTH unified image card",
     "notice": "병원 내부 프로토콜 확인용 보조 자료입니다. 실제 처치·투약·처방은 담당의 지시와 병원 최신 지침을 우선합니다. 환자 개인정보는 입력하지 마세요.",
-    "updated_at": "2026-07-28",
+    "updated_at": "2026-08-19",
     "updated": "2026-07-23",
     "purpose": "ECMO/에크모 검색 시 ECMO 핵심 정리 이미지가 영상·PDF 자료와 함께 보이도록 public DB에 직접 병합"
   },
@@ -118307,7 +118307,12 @@
         "ECMO",
         "CRRT",
         "출혈 모니터링",
-        "항응고"
+        "항응고",
+        "항트롬빈주",
+        "항트롬빈",
+        "파종성혈관내응고",
+        "범발성 혈관내 응고",
+        "응고장애"
       ],
       "search_terms": [
         "항트로빈주",
@@ -118342,7 +118347,14 @@
         "혈뇨",
         "혈변",
         "토혈",
-        "anticoagulation"
+        "anticoagulation",
+        "항트롬빈주",
+        "항트롬빈",
+        "dic",
+        "파종성혈관내응고",
+        "범발성 혈관내 응고",
+        "응고장애",
+        "혈액응고장애"
       ],
       "urgency": "high",
       "priority": "high",
@@ -118430,7 +118442,11 @@
             "DIC",
             "ECMO",
             "CRRT",
-            "출혈 모니터링"
+            "출혈 모니터링",
+            "항트롬빈주",
+            "항트롬빈",
+            "파종성혈관내응고",
+            "응고장애"
           ]
         }
       ],
@@ -118929,6 +118945,376 @@
       "video_count": 1,
       "file_count": 1,
       "table_count": 1
+    },
+    {
+      "id": "ANES306_ANESTHESIA_REVERSAL_DRUGS_CORE",
+      "title": "마취 회복 지연 시 길항제 주사제 핵심 정리",
+      "display_title": "마취 환자 빨리 깨울 때 사용하는 주사제 정리",
+      "category": "약물 / 마취 / 회복실 / 응급대응",
+      "original_category": "약물 / 마취 / 회복실 / 길항제",
+      "subcategory": "마취 회복 지연 · Flumazenil · Naloxone · Sugammadex · Neostigmine",
+      "priority": "high",
+      "type": "high",
+      "summary": "마취 후 환자가 잘 깨지 않을 때 원인 약물별로 확인해야 할 길항제 주사제와 간호 관찰 포인트를 2장의 통일된 교육 이미지로 정리한 카드입니다. Benzodiazepine 영향 시 Flumazenil, Opioid 영향 시 Naloxone, 잔여 근이완 시 Sugammadex 또는 Neostigmine 계열을 함께 확인합니다.",
+      "aliases": [
+        "마취",
+        "마취 회복",
+        "마취 회복 지연",
+        "마취에서 빨리 깨우는 주사제",
+        "마취 빨리 깨우는 주사",
+        "마취 깨우는 약",
+        "마취 깨우는 주사",
+        "마취 길항제",
+        "마취 역전제",
+        "reversal agent",
+        "Flumazenil",
+        "플루마제닐",
+        "Naloxone",
+        "날록손",
+        "Sugammadex",
+        "수가마덱스",
+        "Neostigmine",
+        "네오스티그민",
+        "Glycopyrrolate",
+        "글리코피롤레이트",
+        "Atropine",
+        "아트로핀",
+        "benzodiazepine antagonist",
+        "opioid antagonist",
+        "neuromuscular reversal",
+        "근이완제 역전",
+        "잔여 근이완",
+        "BZD",
+        "opioid",
+        "rocuronium",
+        "vecuronium"
+      ],
+      "search_terms": [
+        "마취",
+        "마취 회복",
+        "마취 회복 지연",
+        "마취에서 빨리 깨우는 주사제",
+        "마취 빨리 깨우는 주사제",
+        "마취 빨리 깨우는 주사",
+        "마취 깨우는 약",
+        "마취 깨우는 주사",
+        "마취 길항제",
+        "마취 역전제",
+        "flumazenil",
+        "플루마제닐",
+        "benzodiazepine",
+        "BZD",
+        "midazolam",
+        "diazepam",
+        "lorazepam",
+        "naloxone",
+        "날록손",
+        "opioid",
+        "fentanyl",
+        "remifentanil",
+        "morphine",
+        "pethidine",
+        "호흡억제",
+        "sugammadex",
+        "수가마덱스",
+        "bridion",
+        "rocuronium",
+        "vecuronium",
+        "근이완제",
+        "신경근 차단",
+        "neostigmine",
+        "네오스티그민",
+        "glycopyrrolate",
+        "글리코피롤레이트",
+        "atropine",
+        "아트로핀",
+        "TOF",
+        "train of four",
+        "잔여 근이완",
+        "회복실",
+        "PACU",
+        "수술 후 의식저하",
+        "수술 후 호흡억제"
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v306_anesthesia_reversal_drugs_core.png",
+          "alt": "마취 회복 지연 시 길항제 주사제 핵심 정리",
+          "caption": "마취 회복 지연 시 원인 약물별 길항제 주사제 핵심 정리 이미지",
+          "search_terms": [
+            "마취",
+            "마취 회복",
+            "마취 길항제",
+            "Flumazenil",
+            "Naloxone",
+            "Sugammadex",
+            "Neostigmine"
+          ]
+        },
+        {
+          "src": "selected_manual_images/v307_anesthesia_quick_wakeup_drugs_summary.png",
+          "alt": "마취 환자 빨리 깨울 때 사용하는 주사제 정리",
+          "caption": "원인 약물에 따라 적절한 길항제를 선택하는 상세 요약 이미지",
+          "search_terms": [
+            "마취",
+            "마취에서 빨리 깨우는 주사제",
+            "마취 깨우는 약",
+            "Flumazenil",
+            "Naloxone",
+            "Sugammadex",
+            "Neostigmine"
+          ]
+        }
+      ],
+      "selected_manual_image": "/selected_manual_images/v306_anesthesia_reversal_drugs_core.png",
+      "selected_manual_images": [
+        "/selected_manual_images/v306_anesthesia_reversal_drugs_core.png",
+        "/selected_manual_images/v307_anesthesia_quick_wakeup_drugs_summary.png"
+      ],
+      "tables": [
+        {
+          "title": "마취 회복 지연 시 길항제 선택 기준",
+          "headers": [
+            "원인 약물",
+            "대표 주사제",
+            "간호 핵심"
+          ],
+          "rows": [
+            [
+              "Benzodiazepine 진정 영향",
+              "Flumazenil",
+              "재진정·호흡억제·경련 위험 관찰"
+            ],
+            [
+              "Opioid 호흡억제/의식저하",
+              "Naloxone",
+              "호흡 회복, 통증 급증, 재호흡억제 관찰"
+            ],
+            [
+              "Rocuronium/Vecuronium 잔여 근이완",
+              "Sugammadex",
+              "TOF/자발호흡/근력 회복, bradycardia/과민반응 관찰"
+            ],
+            [
+              "비탈분극성 근이완제 잔여",
+              "Neostigmine + Glycopyrrolate/Atropine",
+              "항콜린제 병용, 서맥/분비물/불완전 회복 관찰"
+            ]
+          ]
+        }
+      ],
+      "preparation": [
+        "마취기록에서 투여 약물, 마지막 투여 시간, 누적 용량, 근이완제 사용 여부를 확인합니다.",
+        "V/S, SpO2, EtCO2, 의식수준, pupil, 자발호흡, 근력/TOF, 혈당, 체온을 먼저 확인합니다.",
+        "주사제 투여는 반드시 마취과/담당의 처방과 병원 프로토콜에 따릅니다."
+      ],
+      "steps": [
+        "환자가 안 깨는 이유가 약 때문인지 먼저 감별합니다.",
+        "BZD 진정 영향이 의심되면 Flumazenil 처방 여부를 확인합니다.",
+        "Opioid 호흡억제/의식저하가 의심되면 Naloxone 처방 여부와 재호흡억제 가능성을 확인합니다.",
+        "근이완제 잔여가 의심되면 TOF/호흡/근력 회복 여부와 Sugammadex 또는 Neostigmine 계열 처방을 확인합니다.",
+        "투여 후 지속 모니터링하고 재진정, 호흡억제, 혈역학 변화, 이상반응을 즉시 보고합니다."
+      ],
+      "warnings": [
+        "길항제는 원인 약물에 맞게 선택해야 하며, 경험적으로 무분별하게 사용하지 않습니다.",
+        "Flumazenil은 경련 위험이 있어 만성 BZD 복용자, 경련 병력, 혼합 약물 중독 의심 시 특히 주의합니다.",
+        "Naloxone은 급격한 통증, 혈압 상승, 금단, 재호흡억제가 생길 수 있어 환자 상태를 보며 관찰합니다.",
+        "Sugammadex는 Rocuronium/Vecuronium 역전에 사용하며, 서맥·과민반응 가능성을 관찰합니다.",
+        "Neostigmine은 항콜린제 병용이 필요하며, 환자의 환기/기도 유지 능력 회복을 함께 평가합니다."
+      ],
+      "charting": [
+        "투여 전 상태, 의심 원인 약물, 처방 확인, 투여 약명/용량/시간/route, 투여 후 의식·호흡·V/S 변화, 이상반응, 보고 대상과 시간을 기록합니다."
+      ],
+      "tags": [
+        "high",
+        "마취",
+        "길항제",
+        "이미지/사진 2개",
+        "표 1개"
+      ],
+      "exclude_queries": [
+        "CSR",
+        "공급실",
+        "소독기구",
+        "TTM",
+        "저체온",
+        "LUCAS",
+        "CPR",
+        "ECMO",
+        "항트로빈주",
+        "욕창",
+        "검체",
+        "수혈"
+      ],
+      "v307_note": "기존 이미지 1장 + 상세 요약 이미지 1장, 총 2장 표시"
+    },
+    {
+      "id": "V309_SPECIMEN_LAB_CYTOLOGY_PCD_ACTH_CORE",
+      "title": "검체 / 검사 실무 메뉴: 세포병리 · PCD · ACTH test",
+      "display_title": "검체 / 검사 실무 핵심 정리",
+      "category": "검체 / 검사 / 실무 메뉴",
+      "original_category": "검사 / 검체 / 병리 / 내분비",
+      "subcategory": "세포병리의뢰서 · PCD 검체 라벨 · ACTH stimulation Test",
+      "priority": "high",
+      "type": "high",
+      "summary": "세포병리 의뢰서 작성 방법, PCD pleural fluid 검체 처방 시 검체용기·바코드 라벨 부착 방법, ACTH stimulation test의 기본 채혈·시낙텐 투여·60분 후 Cortisol 채혈 흐름을 한 장으로 정리한 실무 교육 이미지 카드입니다.",
+      "aliases": [
+        "검체",
+        "검사",
+        "검체 검사",
+        "검체/검사",
+        "Lab",
+        "lab test",
+        "specimen",
+        "specimen test",
+        "세포병리의뢰서",
+        "세포병리 의뢰서",
+        "세포병리",
+        "cytology request",
+        "cytology form",
+        "PCD 검체",
+        "PCD 검체 라벨",
+        "PCD 검체 라벨 부착",
+        "PCD 검체 처방",
+        "PCD label",
+        "pleural fluid",
+        "흉수 검사",
+        "흉수 검체",
+        "fluid culture",
+        "체액검사9종",
+        "Total amylase",
+        "LDH",
+        "ACTH test",
+        "ACTH stimulation test",
+        "ACTH stimulation Test",
+        "ACTH 검사",
+        "ACTH 자극검사",
+        "시낙텐",
+        "Synacthen",
+        "Tetracosactrin",
+        "코티솔",
+        "Cortisol",
+        "부신기능검사"
+      ],
+      "search_terms": [
+        "검체",
+        "검사",
+        "검체 검사",
+        "검체/검사",
+        "lab",
+        "specimen",
+        "검체 채취",
+        "검체 라벨",
+        "검체 바코드",
+        "세포병리의뢰서",
+        "세포병리 의뢰서 작성",
+        "세포병리",
+        "병리 의뢰서",
+        "cytology request form",
+        "PCD",
+        "PCD 검체",
+        "PCD 검체 라벨",
+        "PCD 검체 라벨 붙이는 방법",
+        "PCD 검체 처방 시 검체라벨",
+        "Pleural fluid",
+        "Total amylase",
+        "LDH",
+        "체액검사9종",
+        "체액 검사 9종",
+        "Fluid culture",
+        "흉수 culture",
+        "흉수 검체",
+        "ACTH",
+        "ACTH test",
+        "ACTH stimulation test",
+        "ACTH stimulation Test",
+        "ACTH 검사",
+        "ACTH 자극검사",
+        "ACTH EDTA",
+        "Cortisol Serum",
+        "Cortisol",
+        "코티솔",
+        "시낙텐",
+        "Synacthen",
+        "Tetracosactrin",
+        "부신피질자극호르몬 검사"
+      ],
+      "images": [
+        {
+          "src": "selected_manual_images/v309_specimen_lab_cytology_pcd_acth_core.png",
+          "alt": "검체 검사 실무 메뉴 세포병리 의뢰서 PCD 검체 라벨 ACTH stimulation test 핵심 정리",
+          "caption": "세포병리의뢰서 · PCD 검체 라벨 부착 · ACTH stimulation Test 통합 실무 이미지",
+          "search_terms": [
+            "검체",
+            "검사",
+            "세포병리의뢰서",
+            "PCD 검체",
+            "PCD 라벨",
+            "ACTH test",
+            "ACTH stimulation test",
+            "Cortisol",
+            "시낙텐"
+          ]
+        }
+      ],
+      "selected_manual_image": "/selected_manual_images/v309_specimen_lab_cytology_pcd_acth_core.png",
+      "selected_manual_images": [
+        "/selected_manual_images/v309_specimen_lab_cytology_pcd_acth_core.png"
+      ],
+      "image_paths": [
+        "/selected_manual_images/v309_specimen_lab_cytology_pcd_acth_core.png"
+      ],
+      "tables": [
+        {
+          "title": "검체 / 검사 실무 메뉴 연결표",
+          "headers": [
+            "검색 주제",
+            "이미지에서 확인할 내용"
+          ],
+          "rows": [
+            [
+              "세포병리의뢰서",
+              "의뢰기관명·환자정보·병동·주치의 기입 및 임상진단/검사소견 작성 예시"
+            ],
+            [
+              "PCD 검체",
+              "Pleural fluid 검사 항목별 검체용기와 체액검사9종 선택 후 바코드 재발행 흐름"
+            ],
+            [
+              "ACTH stimulation test",
+              "기저 ACTH/코티솔 채혈 → 시낙텐 0.25mg IV → 60분 후 Cortisol 채혈 흐름"
+            ]
+          ]
+        }
+      ],
+      "preparation": [
+        "세포병리의뢰서는 의뢰기관·환자정보·병동/주치의와 임상진단/검사소견을 확인합니다.",
+        "PCD 검체는 처방 항목과 검체용기, 라벨/바코드 재발행 여부를 확인합니다.",
+        "ACTH stimulation test는 기저 ACTH(EDTA)와 Cortisol(Serum) 채혈 후 시낙텐 투여 및 60분 후 Cortisol 채혈 순서를 확인합니다."
+      ],
+      "steps": [
+        "세포병리 의뢰서: 환자/의뢰기관 정보 확인 → 검사 종류 확인 → 임상진단 및 영상/검사 소견 기재",
+        "PCD 검체: 검체 처방 확인 → 채혈접수 안내 → 항목 선택 → 체액검사9종 선택 시 바코드 재발행 → 용기에 맞는 라벨 부착",
+        "ACTH stimulation test: 기저 ACTH·Cortisol 채혈 → 시낙텐 0.25mg IV → 60분 후 Cortisol 채혈"
+      ],
+      "warnings": [
+        "검체 용기와 검사 항목, 바코드 부착 대상이 맞는지 반드시 확인합니다.",
+        "세포병리 의뢰서와 검체 라벨의 환자정보가 일치하는지 확인합니다.",
+        "검사 목적과 상황에 따라 검사 항목이 달라질 수 있으므로 실제 처방/병원 기준을 우선합니다."
+      ],
+      "charting": [
+        "필요 시 검체 채취시간, 검체 종류, 라벨/바코드 재발행 여부, 검사 시행 시간과 관련 내용을 병원 기준에 따라 기록합니다."
+      ],
+      "tags": [
+        "high",
+        "검체",
+        "검사",
+        "세포병리",
+        "PCD",
+        "ACTH test",
+        "이미지/사진 1개",
+        "표 1개"
+      ]
     }
   ],
   "final_review_note": {
@@ -121777,6 +122163,35 @@
       "/selected_manual_images/sterile_supply_tools_summary.png",
       "/selected_manual_images/v288_csr_sterile_surgical_instruments_core.png",
       "/selected_manual_images/v305_disinfection_dressing_core.png"
+    ]
+  },
+  "v306_anesthesia_reversal_update": {
+    "updated_at": "2026-07-28",
+    "summary": "마취 회복 지연 시 길항제 주사제 핵심 정리 카드와 통일 이미지 추가",
+    "card_id": "ANES306_ANESTHESIA_REVERSAL_DRUGS_CORE",
+    "image": "/selected_manual_images/v306_anesthesia_reversal_drugs_core.png",
+    "search_terms": [
+      "마취",
+      "마취에서 빨리 깨우는 주사제",
+      "Flumazenil",
+      "Naloxone",
+      "Sugammadex",
+      "Neostigmine"
+    ]
+  },
+  "v309_specimen_lab_update": {
+    "updated_at": "2026-08-19",
+    "summary": "검체/검사 실무 메뉴에 세포병리의뢰서, PCD 검체 라벨, ACTH stimulation test 통합 이미지 카드 추가",
+    "card_id": "V309_SPECIMEN_LAB_CYTOLOGY_PCD_ACTH_CORE",
+    "image": "/selected_manual_images/v309_specimen_lab_cytology_pcd_acth_core.png",
+    "search_terms": [
+      "검체",
+      "검사",
+      "세포병리의뢰서",
+      "PCD 검체",
+      "PCD 검체 라벨",
+      "ACTH test",
+      "ACTH stimulation test"
     ]
   }
 }
