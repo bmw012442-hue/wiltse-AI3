@@ -1075,6 +1075,9 @@ function scoreCard(query, card) {
   // v306_anesthesia_reversal_score_boost: 마취 회복 지연/길항제 검색 시 해당 카드 우선
   if ((card.id || "") === "ANES306_ANESTHESIA_REVERSAL_DRUGS_CORE" && /마취|마취\s*회복|마취에서\s*빨리\s*깨우는\s*주사제|마취\s*깨우는\s*약|마취\s*길항제|flumazenil|플루마제닐|naloxone|날록손|sugammadex|수가마덱스|neostigmine|네오스티그민|잔여\s*근이완|근이완제\s*역전|pacu/.test(q)) score += 150;
 
+  // v310_dnr_death_icu_discharge_score_boost: DNR 사망/ICU 퇴원 절차 카드 우선
+  if ((card.id || "") === "V310_DNR_DEATH_ICU_DISCHARGE_PROCEDURE_CORE" && /dnr|사망|사망\s*시\s*절차|사망\s*간호|간호기록|사후\s*처치|사망진단서|장례식장|icu\s*퇴원|중환자실\s*퇴원|퇴원\s*환자|퇴원\s*절차|퇴원\s*간호|퇴원\s*당일|퇴원약|제증명/.test(q)) score += 220;
+
   // v309_specimen_lab_score_boost: 검체/검사 실무 카드 검색 우선
   if ((card.id || "") === "V309_SPECIMEN_LAB_CYTOLOGY_PCD_ACTH_CORE" && /검체|검사|세포병리\s*의뢰서|세포병리|pcd|pleural\s*fluid|체액검사|fluid\s*culture|acth|cortisol|코티솔|시낙텐|synacthen|tetracosactrin/.test(q)) score += 165;
 
@@ -1126,6 +1129,11 @@ function localSearch(query, limit = 6) {
   if (!q) return visibleItems.slice(0, 12);
 
   const focusQueryRules = [
+    {
+      // v310: DNR 사망 및 ICU 퇴원 환자 절차 대표 카드
+      q: /dnr|dnr\s*환자\s*사망|사망\s*시\s*절차|사망\s*간호|사망\s*간호기록|사후\s*처치|사망진단서|장례식장\s*이송|icu\s*퇴원|중환자실\s*퇴원|퇴원\s*환자\s*절차|퇴원\s*간호|퇴원\s*당일/,
+      ids: ["V310_DNR_DEATH_ICU_DISCHARGE_PROCEDURE_CORE"]
+    },
     {
       q: /혈역학|hemodynamic|순환계\s*모니터링|순환\s*\/\s*혈역학|MAP|ABP|A-line|A\s*line|arterial\s*line|동맥라인|CVP|중심정맥압|zeroing|leveling|transducer|waveform|파형|vasopressor|승압제|저혈압|hypotension|말초관류|perfusion|lactate|젖산|urine\s*output|소변량|patient\s*monitor|bedside\s*monitor|환자\s*모니터/,
       ids: ["V80_HEMODYNAMIC_MONITORING_OVERVIEW", "V149_CV_CRITICAL_CARE_03_HUB", "V149_CV_31_BASIC_CIRCULATION_MONITORING", "V149_CV_33_ABP_ARTERIAL_LINE_MANAGEMENT", "V149_CV_34_CVP_CENTRAL_LINE_MONITORING", "V149_CV_35_HYPOPERFUSION_ASSESSMENT", "V149_CV_36_VASOPRESSOR_INOTROPE_MONITORING"]
